@@ -7,6 +7,8 @@ class SecurityAnnounce(MailParser):
         if self._get_header(msg, 'List-Id') != '<debian-security-announce.lists.debian.org>':
             return False
 
+        fmt = SecurityAnnounceFormatter()
+
         data = {
             'dsa_number' : None,
             'package' : None,
@@ -17,9 +19,9 @@ class SecurityAnnounce(MailParser):
 
         m = re.match(r'^\[SECURITY\] \[DSA ([-\d]+)\] New (.*?) packages fix (.*)$', self._get_header(msg, 'Subject'))
         if m:
-            data['dsa_number'] = m.group(1)
-            data['package'] = m.group(2)
-            data['problem'] = m.group(3)
+            fmt.dsa_number = m.group(1)
+            fmt.package = m.group(2)
+            fmt.problem = m.group(3)
         else:
             return False
 
