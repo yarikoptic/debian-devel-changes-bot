@@ -1,3 +1,13 @@
+
+print """
+This is the first incarnation of the #debian-devel-changes bot. You
+should not attempt to use it, or rely on this file's existence - it
+will be removed once replacement code has been written.
+"""
+
+import sys
+sys.exit(1)
+
 # -*- coding: utf-8 -*-
 
 # Copyright (C) 2008  Chris Lamb <chris@chris-lamb.co.uk>
