@@ -3,7 +3,7 @@
 from DebianChangesBot import MailParser
 from DebianChangesBot.messages import UploadAcceptedMessage
 
-class BugSubmittedParser(MailParser):
+class UploadAcceptedParser(MailParser):
 
     def parse(self, headers, body):
 
