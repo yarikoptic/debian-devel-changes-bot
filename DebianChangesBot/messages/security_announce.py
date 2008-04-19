@@ -4,15 +4,15 @@ from DebianChangesBot import Message
 
 import re
 
-PATTERN_DSA = re.compile(r'-\d+$')
 
 class SecurityAnnounceMessage(Message):
-    FIELDS = ('dsa_number', 'package', 'problem', 'year')
+    FIELDS = ('dsa_number', 'dsa_revision', 'package', 'problem', 'year')
 
     def format(self):
-        url = 'http://www.debian.org/security/%s/dsa-%s' % \
-            (self.year, PATTERN_DSA.sub('', self.dsa_number))
+        msg = "[red][Security][reset] ([yellow]DSA-%d-%d[reset]) - " % \
+            (self.dsa_number, self.dsa_revision)
 
-        return "[red][Security][reset] ([yellow]DSA-%d[reset]) - " \
-            "New [green]%s[reset] packages fix %s. %(url)s" % \
-            (self.dsa_number, self.package, self.problem, url)
+        msg += "New [green]%s[reset] packages fix %s. http://www.debian.org/security/%s/dsa-%d" % \
+            (self.package, self.problem, self.year, self.dsa_number)
+
+        return msg
