@@ -14,7 +14,8 @@ SEVERITY = re.compile(r'(?i)^Severity:? (critical|grave|serious|important|normal
 
 class BugSubmittedParser(MailParser):
 
-    def parse(self, headers, body):
+    @staticmethod
+    def parse(headers, body):
         msg = BugSubmittedMessage()
 
         m = SUBJECT.match(header['Subject'])

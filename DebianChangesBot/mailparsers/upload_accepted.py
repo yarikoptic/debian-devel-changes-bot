@@ -5,8 +5,8 @@ from DebianChangesBot.messages import UploadAcceptedMessage
 
 class UploadAcceptedParser(MailParser):
 
-    def parse(self, headers, body):
-
+    @staticmethod
+    def parse(headers, body):
         msg = UploadAcceptedMessage()
 
         mapping = {

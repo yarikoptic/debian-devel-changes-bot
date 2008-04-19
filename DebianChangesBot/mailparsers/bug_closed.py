@@ -9,7 +9,8 @@ SUBJECT = re.compile(r'^Bug#(\d+): marked as done \((.+)\)$')
 
 class BugClosedParser(MailParser):
 
-    def parse(self, headers, body):
+    @staticmethod
+    def parse(headers, body):
         msg = BugClosedMessage()
 
         m = SUBJECT.match(headers['Subject'])
