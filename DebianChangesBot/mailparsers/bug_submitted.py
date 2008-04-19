@@ -1,6 +1,6 @@
 
 from DebianChangesBot import MailParser
-from DebianChangesBot.formatters import BugSubmittedFormatter
+from DebianChangesBot.messages import BugSubmittedMessage
 
 import re
 
@@ -14,20 +14,20 @@ SEVERITY = re.compile(r'(?i)^Severity:? (critical|grave|serious|important|normal
 class BugSubmittedParser(MailParser):
 
     def parse(self, headers, body):
-        fmt = BugSubmittedFormatter()
+        msg = BugSubmittedMessage()
 
         m = SUBJECT.match(header['Subject'])
         if m:
-            fmt.bug_number = m.group(1)
-            fmt.title = m.group(2)
+            msg.bug_number = m.group(1)
+            msg.title = m.group(2)
         else:
             return
 
-        fmt.by = headers['From']
+        msg.by = headers['From']
 
         # Strip package name prefix from title
-        if fmt.title.lower().startswith('%s: ' % fmt.package.lower()):
-            fmt.title = data.title[len(fmt.package) + 2:]
+        if msg.title.lower().startswith('%s: ' % msg.package.lower()):
+            msg.title = data.title[len(msg.package) + 2:]
 
         mapping = {
             PACKAGE: 'package',
@@ -43,14 +43,14 @@ class BugSubmittedParser(MailParser):
                 m = pattern.match(line)
                 if m:
                     val = m.group(1).lower()
-                    setattr(fmt, target, val)
+                    setattr(msg, target, val)
                     del mapping[pattern]
                     break
 
             if len(mapping.keys()) == 0:
                 break
 
-        if fmt.version.find('GnuPG') != -1:
-            fmt.version = None
+        if msg.version.find('GnuPG') != -1:
+            msg.version = None
 
-        return fmt
+        return msg

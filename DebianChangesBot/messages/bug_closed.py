@@ -1,7 +1,7 @@
 
-from DebianChangesBot import Formatter
+from DebianChangesBot import Message
 
-class BugClosedFormatter(Formatter):
+class BugClosedMessage(Message):
     FIELDS = ('bug_number', 'package', 'by', 'title')
 
     def format(self, data):

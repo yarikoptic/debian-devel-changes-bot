@@ -1,6 +1,6 @@
 
 from DebianChangesBot import MailParser
-from DebianChangesBot.formatters import SecurityAnnounceFormatter
+from DebianChangesBot.messages import SecurityAnnounceMessage
 
 import re
 
@@ -13,20 +13,20 @@ class SecurityAnnounceParser(MailParser):
         if headers['List-Id'] != '<debian-security-announce.lists.debian.org>':
             return
 
-        fmt = SecurityAnnounceFormatter()
+        msg = SecurityAnnounceMessage()
 
         m = SUBJECT.match(headers['Subject'])
         if m:
-            fmt.dsa_number = m.group(1)
-            fmt.package = m.group(2)
-            fmt.problem = m.group(3)
+            msg.dsa_number = m.group(1)
+            msg.package = m.group(2)
+            msg.problem = m.group(3)
         else:
             return
 
         m = DATE.search(headers['Date'])
         if m:
-            fmt.year = m.group(1)
+            msg.year = m.group(1)
         else:
             return
 
-        return fmt
+        return msg

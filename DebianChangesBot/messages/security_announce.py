@@ -1,11 +1,11 @@
 
-from DebianChangesBot import Formatter
+from DebianChangesBot import Message
 
 import re
 
 PATTERN_DSA = re.compile(r'-\d+$')
 
-class SecurityAnnounceFormatter(Formatter):
+class SecurityAnnounceMessage(Message):
     FIELDS = ('dsa_number', 'package', 'problem', 'year')
 
     def format(self):

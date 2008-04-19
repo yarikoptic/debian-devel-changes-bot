@@ -1,8 +1,8 @@
 
-from DebianChangesBot import Formatter
+from DebianChangesBot import Message
 from DebianChangesBot.datasources import NewQueue
 
-class UploadAcceptedFormatter(Formatter):
+class UploadAcceptedMessage(Message):
     FIELDS = ('package', 'version', 'distribution', 'urgency', 'by')
     OPTIONAL = ('closes',)
 

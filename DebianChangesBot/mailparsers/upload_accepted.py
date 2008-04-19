@@ -1,12 +1,12 @@
 
 from DebianChangesBot import MailParser
-from DebianChangesBot.formatters import UploadAcceptedFormatter
+from DebianChangesBot.messages import UploadAcceptedMessage
 
 class BugSubmittedParser(MailParser):
 
     def parse(self, headers, body):
 
-        fmt = UploadAcceptedFormatter()
+        msg = UploadAcceptedMessage()
 
         mapping = {
             'Source': 'package',
@@ -21,7 +21,7 @@ class BugSubmittedParser(MailParser):
             for field, target in mapping.iteritems():
                 if line.startswith('%s: ' % field):
                     val = line[len(field) + 2:]
-                    setattr(fmt, target, val)
+                    setattr(msg, target, val)
                     del mapping[field]
                     break
 
@@ -29,4 +29,4 @@ class BugSubmittedParser(MailParser):
             if len(mapping) == 0:
                 break
 
-        return fmt
+        return msg

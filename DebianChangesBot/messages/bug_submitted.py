@@ -1,7 +1,7 @@
 
-from DebianChangesBot import Formatter
+from DebianChangesBot import Message
 
-class BugSubmittedFormatter(Formatter):
+class BugSubmittedMessage(Message):
     FIELDS = ('bug_number', 'package', 'by', 'title')
     OPTIONAL = ('severity', 'version')
 
