@@ -20,12 +20,12 @@ class UploadAcceptedFormatter(Formatter):
         if self.urgency != 'low':
             msg += "with urgency [red]%s[reset]" % self.urgency
 
-        msg += "by [cyan]%s[reset] " % self.format_email_address(self.by)
+        msg += "by [cyan]%s[reset]" % self.format_email_address(self.by)
 
         if self.closes and '-backports' not in self.distribution:
             bug_list = ', '.join(["[b]#%s[/b]" % x for x in self.closes.split(' ')])
-            msg += "(Closes: %s) " % bug_list
+            msg += " (Closes: %s)" % bug_list
 
-        msg += "http://packages.qa.debian.org/%s" % self.package
+        msg += ". http://packages.qa.debian.org/%s" % self.package
 
         return msg
