@@ -1,69 +1,56 @@
 
 from DebianChangesBot import MailParser
+from DebianChangesBot.formatters import BugSubmittedFormatter
 
-class BugSubmitted(MailParser):
+import re
 
-    def parse(self, msg):
-        data = {
-            'Package' : None,
-            'Version' : '',
-            'Severity' : '',
+SUBJECT = re.compile(r'^Bug#(\d+): (.+)$')
+
+FOLLOWUP_FOR = re.compile(r'(?i)^Followup-For:? .+')
+PACKAGE = re.compile(r'(?i)^Package:? ([^\s]{1,40})$')
+VERSION = re.compile(r'(?i)^Version:? (.{1,50})$')
+SEVERITY = re.compile(r'(?i)^Severity:? (critical|grave|serious|important|normal|minor|wishlist)$')
+
+class BugSubmittedParser(MailParser):
+
+    def parse(self, headers, body):
+        fmt = BugSubmittedFormatter()
+
+        m = SUBJECT.match(header['Subject'])
+        if m:
+            fmt.bug_number = m.group(1)
+            fmt.title = m.group(2)
+        else:
+            return
+
+        fmt.by = headers['From']
+
+        # Strip package name prefix from title
+        if fmt.title.lower().startswith('%s: ' % fmt.package.lower()):
+            fmt.title = data.title[len(fmt.package) + 2:]
+
+        mapping = {
+            PACKAGE: 'package',
+            VERSION: 'version',
+            SEVERITY: 'severity',
         }
 
-        for idx, line in enumerate(self._get_body_text(msg).split("\n")):
-            if line.lower().startswith('followup-for: ') and idx < 8:
-                return False
-            for key in data.keys():
-                if not data[key] and idx < 8:
-                    if line.lower().startswith("%s: " % key.lower()):
-                        data[key] = self._decode_str(line.strip()[len(key) + 2:])
-                    elif line.lower().startswith("%s " % key.lower()):
-                        data[key] = self._decode_str(line.strip()[len(key) + 1:])
+        for line in body[:10]:
+            if FOLLOWUP_FOR.match(line):
+                return
 
-        m = re.match(r'^Bug#(\d+): (.*)$', self._get_header(msg, 'Subject'))
-        if m:
-            data['bug_number'] = m.group(1)
-            data['title'] = m.group(2)
-        else:
-            return False
+            for pattern, target in mapping.iteritems():
+                m = pattern.match(line)
+                if m:
+                    val = m.group(1).lower()
+                    setattr(fmt, target, val)
+                    del mapping[pattern]
+                    break
 
-        if filter(lambda x: x is None, data.itervalues()):
-            # We did not see all the required fields, return
-            return False
+            if len(mapping.keys()) == 0:
+                break
 
-        if ' ' in data['Package']:
-            return False
+        if fmt.version.find('GnuPG') != -1:
+            fmt.version = None
 
-        data = self._tidy_data(data)
-
-        data['by'] = self._format_email(self._get_header(msg, 'From'))
-
-        def reformat(key, match, new):
-            if type(match) is tuple:
-                if data[key].lower() in match:
-                    data[key] = ''
-                else:
-                    data[key] = new % data[key]
-            elif data[key].lower() == match.lower():
-                data[key] = ''
-            else:
-                data[key] = new % data[key]
-
-        if data['Version'].find('GnuPG') != -1:
-            data['Version'] = ''
-
-        reformat('Version', ('', 'n/a'), " ([yellow]%s[reset])")
-
-        if data['Severity'].lower() in ('critical', 'grave', 'serious'):
-            data['Severity'] = " ([red]%s[reset])" % data['Severity']
-        else:
-            reformat('Severity', ('normal', ''), " (%s)")
-
-        if data['title'].lower().startswith("%s: " % data['Package'].lower()):
-            data['title'] = data['title'][len(data['Package']) + 2:]
-
-        for k, v in data.iteritems():
-            try:
-                data[k] = str(v.decode('ascii'))
-            except: pass
-        return colourise(_("Opened [b]#%(bug_number)s[/b]%(Severity)s in [green]%(Package)s[reset]%(Version)s by [cyan]%(by)s[reset] «%(title)s». http://bugs.debian.org/%(bug_number)s") % data)
+        return fmt
