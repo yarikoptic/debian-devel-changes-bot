@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 
 from DebianChangesBot import MailParser
 from DebianChangesBot.messages import BugSubmittedMessage

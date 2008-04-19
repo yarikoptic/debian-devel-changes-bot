@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from bug_closed import BugClosed
 from bug_submitted import BugSubmitted
 from security_announce import SecurityAnnounce
