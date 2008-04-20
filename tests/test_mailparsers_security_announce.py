@@ -21,6 +21,7 @@ class TestMailParserSecurityAnnounce(unittest.TestCase):
     def testSimple(self):
         msg = p.parse(self.headers, [])
 
+        self.assert_(msg)
         self.assertEqual(msg.dsa_number, 1234)
         self.assertEqual(msg.dsa_revision, 5)
         self.assertEqual(msg.package, 'pinafore')
