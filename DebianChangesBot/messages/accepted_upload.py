@@ -3,7 +3,7 @@
 from DebianChangesBot import Message
 from DebianChangesBot.datasources import NewQueue
 
-class UploadAcceptedMessage(Message):
+class AcceptedUploadMessage(Message):
     FIELDS = ('package', 'version', 'distribution', 'urgency', 'by')
     OPTIONAL = ('closes',)
 

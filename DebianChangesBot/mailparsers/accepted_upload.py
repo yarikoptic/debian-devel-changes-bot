@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
 
 from DebianChangesBot import MailParser
-from DebianChangesBot.messages import UploadAcceptedMessage
+from DebianChangesBot.messages import AcceptedUploadMessage
 
-class UploadAcceptedParser(MailParser):
+class AcceptedUploadParser(MailParser):
 
     @staticmethod
     def parse(headers, body):
-        msg = UploadAcceptedMessage()
+        msg = AcceptedUploadMessage()
 
         mapping = {
             'Source': 'package',
@@ -29,5 +29,11 @@ class UploadAcceptedParser(MailParser):
             # If we have found all the field, stop looking
             if len(mapping) == 0:
                 break
+
+        try:
+            if msg.closes:
+                msg.closes = [int(x) for x in msg.closes.split(' ')]
+        except ValueError:
+            return
 
         return msg
