@@ -1,0 +1,112 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 19:50:22 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnecD-0000WC-EO
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 19:50:22 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id DBBBC13A5140; Sun, 20 Apr 2008 18:50:15 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.9 required=4.0 tests=BAYES_00,FOURLA,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 6AF7E13A5133;
+	Sun, 20 Apr 2008 18:49:53 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnea2-0002Hg-Ei; Sun, 20 Apr 2008 18:48:02 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476909: suggestions on reorganisation of the stardict package.
+Reply-To: Andrew Lee <andrew@linux.org.tw>, 476909@bugs.debian.org
+Resent-From: Andrew Lee <andrew@linux.org.tw>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 18:48:01 +0000
+Resent-Message-ID: <handler.476909.B476909.12087170852677@bugs.debian.org>
+X-Debian-PR-Message: report 476909
+X-Debian-PR-Package: stardict
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: stardict
+Received: via spool by 476909-submit@bugs.debian.org id=B476909.12087170852677
+          (code B ref 476909); Sun, 20 Apr 2008 18:48:01 +0000
+Received: (at 476909) by bugs.debian.org; 20 Apr 2008 18:44:45 +0000
+X-Amavis-Spam-Status: No, score=-6.8 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,HAS_BUG_NUMBER autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from flat.iis.sinica.edu.tw ([140.109.17.84] helo=mail.linux.org.tw)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <andrew@linux.org.tw>)
+	id 1JneWr-0000eq-LA
+	for 476909@bugs.debian.org; Sun, 20 Apr 2008 18:44:45 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by mail.linux.org.tw (Postfix) with ESMTP id 69DBF6AC06C;
+	Mon, 21 Apr 2008 02:44:41 +0800 (CST)
+X-Virus-Scanned: Debian amavisd-new at linux.org.tw
+Received: from mail.linux.org.tw ([10.0.0.3])
+	by localhost (people.linux.org.tw [10.0.0.3]) (amavisd-new, port 10024)
+	with LMTP id GvZR4ziMyy7H; Mon, 21 Apr 2008 02:44:41 +0800 (CST)
+Received: from [127.0.0.1] (people.linux.org.tw [10.0.0.3])
+	by mail.linux.org.tw (Postfix) with ESMTP id AF60E6AC06B;
+	Mon, 21 Apr 2008 02:44:40 +0800 (CST)
+Message-ID: <480B8F19.70008@linux.org.tw>
+Date: Mon, 21 Apr 2008 02:44:41 +0800
+From: Andrew Lee <andrew@linux.org.tw>
+User-Agent: Mozilla-Thunderbird 2.0.0.9 (X11/20080110)
+MIME-Version: 1.0
+To: "Dmitry E. Oboukhov" <dimka@avanto.org>, 476909@bugs.debian.org
+References: <20080419085947.GB9874@avanto.org> <480AEA7A.3050800@uvw.ru> <20080420072645.GA12816@avanto.org>
+In-Reply-To: <20080420072645.GA12816@avanto.org>
+X-Enigmail-Version: 0.95.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+Resent-Date: Sun, 20 Apr 2008 18:48:02 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343728
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -31.7
+X-Spam-Report: (-31.7 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	21 AWL                    AWL: From: address is in the auto white-list
+
+Hi Dmitry,
+
+Well done! I'd like to do such thing for long. But it would probably
+become contrib, isn't it?
+
+I haven't check all dictionary on stardict's website for a long time. So
+I am curious now, does any dictionary on stardict website are DFSG?
+
+Maybe convert exist dictionary in debian main to stardict format is a
+better option.
+
+-Andrew
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

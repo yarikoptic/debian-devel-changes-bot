@@ -1,0 +1,282 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 16:05:36 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnb6i-0007ed-6C
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 16:05:36 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id D703713A4FDF; Sun, 20 Apr 2008 15:05:30 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id EAA5313A5002;
+	Sun, 20 Apr 2008 15:05:13 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnb4V-0004cu-Q7; Sun, 20 Apr 2008 15:03:15 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Taku YASUI <tach@debian.or.jp>
+Subject: Bug#455986: marked as done (nttcp: debian/copyright update dead 
+ upstream URL)
+Message-ID: <handler.455986.D455986.120870371515214.ackdone@bugs.debian.org>
+References: <E1Jnaow-0005Zl-3n@ries.debian.org>
+ <20071212193944.5182.30199.reportbug@webmail.cante.net>
+X-Debian-PR-Message: closed 455986
+X-Debian-PR-Package: nttcp
+X-Debian-PR-Source: nttcp
+Content-Type: multipart/mixed; boundary="----------=_1208703795-17718-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 15:03:15 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <iRU2agQ_d7L.A.Z0G.5u1CIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/133016
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 15:05:30 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208703795-17718-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 14:47:10 +0000
+with message-id <E1Jnaow-0005Zl-3n@ries.debian.org>
+and subject line Bug#455986: fixed in nttcp 1.47-11
+has caused the Debian Bug report #455986,
+regarding nttcp: debian/copyright update dead upstream URL
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+455986: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D455986
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208703795-17718-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 12 Dec 2007 19:39:50 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.8 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,HAS_PACKAGE autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <jari.aalto@cante.net>
+Received: from emh01.mail.saunalahti.fi ([62.142.5.107])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <jari.aalto@cante.net>)
+	id 1J2XQs-0005xR-Av
+	for submit@bugs.debian.org; Wed, 12 Dec 2007 19:39:50 +0000
+Received: from saunalahti-vams (vs3-10.mail.saunalahti.fi [62.142.5.94])
+	by emh01-2.mail.saunalahti.fi (Postfix) with SMTP id 8F2C81B157
+	for <submit@bugs.debian.org>; Wed, 12 Dec 2007 21:39:46 +0200 (EET)
+Received: from emh01.mail.saunalahti.fi ([62.142.5.107])
+	by vs3-10.mail.saunalahti.fi ([62.142.5.94])
+	with SMTP (gateway) id A03D848B25F; Wed, 12 Dec 2007 21:39:46 +0200
+Received: from cante.cante.net (a91-155-177-132.elisa-laajakaista.fi [91.155.177.132])
+	by emh01.mail.saunalahti.fi (Postfix) with ESMTP id 83FA54BC3E
+	for <submit@bugs.debian.org>; Wed, 12 Dec 2007 21:39:45 +0200 (EET)
+Received: from root by cante.cante.net with local (Exim 4.68)
+	(envelope-from <jari.aalto@cante.net>)
+	id 1J2XQm-0001MB-Dj; Wed, 12 Dec 2007 19:39:44 +0000
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Jari Aalto <jari.aalto@cante.net>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Subject: nttcp: debian/copyright update dead upstream URL
+Message-ID: <20071212193944.5182.30199.reportbug@webmail.cante.net>
+X-Mailer: reportbug 3.39
+Date: Wed, 12 Dec 2007 19:39:44 +0000
+X-SA-Exim-Connect-IP: <locally generated>
+X-SA-Exim-Mail-From: jari.aalto@cante.net
+X-SA-Exim-Scanned: No (on cante.cante.net); SAEximRunCond expanded to false
+X-Antivirus: VAMS
+Delivered-To: submit@bugs.debian.org
+
+Package: nttcp
+Version: 1.47-10
+Severity: normal
+
+
+Please update URL in debian/copyright
+
+   http://www.leo.org/~elmar/nttcp/
+
+That refers to upstream sources. This URL does not respond.
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (500, 'unstable')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.22-2-686 (SMP w/1 CPU core)
+Locale: LANG=en_US.UTF-8, LC_CTYPE=en_US.UTF-8 (charmap=ANSI_X3.4-1968) (ignored: LC_ALL set to C)
+Shell: /bin/sh linked to /bin/dash
+
+
+
+------------=_1208703795-17718-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 455986-close) by bugs.debian.org; 20 Apr 2008 15:01:55 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-6.7 required=4.0 tests=BAYES_00,FVGT_m_MULTI_ODD,
+	HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_1,IMPRONONCABLE_2,
+	MURPHY_WRONG_WORD1,MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1Jnb3D-0003xE-0Q
+	for 455986-close@bugs.debian.org; Sun, 20 Apr 2008 15:01:55 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1Jnaow-0005Zl-3n; Sun, 20 Apr 2008 14:47:10 +0000
+From: Taku YASUI <tach@debian.or.jp>
+To: 455986-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#455986: fixed in nttcp 1.47-11
+Message-Id: <E1Jnaow-0005Zl-3n@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 14:47:10 +0000
+Content-Transfer-Encoding: quoted-printable
+
+Source: nttcp
+Source-Version: 1.47-11
+
+We believe that the bug you reported is fixed in the latest version of
+nttcp, which is due to be installed in the Debian FTP archive:
+
+nttcp_1.47-11.diff.gz
+  to pool/non-free/n/nttcp/nttcp_1.47-11.diff.gz
+nttcp_1.47-11.dsc
+  to pool/non-free/n/nttcp/nttcp_1.47-11.dsc
+nttcp_1.47-11_amd64.deb
+  to pool/non-free/n/nttcp/nttcp_1.47-11_amd64.deb
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 455986@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Taku YASUI <tach@debian.or.jp> (supplier of updated nttcp package)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 23:11:32 +0900
+Source: nttcp
+Binary: nttcp
+Architecture: source amd64
+Version: 1.47-11
+Distribution: unstable
+Urgency: low
+Maintainer: Taku YASUI <tach@debian.or.jp>
+Changed-By: Taku YASUI <tach@debian.or.jp>
+Description:=20
+ nttcp      - New test TCP program
+Closes: 455986
+Changes:=20
+ nttcp (1.47-11) unstable; urgency=3Dlow
+ .
+   * Add about upstream no longer exists to copyright text
+     (closes: #455986)
+     - Remove debian/watch file
+   * Remove update-inetd code from debian/postinst
+     - debian/postrm deletes inetd settings if possible
+Checksums-Sha1:=20
+ cc8713c69d0bbc4fe5441498f6f43be42d8ecbd0 919 nttcp_1.47-11.dsc
+ 8ddbbccddf68fcabfdda66889568df8b361a862d 2089 nttcp_1.47-11.diff.gz
+ c308a169e43ea2c73c4a91cf30e574480d67e6ac 25354 nttcp_1.47-11_amd64.deb
+Checksums-Sha256:=20
+ 41bba52f3b19c8e90193dbe6bb766b024b3b97b43a32c2efe8bdbc79ae1d10e8 919 ntt=
+cp_1.47-11.dsc
+ 8f391d094a610b1f2015ea64bc9c168759ebfa546aaa92fc440ab900359db96f 2089 nt=
+tcp_1.47-11.diff.gz
+ df62eb090734f232486594370ccb75922613895a703875a9f348e4d240e02d7d 25354 n=
+ttcp_1.47-11_amd64.deb
+Files:=20
+ 1b95970021d9120d882d074089d39c65 919 non-free/net extra nttcp_1.47-11.ds=
+c
+ 34acbc0c89bf25be7ca735ec70839ba6 2089 non-free/net extra nttcp_1.47-11.d=
+iff.gz
+ 2829d22f851ded6d3bdd5b841926f717 25354 non-free/net extra nttcp_1.47-11_=
+amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC1PRFwU5DuZsm7ARAgruAKC4saI7W6bW8oHz98aWvBai4ZPxzQCbBtow
+hPfDAm4MuWq3JzckJX49n00=3D
+=3DE79K
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208703795-17718-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

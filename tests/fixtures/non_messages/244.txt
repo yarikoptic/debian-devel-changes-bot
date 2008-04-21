@@ -1,0 +1,158 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 17:56:45 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JncqG-0008OK-01
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 17:56:45 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 08FA313A4F43; Sun, 20 Apr 2008 16:56:39 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-3.0 required=4.0 tests=BAYES_00,RCVD_IN_DNSWL_LOW
+	autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 0683213A4EDA;
+	Sun, 20 Apr 2008 16:56:22 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnckp-0002U4-Lr; Sun, 20 Apr 2008 16:51:03 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#473364: installation-report: some install glitches (grub2, tasksel, serial mouse)
+Reply-To: 473364@bugs.debian.org, 473364@bugs.debian.org
+Resent-From: Frans Pop <elendil@planet.nl>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian Install Team <debian-boot@lists.debian.org>
+Resent-Date: Sun, 20 Apr 2008 16:51:02 +0000
+Resent-Message-ID: <handler.473364.B473364.120870974719278@bugs.debian.org>
+X-Debian-PR-Message: report 473364
+X-Debian-PR-Package: installation-reports
+X-Debian-PR-Keywords: 
+Received: via spool by 473364-submit@bugs.debian.org id=B473364.120870974719278
+          (code B ref 473364); Sun, 20 Apr 2008 16:51:02 +0000
+Received: (at 473364) by bugs.debian.org; 20 Apr 2008 16:42:27 +0000
+X-Amavis-Spam-Status: No, score=-8.9 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	HAS_BUG_NUMBER,VALID_BTS_CONTROL autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from hpsmtp-eml16.kpnxchange.com ([213.75.38.116])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <elendil@planet.nl>)
+	id 1Jncby-0002Cg-Bb; Sun, 20 Apr 2008 16:41:54 +0000
+Received: from cpsmtp-eml112.kpnxchange.com ([213.75.84.112]) by hpsmtp-eml16.kpnxchange.com with Microsoft SMTPSVC(6.0.3790.1830);
+	 Sun, 20 Apr 2008 18:41:48 +0200
+Received: from faramir.fjphome.nl ([84.85.147.182]) by cpsmtp-eml112.kpnxchange.com with Microsoft SMTPSVC(6.0.3790.1830);
+	 Sun, 20 Apr 2008 18:41:47 +0200
+From: Frans Pop <elendil@planet.nl>
+To: 473364@bugs.debian.org
+Date: Sun, 20 Apr 2008 18:41:44 +0200
+User-Agent: KMail/1.9.9
+References: <1206858167.4920.106.camel@chianamo> <20080403191239.GA9742@kodama.kitenet.net> <1207294200.32527.82.camel@chianamo>
+In-Reply-To: <1207294200.32527.82.camel@chianamo>
+Cc: Paul Wise <pabs@debian.org>
+MIME-Version: 1.0
+Content-Type: text/plain;
+  charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+Message-Id: <200804201841.45460.elendil@planet.nl>
+X-OriginalArrivalTime: 20 Apr 2008 16:41:47.0916 (UTC) FILETIME=[6D035CC0:01C8A305]
+Resent-Date: Sun, 20 Apr 2008 16:51:03 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343657
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -30.0
+X-Spam-Report: (-30.0 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	22 AWL                    AWL: From: address is in the auto white-list
+
+reassign 473364 win32-loader
+retitle 473364 Should not preseed legacy encodings
+severity 473364 important
+thanks
+
+(Omitting issues previously answered.)
+
+On Friday 04 April 2008, Paul Wise wrote:
+> There are some other minor issues below though:
+>
+> goodbye-microsoft.com
+> wait for grub2 (seems slower than grub1)
+
+Yes, I've seen that too in Virtualbox. It takes a huge amount of time and 
+you can actually see the display being "assembled".
+/me needs to file a BR about that.
+
+> choose en_AU as an additional language - seems that en_AU.iso88591 got
+> preseeded from debian.exe?
+
+If that is true, it would IMO be a pretty serious bug in win32-loader as 
+Debian is supposed to be installed using UTF-8 locales by default.
+
+Robert: can you please look into this?
+
+> add ntfs modules component (mouse config seems absent)
+
+Not really needed; will be loaded automatically if needed.
+
+> default kernel (linux-image-2.6-k7 - isn't k7 depreciated or a dummy
+> package?)
+
+As long as it exists, I see no harm to continue to select it. When it is 
+removed from the archive, D-I will automatically fall back correctly.
+
+> notice windows is at the bottom and that it uses 
+> (hd0,0) instead of (hd0,1) boot debian
+
+That's #473401.
+
+> get to nice blue grub2 splash - shouldn't the bootloader and d-i use
+> consistent themes?
+> gdm comes up - again theme consistency would be good
+> again the blue theme, perhaps d-i needs changing to use blue instead of
+> red?
+
+See http://lists.debian.org/debian-boot/2008/04/msg00570.html.
+
+> notice some dummy/transitional packages installed
+> -> mailx and netcat are not marked as autoinstalled, I guess tasksel
+> installed those?
+
+Yes, the transitional packages have a priority of standard or higher, so 
+they get installed. Please take this up with the respective maintainers.
+
+
+Reassigning to win32-loader as that is the only real issue remaining.
+Thanks for the elaborate report, though some clearer indication of what you 
+consider to be issues would be welcome next time.
+
+Cheers,
+FJP
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

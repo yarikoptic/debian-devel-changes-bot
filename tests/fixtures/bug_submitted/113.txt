@@ -1,0 +1,349 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 12:10:57 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnXRd-0006bs-IP
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 12:10:57 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id DD37713A49A9; Sun, 20 Apr 2008 11:10:51 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-5.6 required=4.0 tests=BAYES_00,FOURLA,
+	IMPRONONCABLE_1,IMPRONONCABLE_2,LDO_WHITELIST,MURPHY_WRONG_WORD1,
+	MURPHY_WRONG_WORD2,RCVD_IN_DNSWL_LOW autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 21D5713A4999;
+	Sun, 20 Apr 2008 11:10:38 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnXPu-0000K4-N1; Sun, 20 Apr 2008 11:09:06 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476954: texlive-extra-utils: epstopdf is missing gs
+Reply-To: Roland Stigge <stigge@antcom.de>, 476954@bugs.debian.org
+Resent-From: Roland Stigge <stigge@antcom.de>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian TeX Maintainers <debian-tex-maint@lists.debian.org>
+Resent-Date: Sun, 20 Apr 2008 11:09:02 +0000
+Resent-Message-ID: <handler.476954.B.120868959323574@bugs.debian.org>
+X-Debian-PR-Message: report 476954
+X-Debian-PR-Package: texlive-extra-utils
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: texlive-bin
+Received: via spool by submit@bugs.debian.org id=B.120868959323574
+          (code B ref -1); Sun, 20 Apr 2008 11:09:02 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 11:06:33 +0000
+X-Amavis-Spam-Status: No, score=-7.4 required=4.0 tests=BAYES_00,FOURLA,HAS_PACKAGE,
+	IMPRONONCABLE_1,IMPRONONCABLE_2,MIME_BASE64_NO_NAME,
+	MURPHY_WRONG_WORD1,MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from shadow.prohost.de ([216.71.84.228])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <stigge@antcom.de>)
+	id 1JnXNR-000663-GG
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 11:06:33 +0000
+Received: from dent (localhost [127.0.0.1])
+	(authenticated bits=0)
+	by shadow.prohost.de (8.13.8/8.13.8) with ESMTP id m3KB6UZL022280;
+	Sun, 20 Apr 2008 13:06:31 +0200
+Received: by dent (Postfix, from userid 1000)
+	id 478321844A7; Sun, 20 Apr 2008 13:06:39 +0200 (CEST)
+Content-Type: multipart/mixed; boundary="===============0991872577=="
+MIME-Version: 1.0
+From: Roland Stigge <stigge@antcom.de>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Message-ID: <20080420110639.26259.39714.reportbug@dent.philosys.de>
+X-Mailer: reportbug 3.39-0.1
+Date: Sun, 20 Apr 2008 13:06:39 +0200
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 11:09:06 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343439
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -49.2
+X-Spam-Report: (-49.2 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 MIME_BASE64_NO_NAME    RAW: base64 attachment does not have a file name
+	3.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part MIME message sent by reportbug.
+
+
+--===============0991872577==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+Package: texlive-extra-utils
+Version: 2007.dfsg.1-2
+Severity: normal
+
+Hi,
+
+epstopdf (included in texlive-extra-utils) is missing gs:
+
+# epstopdf bassclef.eps 
+sh: gs: command not found
+#
+
+installing the additional package ghostscript fixes the problem.
+
+bye,
+  Roland
+
+######################################
+ List of ls-R files
+
+-rw-r--r-- 1 root users 1635 2008-04-17 19:41 /var/lib/texmf/ls-R
+-rw-rw-r-- 1 root staff 79 2008-04-12 11:04 /usr/local/share/texmf/ls-R
+lrwxrwxrwx 1 root root 29 2007-12-19 15:24 /usr/share/texmf/ls-R -> /var/lib/texmf/ls-R-TEXMFMAIN
+lrwxrwxrwx 1 root root 27 2007-12-19 15:24 /usr/share/texmf-texlive/ls-R -> /var/lib/texmf/ls-R-TEXLIVE
+lrwxrwxrwx 1 root root 27 2007-12-19 15:24 /usr/share/texmf-texlive/ls-R -> /var/lib/texmf/ls-R-TEXLIVE
+######################################
+ Config files
+lrwxrwxrwx 1 root root 20 2007-12-19 15:24 /usr/share/texmf/web2c/texmf.cnf -> /etc/texmf/texmf.cnf
+-rw-r--r-- 1 root root 8932 2008-03-23 13:46 /var/lib/texmf/web2c/fmtutil.cnf
+-rw-r--r-- 1 root root 14086 2008-03-23 13:46 /var/lib/texmf/web2c/updmap.cfg
+-rw-r--r-- 1 root root 13348 2008-03-23 13:46 /var/lib/texmf/tex/generic/config/language.dat
+######################################
+ Files in /etc/texmf/web2c/
+total 4
+-rw-r--r-- 1 root root 283 2006-08-16 17:02 mktex.cnf
+######################################
+ md5sums of texmf.d
+42c20d7e8bd343542772b5a145bf8ad8  /etc/texmf/texmf.d/05TeXMF.cnf
+5f7f6652cc8b8071c9e4ea6ba9e9f0a1  /etc/texmf/texmf.d/15Plain.cnf
+d588a08518f705d06ac262acd78f2bc4  /etc/texmf/texmf.d/20xmltex.cnf
+8ed54ce13b2eed4871e03bdfdace9342  /etc/texmf/texmf.d/45TeXinputs.cnf
+ea33127256c6a9f37145ae5b16fdb80c  /etc/texmf/texmf.d/55Fonts.cnf
+afccf1d3f87057411166a77c58e00bd1  /etc/texmf/texmf.d/65BibTeX.cnf
+9da7c1c7b1eaf06f941af91f48a23068  /etc/texmf/texmf.d/75DviPS.cnf
+7ae52efac46feb97010986e57877d12e  /etc/texmf/texmf.d/80DVIPDFMx.cnf
+055e06548bac99958d8ab2dd1248f2b4  /etc/texmf/texmf.d/80tex4ht.cnf
+8fee79ccdd5d1f56b1563dabfd53c717  /etc/texmf/texmf.d/85Misc.cnf
+a8952d594677235951d447665ec46e9c  /etc/texmf/texmf.d/90TeXDoc.cnf
+30f4f13357c2761ed01a6a15f28725a5  /etc/texmf/texmf.d/95NonPath.cnf
+1df66bc319cec731e202eaf39f5d85e1  /etc/texmf/texmf.d/96JadeTeX.cnf
+acf41c0aba2dda442815ad037c7c909e  /etc/texmf/texmf.d/96passivetex.cnf
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (500, 'unstable')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.24-rt1 (SMP w/1 CPU core; PREEMPT)
+Locale: LANG=en_GB.UTF-8, LC_CTYPE=en_GB.UTF-8 (charmap=UTF-8) (ignored: LC_ALL set to en_GB.UTF-8)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages texlive-extra-utils depends on:
+ii  libc6                      2.7-10        GNU C Library: Shared libraries
+ii  libkpathsea4               2007.dfsg.1-2 TeX Live: path search library for 
+ii  libx11-6                   2:1.0.3-7     X11 client-side library
+ii  texlive-base               2007-13       TeX Live: Essential programs and f
+ii  texlive-common             2007-13       TeX Live: Base component
+
+Versions of packages texlive-extra-utils recommends:
+pn  dvi2tty                       <none>     (no description available)
+ii  dvidvi                        1.0-8etch2 Manipulate .dvi files
+pn  dviutils                      <none>     (no description available)
+pn  lacheck                       <none>     (no description available)
+
+Versions of packages tex-common depends on:
+ii  debconf                       1.5.20     Debian configuration management sy
+ii  ucf                           3.006      Update Configuration File: preserv
+
+Versions of packages texlive-extra-utils is related to:
+pn  tetex-base                    <none>     (no description available)
+ii  tetex-bin                     2007-13    TeX Live: teTeX transitional packa
+ii  tetex-extra                   2007-13    TeX Live: teTeX transitional packa
+ii  tex-common                    1.10       common infrastructure for building
+
+-- debconf information:
+  tex-common/check_texmf_missing:
+  tex-common/singleuser: false
+  tex-common/check_texmf_wrong:
+
+--===============0991872577==
+Content-Type: application/postscript
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="bassclef.eps"
+
+JSFQUy1BZG9iZS0zLjAgRVBTRi0zLjAKJSVDcmVhdG9yOiBpbmtzY2FwZSAwLjQ0LjEKJSVQYWdl
+czogMQolJU9yaWVudGF0aW9uOiBQb3J0cmFpdAolJUJvdW5kaW5nQm94OiAwIDAgNDc4IDU2Nwol
+JUhpUmVzQm91bmRpbmdCb3g6IDAgMCA0NzggNTY3CiUlRG9jdW1lbnRNZWRpYTogcGxhaW4gNDc4
+IDU2NyAwICgpICgpCiUlRW5kQ29tbWVudHMKJSVQYWdlOiAxIDEKMCA1NjcgdHJhbnNsYXRlCjAu
+OCAtMC44IHNjYWxlCmdzYXZlIFsxIDAgMCAxIDAgMF0gY29uY2F0CmdzYXZlIFsxIDAgMCAxIC04
+OC43MzY2NyAtMTc5LjQwMjVdIGNvbmNhdApnc2F2ZQowIDAgMCBzZXRyZ2Jjb2xvcgpuZXdwYXRo
+CjYzNi40MTg5OCAzNjMuNDQxNzMgbW92ZXRvCjYzOS4wODAxOCAzNjIuOTk3OSBsaW5ldG8KNjQx
+Ljc0MDU4IDM2Mi45OTc5IGxpbmV0bwo2NDMuOTU4MjggMzYyLjk5NzkgbGluZXRvCjY0Ni4xNzUy
+OCAzNjIuNTU0NDMgbGluZXRvCjY0OC44MzYxOCAzNjIuMTExMzIgbGluZXRvCjY1MS4wNTM0OCAz
+NjEuNjY3ODUgbGluZXRvCjY1My4yNzA4OCAzNjAuNzgwOTEgbGluZXRvCjY1NS40ODgxOCAzNjAu
+MzM3NDQgbGluZXRvCjY1Ny43MDU1OCAzNTkuNDUwNDkgbGluZXRvCjY1OS40NzkzOCAzNTguNTYz
+MiBsaW5ldG8KNjYxLjY5Njc4IDM1Ny42NzY2MSBsaW5ldG8KNjYzLjkxNDE4IDM1Ni4zNDYyIGxp
+bmV0bwo2NjUuNjg3OTggMzU1LjQ1OTI2IGxpbmV0bwo2NjcuNDYxODggMzU0LjEyODg1IGxpbmV0
+bwo2NjkuMjM1NzggMzUyLjc5ODQ0IGxpbmV0bwo2NzEuMDA5NjggMzUxLjQ2ODAyIGxpbmV0bwo2
+NzIuMzQwMDggMzQ5LjY5NDE0IGxpbmV0bwo2NzQuMTEzNTggMzQ4LjM2MzczIGxpbmV0bwo2NzUu
+NDQ0MzggMzQ2LjU4OTg1IGxpbmV0bwo2NzYuNzc0NzggMzQ0LjgxNTk2IGxpbmV0bwo2NzguMTA0
+ODggMzQzLjA0MjA4IGxpbmV0bwo2NzkuNDM1NTggMzQxLjI2ODIgbGluZXRvCjY4MC4zMjI1OCAz
+MzkuMDUwODUgbGluZXRvCjY4MS42NTI5OCAzMzcuMjc2OTYgbGluZXRvCjY4Mi41Mzk1OCAzMzUu
+MDU5NjEgbGluZXRvCjY4Mi45ODMzOCAzMzIuODQyNjEgbGluZXRvCjY4My44NzAyOCAzMzAuNjI0
+OTEgbGluZXRvCjY4NC4zMTM3OCAzMjguNDA3OTEgbGluZXRvCjY4NC43NTcyOCAzMjUuNzQ2NzMg
+bGluZXRvCjY4NS4yMDA2OCAzMjMuNTI5NzMgbGluZXRvCjY4NS4yMDA2OCAzMjAuODY4OTEgbGlu
+ZXRvCjY4NS4yMDA2OCAzMTguMjA3NzMgbGluZXRvCjY4NS4yMDA2OCAyOTQuMjYwNjcgNjY3LjAx
+ODM4IDI3MC4zMTM2MSA2NDEuMjk3MTggMjcwLjMxMzYxIGN1cnZldG8KNjE0LjY4OTI4IDI3MC4z
+MTM2MSA1OTIuNTE1NjggMjg3LjE2NTE0IDU5Mi41MTU2OCAzMTYuNDM0MiBjdXJ2ZXRvCjU5Mi41
+MTU2OCAzMzkuOTM3NzkgNjExLjE0MTQ4IDM2My40NDE3MyA2MzYuNDE4OTggMzYzLjQ0MTczIGN1
+cnZldG8KY2xvc2VwYXRoCmZpbGwKZ3Jlc3RvcmUKMCAwIDAgc2V0cmdiY29sb3IKW10gMCBzZXRk
+YXNoCjAgc2V0bGluZXdpZHRoCjAgc2V0bGluZWpvaW4KMCBzZXRsaW5lY2FwCm5ld3BhdGgKNjM2
+LjQxODk4IDM2My40NDE3MyBtb3ZldG8KNjM5LjA4MDE4IDM2Mi45OTc5IGxpbmV0bwo2NDEuNzQw
+NTggMzYyLjk5NzkgbGluZXRvCjY0My45NTgyOCAzNjIuOTk3OSBsaW5ldG8KNjQ2LjE3NTI4IDM2
+Mi41NTQ0MyBsaW5ldG8KNjQ4LjgzNjE4IDM2Mi4xMTEzMiBsaW5ldG8KNjUxLjA1MzQ4IDM2MS42
+Njc4NSBsaW5ldG8KNjUzLjI3MDg4IDM2MC43ODA5MSBsaW5ldG8KNjU1LjQ4ODE4IDM2MC4zMzc0
+NCBsaW5ldG8KNjU3LjcwNTU4IDM1OS40NTA0OSBsaW5ldG8KNjU5LjQ3OTM4IDM1OC41NjMyIGxp
+bmV0bwo2NjEuNjk2NzggMzU3LjY3NjYxIGxpbmV0bwo2NjMuOTE0MTggMzU2LjM0NjIgbGluZXRv
+CjY2NS42ODc5OCAzNTUuNDU5MjYgbGluZXRvCjY2Ny40NjE4OCAzNTQuMTI4ODUgbGluZXRvCjY2
+OS4yMzU3OCAzNTIuNzk4NDQgbGluZXRvCjY3MS4wMDk2OCAzNTEuNDY4MDIgbGluZXRvCjY3Mi4z
+NDAwOCAzNDkuNjk0MTQgbGluZXRvCjY3NC4xMTM1OCAzNDguMzYzNzMgbGluZXRvCjY3NS40NDQz
+OCAzNDYuNTg5ODUgbGluZXRvCjY3Ni43NzQ3OCAzNDQuODE1OTYgbGluZXRvCjY3OC4xMDQ4OCAz
+NDMuMDQyMDggbGluZXRvCjY3OS40MzU1OCAzNDEuMjY4MiBsaW5ldG8KNjgwLjMyMjU4IDMzOS4w
+NTA4NSBsaW5ldG8KNjgxLjY1Mjk4IDMzNy4yNzY5NiBsaW5ldG8KNjgyLjUzOTU4IDMzNS4wNTk2
+MSBsaW5ldG8KNjgyLjk4MzM4IDMzMi44NDI2MSBsaW5ldG8KNjgzLjg3MDI4IDMzMC42MjQ5MSBs
+aW5ldG8KNjg0LjMxMzc4IDMyOC40MDc5MSBsaW5ldG8KNjg0Ljc1NzI4IDMyNS43NDY3MyBsaW5l
+dG8KNjg1LjIwMDY4IDMyMy41Mjk3MyBsaW5ldG8KNjg1LjIwMDY4IDMyMC44Njg5MSBsaW5ldG8K
+Njg1LjIwMDY4IDMxOC4yMDc3MyBsaW5ldG8KNjg1LjIwMDY4IDI5NC4yNjA2NyA2NjcuMDE4Mzgg
+MjcwLjMxMzYxIDY0MS4yOTcxOCAyNzAuMzEzNjEgY3VydmV0bwo2MTQuNjg5MjggMjcwLjMxMzYx
+IDU5Mi41MTU2OCAyODcuMTY1MTQgNTkyLjUxNTY4IDMxNi40MzQyIGN1cnZldG8KNTkyLjUxNTY4
+IDMzOS45Mzc3OSA2MTEuMTQxNDggMzYzLjQ0MTczIDYzNi40MTg5OCAzNjMuNDQxNzMgY3VydmV0
+bwpjbG9zZXBhdGgKc3Ryb2tlCmdzYXZlCjAgMCAwIHNldHJnYmNvbG9yCm5ld3BhdGgKNjM2LjQx
+ODk4IDUzMC4xODU2MSBtb3ZldG8KNjM5LjA4MDE4IDUzMC4xODU2MSBsaW5ldG8KNjQxLjc0MDU4
+IDUzMC4xODU2MSBsaW5ldG8KNjQzLjk1ODI4IDUyOS43NDIxNCBsaW5ldG8KNjQ2LjE3NTI4IDUy
+OS4yOTg2NyBsaW5ldG8KNjQ4LjgzNjE4IDUyOC44NTUyIGxpbmV0bwo2NTEuMDUzNDggNTI4LjQx
+MTczIGxpbmV0bwo2NTMuMjcwODggNTI3Ljk2ODI2IGxpbmV0bwo2NTUuNDg4MTggNTI3LjA4MDk2
+IGxpbmV0bwo2NTcuNzA1NTggNTI2LjE5NDM4IGxpbmV0bwo2NTkuNDc5MzggNTI1LjMwNzQ0IGxp
+bmV0bwo2NjEuNjk2NzggNTI0LjQyMDUgbGluZXRvCjY2My45MTQxOCA1MjMuNTMzNTUgbGluZXRv
+CjY2NS42ODc5OCA1MjIuMjAzMTQgbGluZXRvCjY2Ny40NjE4OCA1MjAuODcyNzMgbGluZXRvCjY2
+OS4yMzU3OCA1MTkuNTQyMzIgbGluZXRvCjY3MS4wMDk2OCA1MTguMjExOTEgbGluZXRvCjY3Mi4z
+NDAwOCA1MTYuNDM4MDMgbGluZXRvCjY3NC4xMTM1OCA1MTUuMTA3NjEgbGluZXRvCjY3NS40NDQz
+OCA1MTMuMzMzNzMgbGluZXRvCjY3Ni43NzQ3OCA1MTEuNTU5ODUgbGluZXRvCjY3OC4xMDQ4OCA1
+MDkuNzg1OTcgbGluZXRvCjY3OS40MzU1OCA1MDcuNTY4NjEgbGluZXRvCjY4MC4zMjI1OCA1MDUu
+Nzk0NzMgbGluZXRvCjY4MS42NTI5OCA1MDMuNTc3MzggbGluZXRvCjY4Mi41Mzk1OCA1MDEuMzYw
+MDIgbGluZXRvCjY4Mi45ODMzOCA0OTkuMTQyNjcgbGluZXRvCjY4My44NzAyOCA0OTYuOTI1Njcg
+bGluZXRvCjY4NC4zMTM3OCA0OTQuNzA3OTcgbGluZXRvCjY4NC43NTcyOCA0OTIuMDQ3NSBsaW5l
+dG8KNjg1LjIwMDY4IDQ4OS4zODYzMiBsaW5ldG8KNjg1LjIwMDY4IDQ4Ni43MjU0OSBsaW5ldG8K
+Njg1LjIwMDY4IDQ4NC4wNjUwMyBsaW5ldG8KNjg1LjIwMDY4IDQ2MC41NjEwOCA2NjcuMDE4Mzgg
+NDM3LjUwMDYxIDY0MS4yOTcxOCA0MzcuNTAwNjEgY3VydmV0bwo2MTQuNjg5MjggNDM3LjUwMDYx
+IDU5Mi41MTU2OCA0NTQuMzUyNDkgNTkyLjUxNTY4IDQ4Mi4yOTA3OSBjdXJ2ZXRvCjU5Mi41MTU2
+OCA1MDYuMjM4MiA2MTEuMTQxNDggNTMwLjE4NTYxIDYzNi40MTg5OCA1MzAuMTg1NjEgY3VydmV0
+bwpjbG9zZXBhdGgKZmlsbApncmVzdG9yZQowIDAgMCBzZXRyZ2Jjb2xvcgpbXSAwIHNldGRhc2gK
+MCBzZXRsaW5ld2lkdGgKMCBzZXRsaW5lam9pbgowIHNldGxpbmVjYXAKbmV3cGF0aAo2MzYuNDE4
+OTggNTMwLjE4NTYxIG1vdmV0bwo2MzkuMDgwMTggNTMwLjE4NTYxIGxpbmV0bwo2NDEuNzQwNTgg
+NTMwLjE4NTYxIGxpbmV0bwo2NDMuOTU4MjggNTI5Ljc0MjE0IGxpbmV0bwo2NDYuMTc1MjggNTI5
+LjI5ODY3IGxpbmV0bwo2NDguODM2MTggNTI4Ljg1NTIgbGluZXRvCjY1MS4wNTM0OCA1MjguNDEx
+NzMgbGluZXRvCjY1My4yNzA4OCA1MjcuOTY4MjYgbGluZXRvCjY1NS40ODgxOCA1MjcuMDgwOTYg
+bGluZXRvCjY1Ny43MDU1OCA1MjYuMTk0MzggbGluZXRvCjY1OS40NzkzOCA1MjUuMzA3NDQgbGlu
+ZXRvCjY2MS42OTY3OCA1MjQuNDIwNSBsaW5ldG8KNjYzLjkxNDE4IDUyMy41MzM1NSBsaW5ldG8K
+NjY1LjY4Nzk4IDUyMi4yMDMxNCBsaW5ldG8KNjY3LjQ2MTg4IDUyMC44NzI3MyBsaW5ldG8KNjY5
+LjIzNTc4IDUxOS41NDIzMiBsaW5ldG8KNjcxLjAwOTY4IDUxOC4yMTE5MSBsaW5ldG8KNjcyLjM0
+MDA4IDUxNi40MzgwMyBsaW5ldG8KNjc0LjExMzU4IDUxNS4xMDc2MSBsaW5ldG8KNjc1LjQ0NDM4
+IDUxMy4zMzM3MyBsaW5ldG8KNjc2Ljc3NDc4IDUxMS41NTk4NSBsaW5ldG8KNjc4LjEwNDg4IDUw
+OS43ODU5NyBsaW5ldG8KNjc5LjQzNTU4IDUwNy41Njg2MSBsaW5ldG8KNjgwLjMyMjU4IDUwNS43
+OTQ3MyBsaW5ldG8KNjgxLjY1Mjk4IDUwMy41NzczOCBsaW5ldG8KNjgyLjUzOTU4IDUwMS4zNjAw
+MiBsaW5ldG8KNjgyLjk4MzM4IDQ5OS4xNDI2NyBsaW5ldG8KNjgzLjg3MDI4IDQ5Ni45MjU2NyBs
+aW5ldG8KNjg0LjMxMzc4IDQ5NC43MDc5NyBsaW5ldG8KNjg0Ljc1NzI4IDQ5Mi4wNDc1IGxpbmV0
+bwo2ODUuMjAwNjggNDg5LjM4NjMyIGxpbmV0bwo2ODUuMjAwNjggNDg2LjcyNTQ5IGxpbmV0bwo2
+ODUuMjAwNjggNDg0LjA2NTAzIGxpbmV0bwo2ODUuMjAwNjggNDYwLjU2MTA4IDY2Ny4wMTgzOCA0
+MzcuNTAwNjEgNjQxLjI5NzE4IDQzNy41MDA2MSBjdXJ2ZXRvCjYxNC42ODkyOCA0MzcuNTAwNjEg
+NTkyLjUxNTY4IDQ1NC4zNTI0OSA1OTIuNTE1NjggNDgyLjI5MDc5IGN1cnZldG8KNTkyLjUxNTY4
+IDUwNi4yMzgyIDYxMS4xNDE0OCA1MzAuMTg1NjEgNjM2LjQxODk4IDUzMC4xODU2MSBjdXJ2ZXRv
+CmNsb3NlcGF0aApzdHJva2UKZ3NhdmUKMCAwIDAgc2V0cmdiY29sb3IKbmV3cGF0aAoxMTEuNzk2
+NzggODg4LjA2MzkxIG1vdmV0bwoxMTUuNzg4MDEgODg4LjA2MzkxIGxpbmV0bwoxMTkuNzc4ODkg
+ODg3LjYyMDQ0IGxpbmV0bwoxMjQuMjEzNiA4ODcuMTc3MzIgbGluZXRvCjEyOS4wOTIxMyA4ODYu
+NzMzODUgbGluZXRvCjEzMy45NzAzMSA4ODYuMjkwMDMgbGluZXRvCjEzOC44NDg0OCA4ODUuNDAz
+MDkgbGluZXRvCjE0NC4xNjk3OCA4ODQuNTE2MTUgbGluZXRvCjE0OS40OTE0MiA4ODMuNjI5MiBs
+aW5ldG8KMTU0LjgxMzA3IDg4Mi43NDI2MiBsaW5ldG8KMTYwLjEzNDcyIDg4MS40MTE4NSBsaW5l
+dG8KMTY1Ljg5OTg0IDg4MC4wODE0NCBsaW5ldG8KMTcxLjY2NDk1IDg3OC43NTEzOCBsaW5ldG8K
+MTgzLjE5NTE5IDg3Ni4wOTAyIGxpbmV0bwoxOTUuMTY4OSA4NzIuNTQyNDQgbGluZXRvCjIwNi42
+OTg3OCA4NjkuNDM4NSBsaW5ldG8KMjE4LjIyOTAxIDg2NS44OTA3MyBsaW5ldG8KMjI5Ljc1OTI1
+IDg2Mi4zNDI5NyBsaW5ldG8KMjM1LjA4MDkgODYwLjU2OTA5IGxpbmV0bwoyNDAuNDAyNTQgODU4
+Ljc5NTIgbGluZXRvCjI0NS43MjQxOSA4NTcuMDIxMzIgbGluZXRvCjI1MS4wNDU0OCA4NTQuODAz
+OTcgbGluZXRvCjI1NS45MjM2NiA4NTMuMDMwMDkgbGluZXRvCjI2MC4zNTgzNyA4NTEuMjU2MiBs
+aW5ldG8KMjY0Ljc5MzA3IDg0OS45MjU3OSBsaW5ldG8KMjY5LjIyNzc4IDg0OC4xNTE5MSBsaW5l
+dG8KMjczLjIxOTAxIDg0Ni4zNzgwMyBsaW5ldG8KMjc3LjIxMDI1IDg0NC42MDQxNSBsaW5ldG8K
+NDM5LjA3NTk2IDc3NC4wOTI2NyA1NjIuMzYwMDcgNjI5LjA3ODg1IDU2Mi4zNjAwNyA0NDcuMjU2
+OTcgY3VydmV0bwo1NjIuMzYwMDcgMzA2LjY3Nzg1IDQ2My40NjY4NCAxNzkuNDAyNDkgMzE2LjY3
+ODc4IDE3OS40MDI0OSBjdXJ2ZXRvCjIwMC40OTA1NCAxNzkuNDAyNDkgMTEzLjU3MDY2IDI4My42
+MTczOCAxMTMuNTcwNjYgMzk1LjgxNDczIGN1cnZldG8KMTEzLjU3MDY2IDQzNy41MDA2MSAxNDAu
+MTc4NTQgNDY5LjQzMDE0IDE4My42Mzg2NiA0NjkuNDMwMTQgY3VydmV0bwoyMjEuMzMzMzEgNDY5
+LjQzMDE0IDI1MS40ODg5NSA0NDAuMTYxNDQgMjUxLjQ4ODk1IDQwMS4xMzYzOCBjdXJ2ZXRvCjI1
+MS40ODg5NSAzNjMuNDQxNzMgMjIyLjIyMDI1IDMzMS41MTE4NSAxODMuNjM4NjYgMzMxLjUxMTg1
+IGN1cnZldG8KMTc0Ljc2OTI1IDMzMS41MTE4NSAxNjUuODk5ODQgMzMyLjg0MjYxIDE1Ny45MTcz
+NyAzMzUuOTQ2NTUgY3VydmV0bwoxNzguMzE3MDEgMjY3LjY1MjQzIDI0NC4zOTM3OCAyMTMuMTA2
+MjYgMzE2LjY3ODc4IDIxMy4xMDYyNiBjdXJ2ZXRvCjQyOS4zMTk2IDIxMy4xMDYyNiA0NTEuMDQ5
+NjYgMzU4LjU2MzIgNDUxLjA0OTY2IDQ0NC41OTYxNCBjdXJ2ZXRvCjQ1MS4wNDk2NiA2MTMuMTEz
+OTEgMzYyLjc5OTM3IDc3Ni43NTM1IDIwNy4xNDIyNSA4NTAuODEyNzMgY3VydmV0bwoxNzYuNTQz
+MTMgODY1Ljg5MDczIDEyMi40NDAwNyA4ODMuNjI5MiA4OC43MzY2NjUgODgzLjYyOTIgY3VydmV0
+bwo5NC45NDQ4OTEgODg3LjE3NzMyIDEwMy44MTQzMSA4ODguMDYzOTEgMTExLjc5Njc4IDg4OC4w
+NjM5MSBjdXJ2ZXRvCmNsb3NlcGF0aApmaWxsCmdyZXN0b3JlCjAgMCAwIHNldHJnYmNvbG9yCltd
+IDAgc2V0ZGFzaAowIHNldGxpbmV3aWR0aAowIHNldGxpbmVqb2luCjAgc2V0bGluZWNhcApuZXdw
+YXRoCjExMS43OTY3OCA4ODguMDYzOTEgbW92ZXRvCjExNS43ODgwMSA4ODguMDYzOTEgbGluZXRv
+CjExOS43Nzg4OSA4ODcuNjIwNDQgbGluZXRvCjEyNC4yMTM2IDg4Ny4xNzczMiBsaW5ldG8KMTI5
+LjA5MjEzIDg4Ni43MzM4NSBsaW5ldG8KMTMzLjk3MDMxIDg4Ni4yOTAwMyBsaW5ldG8KMTM4Ljg0
+ODQ4IDg4NS40MDMwOSBsaW5ldG8KMTQ0LjE2OTc4IDg4NC41MTYxNSBsaW5ldG8KMTQ5LjQ5MTQy
+IDg4My42MjkyIGxpbmV0bwoxNTQuODEzMDcgODgyLjc0MjYyIGxpbmV0bwoxNjAuMTM0NzIgODgx
+LjQxMTg1IGxpbmV0bwoxNjUuODk5ODQgODgwLjA4MTQ0IGxpbmV0bwoxNzEuNjY0OTUgODc4Ljc1
+MTM4IGxpbmV0bwoxODMuMTk1MTkgODc2LjA5MDIgbGluZXRvCjE5NS4xNjg5IDg3Mi41NDI0NCBs
+aW5ldG8KMjA2LjY5ODc4IDg2OS40Mzg1IGxpbmV0bwoyMTguMjI5MDEgODY1Ljg5MDczIGxpbmV0
+bwoyMjkuNzU5MjUgODYyLjM0Mjk3IGxpbmV0bwoyMzUuMDgwOSA4NjAuNTY5MDkgbGluZXRvCjI0
+MC40MDI1NCA4NTguNzk1MiBsaW5ldG8KMjQ1LjcyNDE5IDg1Ny4wMjEzMiBsaW5ldG8KMjUxLjA0
+NTQ4IDg1NC44MDM5NyBsaW5ldG8KMjU1LjkyMzY2IDg1My4wMzAwOSBsaW5ldG8KMjYwLjM1ODM3
+IDg1MS4yNTYyIGxpbmV0bwoyNjQuNzkzMDcgODQ5LjkyNTc5IGxpbmV0bwoyNjkuMjI3NzggODQ4
+LjE1MTkxIGxpbmV0bwoyNzMuMjE5MDEgODQ2LjM3ODAzIGxpbmV0bwoyNzcuMjEwMjUgODQ0LjYw
+NDE1IGxpbmV0bwo0MzkuMDc1OTYgNzc0LjA5MjY3IDU2Mi4zNjAwNyA2MjkuMDc4ODUgNTYyLjM2
+MDA3IDQ0Ny4yNTY5NyBjdXJ2ZXRvCjU2Mi4zNjAwNyAzMDYuNjc3ODUgNDYzLjQ2Njg0IDE3OS40
+MDI0OSAzMTYuNjc4NzggMTc5LjQwMjQ5IGN1cnZldG8KMjAwLjQ5MDU0IDE3OS40MDI0OSAxMTMu
+NTcwNjYgMjgzLjYxNzM4IDExMy41NzA2NiAzOTUuODE0NzMgY3VydmV0bwoxMTMuNTcwNjYgNDM3
+LjUwMDYxIDE0MC4xNzg1NCA0NjkuNDMwMTQgMTgzLjYzODY2IDQ2OS40MzAxNCBjdXJ2ZXRvCjIy
+MS4zMzMzMSA0NjkuNDMwMTQgMjUxLjQ4ODk1IDQ0MC4xNjE0NCAyNTEuNDg4OTUgNDAxLjEzNjM4
+IGN1cnZldG8KMjUxLjQ4ODk1IDM2My40NDE3MyAyMjIuMjIwMjUgMzMxLjUxMTg1IDE4My42Mzg2
+NiAzMzEuNTExODUgY3VydmV0bwoxNzQuNzY5MjUgMzMxLjUxMTg1IDE2NS44OTk4NCAzMzIuODQy
+NjEgMTU3LjkxNzM3IDMzNS45NDY1NSBjdXJ2ZXRvCjE3OC4zMTcwMSAyNjcuNjUyNDMgMjQ0LjM5
+Mzc4IDIxMy4xMDYyNiAzMTYuNjc4NzggMjEzLjEwNjI2IGN1cnZldG8KNDI5LjMxOTYgMjEzLjEw
+NjI2IDQ1MS4wNDk2NiAzNTguNTYzMiA0NTEuMDQ5NjYgNDQ0LjU5NjE0IGN1cnZldG8KNDUxLjA0
+OTY2IDYxMy4xMTM5MSAzNjIuNzk5MzcgNzc2Ljc1MzUgMjA3LjE0MjI1IDg1MC44MTI3MyBjdXJ2
+ZXRvCjE3Ni41NDMxMyA4NjUuODkwNzMgMTIyLjQ0MDA3IDg4My42MjkyIDg4LjczNjY2NSA4ODMu
+NjI5MiBjdXJ2ZXRvCjk0Ljk0NDg5MSA4ODcuMTc3MzIgMTAzLjgxNDMxIDg4OC4wNjM5MSAxMTEu
+Nzk2NzggODg4LjA2MzkxIGN1cnZldG8KY2xvc2VwYXRoCnN0cm9rZQpncmVzdG9yZQpncmVzdG9y
+ZQpzaG93cGFnZQolJUVPRgo=
+
+--===============0991872577==--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

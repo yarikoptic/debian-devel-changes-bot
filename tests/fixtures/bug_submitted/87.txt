@@ -1,0 +1,105 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 15:14:56 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnaJh-0007Oh-Js
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 15:14:56 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 02F2213A4B00; Sun, 20 Apr 2008 14:14:52 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.9 required=4.0 tests=BAYES_00,FOURLA,
+	RCVD_IN_DNSWL_LOW autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 57A9D13A49E3;
+	Sun, 20 Apr 2008 14:14:37 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnaGz-000262-59; Sun, 20 Apr 2008 14:12:05 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476979: plugin ideas
+Reply-To: Peter Eisentraut <petere@debian.org>, 476979@bugs.debian.org
+Resent-From: Peter Eisentraut <petere@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Christoph Berg <myon@debian.org>
+Resent-Date: Sun, 20 Apr 2008 14:12:01 +0000
+Resent-Message-ID: <handler.476979.B.120870060530783@bugs.debian.org>
+X-Debian-PR-Message: report 476979
+X-Debian-PR-Package: hobbit-plugins
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: hobbit-plugins
+Received: via spool by submit@bugs.debian.org id=B.120870060530783
+          (code B ref -1); Sun, 20 Apr 2008 14:12:01 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 14:10:05 +0000
+X-Amavis-Spam-Status: No, score=-9.7 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,FROMDEVELOPER,HAS_PACKAGE,RCVD_IN_SORBS_DUL autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from xdsl-213-196-202-104.netcologne.de ([213.196.202.104] helo=colt.pezone.net)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <petere@debian.org>)
+	id 1JnaF2-0007tU-N1
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 14:10:04 +0000
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Peter Eisentraut <petere@debian.org>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Message-ID: <20080420141002.4137.13829.reportbug@colt.pezone.net>
+X-Mailer: reportbug 3.39
+Date: Sun, 20 Apr 2008 16:10:02 +0200
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 14:12:05 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343518
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.5
+X-Spam-Report: (-52.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+Package: hobbit-plugins
+Version: 20080309
+Severity: wishlist
+
+Before I forget, here are some ideas for hobbit plugins that I would like to 
+see.  I am working on some of these.
+
+smart	-- hard drive health check
+raid	-- RAID array health check (should support Linux software raid and
+	   some hardware RAID solutions)
+smb	-- some way to check the availability of SMB/Samba shares
+rsnapshot -- I would like to have a way to check whether rsnapshot (that is,
+	   backup) ran successfully.  This might actually be a special case of
+	   checking the success of cron jobs.
+
+A sensor health check would also be interesting, but probably too unportable 
+to be really useful.
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

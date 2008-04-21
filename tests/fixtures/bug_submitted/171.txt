@@ -1,0 +1,148 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 16:50:55 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnboQ-0007ro-4Z
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 16:50:54 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id A147E13A5105; Sun, 20 Apr 2008 15:50:39 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.5 required=4.0 tests=BAYES_00,PHONENUMBER,
+	RCVD_IN_DNSWL_LOW autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id E0FD513A4FFE;
+	Sun, 20 Apr 2008 15:49:58 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnbm3-0001yy-T2; Sun, 20 Apr 2008 15:48:15 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476990: xine-lib: CVE-2008-1878 buffer overflow in nsf decoding
+Reply-To: Nico Golde <nion@debian.org>, 476990@bugs.debian.org
+Resent-From: Nico Golde <nion@debian.org>
+Original-Sender: dummy@binarybase.org
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Reinhard Tartler <siretart@tauware.de>
+Resent-Date: Sun, 20 Apr 2008 15:48:10 +0000
+Resent-Message-ID: <handler.476990.B.120870619520724@bugs.debian.org>
+X-Debian-PR-Message: report 476990
+X-Debian-PR-Package: xine-lib
+X-Debian-PR-Keywords: security
+Received: via spool by submit@bugs.debian.org id=B.120870619520724
+          (code B ref -1); Sun, 20 Apr 2008 15:48:10 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 15:43:15 +0000
+X-Amavis-Spam-Status: No, score=-10.4 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FROMDEVELOPER,HAS_PACKAGE,PHONENUMBER autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from mo-p07-ob.rzone.de ([81.169.146.189])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <nion@debian.org>)
+	id 1JnbhD-0005Mf-0S
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 15:43:15 +0000
+X-RZG-CLASS-ID: mo07
+X-RZG-AUTH: hvKiKtSHbeE0ghP2VIXOfz9FbKPIhJ4LAIc5beUpM+hDgzBWhVWCUryUKIrbUqL2d5s=
+Received: from ngolde.de (e178202207.adsl.alicedsl.de [85.178.202.207])
+	by post.webmailer.de (klopstock mo22) (RZmta 16.27)
+	with ESMTP id R06568k3KAQ7OO for <submit@bugs.debian.org>;
+	Sun, 20 Apr 2008 17:43:12 +0200 (MEST)
+	(envelope-from: <nion@debian.org>)
+Received: by ngolde.de (Postfix, from userid 1000)
+	id 5D58DA3114; Sun, 20 Apr 2008 17:42:47 +0200 (CEST)
+Date: Sun, 20 Apr 2008 17:42:47 +0200
+From: Nico Golde <nion@debian.org>
+To: submit@bugs.debian.org
+Message-ID: <20080420154247.GA12090@ngolde.de>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+	protocol="application/pgp-signature"; boundary="EVF5PPMfhYS0aIcm"
+Content-Disposition: inline
+X-Mailer: netcat 1.10
+X-GPG: 0x73647cff
+Sender: dummy@binarybase.org
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 15:48:15 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343566
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -37.1
+X-Spam-Report: (-37.1 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	15 AWL                    AWL: From: address is in the auto white-list
+
+
+--EVF5PPMfhYS0aIcm
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+Package: xine-lib
+Severity: grave
+Tags: security
+
+Hi,
+the following CVE (Common Vulnerabilities & Exposures) id was
+published for xine-lib.
+
+
+CVE-2008-1878[0]:
+| Stack-based buffer overflow in the demux_nsf_send_chunk=20
+| function in src/demuxers/demux_nsf.c in xine-lib 1.1.12 and=20
+| earlier allows remote attackers to cause a denial of service=20
+| (crash) and possibly execute arbitrary code via a long NSF=20
+| title.
+
+If you fix the vulnerability please also make sure to include the
+CVE id in your changelog entry.
+
+For further information see:
+
+[0] http://nvd.nist.gov/nvd.cfm?cvename=3DCVE-2008-1878
+    http://security-tracker.debian.net/tracker/CVE-2008-1878
+
+--=20
+Nico Golde - http://www.ngolde.de - nion@jabber.ccc.de - GPG: 0x73647CFF
+For security reasons, all text in this mail is double-rot13 encrypted.
+
+--EVF5PPMfhYS0aIcm
+Content-Type: application/pgp-signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC2R3HYflSXNkfP8RApS2AKCkUjQHciAgNTuogR4RU/sCFkT72wCfY4UX
+F4U0tC2LQxwi25JTrsIBNM0=
+=qFPf
+-----END PGP SIGNATURE-----
+
+--EVF5PPMfhYS0aIcm--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

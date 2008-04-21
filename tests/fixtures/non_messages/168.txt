@@ -1,0 +1,136 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 19:00:24 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jndpk-0000Gm-U8
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 19:00:20 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id CF25F13A5140; Sun, 20 Apr 2008 18:00:10 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.9 required=4.0 tests=BAYES_00,FOURLA,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW,REMOVEDOT autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id C389213A513A;
+	Sun, 20 Apr 2008 17:59:54 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jndmg-0007aM-8B; Sun, 20 Apr 2008 17:57:02 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#427991: bug 427991 probably not related to pulseaudio --system
+Reply-To: Darren Salt <linux@youmustbejoking.demon.co.uk>, 427991@bugs.debian.org
+Resent-From: Darren Salt <linux@youmustbejoking.demon.co.uk>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Reinhard Tartler <siretart@tauware.de>
+Resent-Date: Sun, 20 Apr 2008 17:57:01 +0000
+Resent-Message-ID: <handler.427991.B427991.120871406624770@bugs.debian.org>
+X-Debian-PR-Message: report 427991
+X-Debian-PR-Package: libxine1
+X-Debian-PR-Keywords: upstream
+X-Debian-PR-Source: xine-lib
+Received: via spool by 427991-submit@bugs.debian.org id=B427991.120871406624770
+          (code B ref 427991); Sun, 20 Apr 2008 17:57:01 +0000
+Received: (at 427991) by bugs.debian.org; 20 Apr 2008 17:54:26 +0000
+X-Amavis-Spam-Status: No, score=-3.9 required=4.0 tests=BAYES_00,FOURLA,
+	HAS_BUG_NUMBER,REMOVEDOT autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from anchor-post-36.mail.demon.net ([194.217.242.86])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <linux@youmustbejoking.demon.co.uk>)
+	id 1JndkA-0006R7-3G
+	for 427991@bugs.debian.org; Sun, 20 Apr 2008 17:54:26 +0000
+Received: from youmustbejoking.demon.co.uk ([80.176.152.238] helo=pentagram.youmustbejoking.demon.co.uk)
+	by anchor-post-36.mail.demon.net with esmtp (Exim 4.67)
+	id 1Jndk8-0009Xr-M0; Sun, 20 Apr 2008 17:54:24 +0000
+Received: from [192.168.0.5] (helo=flibble.youmustbejoking.demon.co.uk)
+	by pentagram.youmustbejoking.demon.co.uk with esmtp (Exim 4.63)
+	(envelope-from <linux@youmustbejoking.demon.co.uk>)
+	id 1JndQa-0000O6-Fb; Sun, 20 Apr 2008 18:34:16 +0100
+Date: Sun, 20 Apr 2008 18:21:18 +0100
+From: Darren Salt <linux@youmustbejoking.demon.co.uk>
+To: juhaj@iki.fi, 427991@bugs.debian.org
+Message-ID: <4F9883E7E8%linux@youmustbejoking.demon.co.uk>
+In-Reply-To: <200804112355.01742.juhaj@iki.fi>
+References: <200804112355.01742.juhaj@iki.fi>
+Mail-Followup-To: juhaj@iki.fi, 427991@bugs.debian.org
+User-Agent: Gemini/2.29g (Qt/3.3.8b) (Linux-x86_64)
+X-SDate: Sun, 5346 Sep 1993 18:21:18 +0100
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: quoted-printable
+X-SA-Exim-Connect-IP: 192.168.0.5
+X-SA-Exim-Mail-From: linux@youmustbejoking.demon.co.uk
+X-SA-Exim-Version: 4.2.1 (built Tue, 09 Jan 2007 17:23:22 +0000)
+X-SA-Exim-Scanned: Yes (on pentagram.youmustbejoking.demon.co.uk)
+Resent-Date: Sun, 20 Apr 2008 17:57:02 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343701
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -34.4
+X-Spam-Report: (-34.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	18 AWL                    AWL: From: address is in the auto white-list
+
+I demand that Juha J=E4ykk=E4 may or may not have written...
+
+> Hi!
+>=20
+> Your claim that the assertion failure only happens with "pulseaudio
+> --system", run as root does not seem to be true.
+
+It was, given that at the time I'd not noticed the existence of the
+pulse-access group.
+
+> It happens even without any pulseaudio process running on the system!
+
+That I find a little difficult to believe (from what I remember of testin=
+g
+this), but no matter...
+
+> I also believe that the jack plugin has absolutely nothing to do with t=
+his
+> (in the original submission it was just tried unsuccessfully before
+> pulseaudio). I have built the beast now --without-pulseaudio --with-jac=
+kd
+> --with-arts and everything looks ok, so the decision made at some point=
+
+> (Source-Version: 1.1.8-3, date Mon, 26 Nov 2007 00:17:07 +0000) to remo=
+ve
+> the jack support was probably an error and jack can be built again.
+
+1.1.12? If so, you should rebuild it with --with-pulseaudio and re-test, =
+and
+also report back on the jack plugin. Both of those plugins have seen chan=
+ges
+in 1.1.12-1, and both are built.
+
+--=20
+| Darren Salt    | linux or ds at              | nr. Ashington, | Toon
+| RISC OS, Linux | youmustbejoking,demon,co,uk | Northumberland | Army
+|   Let's keep the pound sterling
+
+Rotten wood cannot be carved - Confucius (Analects, Book 5, Ch. 9)
+
+
+

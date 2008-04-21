@@ -1,0 +1,384 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 03:10:06 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnP03-00056I-Gg
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 03:10:05 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 4383F13A4E77; Sun, 20 Apr 2008 02:09:50 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.7 required=4.0 tests=BAYES_00,FOURLA,
+	FVGT_m_MULTI_ODD,IMPRONONCABLE_2,MURPHY_WRONG_WORD2,RCVD_IN_DNSWL_LOW
+	autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 5FC4F13A4CA3;
+	Sun, 20 Apr 2008 02:09:37 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnOwN-0004vZ-BZ; Sun, 20 Apr 2008 02:06:03 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#475332: closed by Matthias Klose <doko@ubuntu.com>  (Bug#474932: fixed in sun-java6 6-06-1)
+Reply-To: Arthur Marsh <arthur.marsh@internode.on.net>, 475332@bugs.debian.org
+Resent-From: Arthur Marsh <arthur.marsh@internode.on.net>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Matthias Klose <doko@ubuntu.com>
+Resent-Date: Sun, 20 Apr 2008 02:06:02 +0000
+Resent-Message-ID: <handler.475332.B475332.120865710517935@bugs.debian.org>
+X-Debian-PR-Message: report 475332
+X-Debian-PR-Package: sun-java6-plugin
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: sun-java6
+Received: via spool by 475332-submit@bugs.debian.org id=B475332.120865710517935
+          (code B ref 475332); Sun, 20 Apr 2008 02:06:02 +0000
+Received: (at 475332) by bugs.debian.org; 20 Apr 2008 02:05:05 +0000
+X-Amavis-Spam-Status: No, score=-5.7 required=4.0 tests=BAYES_00,FOURLA,
+	FVGT_m_MULTI_ODD,HAS_BUG_NUMBER,IMPRONONCABLE_2,MURPHY_WRONG_WORD2 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from bld-mail08.adl2.internode.on.net ([203.16.214.72] helo=mail.internode.on.net)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <arthur.marsh@internode.on.net>)
+	id 1JnOvQ-0004Zl-Tk
+	for 475332@bugs.debian.org; Sun, 20 Apr 2008 02:05:05 +0000
+Received: from localhost (unverified [58.170.82.200]) 
+	by mail.internode.on.net (SurgeMail 3.8f2) with ESMTP id 14132044-1927428 
+	for <475332@bugs.debian.org>; Sun, 20 Apr 2008 11:35:02 +0930 (CST)
+Received: from localhost ([127.0.0.1] ident=amarsh04)
+	by localhost with esmtp (Exim 4.69)
+	(envelope-from <arthur.marsh@internode.on.net>)
+	id 1JnOvJ-00083X-7j
+	for 475332@bugs.debian.org; Sun, 20 Apr 2008 11:34:57 +0930
+Message-ID: <480AA4C5.3050102@internode.on.net>
+Date: Sun, 20 Apr 2008 11:34:53 +0930
+From: Arthur Marsh <arthur.marsh@internode.on.net>
+User-Agent: Mozilla-Thunderbird 2.0.0.12 (X11/20080406)
+MIME-Version: 1.0
+To: 475332@bugs.debian.org
+References: <E1JmZbm-0000vs-Su@ries.debian.org> <20080410050519.8587.19778.reportbug@localhost> <handler.475332.D474932.120846071810813.notifdone@bugs.debian.org>
+In-Reply-To: <handler.475332.D474932.120846071810813.notifdone@bugs.debian.org>
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: 7bit
+Resent-Date: Sun, 20 Apr 2008 02:06:03 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343316
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -35.0
+X-Spam-Report: Spam detection software, running on the system "chris-lamb.co.uk", has
+	identified this incoming email as possible spam.  The original message
+	has been attached to this so you can view it (if it isn't spam) or label
+	similar future email.  If you have any questions, see
+	the administrator of that system for details.
+	Content preview:  Debian Bug Tracking System wrote, on 18/04/08 05:03: >
+	This is an automatic notification regarding your Bug report > which was
+	filed against the sun-java6-plugin package: > > #474932:
+	sun-java6-plugin depends on unavailable xulrunner-1.9 > > It has been
+	closed by Matthias Klose <doko@ubuntu.com>. > > Their explanation is
+	attached below along with your original report. > If this explanation is
+	unsatisfactory and you have not received a > better one in a separate
+	message then please contact Matthias Klose <doko@ubuntu.com> by >
+	replying to this email. > > > > > > > Subject: > Bug#474932: fixed in
+	sun-java6 6-06-1 > From: > Matthias Klose <doko@ubuntu.com> > Date: >
+	Thu, 17 Apr 2008 19:17:22 +0000 > To: > 474932-close@bugs.debian.org > >
+	To: > 474932-close@bugs.debian.org > > > Source: sun-java6 >
+	Source-Version: 6-06-1 > > We believe that the bug you reported is fixed
+	in the latest version of > sun-java6, which is due to be installed in
+	the Debian FTP archive: > > ia32-sun-java6-bin_6-06-1_amd64.deb > to
+	pool/non-free/s/sun-java6/ia32-sun-java6-bin_6-06-1_amd64.deb >
+	sun-java6-bin_6-06-1_amd64.deb > to
+	pool/non-free/s/sun-java6/sun-java6-bin_6-06-1_amd64.deb >
+	sun-java6-demo_6-06-1_amd64.deb > to
+	pool/non-free/s/sun-java6/sun-java6-demo_6-06-1_amd64.deb >
+	sun-java6-doc_6-06-1_all.deb > to
+	pool/non-free/s/sun-java6/sun-java6-doc_6-06-1_all.deb >
+	sun-java6-fonts_6-06-1_all.deb > to
+	pool/non-free/s/sun-java6/sun-java6-fonts_6-06-1_all.deb >
+	sun-java6-javadb_6-06-1_all.deb > to
+	pool/non-free/s/sun-java6/sun-java6-javadb_6-06-1_all.deb >
+	sun-java6-jdk_6-06-1_amd64.deb > to
+	pool/non-free/s/sun-java6/sun-java6-jdk_6-06-1_amd64.deb >
+	sun-java6-jre_6-06-1_all.deb > to
+	pool/non-free/s/sun-java6/sun-java6-jre_6-06-1_all.deb >
+	sun-java6-source_6-06-1_all.deb > to
+	pool/non-free/s/sun-java6/sun-java6-source_6-06-1_all.deb >
+	sun-java6_6-06-1.diff.gz > to
+	pool/non-free/s/sun-java6/sun-java6_6-06-1.diff.gz >
+	sun-java6_6-06-1.dsc > to [...] 
+	Content analysis details:   (-35.0 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	18 AWL                    AWL: From: address is in the auto white-list
+
+
+
+Debian Bug Tracking System wrote, on 18/04/08 05:03:
+> This is an automatic notification regarding your Bug report
+> which was filed against the sun-java6-plugin package:
+> 
+> #474932: sun-java6-plugin depends on unavailable xulrunner-1.9
+> 
+> It has been closed by Matthias Klose <doko@ubuntu.com>.
+> 
+> Their explanation is attached below along with your original report.
+> If this explanation is unsatisfactory and you have not received a
+> better one in a separate message then please contact Matthias Klose <doko@ubuntu.com> by
+> replying to this email.
+> 
+> 
+> 
+> 
+> ------------------------------------------------------------------------
+> 
+> Subject:
+> Bug#474932: fixed in sun-java6 6-06-1
+> From:
+> Matthias Klose <doko@ubuntu.com>
+> Date:
+> Thu, 17 Apr 2008 19:17:22 +0000
+> To:
+> 474932-close@bugs.debian.org
+> 
+> To:
+> 474932-close@bugs.debian.org
+> 
+> 
+> Source: sun-java6
+> Source-Version: 6-06-1
+> 
+> We believe that the bug you reported is fixed in the latest version of
+> sun-java6, which is due to be installed in the Debian FTP archive:
+> 
+> ia32-sun-java6-bin_6-06-1_amd64.deb
+>   to pool/non-free/s/sun-java6/ia32-sun-java6-bin_6-06-1_amd64.deb
+> sun-java6-bin_6-06-1_amd64.deb
+>   to pool/non-free/s/sun-java6/sun-java6-bin_6-06-1_amd64.deb
+> sun-java6-demo_6-06-1_amd64.deb
+>   to pool/non-free/s/sun-java6/sun-java6-demo_6-06-1_amd64.deb
+> sun-java6-doc_6-06-1_all.deb
+>   to pool/non-free/s/sun-java6/sun-java6-doc_6-06-1_all.deb
+> sun-java6-fonts_6-06-1_all.deb
+>   to pool/non-free/s/sun-java6/sun-java6-fonts_6-06-1_all.deb
+> sun-java6-javadb_6-06-1_all.deb
+>   to pool/non-free/s/sun-java6/sun-java6-javadb_6-06-1_all.deb
+> sun-java6-jdk_6-06-1_amd64.deb
+>   to pool/non-free/s/sun-java6/sun-java6-jdk_6-06-1_amd64.deb
+> sun-java6-jre_6-06-1_all.deb
+>   to pool/non-free/s/sun-java6/sun-java6-jre_6-06-1_all.deb
+> sun-java6-source_6-06-1_all.deb
+>   to pool/non-free/s/sun-java6/sun-java6-source_6-06-1_all.deb
+> sun-java6_6-06-1.diff.gz
+>   to pool/non-free/s/sun-java6/sun-java6_6-06-1.diff.gz
+> sun-java6_6-06-1.dsc
+>   to pool/non-free/s/sun-java6/sun-java6_6-06-1.dsc
+> sun-java6_6-06.orig.tar.gz
+>   to pool/non-free/s/sun-java6/sun-java6_6-06.orig.tar.gz
+
+This doesn't help me as I'm running ia32 and not amd64 and that list 
+doesn't include sun-java6-plugin.
+
+Are the ia32 architecture specific .deb's able to be uploaded?
+
+Arthur.
+
+> 
+> 
+> 
+> A summary of the changes between this version and the previous one is
+> attached.
+> 
+> Thank you for reporting the bug, which will now be closed.  If you
+> have further comments please address them to 474932@bugs.debian.org,
+> and the maintainer will reopen the bug report if appropriate.
+> 
+> Debian distribution maintenance software
+> pp.
+> Matthias Klose <doko@ubuntu.com> (supplier of updated sun-java6 package)
+> 
+> (This message was generated automatically at their request; if you
+> believe that there is a problem with it please contact the archive
+> administrators by mailing ftpmaster@debian.org)
+> 
+> 
+> -----BEGIN PGP SIGNED MESSAGE-----
+> Hash: SHA1
+> 
+> Format: 1.8
+> Date: Wed, 16 Apr 2008 18:51:00 +0200
+> Source: sun-java6
+> Binary: sun-java6-jre sun-java6-bin sun-java6-plugin ia32-sun-java6-bin ia32-sun-java6-plugin sun-java6-fonts sun-java6-jdk sun-java6-demo sun-java6-source sun-java6-doc sun-java6-javadb
+> Architecture: source amd64 all
+> Version: 6-06-1
+> Distribution: unstable
+> Urgency: low
+> Maintainer: Matthias Klose <doko@ubuntu.com>
+> Changed-By: Matthias Klose <doko@ubuntu.com>
+> Description: 
+>  ia32-sun-java6-bin - Sun Java(TM) Runtime Environment (JRE) 6 (32-bit)
+>  ia32-sun-java6-plugin - The Java(TM) Plug-in, Java SE 6 (32-bit)
+>  sun-java6-bin - Sun Java(TM) Runtime Environment (JRE) 6 (architecture dependent 
+>  sun-java6-demo - Sun Java(TM) Development Kit (JDK) 6 demos and examples
+>  sun-java6-doc - Sun JDK(TM) Documention -- integration installer
+>  sun-java6-fonts - Lucida TrueType fonts (from the Sun JRE)
+>  sun-java6-javadb - Java(TM) DB, Sun Microsystems' distribution of Apache Derby
+>  sun-java6-jdk - Sun Java(TM) Development Kit (JDK) 6
+>  sun-java6-jre - Sun Java(TM) Runtime Environment (JRE) 6 (architecture independen
+>  sun-java6-plugin - The Java(TM) Plug-in, Java SE 6
+>  sun-java6-source - Sun Java(TM) Development Kit (JDK) 6 source files
+> Closes: 414535 425654 428654 430917 436645 441880 459435 468234 472995 473164 474932
+> Changes: 
+>  sun-java6 (6-06-1) unstable; urgency=low
+>  .
+>    * Upload to unstable. Closes: #474932.
+>  .
+>  sun-java6 (6-06-0ubuntu1) hardy; urgency=low
+>  .
+>    * New upstream bug fix release.
+>      - Release notes at http://java.sun.com/javase/6/webnotes/ReleaseNotes.html.
+>      - Fixes Xlib/XCB locking problems. LP: #86103. Closes: #414535.
+>      - Update timezone information. Closes: #468234.
+>    * Don't open the control panel when starting a WebStart application.
+>      LP: #84501.
+>    * javaws.desktop: Add `%u' to the Exec key, remove -viewer option.
+>      Closes: #436645.
+>    * Suggest ttf-wqy-zenhei instead of ttf-arphic-uming (only available in .ttc
+>      format not supported by Sun Java) (Arne Goetje). LP: #213925.
+>    * Only use the basename for icons in desktop files. LP: #207413.
+>    * Add XS-Autobuild: yes attribute. Closes: #473164.
+>    * ia32-sun-java6-bin: Recommend lib32nss-mdns on amd64. Closes: #430917.
+>    * JB-bin.postinst.in: Call java -client -Xshare:dump with -Xmx1m, if the
+>      memory is available. Closes: #425654, #428654.
+>    * binfmt-support: Handle /usr/share/binfmts/jar as a slave symlink of
+>      the jexec alternative, install the binfmt file in the jre libdir.
+>      Use the jexec alternative in the binfmt file.
+>    * Don't fail on removal, if /var/lib/binfmts/openjdk-6 is missing.
+>      Closes: #441880.
+>    * README.Debian: Clarify about configuring the ControlPanel. Closes: #459435.
+>    * Don't include empty directories in /usr/share. Closes: #472995.
+> Checksums-Sha1: 
+>  0f76eab72d8ea0a4004f3f0cebdd10f553bd6e68 1629 sun-java6_6-06-1.dsc
+>  04b3bb699b2d2a45b55958a6bb5b04d52d8c363b 132362700 sun-java6_6-06.orig.tar.gz
+>  a1be08a2de6c74f7c83d41619cceaebb280119bb 85559 sun-java6_6-06-1.diff.gz
+>  0f9fd857e284e140ecf5f62e9e52d2e80dda2665 24042098 sun-java6-bin_6-06-1_amd64.deb
+>  6dadd1f93908280dfeb18a57366219661c291e41 27286606 ia32-sun-java6-bin_6-06-1_amd64.deb
+>  56f9dcef24bc4dadefc61654919225276b2df26e 9623332 sun-java6-jdk_6-06-1_amd64.deb
+>  b402f294d9f2b13d1678ff63d3f755667f8bd232 6738536 sun-java6-demo_6-06-1_amd64.deb
+>  916367d6d2529db35e0688ad2e669f331bc996b6 6456814 sun-java6-jre_6-06-1_all.deb
+>  78e033ad62c800fd92e97f00fd84e244f3c19f59 1810 sun-java6-fonts_6-06-1_all.deb
+>  309bfd135370d045e9a421589743f2ac6c042b67 17601190 sun-java6-source_6-06-1_all.deb
+>  1e8d130a7de20503af1176bf2caca3f3bb64e6ce 41734 sun-java6-doc_6-06-1_all.deb
+>  136ada95640053d1f26ec649e30b9d48e4343204 9665966 sun-java6-javadb_6-06-1_all.deb
+> Checksums-Sha256: 
+>  074684cca7be9fdb6a3cb5e370217a4e7222989167fc67eed2b8acafa9184f5d 1629 sun-java6_6-06-1.dsc
+>  3d1ccc6a6248e1ac46113f3b7d149218b6eaebb02d532113fdce45930412c312 132362700 sun-java6_6-06.orig.tar.gz
+>  4fb5fe4bec805496fde4d1cc93087ad48c845f46bb206ba14ec963ebd1954ffe 85559 sun-java6_6-06-1.diff.gz
+>  45b78f7021fd6be00f2495736accf6eb623e67c613d696c63c8ff1c8f8c8495d 24042098 sun-java6-bin_6-06-1_amd64.deb
+>  ecf76acef98872fb9d0df11f07aff08d97862fd78f5a7b50ca26020e1ef076dc 27286606 ia32-sun-java6-bin_6-06-1_amd64.deb
+>  f7ec61840a31138c7ad7870301d7838f7527a0d0d2742cdbcd34af1e66fabab5 9623332 sun-java6-jdk_6-06-1_amd64.deb
+>  8fdd237d3e90afecbab864c4ccf0e4dbbafba9e5f1ccfa39f16be0a32c91d6c4 6738536 sun-java6-demo_6-06-1_amd64.deb
+>  46a360ea7b6d5fe721c3e17071c1ba3fa469889ed5146021dd05d3478c71f109 6456814 sun-java6-jre_6-06-1_all.deb
+>  c2e96b739bfa39f959c659b65e0dac22ef5f2205798ba2fe16ee070b76fd1e7c 1810 sun-java6-fonts_6-06-1_all.deb
+>  6f744b15fba35aba64d9bfea7d8db46155ed2e034a763026b6149b47a8e21896 17601190 sun-java6-source_6-06-1_all.deb
+>  e82a8c4a406b816a684f219429158e779330ab88bddd748157d7d6a9b8b9e28d 41734 sun-java6-doc_6-06-1_all.deb
+>  f91328c77b0a97febde1e8987ad4a500b9e05ee3b722359840d18805503cb208 9665966 sun-java6-javadb_6-06-1_all.deb
+> Files: 
+>  2634ad629b548961ba50526d4ab38396 1629 non-free/devel optional sun-java6_6-06-1.dsc
+>  ba1283fa2edd60c70d14a862e77a77a8 132362700 non-free/devel optional sun-java6_6-06.orig.tar.gz
+>  ccd273165659e14416c28749dd4e874e 85559 non-free/devel optional sun-java6_6-06-1.diff.gz
+>  12675717900f6e65c4f683216b521889 24042098 non-free/libs optional sun-java6-bin_6-06-1_amd64.deb
+>  2bcb84cd83c2f28da296ca6050707bbd 27286606 non-free/libs optional ia32-sun-java6-bin_6-06-1_amd64.deb
+>  053efb6cbf77c3c5b02a508d06d2a065 9623332 non-free/devel optional sun-java6-jdk_6-06-1_amd64.deb
+>  ada4324e95d981e18178dc47f5ce44da 6738536 non-free/devel optional sun-java6-demo_6-06-1_amd64.deb
+>  3ba713a7a2dac9a207d0d90ce5ea0338 6456814 non-free/libs optional sun-java6-jre_6-06-1_all.deb
+>  db36647091eea332f66e0d2dca0b2165 1810 non-free/x11 optional sun-java6-fonts_6-06-1_all.deb
+>  621a974da9d3076907416fdf0c42f47b 17601190 non-free/devel optional sun-java6-source_6-06-1_all.deb
+>  b422b952d9426c1c31c7f90142b76558 41734 non-free/doc optional sun-java6-doc_6-06-1_all.deb
+>  c85744c3680b67d741976321d5193d9d 9665966 non-free/libs optional sun-java6-javadb_6-06-1_all.deb
+> 
+> -----BEGIN PGP SIGNATURE-----
+> Version: GnuPG v1.4.6 (GNU/Linux)
+> 
+> iD8DBQFIBjC5StlRaw+TLJwRAibzAKC7tv4161owTZbNEveXADsqdDjedwCeOX3u
+> anqjOugro79hPx4h8X3SC3M=
+> =5+C/
+> -----END PGP SIGNATURE-----
+> 
+> 
+> 
+> 
+> ------------------------------------------------------------------------
+> 
+> Subject:
+> sun-java6-plugin depends on unavailable xulrunner-1.9
+> From:
+> Arthur Marsh <arthur.marsh@internode.on.net>
+> Date:
+> Thu, 10 Apr 2008 14:35:19 +0930
+> To:
+> Debian Bug Tracking System <submit@bugs.debian.org>
+> 
+> To:
+> Debian Bug Tracking System <submit@bugs.debian.org>
+> 
+> 
+> Package: sun-java6-plugin
+> Version: 6-04-2
+> Severity: important
+> 
+> 
+> sun-java6-plugin depends on xulrunner-1.9 which isn't in unstable, 
+> testing or stable. Has been this way for several days at least.
+> 
+> -- System Information:
+> Debian Release: lenny/sid
+>   APT prefers unstable
+>   APT policy: (500, 'unstable'), (500, 'testing'), (500, 'stable')
+> Architecture: i386 (i686)
+> 
+> Kernel: Linux 2.6.25-rc8 (SMP w/1 CPU core; PREEMPT)
+> Locale: LANG=en_AU.UTF-8, LC_CTYPE=en_AU.UTF-8 (charmap=UTF-8)
+> Shell: /bin/sh linked to /bin/bash
+> 
+> Versions of packages sun-java6-plugin depends on:
+> ii  iceape-browser       1.1.9-1             Iceape Navigator (Internet browser
+> ii  iceweasel            2.0.0.13-1          lightweight web browser based on M
+> ii  konqueror            4:3.5.9.dfsg.1-2+b1 KDE's advanced file manager, web b
+> ii  libasound2           1.0.16-2            ALSA library
+> ii  libx11-6             2:1.0.3-7           X11 client-side library
+> ii  libxext6             2:1.0.4-1           X11 miscellaneous extension librar
+> ii  libxi6               2:1.1.3-1           X11 Input extension library
+> ii  libxp6               1:1.0.0.xsf1-1      X Printing Extension (Xprint) clie
+> ii  libxtst6             2:1.0.3-1           X11 Testing -- Resource extension 
+> ii  sun-java6-bin        6-04-2              Sun Java(TM) Runtime Environment (
+> 
+> sun-java6-plugin recommends no packages.
+> 
+> -- debconf-show failed
+> 
+> 
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

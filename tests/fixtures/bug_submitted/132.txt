@@ -1,0 +1,146 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 13:33:28 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnYjT-0006uS-80
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 13:33:28 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 0FAE813A4F7D; Sun, 20 Apr 2008 12:33:22 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.9 required=4.0 tests=BAYES_00,FOURLA,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id DF06413A4915;
+	Sun, 20 Apr 2008 12:33:06 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnYgG-0005vH-Hl; Sun, 20 Apr 2008 12:30:04 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476961: apt-file: fails to upgrade with 'Can't get .../Contents-amd64.gz'
+Reply-To: Manolo =?UTF-8?Q?D=C3=ADaz?= <damdl@pleione.es>, 476961@bugs.debian.org
+Resent-From: Manolo =?UTF-8?Q?D=C3=ADaz?= <damdl@pleione.es>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Stefan Fritsch <sf@debian.org>
+Resent-Date: Sun, 20 Apr 2008 12:30:02 +0000
+Resent-Message-ID: <handler.476961.B.120869443015948@bugs.debian.org>
+X-Debian-PR-Message: report 476961
+X-Debian-PR-Package: apt-file
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: apt-file
+Received: via spool by submit@bugs.debian.org id=B.120869443015948
+          (code B ref -1); Sun, 20 Apr 2008 12:30:02 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 12:27:10 +0000
+X-Amavis-Spam-Status: No, score=-9.8 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,HAS_PACKAGE autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from [85.48.198.225] (helo=alcyone.pleione.es)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <damdl@pleione.es>)
+	id 1JnYdR-00046j-T2
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 12:27:10 +0000
+Received: from alcyone.pleione.es (localhost [127.0.0.1])
+	by alcyone.pleione.es (Postfix) with ESMTP id B0317AE0AF;
+	Sun, 20 Apr 2008 14:27:01 +0200 (CEST)
+DKIM-Signature: v=1; a=rsa-sha1; c=simple; d=pleione.es; h=content-type:
+	mime-version:content-transfer-encoding:from:to:subject:
+	message-id:date; q=dns/txt; s=postfix; bh=a4J7KT3dBInjuD8KjwurHL
+	wgyB4=; b=A0E1ioF01f4HInSQYQma+W3xFJXueVc1R4GhEHngZddJNOAZ8XSDG2
+	RMXLds3Z609LHX3Q1OL0qTIC/+JUEvGE2gx99ORORqRip6CAcOknoty4ThLclm7g
+	cA/3VpQoyAZCvajoomH9CVRVBfcows5BcWx445Qh+mtLxL31tPrSI=
+DomainKey-Signature: a=rsa-sha1; c=simple; d=pleione.es; h=content-type:
+	mime-version:content-transfer-encoding:from:to:subject:
+	message-id:date; q=dns; s=postfix; b=A+pq4MZznw+AsYJk73mjcb/IrV8
+	hh7sRuoaK500LE7A++BvKmEElh2K2jo7MDgto8ae8Myzd8q7+2CDam2bA7JHdkdR
+	KWIorpwsyRaDLyEJ1dJQk4pEove9rHMMVXGWw1CkhYZfiPyF0VtiA5k7N8zoLbvc
+	eXdcrpI/r2UD9WH4=
+Received: by alcyone.pleione.es (Postfix, from userid 1000)
+	id A8345AE0B0; Sun, 20 Apr 2008 14:27:01 +0200 (CEST)
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Manolo =?UTF-8?Q?D=C3=ADaz?= <damdl@pleione.es>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Message-ID: <20080420122701.14476.96647.reportbug@225.pool85-48-198.static.orange.es>
+X-Mailer: reportbug 3.39-0.1
+Date: Sun, 20 Apr 2008 14:27:01 +0200
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 12:30:04 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343468
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -39.9
+X-Spam-Report: (-39.9 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	13 AWL                    AWL: From: address is in the auto white-list
+
+Package: apt-file
+Version: 2.1.1
+Severity: important
+
+
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers testing
+  APT policy: (500, 'testing')
+Architecture: amd64 (x86_64)
+
+Kernel: Linux 2.6.24 (SMP w/2 CPU cores)
+Locale: LANG=es_ES.UTF-8, LC_CTYPE=es_ES.UTF-8 (charmap=UTF-8)
+Shell: /bin/sh linked to /bin/dash
+
+Versions of packages apt-file depends on:
+ii  curl                         7.18.0-1+b1 Get a file from an HTTP, HTTPS or 
+ii  libapt-pkg-perl              0.1.22      Perl interface to libapt-pkg
+ii  libconfig-file-perl          1.42-1      Parses simple configuration files
+ii  liblist-moreutils-perl       0.22-1      Addition list functions not found 
+ii  menu                         2.1.38      generates programs menu for all me
+ii  perl                         5.8.8-12    Larry Wall's Practical Extraction 
+ii  wget                         1.11.1-1    retrieves files from the web
+
+apt-file recommends no packages.
+
+-- debconf-show failed
+
+Hi,
+I'm unable to update file list because it fails with
+
+Can't get http://ftp.debian.org/debian/dists/testing/Contents-amd64.gz
+Can't get http://www.debian-multimedia.org/dists/testing/Contents-amd64.gz
+
+I must say these archives exists and I can download them with wget or
+curl.
+
+Best Regards,
+Manolo
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,129 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 21:02:24 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnfjx-0000qR-QC
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 21:02:24 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 6D26E13A52AC; Sun, 20 Apr 2008 20:02:20 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id 1436C13A4C2F
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 20:02:20 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnfH3-0005ea-Pu; Sun, 20 Apr 2008 19:32:29 +0000
+From: Bastian Blank <waldi@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted libperlio-eol-perl 0.14-1 (source amd64)
+Message-Id: <E1JnfH3-0005ea-Pu@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 19:32:29 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <24qXLwj_mIE.A.ztD.MF6CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301348
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 20:02:20 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.6
+X-Spam-Report: (-2.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.0 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 21:21:07 +0200
+Source: libperlio-eol-perl
+Binary: libperlio-eol-perl
+Architecture: source amd64
+Version: 0.14-1
+Distribution: unstable
+Urgency: low
+Maintainer: Bastian Blank <waldi@debian.org>
+Changed-By: Bastian Blank <waldi@debian.org>
+Description:=20
+ libperlio-eol-perl - PerlIO layer for normalizing line endings
+Changes:=20
+ libperlio-eol-perl (0.14-1) unstable; urgency=3Dlow
+ .
+   * New upstream version.
+   * Use external orig.
+Checksums-Sha1:=20
+ 64de18cedf90d28c57ce1354b5da42538a2ab0c9 1041 libperlio-eol-perl_0.14-1.=
+dsc
+ a29c77b35d3677b00ad5de2309679c6eef4e927f 17679 libperlio-eol-perl_0.14.o=
+rig.tar.gz
+ 04de0253b09e726a9334d37bf86f3b5eda40d02c 3297 libperlio-eol-perl_0.14-1.=
+diff.gz
+ bde0ab85b9478d95fc512f7890858f7401a6379e 17454 libperlio-eol-perl_0.14-1=
+_amd64.deb
+Checksums-Sha256:=20
+ 29a6a7a6df0ecc5807f8e71be2e9b0abab387b4c8b0649ef97c87f75fa29c167 1041 li=
+bperlio-eol-perl_0.14-1.dsc
+ a3d8df80aa05477adcbf6dd819906aaa6735207daf3cc7f9b2d990c25286ef32 17679 l=
+ibperlio-eol-perl_0.14.orig.tar.gz
+ 7d9962b309cee908789a2eae55a3ac2028eec0d61e6d536d8e7dfb38cbf21062 3297 li=
+bperlio-eol-perl_0.14-1.diff.gz
+ bff6bdabac4ee45253639172b77cdb55f76ad41c500cf855d234937777bfbfe1 17454 l=
+ibperlio-eol-perl_0.14-1_amd64.deb
+Files:=20
+ 0a3eb6ddaa1a84083c2480a08ff272a0 1041 perl optional libperlio-eol-perl_0=
+.14-1.dsc
+ 627ebcb35b3bcb2cd724205c5c536219 17679 perl optional libperlio-eol-perl_=
+0.14.orig.tar.gz
+ 424a057ae63e78ec334b307c5c003442 3297 perl optional libperlio-eol-perl_0=
+.14-1.diff.gz
+ ed46f9fe400165bd3416a11d23b0ebd2 17454 perl optional libperlio-eol-perl_=
+0.14-1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iEYEARECAAYFAkgLmAwACgkQxWtQqFixGB7zvgCdEEj8qzMnOX64H3iV6izua+G9
+dKMAnj+bFgx5AsbtpFECCKiru9SqIWcp
+=3DLADk
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+libperlio-eol-perl_0.14-1.diff.gz
+  to pool/main/libp/libperlio-eol-perl/libperlio-eol-perl_0.14-1.diff.gz
+libperlio-eol-perl_0.14-1.dsc
+  to pool/main/libp/libperlio-eol-perl/libperlio-eol-perl_0.14-1.dsc
+libperlio-eol-perl_0.14-1_amd64.deb
+  to pool/main/libp/libperlio-eol-perl/libperlio-eol-perl_0.14-1_amd64.de=
+b
+libperlio-eol-perl_0.14.orig.tar.gz
+  to pool/main/libp/libperlio-eol-perl/libperlio-eol-perl_0.14.orig.tar.g=
+z
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

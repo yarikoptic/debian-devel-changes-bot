@@ -1,0 +1,129 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 09:58:16 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnVND-0005v0-CE
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 09:58:15 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 3E7DD13A4E85; Sun, 20 Apr 2008 08:58:10 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id ABE0A13A4CEF;
+	Sun, 20 Apr 2008 08:57:59 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnVLP-0007W9-Gg; Sun, 20 Apr 2008 08:56:19 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476923: Sorry, missing information
+Reply-To: Christoph Haas <haas@debian.org>, 476923@bugs.debian.org
+Resent-From: Christoph Haas <haas@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: <wnpp@debian.org>
+Resent-Date: Sun, 20 Apr 2008 08:56:18 +0000
+Resent-Message-ID: <handler.476923.B476923.12086812693479@bugs.debian.org>
+X-Debian-PR-Message: report 476923
+X-Debian-PR-Package: wnpp
+X-Debian-PR-Keywords: 
+Received: via spool by 476923-submit@bugs.debian.org id=B476923.12086812693479
+          (code B ref 476923); Sun, 20 Apr 2008 08:56:18 +0000
+Received: (at 476923) by bugs.debian.org; 20 Apr 2008 08:47:49 +0000
+X-Amavis-Spam-Status: No, score=-5.9 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FROMDEVELOPER autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from haas.workdsl.de
+	([212.12.44.217] helo=torf.workaround.org ident=postfix)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <haas@debian.org>)
+	id 1JnVDB-0000tn-Du
+	for 476923@bugs.debian.org; Sun, 20 Apr 2008 08:47:49 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by torf.workaround.org (Postfix) with ESMTP id 1590610014
+	for <476923@bugs.debian.org>; Sun, 20 Apr 2008 10:47:48 +0200 (CEST)
+X-Virus-Scanned: Debian amavisd-new at torf.workaround.org
+Received: from torf.workaround.org ([127.0.0.1])
+	by localhost (torf.workaround.org [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id n1rjvt-t7CC5 for <476923@bugs.debian.org>;
+	Sun, 20 Apr 2008 10:47:39 +0200 (CEST)
+Received: from [212.12.58.138] (unknown [212.12.58.138])
+	by torf.workaround.org (Postfix) with ESMTP id 97DCB10012
+	for <476923@bugs.debian.org>; Sun, 20 Apr 2008 10:47:39 +0200 (CEST)
+From: Christoph Haas <haas@debian.org>
+Organization: Debian - the universal operating system
+To: 476923@bugs.debian.org
+Date: Sun, 20 Apr 2008 10:47:37 +0200
+User-Agent: KMail/1.9.9
+X-Face: #B$]!e_TCIU["FYf+Xj`JN2XPB/bs8RNeClf>%y{v.wr+^{f<8q6\8$If(h0OqR(id8^JF
+	;P&P{f+89k/:v1ugBL0:8Zk/PLitiwb/EXUl$)VEXnK=$d&X!+WRsd3'~Z<z7=Is6/,)_l
+	:q,%.XKV&aePTG'egMM(sEZh"$#,-BJ0N%MhMutbMZH?ZPC:Z%-G0!@$CaUNUem8
+MIME-Version: 1.0
+Content-Type: multipart/signed;
+  boundary="nextPart9911118.y5mRGOXJPl";
+  protocol="application/pgp-signature";
+  micalg=pgp-sha1
+Content-Transfer-Encoding: 7bit
+Message-Id: <200804201047.38519.haas@debian.org>
+Resent-Date: Sun, 20 Apr 2008 08:56:19 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343370
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -31.4
+X-Spam-Report: (-31.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	21 AWL                    AWL: From: address is in the auto white-list
+
+--nextPart9911118.y5mRGOXJPl
+Content-Type: text/plain;
+  charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+I was a tad too fast. :)
+
+  License         : MIT
+  Programming Lang: Python
+
+--nextPart9911118.y5mRGOXJPl
+Content-Type: application/pgp-signature; name=signature.asc 
+Content-Description: This is a digitally signed message part.
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQBICwMqCV53xXnMZYYRArKnAKCXYHVAunhn1OyWjGLNk438SMz0hwCghQYv
+7v7ncLk/Tzj+pOZ2R3UKQjk=
+=hubB
+-----END PGP SIGNATURE-----
+
+--nextPart9911118.y5mRGOXJPl--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

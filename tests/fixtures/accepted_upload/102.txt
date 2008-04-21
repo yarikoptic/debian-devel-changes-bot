@@ -1,0 +1,118 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 17:31:41 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JncS2-0008Hy-8W
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 17:31:41 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 11E3913A4F93; Sun, 20 Apr 2008 16:31:37 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id CC67313A4F10
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 16:31:36 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JncDv-0002vY-0N; Sun, 20 Apr 2008 16:17:03 +0000
+From: Daniel Baumann <daniel@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted gitosis 0.2+20080319-3 (source all)
+Message-Id: <E1JncDv-0002vY-0N@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 16:17:03 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <xg2lyKcwC1.A.iXF.p_2CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301320
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 16:31:37 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 17:59:00 +0200
+Source: gitosis
+Binary: gitosis
+Architecture: source all
+Version: 0.2+20080319-3
+Distribution: unstable
+Urgency: medium
+Maintainer: Daniel Baumann <daniel@debian.org>
+Changed-By: Daniel Baumann <daniel@debian.org>
+Description:=20
+ gitosis    - git repository hosting application
+Closes: 477002
+Changes:=20
+ gitosis (0.2+20080319-3) unstable; urgency=3Dmedium
+ .
+   * Adjusting installation hack to python 2.5 (Closes: #477002).
+Checksums-Sha1:=20
+ c90520391d2955b147307514ecbcf54478c8b311 1038 gitosis_0.2+20080319-3.dsc
+ 1f23d66e89e46954e21cf5adef16fad46a5b4a5d 2530 gitosis_0.2+20080319-3.dif=
+f.gz
+ 9c134ff85b9e93aa4d2cdad46284c0f83dfb2b4c 30042 gitosis_0.2+20080319-3_al=
+l.deb
+Checksums-Sha256:=20
+ 02d8975d22386dafdd153e093cc5775c6dc3e5b09b70ec42753aa65d3d1e29fa 1038 gi=
+tosis_0.2+20080319-3.dsc
+ 1ecf41da4a5f09e2001317496637300393733b41905e0e445518653d84d12d29 2530 gi=
+tosis_0.2+20080319-3.diff.gz
+ c11f139f5216ca7323738c2130a854754d2ebb2348b5d684725f915f9ccf0e5e 30042 g=
+itosis_0.2+20080319-3_all.deb
+Files:=20
+ abc62f190cfef506a366dd98563741ef 1038 admin optional gitosis_0.2+2008031=
+9-3.dsc
+ c34c96bad8c01fc9344c9174a069ce61 2530 admin optional gitosis_0.2+2008031=
+9-3.diff.gz
+ aafd7d59f91b4068531c3fe9ef0745ca 30042 admin optional gitosis_0.2+200803=
+19-3_all.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC2hc+C5cwEsrK54RAhNMAJsFRFjylZplr0cWEYVaBusrNekNeQCfRsyG
+bWVssEas0rBCR73PLrnTUN0=3D
+=3DYtm7
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+gitosis_0.2+20080319-3.diff.gz
+  to pool/main/g/gitosis/gitosis_0.2+20080319-3.diff.gz
+gitosis_0.2+20080319-3.dsc
+  to pool/main/g/gitosis/gitosis_0.2+20080319-3.dsc
+gitosis_0.2+20080319-3_all.deb
+  to pool/main/g/gitosis/gitosis_0.2+20080319-3_all.deb
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

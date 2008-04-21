@@ -1,0 +1,667 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 08:32:00 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnU1f-0005hi-Nj
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 08:32:00 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 653F513A4E19; Sun, 20 Apr 2008 07:31:50 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id BF2B613A49B2
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 07:31:49 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnTnQ-0002be-GI; Sun, 20 Apr 2008 07:17:08 +0000
+From: Daniel Baumann <daniel@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted iceweasel-l10n 1:2.0.0.14+debian-1 (source all)
+Message-Id: <E1JnTnQ-0002be-GI@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 07:17:08 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <v3JgNDX8cPI.A.VYC.mFvCIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301276
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 07:31:50 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 08:52:00 +0200
+Source: iceweasel-l10n
+Binary: iceweasel-l10n-all iceweasel-l10n-af iceweasel-l10n-ar iceweasel-=
+l10n-be iceweasel-l10n-bg iceweasel-l10n-ca iceweasel-l10n-cs iceweasel-l=
+10n-da iceweasel-l10n-de iceweasel-l10n-el iceweasel-l10n-en-gb iceweasel=
+-l10n-es-ar iceweasel-l10n-es-es iceweasel-l10n-eu iceweasel-l10n-fi icew=
+easel-l10n-fr iceweasel-l10n-fy-nl iceweasel-l10n-ga-ie iceweasel-l10n-gu=
+-in iceweasel-l10n-he iceweasel-l10n-hu iceweasel-l10n-it iceweasel-l10n-=
+ja iceweasel-l10n-ka iceweasel-l10n-ko iceweasel-l10n-ku iceweasel-l10n-l=
+t iceweasel-l10n-mk iceweasel-l10n-mn iceweasel-l10n-nb-no iceweasel-l10n=
+-nl iceweasel-l10n-nn-no iceweasel-l10n-pa-in iceweasel-l10n-pl iceweasel=
+-l10n-pt-br iceweasel-l10n-pt-pt iceweasel-l10n-ro iceweasel-l10n-ru icew=
+easel-l10n-sk iceweasel-l10n-sl iceweasel-l10n-sv-se iceweasel-l10n-tr ic=
+eweasel-l10n-uk iceweasel-l10n-zh-cn iceweasel-l10n-zh-tw iceweasel-l10n-=
+cy-gb iceweasel-l10n-dz-bt iceweasel-l10n-et-ee iceweasel-l10n-fa-ir icew=
+easel-l10n-fur-it iceweasel-l10n-gl-es iceweasel-l10n-ne-np iceweasel-l10=
+n-uk-ua
+Architecture: source all
+Version: 1:2.0.0.14+debian-1
+Distribution: unstable
+Urgency: low
+Maintainer: Daniel Baumann <daniel@debian.org>
+Changed-By: Daniel Baumann <daniel@debian.org>
+Description:=20
+ iceweasel-l10n-af - Afrikaans language package for Iceweasel
+ iceweasel-l10n-all - All language packages for Iceweasel (meta)
+ iceweasel-l10n-ar - Arabic language package for Iceweasel
+ iceweasel-l10n-be - Belarusian language package for Iceweasel
+ iceweasel-l10n-bg - Bulgarian language package for Iceweasel
+ iceweasel-l10n-ca - Catalan/Valencian language package for Iceweasel
+ iceweasel-l10n-cs - Czech language package for Iceweasel
+ iceweasel-l10n-cy-gb - Welsh language package for Iceweasel
+ iceweasel-l10n-da - Danish language package for Iceweasel
+ iceweasel-l10n-de - German language package for Iceweasel
+ iceweasel-l10n-dz-bt - Dzongkha language package for Iceweasel
+ iceweasel-l10n-el - Greek language package for Iceweasel
+ iceweasel-l10n-en-gb - English (Great Britain) language package for Icew=
+easel
+ iceweasel-l10n-es-ar - Spanish (Argentina) language package for Icewease=
+l
+ iceweasel-l10n-es-es - Spanish (Spain) language package for Iceweasel
+ iceweasel-l10n-et-ee - Estonian language package for Iceweasel
+ iceweasel-l10n-eu - Basque language package for Iceweasel
+ iceweasel-l10n-fa-ir - Persian language package for Iceweasel
+ iceweasel-l10n-fi - Finnish language package for Iceweasel
+ iceweasel-l10n-fr - French language package for Iceweasel
+ iceweasel-l10n-fur-it - Furlan language package for Iceweasel
+ iceweasel-l10n-fy-nl - Frisian language package for Iceweasel
+ iceweasel-l10n-ga-ie - Irish (Ireland) language package for Iceweasel
+ iceweasel-l10n-gl-es - Galician language package for Iceweasel
+ iceweasel-l10n-gu-in - Gujarati (India) language package for Iceweasel
+ iceweasel-l10n-he - Hebrew language package for Iceweasel
+ iceweasel-l10n-hu - Hungarian language package for Iceweasel
+ iceweasel-l10n-it - Italian language package for Iceweasel
+ iceweasel-l10n-ja - Japanese language package for Iceweasel
+ iceweasel-l10n-ka - Georgian language package for Iceweasel
+ iceweasel-l10n-ko - Korean language package for Iceweasel
+ iceweasel-l10n-ku - Kurdish language package for Iceweasel
+ iceweasel-l10n-lt - Lithuanian language package for Iceweasel
+ iceweasel-l10n-mk - Macedonian language package for Iceweasel
+ iceweasel-l10n-mn - Mongolian language package for Iceweasel
+ iceweasel-l10n-nb-no - Bokmaal (Norway) language package for Iceweasel
+ iceweasel-l10n-ne-np - Nepali language package for Iceweasel
+ iceweasel-l10n-nl - Dutch language package for Iceweasel
+ iceweasel-l10n-nn-no - Nynorsk (Norway) language package for Iceweasel
+ iceweasel-l10n-pa-in - Punjabi (India) language package for Iceweasel
+ iceweasel-l10n-pl - Polish language package for Iceweasel
+ iceweasel-l10n-pt-br - Portuguese (Brazil) language package for Icewease=
+l
+ iceweasel-l10n-pt-pt - Portuguese (Portugal) language package for Icewea=
+sel
+ iceweasel-l10n-ro - Romanian language package for Iceweasel
+ iceweasel-l10n-ru - Russian language package for Iceweasel
+ iceweasel-l10n-sk - Slovak language package for Iceweasel
+ iceweasel-l10n-sl - Slovenian language package for Iceweasel
+ iceweasel-l10n-sv-se - Swedish (Sweden) language package for Iceweasel
+ iceweasel-l10n-tr - Turkish language package for Iceweasel
+ iceweasel-l10n-uk - Ukrainian language package for Iceweasel
+ iceweasel-l10n-uk-ua - Ukrainian language package for Iceweasel (transit=
+ional package)
+ iceweasel-l10n-zh-cn - Chinese (China) language package for Iceweasel
+ iceweasel-l10n-zh-tw - Chinese (Taiwan) language package for Iceweasel
+Changes:=20
+ iceweasel-l10n (1:2.0.0.14+debian-1) unstable; urgency=3Dlow
+ .
+   * New upstream release.
+Checksums-Sha1:=20
+ 5fd0e9986cf4f23af5af622a8a67c91e03f4f9f2 2162 iceweasel-l10n_2.0.0.14+de=
+bian-1.dsc
+ 5c853c2e810399086e8e96896271eda025bc7b04 8408742 iceweasel-l10n_2.0.0.14=
++debian.orig.tar.gz
+ 8a79f299aebeb6d795e782025516a8aff87c30c8 137319 iceweasel-l10n_2.0.0.14+=
+debian-1.diff.gz
+ 23e7f5d14a0ad8920ccc2789371828286c065748 17572 iceweasel-l10n-all_2.0.0.=
+14+debian-1_all.deb
+ 4bbdd52a18fc22fafae96f49c6a1547bfa05d430 166396 iceweasel-l10n-af_2.0.0.=
+14+debian-1_all.deb
+ 1316571640bdbb8dc089423aa15004dead7f2555 177998 iceweasel-l10n-ar_2.0.0.=
+14+debian-1_all.deb
+ fa48b9ebce2e067b86e5023531958cdea7370930 179166 iceweasel-l10n-be_2.0.0.=
+14+debian-1_all.deb
+ d717365e49c8812e03c6d11fd2d9cf9f29448f03 187964 iceweasel-l10n-bg_2.0.0.=
+14+debian-1_all.deb
+ 111b2b9acfcc1068ed5098d9a651783308b42678 189710 iceweasel-l10n-ca_2.0.0.=
+14+debian-1_all.deb
+ ea336006e82b270037d56b7e79ccaeb2f0f350ed 188396 iceweasel-l10n-cs_2.0.0.=
+14+debian-1_all.deb
+ bbdf8f733d9999a9983d8141ca731521839bf405 170776 iceweasel-l10n-da_2.0.0.=
+14+debian-1_all.deb
+ 1335e31fd254be51940ee2c8fbebe7ea1dac25b1 170804 iceweasel-l10n-de_2.0.0.=
+14+debian-1_all.deb
+ 23a15479d9676fb70bea583d6d5a81ba543eb59d 187524 iceweasel-l10n-el_2.0.0.=
+14+debian-1_all.deb
+ 1e1eb843e26987f2ae0528f143975cc454e3c1c2 174470 iceweasel-l10n-en-gb_2.0=
+.0.14+debian-1_all.deb
+ 78f062ab650cf67ae7c14042c4b38411a678e3ec 174686 iceweasel-l10n-es-ar_2.0=
+.0.14+debian-1_all.deb
+ e89b70a6382be70addb6bbd06fbb2c351c057160 161428 iceweasel-l10n-es-es_2.0=
+.0.14+debian-1_all.deb
+ 0dc3fd2125220a135abc79c8267775a83be5ca97 172738 iceweasel-l10n-eu_2.0.0.=
+14+debian-1_all.deb
+ c96fa6910df831649de823a0995674d7af1347f1 174282 iceweasel-l10n-fi_2.0.0.=
+14+debian-1_all.deb
+ 8869a6255e28c25e6c62c1b395367bb203acfae2 192676 iceweasel-l10n-fr_2.0.0.=
+14+debian-1_all.deb
+ ce8836dc354914e6d6c30832628786704948b0ec 186504 iceweasel-l10n-fy-nl_2.0=
+.0.14+debian-1_all.deb
+ c7d3d015e66cbce844f3a6f56df2d9bf60177fad 170960 iceweasel-l10n-ga-ie_2.0=
+.0.14+debian-1_all.deb
+ 7606e77663d49b0831275383db9b6867fbef08cf 190340 iceweasel-l10n-gu-in_2.0=
+.0.14+debian-1_all.deb
+ ffe42a3b9a242c03a05c433daca261b92b63e 167674 iceweasel-l10n-he_2.0.0.=
+14+debian-1_all.deb
+ 7576faa04dae824f35ccc02433503dd5dfc91aee 181688 iceweasel-l10n-hu_2.0.0.=
+14+debian-1_all.deb
+ e52726bf39360aaee010bea86c231a9b6e9603e5 162274 iceweasel-l10n-it_2.0.0.=
+14+debian-1_all.deb
+ 04bf71299aa6950983714096cfa7bd132429decf 182518 iceweasel-l10n-ja_2.0.0.=
+14+debian-1_all.deb
+ 550c2f74976ef7f1bea7dffe23c470dbdde5e45f 195244 iceweasel-l10n-ka_2.0.0.=
+14+debian-1_all.deb
+ 2ca9fe2430d7158839858d2fa0b082bc213731eb 167598 iceweasel-l10n-ko_2.0.0.=
+14+debian-1_all.deb
+ 105c18afb5e2b46cae6f072154a2beabecc352b0 170890 iceweasel-l10n-ku_2.0.0.=
+14+debian-1_all.deb
+ 6e36fa5f5477bc6387597f144eecf65ac1125004 183660 iceweasel-l10n-lt_2.0.0.=
+14+debian-1_all.deb
+ cc7b5d8ac0f51d42858f101e2cc786478760111a 178202 iceweasel-l10n-mk_2.0.0.=
+14+debian-1_all.deb
+ 312cc5d4a1852d9ca1e30c29a929d26415aae3ad 177388 iceweasel-l10n-mn_2.0.0.=
+14+debian-1_all.deb
+ 95f325c8c63c0fabde807fd871ea96b6ce16c4b5 182784 iceweasel-l10n-nb-no_2.0=
+.0.14+debian-1_all.deb
+ 691cae2575a66af13c6adce47f937d01dd679e5b 190156 iceweasel-l10n-nl_2.0.0.=
+14+debian-1_all.deb
+ 68d43fe81c371a1f180e155923e1a06e77ff23cb 180714 iceweasel-l10n-nn-no_2.0=
+.0.14+debian-1_all.deb
+ 8e002ef35d8d0f2bee7df9041cd75611ca3e8bbc 178678 iceweasel-l10n-pa-in_2.0=
+.0.14+debian-1_all.deb
+ fd2eff1313a17e2a7a894e2bfe4b349c4db24fe5 190690 iceweasel-l10n-pl_2.0.0.=
+14+debian-1_all.deb
+ 8f2b718e6ac6b4c455425196055e0acc61acd3a3 172308 iceweasel-l10n-pt-br_2.0=
+.0.14+debian-1_all.deb
+ 10576cef2ea699c6bf814fe8d0279cce47839504 172336 iceweasel-l10n-pt-pt_2.0=
+.0.14+debian-1_all.deb
+ 1ae00f034ca61ace17afd392cd4c650fc5894c41 176640 iceweasel-l10n-ro_2.0.0.=
+14+debian-1_all.deb
+ 880ca1af96ae2747fecb2572be9be2eb3c835033 184262 iceweasel-l10n-ru_2.0.0.=
+14+debian-1_all.deb
+ ad56596a3a9f2121488d9a3a8dc646a8f1e31fc4 184664 iceweasel-l10n-sk_2.0.0.=
+14+debian-1_all.deb
+ e442a42c8e0818f1b9c02cde11c3b2b9ffcbf3ac 172992 iceweasel-l10n-sl_2.0.0.=
+14+debian-1_all.deb
+ 415bc184c6b02279a8ebbad4723d803243af7e9e 185118 iceweasel-l10n-sv-se_2.0=
+.0.14+debian-1_all.deb
+ f17009e41f8ca69164f0f4f1fa8ac8b4deca2de2 167498 iceweasel-l10n-tr_2.0.0.=
+14+debian-1_all.deb
+ 131660a692e5acf10b2d7e3b8868ef1b60f48c06 176834 iceweasel-l10n-uk_2.0.0.=
+14+debian-1_all.deb
+ ce34f34eeddf2bdeab00c11e822bec9086468ed2 156958 iceweasel-l10n-zh-cn_2.0=
+.0.14+debian-1_all.deb
+ 801f8c0daae31a147c6bbcf8b071313f13cdfe2f 160346 iceweasel-l10n-zh-tw_2.0=
+.0.14+debian-1_all.deb
+ b12a6f3f51565708b3111fefa13958593ed4826b 166226 iceweasel-l10n-cy-gb_2.0=
+.0.14+debian-1_all.deb
+ 3209882c301be3c28c8be4a4aae77e49bc65da24 188580 iceweasel-l10n-dz-bt_2.0=
+.0.14+debian-1_all.deb
+ fc2e4f9bfc3a48d051182498701d8f7ee59f7562 177642 iceweasel-l10n-et-ee_2.0=
+.0.14+debian-1_all.deb
+ 5f967765332a6c6b5527b934fbda16759d5c716e 181982 iceweasel-l10n-fa-ir_2.0=
+.0.14+debian-1_all.deb
+ bc77e283e9a38b28b06c8ec280654c1353365c95 194248 iceweasel-l10n-fur-it_2.=
+0.0.14+debian-1_all.deb
+ 1e39a38e34d56d26ad466f55f53a2fa949919068 167004 iceweasel-l10n-gl-es_2.0=
+.0.14+debian-1_all.deb
+ 72ee4af67bed37db6a54e8d976577fcfd3124cef 179210 iceweasel-l10n-ne-np_2.0=
+.0.14+debian-1_all.deb
+ 7b625d786cd4b3783961ef69256c2c6b928dca6f 17324 iceweasel-l10n-uk-ua_2.0.=
+0.14+debian-1_all.deb
+Checksums-Sha256:=20
+ 7295fd7615b5101b8cdd44db2a721e8d343ef3aa848acfa0798bb3b052f86252 2162 ic=
+eweasel-l10n_2.0.0.14+debian-1.dsc
+ bb6b84fe87b4bc8b69e9f748ce5d9f044838e78d83d3f75834d143676454f932 8408742=
+ iceweasel-l10n_2.0.0.14+debian.orig.tar.gz
+ 23ee44e227725f3eba705ab2d32533b81817fe8de7864f03667d5f21e9332b7c 137319 =
+iceweasel-l10n_2.0.0.14+debian-1.diff.gz
+ a397bc1cb320ce2fa390978cc93d6fa73cfa3b1d5e31cff840b3fb491ddb77c0 17572 i=
+ceweasel-l10n-all_2.0.0.14+debian-1_all.deb
+ 879fb102edf8a220fd8b7adb3f2c464f6507413f991cf7f47518ab2b56c93590 166396 =
+iceweasel-l10n-af_2.0.0.14+debian-1_all.deb
+ 5ed1b360bfe54c237089d00a173cb01c4ebb509a20e70b9fbd2d62d695acd1ec 177998 =
+iceweasel-l10n-ar_2.0.0.14+debian-1_all.deb
+ 125cb7a9f5acad5515c325cb9c0b1bd8f65e488b9b5fa77961a0da72e0ae504d 179166 =
+iceweasel-l10n-be_2.0.0.14+debian-1_all.deb
+ 1fd9dd4d8d47d9c97fcbdb2629bfb80252a1310aa609e362435f5caf6cfab1dd 187964 =
+iceweasel-l10n-bg_2.0.0.14+debian-1_all.deb
+ cc6391552775c1b96d7d647a59244fb3b4680229bbae6567cbf466eba4c68d23 189710 =
+iceweasel-l10n-ca_2.0.0.14+debian-1_all.deb
+ 11957000afeeb11394cda2a76ac448debcaa23705678fabdae74f6b3aa83bf08 188396 =
+iceweasel-l10n-cs_2.0.0.14+debian-1_all.deb
+ 5b32de1207155c53b1664740ff95aacf8233758aeb9434ac5d1221ecbdfe9515 170776 =
+iceweasel-l10n-da_2.0.0.14+debian-1_all.deb
+ 46c4e7d6e23d1b31f8db46abcbec65ea9a9674c0f47e09d4ce49ce12a43e8681 170804 =
+iceweasel-l10n-de_2.0.0.14+debian-1_all.deb
+ b55a8d83dad5d166d72182b118150167d64a86ce318689bd1d7db5271ad5078f 187524 =
+iceweasel-l10n-el_2.0.0.14+debian-1_all.deb
+ 1182f5a12501fc8b4402aba4c3b0e216e44aff56df8a534a3173e95aa68c32b6 174470 =
+iceweasel-l10n-en-gb_2.0.0.14+debian-1_all.deb
+ ce7cfb20f663ed342a2afb480d590f3c7a5d753ce1ac6bc84261232845d85492 174686 =
+iceweasel-l10n-es-ar_2.0.0.14+debian-1_all.deb
+ f8b9a3d36a0588d6c1f81ba9bdf86395f7f3291170ac4f4c0cc451056abc9300 161428 =
+iceweasel-l10n-es-es_2.0.0.14+debian-1_all.deb
+ 60726eb1ea30e9dc2285611e7b07a3f17f27e75ee0cccf69335016ffeb0983af 172738 =
+iceweasel-l10n-eu_2.0.0.14+debian-1_all.deb
+ edea95a1dc388d1072f033ad0a29db58d955a15c8affabb3b5d6e80d3b8bbb8b 174282 =
+iceweasel-l10n-fi_2.0.0.14+debian-1_all.deb
+ 7905ccfcfb26dc5a771bd077276718d5b16640afe58eb12fd36f2d183407d1b6 192676 =
+iceweasel-l10n-fr_2.0.0.14+debian-1_all.deb
+ f0ad827809c0b7329688abd6cac96684e152b456b0cb5940767ee583fb18201d 186504 =
+iceweasel-l10n-fy-nl_2.0.0.14+debian-1_all.deb
+ f8bbd7fc0b24c0b68ce2d14174ee15d6d68a3e60dd5bf035154120792d163fc7 170960 =
+iceweasel-l10n-ga-ie_2.0.0.14+debian-1_all.deb
+ c3ee8e180a97ab917fec08d2fb34c1bba5b78845d78f1c72fd899c0da9058b55 190340 =
+iceweasel-l10n-gu-in_2.0.0.14+debian-1_all.deb
+ 8edd284407b8eeacab5bf21ae8a0dbae4155a72fb70bba9bbc0b4cb4e164b1df 167674 =
+iceweasel-l10n-he_2.0.0.14+debian-1_all.deb
+ 450c1a375d8d50047647d5aff976a762172b3685b26cf46801207bdb042f49a3 181688 =
+iceweasel-l10n-hu_2.0.0.14+debian-1_all.deb
+ 7542abe8108328eeb325ace568230ab815596cd5763d7cd571513a7e04d45345 162274 =
+iceweasel-l10n-it_2.0.0.14+debian-1_all.deb
+ d794c55babc87be46ff656afbfb2c839a6db3c021097ea051256206a7be10452 182518 =
+iceweasel-l10n-ja_2.0.0.14+debian-1_all.deb
+ 3878621aff9e47c9037bbe0ebe79ff036509d9837ad44f0e68cbb3bbc4e70fde 195244 =
+iceweasel-l10n-ka_2.0.0.14+debian-1_all.deb
+ 7b939db7625af04cb48cfa8b174e885677bccead67fd6516e3a75caaaa36a481 167598 =
+iceweasel-l10n-ko_2.0.0.14+debian-1_all.deb
+ 359c570691fd3b2f2381dfd1a4f95c43c0f011ceea1d88e473534deda5cd0500 170890 =
+iceweasel-l10n-ku_2.0.0.14+debian-1_all.deb
+ 589452399145eb387b2defaacc2a084043cf0c3d981c6926bb1eb1b179b5c836 183660 =
+iceweasel-l10n-lt_2.0.0.14+debian-1_all.deb
+ ba958806e05f709e400619e831cf6fc3144d38aa499089dc27ce4045e170fa67 178202 =
+iceweasel-l10n-mk_2.0.0.14+debian-1_all.deb
+ 29319dddf37303dc8c67ec4090674c425ab51d809d41bbdee97f9045d92e6818 177388 =
+iceweasel-l10n-mn_2.0.0.14+debian-1_all.deb
+ 39695415e4b54967149450a886b62fc4bc4f0eff8f8a720b3612ddffc26c47e5 182784 =
+iceweasel-l10n-nb-no_2.0.0.14+debian-1_all.deb
+ 178dc85fa5305df8ea0c66a2469826e6bdc1390202bc10c371d28df3a01efe94 190156 =
+iceweasel-l10n-nl_2.0.0.14+debian-1_all.deb
+ e24f8b25ca0db136d3d8445a1d965bc3573e1ba7340f6aba409bdd6f57ed54b3 180714 =
+iceweasel-l10n-nn-no_2.0.0.14+debian-1_all.deb
+ 05c98ccf297136a1d975fd54a1eafe3ae743ba2a6661ae03468c6edd7947f989 178678 =
+iceweasel-l10n-pa-in_2.0.0.14+debian-1_all.deb
+ 70b57e90e4b2c6e844407ace0809126438d2dec8e3e5b78c5fd8dc1ba0462ec7 190690 =
+iceweasel-l10n-pl_2.0.0.14+debian-1_all.deb
+ 2f3af584da18937dae21571fe8ba28d14d428c6f96d81b2eab145a80be189f82 172308 =
+iceweasel-l10n-pt-br_2.0.0.14+debian-1_all.deb
+ 7d9a8da82d8e570ebda91d1b3713f8362266ef1ab0ebf0424dd3ff4f68f72852 172336 =
+iceweasel-l10n-pt-pt_2.0.0.14+debian-1_all.deb
+ c8df51a2c2a966f3a1e792f971435412e149539af26b557363946d4a8d851a46 176640 =
+iceweasel-l10n-ro_2.0.0.14+debian-1_all.deb
+ cf7735145e2d6cbae6a476e8f558da1ab5d8c70110d4084668b4612ce46b508c 184262 =
+iceweasel-l10n-ru_2.0.0.14+debian-1_all.deb
+ 4ba0bc05de54366631120d492ea5fa3212643dd80b12bcec7c1be705751145df 184664 =
+iceweasel-l10n-sk_2.0.0.14+debian-1_all.deb
+ c630154032eb7b67f02ce3526cf67390272a82871226a2545069923a6951f431 172992 =
+iceweasel-l10n-sl_2.0.0.14+debian-1_all.deb
+ b4cbb47b4c42cc1b102bec7171261afa6be077f629e5f8285257f15db6b597f8 185118 =
+iceweasel-l10n-sv-se_2.0.0.14+debian-1_all.deb
+ 29ed19668fddf9f619ff236d180d5116f1e076e8aebdf6ff27dabaec9f77f7d0 167498 =
+iceweasel-l10n-tr_2.0.0.14+debian-1_all.deb
+ 094093ccf7c4df62f07ae148307d02b5a489e82d731b3c4012e9e5acfc56078a 176834 =
+iceweasel-l10n-uk_2.0.0.14+debian-1_all.deb
+ 7e366215c36201a2b2dbe771000009dcc0b8aa66f4cce6934e64fbf4e7c3f26c 156958 =
+iceweasel-l10n-zh-cn_2.0.0.14+debian-1_all.deb
+ e549c61fa70037449d0e36724a7f3d2df5e4e1c900b40512acaf942c7fd24717 160346 =
+iceweasel-l10n-zh-tw_2.0.0.14+debian-1_all.deb
+ 7eb4834f790c22b16eff146863b5f493665afb3d09a7120f59e29ab9cf48a1f8 166226 =
+iceweasel-l10n-cy-gb_2.0.0.14+debian-1_all.deb
+ 017de6c472e7765215919f76f1e3a0608c92050b01d51d62a00d5337c9fb0958 188580 =
+iceweasel-l10n-dz-bt_2.0.0.14+debian-1_all.deb
+ f29937195ed111a47212a02f0a9d8e1c451e42285a20438eaf054be55f4b3d7a 177642 =
+iceweasel-l10n-et-ee_2.0.0.14+debian-1_all.deb
+ e46ee62df535a51afc99493650e5dfe388f855124bb14c0269962046116934a9 181982 =
+iceweasel-l10n-fa-ir_2.0.0.14+debian-1_all.deb
+ 3fba5339e05e85393957ad8d6b97847f032c5cc2db1c33fad43f8d3036d55a8f 194248 =
+iceweasel-l10n-fur-it_2.0.0.14+debian-1_all.deb
+ ce743ea4c81cca2267a1f3187c69cf9156c0f6a955629f4837accfa88a139807 167004 =
+iceweasel-l10n-gl-es_2.0.0.14+debian-1_all.deb
+ 2337c833f59d8deb43d6bd879d1b1340a7f22d7955b3f3af767ed38119c00afe 179210 =
+iceweasel-l10n-ne-np_2.0.0.14+debian-1_all.deb
+ 7380a04efac360b705112fa42ef7734180655009a55a2411f64b7cc4da296603 17324 i=
+ceweasel-l10n-uk-ua_2.0.0.14+debian-1_all.deb
+Files:=20
+ 3116acd23e1ad60d3374fb8337cbb03f 2162 web optional iceweasel-l10n_2.0.0.=
+14+debian-1.dsc
+ 621f829c95cd3aba293acacc0e45c6f4 8408742 web optional iceweasel-l10n_2.0=
+.0.14+debian.orig.tar.gz
+ f29737c2283fae7a193c3e113aa19bd4 137319 web optional iceweasel-l10n_2.0.=
+0.14+debian-1.diff.gz
+ eb0e9385cf5f4d539058df6759a0ebd2 17572 web optional iceweasel-l10n-all_2=
+.0.0.14+debian-1_all.deb
+ a345bb07d0ef6a6565b0d7a049c50f2f 166396 web optional iceweasel-l10n-af_2=
+.0.0.14+debian-1_all.deb
+ e49dda71afa6df8fd7198e2d0483b59d 177998 web optional iceweasel-l10n-ar_2=
+.0.0.14+debian-1_all.deb
+ a5bc60fd1b72628e75066853dc7b8c5e 179166 web optional iceweasel-l10n-be_2=
+.0.0.14+debian-1_all.deb
+ 78f2e88b28a5609e8e84de8974919870 187964 web optional iceweasel-l10n-bg_2=
+.0.0.14+debian-1_all.deb
+ 5db1c3de22036fcde8fcb26a951e4 189710 web optional iceweasel-l10n-ca_2=
+.0.0.14+debian-1_all.deb
+ 59ca5facec345b6e87220851e9c09b9c 188396 web optional iceweasel-l10n-cs_2=
+.0.0.14+debian-1_all.deb
+ b19704dd20138b726f6d4483ed3e8c9d 170776 web optional iceweasel-l10n-da_2=
+.0.0.14+debian-1_all.deb
+ df912a9c3b393f268396c64fac260771 170804 web optional iceweasel-l10n-de_2=
+.0.0.14+debian-1_all.deb
+ 900977a9401fb79d137cf67d98b7ec18 187524 web optional iceweasel-l10n-el_2=
+.0.0.14+debian-1_all.deb
+ 65c88928e38625fb4244ab78d29d3ca4 174470 web optional iceweasel-l10n-en-g=
+b_2.0.0.14+debian-1_all.deb
+ 12bd6c4f7ca5a71d814887268f32120c 174686 web optional iceweasel-l10n-es-a=
+r_2.0.0.14+debian-1_all.deb
+ 86e48ec0a7892986cc259646a93b81f5 161428 web optional iceweasel-l10n-es-e=
+s_2.0.0.14+debian-1_all.deb
+ 335092f0e49c11510df3781381614040 172738 web optional iceweasel-l10n-eu_2=
+.0.0.14+debian-1_all.deb
+ 0a6ea107b7461ba035ad702422b85df5 174282 web optional iceweasel-l10n-fi_2=
+.0.0.14+debian-1_all.deb
+ 56cb79bfb43a343d971704e87c0dc31c 192676 web optional iceweasel-l10n-fr_2=
+.0.0.14+debian-1_all.deb
+ acc7c545837b348b0b0cec8779da219c 186504 web optional iceweasel-l10n-fy-n=
+l_2.0.0.14+debian-1_all.deb
+ 89f2d9e70a2023d5acab6dbd65b51b8f 170960 web optional iceweasel-l10n-ga-i=
+e_2.0.0.14+debian-1_all.deb
+ 1325c7d88114d977dcb06a29f865ca22 190340 web optional iceweasel-l10n-gu-i=
+n_2.0.0.14+debian-1_all.deb
+ f0b00872f0bcb9d905eea23f9806182b 167674 web optional iceweasel-l10n-he_2=
+.0.0.14+debian-1_all.deb
+ 801efeac9cb40d6adb84e343ad0e4f23 181688 web optional iceweasel-l10n-hu_2=
+.0.0.14+debian-1_all.deb
+ 07d72500fbd2451cb4e2abf935094a99 162274 web optional iceweasel-l10n-it_2=
+.0.0.14+debian-1_all.deb
+ 785bbdb6691165e84d419970419e0917 182518 web optional iceweasel-l10n-ja_2=
+.0.0.14+debian-1_all.deb
+ affeadf13a61327e403cdaf2f4b49caa 195244 web optional iceweasel-l10n-ka_2=
+.0.0.14+debian-1_all.deb
+ 7e0f4559ca6186999318b4e91cded762 167598 web optional iceweasel-l10n-ko_2=
+.0.0.14+debian-1_all.deb
+ d8cd86f95fa5aab51f7ecf2c2a146d11 170890 web optional iceweasel-l10n-ku_2=
+.0.0.14+debian-1_all.deb
+ 8ca5b6b8f9b55dcb9feff6022627a5be 183660 web optional iceweasel-l10n-lt_2=
+.0.0.14+debian-1_all.deb
+ 9a9c60c78e392542212d2a7d4b0424d6 178202 web optional iceweasel-l10n-mk_2=
+.0.0.14+debian-1_all.deb
+ 090d2b4952b0a14cda91b34c7da7e636 177388 web optional iceweasel-l10n-mn_2=
+.0.0.14+debian-1_all.deb
+ f9afacfafee384a57beb79d02f014960 182784 web optional iceweasel-l10n-nb-n=
+o_2.0.0.14+debian-1_all.deb
+ 05fefb20c429363d1f711cf44b883f43 190156 web optional iceweasel-l10n-nl_2=
+.0.0.14+debian-1_all.deb
+ 0c4d16070f606a907b18173079f65878 180714 web optional iceweasel-l10n-nn-n=
+o_2.0.0.14+debian-1_all.deb
+ eabbe0c32d76aea3ab18b2c3ead5ccdf 178678 web optional iceweasel-l10n-pa-i=
+n_2.0.0.14+debian-1_all.deb
+ 1a955328c1ff2c8bbbad293d9261b7e6 190690 web optional iceweasel-l10n-pl_2=
+.0.0.14+debian-1_all.deb
+ 3a070599b8289c07af88b93aa3503d86 172308 web optional iceweasel-l10n-pt-b=
+r_2.0.0.14+debian-1_all.deb
+ 11980fae53507e09ba7fe43d7d4831db 172336 web optional iceweasel-l10n-pt-p=
+t_2.0.0.14+debian-1_all.deb
+ ccfb083ff055a7f8e90e8d09e2a0f62b 176640 web optional iceweasel-l10n-ro_2=
+.0.0.14+debian-1_all.deb
+ 59eb402ae6fdb175e8999a73c0cfafd0 184262 web optional iceweasel-l10n-ru_2=
+.0.0.14+debian-1_all.deb
+ a02c85ab7f534772108096ce6068d96f 184664 web optional iceweasel-l10n-sk_2=
+.0.0.14+debian-1_all.deb
+ 6e7d087ab5e13e4a5ad2c5157d0ad1bd 172992 web optional iceweasel-l10n-sl_2=
+.0.0.14+debian-1_all.deb
+ 7e370e49920d1f7ff1ac6283b9fbe5e1 185118 web optional iceweasel-l10n-sv-s=
+e_2.0.0.14+debian-1_all.deb
+ 57811f3670b96fcdd27b646ad5f86c54 167498 web optional iceweasel-l10n-tr_2=
+.0.0.14+debian-1_all.deb
+ 26b32d3bb5362925c39a44c93a43bf42 176834 web optional iceweasel-l10n-uk_2=
+.0.0.14+debian-1_all.deb
+ 41f62d6dff5f5ecc20c77443431a6434 156958 web optional iceweasel-l10n-zh-c=
+n_2.0.0.14+debian-1_all.deb
+ 719c0b98e2e846f86140c5ee742bccb1 160346 web optional iceweasel-l10n-zh-t=
+w_2.0.0.14+debian-1_all.deb
+ e01492f7a903e8b17d0a0c8f1f75bb64 166226 web optional iceweasel-l10n-cy-g=
+b_2.0.0.14+debian-1_all.deb
+ 9579e54a2872832100e629eb328963dd 188580 web optional iceweasel-l10n-dz-b=
+t_2.0.0.14+debian-1_all.deb
+ a4ad62e4d921ae5072d56ea259012c7a 177642 web optional iceweasel-l10n-et-e=
+e_2.0.0.14+debian-1_all.deb
+ 0698f20c6a0744be3fe9be618f20fbf8 181982 web optional iceweasel-l10n-fa-i=
+r_2.0.0.14+debian-1_all.deb
+ 8bdb8584172d3b46740759b8eecf4c37 194248 web optional iceweasel-l10n-fur-=
+it_2.0.0.14+debian-1_all.deb
+ 3d74316f116870b391173469f35c2701 167004 web optional iceweasel-l10n-gl-e=
+s_2.0.0.14+debian-1_all.deb
+ 1625ece4c49389b48315fe0d1b616dae 179210 web optional iceweasel-l10n-ne-n=
+p_2.0.0.14+debian-1_all.deb
+ 13935ef2aa52d1a0929cabdbc964a14b 17324 web optional iceweasel-l10n-uk-ua=
+_2.0.0.14+debian-1_all.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICujD+C5cwEsrK54RAo4CAJkBGqB1P7aGvXdnitNdHfyKqstG+ACeNt1Z
+gwrFkQFvK5G06i39QTZiCNg=3D
+=3DjGfB
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+iceweasel-l10n-af_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-af_2.0.0.14+debian-1_all.d=
+eb
+iceweasel-l10n-all_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-all_2.0.0.14+debian-1_all.=
+deb
+iceweasel-l10n-ar_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-ar_2.0.0.14+debian-1_all.d=
+eb
+iceweasel-l10n-be_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-be_2.0.0.14+debian-1_all.d=
+eb
+iceweasel-l10n-bg_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-bg_2.0.0.14+debian-1_all.d=
+eb
+iceweasel-l10n-ca_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-ca_2.0.0.14+debian-1_all.d=
+eb
+iceweasel-l10n-cs_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-cs_2.0.0.14+debian-1_all.d=
+eb
+iceweasel-l10n-cy-gb_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-cy-gb_2.0.0.14+debian-1_al=
+l.deb
+iceweasel-l10n-da_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-da_2.0.0.14+debian-1_all.d=
+eb
+iceweasel-l10n-de_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-de_2.0.0.14+debian-1_all.d=
+eb
+iceweasel-l10n-dz-bt_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-dz-bt_2.0.0.14+debian-1_al=
+l.deb
+iceweasel-l10n-el_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-el_2.0.0.14+debian-1_all.d=
+eb
+iceweasel-l10n-en-gb_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-en-gb_2.0.0.14+debian-1_al=
+l.deb
+iceweasel-l10n-es-ar_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-es-ar_2.0.0.14+debian-1_al=
+l.deb
+iceweasel-l10n-es-es_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-es-es_2.0.0.14+debian-1_al=
+l.deb
+iceweasel-l10n-et-ee_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-et-ee_2.0.0.14+debian-1_al=
+l.deb
+iceweasel-l10n-eu_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-eu_2.0.0.14+debian-1_all.d=
+eb
+iceweasel-l10n-fa-ir_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-fa-ir_2.0.0.14+debian-1_al=
+l.deb
+iceweasel-l10n-fi_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-fi_2.0.0.14+debian-1_all.d=
+eb
+iceweasel-l10n-fr_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-fr_2.0.0.14+debian-1_all.d=
+eb
+iceweasel-l10n-fur-it_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-fur-it_2.0.0.14+debian-1_a=
+ll.deb
+iceweasel-l10n-fy-nl_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-fy-nl_2.0.0.14+debian-1_al=
+l.deb
+iceweasel-l10n-ga-ie_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-ga-ie_2.0.0.14+debian-1_al=
+l.deb
+iceweasel-l10n-gl-es_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-gl-es_2.0.0.14+debian-1_al=
+l.deb
+iceweasel-l10n-gu-in_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-gu-in_2.0.0.14+debian-1_al=
+l.deb
+iceweasel-l10n-he_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-he_2.0.0.14+debian-1_all.d=
+eb
+iceweasel-l10n-hu_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-hu_2.0.0.14+debian-1_all.d=
+eb
+iceweasel-l10n-it_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-it_2.0.0.14+debian-1_all.d=
+eb
+iceweasel-l10n-ja_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-ja_2.0.0.14+debian-1_all.d=
+eb
+iceweasel-l10n-ka_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-ka_2.0.0.14+debian-1_all.d=
+eb
+iceweasel-l10n-ko_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-ko_2.0.0.14+debian-1_all.d=
+eb
+iceweasel-l10n-ku_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-ku_2.0.0.14+debian-1_all.d=
+eb
+iceweasel-l10n-lt_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-lt_2.0.0.14+debian-1_all.d=
+eb
+iceweasel-l10n-mk_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-mk_2.0.0.14+debian-1_all.d=
+eb
+iceweasel-l10n-mn_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-mn_2.0.0.14+debian-1_all.d=
+eb
+iceweasel-l10n-nb-no_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-nb-no_2.0.0.14+debian-1_al=
+l.deb
+iceweasel-l10n-ne-np_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-ne-np_2.0.0.14+debian-1_al=
+l.deb
+iceweasel-l10n-nl_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-nl_2.0.0.14+debian-1_all.d=
+eb
+iceweasel-l10n-nn-no_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-nn-no_2.0.0.14+debian-1_al=
+l.deb
+iceweasel-l10n-pa-in_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-pa-in_2.0.0.14+debian-1_al=
+l.deb
+iceweasel-l10n-pl_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-pl_2.0.0.14+debian-1_all.d=
+eb
+iceweasel-l10n-pt-br_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-pt-br_2.0.0.14+debian-1_al=
+l.deb
+iceweasel-l10n-pt-pt_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-pt-pt_2.0.0.14+debian-1_al=
+l.deb
+iceweasel-l10n-ro_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-ro_2.0.0.14+debian-1_all.d=
+eb
+iceweasel-l10n-ru_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-ru_2.0.0.14+debian-1_all.d=
+eb
+iceweasel-l10n-sk_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-sk_2.0.0.14+debian-1_all.d=
+eb
+iceweasel-l10n-sl_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-sl_2.0.0.14+debian-1_all.d=
+eb
+iceweasel-l10n-sv-se_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-sv-se_2.0.0.14+debian-1_al=
+l.deb
+iceweasel-l10n-tr_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-tr_2.0.0.14+debian-1_all.d=
+eb
+iceweasel-l10n-uk-ua_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-uk-ua_2.0.0.14+debian-1_al=
+l.deb
+iceweasel-l10n-uk_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-uk_2.0.0.14+debian-1_all.d=
+eb
+iceweasel-l10n-zh-cn_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-zh-cn_2.0.0.14+debian-1_al=
+l.deb
+iceweasel-l10n-zh-tw_2.0.0.14+debian-1_all.deb
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n-zh-tw_2.0.0.14+debian-1_al=
+l.deb
+iceweasel-l10n_2.0.0.14+debian-1.diff.gz
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n_2.0.0.14+debian-1.diff.gz
+iceweasel-l10n_2.0.0.14+debian-1.dsc
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n_2.0.0.14+debian-1.dsc
+iceweasel-l10n_2.0.0.14+debian.orig.tar.gz
+  to pool/main/i/iceweasel-l10n/iceweasel-l10n_2.0.0.14+debian.orig.tar.g=
+z
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

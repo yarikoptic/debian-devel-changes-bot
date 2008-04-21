@@ -1,0 +1,119 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 19:31:51 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JneKJ-0000R2-Do
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 19:31:51 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 2FC5F13A514C; Sun, 20 Apr 2008 18:31:46 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id CB0DE13A5135
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 18:31:45 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1Jne6H-0001aJ-UK; Sun, 20 Apr 2008 18:17:17 +0000
+From: Vincent Fourmond <fourmond@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted libsetup-ruby 3.4.1-4 (source all)
+Message-Id: <E1Jne6H-0001aJ-UK@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 18:17:17 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <LZj1UnInfoM.A.10G.Sw4CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301331
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 18:31:46 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.6
+X-Spam-Report: (-2.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.0 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 16:06:04 +0200
+Source: libsetup-ruby
+Binary: libsetup-ruby1.8
+Architecture: source all
+Version: 3.4.1-4
+Distribution: unstable
+Urgency: low
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@l=
+ists.alioth.debian.org>
+Changed-By: Vincent Fourmond <fourmond@debian.org>
+Description:=20
+ libsetup-ruby1.8 - the setup.rb install tool for Ruby
+Changes:=20
+ libsetup-ruby (3.4.1-4) unstable; urgency=3Dlow
+ .
+   * Conforms to Standards 3.7.3
+   * Cleanup doc-base/libsetup-ruby
+Checksums-Sha1:=20
+ 36f0bd3d388183229373508d80eaa33cd851e58d 1356 libsetup-ruby_3.4.1-4.dsc
+ 8e86f31da01183cf58096abe5f7a182d8843008f 2577 libsetup-ruby_3.4.1-4.diff=
+.gz
+ c8f17fde01c4a359e286b84f0b505c465df1db6d 41690 libsetup-ruby1.8_3.4.1-4_=
+all.deb
+Checksums-Sha256:=20
+ f0e1fea166d288d2482b658d87704c890b22d038e7cbc31fa13196626b226eef 1356 li=
+bsetup-ruby_3.4.1-4.dsc
+ b593b2e1503275a09c595d0d8b5f584f08c9e5f17069d016152538fc654f6063 2577 li=
+bsetup-ruby_3.4.1-4.diff.gz
+ 9f6590edb0f332c33cc535b89549430e9a9e0e82dee43736f397a2ecbc3c36b2 41690 l=
+ibsetup-ruby1.8_3.4.1-4_all.deb
+Files:=20
+ 49f5157bf362db001245518b033c5c23 1356 interpreters optional libsetup-rub=
+y_3.4.1-4.dsc
+ 03e93498491137f22b3a8e23b0e76483 2577 interpreters optional libsetup-rub=
+y_3.4.1-4.diff.gz
+ b7d36d9655a2ec774ae6659ebfcf56fa 41690 interpreters optional libsetup-ru=
+by1.8_3.4.1-4_all.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC4f8x/UhwSKygsoRAmWRAKC0O5v4o4vSq7/nbJdXErr0EJFtvACeIgUo
+8V5Qr2sAfNnaqzAzpCAsEPY=3D
+=3Dkp3v
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+libsetup-ruby1.8_3.4.1-4_all.deb
+  to pool/main/libs/libsetup-ruby/libsetup-ruby1.8_3.4.1-4_all.deb
+libsetup-ruby_3.4.1-4.diff.gz
+  to pool/main/libs/libsetup-ruby/libsetup-ruby_3.4.1-4.diff.gz
+libsetup-ruby_3.4.1-4.dsc
+  to pool/main/libs/libsetup-ruby/libsetup-ruby_3.4.1-4.dsc
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

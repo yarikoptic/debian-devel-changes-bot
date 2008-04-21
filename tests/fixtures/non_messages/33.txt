@@ -1,0 +1,109 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 09:09:57 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnUcR-0005mz-NE
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 09:09:57 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 9ED5013A4DF6; Sun, 20 Apr 2008 08:09:50 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 5AB1F13A4C67;
+	Sun, 20 Apr 2008 08:09:34 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnUYr-0004CA-KT; Sun, 20 Apr 2008 08:06:09 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#451483: frysk FTBFS on alpha
+Reply-To: Thomas Girard <thomas.g.girard@free.fr>, 451483@bugs.debian.org
+Resent-From: Thomas Girard <thomas.g.girard@free.fr>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 08:06:08 +0000
+Resent-Message-ID: <handler.451483.B451483.120867863712405@bugs.debian.org>
+X-Debian-PR-Message: report 451483
+X-Debian-PR-Package: frysk
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: frysk
+Received: via spool by 451483-submit@bugs.debian.org id=B451483.120867863712405
+          (code B ref 451483); Sun, 20 Apr 2008 08:06:08 +0000
+Received: (at 451483) by bugs.debian.org; 20 Apr 2008 08:03:57 +0000
+X-Amavis-Spam-Status: No, score=-4.0 required=4.0 tests=BAYES_00 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from sd-7866.dedibox.fr ([88.191.47.64])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <thomas.g.girard@free.fr>)
+	id 1JnUWh-0003C6-PW
+	for 451483@bugs.debian.org; Sun, 20 Apr 2008 08:03:57 +0000
+Received: from thomas by sd-7866.dedibox.fr with local (Exim 4.63)
+	(envelope-from <thomas.g.girard@free.fr>)
+	id 1JnUlf-0005ki-GQ; Sun, 20 Apr 2008 10:19:23 +0200
+Date: Sun, 20 Apr 2008 10:19:23 +0200
+From: Thomas Girard <thomas.g.girard@free.fr>
+To: Frank Lichtenheld <djpig@debian.org>, 451483@bugs.debian.org
+Message-ID: <20080420081923.GB9293@sd-7866.dedibox.fr>
+References: <20071116091731.GT7943@feynman.djpig.de>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20071116091731.GT7943@feynman.djpig.de>
+User-Agent: Mutt/1.5.13 (2006-08-11)
+Resent-Date: Sun, 20 Apr 2008 08:06:09 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343349
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -41.0
+X-Spam-Report: (-41.0 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	12 AWL                    AWL: From: address is in the auto white-list
+
+Hello,
+
+sorry for the late reply.
+
+On Fri, Nov 16, 2007 at 10:17:31AM +0100, Frank Lichtenheld wrote:
+> Package: frysk
+> Version: 0.0.1.2007.07.17-1
+> Severity: important
+> 
+> Hi,
+> 
+> your package failed to build from source.
+
+Yes, I don't think frysk is supported on alpha (yet). I'll adjust the
+Architecture: field in the next upload.
+
+Thanks,
+
+Thomas
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

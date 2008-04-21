@@ -1,0 +1,249 @@
+From bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org Sun Apr 20 15:05:14 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org>)
+	id 1JnaAH-0007Li-Cm
+	for ddc@ddc.chris-lamb.co.uk; Sun, 20 Apr 2008 15:05:13 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id C7ED113A5059; Sun, 20 Apr 2008 14:05:06 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id BA9E513A5052;
+	Sun, 20 Apr 2008 14:05:03 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jna8I-0002sv-Qb; Sun, 20 Apr 2008 14:03:06 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Emilio Pozuelo Monfort <pochu@ubuntu.com>
+Subject: Bug#472173: marked as done (totem: libffi built from separate 
+ source, pleae b-d on libffi-dev)
+Message-ID: <handler.472173.D472173.120870003123227.ackdone@bugs.debian.org>
+References: <480B4C76.7020208@ubuntu.com>
+ <200803221307.m2MD7mQ9005630@bolero.cs.tu-berlin.de>
+X-Debian-PR-Message: closed 472173
+X-Debian-PR-Package: totem
+X-Debian-PR-Source: totem
+Content-Type: multipart/mixed; boundary="----------=_1208700186-10949-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 14:03:06 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <fLvzM3hCmxB.A.ViG.S20CIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/132999
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 14:05:06 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208700186-10949-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 16:00:22 +0200
+with message-id <480B4C76.7020208@ubuntu.com>
+and subject line Re: Bug#472173: totem: libffi built from separate source, =
+pleae b-d on libffi-dev
+has caused the Debian Bug report #472173,
+regarding totem: libffi built from separate source, pleae b-d on libffi-dev
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+472173: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D472173
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208700186-10949-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at maintonly) by bugs.debian.org; 22 Mar 2008 13:07:50 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.0 required=4.0 tests=BAYES_00,HAS_PACKAGE,
+	UNPARSEABLE_RELAY autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <doko@cs.tu-berlin.de>
+Received: from mail.cs.tu-berlin.de ([130.149.17.13])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <doko@cs.tu-berlin.de>)
+	id 1Jd3Ru-0006VK-KC
+	for maintonly@bugs.debian.org; Sat, 22 Mar 2008 13:07:50 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by localhost-12225.cs.tu-berlin.de (Postfix) with ESMTP id 9A1791FC01
+	for <maintonly@bugs.debian.org>; Sat, 22 Mar 2008 14:07:49 +0100 (MET)
+Received: from mailhost.cs.tu-berlin.de ([127.0.0.1])
+	by localhost (mail.cs.tu-berlin.de [127.0.0.1]) (amavisd-new, port 12224)
+	with ESMTP id vPZjVSRUOMcj 07348-06 for <maintonly@bugs.debian.org>;
+	Sat, 22 Mar 2008 14:07:49 +0100 (MET) 16662
+Received: from bolero.cs.tu-berlin.de (bolero.cs.tu-berlin.de [130.149.19.1])
+	(using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by mailhost.cs.tu-berlin.de (Postfix) with ESMTP
+	for <maintonly@bugs.debian.org>; Sat, 22 Mar 2008 14:07:49 +0100 (MET)
+Received: (from doko@localhost)
+	by bolero.cs.tu-berlin.de (8.13.8+Sun/8.13.3/Submit) id m2MD7mQ9005630
+	for maintonly@bugs.debian.org; Sat, 22 Mar 2008 14:07:48 +0100 (MET)
+Date: Sat, 22 Mar 2008 14:07:48 +0100 (MET)
+From: Matthias Klose <doko@cs.tu-berlin.de>
+Message-Id: <200803221307.m2MD7mQ9005630@bolero.cs.tu-berlin.de>
+To: maintonly@bugs.debian.org
+Subject: totem: libffi built from separate source, pleae b-d on libffi-dev
+X-Virus-Scanned: amavisd-new at cs.tu-berlin.de (including SpamAssassin)
+Delivered-To: maintonly@bugs.debian.org
+
+Package: totem
+Severity: important
+Usertags: libffi
+
+After 10 years libffi does have a new upstream release again; this
+version is now packaged independent from GCC; once all packages are
+converted to use the binaries built from the separate libffi, GCC
+will stop building libffi packages.
+
+Please replace the current build dependencies lib*ffi4-dev with
+lib*ffi-dev and rebuild the package.
+
+
+
+------------=_1208700186-10949-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 472173-done) by bugs.debian.org; 20 Apr 2008 14:00:31 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.0 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER,
+	MURPHY_DRUGS_REL8 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <pochu27@gmail.com>
+Received: from fk-out-0910.google.com ([209.85.128.185])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <pochu27@gmail.com>)
+	id 1Jna5n-00061v-Kl
+	for 472173-done@bugs.debian.org; Sun, 20 Apr 2008 14:00:31 +0000
+Received: by fk-out-0910.google.com with SMTP id z22so2030072fkz.9
+        for <472173-done@bugs.debian.org>; Sun, 20 Apr 2008 07:00:30 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:user-agent:mime-version:to:subject:references:in-reply-to:x-enigmail-version:content-type:sender;
+        bh=+f8BdVNzU3Od984zhNttVYUrTRprqMOl5DXkGzPQVEg=;
+        b=hAQJ1sJYRmNPpwM5MP+RZIeb4IyQWO2w3mmGuU7fK4rP4tjHz9oWYN6hFR9f/WyuPYiXKTdkFEB2VOPMka+sc02yOTrF8hp/75NLRlapDgtx2uxIlRtFG6R8YPXPEPZwtQynNRTa/mxaq5cSObnlehfoqQntJLAz1hnEb0yVb64=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:user-agent:mime-version:to:subject:references:in-reply-to:x-enigmail-version:content-type:sender;
+        b=rnpuPyV8Ou8/ZHJplfywl1OUimPEM/IqBpDQmmPDCqAFhu192p9jFSGfuDLVbpVrtgIFyuwowR4mPjP2afyHi5wI7z5udMuasR/QMxn0ZGJH5emEz5Y+DweDuiIzt7rjVsySSRrlJDWOTWL6C+h8tlfkLBK2Vmu6Cj76og5rM6Q=
+Received: by 10.78.189.5 with SMTP id m5mr5198024huf.77.1208700029810;
+        Sun, 20 Apr 2008 07:00:29 -0700 (PDT)
+Received: from ?192.168.1.35? ( [88.0.153.177])
+        by mx.google.com with ESMTPS id i7sm24017244nfh.14.2008.04.20.07.00.28
+        (version=SSLv3 cipher=RC4-MD5);
+        Sun, 20 Apr 2008 07:00:29 -0700 (PDT)
+Message-ID: <480B4C76.7020208@ubuntu.com>
+Date: Sun, 20 Apr 2008 16:00:22 +0200
+From: Emilio Pozuelo Monfort <pochu@ubuntu.com>
+User-Agent: Thunderbird 2.0.0.12 (X11/20080227)
+MIME-Version: 1.0
+To: Matthias Klose <doko@cs.tu-berlin.de>, 472173-done@bugs.debian.org
+Subject: Re: Bug#472173: totem: libffi built from separate source, pleae b-d
+ on libffi-dev
+References: <200803221307.m2MD7mQ9005630@bolero.cs.tu-berlin.de>
+In-Reply-To: <200803221307.m2MD7mQ9005630@bolero.cs.tu-berlin.de>
+X-Enigmail-Version: 0.95.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+ protocol="application/pgp-signature";
+ boundary="------------enig2D832BE97AAE000EF8E66BBD"
+Sender: Emilio Pozuelo Monfort <pochu27@gmail.com>
+
+This is an OpenPGP/MIME signed message (RFC 2440 and 3156)
+--------------enig2D832BE97AAE000EF8E66BBD
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Version: 2.22.1-1
+
+Matthias Klose wrote:
+> Package: totem
+> Severity: important
+> Usertags: libffi
+>=20
+> After 10 years libffi does have a new upstream release again; this
+> version is now packaged independent from GCC; once all packages are
+> converted to use the binaries built from the separate libffi, GCC
+> will stop building libffi packages.
+>=20
+> Please replace the current build dependencies lib*ffi4-dev with
+> lib*ffi-dev and rebuild the package.
+
+Although totem doesn't build-depend on libffi*-dev, it did depend on libf=
+fi4.
+Now since 2.22.1-1 (which has being successfully built on all supported a=
+rchs)
+it doesn't depend on libffi* at all, probably due to the pygobject fix:
+
+  * 01_pkgconfig-private.patch: new patch, move libffi to
+    Requires.private to prevent pygobject rdeps from depending on it.
+
+
+--------------enig2D832BE97AAE000EF8E66BBD
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: OpenPGP digital signature
+Content-Disposition: attachment; filename="signature.asc"
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC0x7hTV17EoIsv4RAppLAKDBBh6U9AmRNNSLNWA3CbQ4ZZjwUwCeJem1
+BBGldMe5JOxXjfJjcSELLog=
+=CY58
+-----END PGP SIGNATURE-----
+
+--------------enig2D832BE97AAE000EF8E66BBD--
+
+
+------------=_1208700186-10949-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,150 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 19:32:21 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JneKn-0000S3-2A
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 19:32:21 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 1B5D213A519C; Sun, 20 Apr 2008 18:32:07 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id 4BEC813A513F
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 18:32:05 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1Jne6F-0001ZT-1H; Sun, 20 Apr 2008 18:17:15 +0000
+From: Torsten Werner <twerner@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted lazarus 0.9.24-0-7 (source all amd64)
+Message-Id: <E1Jne6F-0001ZT-1H@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 18:17:15 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <85FzVzeqzDJ.A.D6G.mw4CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301333
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 18:32:07 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.6
+X-Spam-Report: (-2.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.0 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 17:06:38 +0200
+Source: lazarus
+Binary: lazarus lazarus-ide lazarus-src lazarus-doc
+Architecture: source amd64 all
+Version: 0.9.24-0-7
+Distribution: unstable
+Urgency: low
+Maintainer: Carlos Laviola <claviola@debian.org>
+Changed-By: Torsten Werner <twerner@debian.org>
+Description:=20
+ lazarus    - Rapid Application Development (RAD) tool for Free Pascal
+ lazarus-doc - Rapid Application Development (RAD) tool for Free Pascal
+ lazarus-ide - Rapid Application Development (RAD) tool for Free Pascal
+ lazarus-src - Rapid Application Development (RAD) tool for Free Pascal
+Changes:=20
+ lazarus (0.9.24-0-7) unstable; urgency=3Dlow
+ .
+   [ Mazen Neifer ]
+   * Added a link of lazbuild tool into /usr/bin
+   * Added man pages for binaries.
+   * Fixed compilation of printer support component.
+ .
+   [ Torsten Werner ]
+   * Add Mazen to Uploaders.
+Checksums-Sha1:=20
+ de9a00e13d4a24fae4fd3890d3e0dcef7e0b6b1f 1476 lazarus_0.9.24-0-7.dsc
+ e4f3bc504b4895b4e1c7caa4a64bb9bab54b13fb 11009 lazarus_0.9.24-0-7.diff.g=
+z
+ fd13a47788ab97af342c411c1395c57ba427c7ad 29631942 lazarus-ide_0.9.24-0-7=
+_amd64.deb
+ 26bc82540e21c880c6f7fb047161cdbf070903a2 13716 lazarus_0.9.24-0-7_all.de=
+b
+ 75a463e76dc7c61c932fde66752dab08abf3fd84 6346058 lazarus-src_0.9.24-0-7_=
+all.deb
+ 2ece23c6dea587df61e51d4aebbe6cac28ef9e44 691856 lazarus-doc_0.9.24-0-7_a=
+ll.deb
+Checksums-Sha256:=20
+ 1a62429c90b8221ab0a8529082b9522b405f2ccc55679c6a5ff7826ca77f4f1b 1476 la=
+zarus_0.9.24-0-7.dsc
+ a7a01f3bc41024d7599287b28bcb5c3169abe81b3121694dcd2f4bed889d37b5 11009 l=
+azarus_0.9.24-0-7.diff.gz
+ ecd8bc4e85868e1694f44f601b14fef33cbf42395d092270a3b7420a528ed01b 2963194=
+2 lazarus-ide_0.9.24-0-7_amd64.deb
+ 60284a3aecc0dbfe277d5b33789796657e45a3e4a73285783a90e729919b3b1b 13716 l=
+azarus_0.9.24-0-7_all.deb
+ 73337ca56f3b151ccac6da06eb13b53503e6e6b79b5738dd838d1762fddea6f1 6346058=
+ lazarus-src_0.9.24-0-7_all.deb
+ 05fe23c4b62e0853ccbd1ae0b89ae591835085ddeb0dc41c2f7e321e08a40ff3 691856 =
+lazarus-doc_0.9.24-0-7_all.deb
+Files:=20
+ dbdf2dcf400a8e80a40cd477bbd7ba21 1476 devel optional lazarus_0.9.24-0-7.=
+dsc
+ 781c2aeba376e957decccdf7a7687a00 11009 devel optional lazarus_0.9.24-0-7=
+.diff.gz
+ a3382bdc549058fede397733f1abceab 29631942 devel optional lazarus-ide_0.9=
+.24-0-7_amd64.deb
+ 7e16e45131494599263155f4ee663b1f 13716 devel optional lazarus_0.9.24-0-7=
+_all.deb
+ 273a51b5fa5ac4d47e2e359946e6e879 6346058 devel optional lazarus-src_0.9.=
+24-0-7_all.deb
+ fd47886a8395f2a0d138b336216978eb 691856 doc optional lazarus-doc_0.9.24-=
+0-7_all.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC4Y1fY3dicTPjsMRAuKBAJsGa+L3Ke60qeK7zL6zVAuEQEwHiwCfarWF
+kQGrfc4ebru71WRb44aZmgQ=3D
+=3Db5x2
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+lazarus-doc_0.9.24-0-7_all.deb
+  to pool/main/l/lazarus/lazarus-doc_0.9.24-0-7_all.deb
+lazarus-ide_0.9.24-0-7_amd64.deb
+  to pool/main/l/lazarus/lazarus-ide_0.9.24-0-7_amd64.deb
+lazarus-src_0.9.24-0-7_all.deb
+  to pool/main/l/lazarus/lazarus-src_0.9.24-0-7_all.deb
+lazarus_0.9.24-0-7.diff.gz
+  to pool/main/l/lazarus/lazarus_0.9.24-0-7.diff.gz
+lazarus_0.9.24-0-7.dsc
+  to pool/main/l/lazarus/lazarus_0.9.24-0-7.dsc
+lazarus_0.9.24-0-7_all.deb
+  to pool/main/l/lazarus/lazarus_0.9.24-0-7_all.deb
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

@@ -1,0 +1,187 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 11:32:04 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnWq0-0006K3-Lg
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 11:32:04 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 30CB413A4F2C; Sun, 20 Apr 2008 10:31:59 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id D128C13A498F
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 10:31:58 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnWN4-0006hr-E8; Sun, 20 Apr 2008 10:02:06 +0000
+From: Francesco Paolo Lovergine <frankie@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted gdal 1.5.1-3 (source i386 all)
+Message-Id: <E1JnWN4-0006hr-E8@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 10:02:06 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <ZaRVYzJeoCD.A.KN.fuxCIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301281
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 10:31:59 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sat, 19 Apr 2008 20:51:48 +0200
+Source: gdal
+Binary: libgdal1-1.5.0 libgdal1-dev libgdal-doc gdal-bin python-gdal libg=
+dal-perl libgdal-ruby1.8 libgdal-ruby
+Architecture: source i386 all
+Version: 1.5.1-3
+Distribution: unstable
+Urgency: low
+Maintainer: Francesco Paolo Lovergine <frankie@debian.org>
+Changed-By: Francesco Paolo Lovergine <frankie@debian.org>
+Description:=20
+ gdal-bin   - Geospatial Data Abstraction Library - Utility programs
+ libgdal-doc - Documentation for the Geospatial Data Abstraction Library
+ libgdal-perl - Perl bindings to the Geospatial Data Abstraction Library
+ libgdal-ruby - Ruby bindings to the Geospatial Data Abstraction Library
+ libgdal-ruby1.8 - Ruby 1.8 bindings to the Geospatial Data Abstraction L=
+ibrary
+ libgdal1-1.5.0 - Geospatial Data Abstraction Library
+ libgdal1-dev - Geospatial Data Abstraction Library - Development files
+ python-gdal - Python bindings to the Geospatial Data Abstraction Library
+Closes: 476657
+Changes:=20
+ gdal (1.5.1-3) unstable; urgency=3Dlow
+ .
+   * Removed old-python stuff still around in debian/rules.
+   * [PATCH] pythonmakefile.dpatch to fix wrong interpreter override in 1=
+.5.1
+     See #2333 on gdal trac.
+     (closes: #476657)
+   * Revised the build/install rules to manage better Swig stuff and
+     specifically Python bindings.
+Checksums-Sha1:=20
+ 99e22d4246b9771df9b7cdf25f7c769fbb9a688e 1912 gdal_1.5.1-3.dsc
+ 84a62afd297595fe1d9d466dfaf6299a564db951 14822 gdal_1.5.1-3.diff.gz
+ c1de3aa8067c91f69aa315b34012d14c3c664391 2414714 libgdal1-1.5.0_1.5.1-3_=
+i386.deb
+ bfe32436bdb61fca351180a316cb660e1888f15b 2751332 libgdal1-dev_1.5.1-3_i3=
+86.deb
+ 80c4e016248e7479dce29afbd70d601aeb243107 127618 gdal-bin_1.5.1-3_i386.de=
+b
+ c9db16b1f8b9cc7c3e83eea198c7700d2e548d74 425448 python-gdal_1.5.1-3_i386=
+.deb
+ df3b8d264b2e286d7e9d6115123e37d476b609b2 303060 libgdal-perl_1.5.1-3_i38=
+6.deb
+ c5deb65d722a3aeb1399f884b1a2041ba8c3c38a 156250 libgdal-ruby1.8_1.5.1-3_=
+i386.deb
+ 2a4a0bb678bc71a8848f34d112d16442c3c2c771 28618 libgdal-ruby_1.5.1-3_i386=
+.deb
+ 3f80af220a23b2f52e3d01190b308f8246151f25 1305940 libgdal-doc_1.5.1-3_all=
+.deb
+Checksums-Sha256:=20
+ 4bdfe1fc1c8112a0729ef0fd78225923cd39366260ac0d1088853d51dcbceb7f 1912 gd=
+al_1.5.1-3.dsc
+ 4756edac3bc5c34533b44ad8d1cf80dd4b583a81a7b7489289b326569694828a 14822 g=
+dal_1.5.1-3.diff.gz
+ aa23e8d01b1201b8f86db61062f3f247ffedd12f0b9473fa9ea577e5fa1934c8 2414714=
+ libgdal1-1.5.0_1.5.1-3_i386.deb
+ b71dfa6f0da0fa13fa53df2b1f587f746ed76e1ea61165ec11ae1bf94ae8def4 2751332=
+ libgdal1-dev_1.5.1-3_i386.deb
+ 838cbd68389d7930bb7cd26cad1752774c824198fae20b07f0ff0fc1a97dd98c 127618 =
+gdal-bin_1.5.1-3_i386.deb
+ d1f8e0fb2a4a36df387f34ebff7fb90051350f5bd2c7fd5e3236358368995085 425448 =
+python-gdal_1.5.1-3_i386.deb
+ 2418c2f47d548f5118be7b78bd57e3269223988d08d9d2bd0f636f4e8b19b788 303060 =
+libgdal-perl_1.5.1-3_i386.deb
+ 587abd5e85efed4bae07b52f7e4bfe06d246c34f68e56a2118e282e8e37e11b9 156250 =
+libgdal-ruby1.8_1.5.1-3_i386.deb
+ 8324ac37aa909e23ec6275b8014ad03988faa628696d1c19338ec7f2058e61ae 28618 l=
+ibgdal-ruby_1.5.1-3_i386.deb
+ a15bc45d991c623438830d9178d931815d48ca4ab3971325e70bc8a7c9184c4a 1305940=
+ libgdal-doc_1.5.1-3_all.deb
+Files:=20
+ 11a9de8b69bbef2d726ccc35cd6596b2 1912 science extra gdal_1.5.1-3.dsc
+ 3f1263dfabc035ce6da8ef48a0215bfb 14822 science extra gdal_1.5.1-3.diff.g=
+z
+ c889219bc8b01624a4acd55f2abbe5b5 2414714 libs extra libgdal1-1.5.0_1.5.1=
+-3_i386.deb
+ 313dad3ed6807299c7ea6aa166db5077 2751332 libdevel extra libgdal1-dev_1.5=
+.1-3_i386.deb
+ d94d0cf28e395439695506b90c77ad44 127618 science extra gdal-bin_1.5.1-3_i=
+386.deb
+ df38b2fbae23f570c28fabc347aacfb7 425448 python extra python-gdal_1.5.1-3=
+_i386.deb
+ 68d65cf755c2e33791a29b4cfcc6c60c 303060 perl extra libgdal-perl_1.5.1-3_=
+i386.deb
+ f9aaf14e63a85b86e836fc88137193ef 156250 interpreters extra libgdal-ruby1=
+.8_1.5.1-3_i386.deb
+ e47445c43c765b348d08b0ffd9a84cfd 28618 interpreters extra libgdal-ruby_1=
+.5.1-3_i386.deb
+ 8345b9b1e10841ed7e2f94e88376d20d 1305940 doc extra libgdal-doc_1.5.1-3_a=
+ll.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICxCzpFNRmenyx0cRAph9AJ4l75JyaDoI8VWMBaDzoKNTGDP59wCeKaxz
+rF3BZ6M99l4Jw3qRq02FsbI=3D
+=3D570K
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+gdal-bin_1.5.1-3_i386.deb
+  to pool/main/g/gdal/gdal-bin_1.5.1-3_i386.deb
+gdal_1.5.1-3.diff.gz
+  to pool/main/g/gdal/gdal_1.5.1-3.diff.gz
+gdal_1.5.1-3.dsc
+  to pool/main/g/gdal/gdal_1.5.1-3.dsc
+libgdal-doc_1.5.1-3_all.deb
+  to pool/main/g/gdal/libgdal-doc_1.5.1-3_all.deb
+libgdal-perl_1.5.1-3_i386.deb
+  to pool/main/g/gdal/libgdal-perl_1.5.1-3_i386.deb
+libgdal-ruby1.8_1.5.1-3_i386.deb
+  to pool/main/g/gdal/libgdal-ruby1.8_1.5.1-3_i386.deb
+libgdal-ruby_1.5.1-3_i386.deb
+  to pool/main/g/gdal/libgdal-ruby_1.5.1-3_i386.deb
+libgdal1-1.5.0_1.5.1-3_i386.deb
+  to pool/main/g/gdal/libgdal1-1.5.0_1.5.1-3_i386.deb
+libgdal1-dev_1.5.1-3_i386.deb
+  to pool/main/g/gdal/libgdal1-dev_1.5.1-3_i386.deb
+python-gdal_1.5.1-3_i386.deb
+  to pool/main/g/gdal/python-gdal_1.5.1-3_i386.deb
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

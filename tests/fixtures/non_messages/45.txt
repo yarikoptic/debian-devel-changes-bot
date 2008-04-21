@@ -1,0 +1,175 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 09:25:16 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnUrC-0005rH-Br
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 09:25:15 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 1896E13A4E90; Sun, 20 Apr 2008 08:25:05 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	MURPHY_DRUGS_REL8,RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 2D6B113A4CA4;
+	Sun, 20 Apr 2008 08:24:46 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnUqD-0001kV-5N; Sun, 20 Apr 2008 08:24:05 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476566: synopsis_0.10-0.3(hppa/experimental): FTBFS: not fixed
+Reply-To: Frank Lichtenheld <djpig@debian.org>, 476566@bugs.debian.org
+Resent-From: Frank Lichtenheld <djpig@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Andreas Fester <Andreas.Fester@gmx.de>
+Resent-Date: Sun, 20 Apr 2008 08:24:04 +0000
+Resent-Message-ID: <handler.476566.B476566.12086797144338@bugs.debian.org>
+X-Debian-PR-Message: report 476566
+X-Debian-PR-Package: synopsis
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: synopsis
+Received: via spool by 476566-submit@bugs.debian.org id=B476566.12086797144338
+          (code B ref 476566); Sun, 20 Apr 2008 08:24:04 +0000
+Received: (at 476566) by bugs.debian.org; 20 Apr 2008 08:21:54 +0000
+X-Amavis-Spam-Status: No, score=-7.8 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FROMDEVELOPER,MURPHY_DRUGS_REL8,VALID_BTS_CONTROL autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from aiolos.lenk.info ([85.214.124.154])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <frank@lichtenheld.de>)
+	id 1JnUo5-00016r-R2; Sun, 20 Apr 2008 08:21:54 +0000
+Received: from herkules.lenk.info
+	([213.239.194.154] helo=smtp.lenk.info ident=Debian-exim)
+	by mail.lenk.info with esmtpsa 
+	(Cipher TLS-1.0:RSA_AES_256_CBC_SHA1:32) (Exim 4.63 1)
+	id 1JnUo3-00010c-4d; Sun, 20 Apr 2008 10:21:51 +0200
+Received: from p4fdd7496.dip.t-dialin.net ([79.221.116.150] helo=feynman.djpig.de)
+	by smtp.lenk.info with esmtpsa 
+	(Cipher TLS-1.0:RSA_AES_256_CBC_SHA1:32) (Exim 4.63 1)
+	id 1JnUo1-0008Ga-3J; Sun, 20 Apr 2008 10:21:49 +0200
+Received: from djpig by feynman.djpig.de with local (Exim 4.69)
+	(envelope-from <frank@lichtenheld.de>)
+	id 1JnUo6-0002FU-DT; Sun, 20 Apr 2008 10:21:54 +0200
+Date: Sun, 20 Apr 2008 10:21:54 +0200
+From: Frank Lichtenheld <djpig@debian.org>
+To: 476566@bugs.debian.org
+Message-ID: <20080420082154.GA15254@feynman.djpig.de>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Resent-Date: Sun, 20 Apr 2008 08:24:05 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343361
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.4
+X-Spam-Report: (-52.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.1 AWL                    AWL: From: address is in the auto white-list
+
+found 476566 0.10-0.3
+thanks
+
+Hi,
+
+your package failed to build from source. Seems your fix didn't work
+
+| Automatic build of synopsis_0.10-0.3 on lofn by sbuild/hppa 98-farm
+| Build started at 20080420-0130
+| ******************************************************************************
+| Checking available source versions...
+| Fetching source files...
+| Reading package lists...
+| Building dependency tree...
+| Need to get 4976kB of source archives.
+| Get:1 http://ftp2.de.debian.org experimental/main synopsis 0.10-0.3 (dsc) [1148B]
+| Get:2 http://ftp2.de.debian.org experimental/main synopsis 0.10-0.3 (tar) [4967kB]
+| Get:3 http://ftp2.de.debian.org experimental/main synopsis 0.10-0.3 (diff) [7652B]
+| Fetched 4976kB in 4s (1021kB/s)
+| Download complete and in download only mode
+| ** Using build dependencies supplied by package:
+| Build-Depends: debhelper (>> 5.0.37.2), dpatch, python-dev, python, python-central (>= 0.5), xutils, libgc-dev, pkg-config, graphviz, bison
+| Checking for already installed source dependencies...
+[...]
+| env \
+| 	  LD_LIBRARY_PATH=$(echo /build/buildd/synopsis-0.10/build/ctemp.*/src/lib) \
+| 	  PYTHONPATH=$(echo /build/buildd/synopsis-0.10/build/lib.*) \
+| 	  SYNOPSIS_IGNORE_CACHE=1 \
+| 	    python2.5 setup.py build_doc --ref-manual --html
+| running build_doc
+| make -C build/ctemp.linux-parisc64/src doc
+| make[1]: Entering directory `/build/buildd/synopsis-0.10/build/ctemp.linux-parisc64/src'
+| parsing /build/buildd/synopsis-0.10/src/Synopsis/Buffer.hh
+| mkdir -p Synopsis/
+| python synopsis.py cxx --output=Synopsis/Buffer.hh.syn /build/buildd/synopsis-0.10/src/Synopsis/Buffer.hh
+| Traceback (most recent call last):
+|   File "synopsis.py", line 35, in <module>
+|     link = link)
+|   File "/build/buildd/synopsis-0.10/build/lib.linux-parisc64-2.5/Synopsis/process.py", line 71, in process
+|     commands[command].process(ir, **props)
+|   File "/build/buildd/synopsis-0.10/build/lib.linux-parisc64-2.5/Synopsis/Parsers/Cxx/__init__.py", line 60, in process
+|     debug = self.debug)
+|   File "/build/buildd/synopsis-0.10/build/lib.linux-parisc64-2.5/Synopsis/Parsers/Cpp/__init__.py", line 46, in process
+|     self.compiler_flags)
+|   File "/build/buildd/synopsis-0.10/build/lib.linux-parisc64-2.5/Synopsis/Parsers/Cpp/Emulator.py", line 433, in get_compiler_info
+|     compiler_list = CompilerList()
+|   File "/build/buildd/synopsis-0.10/build/lib.linux-parisc64-2.5/Synopsis/Parsers/Cpp/Emulator.py", line 294, in __init__
+|     self.load(filename)
+|   File "/build/buildd/synopsis-0.10/build/lib.linux-parisc64-2.5/Synopsis/Parsers/Cpp/Emulator.py", line 365, in load
+|     self.save()
+|   File "/build/buildd/synopsis-0.10/build/lib.linux-parisc64-2.5/Synopsis/Parsers/Cpp/Emulator.py", line 376, in save
+|     os.makedirs(dirname)
+|   File "/usr/lib/python2.5/os.py", line 164, in makedirs
+|     makedirs(head, mode)
+|   File "/usr/lib/python2.5/os.py", line 164, in makedirs
+|     makedirs(head, mode)
+|   File "/usr/lib/python2.5/os.py", line 164, in makedirs
+|     makedirs(head, mode)
+|   File "/usr/lib/python2.5/os.py", line 171, in makedirs
+|     mkdir(name, mode)
+| OSError: [Errno 13] Permission denied: '/home/buildd'
+| make[1]: *** [Synopsis/Buffer.hh.syn] Error 1
+| make[1]: Leaving directory `/build/buildd/synopsis-0.10/build/ctemp.linux-parisc64/src'
+| error: command 'make' failed with exit status 2
+| make: *** [build-stamp] Error 1
+| dpkg-buildpackage: failure: debian/rules build gave error exit status 2
+| ******************************************************************************
+| Build finished at 20080420-0152
+| FAILED [dpkg-buildpackage died]
+
+Full build log(s): http://experimental.ftbfs.de/build.php?&ver=0.10-0.3&pkg=synopsis&arch=hppa
+
+Gruesse,
+-- 
+Frank Lichtenheld <djpig@debian.org>
+www: http://www.djpig.de/
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

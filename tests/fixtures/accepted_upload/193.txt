@@ -1,0 +1,137 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 20:31:42 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnfGE-0000i5-QQ
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 20:31:41 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 0D19E13A51DC; Sun, 20 Apr 2008 19:31:37 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id 8E32C13A519C
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 19:31:36 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1Jnf2U-0004ry-LO; Sun, 20 Apr 2008 19:17:26 +0000
+From: William Pitcock <nenolod@sacredspiral.co.uk>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted libprojectm 1.01-6 (source i386 all)
+Message-Id: <E1Jnf2U-0004ry-LO@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 19:17:26 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <-ApiN2bFKCG.A.9oE.Yo5CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301339
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 19:31:37 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.5
+X-Spam-Report: (-2.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.1 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 13:44:21 -0500
+Source: libprojectm
+Binary: libprojectm-dev libprojectm1-data libprojectm1
+Architecture: source i386 all
+Version: 1.01-6
+Distribution: unstable
+Urgency: low
+Maintainer: William Pitcock <nenolod@sacredspiral.co.uk>
+Changed-By: William Pitcock <nenolod@sacredspiral.co.uk>
+Description:=20
+ libprojectm-dev - Advanced Milkdrop-compatible music visualization libra=
+ry - dev
+ libprojectm1 - Advanced Milkdrop-compatible music visualization library
+ libprojectm1-data - Advanced Milkdrop-compatible music visualization lib=
+rary - data
+Closes: 477051
+Changes:=20
+ libprojectm (1.01-6) unstable; urgency=3Dlow
+ .
+   * Fix a bogus dependency relation. (Closes: #477051)
+Checksums-Sha1:=20
+ b79c2ba7f4c27df74710755853a27b1e0b5ab34a 1248 libprojectm_1.01-6.dsc
+ 136aca4ca24c1900263cfa0781d296bc3a96e 7068 libprojectm_1.01-6.diff.gz
+ 9d34378534c585132efce5168bf67549c46b3ba0 11076 libprojectm-dev_1.01-6_i3=
+86.deb
+ e6224e07ae7eaf27f5b95f6f5a93699a5e4054f7 408562 libprojectm1-data_1.01-6=
+_all.deb
+ 86dd8c75fa9c00f2fe30bd8c19f03b791120f20a 227426 libprojectm1_1.01-6_i386=
+.deb
+Checksums-Sha256:=20
+ 5ed8e635af59a0e2e829372028fac37b592e5098d00fd521e40e6e336c78f526 1248 li=
+bprojectm_1.01-6.dsc
+ 345b5a69ce66c0fc09b237c6d327bdb6c52f8bde39a1b42818df933fc4b04d48 7068 li=
+bprojectm_1.01-6.diff.gz
+ abde4969e1c0ff662efb2298d8b94ee691042df4c9a296e05c8df368845bb8b5 11076 l=
+ibprojectm-dev_1.01-6_i386.deb
+ f3e0e7a44e8f0de5172560bc22198edbf32237d690e485473ed71a457cea9dd4 408562 =
+libprojectm1-data_1.01-6_all.deb
+ f930e287635069e4bbb9c5ad38a17025870c7cba139ac19d9846d8b0b8fa6d0b 227426 =
+libprojectm1_1.01-6_i386.deb
+Files:=20
+ 52953cb43d016c28322af76aed734e44 1248 libs optional libprojectm_1.01-6.d=
+sc
+ 648e7c26c6d75e34d34e61a97264c561 7068 libs optional libprojectm_1.01-6.d=
+iff.gz
+ 0b08cf69511c42eb8fd89b7e680e5417 11076 libdevel optional libprojectm-dev=
+_1.01-6_i386.deb
+ ac126d66ea8ab62dd411e84166ecfd99 408562 libs optional libprojectm1-data_=
+1.01-6_all.deb
+ c6bd97f466a06eed3745c6053d42fd85 227426 libs optional libprojectm1_1.01-=
+6_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC5D2ibPvMsrqrwMRAit+AJ9W0aaZdn3rz9AaHcxm+hKtG0UC9ACcDKgD
+gcGz+fdjqbDJtJFW/AeuPwA=3D
+=3DdIdo
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+libprojectm-dev_1.01-6_i386.deb
+  to pool/main/libp/libprojectm/libprojectm-dev_1.01-6_i386.deb
+libprojectm1-data_1.01-6_all.deb
+  to pool/main/libp/libprojectm/libprojectm1-data_1.01-6_all.deb
+libprojectm1_1.01-6_i386.deb
+  to pool/main/libp/libprojectm/libprojectm1_1.01-6_i386.deb
+libprojectm_1.01-6.diff.gz
+  to pool/main/libp/libprojectm/libprojectm_1.01-6.diff.gz
+libprojectm_1.01-6.dsc
+  to pool/main/libp/libprojectm/libprojectm_1.01-6.dsc
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

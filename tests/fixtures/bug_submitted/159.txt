@@ -1,0 +1,202 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 11:07:43 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnWSO-0006C8-Ba
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 11:07:42 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 09A3813A4EED; Sun, 20 Apr 2008 10:07:35 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-6.6 required=4.0 tests=BAYES_00,FOURLA,
+	IMPRONONCABLE_1,LDO_WHITELIST,MURPHY_WRONG_WORD1,MURPHY_WRONG_WORD2,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id C192C13A4EF0;
+	Sun, 20 Apr 2008 10:07:15 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnWLM-0008Gi-Sv; Sun, 20 Apr 2008 10:00:21 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476941: f-spot works at a crawl - at 100% cpu
+Reply-To: =?UTF-8?Q?Ren=C3=A9?= Seindal <rene@seindal.dk>, 476941@bugs.debian.org
+Resent-From: =?UTF-8?Q?Ren=C3=A9?= Seindal <rene@seindal.dk>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian CLI Applications Team <pkg-cli-apps-team@lists.alioth.debian.org>
+Resent-Date: Sun, 20 Apr 2008 10:00:02 +0000
+Resent-Message-ID: <handler.476941.B.120868550912479@bugs.debian.org>
+X-Debian-PR-Message: report 476941
+X-Debian-PR-Package: f-spot
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: f-spot
+Received: via spool by submit@bugs.debian.org id=B.120868550912479
+          (code B ref -1); Sun, 20 Apr 2008 10:00:02 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 09:58:29 +0000
+X-Amavis-Spam-Status: No, score=-8.5 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,HAS_PACKAGE,IMPRONONCABLE_1,MURPHY_WRONG_WORD1,
+	MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from ip30.rev112.brygge.net ([194.255.112.30] helo=selinunte.seindal.dk)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <rene@seindal.dk>)
+	id 1JnWJY-0002zE-VX
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 09:58:29 +0000
+Received: from rene by selinunte.seindal.dk with local (Exim 4.69)
+	(envelope-from <rene@seindal.dk>)
+	id 1JnWJS-0001jr-Li; Sun, 20 Apr 2008 11:58:22 +0200
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+From: =?UTF-8?Q?Ren=C3=A9?= Seindal <rene@seindal.dk>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Message-ID: <20080420095822.4822.82352.reportbug@selinunte.seindal.dk>
+X-Mailer: reportbug 3.39-0.1
+Date: Sun, 20 Apr 2008 11:58:22 +0200
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 10:00:21 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343409
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.5
+X-Spam-Report: (-52.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+Package: f-spot
+Version: 0.4.2-1
+Severity: important
+
+
+f-spot is extremely slow. I have some 42000 photos imported, from 1998
+to today, and just moving from one photo to the next by clicking or by
+the keyboard, takes 1-2 seconds. Adding a tag to a group of photos
+take 1-2 seconds per photo, which isn't fun if you're tagging a
+thousand.
+
+The application is rendered useless by this slowness. I've used f-spot
+before with several thousands photos, without any such problems.
+
+I have tried to uninstall and reinstall the whole mono framework, but
+to no avail. I have tried both the testing and the unstable framework.
+
+This is a fairly fast laptop, with a core duo cpu and 2Gb of memory.
+
+Doing the same operations directly in sqlite3 finishes in an instant.
+
+Ren=C3=A9 Seindal.
+
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers testing
+  APT policy: (600, 'testing'), (550, 'stable'), (500, 'stable'), (50, 'u=
+nstable')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.24-1-686 (SMP w/2 CPU cores)
+Locale: LANG=3Dda_DK.UTF-8, LC_CTYPE=3Dda_DK.UTF-8 (charmap=3DUTF-8)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages f-spot depends on:
+ii  beagle                       0.3.5-1     indexing and search tool for=
+ your=20
+ii  dbus                         1.1.20-1    simple interprocess messagin=
+g syst
+ii  libart-2.0-2                 2.3.20-1    Library of functions for 2D =
+graphi
+ii  libatk1.0-0                  1.20.0-1    The ATK accessibility toolki=
+t
+ii  libc6                        2.7-10      GNU C Library: Shared librar=
+ies
+ii  libcairo2                    1.4.14-1    The Cairo 2D vector graphics=
+ libra
+ii  libexif12                    0.6.16-2.1  library to parse EXIF files
+ii  libflickrnet2.1.5-cil        25277-6     Flickr.Net API Library
+ii  libgconf2.0-cil              2.20.0-2    CLI binding for GConf 2.20
+ii  libgl1-mesa-glx [libgl1]     7.0.3~rc2-2 A free implementation of the=
+ OpenG
+ii  libglade2.0-cil              2.12.0-2    CLI binding for the Glade li=
+brarie
+ii  libglib2.0-0                 2.16.1-2    The GLib library of C routin=
+es
+ii  libglib2.0-cil               2.12.0-2    CLI binding for the GLib uti=
+lity l
+ii  libgnome-vfs2.0-cil          2.20.0-2    CLI binding for GnomeVFS 2.2=
+0
+ii  libgnome2.0-cil              2.20.0-2    CLI binding for GNOME 2.20
+ii  libgnomeui-0                 2.20.1.1-1  The GNOME 2 libraries (User =
+Interf
+ii  libgnomevfs2-0               1:2.22.0-2  GNOME Virtual File System (r=
+untime
+ii  libgphoto2-2                 2.4.0-9     gphoto2 digital camera libra=
+ry
+ii  libgphoto2-port0             2.4.0-9     gphoto2 digital camera port =
+librar
+ii  libgtk2.0-0                  2.12.9-2    The GTK+ graphical user inte=
+rface=20
+ii  libgtk2.0-cil                2.12.0-2    CLI binding for the GTK+ too=
+lkit 2
+ii  libgtkhtml3.16-cil           2.20.1-2    CLI binding for GtkHTML 3.16
+ii  libjpeg62                    6b-14       The Independent JPEG Group's=
+ JPEG=20
+ii  liblcms1                     1.16-8      Color management library
+ii  libmono-addins-gui0.2-cil    0.3.1-4     GTK# frontend library for Mo=
+no.Add
+ii  libmono-addins0.2-cil        0.3.1-4     addin framework for extensib=
+le CLI
+ii  libmono-corlib2.0-cil        1.9+dfsg-3  Mono core library (2.0)
+ii  libmono-sharpzip2.84-cil     1.9+dfsg-3  Mono SharpZipLib library
+ii  libmono-sqlite2.0-cil        1.9+dfsg-3  Mono Sqlite library
+ii  libmono-system-data2.0-cil   1.9+dfsg-3  Mono System.Data Library
+ii  libmono-system-web2.0-cil    1.9+dfsg-3  Mono System.Web Library
+ii  libmono-system2.0-cil        1.9+dfsg-3  Mono System libraries (2.0)
+ii  libmono2.0-cil               1.9+dfsg-3  Mono libraries (2.0)
+ii  libndesk-dbus-glib1.0-cil    0.4.1-1     CLI implementation of D-Bus =
+(GLib=20
+ii  libndesk-dbus1.0-cil         0.6.0-1     CLI implementation of D-Bus
+ii  libx11-6                     2:1.0.3-7   X11 client-side library
+ii  libxcomposite1               1:0.4.0-1   X11 Composite extension libr=
+ary
+ii  mono-runtime                 1.9+dfsg-3  Mono runtime
+
+Versions of packages f-spot recommends:
+ii  dbus-x11                      1.1.20-1   simple interprocess messagin=
+g syst
+ii  dcraw                         8.80-1     decode raw digital camera im=
+ages
+ii  sqlite                        2.8.17-4   command line interface for S=
+QLite
+ii  sqlite3                       3.5.7-2    A command line interface for=
+ SQLit
+
+-- no debconf information
+
+
+
+--=20
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

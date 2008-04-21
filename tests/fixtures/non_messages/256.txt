@@ -1,0 +1,149 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 20:55:31 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnfdF-0000oV-Rq
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 20:55:31 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id ACBC913A5251; Sun, 20 Apr 2008 19:55:24 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,NOSUB,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id CE41513A5232;
+	Sun, 20 Apr 2008 19:55:09 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnfbw-0007Zo-Bj; Sun, 20 Apr 2008 19:54:04 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#471895: (no subject)
+Reply-To: Javier =?UTF-8?Q?Fern=C3=A1ndez-Sanguino_?= =?UTF-8?Q?Pe=C3=B1a?= <jfs@computer.org>, 471895@bugs.debian.org
+Resent-From: Javier =?UTF-8?Q?Fern=C3=A1ndez-Sanguino_?= =?UTF-8?Q?Pe=C3=B1a?= <jfs@computer.org>
+Original-Sender: Javier Fernandez-Sanguino <javifs@gmail.com>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Javier Fernandez-Sanguino Pen~a <jfs@debian.org>
+Resent-Date: Sun, 20 Apr 2008 19:54:03 +0000
+Resent-Message-ID: <handler.471895.B471895.120872094721612@bugs.debian.org>
+X-Debian-PR-Message: report 471895
+X-Debian-PR-Package: snort
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: snort
+Received: via spool by 471895-submit@bugs.debian.org id=B471895.120872094721612
+          (code B ref 471895); Sun, 20 Apr 2008 19:54:03 +0000
+Received: (at 471895) by bugs.debian.org; 20 Apr 2008 19:49:07 +0000
+X-Amavis-Spam-Status: No, score=-6.0 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER,
+	NOSUB autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from fg-out-1718.google.com ([72.14.220.154])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <javifs@gmail.com>)
+	id 1JnfX8-0005QB-8E
+	for 471895@bugs.debian.org; Sun, 20 Apr 2008 19:49:07 +0000
+Received: by fg-out-1718.google.com with SMTP id 22so1369591fge.23
+        for <471895@bugs.debian.org>; Sun, 20 Apr 2008 12:48:27 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:received:date:from:to:subject:message-id:mail-followup-to:references:mime-version:content-type:content-disposition:in-reply-to:user-agent:sender;
+        bh=vtWzv+mW4CY1rNn2YU29zjC4xO9LBfgf1weLA4qbC7k=;
+        b=k/3oxkOuA96f/LuZR6X92pzoo5HMFuObay5oPDPV2Fd6i9x1Y4Lpvbu5LREStuSmC+34cUQHTnO6nvUlLFe03TjcSGCPwLteW0nJT5YGU0oaaEAwoO6533fAqG1KiaXIudI9TuFoB7R+BCHeWQT4dCdnFKt7m9y44cXWTyeVDWw=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=date:from:to:subject:message-id:mail-followup-to:references:mime-version:content-type:content-disposition:in-reply-to:user-agent:sender;
+        b=JeHbiRo3AO1Hl9Oalh1X/0bT63FDT3Vbrhj6sulMMcZ7/c+YNtb8xOh0xf1zK1LO8TGMR46rvdYzD5kA9XD4gyzhARsio6PsvQwM7dFBwpEMb02Udhs350yuveQcwxT1bv+opOHcVQ45ywGRk2BQ3TSG0kEsOcxq/AhIlfujJCE=
+Received: by 10.86.90.2 with SMTP id n2mr11270483fgb.24.1208720907387;
+        Sun, 20 Apr 2008 12:48:27 -0700 (PDT)
+Received: from javifsp.no-ip.org ( [84.78.35.59])
+        by mx.google.com with ESMTPS id k29sm4121602fkk.5.2008.04.20.12.48.25
+        (version=TLSv1/SSLv3 cipher=OTHER);
+        Sun, 20 Apr 2008 12:48:26 -0700 (PDT)
+Received: from jfs by javifsp.no-ip.org with local (Exim 4.69)
+	(envelope-from <jfs@computer.org>)
+	id 1JnfWO-0003ln-Pk; Sun, 20 Apr 2008 21:48:20 +0200
+Date: Sun, 20 Apr 2008 21:48:20 +0200
+From: Javier =?UTF-8?Q?Fern=C3=A1ndez-Sanguino_?= =?UTF-8?Q?Pe=C3=B1a?= <jfs@computer.org>
+To: Ivan Kelly <ivan@bleurgh.com>, 471895@bugs.debian.org
+Message-ID: <20080420194820.GA13840@javifsp.no-ip.org>
+Mail-Followup-To: Ivan Kelly <ivan@bleurgh.com>, 471895@bugs.debian.org
+References: <87fxti3xz0.wl%ivan@bleurgh.com>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+	protocol="application/pgp-signature"; boundary="OgqxwSJOaUobr8KG"
+Content-Disposition: inline
+In-Reply-To: <87fxti3xz0.wl%ivan@bleurgh.com>
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Sender: Javier Fernandez-Sanguino <javifs@gmail.com>
+Resent-Date: Sun, 20 Apr 2008 19:54:04 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343758
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -33.6
+X-Spam-Report: (-33.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	19 AWL                    AWL: From: address is in the auto white-list
+
+
+--OgqxwSJOaUobr8KG
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+On Sat, Apr 19, 2008 at 12:06:43PM +0100, Ivan Kelly wrote:
+>=20
+> Thats because no such files exist on in the lenny distribution. It does
+> exist in the source package as snort-2.7.0/debian/snort.default though, so
+> I just guess it's something going awry on the package building.
+
+Thanks for spotting this! That was precisely the problem. When I changed the
+build system to fix some other bugs by separating the binary independent and
+dependent pieces I left the installation of the snort.default file in the
+wrong location.
+
+I'm building right now new packages and will upload them shortly.
+
+Regards
+
+Javier
+
+--OgqxwSJOaUobr8KG
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: Digital signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC54EsandgtyBSwkRAinqAJ9UEpdRoRFzKvfWwem1Wu6isNhGQQCfaT0f
+B5/YGJA5nfaUhlo40EqsaJc=
+=PHbF
+-----END PGP SIGNATURE-----
+
+--OgqxwSJOaUobr8KG--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,241 @@
+From bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org Sun Apr 20 11:09:57 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org>)
+	id 1JnWUa-0006DI-6A
+	for ddc@ddc.chris-lamb.co.uk; Sun, 20 Apr 2008 11:09:57 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 3D50113A4F0D; Sun, 20 Apr 2008 10:09:51 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 23C2F13A4EFA;
+	Sun, 20 Apr 2008 10:09:43 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnWTz-0000kP-Ay; Sun, 20 Apr 2008 10:09:15 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Matthias Klose <doko@cs.tu-berlin.de>
+Subject: Bug#383318: marked as done (bash: !": event not found)
+Message-ID: <handler.383318.D383318.120868598223217.ackdone@bugs.debian.org>
+References: <18443.5528.731795.299000@gargle.gargle.HOWL>
+ <fp0kBB.A.4f.Qvy4EB@t1950ct.private>
+X-Debian-PR-Message: closed 383318
+X-Debian-PR-Package: bash
+X-Debian-PR-Keywords: upstream wontfix
+X-Debian-PR-Source: bash
+Content-Type: multipart/mixed; boundary="----------=_1208686155-2792-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 10:09:15 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <fS7NfB7vV-K.A.QDC.uZxCIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/132915
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 10:09:51 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208686155-2792-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 12:06:16 +0200
+with message-id <18443.5528.731795.299000@gargle.gargle.HOWL>
+and subject line Re: bash: !": event not found
+has caused the Debian Bug report #383318,
+regarding bash: !": event not found
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+383318: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D383318
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208686155-2792-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 16 Aug 2006 14:29:43 +0000
+Return-path: <linux4michelle@freenet.de>
+Received: from mout2.freenet.de ([194.97.50.155])
+	by spohr.debian.org with esmtp (Exim 4.50)
+	id 1GDMOt-00064c-A4
+	for submit@bugs.debian.org; Wed, 16 Aug 2006 07:29:43 -0700
+Received: from [194.97.55.147] (helo=mx4.freenet.de)
+	by mout2.freenet.de with esmtpa (Exim 4.61)
+	(envelope-from <linux4michelle@freenet.de>)
+	id 1GDMOs-0001xa-GY
+	for submit@bugs.debian.org; Wed, 16 Aug 2006 16:29:42 +0200
+Received: from lec67-1-81-56-104-13.fbx.proxad.net ([81.56.104.13] helo=t1950ct.private.tamay-dogan.net)
+	by mx4.freenet.de with esmtpa (ID asmtp.tdnet@freenet.de) (Exim 4.62 #2)
+	id 1GDMOs-00053h-BB
+	for submit@bugs.debian.org; Wed, 16 Aug 2006 16:29:42 +0200
+Received: by t1950ct.private.tamay-dogan.net (sSMTP sendmail emulation); Wed, 16 Aug 2006 16:29:38 +0200
+From: Michelle Konzack <linux4michelle@freenet.de>
+To: BTS <submit@bugs.debian.org>
+Subject: bash: !": event not found
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Date: Sat, 12 Aug 2006 15:43:07 +0200
+Message-ID: <fp0kBB.A.4f.Qvy4EB@t1950ct.private>
+Delivered-To: submit@bugs.debian.org
+X-Spam-Checker-Version: SpamAssassin 2.60-bugs.debian.org_2005_01_02 
+	(1.212-2003-09-23-exp) on spohr.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, hits=-6.5 required=4.0 tests=BAYES_00,DATE_IN_PAST_96_XX,
+	HAS_PACKAGE autolearn=no version=2.60-bugs.debian.org_2005_01_02
+
+Package: bash
+Version: 2.05b-26
+Severity: important
+
+Error description:
+
+Since I have upgraded to Sarge I have in all of my BASH
+scripts errors which do something like
+
+    > echo "I hate the BASH!"
+    bash: !": event not found
+
+This makes all of my scripts unusable since my Scripts
+are quiting with an error.
+
+Escaping is no solution because:
+
+    > echo "I hate the BASH\!"
+    I hate the BASH\!
+
+
+Please can you solv this problem quickly?
+
+Greetings
+    Michelle Konzack
+    Systemadministrator
+    Tamay Dogan Network
+    Debian GNU/Linux Consultant
+
+
+
+
+-- System Information
+Debian Release: 3.1
+Kernel Version: Linux michelle1.private 2.4.27-2-386 #1 Wed Aug 17 09:33:35 UTC 2005 i686 GNU/Linux
+
+
+Versions of the packages bash depends on:
+ii  base-files     3.1.2          Debian base system miscellaneous files
+ii  libc6          2.3.2.ds1-22   GNU C Library: Shared libraries and Timezone
+ii  libncurses5    5.4-4          Shared libraries for terminal handling
+ii  passwd         4.0.3-31sarge5 change and administer password and group dat
+
+
+
+
+-- 
+Linux-User #280138 with the Linux Counter, http://counter.li.org/
+##################### Debian GNU/Linux Consultant #####################
+Michelle Konzack   Apt. 917                  ICQ #328449886
+                   50, rue de Soultz         MSM LinuxMichi
+0033/6/61925193    67100 Strasbourg/France   IRC #Debian (irc.icq.com)
+
+
+
+------------=_1208686155-2792-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 383318-done) by bugs.debian.org; 20 Apr 2008 10:06:22 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-5.0 required=4.0 tests=BAYES_00,UNPARSEABLE_RELAY,
+	VALID_BTS_CONTROL autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <doko@cs.tu-berlin.de>
+Received: from mail.cs.tu-berlin.de ([130.149.17.13])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <doko@cs.tu-berlin.de>)
+	id 1JnWRB-00060c-UO
+	for 383318-done@bugs.debian.org; Sun, 20 Apr 2008 10:06:22 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by localhost-12225.cs.tu-berlin.de (Postfix) with ESMTP id E9587D703
+	for <383318-done@bugs.debian.org>; Sun, 20 Apr 2008 12:06:17 +0200 (MEST)
+Received: from mailhost.cs.tu-berlin.de ([127.0.0.1])
+	by localhost (mail.cs.tu-berlin.de [127.0.0.1]) (amavisd-new, port 12224)
+	with ESMTP id kVm+w8WXQXBu 10684-10;
+	Sun, 20 Apr 2008 12:06:17 +0200 (MEST) 13737
+Received: from bolero.cs.tu-berlin.de (bolero.cs.tu-berlin.de [130.149.19.1])
+	(using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by mailhost.cs.tu-berlin.de (Postfix) with ESMTP;
+	Sun, 20 Apr 2008 12:06:17 +0200 (MEST)
+Received: (from doko@localhost)
+	by bolero.cs.tu-berlin.de (8.13.8+Sun/8.13.3/Submit) id m3KA6GBk006038;
+	Sun, 20 Apr 2008 12:06:16 +0200 (MEST)
+From: Matthias Klose <doko@cs.tu-berlin.de>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Message-ID: <18443.5528.731795.299000@gargle.gargle.HOWL>
+Date: Sun, 20 Apr 2008 12:06:16 +0200
+To: 383318-done@bugs.debian.org
+CC: control@bugs.debian.org
+Subject: Re: bash: !": event not found
+X-Mailer: VM 7.17 under 21.4 (patch 21) "Educational Television" XEmacs Lucid
+X-Virus-Scanned: amavisd-new at cs.tu-berlin.de (including SpamAssassin)
+
+tag 383318 + wontfix
+tag 383318 + upstream
+thanks
+
+See http://bugs.debian.org/135402, annoying but not a bug.
+
+
+
+
+------------=_1208686155-2792-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

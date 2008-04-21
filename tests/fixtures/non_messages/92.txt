@@ -1,0 +1,126 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 11:25:27 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnWjc-0006I1-7z
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 11:25:27 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 353C013A4EF0; Sun, 20 Apr 2008 10:25:23 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 15B2D13A4F17;
+	Sun, 20 Apr 2008 10:25:09 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnWfR-0000BL-VU; Sun, 20 Apr 2008 10:21:05 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476195: path mess emacs22 vs. emacs
+Reply-To: opal@debian.org, 476195@bugs.debian.org
+Resent-From: Ola Lundqvist <opal@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Pontus Ullgren <pontus@ullgren.com>
+Resent-Date: Sun, 20 Apr 2008 10:21:05 +0000
+Resent-Message-ID: <handler.476195.B476195.120868673828858@bugs.debian.org>
+X-Debian-PR-Message: report 476195
+X-Debian-PR-Package: php-elisp
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: php-elisp
+Received: via spool by 476195-submit@bugs.debian.org id=B476195.120868673828858
+          (code B ref 476195); Sun, 20 Apr 2008 10:21:05 +0000
+Received: (at 476195) by bugs.debian.org; 20 Apr 2008 10:18:58 +0000
+X-Amavis-Spam-Status: No, score=-8.9 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FROMDEVELOPER,HAS_BUG_NUMBER autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from c-adt-5.ataco.se ([213.115.168.248] helo=bixbite.inguza.net)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <ola@inguza.net>)
+	id 1JnWdN-0007Uc-TE
+	for 476195@bugs.debian.org; Sun, 20 Apr 2008 10:18:58 +0000
+Received: from ola by bixbite.inguza.net with local (Exim 4.63)
+	(envelope-from <ola@inguza.net>)
+	id 1JnWdM-0004iA-00; Sun, 20 Apr 2008 12:18:56 +0200
+Date: Sun, 20 Apr 2008 12:18:55 +0200
+From: Ola Lundqvist <opal@debian.org>
+To: jidanni@jidanni.org, 476195@bugs.debian.org
+Message-ID: <20080420101855.GB30236@inguza.net>
+References: <874pa3ew3u.fsf@jidanni.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <874pa3ew3u.fsf@jidanni.org>
+User-Agent: Mutt/1.5.13 (2006-08-11)
+Resent-Date: Sun, 20 Apr 2008 10:21:05 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343423
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -38.3
+X-Spam-Report: (-38.3 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	14 AWL                    AWL: From: address is in the auto white-list
+
+Hi
+
+I have not used emacs22 before. Do this mean that I need
+to have two versions of this file installed?
+
+Isn't that a bug in the emacs package? :)
+
+Best regards,
+
+// Ola
+
+On Tue, Apr 15, 2008 at 09:37:57AM +0800, jidanni@jidanni.org wrote:
+> Package: php-elisp
+> Version: 1.1.0-2
+> 
+> $ emacs -q file.php
+> C-h k C-c <return> C-x o <tab> <return>
+> find-library-name: Can't find library
+> /usr/share/emacs22/site-lisp/php-elisp/php-mode.el
+> $ dpkg -L php-elisp|fgrep e.el
+> /usr/share/emacs/site-lisp/php-elisp/php-mode.el
+> 
+> 
+> 
+> 
+
+-- 
+ --------------------- Ola Lundqvist ---------------------------
+/  opal@debian.org                     Annebergsslingan 37      \
+|  ola@inguza.com                      654 65 KARLSTAD          |
+|  http://inguza.com/                  +46 (0)70-332 1551       |
+\  gpg/f.p.: 7090 A92B 18FE 7994 0C36  4FE4 18A1 B1CF 0FE5 3DD9 /
+ ---------------------------------------------------------------
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

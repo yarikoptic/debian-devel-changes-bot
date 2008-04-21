@@ -1,0 +1,96 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 13:29:57 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnYg4-0006td-RA
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 13:29:57 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 518C713A4F88; Sun, 20 Apr 2008 12:29:51 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.0 required=4.0 tests=RCVD_IN_DNSWL_LOW,
+	STOX_REPLY_TYPE autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id BEA5713A498B;
+	Sun, 20 Apr 2008 12:29:36 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnYdS-00049d-MC; Sun, 20 Apr 2008 12:27:10 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#149961: We do recommend the 6 month package for better results and higher savings.
+Reply-To: "Elijah Gunn" <maelstromrzix66@3cerp.com>, 149961@bugs.debian.org
+Resent-From: "Elijah Gunn" <maelstromrzix66@3cerp.com>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Dpkg Developers <debian-dpkg@lists.debian.org>
+Resent-Date: Sun, 20 Apr 2008 12:27:10 +0000
+Resent-Message-ID: <handler.149961.B149961.120869430912838@bugs.debian.org>
+X-Debian-PR-Message: report 149961
+X-Debian-PR-Package: dpkg
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: dpkg
+Received: via spool by 149961-submit@bugs.debian.org id=B149961.120869430912838
+          (code B ref 149961); Sun, 20 Apr 2008 12:27:10 +0000
+Received: (at 149961) by bugs.debian.org; 20 Apr 2008 12:25:09 +0000
+X-Amavis-Spam-Status: No, score=1.0 required=4.0 tests=BAYES_50 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from [212.39.113.203] (helo=edo)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <maelstromrzix66@3cerp.com>)
+	id 1JnYbU-00033f-S9; Sun, 20 Apr 2008 12:25:09 +0000
+Received: from [212.39.113.203] by mail2.3cerp.com; Sun, 20 Apr 2008 13:25:17 +0100
+Message-ID: <01c8a2e9$f9145c80$cb7127d4@maelstromrzix66>
+From: "Elijah Gunn" <maelstromrzix66@3cerp.com>
+To: <149491@bugs.debian.org>
+Date: Sun, 20 Apr 2008 13:25:17 +0100
+MIME-Version: 1.0
+Content-Type: text/plain;
+	format=flowed;
+	charset="us-ascii";
+	reply-type=original
+Content-Transfer-Encoding: 7bit
+X-Priority: 3
+X-MSMail-Priority: Normal
+X-Mailer: Microsoft Outlook Express 6.00.2741.2600
+X-MimeOLE: Produced By Microsoft MimeOLE V6.00.2741.2600
+Resent-Date: Sun, 20 Apr 2008 12:27:10 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343466
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -51.0
+X-Spam-Report: (-51.0 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	1.6 URIBL_SBL              Contains an URL listed in the SBL blocklist
+	[URIs: iueattea.com]
+
+HERBAL EXPRESS
+http://iueattea.com
+
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

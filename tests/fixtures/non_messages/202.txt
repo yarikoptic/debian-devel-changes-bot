@@ -1,0 +1,131 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 14:21:57 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnZUQ-00079T-MY
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 14:21:57 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id B42E413A4FFD; Sun, 20 Apr 2008 13:21:53 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id D5A1B13A4FD0;
+	Sun, 20 Apr 2008 13:21:43 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnZQk-0005G9-U9; Sun, 20 Apr 2008 13:18:06 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#461578: The 'multimedia'-keys on my keyboard do only work, after I set them *again* in gnome-keyboard-properties
+Reply-To: 461578@bugs.debian.org, 461578@bugs.debian.org
+Resent-From: Josselin Mouette <joss@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Marco Cabizza <marco87@gmail.com>
+Resent-Date: Sun, 20 Apr 2008 13:18:06 +0000
+Resent-Message-ID: <handler.461578.B461578.120869738915528@bugs.debian.org>
+X-Debian-PR-Message: report 461578
+X-Debian-PR-Package: gnome-control-center
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: control-center
+Received: via spool by 461578-submit@bugs.debian.org id=B461578.120869738915528
+          (code B ref 461578); Sun, 20 Apr 2008 13:18:06 +0000
+Received: (at 461578) by bugs.debian.org; 20 Apr 2008 13:16:29 +0000
+X-Amavis-Spam-Status: No, score=-9.0 required=4.0 tests=BAYES_00,FROMDEVELOPER,
+	HAS_BUG_NUMBER autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from diva.malsain.org ([91.121.19.57])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <joss@debian.org>)
+	id 1JnZPB-00041L-6B
+	for 461578@bugs.debian.org; Sun, 20 Apr 2008 13:16:29 +0000
+Received: from localhost ([127.0.0.1])
+	by diva.malsain.org with esmtp (Exim 4.63)
+	(envelope-from <joss@debian.org>)
+	id 1JnZP9-0006ZE-L3; Sun, 20 Apr 2008 15:16:27 +0200
+From: Josselin Mouette <joss@debian.org>
+To: Fabian Greffrath <fabian.greffrath@web.de>, 461578@bugs.debian.org
+In-Reply-To: <1200761176.10074.23.camel@beppo>
+References: <1200761176.10074.23.camel@beppo>
+Content-Type: multipart/signed; micalg=pgp-sha1; protocol="application/pgp-signature"; boundary="=-jjhrFllRomOYseEe065F"
+Date: Sun, 20 Apr 2008 15:16:27 +0200
+Message-Id: <1208697387.3820.27.camel@shizuru>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.22.1 
+Resent-Date: Sun, 20 Apr 2008 13:18:06 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343491
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -30.6
+X-Spam-Report: (-30.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	22 AWL                    AWL: From: address is in the auto white-list
+
+
+--=-jjhrFllRomOYseEe065F
+Content-Type: text/plain; charset=ISO-8859-15
+Content-Transfer-Encoding: quoted-printable
+
+Le samedi 19 janvier 2008 =E0 17:46 +0100, Fabian Greffrath a =E9crit :
+> In gnome-keybinding-properties I have of course assigned this key to
+> 'E-mail' in the Desktop section. When I boot the computer and GNOME
+> starts up, I press the key and *nothing* happens. However, xev shows the
+> following events:
+
+> Next I run gnome-keybinding-properties. There is still 'Action: E-mail'
+> assigned to 'Shortcut: XF86Mail'. I click on this line and press the
+> E-mail-key again, overriding the previous setting. Of course, nothing
+> really changes, everything looks like before.
+
+Does it still happen with gnome-session 2.20.3-2 or 2.22.0-2 ?
+
+Thanks,
+--=20
+ .''`.
+: :' :      We are debian.org. Lower your prices, surrender your code.
+`. `'       We will add your hardware and software distinctiveness to
+  `-        our own. Resistance is futile.
+
+--=-jjhrFllRomOYseEe065F
+Content-Type: application/pgp-signature; name=signature.asc
+Content-Description: Ceci est une partie de message
+	=?ISO-8859-1?Q?num=E9riquement?= =?ISO-8859-1?Q?_sign=E9e?=
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQBIC0IrrSla4ddfhTMRAqnBAJ9rNbafpm7PjhdDhBmO5EtWOSAhZgCdF3sh
+pO+IpaxGrTZTPrgZBKhE6Pg=
+=7fPA
+-----END PGP SIGNATURE-----
+
+--=-jjhrFllRomOYseEe065F--
+
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

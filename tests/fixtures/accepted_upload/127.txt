@@ -1,0 +1,131 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 21:01:44 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnfjJ-0000ph-HY
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 21:01:44 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 2F4EE13A52A5; Sun, 20 Apr 2008 20:01:40 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id CC00513A4C2F
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 20:01:39 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnfVC-0006L3-H5; Sun, 20 Apr 2008 19:47:06 +0000
+From: Bastian Blank <waldi@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted libperlio-via-dynamic-perl 0.12-1 (source all)
+Message-Id: <E1JnfVC-0006L3-H5@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 19:47:06 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <pCkqoKl0xnO.A.boD.kE6CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301345
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 20:01:40 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.6
+X-Spam-Report: (-2.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.0 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 21:33:59 +0200
+Source: libperlio-via-dynamic-perl
+Binary: libperlio-via-dynamic-perl
+Architecture: source all
+Version: 0.12-1
+Distribution: unstable
+Urgency: low
+Maintainer: Bastian Blank <waldi@debian.org>
+Changed-By: Bastian Blank <waldi@debian.org>
+Description:=20
+ libperlio-via-dynamic-perl - dynamic PerlIO layers
+Changes:=20
+ libperlio-via-dynamic-perl (0.12-1) unstable; urgency=3Dlow
+ .
+   * New upstream version.
+   * Use external orig.
+Checksums-Sha1:=20
+ 3327f32037e682dd5c42e8dcdcc0288067b4629b 1125 libperlio-via-dynamic-perl=
+_0.12-1.dsc
+ 3e291359cd951da8e9e5f94ea75d1788fa9c40e4 18568 libperlio-via-dynamic-per=
+l_0.12.orig.tar.gz
+ bda79c28588386b1c56f7f46788e9ed3a9d23273 3393 libperlio-via-dynamic-perl=
+_0.12-1.diff.gz
+ cbe0b5066843a976f2dad5bc394683353358f170 7272 libperlio-via-dynamic-perl=
+_0.12-1_all.deb
+Checksums-Sha256:=20
+ 41dc10fb69d73b1d1a5fa014a6401756eaef809fa460c3ec60ec10f7139bd95c 1125 li=
+bperlio-via-dynamic-perl_0.12-1.dsc
+ 042494aef180c14b14fc1e37781e104ea6ff4eade215f881141a47543be752eb 18568 l=
+ibperlio-via-dynamic-perl_0.12.orig.tar.gz
+ eb676c4481e3a92012f8b1d53834701b208f6c5d9cc8ee3f29f83b6289f18f9d 3393 li=
+bperlio-via-dynamic-perl_0.12-1.diff.gz
+ ae62471c2e6dde78e803f4c1f41de959e56512fb089cc9eead53602a1307e5e8 7272 li=
+bperlio-via-dynamic-perl_0.12-1_all.deb
+Files:=20
+ eaff3ea480f080ac5131b814678b459b 1125 perl optional libperlio-via-dynami=
+c-perl_0.12-1.dsc
+ 7d93cfc272924b07453fccc59997c908 18568 perl optional libperlio-via-dynam=
+ic-perl_0.12.orig.tar.gz
+ cd72e40460a4b35f0ddb93a59d7f98ea 3393 perl optional libperlio-via-dynami=
+c-perl_0.12-1.diff.gz
+ 56b8d3c557353dd3e9ce76f989c44d11 7272 perl optional libperlio-via-dynami=
+c-perl_0.12-1_all.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iEYEARECAAYFAkgLmu8ACgkQxWtQqFixGB5OzgCeLD2jpUzMnX1vm3tR0yVbqMuI
+kM8AniPVFLQskE2TgmOA6cNEQrPbKZox
+=3DN+o7
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+libperlio-via-dynamic-perl_0.12-1.diff.gz
+  to pool/main/libp/libperlio-via-dynamic-perl/libperlio-via-dynamic-perl=
+_0.12-1.diff.gz
+libperlio-via-dynamic-perl_0.12-1.dsc
+  to pool/main/libp/libperlio-via-dynamic-perl/libperlio-via-dynamic-perl=
+_0.12-1.dsc
+libperlio-via-dynamic-perl_0.12-1_all.deb
+  to pool/main/libp/libperlio-via-dynamic-perl/libperlio-via-dynamic-perl=
+_0.12-1_all.deb
+libperlio-via-dynamic-perl_0.12.orig.tar.gz
+  to pool/main/libp/libperlio-via-dynamic-perl/libperlio-via-dynamic-perl=
+_0.12.orig.tar.gz
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

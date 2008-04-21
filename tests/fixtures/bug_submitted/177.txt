@@ -1,0 +1,126 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 09:40:19 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnV5k-0005sr-Vl
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 09:40:18 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id B423613A4EA6; Sun, 20 Apr 2008 08:40:06 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-6.9 required=4.0 tests=BAYES_00,FOURLA,GMAIL,
+	LDO_WHITELIST,RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id C6D3413A4DDE;
+	Sun, 20 Apr 2008 08:39:44 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnV4t-0006pJ-AC; Sun, 20 Apr 2008 08:39:15 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476923: ITP: python-weberror -- Python web error handling and exception catching module
+Reply-To: Christoph Haas <haas@debian.org>, 476923@bugs.debian.org
+Resent-From: Christoph Haas <haas@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: debian-devel@lists.debian.org, <wnpp@debian.org>
+Resent-Date: Sun, 20 Apr 2008 08:39:12 +0000
+Resent-Message-ID: <handler.476923.B.12086805763250@bugs.debian.org>
+X-Debian-PR-Message: report 476923
+X-Debian-PR-Package: wnpp
+X-Debian-PR-Keywords: 
+Received: via spool by submit@bugs.debian.org id=B.12086805763250
+          (code B ref -1); Sun, 20 Apr 2008 08:39:12 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 08:36:16 +0000
+X-Amavis-Spam-Status: No, score=-13.8 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,FROMDEVELOPER,GMAIL,HAS_PACKAGE,X_DEBBUGS_CC autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from haas.workdsl.de
+	([212.12.44.217] helo=torf.workaround.org ident=postfix)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <haas@debian.org>)
+	id 1JnV20-0000n4-6E
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 08:36:16 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by torf.workaround.org (Postfix) with ESMTP id 4EB81FFEF;
+	Sun, 20 Apr 2008 10:36:14 +0200 (CEST)
+X-Virus-Scanned: Debian amavisd-new at torf.workaround.org
+Received: from torf.workaround.org ([127.0.0.1])
+	by localhost (torf.workaround.org [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id lxuwWshUjAkp; Sun, 20 Apr 2008 10:36:07 +0200 (CEST)
+Received: from laptux.ov.otto.de (unknown [212.12.58.138])
+	by torf.workaround.org (Postfix) with ESMTP id 9091610012;
+	Sun, 20 Apr 2008 10:36:07 +0200 (CEST)
+Received: by laptux.ov.otto.de (Postfix, from userid 1000)
+	id 7DC1A40B0; Sun, 20 Apr 2008 10:36:07 +0200 (CEST)
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Christoph Haas <haas@debian.org>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Message-ID: <20080420083607.5868.66691.reportbug@localhost>
+X-Mailer: reportbug 3.39
+Date: Sun, 20 Apr 2008 10:36:07 +0200
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 08:39:15 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343365
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -29.1
+X-Spam-Report: (-29.1 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	23 AWL                    AWL: From: address is in the auto white-list
+
+Package: wnpp
+Severity: wishlist
+Owner: Christoph Haas <haas@debian.org>
+
+* Package name    : python-weberror
+  Version         : 0.8a
+  Upstream Author : Ben Bangert <ben@groovie.org>, Ian Bicking <ianb@colorstudy.com>, Mark Ramm <mark.mchristensen@gmail.com>
+* URL             : http://pypi.python.org/pypi/WebError
+* License         : (GPL, LGPL, BSD, MIT/X, etc.)
+  Programming Lang: (C, C++, C#, Perl, Python, etc.)
+  Description     : Python web error handling and exception catching module
+
+This Python module provides error handling and exception catching
+functinality for WSGI web applications. It is primarily used by Pylons
+(python-pylons).
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (500, 'unstable'), (1, 'experimental')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.22-2-686 (SMP w/1 CPU core)
+Locale: LANG=de_DE.UTF-8, LC_CTYPE=de_DE.UTF-8 (charmap=UTF-8)
+Shell: /bin/sh linked to /bin/bash
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

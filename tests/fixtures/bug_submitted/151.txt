@@ -1,0 +1,143 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 07:04:51 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnSfO-0005Wp-7r
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 07:04:51 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 1A1C913A4DDE; Sun, 20 Apr 2008 06:04:44 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.9 required=4.0 tests=BAYES_00,FOURLA,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id DCD4E13A4DB3;
+	Sun, 20 Apr 2008 06:04:33 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnSdk-0002zt-67; Sun, 20 Apr 2008 06:03:04 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476905: gnome-orca: Orca gives a "cannot start" error now that Python 2.5 is the Debian default in Sid
+Reply-To: Jason White <jason@jasonjgw.net>, 476905@bugs.debian.org
+Resent-From: Jason White <jason@jasonjgw.net>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Mario Lang <mlang@debian.org>
+Resent-Date: Sun, 20 Apr 2008 06:03:02 +0000
+Resent-Message-ID: <handler.476905.B.120867119919778@bugs.debian.org>
+X-Debian-PR-Message: report 476905
+X-Debian-PR-Package: gnome-orca
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: gnome-orca
+Received: via spool by submit@bugs.debian.org id=B.120867119919778
+          (code B ref -1); Sun, 20 Apr 2008 06:03:02 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 05:59:59 +0000
+X-Amavis-Spam-Status: No, score=-8.9 required=4.0 tests=BAYES_00,FOURLA,HAS_PACKAGE,
+	UNPARSEABLE_RELAY autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from opera.rednote.net ([74.53.93.34])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <jason@jasonjgw.net>)
+	id 1JnSak-00058p-UF
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 05:59:59 +0000
+Received: from jdc.jasonjgw.net ([IPv6:::1])
+	by opera.rednote.net (8.14.1/8.14.1) with ESMTP id m3K5xipE025090
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=FAIL);
+	Sun, 20 Apr 2008 05:59:47 GMT
+Received: from jdc.jasonjgw.net (ip6-localhost [IPv6:::1])
+	by jdc.jasonjgw.net (8.14.2/8.14.2/Debian-4) with ESMTP id m3K5xesZ012508
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NOT);
+	Sun, 20 Apr 2008 15:59:40 +1000
+Received: (from jason@localhost)
+	by jdc.jasonjgw.net (8.14.2/8.14.2/Submit) id m3K5xepi012506;
+	Sun, 20 Apr 2008 15:59:40 +1000
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Jason White <jason@jasonjgw.net>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Message-ID: <20080420055940.12471.88521.reportbug@jdc.jasonjgw.net>
+X-Mailer: reportbug 3.39-0.1
+Date: Sun, 20 Apr 2008 15:59:40 +1000
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 06:03:04 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343333
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -46.3
+X-Spam-Report: (-46.3 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	6.3 AWL                    AWL: From: address is in the auto white-list
+
+Package: gnome-orca
+Version: 2.22.1-1.1
+Severity: normal
+
+
+Now that Python 2.5 is the default /usr/bin/python in Sid, Orca gives an error
+("cannot connect to the desktop") and terminates during startup.
+
+The fix is to change the python path specified in the /usr/bin/orca script to
+refer to Python 2.5:
+PYTHONPATH=${PYTHONPATH}:${exec_prefix}/lib/python2.5/site-packages
+
+With this change, Orca starts up properly.
+
+I suppose you could also change the python command in /usr/bin/orca to refer
+to a particular version of Python instead of whatever the /usr/bin/python
+symlink refers to.
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (500, 'unstable'), (500, 'testing'), (1, 'experimental')
+Architecture: amd64 (x86_64)
+
+Kernel: Linux 2.6.24-1-amd64 (SMP w/4 CPU cores)
+Locale: LANG=en_AU.UTF-8, LC_CTYPE=en_AU.UTF-8 (charmap=UTF-8)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages gnome-orca depends on:
+ii  libgail-gnome-module          1.20.0-1   GNOME Accessibility Implementation
+ii  libgnome-speech7              1:0.4.18-1 GNOME text-to-speech library
+ii  python                        2.5.2-1    An interactive high-level object-o
+ii  python-brlapi                 3.9-7      Python bindings for BrlAPI
+ii  python-glade2                 2.12.1-1   GTK+ bindings: Glade support
+ii  python-gnome2                 2.22.0-1   Python bindings for the GNOME desk
+ii  python-gtk2                   2.12.1-1   Python bindings for the GTK+ widge
+ii  python-pyatspi                1.22.1-1   Assistive Technology Service Provi
+ii  python-support                0.7.7      automated rebuilding support for P
+
+Versions of packages gnome-orca recommends:
+ii  gnome-mag                 1:0.14.10-4+b1 a screen magnifier for the GNOME d
+ii  wget                      1.11.1-1       retrieves files from the web
+
+-- debconf-show failed
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

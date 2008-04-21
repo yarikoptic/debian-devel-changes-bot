@@ -1,0 +1,137 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 09:25:20 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnUrG-0005rK-8L
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 09:25:20 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 3CA0D13A4E97; Sun, 20 Apr 2008 08:25:09 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	MURPHY_DRUGS_REL8,RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 4514213A4D91;
+	Sun, 20 Apr 2008 08:24:54 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnUqC-0001jk-5w; Sun, 20 Apr 2008 08:24:04 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476917: cpushare: FTBFS (ppc64): gnu/stubs-32.h: No such file or directory
+Reply-To: Andreas Jochens <aj@andaco.de>, 476917@bugs.debian.org
+Resent-From: Andreas Jochens <aj@andaco.de>
+Original-Sender: aj@andaco.de
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian Scientific Computing Team <pkg-scicomp-devel@lists.alioth.debian.org>
+Resent-Date: Sun, 20 Apr 2008 08:24:01 +0000
+Resent-Message-ID: <handler.476917.B.12086798266304@bugs.debian.org>
+X-Debian-PR-Message: report 476917
+X-Debian-PR-Package: cpushare
+X-Debian-PR-Keywords: patch
+X-Debian-PR-Source: cpushare
+Received: via spool by submit@bugs.debian.org id=B.12086798266304
+          (code B ref -1); Sun, 20 Apr 2008 08:24:01 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 08:23:46 +0000
+X-Amavis-Spam-Status: No, score=-9.8 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	HAS_PACKAGE,MURPHY_DRUGS_REL8 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from mo-p00-ob.rzone.de ([81.169.146.160])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <aj@andaco.de>)
+	id 1JnUpu-0001dT-2b
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 08:23:46 +0000
+X-RZG-CLASS-ID: mo00
+X-RZG-AUTH: g6bGSmHcM466ZYMMIrQPMaHL3r/bwyr+pcn2V0Hm4boDys2St3pTEWw=
+Received: from emk.ainf.net (e182070241.adsl.alicedsl.de [85.182.70.241])
+	by post.webmailer.de (mrclete mo60) (RZmta 16.27)
+	with ESMTP id x01364k3K5wFtz for <submit@bugs.debian.org>;
+	Sun, 20 Apr 2008 10:23:44 +0200 (MEST)
+	(envelope-from: <aj@andaco.de>)
+Received: from aj by emk.ainf.net with local (Exim 4.69)
+	(envelope-from <aj@andaco.de>)
+	id 1JnUpq-0000M5-8B; Sun, 20 Apr 2008 10:23:42 +0200
+Date: Sun, 20 Apr 2008 10:23:42 +0200
+From: Andreas Jochens <aj@andaco.de>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Message-ID: <20080420082342.GA1354@andaco.de>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Sender: aj@andaco.de
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 08:24:04 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343362
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.4
+X-Spam-Report: (-52.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.1 AWL                    AWL: From: address is in the auto white-list
+
+Package: cpushare
+Version: 0.48-1
+Severity: wishlist
+Tags: patch
+
+When building 'cpushare' on ppc64/unstable, I get the following error:
+
+gcc -m32 -mcpu=750 -mtune=970 -fno-common -O2 -Wall -Iglibc -I. seccomp-loader.c -o seccomp-loader
+In file included from /usr/include/features.h:354,
+                 from /usr/include/sys/resource.h:22,
+                 from seccomp-loader.c:26:
+/usr/include/gnu/stubs.h:7:27: error: gnu/stubs-32.h: No such file or directory
+make[1]: *** [seccomp-loader] Error 1
+make[1]: Leaving directory `/cpushare-0.48'
+make: *** [build-indep-stamp] Error 2
+dpkg-buildpackage: failure: debian/rules build gave error exit status 2
+
+With the attached patch 'cpushare' can be built on ppc64.
+
+The patch adds 'ppc64' to the Build-Depends on gcc-multilib.
+
+Regards
+Andreas Jochens
+
+diff -urN ../tmp-orig/cpushare-0.48/debian/control ./debian/control
+--- ../tmp-orig/cpushare-0.48/debian/control	2008-04-20 06:15:36.000000000 +0000
++++ ./debian/control	2008-04-20 06:15:25.000000000 +0000
+@@ -3,7 +3,7 @@
+ Priority: optional
+ Maintainer: Debian Scientific Computing Team <pkg-scicomp-devel@lists.alioth.debian.org>
+ Uploaders: Sam Hocevar (Debian packages) <sam+deb@zoy.org>
+-Build-Depends: debhelper (>= 6.0.7), quilt, python-support (>= 0.4.1), gcc-multilib [amd64]
++Build-Depends: debhelper (>= 6.0.7), quilt, python-support (>= 0.4.1), gcc-multilib [amd64 ppc64]
+ Standards-Version: 3.7.3
+ Vcs-Svn: svn://svn.debian.org/pkg-scicomp/cpushare/trunk/
+ Vcs-Browser: http://svn.debian.org/wsvn/pkg-scicomp/cpushare/
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,123 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 18:31:46 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JndOA-00005N-6s
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 18:31:46 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id E7C9E13A5099; Sun, 20 Apr 2008 17:31:40 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id A0AA113A4977
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 17:31:40 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JncvU-0005FA-Tk; Sun, 20 Apr 2008 17:02:04 +0000
+From: Roland Stigge <stigge@antcom.de>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted gnubiff 2.2.10-1 (source i386)
+Message-Id: <E1JncvU-0005FA-Tk@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 17:02:04 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <2NCEMl3-z4D.A.6rC.833CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301323
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 17:31:40 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.6
+X-Spam-Report: (-2.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.0 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 17:39:23 +0200
+Source: gnubiff
+Binary: gnubiff
+Architecture: source i386
+Version: 2.2.10-1
+Distribution: unstable
+Urgency: low
+Maintainer: Roland Stigge <stigge@antcom.de>
+Changed-By: Roland Stigge <stigge@antcom.de>
+Description:=20
+ gnubiff    - A mail notification program for GNOME (and others)
+Changes:=20
+ gnubiff (2.2.10-1) unstable; urgency=3Dlow
+ .
+   * New upstream release
+Checksums-Sha1:=20
+ 55cfb6b11f1ba3e610f479c9191d3e831ee9e41b 1110 gnubiff_2.2.10-1.dsc
+ c8379bb6c6fa2ee3512c7dd00492ca0eb5ceae0e 856771 gnubiff_2.2.10.orig.tar.=
+gz
+ e0f94dd0e305649416e5deda7092a412733fac25 5720 gnubiff_2.2.10-1.diff.gz
+ 974dd524a177ec123df62b60c3e9e4eb624f4da9 511442 gnubiff_2.2.10-1_i386.de=
+b
+Checksums-Sha256:=20
+ daa03eca1824f5454662932f925da54f2e23535cb699004e06e68e1d33104029 1110 gn=
+ubiff_2.2.10-1.dsc
+ 9536f6411bbaa68ff0dea3a203d6d6b65bd1fad367f210a0ec6aa3e8a790b412 856771 =
+gnubiff_2.2.10.orig.tar.gz
+ 8c9ca41700a4d718c9a1598c08180a85efd92b0220b0de0cb49e2da3e2b69c44 5720 gn=
+ubiff_2.2.10-1.diff.gz
+ 573c045d26be53101065c98e22b56457353071c0f3385534a946f795a5a876b2 511442 =
+gnubiff_2.2.10-1_i386.deb
+Files:=20
+ f1f69961ac92d273c02023c8c333c0f5 1110 mail optional gnubiff_2.2.10-1.dsc
+ e83d3a70556c747eacd95c1c442f7e04 856771 mail optional gnubiff_2.2.10.ori=
+g.tar.gz
+ 6b96e8c4d427ad3fa8c54a88643ed736 5720 mail optional gnubiff_2.2.10-1.dif=
+f.gz
+ 9259d4fda62af1944441aaa770a24c79 511442 mail optional gnubiff_2.2.10-1_i=
+386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC3E6caH/YBv43g8RAlT5AKCiHfj30jUROrbqZXPVthLrdx2rKACePRk6
+SVq3YFHWa35rHR4DFxfRd+4=3D
+=3D7mkO
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+gnubiff_2.2.10-1.diff.gz
+  to pool/main/g/gnubiff/gnubiff_2.2.10-1.diff.gz
+gnubiff_2.2.10-1.dsc
+  to pool/main/g/gnubiff/gnubiff_2.2.10-1.dsc
+gnubiff_2.2.10-1_i386.deb
+  to pool/main/g/gnubiff/gnubiff_2.2.10-1_i386.deb
+gnubiff_2.2.10.orig.tar.gz
+  to pool/main/g/gnubiff/gnubiff_2.2.10.orig.tar.gz
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

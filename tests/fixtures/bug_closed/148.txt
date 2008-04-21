@@ -1,0 +1,334 @@
+From bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org Sun Apr 20 11:55:10 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org>)
+	id 1JnXCK-0006Xa-4r
+	for ddc@ddc.chris-lamb.co.uk; Sun, 20 Apr 2008 11:55:10 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 06DBB13A4EB1; Sun, 20 Apr 2008 10:55:03 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id B1E9F13A4EA9;
+	Sun, 20 Apr 2008 10:54:58 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnXBR-0002J2-5v; Sun, 20 Apr 2008 10:54:09 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Sune Vuorela <Sune@vuorela.dk>
+Subject: Bug#359162: marked as done (Crash when closing search tab)
+Message-ID: <handler.359162.D359162.12086886584841.ackdone@bugs.debian.org>
+References: <200804201248.36195.Sune@vuorela.dk>
+ <44271F51.7060405@nung.edu.ua>
+X-Debian-PR-Message: closed 359162
+X-Debian-PR-Package: konqueror
+X-Debian-PR-Keywords: upstream confirmed
+X-Debian-PR-Source: kdebase
+Content-Type: multipart/mixed; boundary="----------=_1208688849-8682-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 10:54:09 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <XFuggjnL6XB.A.b_E.HEyCIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/132959
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 10:55:03 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208688849-8682-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 12:48:35 +0200
+with message-id <200804201248.36195.Sune@vuorela.dk>
+and subject line Re: Bug#359162: Seems to be fixed
+has caused the Debian Bug report #359162,
+regarding Crash when closing search tab
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+359162: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D359162
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208688849-8682-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 26 Mar 2006 22:05:02 +0000
+Return-path: <s-andy@nung.edu.ua>
+Received: from [194.44.244.166] (helo=mail.tvnet.if.ua)
+	by spohr.debian.org with esmtp (Exim 4.50)
+	id 1FNdM6-0006fD-0B
+	for submit@bugs.debian.org; Sun, 26 Mar 2006 14:05:02 -0800
+Received: from [10.10.204.146] (unknown [10.10.204.146])
+	by mail.tvnet.if.ua (Postfix) with ESMTP id D456E60E7
+	for <submit@bugs.debian.org>; Mon, 27 Mar 2006 01:04:23 +0300 (EEST)
+Message-ID: <44271F51.7060405@nung.edu.ua>
+Date: Mon, 27 Mar 2006 02:10:09 +0300
+From: Andriy Lesyuk <s-andy@nung.edu.ua>
+User-Agent: Debian Thunderbird 1.0.7 (X11/20051017)
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: submit@bugs.debian.org
+Subject: Crash when closing search tab
+Content-Type: text/plain; charset=windows-1251; format=flowed
+Content-Transfer-Encoding: 7bit
+Delivered-To: submit@bugs.debian.org
+X-Spam-Checker-Version: SpamAssassin 2.60-bugs.debian.org_2005_01_02 
+	(1.212-2003-09-23-exp) on spohr.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, hits=-4.0 required=4.0 tests=BAYES_01,HAS_PACKAGE,
+	RCVD_IN_BL_SPAMCOP_NET,RCVD_IN_SBLXBL,RCVD_IN_SBLXBL_CBL autolearn=no 
+	version=2.60-bugs.debian.org_2005_01_02
+
+Package: konqueror
+Version: 4:3.5.1-1
+Severity: normal
+
+Bug is reproduced in the following way:
+1) Open some location, for example /usr/share/qt3/doc/html/ (i used 
+icons view - may be it is important);
+2) Select Service -> Find menu item (not sure about the english names - 
+I'm using localized konqueror);
+3) Type anything in Content search (Contains text) and click "Search";
+4) Open some results in new tab;
+5) Close the search tab (with search dialog) - leads to crash.
+
+The following debug information is provided by kcrash:
+
+(no debugging symbols found)
+Using host libthread_db library "/lib/tls/libthread_db.so.1".
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+[Thread debugging using libthread_db enabled]
+[New Thread -1232611648 (LWP 2793)]
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+(no debugging symbols found)
+[KCrash handler]
+#5  0xb71454f2 in QString::length () from /usr/lib/libqt-mt.so.3
+#6  0xb7539992 in QString::find () from /usr/lib/libqt-mt.so.3
+#7  0xb5314d7d in KQuery::processQuery () from /usr/lib/kde3/libkfindpart.so
+#8  0xb5311fb3 in KQuery::checkEntries () from /usr/lib/kde3/libkfindpart.so
+#9  0xb53120b7 in KQuery::slotListEntries ()
+    from /usr/lib/kde3/libkfindpart.so
+#10 0xb53122ec in KQuery::qt_invoke () from /usr/lib/kde3/libkfindpart.so
+#11 0xb721e7ff in QObject::activate_signal () from /usr/lib/libqt-mt.so.3
+#12 0xb7a5ac0c in KIO::ListJob::entries () from /usr/lib/libkio.so.4
+#13 0xb7ac5723 in KIO::ListJob::slotListEntries () from /usr/lib/libkio.so.4
+#14 0xb7ac59a0 in KIO::ListJob::qt_invoke () from /usr/lib/libkio.so.4
+#15 0xb721e7ff in QObject::activate_signal () from /usr/lib/libqt-mt.so.3
+#16 0xb7a573e5 in KIO::SlaveInterface::listEntries ()
+    from /usr/lib/libkio.so.4
+#17 0xb7ac6330 in KIO::SlaveInterface::dispatch () from /usr/lib/libkio.so.4
+#18 0xb7a6b6b7 in KIO::SlaveInterface::dispatch () from /usr/lib/libkio.so.4
+#19 0xb7a702ab in KIO::Slave::gotInput () from /usr/lib/libkio.so.4
+#20 0xb7a7045b in KIO::Slave::qt_invoke () from /usr/lib/libkio.so.4
+#21 0xb721e7ff in QObject::activate_signal () from /usr/lib/libqt-mt.so.3
+#22 0xb721f106 in QObject::activate_signal () from /usr/lib/libqt-mt.so.3
+#23 0xb75ad1f7 in QSocketNotifier::activated () from /usr/lib/libqt-mt.so.3
+#24 0xb723eaaa in QSocketNotifier::event () from /usr/lib/libqt-mt.so.3
+#25 0xb71b5122 in QApplication::internalNotify () from 
+/usr/lib/libqt-mt.so.3
+#26 0xb71b5314 in QApplication::notify () from /usr/lib/libqt-mt.so.3
+#27 0xb7885d4e in KApplication::notify () from /usr/lib/libkdecore.so.4
+#28 0xb7146861 in QApplication::sendEvent () from /usr/lib/libqt-mt.so.3
+#29 0xb71a6cdd in QEventLoop::activateSocketNotifiers ()
+    from /usr/lib/libqt-mt.so.3
+#30 0xb715a542 in QEventLoop::processEvents () from /usr/lib/libqt-mt.so.3
+#31 0xb71cdb01 in QEventLoop::enterLoop () from /usr/lib/libqt-mt.so.3
+#32 0xb71cda26 in QEventLoop::exec () from /usr/lib/libqt-mt.so.3
+#33 0xb71b3c35 in QApplication::exec () from /usr/lib/libqt-mt.so.3
+#34 0xb6606f9c in kdemain () from /usr/lib/libkdeinit_konqueror.so
+#35 0xb7f19524 in kdeinitmain () from /usr/lib/kde3/konqueror.so
+#36 0x0804e1d6 in ?? ()
+#37 0x00000002 in ?? ()
+#38 0x0808de50 in ?? ()
+#39 0x00000001 in ?? ()
+#40 0x00000000 in ?? ()
+
+May be this bug is related to #355017...
+
+Hope this will help,
+Andriy Lesyuk
+
+
+------------=_1208688849-8682-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 359162-done) by bugs.debian.org; 20 Apr 2008 10:50:58 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-6.9 required=4.0 tests=BAYES_00,FOURLA,
+	HAS_BUG_NUMBER autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <Sune@vuorela.dk>
+Received: from elvira.killmulehill.net ([67.207.140.51])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <Sune@vuorela.dk>)
+	id 1JnX8M-0001Fm-1Z
+	for 359162-done@bugs.debian.org; Sun, 20 Apr 2008 10:50:58 +0000
+Received: by elvira.killmulehill.net with esmtpsa (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	id 1JnX8L-0005QP-AP
+	for 359162-done@bugs.debian.org; Sun, 20 Apr 2008 10:50:57 +0000
+Resent-From: Sune Vuorela <Sune@Vuorela.dk>
+Resent-To: 359162-done@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 12:50:49 +0200
+Resent-Message-ID: <200804201250.49814.Sune@vuorela.dk>
+From: Sune Vuorela <Sune@vuorela.dk>
+To: 359162-one@bugs.debian.org
+Subject: Re: Bug#359162: Seems to be fixed
+Date: Sun, 20 Apr 2008 12:48:35 +0200
+User-Agent: KMail/1.9.9
+References: <60279.91.124.9.113.1208689913.squirrel@mail.nung.edu.ua>
+In-Reply-To: <60279.91.124.9.113.1208689913.squirrel@mail.nung.edu.ua>
+MIME-Version: 1.0
+Content-Type: text/plain;
+  charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+Message-Id: <200804201248.36195.Sune@vuorela.dk>
+Resent-Date: Sun, 20 Apr 2008 10:50:57 +0000
+
+On Sunday 20 April 2008, s-andy@nung.edu.ua wrote:
+> Hello,
+>
+> The bug seems to be fixed now - cannot reproduce...
+
+okay. Marking as closed. Thank you for reporting back.
+
+/Sune
+=2D-=20
+Do you know how could I do for installing the digital application?
+
+=46rom Windows you neither ever have to telnet to a connection, nor must tu=
+rn=20
+off the cache of a hardware to the board, this way therefore you can never=
+=20
+receive from the MIDI 2D folder of the directory over the SCSI fan on the b=
+us=20
+in order to mount the laser TCP firewall.
+
+
+------------=_1208688849-8682-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

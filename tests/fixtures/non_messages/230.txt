@@ -1,0 +1,118 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 15:30:29 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnaYh-0007Rk-DQ
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 15:30:29 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id DA9E513A4FB3; Sun, 20 Apr 2008 14:30:21 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 43F7213A4F8F;
+	Sun, 20 Apr 2008 14:30:03 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnaVS-00048W-Rq; Sun, 20 Apr 2008 14:27:02 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476786: rsync fails to transfer /var/log/ntpstats/*
+Reply-To: Laurent CARON <lcaron@lncsa.com>, 476786@bugs.debian.org
+Resent-From: Laurent CARON <lcaron@lncsa.com>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Paul Slootman <paul@debian.org>
+Resent-Date: Sun, 20 Apr 2008 14:27:02 +0000
+Resent-Message-ID: <handler.476786.B476786.120870154213411@bugs.debian.org>
+X-Debian-PR-Message: report 476786
+X-Debian-PR-Package: rsync
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: rsync
+Received: via spool by 476786-submit@bugs.debian.org id=B476786.120870154213411
+          (code B ref 476786); Sun, 20 Apr 2008 14:27:02 +0000
+Received: (at 476786) by bugs.debian.org; 20 Apr 2008 14:25:42 +0000
+X-Amavis-Spam-Status: No, score=-7.0 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from sargon.lncsa.com ([212.99.8.251])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <lcaron@lncsa.com>)
+	id 1JnaU9-0003Tu-TY
+	for 476786@bugs.debian.org; Sun, 20 Apr 2008 14:25:42 +0000
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by sargon.lncsa.com (Postfix) with ESMTP id AA93B3002408;
+	Sun, 20 Apr 2008 16:25:40 +0200 (CEST)
+X-Virus-Scanned: Debian amavisd-new at lncsa.com
+Received: from sargon.lncsa.com ([127.0.0.1])
+	by localhost (sargon.lncsa.com [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id Pg0vaNI6ZEpd; Sun, 20 Apr 2008 16:25:40 +0200 (CEST)
+Received: from [192.168.0.192] (gw.unix-scripts.info [62.212.121.204])
+	(using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+	(Client did not present a certificate)
+	by sargon.lncsa.com (Postfix) with ESMTP id 58CB7301E63F;
+	Sun, 20 Apr 2008 16:25:34 +0200 (CEST)
+Message-ID: <480B525E.6070607@lncsa.com>
+Date: Sun, 20 Apr 2008 16:25:34 +0200
+From: Laurent CARON <lcaron@lncsa.com>
+User-Agent: Mozilla-Thunderbird 2.0.0.12 (X11/20080406)
+MIME-Version: 1.0
+To: 476786@bugs.debian.org
+CC: Laurent Caron <lcaron@lncsa.fr>
+References: <20080419070552.24432.43530.reportbug@sargon.lncsa.com> <20080419090027.GA11851@msgid.wurtel.net>
+In-Reply-To: <20080419090027.GA11851@msgid.wurtel.net>
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 7bit
+Resent-Date: Sun, 20 Apr 2008 14:27:02 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343524
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.6
+X-Spam-Report: (-52.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+Paul Slootman wrote:
+> Alternatively, if you want to help fix this bug in 2.6.9, you could
+> download http://debian.wurtel.net/i386/rsync and use that (it's
+> basically a 2.6.9_2etch2 built without optimization and not stripped).
+> First do "ulimit -c unlimited", and trigger the bug. You should then
+> have a core dump. Then do "gdb /path/to/rsync core" and "bt" to get the
+> stack backtrace. Alternatively make the core dump available to me.
+> Hopefully that would help pin down the cause of the error.
+
+Hi,
+
+I did download the executable file provided, and tried to reproduce the bug.
+
+I'm unable to make it happen since i'm using the version you provided me.
+
+I'll try rsync 3.0.2 from the backports.
+
+Laurent
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

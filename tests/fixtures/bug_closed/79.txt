@@ -1,0 +1,353 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 01:35:23 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnNWX-0003tw-FP
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 01:35:23 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 7526513A4E8B; Sun, 20 Apr 2008 00:35:16 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 020DE13A4E8C;
+	Sun, 20 Apr 2008 00:35:15 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnNUQ-0004Sn-Bj; Sun, 20 Apr 2008 00:33:06 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Andres Mejia <mcitadel@gmail.com>
+Subject: Bug#453555: marked as done (alien-arena: debian/watch fails to 
+ report upstream's version)
+Message-ID: <handler.453555.D453555.120865150314966.ackdone@bugs.debian.org>
+References: <E1JnNEt-00081c-8F@ries.debian.org>
+ <20071130041259.C462C98FC00C@neo.yahostme.com>
+X-Debian-PR-Message: closed 453555
+X-Debian-PR-Package: alien-arena
+X-Debian-PR-Source: alien-arena
+Content-Type: multipart/mixed; boundary="----------=_1208651586-17093-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 00:33:06 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <jIaGKKxmBUB.A.T9E.E_oCIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/132883
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 00:35:16 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: Spam detection software, running on the system "chris-lamb.co.uk", has
+	identified this incoming email as possible spam.  The original message
+	has been attached to this so you can view it (if it isn't spam) or label
+	similar future email.  If you have any questions, see
+	the administrator of that system for details.
+	Content preview:  Your message dated Sun, 20 Apr 2008 00:17:03 +0000 with
+	message-id <E1JnNEt-00081c-8F@ries.debian.org> and subject line
+	Bug#453555: fixed in alien-arena 7.0-1 has caused the Debian Bug report
+	#453555, regarding alien-arena: debian/watch fails to report upstream's
+	version to be marked as done. [...] 
+	Content analysis details:   (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208651586-17093-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 00:17:03 +0000
+with message-id <E1JnNEt-00081c-8F@ries.debian.org>
+and subject line Bug#453555: fixed in alien-arena 7.0-1
+has caused the Debian Bug report #453555,
+regarding alien-arena: debian/watch fails to report upstream's version
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+453555: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D453555
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208651586-17093-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at maintonly) by bugs.debian.org; 30 Nov 2007 04:13:01 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-6.9 required=4.0 tests=BAYES_00,FOURLA,
+	MURPHY_DRUGS_REL8,X_DEBBUGS_NO_ACK autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <atomo64@gmail.com>
+Received: from neo.yahostme.com ([87.230.10.244])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <atomo64@gmail.com>)
+	id 1IxxFN-0004vm-1O
+	for maintonly@bugs.debian.org; Fri, 30 Nov 2007 04:13:01 +0000
+Received: from localhost (unknown [201.164.223.105])
+	by neo.yahostme.com (Postfix) with ESMTP id C462C98FC00C
+	for <maintonly@bugs.debian.org>; Fri, 30 Nov 2007 05:12:59 +0100 (CET)
+From: Raphael Geissert <atomo64@gmail.com>
+User-Agent: no_upstream-reporter/0.1
+X-Debbugs-No-Ack: do as I say
+To: maintonly@bugs.debian.org
+Date: Fri, 30 Nov 2007 04:11:59 +0000
+Subject: alien-arena: debian/watch fails to report upstream's version
+Message-Id: <20071130041259.C462C98FC00C@neo.yahostme.com>
+Delivered-To: maintonly@bugs.debian.org
+
+Source: alien-arena
+Version: 6.10-2
+Severity: minor
+Usertags: dehs-no-upstream
+
+Hello maintainer,
+
+The debian/watch file of your package on the unstable distribution fails to report upstream's version.
+Uscan's message follows:
+
+----
+uscan.pl warning: In watchfile /tmp/alien-arena_watch4N6zWx, reading webpage
+  http://icculus.org/alienarena/files failed: 404 Not Found
+----
+
+Please note that this message is auto-generated by extracting the information
+ from the Debian External Health Status (a.k.a. DEHS) no_upstream page[1].
+At the moment of running the package version found is the one indicated on the report.
+If you have already fixed this issue please ignore and close this report.
+
+If you believe this message can be improved in any way don't hesitate to contact me
+ by replying to NNNNN-submitter@bugs.debian.org (where NNNNN is the number of this bug report).
+
+If you need help to fix this problem tag this bug with 'help'
+ so I pay special attention to it when submitting patches.
+This can be done by running % bts tag NNNNN help (where NNNNN is the the number of this bug report).
+
+If you wish not to be notified in the future please contact me so I add you to the ignore list.
+
+[1] http://dehs.alioth.debian.org/no_upstream.html
+
+Kind regards,
+Raphael Geissert.
+
+
+
+------------=_1208651586-17093-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 453555-close) by bugs.debian.org; 20 Apr 2008 00:31:43 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-6.7 required=4.0 tests=BAYES_00,FVGT_m_MULTI_ODD,
+	GMAIL,HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_2,MURPHY_DRUGS_REL8,
+	MURPHY_WRONG_WORD1,MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnNT5-0003t5-5B
+	for 453555-close@bugs.debian.org; Sun, 20 Apr 2008 00:31:43 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnNEt-00081c-8F; Sun, 20 Apr 2008 00:17:03 +0000
+From: Andres Mejia <mcitadel@gmail.com>
+To: 453555-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#453555: fixed in alien-arena 7.0-1
+Message-Id: <E1JnNEt-00081c-8F@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 00:17:03 +0000
+Content-Transfer-Encoding: quoted-printable
+
+Source: alien-arena
+Source-Version: 7.0-1
+
+We believe that the bug you reported is fixed in the latest version of
+alien-arena, which is due to be installed in the Debian FTP archive:
+
+alien-arena-browser_7.0-1_all.deb
+  to pool/contrib/a/alien-arena/alien-arena-browser_7.0-1_all.deb
+alien-arena-server_7.0-1_amd64.deb
+  to pool/contrib/a/alien-arena/alien-arena-server_7.0-1_amd64.deb
+alien-arena_7.0-1.diff.gz
+  to pool/contrib/a/alien-arena/alien-arena_7.0-1.diff.gz
+alien-arena_7.0-1.dsc
+  to pool/contrib/a/alien-arena/alien-arena_7.0-1.dsc
+alien-arena_7.0-1_amd64.deb
+  to pool/contrib/a/alien-arena/alien-arena_7.0-1_amd64.deb
+alien-arena_7.0.orig.tar.gz
+  to pool/contrib/a/alien-arena/alien-arena_7.0.orig.tar.gz
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 453555@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Andres Mejia <mcitadel@gmail.com> (supplier of updated alien-arena packag=
+e)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Fri, 18 Apr 2008 17:43:24 -0400
+Source: alien-arena
+Binary: alien-arena alien-arena-server alien-arena-browser
+Architecture: source amd64 all
+Version: 7.0-1
+Distribution: unstable
+Urgency: low
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Changed-By: Andres Mejia <mcitadel@gmail.com>
+Description:=20
+ alien-arena - Standalone 3D first person online deathmatch shooter
+ alien-arena-browser - stand alone server browser for Alien Arena
+ alien-arena-server - Dedicated server for Alien Arena
+Closes: 453555 457700
+Changes:=20
+ alien-arena (7.0-1) unstable; urgency=3Dlow
+ .
+   [ Barry deFreese ]
+   * Escape - in alien-arena-server.6.
+   * Add myself to uploaders.
+ .
+   [ Ansgar Burchardt ]
+   * Remove deprecated Encoding key from .desktop file.
+ .
+   [ Gon=C3=A9ri Le Bouder ]
+   * Remove Homepage from package description.
+ .
+   [ Andres Mejia ]
+   * New upstream release.
+   * Removing XS- part for Vcs-* lines.
+   * Removing +ssh part of Vcs-Svn line.
+   * Bumped to Standards-Version 3.7.3.
+   * Test for existence of *-stamp stamps before removing them.
+   * Removed Encoding field in desktop file.
+   * Modify patch for upstream Makefile to make Makefile more useful in b=
+uilding
+     Debian packages.
+     + Also fixes problem not detecting the existence of libcurl.
+   * Remove debug packages for release. Will support nostrip option inste=
+ad.
+   * Add description for fix-CVE-2007-4754-CVE-2007-4755.dpatch, silences
+     lintian warning.
+   * Add new link for watchfile.
+     + Closes: #453555
+   * Moved debian/scripts/alien-arena-tarball.sh to
+     debian/alien-arena-get-orig-source.
+   * Modified alien-arena-data-get-orig-source to make it easier to maint=
+ain.
+   * Switched from dpatch to quilt.
+   * Cut down package description.
+   * Closing bug about mouse constantly looking up. The submitter could n=
+ot
+     reproduce the bug after deleting the ~/.alien-arena directory.
+     + Closes: #457700
+   * Updated copyright file for new release.
+   * Updated README.Debian files.
+   * Adding new images for icons. Need build dependency on sharutils.
+Checksums-Sha1:=20
+ 3cd6af1cf817f66f142385f0a9bd4e2dce50aa73 1575 alien-arena_7.0-1.dsc
+ fa477af367bac522e6ec703c461af726e433ba56 1095678 alien-arena_7.0.orig.ta=
+r.gz
+ 07b67c324239f96ba9252ec48bd76c1917968b20 85866 alien-arena_7.0-1.diff.gz
+ 101a3ad9bf6da67b4c5baafb2883d57181df9bc5 642848 alien-arena_7.0-1_amd64.=
+deb
+ 3ac2ff90c8a69ff4543e81fa46a048b43598c8ad 143186 alien-arena-server_7.0-1=
+_amd64.deb
+ a1e20abdb74a80ce2dd56953481e1d82e61fb8a4 37128 alien-arena-browser_7.0-1=
+_all.deb
+Checksums-Sha256:=20
+ 681c6b044205cffd1b3c4af64c4b4c20fe128661e14aa800733dfa299fa8113a 1575 al=
+ien-arena_7.0-1.dsc
+ 6155f70db7539d05c6395ca725362d0791d9138eef86d3060cc925b661149303 1095678=
+ alien-arena_7.0.orig.tar.gz
+ 253748e1ea7e8acfc2bde5728a268b3c54b07480373f08f4b8dfba44937e26a3 85866 a=
+lien-arena_7.0-1.diff.gz
+ 3f3dccf309cdd66d629b6bd84a8870e059fed12ce333cb76088259af31ca4073 642848 =
+alien-arena_7.0-1_amd64.deb
+ 9cae3eefef8a1c96af0640702318e0d71730519365771379cc328a4abc709553 143186 =
+alien-arena-server_7.0-1_amd64.deb
+ dc7df3afa6c25f32753be48042186d15f9048a9a218930c890f4b0141ffa0613 37128 a=
+lien-arena-browser_7.0-1_all.deb
+Files:=20
+ c14885c380ebb200a864c052b92ea424 1575 contrib/games extra alien-arena_7.=
+0-1.dsc
+ cc3eab52ca4e3a1452f74064929a3592 1095678 contrib/games extra alien-arena=
+_7.0.orig.tar.gz
+ 8b2850cc8c22549fc14239ac436324c2 85866 contrib/games extra alien-arena_7=
+.0-1.diff.gz
+ fed7c664a13bad08f7c3368443543376 642848 contrib/games extra alien-arena_=
+7.0-1_amd64.deb
+ 1b6478aab20e185064cd1e4626f1a0c4 143186 contrib/games extra alien-arena-=
+server_7.0-1_amd64.deb
+ 343aab4c68a02f5fac368392500bbfe2 37128 contrib/games extra alien-arena-b=
+rowser_7.0-1_all.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICmgRsKTFpDfZQSwRAj34AJwPmUYmFxKNtHmCks9XdX/NDb7ZTQCglHUQ
+J9Tj/IozMDZfSBjqKeknsdM=3D
+=3D9PO8
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208651586-17093-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,217 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 20:06:31 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnerr-0000bL-Ny
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 20:06:31 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id C4AB113A51E6; Sun, 20 Apr 2008 19:06:24 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.9 required=4.0 tests=BAYES_00,FOURLA,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 69BAA13A50BD;
+	Sun, 20 Apr 2008 19:06:09 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jneob-0008Mb-3B; Sun, 20 Apr 2008 19:03:05 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#477069: grub-common: grub-probe Cannot find a GRUB drive for /dev/loop/0
+Reply-To: Federico Grau <donfede@casagrau.org>, 477069@bugs.debian.org
+Resent-From: Federico Grau <donfede@casagrau.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: GRUB Maintainers <pkg-grub-devel@lists.alioth.debian.org>
+Resent-Date: Sun, 20 Apr 2008 19:03:02 +0000
+Resent-Message-ID: <handler.477069.B.120871796116899@bugs.debian.org>
+X-Debian-PR-Message: report 477069
+X-Debian-PR-Package: grub-common
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: grub2
+Received: via spool by submit@bugs.debian.org id=B.120871796116899
+          (code B ref -1); Sun, 20 Apr 2008 19:03:02 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 18:59:21 +0000
+X-Amavis-Spam-Status: No, score=-9.8 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,HAS_PACKAGE autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from dsl093-100-179.wdc2.dsl.speakeasy.net ([66.93.100.179] helo=tatooine.casagrau.org)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <donfede@casagrau.org>)
+	id 1Jnekz-0004HO-0S
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 18:59:21 +0000
+Received: from bwing.casagrau.org (dhcphost193.casagrau.org [192.168.1.193])
+	by tatooine.casagrau.org (Postfix) with ESMTP id A116AEACC5;
+	Sun, 20 Apr 2008 14:59:14 -0400 (EDT)
+Received: by bwing.casagrau.org (Postfix, from userid 1001)
+	id A5B501540C1; Sun, 20 Apr 2008 14:59:14 -0400 (EDT)
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Federico Grau <donfede@casagrau.org>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Message-ID: <20080420185914.7815.76645.reportbug@bwing.casagrau.org>
+X-Mailer: reportbug 3.39-0.1
+Date: Sun, 20 Apr 2008 14:59:14 -0400
+X-casagrau-MailScanner-Information: Please contact the ISP for more information
+X-casagrau-MailScanner: Found to be clean
+X-casagrau-MailScanner-From: donfede@casagrau.org
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 19:03:05 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343734
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.5
+X-Spam-Report: (-52.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+Package: grub-common
+Version: 1.96+20080413-1
+Severity: normal
+
+I am using loop-aes (via loop-aes-modules-2.6.24-1-686 and
+loop-aes-utils) for an encrypted root filesystem.
+
+However, I can not update to a new kernel (automatically) because grub
+cannot figure out which drive my encrypted partition is on.
+
+donfede
+
+##########
+#
+# relevant command output
+#
+bwing:~# df -h
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/sda2              73G  2.6G   67G   4% /
+tmpfs                 494M     0  494M   0% /lib/init/rw
+udev                   10M  108K  9.9M   2% /dev
+tmpfs                 494M     0  494M   0% /dev/shm
+bwing:~# mount
+/dev/sda2 on / type ext3
+(rw,loop=/dev/loop0,gpgkey=/boot/kf_root_bwing_2008-04-20.gpg,encryption=AES256)
+
+bwing:~# grep sda2 /etc/fstab
+/dev/sda2       /               ext3
+loop=/dev/loop0,encryption=AES256,gpgkey=/boot/kf_root_bwing_2008-04-20.gpg
+0       0
+
+bwing:~# losetup -a
+/dev/loop/0: [000d]:2180 (/dev/sda2) encryption=AES256 multi-key-v3
+
+
+
+################
+#
+# aptitude install -f errors
+#
+
+bwing:~# aptitude install -f
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+Reading extended state information
+Initializing package states... Done
+Reading task descriptions... Done
+The following partially installed packages will be configured:
+  linux-image-2.6.24-1-686
+0 packages upgraded, 0 newly installed, 0 to remove and 3 not upgraded.
+Need to get 0B of archives. After unpacking 0B will be used.
+Setting up linux-image-2.6.24-1-686 (2.6.24-6) ...
+Running depmod.
+Finding valid ramdisk creators.
+Using mkinitramfs-kpkg to build the ramdisk.
+Not updating initrd symbolic links since we are being
+updated/reinstalled
+(2.6.24-5 was configured last, according to dpkg)
+Not updating image symbolic links since we are being updated/reinstalled
+(2.6.24-5 was configured last, according to dpkg)
+Running postinst hook script update-grub.
+Searching for GRUB installation directory ... found: /boot/grub
+grub-probe: error: Cannot find a GRUB drive for /dev/loop/0.  Check your
+device.map.
+
+User postinst hook script [update-grub] exited with value 1
+dpkg: error processing linux-image-2.6.24-1-686 (--configure):
+ subprocess post-installation script returned error exit status 1
+Errors were encountered while processing:
+ linux-image-2.6.24-1-686
+E: Sub-process /usr/bin/dpkg returned an error code (1)
+A package failed to install.  Trying to recover:
+Setting up linux-image-2.6.24-1-686 (2.6.24-6) ...
+Running depmod.
+Finding valid ramdisk creators.
+Using mkinitramfs-kpkg to build the ramdisk.
+Not updating initrd symbolic links since we are being
+updated/reinstalled
+(2.6.24-5 was configured last, according to dpkg)
+Not updating image symbolic links since we are being updated/reinstalled
+(2.6.24-5 was configured last, according to dpkg)
+Running postinst hook script update-grub.
+Searching for GRUB installation directory ... found: /boot/grub
+grub-probe: error: Cannot find a GRUB drive for /dev/loop/0.  Check your
+device.map.
+
+User postinst hook script [update-grub] exited with value 1
+dpkg: error processing linux-image-2.6.24-1-686 (--configure):
+ subprocess post-installation script returned error exit status 1
+Errors were encountered while processing:
+ linux-image-2.6.24-1-686
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+Reading extended state information
+Initializing package states... Done
+Reading task descriptions... Done
+
+
+
+
+
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (500, 'unstable')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.24-1-686 (SMP w/2 CPU cores)
+Locale: LANG=en_US.UTF-8, LC_CTYPE=en_US.UTF-8 (charmap=UTF-8)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages grub-common depends on:
+ii  base-files                    4.0.3      Debian base system miscellaneous f
+ii  libc6                         2.7-10     GNU C Library: Shared libraries
+
+grub-common recommends no packages.
+
+-- no debconf information
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

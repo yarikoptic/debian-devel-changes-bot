@@ -1,0 +1,125 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 20:49:55 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnfXo-0000nM-K8
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 20:49:55 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 66B4713A5217; Sun, 20 Apr 2008 19:49:46 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.4 required=4.0 tests=BAYES_00,RCVD_IN_DNSWL_LOW,
+	SARE_MSGID_LONG40 autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 3373B13A51F3;
+	Sun, 20 Apr 2008 19:49:37 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnfW6-0005Gk-Ag; Sun, 20 Apr 2008 19:48:02 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#474738: azureus: Fails to reappear after minimising
+Reply-To: "Shaun Jackman" <sjackman@gmail.com>, 474738@bugs.debian.org
+Resent-From: "Shaun Jackman" <sjackman@gmail.com>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Shaun Jackman <sjackman@debian.org>
+Resent-Date: Sun, 20 Apr 2008 19:48:01 +0000
+Resent-Message-ID: <handler.474738.B474738.12087207276645@bugs.debian.org>
+X-Debian-PR-Message: report 474738
+X-Debian-PR-Package: azureus
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: azureus
+Received: via spool by 474738-submit@bugs.debian.org id=B474738.12087207276645
+          (code B ref 474738); Sun, 20 Apr 2008 19:48:01 +0000
+Received: (at 474738) by bugs.debian.org; 20 Apr 2008 19:45:27 +0000
+X-Amavis-Spam-Status: No, score=-7.0 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from wa-out-1112.google.com ([209.85.146.177])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <sjackman@gmail.com>)
+	id 1JnfTb-0001io-Bb
+	for 474738@bugs.debian.org; Sun, 20 Apr 2008 19:45:27 +0000
+Received: by wa-out-1112.google.com with SMTP id k17so2306293waf.3
+        for <474738@bugs.debian.org>; Sun, 20 Apr 2008 12:45:26 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:reply-to:to:subject:in-reply-to:mime-version:content-type:content-transfer-encoding:content-disposition:references;
+        bh=DQOItImesKTIoKQrKPkUOLJ2E592TkxfP87Q/OQlcpw=;
+        b=Pwq6BUh4ZSMkYPLMvuFRM1FDs3Ba5YgVs1PxRfA4jxovPb8gBnJPpGHMTB51aM7ee3Djr/5z8PXdeoZqBT1ne4KdLsEipd61U+Cq8n625KTDQYeH2aXfBNurq6/4N1IRNe72coW3HqGo+WfxAP4d8oaWoI5pZjXmaHZPR+w79g4=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:reply-to:to:subject:in-reply-to:mime-version:content-type:content-transfer-encoding:content-disposition:references;
+        b=DgtVe/CFVvXFWWmL9fOWxIkiytYytqqVH8T6ZV3Iq96OCVuqRyIzH3/yvTCHM0UREvbkrOpWZDVF3dcZt1UThpVlACFGcXm/xFIj80sftk05lxHJ4Idr0ZrMUmItGsJXkkZ4n4Z2Oy2ayVoS6Jq5/fOiaVhbzmchSAPxd9qhp3c=
+Received: by 10.114.204.7 with SMTP id b7mr4999501wag.129.1208720725722;
+        Sun, 20 Apr 2008 12:45:25 -0700 (PDT)
+Received: by 10.114.147.9 with HTTP; Sun, 20 Apr 2008 12:45:25 -0700 (PDT)
+Message-ID: <7f45d9390804201245o7af89ce8qb8cf16295553dc95@mail.gmail.com>
+Date: Sun, 20 Apr 2008 12:45:25 -0700
+From: "Shaun Jackman" <sjackman@gmail.com>
+To: "Ben Whyte" <ben@whyte-systems.co.uk>, 474738@bugs.debian.org
+In-Reply-To: <20080407135525.30493.39648.reportbug@thor.whyte-systems.co.uk>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+References: <20080407135525.30493.39648.reportbug@thor.whyte-systems.co.uk>
+Resent-Date: Sun, 20 Apr 2008 19:48:02 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343754
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -36.2
+X-Spam-Report: (-36.2 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	16 AWL                    AWL: From: address is in the auto white-list
+
+Hi Ben,
+
+I haven't seen that problem myself.
+When you minimize Azures, does it appear on your task bar?
+What exactly happens when you click on the minimized item on your task bar?
+Does it appear in your system tray icons?
+What exactly happens when you click on the icon in your system tray?
+
+Cheers,
+Shaun
+
+On Mon, Apr 7, 2008 at 6:55 AM, Ben Whyte <ben@whyte-systems.co.uk> wrote:
+> Package: azureus
+>  Version: 3.0.4.2-1
+>  Severity: important
+>
+>
+>  When I minimise Azureus and then attempt to reshow it, it fails to
+>  reappear.
+>
+>  The application continues running but I cant bring up the interface.
+>
+>  Ben
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

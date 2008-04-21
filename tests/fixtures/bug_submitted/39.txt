@@ -1,0 +1,117 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 10:25:06 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnVnB-0005zi-BD
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 10:25:05 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 56BF213A4ECA; Sun, 20 Apr 2008 09:25:00 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.9 required=4.0 tests=BAYES_00,FOURLA,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 604C313A4EC0;
+	Sun, 20 Apr 2008 09:24:42 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnVQ3-0002Qh-0b; Sun, 20 Apr 2008 09:01:07 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476927: ITP: haskell-dataenc -- Data encoding library for Haskell
+Reply-To: Magnus Therning <magnus@therning.org>, 476927@bugs.debian.org
+Resent-From: Magnus Therning <magnus@therning.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: debian-devel@lists.debian.org, <wnpp@debian.org>
+Resent-Date: Sun, 20 Apr 2008 09:01:03 +0000
+Resent-Message-ID: <handler.476927.B.120868178229253@bugs.debian.org>
+X-Debian-PR-Message: report 476927
+X-Debian-PR-Package: wnpp
+X-Debian-PR-Keywords: 
+Received: via spool by submit@bugs.debian.org id=B.120868178229253
+          (code B ref -1); Sun, 20 Apr 2008 09:01:03 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 08:56:22 +0000
+X-Amavis-Spam-Status: No, score=-12.8 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,HAS_PACKAGE,X_DEBBUGS_CC autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from nimue.merula.net ([217.146.97.10])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <magnus@therning.org>)
+	id 1JnVLR-0007Z5-Jr
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 08:56:22 +0000
+Received: from tatooine.therning (ip-217.146.112.238.merula.net [217.146.112.238])
+	by nimue.merula.net (8.13.8/8.13.8) with ESMTP id m3K8uK0k019418;
+	Sun, 20 Apr 2008 09:56:20 +0100
+Received: by tatooine.therning (Postfix, from userid 1000)
+	id 781A51200B1; Sun, 20 Apr 2008 09:56:14 +0100 (BST)
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Magnus Therning <magnus@therning.org>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Message-ID: <20080420085614.6206.58977.reportbug@localhost>
+X-Mailer: reportbug 3.39-0.1
+Date: Sun, 20 Apr 2008 09:56:14 +0100
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 09:01:07 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343378
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -34.9
+X-Spam-Report: (-34.9 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	18 AWL                    AWL: From: address is in the auto white-list
+
+Package: wnpp
+Severity: wishlist
+Owner: Magnus Therning <magnus@therning.org>
+
+* Package name    : haskell-dataenc
+  Version         : 0.10.2
+  Upstream Author : Magnus Therning <magnus@therning.org>
+* URL             : http://hackage.haskell.org/cgi-bin/hackage-scripts/package/dataenc
+* License         : LGPL
+  Programming Lang: Haskell
+  Description     : Data encoding library for Haskell
+
+Data encoding library currently providing Uuencode, Base64, Base64Url,
+Base32, Base32Hex, and Base16.
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (990, 'unstable'), (500, 'testing'), (1, 'experimental')
+Architecture: amd64 (x86_64)
+
+Kernel: Linux 2.6.24-1-amd64 (SMP w/2 CPU cores)
+Locale: LANG=en_GB.UTF-8, LC_CTYPE=en_GB.UTF-8 (charmap=UTF-8)
+Shell: /bin/sh linked to /bin/bash
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

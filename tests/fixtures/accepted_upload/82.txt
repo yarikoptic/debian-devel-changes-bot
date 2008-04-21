@@ -1,0 +1,218 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 01:31:51 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnNT7-0003rI-Hg
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 01:31:51 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id B683713A4E79; Sun, 20 Apr 2008 00:31:42 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id 5AD9D13A4D4C
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 00:31:42 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnNEt-00081a-7N; Sun, 20 Apr 2008 00:17:03 +0000
+From: Andres Mejia <mcitadel@gmail.com>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted alien-arena 7.0-1 (source all amd64)
+Message-Id: <E1JnNEt-00081a-7N@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 00:17:03 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <QWRSXUAx4uP.A.ZzD.u7oCIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301263
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 00:31:42 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.6
+X-Spam-Report: Spam detection software, running on the system "chris-lamb.co.uk", has
+	identified this incoming email as possible spam.  The original message
+	has been attached to this so you can view it (if it isn't spam) or label
+	similar future email.  If you have any questions, see
+	the administrator of that system for details.
+	Content preview:  -----BEGIN PGP SIGNED MESSAGE----- Hash: SHA1 Format:
+	1.8 Date: Fri, 18 Apr 2008 17:43:24 -0400 Source: alien-arena Binary:
+	alien-arena alien-arena-server alien-arena-browser Architecture: source
+	amd64 all Version: 7.0-1 Distribution: unstable Urgency: low Maintainer:
+	Debian Games Team <pkg-games-devel@lists.alioth.debian.org> Changed-By:
+	Andres Mejia <mcitadel@gmail.com> Description: alien-arena - Standalone
+	3D first person online deathmatch shooter alien-arena-browser - stand
+	alone server browser for Alien Arena alien-arena-server - Dedicated
+	server for Alien Arena Closes: 453555 457700 Changes: alien-arena
+	(7.0-1) unstable; urgency=low . [ Barry deFreese ] * Escape - in
+	alien-arena-server.6. * Add myself to uploaders. . [ Ansgar Burchardt ]
+	* Remove deprecated Encoding key from .desktop file. . [ Gonéri Le
+	Bouder ] * Remove Homepage from package description. . [ Andres Mejia ]
+	* New upstream release. * Removing XS- part for Vcs-* lines. * Removing
+	+ssh part of Vcs-Svn line. * Bumped to Standards-Version 3.7.3. * Test
+	for existence of *-stamp stamps before removing them. * Removed Encoding
+	field in desktop file. * Modify patch for upstream Makefile to make
+	Makefile more useful in building Debian packages. + Also fixes problem
+	not detecting the existence of libcurl. * Remove debug packages for
+	release. Will support nostrip option instead. * Add description for
+	fix-CVE-2007-4754-CVE-2007-4755.dpatch, silences lintian warning. * Add
+	new link for watchfile. + Closes: #453555 * Moved
+	debian/scripts/alien-arena-tarball.sh to
+	debian/alien-arena-get-orig-source. * Modified
+	alien-arena-data-get-orig-source to make it easier to maintain. *
+	Switched from dpatch to quilt. * Cut down package description. * Closing
+	bug about mouse constantly looking up. The submitter could not reproduce
+	the bug after deleting the ~/.alien-arena directory. + Closes: #457700 *
+	Updated copyright file for new release. * Updated README.Debian files. *
+	Adding new images for icons. Need build dependency on sharutils.
+	Checksums-Sha1: 3cd6af1cf817f66f142385f0a9bd4e2dce50aa73 1575 [...] 
+	Content analysis details:   (-2.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.0 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Fri, 18 Apr 2008 17:43:24 -0400
+Source: alien-arena
+Binary: alien-arena alien-arena-server alien-arena-browser
+Architecture: source amd64 all
+Version: 7.0-1
+Distribution: unstable
+Urgency: low
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Changed-By: Andres Mejia <mcitadel@gmail.com>
+Description:=20
+ alien-arena - Standalone 3D first person online deathmatch shooter
+ alien-arena-browser - stand alone server browser for Alien Arena
+ alien-arena-server - Dedicated server for Alien Arena
+Closes: 453555 457700
+Changes:=20
+ alien-arena (7.0-1) unstable; urgency=3Dlow
+ .
+   [ Barry deFreese ]
+   * Escape - in alien-arena-server.6.
+   * Add myself to uploaders.
+ .
+   [ Ansgar Burchardt ]
+   * Remove deprecated Encoding key from .desktop file.
+ .
+   [ Gon=C3=A9ri Le Bouder ]
+   * Remove Homepage from package description.
+ .
+   [ Andres Mejia ]
+   * New upstream release.
+   * Removing XS- part for Vcs-* lines.
+   * Removing +ssh part of Vcs-Svn line.
+   * Bumped to Standards-Version 3.7.3.
+   * Test for existence of *-stamp stamps before removing them.
+   * Removed Encoding field in desktop file.
+   * Modify patch for upstream Makefile to make Makefile more useful in b=
+uilding
+     Debian packages.
+     + Also fixes problem not detecting the existence of libcurl.
+   * Remove debug packages for release. Will support nostrip option inste=
+ad.
+   * Add description for fix-CVE-2007-4754-CVE-2007-4755.dpatch, silences
+     lintian warning.
+   * Add new link for watchfile.
+     + Closes: #453555
+   * Moved debian/scripts/alien-arena-tarball.sh to
+     debian/alien-arena-get-orig-source.
+   * Modified alien-arena-data-get-orig-source to make it easier to maint=
+ain.
+   * Switched from dpatch to quilt.
+   * Cut down package description.
+   * Closing bug about mouse constantly looking up. The submitter could n=
+ot
+     reproduce the bug after deleting the ~/.alien-arena directory.
+     + Closes: #457700
+   * Updated copyright file for new release.
+   * Updated README.Debian files.
+   * Adding new images for icons. Need build dependency on sharutils.
+Checksums-Sha1:=20
+ 3cd6af1cf817f66f142385f0a9bd4e2dce50aa73 1575 alien-arena_7.0-1.dsc
+ fa477af367bac522e6ec703c461af726e433ba56 1095678 alien-arena_7.0.orig.ta=
+r.gz
+ 07b67c324239f96ba9252ec48bd76c1917968b20 85866 alien-arena_7.0-1.diff.gz
+ 101a3ad9bf6da67b4c5baafb2883d57181df9bc5 642848 alien-arena_7.0-1_amd64.=
+deb
+ 3ac2ff90c8a69ff4543e81fa46a048b43598c8ad 143186 alien-arena-server_7.0-1=
+_amd64.deb
+ a1e20abdb74a80ce2dd56953481e1d82e61fb8a4 37128 alien-arena-browser_7.0-1=
+_all.deb
+Checksums-Sha256:=20
+ 681c6b044205cffd1b3c4af64c4b4c20fe128661e14aa800733dfa299fa8113a 1575 al=
+ien-arena_7.0-1.dsc
+ 6155f70db7539d05c6395ca725362d0791d9138eef86d3060cc925b661149303 1095678=
+ alien-arena_7.0.orig.tar.gz
+ 253748e1ea7e8acfc2bde5728a268b3c54b07480373f08f4b8dfba44937e26a3 85866 a=
+lien-arena_7.0-1.diff.gz
+ 3f3dccf309cdd66d629b6bd84a8870e059fed12ce333cb76088259af31ca4073 642848 =
+alien-arena_7.0-1_amd64.deb
+ 9cae3eefef8a1c96af0640702318e0d71730519365771379cc328a4abc709553 143186 =
+alien-arena-server_7.0-1_amd64.deb
+ dc7df3afa6c25f32753be48042186d15f9048a9a218930c890f4b0141ffa0613 37128 a=
+lien-arena-browser_7.0-1_all.deb
+Files:=20
+ c14885c380ebb200a864c052b92ea424 1575 contrib/games extra alien-arena_7.=
+0-1.dsc
+ cc3eab52ca4e3a1452f74064929a3592 1095678 contrib/games extra alien-arena=
+_7.0.orig.tar.gz
+ 8b2850cc8c22549fc14239ac436324c2 85866 contrib/games extra alien-arena_7=
+.0-1.diff.gz
+ fed7c664a13bad08f7c3368443543376 642848 contrib/games extra alien-arena_=
+7.0-1_amd64.deb
+ 1b6478aab20e185064cd1e4626f1a0c4 143186 contrib/games extra alien-arena-=
+server_7.0-1_amd64.deb
+ 343aab4c68a02f5fac368392500bbfe2 37128 contrib/games extra alien-arena-b=
+rowser_7.0-1_all.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICmgRsKTFpDfZQSwRAj34AJwPmUYmFxKNtHmCks9XdX/NDb7ZTQCglHUQ
+J9Tj/IozMDZfSBjqKeknsdM=3D
+=3D9PO8
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+alien-arena-browser_7.0-1_all.deb
+  to pool/contrib/a/alien-arena/alien-arena-browser_7.0-1_all.deb
+alien-arena-server_7.0-1_amd64.deb
+  to pool/contrib/a/alien-arena/alien-arena-server_7.0-1_amd64.deb
+alien-arena_7.0-1.diff.gz
+  to pool/contrib/a/alien-arena/alien-arena_7.0-1.diff.gz
+alien-arena_7.0-1.dsc
+  to pool/contrib/a/alien-arena/alien-arena_7.0-1.dsc
+alien-arena_7.0-1_amd64.deb
+  to pool/contrib/a/alien-arena/alien-arena_7.0-1_amd64.deb
+alien-arena_7.0.orig.tar.gz
+  to pool/contrib/a/alien-arena/alien-arena_7.0.orig.tar.gz
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

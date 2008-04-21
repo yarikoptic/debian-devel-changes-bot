@@ -1,0 +1,121 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 13:35:33 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnYlV-0006vl-P3
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 13:35:33 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 43C1113A4DD1; Sun, 20 Apr 2008 12:35:28 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id E9EAB13A49A5
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 12:35:27 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnYFI-0004v5-QS; Sun, 20 Apr 2008 12:02:12 +0000
+From: Rafael Laboissiere <rafael@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted slang-slirp 1.9.4-2 (source amd64)
+Message-Id: <E1JnYFI-0004v5-QS@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 12:02:12 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <2iyOIPEMAQH.A.pn.QizCIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301295
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 12:35:28 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.5
+X-Spam-Report: (-2.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.1 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 12:43:55 +0200
+Source: slang-slirp
+Binary: slang-slirp
+Architecture: source amd64
+Version: 1.9.4-2
+Distribution: unstable
+Urgency: low
+Maintainer: Debian JED Group <pkg-jed-sl-modules@lists.alioth.debian.org>
+Changed-By: Rafael Laboissiere <rafael@debian.org>
+Description:=20
+ slang-slirp - C code generator for the S-Lang scripting language
+Changes:=20
+ slang-slirp (1.9.4-2) unstable; urgency=3Dlow
+ .
+   * debian/patches/minus-sign-manpage.patch: Add patch for escaping "-"
+     signs that mean the "minus" character
+   * Switch to quilt from CDBS's simple-patchsys
+   * debian/control: Append trunk/ to the path in Vcs-Svn:, such that
+     debcheckout works
+Checksums-Sha1:=20
+ b92417052bf4547d1a13d0af4b78bb247fae88bb 1272 slang-slirp_1.9.4-2.dsc
+ d540431c31a3c3b63042588d4b6f756bf0e2c071 7043 slang-slirp_1.9.4-2.diff.g=
+z
+ 3e27b0f59e8720afd25004d65daf516961b347b4 270264 slang-slirp_1.9.4-2_amd6=
+4.deb
+Checksums-Sha256:=20
+ 9cea242bd2f16507ed8ef08ab58b0e58f2e0419935920a92f15c54138ef40735 1272 sl=
+ang-slirp_1.9.4-2.dsc
+ 1c83ce057fb48af4667d12d9ad7a8e67b05b16bcd994de931f09b65bdf424db1 7043 sl=
+ang-slirp_1.9.4-2.diff.gz
+ b56e7281a329ce0d6699bf99933b25aaf4b4290b78c1e348aa0d6d57890926f9 270264 =
+slang-slirp_1.9.4-2_amd64.deb
+Files:=20
+ 346c3e78454bdc4c203c8bf248f03dad 1272 interpreters optional slang-slirp_=
+1.9.4-2.dsc
+ 24b48781119b57861863769593994287 7043 interpreters optional slang-slirp_=
+1.9.4-2.diff.gz
+ 8a844e6df5dbf80f7752a86e50c36cc0 270264 interpreters optional slang-slir=
+p_1.9.4-2_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.5 (GNU/Linux)
+
+iD8DBQFICy4hk3oga0pdcv4RAkoRAKCORExN0RBdYo7iOWABKlzGYpYhFACfTjjG
+qKX9hWudYA0DJzO317nf2Cw=3D
+=3DVMvQ
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+slang-slirp_1.9.4-2.diff.gz
+  to pool/main/s/slang-slirp/slang-slirp_1.9.4-2.diff.gz
+slang-slirp_1.9.4-2.dsc
+  to pool/main/s/slang-slirp/slang-slirp_1.9.4-2.dsc
+slang-slirp_1.9.4-2_amd64.deb
+  to pool/main/s/slang-slirp/slang-slirp_1.9.4-2_amd64.deb
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

@@ -1,0 +1,185 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 02:31:51 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnOPB-0004uY-DA
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 02:31:51 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id BFA7613A4E6C; Sun, 20 Apr 2008 01:31:43 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id 51CE413A4ABD
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 01:31:43 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnOBZ-0002La-6w; Sun, 20 Apr 2008 01:17:41 +0000
+From: Andres Mejia <mcitadel@gmail.com>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted alien-arena-data 7.0-1 (source all)
+Message-Id: <E1JnOBZ-0002La-6w@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 01:17:41 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <4XDWPE4lZL.A.n-D._zpCIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301265
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 01:31:43 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.6
+X-Spam-Report: Spam detection software, running on the system "chris-lamb.co.uk", has
+	identified this incoming email as possible spam.  The original message
+	has been attached to this so you can view it (if it isn't spam) or label
+	similar future email.  If you have any questions, see
+	the administrator of that system for details.
+	Content preview:  -----BEGIN PGP SIGNED MESSAGE----- Hash: SHA1 Format:
+	1.8 Date: Tue, 15 Jan 2008 00:06:37 -0500 Source: alien-arena-data
+	Binary: alien-arena-data Architecture: source all Version: 7.0-1
+	Distribution: unstable Urgency: low Maintainer: Debian Games Team
+	<pkg-games-devel@lists.alioth.debian.org> Changed-By: Andres Mejia
+	<mcitadel@gmail.com> Description: alien-arena-data - Game data files for
+	Alien Arena Closes: 453556 Changes: alien-arena-data (7.0-1) unstable;
+	urgency=low . * New upstream release. * New link provided for watch
+	file. + Closes: #453556 * Removing Homepage from Description. * Removing
+	XS- prefix from Vcs-* entries. * Fixing Vcs-Svn link, removing +ssh
+	part. * Bumped Standards-Version to 3.7.3. * Using Recommends of
+	alien-arena (>= 7.0) only. * Remove README.Debian as information didn't
+	pertain to Debian. * Call binary-arch in debian/rules to comply with
+	Debian policy. * Test for the existence of build-stamp before attempting
+	to remove. * Renamed alien-arena-data-tarball.sh to
+	alien-arena-data-get-orig-source. * Modified
+	alien-arena-data-get-orig-source to make it easier to maintain. *
+	Removed notice about wrong dm-saucer in copyright file. Doesn't pertain
+	to alien-arena-7.0. * Cut down package description. * Update copyright
+	notice for new release. Checksums-Sha1:
+	4d8b6ed8d346953fd66554b7f3bbf021a5508691 1275 alien-arena-data_7.0-1.dsc
+	8db12c7f78ac15836f4c13901dd9cd3ae2d4fc6f 221453568
+	alien-arena-data_7.0.orig.tar.gz
+	57b22ef0f5be30a1e94a42e142394900a4e98d30 3903
+	alien-arena-data_7.0-1.diff.gz 1c6dad754477f8d0f8f47efa6e2df00989de4310
+	220393788 alien-arena-data_7.0-1_all.deb Checksums-Sha256:
+	7071775f5bbf6d2ebda2898f4da356673f82ff51a7fdc86e110031975125f82a 1275
+	alien-arena-data_7.0-1.dsc
+	229cbe155e225b6a312530526c10e482971fcdffbca56854b5002c0097920609
+	221453568 alien-arena-data_7.0.orig.tar.gz
+	0eec658de08cecb3c728b933d905def558f287a0dfa81b8fdf2405a6900cd44d 3903
+	alien-arena-data_7.0-1.diff.gz
+	3e4d2ab2cec52502541fc12251622605b01b6ba839d43fe3ca333df40124b5c7
+	220393788 alien-arena-data_7.0-1_all.deb Files:
+	94b12683d3eb296977977c566d77834e 1275 [...] 
+	Content analysis details:   (-2.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.0 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Tue, 15 Jan 2008 00:06:37 -0500
+Source: alien-arena-data
+Binary: alien-arena-data
+Architecture: source all
+Version: 7.0-1
+Distribution: unstable
+Urgency: low
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Changed-By: Andres Mejia <mcitadel@gmail.com>
+Description:=20
+ alien-arena-data - Game data files for Alien Arena
+Closes: 453556
+Changes:=20
+ alien-arena-data (7.0-1) unstable; urgency=3Dlow
+ .
+   * New upstream release.
+   * New link provided for watch file.
+     + Closes: #453556
+   * Removing Homepage from Description.
+   * Removing XS- prefix from Vcs-* entries.
+   * Fixing Vcs-Svn link, removing +ssh part.
+   * Bumped Standards-Version to 3.7.3.
+   * Using Recommends of alien-arena (>=3D 7.0) only.
+   * Remove README.Debian as information didn't pertain to Debian.
+   * Call binary-arch in debian/rules to comply with Debian policy.
+   * Test for the existence of build-stamp before attempting to remove.
+   * Renamed alien-arena-data-tarball.sh to alien-arena-data-get-orig-sou=
+rce.
+   * Modified alien-arena-data-get-orig-source to make it easier to maint=
+ain.
+   * Removed notice about wrong dm-saucer in copyright file. Doesn't pert=
+ain
+     to alien-arena-7.0.
+   * Cut down package description.
+   * Update copyright notice for new release.
+Checksums-Sha1:=20
+ 4d8b6ed8d346953fd66554b7f3bbf021a5508691 1275 alien-arena-data_7.0-1.dsc
+ 8db12c7f78ac15836f4c13901dd9cd3ae2d4fc6f 221453568 alien-arena-data_7.0.=
+orig.tar.gz
+ 57b22ef0f5be30a1e94a42e142394900a4e98d30 3903 alien-arena-data_7.0-1.dif=
+f.gz
+ 1c6dad754477f8d0f8f47efa6e2df00989de4310 220393788 alien-arena-data_7.0-=
+1_all.deb
+Checksums-Sha256:=20
+ 7071775f5bbf6d2ebda2898f4da356673f82ff51a7fdc86e110031975125f82a 1275 al=
+ien-arena-data_7.0-1.dsc
+ 229cbe155e225b6a312530526c10e482971fcdffbca56854b5002c0097920609 2214535=
+68 alien-arena-data_7.0.orig.tar.gz
+ 0eec658de08cecb3c728b933d905def558f287a0dfa81b8fdf2405a6900cd44d 3903 al=
+ien-arena-data_7.0-1.diff.gz
+ 3e4d2ab2cec52502541fc12251622605b01b6ba839d43fe3ca333df40124b5c7 2203937=
+88 alien-arena-data_7.0-1_all.deb
+Files:=20
+ 94b12683d3eb296977977c566d77834e 1275 non-free/games extra alien-arena-d=
+ata_7.0-1.dsc
+ 9b3f11df7ba83afc58bca75051d84f71 221453568 non-free/games extra alien-ar=
+ena-data_7.0.orig.tar.gz
+ 5571e28a2acab57f49403afadb1c2a8e 3903 non-free/games extra alien-arena-d=
+ata_7.0-1.diff.gz
+ c2dca18506593fb2f7214473c339d7f3 220393788 non-free/games extra alien-ar=
+ena-data_7.0-1_all.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICoVBsKTFpDfZQSwRAq8rAJ9zepQY8s12dQ8IEg9uk54oZo/SaQCgihRZ
+MJd2Kz51/Wk1D5UfEwUCozc=3D
+=3Dpjq4
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+alien-arena-data_7.0-1.diff.gz
+  to pool/non-free/a/alien-arena-data/alien-arena-data_7.0-1.diff.gz
+alien-arena-data_7.0-1.dsc
+  to pool/non-free/a/alien-arena-data/alien-arena-data_7.0-1.dsc
+alien-arena-data_7.0-1_all.deb
+  to pool/non-free/a/alien-arena-data/alien-arena-data_7.0-1_all.deb
+alien-arena-data_7.0.orig.tar.gz
+  to pool/non-free/a/alien-arena-data/alien-arena-data_7.0.orig.tar.gz
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

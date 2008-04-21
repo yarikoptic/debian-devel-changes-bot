@@ -1,0 +1,133 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 14:05:22 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnZEK-00073G-St
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 14:05:22 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 1FA5C13A4F9E; Sun, 20 Apr 2008 13:05:15 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-6.7 required=4.0 tests=BAYES_00,FOURLA,
+	IMPRONONCABLE_1,LDO_WHITELIST,MURPHY_WRONG_WORD2,RCVD_IN_DNSWL_LOW
+	autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id B635613A4FBC;
+	Sun, 20 Apr 2008 13:05:03 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnZCG-0000aR-V6; Sun, 20 Apr 2008 13:03:08 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#467205: gparted: Still depending on menu
+Reply-To: Tourneur Henry-Nicolas <henry.nicolas@tourneur.be>, 467205@bugs.debian.org
+Resent-From: Tourneur Henry-Nicolas <henry.nicolas@tourneur.be>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Anibal Monsalve Salazar <anibal@debian.org>
+Resent-Date: Sun, 20 Apr 2008 13:03:07 +0000
+Resent-Message-ID: <handler.467205.B467205.120869651031170@bugs.debian.org>
+X-Debian-PR-Message: report 467205
+X-Debian-PR-Package: gparted
+X-Debian-PR-Keywords: patch
+X-Debian-PR-Source: gparted
+Received: via spool by 467205-submit@bugs.debian.org id=B467205.120869651031170
+          (code B ref 467205); Sun, 20 Apr 2008 13:03:07 +0000
+Received: (at 467205) by bugs.debian.org; 20 Apr 2008 13:01:50 +0000
+X-Amavis-Spam-Status: No, score=-8.6 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,HAS_PACKAGE,IMPRONONCABLE_1,MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from smtp-out.coditel.net ([212.95.66.33])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <henry.nicolas@tourneur.be>)
+	id 1JnZAz-00085k-Pv
+	for 467205@bugs.debian.org; Sun, 20 Apr 2008 13:01:49 +0000
+Received: from smtp.coditel.net (localhost.localdomain [127.0.0.1])
+	by smtp-out.coditel.net (Postfix) with ESMTP
+	id E4E82EB37F; Sun, 20 Apr 2008 15:01:48 +0200 (CEST)
+Received: from Virgil.TOURNEUR (cable-85.28.64.79.coditel.net [85.28.64.79])
+	by smtp.coditel.net (Postfix) with ESMTP
+	id 5C9DB2FD25; Sun, 20 Apr 2008 15:01:48 +0200 (CEST)
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Tourneur Henry-Nicolas <henry.nicolas@tourneur.be>
+To: Debian Bug Tracking System <467205@bugs.debian.org>
+Message-ID: <20080420130148.6656.81992.reportbug@Virgil.TOURNEUR>
+X-Mailer: reportbug 3.39-0.1
+Date: Sun, 20 Apr 2008 15:01:48 +0200
+X-AV-Checked: clean on smtp.coditel.net
+Resent-Date: Sun, 20 Apr 2008 13:03:08 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343482
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -46.2
+X-Spam-Report: (-46.2 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	6.3 AWL                    AWL: From: address is in the auto white-list
+
+Package: gparted
+Version: 0.3.6-1
+Followup-For: Bug #467205
+
+The bug is still present in unstable and testing, as gparted still
+depend on menu.
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers testing
+  APT policy: (500, 'testing')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.24-1-686 (SMP w/2 CPU cores)
+Locale: LANG=fr_BE@euro, LC_CTYPE=fr_BE@euro (charmap=ISO-8859-15)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages gparted depends on:
+ii  libatk1.0-0                   1.20.0-1   The ATK accessibility toolkit
+ii  libc6                         2.7-10     GNU C Library: Shared libraries
+ii  libcairo2                     1.4.14-1   The Cairo 2D vector graphics libra
+ii  libcairomm-1.0-1              1.4.6-1    C++ wrappers for Cairo (shared lib
+ii  libgcc1                       1:4.3.0-3  GCC support library
+ii  libglib2.0-0                  2.16.1-2   The GLib library of C routines
+ii  libglibmm-2.4-1c2a            2.16.1-1   C++ wrapper for the GLib toolkit (
+ii  libgtk2.0-0                   2.12.9-2   The GTK+ graphical user interface 
+ii  libgtkmm-2.4-1c2a             1:2.12.7-1 C++ wrappers for GTK+ 2.4 (shared 
+ii  libpango1.0-0                 1.20.2-2   Layout and rendering of internatio
+ii  libparted1.7-1                1.7.1-5.1  The GNU Parted disk partitioning s
+ii  libsigc++-2.0-0c2a            2.0.18-2   type-safe Signal Framework for C++
+ii  libstdc++6                    4.3.0-3    The GNU Standard C++ Library v3
+ii  libuuid1                      1.40.8-2   universally unique id library
+ii  menu                          2.1.38     generates programs menu for all me
+
+gparted recommends no packages.
+
+-- no debconf information
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

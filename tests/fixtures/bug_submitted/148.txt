@@ -1,0 +1,128 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 17:20:04 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JncGj-0008DV-O8
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 17:20:04 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id C997313A4F3E; Sun, 20 Apr 2008 16:19:56 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.9 required=4.0 tests=BAYES_00,FOURLA,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id AE9E713A4EB9;
+	Sun, 20 Apr 2008 16:19:37 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JncC3-0005Nh-2p; Sun, 20 Apr 2008 16:15:07 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#477044: apt-cacher-ng: Need to add http://ca.archive.ubuntu.com/ to ubuntu_mirrors
+Reply-To: Daniel Dickinson <cshore@wightman.ca>, 477044@bugs.debian.org
+Resent-From: Daniel Dickinson <cshore@wightman.ca>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Eduard Bloch <blade@debian.org>
+Resent-Date: Sun, 20 Apr 2008 16:15:04 +0000
+Resent-Message-ID: <handler.477044.B.120870792115182@bugs.debian.org>
+X-Debian-PR-Message: report 477044
+X-Debian-PR-Package: apt-cacher-ng
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: apt-cacher-ng
+Received: via spool by submit@bugs.debian.org id=B.120870792115182
+          (code B ref -1); Sun, 20 Apr 2008 16:15:04 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 16:12:01 +0000
+X-Amavis-Spam-Status: No, score=-9.8 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,HAS_PACKAGE autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from server01.gorrie.wightman.ca ([216.110.227.151] helo=mail.wightman.on.ca)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <cshore@wightman.ca>)
+	id 1Jnc92-0003wD-S1
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 16:12:00 +0000
+Received: by mail.wightman.on.ca (Postfix, from userid 99)
+	id 46C528471D; Sun, 20 Apr 2008 12:12:00 -0400 (EDT)
+Received: from matt.fionavar.dd (unknown [74.220.173.248])
+	(using TLSv1 with cipher AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by mail.wightman.on.ca (Postfix) with ESMTP id 03E34848B9;
+	Sun, 20 Apr 2008 12:11:53 -0400 (EDT)
+Received: from daniel by matt.fionavar.dd with local (Exim 4.69)
+	(envelope-from <cshore@wightman.ca>)
+	id 1Jnc8b-0007n9-9Z; Sun, 20 Apr 2008 12:11:33 -0400
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Daniel Dickinson <cshore@wightman.ca>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Message-ID: <20080420161133.29911.26250.reportbug@matt.fionavar.dd>
+X-Mailer: reportbug 3.39
+Date: Sun, 20 Apr 2008 12:11:33 -0400
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 16:15:07 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343631
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -37.8
+X-Spam-Report: (-37.8 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	15 AWL                    AWL: From: address is in the auto white-list
+
+Package: apt-cacher-ng
+Version: 0.1.12-2
+Severity: normal
+
+
+I discovered the default mirror for Canada was not in the ubuntu_mirrors.  The address is http://ca.archive.ubuntu.com/ubuntu/
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers testing
+  APT policy: (500, 'testing')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.24-1-686 (SMP w/1 CPU core)
+Locale: LANG=en_CA.UTF-8, LC_CTYPE=en_CA.UTF-8 (charmap=UTF-8)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages apt-cacher-ng depends on:
+ii  adduser                3.107             add and remove users and groups
+ii  libbz2-1.0             1.0.5-0.1         high-quality block-sorting file co
+ii  libc6                  2.7-10            GNU C Library: Shared libraries
+ii  libfuse2               2.7.3-4           Filesystem in USErspace library
+ii  libgcc1                1:4.3.0-3         GCC support library
+ii  libstdc++6             4.3.0-3           The GNU Standard C++ Library v3
+ii  zlib1g                 1:1.2.3.3.dfsg-11 compression library - runtime
+
+apt-cacher-ng recommends no packages.
+
+-- no debconf information
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

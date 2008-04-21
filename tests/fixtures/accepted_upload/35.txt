@@ -1,0 +1,122 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 14:03:08 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnZCD-00071i-HX
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 14:03:08 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 431D913A4F7A; Sun, 20 Apr 2008 13:03:04 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id 4F1A213A4F17
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 13:03:02 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnZBE-0008Ai-Vj; Sun, 20 Apr 2008 13:02:04 +0000
+From: Ola Lundqvist <opal@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted php-elisp 1.4.0-1 (source all)
+Message-Id: <E1JnZBE-0008Ai-Vj@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 13:02:04 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <lJ8n1c_MKlK.A.Q9G.I8zCIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301298
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 13:03:04 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.5
+X-Spam-Report: (-2.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.1 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.7
+Date: Sun, 20 Apr 2008 14:45:09 +0200
+Source: php-elisp
+Binary: php-elisp
+Architecture: source all
+Version: 1.4.0-1
+Distribution: unstable
+Urgency: low
+Maintainer: Ola Lundqvist <opal@debian.org>
+Changed-By: Ola Lundqvist <opal@debian.org>
+Description:=20
+ php-elisp  - Emacs support for php files
+Closes: 342632
+Changes:=20
+ php-elisp (1.4.0-1) unstable; urgency=3Dlow
+ .
+   * New upstream release.
+   * This version have a copy of the 1.2.0 version with support for emacs=
+21
+     included as well.
+   * Applied patch with various fixes for the 1.2.0 version, closes: #342=
+632.
+     Thanks to Thue Janus Kristensen <thuejk@gmail.com> for the good patc=
+h.
+     Due to new upstream release two chunks had to be applied manually.
+   * Making Ola maintainer and Pontus co-maintainer.
+   * Debhelper compatibility version 4 support.
+   * Updated to 3.7.2 version of the debian standards version.
+     This include removing the old conffiles file in debian dir.
+   * Build depends on debhelper.
+   * Updated to new version of FSF address in copyright file.
+Files:=20
+ f99fbbecefc37c02fd4ea43188e6c207 614 text optional php-elisp_1.4.0-1.dsc
+ b6f969215d8e1ebcca3e247fac20f2c7 35672 text optional php-elisp_1.4.0.ori=
+g.tar.gz
+ b9d71407af6845eeb3dcb982a33ec9a3 17555 text optional php-elisp_1.4.0-1.d=
+iff.gz
+ 4704987a104854eaeb5bc96e5047b19d 34552 text optional php-elisp_1.4.0-1_a=
+ll.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICz27GKGxzw/lPdkRAiYXAJ94NW7jbq0tsgLWjcJ4ThtM46FVnwCgj4V2
+YCJRHHMeNgrkDRBqXfP5L+E=3D
+=3Dhvfg
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+php-elisp_1.4.0-1.diff.gz
+  to pool/main/p/php-elisp/php-elisp_1.4.0-1.diff.gz
+php-elisp_1.4.0-1.dsc
+  to pool/main/p/php-elisp/php-elisp_1.4.0-1.dsc
+php-elisp_1.4.0-1_all.deb
+  to pool/main/p/php-elisp/php-elisp_1.4.0-1_all.deb
+php-elisp_1.4.0.orig.tar.gz
+  to pool/main/p/php-elisp/php-elisp_1.4.0.orig.tar.gz
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

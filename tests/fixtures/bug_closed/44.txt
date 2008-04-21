@@ -1,0 +1,249 @@
+From bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org Sun Apr 20 15:11:42 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org>)
+	id 1JnaGY-0007O2-Sa
+	for ddc@ddc.chris-lamb.co.uk; Sun, 20 Apr 2008 15:11:42 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 82D6313A5082; Sun, 20 Apr 2008 14:11:37 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 5BF5213A5085;
+	Sun, 20 Apr 2008 14:11:30 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnaBM-0005Sz-KN; Sun, 20 Apr 2008 14:06:16 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Josselin Mouette <joss@debian.org>
+Subject: Bug#475067: marked as done (libpango1.0-0-dbg: Debugging symbols 
+ are not used in GDB)
+Message-ID: <handler.475067.D475067.1208700116836.ackdone@bugs.debian.org>
+References: <1208700109.3820.35.camel@shizuru>
+ <20080408193357.858.33589.reportbug@workstation.home.at>
+X-Debian-PR-Message: closed 475067
+X-Debian-PR-Package: libpango1.0-0-dbg
+X-Debian-PR-Source: pango1.0
+Content-Type: multipart/mixed; boundary="----------=_1208700376-20892-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 14:06:16 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <LqnkIubetYJ.A._Y.Z80CIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/133001
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 14:11:37 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208700376-20892-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 16:01:47 +0200
+with message-id <1208700109.3820.35.camel@shizuru>
+and subject line Re: Bug#475067: libpango1.0-0-dbg: Debugging symbols are n=
+ot used in GDB
+has caused the Debian Bug report #475067,
+regarding libpango1.0-0-dbg: Debugging symbols are not used in GDB
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+475067: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D475067
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208700376-20892-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 8 Apr 2008 19:34:06 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.8 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,HAS_PACKAGE,IMPRONONCABLE_2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <twisti@complang.tuwien.ac.at>
+Received: from viefep32-int.chello.at ([62.179.121.50])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <twisti@complang.tuwien.ac.at>)
+	id 1JjJa2-0004n6-A1
+	for submit@bugs.debian.org; Tue, 08 Apr 2008 19:34:06 +0000
+Received: from workstation.home.at ([84.113.196.102])
+          by viefep32-int.chello.at
+          (InterMail vM.7.08.02.02 201-2186-121-104-20070414) with ESMTP
+          id <20080408193359.SYPL4972.viefep32-int.chello.at@workstation.home.at>;
+          Tue, 8 Apr 2008 21:33:59 +0200
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Christian Thalinger <twisti@complang.tuwien.ac.at>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Subject: libpango1.0-0-dbg: Debugging symbols are not used in GDB
+Message-ID: <20080408193357.858.33589.reportbug@workstation.home.at>
+X-Mailer: reportbug 3.39
+Date: Tue, 08 Apr 2008 21:33:57 +0200
+Delivered-To: submit@bugs.debian.org
+
+Package: libpango1.0-0-dbg
+Version: 1.20.0-1
+Severity: important
+
+
+The debugging symbols of this package are not picked up by GDB.  Other
+packages like libgtk2.0-0-dbg work.  Here is a backtrace:
+
+Breakpoint 2, 0x00002aaaacd20930 in pango_font_description_get_size () from /usr/lib/libpango-1.0.so.0
+(gdb) bt
+#0  0x00002aaaacd20930 in pango_font_description_get_size () from /usr/lib/libpango-1.0.so.0
+#1  0x00002aaaab4f77bd in _gtk_style_init_for_settings (style=0xefa010, settings=<value optimized out>) at /build/buildd/gtk+2.0-2.12.9/gtk/gtkstyle.c:395
+#2  0x00002aaaab502dcd in gtk_style_init (style=0xefa010) at /build/buildd/gtk+2.0-2.12.9/gtk/gtkstyle.c:410
+#3  0x00002aaaad42c463 in g_type_create_instance () from /usr/lib/libgobject-2.0.so.0
+#4  0x00002aaaad411edd in ?? () from /usr/lib/libgobject-2.0.so.0
+#5  0x00002aaaad4124d0 in g_object_newv () from /usr/lib/libgobject-2.0.so.0
+#6  0x00002aaaad412fc2 in g_object_new_valist () from /usr/lib/libgobject-2.0.so.0
+#7  0x00002aaaad413101 in g_object_new () from /usr/lib/libgobject-2.0.so.0
+#8  0x00002aaaab5941e5 in IA__gtk_widget_get_default_style () at /build/buildd/gtk+2.0-2.12.9/gtk/gtkwidget.c:6263
+#9  0x00002aaaab59426f in gtk_widget_init (widget=0x2aaab400a550) at /build/buildd/gtk+2.0-2.12.9/gtk/gtkwidget.c:2599
+#10 0x00002aaaad42c2b3 in g_type_create_instance () from /usr/lib/libgobject-2.0.so.0
+#11 0x00002aaaad411edd in ?? () from /usr/lib/libgobject-2.0.so.0
+#12 0x00002aaaad4124d0 in g_object_newv () from /usr/lib/libgobject-2.0.so.0
+#13 0x00002aaaad412fc2 in g_object_new_valist () from /usr/lib/libgobject-2.0.so.0
+#14 0x00002aaaad413101 in g_object_new () from /usr/lib/libgobject-2.0.so.0
+#15 0x00002aaaab5a7d19 in IA__gtk_window_new (type=GTK_WINDOW_TOPLEVEL) at /build/buildd/gtk+2.0-2.12.9/gtk/gtkwindow.c:1192
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers testing
+  APT policy: (500, 'testing'), (500, 'stable'), (50, 'unstable'), (49, 'experimental')
+Architecture: amd64 (x86_64)
+
+Kernel: Linux 2.6.24-1-amd64 (SMP w/2 CPU cores)
+Locale: LANG=en_US.UTF-8, LC_CTYPE=en_US.UTF-8 (charmap=UTF-8)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages libpango1.0-0-dbg depends on:
+ii  libpango1.0-0                 1.20.0-1   Layout and rendering of internatio
+
+libpango1.0-0-dbg recommends no packages.
+
+-- no debconf information
+
+
+
+------------=_1208700376-20892-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 475067-done) by bugs.debian.org; 20 Apr 2008 14:01:56 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.0 required=4.0 tests=BAYES_00,FROMDEVELOPER,
+	HAS_BUG_NUMBER autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <joss@debian.org>
+Received: from diva.malsain.org ([91.121.19.57])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <joss@debian.org>)
+	id 1Jna7A-0000Aj-KI
+	for 475067-done@bugs.debian.org; Sun, 20 Apr 2008 14:01:56 +0000
+Received: from localhost ([127.0.0.1])
+	by diva.malsain.org with esmtp (Exim 4.63)
+	(envelope-from <joss@debian.org>)
+	id 1Jna79-0007U7-CZ; Sun, 20 Apr 2008 16:01:55 +0200
+Subject: Re: Bug#475067: libpango1.0-0-dbg: Debugging symbols are not used
+	in GDB
+From: Josselin Mouette <joss@debian.org>
+To: Christian Thalinger <twisti@complang.tuwien.ac.at>,  475067-done@bugs.debian.org
+In-Reply-To: <20080408193357.858.33589.reportbug@workstation.home.at>
+References: <20080408193357.858.33589.reportbug@workstation.home.at>
+Content-Type: multipart/signed; micalg=pgp-sha1; protocol="application/pgp-signature"; boundary="=-zOGRxehEk+hMlfR/nEdG"
+Date: Sun, 20 Apr 2008 16:01:47 +0200
+Message-Id: <1208700109.3820.35.camel@shizuru>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.22.1 
+
+
+--=-zOGRxehEk+hMlfR/nEdG
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Version: 1.20.2-2
+
+Le mardi 08 avril 2008 =C3=A0 21:33 +0200, Christian Thalinger a =C3=A9crit=
+ :
+> The debugging symbols of this package are not picked up by GDB.
+
+I can=E2=80=99t reproduce this bug with the latest version on amd64, so I=
+=E2=80=99m
+closing it. Please reopen if you see this happening again.
+
+Cheers,
+--=20
+ .''`.
+: :' :      We are debian.org. Lower your prices, surrender your code.
+`. `'       We will add your hardware and software distinctiveness to
+  `-        our own. Resistance is futile.
+
+--=-zOGRxehEk+hMlfR/nEdG
+Content-Type: application/pgp-signature; name=signature.asc
+Content-Description: Ceci est une partie de message
+	=?ISO-8859-1?Q?num=E9riquement?= =?ISO-8859-1?Q?_sign=E9e?=
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQBIC0zLrSla4ddfhTMRAh7xAJsEnOPZXlGJj9G9dp6a9tL64l4DMACfXtjm
+wY0UpQ9fBkYs8DJKayma/pI=
+=nMB7
+-----END PGP SIGNATURE-----
+
+--=-zOGRxehEk+hMlfR/nEdG--
+
+
+
+------------=_1208700376-20892-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,107 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 14:50:14 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnZvi-0007IK-RD
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 14:50:14 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 5D2C813A501A; Sun, 20 Apr 2008 13:50:04 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-3.0 required=4.0 tests=BAYES_00,MURPHY_DRUGS_REL8,
+	RCVD_IN_DNSWL_LOW autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 38C1213A4FD6;
+	Sun, 20 Apr 2008 13:49:46 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnZqu-0004AP-LE; Sun, 20 Apr 2008 13:45:08 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476836: multipath: missing depmod call
+Reply-To: Frans Pop <elendil@planet.nl>, 476836@bugs.debian.org
+Resent-From: Frans Pop <elendil@planet.nl>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian Install System Team <debian-boot@lists.debian.org>
+Resent-Date: Sun, 20 Apr 2008 13:45:06 +0000
+Resent-Message-ID: <handler.476836.B476836.12086989859334@bugs.debian.org>
+X-Debian-PR-Message: report 476836
+X-Debian-PR-Package: disk-detect
+X-Debian-PR-Keywords: patch
+X-Debian-PR-Source: hw-detect
+Received: via spool by 476836-submit@bugs.debian.org id=B476836.12086989859334
+          (code B ref 476836); Sun, 20 Apr 2008 13:45:06 +0000
+Received: (at 476836) by bugs.debian.org; 20 Apr 2008 13:43:05 +0000
+X-Amavis-Spam-Status: No, score=-6.8 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	HAS_BUG_NUMBER,MURPHY_DRUGS_REL8 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from hpsmtp-eml14.kpnxchange.com ([213.75.38.114])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <elendil@planet.nl>)
+	id 1JnZov-0002M8-3W
+	for 476836@bugs.debian.org; Sun, 20 Apr 2008 13:43:05 +0000
+Received: from cpsmtp-eml105.kpnxchange.com ([213.75.84.105]) by hpsmtp-eml14.kpnxchange.com with Microsoft SMTPSVC(6.0.3790.1830);
+	 Sun, 20 Apr 2008 15:42:58 +0200
+Received: from faramir.fjphome.nl ([84.85.147.182]) by cpsmtp-eml105.kpnxchange.com with Microsoft SMTPSVC(6.0.3790.1830);
+	 Sun, 20 Apr 2008 15:42:58 +0200
+From: Frans Pop <elendil@planet.nl>
+To: 476836@bugs.debian.org
+Date: Sun, 20 Apr 2008 15:42:57 +0200
+User-Agent: KMail/1.9.9
+References: <20080419132656.GA25047@bogon.ms20.nix>
+In-Reply-To: <20080419132656.GA25047@bogon.ms20.nix>
+Cc: Guido =?UTF-8?Q?G=C3=BCnther?= <agx@sigxcpu.org>
+MIME-Version: 1.0
+Content-Type: text/plain;
+  charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+Message-Id: <200804201542.57986.elendil@planet.nl>
+X-OriginalArrivalTime: 20 Apr 2008 13:42:58.0595 (UTC) FILETIME=[71D6E730:01C8A2EC]
+Resent-Date: Sun, 20 Apr 2008 13:45:08 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343506
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -30.0
+X-Spam-Report: (-30.0 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	22 AWL                    AWL: From: address is in the auto white-list
+
+On Saturday 19 April 2008, Guido G=C3=BCnther wrote:
+> when enabling multipath support multipath-udeb gets installed which
+> pulls in the multipath-modules-<kver> udeb via a dependency.  Afterwards
+> these modules are immediately being loaded. This fails currently since
+> we're missing a call to depmod (see attached patch). I didn't notice
+> earlier since I had the udebs added via pkg-lists/local and so any
+> depmod call (e.g.  in ethdetect) did the trick. O.k. to apply the
+> attached patch (with an changelog entry of course)? I didn't bother to
+> check if depmod is available since we don't bail out on errors anyway.
+
+Patch is fine. Feel free to commit.
+
+Cheers,
+=46JP
+
+
+

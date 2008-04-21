@@ -1,0 +1,217 @@
+From bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org Sun Apr 20 07:19:42 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org>)
+	id 1JnStl-0005YU-SF
+	for ddc@ddc.chris-lamb.co.uk; Sun, 20 Apr 2008 07:19:42 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id C60AC13A4D47; Sun, 20 Apr 2008 06:19:35 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 067FA13A4D34;
+	Sun, 20 Apr 2008 06:19:34 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnSsE-00062f-OG; Sun, 20 Apr 2008 06:18:02 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Niko Tyni <ntyni@debian.org>
+Subject: Bug#114658: marked as done (debconf seg fault)
+Message-ID: <handler.114658.D114658.120867213118463.ackdone@bugs.debian.org>
+References: <20080420061528.GA4867@rebekka> <20011006140935.K369@tardis>
+X-Debian-PR-Message: closed 114658
+X-Debian-PR-Package: perl
+X-Debian-PR-Source: perl
+Content-Type: multipart/mixed; boundary="----------=_1208672282-23218-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 06:18:02 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <bGML4JYMuQP.A.q9D.3BuCIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/132897
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 06:19:35 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208672282-23218-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 09:15:28 +0300
+with message-id <20080420061528.GA4867@rebekka>
+and subject line Re: Bug#114658: debconf seg fault
+has caused the Debian Bug report #114658,
+regarding debconf seg fault
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+114658: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D114658
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208672282-23218-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 6 Oct 2001 13:09:38 +0000
+Return-path: <gilbertd@treblig.org>
+Received: from mta03-svc.ntlworld.com [62.253.162.43] 
+	by master.debian.org with esmtp (Exim 3.12 1 (Debian))
+	id 15prCz-00057U-00; Sat, 06 Oct 2001 08:09:37 -0500
+Received: from tardis.home.treblig.org ([213.106.184.109])
+          by mta03-svc.ntlworld.com (InterMail vM.4.01.03.00 201-229-121)
+          with ESMTP
+          id <20011006130935.YAHA23687.mta03-svc.ntlworld.com@tardis.home.treblig.org>
+          for <submit@bugs.debian.org>; Sat, 6 Oct 2001 14:09:35 +0100
+Received: from gilbertd by tardis.home.treblig.org with local (Exim 3.32 #1 (Debian))
+	id 15prCx-0006dE-00
+	for <submit@bugs.debian.org>; Sat, 06 Oct 2001 14:09:35 +0100
+Date: Sat, 6 Oct 2001 14:09:35 +0100
+From: "Dr. David Alan Gilbert" <gilbertd@treblig.org>
+To: submit@bugs.debian.org
+Subject: debconf seg fault
+Message-ID: <20011006140935.K369@tardis>
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.3.22i
+X-Chocolate: 70 percent or better cocoa solids preferably
+X-Operating-System: Linux/2.4.9-ac17 (alpha)
+X-Uptime: 14:04:50 up 6 days, 20:22,  5 users,  load average: 0.12, 0.25, 0.30
+Delivered-To: submit@bugs.debian.org
+
+Package: debconf
+Version: 1.0.10
+
+Architecture: MIPS
+
+Hi,
+
+Setting up debconf (1.0.10) ...
+dpkg: error processing debconf (--configure):
+ subprocess post-installation script killed by signal (Segmentation fault)
+Errors were encountered while processing:
+ debconf
+E: Sub-process /usr/bin/dpkg returned an error code (1)
+
+This is repeatable.
+
+(On an SG Indy)
+Dave
+ ---------------- Have a happy GNU millennium! ----------------------   
+/ Dr. David Alan Gilbert    | Running GNU/Linux on Alpha,68K| Happy  \ 
+\ gro.gilbert @ treblig.org | MIPS,x86,ARM, SPARC and HP-PA | In Hex /
+ \ _________________________|_____ http://www.treblig.org   |_______/
+
+
+------------=_1208672282-23218-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 114658-done) by bugs.debian.org; 20 Apr 2008 06:15:31 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.8 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,FROMDEVELOPER,HAS_BUG_NUMBER autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <ntyni@cc.helsinki.fi>
+Received: from emh03.mail.saunalahti.fi ([62.142.5.109])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <ntyni@cc.helsinki.fi>)
+	id 1JnSpn-0004mE-DA
+	for 114658-done@bugs.debian.org; Sun, 20 Apr 2008 06:15:31 +0000
+Received: from saunalahti-vams (vs3-11.mail.saunalahti.fi [62.142.5.95])
+	by emh03-2.mail.saunalahti.fi (Postfix) with SMTP id BB646EC485
+	for <114658-done@bugs.debian.org>; Sun, 20 Apr 2008 09:15:29 +0300 (EEST)
+Received: from emh07.mail.saunalahti.fi ([62.142.5.117])
+	by vs3-11.mail.saunalahti.fi ([62.142.5.95])
+	with SMTP (gateway) id A01BE2AE13F; Sun, 20 Apr 2008 09:15:29 +0300
+Received: from rebekka.invalid (a88-112-25-193.elisa-laajakaista.fi [88.112.25.193])
+	by emh07.mail.saunalahti.fi (Postfix) with ESMTP id A60F11C6388
+	for <114658-done@bugs.debian.org>; Sun, 20 Apr 2008 09:15:28 +0300 (EEST)
+Received: from niko by rebekka.invalid with local (Exim 4.63)
+	(envelope-from <ntyni@cc.helsinki.fi>)
+	id 1JnSpk-0001SK-9B
+	for 114658-done@bugs.debian.org; Sun, 20 Apr 2008 09:15:28 +0300
+Date: Sun, 20 Apr 2008 09:15:28 +0300
+From: Niko Tyni <ntyni@debian.org>
+To: 114658-done@bugs.debian.org
+Subject: Re: Bug#114658: debconf seg fault
+Message-ID: <20080420061528.GA4867@rebekka>
+References: <20011013181518.D368@tardis> <20011013213250.C1121@kitenet.net> <20011015174735.A12000@fisch.debian.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20011015174735.A12000@fisch.debian.org>
+User-Agent: Mutt/1.5.13 (2006-08-11)
+X-Antivirus: VAMS
+
+On Mon, Oct 15, 2001 at 05:47:35PM +0200, Martin Michlmayr wrote:
+> * Joey Hess <joeyh@debian.org> [20011013 21:32]:
+> > Sounds like a general perl segfault problem on the MIPS then. debconf
+> 
+> FWIW, I've seen random seg faults with perl on mips and mipsel, too,
+> and know of others who had the same experience.
+
+I assume these have since been fixed. The best I could find are these:
+
+ http://lists.debian.org/debian-mips/2002/08/msg00022.html
+
+ http://web.archive.org/web/20020610073339/www.debian.org/ports/mips/
+
+which suggest it was a kernel problem specific to R4600 processors. It
+was on the MIPS ports 'known problems' list until 2005 or 2006.
+
+There's no way to look into this anymore. Closing.
+
+Cheers,
+-- 
+Niko Tyni   ntyni@debian.org
+
+
+------------=_1208672282-23218-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

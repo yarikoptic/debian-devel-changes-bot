@@ -1,0 +1,144 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 16:59:04 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnbwK-00085d-IM
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 16:59:04 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 62E7313A4F70; Sun, 20 Apr 2008 15:58:51 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 0FF4C13A5079;
+	Sun, 20 Apr 2008 15:56:43 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnboo-0005R1-Kk; Sun, 20 Apr 2008 15:51:06 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476721: aptitude: Unknown command "safe-upgrade"
+Reply-To: Wolfgang Becker <uafr@gmx.de>, 476721@bugs.debian.org
+Resent-From: Wolfgang Becker <uafr@gmx.de>
+Original-Sender: Wolfgang Becker <uafr@gmx.de>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Daniel Burrows <dburrows@debian.org>
+Resent-Date: Sun, 20 Apr 2008 15:51:05 +0000
+Resent-Message-ID: <handler.476721.B476721.120870658113206@bugs.debian.org>
+X-Debian-PR-Message: report 476721
+X-Debian-PR-Package: aptitude
+X-Debian-PR-Keywords: unreproducible
+X-Debian-PR-Source: aptitude
+Received: via spool by 476721-submit@bugs.debian.org id=B476721.120870658113206
+          (code B ref 476721); Sun, 20 Apr 2008 15:51:05 +0000
+Received: (at 476721) by bugs.debian.org; 20 Apr 2008 15:49:41 +0000
+X-Amavis-Spam-Status: No, score=-7.0 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from mail.gmx.net ([213.165.64.20])
+	by rietz.debian.org with smtp (Exim 4.63)
+	(envelope-from <uafr@gmx.de>)
+	id 1JnbnQ-0003KP-Fu
+	for 476721@bugs.debian.org; Sun, 20 Apr 2008 15:49:41 +0000
+Received: (qmail invoked by alias); 20 Apr 2008 15:49:33 -0000
+Received: from i3ED6F3C6.versanet.de (EHLO greg.local) [62.214.243.198]
+  by mail.gmx.net (mp012) with SMTP; 20 Apr 2008 17:49:33 +0200
+X-Authenticated: #1183955
+X-Provags-ID: V01U2FsdGVkX19dmggQENtdShL5qtXvlR6TsXmRB4x+WzjBzYMsuf
+	uUD/7A90kJwG9I
+Received: from wolfgang by greg.local with local (Exim 3.36 #1 (Debian))
+	id 1JnbnJ-00012e-00
+	for <476721@bugs.debian.org>; Sun, 20 Apr 2008 17:49:33 +0200
+Date: Sun, 20 Apr 2008 17:49:33 +0200
+From: Wolfgang Becker <uafr@gmx.de>
+To: 476721@bugs.debian.org
+Message-ID: <20080420154932.GA3798@greg.local>
+References: <20080418172448.4927.90918.reportbug@greg.local> <20080419030333.GA400@alpaca> <20080419105240.GB8861@greg.local> <20080420151509.GC7649@alpaca>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20080420151509.GC7649@alpaca>
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Sender: Wolfgang Becker <uafr@gmx.de>
+X-Y-GMX-Trusted: 0
+Resent-Date: Sun, 20 Apr 2008 15:51:06 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343620
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.6
+X-Spam-Report: (-52.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+On 2008-04-20 Daniel Burrows <dburrows@debian.org> wrote:
+>   Just for kicks, could you try running "aptitude --version" and
+> "/usr/bin/aptitude safe-upgrade"?  If those don't produce any obvious
+> explanation, I'll leave this as unreproducible until I get the piece of
+> information I'm overlooking that will make it all clear.
+
+| greg:~# aptitude --version
+| aptitude 0.4.10 compiled at Jan  9 2008 05:40:06
+| Compiler: g++ 4.2.3 20080102 (prerelease) (Debian 4.2.2-5)
+| 
+| NCurses version: 5.6
+| libsigc++ version: 2.0.17
+| greg:~# /usr/bin/aptitude safe-upgrade
+| Unknown command "safe-upgrade"
+| aptitude 0.4.10
+| Usage: aptitude [-S fname] [-u|-i]
+|        aptitude [options] <action> ...
+|   Actions (if none is specified, aptitude will enter interactive mode):
+| 
+|  install      - Install/upgrade packages
+[...]
+
+To make really sure to have the right version I reinstalled aptitude
+after that test. Still the same version. But now it works as expected.
+
+| greg:~# aptitude --version
+| aptitude 0.4.10 compiled at Jan  9 2008 05:40:06
+| Compiler: g++ 4.2.3 20080102 (prerelease) (Debian 4.2.2-5)
+| 
+| NCurses version: 5.6
+| libsigc++ version: 2.0.17
+
+| greg:~# /usr/bin/aptitude safe-upgrade
+| Reading package lists... Done
+| Building dependency tree       
+| Reading state information... Done
+| Reading extended state information       
+| Initializing package states... Done
+| Reading task descriptions... Done  
+[...]
+
+No idea what went wrong here.
+Wolfgang
+-- 
+Wolfgang Becker  ***  eMail uafr@gmx.de  ***  http://uafr.freeshell.org/
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

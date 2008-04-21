@@ -1,0 +1,155 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 21:02:20 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnfjs-0000qC-Jd
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 21:02:20 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 5576213A52A7; Sun, 20 Apr 2008 20:02:15 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id ED14813A4C2F
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 20:02:14 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnfVB-0006KW-Be; Sun, 20 Apr 2008 19:47:05 +0000
+From: gregor herrmann <gregoa@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted libhttp-proxy-perl 0.21-1 (source all)
+Message-Id: <E1JnfVB-0006KW-Be@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 19:47:05 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <nZlcJEtsz8C.A._sD.HF6CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301347
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 20:02:15 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.6
+X-Spam-Report: (-2.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.0 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 21:43:03 +0200
+Source: libhttp-proxy-perl
+Binary: libhttp-proxy-perl
+Architecture: source all
+Version: 0.21-1
+Distribution: unstable
+Urgency: low
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.o=
+rg>
+Changed-By: gregor herrmann <gregoa@debian.org>
+Description:=20
+ libhttp-proxy-perl - A pure Perl HTTP proxy
+Closes: 433951
+Changes:=20
+ libhttp-proxy-perl (0.21-1) unstable; urgency=3Dlow
+ .
+   * debian/control: Added: Vcs-Svn field (source stanza); Vcs-Browser
+     field (source stanza); Homepage field (source stanza).
+   * Set Maintainer to Debian Perl Group.
+   * Use dist-based URL in debian/watch.
+   * debian/rules: delete /usr/lib/perl5 only if it exists.
+ .
+   * New upstream release, fixes bug 'save filter "filename" parameter us=
+ed
+     invalidly' (closes: #433951).
+   * debian/watch: extended regexp for matching upstream releases.
+   * debian/copyright: add actual copyright statement
+   * Remove debian/libhttp-proxy-perl.examples and install examples direc=
+tly
+     from debian/rules.
+   * Remove debian/libhttp-proxy-perl.docs and install README directly fr=
+om
+     debian/rules.
+   * debian/rules: refresh with dh-make-perl's help; activate test suite.
+   * debian/control:
+     - move libmodule-build-perl to Build-Depends
+     - add /me to Uploaders
+     - set Standards-Version to 3.7.3 (no changes)
+     - bump debhelper dependency to >=3D 5 (and adjust debian/compat)
+     - add libtest-pod-perl, libtest-pod-coverage-perl to Build-Depends-I=
+ndep
+   * Revert direct changes to lib/HTTP/Proxy/BodyFilter/save.pm.
+   * Create patch pod_spelling.patch, add quilt framework.
+Checksums-Sha1:=20
+ 31b644c84cad327003a1dc96aa4c3670fef0f52b 1458 libhttp-proxy-perl_0.21-1.=
+dsc
+ 79b6bd5447f87ce4d2a1def1d23386761b165cc5 67880 libhttp-proxy-perl_0.21.o=
+rig.tar.gz
+ ed4e971218fd85f9474a728a74b8ec5080c80a02 3321 libhttp-proxy-perl_0.21-1.=
+diff.gz
+ dee55bdada01dde9a0af2d4bff5bf9ca54f2d35e 110976 libhttp-proxy-perl_0.21-=
+1_all.deb
+Checksums-Sha256:=20
+ 473c10a5822b31bd8775bb0bd7d65a876a2eddea814648550e445dfe9490e100 1458 li=
+bhttp-proxy-perl_0.21-1.dsc
+ 74f5fcb0e7e17be2bba7cd01e9eeb231b2b91b25611416dc392f710d6c03ef96 67880 l=
+ibhttp-proxy-perl_0.21.orig.tar.gz
+ 733e6950bd1991dc2856c9e13dc202d0465b3257179ca8a08320ab505a2f1ac2 3321 li=
+bhttp-proxy-perl_0.21-1.diff.gz
+ cfc45115d1074f521cea021a3738a503740a87a9f17cd9b0f57476d7cb32e116 110976 =
+libhttp-proxy-perl_0.21-1_all.deb
+Files:=20
+ f8aa0e02d58c9621cbefdc04460efaa7 1458 perl optional libhttp-proxy-perl_0=
+.21-1.dsc
+ 5d4d736a87b3ad022a66ddafa54a7887 67880 perl optional libhttp-proxy-perl_=
+0.21.orig.tar.gz
+ 9ac89addad12c17ba64074fc89452ef5 3321 perl optional libhttp-proxy-perl_0=
+.21-1.diff.gz
+ fb444f1e0a5a4671f7b3449e1e402109 110976 perl optional libhttp-proxy-perl=
+_0.21-1_all.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC50TOzKYnQDzz+QRAhZzAKDpuHyzaiRnvzq8u63XeRoJJcQuZwCg/rxI
+SRN+5mYQ2QS1SElYHBxSyN0=3D
+=3Df+uU
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+libhttp-proxy-perl_0.21-1.diff.gz
+  to pool/main/libh/libhttp-proxy-perl/libhttp-proxy-perl_0.21-1.diff.gz
+libhttp-proxy-perl_0.21-1.dsc
+  to pool/main/libh/libhttp-proxy-perl/libhttp-proxy-perl_0.21-1.dsc
+libhttp-proxy-perl_0.21-1_all.deb
+  to pool/main/libh/libhttp-proxy-perl/libhttp-proxy-perl_0.21-1_all.deb
+libhttp-proxy-perl_0.21.orig.tar.gz
+  to pool/main/libh/libhttp-proxy-perl/libhttp-proxy-perl_0.21.orig.tar.g=
+z
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

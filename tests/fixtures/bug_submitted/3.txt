@@ -1,0 +1,97 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 10:22:50 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnVkz-0005yL-9a
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 10:22:50 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 52A7913A4EAC; Sun, 20 Apr 2008 09:22:44 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id B8E3513A4EA5;
+	Sun, 20 Apr 2008 09:22:33 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnVaj-0007LT-8E; Sun, 20 Apr 2008 09:12:25 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476928: dpkg-cross: Please make the -a option consistent with dpkg-buildpackage
+Reply-To: Jonas Meyer <quitte@gmail.com>, 476928@bugs.debian.org
+Resent-From: Jonas Meyer <quitte@gmail.com>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: quitte@gmail.com, Debian Embedded Group <debian-embedded@lists.debian.org>
+Resent-Date: Sun, 20 Apr 2008 09:12:04 +0000
+Resent-Message-ID: <handler.476928.B.120868252020818@bugs.debian.org>
+X-Debian-PR-Message: report 476928
+X-Debian-PR-Package: dpkg-cross
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: dpkg-cross
+Received: via spool by submit@bugs.debian.org id=B.120868252020818
+          (code B ref -1); Sun, 20 Apr 2008 09:12:04 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 09:08:40 +0000
+X-Amavis-Spam-Status: No, score=-10.8 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	HAS_PACKAGE,RCVD_IN_SORBS_DUL,X_DEBBUGS_CC autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from e179048216.adsl.alicedsl.de ([85.179.48.216] helo=amd64.openworlddomination.de)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <quitte@gmail.com>)
+	id 1JnVXD-0005EP-Gk
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 09:08:38 +0000
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Jonas Meyer <quitte@gmail.com>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Message-ID: <20080420090949.32260.3148.reportbug@amd64.openworlddomination.de>
+X-Mailer: reportbug 3.39-0.1
+Date: Sun, 20 Apr 2008 11:09:49 +0200
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 09:12:09 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343374
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.5
+X-Spam-Report: (-52.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+Package: dpkg-cross
+Version: 2.2.1
+Severity: minor
+
+Hi
+Please change dpkg-cross to accept -aarch,too. I still add a space when
+using dpkg-buildpackage and forget the space with dpkg-cross after hundreds
+of invocations.
+Thanks, Jonas
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

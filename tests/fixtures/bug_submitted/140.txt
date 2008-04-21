@@ -1,0 +1,283 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 12:14:59 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnXVU-0006dk-Ib
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 12:14:59 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 1820013A4F23; Sun, 20 Apr 2008 11:14:51 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.9 required=4.0 tests=BAYES_00,FOURLA,
+	IMPRONONCABLE_2,RCVD_IN_DNSWL_LOW autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id BF02D13A4ED0;
+	Sun, 20 Apr 2008 11:14:34 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnXSn-0005N8-Va; Sun, 20 Apr 2008 11:12:05 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476955: epiphany-browser: epiphany freezes when bootup
+Reply-To: Patrizio Bruno <rustretto@yahoo.it>, 476955@bugs.debian.org
+Resent-From: Patrizio Bruno <rustretto@yahoo.it>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: rustretto@yahoo.it, Josselin Mouette <joss@debian.org>
+Resent-Date: Sun, 20 Apr 2008 11:12:02 +0000
+Resent-Message-ID: <handler.476955.B.120868985414245@bugs.debian.org>
+X-Debian-PR-Message: report 476955
+X-Debian-PR-Package: epiphany-browser
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: epiphany-browser
+Received: via spool by submit@bugs.debian.org id=B.120868985414245
+          (code B ref -1); Sun, 20 Apr 2008 11:12:02 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 11:10:54 +0000
+X-Amavis-Spam-Status: No, score=-9.9 required=4.0 tests=BAYES_00,DNS_FROM_RFC_ABUSE,
+	DNS_FROM_RFC_POST,FORGED_RCVD_HELO,FOURLA,HAS_PACKAGE,IMPRONONCABLE_2,
+	X_DEBBUGS_CC autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from host72-101-static.23-87-b.business.telecomitalia.it ([87.23.101.72] helo=trevize.comporellen.lan)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <rustretto@yahoo.it>)
+	id 1JnXOm-0007Nn-VD
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 11:07:58 +0000
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Patrizio Bruno <rustretto@yahoo.it>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Message-ID: <20080420110809.4359.6653.reportbug@trevize.comporellen.lan>
+X-Mailer: reportbug 3.39-0.1
+Date: Sun, 20 Apr 2008 13:08:09 +0200
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 11:12:05 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343442
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.5
+X-Spam-Report: (-52.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+Package: epiphany-browser
+Version: 2.22.1.1-1
+Severity: grave
+Justification: renders package unusable
+
+
+When I try to launch epiphany-gecko or epiphany-webkit nothing happens.
+I ran epiphany in gdb and killed it to find when it freezes up:
+
+Starting program: /usr/bin/epiphany-browser 
+[Thread debugging using libthread_db enabled]
+[New Thread 0x2ab2e0591200 (LWP 4467)]
+/home/patrizio/.themes/Candido-Rusty/gtk-2.0/menubar.rc:25: Background image options specified without filename
+/home/patrizio/.themes/Candido-Rusty/gtk-2.0/menubar.rc:43: Background image options specified without filename
+/home/patrizio/.themes/Candido-Rusty/gtk-2.0/panel.rc:48: Background image options specified without filename
+/home/patrizio/.themes/Candido-Rusty/gtk-2.0/panel.rc:58: Background image options specified without filename
+/home/patrizio/.themes/Candido-Rusty/gtk-2.0/panel.rc:69: Background image options specified without filename
+/home/patrizio/.themes/Candido-Rusty/gtk-2.0/panel.rc:78: Background image options specified without filename
+Traceback (most recent call last):
+  File "/home/patrizio/.gnome2/epiphany/extensions/tabs_on_treeview.py", line 426, in attach_window
+    self.winlist[window].attach_window()
+  File "/home/patrizio/.gnome2/epiphany/extensions/tabs_on_treeview.py", line 308, in attach_window
+    self.build_custom()
+  File "/home/patrizio/.gnome2/epiphany/extensions/tabs_on_treeview.py", line 132, in build_custom
+    self.treemodel = gtk.ListStore(epiphany.Tab, str, gtk.gdk.Pixbuf)
+AttributeError: 'module' object has no attribute 'Tab'
+
+** (epiphany-browser:4467): WARNING **: Python code for 'attach_window' failed to execute
+[New Thread 0x40800950 (LWP 4470)]
+Traceback (most recent call last):
+  File "/home/patrizio/.gnome2/epiphany/extensions/urgentcontentnotify.py", line 45, in attach_tab
+    embed = tab.get_embed()
+AttributeError: '__main__.MozillaEmbed' object has no attribute 'get_embed'
+
+** (epiphany-browser:4467): WARNING **: Python code for 'attach_tab' failed to execute
+Traceback (most recent call last):
+  File "/home/patrizio/.gnome2/epiphany/extensions/tabs_on_treeview.py", line 429, in attach_tab
+    self.winlist[window].attach_tab(tab)
+  File "/home/patrizio/.gnome2/epiphany/extensions/tabs_on_treeview.py", line 367, in attach_tab
+    self.treemodel.insert(page_num, [tab, tab.get_title(), tab.get_icon()])
+AttributeError: TreeviewTabs instance has no attribute 'treemodel'
+
+** (epiphany-browser:4467): WARNING **: Python code for 'attach_tab' failed to execute
+sys:1: Warning: invalid cast from `EphyNotebook' to `EphyWindow'
+sys:1: Warning: invalid cast from `EphyNotebook' to `EphyEmbedContainer'
+
+** (epiphany-browser:4467): CRITICAL **: ephy_embed_container_get_active_child: assertion `EPHY_IS_EMBED_CONTAINER (container)' failed
+
+** (epiphany-browser:4467): CRITICAL **: ephy_window_get_notebook: assertion `EPHY_IS_WINDOW (window)' failed
+sys:1: GtkWarning: gtk_notebook_get_tab_label: assertion `GTK_IS_NOTEBOOK (notebook)' failed
+sys:1: Warning: g_object_get_data: assertion `G_IS_OBJECT (object)' failed
+
+** (epiphany-browser:4467): CRITICAL **: get_real_tab_label: assertion `label != NULL' failed
+sys:1: GtkWarning: gtk_widget_modify_font: assertion `GTK_IS_WIDGET (widget)' failed
+
+** (epiphany-browser:4467): CRITICAL **: ephy_window_set_active_tab: assertion `gtk_widget_get_toplevel (GTK_WIDGET (new_embed)) == GTK_WIDGET (window)' failed
+
+** (epiphany-browser:4467): CRITICAL **: ephy_window_show: assertion `EPHY_IS_EMBED (embed)' failed
+sys:1: GtkWarning: gtk_widget_realize: assertion `GTK_WIDGET_ANCHORED (widget) || GTK_IS_INVISIBLE (widget)' failed
+
+** (epiphany-browser:4467): WARNING **: Need to realize the embed before grabbing focus!
+
+
+Program received signal SIGTERM, Terminated.
+[Switching to Thread 0x2ab2e0591200 (LWP 4467)]
+0x00002ab2dc1be336 in poll () from /lib/libc.so.6
+(gdb) 
+
+
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (500, 'unstable'), (1, 'experimental')
+Architecture: amd64 (x86_64)
+
+Kernel: Linux 2.6.24-1-amd64 (SMP w/1 CPU core)
+Locale: LANG=it_IT.UTF-8, LC_CTYPE=it_IT.UTF-8 (charmap=UTF-8)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages epiphany-browser depends on:
+ii  epiphany-gecko                2.22.1.1-1 Intuitive GNOME web browser - Geck
+ii  epiphany-webkit               2.22.1.1-1 Intuitive GNOME web browser - webk
+
+epiphany-browser recommends no packages.
+
+Versions of packages epiphany-gecko depends on:
+ii  dbus                   1.2.1-1           simple interprocess messaging syst
+ii  epiphany-browser-data  2.22.1.1-1        Data files for the GNOME web brows
+ii  gnome-icon-theme       2.22.0-1          GNOME Desktop icon theme
+ii  iso-codes              2.0-1             ISO language, territory, currency,
+ii  libart-2.0-2           2.3.20-1          Library of functions for 2D graphi
+ii  libatk1.0-0            1.22.0-1          The ATK accessibility toolkit
+ii  libavahi-client3       0.6.22-3          Avahi client library
+ii  libavahi-common3       0.6.22-3          Avahi common library
+ii  libavahi-glib1         0.6.22-3          Avahi glib integration library
+ii  libavahi-gobject0      0.6.22-3          Avahi GObject library
+ii  libbonobo2-0           2.22.0-1          Bonobo CORBA interfaces library
+ii  libbonoboui2-0         2.22.0-1          The Bonobo UI library
+ii  libc6                  2.7-10            GNU C Library: Shared libraries
+ii  libcairo2              1.6.4-1           The Cairo 2D vector graphics libra
+ii  libdbus-1-3            1.2.1-1           simple interprocess messaging syst
+ii  libdbus-glib-1-2       0.74-2            simple interprocess messaging syst
+ii  libenchant1c2a         1.3.0-5           a wrapper library for various spel
+ii  libfontconfig1         2.5.0-2           generic font configuration library
+ii  libfreetype6           2.3.5-1+b1        FreeType 2 font engine, shared lib
+ii  libgcc1                1:4.3.0-3         GCC support library
+ii  libgconf2-4            2.22.0-1          GNOME configuration database syste
+ii  libglade2-0            1:2.6.2-1         library to load .glade files at ru
+ii  libglib2.0-0           2.16.3-2          The GLib library of C routines
+ii  libgnome-desktop-2     2.22.1-1          Utility library for loading .deskt
+ii  libgnome2-0            2.20.1.1-1        The GNOME 2 library - runtime file
+ii  libgnomecanvas2-0      2.20.1.1-1        A powerful object-oriented display
+ii  libgnomeui-0           2.20.1.1-1        The GNOME 2 libraries (User Interf
+ii  libgnomevfs2-0         1:2.22.0-2        GNOME Virtual File System (runtime
+ii  libgtk2.0-0            2.12.9-3          The GTK+ graphical user interface 
+ii  libice6                2:1.0.4-1         X11 Inter-Client Exchange library
+ii  libmozjs0d             1.8.1.14-1        The Mozilla SpiderMonkey JavaScrip
+ii  libnotify1 [libnotify1 0.4.4-3           sends desktop notifications to a n
+ii  libnspr4-0d            4.7.0-2           NetScape Portable Runtime Library
+ii  liborbit2              1:2.14.12-0.1     libraries for ORBit2 - a CORBA ORB
+ii  libpango1.0-0          1.20.2-2          Layout and rendering of internatio
+ii  libpng12-0             1.2.15~beta5-3    PNG library - runtime
+ii  libpopt0               1.10-3            lib for parsing cmdline parameters
+ii  libsm6                 2:1.0.3-1+b1      X11 Session Management library
+ii  libstartup-notificatio 0.9-1             library for program launch feedbac
+ii  libstdc++6             4.3.0-3           The GNU Standard C++ Library v3
+ii  libx11-6               2:1.0.3-7         X11 client-side library
+ii  libxcursor1            1:1.1.9-1         X cursor management library
+ii  libxext6               2:1.0.4-1         X11 miscellaneous extension librar
+ii  libxfixes3             1:4.0.3-2         X11 miscellaneous 'fixes' extensio
+ii  libxi6                 2:1.1.3-1         X11 Input extension library
+ii  libxinerama1           2:1.0.3-1         X11 Xinerama extension library
+ii  libxml2                2.6.32.dfsg-1     GNOME XML library
+ii  libxrandr2             2:1.2.2-1         X11 RandR extension library
+ii  libxrender1            1:0.9.4-1         X Rendering Extension client libra
+ii  libxslt1.1             1.1.23-1          XSLT processing library - runtime 
+ii  libxul0d               1.8.1.14-1        Gecko engine library
+ii  python2.5              2.5.2-3           An interactive high-level object-o
+ii  xulrunner-gnome-suppor 1.8.1.14-1        Support for GNOME in xulrunner app
+ii  zlib1g                 1:1.2.3.3.dfsg-12 compression library - runtime
+
+Versions of packages epiphany-webkit depends on:
+ii  dbus                   1.2.1-1           simple interprocess messaging syst
+ii  epiphany-browser-data  2.22.1.1-1        Data files for the GNOME web brows
+ii  gnome-icon-theme       2.22.0-1          GNOME Desktop icon theme
+ii  iso-codes              2.0-1             ISO language, territory, currency,
+ii  libart-2.0-2           2.3.20-1          Library of functions for 2D graphi
+ii  libatk1.0-0            1.22.0-1          The ATK accessibility toolkit
+ii  libavahi-client3       0.6.22-3          Avahi client library
+ii  libavahi-common3       0.6.22-3          Avahi common library
+ii  libavahi-glib1         0.6.22-3          Avahi glib integration library
+ii  libavahi-gobject0      0.6.22-3          Avahi GObject library
+ii  libbonobo2-0           2.22.0-1          Bonobo CORBA interfaces library
+ii  libbonoboui2-0         2.22.0-1          The Bonobo UI library
+ii  libc6                  2.7-10            GNU C Library: Shared libraries
+ii  libcairo2              1.6.4-1           The Cairo 2D vector graphics libra
+ii  libdbus-1-3            1.2.1-1           simple interprocess messaging syst
+ii  libdbus-glib-1-2       0.74-2            simple interprocess messaging syst
+ii  libfontconfig1         2.5.0-2           generic font configuration library
+ii  libfreetype6           2.3.5-1+b1        FreeType 2 font engine, shared lib
+ii  libgcc1                1:4.3.0-3         GCC support library
+ii  libgconf2-4            2.22.0-1          GNOME configuration database syste
+ii  libglade2-0            1:2.6.2-1         library to load .glade files at ru
+ii  libglib2.0-0           2.16.3-2          The GLib library of C routines
+ii  libgnome-desktop-2     2.22.1-1          Utility library for loading .deskt
+ii  libgnome2-0            2.20.1.1-1        The GNOME 2 library - runtime file
+ii  libgnomecanvas2-0      2.20.1.1-1        A powerful object-oriented display
+ii  libgnomeui-0           2.20.1.1-1        The GNOME 2 libraries (User Interf
+ii  libgnomevfs2-0         1:2.22.0-2        GNOME Virtual File System (runtime
+ii  libgtk2.0-0            2.12.9-3          The GTK+ graphical user interface 
+ii  libice6                2:1.0.4-1         X11 Inter-Client Exchange library
+ii  libnotify1 [libnotify1 0.4.4-3           sends desktop notifications to a n
+ii  liborbit2              1:2.14.12-0.1     libraries for ORBit2 - a CORBA ORB
+ii  libpango1.0-0          1.20.2-2          Layout and rendering of internatio
+ii  libpng12-0             1.2.15~beta5-3    PNG library - runtime
+ii  libpopt0               1.10-3            lib for parsing cmdline parameters
+ii  libsm6                 2:1.0.3-1+b1      X11 Session Management library
+ii  libstartup-notificatio 0.9-1             library for program launch feedbac
+ii  libstdc++6             4.3.0-3           The GNU Standard C++ Library v3
+ii  libwebkit-1.0-1        0~svn31841-1      Web content engine library for Gtk
+ii  libx11-6               2:1.0.3-7         X11 client-side library
+ii  libxcursor1            1:1.1.9-1         X cursor management library
+ii  libxext6               2:1.0.4-1         X11 miscellaneous extension librar
+ii  libxfixes3             1:4.0.3-2         X11 miscellaneous 'fixes' extensio
+ii  libxi6                 2:1.1.3-1         X11 Input extension library
+ii  libxinerama1           2:1.0.3-1         X11 Xinerama extension library
+ii  libxml2                2.6.32.dfsg-1     GNOME XML library
+ii  libxrandr2             2:1.2.2-1         X11 RandR extension library
+ii  libxrender1            1:0.9.4-1         X Rendering Extension client libra
+ii  libxslt1.1             1.1.23-1          XSLT processing library - runtime 
+ii  python2.5              2.5.2-3           An interactive high-level object-o
+ii  zlib1g                 1:1.2.3.3.dfsg-12 compression library - runtime
+
+-- no debconf information
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

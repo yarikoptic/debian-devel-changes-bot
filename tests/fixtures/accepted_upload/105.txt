@@ -1,0 +1,131 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 06:31:51 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnS9Q-0005RM-2u
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 06:31:51 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id AF51613A4DF9; Sun, 20 Apr 2008 05:31:42 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id 4E3CE13A4DD3
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 05:31:42 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnRgh-0004XP-Bz; Sun, 20 Apr 2008 05:02:03 +0000
+From: roberto@connexer.com (Roberto C. Sanchez)
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted shorewall-common 4.0.10-2 (source all)
+Message-Id: <E1JnRgh-0004XP-Bz@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 05:02:03 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <i2qRFl8pEPJ.A.o6F.-UtCIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301270
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 05:31:42 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.5
+X-Spam-Report: (-2.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.1 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 00:04:13 -0400
+Source: shorewall-common
+Binary: shorewall-common shorewall
+Architecture: source all
+Version: 4.0.10-2
+Distribution: unstable
+Urgency: low
+Maintainer: Roberto C. Sanchez <roberto@connexer.com>
+Changed-By: Roberto C. Sanchez <roberto@connexer.com>
+Description:=20
+ shorewall  - Shoreline Firewall, netfilter configurator - transitional p=
+ackage
+ shorewall-common - Shoreline Firewall, netfilter configurator - common f=
+iles
+Closes: 468699
+Changes:=20
+ shorewall-common (4.0.10-2) unstable; urgency=3Dlow
+ .
+   * Incorporate patch for upstream point release (4.0.10.1).
+   * Change /bin/sh -> /bin/dash in several files because of "bashisms".
+     (Closes: #468699)
+Checksums-Sha1:=20
+ 19be6464c9df02bd08ae2c7802561d559c32313d 1223 shorewall-common_4.0.10-2.=
+dsc
+ 743f964eadfe75d6f9146b726f09fb8877c2151b 36991 shorewall-common_4.0.10-2=
+.diff.gz
+ 23df0104174d10ab629e47a8e052d22936b28409 208790 shorewall-common_4.0.10-=
+2_all.deb
+ af033fae0378049cae65e42830f8c8313ed15d32 7372 shorewall_4.0.10-2_all.deb
+Checksums-Sha256:=20
+ 51c35a882351fca6505e3dc72d75f71c8e39f1bd21ef36a7baabbffa32222947 1223 sh=
+orewall-common_4.0.10-2.dsc
+ 0196ee16e9126f071776911862f5402f2bc1ec49444cb800bbb68deacc919dcb 36991 s=
+horewall-common_4.0.10-2.diff.gz
+ 883194c6da5590eb15d5dca56ae81ab8c5eefa8c4ece96dd677c452ca8c7f906 208790 =
+shorewall-common_4.0.10-2_all.deb
+ 076b7de49862bd5244040c5052e0f68a1b60b8d45b942a3e78c729838a63488b 7372 sh=
+orewall_4.0.10-2_all.deb
+Files:=20
+ e93ea028962d1594109a0ef076f77da7 1223 net optional shorewall-common_4.0.=
+10-2.dsc
+ 14a77b96ce36cab2cb824e934470316e 36991 net optional shorewall-common_4.0=
+.10-2.diff.gz
+ 2802430528bf890d78614a0b72bd74c6 208790 net optional shorewall-common_4.=
+0.10-2_all.deb
+ 5ecf8aa878010a35e777ea207ae73c85 7372 net optional shorewall_4.0.10-2_al=
+l.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICsud5SXWIKfIlGQRAsakAJ9k5H2fiYZ31iqxxn3b2Qo+jR/YFwCfSHZb
+8VEtYnWdgB4vBGbRQolrXi0=3D
+=3DuIHM
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+shorewall-common_4.0.10-2.diff.gz
+  to pool/main/s/shorewall-common/shorewall-common_4.0.10-2.diff.gz
+shorewall-common_4.0.10-2.dsc
+  to pool/main/s/shorewall-common/shorewall-common_4.0.10-2.dsc
+shorewall-common_4.0.10-2_all.deb
+  to pool/main/s/shorewall-common/shorewall-common_4.0.10-2_all.deb
+shorewall_4.0.10-2_all.deb
+  to pool/main/s/shorewall-common/shorewall_4.0.10-2_all.deb
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

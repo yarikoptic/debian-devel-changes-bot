@@ -1,0 +1,346 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 15:40:02 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnahw-0007Uh-K7
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 15:40:02 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id B002C13A4F99; Sun, 20 Apr 2008 14:39:55 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 4588413A49A9;
+	Sun, 20 Apr 2008 14:39:54 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnabK-00075J-Nt; Sun, 20 Apr 2008 14:33:06 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Marco d'Itri <md@linux.it>
+Subject: Bug#436803: marked as done (openbsd-inetd: denial of service, cpu
+ loop, select returns fd that is not handled)
+Message-ID: <handler.436803.D436803.120870190624507.ackdone@bugs.debian.org>
+References: <E1Jna7H-00036L-IW@ries.debian.org>
+ <20070809050055.23925.77196.reportbug@nestor.lan>
+X-Debian-PR-Message: closed 436803
+X-Debian-PR-Package: openbsd-inetd
+X-Debian-PR-Source: openbsd-inetd
+Content-Type: multipart/mixed; boundary="----------=_1208701986-27228-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 14:33:06 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <J2pMulIEGqO.A.c9H.7W1CIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/133007
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 14:39:55 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208701986-27228-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 14:02:03 +0000
+with message-id <E1Jna7H-00036L-IW@ries.debian.org>
+and subject line Bug#436803: fixed in openbsd-inetd 0.20080125-1
+has caused the Debian Bug report #436803,
+regarding openbsd-inetd: denial of service, cpu loop, select returns fd tha=
+t is not handled
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+436803: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D436803
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208701986-27228-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 9 Aug 2007 05:01:51 +0000
+Return-path: <james.cameron@hp.com>
+Received: from ccerelbas02.cce.hp.com ([161.114.21.105])
+	by rietz.debian.org with esmtp (Exim 4.50)
+	id 1IJ09f-0004Sh-O1
+	for submit@bugs.debian.org; Thu, 09 Aug 2007 05:01:51 +0000
+Received: from ccerelint01.cce.cpqcorp.net (ccerelint01.cce.cpqcorp.net [16.110.74.103])
+	by ccerelbas02.cce.hp.com (Postfix) with ESMTP id CA4E9342ED
+	for <submit@bugs.debian.org>; Thu,  9 Aug 2007 00:01:05 -0500 (CDT)
+Received: from nestor (unknown [16.145.193.69])
+	by ccerelint01.cce.cpqcorp.net (Postfix) with ESMTP id CE3E2340EE;
+	Thu,  9 Aug 2007 00:01:03 -0500 (CDT)
+Received: from root by nestor with local (Exim 3.36 #1 (Debian))
+	id 1IJ08l-0006FH-00; Thu, 09 Aug 2007 15:00:55 +1000
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: James Cameron <james.cameron@hp.com>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Subject: openbsd-inetd: denial of service, cpu loop,
+ select returns fd that is not handled
+Message-ID: <20070809050055.23925.77196.reportbug@nestor.lan>
+X-Mailer: reportbug 3.38
+Date: Thu, 09 Aug 2007 15:00:55 +1000
+Delivered-To: submit@bugs.debian.org
+X-Spam-Checker-Version: SpamAssassin 2.60-bugs.debian.org_2005_01_02 
+	(1.212-2003-09-23-exp) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, hits=-9.0 required=4.0 tests=BAYES_00,HAS_PACKAGE 
+	autolearn=ham version=2.60-bugs.debian.org_2005_01_02
+
+Package: openbsd-inetd
+Version: 0.20050402-6
+Severity: normal
+
+inetd can enter a state where select(2) is returning a file descriptor
+that is active due to an incoming connection, yet it does not handle the
+connection, so causing a CPU loop until it is restarted.
+
+The problem is reproducible by preparing a UDP service and bombarding a
+system with UDP packets.  Since one has to actually prepare a UDP
+service, the package isn't vulnerable to start with, as far as I can
+tell.
+
+/etc/inetd.conf:
+
+9988 dgram udp nowait root /usr/local/bin/9988 9988
+
+/usr/local/bin/9988 is a shell script that performs "echo 'ok'"
+
+strace:
+
+select(12, [4 5 6 7 8 9 10 11], NULL, NULL, NULL) = 1 (in [11])
+rt_sigprocmask(SIG_BLOCK, [HUP ALRM CHLD], NULL, 8) = 0
+gettimeofday({1186634606, 858530}, NULL) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+select(12, [4 5 6 7 8 9 10 11], NULL, NULL, NULL) = 1 (in [11])
+
+lsof:
+
+COMMAND   PID USER   FD   TYPE DEVICE    SIZE    NODE NAME
+inetd   16547 root  cwd    DIR    3,1    4096       2 /
+inetd   16547 root  rtd    DIR    3,1    4096       2 /
+inetd   16547 root  txt    REG    3,1   29192 1333385 /usr/sbin/inetd
+inetd   16547 root  mem    REG    3,1   83712  301649 /lib/libnsl-2.6.so
+inetd   16547 root  mem    REG    3,1 1331780  301208 /lib/libc-2.6.so
+inetd   16547 root  mem    REG    3,1   31224  294942 /lib/libwrap.so.0.7.6
+inetd   16547 root  mem    REG    3,1   38416  301652 /lib/libnss_files-2.6.so
+inetd   16547 root  mem    REG    3,1  117336  295672 /lib/ld-2.6.so
+inetd   16547 root    0u   CHR    1,3             870 /dev/null
+inetd   16547 root    1u   CHR    1,3             870 /dev/null
+inetd   16547 root    2u   CHR    1,3             870 /dev/null
+inetd   16547 root    4u  IPv4  31852             TCP *:discard (LISTEN)
+inetd   16547 root    5u  IPv4  31854             UDP *:discard 
+inetd   16547 root    6u  IPv4  31856             TCP *:daytime (LISTEN)
+inetd   16547 root    7u  IPv4  31858             TCP *:time (LISTEN)
+inetd   16547 root    8u  IPv4  31860             TCP *:distcc (LISTEN)
+inetd   16547 root    9u  IPv4  31862             TCP *:tojander (LISTEN)
+inetd   16547 root   10u  IPv4  31864             TCP *:9802 (LISTEN)
+inetd   16547 root   11u  IPv4  31866             UDP *:9988 
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers testing
+  APT policy: (500, 'testing')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.18-4-686 (SMP w/1 CPU core)
+Locale: LANG=C, LC_CTYPE=C (charmap=ANSI_X3.4-1968)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages openbsd-inetd depends on:
+ii  libc6                         2.6-2      GNU C Library: Shared libraries
+ii  libwrap0                      7.6.dbs-14 Wietse Venema's TCP wrappers libra
+ii  lsb-base                      3.1-24     Linux Standard Base 3.1 init scrip
+ii  tcpd                          7.6.dbs-14 Wietse Venema's TCP wrapper utilit
+ii  update-inetd                  4.27-0.5   inetd.conf updater
+
+openbsd-inetd recommends no packages.
+
+-- no debconf information
+
+
+------------=_1208701986-27228-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 436803-close) by bugs.debian.org; 20 Apr 2008 14:31:46 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.7 required=4.0 tests=BAYES_00,FVGT_m_MULTI_ODD,
+	HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_2,MURPHY_WRONG_WORD1,
+	MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1Jnaa1-0006N6-Ny
+	for 436803-close@bugs.debian.org; Sun, 20 Apr 2008 14:31:45 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1Jna7H-00036L-IW; Sun, 20 Apr 2008 14:02:03 +0000
+From: Marco d'Itri <md@linux.it>
+To: 436803-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#436803: fixed in openbsd-inetd 0.20080125-1
+Message-Id: <E1Jna7H-00036L-IW@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 14:02:03 +0000
+X-CrossAssassin-Score: 4
+Content-Transfer-Encoding: quoted-printable
+
+Source: openbsd-inetd
+Source-Version: 0.20080125-1
+
+We believe that the bug you reported is fixed in the latest version of
+openbsd-inetd, which is due to be installed in the Debian FTP archive:
+
+openbsd-inetd_0.20080125-1.diff.gz
+  to pool/main/o/openbsd-inetd/openbsd-inetd_0.20080125-1.diff.gz
+openbsd-inetd_0.20080125-1.dsc
+  to pool/main/o/openbsd-inetd/openbsd-inetd_0.20080125-1.dsc
+openbsd-inetd_0.20080125-1_i386.deb
+  to pool/main/o/openbsd-inetd/openbsd-inetd_0.20080125-1_i386.deb
+openbsd-inetd_0.20080125.orig.tar.gz
+  to pool/main/o/openbsd-inetd/openbsd-inetd_0.20080125.orig.tar.gz
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 436803@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Marco d'Itri <md@linux.it> (supplier of updated openbsd-inetd package)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 15:12:31 +0200
+Source: openbsd-inetd
+Binary: openbsd-inetd
+Architecture: source i386
+Version: 0.20080125-1
+Distribution: unstable
+Urgency: low
+Maintainer: Marco d'Itri <md@linux.it>
+Changed-By: Marco d'Itri <md@linux.it>
+Description:=20
+ openbsd-inetd - The OpenBSD Internet Superserver
+Closes: 125181 416010 435658 436803 458564 465613 465732
+Changes:=20
+ openbsd-inetd (0.20080125-1) unstable; urgency=3Dlow
+ .
+   * New CVS snapshot.
+   * Package painfully converted to quilt.
+   * Fixed a typo in debian/control. (Closes: #125181)
+   * Fixed a typo in the init script. (Closes: #465613, #465732)
+   * Delete /etc/rc[2345].d/S20inetd too when upgrading from netkit-inetd=
+.
+     (Closes: #416010)
+   * Do not use log_warning_msg in the init script when inetd.conf is emt=
+py,
+     this is not something deserving extra attention. (Closes: #435658)
+   * Document in inetd(8) that datagram services must read some network
+     input or inetd will continue spawning them.
+     Many thanks to James Cameron for the analysis. (Closes: #436803)
+   * Use a real characters class instead of character ranges with grep
+     in the init script, because some locales have weird ranges.
+     Spotted by Meelis Roos. (Closes: #458564)
+Checksums-Sha1:=20
+ e2a14ad51fdd677f2ceb7e4516548ea32c8e5027 1042 openbsd-inetd_0.20080125-1=
+.dsc
+ 0037cba36d0369f9557653022a3a99144bee5cb9 24627 openbsd-inetd_0.20080125.=
+orig.tar.gz
+ 9adb8bf6d6c5d9f48dac3e261aa83d49a2b08b57 14599 openbsd-inetd_0.20080125-=
+1.diff.gz
+ ab4f23660b9d9e7973f9add0596f3e2004f46a90 33250 openbsd-inetd_0.20080125-=
+1_i386.deb
+Checksums-Sha256:=20
+ ceeefe4d4ef22cfe2c435b0a16492d8fa97658099deaf5dabe3787dd88e168f8 1042 op=
+enbsd-inetd_0.20080125-1.dsc
+ 4c2818fd128ea6428c5f87e678789404f88eb4d71a8379bb85cf6f90d907e44f 24627 o=
+penbsd-inetd_0.20080125.orig.tar.gz
+ b50c07ab209429fbac8af3f35621f7f1216a9d87b11a95ff1bcceea8f8ceb 14599 o=
+penbsd-inetd_0.20080125-1.diff.gz
+ 0dac8ce7ade776cc45b97e7a0a17dc855e6e8b2e6382b3275eadacc1d465294b 33250 o=
+penbsd-inetd_0.20080125-1_i386.deb
+Files:=20
+ a0936fa5c2a66ed62356c9aea5e96ec2 1042 net standard openbsd-inetd_0.20080=
+125-1.dsc
+ d3c4bb9bcbd0c29091791baa61ad0d0a 24627 net standard openbsd-inetd_0.2008=
+0125.orig.tar.gz
+ bec32a5b7ba330f2973f15c8dd6a81e6 14599 net standard openbsd-inetd_0.2008=
+0125-1.diff.gz
+ 877207072c28e09dd021c82096d7f3dc 33250 net standard openbsd-inetd_0.2008=
+0125-1_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC0l/FGfw2OHuP7ERAp2CAJ9NJymGRFfCVKHjrRKpn2NoMZMidACfQhI1
+PHqpkI6CQLZjP+ZouSTD6D8=3D
+=3DySNN
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208701986-27228-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

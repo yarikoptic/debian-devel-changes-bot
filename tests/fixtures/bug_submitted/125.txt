@@ -1,0 +1,154 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 12:10:18 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnXQz-0006ba-7E
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 12:10:18 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 89F3913A4F23; Sun, 20 Apr 2008 11:10:10 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.9 required=4.0 tests=BAYES_00,FOURLA,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 2DC9213A4ADF;
+	Sun, 20 Apr 2008 11:09:50 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnXMz-0005Wu-Mc; Sun, 20 Apr 2008 11:06:05 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476953: allow-axfr=yes overrides allow-axfr-ips
+Reply-To: martin f krafft <madduck@debian.org>, 476953@bugs.debian.org
+Resent-From: martin f krafft <madduck@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian PowerDNS Maintainers <powerdns-debian@workaround.org>
+Resent-Date: Sun, 20 Apr 2008 11:06:01 +0000
+Resent-Message-ID: <handler.476953.B.120868942311714@bugs.debian.org>
+X-Debian-PR-Message: report 476953
+X-Debian-PR-Package: pdns-server
+X-Debian-PR-Keywords: upstream
+X-Debian-PR-Source: pdns
+Received: via spool by submit@bugs.debian.org id=B.120868942311714
+          (code B ref -1); Sun, 20 Apr 2008 11:06:01 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 11:03:43 +0000
+X-Amavis-Spam-Status: No, score=-13.5 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,FROMDEVELOPER,HAS_PACKAGE,INFO_TLD,X_DEBBUGS_NO_ACK 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from clegg.madduck.net ([82.197.162.59])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <madduck@piper.madduck.net>)
+	id 1JnXKg-000324-Tq
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 11:03:43 +0000
+Received: from wall.oerlikon.madduck.net (84-75-148-163.dclient.hispeed.ch [84.75.148.163])
+	(using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+	(Client CN "wall.oerlikon.madduck.net", Issuer "CAcert Class 3 Root" (verified OK))
+	by clegg.madduck.net (postfix) with ESMTP id 29F37A8039
+	for <submit@bugs.debian.org>; Sun, 20 Apr 2008 13:03:38 +0200 (CEST)
+Received: from piper.oerlikon.madduck.net (piper.oerlikon.madduck.net [192.168.14.3])
+	by wall.oerlikon.madduck.net (Postfix) with ESMTP id 5420F9F18E
+	for <submit@bugs.debian.org>; Sun, 20 Apr 2008 13:03:38 +0200 (CEST)
+Received: by piper.oerlikon.madduck.net (Postfix, from userid 1000)
+	id 42A88C1757; Sun, 20 Apr 2008 13:03:38 +0200 (CEST)
+Date: Sun, 20 Apr 2008 13:03:38 +0200
+From: martin f krafft <madduck@debian.org>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Message-ID: <20080420110338.GA26961@piper.oerlikon.madduck.net>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+	protocol="application/pgp-signature"; boundary="MGYHOYXEY6WxJCY8"
+Content-Disposition: inline
+X-Reportbug-Version: 3.39-0.1
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+X-Virus-Scanned: ClamAV 0.91.2/6846/Sun Apr 20 06:06:11 2008 on clegg.madduck.net
+X-Virus-Status: Clean
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 11:06:05 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343438
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -34.4
+X-Spam-Report: (-34.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	1.3 INFO_TLD               URI: Contains an URL in the INFO top-level domain
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	17 AWL                    AWL: From: address is in the auto white-list
+
+
+--MGYHOYXEY6WxJCY8
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+Package: pdns-server
+Version: 2.9.20-8
+Severity: important
+Tags: upstream
+
+Setting allow-axfr=3Dyes turns on AXFR. Unfortunately, it enables AXFR
+=66rom all IPs, even if allow-axfr-ips is set to only a few IPs. This
+is misleading in my opinion, and potentially a security hazard.
+
+I suggest that allow-axfr=3Dno turned off all AXFR, allow-axfr=3Dyes
+turns it all on, but if allow-axfr-ips is set, only those IPs can
+transfer.
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (500, 'unstable'), (500, 'testing'), (1, 'experimental')
+Architecture: amd64 (x86_64)
+
+Kernel: Linux 2.6.24-1-amd64 (SMP w/1 CPU core)
+Locale: LANG=3Den_GB, LC_CTYPE=3Den_GB.UTF-8 (charmap=3DUTF-8)
+Shell: /bin/sh linked to /bin/dash
+
+
+--=20
+ .''`.   martin f. krafft <madduck@debian.org>
+: :'  :  proud Debian developer, author, administrator, and user
+`. `'`   http://people.debian.org/~madduck - http://debiansystem.info
+  `-  Debian - when you have better things to do than fixing systems
+
+--MGYHOYXEY6WxJCY8
+Content-Type: application/pgp-signature; name="digital_signature_gpg.asc"
+Content-Description: Digital signature (see http://martin-krafft.net/gpg/)
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICyMIIgvIgzMMSnURAmCxAKC0iPYKUbyoanrje11ux1fxgqRN6gCeLYuA
+IzZZTzhQuEF9RGoDgBrocWw=
+=Fij8
+-----END PGP SIGNATURE-----
+
+--MGYHOYXEY6WxJCY8--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,142 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 15:31:50 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnaa2-0007SN-Mp
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 15:31:50 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 4D9EE13A4FCE; Sun, 20 Apr 2008 14:31:45 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id ECA7313A4CDE
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 14:31:44 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1Jna7H-00036D-FS; Sun, 20 Apr 2008 14:02:03 +0000
+From: Marco d'Itri <md@linux.it>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted openbsd-inetd 0.20080125-1 (source i386)
+Message-Id: <E1Jna7H-00036D-FS@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 14:02:03 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <5QfV7VIjQfN.A.-UG.RP1CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301305
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 14:31:45 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.5
+X-Spam-Report: (-2.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.1 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 15:12:31 +0200
+Source: openbsd-inetd
+Binary: openbsd-inetd
+Architecture: source i386
+Version: 0.20080125-1
+Distribution: unstable
+Urgency: low
+Maintainer: Marco d'Itri <md@linux.it>
+Changed-By: Marco d'Itri <md@linux.it>
+Description:=20
+ openbsd-inetd - The OpenBSD Internet Superserver
+Closes: 125181 416010 435658 436803 458564 465613 465732
+Changes:=20
+ openbsd-inetd (0.20080125-1) unstable; urgency=3Dlow
+ .
+   * New CVS snapshot.
+   * Package painfully converted to quilt.
+   * Fixed a typo in debian/control. (Closes: #125181)
+   * Fixed a typo in the init script. (Closes: #465613, #465732)
+   * Delete /etc/rc[2345].d/S20inetd too when upgrading from netkit-inetd=
+.
+     (Closes: #416010)
+   * Do not use log_warning_msg in the init script when inetd.conf is emt=
+py,
+     this is not something deserving extra attention. (Closes: #435658)
+   * Document in inetd(8) that datagram services must read some network
+     input or inetd will continue spawning them.
+     Many thanks to James Cameron for the analysis. (Closes: #436803)
+   * Use a real characters class instead of character ranges with grep
+     in the init script, because some locales have weird ranges.
+     Spotted by Meelis Roos. (Closes: #458564)
+Checksums-Sha1:=20
+ e2a14ad51fdd677f2ceb7e4516548ea32c8e5027 1042 openbsd-inetd_0.20080125-1=
+.dsc
+ 0037cba36d0369f9557653022a3a99144bee5cb9 24627 openbsd-inetd_0.20080125.=
+orig.tar.gz
+ 9adb8bf6d6c5d9f48dac3e261aa83d49a2b08b57 14599 openbsd-inetd_0.20080125-=
+1.diff.gz
+ ab4f23660b9d9e7973f9add0596f3e2004f46a90 33250 openbsd-inetd_0.20080125-=
+1_i386.deb
+Checksums-Sha256:=20
+ ceeefe4d4ef22cfe2c435b0a16492d8fa97658099deaf5dabe3787dd88e168f8 1042 op=
+enbsd-inetd_0.20080125-1.dsc
+ 4c2818fd128ea6428c5f87e678789404f88eb4d71a8379bb85cf6f90d907e44f 24627 o=
+penbsd-inetd_0.20080125.orig.tar.gz
+ b50c07ab209429fbac8af3f35621f7f1216a9d87b11a95ff1bcceea8f8ceb 14599 o=
+penbsd-inetd_0.20080125-1.diff.gz
+ 0dac8ce7ade776cc45b97e7a0a17dc855e6e8b2e6382b3275eadacc1d465294b 33250 o=
+penbsd-inetd_0.20080125-1_i386.deb
+Files:=20
+ a0936fa5c2a66ed62356c9aea5e96ec2 1042 net standard openbsd-inetd_0.20080=
+125-1.dsc
+ d3c4bb9bcbd0c29091791baa61ad0d0a 24627 net standard openbsd-inetd_0.2008=
+0125.orig.tar.gz
+ bec32a5b7ba330f2973f15c8dd6a81e6 14599 net standard openbsd-inetd_0.2008=
+0125-1.diff.gz
+ 877207072c28e09dd021c82096d7f3dc 33250 net standard openbsd-inetd_0.2008=
+0125-1_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC0l/FGfw2OHuP7ERAp2CAJ9NJymGRFfCVKHjrRKpn2NoMZMidACfQhI1
+PHqpkI6CQLZjP+ZouSTD6D8=3D
+=3DySNN
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+openbsd-inetd_0.20080125-1.diff.gz
+  to pool/main/o/openbsd-inetd/openbsd-inetd_0.20080125-1.diff.gz
+openbsd-inetd_0.20080125-1.dsc
+  to pool/main/o/openbsd-inetd/openbsd-inetd_0.20080125-1.dsc
+openbsd-inetd_0.20080125-1_i386.deb
+  to pool/main/o/openbsd-inetd/openbsd-inetd_0.20080125-1_i386.deb
+openbsd-inetd_0.20080125.orig.tar.gz
+  to pool/main/o/openbsd-inetd/openbsd-inetd_0.20080125.orig.tar.gz
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

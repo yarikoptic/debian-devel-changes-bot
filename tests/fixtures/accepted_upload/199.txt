@@ -1,0 +1,121 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 17:03:38 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnc0q-00087K-N7
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 17:03:38 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 4460913A4F23; Sun, 20 Apr 2008 16:03:31 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id F0B8B13A49B2
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 16:03:30 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnbzX-0001o3-O5; Sun, 20 Apr 2008 16:02:11 +0000
+From: Kartik Mistry <kartik.mistry@gmail.com>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted tagtool 0.12.3-5 (source i386)
+Message-Id: <E1JnbzX-0001o3-O5@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 16:02:11 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <pHfonXCYUPD.A.kaF.Tl2CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301319
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 16:03:31 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.6
+X-Spam-Report: (-2.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.0 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Mon, 14 Apr 2008 12:46:30 +0530
+Source: tagtool
+Binary: tagtool
+Architecture: source i386
+Version: 0.12.3-5
+Distribution: unstable
+Urgency: low
+Maintainer: Kartik Mistry <kartik.mistry@gmail.com>
+Changed-By: Kartik Mistry <kartik.mistry@gmail.com>
+Description:=20
+ tagtool    - Tool to tag and rename MP3 and Ogg Vorbis files
+Changes:=20
+ tagtool (0.12.3-5) unstable; urgency=3Dlow
+ .
+   * debian/rules:
+     + [Lintian] Fixed config.guess, config.sub presence in .diff.gz,
+       Thanks to Kumar Appaiah for help
+   * debian/copyright:
+     + Updated Debian package copyright year
+     + Fixed indentation of license text
+Checksums-Sha1:=20
+ ec17f147a8b5e4abe72e32beda0fb27917a3c625 1072 tagtool_0.12.3-5.dsc
+ c3eda86d649fdcf99bcd85caa1a83eb5a155eac3 7031 tagtool_0.12.3-5.diff.gz
+ a0655ad95f61aef17a16e15b2ef9ed3bff1ea3a5 193352 tagtool_0.12.3-5_i386.de=
+b
+Checksums-Sha256:=20
+ 35a3cedc46ad402f0ae8375105d6a61cd0bede7e1afead115cebfa8eb7e7785f 1072 ta=
+gtool_0.12.3-5.dsc
+ a2404ea4c4ff597df3e1ef93238bedef6c8604a2b613c37103626eb46dbf739a 7031 ta=
+gtool_0.12.3-5.diff.gz
+ 9932ed2add1317488d8b53e225bbff0465fefffc1fb15d98e749be819377dd55 193352 =
+tagtool_0.12.3-5_i386.deb
+Files:=20
+ 974db34472e934beeccaf12ad3cbba20 1072 sound optional tagtool_0.12.3-5.ds=
+c
+ 37e80acb57a3f3ef681920a581276fba 7031 sound optional tagtool_0.12.3-5.di=
+ff.gz
+ a6dcee147e79e398c317c3e127fde4cd 193352 sound optional tagtool_0.12.3-5_=
+i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC2jWSd75awtatOcRArIKAJ9Bb2Fb7FlML/1WLObM5+jVAM0LTQCdHEbg
+IaUongdc2L5ee91wkhqjY0c=3D
+=3DTXIC
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+tagtool_0.12.3-5.diff.gz
+  to pool/main/t/tagtool/tagtool_0.12.3-5.diff.gz
+tagtool_0.12.3-5.dsc
+  to pool/main/t/tagtool/tagtool_0.12.3-5.dsc
+tagtool_0.12.3-5_i386.deb
+  to pool/main/t/tagtool/tagtool_0.12.3-5_i386.deb
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

@@ -1,0 +1,304 @@
+From bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org Sun Apr 20 18:24:44 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org>)
+	id 1JndHL-0008VJ-6u
+	for ddc@ddc.chris-lamb.co.uk; Sun, 20 Apr 2008 18:24:44 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id C887B13A502F; Sun, 20 Apr 2008 17:24:37 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id E448713A4EBC;
+	Sun, 20 Apr 2008 17:24:35 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JndGn-00019G-4N; Sun, 20 Apr 2008 17:24:05 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Frank =?UTF-8?Q?K=C3=BCster?= <frank@kuesterei.ch>
+Subject: Bug#464242: marked as done (RFP: please package Microsoft Winword)
+Message-ID: <handler.464242.D464242.12087121671336.ackdone@bugs.debian.org>
+References: <87bq44xwpf.fsf@riesling.zuerich.kuesterei.ch>
+ <20080206005059.13711.92646.reportbug@bach.cs.colorado.edu>
+X-Debian-PR-Message: closed 464242
+X-Debian-PR-Package: tex-common
+X-Debian-PR-Keywords: wontfix
+X-Debian-PR-Source: tex-common
+Content-Type: multipart/mixed; boundary="----------=_1208712245-4122-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 17:24:05 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <leKa5CiuMfP.A.Uk.Vx3CIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/133053
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 17:24:37 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208712245-4122-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 19:28:12 +0200
+with message-id <87bq44xwpf.fsf@riesling.zuerich.kuesterei.ch>
+and subject line Closing this bug, there are already enough papersize bugs
+has caused the Debian Bug report #464242,
+regarding RFP: please package Microsoft Winword
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+464242: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D464242
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208712245-4122-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 6 Feb 2008 00:51:17 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-6.4 required=4.0 tests=BAYES_00,DICTIONARYSEQ,
+	FOURLA,HAS_PACKAGE autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <bwpearre@gmail.com>
+Received: from shostakovich.cs.colorado.edu ([128.138.242.12])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <bwpearre@gmail.com>)
+	id 1JMYVQ-0006sU-Ry
+	for submit@bugs.debian.org; Wed, 06 Feb 2008 00:51:17 +0000
+Received: by shostakovich.cs.colorado.edu (Postfix, from userid 10)
+	id E8D54FEECB; Tue,  5 Feb 2008 17:51:10 -0700 (MST)
+Received: by localhost (Postfix, from userid 1000)
+	id A3735EAD04; Tue,  5 Feb 2008 17:50:59 -0700 (MST)
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Ben Pearre <bwpearre@gmail.com>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Subject: tex-common: Paper size, again again again
+Reply-To: bwpearre@alumni.princeton.edu
+Message-ID: <20080206005059.13711.92646.reportbug@bach.cs.colorado.edu>
+X-Mailer: reportbug 3.39
+Date: Tue, 05 Feb 2008 17:50:59 -0700
+Delivered-To: submit@bugs.debian.org
+
+Package: tex-common
+Version: 1.10
+Severity: important
+
+
+There have been numerous default-paper-size bugs reported.  The
+argument against fixing them seems to be along the lines of "The user
+can figure it out."  Well, yes, the user _can_, but the user can also
+write a complete OS from scratch.  Downloading something is _supposed_
+to be easier than writing it from scratch BECAUSE downloaded programs
+are supposed to do some of the standard work for you.
+
+There is a comment in /usr/share/doc/tex-common/README.Debian that
+says
+
+     The Debian TeX Live packages currently do not evaluate the
+     settings of `/etc/papersize', please set the paper geometry
+     explicitly in the (La)TeX source, e.g.  using the packages
+     `geometry' or `hyperref'.
+
+That is very poor behaviour.  Here's why:
+
+* TeX is designed to let you concentrate on what you're writing rather
+  than on layout.  For this reason TeX has a very nice page-breaking
+  algorithm that handles layout for you so you don't have to worry
+  about where page breaks are, or what size paper you're using.  The
+  Debian policy is counter to this philosophy.
+
+* If I write all my documents and have to specify in each one what
+  size paper to use, and then I want to send them to a collaborator
+  who will be printing drafts on _her_ printer, and she lives
+  somewhere with a different paper size, then each of us will have to
+  modify the document back and forth, back and forth, at each
+  printing.  Again, if I move to somewhere with a different paper
+  size, I should be able to set that systemwide and have everything
+  adjust, rather than modify every document I've ever written or had
+  sent to me.
+
+* "There is no default; specify paper size per document" is stupid.
+  What about specifying a font size, weight, italics or not, duplex or
+  not, etc?  Why have defaults at all?  Why is it appropriate to have
+  a default font size but not to have a default paper size?
+
+Here's the thing: the paper size I want to use will depend on the
+printer to which my computer is connected, not on which document I am
+printing.  Therefore the setting should be per printer (or tray),
+which is a bit complicated.  However, since writing is compiled per
+computer, a reasonable approximation is this: printers in the USA and
+Canada use "letter", while printers in the civilised world use "a4".
+So the default paper size can usually be safely set per printer
+location, which is roughly per computer.
+
+If you travel, you should be able to change ONE THING and have access
+to all the local printers.
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (500, 'unstable')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.23.14 (PREEMPT)
+Locale: LANG=en_US.UTF-8, LC_CTYPE=en_US.UTF-8 (charmap=UTF-8)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages tex-common depends on:
+ii  debconf                       1.5.19     Debian configuration management sy
+ii  ucf                           3.004      Update Configuration File: preserv
+
+tex-common recommends no packages.
+
+Versions of packages tetex-bin depends on:
+ii  texlive                       2007-13    TeX Live: A decent selection of th
+
+Versions of packages tetex-extra depends on:
+ii  tetex-bin                  2007-13       TeX Live: teTeX transitional packa
+ii  texlive-bibtex-extra       2007.dfsg.1-1 TeX Live: Extra BibTeX styles
+ii  texlive-font-utils         2007.dfsg.1-2 TeX Live: TeX font-related program
+ii  texlive-fonts-extra        2007.dfsg.1-1 TeX Live: Extra fonts
+ii  texlive-lang-croatian      2007.dfsg.3-1 TeX Live: Croatian
+ii  texlive-lang-cyrillic      2007.dfsg.3-1 TeX Live: Cyrillic
+ii  texlive-lang-czechslovak   2007.dfsg.3-1 TeX Live: Czech/Slovak
+ii  texlive-lang-danish        2007.dfsg.3-1 TeX Live: Danish
+ii  texlive-lang-dutch         2007.dfsg.3-1 TeX Live: Dutch
+ii  texlive-lang-finnish       2007.dfsg.3-1 TeX Live: Finnish
+ii  texlive-lang-french        2007.dfsg.3-1 TeX Live: French
+ii  texlive-lang-german        2007.dfsg.3-1 TeX Live: German
+ii  texlive-lang-greek         2007.dfsg.3-1 TeX Live: Greek typesetting
+ii  texlive-lang-hungarian     2007.dfsg.3-1 TeX Live: Hungarian
+ii  texlive-lang-italian       2007.dfsg.3-1 TeX Live: Italian
+ii  texlive-lang-latin         2007.dfsg.3-1 TeX Live: Latin
+ii  texlive-lang-mongolian     2007.dfsg.3-1 TeX Live: Mongolian
+ii  texlive-lang-norwegian     2007.dfsg.3-1 TeX Live: Norwegian
+ii  texlive-lang-other         2007.dfsg.3-1 TeX Live: Other hyphenation files
+ii  texlive-lang-polish        2007.dfsg.3-1 TeX Live: Polish
+ii  texlive-lang-portuguese    2007.dfsg.3-1 TeX Live: Portuguese
+ii  texlive-lang-spanish       2007.dfsg.3-1 TeX Live: Spanish
+ii  texlive-lang-swedish       2007.dfsg.3-1 TeX Live: Swedish
+ii  texlive-lang-vietnamese    2007.dfsg.3-1 TeX Live: Vietnamese
+ii  texlive-latex-extra        2007.dfsg.1-1 TeX Live: LaTeX supplementary pack
+ii  texlive-math-extra         2007.dfsg.1-1 TeX Live: Advanced math typesettin
+ii  texlive-pictures           2007-13       TeX Live: Packages for drawings gr
+ii  texlive-pstricks           2007.dfsg.1-1 TeX Live: PSTricks packages
+ii  texlive-publishers         2007.dfsg.1-1 TeX Live: Support for publishers
+
+Versions of packages texlive-base depends on:
+ii  texlive-base-bin           2007.dfsg.1-2 TeX Live: Essential binaries
+ii  texlive-common             2007-13       TeX Live: Base component
+ii  texlive-doc-base           2007-3        TeX Live: Base documentation
+
+-- debconf information:
+  tetex-base/olddat: true
+  tetex-base/fmtutil-failed:
+  tex-common/check_texmf_wrong:
+  tex-common/check_texmf_missing:
+  tetex-base/oldcfg: true
+  tetex-base/oldupdm:
+  tetex-base/updmap-failed:
+
+
+
+------------=_1208712245-4122-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 464242-done) by bugs.debian.org; 20 Apr 2008 17:22:47 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.0 required=4.0 tests=BAYES_00,MURPHY_DRUGS_REL8 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <frank@kuesterei.ch>
+Received: from moutng.kundenserver.de ([212.227.126.179])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <frank@kuesterei.ch>)
+	id 1JndFW-0000KP-N2
+	for 464242-done@bugs.debian.org; Sun, 20 Apr 2008 17:22:47 +0000
+Received: from riesling (p5B0AF3DD.dip.t-dialin.net [91.10.243.221])
+	by mrelayeu.kundenserver.de (node=mrelayeu8) with ESMTP (Nemesis)
+	id 0ML31I-1JndFQ2P9S-0003EZ; Sun, 20 Apr 2008 19:22:40 +0200
+Received: from localhost ([127.0.0.1] helo=riesling.zuerich.kuesterei.ch)
+	by riesling with esmtp (Exim 4.63)
+	(envelope-from <frank@kuesterei.ch>)
+	id 1JndKm-0006Wp-E7
+	for 464242-done@bugs.debian.org; Sun, 20 Apr 2008 19:28:12 +0200
+To: 464242-done@bugs.debian.org
+Subject: Closing this bug, there are already enough papersize bugs
+X-Attribution: fant
+X-Ehrenamt: http://www.langau.de
+User-Agent: Gnus/5.11 (Gnus v5.11) Emacs/22.1 (gnu/linux)
+From: Frank =?iso-8859-1?Q?K=FCster?= <frank@kuesterei.ch>
+Date: Sun, 20 Apr 2008 19:28:12 +0200
+Message-ID: <87bq44xwpf.fsf@riesling.zuerich.kuesterei.ch>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: quoted-printable
+X-Provags-ID: V01U2FsdGVkX1+2fI5dBzlSZ4NgVOClVpJI70fDZOxhaWIfQFC
+ 9hb72Kf0SA8ofrDHqEzaOmL9ryBWTmOoWvRMAiE8/ptydh+FKL
+ u4x/HKsNu+bw71egWVyV8bdwznFduFA
+
+Hi,
+
+although the discussion in the bug log wasn't the most friendly one,
+it's clear that there's no new information in it at all. We already do
+have bug reports against the relevant packages, without patches but with
+a design decision how it should be solved. Therefore I close this bug.
+
+Regards, Frank
+--=20
+Frank K=FCster
+Debian Developer (teTeX/TeXLive)
+
+
+------------=_1208712245-4122-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

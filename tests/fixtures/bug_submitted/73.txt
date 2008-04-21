@@ -1,0 +1,176 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 16:51:29 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnbot-0007sE-Ec
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 16:51:27 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id F1AA713A50C4; Sun, 20 Apr 2008 15:51:09 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=unavailable version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id C13EE13A50CC;
+	Sun, 20 Apr 2008 15:50:11 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnbnG-0003GG-0A; Sun, 20 Apr 2008 15:49:30 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#477011: adonthell: FTBFS: py_adonthell_wrap.cc:1177: error: invalid conversion from 'const char*' to 'char*'
+Reply-To: Lucas Nussbaum <lucas@lucas-nussbaum.net>, 477011@bugs.debian.org
+Resent-From: Lucas Nussbaum <lucas@lucas-nussbaum.net>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian QA Group <packages@qa.debian.org>
+Resent-Date: Sun, 20 Apr 2008 15:49:27 +0000
+Resent-Message-ID: <handler.477011.B.12087064052749@bugs.debian.org>
+X-Debian-PR-Message: report 477011
+X-Debian-PR-Package: adonthell
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: adonthell
+Received: via spool by submit@bugs.debian.org id=B.12087064052749
+          (code B ref -1); Sun, 20 Apr 2008 15:49:27 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 15:46:45 +0000
+X-Amavis-Spam-Status: No, score=-10.0 required=4.0 tests=BAYES_00,HAS_PACKAGE 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from xanadu.blop.info ([80.248.208.235])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <lucas@lucas-nussbaum.net>)
+	id 1Jnbkb-0000gt-1Y
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 15:46:45 +0000
+Received: from localhost ([127.0.0.1] helo=xanadu.blop.info)
+	by xanadu.blop.info with smtp (Exim 4.63)
+	(envelope-from <lucas@lucas-nussbaum.net>)
+	id 1Jnbka-0000C1-16
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 17:46:44 +0200
+Received: (nullmailer pid 17183 invoked by uid 1000);
+	Sun, 20 Apr 2008 13:55:34 -0000
+Date: Sun, 20 Apr 2008 15:55:34 +0200
+From: Lucas Nussbaum <lucas@lucas-nussbaum.net>
+To: submit@bugs.debian.org
+Message-ID: <20080420135534.GA17164@xanadu.blop.info>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 15:49:30 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343569
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -36.6
+X-Spam-Report: (-36.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	16 AWL                    AWL: From: address is in the auto white-list
+
+Package: adonthell
+Version: 0.3.4.cvs.20050813-3
+Severity: serious
+User: debian-qa@lists.debian.org
+Usertags: qa-ftbfs-20080419 qa-ftbfs
+Justification: FTBFS on i386
+
+Hi,
+
+During a rebuild of all packages in sid, your package failed to build on i386.
+
+This rebuild was done with gcc 4.3 instead of gcc 4.2, because gcc 4.3 is now
+the default on most architectures (even if it's not the case on i386 yet).
+Feel free to downgrade this bug to 'important' if your package is only built
+on i386, and this bug is specific to gcc 4.3 (i.e the package builds fine with
+gcc 4.2).
+
+Relevant part:
+> if i486-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I. -I..   -DOGG_MUSIC -I/usr/include/SDL -D_GNU_SOURCE=1 -D_REENTRANT -I/usr/include -I/usr/include/python2.5 -DPY_DEBUG -I/usr/include/freetype2   -Wall -fno-exceptions -DSWIG_GLOBAL -DDATA_DIR="\"/usr/share/games/adonthell"\" -O2 -MT py_adonthell_wrap.o -MD -MP -MF ".deps/py_adonthell_wrap.Tpo" \
+> 	  -c -o py_adonthell_wrap.o `test -f 'py_adonthell_wrap.cc' || echo './'`py_adonthell_wrap.cc; \
+> 	then mv -f ".deps/py_adonthell_wrap.Tpo" ".deps/py_adonthell_wrap.Po"; \
+> 	else rm -f ".deps/py_adonthell_wrap.Tpo"; exit 1; \
+> 	fi
+> In file included from /usr/include/c++/4.3/ext/hash_map:64,
+>                  from str_hash.h:27,
+>                  from storage.h:34,
+>                  from character_base.h:37,
+>                  from mapcharacter.h:36,
+>                  from character.h:29,
+>                  from map_event.h:26,
+>                  from py_adonthell_wrap.cc:1439:
+> /usr/include/c++/4.3/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated.
+> py_adonthell_wrap.cc: In function 'int SWIG_Python_ConvertPtr(PyObject*, void**, swig_type_info*, int)':
+> py_adonthell_wrap.cc:1177: error: invalid conversion from 'const char*' to 'char*'
+> In file included from event.h:27,
+>                  from time_event.h:25,
+>                  from py_adonthell_wrap.cc:1438:
+> py_object.h: In member function 'PyObject* py_object::get_instance(const bool&) const':
+> py_object.h:206: warning: suggest explicit braces to avoid ambiguous 'else'
+> In file included from win_container.h:19,
+>                  from win_object.h:19,
+>                  from win_label.h:18,
+>                  from text_bubble.h:31,
+>                  from mapcharacter.h:38,
+>                  from character.h:29,
+>                  from map_event.h:26,
+>                  from py_adonthell_wrap.cc:1439:
+> win_base.h: In member function 'void win_base::set_activate(bool)':
+> win_base.h:153: warning: suggest parentheses around assignment used as truth value
+> In file included from win_scroll.h:19,
+>                  from win_theme.h:18,
+>                  from text_bubble.h:32,
+>                  from mapcharacter.h:38,
+>                  from character.h:29,
+>                  from map_event.h:26,
+>                  from py_adonthell_wrap.cc:1439:
+> win_scrollbar.h: In member function 'void win_scrollbar::set_trans_scrollbar(bool)':
+> win_scrollbar.h:54: warning: suggest parentheses around assignment used as truth value
+> py_adonthell_wrap.cc: In function 'void SWIG_Python_FixMethods(PyMethodDef*, swig_const_info*, swig_type_info**, swig_type_info**)':
+> py_adonthell_wrap.cc:28595: error: invalid conversion from 'const char*' to 'char*'
+> py_adonthell_wrap.cc: At global scope:
+> py_adonthell_wrap.cc:231: warning: 'swig_type_info* SWIG_TypeDynamicCast(swig_type_info*, void**)' defined but not used
+> py_adonthell_wrap.cc:419: warning: 'const char* SWIG_UnpackDataName(const char*, void*, size_t, const char*)' defined but not used
+> py_adonthell_wrap.cc:499: warning: 'void SWIG_PropagateClientData(swig_type_info*)' defined but not used
+> py_adonthell_wrap.cc:1198: warning: 'void* SWIG_Python_MustGetPtr(PyObject*, swig_type_info*, int, int)' defined but not used
+> py_adonthell_wrap.cc:1212: warning: 'int SWIG_Python_ConvertPacked(PyObject*, void*, size_t, swig_type_info*, int)' defined but not used
+> make[4]: *** [py_adonthell_wrap.o] Error 1
+
+The full build log is available from:
+   http://people.debian.org/~lucas/logs/2008/04/19
+
+A list of current common problems and possible solutions is available at 
+http://wiki.debian.org/qa.debian.org/FTBFS . You're welcome to contribute!
+
+About the archive rebuild: The rebuild was done on about 50 AMD64 nodes
+of the Grid'5000 platform, using a clean chroot containing a sid i386
+environment.  Internet was not accessible from the build systems.
+
+-- 
+| Lucas Nussbaum
+| lucas@lucas-nussbaum.net   http://www.lucas-nussbaum.net/ |
+| jabber: lucas@nussbaum.fr             GPG: 1024D/023B3F4F |
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

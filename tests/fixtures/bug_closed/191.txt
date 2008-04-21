@@ -1,0 +1,295 @@
+From bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org Sun Apr 20 10:31:11 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org>)
+	id 1JnVt3-00060m-00
+	for ddc@ddc.chris-lamb.co.uk; Sun, 20 Apr 2008 10:31:11 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id B6A8113A4983; Sun, 20 Apr 2008 09:31:03 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 24B1413A4969;
+	Sun, 20 Apr 2008 09:31:02 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnVpL-0006Vk-G7; Sun, 20 Apr 2008 09:27:15 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Sebastian =?UTF-8?Q?Dr=C3=B6ge?= <slomo@circular-chaos.org>
+Subject: Bug#476916: marked as done (gst-plugins-bad0.10_0.10.6.2-1(experimental/powerpc/anakreon):passing
+ argument 1 of 'g_atomic_pointer_get' from incompatible pointer type)
+Message-ID: <handler.476916.D476916.120868347918154.ackdone@bugs.debian.org>
+References: <1208682695.6887.6.camel@asgard.lan>
+ <878wz9lz19.fsf@pindar.marcbrockschmidt.de>
+X-Debian-PR-Message: closed 476916
+X-Debian-PR-Package: gst-plugins-bad0.10
+X-Debian-PR-Keywords: experimental
+Content-Type: multipart/mixed; boundary="----------=_1208683635-25018-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 09:27:15 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <ZhpmSkg44kI.A.BdB.X1wCIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/132909
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 09:31:03 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208683635-25018-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 11:11:35 +0200
+with message-id <1208682695.6887.6.camel@asgard.lan>
+and subject line Re: Bug#476916: gst-plugins-bad0.10_0.10.6.2-1(experimenta=
+l/powerpc/anakreon):passing argument 1 of 'g_atomic_pointer_get' from incom=
+patible pointer type
+has caused the Debian Bug report #476916,
+regarding gst-plugins-bad0.10_0.10.6.2-1(experimental/powerpc/anakreon):pas=
+sing argument 1 of 'g_atomic_pointer_get' from incompatible pointer type
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+476916: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D476916
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208683635-25018-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 08:20:44 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.9 required=4.0 tests=BAYES_00,FOURLA,HAS_PACKAGE 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <marc@marcbrockschmidt.de>
+Received: from alius.turmzimmer.net ([88.198.169.140])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <marc@marcbrockschmidt.de>)
+	id 1JnUmI-0000EU-Es
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 08:20:20 +0000
+Received: from cl-2769.ham-01.de.sixxs.net ([2001:6f8:900:ad0::2] helo=pindar.localnet)
+	by alius.turmzimmer.net with esmtpa (Exim 4.63)
+	(envelope-from <marc@marcbrockschmidt.de>)
+	id 1JnUmH-00020X-2P
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 08:20:01 +0000
+Received: from localhost ([127.0.0.1] helo=pindar.localnet)
+	by pindar.localnet with esmtp (Exim 4.69)
+	(envelope-from <marc@marcbrockschmidt.de>)
+	id 1JnUl0-0002i9-M0
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 10:18:42 +0200
+From: Marc 'HE' Brockschmidt <marc@marcbrockschmidt.de>
+To: submit@bugs.debian.org
+Subject: gst-plugins-bad0.10_0.10.6.2-1(experimental/powerpc/anakreon):passing argument 1 of 'g_atomic_pointer_get' from incompatible pointer type
+Date: Sun, 20 Apr 2008 10:18:42 +0200
+Message-ID: <878wz9lz19.fsf@pindar.marcbrockschmidt.de>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Delivered-To: submit@bugs.debian.org
+
+Package: gst-plugins-bad0.10
+Version: 0.10.6.2-1
+Severity: serious
+Tags: experimental
+
+Heya,
+
+Building your package fails on my ppc, ia64, alpha and mipsel buildds:
+
+| Automatic build of gst-plugins-bad0.10_0.10.6.2-1 on anakreon.ftwca.de by sbuild/powerpc 98-farm
+| Build started at 20080414-2334
+| ******************************************************************************
+
+[...]
+
+
+| /bin/sh ../../libtool --mode=compile cc -DHAVE_CONFIG_H -I. -I. -I../..    -pthread -I/usr/include/gstreamer-0.10 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libxml2   -I../../gst-libs -I../../gst-libs -pthread -I/usr/include/gstreamer-0.10 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libxml2   -Wall -Werror  -g     -g -Wall -O2 -c -o libgstjack_la-gstjackaudioclient.lo `test -f 'gstjackaudioclient.c' || echo './'`gstjackaudioclient.c
+|  cc -DHAVE_CONFIG_H -I. -I. -I../.. -pthread -I/usr/include/gstreamer-0.10 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libxml2 -I../../gst-libs -I../../gst-libs -pthread -I/usr/include/gstreamer-0.10 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libxml2 -Wall -Werror -g -g -Wall -O2 -c gstjackaudioclient.c  -fPIC -DPIC -o .libs/libgstjack_la-gstjackaudioclient.o
+| cc1: warnings being treated as errors
+| gstjackaudioclient.c: In function 'gst_jack_audio_get_connection':
+| gstjackaudioclient.c:257: error: passing argument 1 of 'g_atomic_pointer_get' from incompatible pointer type
+| gstjackaudioclient.c:277: error: passing argument 1 of 'g_atomic_pointer_get' from incompatible pointer type
+| gstjackaudioclient.c: In function 'gst_jack_audio_unref_connection':
+| gstjackaudioclient.c:290: error: passing argument 1 of 'g_atomic_pointer_get' from incompatible pointer type
+| gstjackaudioclient.c:298: error: passing argument 1 of 'g_atomic_pointer_get' from incompatible pointer type
+| make[4]: *** [libgstjack_la-gstjackaudioclient.lo] Error 1
+| make[4]: Leaving directory `/build/buildd/gst-plugins-bad0.10-0.10.6.2/ext/jack'
+| make[3]: *** [all-recursive] Error 1
+| make[3]: Leaving directory `/build/buildd/gst-plugins-bad0.10-0.10.6.2/ext'
+| make[2]: *** [all-recursive] Error 1
+| make[2]: Leaving directory `/build/buildd/gst-plugins-bad0.10-0.10.6.2'
+| make[1]: *** [all] Error 2
+| make[1]: Leaving directory `/build/buildd/gst-plugins-bad0.10-0.10.6.2'
+| make: *** [debian/stamp-makefile-build] Error 2
+| dpkg-buildpackage: failure: debian/rules build gave error exit status 2
+| ******************************************************************************
+| Build finished at 20080414-2342
+| FAILED [dpkg-buildpackage died]
+| Build needed 00:06:31, 58912k disk space
+
+A complete build log can be found at
+http://experimental.debian.net/build.php?arch=powerpc&pkg=gst-plugins-bad0.10&ver=0.10.6.2-1
+
+Marc
+-- 
+BOFH #141:
+disks spinning backwards - toggle the hemisphere jumper.
+
+
+
+------------=_1208683635-25018-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 476916-done) by bugs.debian.org; 20 Apr 2008 09:24:39 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-5.7 required=4.0 tests=BAYES_00,FOURLA,
+	HAS_BUG_NUMBER,IMPRONONCABLE_1,MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <slomo@circular-chaos.org>
+Received: from circular-chaos.org ([83.151.31.59] helo=mail.circular-chaos.org)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <slomo@circular-chaos.org>)
+	id 1JnVaJ-00074D-TO
+	for 476916-done@bugs.debian.org; Sun, 20 Apr 2008 09:11:48 +0000
+Received: from [192.168.0.1] (e179161001.adsl.alicedsl.de [85.179.161.1])
+	(using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by mail.circular-chaos.org (Postfix) with ESMTP id 36ED442A5E;
+	Sun, 20 Apr 2008 11:05:16 +0200 (CEST)
+Subject: Re: Bug#476916:
+	gst-plugins-bad0.10_0.10.6.2-1(experimental/powerpc/anakreon):passing
+	argument 1 of 'g_atomic_pointer_get' from incompatible pointer type
+From: Sebastian =?ISO-8859-1?Q?Dr=F6ge?= <slomo@circular-chaos.org>
+To: Marc 'HE' Brockschmidt <marc@marcbrockschmidt.de>,  476916-done@bugs.debian.org
+In-Reply-To: <878wz9lz19.fsf@pindar.marcbrockschmidt.de>
+References: <878wz9lz19.fsf@pindar.marcbrockschmidt.de>
+Content-Type: multipart/signed; micalg=pgp-sha1; protocol="application/pgp-signature"; boundary="=-ZgAckd8XC2wWuQj+1JcL"
+Date: Sun, 20 Apr 2008 11:11:35 +0200
+Message-Id: <1208682695.6887.6.camel@asgard.lan>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.22.1 
+
+
+--=-ZgAckd8XC2wWuQj+1JcL
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Version: 0.10.6.2-2
+
+Am Sonntag, den 20.04.2008, 10:18 +0200 schrieb Marc 'HE' Brockschmidt:
+> Package: gst-plugins-bad0.10
+> Version: 0.10.6.2-1
+> Severity: serious
+> Tags: experimental
+>=20
+> Heya,
+>=20
+> Building your package fails on my ppc, ia64, alpha and mipsel buildds:
+>=20
+> | Automatic build of gst-plugins-bad0.10_0.10.6.2-1 on anakreon.ftwca.de =
+by sbuild/powerpc 98-farm
+> | Build started at 20080414-2334
+> | ***********************************************************************=
+*******
+>=20
+> [...]
+>=20
+>=20
+> | /bin/sh ../../libtool --mode=3Dcompile cc -DHAVE_CONFIG_H -I. -I. -I../=
+..    -pthread -I/usr/include/gstreamer-0.10 -I/usr/include/glib-2.0 -I/usr=
+/lib/glib-2.0/include -I/usr/include/libxml2   -I../../gst-libs -I../../gst=
+-libs -pthread -I/usr/include/gstreamer-0.10 -I/usr/include/glib-2.0 -I/usr=
+/lib/glib-2.0/include -I/usr/include/libxml2   -Wall -Werror  -g     -g -Wa=
+ll -O2 -c -o libgstjack_la-gstjackaudioclient.lo `test -f 'gstjackaudioclie=
+nt.c' || echo './'`gstjackaudioclient.c
+> |  cc -DHAVE_CONFIG_H -I. -I. -I../.. -pthread -I/usr/include/gstreamer-0=
+.10 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libx=
+ml2 -I../../gst-libs -I../../gst-libs -pthread -I/usr/include/gstreamer-0.1=
+0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libxml=
+2 -Wall -Werror -g -g -Wall -O2 -c gstjackaudioclient.c  -fPIC -DPIC -o .li=
+bs/libgstjack_la-gstjackaudioclient.o
+> | cc1: warnings being treated as errors
+> | gstjackaudioclient.c: In function 'gst_jack_audio_get_connection':
+> | gstjackaudioclient.c:257: error: passing argument 1 of 'g_atomic_pointe=
+r_get' from incompatible pointer type
+> | gstjackaudioclient.c:277: error: passing argument 1 of 'g_atomic_pointe=
+r_get' from incompatible pointer type
+> | gstjackaudioclient.c: In function 'gst_jack_audio_unref_connection':
+> | gstjackaudioclient.c:290: error: passing argument 1 of 'g_atomic_pointe=
+r_get' from incompatible pointer type
+> | gstjackaudioclient.c:298: error: passing argument 1 of 'g_atomic_pointe=
+r_get' from incompatible pointer type
+> | make[4]: *** [libgstjack_la-gstjackaudioclient.lo] Error 1
+
+Hi,
+this is already fixed in version =EF=BB=BF0.10.6.2-2 and later, which build=
+ fine
+everywhere. This is caused by using -Werror and
+http://bugzilla.gnome.org/show_bug.cgi?id=3D316221
+
+--=-ZgAckd8XC2wWuQj+1JcL
+Content-Type: application/pgp-signature; name=signature.asc
+Content-Description: Dies ist ein digital signierter Nachrichtenteil
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQBICwjHBsBdh1vkHyERAgOUAKCe+ZDetY8t1QpNDpWpFn6J+r9EAgCfWJ2s
+sJoTV6cxNYvwP2+bIEB2dPs=
+=eIUn
+-----END PGP SIGNATURE-----
+
+--=-ZgAckd8XC2wWuQj+1JcL--
+
+
+
+------------=_1208683635-25018-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

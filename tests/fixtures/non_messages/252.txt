@@ -1,0 +1,168 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 11:25:21 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnWjV-0006Hm-MU
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 11:25:21 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 8AD0B13A4F23; Sun, 20 Apr 2008 10:25:16 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	MURPHY_DRUGS_REL8,RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 3877B13A4F19;
+	Sun, 20 Apr 2008 10:25:02 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnWfR-0000Au-0a; Sun, 20 Apr 2008 10:21:05 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#342632: Various fixes for emacs php mode
+Reply-To: opal@debian.org, 342632@bugs.debian.org
+Resent-From: Ola Lundqvist <opal@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Pontus Ullgren <pontus@ullgren.com>
+Resent-Date: Sun, 20 Apr 2008 10:21:04 +0000
+Resent-Message-ID: <handler.342632.B342632.120868681031622@bugs.debian.org>
+X-Debian-PR-Message: report 342632
+X-Debian-PR-Package: php-elisp
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: php-elisp
+Received: via spool by 342632-submit@bugs.debian.org id=B342632.120868681031622
+          (code B ref 342632); Sun, 20 Apr 2008 10:21:04 +0000
+Received: (at 342632) by bugs.debian.org; 20 Apr 2008 10:20:10 +0000
+X-Amavis-Spam-Status: No, score=-8.8 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FROMDEVELOPER,HAS_BUG_NUMBER,MURPHY_DRUGS_REL8 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from c-adt-5.ataco.se ([213.115.168.248] helo=bixbite.inguza.net)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <ola@inguza.net>)
+	id 1JnWeY-0008Dc-7L
+	for 342632@bugs.debian.org; Sun, 20 Apr 2008 10:20:10 +0000
+Received: from ola by bixbite.inguza.net with local (Exim 4.63)
+	(envelope-from <ola@inguza.net>)
+	id 1JnWeT-0000SX-CF; Sun, 20 Apr 2008 12:20:05 +0200
+Date: Sun, 20 Apr 2008 12:20:05 +0200
+From: Ola Lundqvist <opal@debian.org>
+To: Thue Janus Kristensen <thuejk@gmail.com>, 342632@bugs.debian.org
+Message-ID: <20080420102005.GC30236@inguza.net>
+References: <2fa647f60801261422t7ebc6841l2b80b1266d7e2b4f@mail.gmail.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <2fa647f60801261422t7ebc6841l2b80b1266d7e2b4f@mail.gmail.com>
+User-Agent: Mutt/1.5.13 (2006-08-11)
+Resent-Date: Sun, 20 Apr 2008 10:21:05 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343422
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -38.2
+X-Spam-Report: (-38.2 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	14 AWL                    AWL: From: address is in the auto white-list
+
+Hi
+
+Sorry for the late reply. Thanks for the patch. I'll apply it when
+I know that it applies to any updates from upstream.
+
+Best regards,
+
+// Ola
+
+On Sat, Jan 26, 2008 at 11:22:34PM +0100, Thue Janus Kristensen wrote:
+> I played around with the emacs php mode, and made a few fixes to what
+> on my system is  /usr/share/emacs/site-lisp/php-elisp/php-mode.el
+> 
+> I made the fixes against the latest version 1.4 from sourceforge, but
+> I think they would be easy to apply to the version 1.1 currently in
+> Debian unstable.
+> 
+> The fixes are:
+> 1) Add support for the "clone" keyword, by copying the existing code
+> for the "print" keyword. Both these keywords get special treatment as
+> they can be used boat as "print 'lala'" and "print('lala')" (Debian
+> bug #342632)
+> 
+> 2) Add support for highlighting the object name to the right of
+> "instanceof" keyword, as in "$student instanceof Person", by using the
+> existing logic for for example the "new" keyword. (Debian bug #342634)
+> 
+> 3) Make sure that keywords, for example "if", don't become highlighed
+> in "$lala_if". This is done by inserting a few "[^_]"'s in the source
+> code. For start of line I had to insert "\\(?:^\\|[^_]\\)"
+> (non-underscore or start of line), otherwise emacs would not always
+> mark up keywords at the start of the line (specifically emacs would
+> mark up correctly if the keyword was there when the file was loaded,
+> but not when the keyword was freshly written). (Debian bug #212422)
+> 
+> Bug 3) looks somewhat like a bug which could be more elegantly fixed
+> at a higher level in emacs, but my band-aid fix could serve in the
+> mean-time. I tested using GNU Emacs 21.4.1.
+> 
+> 
+> Here is some PHP code which illustrates the highlighting bugs:
+> 
+> <?php
+> $aa_if;
+> $aa_if_aa;
+> $aa_break;
+> $aa_break_aa;
+> $aa_print_aa;
+> $aa_class_aa;
+> $aa_class;
+> $aa_self;
+> $a_private;
+> $a_continue; //this one is not fixed
+> 
+> function if_a() {}
+> function a_if() {}
+> function private_aa() {}
+> function continue_aa() {}
+> 
+> class Person {}
+> $aa instanceof Person;
+> clone $aa;
+> ?>
+> 
+> Regards, Thue
+
+
+
+-- 
+ --------------------- Ola Lundqvist ---------------------------
+/  opal@debian.org                     Annebergsslingan 37      \
+|  ola@inguza.com                      654 65 KARLSTAD          |
+|  http://inguza.com/                  +46 (0)70-332 1551       |
+\  gpg/f.p.: 7090 A92B 18FE 7994 0C36  4FE4 18A1 B1CF 0FE5 3DD9 /
+ ---------------------------------------------------------------
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,274 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 14:40:43 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnZmX-0007EP-O8
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 14:40:43 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id C8B4E13A4908; Sun, 20 Apr 2008 13:40:30 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 92CA313A476D;
+	Sun, 20 Apr 2008 13:40:28 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnZiA-0006St-9z; Sun, 20 Apr 2008 13:36:06 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Ola Lundqvist <opal@debian.org>
+Subject: Bug#474981: marked as done (vnc4: just another ftfbs with g++4.3)
+Message-ID: <handler.474981.D474981.120869829815751.ackdone@bugs.debian.org>
+References: <E1JnZPo-0000g7-5v@ries.debian.org>
+ <20080408095621.31674.96748.reportbug@feivel.credativ.de>
+X-Debian-PR-Message: closed 474981
+X-Debian-PR-Package: vnc4
+X-Debian-PR-Source: vnc4
+Content-Type: multipart/mixed; boundary="----------=_1208698566-24843-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 13:36:06 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <WeKmFnFk7GN.A.yj.Of0CIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/132994
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 13:40:30 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208698566-24843-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 13:17:08 +0000
+with message-id <E1JnZPo-0000g7-5v@ries.debian.org>
+and subject line Bug#474981: fixed in vnc4 4.1.1+X4.3.0-24
+has caused the Debian Bug report #474981,
+regarding vnc4: just another ftfbs with g++4.3
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+474981: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D474981
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208698566-24843-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 8 Apr 2008 09:56:23 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-11.9 required=4.0 tests=BAYES_00,FOURLA,
+	FROMDEVELOPER,HAS_PACKAGE,MURPHY_DRUGS_REL8 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <meskes@debian.org>
+Received: from gauss.credativ.com ([212.112.227.254])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <meskes@debian.org>)
+	id 1JjAYx-0001Se-57
+	for submit@bugs.debian.org; Tue, 08 Apr 2008 09:56:23 +0000
+Received: from feivel (exit.credativ.com [87.139.82.80])
+	(using TLSv1 with cipher ADH-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by gauss.credativ.com (Postfix) with ESMTP id 3016F77565;
+	Tue,  8 Apr 2008 11:56:22 +0200 (CEST)
+Received: by feivel (Postfix, from userid 1000)
+	id 9EE1FD6E12; Tue,  8 Apr 2008 11:56:21 +0200 (CEST)
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Michael Meskes <meskes@debian.org>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Subject: vnc4: just another ftfbs with g++4.3
+Reply-To: Michael Meskes <meskes@debian.org>
+Message-ID: <20080408095621.31674.96748.reportbug@feivel.credativ.de>
+X-Mailer: reportbug 3.39-0.1
+Date: Tue, 08 Apr 2008 11:56:21 +0200
+Delivered-To: submit@bugs.debian.org
+
+Package: vnc4
+Version: 4.1.1+X4.3.0-22
+Severity: serious
+Justification: FTBFS with gcc-4.3
+
+Please apply the following patch to make vnc4 compile with the latest
+version of gcc-4.3:
+
+--- vnc4-4.1.1+X4.3.0/unix/x0vncserver/x0vncserver.cxx	2008-04-08 11:06:05.000000000 +0200
++++ gcc43.chroot/x0vncserver.cxx	2008-04-08 10:52:25.000000000 +0200
+@@ -36,7 +36,7 @@
+ #include <X11/Xlib.h>
+ #include <X11/Xutil.h>
+ #include <X11/extensions/XTest.h>
+-#include <iostream.h>
++#include <iostream>
+ 
+ //#include <rfb/Encoder.h>
+ 
+Michael
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (500, 'unstable')
+Architecture: i386 (x86_64)
+
+Kernel: Linux 2.6.24-1-amd64 (SMP w/2 CPU cores)
+Locale: LANG=de_DE.UTF-8, LC_CTYPE=de_DE.UTF-8 (charmap=UTF-8)
+Shell: /bin/sh linked to /bin/bash
+
+
+
+------------=_1208698566-24843-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 474981-close) by bugs.debian.org; 20 Apr 2008 13:31:38 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.8 required=4.0 tests=BAYES_00,FROMDEVELOPER,
+	FVGT_m_MULTI_ODD,HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_2,
+	MURPHY_DRUGS_REL8,MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnZdq-00045W-Bk
+	for 474981-close@bugs.debian.org; Sun, 20 Apr 2008 13:31:38 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnZPo-0000g7-5v; Sun, 20 Apr 2008 13:17:08 +0000
+From: Ola Lundqvist <opal@debian.org>
+To: 474981-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#474981: fixed in vnc4 4.1.1+X4.3.0-24
+Message-Id: <E1JnZPo-0000g7-5v@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 13:17:08 +0000
+Content-Transfer-Encoding: quoted-printable
+
+Source: vnc4
+Source-Version: 4.1.1+X4.3.0-24
+
+We believe that the bug you reported is fixed in the latest version of
+vnc4, which is due to be installed in the Debian FTP archive:
+
+vnc4_4.1.1+X4.3.0-24.diff.gz
+  to pool/main/v/vnc4/vnc4_4.1.1+X4.3.0-24.diff.gz
+vnc4_4.1.1+X4.3.0-24.dsc
+  to pool/main/v/vnc4/vnc4_4.1.1+X4.3.0-24.dsc
+vnc4server_4.1.1+X4.3.0-24_i386.deb
+  to pool/main/v/vnc4/vnc4server_4.1.1+X4.3.0-24_i386.deb
+xvnc4viewer_4.1.1+X4.3.0-24_i386.deb
+  to pool/main/v/vnc4/xvnc4viewer_4.1.1+X4.3.0-24_i386.deb
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 474981@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Ola Lundqvist <opal@debian.org> (supplier of updated vnc4 package)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.7
+Date: Sun, 20 Apr 2008 11:04:10 +0200
+Source: vnc4
+Binary: vnc4server xvnc4viewer
+Architecture: source i386
+Version: 4.1.1+X4.3.0-24
+Distribution: unstable
+Urgency: low
+Maintainer: Ola Lundqvist <opal@debian.org>
+Changed-By: Ola Lundqvist <opal@debian.org>
+Description:=20
+ vnc4server - Virtual network computing server software
+ xvnc4viewer - Virtual network computing client software for X
+Closes: 474981
+Changes:=20
+ vnc4 (4.1.1+X4.3.0-24) unstable; urgency=3Dlow
+ .
+   * Correction of FTBFS with g++-4.3, closes: #474981.
+     Thanks to Michael Meskes <meskes@debian.org> for the patch.
+Files:=20
+ e1a9304e664759d22efc9a2148547115 663 x11 optional vnc4_4.1.1+X4.3.0-24.d=
+sc
+ a75c3b62b42f81881e844821dad8a833 50282 x11 optional vnc4_4.1.1+X4.3.0-24=
+.diff.gz
+ 9a211253642269f2a647e0ab8d65f6ce 1894076 x11 optional vnc4server_4.1.1+X=
+4.3.0-24_i386.deb
+ c7401601455ea2107605507d0978287e 139044 net optional xvnc4viewer_4.1.1+X=
+4.3.0-24_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICz5AGKGxzw/lPdkRAtnwAJ9x6ZRSFfedn0JkrdVB+0AlA5rcQACeMzPN
+Enu9ztn7zti1SnTt1NPHXIM=3D
+=3DOWnH
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208698566-24843-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

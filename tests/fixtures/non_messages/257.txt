@@ -1,0 +1,147 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 16:05:42 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnb6k-0007ej-Q1
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 16:05:41 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 0371A13A502F; Sun, 20 Apr 2008 15:05:32 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 8FDF713A4F53;
+	Sun, 20 Apr 2008 15:05:06 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnb4R-0004ZL-Cl; Sun, 20 Apr 2008 15:03:11 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476964: O: openbox-themes -- Themes for the Openbox window manager
+Reply-To: Nico Golde <nion@debian.org>, 476964@bugs.debian.org
+Resent-From: Nico Golde <nion@debian.org>
+Original-Sender: dummy@binarybase.org
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Chess Griffin <chess@chessgriffin.com>
+Resent-Date: Sun, 20 Apr 2008 15:03:10 +0000
+Resent-Message-ID: <handler.476964.B476964.120870368614798@bugs.debian.org>
+X-Debian-PR-Message: report 476964
+X-Debian-PR-Package: openbox-themes
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: openbox-themes
+Received: via spool by 476964-submit@bugs.debian.org id=B476964.120870368614798
+          (code B ref 476964); Sun, 20 Apr 2008 15:03:10 +0000
+Received: (at 476964) by bugs.debian.org; 20 Apr 2008 15:01:26 +0000
+X-Amavis-Spam-Status: No, score=-8.9 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FROMDEVELOPER,HAS_BUG_NUMBER autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from mo-p07-ob.rzone.de ([81.169.146.189])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <nion@debian.org>)
+	id 1Jnb2j-0003pp-Hh
+	for 476964@bugs.debian.org; Sun, 20 Apr 2008 15:01:26 +0000
+X-RZG-CLASS-ID: mo07
+X-RZG-AUTH: hvKiKtSHbeE0ghP2VIXOfz9FbKPIhJ4LAIc5beUpM+hDgzBWhVWCUryUKIrbUqL2d5s=
+Received: from ngolde.de (e178202207.adsl.alicedsl.de [85.178.202.207])
+	by post.webmailer.de (fruni mo17) (RZmta 16.27)
+	with ESMTP id w06124k3KAL4MI ; Sun, 20 Apr 2008 17:01:22 +0200 (MEST)
+	(envelope-from: <nion@debian.org>)
+Received: by ngolde.de (Postfix, from userid 1000)
+	id 7C027A3114; Sun, 20 Apr 2008 17:00:57 +0200 (CEST)
+Date: Sun, 20 Apr 2008 17:00:57 +0200
+From: Nico Golde <nion@debian.org>
+To: Chess Griffin <chess@chessgriffin.com>
+Cc: 476964@bugs.debian.org
+Message-ID: <20080420150057.GA9759@ngolde.de>
+References: <20080420085723.7977f980@obsd.localdomain> <20080420143236.GA26151@ngolde.de> <20080420104713.61de3612@obsd.localdomain>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+	protocol="application/pgp-signature"; boundary="fUYQa+Pmc3FrFX/N"
+Content-Disposition: inline
+In-Reply-To: <20080420104713.61de3612@obsd.localdomain>
+X-Mailer: netcat 1.10
+X-GPG: 0x73647cff
+Sender: dummy@binarybase.org
+Resent-Date: Sun, 20 Apr 2008 15:03:11 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343550
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -37.0
+X-Spam-Report: (-37.0 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	15 AWL                    AWL: From: address is in the auto white-list
+
+
+--fUYQa+Pmc3FrFX/N
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+Hi Chess,
+* Chess Griffin <chess@chessgriffin.com> [2008-04-20 16:47]:
+> On Sun, 20 Apr 2008 16:32:36 +0200
+> Nico Golde <nion@debian.org> wrote:
+> > * Chess Griffin <chess@chessgriffin.com> [2008-04-20 16:16]:
+> > > Package: openbox-themes
+> > > Severity: normal
+> > >=20
+> > > Per request of openbox-maintainers team, I orphan this
+> > > package so the openbox-maintainers team can pick it up.
+> >=20
+> > Huh? I don't want to maintain this package.
+>=20
+> I received an email from Anibal Avelar asking me if it was
+> ok if the openbox-maintainers team adopted the package.  I said ok.
+
+Ok, he did not talk to me about this. Anibal, as I don't use=20
+those themes please don't put me in Uploaders. I can sponsor=20
+the packages however.
+Kind regards
+Nico
+--=20
+Nico Golde - http://www.ngolde.de - nion@jabber.ccc.de - GPG: 0x73647CFF
+For security reasons, all text in this mail is double-rot13 encrypted.
+
+--fUYQa+Pmc3FrFX/N
+Content-Type: application/pgp-signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC1qpHYflSXNkfP8RArZtAKClTEnJeQk/xMtL5HX7QhycrCNR9ACeI7xX
+BaUNcRAoh1dBESzX5FTuE8g=
+=94Kk
+-----END PGP SIGNATURE-----
+
+--fUYQa+Pmc3FrFX/N--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,281 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 17:08:47 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnc5q-0008Af-KE
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 17:08:47 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 34EE213A47C3; Sun, 20 Apr 2008 16:08:41 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 2F72E13A4FF3;
+	Sun, 20 Apr 2008 16:08:39 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnc0V-000255-Vx; Sun, 20 Apr 2008 16:03:12 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Marco d'Itri <md@linux.it>
+Subject: Bug#406071: marked as done (rblcheck: adding pbl from spamhaus)
+Message-ID: <handler.406071.D406071.12087073335112.ackdone@bugs.debian.org>
+References: <E1Jnbku-0000m6-VJ@ries.debian.org>
+ <None.LNX.4.64.0701081513410.21958@cantor.unex.es>
+X-Debian-PR-Message: closed 406071
+X-Debian-PR-Package: rblcheck
+X-Debian-PR-Source: rblcheck
+Content-Type: multipart/mixed; boundary="----------=_1208707391-7856-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 16:03:11 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <e2FQQswl3WI.A.skG.Jq2CIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/133038
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 16:08:41 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208707391-7856-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 15:47:04 +0000
+with message-id <E1Jnbku-0000m6-VJ@ries.debian.org>
+and subject line Bug#406071: fixed in rblcheck 20020316-6
+has caused the Debian Bug report #406071,
+regarding rblcheck: adding pbl from spamhaus
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+406071: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D406071
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208707391-7856-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 8 Jan 2007 14:21:23 +0000
+Return-path: <sanvila@unex.es>
+Received: from pizarro.unex.es ([158.49.8.2] ident=postfix)
+	by spohr.debian.org with esmtp (Exim 4.50)
+	id 1H3vNK-00049m-FH
+	for submit@bugs.debian.org; Mon, 08 Jan 2007 06:21:22 -0800
+Received: from localhost (naranjo.unex.es [158.49.8.165])
+	by pizarro.unex.es (Postfix/MJ-1.08) with ESMTP id E9702D12E8
+	for <submit@bugs.debian.org>; Mon,  8 Jan 2007 15:21:18 +0100 (CET)
+Received: from pizarro.unex.es ([158.49.8.2])
+	by localhost (naranjo [158.49.17.21]) (amavisd-new, port 10024)
+	with ESMTP id 18815-10 for <submit@bugs.debian.org>;
+	Mon, 8 Jan 2007 15:21:18 +0100 (CET)
+Received: from guadiana.unex.es (guadiana.unex.es [158.49.17.23])
+	by pizarro.unex.es (Postfix/MJ-1.08) with ESMTP id C262ED1459
+	for <submit@bugs.debian.org>; Mon,  8 Jan 2007 15:21:18 +0100 (CET)
+Received: from cantor.unex.es ([158.49.18.105])
+	by guadiana.unex.es with esmtp (Exim 3.35 #1 (Debian))
+	id 1H3vNG-0002cE-00
+	for <submit@bugs.debian.org>; Mon, 08 Jan 2007 15:21:18 +0100
+Date: Mon, 8 Jan 2007 15:19:36 +0100 (CET)
+From: Santiago Vila <sanvila@unex.es>
+To: submit@bugs.debian.org
+Subject: rblcheck: adding pbl from spamhaus
+Message-ID: <None.LNX.4.64.0701081513410.21958@cantor.unex.es>
+X-Debbugs-Cc: sanvila@unex.es
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+X-Virus-Scanned: by amavisd-new-20030616-p10 (Debian/siue) at unex.es
+Delivered-To: submit@bugs.debian.org
+X-Spam-Checker-Version: SpamAssassin 2.60-bugs.debian.org_2005_01_02 
+	(1.212-2003-09-23-exp) on spohr.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, hits=-11.0 required=4.0 tests=BAYES_00,HAS_PACKAGE,
+	X_DEBBUGS_CC autolearn=ham version=2.60-bugs.debian.org_2005_01_02
+
+Package: rblcheck
+Version: 20020316-5
+Severity: wishlist
+
+The PBL list from Spamhaus is in beta now.
+
+[ While we are at it, I wish a minor and completely harmless change
+  like this would be allowed in etch, as a lot of people will probably
+  use the combined "zen" list ].
+
+diff -ru rblcheck-20020316.orig/sites.h rblcheck-20020316/sites.h
+--- rblcheck-20020316.orig/sites.h	2007-01-08 15:12:04.000000000 +0100
++++ rblcheck-20020316/sites.h	2007-01-08 15:13:15.058360691 +0100
+@@ -65,6 +65,7 @@
+ 
+ 
+ SITE("xbl.spamhaus.org");
++SITE("pbl.spamhaus.org");
+ SITE("sbl.spamhaus.org");
+ SITE("list.dsbl.org");
+ SITE("dnsbl.njabl.org");
+
+Thanks.
+
+
+------------=_1208707391-7856-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 406071-close) by bugs.debian.org; 20 Apr 2008 16:02:13 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.7 required=4.0 tests=BAYES_00,FVGT_m_MULTI_ODD,
+	HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_2,MURPHY_WRONG_WORD1,
+	MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnbzZ-0001K4-G2
+	for 406071-close@bugs.debian.org; Sun, 20 Apr 2008 16:02:13 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1Jnbku-0000m6-VJ; Sun, 20 Apr 2008 15:47:04 +0000
+From: Marco d'Itri <md@linux.it>
+To: 406071-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#406071: fixed in rblcheck 20020316-6
+Message-Id: <E1Jnbku-0000m6-VJ@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 15:47:04 +0000
+Content-Transfer-Encoding: quoted-printable
+
+Source: rblcheck
+Source-Version: 20020316-6
+
+We believe that the bug you reported is fixed in the latest version of
+rblcheck, which is due to be installed in the Debian FTP archive:
+
+rblcheck_20020316-6.diff.gz
+  to pool/main/r/rblcheck/rblcheck_20020316-6.diff.gz
+rblcheck_20020316-6.dsc
+  to pool/main/r/rblcheck/rblcheck_20020316-6.dsc
+rblcheck_20020316-6_i386.deb
+  to pool/main/r/rblcheck/rblcheck_20020316-6_i386.deb
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 406071@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Marco d'Itri <md@linux.it> (supplier of updated rblcheck package)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 17:37:50 +0200
+Source: rblcheck
+Binary: rblcheck
+Architecture: source i386
+Version: 20020316-6
+Distribution: unstable
+Urgency: low
+Maintainer: Marco d'Itri <md@linux.it>
+Changed-By: Marco d'Itri <md@linux.it>
+Description:=20
+ rblcheck   - Tool to Query RBL Servers
+Closes: 87114 131541 285310 395740 406071
+Changes:=20
+ rblcheck (20020316-6) unstable; urgency=3Dlow
+ .
+   * Added a man page for rblcheck(1). (Closes: #87114, #131541)
+   * Added the binary-indep target to debian/rules. (Closes: #395740)
+   * Fixed the help text for the -s option. (Closes: #285310)
+   * Removed SPEWS.
+   * Added pbl.spamhaus.org and bl.spamcop.net. (Closes: #406071)
+   * s/RBL/DNSBL/ where practical.
+Checksums-Sha1:=20
+ 858d65065fc0d307c3d5c7ec871c0b20d98bc268 1105 rblcheck_20020316-6.dsc
+ f46111edf55ea990c43f1fa2010cc11c55b996dc 3964 rblcheck_20020316-6.diff.g=
+z
+ d1d9cee406db1888533046a984d6764c251d98ea 36974 rblcheck_20020316-6_i386.=
+deb
+Checksums-Sha256:=20
+ 333894bc5705c8dfb5f64f54bebe97a5de5860917f639abe1013c8ecd9c9a74c 1105 rb=
+lcheck_20020316-6.dsc
+ 255290fce0584aa984cd9d49abbab2087e7beea6dabaaf5ef754fa9ed1fea8c4 3964 rb=
+lcheck_20020316-6.diff.gz
+ b094e84c2706d671533a23ea4813319303a27c9593ee5b4c2edcb45bab555a86 36974 r=
+blcheck_20020316-6_i386.deb
+Files:=20
+ 6782ecdfeb882528ea15bbe868d7c23f 1105 net extra rblcheck_20020316-6.dsc
+ 0391d168995cd87bad75699e442a3d05 3964 net extra rblcheck_20020316-6.diff=
+.gz
+ ecd2b42c361e897fa63cb441cf1a8d1c 36974 net extra rblcheck_20020316-6_i38=
+6.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC2O0FGfw2OHuP7ERAiuTAJ0QEt+YCOUm3BrlrqcTUqL1QjagZACeJRGE
+6WKCUdW4mb0o+7+ksG0Pqkg=3D
+=3DvHzL
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208707391-7856-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

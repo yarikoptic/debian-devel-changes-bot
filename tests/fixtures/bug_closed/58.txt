@@ -1,0 +1,375 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 11:40:48 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnWyS-0006NN-8G
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 11:40:48 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 3A3FE13A4ECA; Sun, 20 Apr 2008 10:40:43 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 79C8A13A4EBD;
+	Sun, 20 Apr 2008 10:40:41 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnWui-00029X-96; Sun, 20 Apr 2008 10:36:53 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Francesco Paolo Lovergine <frankie@debian.org>
+Subject: Bug#476657: marked as done (python-gdal: not available anymore 
+ for python 2.4 in sid)
+Message-ID: <handler.476657.D476657.120868751613506.ackdone@bugs.debian.org>
+References: <E1JnWN4-0006ht-Ev@ries.debian.org>
+ <20080418101023.16918.29501.reportbug@ddp.simpson>
+X-Debian-PR-Message: closed 476657
+X-Debian-PR-Package: python-gdal
+X-Debian-PR-Source: gdal
+Content-Type: multipart/mixed; boundary="----------=_1208687812-8256-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 10:36:52 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <qrN1Yt_onYL.A.DsB.r2xCIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/132928
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 10:40:43 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208687812-8256-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 10:02:06 +0000
+with message-id <E1JnWN4-0006ht-Ev@ries.debian.org>
+and subject line Bug#476657: fixed in gdal 1.5.1-3
+has caused the Debian Bug report #476657,
+regarding python-gdal: not available anymore for python 2.4 in sid
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+476657: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D476657
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208687812-8256-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 18 Apr 2008 10:06:46 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.8 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,HAS_PACKAGE autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dpinte@itae.be>
+Received: from out1.smtp.messagingengine.com ([66.111.4.25])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dpinte@itae.be>)
+	id 1JmnUT-0001yl-NS
+	for submit@bugs.debian.org; Fri, 18 Apr 2008 10:06:46 +0000
+Received: from compute1.internal (compute1.internal [10.202.2.41])
+	by out1.messagingengine.com (Postfix) with ESMTP id 453AB100A80
+	for <submit@bugs.debian.org>; Fri, 18 Apr 2008 06:06:45 -0400 (EDT)
+Received: from heartbeat1.messagingengine.com ([10.202.2.160])
+  by compute1.internal (MEProxy); Fri, 18 Apr 2008 06:06:45 -0400
+X-Sasl-enc: 6fROaV0IFCXUAiSsnTWIB+qsbokcvqv+9RJhEXCxfj1O 1208513204
+Received: from ddp.simpson (host-78-129-14-55.brutele.be [78.129.14.55])
+	by mail.messagingengine.com (Postfix) with ESMTPSA id C4CDF71CB;
+	Fri, 18 Apr 2008 06:06:44 -0400 (EDT)
+Received: from did by ddp.simpson with local (Exim 4.69)
+	(envelope-from <dpinte@itae.be>)
+	id 1JmnXz-0004S3-2L; Fri, 18 Apr 2008 12:10:23 +0200
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Didrik Pinte <dpinte@itae.be>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Subject: python-gdal: not available anymore for python 2.4 in sid
+Message-ID: <20080418101023.16918.29501.reportbug@ddp.simpson>
+X-Mailer: reportbug 3.39-0.1
+Date: Fri, 18 Apr 2008 12:10:23 +0200
+Delivered-To: submit@bugs.debian.org
+
+Package: python-gdal
+Version: 1.5.1-2+b1
+Severity: normal
+
+Hi
+
+After the python 2.5 migration as default python interpreter in sid, it seems
+that 2.4 gdal support is broken even if packaged using python-central.
+
+Here is the output of a 2.4 session trying to load gdal :
+
+did@ddp:~/projets/python/thuban/current/thuban$ python2.4
+Python 2.4.5 (#2, Apr 17 2008, 13:00:52) 
+[GCC 4.2.3 (Debian 4.2.3-3)] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from osgeo import gdal
+Traceback (most recent call last):
+  File "<stdin>", line 1, in ?
+  File "/usr/lib/python2.4/site-packages/osgeo/gdal.py", line 7, in ?
+    import _gdal
+ImportError: No module named _gdal
+>>> 
+
+If more info is needed, feel free to ask. 
+
+Didrik
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (500, 'unstable'), (500, 'testing'), (1, 'experimental')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.24-1-686 (SMP w/2 CPU cores)
+Locale: LANG=en_US.UTF-8, LC_CTYPE=en_US.UTF-8 (charmap=UTF-8)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages python-gdal depends on:
+ii  libc6                         2.7-10     GNU C Library: Shared libraries
+ii  libgcc1                       1:4.3.0-3  GCC support library
+ii  libgdal1-1.5.0                1.5.1-2+b1 Geospatial Data Abstraction Librar
+ii  libstdc++6                    4.3.0-3    The GNU Standard C++ Library v3
+ii  python                        2.5.2-1    An interactive high-level object-o
+ii  python-central                0.6.3      register and build utility for Pyt
+ii  python-numpy                  1:1.0.4-7  Numerical Python adds a fast array
+
+python-gdal recommends no packages.
+
+-- no debconf information
+
+
+
+------------=_1208687812-8256-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 476657-close) by bugs.debian.org; 20 Apr 2008 10:31:56 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.6 required=4.0 tests=BAYES_00,FROMDEVELOPER,
+	FVGT_m_MULTI_ODD,HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_2,
+	MDO_DATING2,MURPHY_DRUGS_REL8,MURPHY_WRONG_WORD1,MURPHY_WRONG_WORD2 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnWpw-0003VM-8S
+	for 476657-close@bugs.debian.org; Sun, 20 Apr 2008 10:31:56 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnWN4-0006ht-Ev; Sun, 20 Apr 2008 10:02:06 +0000
+From: Francesco Paolo Lovergine <frankie@debian.org>
+To: 476657-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#476657: fixed in gdal 1.5.1-3
+Message-Id: <E1JnWN4-0006ht-Ev@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 10:02:06 +0000
+Content-Transfer-Encoding: quoted-printable
+
+Source: gdal
+Source-Version: 1.5.1-3
+
+We believe that the bug you reported is fixed in the latest version of
+gdal, which is due to be installed in the Debian FTP archive:
+
+gdal-bin_1.5.1-3_i386.deb
+  to pool/main/g/gdal/gdal-bin_1.5.1-3_i386.deb
+gdal_1.5.1-3.diff.gz
+  to pool/main/g/gdal/gdal_1.5.1-3.diff.gz
+gdal_1.5.1-3.dsc
+  to pool/main/g/gdal/gdal_1.5.1-3.dsc
+libgdal-doc_1.5.1-3_all.deb
+  to pool/main/g/gdal/libgdal-doc_1.5.1-3_all.deb
+libgdal-perl_1.5.1-3_i386.deb
+  to pool/main/g/gdal/libgdal-perl_1.5.1-3_i386.deb
+libgdal-ruby1.8_1.5.1-3_i386.deb
+  to pool/main/g/gdal/libgdal-ruby1.8_1.5.1-3_i386.deb
+libgdal-ruby_1.5.1-3_i386.deb
+  to pool/main/g/gdal/libgdal-ruby_1.5.1-3_i386.deb
+libgdal1-1.5.0_1.5.1-3_i386.deb
+  to pool/main/g/gdal/libgdal1-1.5.0_1.5.1-3_i386.deb
+libgdal1-dev_1.5.1-3_i386.deb
+  to pool/main/g/gdal/libgdal1-dev_1.5.1-3_i386.deb
+python-gdal_1.5.1-3_i386.deb
+  to pool/main/g/gdal/python-gdal_1.5.1-3_i386.deb
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 476657@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Francesco Paolo Lovergine <frankie@debian.org> (supplier of updated gdal =
+package)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sat, 19 Apr 2008 20:51:48 +0200
+Source: gdal
+Binary: libgdal1-1.5.0 libgdal1-dev libgdal-doc gdal-bin python-gdal libg=
+dal-perl libgdal-ruby1.8 libgdal-ruby
+Architecture: source i386 all
+Version: 1.5.1-3
+Distribution: unstable
+Urgency: low
+Maintainer: Francesco Paolo Lovergine <frankie@debian.org>
+Changed-By: Francesco Paolo Lovergine <frankie@debian.org>
+Description:=20
+ gdal-bin   - Geospatial Data Abstraction Library - Utility programs
+ libgdal-doc - Documentation for the Geospatial Data Abstraction Library
+ libgdal-perl - Perl bindings to the Geospatial Data Abstraction Library
+ libgdal-ruby - Ruby bindings to the Geospatial Data Abstraction Library
+ libgdal-ruby1.8 - Ruby 1.8 bindings to the Geospatial Data Abstraction L=
+ibrary
+ libgdal1-1.5.0 - Geospatial Data Abstraction Library
+ libgdal1-dev - Geospatial Data Abstraction Library - Development files
+ python-gdal - Python bindings to the Geospatial Data Abstraction Library
+Closes: 476657
+Changes:=20
+ gdal (1.5.1-3) unstable; urgency=3Dlow
+ .
+   * Removed old-python stuff still around in debian/rules.
+   * [PATCH] pythonmakefile.dpatch to fix wrong interpreter override in 1=
+.5.1
+     See #2333 on gdal trac.
+     (closes: #476657)
+   * Revised the build/install rules to manage better Swig stuff and
+     specifically Python bindings.
+Checksums-Sha1:=20
+ 99e22d4246b9771df9b7cdf25f7c769fbb9a688e 1912 gdal_1.5.1-3.dsc
+ 84a62afd297595fe1d9d466dfaf6299a564db951 14822 gdal_1.5.1-3.diff.gz
+ c1de3aa8067c91f69aa315b34012d14c3c664391 2414714 libgdal1-1.5.0_1.5.1-3_=
+i386.deb
+ bfe32436bdb61fca351180a316cb660e1888f15b 2751332 libgdal1-dev_1.5.1-3_i3=
+86.deb
+ 80c4e016248e7479dce29afbd70d601aeb243107 127618 gdal-bin_1.5.1-3_i386.de=
+b
+ c9db16b1f8b9cc7c3e83eea198c7700d2e548d74 425448 python-gdal_1.5.1-3_i386=
+.deb
+ df3b8d264b2e286d7e9d6115123e37d476b609b2 303060 libgdal-perl_1.5.1-3_i38=
+6.deb
+ c5deb65d722a3aeb1399f884b1a2041ba8c3c38a 156250 libgdal-ruby1.8_1.5.1-3_=
+i386.deb
+ 2a4a0bb678bc71a8848f34d112d16442c3c2c771 28618 libgdal-ruby_1.5.1-3_i386=
+.deb
+ 3f80af220a23b2f52e3d01190b308f8246151f25 1305940 libgdal-doc_1.5.1-3_all=
+.deb
+Checksums-Sha256:=20
+ 4bdfe1fc1c8112a0729ef0fd78225923cd39366260ac0d1088853d51dcbceb7f 1912 gd=
+al_1.5.1-3.dsc
+ 4756edac3bc5c34533b44ad8d1cf80dd4b583a81a7b7489289b326569694828a 14822 g=
+dal_1.5.1-3.diff.gz
+ aa23e8d01b1201b8f86db61062f3f247ffedd12f0b9473fa9ea577e5fa1934c8 2414714=
+ libgdal1-1.5.0_1.5.1-3_i386.deb
+ b71dfa6f0da0fa13fa53df2b1f587f746ed76e1ea61165ec11ae1bf94ae8def4 2751332=
+ libgdal1-dev_1.5.1-3_i386.deb
+ 838cbd68389d7930bb7cd26cad1752774c824198fae20b07f0ff0fc1a97dd98c 127618 =
+gdal-bin_1.5.1-3_i386.deb
+ d1f8e0fb2a4a36df387f34ebff7fb90051350f5bd2c7fd5e3236358368995085 425448 =
+python-gdal_1.5.1-3_i386.deb
+ 2418c2f47d548f5118be7b78bd57e3269223988d08d9d2bd0f636f4e8b19b788 303060 =
+libgdal-perl_1.5.1-3_i386.deb
+ 587abd5e85efed4bae07b52f7e4bfe06d246c34f68e56a2118e282e8e37e11b9 156250 =
+libgdal-ruby1.8_1.5.1-3_i386.deb
+ 8324ac37aa909e23ec6275b8014ad03988faa628696d1c19338ec7f2058e61ae 28618 l=
+ibgdal-ruby_1.5.1-3_i386.deb
+ a15bc45d991c623438830d9178d931815d48ca4ab3971325e70bc8a7c9184c4a 1305940=
+ libgdal-doc_1.5.1-3_all.deb
+Files:=20
+ 11a9de8b69bbef2d726ccc35cd6596b2 1912 science extra gdal_1.5.1-3.dsc
+ 3f1263dfabc035ce6da8ef48a0215bfb 14822 science extra gdal_1.5.1-3.diff.g=
+z
+ c889219bc8b01624a4acd55f2abbe5b5 2414714 libs extra libgdal1-1.5.0_1.5.1=
+-3_i386.deb
+ 313dad3ed6807299c7ea6aa166db5077 2751332 libdevel extra libgdal1-dev_1.5=
+.1-3_i386.deb
+ d94d0cf28e395439695506b90c77ad44 127618 science extra gdal-bin_1.5.1-3_i=
+386.deb
+ df38b2fbae23f570c28fabc347aacfb7 425448 python extra python-gdal_1.5.1-3=
+_i386.deb
+ 68d65cf755c2e33791a29b4cfcc6c60c 303060 perl extra libgdal-perl_1.5.1-3_=
+i386.deb
+ f9aaf14e63a85b86e836fc88137193ef 156250 interpreters extra libgdal-ruby1=
+.8_1.5.1-3_i386.deb
+ e47445c43c765b348d08b0ffd9a84cfd 28618 interpreters extra libgdal-ruby_1=
+.5.1-3_i386.deb
+ 8345b9b1e10841ed7e2f94e88376d20d 1305940 doc extra libgdal-doc_1.5.1-3_a=
+ll.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICxCzpFNRmenyx0cRAph9AJ4l75JyaDoI8VWMBaDzoKNTGDP59wCeKaxz
+rF3BZ6M99l4Jw3qRq02FsbI=3D
+=3D570K
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208687812-8256-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,327 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 15:40:41 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnaib-0007VE-Ba
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 15:40:41 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 6D95313A4FEE; Sun, 20 Apr 2008 14:40:36 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 8C73613A49A9;
+	Sun, 20 Apr 2008 14:40:34 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnabG-00071J-Bw; Sun, 20 Apr 2008 14:33:02 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Marco d'Itri <md@linux.it>
+Subject: Bug#125181: marked as done (netkit-inetd: Spelling error in 
+ description)
+Message-ID: <handler.125181.D125181.120870190624529.ackdone@bugs.debian.org>
+References: <E1Jna7H-00036F-GF@ries.debian.org>
+ <E16G6jX-0001wh-00@mizar.alcor.net>
+X-Debian-PR-Message: closed 125181
+X-Debian-PR-Package: openbsd-inetd
+X-Debian-PR-Source: openbsd-inetd
+Content-Type: multipart/mixed; boundary="----------=_1208701982-26983-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 14:33:02 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <kd09YxoXf1O.A.lX.kX1CIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/133008
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 14:40:36 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208701982-26983-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 14:02:03 +0000
+with message-id <E1Jna7H-00036F-GF@ries.debian.org>
+and subject line Bug#125181: fixed in openbsd-inetd 0.20080125-1
+has caused the Debian Bug report #125181,
+regarding netkit-inetd: Spelling error in description
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+125181: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D125181
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208701982-26983-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at maintonly) by bugs.debian.org; 17 Dec 2001 22:59:45 +0000
+Return-path: <mdz@csh.rit.edu>
+Received: from smtp01.mrf.mail.rcn.net [207.172.4.60] 
+	by master.debian.org with esmtp (Exim 3.12 1 (Debian))
+	id 16G6jZ-0001x4-00; Mon, 17 Dec 2001 16:59:45 -0600
+Received: from 146-115-121-200.c3-0.smr-ubr1.sbo-smr.ma.cable.rcn.com ([146.115.121.200] helo=mizar.alcor.net)
+	by smtp01.mrf.mail.rcn.net with esmtp (Exim 3.33 #10)
+	id 16G6jY-0004dE-00
+	for maintonly@bugs.debian.org; Mon, 17 Dec 2001 17:59:44 -0500
+Received: from mdz by mizar.alcor.net with local (Exim 3.33 #1 (Debian))
+	id 16G6jX-0001wh-00
+	for <maintonly@bugs.debian.org>; Mon, 17 Dec 2001 17:59:43 -0500
+From: Matt Zimmerman <mdz@debian.org>
+To: maintonly@bugs.debian.org
+Subject: netkit-inetd: Spelling error in description
+Message-Id: <E16G6jX-0001wh-00@mizar.alcor.net>
+Sender: Matt Zimmerman <mdz@alcor.net>
+Date: Mon, 17 Dec 2001 17:59:43 -0500
+Delivered-To: maintonly@bugs.debian.org
+
+Package: netkit-inetd
+Severity: minor
+
+This is an automated bug report.
+
+I have recently conducted a mass spelling check of Debian package
+descriptions.  In the process, some other errors were also detected,
+such as capitalization, word wrap, and indentation problems.
+
+Some notable guidelines that I used in the check include:
+
+- Capitalization
+
+  The names of languages (English, French, etc.) are capitalized in
+  English.  Acronyms should be in all capital letters.
+
+- Abbreviation
+
+  In general, words should not be abbreviated as part of the
+  description.  Exceptions include standard abbreviations like "etc.".
+  This is especially important for proper keyword searches.
+
+- Word joining
+
+  For various reasons, technical terms tend to be artificially joined
+  to form new words, like "bugreport".  While this may be acceptable
+  in an informal context, such words should be written separately in
+  package descriptions, for clarity and to aid in searching.
+
+In some cases where there the spelling check uncovered other errors, I
+have made other edits in the diff for purposes of grammar and clarity.
+
+There appear to be one or more errors in the description for this
+package.  A unified diff follows at the end of this message.  You
+should be able to apply it to your source tree by piping this message
+directly into a command line like:
+
+        patch /home/me/somewhere/mypackage/debian/control
+
+There is a chance that this may not work if your control has been
+modified from the version of your source package in the Debian
+archive.  If so, you will have to apply the diff by hand.  When doing
+so, please take note if there are multiple corrections on the same
+line of the diff.
+
+If you believe this correction to be in error, please contact me
+before closing this bug so that we can come to an understanding, and
+so that provisions can be made for future spelling checks.
+
+If you are not a native English speaker and would like assistance
+improving your description, contact
+debian-l10n-english@lists.debian.org.
+
+
+--- orig/netkit-inetd	Mon Dec 17 15:52:34 2001
++++ corrected/netkit-inetd	Mon Dec 17 15:59:04 2001
+@@ -3,5 +3,5 @@
+  The inetd server is a network daemon program that specializes in managing
+  incoming network connections. It's configuration file tells it what
+  program needs to be run when an incoming connection is received. Any
+- service port may be configured for either of the tcp or udp protcols.
++ service port may be configured for either of the tcp or udp protocols.
+ 
+
+
+------------=_1208701982-26983-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 125181-close) by bugs.debian.org; 20 Apr 2008 14:31:46 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.7 required=4.0 tests=BAYES_00,FVGT_m_MULTI_ODD,
+	HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_2,MURPHY_WRONG_WORD1,
+	MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1Jnaa2-0006NJ-GL
+	for 125181-close@bugs.debian.org; Sun, 20 Apr 2008 14:31:46 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1Jna7H-00036F-GF; Sun, 20 Apr 2008 14:02:03 +0000
+From: Marco d'Itri <md@linux.it>
+To: 125181-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#125181: fixed in openbsd-inetd 0.20080125-1
+Message-Id: <E1Jna7H-00036F-GF@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 14:02:03 +0000
+X-CrossAssassin-Score: 5
+Content-Transfer-Encoding: quoted-printable
+
+Source: openbsd-inetd
+Source-Version: 0.20080125-1
+
+We believe that the bug you reported is fixed in the latest version of
+openbsd-inetd, which is due to be installed in the Debian FTP archive:
+
+openbsd-inetd_0.20080125-1.diff.gz
+  to pool/main/o/openbsd-inetd/openbsd-inetd_0.20080125-1.diff.gz
+openbsd-inetd_0.20080125-1.dsc
+  to pool/main/o/openbsd-inetd/openbsd-inetd_0.20080125-1.dsc
+openbsd-inetd_0.20080125-1_i386.deb
+  to pool/main/o/openbsd-inetd/openbsd-inetd_0.20080125-1_i386.deb
+openbsd-inetd_0.20080125.orig.tar.gz
+  to pool/main/o/openbsd-inetd/openbsd-inetd_0.20080125.orig.tar.gz
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 125181@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Marco d'Itri <md@linux.it> (supplier of updated openbsd-inetd package)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 15:12:31 +0200
+Source: openbsd-inetd
+Binary: openbsd-inetd
+Architecture: source i386
+Version: 0.20080125-1
+Distribution: unstable
+Urgency: low
+Maintainer: Marco d'Itri <md@linux.it>
+Changed-By: Marco d'Itri <md@linux.it>
+Description:=20
+ openbsd-inetd - The OpenBSD Internet Superserver
+Closes: 125181 416010 435658 436803 458564 465613 465732
+Changes:=20
+ openbsd-inetd (0.20080125-1) unstable; urgency=3Dlow
+ .
+   * New CVS snapshot.
+   * Package painfully converted to quilt.
+   * Fixed a typo in debian/control. (Closes: #125181)
+   * Fixed a typo in the init script. (Closes: #465613, #465732)
+   * Delete /etc/rc[2345].d/S20inetd too when upgrading from netkit-inetd=
+.
+     (Closes: #416010)
+   * Do not use log_warning_msg in the init script when inetd.conf is emt=
+py,
+     this is not something deserving extra attention. (Closes: #435658)
+   * Document in inetd(8) that datagram services must read some network
+     input or inetd will continue spawning them.
+     Many thanks to James Cameron for the analysis. (Closes: #436803)
+   * Use a real characters class instead of character ranges with grep
+     in the init script, because some locales have weird ranges.
+     Spotted by Meelis Roos. (Closes: #458564)
+Checksums-Sha1:=20
+ e2a14ad51fdd677f2ceb7e4516548ea32c8e5027 1042 openbsd-inetd_0.20080125-1=
+.dsc
+ 0037cba36d0369f9557653022a3a99144bee5cb9 24627 openbsd-inetd_0.20080125.=
+orig.tar.gz
+ 9adb8bf6d6c5d9f48dac3e261aa83d49a2b08b57 14599 openbsd-inetd_0.20080125-=
+1.diff.gz
+ ab4f23660b9d9e7973f9add0596f3e2004f46a90 33250 openbsd-inetd_0.20080125-=
+1_i386.deb
+Checksums-Sha256:=20
+ ceeefe4d4ef22cfe2c435b0a16492d8fa97658099deaf5dabe3787dd88e168f8 1042 op=
+enbsd-inetd_0.20080125-1.dsc
+ 4c2818fd128ea6428c5f87e678789404f88eb4d71a8379bb85cf6f90d907e44f 24627 o=
+penbsd-inetd_0.20080125.orig.tar.gz
+ b50c07ab209429fbac8af3f35621f7f1216a9d87b11a95ff1bcceea8f8ceb 14599 o=
+penbsd-inetd_0.20080125-1.diff.gz
+ 0dac8ce7ade776cc45b97e7a0a17dc855e6e8b2e6382b3275eadacc1d465294b 33250 o=
+penbsd-inetd_0.20080125-1_i386.deb
+Files:=20
+ a0936fa5c2a66ed62356c9aea5e96ec2 1042 net standard openbsd-inetd_0.20080=
+125-1.dsc
+ d3c4bb9bcbd0c29091791baa61ad0d0a 24627 net standard openbsd-inetd_0.2008=
+0125.orig.tar.gz
+ bec32a5b7ba330f2973f15c8dd6a81e6 14599 net standard openbsd-inetd_0.2008=
+0125-1.diff.gz
+ 877207072c28e09dd021c82096d7f3dc 33250 net standard openbsd-inetd_0.2008=
+0125-1_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC0l/FGfw2OHuP7ERAp2CAJ9NJymGRFfCVKHjrRKpn2NoMZMidACfQhI1
+PHqpkI6CQLZjP+ZouSTD6D8=3D
+=3DySNN
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208701982-26983-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

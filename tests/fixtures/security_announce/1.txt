@@ -1,0 +1,147 @@
+From bounce-debian-security-announce==chris-lamb.co.uk@lists.debian.org Sun Apr 20 12:19:18 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-security-announce==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnXZj-0006el-Ge
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 12:19:18 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 7141A13A4F3D; Sun, 20 Apr 2008 11:09:30 +0000 (UTC)
+Old-Return-Path: <fw@deneb.enyo.de>
+X-Original-To: debian-security-announce@lists.debian.org
+Delivered-To: lists-debian-security-announce@liszt.debian.org
+Received: from mail.enyo.de (mail.enyo.de [IPv6:2001:14b0:202:1::a7])
+	(using TLSv1 with cipher AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by liszt.debian.org (Postfix) with ESMTP id 97F7413A4ADF
+	for <debian-security-announce@lists.debian.org>; Sun, 20 Apr 2008 11:09:23 +0000 (UTC)
+Received: from deneb.vpn.enyo.de ([212.9.189.177] helo=deneb.enyo.de)
+	by mail.enyo.de with esmtp id 1JnXPu-0007mr-HD
+	for debian-security-announce@lists.debian.org; Sun, 20 Apr 2008 13:09:11 +0200
+Received: from fw by deneb.enyo.de with local (Exim 4.69)
+	(envelope-from <fw@deneb.enyo.de>)
+	id 1JnXPp-0003nl-9X
+	for debian-security-announce@lists.debian.org; Sun, 20 Apr 2008 13:09:01 +0200
+From: Florian Weimer <fw@deneb.enyo.de>
+To: debian-security-announce@lists.debian.org
+Date: Sun, 20 Apr 2008 13:09:01 +0200
+Message-ID: <87od84okaa.fsf@mid.deneb.enyo.de>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+X-Debian: PGP check passed for security officers
+Subject: [SECURITY] [DSA 1553-1] New ikiwiki packages fix cross-site request forgery
+Priority: urgent
+Reply-To: debian-security@lists.debian.org
+Resent-Message-ID: <p-Wp8XjnryF.A.2u.qRyCIB@liszt>
+Resent-From: debian-security-announce@lists.debian.org
+X-Mailing-List: <debian-security-announce@lists.debian.org> archive/latest/217
+X-Loop: debian-security-announce@lists.debian.org
+List-Id: <debian-security-announce.lists.debian.org>
+List-Post: <mailto:debian-security-announce@lists.debian.org>
+List-Help: <mailto:debian-security-announce-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-security-announce-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-security-announce-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-security-announce-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 11:09:30 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -6.1
+X-Spam-Report: (-6.1 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	-3.5 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+- ------------------------------------------------------------------------
+Debian Security Advisory DSA-1553-1                  security@debian.org
+http://www.debian.org/security/                           Florian Weimer
+April 20, 2008                        http://www.debian.org/security/faq
+- ------------------------------------------------------------------------
+
+Package        : ikiwiki
+Vulnerability  : cross-site request forgery
+Problem type   : remote
+Debian-specific: no
+CVE Id(s)      : CVE-2008-0165
+Debian Bug     : 475445
+
+It has been discovered that ikiwiki, a Wiki implementation, does not
+guard password and content changes against cross-site request forgery
+(CSRF) attacks.
+
+For the stable distribution (etch), this problem has been fixed in
+version 1.33.5.
+
+For the unstable distribution (sid), this problem has been fixed in
+version 2.42.
+
+We recommend that you upgrade your ikiwiki package.
+
+Upgrade instructions
+- --------------------
+
+wget url
+        will fetch the file for you
+dpkg -i file.deb
+        will install the referenced file.
+
+If you are using the apt-get package manager, use the line for
+sources.list as given below:
+
+apt-get update
+        will update the internal database
+apt-get upgrade
+        will install corrected packages
+
+You may use an automated update by adding the resources from the
+footer to the proper configuration.
+
+
+Debian GNU/Linux 4.0 alias etch
+- -------------------------------
+
+Source archives:
+
+  http://security.debian.org/pool/updates/main/i/ikiwiki/ikiwiki_1.33.5.tar.gz
+    Size/MD5 checksum:   228378 ef6aa241ce3d9b3b4cc3750ed83ec578
+  http://security.debian.org/pool/updates/main/i/ikiwiki/ikiwiki_1.33.5.dsc
+    Size/MD5 checksum:     1015 d7fe70296ad9c6b2681f9ad60cf0d785
+
+Architecture independent packages:
+
+  http://security.debian.org/pool/updates/main/i/ikiwiki/ikiwiki_1.33.5_all.deb
+    Size/MD5 checksum:   273800 c744a37e80d49d8c58cfb84fd4f6e4d6
+
+
+  These files will probably be moved into the stable distribution on
+  its next update.
+
+- ---------------------------------------------------------------------------------
+For apt-get: deb http://security.debian.org/ stable/updates main
+For dpkg-ftp: ftp://security.debian.org/debian-security dists/stable/updates/main
+Mailing list: debian-security-announce@lists.debian.org
+Package info: `apt-cache show <pkg>' and http://packages.debian.org/<pkg>
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iQEVAwUBSAsj7L97/wQC1SS+AQJGtQgArOrj7IboyGfwA4LfnhDfzEsybw6nQjl0
+AJbS0x4LH8/UeSC9UKLv/qH95DFRuL2IKZqrUTaHWBClfNhpO1rigNaUxQvwKADH
+WhfgbMAtgd+7f0f+4Cg0PlPvvWDhEJN3Z9JgMPHx9fIjQDh1KjohgbCUTryfB6X5
+6JOI4eZAXsC2m2FItBPV6CAvVo9S8434eyD/2TaOrabdXuqbvOEsEIc5SY3ApCZj
+FFIsJynpNqQ4N10bROMFIBktRbo+7Dyf8HK0a8Fa1TyUyzMgPQrJBwinXSZi1+3i
+R6KPOb5YB6/b4PY7/xgKYy58Rv3HYreRHpyRw5y15wS1S2oUVn+Spw==
+=y3jD
+-----END PGP SIGNATURE-----
+
+
+-- 
+To UNSUBSCRIBE, email to debian-security-announce-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

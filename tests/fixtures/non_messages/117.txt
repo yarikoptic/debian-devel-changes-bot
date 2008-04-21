@@ -1,0 +1,138 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 20:07:17 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnesX-0000cU-5W
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 20:07:17 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 4C13013A5219; Sun, 20 Apr 2008 19:07:06 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.9 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	MURPHY_DRUGS_REL8,MURPHY_SEX_L4,RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 1AD1313A51D6;
+	Sun, 20 Apr 2008 19:06:43 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jneoe-0008SN-Jf; Sun, 20 Apr 2008 19:03:08 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476806: AssertionError when archiving empty maildirs
+Reply-To: Joey Hess <joeyh@debian.org>, 476806@bugs.debian.org
+Resent-From: Joey Hess <joeyh@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 19:03:07 +0000
+Resent-Message-ID: <handler.476806.B476806.120871801721141@bugs.debian.org>
+X-Debian-PR-Message: report 476806
+X-Debian-PR-Package: archivemail
+X-Debian-PR-Keywords: patch
+X-Debian-PR-Source: archivemail
+Received: via spool by 476806-submit@bugs.debian.org id=B476806.120871801721141
+          (code B ref 476806); Sun, 20 Apr 2008 19:03:07 +0000
+Received: (at 476806) by bugs.debian.org; 20 Apr 2008 19:00:17 +0000
+X-Amavis-Spam-Status: No, score=-8.7 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FROMDEVELOPER,HAS_BUG_NUMBER,MURPHY_DRUGS_REL8,MURPHY_SEX_L4 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from wren.kitenet.net
+	([80.68.85.49] helo=kitenet.net ident=postfix)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <joey@kodama.kitenet.net>)
+	id 1Jnels-0005OR-TA
+	for 476806@bugs.debian.org; Sun, 20 Apr 2008 19:00:17 +0000
+Received: from kodama.kitenet.net (66-168-92-132.dhcp.kgpt.tn.charter.com [66.168.92.132])
+	(using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+	(Client CN "Joey Hess", Issuer "Joey Hess" (verified OK))
+	by kitenet.net (Postfix) with ESMTPS id B1EA3314352;
+	Sun, 20 Apr 2008 15:00:11 -0400 (EDT)
+Received: by kodama.kitenet.net (Postfix, from userid 1000)
+	id 9F41C114081; Sun, 20 Apr 2008 15:00:02 -0400 (EDT)
+Date: Sun, 20 Apr 2008 15:00:02 -0400
+From: Joey Hess <joeyh@debian.org>
+To: Nikolaus Schulz <microschulz@web.de>, 476806@bugs.debian.org
+Message-ID: <20080420190002.GB32626@kodama.kitenet.net>
+References: <20080419100723.GA29948@abydos.adm.naquadah.org> <20080419203805.GA21036@kodama.kitenet.net> <20080420142401.GA3729@zorro.zusammrottung.local>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+	protocol="application/pgp-signature"; boundary="tsOsTdHNUZQcU9Ye"
+Content-Disposition: inline
+In-Reply-To: <20080420142401.GA3729@zorro.zusammrottung.local>
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+X-Virus-Scanned: ClamAV 0.92.1/6850/Sun Apr 20 13:05:45 2008 on wren.kitenet.net
+X-Virus-Status: Clean
+Resent-Date: Sun, 20 Apr 2008 19:03:08 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343738
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -32.7
+X-Spam-Report: (-32.7 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	20 AWL                    AWL: From: address is in the auto white-list
+
+
+--tsOsTdHNUZQcU9Ye
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+Nikolaus Schulz wrote:
+> You are correct, the mailbox module has been rewritten in Python 2.5.
+> They have put most of the new code into new classes, keeping the old
+> classes around for backward compatiblity; but the Maildir class was
+> rewritten, and the boolean value of an empty maildir has changed to
+> False.  While this probably counts as a python bug, I don't know if it
+> qualifies as serious.
+>=20
+> BTW, this is not the only breakage I've seen due to the new Maildir
+> class[2].=20
+
+Do you plan a new release anytime soon, or should I just take these
+patches?
+
+
+--=20
+see shy jo
+
+--tsOsTdHNUZQcU9Ye
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: Digital signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC5Kyd8HHehbQuO8RAmsWAJ9z3gcjUhLrkMt9JvGvsz5fpkDuawCgkryY
+nT3emExBG24WaCagSpcYbAs=
+=xQel
+-----END PGP SIGNATURE-----
+
+--tsOsTdHNUZQcU9Ye--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

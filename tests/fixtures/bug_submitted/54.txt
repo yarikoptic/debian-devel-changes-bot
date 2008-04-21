@@ -1,0 +1,127 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 01:59:55 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnNuJ-0004MX-M9
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 01:59:55 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id E6CDF13A4E22; Sun, 20 Apr 2008 00:59:49 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.9 required=4.0 tests=BAYES_00,FOURLA,
+	RCVD_IN_DNSWL_LOW autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 7D46013A4DC2;
+	Sun, 20 Apr 2008 00:59:39 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnNrd-0006Vp-0o; Sun, 20 Apr 2008 00:57:05 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476895: gnucash-common: /usr/share/info/gnucash-design.info.gz is not	registered by install-info
+Reply-To: Omer Zak <w1@zak.co.il>, 476895@bugs.debian.org
+Resent-From: Omer Zak <w1@zak.co.il>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: tb@debian.org (Thomas Bushnell, BSG)
+Resent-Date: Sun, 20 Apr 2008 00:57:02 +0000
+Resent-Message-ID: <handler.476895.B.120865285117050@bugs.debian.org>
+X-Debian-PR-Message: report 476895
+X-Debian-PR-Package: gnucash-common
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: gnucash
+Received: via spool by submit@bugs.debian.org id=B.120865285117050
+          (code B ref -1); Sun, 20 Apr 2008 00:57:02 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 00:54:11 +0000
+X-Amavis-Spam-Status: No, score=-9.9 required=4.0 tests=BAYES_00,FOURLA,HAS_PACKAGE 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from mtaout2.012.net.il ([84.95.2.4])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <w1@zak.co.il>)
+	id 1JnNoo-0004Ni-NA
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 00:54:10 +0000
+Received: from [77.127.124.56] by i_mtaout2.012.net.il (HyperSendmail v2004.12) with ESMTPA id <0JZL00ENZN5HLJI0@i_mtaout2.012.net.il> for submit@bugs.debian.org; Sun, 20 Apr 2008 04:08:10 +0300 (IDT)
+Date: Sun, 20 Apr 2008 03:41:12 +0300
+From: Omer Zak <w1@zak.co.il>
+X-012-Sender: omerz1@012.net.il
+To: submit@bugs.debian.org
+Message-id: <1208652072.4582.72.camel@c2.home.zak.co.il>
+MIME-version: 1.0
+X-Mailer: Evolution 2.6.3
+Content-type: text/plain
+Content-transfer-encoding: 7bit
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 00:57:05 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343310
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.6
+X-Spam-Report: Spam detection software, running on the system "chris-lamb.co.uk", has
+	identified this incoming email as possible spam.  The original message
+	has been attached to this so you can view it (if it isn't spam) or label
+	similar future email.  If you have any questions, see
+	the administrator of that system for details.
+	Content preview:  Package: gnucash-common Version: 2.0.5-1 Severity: minor
+	The file /usr/share/info/gnucash-design.info.gz is installed by the
+	package, but it is not listed in /usr/share/info/dir so I cannot access
+	it from within emacs C-h i [...] 
+	Content analysis details:   (-52.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+Package: gnucash-common
+Version: 2.0.5-1
+Severity: minor
+
+The file /usr/share/info/gnucash-design.info.gz is installed by the
+package, but it is not listed in /usr/share/info/dir so I cannot access
+it from within emacs C-h i
+
+I suggest to check whether the package failed to run
+  /usr/sbin/install-info gnucash-design
+in its post-installation scripts.
+
+-- System Information:
+Debian Release: 4.0
+  APT prefers stable
+  APT policy: (500, 'stable')
+Architecture: i386 (i686)
+Shell:  /bin/sh linked to /bin/bash
+Kernel: Linux 2.6.18-6-686
+Locale: LANG=C, LC_CTYPE=C (charmap=ANSI_X3.4-1968)
+
+gnucash-common depends on no packages.
+
+Versions of packages gnucash-common recommends:
+ii  gnucash                       2.0.5-1    A personal finance tracking
+progra
+
+-- no debconf information
+
+
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

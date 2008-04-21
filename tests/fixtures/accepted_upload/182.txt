@@ -1,0 +1,140 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 14:32:16 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnZeP-0007BX-2v
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 14:32:16 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id B358B13A4FE3; Sun, 20 Apr 2008 13:32:11 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id 59B6A13A4F06
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 13:32:11 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnZPp-0000gX-Li; Sun, 20 Apr 2008 13:17:09 +0000
+From: Brice Goglin <bgoglin@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted xserver-xorg-video-vmware 1:10.16.1-1 (source i386)
+Message-Id: <E1JnZPp-0000gX-Li@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 13:17:09 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <ceq58rtWjkK.A.bbG.bX0CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301301
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 13:32:11 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 14:58:19 +0200
+Source: xserver-xorg-video-vmware
+Binary: xserver-xorg-video-vmware
+Architecture: source i386
+Version: 1:10.16.1-1
+Distribution: unstable
+Urgency: low
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Changed-By: Brice Goglin <bgoglin@debian.org>
+Description:=20
+ xserver-xorg-video-vmware - X.Org X server -- VMware display driver
+Changes:=20
+ xserver-xorg-video-vmware (1:10.16.1-1) unstable; urgency=3Dlow
+ .
+   [ Brice Goglin ]
+   * New upstream release.
+   * Bump Standards-Version to 3.7.3 (no changes).
+   * The Vcs-* fields are now recognized by dpkg, so drop the XS- prefix.
+   * Run dpkg-shlibdeps with --warnings=3D6.  Drivers reference symbols f=
+rom
+     /usr/bin/Xorg and other modules, and that's not a bug, so we want
+     dpkg-shlibdeps to shut up about symbols it can't find.
+ .
+   [ Timo Aaltonen ]
+   * Add vmware.ids. Thanks Soren Hansen!
+Checksums-Sha1:=20
+ 152fabe142641fb012a4fca3dcb5f35a6a987e2c 1557 xserver-xorg-video-vmware_=
+10.16.1-1.dsc
+ baa920472777118e71ff2f8c6a27451bccb4a2d2 376598 xserver-xorg-video-vmwar=
+e_10.16.1.orig.tar.gz
+ 102c2992246dfca2822f30adf256212277aaabf6 91624 xserver-xorg-video-vmware=
+_10.16.1-1.diff.gz
+ ab599f74c081fe065d4e5b05bbd3e8ff1c966e86 35110 xserver-xorg-video-vmware=
+_10.16.1-1_i386.deb
+Checksums-Sha256:=20
+ 360d81ffd3f08b57de406695ed48b70fd82a63f2a69175e488eb5a9aa03c6773 1557 xs=
+erver-xorg-video-vmware_10.16.1-1.dsc
+ 249eb7b9a8343fcb55ac4696d6fb92aad9b4ce91509c5206f70fcbb8804ae5d3 376598 =
+xserver-xorg-video-vmware_10.16.1.orig.tar.gz
+ 4469f95ea121230b0b60c9ae6cac4300efd43a2052b004e77b4c71dd2b1f8e1c 91624 x=
+server-xorg-video-vmware_10.16.1-1.diff.gz
+ 777088c8e2de0cb357a36b2679e308df65e44ce0e1cec5427e4c04438e6ec466 35110 x=
+server-xorg-video-vmware_10.16.1-1_i386.deb
+Files:=20
+ 5b6f932e16d7da3c8db880b889e86088 1557 x11 optional xserver-xorg-video-vm=
+ware_10.16.1-1.dsc
+ 5e2aac250f176b6b997c60b1e5896d3d 376598 x11 optional xserver-xorg-video-=
+vmware_10.16.1.orig.tar.gz
+ 99011d362134faf13bc851aa464b23be 91624 x11 optional xserver-xorg-video-v=
+mware_10.16.1-1.diff.gz
+ 5fbeb4ececaa94558dc198dd71300671 35110 x11 optional xserver-xorg-video-v=
+mware_10.16.1-1_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICz+IRh88F8PcWfoRAqwkAJ963JW4Evg8/ubcaLikLlHC14EBBgCglO6P
+11GZw83mXzEwK9ke1OGyHjg=3D
+=3DAJQh
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+xserver-xorg-video-vmware_10.16.1-1.diff.gz
+  to pool/main/x/xserver-xorg-video-vmware/xserver-xorg-video-vmware_10.1=
+6.1-1.diff.gz
+xserver-xorg-video-vmware_10.16.1-1.dsc
+  to pool/main/x/xserver-xorg-video-vmware/xserver-xorg-video-vmware_10.1=
+6.1-1.dsc
+xserver-xorg-video-vmware_10.16.1-1_i386.deb
+  to pool/main/x/xserver-xorg-video-vmware/xserver-xorg-video-vmware_10.1=
+6.1-1_i386.deb
+xserver-xorg-video-vmware_10.16.1.orig.tar.gz
+  to pool/main/x/xserver-xorg-video-vmware/xserver-xorg-video-vmware_10.1=
+6.1.orig.tar.gz
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

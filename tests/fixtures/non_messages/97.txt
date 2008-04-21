@@ -1,0 +1,109 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 12:12:53 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnXTU-0006cm-B5
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 12:12:52 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 2340513A4ED0; Sun, 20 Apr 2008 11:12:47 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 8F52813A498B;
+	Sun, 20 Apr 2008 11:12:35 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnXN2-0005az-MI; Sun, 20 Apr 2008 11:06:08 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476930: compiz: quanta crashes X
+Reply-To: Julien Cristau <jcristau@debian.org>, 476930@bugs.debian.org
+Resent-From: Julien Cristau <jcristau@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian X Strike Force <debian-x@lists.debian.org>
+Resent-Date: Sun, 20 Apr 2008 11:06:07 +0000
+Resent-Message-ID: <handler.476930.B476930.120868946813683@bugs.debian.org>
+X-Debian-PR-Message: report 476930
+X-Debian-PR-Package: compiz
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: compiz
+Received: via spool by 476930-submit@bugs.debian.org id=B476930.120868946813683
+          (code B ref 476930); Sun, 20 Apr 2008 11:06:07 +0000
+Received: (at 476930) by bugs.debian.org; 20 Apr 2008 11:04:28 +0000
+X-Amavis-Spam-Status: No, score=-8.9 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FROMDEVELOPER,HAS_BUG_NUMBER autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from coloquinte.cristau.org ([91.121.16.100])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <julien@cristau.org>)
+	id 1JnXLP-0003Y8-Q4
+	for 476930@bugs.debian.org; Sun, 20 Apr 2008 11:04:28 +0000
+Received: from patate.is-a-geek.org (did75-19-88-173-251-109.fbx.proxad.net [88.173.251.109])
+	(using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+	(Client did not present a certificate)
+	by coloquinte.cristau.org (Postfix) with ESMTP id C67A1B98C;
+	Sun, 20 Apr 2008 13:04:26 +0200 (CEST)
+Received: by patate.is-a-geek.org (Postfix, from userid 1000)
+	id 0B47F7EF5; Sun, 20 Apr 2008 13:04:25 +0200 (CEST)
+Date: Sun, 20 Apr 2008 13:04:25 +0200
+From: Julien Cristau <jcristau@debian.org>
+To: David <wizzardx@gmail.com>, 476930@bugs.debian.org
+Message-ID: <20080420110425.GA7407@patate.is-a-geek.org>
+References: <18c1e6480804200159i57e0b28la386bb39cb1732ae@mail.gmail.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <18c1e6480804200159i57e0b28la386bb39cb1732ae@mail.gmail.com>
+X-Operating-System: Linux 2.6.24-1-686 i686
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Resent-Date: Sun, 20 Apr 2008 11:06:08 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343441
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -50.3
+X-Spam-Report: (-50.3 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	2.2 AWL                    AWL: From: address is in the auto white-list
+
+On Sun, Apr 20, 2008 at 10:59:03 +0200, David wrote:
+
+> X crashes immediately when you run 'quanta' (web editor) and Compiz is
+> running.
+> 
+Then it's not a bug in compiz.  Please run
+'/usr/share/bug/xserver-xorg-core/script 3> /tmp/476930.log' and send
+the output file to this bug.
+
+Cheers,
+Julien
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

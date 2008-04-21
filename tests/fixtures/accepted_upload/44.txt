@@ -1,0 +1,121 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 11:31:42 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnWpe-0006JZ-7n
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 11:31:42 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id BE52D13A4F2B; Sun, 20 Apr 2008 10:31:36 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id 7D91C13A4F18
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 10:31:36 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnWbY-0007iZ-3R; Sun, 20 Apr 2008 10:17:04 +0000
+From: Kumar Appaiah <akumar@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted supercat 0.5.5-3 (source amd64)
+Message-Id: <E1JnWbY-0007iZ-3R@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 10:17:04 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <CfH3zDbsgXF.A.SL.IuxCIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301279
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 10:31:36 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.6
+X-Spam-Report: (-2.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.0 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 15:30:27 +0530
+Source: supercat
+Binary: supercat
+Architecture: source amd64
+Version: 0.5.5-3
+Distribution: unstable
+Urgency: low
+Maintainer: Kumar Appaiah <akumar@debian.org>
+Changed-By: Kumar Appaiah <akumar@debian.org>
+Description:=20
+ supercat   - program that colorizes text for terminals and HTML
+Changes:=20
+ supercat (0.5.5-3) unstable; urgency=3Dlow
+ .
+   * debian/control:
+     + Update maintainer e-mail address.
+     + Update Vcs-* locations.
+   * debian/rules:
+     + Update to fix detecting cross building.
+     + Set default CFLAGS to -g -O2.
+Checksums-Sha1:=20
+ fd49f09e3fd0bdab284766a8f627522bf69d5c03 1127 supercat_0.5.5-3.dsc
+ 2aa3174d8cb58a1cf1c686dc984f51bea3d2893c 3170 supercat_0.5.5-3.diff.gz
+ 4e59d996808eefbbb6d6c824b70c3275b53b6f68 18412 supercat_0.5.5-3_amd64.de=
+b
+Checksums-Sha256:=20
+ 67fba1e47110c1a1c4078146c23263798a29cd2d13efd2016ca8e9a0033c502b 1127 su=
+percat_0.5.5-3.dsc
+ 163f5c74da56d00283e9cbf68900a9292886be515442c2a24cd7aacbc0ac1629 3170 su=
+percat_0.5.5-3.diff.gz
+ e734cd03e352e420d68ad8abc7366a16ce436717632f946fa6f85a03475a22f1 18412 s=
+upercat_0.5.5-3_amd64.deb
+Files:=20
+ 7140227da8c33370b91b589ee3e70ba3 1127 utils optional supercat_0.5.5-3.ds=
+c
+ 0ae0d363d88cfc681c4c5c4f55e1aed9 3170 utils optional supercat_0.5.5-3.di=
+ff.gz
+ 281109714b3ec4e73c6d7603f47fb6fe 18412 utils optional supercat_0.5.5-3_a=
+md64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICxcLSd75awtatOcRApS/AJ9iflci/6wQnB9tEsWq1NJrcMjE3gCglWPo
+MzR23M9aDviouDtxkPz6SME=3D
+=3DGOIM
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+supercat_0.5.5-3.diff.gz
+  to pool/main/s/supercat/supercat_0.5.5-3.diff.gz
+supercat_0.5.5-3.dsc
+  to pool/main/s/supercat/supercat_0.5.5-3.dsc
+supercat_0.5.5-3_amd64.deb
+  to pool/main/s/supercat/supercat_0.5.5-3_amd64.deb
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

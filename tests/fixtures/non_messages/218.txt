@@ -1,0 +1,143 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 12:55:13 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnY8T-0006o6-1J
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 12:55:13 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id D72F413A4F07; Sun, 20 Apr 2008 11:55:07 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id B3DA313A4E73;
+	Sun, 20 Apr 2008 11:54:57 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnY7T-0002vU-Tx; Sun, 20 Apr 2008 11:54:08 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476955: epiphany-browser: epiphany freezes when bootup
+Reply-To: 476955@bugs.debian.org, 476955@bugs.debian.org
+Resent-From: Josselin Mouette <joss@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Josselin Mouette <joss@debian.org>
+Resent-Date: Sun, 20 Apr 2008 11:54:07 +0000
+Resent-Message-ID: <handler.476955.B476955.120869225516256@bugs.debian.org>
+X-Debian-PR-Message: report 476955
+X-Debian-PR-Package: epiphany-browser
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: epiphany-browser
+Received: via spool by 476955-submit@bugs.debian.org id=B476955.120869225516256
+          (code B ref 476955); Sun, 20 Apr 2008 11:54:07 +0000
+Received: (at 476955) by bugs.debian.org; 20 Apr 2008 11:50:55 +0000
+X-Amavis-Spam-Status: No, score=-11.0 required=4.0 tests=BAYES_00,FROMDEVELOPER,
+	HAS_BUG_NUMBER,VALID_BTS_CONTROL autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from diva.malsain.org ([91.121.19.57])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <joss@debian.org>)
+	id 1JnY4N-0004CW-G1; Sun, 20 Apr 2008 11:50:55 +0000
+Received: from localhost ([127.0.0.1])
+	by diva.malsain.org with esmtp (Exim 4.63)
+	(envelope-from <joss@debian.org>)
+	id 1JnY4L-0004hk-Ex; Sun, 20 Apr 2008 13:50:53 +0200
+From: Josselin Mouette <joss@debian.org>
+To: Patrizio Bruno <rustretto@yahoo.it>, 476955@bugs.debian.org
+In-Reply-To: <20080420110809.4359.6653.reportbug@trevize.comporellen.lan>
+References: <20080420110809.4359.6653.reportbug@trevize.comporellen.lan>
+Content-Type: multipart/signed; micalg=pgp-sha1; protocol="application/pgp-signature"; boundary="=-R/jC1LdxkpElJvL814Y9"
+Date: Sun, 20 Apr 2008 13:50:52 +0200
+Message-Id: <1208692252.3820.19.camel@shizuru>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.22.1 
+Resent-Date: Sun, 20 Apr 2008 11:54:07 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343454
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -30.4
+X-Spam-Report: (-30.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	22 AWL                    AWL: From: address is in the auto white-list
+
+
+--=-R/jC1LdxkpElJvL814Y9
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+retitle 476955 extensions API changed but the directory to look for them is=
+ the same
+severity 476955 important
+thanks
+
+Le dimanche 20 avril 2008 =C3=A0 13:08 +0200, Patrizio Bruno a =C3=A9crit :
+>   File "/home/patrizio/.gnome2/epiphany/extensions/tabs_on_treeview.py", =
+line 426, in attach_window
+>     self.winlist[window].attach_window()
+>   File "/home/patrizio/.gnome2/epiphany/extensions/tabs_on_treeview.py", =
+line 308, in attach_window
+>     self.build_custom()
+>   File "/home/patrizio/.gnome2/epiphany/extensions/tabs_on_treeview.py", =
+line 132, in build_custom
+>     self.treemodel =3D gtk.ListStore(epiphany.Tab, str, gtk.gdk.Pixbuf)
+> AttributeError: 'module' object has no attribute 'Tab'
+
+The python API of epiphany extensions has changed in 2.22. You need to
+update your hand-installed extensions to a version that is compatible
+with 2.22.
+
+I=E2=80=99ll see if it is possible to version the extensions directory in t=
+he
+home so that things like this don=E2=80=99t happen.
+
+Cheers,
+--=20
+ .''`.
+: :' :      We are debian.org. Lower your prices, surrender your code.
+`. `'       We will add your hardware and software distinctiveness to
+  `-        our own. Resistance is futile.
+
+--=-R/jC1LdxkpElJvL814Y9
+Content-Type: application/pgp-signature; name=signature.asc
+Content-Description: Ceci est une partie de message
+	=?ISO-8859-1?Q?num=E9riquement?= =?ISO-8859-1?Q?_sign=E9e?=
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQBICy4crSla4ddfhTMRAmFiAJ96ZTzHlT5IiY13X0slkD0EK/hPpQCbBtT+
+b9gNO8skI3HGH84SA698e8Y=
+=FfnB
+-----END PGP SIGNATURE-----
+
+--=-R/jC1LdxkpElJvL814Y9--
+
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

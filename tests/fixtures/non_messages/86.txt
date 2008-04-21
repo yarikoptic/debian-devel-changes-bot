@@ -1,0 +1,112 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 18:55:06 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jndki-0000DN-76
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 18:55:05 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 3BA5A13A4CE5; Sun, 20 Apr 2008 17:54:59 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	MURPHY_DRUGS_REL8,RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id EBF2413A4EF8;
+	Sun, 20 Apr 2008 17:54:48 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jndh1-0005IU-GU; Sun, 20 Apr 2008 17:51:11 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476835: aptitude: Small layout problem in description of	"why" command
+Reply-To: Daniel Burrows <dburrows@debian.org>, 476835@bugs.debian.org
+Resent-From: Daniel Burrows <dburrows@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 17:51:10 +0000
+Resent-Message-ID: <handler.476835.B476835.120871349911949@bugs.debian.org>
+X-Debian-PR-Message: report 476835
+X-Debian-PR-Package: aptitude
+X-Debian-PR-Keywords: patch
+X-Debian-PR-Source: aptitude
+Received: via spool by 476835-submit@bugs.debian.org id=B476835.120871349911949
+          (code B ref 476835); Sun, 20 Apr 2008 17:51:10 +0000
+Received: (at 476835) by bugs.debian.org; 20 Apr 2008 17:44:59 +0000
+X-Amavis-Spam-Status: No, score=-9.0 required=4.0 tests=BAYES_00,FROMDEVELOPER,
+	HAS_BUG_NUMBER,MURPHY_DRUGS_REL8 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from vms044pub.verizon.net ([206.46.252.44])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dburrows@debian.org>)
+	id 1Jndb0-00034x-Tz
+	for 476835@bugs.debian.org; Sun, 20 Apr 2008 17:44:58 +0000
+Received: from [127.0.1.1] ([71.112.18.250])
+ by vms044.mailsrvcs.net (Sun Java System Messaging Server 6.2-6.01 (built Apr
+ 3 2006)) with ESMTPA id <0JZM001B0XAL9UE0@vms044.mailsrvcs.net> for
+ 476835@bugs.debian.org; Sun, 20 Apr 2008 12:44:46 -0500 (CDT)
+Date: Sun, 20 Apr 2008 10:38:54 -0700
+From: Daniel Burrows <dburrows@debian.org>
+In-reply-to: <20080420170349.GC6796@merkur.sol.de>
+To: Jens Seidel <jensseidel@users.sf.net>, 476835@bugs.debian.org
+Cc: Jacobo Tarrio <jtarrio@trasno.net>
+Message-id: <20080420173854.GE16065@alpaca>
+MIME-version: 1.0
+Content-type: text/plain; charset=us-ascii
+Content-disposition: inline
+References: <20080419132153.13557.7792.reportbug@localhost>
+	<20080420152711.GE7649@alpaca>	<20080420170349.GC6796@merkur.sol.de>
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Resent-Date: Sun, 20 Apr 2008 17:51:11 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343692
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.1
+X-Spam-Report: (-52.1 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.5 AWL                    AWL: From: address is in the auto white-list
+
+On Sun, Apr 20, 2008 at 07:03:49PM +0200, Jens Seidel <jensseidel@users.sf.net> was heard to say:
+> On Sun, Apr 20, 2008 at 08:27:11AM -0700, Daniel Burrows wrote:
+> >   Thanks for the patch.  Unfortunately aptitude is in a string freeze
+> > right now, so I can't apply it (it'll break all the other translations).
+> 
+> Don't worry, Daniel. I unfuzzied all translations once I committed it
+> and will do so with further translation updates against older PO files
+> as well.
+> 
+> Considering that Jacobo didn't reported another minor typo with the
+> previous patch one or two weeks ago I'm very happy he send a patch for
+> the current issue.
+
+  Ah, OK.  I don't know if you've figured this out yet, but I'm a little
+afraid of blowing up the translations by accident -- Christian has
+trained me to step lightly around them. :-)
+
+  Daniel
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

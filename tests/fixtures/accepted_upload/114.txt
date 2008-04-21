@@ -1,0 +1,106 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 17:03:24 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnc0b-00086z-08
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 17:03:23 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id E777D13A4DF6; Sun, 20 Apr 2008 16:03:15 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id 9ED9113A49B2
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 16:03:15 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnbzR-0001kE-LA; Sun, 20 Apr 2008 16:02:05 +0000
+From: =?utf-8?q?Krzysztof_Krzy=C5=BCaniak_=28eloy=29?= <eloy@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted libcatalyst-perl 5.7012-6 (source all)
+Message-Id: <E1JnbzR-0001kE-LA@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 16:02:05 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <YGsLxbnytAP.A.8NF.Dl2CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301317
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 16:03:15 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.6
+X-Spam-Report: (-2.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.0 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.7
+Date: Sun, 20 Apr 2008 17:39:43 +0200
+Source: libcatalyst-perl
+Binary: libcatalyst-perl
+Architecture: source all
+Version: 5.7012-6
+Distribution: unstable
+Urgency: low
+Maintainer: Debian Catalyst Maintainers <pkg-catalyst-maintainers@lists.a=
+lioth.debian.org>
+Changed-By: Krzysztof Krzy=C5=BCaniak (eloy) <eloy@debian.org>
+Description:=20
+ libcatalyst-perl - The Elegant MVC Web Application Framework
+Changes:=20
+ libcatalyst-perl (5.7012-6) unstable; urgency=3Dlow
+ .
+   * Rename manual files.
+   * Remove debian/postrm debian/preinst
+Files:=20
+ e5e730dd7cb9c617aefa6aeda4a19622 1400 perl optional libcatalyst-perl_5.7=
+012-6.dsc
+ 3ae74c2467364330271cc3be40a97676 4241 perl optional libcatalyst-perl_5.7=
+012-6.diff.gz
+ 93cbafe99766173b86f79f8ef25bca00 210646 perl optional libcatalyst-perl_5=
+.7012-6_all.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD0DBQFIC2fny+HP4f7iC8sRAnlqAJi8MJ5Ug6PARvHNoXA2BtOPTnL3AJjuy3FX
+6W+1aIlPsqmzhcu2RSAP
+=3DRgtJ
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+libcatalyst-perl_5.7012-6.diff.gz
+  to pool/main/libc/libcatalyst-perl/libcatalyst-perl_5.7012-6.diff.gz
+libcatalyst-perl_5.7012-6.dsc
+  to pool/main/libc/libcatalyst-perl/libcatalyst-perl_5.7012-6.dsc
+libcatalyst-perl_5.7012-6_all.deb
+  to pool/main/libc/libcatalyst-perl/libcatalyst-perl_5.7012-6_all.deb
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

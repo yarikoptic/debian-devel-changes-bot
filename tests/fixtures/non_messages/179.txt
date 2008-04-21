@@ -1,0 +1,110 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 11:55:16 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnXCQ-0006Xq-Uk
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 11:55:16 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id B3A4813A4EF3; Sun, 20 Apr 2008 10:55:09 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	MURPHY_DRUGS_REL8,RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id DA11713A4BC9;
+	Sun, 20 Apr 2008 10:54:53 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnXBN-0002FO-8J; Sun, 20 Apr 2008 10:54:05 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#466977: 2.6.24-1-sb1-bcm91250a mipsel hangs running init
+Reply-To: Martin Michlmayr <tbm@cyrius.com>, 466977@bugs.debian.org
+Resent-From: Martin Michlmayr <tbm@cyrius.com>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian Kernel Team <debian-kernel@lists.debian.org>
+Resent-Date: Sun, 20 Apr 2008 10:54:04 +0000
+Resent-Message-ID: <handler.466977.B466977.12086886554786@bugs.debian.org>
+X-Debian-PR-Message: report 466977
+X-Debian-PR-Package: linux-image-2.6.24-1-sb1-bcm91250a
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: linux-2.6
+Received: via spool by 466977-submit@bugs.debian.org id=B466977.12086886554786
+          (code B ref 466977); Sun, 20 Apr 2008 10:54:04 +0000
+Received: (at 466977) by bugs.debian.org; 20 Apr 2008 10:50:55 +0000
+X-Amavis-Spam-Status: No, score=-7.0 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER,
+	MURPHY_DRUGS_REL8 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from sorrow.cyrius.com ([65.19.161.204])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <tbm@cyrius.com>)
+	id 1JnX8J-0001Dm-Mk
+	for 466977@bugs.debian.org; Sun, 20 Apr 2008 10:50:55 +0000
+Received: by sorrow.cyrius.com (Postfix, from userid 10)
+	id 30AB9D8E1; Sun, 20 Apr 2008 10:50:55 +0000 (UTC)
+Received: by deprecation.cyrius.com (Postfix, from userid 1000)
+	id 64E103727AB; Sun, 20 Apr 2008 12:51:02 +0200 (CEST)
+Date: Sun, 20 Apr 2008 12:51:01 +0200
+From: Martin Michlmayr <tbm@cyrius.com>
+To: Thiemo Seufer <ths@networkno.de>, 466977@bugs.debian.org
+Cc: Florian Lohoff <flo@rfc822.org>
+Message-ID: <20080420105100.GA9067@deprecation.cyrius.com>
+References: <20080222083837.GA5111@paradigm.rfc822.org> <20080303125111.GC25396@networkno.de> <20080303144510.GA16376@deprecation.cyrius.com> <20080303151848.GA5256@networkno.de>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20080303151848.GA5256@networkno.de>
+User-Agent: Mutt/1.5.16 (2007-06-11)
+Resent-Date: Sun, 20 Apr 2008 10:54:05 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343435
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -28.4
+X-Spam-Report: (-28.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	24 AWL                    AWL: From: address is in the auto white-list
+
+* Thiemo Seufer <ths@networkno.de> [2008-03-03 15:18]:
+> > > The appended patch works around the problem. I don't tag it as patch
+> > > because its implications are not fully analyzed upstream. It works
+> > > well on my bcm91250a system, though.
+> > 
+> > Do you want me to put this into our kernel package, or should I wait
+> > for Ralf to comment on the patch?
+> 
+> I would like to wait a bit (unless we miss an important debian kernel
+> deadline).
+
+Any update on this?
+
+-- 
+Martin Michlmayr
+http://www.cyrius.com/
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

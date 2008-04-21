@@ -1,0 +1,108 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 16:09:57 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnbAt-0007gT-Mm
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 16:09:57 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 920E413A500B; Sun, 20 Apr 2008 15:09:50 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 6993513A4FE6;
+	Sun, 20 Apr 2008 15:09:41 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnb7C-00061O-Hp; Sun, 20 Apr 2008 15:06:02 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476888: [pkg-ntp-maintainers] Bug#476888: ntp: Use /etc/ntp/ directory for configuration files (Version control support)
+Reply-To: Peter Eisentraut <peter_e@gmx.net>, 476888@bugs.debian.org
+Resent-From: Peter Eisentraut <peter_e@gmx.net>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian NTP Team <pkg-ntp-maintainers@lists.alioth.debian.org>
+Resent-Date: Sun, 20 Apr 2008 15:06:01 +0000
+Resent-Message-ID: <handler.476888.B476888.120870382318606@bugs.debian.org>
+X-Debian-PR-Message: report 476888
+X-Debian-PR-Package: ntp
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: ntp
+Received: via spool by 476888-submit@bugs.debian.org id=B476888.120870382318606
+          (code B ref 476888); Sun, 20 Apr 2008 15:06:01 +0000
+Received: (at 476888) by bugs.debian.org; 20 Apr 2008 15:03:43 +0000
+X-Amavis-Spam-Status: No, score=-7.0 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from mail.gmx.net ([213.165.64.20])
+	by rietz.debian.org with smtp (Exim 4.63)
+	(envelope-from <peter_e@gmx.net>)
+	id 1Jnb4x-0004mj-0B
+	for 476888@bugs.debian.org; Sun, 20 Apr 2008 15:03:43 +0000
+Received: (qmail invoked by alias); 20 Apr 2008 15:03:36 -0000
+Received: from xdsl-213-196-202-104.netcologne.de (EHLO colt.local) [213.196.202.104]
+  by mail.gmx.net (mp051) with SMTP; 20 Apr 2008 17:03:36 +0200
+X-Authenticated: #495269
+X-Provags-ID: V01U2FsdGVkX1889FNFx5E8gAFEh4n4n6OccNVnxK1SIq1ZHhGCsx
+	GHrbD4wHG9H2Re
+From: Peter Eisentraut <peter_e@gmx.net>
+To: root <jari.aalto@cante.net>,
+ 476888@bugs.debian.org
+Date: Sun, 20 Apr 2008 17:03:32 +0200
+User-Agent: KMail/1.9.7
+References: <20080419223534.13623.83231.reportbug@bongo.cante.net>
+In-Reply-To: <20080419223534.13623.83231.reportbug@bongo.cante.net>
+MIME-Version: 1.0
+Content-Type: text/plain;
+  charset="iso-8859-1"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+Message-Id: <200804201703.34948.peter_e@gmx.net>
+X-Y-GMX-Trusted: 0
+Resent-Date: Sun, 20 Apr 2008 15:06:02 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343552
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.6
+X-Spam-Report: (-52.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+root wrote:
+> The NTP configuration is not stored at /etc/ntp.conf
+
+What?!?
+
+> Please consider moving the file to
+>
+>        /etc/ntp/ntp.conf
+
+No, the file has been at its current place for decades.  Please review your 
+version control system if it can't handle this.
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,112 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 15:40:22 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnaiI-0007Uw-Ox
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 15:40:22 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 3C57413A500A; Sun, 20 Apr 2008 14:40:17 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=unavailable version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id ABD9D13A4FF7;
+	Sun, 20 Apr 2008 14:40:02 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnah7-0001LC-1N; Sun, 20 Apr 2008 14:39:05 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476954: texlive-extra-utils: epstopdf is missing gs
+Reply-To: Manuel =?UTF-8?Q?P=C3=A9gouri=C3=A9-Gonnard?= <mpg@elzevir.fr>, 476954@bugs.debian.org
+Resent-From: Manuel =?UTF-8?Q?P=C3=A9gouri=C3=A9-Gonnard?= <mpg@elzevir.fr>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian TeX Maintainers <debian-tex-maint@lists.debian.org>
+Resent-Date: Sun, 20 Apr 2008 14:39:04 +0000
+Resent-Message-ID: <handler.476954.B476954.12087022421887@bugs.debian.org>
+X-Debian-PR-Message: report 476954
+X-Debian-PR-Package: texlive-extra-utils
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: texlive-bin
+Received: via spool by 476954-submit@bugs.debian.org id=B476954.12087022421887
+          (code B ref 476954); Sun, 20 Apr 2008 14:39:04 +0000
+Received: (at 476954) by bugs.debian.org; 20 Apr 2008 14:37:22 +0000
+X-Amavis-Spam-Status: No, score=-7.0 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from shiva.jussieu.fr ([134.157.0.129])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <mpg@elzevir.fr>)
+	id 1JnafS-0000SX-5l; Sun, 20 Apr 2008 14:37:22 +0000
+Received: from math.jussieu.fr (mail.math.jussieu.fr [134.157.13.55])
+          by shiva.jussieu.fr (8.14.2/jtpda-5.4) with ESMTP id m3KEbJum087668
+          ; Sun, 20 Apr 2008 16:37:19 +0200 (CEST)
+X-Ids:165
+Received: from [192.168.0.126] (nat.elzevir.fr [88.165.216.11] (may be forged))
+	(authenticated bits=0)
+	by math.jussieu.fr (8.14.1/8.14.1) with ESMTP id m3KEbH8U031616
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NO);
+	Sun, 20 Apr 2008 16:37:17 +0200 (CEST)
+Message-ID: <480B551C.1000008@elzevir.fr>
+Date: Sun, 20 Apr 2008 16:37:16 +0200
+From: Manuel =?UTF-8?Q?P=C3=A9gouri=C3=A9-Gonnard?= <mpg@elzevir.fr>
+User-Agent: Mozilla-Thunderbird 2.0.0.9 (X11/20080110)
+MIME-Version: 1.0
+To: Frank =?UTF-8?Q?K=C3=BCster?= <frank@debian.org>, 476954@bugs.debian.org
+CC: Debian Bug Tracking System <submit@bugs.debian.org>
+References: <20080420110639.26259.39714.reportbug@dent.philosys.de> <8763uc210g.fsf@riesling.zuerich.kuesterei.ch>
+In-Reply-To: <8763uc210g.fsf@riesling.zuerich.kuesterei.ch>
+X-Enigmail-Version: 0.95.0
+Content-Type: text/plain; charset=ISO-8859-1
+X-Virus-Scanned: ClamAV 0.92/6846/Sun Apr 20 06:06:11 2008 on shiva.jussieu.fr
+X-Virus-Scanned: ClamAV version 0.92.1, clamav-milter version 0.92.1 on mail.math.jussieu.fr
+X-Virus-Status: Clean
+X-Greylist: Sender IP whitelisted, not delayed by milter-greylist-3.0 (shiva.jussieu.fr [134.157.0.165]); Sun, 20 Apr 2008 16:37:19 +0200 (CEST)
+X-Miltered: at jchkmail.jussieu.fr with ID 480B551F.001 by Joe's j-chkmail (http : // j-chkmail dot ensmp dot fr)!
+X-j-chkmail-Enveloppe: 480B551F.001/134.157.13.55/mail.math.jussieu.fr/math.jussieu.fr/<mpg@elzevir.fr>
+X-j-chkmail-Score: MSGID : 480B551F.001 on jchkmail.jussieu.fr : j-chkmail score : X : R=. U=. O=. B=0.153 -> S=0.153
+X-j-chkmail-Status: Ham
+Content-Transfer-Encoding: quoted-printable
+X-MIME-Autoconverted: from 8bit to quoted-printable by shiva.jussieu.fr id m3KEbJum087668
+X-CrossAssassin-Score: 2
+Resent-Date: Sun, 20 Apr 2008 14:39:05 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343525
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -46.3
+X-Spam-Report: (-46.3 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	6.3 AWL                    AWL: From: address is in the auto white-list
+
+Frank K=FCster a =E9crit :
+> [2] wasn't there an attempt to replace bibtex by bibtex8 generally, as
+>     MikTeX has done it AFAIK?
+>=20
+Hum, not sure it would be a good idea: for me, bibtex8 crashes quite ofte=
+n. I
+should fill a report for this, but didn't have time atm.
+
+Manuel.
+
+
+

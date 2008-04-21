@@ -1,0 +1,138 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 19:59:57 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnelU-0000YB-Fb
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 19:59:57 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 8056013A502E; Sun, 20 Apr 2008 18:59:51 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.9 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	MURPHY_SEX_L2,RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id C349D13A50D2;
+	Sun, 20 Apr 2008 18:59:35 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jneil-0001yB-L7; Sun, 20 Apr 2008 18:57:03 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476810: Please clarify 12.5, "Copyright information"
+Reply-To: Russ Allbery <rra@debian.org>, 476810@bugs.debian.org
+Resent-From: Russ Allbery <rra@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian Policy List <debian-policy@lists.debian.org>
+Resent-Date: Sun, 20 Apr 2008 18:57:03 +0000
+Resent-Message-ID: <handler.476810.B476810.120871757318931@bugs.debian.org>
+X-Debian-PR-Message: report 476810
+X-Debian-PR-Package: debian-policy
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: debian-policy
+Received: via spool by 476810-submit@bugs.debian.org id=B476810.120871757318931
+          (code B ref 476810); Sun, 20 Apr 2008 18:57:03 +0000
+Received: (at 476810) by bugs.debian.org; 20 Apr 2008 18:52:53 +0000
+X-Amavis-Spam-Status: No, score=-8.9 required=4.0 tests=BAYES_00,FROMDEVELOPER,
+	HAS_BUG_NUMBER,MURPHY_SEX_L2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from smtp3.stanford.edu ([171.67.20.26])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <eagle@windlord.stanford.edu>)
+	id 1Jneej-0004v0-4o
+	for 476810@bugs.debian.org; Sun, 20 Apr 2008 18:52:53 +0000
+Received: from smtp3.stanford.edu (localhost.localdomain [127.0.0.1])
+	by localhost (Postfix) with SMTP id CA4F660E2F5;
+	Sun, 20 Apr 2008 11:52:52 -0700 (PDT)
+Received: from windlord.stanford.edu (windlord.Stanford.EDU [171.64.19.147])
+	by smtp3.stanford.edu (Postfix) with ESMTP id 7343060E3C1;
+	Sun, 20 Apr 2008 11:52:52 -0700 (PDT)
+Received: by windlord.stanford.edu (Postfix, from userid 1000)
+	id 6EFA7E7911; Sun, 20 Apr 2008 11:52:52 -0700 (PDT)
+To: Matthias Klose <doko@cs.tu-berlin.de>
+Cc: 476810@bugs.debian.org
+In-Reply-To: <18443.13052.430174.273119@gargle.gargle.HOWL> (Matthias Klose's message of "Sun\, 20 Apr 2008 14\:11\:40 +0200")
+User-Agent: Gnus/5.11 (Gnus v5.11) Emacs/22.1 (gnu/linux)
+References: <18441.51001.792418.488560@gargle.gargle.HOWL>
+	<87ve2dtxtt.fsf@windlord.stanford.edu>
+	<18443.13052.430174.273119@gargle.gargle.HOWL>
+From: Russ Allbery <rra@debian.org>
+Organization: The Eyrie
+Date: Sun, 20 Apr 2008 11:52:52 -0700
+Message-ID: <8763ucwe7v.fsf@windlord.stanford.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Resent-Date: Sun, 20 Apr 2008 18:57:03 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343732
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -28.8
+X-Spam-Report: (-28.8 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	24 AWL                    AWL: From: address is in the auto white-list
+
+Matthias Klose <doko@cs.tu-berlin.de> writes:
+> Russ Allbery writes:
+>> Matthias Klose <doko@cs.tu-berlin.de> writes:
+
+>>> Proposing to clarify this to "... come from the same source and the
+>>> first package directly or indirectly depends on the second ...". For
+>>> the intention mentioned in the last sentence ("must be extractable by
+>>> mechanical means") it doesn't matter if the dependency is direct or
+>>> indirect. If there are other reasons for the stricter direct
+>>> dependency, please clarify this as "directly depends".
+
+>> I'm not sure that I see any need for a change here.
+
+> see http://lists.debian.org/debian-java/2008/04/msg00052.html
+>  > - usr-share-doc-symlink-without-dependency
+>  >   is an explicit policy violation and not allowed.
+> and the followups.
+
+Hm, okay.  I guess I was always used to thinking about it one way.
+
+> no, this is still for binaries built from the same source, you don't
+> need a package manager for this kind of dependency handling.
+
+The problem being solved is, given a random Debian *.deb package, how do I
+obtain its copyright?  Currently, I may have to locate all *.deb packages
+on which it depends with an explicit version number, but that's all.
+Weakening this to allow indirect dependencies requires either recursively
+resolving all dependencies with explicit versions or trying to track the
+binary to a source package, locate the source package, and then retrieve
+its other binary packages.  Both of those seem like they require more
+sophisticated code.
+
+But more to the point, I don't really understand why adding an explicit
+dependency is a problem, particularly if all the packages are built from
+the same source package.
+
+-- 
+Russ Allbery (rra@debian.org)               <http://www.eyrie.org/~eagle/>
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

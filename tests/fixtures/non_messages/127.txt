@@ -1,0 +1,127 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 17:34:54 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JncV8-0008Ij-Jk
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 17:34:54 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 955DB13A500F; Sun, 20 Apr 2008 16:34:49 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.0 required=4.0 tests=BAYES_00,IMPRONONCABLE_2,
+	LDO_WHITELIST,MURPHY_DRUGS_REL8,RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 0C24D13A4FB2;
+	Sun, 20 Apr 2008 16:34:35 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JncTR-0004Tm-Qq; Sun, 20 Apr 2008 16:33:05 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476835: aptitude: Small layout problem in description of "why" command
+Reply-To: Jens Seidel <jensseidel@users.sf.net>, 476835@bugs.debian.org
+Resent-From: Jens Seidel <jensseidel@users.sf.net>
+Original-Sender: tux-master@web.de
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Daniel Burrows <dburrows@debian.org>
+Resent-Date: Sun, 20 Apr 2008 16:33:05 +0000
+Resent-Message-ID: <handler.476835.B476835.120870903813833@bugs.debian.org>
+X-Debian-PR-Message: report 476835
+X-Debian-PR-Package: aptitude
+X-Debian-PR-Keywords: patch
+X-Debian-PR-Source: aptitude
+Received: via spool by 476835-submit@bugs.debian.org id=B476835.120870903813833
+          (code B ref 476835); Sun, 20 Apr 2008 16:33:05 +0000
+Received: (at 476835) by bugs.debian.org; 20 Apr 2008 16:30:38 +0000
+X-Amavis-Spam-Status: No, score=-7.8 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	HAS_BUG_NUMBER,IMPRONONCABLE_2,MURPHY_DRUGS_REL8,VALID_BTS_CONTROL 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from fmmailgate03.web.de ([217.72.192.234])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <tux-master@web.de>)
+	id 1JncR4-0003a8-Iu
+	for 476835@bugs.debian.org; Sun, 20 Apr 2008 16:30:38 +0000
+Received: from smtp07.web.de (fmsmtp07.dlan.cinetic.de [172.20.5.215])
+	by fmmailgate03.web.de (Postfix) with ESMTP id C758DD7BEB6A;
+	Sun, 20 Apr 2008 18:30:32 +0200 (CEST)
+Received: from [77.178.187.86] (helo=merkur.sol.de)
+	by smtp07.web.de with asmtp (TLSv1:AES256-SHA:256)
+	(WEB.DE 4.109 #226)
+	id 1JncQy-0000GN-00; Sun, 20 Apr 2008 18:30:32 +0200
+Received: from jens by merkur.sol.de with local (Exim 4.63)
+	(envelope-from <tux-master@web.de>)
+	id 1JncJt-0001fD-Q9; Sun, 20 Apr 2008 18:23:14 +0200
+Date: Sun, 20 Apr 2008 18:23:13 +0200
+From: Jens Seidel <jensseidel@users.sf.net>
+To: Jacobo Tarrio <jtarrio@trasno.net>, 476835@bugs.debian.org
+Message-ID: <20080420162313.GC5014@merkur.sol.de>
+References: <20080419132153.13557.7792.reportbug@localhost>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20080419132153.13557.7792.reportbug@localhost>
+User-Agent: Mutt/1.5.13 (2006-08-11)
+Sender: tux-master@web.de
+X-Sender: tux-master@web.de
+X-Provags-ID: V01U2FsdGVkX18x8UI1UTNoaUQu8tkHDHARJ8qY+cE4XFE+1t4w
+	i8QI9+JuYG6lVSxFmqKECFaGhgJA8ttJRNUsZbwVIJdk4syNMr
+	WgZn8fVas=
+Resent-Date: Sun, 20 Apr 2008 16:33:05 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343645
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.5
+X-Spam-Report: (-52.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+tags 476835 + pending
+thanks
+
+On Sat, Apr 19, 2008 at 02:21:53PM +0100, Jacobo Tarrio wrote:
+> Package: aptitude
+> Version: 0.4.11.2-1
+> Severity: minor
+> Tags: patch
+> 
+>  Translation update that assumes this patch has been applied is coming in a
+> subsequent bug report.
+
+> diff -r 2783dc8ce308 src/main.cc
+> --- a/src/main.cc	Wed Apr 16 13:20:41 2008 +0200
+> +++ b/src/main.cc	Sat Apr 19 14:14:22 2008 +0100
+>    printf(_(" why          - Show the manually installed packages that require a package, or\n"
+> -           "              - why one or more packages would require the given package\n"));
+> +           "                why one or more packages would require the given package\n"));
+
+Applied. Thanks,
+
+Jens
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,107 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 13:10:03 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnYMo-0006r5-Tm
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 13:10:03 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id F06BF13A4F6C; Sun, 20 Apr 2008 12:09:57 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.9 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	MDO_AUTORESP3,MURPHY_DRUGS_REL8,RCVD_IN_BL_SPAMCOP_NET,RCVD_IN_DNSWL_LOW,
+	RCVD_IN_SORBS_WEB autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id F18CE13A4F69;
+	Sun, 20 Apr 2008 12:09:47 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnYM1-00051W-VO; Sun, 20 Apr 2008 12:09:09 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476939: setting package to cupsddk-drivers cupsddk, tagging 476939
+Reply-To: Mark Purcell <msp@debian.org>, 476939@bugs.debian.org
+Resent-From: Mark Purcell <msp@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian HPIJS and HPLIP maintainers <pkg-hpijs-devel@lists.alioth.debian.org>
+Resent-Date: Sun, 20 Apr 2008 12:09:09 +0000
+Resent-Message-ID: <handler.476939.B476939.12086932246458@bugs.debian.org>
+X-Debian-PR-Message: report 476939
+X-Debian-PR-Package: cupsddk
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: cupsddk
+Received: via spool by 476939-submit@bugs.debian.org id=B476939.12086932246458
+          (code B ref 476939); Sun, 20 Apr 2008 12:09:09 +0000
+Received: (at 476939) by bugs.debian.org; 20 Apr 2008 12:07:04 +0000
+X-Amavis-Spam-Status: No, score=-2.3 required=4.0 tests=BAYES_00,FROMDEVELOPER,
+	MDO_AUTORESP3,MURPHY_DRUGS_REL8,RCVD_IN_BL_SPAMCOP_NET,RCVD_IN_NIX1,
+	RCVD_IN_SBLXBL,RCVD_IN_SBLXBL_CBL,RCVD_IN_SORBS_WEB,VALID_BTS_CONTROL 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from pxt2.vodafone.com.au ([203.20.33.82])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <mark@ibook.burndred.id.au>)
+	id 1JnYJz-0001UI-LW; Sun, 20 Apr 2008 12:07:04 +0000
+Received: from ibook.burndred.id.au ([202.81.69.132])
+	by PXT2.VODAFONE.COM.AU (8.12.3/8.12.3/Debian-6.3) with ESMTP id m3KC7f8G002248;
+	Sun, 20 Apr 2008 22:07:41 +1000
+Received: from mark by ibook.burndred.id.au with local (Exim 4.69)
+	(envelope-from <mark@ibook.burndred.id.au>)
+	id 1JnYJt-0005ul-TA; Sun, 20 Apr 2008 22:06:57 +1000
+From: Mark Purcell <msp@debian.org>
+To: control@bugs.debian.org
+Cc: 476939@bugs.debian.org
+Date: Sun, 20 Apr 2008 22:06:57 +1000
+X-BTS-Version: 2.10.25
+Message-ID: <1208693217-3871-bts-msp@debian.org>
+Resent-Date: Sun, 20 Apr 2008 12:09:09 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343460
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -47.8
+X-Spam-Report: (-47.8 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	1.6 RCVD_IN_BL_SPAMCOP_NET RBL: Received via a relay in bl.spamcop.net
+	[Blocked - see <http://www.spamcop.net/bl.shtml?202.81.69.132>]
+	1.5 RCVD_IN_SORBS_WEB      RBL: SORBS: sender is a abuseable web server
+	[202.81.69.132 listed in dnsbl.sorbs.net]
+	1.8 AWL                    AWL: From: address is in the auto white-list
+
+# Automatically generated email from bts, devscripts version 2.10.25
+#
+# cupsddk (1.2.3-2) unstable; urgency=high
+#
+#  * Remove debian/rules ref to patch/ unpatch
+#    - missing build-dependencies (Closes: #476939)
+#
+
+package cupsddk-drivers cupsddk
+tags 476939 + pending
+
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

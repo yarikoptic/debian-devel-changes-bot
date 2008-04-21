@@ -1,0 +1,128 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 14:40:55 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnZml-0007Eu-N7
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 14:40:55 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id B602A13A4A79; Sun, 20 Apr 2008 13:40:50 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-3.0 required=4.0 tests=BAYES_00,RCVD_IN_DNSWL_LOW
+	autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id EB0CB13A4919;
+	Sun, 20 Apr 2008 13:40:33 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnZi7-0006QM-42; Sun, 20 Apr 2008 13:36:03 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476969: lsb-release crashes due to typo
+Reply-To: Alexander Kurtz <kurtz.alex@googlemail.com>, 476969@bugs.debian.org
+Resent-From: Alexander Kurtz <kurtz.alex@googlemail.com>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Chris Lawrence <lawrencc@debian.org>
+Resent-Date: Sun, 20 Apr 2008 13:36:01 +0000
+Resent-Message-ID: <handler.476969.B476969.120869830816032@bugs.debian.org>
+X-Debian-PR-Message: report 476969
+X-Debian-PR-Package: lsb-release
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: lsb
+Received: via spool by 476969-submit@bugs.debian.org id=B476969.120869830816032
+          (code B ref 476969); Sun, 20 Apr 2008 13:36:01 +0000
+Received: (at 476969) by bugs.debian.org; 20 Apr 2008 13:31:48 +0000
+X-Amavis-Spam-Status: No, score=-10.0 required=4.0 tests=BAYES_00,HAS_PACKAGE 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from fg-out-1718.google.com ([72.14.220.157])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <kurtz.alex@googlemail.com>)
+	id 1JnZdy-0003pi-IE
+	for 476969@bugs.debian.org; Sun, 20 Apr 2008 13:31:48 +0000
+Received: by fg-out-1718.google.com with SMTP id 22so1286616fge.23
+        for <476969@bugs.debian.org>; Sun, 20 Apr 2008 06:31:14 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=googlemail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:user-agent:mime-version:to:subject:content-type:content-transfer-encoding;
+        bh=2et7u9ghfa0/LE7WQi6kqo9hO1yPvjkczgCLSZVwK6Q=;
+        b=Z44ik5F383sKT8rOX19OKR6rIoBaFw8rhhYLXk9cFEhO/EABuCokEWzpGiUmwchs2iT9gUx2SUiw5pKydHvpq5IEaehFzTmo3e2nz5YNbVzKP6NU9QXJA3mq79NW8ugQg5b6Iqq1PJLokIdZjvEqwvL3a/zaZvlTxpm5dyoX9vA=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=googlemail.com; s=gamma;
+        h=message-id:date:from:user-agent:mime-version:to:subject:content-type:content-transfer-encoding;
+        b=xWdcELp70tZkbwlmv/iMzhue+EgQPqQ8CyN3nqBYtNFZB2ise7ggo4S3bUp0RhZJkaM5eTNHc5XGJV0/BTMA6aqJw38yTz7xril2Twcn+Kg1REtX67hw6um5VmeH2X7tNr30ujyZAtSaUl5pNp9LxzQdDp8yA7MkWfQssWSJeWo=
+Received: by 10.86.72.15 with SMTP id u15mr10597711fga.11.1208697851243;
+        Sun, 20 Apr 2008 06:24:11 -0700 (PDT)
+Received: from ?192.168.2.22? ( [84.154.90.250])
+        by mx.google.com with ESMTPS id p9sm3504347fkb.14.2008.04.20.06.24.08
+        (version=TLSv1/SSLv3 cipher=RC4-MD5);
+        Sun, 20 Apr 2008 06:24:10 -0700 (PDT)
+Message-ID: <480B43F6.80804@googlemail.com>
+Date: Sun, 20 Apr 2008 15:24:06 +0200
+From: Alexander Kurtz <kurtz.alex@googlemail.com>
+User-Agent: Mozilla-Thunderbird 2.0.0.12 (X11/20080406)
+MIME-Version: 1.0
+To: 476969@bugs.debian.org
+Content-Type: text/plain; charset=ISO-8859-15; format=flowed
+Content-Transfer-Encoding: 7bit
+Resent-Date: Sun, 20 Apr 2008 13:36:03 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343499
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.6
+X-Spam-Report: (-52.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+Package: lsb-release
+Version: 3.2-9
+Severity: important
+
+$ lsb_release -a
+  File "/usr/bin/lsb_release", line 190
+    elif release.endswith('/sid')
+                                ^
+SyntaxError: invalid syntax
+
+There seems to be a typo in /usr/bin/lsb_release:
+Line 190 is now:
+        elif release.endswith('/sid')
+
+Line 190 should be:
+        elif release.endswith('/sid'):
+
+I am using Debian GNU/Linux sid.
+
+
+
+
+
+
+
+
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

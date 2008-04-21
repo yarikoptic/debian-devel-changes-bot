@@ -1,0 +1,453 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 15:21:01 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnaPV-0007Ps-Or
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 15:21:01 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id BE51F13A4ECC; Sun, 20 Apr 2008 14:20:52 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.0 required=4.0 tests=BAYES_00,FOURLA,
+	IMPRONONCABLE_1,MURPHY_WRONG_WORD1,MURPHY_WRONG_WORD2,RCVD_IN_DNSWL_LOW,
+	SARE_MSGID_LONG40 autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 22FD013A4EBC;
+	Sun, 20 Apr 2008 14:20:31 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnaMn-0007A5-8w; Sun, 20 Apr 2008 14:18:05 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476980: Problems with ICH8 controller
+Reply-To: =?UTF-8?Q?"=D0=92=D0=BB=D0=B0=D0=B4=D0=B8=D0=BC=D0=B8=D1=80_?= =?UTF-8?Q?=D0=9C=D0=BE=D1=80=D0=BE=D0=B7=D0=BE=D0=B2"?= <morozovvs@gmail.com>, 476980@bugs.debian.org
+Resent-From: =?UTF-8?Q?"=D0=92=D0=BB=D0=B0=D0=B4=D0=B8=D0=BC=D0=B8=D1=80_?= =?UTF-8?Q?=D0=9C=D0=BE=D1=80=D0=BE=D0=B7=D0=BE=D0=B2"?= <morozovvs@gmail.com>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian Install Team <debian-boot@lists.debian.org>
+Resent-Date: Sun, 20 Apr 2008 14:18:02 +0000
+Resent-Message-ID: <handler.476980.B.120870093821300@bugs.debian.org>
+X-Debian-PR-Message: report 476980
+X-Debian-PR-Package: installation-reports
+X-Debian-PR-Keywords: 
+Received: via spool by submit@bugs.debian.org id=B.120870093821300
+          (code B ref -1); Sun, 20 Apr 2008 14:18:02 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 14:15:38 +0000
+X-Amavis-Spam-Status: No, score=-8.6 required=4.0 tests=BAYES_00,FOURLA,HAS_PACKAGE,
+	IMPRONONCABLE_1,MURPHY_WRONG_WORD1,MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from py-out-1112.google.com ([64.233.166.179])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <morozovvs@gmail.com>)
+	id 1JnaKQ-0005XL-Fg
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 14:15:38 +0000
+Received: by py-out-1112.google.com with SMTP id f31so1492837pyh.17
+        for <submit@bugs.debian.org>; Sun, 20 Apr 2008 07:15:38 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:to:subject:mime-version:content-type:content-transfer-encoding:content-disposition;
+        bh=b6X4IEfH8HG6F/FTEzr38rrRbWzbbXOo557n1KfJ6gk=;
+        b=T9O0LmdNgJeYg/GJy/tzw2oiUB0ODMVOKSJKT6OKZR5bZguO5pn2kbPO+UfgiFoxz0qiCVGYWlfDZPvX59M6m37elCbmll0hb+NywY0Vbs14NBUjb5Lb4MKjtmfLK4p6FJ8ISDc+AHNG17fcTJmNDiGdckS4yG1UFYSgVChdQXQ=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:to:subject:mime-version:content-type:content-transfer-encoding:content-disposition;
+        b=WxJr3lLXwhgfUhT+wr3BJTEglvBtcP1FfPDf4A0UTSgqOf5RZnhb6JWuGxLS/2BhQ0kTjpCaGt8/J6iGPu8YaqjtzZjN54RC1ZqYgkoZ9yRcaYkTRfM6/M9RFEdHx5xUBRzIgbpiM7YwWruN1fTqgb4dmPqJcSxd7Ktz678M1ho=
+Received: by 10.140.126.14 with SMTP id y14mr2699531rvc.59.1208700936972;
+        Sun, 20 Apr 2008 07:15:36 -0700 (PDT)
+Received: by 10.141.154.10 with HTTP; Sun, 20 Apr 2008 07:15:36 -0700 (PDT)
+Message-ID: <60a5fd900804200715n25e4f736q5e670fb63e8cc454@mail.gmail.com>
+Date: Sun, 20 Apr 2008 17:15:36 +0300
+From: =?UTF-8?Q?"=D0=92=D0=BB=D0=B0=D0=B4=D0=B8=D0=BC=D0=B8=D1=80_?= =?UTF-8?Q?=D0=9C=D0=BE=D1=80=D0=BE=D0=B7=D0=BE=D0=B2"?= <morozovvs@gmail.com>
+To: submit@bugs.debian.org
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 14:18:05 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343521
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.6
+X-Spam-Report: (-52.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+Package: installation-reports
+
+Boot method: netinstall CD
+Image version: http://cdimage.debian.org/cdimage/lenny_di_beta1/i386/iso-cd/debian-testing-i386-netinst.iso
+Date: 19 April 2008
+
+Machine: Intel Core2 Duo on MSI P965 Neo
+Processor: Intel Core2 Duo 1.8 GHz
+Memory: 1.5 GB
+Partitions:
+/dev/sda4 reiserfs     4096380   3923000    173380  96% /
+tmpfs        tmpfs      776292         0    776292   0% /lib/init/rw
+udev         tmpfs       10240       120     10120   2% /dev
+tmpfs        tmpfs      776292         0    776292   0% /dev/shm
+/dev/sda1  fuseblk    20482840  14277244   6205596  70% /media/sda1
+/dev/sda5     vfat     8177128   7866400    310728  97% /media/sda5
+/dev/sda2  fuseblk    20482872  20139040    343832  99% /media/sda2
+/dev/sda6  fuseblk     3068380   2965464    102916  97% /media/sda6
+/dev/sda7  fuseblk    21824268  14495020   7329248  67% /media/sda7
+/dev/sdb1  fuseblk    20482840  20107044    375796  99% /media/sdb1
+/dev/sdb3  fuseblk   115330632 104120088  11210544  91% /media/sdb3
+
+Output of lspci -nn and lspci -vnn:
+
+00:00.0 Host bridge [0600]: Intel Corporation 82P965/G965 Memory
+Controller Hub [8086:29a0] (rev 02)
+00:01.0 PCI bridge [0604]: Intel Corporation 82P965/G965 PCI Express
+Root Port [8086:29a1] (rev 02)
+00:1a.0 USB Controller [0c03]: Intel Corporation 82801H (ICH8 Family)
+USB UHCI Contoller #4 [8086:2834] (rev 02)
+00:1a.1 USB Controller [0c03]: Intel Corporation 82801H (ICH8 Family)
+USB UHCI Controller #5 [8086:2835] (rev 02)
+00:1a.7 USB Controller [0c03]: Intel Corporation 82801H (ICH8 Family)
+USB2 EHCI Controller #2 [8086:283a] (rev 02)
+00:1b.0 Audio device [0403]: Intel Corporation 82801H (ICH8 Family) HD
+Audio Controller [8086:284b] (rev 02)
+00:1c.0 PCI bridge [0604]: Intel Corporation 82801H (ICH8 Family) PCI
+Express Port 1 [8086:283f] (rev 02)
+00:1d.0 USB Controller [0c03]: Intel Corporation 82801H (ICH8 Family)
+USB UHCI Controller #1 [8086:2830] (rev 02)
+00:1d.1 USB Controller [0c03]: Intel Corporation 82801H (ICH8 Family)
+USB UHCI Controller #2 [8086:2831] (rev 02)
+00:1d.2 USB Controller [0c03]: Intel Corporation 82801H (ICH8 Family)
+USB UHCI Controller #3 [8086:2832] (rev 02)
+00:1d.7 USB Controller [0c03]: Intel Corporation 82801H (ICH8 Family)
+USB2 EHCI Controller #1 [8086:2836] (rev 02)
+00:1e.0 PCI bridge [0604]: Intel Corporation 82801 PCI Bridge
+[8086:244e] (rev f2)
+00:1f.0 ISA bridge [0601]: Intel Corporation 82801HB/HR (ICH8/R) LPC
+Interface Controller [8086:2810] (rev 02)
+00:1f.2 IDE interface [0101]: Intel Corporation 82801H (ICH8 Family) 4
+port SATA IDE Controller [8086:2820] (rev 02)
+00:1f.3 SMBus [0c05]: Intel Corporation 82801H (ICH8 Family) SMBus
+Controller [8086:283e] (rev 02)
+00:1f.5 IDE interface [0101]: Intel Corporation 82801H (ICH8 Family) 2
+port SATA IDE Controller [8086:2825] (rev 02)
+01:00.0 VGA compatible controller [0300]: nVidia Corporation G71
+[GeForce 7300 GS] [10de:01df] (rev a1)
+02:00.0 SATA controller [0106]: JMicron Technologies, Inc. JMB361
+AHCI/IDE [197b:2361] (rev 02)
+02:00.1 IDE interface [0101]: JMicron Technologies, Inc. JMB361
+AHCI/IDE [197b:2361] (rev 02)
+03:01.0 FireWire (IEEE 1394) [0c00]: VIA Technologies, Inc. IEEE 1394
+Host Controller [1106:3044] (rev 46)
+03:02.0 Ethernet controller [0200]: Realtek Semiconductor Co., Ltd.
+RTL-8139/8139C/8139C+ [10ec:8139] (rev 10)
+03:06.0 Ethernet controller [0200]: Realtek Semiconductor Co., Ltd.
+RTL-8110SC/8169SC Gigabit Ethernet [10ec:8167] (rev 10)
+
+00:00.0 Host bridge [0600]: Intel Corporation 82P965/G965 Memory
+Controller Hub [8086:29a0] (rev 02)
+        Subsystem: Intel Corporation 82P965/G965 Memory Controller Hub
+[8086:29a0]
+        Flags: bus master, fast devsel, latency 0
+        Capabilities: [e0] Vendor Specific Information <?>
+
+00:01.0 PCI bridge [0604]: Intel Corporation 82P965/G965 PCI Express
+Root Port [8086:29a1] (rev 02) (prog-if 00 [Normal decode])
+        Flags: bus master, fast devsel, latency 0
+        Bus: primary=00, secondary=01, subordinate=01, sec-latency=0
+        I/O behind bridge: 0000d000-0000dfff
+        Memory behind bridge: fa000000-fcffffff
+        Prefetchable memory behind bridge: 00000000d0000000-00000000dfffffff
+        Capabilities: [88] Subsystem: Intel Corporation Unknown device
+[8086:0000]
+        Capabilities: [80] Power Management version 3
+        Capabilities: [90] Message Signalled Interrupts: Mask- 64bit-
+Queue=0/0 Enable+
+        Capabilities: [a0] Express Root Port (Slot+), MSI 00
+        Capabilities: [100] Virtual Channel <?>
+        Capabilities: [140] Root Complex Link <?>
+        Kernel driver in use: pcieport-driver
+
+00:1a.0 USB Controller [0c03]: Intel Corporation 82801H (ICH8 Family)
+USB UHCI Contoller #4 [8086:2834] (rev 02) (prog-if 00 [UHCI])
+        Subsystem: Micro-Star International Co., Ltd. P965 Neo MS-7235
+mainboard [1462:7235]
+        Flags: bus master, medium devsel, latency 0, IRQ 16
+        I/O ports at ff00 [size=32]
+        Kernel driver in use: uhci_hcd
+        Kernel modules: uhci-hcd
+
+00:1a.1 USB Controller [0c03]: Intel Corporation 82801H (ICH8 Family)
+USB UHCI Controller #5 [8086:2835] (rev 02) (prog-if 00 [UHCI])
+        Subsystem: Micro-Star International Co., Ltd. Unknown device [1462:7235]
+        Flags: bus master, medium devsel, latency 0, IRQ 18
+        I/O ports at fe00 [size=32]
+        Kernel driver in use: uhci_hcd
+        Kernel modules: uhci-hcd
+
+00:1a.7 USB Controller [0c03]: Intel Corporation 82801H (ICH8 Family)
+USB2 EHCI Controller #2 [8086:283a] (rev 02) (prog-if 20 [EHCI])
+        Subsystem: Micro-Star International Co., Ltd. Unknown device [1462:7235]
+        Flags: bus master, medium devsel, latency 0, IRQ 17
+        Memory at fdfff000 (32-bit, non-prefetchable) [size=1K]
+        Capabilities: [50] Power Management version 2
+        Kernel driver in use: ehci_hcd
+        Kernel modules: ehci-hcd
+
+00:1b.0 Audio device [0403]: Intel Corporation 82801H (ICH8 Family) HD
+Audio Controller [8086:284b] (rev 02)
+        Subsystem: Intel Corporation 82801H (ICH8 Family) HD Audio
+Controller [8086:284b]
+        Flags: bus master, fast devsel, latency 0, IRQ 21
+        Memory at fdff8000 (64-bit, non-prefetchable) [size=16K]
+        Capabilities: [50] Power Management version 2
+        Capabilities: [60] Message Signalled Interrupts: Mask- 64bit+
+Queue=0/0 Enable-
+        Capabilities: [70] Express Root Complex Integrated Endpoint, MSI 00
+        Capabilities: [100] Virtual Channel <?>
+        Capabilities: [130] Root Complex Link <?>
+        Kernel driver in use: HDA Intel
+
+00:1c.0 PCI bridge [0604]: Intel Corporation 82801H (ICH8 Family) PCI
+Express Port 1 [8086:283f] (rev 02) (prog-if 00 [Normal decode])
+        Flags: bus master, fast devsel, latency 0
+        Bus: primary=00, secondary=02, subordinate=02, sec-latency=0
+        I/O behind bridge: 0000b000-0000bfff
+        Memory behind bridge: fdb00000-fdbfffff
+        Prefetchable memory behind bridge: 00000000fdc00000-00000000fdcfffff
+        Capabilities: [40] Express Root Port (Slot+), MSI 00
+        Capabilities: [80] Message Signalled Interrupts: Mask- 64bit-
+Queue=0/0 Enable+
+        Capabilities: [90] Subsystem: Intel Corporation 82801H (ICH8
+Family) PCI Express Port 1 [8086:283f]
+        Capabilities: [a0] Power Management version 2
+        Capabilities: [100] Virtual Channel <?>
+        Capabilities: [180] Root Complex Link <?>
+        Kernel driver in use: pcieport-driver
+
+00:1d.0 USB Controller [0c03]: Intel Corporation 82801H (ICH8 Family)
+USB UHCI Controller #1 [8086:2830] (rev 02) (prog-if 00 [UHCI])
+        Subsystem: Micro-Star International Co., Ltd. P965 Neo MS-7235
+mainboard [1462:7235]
+        Flags: bus master, medium devsel, latency 0, IRQ 22
+        I/O ports at fd00 [size=32]
+        Kernel driver in use: uhci_hcd
+        Kernel modules: uhci-hcd
+
+00:1d.1 USB Controller [0c03]: Intel Corporation 82801H (ICH8 Family)
+USB UHCI Controller #2 [8086:2831] (rev 02) (prog-if 00 [UHCI])
+        Subsystem: Micro-Star International Co., Ltd. P965 Neo MS-7235
+mainboard [1462:7235]
+        Flags: bus master, medium devsel, latency 0, IRQ 19
+        I/O ports at fc00 [size=32]
+        Kernel driver in use: uhci_hcd
+        Kernel modules: uhci-hcd
+
+00:1d.2 USB Controller [0c03]: Intel Corporation 82801H (ICH8 Family)
+USB UHCI Controller #3 [8086:2832] (rev 02) (prog-if 00 [UHCI])
+        Subsystem: Micro-Star International Co., Ltd. Unknown device [1462:7235]
+        Flags: bus master, medium devsel, latency 0, IRQ 17
+        I/O ports at fb00 [size=32]
+        Kernel driver in use: uhci_hcd
+        Kernel modules: uhci-hcd
+
+00:1d.7 USB Controller [0c03]: Intel Corporation 82801H (ICH8 Family)
+USB2 EHCI Controller #1 [8086:2836] (rev 02) (prog-if 20 [EHCI])
+        Subsystem: Micro-Star International Co., Ltd. P965 Neo MS-7235
+mainboard [1462:7235]
+        Flags: bus master, medium devsel, latency 0, IRQ 22
+        Memory at fdffe000 (32-bit, non-prefetchable) [size=1K]
+        Capabilities: [50] Power Management version 2
+        Kernel driver in use: ehci_hcd
+        Kernel modules: ehci-hcd
+
+00:1e.0 PCI bridge [0604]: Intel Corporation 82801 PCI Bridge
+[8086:244e] (rev f2) (prog-if 01 [Subtractive decode])
+        Flags: bus master, fast devsel, latency 0
+        Bus: primary=00, secondary=03, subordinate=03, sec-latency=32
+        I/O behind bridge: 0000c000-0000cfff
+        Memory behind bridge: fde00000-fdefffff
+        Prefetchable memory behind bridge: 00000000fdd00000-00000000fddfffff
+        Capabilities: [50] Subsystem: Intel Corporation 82801 PCI
+Bridge [8086:244e]
+
+00:1f.0 ISA bridge [0601]: Intel Corporation 82801HB/HR (ICH8/R) LPC
+Interface Controller [8086:2810] (rev 02)
+        Subsystem: Intel Corporation 82801HB/HR (ICH8/R) LPC Interface
+Controller [8086:2810]
+        Flags: bus master, medium devsel, latency 0
+        Capabilities: [e0] Vendor Specific Information <?>
+
+00:1f.2 IDE interface [0101]: Intel Corporation 82801H (ICH8 Family) 4
+port SATA IDE Controller [8086:2820] (rev 02) (prog-if 8f [Master SecP
+SecO PriP PriO])
+        Subsystem: Micro-Star International Co., Ltd. P965 Neo MS-7235
+mainboard [1462:7235]
+        Flags: bus master, 66MHz, medium devsel, latency 0, IRQ 19
+        I/O ports at fa00 [size=8]
+        I/O ports at f900 [size=4]
+        I/O ports at f800 [size=8]
+        I/O ports at f700 [size=4]
+        I/O ports at f600 [size=16]
+        I/O ports at f500 [size=16]
+        Capabilities: [70] Power Management version 3
+        Kernel driver in use: ata_piix
+
+00:1f.3 SMBus [0c05]: Intel Corporation 82801H (ICH8 Family) SMBus
+Controller [8086:283e] (rev 02)
+        Subsystem: Micro-Star International Co., Ltd. P965 Neo MS-7235
+mainboard [1462:7235]
+        Flags: medium devsel, IRQ 19
+        Memory at fdffd000 (32-bit, non-prefetchable) [size=256]
+        I/O ports at 0500 [size=32]
+        Kernel driver in use: i801_smbus
+        Kernel modules: i2c-i801
+
+00:1f.5 IDE interface [0101]: Intel Corporation 82801H (ICH8 Family) 2
+port SATA IDE Controller [8086:2825] (rev 02) (prog-if 85 [Master SecO
+PriO])
+        Subsystem: Micro-Star International Co., Ltd. P965 Neo MS-7235
+mainboard [1462:7235]
+        Flags: bus master, 66MHz, medium devsel, latency 0, IRQ 19
+        I/O ports at f300 [size=8]
+        I/O ports at f200 [size=4]
+        I/O ports at f100 [size=8]
+        I/O ports at f000 [size=4]
+        I/O ports at ef00 [size=16]
+        I/O ports at ee00 [size=16]
+        Capabilities: [70] Power Management version 3
+        Kernel driver in use: ata_piix
+
+01:00.0 VGA compatible controller [0300]: nVidia Corporation G71
+[GeForce 7300 GS] [10de:01df] (rev a1) (prog-if 00 [VGA controller])
+        Subsystem: ASUSTeK Computer Inc. Unknown device [1043:81f1]
+        Flags: bus master, fast devsel, latency 0, IRQ 16
+        Memory at fa000000 (32-bit, non-prefetchable) [size=16M]
+        Memory at d0000000 (64-bit, prefetchable) [size=256M]
+        Memory at fb000000 (64-bit, non-prefetchable) [size=16M]
+        [virtual] Expansion ROM at fc000000 [disabled] [size=128K]
+        Capabilities: [60] Power Management version 2
+        Capabilities: [68] Message Signalled Interrupts: Mask- 64bit+
+Queue=0/0 Enable-
+        Capabilities: [78] Express Endpoint, MSI 00
+        Capabilities: [100] Virtual Channel <?>
+        Capabilities: [128] Power Budgeting <?>
+        Kernel driver in use: nvidiafb
+
+02:00.0 SATA controller [0106]: JMicron Technologies, Inc. JMB361
+AHCI/IDE [197b:2361] (rev 02) (prog-if 01 [AHCI 1.0])
+        Subsystem: Micro-Star International Co., Ltd. P965 Neo MS-7235
+mainboard [1462:7235]
+        Flags: bus master, fast devsel, latency 0, IRQ 16
+        Memory at fdbfe000 (32-bit, non-prefetchable) [size=8K]
+        Capabilities: [68] Power Management version 2
+        Capabilities: [50] Express Legacy Endpoint, MSI 01
+        Kernel driver in use: ahci
+
+02:00.1 IDE interface [0101]: JMicron Technologies, Inc. JMB361
+AHCI/IDE [197b:2361] (rev 02) (prog-if 85 [Master SecO PriO])
+        Subsystem: Micro-Star International Co., Ltd. P965 Neo MS-7235
+mainboard [1462:7235]
+        Flags: bus master, fast devsel, latency 0, IRQ 20
+        I/O ports at bf00 [size=8]
+        I/O ports at be00 [size=4]
+        I/O ports at bd00 [size=8]
+        I/O ports at bc00 [size=4]
+        I/O ports at bb00 [size=16]
+        Capabilities: [68] Power Management version 2
+        Kernel driver in use: pata_jmicron
+        Kernel modules: jmicron
+
+03:01.0 FireWire (IEEE 1394) [0c00]: VIA Technologies, Inc. IEEE 1394
+Host Controller [1106:3044] (rev 46) (prog-if 10 [OHCI])
+        Subsystem: VIA Technologies, Inc. IEEE 1394 Host Controller [1106:3044]
+        Flags: bus master, stepping, medium devsel, latency 64, IRQ 19
+        Memory at fdeff000 (32-bit, non-prefetchable) [size=2K]
+        I/O ports at cf00 [size=128]
+        Capabilities: [50] Power Management version 2
+        Kernel driver in use: firewire_ohci
+
+03:02.0 Ethernet controller [0200]: Realtek Semiconductor Co., Ltd.
+RTL-8139/8139C/8139C+ [10ec:8139] (rev 10)
+        Subsystem: Realtek Semiconductor Co., Ltd. RT8139 [10ec:8139]
+        Flags: bus master, medium devsel, latency 32, IRQ 17
+        I/O ports at cc00 [size=256]
+        Memory at fdefe000 (32-bit, non-prefetchable) [size=256]
+        Capabilities: [50] Power Management version 2
+        Kernel driver in use: 8139too
+
+03:06.0 Ethernet controller [0200]: Realtek Semiconductor Co., Ltd.
+RTL-8110SC/8169SC Gigabit Ethernet [10ec:8167] (rev 10)
+        Subsystem: Micro-Star International Co., Ltd. P965 Neo MS-7235
+mainboard [1462:235c]
+        Flags: bus master, 66MHz, medium devsel, latency 64, IRQ 18
+        I/O ports at ca00 [size=256]
+        Memory at fdefd000 (32-bit, non-prefetchable) [size=256]
+        [virtual] Expansion ROM at fdd00000 [disabled] [size=128K]
+        Capabilities: [dc] Power Management version 2
+        Kernel driver in use: r8169
+
+Base System Installation Checklist:
+[O] = OK, [E] = Error (please elaborate below), [ ] = didn't try it
+
+Initial boot:           [O]
+Detect network card:    [O]
+Configure network:      [O]
+Detect CD:              [O]
+Load installer modules: [O]
+Detect hard drives:     [E]
+Partition hard drives:  [O]
+Install base system:    [O]
+Clock/timezone setup:   [O]
+User/password setup:    [O]
+Install tasks:          [O]
+Install boot loader:    [O]
+Overall install:        [ ]
+
+Comments/Problems:
+1. Hard drive connected to ICH8 controller wasn't detected. After
+installation the kernel (2.6.24-1-686 and 2.6.22-3-686) detected
+controller but codn't work with it. Probem was solved by downloading
+sorces of kernel 2.6.24.4 and building/installing it on system.
+Installation has been made on SATA HDD connected to JMicron
+controller.
+2. Some packages that were in etch was not found using KPackage under
+KDE but can be installed using apt-get (maybe not full or not
+recognizable links in source.list). I've tryed to add the Etch DVDs to
+sources using apt-cdrom, but it didn't help.
+content of sources.list:
+deb cdrom:[Debian GNU/Linux 4.0 r0 _Etch_ - Official i386 DVD Binary-3
+20070407-11:40]/ etch contrib main
+deb cdrom:[Debian GNU/Linux 4.0 r0 _Etch_ - Official i386 DVD Binary-2
+20070407-11:40]/ etch contrib main
+deb cdrom:[Debian GNU/Linux 4.0 r0 _Etch_ - Official i386 DVD Binary-1
+20070407-11:40]/ etch contrib main
+deb http://ftp.de.debian.org/debian/ lenny main non-free contrib
+deb-src http://ftp.de.debian.org/debian/ lenny main non-free contrib
+deb http://security.debian.org/ lenny/updates main contrib non-free
+deb-src http://security.debian.org/ lenny/updates main contrib non-free
+deb http://ftp.debian.org/debian/ lenny main non-free contrib
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

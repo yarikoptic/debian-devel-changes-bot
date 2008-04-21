@@ -1,0 +1,150 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 20:19:22 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnf4A-0000fQ-4A
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 20:19:22 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id F233413A522A; Sun, 20 Apr 2008 19:19:08 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.9 required=4.0 tests=BAYES_00,FOURLA,
+	MURPHY_DRUGS_REL8,RCVD_IN_DNSWL_LOW autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id E837B13A513F;
+	Sun, 20 Apr 2008 19:18:53 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnf1z-0006ia-OI; Sun, 20 Apr 2008 19:16:56 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#470676: large input data can cause s/// segfault
+Reply-To: Niko Tyni <ntyni@debian.org>, 470676@bugs.debian.org
+Resent-From: Niko Tyni <ntyni@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Brendan O'Dea <bod@debian.org>
+Resent-Date: Sun, 20 Apr 2008 19:16:43 +0000
+Resent-Message-ID: <handler.470676.B470676.120871864610408@bugs.debian.org>
+X-Debian-PR-Message: report 470676
+X-Debian-PR-Package: perl
+X-Debian-PR-Keywords: security
+X-Debian-PR-Source: perl
+Received: via spool by 470676-submit@bugs.debian.org id=B470676.120871864610408
+          (code B ref 470676); Sun, 20 Apr 2008 19:16:43 +0000
+Received: (at 470676) by bugs.debian.org; 20 Apr 2008 19:10:46 +0000
+X-Amavis-Spam-Status: No, score=-10.7 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,FROMDEVELOPER,HAS_BUG_NUMBER,MURPHY_DRUGS_REL8,
+	VALID_BTS_CONTROL autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from emh03.mail.saunalahti.fi ([62.142.5.109])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <ntyni@cc.helsinki.fi>)
+	id 1Jnew1-0002fG-CN; Sun, 20 Apr 2008 19:10:45 +0000
+Received: from saunalahti-vams (vs3-10.mail.saunalahti.fi [62.142.5.94])
+	by emh03-2.mail.saunalahti.fi (Postfix) with SMTP id 593CC19E67B;
+	Sun, 20 Apr 2008 22:10:44 +0300 (EEST)
+Received: from emh07.mail.saunalahti.fi ([62.142.5.117])
+	by vs3-10.mail.saunalahti.fi ([62.142.5.94])
+	with SMTP (gateway) id A025A54F505; Sun, 20 Apr 2008 22:10:44 +0300
+Received: from rebekka.invalid (a88-112-25-193.elisa-laajakaista.fi [88.112.25.193])
+	by emh07.mail.saunalahti.fi (Postfix) with ESMTP id 31A8B1C639C;
+	Sun, 20 Apr 2008 22:10:40 +0300 (EEST)
+Received: from niko by rebekka.invalid with local (Exim 4.63)
+	(envelope-from <ntyni@cc.helsinki.fi>)
+	id 1Jnevw-0001eA-48; Sun, 20 Apr 2008 22:10:40 +0300
+Date: Sun, 20 Apr 2008 22:10:40 +0300
+From: Niko Tyni <ntyni@debian.org>
+To: 470676@bugs.debian.org
+Cc: Joey Hess <joeyh@debian.org>, team@security.debian.org
+Message-ID: <20080420191040.GA5532@rebekka>
+References: <20080312192736.GA28018@kodama.kitenet.net> <20080313115040.GA1441@ngolde.de> <20080313123448.GB7826@rebekka>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20080313123448.GB7826@rebekka>
+User-Agent: Mutt/1.5.13 (2006-08-11)
+X-Antivirus: VAMS
+Resent-Date: Sun, 20 Apr 2008 19:16:55 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343742
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -33.4
+X-Spam-Report: (-33.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	19 AWL                    AWL: From: address is in the auto white-list
+
+close 470676 5.10.0-1
+tag 470676 etch
+thanks
+
+On Thu, Mar 13, 2008 at 02:34:48PM +0200, Niko Tyni wrote:
+
+> These both look like #466298: the stack blows because the regexp engine
+> is recursive in the 5.8 series. From the 5.10.0 changelog:
+> 
+> [ 27598] By: davem                                 on 2006/03/24  23:05:11
+>         Log: make S_regmatch() iterative rather than recursive.
+>              Goodbye stack-bustng regexes!
+>      Branch: perl
+>            ! regexec.c
+> 
+> Indeed, the examples given don't crash on 5.10.0, and growing RLIMIT_STACK
+> (eg. 'ulimit -s unlimited') makes them go away on 5.8.8.
+
+Core dumps confirm this, so I'm closing this at 5.10.0-1
+(fixed-in-experimental until the release team says the word).
+
+Joey Hess wrote:
+
+> I've filed this bug at severity serious, as since the crash is based on
+> the input data, it could potentially be used in a denial of service
+> attack.
+
+I don't really think this should be fixed for Etch, the change is too
+invasive for that. Other opinions are of course welcome; CCing the
+security team.
+
+FWIW, the change is not going to be ported to the maint-5.8 branch
+upstream (see http://rt.perl.org/rt3/Public/Bug/Display.html?id=40654)
+and the bleadperl change doesn't apply cleanly against 5.8.8 (13 out of
+47 hunks FAILED), so porting it would not be a trivial task.
+
+The patch can be found for example at
+
+ http://www.nntp.perl.org/group/perl.perl5.changes/2006/03/msg15410.html
+
+ regexec.c |  654 +++++++++++++++++++++++++++++++++++++++++++++++---------------
+ 1 file changed, 502 insertions(+), 152 deletions(-)
+
+Cheers,
+-- 
+Niko Tyni   ntyni@debian.org
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

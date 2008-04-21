@@ -1,0 +1,126 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 05:44:55 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnRQ2-0005La-2W
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 05:44:55 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 7EC8613A4C04; Sun, 20 Apr 2008 04:44:48 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.9 required=4.0 tests=BAYES_00,FOURLA,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 7DC4113A4C08;
+	Sun, 20 Apr 2008 04:44:34 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnRNM-0006km-DT; Sun, 20 Apr 2008 04:42:04 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476902: debian-installer: Progress bar resizing NTFS partitions doesn't function
+Reply-To: Andrew Moise <chops@demiurgestudios.com>, 476902@bugs.debian.org
+Resent-From: Andrew Moise <chops@demiurgestudios.com>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian Install System Team <debian-boot@lists.debian.org>
+Resent-Date: Sun, 20 Apr 2008 04:42:01 +0000
+Resent-Message-ID: <handler.476902.B.120866632016189@bugs.debian.org>
+X-Debian-PR-Message: report 476902
+X-Debian-PR-Package: debian-installer
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: debian-installer
+Received: via spool by submit@bugs.debian.org id=B.120866632016189
+          (code B ref -1); Sun, 20 Apr 2008 04:42:01 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 04:38:40 +0000
+X-Amavis-Spam-Status: No, score=-9.8 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,HAS_PACKAGE autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from smtp02.lnh.mail.rcn.net ([207.172.157.102])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <chops@demiurgestudios.com>)
+	id 1JnRK4-0004CK-D6
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 04:38:40 +0000
+Received: from mr02.lnh.mail.rcn.net ([207.172.157.22])
+  by smtp02.lnh.mail.rcn.net with ESMTP; 20 Apr 2008 00:38:40 -0400
+Received: from smtp01.lnh.mail.rcn.net (smtp01.lnh.mail.rcn.net [207.172.4.11])
+	by mr02.lnh.mail.rcn.net (MOS 3.8.6-GA)
+	with ESMTP id OOU14656;
+	Sun, 20 Apr 2008 00:38:34 -0400 (EDT)
+Received: from 207-180-187-6.c3-0.smr-ubr3.sbo-smr.ma.cable.rcn.com (HELO mole.internal.demiurgestudios.com) ([207.180.187.6])
+  by smtp01.lnh.mail.rcn.net with ESMTP; 20 Apr 2008 00:38:34 -0400
+Received: by mole.internal.demiurgestudios.com (Postfix, from userid 501)
+	id 3E35341E4C2; Sun, 20 Apr 2008 00:38:32 -0400 (EDT)
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Andrew Moise <chops@demiurgestudios.com>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Message-ID: <20080420043831.19661.46517.reportbug@www.burstnet.com>
+X-Mailer: reportbug 3.39-0.1
+Date: Sun, 20 Apr 2008 00:38:31 -0400
+X-Junkmail-Status: score=10/50, host=mr02.lnh.mail.rcn.net
+X-Junkmail-SD-Raw: score=unknown,
+	refid=str=0001.0A010205.480AC8CF.0096,ss=1,fgs=0,
+	ip=207.172.4.11,
+	so=2007-10-30 19:00:17,
+	dmn=5.4.3/2007-11-16
+X-Junkmail-IWF: false
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 04:42:04 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343329
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -33.6
+X-Spam-Report: (-33.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	19 AWL                    AWL: From: address is in the auto white-list
+
+Package: debian-installer
+Version: 20080419-19:02
+Severity: normal
+
+  I installed Debian using the win32 installer from
+goodbye-microsoft.com, and while resizing my NTFS partition the progress
+bar stayed at 0% until the operation was completed.  This is especially
+problematic because immediately before, the installer warns that
+resizing partitions may take a very long time, and it does :-).
+  Cheers.
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (500, 'unstable'), (1, 'experimental')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.24-1-686 (SMP w/1 CPU core)
+Locale: LANG=en_US.UTF-8, LC_CTYPE=en_US.UTF-8 (charmap=UTF-8)
+Shell: /bin/sh linked to /bin/bash
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

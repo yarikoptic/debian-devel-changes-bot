@@ -1,0 +1,126 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 21:13:05 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnfuH-0000uA-66
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 21:13:05 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 2A0C713A52DB; Sun, 20 Apr 2008 20:13:00 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.9 required=4.0 tests=BAYES_00,FOURLA,
+	RCVD_IN_DNSWL_LOW autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 9204013A51F3;
+	Sun, 20 Apr 2008 20:12:49 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnftV-0005jt-De; Sun, 20 Apr 2008 20:12:13 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#477081: ttf-freefont: FreeSerif shows characters st with curve on top
+Reply-To: Bin Guo <bin.guo@comcast.net>, 477081@bugs.debian.org
+Resent-From: Bin Guo <bin.guo@comcast.net>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian Fonts Task Force <pkg-fonts-devel@lists.alioth.debian.org>
+Resent-Date: Sun, 20 Apr 2008 20:12:03 +0000
+Resent-Message-ID: <handler.477081.B.120872215226276@bugs.debian.org>
+X-Debian-PR-Message: report 477081
+X-Debian-PR-Package: ttf-freefont
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: ttf-freefont
+Received: via spool by submit@bugs.debian.org id=B.120872215226276
+          (code B ref -1); Sun, 20 Apr 2008 20:12:03 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 20:09:12 +0000
+X-Amavis-Spam-Status: No, score=-8.1 required=4.0 tests=BAYES_00,DNS_FROM_RFC_POST,
+	FORGED_RCVD_HELO,FOURLA,HAS_PACKAGE autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from qmta03.westchester.pa.mail.comcast.net ([76.96.62.32])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <bin.guo@comcast.net>)
+	id 1Jnfqa-0006mW-Hn
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 20:09:12 +0000
+Received: from OMTA10.westchester.pa.mail.comcast.net ([76.96.62.28])
+	by QMTA03.westchester.pa.mail.comcast.net with comcast
+	id Frpw1Z0090cZkys530R000; Sun, 20 Apr 2008 20:07:24 +0000
+Received: from athlon64x2.gb2312.dyndns.org ([24.147.235.88])
+	by OMTA10.westchester.pa.mail.comcast.net with comcast
+	id Fw931Z00F1v6eDk3W00000; Sun, 20 Apr 2008 20:09:04 +0000
+X-Authority-Analysis: v=1.0 c=1 a=0DfsuTiDl7oA:10 a=tpFE5Hk8s7UA:10
+ a=-3Jdswah6geIrKm1fvYA:9 a=nJ71HlSgoa1W4KPyaPAA:7
+ a=qmbBY63i1tLsWkGqTgQBNuPMsroA:4 a=ok68_o4NJqgA:10
+Received: from guobin by athlon64x2.gb2312.dyndns.org with local (Exim 4.69)
+	(envelope-from <bin.guo@comcast.net>)
+	id 1JnfqR-0002Za-0E; Sun, 20 Apr 2008 16:09:03 -0400
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Bin Guo <bin.guo@comcast.net>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Message-ID: <20080420200902.9702.89928.reportbug@athlon64x2.gb2312.dyndns.org>
+X-Mailer: reportbug 3.39-0.1
+Date: Sun, 20 Apr 2008 16:09:02 -0400
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 20:12:13 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343766
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.5
+X-Spam-Report: (-52.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+Package: ttf-freefont
+Version: 20080323-3
+Severity: normal
+
+
+After upgrading today (iceweasel 2.0.0.14-1), I noticed strange curves
+on top of "st" characters. Other fonts are OK. I remember this happened
+a long long time ago too bug got fixed.
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (500, 'unstable')
+Architecture: amd64 (x86_64)
+
+Kernel: Linux 2.6.24-1-amd64 (SMP w/2 CPU cores)
+Locale: LANG=en_US.UTF-8, LC_CTYPE=en_US.UTF-8 (charmap=UTF-8)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages ttf-freefont depends on:
+ii  defoma                       0.11.10-0.2 Debian Font Manager -- automatic f
+
+Versions of packages ttf-freefont recommends:
+ii  x-ttcidfont-conf              27         TrueType and CID fonts configurati
+
+-- no debconf information
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

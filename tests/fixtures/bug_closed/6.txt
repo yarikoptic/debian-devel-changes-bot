@@ -1,0 +1,368 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 14:10:39 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnZJL-00075D-IX
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 14:10:39 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id DC5B613A4F87; Sun, 20 Apr 2008 13:10:25 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id E4D6113A4FD0;
+	Sun, 20 Apr 2008 13:10:21 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnZFB-0002Zq-El; Sun, 20 Apr 2008 13:06:09 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Gerrit Pape <pape@smarden.org>
+Subject: Bug#469253: marked as done (dash: [INTL:fr] French debconf 
+ templates translation update)
+Message-ID: <handler.469253.D469253.12086965671484.ackdone@bugs.debian.org>
+References: <E1JnYwh-0007H5-Av@ries.debian.org>
+ <20080304080242.16528.3101.reportbug@mykerinos.onera>
+X-Debian-PR-Message: closed 469253
+X-Debian-PR-Package: dash
+X-Debian-PR-Keywords: l10n patch
+X-Debian-PR-Source: dash
+Content-Type: multipart/mixed; boundary="----------=_1208696769-9876-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 13:06:09 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <S0q6Oe7kWfP.A.Wn.BD0CIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/132988
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 13:10:25 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208696769-9876-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 12:47:03 +0000
+with message-id <E1JnYwh-0007H5-Av@ries.debian.org>
+and subject line Bug#469253: fixed in dash 0.5.4-9
+has caused the Debian Bug report #469253,
+regarding dash: [INTL:fr] French debconf templates translation update
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+469253: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D469253
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208696769-9876-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 4 Mar 2008 08:02:50 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-10.5 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,FROMDEVELOPER,HAS_PACKAGE,IMPRONONCABLE_1,MURPHY_DRUGS_REL8,
+	MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <bubulle@debian.org>
+Received: from coi78-1-88-169-112-155.fbx.proxad.net ([88.169.112.155] helo=kheops.perrier.eu.org)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <bubulle@debian.org>)
+	id 1JWS6r-0006zS-Lq
+	for submit@bugs.debian.org; Tue, 04 Mar 2008 08:02:50 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by kheops.perrier.eu.org (Postfix) with ESMTP id AD59E4F99B;
+	Tue,  4 Mar 2008 09:02:43 +0100 (CET)
+Received: from kheops.perrier.eu.org ([127.0.0.1])
+	by localhost (kheops.kheops.frmug.org [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id VsYtQVk8a2zt; Tue,  4 Mar 2008 09:02:43 +0100 (CET)
+Received: from cc-mykerinos.onera (mykerinos.onera [125.1.20.64])
+	by kheops.perrier.eu.org (Postfix) with ESMTP id 2B8C54F982;
+	Tue,  4 Mar 2008 09:02:43 +0100 (CET)
+Received: by mykerinos.kheops.frmug.org (Postfix, from userid 1000)
+	id 8FD9E40A0BA; Tue,  4 Mar 2008 09:02:42 +0100 (CET)
+Content-Type: multipart/mixed; boundary="===============1963141269=="
+MIME-Version: 1.0
+From: Christian Perrier <bubulle@debian.org>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Subject: dash: [INTL:fr] French debconf templates translation update
+Message-ID: <20080304080242.16528.3101.reportbug@mykerinos.onera>
+X-Mailer: reportbug 3.39
+Date: Tue, 04 Mar 2008 09:02:42 +0100
+X-Debbugs-Cc: 
+Delivered-To: submit@bugs.debian.org
+
+This is a multi-part MIME message sent by reportbug.
+
+
+--===============1963141269==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+Package: dash
+Version: N/A
+Severity: wishlist
+Tags: patch l10n
+
+Please find attached the french debconf templates update, proofread by the
+debian-l10n-french mailing list contributors.
+
+Thanks for taking care of warning translators before uploading a new
+version with string changes. It's highly appreciated.
+
+
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (500, 'unstable')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.24-1-686 (SMP w/1 CPU core)
+Locale: LANG=fr_FR.UTF-8, LC_CTYPE=fr_FR.UTF-8 (charmap=UTF-8)
+Shell: /bin/sh linked to /bin/dash
+
+--===============1963141269==
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Disposition: attachment; filename="fr.po"
+Content-Transfer-Encoding: quoted-printable
+
+# Translation of dash debconf templates to French
+# Copyright (C) 2008 Christian Perrier <bubulle@debian.org>
+# This file is distributed under the same license as the dash package.
+#
+# Denis Barbier <barbier@debian.org>, 2003-2006.
+# Cyril Brulebois <cyril.brulebois@enst-bretagne.fr>, 2007.
+# Christian Perrier <bubulle@debian.org>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: dash@packages.debian.org\n"
+"POT-Creation-Date: 2008-03-02 21:54+0000\n"
+"PO-Revision-Date: 2008-03-04 09:01+0100\n"
+"Last-Translator: Christian Perrier <bubulle@debian.org>\n"
+"Language-Team: French <debian-l10n-french@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=3DUTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#. Type: boolean
+#. Description
+#: ../dash.templates.in:1001
+msgid "Install dash as /bin/sh?"
+msgstr "Faut-il mettre en place un lien de /bin/sh vers dash=C2=A0?"
+
+#. Type: boolean
+#. Description
+#: ../dash.templates.in:1001
+msgid "The default /bin/sh shell on Debian and Debian-based systems is ba=
+sh."
+msgstr ""
+"Par d=C3=A9faut, sur un syst=C3=A8me Debian ou un syst=C3=A8me bas=C3=A9=
+ sur Debian , /bin/sh "
+"est un lien vers bash."
+
+#. Type: boolean
+#. Description
+#: ../dash.templates.in:1001
+#| msgid ""
+#| "However, since the distribution policy requires all shell scripts usi=
+ng /"
+#| "bin/sh to be POSIX compliant, any shell that conforms to POSIX, such =
+as "
+#| "dash, can serve as /bin/sh. You may wish to do this because dash is "
+#| "faster and smaller than bash."
+msgid ""
+"However, since the default shell is required to be POSIX-compliant, any =
+"
+"shell that conforms to POSIX, such as dash, can serve as /bin/sh. You ma=
+y "
+"wish to do this because dash is faster and smaller than bash."
+msgstr ""
+"Cependant, comme l'interpr=C3=A9teur de commandes (=C2=AB=C2=A0shell=C2=A0=
+=C2=BB) par d=C3=A9faut du "
+"syst=C3=A8me doit =C3=AAtre conforme =C3=A0 la norme POSIX, /bin/sh peut=
+ =C3=AAtre n'importe "
+"quel interpr=C3=A9teur de commandes conforme =C3=A0 cette norme, notamme=
+nt dash. Il "
+"peut =C3=AAtre pr=C3=A9f=C3=A9rable de choisir cette option car dash est=
+ plus rapide et "
+"plus petit que bash."
+
+--===============1963141269==--
+
+
+
+------------=_1208696769-9876-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 469253-close) by bugs.debian.org; 20 Apr 2008 13:02:47 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.7 required=4.0 tests=BAYES_00,FOURLA,
+	FVGT_m_MULTI_ODD,HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_2,
+	MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnZBu-0000Nn-Nj
+	for 469253-close@bugs.debian.org; Sun, 20 Apr 2008 13:02:46 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnYwh-0007H5-Av; Sun, 20 Apr 2008 12:47:03 +0000
+From: Gerrit Pape <pape@smarden.org>
+To: 469253-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#469253: fixed in dash 0.5.4-9
+Message-Id: <E1JnYwh-0007H5-Av@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 12:47:03 +0000
+Content-Transfer-Encoding: quoted-printable
+
+Source: dash
+Source-Version: 0.5.4-9
+
+We believe that the bug you reported is fixed in the latest version of
+dash, which is due to be installed in the Debian FTP archive:
+
+ash_0.5.4-9_all.deb
+  to pool/main/d/dash/ash_0.5.4-9_all.deb
+dash_0.5.4-9.diff.gz
+  to pool/main/d/dash/dash_0.5.4-9.diff.gz
+dash_0.5.4-9.dsc
+  to pool/main/d/dash/dash_0.5.4-9.dsc
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 469253@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Gerrit Pape <pape@smarden.org> (supplier of updated dash package)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Thu, 17 Apr 2008 20:34:15 +0000
+Source: dash
+Binary: dash ash
+Architecture: all source
+Version: 0.5.4-9
+Distribution: unstable
+Urgency: low
+Maintainer: Gerrit Pape <pape@smarden.org>
+Changed-By: Gerrit Pape <pape@smarden.org>
+Description:=20
+ ash        - compatibility package for dash
+ dash       - POSIX-compliant shell
+Closes: 469253 469466 469755 470914
+Changes:=20
+ dash (0.5.4-9) unstable; urgency=3Dlow
+ .
+   * debian/diff/0046-Fix-bitwise-AND-and-OR-operator-parsing.diff: new:
+     Fix bitwise AND and OR operator parsing (closes: #470914).
+   * debian/dash.menu: change menu section from Apps/Shells to
+     Applications/Shells (thx Christian Perrier).
+   * debian/po/fr.po: [INTL:fr] French debconf templates translation upda=
+te
+     (thx Christian Perrier, closes: #469253).
+   * debian/po/fi.po: [INTL:fi] Updated Finnish translation of the debcon=
+f
+     templates (thx Esko Araj=C3=A4rvi, closes: #469466).
+   * debian/po/de.po: [INTL:de] updated German debconf translation (thx
+     Helge Kreutzmann, closes: #469755).
+Checksums-Sha1:=20
+ 45570909c9a0291d3c1375f546437edc064b3b3c 955 dash_0.5.4-9.dsc
+ b7eb03509704fbc287898ffb8b879a4283bb1ce1 125513 dash_0.5.4-9.diff.gz
+ 48642e343eaf9b0f7fe680f8ca3dc799c91aba73 20784 ash_0.5.4-9_all.deb
+Checksums-Sha256:=20
+ 4fe96afdc7caca12621f1198051bedb36a97b2a137aa3989c4b14cde1f309f01 955 das=
+h_0.5.4-9.dsc
+ 4af8d755cb04913527679b135127df283d2e353193aee0dddf0e01393ece97d8 125513 =
+dash_0.5.4-9.diff.gz
+ f59e06d21b9e7d0c857e3e893693509c111918e665ccff3196a57934f9fd3fb0 20784 a=
+sh_0.5.4-9_all.deb
+Files:=20
+ 32d9a376ca1b9a9b531df61d4f7420c9 955 shells optional dash_0.5.4-9.dsc
+ 0a2b31f6e8aafb1fffc04e4ddd897b66 125513 shells optional dash_0.5.4-9.dif=
+f.gz
+ f649983f0aea7c6e27000de85419da1b 20784 shells optional ash_0.5.4-9_all.d=
+eb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIB7lfGJoyQbxwpv8RAtLWAJ42u7qxCJfA4y57bx/HZvtPUqQZ5wCfbuZz
+CjTbtW4Jjvo3M2pR8Or9dFs=3D
+=3D8RFf
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208696769-9876-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

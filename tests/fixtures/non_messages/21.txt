@@ -1,0 +1,138 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 17:49:07 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jncis-0008Kk-Va
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 17:49:07 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id A20AD13A4ECD; Sun, 20 Apr 2008 16:49:01 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-6.9 required=4.0 tests=BAYES_00,FOURLA,LDO_WHITELIST,
+	MIXEDBDN,MURPHY_DRUGS_REL8,RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 8CB3713A4BFF;
+	Sun, 20 Apr 2008 16:48:52 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnci1-0005xa-48; Sun, 20 Apr 2008 16:48:09 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476882: stellarium: black screen after startup
+Reply-To: Heine Larsen <heine@skjulhoj.dk>, 476882@bugs.debian.org
+Resent-From: Heine Larsen <heine@skjulhoj.dk>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: =?UTF-8?Q?C=C3=A9dric?= Delfosse <cedric@debian.org>
+Resent-Date: Sun, 20 Apr 2008 16:48:08 +0000
+Resent-Message-ID: <handler.476882.B476882.120870940128569@bugs.debian.org>
+X-Debian-PR-Message: report 476882
+X-Debian-PR-Package: stellarium
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: stellarium
+Received: via spool by 476882-submit@bugs.debian.org id=B476882.120870940128569
+          (code B ref 476882); Sun, 20 Apr 2008 16:48:08 +0000
+Received: (at 476882) by bugs.debian.org; 20 Apr 2008 16:36:41 +0000
+X-Amavis-Spam-Status: No, score=-1.4 required=4.0 tests=BAYES_00,FOURLA,MIXEDBDN,
+	MURPHY_DRUGS_REL8,RCVD_IN_NIX1 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from smtp1.cybercity.dk ([212.242.43.251])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <heine@skjulhoj.dk>)
+	id 1JncWK-0007FR-Ce
+	for 476882@bugs.debian.org; Sun, 20 Apr 2008 16:36:04 +0000
+Received: from uf3.cybercity.dk (uf3.cybercity.dk [212.242.41.41])
+	by smtp1.cybercity.dk (Postfix) with ESMTP id 80A675868A3
+	for <476882@bugs.debian.org>; Sun, 20 Apr 2008 18:36:01 +0200 (CEST)
+Received: from rigel (62.79.6.6.adsl.van.tiscali.dk [62.79.6.6])
+	by uf3.cybercity.dk (Postfix) with ESMTP id 607992730E2
+	for <476882@bugs.debian.org>; Sun, 20 Apr 2008 18:36:01 +0200 (CEST)
+Received: from vega.skjulhoj.dk ([192.168.1.7] ident=heine)
+	by rigel with esmtp (Exim 4.69)
+	(envelope-from <heine@skjulhoj.dk>)
+	id 1JncWH-0000I7-1l
+	for 476882@bugs.debian.org; Sun, 20 Apr 2008 18:36:01 +0200
+Message-ID: <480B70F0.9010506@skjulhoj.dk>
+Date: Sun, 20 Apr 2008 18:36:00 +0200
+From: Heine Larsen <heine@skjulhoj.dk>
+User-Agent: Mozilla-Thunderbird 2.0.0.12 (X11/20080406)
+MIME-Version: 1.0
+To: 476882@bugs.debian.org
+Content-Type: multipart/mixed;
+ boundary="------------040603050301040100050507"
+Resent-Date: Sun, 20 Apr 2008 16:48:09 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343647
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.6
+X-Spam-Report: (-52.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+This is a multi-part message in MIME format.
+--------------040603050301040100050507
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 7bit
+
+I can confirm the black screen after startup of stellarium.
+
+I use locale "da_DK.UTF-8", but if it is set to "C", then stellarium runs fine:
+
+LANG=C stellarium
+
+Even just setting LC_NUMERIC helps:
+
+LC_NUMERIC=C stellarium
+
+This could be a problem with reading non-localized numeric datafiles with an 
+active locale set.
+The application handles some aspects of locale setting in
+src/stelutils/Translator.cpp and the attached patch adds a call to set
+the locale for number formatting to "C".
+
+
+--------------040603050301040100050507
+Content-Type: text/x-diff;
+ name="locale_numeric.patch"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline;
+ filename="locale_numeric.patch"
+
+--- stellarium-0.9.1.orig/src/stelutils/Translator.cpp
++++ stellarium-0.9.1/src/stelutils/Translator.cpp
+@@ -140,6 +140,7 @@
+ #else
+ 	setlocale(LC_CTYPE,"");
+ #endif
++	setlocale(LC_NUMERIC, "C");
+ 	assert(domain=="stellarium");
+ 	QString result = bind_textdomain_codeset(domain.toUtf8().constData(), "UTF-8");
+ 	assert(result=="UTF-8");
+
+--------------040603050301040100050507--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

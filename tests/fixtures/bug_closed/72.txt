@@ -1,0 +1,314 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 18:41:10 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1JndXC-00009q-Rg
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 18:41:10 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id D596E13A50D1; Sun, 20 Apr 2008 17:41:01 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 6A30513A50C9;
+	Sun, 20 Apr 2008 17:41:00 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JndVJ-0008He-Fj; Sun, 20 Apr 2008 17:39:05 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: =?UTF-8?Q?Gon=C3=A9ri?= Le Bouder <goneri@rulezlan.org>
+Subject: Bug#457726: marked as done (Don't assume male user in package 
+ description)
+Message-ID: <handler.457726.D457726.120871278231560.ackdone@bugs.debian.org>
+References: <E1JndOY-00070m-2A@ries.debian.org>
+ <200712250243.27066.da-deb@weeno.net>
+X-Debian-PR-Message: closed 457726
+X-Debian-PR-Package: gamine
+X-Debian-PR-Source: gamine
+Content-Type: multipart/mixed; boundary="----------=_1208713145-31803-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 17:39:05 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <iwmr2G-dWL.A.psE.tA4CIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/133058
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 17:41:01 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208713145-31803-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 17:32:06 +0000
+with message-id <E1JndOY-00070m-2A@ries.debian.org>
+and subject line Bug#457726: fixed in gamine 0.0.1-3
+has caused the Debian Bug report #457726,
+regarding Don't assume male user in package description
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+457726: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D457726
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208713145-31803-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 25 Dec 2007 01:43:36 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.9 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	HAS_PACKAGE autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <da-deb@weeno.net>
+Received: from smtp5-g19.free.fr ([212.27.42.35])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <da-deb@weeno.net>)
+	id 1J6ypT-0005Yj-QM
+	for submit@bugs.debian.org; Tue, 25 Dec 2007 01:43:36 +0000
+Received: from smtp5-g19.free.fr (localhost.localdomain [127.0.0.1])
+	by smtp5-g19.free.fr (Postfix) with ESMTP id 3F6F83F6154
+	for <submit@bugs.debian.org>; Tue, 25 Dec 2007 02:43:32 +0100 (CET)
+Received: from doch.local (tanneries.squat.net [82.226.47.33])
+	by smtp5-g19.free.fr (Postfix) with ESMTP id 202F43F6148
+	for <submit@bugs.debian.org>; Tue, 25 Dec 2007 02:43:32 +0100 (CET)
+From: David Ammouial <da-deb@weeno.net>
+To: submit@bugs.debian.org
+Subject: Don't assume male user in package description
+Date: Tue, 25 Dec 2007 02:43:26 +0100
+User-Agent: KMail/1.9.7
+X-Face: ]SX>@::/@(;bIJSLp?tu'vm&{Q=(T1L_wI)+bH6EY$^PkY|:Fa4VBhLG#EtcZ.#F==O~-v
+	k!A2|wMxaLC|=iA#V$[r(C..3&<fJ-B|E2&SKUivW[C%BXG8AGcfZ5YN8W`r
+MIME-Version: 1.0
+Message-Id: <200712250243.27066.da-deb@weeno.net>
+Content-Type: multipart/signed;
+  boundary="nextPart1583920.pz3UY3vm4A";
+  protocol="application/pgp-signature";
+  micalg=pgp-sha1
+Content-Transfer-Encoding: 7bit
+Delivered-To: submit@bugs.debian.org
+
+--nextPart1583920.pz3UY3vm4A
+Content-Type: text/plain;
+  charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+Package: gamine
+Severity: minor
+
+Hi,
+
+The current description reads: 'The child uses his mouse to draw colored do=
+t=20
+and line on the screen.'.
+Please don't assume the user to be a male. Instead use a gender-agnostic=20
+pronoun or article. I suggest 'The child uses the mouse to [...]'.
+
+By the way, shouldn't the sentence continue as '[...] colored dots and
+lines [...]'? I didn't try the program, though, so I don't know what is=20
+supposed to be drawn. :)
+
+Regards.
+=2D-=20
+David Ammouial
+http://da.weeno.net/
+
+--nextPart1583920.pz3UY3vm4A
+Content-Type: application/pgp-signature; name=signature.asc 
+Content-Description: This is a digitally signed message part.
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQBHcGA/hBy3348EyI4RAjvkAKDTNu4Zoc9MdXWcFWH0stHxrxjwVACfW4KM
+p/qCn3ow7onTWvSkgEX/jjU=
+=x2tn
+-----END PGP SIGNATURE-----
+
+--nextPart1583920.pz3UY3vm4A--
+
+
+
+------------=_1208713145-31803-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 457726-close) by bugs.debian.org; 20 Apr 2008 17:33:02 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.7 required=4.0 tests=BAYES_00,FVGT_m_MULTI_ODD,
+	HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_2,MURPHY_WRONG_WORD1,
+	MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JndPR-0008Aw-BC
+	for 457726-close@bugs.debian.org; Sun, 20 Apr 2008 17:33:01 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JndOY-00070m-2A; Sun, 20 Apr 2008 17:32:06 +0000
+From: =?utf-8?q?Gon=C3=A9ri_Le_Bouder?= <goneri@rulezlan.org>
+To: 457726-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#457726: fixed in gamine 0.0.1-3
+Message-Id: <E1JndOY-00070m-2A@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 17:32:06 +0000
+Content-Transfer-Encoding: quoted-printable
+
+Source: gamine
+Source-Version: 0.0.1-3
+
+We believe that the bug you reported is fixed in the latest version of
+gamine, which is due to be installed in the Debian FTP archive:
+
+gamine-data_0.0.1-3_all.deb
+  to pool/main/g/gamine/gamine-data_0.0.1-3_all.deb
+gamine_0.0.1-3.diff.gz
+  to pool/main/g/gamine/gamine_0.0.1-3.diff.gz
+gamine_0.0.1-3.dsc
+  to pool/main/g/gamine/gamine_0.0.1-3.dsc
+gamine_0.0.1-3_sparc.deb
+  to pool/main/g/gamine/gamine_0.0.1-3_sparc.deb
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 457726@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Gon=C3=A9ri Le Bouder <goneri@rulezlan.org> (supplier of updated gamine p=
+ackage)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 18:40:20 +0200
+Source: gamine
+Binary: gamine gamine-data
+Architecture: source all sparc
+Version: 0.0.1-3
+Distribution: unstable
+Urgency: low
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Changed-By: Gon=C3=A9ri Le Bouder <goneri@rulezlan.org>
+Description:=20
+ gamine     - an interactive game for young children
+ gamine-data - data files for gamine game
+Closes: 456484 457726
+Changes:=20
+ gamine (0.0.1-3) unstable; urgency=3Dlow
+ .
+   [ Gon=C3=A9ri Le Bouder ]
+   * Fix the copyright file since Sam Hocevar name had been removed from =
+it by
+     the author in the initial tarball.
+   * Use the upstream icon instead of mine.
+   * Bump standard version to 3.7.3, no change
+ .
+   [ Cyril Brulebois ]
+   * Improve long descriptions, thanks to David Ammouial for the suggesti=
+ons
+     (Closes: #457726).
+ .
+   [ Evgeni Golov ]
+   * debian/control: add missing path to Vcs-* fields
+   * fix the watch file (Closes: #456484)
+Checksums-Sha1:=20
+ 3b8fab3cce6538efd47d2925f228bdf1bdc87733 1267 gamine_0.0.1-3.dsc
+ 166dddb7caf4ed4f79027aa6d82daf4b4283d82f 7274 gamine_0.0.1-3.diff.gz
+ b2ee7980aedd62cafab99dc977b8556e07533aa1 5054266 gamine-data_0.0.1-3_all=
+.deb
+ 8661c7e1b0e4ef5e9d705050665a773d60e5be6e 13394 gamine_0.0.1-3_sparc.deb
+Checksums-Sha256:=20
+ 3456f85f25e6e3112b9bf70fdba2c2d450fee119efd0491fccc1255a65470242 1267 ga=
+mine_0.0.1-3.dsc
+ 75ede2af9b902c35954966fd61ac57420e874895f1f299d42aae49fe16f5ffa6 7274 ga=
+mine_0.0.1-3.diff.gz
+ 4b639a15d1a9cb9c5324454c4d6e2433c14a1e11e953f6f815badfc802d270b1 5054266=
+ gamine-data_0.0.1-3_all.deb
+ afaa7fc192c0e748f609d2dac56e9730b4c520beead0902e5bc66b8612b07fb3 13394 g=
+amine_0.0.1-3_sparc.deb
+Files:=20
+ d2342477d60320780b065f1d32f335d5 1267 games optional gamine_0.0.1-3.dsc
+ c071af5dba95e43133fc1c6c7df0f54f 7274 games optional gamine_0.0.1-3.diff=
+.gz
+ e05ebb52a9352e931931ff4fa3c05c3e 5054266 games optional gamine-data_0.0.=
+1-3_all.deb
+ 513dd1031f516708d9df1b825f7ccb5d 13394 games optional gamine_0.0.1-3_spa=
+rc.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.5 (GNU/Linux)
+
+iD8DBQFIC3r8sKTFpDfZQSwRAgrmAKCDyKcuxYnBBZvIBwMcXnT5GakqZQCfW2M8
+1g5I6R7tZm095HryqGokWOs=3D
+=3D+nko
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208713145-31803-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

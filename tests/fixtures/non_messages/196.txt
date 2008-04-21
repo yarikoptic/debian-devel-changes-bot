@@ -1,0 +1,133 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 11:06:13 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnWQy-00069t-9b
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 11:06:13 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 4CE5B13A4CDE; Sun, 20 Apr 2008 10:06:07 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-3.0 required=4.0 tests=BAYES_00,RCVD_IN_DNSWL_LOW
+	autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id B2B8413A4EA1;
+	Sun, 20 Apr 2008 10:05:54 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnWLX-0000Ni-9k; Sun, 20 Apr 2008 10:00:31 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#206572: screen: -ls should list sessons sorted chronologically
+Reply-To: Jan Christoph Nordholz <hesso@pool.math.tu-berlin.de>, 206572@bugs.debian.org
+Resent-From: Jan Christoph Nordholz <hesso@pool.math.tu-berlin.de>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 10:00:30 +0000
+Resent-Message-ID: <handler.206572.B206572.12086854564318@bugs.debian.org>
+X-Debian-PR-Message: report 206572
+X-Debian-PR-Package: screen
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: screen
+Received: via spool by 206572-submit@bugs.debian.org id=B206572.12086854564318
+          (code B ref 206572); Sun, 20 Apr 2008 10:00:30 +0000
+Received: (at 206572) by bugs.debian.org; 20 Apr 2008 09:57:36 +0000
+X-Amavis-Spam-Status: No, score=-7.0 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from s9.math.tu-berlin.de ([130.149.11.90] helo=mail-pool.math.tu-berlin.de)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <hesso@pool.math.tu-berlin.de>)
+	id 1JnWIb-0000Kb-6G
+	for 206572@bugs.debian.org; Sun, 20 Apr 2008 09:57:29 +0000
+Received: from s4.math.tu-berlin.de ([130.149.11.40] ident=Debian-exim)
+	by mail-pool.math.tu-berlin.de with esmtps (TLS-1.0:RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <hesso@pool.math.tu-berlin.de>)
+	id 1JnWIU-0006uk-T5; Sun, 20 Apr 2008 11:57:22 +0200
+Received: from hesso by s4.math.tu-berlin.de with local (Exim 4.69)
+	(envelope-from <hesso@pool.math.tu-berlin.de>)
+	id 1JnWIU-0001Da-Qd; Sun, 20 Apr 2008 11:57:22 +0200
+Date: Sun, 20 Apr 2008 11:57:22 +0200
+From: Jan Christoph Nordholz <hesso@pool.math.tu-berlin.de>
+To: Ben Finney <ben+debian@benfinney.id.au>, 206572@bugs.debian.org
+Message-ID: <20080420095722.GA2909@pool.math.tu-berlin.de>
+References: <20080419164406.GA21656@pool.math.tu-berlin.de> <20080420040135.GC20585@benfinney.id.au>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+	protocol="application/pgp-signature"; boundary="5vNYLRcllDrimb99"
+Content-Disposition: inline
+In-Reply-To: <20080420040135.GC20585@benfinney.id.au>
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Resent-Date: Sun, 20 Apr 2008 10:00:31 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343403
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -49.4
+X-Spam-Report: (-49.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	3.2 AWL                    AWL: From: address is in the auto white-list
+
+
+--5vNYLRcllDrimb99
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+
+Hi Ben,
+
+> Doesn't the ctime value from fstat(2) give the time the session was
+> created? That seems like a more useful criterion.
+
+all three timestamps are modified by detach/attach. Writing messages
+to the fifo changes mtime and ctime (the latter being quite strange),
+receiving changes atime, and toggling the u+x mode bit (to record
+the Session Attached/Detached state) changes ctime as well. screen
+even calls utimes() to prevent the socket files from deletion by
+tempreaper tools, but it doesn't help disabling it due to the above
+reasons.
+
+
+Regards,
+
+Jan
+
+--5vNYLRcllDrimb99
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: Digital signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICxOCJnGRgaR03R4RAhEJAJ0dp31bw7a2++hdutlwllqBDC+eAwCeNszp
+1Zo3x3PT/+cja3Ggf6wjfS0=
+=IjG8
+-----END PGP SIGNATURE-----
+
+--5vNYLRcllDrimb99--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

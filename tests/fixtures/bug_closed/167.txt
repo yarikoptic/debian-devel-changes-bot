@@ -1,0 +1,388 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 11:46:56 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnX4M-0006U7-Uj
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 11:46:56 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 0238E13A4F23; Sun, 20 Apr 2008 10:46:50 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 0462213A498D;
+	Sun, 20 Apr 2008 10:46:48 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnWu8-0001yD-Ks; Sun, 20 Apr 2008 10:36:16 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Matthias Klose <doko@debian.org>
+Subject: Bug#383762: marked as done (Bash segfaults with user input)
+Message-ID: <handler.383762.D383762.120868754515158.ackdone@bugs.debian.org>
+References: <E1JnWN1-0006g5-IS@ries.debian.org>
+ <87fyft3v36.fsf@mandala.my-fqdn.de>
+X-Debian-PR-Message: closed 383762
+X-Debian-PR-Package: bash
+X-Debian-PR-Source: bash
+Content-Type: multipart/mixed; boundary="----------=_1208687776-7529-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 10:36:16 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <QregJYpoM9O.A.9SD.Z8xCIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/132950
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 10:46:50 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208687776-7529-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 10:02:03 +0000
+with message-id <E1JnWN1-0006g5-IS@ries.debian.org>
+and subject line Bug#383762: fixed in bash 3.2-2
+has caused the Debian Bug report #383762,
+regarding Bash segfaults with user input
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+383762: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D383762
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208687776-7529-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 19 Aug 2006 09:53:53 +0000
+Return-path: <jhair.tocancipa@gmail.com>
+Received: from py-out-1112.google.com ([64.233.166.181])
+	by spohr.debian.org with esmtp (Exim 4.50)
+	id 1GENWb-0008J3-D7
+	for submit@bugs.debian.org; Sat, 19 Aug 2006 02:53:53 -0700
+Received: by py-out-1112.google.com with SMTP id o67so1511980pye
+        for <submit@bugs.debian.org>; Sat, 19 Aug 2006 02:53:52 -0700 (PDT)
+DomainKey-Signature: a=rsa-sha1; q=dns; c=nofws;
+        s=beta; d=gmail.com;
+        h=received:from:to:subject:date:message-id:user-agent:mime-version:content-type;
+        b=k70f1Zob4tmcDgPZG0bNeSyMmCNjZc67cBXV33thU0kr+JEkC2xnjmlSPeOxt+WUfBZKXXXwC4m6TF80Ef2yXDkqCHmPWtRjpoQSuWluZ7TmsXgvEWMpCxFXWFEQv3ZqljWlDucEKPoKPkfwOpvWNe5fe+MSTWvAMq3YvaHGaEM=
+Received: by 10.65.139.9 with SMTP id r9mr4742414qbn;
+        Sat, 19 Aug 2006 02:53:52 -0700 (PDT)
+Received: from golem.local ( [84.163.218.154])
+        by mx.gmail.com with ESMTP id e14sm2624781qba.2006.08.19.02.53.51;
+        Sat, 19 Aug 2006 02:53:52 -0700 (PDT)
+From: Jhair Tocancipa Triana <jhair.tocancipa@gmail.com>
+To: submit@bugs.debian.org
+Subject: submit@bugs.debian.org
+Date: Sat, 19 Aug 2006 11:58:53 +0200
+Message-ID: <87fyft3v36.fsf@mandala.my-fqdn.de>
+User-Agent: Gnus/5.110006 (No Gnus v0.6) Emacs/22.0.50 (gnu/linux)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Delivered-To: submit@bugs.debian.org
+X-Spam-Checker-Version: SpamAssassin 2.60-bugs.debian.org_2005_01_02 
+	(1.212-2003-09-23-exp) on spohr.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, hits=-8.0 required=4.0 tests=BAYES_00,HAS_PACKAGE 
+	autolearn=no version=2.60-bugs.debian.org_2005_01_02
+
+Package: bash
+Version: 3.1-5
+Severity: important
+
+$ bash -o history
+Segmentation fault (core dumped)
+$ file ./core 
+./core: ELF 64-bit LSB core file AMD x86-64, version 1 (SYSV), SVR4-style, from 'bash'
+
+-- System Information:
+Debian Release: testing/unstable
+  APT prefers unstable
+  APT policy: (500, 'unstable')
+Architecture: amd64 (x86_64)
+Shell:  /bin/sh linked to /bin/bash
+Kernel: Linux 2.6.15.1
+Locale: LANG=en_US.ISO-8859-15, LC_CTYPE=en_US.ISO-8859-15 (charmap=ISO-8859-15)
+
+Versions of packages bash depends on:
+ii  base-files                   3.1.14      Debian base system miscellaneous f
+ii  debianutils                  2.17        Miscellaneous utilities specific t
+ii  libc6                        2.3.6.ds1-2 GNU C Library: Shared libraries
+ii  libncurses5                  5.5-2       Shared libraries for terminal hand
+
+bash recommends no packages.
+
+-- no debconf information
+
+
+------------=_1208687776-7529-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 383762-close) by bugs.debian.org; 20 Apr 2008 10:32:25 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.6 required=4.0 tests=BAYES_00,FOURLA,
+	FROMDEVELOPER,FVGT_m_MULTI_ODD,HAS_BUG_NUMBER,HEADER_X_KATIE,
+	IMPRONONCABLE_2,MURPHY_DRUGS_REL8,MURPHY_WRONG_WORD1,
+	MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnWqN-0003ru-Bq
+	for 383762-close@bugs.debian.org; Sun, 20 Apr 2008 10:32:23 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnWN1-0006g5-IS; Sun, 20 Apr 2008 10:02:03 +0000
+From: Matthias Klose <doko@debian.org>
+To: 383762-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#383762: fixed in bash 3.2-2
+Message-Id: <E1JnWN1-0006g5-IS@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 10:02:03 +0000
+X-CrossAssassin-Score: 11
+Content-Transfer-Encoding: quoted-printable
+
+Source: bash
+Source-Version: 3.2-2
+
+We believe that the bug you reported is fixed in the latest version of
+bash, which is due to be installed in the Debian FTP archive:
+
+bash-builtins_3.2-2_amd64.deb
+  to pool/main/b/bash/bash-builtins_3.2-2_amd64.deb
+bash-doc_3.2-2_all.deb
+  to pool/main/b/bash/bash-doc_3.2-2_all.deb
+bash-minimal_3.2-2_amd64.deb
+  to pool/main/b/bash/bash-minimal_3.2-2_amd64.deb
+bash-static_3.2-2_amd64.deb
+  to pool/main/b/bash/bash-static_3.2-2_amd64.deb
+bash_3.2-2.diff.gz
+  to pool/main/b/bash/bash_3.2-2.diff.gz
+bash_3.2-2.dsc
+  to pool/main/b/bash/bash_3.2-2.dsc
+bash_3.2-2_amd64.deb
+  to pool/main/b/bash/bash_3.2-2_amd64.deb
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 383762@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Matthias Klose <doko@debian.org> (supplier of updated bash package)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 11:20:08 +0200
+Source: bash
+Binary: bash bash-minimal bash-static bash-builtins bash-doc bashdb
+Architecture: source all amd64
+Version: 3.2-2
+Distribution: unstable
+Urgency: low
+Maintainer: Matthias Klose <doko@debian.org>
+Changed-By: Matthias Klose <doko@debian.org>
+Description:=20
+ bash       - The GNU Bourne Again SHell
+ bash-builtins - Bash loadable builtins - headers & examples
+ bash-doc   - Documentation and examples for the The GNU Bourne Again SHe=
+ll
+ bash-minimal - The GNU Bourne Again SHell (minimal version)
+ bash-static - The GNU Bourne Again SHell (static version)
+ bashdb     - The GNU Bourne Again SHell Debugger
+Closes: 314533 342225 352234 362010 364861 374452 378067 382892 383762 39=
+0493 397086 414285 418961 420656 420659 420661 423488 426687 431620 44010=
+2 442477 449587 452459 452656 470453 471490 473870
+Changes:=20
+ bash (3.2-2) unstable; urgency=3Dlow
+ .
+   * Add a shopt option compat31 to fall back to the behaviour of bash-3.=
+1
+     and earlier versions, in that quoting the string argument to the [[
+     command's =3D~ +operator does not force string matching.
+ .
+   * Merge from Ubuntu:
+     - Remove /etc/skel/.bash_profile, if it is unmodified; if modified a=
+nd
+       /etc/skel/.profile is unmodifed, move .bash_profile to .profile.
+     - /etc/skel/.bashrc: Add an option to blurt a terminal window with a
+       colored prompt.
+     - /etc/skel/.bashrc: Add color support for grep and friends (comment=
+ed
+       out by default). Closes: #420659.
+     - /etc/skel/.profile: Avoid the use of `~'.
+     - Don't run command-not-found from the shell scripts when it has bee=
+n
+       removed in the meantime.
+   * /etc/skel/.bashrc:
+     - Comment out the lesspipe settings. Closes: #470453.
+     - Don't use PROMPT_COMMAND to set the title of an xterm. Closes: #42=
+0656.
+     - Don't second-guess terminal handling in dircolors. Closes: #473870=
+.
+     - Don't overwrite GNU Midnight Commander's setting of HISTCONTROL to
+       `ignorespace'. Closes: #440102.
+     - Add a comment about setting HISTSIZE and HISTFILESIZE. Closes: #44=
+9587.
+     - Append to the history file, don't overwrite it. Closes: #452459.
+     - Use dir and vdir commands for dir vdir aliases. Closes: #420661.
+   * /etc/skel/.profile:
+     - Add comment about setting the umask for ssh logins. Closes: #31453=
+3.
+ .
+   * Added code to defer the initialization of HISTSIZE until the history=
+ file
+     is loaded. Closes: #383762.
+   * Fix typos in README.Debian and preinst. Closes: #374452.
+   * Mention `exec' builtin in the section `redirection'. Closes: #378067=
+.
+   * Add bashbug(1). Closes: #442477.
+   * Fix typos in bash(1). Closes: #390493, #426687.
+   * Fix bug in Bash_aliases example. Closes: #423488.
+   * Fix typo in help message for caller builtin. Closes: #452656.
+ .
+ bash (3.2-1) experimental; urgency=3Dlow
+ .
+   * New upstream version (including upstream patches 01 - 33). Closes: #=
+431620.
+     - Added write error reporting to printf builtin. Closes: #414285.
+     - Fixed a bug that caused `unset LANG' to not properly reset the loc=
+ale.
+       Closes: #364861.
+     - Describe expansion of pattern in case statement. Closes: #342225.
+     - Improved handling of non-printable characters in prompt. Closes: #=
+352234,
+       #362010, #397086, #418961, #471490.
+     - Fix typos in documentation. Closes: #382892.
+ .
+     The syntax of regexes in Bash 3.2 was changed so that single quotes =
+no
+     longer surround regexes. e.g, a regex of the form
+       if [[ "foo.tex" =3D~ '^(.*)\.tex$' ]]
+     becomes
+       if [[ "foo.tex" =3D~ ^(.*)\.tex$ ]]
+ .
+   * Merge from Ubuntu:
+     - debian/skel.bashrc: Check for dircolors before using it.
+     - debian/skel.bashrc: Set HISTCONTROL to ignoreboth.
+     - Include correct bash.pot file.
+     - Move CWRU/changelog from the bash to the bash-doc package (we alre=
+ady
+       have the CHANGES files).
+     - debian/etc.bash.bashrc: Install command-not-found handler if avail=
+able.
+Checksums-Sha1:=20
+ 0988220a8acd1fd5e5eeb67f09c17c013147e90c 1108 bash_3.2-2.dsc
+ 041eee1fd332c5033f0dea5add22ca885ba10d2f 150775 bash_3.2-2.diff.gz
+ 81601379e6458e173194de93dea84bb81d1a78ad 316822 bash-doc_3.2-2_all.deb
+ 2e71f4bdf67895264a22dff11e5d6a37324f3628 632366 bash_3.2-2_amd64.deb
+ 97cf5e575c9cf34c7186f6213f36ce878affc8e5 100272 bash-builtins_3.2-2_amd6=
+4.deb
+ c2e68cf38a3d28f49e47031e8746a2b2c9be1c27 760352 bash-static_3.2-2_amd64.=
+deb
+ 59506b11f4e5071a3a62f1929edd0ff7d1083aec 227690 bash-minimal_3.2-2_amd64=
+.deb
+Checksums-Sha256:=20
+ 174d2cf0f099dbcb4e0cd6613d7e20d14f05518cc3c835e83652988044562aa3 1108 ba=
+sh_3.2-2.dsc
+ ecc03b363e85165b2e0dcf800aa9ce070a73c5757d81e97d30003b59e2cdb235 150775 =
+bash_3.2-2.diff.gz
+ 359a2cabbf608566fc8a58a45a0aceb327b9266e45e0feb492e16264f50e8cd0 316822 =
+bash-doc_3.2-2_all.deb
+ 72ca32cf3142fdb474d96cc85a182feacfed2cb047912e802aaa1ebd01fbd02d 632366 =
+bash_3.2-2_amd64.deb
+ edc63f26da022b9d8e42f9d429970f4ed09c1ec76831d19d424952c60eea3870 100272 =
+bash-builtins_3.2-2_amd64.deb
+ 42a0b18bdd5fff36814297377699fb5bf4cecaa9608d99660f5b128b07c60559 760352 =
+bash-static_3.2-2_amd64.deb
+ 7561d514dcc972b1f64ae1b841121015df153f3af6846a8157c30ed7a99637f0 227690 =
+bash-minimal_3.2-2_amd64.deb
+Files:=20
+ 95abb9fe0e6c6fc342bde65c248ef883 1108 base required bash_3.2-2.dsc
+ a7293dbbfe38a331f96cce924a8ba3c2 150775 base required bash_3.2-2.diff.gz
+ 9ba105be663a296eca3b2931450b689b 316822 doc optional bash-doc_3.2-2_all.=
+deb
+ 93ae2cbf7aadc475412f2194757ddfdb 632366 shells required bash_3.2-2_amd64=
+.deb
+ 00ce90a84ee6bdd5ae5b293e528f206a 100272 utils optional bash-builtins_3.2=
+-2_amd64.deb
+ e7d5b254478024d6dbde5434ed88b0ec 760352 shells optional bash-static_3.2-=
+2_amd64.deb
+ 7b0f5d201bc0156b61c26e5f3ee9e7fc 227690 shells optional bash-minimal_3.2=
+-2_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICxAoStlRaw+TLJwRArWJAJ90EYq/C7Hn7ENWsCxZdb8lCiT+lQCfXLYb
+1+fJcMg2yni8DUJGzk97uqA=3D
+=3Du0iA
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208687776-7529-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

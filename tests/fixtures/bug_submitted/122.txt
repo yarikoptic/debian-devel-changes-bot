@@ -1,0 +1,107 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 11:07:48 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnWSX-0006CN-49
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 11:07:48 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id B3F5013A4EF3; Sun, 20 Apr 2008 10:07:43 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 3A57813A4EAF;
+	Sun, 20 Apr 2008 10:07:28 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnWO1-00044b-LE; Sun, 20 Apr 2008 10:03:05 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476943: please add armel support
+Reply-To: Riku Voipio <riku.voipio@iki.fi>, 476943@bugs.debian.org
+Resent-From: Riku Voipio <riku.voipio@iki.fi>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Resent-Date: Sun, 20 Apr 2008 10:03:02 +0000
+Resent-Message-ID: <handler.476943.B.12086856564008@bugs.debian.org>
+X-Debian-PR-Message: report 476943
+X-Debian-PR-Package: glest
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: glest
+Received: via spool by submit@bugs.debian.org id=B.12086856564008
+          (code B ref -1); Sun, 20 Apr 2008 10:03:02 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 10:00:56 +0000
+X-Amavis-Spam-Status: No, score=-9.9 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	HAS_PACKAGE autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from naru.obs2.net
+	([84.20.150.76] helo=narury.org ident=postfix)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <nchip@kos.to>)
+	id 1JnWLp-0000z8-Oq
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 10:00:50 +0000
+Received: from kos.to (localhost.localdomain [127.0.0.1])
+	(using TLSv1 with cipher ADH-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by narury.org (Postfix) with ESMTP id 630013274008
+	for <submit@bugs.debian.org>; Sun, 20 Apr 2008 13:00:48 +0300 (EEST)
+Received: by kos.to (Postfix, from userid 573)
+	id 3CB43EE81DD; Sun, 20 Apr 2008 13:00:48 +0300 (EEST)
+Date: Sun, 20 Apr 2008 13:00:48 +0300
+From: Riku Voipio <riku.voipio@iki.fi>
+To: submit@bugs.debian.org
+Message-ID: <20080420100048.GA14249@kos.to>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+X-message-flag: Warning: message not sent with a DRM-Certified client
+User-Agent: Mutt/1.5.11+cvs20060126
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 10:03:05 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343410
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -51.7
+X-Spam-Report: (-51.7 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.8 AWL                    AWL: From: address is in the auto white-list
+
+Package: glest
+Version: 3.1.0-1
+Severity: wishlist
+User: debian-arm@lists.debian.org
+Usertags: eabi
+
+armel is little-endian so it should work fine too.
+
+-- 
+"rm -rf" only sounds scary if you don't have backups
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

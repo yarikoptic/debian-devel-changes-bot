@@ -1,0 +1,127 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 10:40:25 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnW1x-00065M-R5
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 10:40:25 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 6620F13A4969; Sun, 20 Apr 2008 09:40:16 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.9 required=4.0 tests=BAYES_00,FOURLA,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 131E413A4EA1;
+	Sun, 20 Apr 2008 09:40:00 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnW0o-00015g-MI; Sun, 20 Apr 2008 09:39:06 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476937: ITP: libtest-log4perl-perl - test log4perl
+Reply-To: Yves AGOSTINI <agostini@univ-metz.fr>, 476937@bugs.debian.org
+Resent-From: Yves AGOSTINI <agostini@univ-metz.fr>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: <wnpp@debian.org>, AGOSTINI Yves <agostini@univ-metz.fr>
+Resent-Date: Sun, 20 Apr 2008 09:39:04 +0000
+Resent-Message-ID: <handler.476937.B.12086842253211@bugs.debian.org>
+X-Debian-PR-Message: report 476937
+X-Debian-PR-Package: wnpp
+X-Debian-PR-Keywords: 
+Received: via spool by submit@bugs.debian.org id=B.12086842253211
+          (code B ref -1); Sun, 20 Apr 2008 09:39:04 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 09:37:05 +0000
+X-Amavis-Spam-Status: No, score=-9.8 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,HAS_PACKAGE autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from hermes-node1.univ-metz.fr ([195.220.226.244] ident=root)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <agostini@univ-metz.fr>)
+	id 1JnVyr-0000pR-2K
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 09:37:05 +0000
+Received: from localhost.localdomain (umail.univ-metz.fr [195.220.226.250])
+	by hermes-node1.univ-metz.fr (8.13.8/8.13.8/Debian-3) with ESMTP id m3K9b3sO004532
+	for <submit@bugs.debian.org>; Sun, 20 Apr 2008 11:37:03 +0200
+Message-Id: <200804200937.m3K9b3sO004532@hermes-node1.univ-metz.fr>
+Content-Type: text/plain
+Content-Disposition: inline
+MIME-Version: 1.0
+To: submit@bugs.debian.org
+From: Yves AGOSTINI <agostini@univ-metz.fr>
+Date: Sun, 20 Apr 2008 11:24:33 +0200
+X-Mailer: UMaiL v2.2.rc1
+X-Umail-Host: ra-80.236.21.225-xf--ip--via--cf--cx-
+X-Umail-User: agostini
+X-Greylist: Sender is SPF-compliant, not delayed by milter-greylist-3.0 (hermes-node1.univ-metz.fr [195.220.226.225]); Sun, 20 Apr 2008 11:37:03 +0200 (CEST)
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 09:39:06 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343392
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.4
+X-Spam-Report: (-52.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.0 AWL                    AWL: From: address is in the auto white-list
+
+Package: wnpp
+Severity: wishlist
+Owner: AGOSTINI Yves <agostini@univ-metz.fr>
+
+
+* Package name : libtest-log4perl-perl
+Version : 0.1001
+Upstream Author : Mark Fowler <mark@twoshortplanks.com>
+* URL : http://search.cpan.org/dist/Test-Log4perl/
+* License : Perl
+Programming Lang: Perl
+Description : test log4perl
+ This module can be used to test that you're logging the right thing
+ with Log::Log4perl.  It checks that we get what, and only what, we
+ expect logged by your code.
+ .
+ The basic process is very simple.  Within your test script you get
+ one or more loggers from Test::Log4perl with the get_logger method
+ just like you would with Log::Log4perl.  You're going to use these
+ loggers to declare what you think the code you're going to test should
+ be logging.
+
+-- System Information:
+Debian Release: lenny/sid
+APT prefers unstable
+APT policy: (500, 'unstable')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.18-5-xen-686 (SMP w/1 CPU core)
+Locale: LANG=3Dfr_FR.UTF-8, LC_CTYPE=3Dfr_FR.UTF-8 (charmap=3DUTF-8)
+Shell: /bin/sh linked to /bin/bash=20
+
+
+
+--=20
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

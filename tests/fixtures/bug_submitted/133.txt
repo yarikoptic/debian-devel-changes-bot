@@ -1,0 +1,205 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 04:27:14 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnQCp-0005G0-8g
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 04:27:14 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 711C113A4E19; Sun, 20 Apr 2008 03:27:05 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.3 required=4.0 tests=BAYES_00,FOURLA,HTML_MESSAGE,
+	RCVD_IN_DNSWL_LOW,SARE_MSGID_LONG40 autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 51E1313A499B;
+	Sun, 20 Apr 2008 03:26:55 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnQAb-0007S8-BY; Sun, 20 Apr 2008 03:24:49 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#305471: gnome-session-save -kill hangs
+Reply-To: "Bohan Huang" <bh.inbox@gmail.com>, 305471@bugs.debian.org
+Resent-From: "Bohan Huang" <bh.inbox@gmail.com>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Josselin Mouette <joss@debian.org>
+Resent-Date: Sun, 20 Apr 2008 03:24:48 +0000
+Resent-Message-ID: <handler.305471.B305471.120866178526454@bugs.debian.org>
+X-Debian-PR-Message: report 305471
+X-Debian-PR-Package: gnome-session
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: gnome-session
+Received: via spool by 305471-submit@bugs.debian.org id=B305471.120866178526454
+          (code B ref 305471); Sun, 20 Apr 2008 03:24:48 +0000
+Received: (at 305471) by bugs.debian.org; 20 Apr 2008 03:23:05 +0000
+X-Amavis-Spam-Status: No, score=-7.3 required=4.0 tests=BAYES_00,FOURLA,HAS_PACKAGE,
+	HTML_50_60,HTML_MESSAGE autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from wa-out-1112.google.com ([209.85.146.180])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <bh.inbox@gmail.com>)
+	id 1JnQ8r-0006sX-SN
+	for 305471@bugs.debian.org; Sun, 20 Apr 2008 03:23:01 +0000
+Received: by wa-out-1112.google.com with SMTP id k17so1863360waf.3
+        for <305471@bugs.debian.org>; Sat, 19 Apr 2008 20:23:01 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:to:subject:mime-version:content-type;
+        bh=bz3Gtk8ATfURHXQTWtMitvfI8zvf7wmMwdUXjTbcRJk=;
+        b=HMAtEHBdvH7Fm9djnPm4d1cct3Su5Hp1KYqdwktaj2fenKJumY2GA6afujg8ysqV23jE11erhVmkopEANzNIxJ+9x6lpVM63zptXuLeklO6gibv4oufEG0XKNRjsXlhXLnaJaH/dNgZUWl8nwPt7MWvFXAL/D7h2VDmmM7FNnl4=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:to:subject:mime-version:content-type;
+        b=A9YhOtkJVoVBpGrgCfWDJKmjj4RXRqSU2uCCSoWPON70gubiXadLIJagoP8prqmex8lF2J8f/VHLTM5KT23VvNsHwVkHPa+Lc85PYEZyPl+q4rvgt8fWIvR+1vPGUGUX3fIlSqDY7fL6cTwjwA3412Q5wSN/Bmjjo6qggvxtsWo=
+Received: by 10.140.207.3 with SMTP id e3mr2478248rvg.194.1208661781534;
+        Sat, 19 Apr 2008 20:23:01 -0700 (PDT)
+Received: by 10.141.113.13 with HTTP; Sat, 19 Apr 2008 20:23:01 -0700 (PDT)
+Message-ID: <9df57f4f0804192023w771594b5qccfebf8cb20ced5a@mail.gmail.com>
+Date: Sun, 20 Apr 2008 13:23:01 +1000
+From: "Bohan Huang" <bh.inbox@gmail.com>
+To: 305471@bugs.debian.org
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2308_15444984.1208661781535"
+Resent-Date: Sun, 20 Apr 2008 03:24:49 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343326
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.0
+X-Spam-Report: (-52.0 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	0.1 HTML_50_60             BODY: Message is 50% to 60% HTML
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.5 HTML_MESSAGE           BODY: HTML included in message
+
+------=_Part_2308_15444984.1208661781535
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+Subject: gnome-session-save -kill hangs
+Followup-For: Bug #305471
+Package: gnome-session
+Version: 2.22.0-2
+
+*** Please type your report below this line ***
+
+trying to logout from a Gnome terminal with 'gnome-session-save -kill' also
+just sits there.
+acpid and scim has been shutdown and disabled but problem still persists
+kde is not installed on this system
+aptitude full-upgrade was run on 20/04/2008 with no improvement
+system can be restarted from gdm and logout workd from ttyX and TWM.
+This is a clean install of etch on 19/04/2008 that has been upgraded to
+testing then unstable
+using aptitude
+
+>From within gnome, Shutdown, Restart and Logout options are all unreponsive
+and cause a hang of ~5 minutes before finally performing the select action
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (500, 'unstable')
+Architecture: amd64 (x86_64)
+
+Kernel: Linux 2.6.24-1-amd64 (SMP w/1 CPU core)
+Locale: LANG=en_AU.UTF-8, LC_CTYPE=en_AU.UTF-8 (charmap=UTF-8)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages gnome-session depends on:
+ii  gconf2                     2.22.0-1      GNOME configuration database
+syste
+ii  gnome-control-center       1:2.22.1-1    utilities to configure the
+GNOME d
+ii  gnome-power-manager        2.22.1-1      frontend for gnome-powermanager
+ii  gnome-settings-daemon      2.22.1-1      GNOME settings daemon
+ii  libatk1.0-0                1.22.0-1      The ATK accessibility toolkit
+ii  libbonobo2-0               2.22.0-1      Bonobo CORBA interfaces library
+ii  libc6                      2.7-10        GNU C Library: Shared libraries
+ii  libdbus-1-3                1.2.1-1       simple interprocess messaging
+syst
+ii  libdbus-glib-1-2           0.74-2        simple interprocess messaging
+syst
+ii  libgconf2-4                2.22.0-1      GNOME configuration database
+syste
+ii  libglib2.0-0               2.16.3-2      The GLib library of C routines
+ii  libgnome-keyring0          2.22.1-1      GNOME keyring services library
+ii  libgnome2-0                2.20.1.1-1    The GNOME 2 library - runtime
+file
+ii  libgnomeui-0               2.20.1.1-1    The GNOME 2 libraries (User
+Interf
+ii  libgtk2.0-0                2.12.9-3      The GTK+ graphical user
+interface
+ii  libice6                    2:1.0.4-1     X11 Inter-Client Exchange
+library
+ii  liborbit2                  1:2.14.12-0.1 libraries for ORBit2 - a CORBA
+ORB
+ii  libpango1.0-0              1.20.2-2      Layout and rendering of
+internatio
+ii  libsm6                     2:1.0.3-1+b1  X11 Session Management library
+ii  libwrap0                   7.6.q-15      Wietse Venema's TCP wrappers
+libra
+ii  libx11-6                   2:1.0.3-7     X11 client-side library
+ii  libxau6                    1:1.0.3-2     X11 authorisation library
+
+Versions of packages gnome-session recommends:
+ii  dbus                          1.2.1-1    simple interprocess messaging
+syst
+ii  gnome-panel                   2.20.3-3   launcher and docking facility
+for
+ii  metacity                      1:2.22.0-1 A lightweight GTK2 based Window
+Ma
+ii  nautilus                      2.20.0-3   file manager and graphical
+shell f
+
+-- no debconf information
+
+------=_Part_2308_15444984.1208661781535
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+Subject: gnome-session-save -kill hangs<br>Followup-For: Bug #305471<br>Package: gnome-session<br>Version: 2.22.0-2<br><br>*** Please type your report below this line ***<br><br>trying to logout from a Gnome terminal with &#39;gnome-session-save -kill&#39; also just sits there.<br>
+acpid and scim has been shutdown and disabled but problem still persists<br>kde is not installed on this system<br>aptitude full-upgrade was run on 20/04/2008 with no improvement  <br>system can be restarted from gdm and logout workd from ttyX and TWM.<br>
+This is a clean install of etch on 19/04/2008 that has been upgraded to testing then unstable <br>using aptitude<br><br>From within gnome, Shutdown, Restart and Logout options are all unreponsive<br>and cause a hang of ~5 minutes before finally performing the select action <br>
+<br>-- System Information:<br>Debian Release: lenny/sid<br>&nbsp; APT prefers unstable<br>&nbsp; APT policy: (500, &#39;unstable&#39;)<br>Architecture: amd64 (x86_64)<br><br>Kernel: Linux 2.6.24-1-amd64 (SMP w/1 CPU core)<br>Locale: LANG=en_AU.UTF-8, LC_CTYPE=en_AU.UTF-8 (charmap=UTF-8)<br>
+Shell: /bin/sh linked to /bin/bash<br><br>Versions of packages gnome-session depends on:<br>ii&nbsp; gconf2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.22.0-1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; GNOME configuration database syste<br>ii&nbsp; gnome-control-center&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1:2.22.1-1&nbsp;&nbsp;&nbsp; utilities to configure the GNOME d<br>
+ii&nbsp; gnome-power-manager&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.22.1-1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; frontend for gnome-powermanager<br>ii&nbsp; gnome-settings-daemon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.22.1-1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; GNOME settings daemon<br>ii&nbsp; libatk1.0-0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.22.0-1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The ATK accessibility toolkit<br>
+ii&nbsp; libbonobo2-0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.22.0-1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Bonobo CORBA interfaces library<br>ii&nbsp; libc6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.7-10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; GNU C Library: Shared libraries<br>ii&nbsp; libdbus-1-3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.2.1-1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; simple interprocess messaging syst<br>
+ii&nbsp; libdbus-glib-1-2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.74-2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; simple interprocess messaging syst<br>ii&nbsp; libgconf2-4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.22.0-1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; GNOME configuration database syste<br>ii&nbsp; libglib2.0-0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.16.3-2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The GLib library of C routines<br>
+ii&nbsp; libgnome-keyring0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.22.1-1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; GNOME keyring services library<br>ii&nbsp; libgnome2-0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.20.1.1-1&nbsp;&nbsp;&nbsp; The GNOME 2 library - runtime file<br>ii&nbsp; libgnomeui-0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.20.1.1-1&nbsp;&nbsp;&nbsp; The GNOME 2 libraries (User Interf<br>
+ii&nbsp; libgtk2.0-0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.12.9-3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The GTK+ graphical user interface <br>ii&nbsp; libice6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2:1.0.4-1&nbsp;&nbsp;&nbsp;&nbsp; X11 Inter-Client Exchange library<br>ii&nbsp; liborbit2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1:2.14.12-0.1 libraries for ORBit2 - a CORBA ORB<br>
+ii&nbsp; libpango1.0-0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.20.2-2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Layout and rendering of internatio<br>ii&nbsp; libsm6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2:1.0.3-1+b1&nbsp; X11 Session Management library<br>ii&nbsp; libwrap0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 7.6.q-15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Wietse Venema&#39;s TCP wrappers libra<br>
+ii&nbsp; libx11-6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2:1.0.3-7&nbsp;&nbsp;&nbsp;&nbsp; X11 client-side library<br>ii&nbsp; libxau6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1:1.0.3-2&nbsp;&nbsp;&nbsp;&nbsp; X11 authorisation library<br><br>Versions of packages gnome-session recommends:<br>ii&nbsp; dbus&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.2.1-1&nbsp;&nbsp;&nbsp; simple interprocess messaging syst<br>
+ii&nbsp; gnome-panel&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.20.3-3&nbsp;&nbsp; launcher and docking facility for <br>ii&nbsp; metacity&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1:2.22.0-1 A lightweight GTK2 based Window Ma<br>ii&nbsp; nautilus&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2.20.0-3&nbsp;&nbsp; file manager and graphical shell f<br>
+<br>-- no debconf information<br>
+
+------=_Part_2308_15444984.1208661781535--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

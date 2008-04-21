@@ -1,0 +1,122 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 20:32:38 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnfH9-0000is-18
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 20:32:38 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id F018013A51D5; Sun, 20 Apr 2008 19:31:50 +0000 (UTC)
+Old-Return-Path: <killer@ries.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id 8E7E513A517E
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 19:31:50 +0000 (UTC)
+Received: from killer by ries.debian.org with local (Exim 4.63)
+	(envelope-from <killer@ries.debian.org>)
+	id 1Jnf5u-00056s-UD; Sun, 20 Apr 2008 19:20:58 +0000
+From: Daniel Baumann <daniel@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-new
+X-Katie: lisa $Revision: 1.31 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted nilfs2 2.0.2-1 (source all)
+Message-Id: <E1Jnf5u-00056s-UD@ries.debian.org>
+Sender: Kalle Kivimaa <killer@ries.debian.org>
+Date: Sun, 20 Apr 2008 19:20:58 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <tt-8yA49THL.A.WrE.mo5CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301342
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 19:31:50 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Wed,  9 Apr 2008 08:01:00 +0200
+Source: nilfs2
+Binary: nilfs2-source
+Architecture: source all
+Version: 2.0.2-1
+Distribution: unstable
+Urgency: low
+Maintainer: Daniel Baumann <daniel@debian.org>
+Changed-By: Daniel Baumann <daniel@debian.org>
+Description:=20
+ nilfs2-source - Source for the NILFS2 filesystem driver
+Changes:=20
+ nilfs2 (2.0.2-1) unstable; urgency=3Dlow
+ .
+   * Initial release.
+Checksums-Sha1:=20
+ fc3021c4e8cc40cc52b62f74670ddbfcb5286fce 972 nilfs2_2.0.2-1.dsc
+ f0475d905fe99219b757f8c0eb8aa0c88cf2a19c 161576 nilfs2_2.0.2.orig.tar.gz
+ f19f7ea9b2348a2219eb022725da07ec5512ef36 3336 nilfs2_2.0.2-1.diff.gz
+ f24177ac1f32a292a354cec6595efab435760595 123882 nilfs2-source_2.0.2-1_al=
+l.deb
+Checksums-Sha256:=20
+ e2cd3b67e69a85cba833f5dad9eb93c8f6cfe9c9e1931babdce56bfcf83bf995 972 nil=
+fs2_2.0.2-1.dsc
+ ade301bbb0331289d4826679aacbf41eb0bf67e3c6f5c628347be1bf0c1475f2 161576 =
+nilfs2_2.0.2.orig.tar.gz
+ 9b0af5e52c6544b44bd2b57fc64e3b6f40cff93a14a5ee894f6b6c7ac2c26853 3336 ni=
+lfs2_2.0.2-1.diff.gz
+ bbc652630d10033b9496cdcec80c5988dcf4dd00fcea135e0f42d57d3c8ed3a5 123882 =
+nilfs2-source_2.0.2-1_all.deb
+Files:=20
+ f04b8463f78f2e6e2cb38342fabe1b42 972 admin optional nilfs2_2.0.2-1.dsc
+ 7752b092cf6080043b66c37a7064cd04 161576 admin optional nilfs2_2.0.2.orig=
+.tar.gz
+ c7a916ca954b4d9201892b8c80af6daa 3336 admin optional nilfs2_2.0.2-1.diff=
+.gz
+ a2f00576a7ecd29e3e6112dd063c6d5a 123882 admin optional nilfs2-source_2.0=
+.2-1_all.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC49A+C5cwEsrK54RApbxAJ4nIuo7rApKU1f1YXqpiKtoKUUgBQCdGcxA
+9FsvqIIHGllwcvGv6KBxlp4=3D
+=3Df3gf
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+nilfs2-source_2.0.2-1_all.deb
+  to pool/main/n/nilfs2/nilfs2-source_2.0.2-1_all.deb
+nilfs2_2.0.2-1.diff.gz
+  to pool/main/n/nilfs2/nilfs2_2.0.2-1.diff.gz
+nilfs2_2.0.2-1.dsc
+  to pool/main/n/nilfs2/nilfs2_2.0.2-1.dsc
+nilfs2_2.0.2.orig.tar.gz
+  to pool/main/n/nilfs2/nilfs2_2.0.2.orig.tar.gz
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

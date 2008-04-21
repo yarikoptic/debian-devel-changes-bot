@@ -1,0 +1,109 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 20:54:58 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnfcj-0000np-9c
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 20:54:58 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 35C6D13A5188; Sun, 20 Apr 2008 19:54:52 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id CD81113A4C5A;
+	Sun, 20 Apr 2008 19:54:35 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnfbv-0007ZQ-CY; Sun, 20 Apr 2008 19:54:03 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#454792: double free and segfault on utf8 containing regexes
+Reply-To: Florian Weimer <fw@deneb.enyo.de>, 454792@bugs.debian.org
+Resent-From: Florian Weimer <fw@deneb.enyo.de>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Brendan O'Dea <bod@debian.org>
+Resent-Date: Sun, 20 Apr 2008 19:54:02 +0000
+Resent-Message-ID: <handler.454792.B454792.120872087620164@bugs.debian.org>
+X-Debian-PR-Message: report 454792
+X-Debian-PR-Package: perl
+X-Debian-PR-Keywords: etch patch
+X-Debian-PR-Source: perl
+Received: via spool by 454792-submit@bugs.debian.org id=B454792.120872087620164
+          (code B ref 454792); Sun, 20 Apr 2008 19:54:02 +0000
+Received: (at 454792) by bugs.debian.org; 20 Apr 2008 19:47:56 +0000
+X-Amavis-Spam-Status: No, score=-7.0 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from mail.enyo.de ([212.9.189.167])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <fw@deneb.enyo.de>)
+	id 1JnfW0-0005F4-HL
+	for 454792@bugs.debian.org; Sun, 20 Apr 2008 19:47:56 +0000
+Received: from deneb.vpn.enyo.de ([212.9.189.177] helo=deneb.enyo.de)
+	by mail.enyo.de with esmtp id 1JnfVz-0006ge-89; Sun, 20 Apr 2008 21:47:55 +0200
+Received: from fw by deneb.enyo.de with local (Exim 4.69)
+	(envelope-from <fw@deneb.enyo.de>)
+	id 1JnfVy-0007cP-Mz; Sun, 20 Apr 2008 21:47:54 +0200
+From: Florian Weimer <fw@deneb.enyo.de>
+To: Niko Tyni <ntyni@debian.org>
+Cc: Don Armstrong <don@debian.org>,  454792@bugs.debian.org,  team@security.debian.org
+References: <20071207220325.GB3694@rzlab.ucr.edu>
+	<20080406191013.GA6494@rebekka> <20080407184626.GA17712@rebekka>
+	<20080420191818.GA6434@rebekka> <87r6d08g2t.fsf@mid.deneb.enyo.de>
+Date: Sun, 20 Apr 2008 21:47:54 +0200
+In-Reply-To: <87r6d08g2t.fsf@mid.deneb.enyo.de> (Florian Weimer's message of
+	"Sun, 20 Apr 2008 21:46:34 +0200")
+Message-ID: <87lk388g0l.fsf@mid.deneb.enyo.de>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Resent-Date: Sun, 20 Apr 2008 19:54:03 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343756
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -31.1
+X-Spam-Report: (-31.1 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	22 AWL                    AWL: From: address is in the auto white-list
+
+* Florian Weimer:
+
+> * Niko Tyni:
+>
+>>> I'm unsure about the security implications. Will ask for opinions on p5p.
+>>> Cc'ing the security team to get them in the loop.
+>>
+>> No response from either in two weeks, so it seems that nobody is
+>> particularly concerned.
+>
+> It's potentially security-relevant if it can be exploited by
+> UTF-8-decoding some input within the script.
+
+Sorry, forget that, different bug.
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

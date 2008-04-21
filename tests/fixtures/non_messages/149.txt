@@ -1,0 +1,116 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 19:58:07 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnejh-0000XT-Eu
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 19:58:05 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 7869313A4FFF; Sun, 20 Apr 2008 18:58:00 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 4158B13A4F8C;
+	Sun, 20 Apr 2008 18:57:46 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jneik-0001xj-MI; Sun, 20 Apr 2008 18:57:02 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476468: libsane doesn't recognize Epson DX5000 (all-in-one) Scanner
+Reply-To: Julien BLACHE <jblache@debian.org>, 476468@bugs.debian.org
+Resent-From: Julien BLACHE <jblache@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 18:57:02 +0000
+Resent-Message-ID: <handler.476468.B476468.120871764723352@bugs.debian.org>
+X-Debian-PR-Message: report 476468
+X-Debian-PR-Package: libsane
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: sane-backends
+Received: via spool by 476468-submit@bugs.debian.org id=B476468.120871764723352
+          (code B ref 476468); Sun, 20 Apr 2008 18:57:02 +0000
+Received: (at 476468) by bugs.debian.org; 20 Apr 2008 18:54:07 +0000
+X-Amavis-Spam-Status: No, score=-9.0 required=4.0 tests=BAYES_00,FROMDEVELOPER,
+	HAS_BUG_NUMBER autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from ix.technologeek.org ([213.41.253.186] helo=sonic.technologeek.org)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <jblache@debian.org>)
+	id 1Jnefv-00060z-00
+	for 476468@bugs.debian.org; Sun, 20 Apr 2008 18:54:07 +0000
+Received: by sonic.technologeek.org (Postfix, from userid 1000)
+	id BFD671858A6E; Sun, 20 Apr 2008 20:54:06 +0200 (CEST)
+From: Julien BLACHE <jblache@debian.org>
+To: Oliver Mathis <oliver@familie-mathis.de>
+Cc: 476468@bugs.debian.org, Alessandro Zummo <a.zummo@towertech.it>
+References: <20080416222931.52b9ed1b@mathis-nb>
+	<87tzhxamp8.fsf@sonic.technologeek.org>
+	<1208715095.8249.4.camel@mathis-desktop.familie-mathis.de>
+Date: Sun, 20 Apr 2008 20:54:06 +0200
+In-Reply-To: <1208715095.8249.4.camel@mathis-desktop.familie-mathis.de>
+	(Oliver Mathis's message of "Sun, 20 Apr 2008 20:11:35 +0200")
+Message-ID: <874p9w8ii9.fsf@sonic.technologeek.org>
+User-Agent: Gnus/5.110006 (No Gnus v0.6) XEmacs/21.4.21 (linux)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Resent-Date: Sun, 20 Apr 2008 18:57:02 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343731
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -36.9
+X-Spam-Report: (-36.9 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	16 AWL                    AWL: From: address is in the auto white-list
+
+Oliver Mathis <oliver@familie-mathis.de> wrote:
+
+Hi,
+
+> I've updated this packages from unstable:
+>
+> libsane (1.0.19-4) to 1.0.19-5
+> libsane-extras (1.0.19.5) to 1.0.19.6
+> sane-utils (1.0.19-4) to 1.0.19-5
+>
+> In /etc/sane.d/dll.conf I've enabled the epson and epson2 backend.
+>
+> It works perfectly. Thanks a lot.
+
+Great! Thanks for the testing, Oliver, and thanks for the fix,
+Alessandro :)
+
+JB.
+
+-- 
+ Julien BLACHE - Debian & GNU/Linux Developer - <jblache@debian.org> 
+ 
+ Public key available on <http://www.jblache.org> - KeyID: F5D6 5169 
+ GPG Fingerprint : 935A 79F1 C8B3 3521 FD62 7CC7 CD61 4FD7 F5D6 5169 
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

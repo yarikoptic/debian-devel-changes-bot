@@ -1,0 +1,150 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 01:40:22 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnNbN-00042z-Jk
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 01:40:22 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 28A4513A4BCA; Sun, 20 Apr 2008 00:40:16 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.0 required=4.0 tests=BAYES_00,IMPRONONCABLE_2,
+	LDO_WHITELIST,RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 7C0A013A4B64;
+	Sun, 20 Apr 2008 00:40:01 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnNaA-0006gi-Bj; Sun, 20 Apr 2008 00:39:02 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#467200: gnome-mount: Unable to mount encrypted volume
+Reply-To: Sam Morris <sam@robots.org.uk>, 467200@bugs.debian.org
+Resent-From: Sam Morris <sam@robots.org.uk>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Sjoerd Simons <sjoerd@debian.org>, Michael Biebl <biebl@debian.org>
+Resent-Date: Sun, 20 Apr 2008 00:39:01 +0000
+Resent-Message-ID: <handler.467200.B467200.120865183723323@bugs.debian.org>
+X-Debian-PR-Message: report 467200
+X-Debian-PR-Package: gnome-volume-manager,gnome-mount
+X-Debian-PR-Keywords: 
+Received: via spool by 467200-submit@bugs.debian.org id=B467200.120865183723323
+          (code B ref 467200); Sun, 20 Apr 2008 00:39:01 +0000
+Received: (at 467200) by bugs.debian.org; 20 Apr 2008 00:37:17 +0000
+X-Amavis-Spam-Status: No, score=-5.0 required=4.0 tests=BAYES_00,IMPRONONCABLE_2,
+	VALID_BTS_CONTROL autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from crypt.ethx.net ([82.165.27.140])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <sam@robots.org.uk>)
+	id 1JnNYS-00063o-Ug; Sun, 20 Apr 2008 00:37:17 +0000
+Received: from 79-66-177-233.dynamic.dsl.as9105.com ([79.66.177.233] helo=xerces)
+	by crypt.ethx.net with esmtpsa (TLS-1.0:RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <sam@robots.org.uk>)
+	id 1JnNYO-0001Nl-Iq; Sun, 20 Apr 2008 01:37:15 +0100
+Received: from sam by xerces with local (Exim 4.69)
+	(envelope-from <sam@robots.org.uk>)
+	id 1JnNYF-0007Zr-3V; Sun, 20 Apr 2008 01:37:03 +0100
+From: Sam Morris <sam@robots.org.uk>
+To: 467200@bugs.debian.org
+Content-Type: multipart/signed; micalg=pgp-sha1; protocol="application/pgp-signature"; boundary="=-NxK49/FKDC3xaQpL+WJr"
+Date: Sun, 20 Apr 2008 01:37:02 +0100
+Message-Id: <1208651822.5135.6.camel@xerces>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.22.1 
+X-CrossAssassin-Score: 2
+Resent-Date: Sun, 20 Apr 2008 00:39:02 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343308
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -36.9
+X-Spam-Report: Spam detection software, running on the system "chris-lamb.co.uk", has
+	identified this incoming email as possible spam.  The original message
+	has been attached to this so you can view it (if it isn't spam) or label
+	similar future email.  If you have any questions, see
+	the administrator of that system for details.
+	Content preview:  reassign 467200 udev,cryptsetup,hal thanks More info
+	about this accursed bug. ;) Forget the udev rules, it seems I
+	misinterpreted what upstream meant. [...] 
+	Content analysis details:   (-36.9 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	16 AWL                    AWL: From: address is in the auto white-list
+
+
+--=-NxK49/FKDC3xaQpL+WJr
+Content-Type: text/plain
+Content-Transfer-Encoding: quoted-printable
+
+reassign 467200 udev,cryptsetup,hal
+thanks
+
+More info about this accursed bug. ;)
+
+Forget the udev rules, it seems I misinterpreted what upstream meant.
+
+What really happens is that cryptsetup (as part of the luksOpen
+operation) creates a 'temporary-cryptsetup-$pid' device mapping. There
+is a race between udev sending out notifies for this device, and
+cryptsetup destroying it again; if HAL sees the temporary device then it
+won't pick up on the real device once it has been created.
+
+It seems that HAL has had a workaround committed
+<http://gitweb.freedesktop.org/?p=3Dhal.git;a=3Dblobdiff;h=3D266453b26ddef2=
+9fbb3e378c497f280d53085bc7;hp=3Dd28792e51d1bab04214f900ec2bc7cc60b8e26a2;hb=
+=3D0f2dfc66d1f92aaf464adadeaf327d5a31e0ebcb;f=3Dhald/linux/osspec.c> but it=
+ does not work; hotplug_event->sysfs.device_file is "/dev/dm-2" and not a s=
+tring starting with "/dev/mapper/temporary-cryptsetup-".
+
+So the problem is lower down in the stack than GNOME; I guess udev, hal
+and cryptsetup need to co-operate in order to prevent this from
+happening.
+
+--=20
+Sam Morris
+http://robots.org.uk/
+
+PGP key id 1024D/5EA01078
+3412 EA18 1277 354B 991B  C869 B219 7FDB 5EA0 1078
+
+--=-NxK49/FKDC3xaQpL+WJr
+Content-Type: application/pgp-signature; name=signature.asc
+Content-Description: This is a digitally signed message part
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQBICpAushl/216gEHgRAqhHAJ9siezo7HZUT1vSxf5tIfr093BSFwCcCb5I
+Kavfm4fMdxjfJwLAnPlnkEY=
+=szzX
+-----END PGP SIGNATURE-----
+
+--=-NxK49/FKDC3xaQpL+WJr--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

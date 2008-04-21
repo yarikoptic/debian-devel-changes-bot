@@ -1,0 +1,123 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 19:02:41 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnds4-0000Hj-R5
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 19:02:41 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 9D6DC13A5136; Sun, 20 Apr 2008 18:02:35 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id 55B8813A4F8F
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 18:02:35 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JndrX-0000B3-9f; Sun, 20 Apr 2008 18:02:03 +0000
+From: Ana Beatriz Guerrero Lopez <ana@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted imdbpy 3.5-1 (source amd64)
+Message-Id: <E1JndrX-0000B3-9f@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 18:02:03 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <Yqfv0Y8Lw2D.A.pDB.7U4CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301329
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 18:02:35 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.3
+X-Spam-Report: (-2.3 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.3 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 19:51:14 +0200
+Source: imdbpy
+Binary: python-imdbpy
+Architecture: source amd64
+Version: 3.5-1
+Distribution: unstable
+Urgency: low
+Maintainer: Ana Beatriz Guerrero Lopez <ana@debian.org>
+Changed-By: Ana Beatriz Guerrero Lopez <ana@debian.org>
+Description:=20
+ python-imdbpy - Python package to access the IMDb's movie database
+Changes:=20
+ imdbpy (3.5-1) unstable; urgency=3Dlow
+ .
+   * New upstream version.
+Checksums-Sha1:=20
+ e2916e32e4401729356fe32cbc7f40ebc8dbbf04 1062 imdbpy_3.5-1.dsc
+ b0fc9c1eae1a33a470d5de57c9e6dc0038fba79e 199519 imdbpy_3.5.orig.tar.gz
+ 94386e7717e27db23599bd0f3f030a62ac9d3d1f 3162 imdbpy_3.5-1.diff.gz
+ e777f84e27d9a509415e8921591f37d1df9848f2 207508 python-imdbpy_3.5-1_amd6=
+4.deb
+Checksums-Sha256:=20
+ 263d6f686ae14e0ee3e1d53bfac2f3aea6383e51fd987bf787be35e5531118df 1062 im=
+dbpy_3.5-1.dsc
+ 6057c2b92d77e1eaf745ec670987de038f67e7816d1aad61605338d36e069a98 199519 =
+imdbpy_3.5.orig.tar.gz
+ 1a0e225cc3c08dcf0bb858b7370081e71976aa2599de542aa14578c23ead00a4 3162 im=
+dbpy_3.5-1.diff.gz
+ f8c26b8aa4225589a3df6bb6ca0ed7a1388b640e21ce41605959431a787d316a 207508 =
+python-imdbpy_3.5-1_amd64.deb
+Files:=20
+ a4191c22839f7bd7147f8e4bb48832b9 1062 python optional imdbpy_3.5-1.dsc
+ 914b5f23c8e3649cb747c9fe8522c544 199519 python optional imdbpy_3.5.orig.=
+tar.gz
+ aa7c13a62c5231872bb1c3578c928af4 3162 python optional imdbpy_3.5-1.diff.=
+gz
+ 503ba50ee38893f2b90c8e47c84e5375 207508 python optional python-imdbpy_3.=
+5-1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+Comment: Signed by Ana Guerrero
+
+iD8DBQFIC4SIn3j4POjENGERAvAMAJ0Ww4zluOMJ2+Lg542bb8dgzjyl9wCbBipx
+Ba2skzQRBgcPeQS7d/r+SnU=3D
+=3DXYWd
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+imdbpy_3.5-1.diff.gz
+  to pool/main/i/imdbpy/imdbpy_3.5-1.diff.gz
+imdbpy_3.5-1.dsc
+  to pool/main/i/imdbpy/imdbpy_3.5-1.dsc
+imdbpy_3.5.orig.tar.gz
+  to pool/main/i/imdbpy/imdbpy_3.5.orig.tar.gz
+python-imdbpy_3.5-1_amd64.deb
+  to pool/main/i/imdbpy/python-imdbpy_3.5-1_amd64.deb
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

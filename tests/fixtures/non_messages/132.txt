@@ -1,0 +1,142 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 13:50:18 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnYzm-0006yq-56
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 13:50:18 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id BF75313A4F98; Sun, 20 Apr 2008 12:50:12 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id EED8013A4F12;
+	Sun, 20 Apr 2008 12:49:53 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnYxh-0008PA-01; Sun, 20 Apr 2008 12:48:05 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#475097: 2nd Report
+Reply-To: Michael Biebl <biebl@debian.org>, 475097@bugs.debian.org
+Resent-From: Michael Biebl <biebl@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 12:48:04 +0000
+Resent-Message-ID: <handler.475097.B475097.120869553427224@bugs.debian.org>
+X-Debian-PR-Message: report 475097
+X-Debian-PR-Package: powersaved
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: powersave
+Received: via spool by 475097-submit@bugs.debian.org id=B475097.120869553427224
+          (code B ref 475097); Sun, 20 Apr 2008 12:48:04 +0000
+Received: (at 475097) by bugs.debian.org; 20 Apr 2008 12:45:34 +0000
+X-Amavis-Spam-Status: No, score=-8.9 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FROMDEVELOPER,HAS_BUG_NUMBER autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from smtp1.rz.uni-karlsruhe.de ([129.13.185.217] ident=Debian-exim)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <biebl@debian.org>)
+	id 1JnYvF-00073q-PX; Sun, 20 Apr 2008 12:45:33 +0000
+Received: from teco141pc.teco.edu (teco141pc.teco.uni-karlsruhe.de [129.13.170.141])
+	by smtp1.rz.uni-karlsruhe.de with esmtp (Exim 4.63 #1)
+	id 1JnYvA-0003sA-OU; Sun, 20 Apr 2008 14:45:28 +0200
+Received: from e180073210.adsl.alicedsl.de ([85.180.73.210] helo=[192.168.2.157])
+	by teco141pc.teco.edu with esmtpsa (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <biebl@debian.org>)
+	id 1JnYvA-0005DT-Fc; Sun, 20 Apr 2008 14:45:28 +0200
+Message-ID: <480B3ADD.7060404@debian.org>
+Date: Sun, 20 Apr 2008 14:45:17 +0200
+From: Michael Biebl <biebl@debian.org>
+User-Agent: Mozilla-Thunderbird 2.0.0.12 (X11/20080406)
+MIME-Version: 1.0
+To: Sheridan Hutchinson <Sheridan@Shezza.org>, 475097@bugs.debian.org, 
+ 475097-submitter@bugs.debian.org
+References: <480A4486.207@Shezza.org>
+In-Reply-To: <480A4486.207@Shezza.org>
+X-Enigmail-Version: 0.95.6
+Content-Type: multipart/signed; micalg=pgp-sha1;
+ protocol="application/pgp-signature";
+ boundary="------------enig86C4ECDE02AC9346C75A56BB"
+X-CrossAssassin-Score: 2
+Resent-Date: Sun, 20 Apr 2008 12:48:05 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343473
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -36.0
+X-Spam-Report: (-36.0 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	16 AWL                    AWL: From: address is in the auto white-list
+
+This is an OpenPGP/MIME signed message (RFC 2440 and 3156)
+--------------enig86C4ECDE02AC9346C75A56BB
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: quoted-printable
+
+Sheridan Hutchinson wrote:
+> Hi,
+>=20
+> I'm in 'testing' and 0.15.20-2 hit today, wiping out my ability to FN +=
+
+> F3 or F4 or F12 (that I tested) from working.
+
+Hi,
+
+could you try and follow the instructions at
+http://people.freedesktop.org/~hughsient/quirk/quirk-keymap-index.html
+
+It's likely, that your button are just not correctly mapped.
+
+Cheers,
+Michael
+
+--=20
+Why is it that all of the instruments seeking intelligent life in the
+universe are pointed away from Earth?
+
+
+--------------enig86C4ECDE02AC9346C75A56BB
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: OpenPGP digital signature
+Content-Disposition: attachment; filename="signature.asc"
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+Comment: Using GnuPG with Mozilla - http://enigmail.mozdev.org
+
+iD8DBQFICzrmh7PER70FhVQRAkw/AJ4iHJc52Rr3WPOx1dLOyO5MaGLwtQCdFaVv
+9ffRibD/PQo8kK2HERshEFw=
+=muPF
+-----END PGP SIGNATURE-----
+
+--------------enig86C4ECDE02AC9346C75A56BB--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

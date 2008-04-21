@@ -1,0 +1,128 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 13:35:21 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnYlJ-0006vV-RC
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 13:35:21 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 342DB13A4F3B; Sun, 20 Apr 2008 12:35:16 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id D50E213A4DD1
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 12:35:15 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnYTe-0005pr-Rh; Sun, 20 Apr 2008 12:17:02 +0000
+From: Mark Purcell <msp@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted cupsddk 1.2.3-2 (source powerpc)
+Message-Id: <E1JnYTe-0005pr-Rh@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 12:17:02 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <CiNDvF0X1wJ.A.yi.EizCIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301294
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 12:35:16 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.6
+X-Spam-Report: (-2.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.0 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Tue, 08 Apr 2008 20:20:03 +1000
+Source: cupsddk
+Binary: cupsddk cupsddk-drivers
+Architecture: source powerpc
+Version: 1.2.3-2
+Distribution: unstable
+Urgency: high
+Maintainer: Debian HPIJS and HPLIP maintainers <pkg-hpijs-devel@lists.ali=
+oth.debian.org>
+Changed-By: Mark Purcell <msp@debian.org>
+Description:=20
+ cupsddk    - CUPS Driver Development Kit
+ cupsddk-drivers - CUPS Driver Development Kit - Driver files
+Closes: 476939
+Changes:=20
+ cupsddk (1.2.3-2) unstable; urgency=3Dhigh
+ .
+   * Urgency high to fix serious bug
+   * Remove debian/rules ref to patch/ unpatch
+     - missing build-dependencies (Closes: #476939)
+Checksums-Sha1:=20
+ 0d5588874c7f74de3b799b893b8cb6bd507b6e3f 1289 cupsddk_1.2.3-2.dsc
+ 32df3ade0fec1377fad7c41c5e7aa1522d905dde 4534 cupsddk_1.2.3-2.diff.gz
+ 270f063ed918cfc3e82bcf417f7caf42dbb5422e 190512 cupsddk_1.2.3-2_powerpc.=
+deb
+ c67dd8d920b1976ce0fba0d46aa849dc38f76b91 127424 cupsddk-drivers_1.2.3-2_=
+powerpc.deb
+Checksums-Sha256:=20
+ b6273b279e321f9b49db5d6ade4ebbb381ed84d797ad57af76fe7d00baab5f4c 1289 cu=
+psddk_1.2.3-2.dsc
+ fe09752c390a1632c4fdfefec21c94e40e4ef552e0a45ffe492b53cff49c0284 4534 cu=
+psddk_1.2.3-2.diff.gz
+ c00b7e46290948c296dd070c46930a5f4cbcb75a47eb4c1488d48da568a8e2d8 190512 =
+cupsddk_1.2.3-2_powerpc.deb
+ 7149156217e2ead705f2d3980555573a03ba077ae3074ee6dba431553119137a 127424 =
+cupsddk-drivers_1.2.3-2_powerpc.deb
+Files:=20
+ a1e481966da05bc844e5fc9ebfebaa10 1289 text optional cupsddk_1.2.3-2.dsc
+ 424fe84e45bab42a8e8c92d8de901f21 4534 text optional cupsddk_1.2.3-2.diff=
+.gz
+ 8a5ac76edd0d5230a405410b6acbb6cd 190512 text optional cupsddk_1.2.3-2_po=
+werpc.deb
+ 724269e2c4c054d27a2d76b0fe7b82f1 127424 text optional cupsddk-drivers_1.=
+2.3-2_powerpc.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICzIloCzanz0IthIRArIHAKCE5gKruPMJeV8n8bwkTr6OTQWK8ACggq2d
+1TovG6T9e/XuTDgVrMHxtc0=3D
+=3DZkAU
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+cupsddk-drivers_1.2.3-2_powerpc.deb
+  to pool/main/c/cupsddk/cupsddk-drivers_1.2.3-2_powerpc.deb
+cupsddk_1.2.3-2.diff.gz
+  to pool/main/c/cupsddk/cupsddk_1.2.3-2.diff.gz
+cupsddk_1.2.3-2.dsc
+  to pool/main/c/cupsddk/cupsddk_1.2.3-2.dsc
+cupsddk_1.2.3-2_powerpc.deb
+  to pool/main/c/cupsddk/cupsddk_1.2.3-2_powerpc.deb
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

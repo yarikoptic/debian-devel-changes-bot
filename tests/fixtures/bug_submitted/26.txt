@@ -1,0 +1,119 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 10:40:14 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnW1q-000652-9Q
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 10:40:14 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id F0FD313A4EE3; Sun, 20 Apr 2008 09:40:08 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 5560313A4983;
+	Sun, 20 Apr 2008 09:39:55 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnW0q-00015l-F7; Sun, 20 Apr 2008 09:39:08 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476846: Bug does NOT happen for sid version (9:1.1.7.1-1) of genisoimage  on armel
+Reply-To: Barry Tennison <barry@ukph.org>, 476846@bugs.debian.org
+Resent-From: Barry Tennison <barry@ukph.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Joerg Jaspert <joerg@debian.org>
+Resent-Date: Sun, 20 Apr 2008 09:39:07 +0000
+Resent-Message-ID: <handler.476846.B476846.12086842533422@bugs.debian.org>
+X-Debian-PR-Message: report 476846
+X-Debian-PR-Package: genisoimage
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: cdrkit
+Received: via spool by 476846-submit@bugs.debian.org id=B476846.12086842533422
+          (code B ref 476846); Sun, 20 Apr 2008 09:39:07 +0000
+Received: (at 476846) by bugs.debian.org; 20 Apr 2008 09:37:33 +0000
+X-Amavis-Spam-Status: No, score=-10.0 required=4.0 tests=BAYES_00,HAS_PACKAGE 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from www.statsdirect.com ([217.146.101.15] helo=stats-colo2.statsdirect.com)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <barry@ukph.org>)
+	id 1JnVzJ-0000sx-Dq
+	for 476846@bugs.debian.org; Sun, 20 Apr 2008 09:37:33 +0000
+Received: from [192.168.137.200] ([86.22.76.185]) by stats-colo2.statsdirect.com with Microsoft SMTPSVC(6.0.3790.3959);
+	 Sun, 20 Apr 2008 10:37:32 +0100
+Message-ID: <480B0ED9.3060403@ukph.org>
+Date: Sun, 20 Apr 2008 10:37:29 +0100
+From: Barry Tennison <barry@ukph.org>
+User-Agent: Mozilla-Thunderbird 2.0.0.9 (X11/20080110)
+MIME-Version: 1.0
+To: 476846@bugs.debian.org
+CC: martinwguy@gmail.com, Tim Small <tim@buttersideup.com>, 
+ Tobias Frost <tobi@coldtobi.de>,
+ Bill Gatliff <bgat@billgatliff.com>
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: 7bit
+X-OriginalArrivalTime: 20 Apr 2008 09:37:32.0204 (UTC) FILETIME=[2839F6C0:01C8A2CA]
+Resent-Date: Sun, 20 Apr 2008 09:39:08 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343391
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.6
+X-Spam-Report: (-52.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.0 AWL                    AWL: From: address is in the auto white-list
+
+Package: genisoimage
+Version: 9:1.1.7.1-1
+Severity: important
+
+Thanks again to Martin Guy, I can confirm that the buggy behaviour does 
+NOT happen for genisoimage version 1.1.7.1-1 (sid current) on armel. 
+Instead, the behaviour is just as on i386 and amd64: the RR signatures 
+are detected and the iso successfully updated.
+
+Maybe this is support for the explanation as an endian problem?
+
+System details:
+uname -a
+Linux n2100 2.6.24-1-iop32x #1 Fri Feb 22 13:15:18 UTC 2008 armv5tel 
+GNU/Linux
+Package versions:
+ii  genisoimage              9:1.1.7.1-1
+ii  libbz2-1.0               1.0.5-0.1
+ii  libc6                    2.7-10
+ii  libmagic1                4.23-2
+ii  zlib1g                   1:1.2.3.3.dfsg-11
+
+Barry
+
+
+
+
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

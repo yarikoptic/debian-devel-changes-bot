@@ -1,0 +1,119 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 08:47:43 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnUGv-0005kJ-EW
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 08:47:43 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 1E63013A4E73; Sun, 20 Apr 2008 07:47:36 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	MURPHY_DRUGS_REL8,RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id C365913A4DF6;
+	Sun, 20 Apr 2008 07:47:23 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnUEg-0004AT-B8; Sun, 20 Apr 2008 07:45:18 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476455: exiwhat of exim4-base requires killall but it does not depend on psmisc package to ensure killall is installed
+Reply-To: Andreas Metzler <ametzler@downhill.at.eu.org>, 476455@bugs.debian.org
+Resent-From: Andreas Metzler <ametzler@downhill.at.eu.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Exim4 Maintainers <pkg-exim4-maintainers@lists.alioth.debian.org>
+Resent-Date: Sun, 20 Apr 2008 07:45:17 +0000
+Resent-Message-ID: <handler.476455.B476455.120867664227330@bugs.debian.org>
+X-Debian-PR-Message: report 476455
+X-Debian-PR-Package: exim4-base
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: exim4
+Received: via spool by 476455-submit@bugs.debian.org id=B476455.120867664227330
+          (code B ref 476455); Sun, 20 Apr 2008 07:45:17 +0000
+Received: (at 476455) by bugs.debian.org; 20 Apr 2008 07:30:42 +0000
+X-Amavis-Spam-Status: No, score=-9.0 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER,
+	MURPHY_DRUGS_REL8,VALID_BTS_CONTROL autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from m26s25.vlinux.de ([83.151.30.59] ident=[j9K0D0BgmJj4Xn/72CeLPUdlvMo76ds/])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <ametzler@downhill.at.eu.org>)
+	id 1JnU0T-0006z1-7x; Sun, 20 Apr 2008 07:30:39 +0000
+Received: from adsl-013.229.166.194.arpa.as1901.net ([194.166.229.13] ident=[AWHzfzBx9dXd8HWRyZLIjml6YPuetliJ])
+	by m26s25.vlinux.de with esmtpa (Exim 4.69)
+	(envelope-from <ametzler@downhill.at.eu.org>)
+	id 1JnTt3-0004nW-Nx; Sun, 20 Apr 2008 07:23:03 +0000
+Received: from ametzler by argenau.downhill.at.eu.org with local (Exim 4.69)
+	(envelope-from <ametzler@downhill.at.eu.org>)
+	id 1JnU0H-0001Gz-Oa; Sun, 20 Apr 2008 09:30:25 +0200
+Date: Sun, 20 Apr 2008 09:30:25 +0200
+From: Andreas Metzler <ametzler@downhill.at.eu.org>
+To: Marcin Orlowski <carlos@wfmh.org.pl>, 476455@bugs.debian.org
+Message-ID: <20080420073025.GA3135@downhill.g.la>
+References: <48064B37.6090208@wfmh.org.pl> <20080417215153.GA13971@torres.zugschlus.de> <48085190.4060509@wfmh.org.pl>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <48085190.4060509@wfmh.org.pl>
+X-GPG-Fingerprint: BCF7 1345 BE42 B5B8 1A57  EE09 1D33 9C65 8B8D 7663
+User-Agent: Mutt/1.5.13 (2006-08-11)
+X-CrossAssassin-Score: 2
+Resent-Date: Sun, 20 Apr 2008 07:45:18 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343346
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -35.3
+X-Spam-Report: (-35.3 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	17 AWL                    AWL: From: address is in the auto white-list
+
+tags 476455 pending
+thanks
+On 2008-04-18 Marcin Orlowski <carlos@wfmh.org.pl> wrote:
+> Marc Haber wrote:
+
+>  > The most we're gonna do is patch exiwhat to give a more verbose
+>  > message along the lines "exiwhat can only work if the psmisc package
+>  > is installed".
+
+> I think that's acceptable compromise. Thanks.
+
+I have commited a patch to svn that makes exiwhat check at runtime
+whether killall is available. If it is not ps ax and kill are used.
+
+http://svn.debian.org/wsvn/pkg-exim4?op=comp&compare%5B%5D=%2Fexim%2Ftrunk@2255&compare%5B%5D=%2Fexim%2Ftrunk@2256
+
+cu andreas
+
+-- 
+`What a good friend you are to him, Dr. Maturin. His other friends are
+so grateful to you.'
+`I sew his ears on from time to time, sure'
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

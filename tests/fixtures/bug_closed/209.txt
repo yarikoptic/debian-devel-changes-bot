@@ -1,0 +1,316 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 02:45:09 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnOc2-000540-Rv
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 02:45:09 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 6AA6513A4D3E; Sun, 20 Apr 2008 01:45:00 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id E3EB413A4CA3;
+	Sun, 20 Apr 2008 01:44:58 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnOZA-0005sL-BW; Sun, 20 Apr 2008 01:42:04 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Andres Mejia <mcitadel@gmail.com>
+Subject: Bug#453556: marked as done (alien-arena-data: debian/watch fails 
+ to report upstream's version)
+Message-ID: <handler.453556.D453556.12086551011730.ackdone@bugs.debian.org>
+References: <E1JnOBZ-0002Lc-7t@ries.debian.org>
+ <20071130041301.B5B4F98FC00C@neo.yahostme.com>
+X-Debian-PR-Message: closed 453556
+X-Debian-PR-Package: alien-arena-data
+X-Debian-PR-Source: alien-arena-data
+Content-Type: multipart/mixed; boundary="----------=_1208655724-22436-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 01:42:04 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <zTaPIt3OaxH.A.V9F.cAqCIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/132887
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 01:45:00 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: Spam detection software, running on the system "chris-lamb.co.uk", has
+	identified this incoming email as possible spam.  The original message
+	has been attached to this so you can view it (if it isn't spam) or label
+	similar future email.  If you have any questions, see
+	the administrator of that system for details.
+	Content preview:  Your message dated Sun, 20 Apr 2008 01:17:41 +0000 with
+	message-id <E1JnOBZ-0002Lc-7t@ries.debian.org> and subject line
+	Bug#453556: fixed in alien-arena-data 7.0-1 has caused the Debian Bug
+	report #453556, regarding alien-arena-data: debian/watch fails to report
+	upstream's version to be marked as done. [...] 
+	Content analysis details:   (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208655724-22436-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 01:17:41 +0000
+with message-id <E1JnOBZ-0002Lc-7t@ries.debian.org>
+and subject line Bug#453556: fixed in alien-arena-data 7.0-1
+has caused the Debian Bug report #453556,
+regarding alien-arena-data: debian/watch fails to report upstream's version
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+453556: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D453556
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208655724-22436-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at maintonly) by bugs.debian.org; 30 Nov 2007 04:13:03 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-6.9 required=4.0 tests=BAYES_00,FOURLA,
+	MURPHY_DRUGS_REL8,X_DEBBUGS_NO_ACK autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <atomo64@gmail.com>
+Received: from neo.yahostme.com ([87.230.10.244])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <atomo64@gmail.com>)
+	id 1IxxFO-0004wc-Vt
+	for maintonly@bugs.debian.org; Fri, 30 Nov 2007 04:13:03 +0000
+Received: from localhost (unknown [201.164.223.105])
+	by neo.yahostme.com (Postfix) with ESMTP id B5B4F98FC00C
+	for <maintonly@bugs.debian.org>; Fri, 30 Nov 2007 05:13:01 +0100 (CET)
+From: Raphael Geissert <atomo64@gmail.com>
+User-Agent: no_upstream-reporter/0.1
+X-Debbugs-No-Ack: do as I say
+To: maintonly@bugs.debian.org
+Date: Fri, 30 Nov 2007 04:11:59 +0000
+Subject: alien-arena-data: debian/watch fails to report upstream's version
+Message-Id: <20071130041301.B5B4F98FC00C@neo.yahostme.com>
+Delivered-To: maintonly@bugs.debian.org
+
+Source: alien-arena-data
+Version: 6.10-1
+Severity: minor
+Usertags: dehs-no-upstream
+
+Hello maintainer,
+
+The debian/watch file of your package on the unstable distribution fails to report upstream's version.
+Uscan's message follows:
+
+----
+uscan.pl warning: In watchfile /tmp/alien-arena-data_watchMYXsnO, reading webpage
+  http://icculus.org/alienarena/files failed: 404 Not Found
+----
+
+Please note that this message is auto-generated by extracting the information
+ from the Debian External Health Status (a.k.a. DEHS) no_upstream page[1].
+At the moment of running the package version found is the one indicated on the report.
+If you have already fixed this issue please ignore and close this report.
+
+If you believe this message can be improved in any way don't hesitate to contact me
+ by replying to NNNNN-submitter@bugs.debian.org (where NNNNN is the number of this bug report).
+
+If you need help to fix this problem tag this bug with 'help'
+ so I pay special attention to it when submitting patches.
+This can be done by running % bts tag NNNNN help (where NNNNN is the the number of this bug report).
+
+If you wish not to be notified in the future please contact me so I add you to the ignore list.
+
+[1] http://dehs.alioth.debian.org/no_upstream.html
+
+Kind regards,
+Raphael Geissert.
+
+
+
+------------=_1208655724-22436-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 453556-close) by bugs.debian.org; 20 Apr 2008 01:31:41 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-5.7 required=4.0 tests=BAYES_00,FVGT_m_MULTI_ODD,
+	GMAIL,HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_1,IMPRONONCABLE_2,
+	MURPHY_WRONG_WORD1,MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnOP6-0000Ra-Nw
+	for 453556-close@bugs.debian.org; Sun, 20 Apr 2008 01:31:40 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnOBZ-0002Lc-7t; Sun, 20 Apr 2008 01:17:41 +0000
+From: Andres Mejia <mcitadel@gmail.com>
+To: 453556-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#453556: fixed in alien-arena-data 7.0-1
+Message-Id: <E1JnOBZ-0002Lc-7t@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 01:17:41 +0000
+Content-Transfer-Encoding: quoted-printable
+
+Source: alien-arena-data
+Source-Version: 7.0-1
+
+We believe that the bug you reported is fixed in the latest version of
+alien-arena-data, which is due to be installed in the Debian FTP archive:
+
+alien-arena-data_7.0-1.diff.gz
+  to pool/non-free/a/alien-arena-data/alien-arena-data_7.0-1.diff.gz
+alien-arena-data_7.0-1.dsc
+  to pool/non-free/a/alien-arena-data/alien-arena-data_7.0-1.dsc
+alien-arena-data_7.0-1_all.deb
+  to pool/non-free/a/alien-arena-data/alien-arena-data_7.0-1_all.deb
+alien-arena-data_7.0.orig.tar.gz
+  to pool/non-free/a/alien-arena-data/alien-arena-data_7.0.orig.tar.gz
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 453556@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Andres Mejia <mcitadel@gmail.com> (supplier of updated alien-arena-data p=
+ackage)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Tue, 15 Jan 2008 00:06:37 -0500
+Source: alien-arena-data
+Binary: alien-arena-data
+Architecture: source all
+Version: 7.0-1
+Distribution: unstable
+Urgency: low
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Changed-By: Andres Mejia <mcitadel@gmail.com>
+Description:=20
+ alien-arena-data - Game data files for Alien Arena
+Closes: 453556
+Changes:=20
+ alien-arena-data (7.0-1) unstable; urgency=3Dlow
+ .
+   * New upstream release.
+   * New link provided for watch file.
+     + Closes: #453556
+   * Removing Homepage from Description.
+   * Removing XS- prefix from Vcs-* entries.
+   * Fixing Vcs-Svn link, removing +ssh part.
+   * Bumped Standards-Version to 3.7.3.
+   * Using Recommends of alien-arena (>=3D 7.0) only.
+   * Remove README.Debian as information didn't pertain to Debian.
+   * Call binary-arch in debian/rules to comply with Debian policy.
+   * Test for the existence of build-stamp before attempting to remove.
+   * Renamed alien-arena-data-tarball.sh to alien-arena-data-get-orig-sou=
+rce.
+   * Modified alien-arena-data-get-orig-source to make it easier to maint=
+ain.
+   * Removed notice about wrong dm-saucer in copyright file. Doesn't pert=
+ain
+     to alien-arena-7.0.
+   * Cut down package description.
+   * Update copyright notice for new release.
+Checksums-Sha1:=20
+ 4d8b6ed8d346953fd66554b7f3bbf021a5508691 1275 alien-arena-data_7.0-1.dsc
+ 8db12c7f78ac15836f4c13901dd9cd3ae2d4fc6f 221453568 alien-arena-data_7.0.=
+orig.tar.gz
+ 57b22ef0f5be30a1e94a42e142394900a4e98d30 3903 alien-arena-data_7.0-1.dif=
+f.gz
+ 1c6dad754477f8d0f8f47efa6e2df00989de4310 220393788 alien-arena-data_7.0-=
+1_all.deb
+Checksums-Sha256:=20
+ 7071775f5bbf6d2ebda2898f4da356673f82ff51a7fdc86e110031975125f82a 1275 al=
+ien-arena-data_7.0-1.dsc
+ 229cbe155e225b6a312530526c10e482971fcdffbca56854b5002c0097920609 2214535=
+68 alien-arena-data_7.0.orig.tar.gz
+ 0eec658de08cecb3c728b933d905def558f287a0dfa81b8fdf2405a6900cd44d 3903 al=
+ien-arena-data_7.0-1.diff.gz
+ 3e4d2ab2cec52502541fc12251622605b01b6ba839d43fe3ca333df40124b5c7 2203937=
+88 alien-arena-data_7.0-1_all.deb
+Files:=20
+ 94b12683d3eb296977977c566d77834e 1275 non-free/games extra alien-arena-d=
+ata_7.0-1.dsc
+ 9b3f11df7ba83afc58bca75051d84f71 221453568 non-free/games extra alien-ar=
+ena-data_7.0.orig.tar.gz
+ 5571e28a2acab57f49403afadb1c2a8e 3903 non-free/games extra alien-arena-d=
+ata_7.0-1.diff.gz
+ c2dca18506593fb2f7214473c339d7f3 220393788 non-free/games extra alien-ar=
+ena-data_7.0-1_all.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICoVBsKTFpDfZQSwRAq8rAJ9zepQY8s12dQ8IEg9uk54oZo/SaQCgihRZ
+MJd2Kz51/Wk1D5UfEwUCozc=3D
+=3Dpjq4
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208655724-22436-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,124 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 11:44:49 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnX2L-0006Ra-VN
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 11:44:49 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 1280A13A4F3D; Sun, 20 Apr 2008 10:44:45 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-6.4 required=4.0 tests=BAYES_00,HTML_MESSAGE,
+	LDO_WHITELIST,RCVD_IN_DNSWL_LOW,SARE_MSGID_LONG40 autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 8CDBD13A4F06;
+	Sun, 20 Apr 2008 10:44:34 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnWwo-000350-Bn; Sun, 20 Apr 2008 10:39:02 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#463783: The problem solved.
+Reply-To: "Aleksey Zapparov" <zapparov@gmail.com>, 463783@bugs.debian.org
+Resent-From: "Aleksey Zapparov" <zapparov@gmail.com>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian Apache Maintainers <debian-apache@lists.debian.org>
+Resent-Date: Sun, 20 Apr 2008 10:39:01 +0000
+Resent-Message-ID: <handler.463783.B463783.120868766025299@bugs.debian.org>
+X-Debian-PR-Message: report 463783
+X-Debian-PR-Package: apache2
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: apache2
+Received: via spool by 463783-submit@bugs.debian.org id=B463783.120868766025299
+          (code B ref 463783); Sun, 20 Apr 2008 10:39:01 +0000
+Received: (at 463783) by bugs.debian.org; 20 Apr 2008 10:34:20 +0000
+X-Amavis-Spam-Status: No, score=-1.7 required=4.0 tests=BAYES_00,HTML_00_10,
+	HTML_MESSAGE autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from wa-out-1112.google.com ([209.85.146.178])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <zapparov@gmail.com>)
+	id 1JnWsG-0006Zs-PV
+	for 463783@bugs.debian.org; Sun, 20 Apr 2008 10:34:20 +0000
+Received: by wa-out-1112.google.com with SMTP id k17so2043056waf.3
+        for <463783@bugs.debian.org>; Sun, 20 Apr 2008 03:34:20 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:to:subject:mime-version:content-type;
+        bh=vvuaL5nMW00IIqiAL0JcJGuhAb8lzx0pZvPkMg0+4BU=;
+        b=sq16VhF4JQoi9IcPF1PjQL7MOCbGcRYrNKm9Kai0nNHeSXtxGmzLZAa28y/hB10N/O/HV9b9d4jRB/+1+giUS8WbmIrJ4YbJmQFDzztU6qe7EPrpaHbiHseSVx/J9BJCQgzg9fZsCtcOcrK2yosCxSdvG7Vq+W02D/SZi0wj4MQ=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:to:subject:mime-version:content-type;
+        b=awfLVHjkCCxusm2vF/GDmrb1zdWPQ0v+1q+TlcwIrXuixc1AK4vGjitz1bli0K5Rf4WPWebp8hZ1YuOLOCZh/p2Os0WkAFf1/i2GdlWosR/jW8Q/xHznAEB/Zsr+GBLZ9ScryqIZ2nFFDoH3V3OlKVpLpPbXAupZdqzwwbrXbE0=
+Received: by 10.140.127.13 with SMTP id z13mr2616761rvc.142.1208687660475;
+        Sun, 20 Apr 2008 03:34:20 -0700 (PDT)
+Received: by 10.140.192.12 with HTTP; Sun, 20 Apr 2008 03:34:20 -0700 (PDT)
+Message-ID: <b9bc80f00804200334w226c81f5w5566d036dbc6ba81@mail.gmail.com>
+Date: Sun, 20 Apr 2008 15:34:20 +0500
+From: "Aleksey Zapparov" <zapparov@gmail.com>
+To: 463783@bugs.debian.org
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_9473_30441061.1208687660476"
+Resent-Date: Sun, 20 Apr 2008 10:39:02 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343428
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -26.6
+X-Spam-Report: (-26.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	0.8 HTML_00_10             BODY: Message is 0% to 10% HTML
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.5 HTML_MESSAGE           BODY: HTML included in message
+	25 AWL                    AWL: From: address is in the auto white-list
+
+------=_Part_9473_30441061.1208687660476
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+Hello.
+
+Firstof all, I want to note that the problem was not only with apache. For
+example MPC also didn't work correctly, so if eth0 wasn't been configured it
+fault saying that cannot find localhost.
+
+I don't know what was the problem, but after my last dist-upgrade (about one
+week ago) everything corrected, so now everything works perfect.
+
+------=_Part_9473_30441061.1208687660476
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+Hello.<br><br>Firstof all, I want to note that the problem was not only with apache. For example MPC also didn&#39;t work correctly, so if eth0 wasn&#39;t been configured it fault saying that cannot find localhost.<br><br>
+I don&#39;t know what was the problem, but after my last dist-upgrade (about one week ago) everything corrected, so now everything works perfect.<br>
+
+------=_Part_9473_30441061.1208687660476--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

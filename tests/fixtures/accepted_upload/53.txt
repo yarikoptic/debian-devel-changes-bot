@@ -1,0 +1,119 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 12:32:18 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnXmJ-0006gp-Ka
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 12:32:18 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 8686413A4F40; Sun, 20 Apr 2008 11:32:14 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id 3E37813A4EC7
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 11:32:14 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnXmB-0003FP-54; Sun, 20 Apr 2008 11:32:07 +0000
+From: Robert Luberda <robert@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted welcome2l 3.04-22 (source i386)
+Message-Id: <E1JnXmB-0003FP-54@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 11:32:07 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <f1cqGyl10CO.A.U0E.-myCIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301288
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 11:32:14 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.5
+X-Spam-Report: (-2.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.1 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sat, 19 Apr 2008 13:33:01 +0200
+Source: welcome2l
+Binary: welcome2l
+Architecture: source i386
+Version: 3.04-22
+Distribution: unstable
+Urgency: low
+Maintainer: Robert Luberda <robert@debian.org>
+Changed-By: Robert Luberda <robert@debian.org>
+Description:=20
+ welcome2l  - Linux ANSI boot logo
+Changes:=20
+ welcome2l (3.04-22) unstable; urgency=3Dlow
+ .
+   * Standards-Version: 3.7.3 (no changes).
+   * Fix hyphens in man page (lintian).
+   * Add copyright notice (lintian).
+   * Add source lintian overrides file for non-standard architecture warn=
+ing.
+Checksums-Sha1:=20
+ aa3ce49a70579652d54eaca50a4986ac4770ded4 997 welcome2l_3.04-22.dsc
+ 3a530dd8520a37971f05a8e9dc65720acf585 13366 welcome2l_3.04-22.diff.gz
+ 4650e83214de1f2fb304d2cda4e1a76f08723141 25524 welcome2l_3.04-22_i386.de=
+b
+Checksums-Sha256:=20
+ 91045ebd951f58c38a5478f0f27c4aaf6eebdac430bf5fb668c338447cc45863 997 wel=
+come2l_3.04-22.dsc
+ 4cada17646b2b0cef16ef00998d0157e90d1c50bbb18ccb85cb3e16bbbd11395 13366 w=
+elcome2l_3.04-22.diff.gz
+ b64fafe83d1e8f99bc80f9c5379bbf84002fcb3cb2e071b1e2994806a1d616ea 25524 w=
+elcome2l_3.04-22_i386.deb
+Files:=20
+ 72887a2a2ffd7bd6fe2ba58f025a8a29 997 misc extra welcome2l_3.04-22.dsc
+ 9f7dd62beaa1ed05dd2dad32ea519145 13366 misc extra welcome2l_3.04-22.diff=
+.gz
+ 9041638947ac9df20a0cc2a0afcf0345 25524 misc extra welcome2l_3.04-22_i386=
+.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICfrzThh1cJ0wnDsRAjdeAJ0etgqPxMcl5/MnAzKVhZX/gorh/gCfco4Q
+2ZRjmOMSdXM/BF65chVR1vQ=3D
+=3D0VzS
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+welcome2l_3.04-22.diff.gz
+  to pool/main/w/welcome2l/welcome2l_3.04-22.diff.gz
+welcome2l_3.04-22.dsc
+  to pool/main/w/welcome2l/welcome2l_3.04-22.dsc
+welcome2l_3.04-22_i386.deb
+  to pool/main/w/welcome2l/welcome2l_3.04-22_i386.deb
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

@@ -1,0 +1,129 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 19:30:18 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JneIm-0000QE-1T
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 19:30:18 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 1335813A513A; Sun, 20 Apr 2008 18:30:06 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-6.9 required=4.0 tests=BAYES_00,FOURLA,
+	IMPRONONCABLE_2,LDO_WHITELIST,RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 15D5613A4968;
+	Sun, 20 Apr 2008 18:29:42 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JneFj-00023s-RB; Sun, 20 Apr 2008 18:27:03 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#477065: kweather: Shows grey backgroupd when used with kicker in transparent mode
+Reply-To: Steve McCarthy <newsdebian@jetcity.org>, 477065@bugs.debian.org
+Resent-From: Steve McCarthy <newsdebian@jetcity.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Resent-Date: Sun, 20 Apr 2008 18:27:01 +0000
+Resent-Message-ID: <handler.477065.B.12087158812678@bugs.debian.org>
+X-Debian-PR-Message: report 477065
+X-Debian-PR-Package: kweather
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: kdetoys
+Received: via spool by submit@bugs.debian.org id=B.12087158812678
+          (code B ref -1); Sun, 20 Apr 2008 18:27:01 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 18:24:41 +0000
+X-Amavis-Spam-Status: No, score=-8.9 required=4.0 tests=BAYES_00,FOURLA,HAS_PACKAGE,
+	IMPRONONCABLE_2 autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from tuphos.jetcity.org ([206.124.139.139])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <newsdebian@jetcity.org>)
+	id 1JneDR-0000gq-3c
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 18:24:41 +0000
+Received: from erebus.jetcity.org ([206.124.139.138] helo=lockheed.jetcity.org)
+	by tuphos.jetcity.org with esmtp (Exim 4.50)
+	id 1JneDO-0005pp-Ft; Sun, 20 Apr 2008 11:24:40 -0700
+Received: from jetadmin by lockheed.jetcity.org with local (Exim 4.69)
+	(envelope-from <newsdebian@jetcity.org>)
+	id 1JneDO-00051o-DT; Sun, 20 Apr 2008 11:24:38 -0700
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Steve McCarthy <newsdebian@jetcity.org>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Message-ID: <20080420182438.19185.8669.reportbug@lockheed.jetcity.org>
+X-Mailer: reportbug 3.39-0.1
+Date: Sun, 20 Apr 2008 11:24:38 -0700
+X-SA-Exim-Connect-IP: 206.124.139.138
+X-SA-Exim-Mail-From: newsdebian@jetcity.org
+X-SA-Exim-Version: 4.2 (built Thu, 03 Mar 2005 10:44:12 +0100)
+X-SA-Exim-Scanned: Yes (on tuphos.jetcity.org)
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 18:27:03 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343719
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.6
+X-Spam-Report: (-52.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+Package: kweather
+Version: 4:3.5.9-1
+Severity: minor
+
+
+The problem does not exist in 3.5.5-3.
+
+I've created a new user to insure existing config is not the issue.
+I run 11 other transparent applets that don't exhibit this behavior.
+Would be glad to provide more information if I knew what was relevant.
+
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (500, 'unstable'), (500, 'testing')
+Architecture: amd64 (x86_64)
+
+Kernel: Linux 2.6.24-5.080331-9 (SMP w/2 CPU cores)
+Locale: LANG=en_US.UTF-8, LC_CTYPE=en_US.UTF-8 (charmap=ANSI_X3.4-1968) (ignored: LC_ALL set to C)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages kweather depends on:
+ii  kdelibs4c2a          4:3.5.9.dfsg.1-2+b1 core libraries and binaries for al
+ii  libc6                2.7-10              GNU C Library: Shared libraries
+ii  libgcc1              1:4.3.0-3           GCC support library
+ii  libqt3-mt            3:3.3.8b-5          Qt GUI Library (Threaded runtime v
+ii  libstdc++6           4.3.0-3             The GNU Standard C++ Library v3
+
+Versions of packages kweather recommends:
+ii  kicker               4:3.5.9.dfsg.1-2+b1 desktop panel for KDE
+
+-- no debconf information
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

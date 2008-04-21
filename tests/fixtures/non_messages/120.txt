@@ -1,0 +1,113 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 18:55:52 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JndlQ-0000E9-GM
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 18:55:52 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 2B23113A5048; Sun, 20 Apr 2008 17:55:43 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-3.0 required=4.0 tests=BAYES_00,RCVD_IN_DNSWL_LOW
+	autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id C3ED713A50F5;
+	Sun, 20 Apr 2008 17:55:19 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jndh0-0005IF-I8; Sun, 20 Apr 2008 17:51:10 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476749: cron-apt: APTCOMMAND=aptitude does not reach	required quiet level
+Reply-To: Marc Haber <mh+debian-bugs@zugschlus.de>, 476749@bugs.debian.org
+Resent-From: Marc Haber <mh+debian-bugs@zugschlus.de>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Ola Lundqvist <opal@debian.org>
+Resent-Date: Sun, 20 Apr 2008 17:51:09 +0000
+Resent-Message-ID: <handler.476749.B476749.120871377618028@bugs.debian.org>
+X-Debian-PR-Message: report 476749
+X-Debian-PR-Package: cron-apt
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: cron-apt
+Received: via spool by 476749-submit@bugs.debian.org id=B476749.120871377618028
+          (code B ref 476749); Sun, 20 Apr 2008 17:51:09 +0000
+Received: (at 476749) by bugs.debian.org; 20 Apr 2008 17:49:36 +0000
+X-Amavis-Spam-Status: No, score=-7.0 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from torres.zugschlus.de ([85.214.68.41])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <mh+debian-bugs@zugschlus.de>)
+	id 1JndfU-0004gQ-9w; Sun, 20 Apr 2008 17:49:36 +0000
+Received: from mh by torres.zugschlus.de with local (Exim 4.69)
+	(envelope-from <mh+debian-bugs@zugschlus.de>)
+	id 1JndfQ-0008N6-It; Sun, 20 Apr 2008 19:49:32 +0200
+Date: Sun, 20 Apr 2008 19:49:32 +0200
+From: Marc Haber <mh+debian-bugs@zugschlus.de>
+To: Daniel Burrows <dburrows@debian.org>
+Cc: Ola Lundqvist <opal@debian.org>, 476749@bugs.debian.org,
+	aptitude@packages.debian.org
+Message-ID: <20080420174932.GB28704@torres.zugschlus.de>
+References: <20080418220701.21452.54346.reportbug@scyw00225.scy001.de> <20080419093822.GA28664@inguza.net> <20080420152029.GD7649@alpaca> <20080420164444.GA28704@torres.zugschlus.de> <20080420173541.GC16065@alpaca>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Disposition: inline
+In-Reply-To: <20080420173541.GC16065@alpaca>
+User-Agent: Mutt/1.5.13 (2006-08-11)
+X-CrossAssassin-Score: 2
+Resent-Date: Sun, 20 Apr 2008 17:51:10 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343695
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -30.0
+X-Spam-Report: (-30.0 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	23 AWL                    AWL: From: address is in the auto white-list
+
+reassign #476749 aptitude
+thanks
+
+On Sun, Apr 20, 2008 at 10:35:41AM -0700, Daniel Burrows wrote:
+>   Sure, or you could just reassign without cloning.
+
+Doing so, it is not an issue in cron-apt.
+
+>   It's fixed already in head.
+
+Good news, thanks!
+
+Greetings
+Marc
+
+-- 
+-----------------------------------------------------------------------------
+Marc Haber         | "I don't trust Computers. They | Mailadresse im Header
+Mannheim, Germany  |  lose things."    Winona Ryder | Fon: *49 621 72739834
+Nordisch by Nature |  How to make an American Quilt | Fax: *49 3221 2323190
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

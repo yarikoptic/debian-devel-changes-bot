@@ -1,0 +1,156 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 11:20:40 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnWex-0006Fh-0J
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 11:20:40 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id F205C13A4AB6; Sun, 20 Apr 2008 10:20:33 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.9 required=4.0 tests=BAYES_00,FOURLA,LDO_WHITELIST,
+	MURPHY_DRUGS_REL8,RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 3F53413A4ECF;
+	Sun, 20 Apr 2008 10:20:21 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnWZb-0005li-0c; Sun, 20 Apr 2008 10:15:03 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#474880: fixed in yaskkserv 0.3.8-4
+Reply-To: Tatsuya Kinoshita <tats@debian.org>, 474880@bugs.debian.org
+Resent-From: Tatsuya Kinoshita <tats@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: KURASHIKI Satoru <lurdan@gmail.com>
+Resent-Date: Sun, 20 Apr 2008 10:15:02 +0000
+Resent-Message-ID: <handler.474880.B474880.120868642318404@bugs.debian.org>
+X-Debian-PR-Message: report 474880
+X-Debian-PR-Package: yaskkserv
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: yaskkserv
+Received: via spool by 474880-submit@bugs.debian.org id=B474880.120868642318404
+          (code B ref 474880); Sun, 20 Apr 2008 10:15:02 +0000
+Received: (at 474880) by bugs.debian.org; 20 Apr 2008 10:13:43 +0000
+X-Amavis-Spam-Status: No, score=-8.9 required=4.0 tests=BAYES_00,FOURLA,
+	FROMDEVELOPER,HAS_BUG_NUMBER,MURPHY_DRUGS_REL8 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from vega.ocn.ne.jp ([125.170.92.71] helo=smtp.vega.ocn.ne.jp)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <tats@debian.org>)
+	id 1JnWYG-0004ly-WC
+	for 474880@bugs.debian.org; Sun, 20 Apr 2008 10:13:41 +0000
+Received: from localhost (EM119-72-23-43.pool.e-mobile.ne.jp [119.72.23.43])
+	by smtp.vega.ocn.ne.jp (Postfix) with ESMTP
+	id 1928441DD; Sun, 20 Apr 2008 19:13:37 +0900 (JST)
+Date: Sun, 20 Apr 2008 19:11:29 +0900 (JST)
+Message-Id: <20080420.191129.200969938.tats%nobody@tats.iris.ne.jp>
+To: 474880@bugs.debian.org
+Cc: zobel@ftbfs.de, lucas@lucas-nussbaum.net
+From: Tatsuya Kinoshita <tats@debian.org>
+In-Reply-To: <20080420.184302.139289501.tats%nobody@tats.iris.ne.jp>
+References: <20080414093915.GA26276@xanadu.blop.info>
+	<988ea2d90804141525p509e23edv57a2564712f141e8@mail.gmail.com>
+	<20080420.184302.139289501.tats%nobody@tats.iris.ne.jp>
+X-Mailer: Mew version 6.0.51 on Emacs 22.2 / Mule 5.0 (SAKAKI)
+Mime-Version: 1.0
+Content-Type: Multipart/Signed; protocol="application/pgp-signature";
+ micalg=pgp-sha1;
+ boundary="--Security_Multipart(Sun_Apr_20_19_11_29_2008_751)--"
+Content-Transfer-Encoding: 7bit
+Resent-Date: Sun, 20 Apr 2008 10:15:03 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343417
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.6
+X-Spam-Report: (-52.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+----Security_Multipart(Sun_Apr_20_19_11_29_2008_751)--
+Content-Type: Text/Plain; charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
+
+On April 20, 2008 at 6:43PM +0900,
+tats (at debian.org) wrote:
+
+> Ah, yaskkserv 0.3.8-5 has not yet fixed the FTBFS bug.
+> =
+
+> The buildd log seems that applying the patch with dpatch to the
+> configure file has no effect, because the configure file is invoked
+> at the clean target.
+
+Probably, invoking the configure file at the clean target is
+redundantly.  How about the following patch?
+
+----
+--- yaskkserv-0.3.8-5/debian/rules
++++ yaskkserv-0.3.8/debian/rules
+@@ -44,13 +44,13 @@
+ clean: clean1 unpatch
+ 	rm -rf var/
+ =
+
+-clean1: Makefile.config
++clean1:
+ 	dh_testdir
+ 	dh_testroot
+ 	rm -f build-stamp
+ =
+
+ 	# Add here commands to clean up after the build process.
+-	$(MAKE) clean #cleandepend
++	[ ! -f Makefile.config ] || $(MAKE) clean
+ 	rm -rf Makefile.config
+ =
+
+ 	dh_clean =
+
+----
+
+Thanks,
+-- =
+
+Tatsuya Kinoshita
+
+----Security_Multipart(Sun_Apr_20_19_11_29_2008_751)--
+Content-Type: application/pgp-signature
+Content-Transfer-Encoding: 7bit
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQBICxbRgV4LPvpMUpgRAr9qAJ0eklgkGpHyp6f1aV5ZyhbXNlyhHACeKQfC
+EEt8JjvlTMohr51z2koLrd8=
+=ca06
+-----END PGP SIGNATURE-----
+
+----Security_Multipart(Sun_Apr_20_19_11_29_2008_751)----
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,174 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 17:55:15 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jncol-0008MU-0E
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 17:55:15 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 0525113A4F15; Sun, 20 Apr 2008 16:55:06 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.9 required=4.0 tests=BAYES_00,FOURLA,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 77B3813A4B04;
+	Sun, 20 Apr 2008 16:54:52 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jncks-0002XS-Qd; Sun, 20 Apr 2008 16:51:06 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476817: aptitude: misses some automatic packages when	deciding what to remove
+Reply-To: Daniel Burrows <dburrows@debian.org>, 476817@bugs.debian.org
+Resent-From: Daniel Burrows <dburrows@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: APT Development Team <deity@lists.debian.org>
+Resent-Date: Sun, 20 Apr 2008 16:51:05 +0000
+Resent-Message-ID: <handler.476817.B476817.120870988324298@bugs.debian.org>
+X-Debian-PR-Message: report 476817
+X-Debian-PR-Package: apt
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: apt
+Received: via spool by 476817-submit@bugs.debian.org id=B476817.120870988324298
+          (code B ref 476817); Sun, 20 Apr 2008 16:51:05 +0000
+Received: (at 476817) by bugs.debian.org; 20 Apr 2008 16:44:43 +0000
+X-Amavis-Spam-Status: No, score=-8.9 required=4.0 tests=BAYES_00,FOURLA,
+	FROMDEVELOPER,HAS_BUG_NUMBER autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from vms173003pub.verizon.net ([206.46.173.3])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dburrows@debian.org>)
+	id 1Jncec-0005XH-BB
+	for 476817@bugs.debian.org; Sun, 20 Apr 2008 16:44:38 +0000
+Received: from [127.0.1.1] ([71.112.18.250]) by vms173003.mailsrvcs.net
+ (Sun Java System Messaging Server 6.2-6.01 (built Apr  3 2006))
+ with ESMTPA id <0JZM004BZUD9JW00@vms173003.mailsrvcs.net> for
+ 476817@bugs.debian.org; Sun, 20 Apr 2008 11:41:33 -0500 (CDT)
+Date: Sun, 20 Apr 2008 09:44:45 -0700
+From: Daniel Burrows <dburrows@debian.org>
+In-reply-to: <20080419112023.GA28494@nan92-1-81-57-214-146.fbx.proxad.net>
+To: Yann Dirson <ydirson@altern.org>, 476817@bugs.debian.org
+Message-id: <20080420164445.GA16065@alpaca>
+MIME-version: 1.0
+Content-type: text/plain; charset=us-ascii
+Content-disposition: inline
+References: <20080419112023.GA28494@nan92-1-81-57-214-146.fbx.proxad.net>
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Resent-Date: Sun, 20 Apr 2008 16:51:06 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343652
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.1
+X-Spam-Report: (-52.1 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.5 AWL                    AWL: From: address is in the auto white-list
+
+On Sat, Apr 19, 2008 at 01:20:23PM +0200, Yann Dirson <ydirson@altern.org> was heard to say:
+> My unstable chroot still has an obsolete libdb2 installed, although it
+> is marked automatic and has no revdeps.  It even does not break
+> anything when I select it explicitely for purge.
+
+  The problem is that libdb2 is a required package, and apt refuses to
+consider required packages to be garbage.  From depcache.cc:1406,
+
+     // skip required packages
+     if (!p.CurrentVer().end() && 
+	 (p.CurrentVer()->Priority == pkgCache::State::Required))
+	continue;
+
+  I'm undecided as to whether this is the "right thing to do".  On the
+one hand, while aptitude wouldn't remove unused Essential packages, it
+never had logic to screen out "required" packages.  AFAIK, packages that
+use a "required" but not Essential package have to declare the dependency.
+The really important-looking packages on my system that are Priority: required
+and that don't have incoming deps are also Essential.
+
+  On the other hand, Policy makes it clear that required packages
+shouldn't be removed:
+
+   required
+
+           Packages which are necessary for the proper
+           functioning of the system (usually, this means that
+           dpkg functionality depends on these packages).
+           Removing a required package may cause your system to
+           become totally broken and you may not even be able to
+           use dpkg to put things back, so only do so if you
+           know what you are doing. Systems with only the
+           required packages are probably unusable, but they do
+           have enough functionality to allow the sysadmin to
+           boot and install more software.
+
+  However, historically I don't think that priorities have been
+interpreted that strictly; if a package really and truly should never be
+removed even if nothing depends on it, it gets the Essential: yes tag.
+(of course, obsolete essential packages will never be autoremoved, but
+that's even less common than obsolete required packages)
+
+  I also have the sense from reading the list of packages in "required"
+that this is a broader category than you'd think from the above
+description.  Is gcc-4.2-base really required even if nothing depends on
+it?
+
+daniel@alpaca:~$ dpkg -L gcc-4.2-base
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/gcc-4.2-base
+/usr/share/doc/gcc-4.2-base/TODO.Debian
+/usr/share/doc/gcc-4.2-base/copyright
+/usr/share/doc/gcc-4.2-base/README.Debian.gz
+/usr/share/doc/gcc-4.2-base/changelog.Debian.gz
+
+  What about libattr1, which is used by no critical system binary as far
+as I can see?  Same goes for libcap2.
+
+
+  I don't know if there was a reason behind this change to apt's behavior.
+The commit log only says
+
+  * apt-pkg/depcache.cc:
+    - never mark required packages as garbage
+
+  which sounds like it just "seemed like a good idea".
+
+
+  I don't think this rule is necessary, if nothing else because aptitude
+ran without it for six years without a single bug report tied to
+removing a required package.  Furthermore, it causes user confusion (as
+you can see in this bug report) due to the fact that many
+not-actually-required packages are binned into the "required" priority.
+Removing the stanza that skips required packages causes libdb2 to be
+removed on the state snapshot Yann sent me, and the only package it
+removes on my system is libdevmapper0.2.
+
+  Daniel
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

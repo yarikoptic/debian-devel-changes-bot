@@ -1,0 +1,323 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 08:04:57 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnTbX-0005dk-0M
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 08:04:57 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 509D413A4DF6; Sun, 20 Apr 2008 07:04:49 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id D55F013A4C72;
+	Sun, 20 Apr 2008 07:04:46 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnTZu-000295-J9; Sun, 20 Apr 2008 07:03:10 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: KURASHIKI Satoru <lurdan@gmail.com>
+Subject: Bug#476776: marked as done (yaskkserv: incomplete LSB header for 
+ the init.d script)
+Message-ID: <handler.476776.D476776.12086748986198.ackdone@bugs.debian.org>
+References: <E1JnTKI-0000yM-Q2@ries.debian.org>
+ <20080419.121654.196920656.tats%nobody@tats.iris.ne.jp>
+X-Debian-PR-Message: closed 476776
+X-Debian-PR-Package: yaskkserv
+X-Debian-PR-Source: yaskkserv
+Content-Type: multipart/mixed; boundary="----------=_1208674990-8232-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 07:03:10 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <hloDCHsKBxL.A.CTF.RsuCIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/132899
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 07:04:49 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208674990-8232-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 06:47:02 +0000
+with message-id <E1JnTKI-0000yM-Q2@ries.debian.org>
+and subject line Bug#476776: fixed in yaskkserv 0.3.8-5
+has caused the Debian Bug report #476776,
+regarding yaskkserv: incomplete LSB header for the init.d script
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+476776: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D476776
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208674990-8232-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 19 Apr 2008 03:22:09 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.9 required=4.0 tests=BAYES_00,FOURLA,HAS_PACKAGE 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <tats@vega.ocn.ne.jp>
+Received: from vega.ocn.ne.jp ([125.170.92.71] helo=smtp.vega.ocn.ne.jp)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <tats@vega.ocn.ne.jp>)
+	id 1Jn3eS-0001W1-Sz
+	for submit@bugs.debian.org; Sat, 19 Apr 2008 03:22:09 +0000
+Received: from localhost (EM119-72-22-118.pool.e-mobile.ne.jp [119.72.22.118])
+	by smtp.vega.ocn.ne.jp (Postfix) with ESMTP
+	id 2D2344164; Sat, 19 Apr 2008 12:22:05 +0900 (JST)
+Date: Sat, 19 Apr 2008 12:16:54 +0900 (JST)
+Message-Id: <20080419.121654.196920656.tats%nobody@tats.iris.ne.jp>
+To: submit@bugs.debian.org
+Subject: yaskkserv: incomplete LSB header for the init.d script
+From: Tatsuya Kinoshita <tats@vega.ocn.ne.jp>
+X-Mailer: Mew version 6.0.51 on Emacs 22.2 / Mule 5.0 (SAKAKI)
+Mime-Version: 1.0
+Content-Type: Multipart/Signed; protocol="application/pgp-signature";
+ micalg=pgp-sha1;
+ boundary="--Security_Multipart(Sat_Apr_19_12_16_54_2008_765)--"
+Content-Transfer-Encoding: 7bit
+Delivered-To: submit@bugs.debian.org
+
+----Security_Multipart(Sat_Apr_19_12_16_54_2008_765)--
+Content-Type: Text/Plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+Package: yaskkserv
+Version: 0.3.8-4
+
+The yaskkserv init.d script (/etc/init.d/yaskkserv) seems that the
+LSB header is incomplete:
+
+----
+### BEGIN INIT INFO
+# Provides:          yaskkserv
+# Required-Start:    $network $local_fs
+# Required-Stop:
+# Should-Start:      $named
+# Should-Stop:
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: <Enter a short description of the sortware>
+# Description:       <Enter a long description of the software>
+#                    <...>
+#                    <...>
+### END INIT INFO
+----
+
+* Put Short-Description.
+
+* Put Description.
+
+* /usr may be remote, so the yaskkserv init.d script should require
+  $remote_fs.  Also, $syslog seems to be required.
+
+* Does the init.d script reallly allow stopping $network before
+  stopping this init.d script?  If not, `Required-Stop: $network'
+  is required.
+
+How about the following?
+
+# Required-Start:    $network $syslog $remote_fs
+# Required-Stop:     $network $syslog $remote_fs
+# Should-Start:      $named
+# Should-Stop:       $named
+
+See also http://wiki.debian.org/LSBInitScripts
+
+Thanks,
+--
+Tatsuya Kinoshita
+
+----Security_Multipart(Sat_Apr_19_12_16_54_2008_765)--
+Content-Type: application/pgp-signature
+Content-Transfer-Encoding: 7bit
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQBICWQmgV4LPvpMUpgRAoznAJ4tstqVBGEta4o5Iu37LOSqye5RAwCeNl0d
+NpQPhAcSjvvo5MAfXCXnRmM=
+=vl3G
+-----END PGP SIGNATURE-----
+
+----Security_Multipart(Sat_Apr_19_12_16_54_2008_765)----
+
+
+
+------------=_1208674990-8232-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 476776-close) by bugs.debian.org; 20 Apr 2008 07:01:38 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-6.6 required=4.0 tests=BAYES_00,FOURLA,
+	FVGT_m_MULTI_ODD,GMAIL,HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_2,
+	MURPHY_WRONG_WORD1,MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnTYP-0001be-Va
+	for 476776-close@bugs.debian.org; Sun, 20 Apr 2008 07:01:38 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnTKI-0000yM-Q2; Sun, 20 Apr 2008 06:47:02 +0000
+From: KURASHIKI Satoru <lurdan@gmail.com>
+To: 476776-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#476776: fixed in yaskkserv 0.3.8-5
+Message-Id: <E1JnTKI-0000yM-Q2@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 06:47:02 +0000
+X-CrossAssassin-Score: 2
+Content-Transfer-Encoding: quoted-printable
+
+Source: yaskkserv
+Source-Version: 0.3.8-5
+
+We believe that the bug you reported is fixed in the latest version of
+yaskkserv, which is due to be installed in the Debian FTP archive:
+
+yaskkserv_0.3.8-5.diff.gz
+  to pool/main/y/yaskkserv/yaskkserv_0.3.8-5.diff.gz
+yaskkserv_0.3.8-5.dsc
+  to pool/main/y/yaskkserv/yaskkserv_0.3.8-5.dsc
+yaskkserv_0.3.8-5_i386.deb
+  to pool/main/y/yaskkserv/yaskkserv_0.3.8-5_i386.deb
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 476776@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+KURASHIKI Satoru <lurdan@gmail.com> (supplier of updated yaskkserv packag=
+e)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 12:01:00 +0900
+Source: yaskkserv
+Binary: yaskkserv
+Architecture: source i386
+Version: 0.3.8-5
+Distribution: unstable
+Urgency: low
+Maintainer: KURASHIKI Satoru <lurdan@gmail.com>
+Changed-By: KURASHIKI Satoru <lurdan@gmail.com>
+Description:=20
+ yaskkserv  - small and fast SKK dictionary server intended for embedded =
+use
+Closes: 474880 475686 475687 475815 476776 476778
+Changes:=20
+ yaskkserv (0.3.8-5) unstable; urgency=3Dlow
+ .
+   * complete LSB header for the init.d script. (Closes: #476776)
+   * remove incorrect Build-Depends. (Closes: #476778)
+   * fixup lintian warnings: (Closes: #475686)
+     - debian/changelog: shorten line length of 0.3.8-4.
+     - debian/preinst: remove.
+   * configure:
+     - replace LANG with LC_ALL, and change default from en_US
+       to C. (Closes: #475687)
+     - remove g++ version checking, leaving it to dpkg.
+       (Closes: #474880, #475815)
+   * source/unit_test_benchmark/unit_test_benchmark.cpp:
+     - remove storage specifier. (for porting to gcc-4.3).
+Checksums-Sha1:=20
+ 2f3f21b0e872ccd4ee6c67db98437484bc6f19bf 1051 yaskkserv_0.3.8-5.dsc
+ 1050ccf7659cbc213a46cbb64f4a4d9effc111f9 10787 yaskkserv_0.3.8-5.diff.gz
+ 1832247ff02ea2f505026e2c301a5d11dfbf7f20 65154 yaskkserv_0.3.8-5_i386.de=
+b
+Checksums-Sha256:=20
+ c12bca63ca5da3812e48b03b798f753983eaa4cb973bc8e5de098f13e60ba2de 1051 ya=
+skkserv_0.3.8-5.dsc
+ 04d914437e4bd15e2da8fc8b52085cae22c30c282a9ed48c6fd5790e8c724ff1 10787 y=
+askkserv_0.3.8-5.diff.gz
+ 897d88c00354b37c91592dfdaf646668d0a958245d244949e358e7add25a8d8a 65154 y=
+askkserv_0.3.8-5_i386.deb
+Files:=20
+ 00dd63ee432124694266920d52213cbb 1051 utils extra yaskkserv_0.3.8-5.dsc
+ 5349c1cc1b669c3c8fc87e51317cef50 10787 utils extra yaskkserv_0.3.8-5.dif=
+f.gz
+ 54f85e9db20f298e268052fdfce18181 65154 utils extra yaskkserv_0.3.8-5_i38=
+6.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICuN8gV4LPvpMUpgRAhSuAKCHbzhgAoZRM0ukFtGixhWnnGom3gCZAcdl
+Th2zgqt++vuzAefk/IkOIek=3D
+=3DCcpn
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208674990-8232-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,120 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 19:42:30 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JneUa-0000Ub-S8
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 19:42:30 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id BC6E813A509A; Sun, 20 Apr 2008 18:42:23 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 4D29713A4FBF;
+	Sun, 20 Apr 2008 18:42:10 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JneOQ-0005sQ-G8; Sun, 20 Apr 2008 18:36:02 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476846: Bug does NOT happen for sid version (9:1.1.7.1-1) of genisoimage  on armel
+Reply-To: Tim Small <tim@buttersideup.com>, 476846@bugs.debian.org
+Resent-From: Tim Small <tim@buttersideup.com>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Joerg Jaspert <joerg@debian.org>
+Resent-Date: Sun, 20 Apr 2008 18:36:01 +0000
+Resent-Message-ID: <handler.476846.B476846.120871643018801@bugs.debian.org>
+X-Debian-PR-Message: report 476846
+X-Debian-PR-Package: genisoimage
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: cdrkit
+Received: via spool by 476846-submit@bugs.debian.org id=B476846.120871643018801
+          (code B ref 476846); Sun, 20 Apr 2008 18:36:01 +0000
+Received: (at 476846) by bugs.debian.org; 20 Apr 2008 18:33:50 +0000
+X-Amavis-Spam-Status: No, score=-6.9 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	HAS_BUG_NUMBER autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from relay1.allsecurenet.com ([66.111.57.92])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <tim@buttersideup.com>)
+	id 1JneMI-0004sh-6h
+	for 476846@bugs.debian.org; Sun, 20 Apr 2008 18:33:50 +0000
+Received: from [87.194.253.157] (helo=zebedee.buttersideup.com)
+	by relay1.allsecurenet.com with esmtpsa (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <tim@buttersideup.com>)
+	id 1JneM9-0001lS-4X; Sun, 20 Apr 2008 18:33:42 +0000
+Received: from [127.0.0.1] (localhost [127.0.0.1])
+	by zebedee.buttersideup.com (Postfix) with ESMTP id EFCA66F9C3;
+	Sun, 20 Apr 2008 19:33:37 +0100 (BST)
+Message-ID: <480B8C81.80202@buttersideup.com>
+Date: Sun, 20 Apr 2008 19:33:37 +0100
+From: Tim Small <tim@buttersideup.com>
+User-Agent: Icedove 1.5.0.14pre (X11/20080304)
+MIME-Version: 1.0
+To: Tobias Frost <tobi@coldtobi.de>
+CC: Peter Samuelson <peter@p12n.org>, Barry Tennison <barry@ukph.org>, 
+ 476846@bugs.debian.org,  martinwguy@gmail.com, 
+ Bill Gatliff <bgat@billgatliff.com>
+References: <480B0ED9.3060403@ukph.org>  <20080420152441.GQ646@p12n.org> <1208715782.6035.5.camel@moria>
+In-Reply-To: <1208715782.6035.5.camel@moria>
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 7bit
+X-Scan-Signature: 2e6fca1653f21f0f57637f35f01aec6c
+Resent-Date: Sun, 20 Apr 2008 18:36:02 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343725
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -42.5
+X-Spam-Report: (-42.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	10 AWL                    AWL: From: address is in the auto white-list
+
+Tobias Frost wrote:
+> On Sun, 2008-04-20 at 10:24 -0500, Peter Samuelson wrote:
+>
+>   
+>> No, it's not an endian problem.  i386, amd64, arm, and armel are _all_
+>> little-endian.
+>>     
+>
+> MMmmh, I always thought arm and armel differs in endianess...
+>   
+
+Nope, some packing, and syscall, and FP differences.  If you have a 
+sid/armel install, or an etch/arm install you can install a sid/arm 
+chroot under it (using debootstrap), and test that if you suspect armel 
+vs arm....
+
+Ta,
+
+Tim.
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

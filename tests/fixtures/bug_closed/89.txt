@@ -1,0 +1,256 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 12:13:02 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnXTe-0006dD-L0
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 12:13:02 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 9363513A4EFA; Sun, 20 Apr 2008 11:12:57 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 8EC6113A4988;
+	Sun, 20 Apr 2008 11:12:55 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnXNC-0005lz-3H; Sun, 20 Apr 2008 11:06:18 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Roland Stigge <stigge@antcom.de>
+Subject: Bug#476176: marked as done (autodia: autodia_java depends on 
+ INLINE::Java)
+Message-ID: <handler.476176.D476176.12086893004476.ackdone@bugs.debian.org>
+References: <E1JnX4Z-0000gK-CI@ries.debian.org>
+ <1208208379.19411.46.camel@sempati.menos4>
+X-Debian-PR-Message: closed 476176
+X-Debian-PR-Package: autodia
+X-Debian-PR-Source: autodia
+Content-Type: multipart/mixed; boundary="----------=_1208689578-22049-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 11:06:18 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <d0qLpt69b4L.A.zaB.5UyCIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/132965
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 11:12:57 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208689578-22049-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 10:47:03 +0000
+with message-id <E1JnX4Z-0000gK-CI@ries.debian.org>
+and subject line Bug#476176: fixed in autodia 2.03-2
+has caused the Debian Bug report #476176,
+regarding autodia: autodia_java depends on INLINE::Java
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+476176: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D476176
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208689578-22049-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 14 Apr 2008 21:26:33 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.9 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	HAS_PACKAGE autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <jasp00@terra.es>
+Received: from outmailhost.terra.es ([213.4.149.241] helo=csmtpout3.frontal.correo)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <jasp00@terra.es>)
+	id 1JlWC7-0001aW-Sd
+	for submit@bugs.debian.org; Mon, 14 Apr 2008 21:26:32 +0000
+Received: from [192.168.1.254] (62.43.64.122) by csmtpout3.frontal.correo (7.3.118.4) (authenticated as jasp00.terra.es)
+        id 47FF3292000FE214 for submit@bugs.debian.org; Mon, 14 Apr 2008 23:26:20 +0200
+Subject: autodia: autodia_java depends on INLINE::Java
+From: Javier Serrano Polo <jasp00@terra.es>
+To: submit@bugs.debian.org
+Content-Type: text/plain
+Date: Mon, 14 Apr 2008 23:26:19 +0200
+Message-Id: <1208208379.19411.46.camel@sempati.menos4>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.12.3 
+Content-Transfer-Encoding: 7bit
+Delivered-To: submit@bugs.debian.org
+
+Package: autodia
+Version: 2.03-1
+Severity: important
+
+INLINE::Java isn't available in Debian. It's fairly easy to package
+though (of course, if you know how to make packages). Autodia would need
+additional fixes however.
+Because there're better alternatives to package (e.g., UMLGraph) I
+suggest to simply disable the java part.
+
+
+
+
+------------=_1208689578-22049-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 476176-close) by bugs.debian.org; 20 Apr 2008 11:01:40 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.7 required=4.0 tests=BAYES_00,FVGT_m_MULTI_ODD,
+	HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_2,MURPHY_WRONG_WORD1,
+	MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnXIh-00019K-Ob
+	for 476176-close@bugs.debian.org; Sun, 20 Apr 2008 11:01:39 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnX4Z-0000gK-CI; Sun, 20 Apr 2008 10:47:03 +0000
+From: Roland Stigge <stigge@antcom.de>
+To: 476176-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#476176: fixed in autodia 2.03-2
+Message-Id: <E1JnX4Z-0000gK-CI@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 10:47:03 +0000
+Content-Transfer-Encoding: quoted-printable
+
+Source: autodia
+Source-Version: 2.03-2
+
+We believe that the bug you reported is fixed in the latest version of
+autodia, which is due to be installed in the Debian FTP archive:
+
+autodia_2.03-2.diff.gz
+  to pool/main/a/autodia/autodia_2.03-2.diff.gz
+autodia_2.03-2.dsc
+  to pool/main/a/autodia/autodia_2.03-2.dsc
+autodia_2.03-2_all.deb
+  to pool/main/a/autodia/autodia_2.03-2_all.deb
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 476176@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Roland Stigge <stigge@antcom.de> (supplier of updated autodia package)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 11:56:38 +0200
+Source: autodia
+Binary: autodia
+Architecture: source all
+Version: 2.03-2
+Distribution: unstable
+Urgency: low
+Maintainer: Cedric Gehin <cedric.gehin@epita.fr>
+Changed-By: Roland Stigge <stigge@antcom.de>
+Description:=20
+ autodia    - generates UML diagrams from perl or C++ code
+Closes: 476176
+Changes:=20
+ autodia (2.03-2) unstable; urgency=3Dlow
+ .
+   * debian/README.Debian: Add note that until INLINE::Java is available =
+in
+     Debian, autodia_java only works with separately installed INLINE::Ja=
+va
+     (Closes: #476176)
+Checksums-Sha1:=20
+ 74665afe62090ce536e203768f777f2d7a375963 993 autodia_2.03-2.dsc
+ f696d708c0d9cb02216f34ce4b06cdc8aca4498a 2749 autodia_2.03-2.diff.gz
+ 5afe246694a1a8a2b1c38a3af8bd1fc51e337956 101686 autodia_2.03-2_all.deb
+Checksums-Sha256:=20
+ 7b282c987ac2f93edeeb0c6048b1e66070959efffb251a1e205a698faccda9a8 993 aut=
+odia_2.03-2.dsc
+ 92153330f15509a1b1d3bc566778b4a0cf6fb0b714da83d0afc7c4672f3a2d73 2749 au=
+todia_2.03-2.diff.gz
+ de97fb013eefcd46963418aa9b9a75d5c3f6669874d4a35cc135843319c0e 101686 =
+autodia_2.03-2_all.deb
+Files:=20
+ cd522a702ec08016308f89c665c85551 993 devel optional autodia_2.03-2.dsc
+ f802265b3acf75da82229c17df336226 2749 devel optional autodia_2.03-2.diff=
+.gz
+ 5c4d60dc267256444f5b9adb41815d7b 101686 devel optional autodia_2.03-2_al=
+l.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICxdWcaH/YBv43g8RAoIZAJ9NhugIpByTZ6HJnnsTlpOXQCaIsACfaT6N
+u2og3M5VI2Ct2YCaOa/qA6o=3D
+=3D88ab
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208689578-22049-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

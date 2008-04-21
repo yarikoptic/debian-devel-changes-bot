@@ -1,0 +1,138 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 19:32:00 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JneKS-0000RL-ND
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 19:32:00 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 651D213A5189; Sun, 20 Apr 2008 18:31:55 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id 62C0A13A517E
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 18:31:54 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1Jne6G-0001Zt-JA; Sun, 20 Apr 2008 18:17:16 +0000
+From: gregor herrmann <gregoa@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted libcalendar-simple-perl 1.20-1 (source all)
+Message-Id: <E1Jne6G-0001Zt-JA@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 18:17:16 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <1msjDDl5GKG.A.s3G.bw4CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301332
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 18:31:55 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.6
+X-Spam-Report: (-2.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 20:08:51 +0200
+Source: libcalendar-simple-perl
+Binary: libcalendar-simple-perl
+Architecture: source all
+Version: 1.20-1
+Distribution: unstable
+Urgency: low
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.o=
+rg>
+Changed-By: gregor herrmann <gregoa@debian.org>
+Description:=20
+ libcalendar-simple-perl - Perl extension to create simple calendars
+Changes:=20
+ libcalendar-simple-perl (1.20-1) unstable; urgency=3Dlow
+ .
+   * New upstream release.
+   * debian/copyright: adjust copyright notice.
+   * Refresh debian/rules, no functional changes; don't install almost em=
+pty
+     README anymore.
+   * debian/control:
+     - add libtest-pod-coverage-perl to Build-Depends-Indep
+     - move libmodule-build-perl to Build-Depends
+     - add /me to Uploaders
+Checksums-Sha1:=20
+ 1ad6285e0f2cff38fcb02466a8ebf95ed39e9af1 1510 libcalendar-simple-perl_1.=
+20-1.dsc
+ 461490908534a073d2665109094ff1a4cb3b361f 7136 libcalendar-simple-perl_1.=
+20.orig.tar.gz
+ 1cb5e49b1b07724f25ec899fdea02084a66257c0 3071 libcalendar-simple-perl_1.=
+20-1.diff.gz
+ 81407168621ca3387b07595ac741884f7de36440 11488 libcalendar-simple-perl_1=
+.20-1_all.deb
+Checksums-Sha256:=20
+ 0d222cac4b4d662da3321654ac5499ed6546cbf0622ecab68eddf106d514446d 1510 li=
+bcalendar-simple-perl_1.20-1.dsc
+ 8e847569e0a7f5f4ba54294402fdcf7bc6e2ea313b6e6e573402c0535628bcbd 7136 li=
+bcalendar-simple-perl_1.20.orig.tar.gz
+ 07e279892ec6c5bce0828e15cd059a37330e15e4d2fb1f5ea74bde958c99ec60 3071 li=
+bcalendar-simple-perl_1.20-1.diff.gz
+ 57256f17f1b50f41b0670f293166a97930e59d5407cc631e4034ba90fb34f4c8 11488 l=
+ibcalendar-simple-perl_1.20-1_all.deb
+Files:=20
+ 743fb248d2b4fb7366b87a7211240cd0 1510 perl optional libcalendar-simple-p=
+erl_1.20-1.dsc
+ 8f67dc77caba570339ada69b453b2a1d 7136 perl optional libcalendar-simple-p=
+erl_1.20.orig.tar.gz
+ cd80993c3b338b0205c17ecdc0016be7 3071 perl optional libcalendar-simple-p=
+erl_1.20-1.diff.gz
+ 776366d48297b31e59c1b8a9e78f2 11488 perl optional libcalendar-simple-=
+perl_1.20-1_all.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC4bZOzKYnQDzz+QRAtV8AKDZVGYMPcrBdsLhkki/rypfXYTRJgCfbDyj
+BIFYRkIquHI2K/LlCtPkWpw=3D
+=3DN6kR
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+libcalendar-simple-perl_1.20-1.diff.gz
+  to pool/main/libc/libcalendar-simple-perl/libcalendar-simple-perl_1.20-=
+1.diff.gz
+libcalendar-simple-perl_1.20-1.dsc
+  to pool/main/libc/libcalendar-simple-perl/libcalendar-simple-perl_1.20-=
+1.dsc
+libcalendar-simple-perl_1.20-1_all.deb
+  to pool/main/libc/libcalendar-simple-perl/libcalendar-simple-perl_1.20-=
+1_all.deb
+libcalendar-simple-perl_1.20.orig.tar.gz
+  to pool/main/libc/libcalendar-simple-perl/libcalendar-simple-perl_1.20.=
+orig.tar.gz
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

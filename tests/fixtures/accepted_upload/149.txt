@@ -1,0 +1,109 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 20:01:54 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnenN-0000ZN-OI
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 20:01:54 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 4D36113A5158; Sun, 20 Apr 2008 19:01:47 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id B9ED413A514E
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 19:01:45 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JneZ7-0002xq-EI; Sun, 20 Apr 2008 18:47:05 +0000
+From: Dave Beckett <dajobe@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted ikvm 0.34.0.4-3 (source i386)
+Message-Id: <E1JneZ7-0002xq-EI@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 18:47:05 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <U4W4D5ZzNuB.A.2RF.bM5CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301335
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 19:01:47 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.6
+X-Spam-Report: (-2.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.0 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.7
+Date: Sun, 17 Feb 2008 21:20:31 -0800
+Source: ikvm
+Binary: ikvm libikvm-native
+Architecture: source i386
+Version: 0.34.0.4-3
+Distribution: unstable
+Urgency: low
+Maintainer: Debian QA Group <packages@qa.debian.org>
+Changed-By: Dave Beckett <dajobe@debian.org>
+Description:=20
+ ikvm       - Java virtual machine/compiler implemented in .NET (Mono)
+ libikvm-native - Native library for IKVM Java virtual machine for .NET (=
+Mono)
+Changes:=20
+ ikvm (0.34.0.4-3) unstable; urgency=3Dlow
+ .
+   * Orphan ikvm: set maintainer to QA Group
+Files:=20
+ 8160d901e529c5c6de8d273bf9f5dfb4 901 devel optional ikvm_0.34.0.4-3.dsc
+ 70ee0f686b63f8e01106cc2dbde90c55 10712956 devel optional ikvm_0.34.0.4-3=
+.diff.gz
+ 55263919738f98423395c0b3352d56ef 4669744 devel optional ikvm_0.34.0.4-3_=
+i386.deb
+ 75eaff5eb1f207349b5f16a9a7e80001 9522 devel optional libikvm-native_0.34=
+.0.4-3_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC4g1Q+ySUE9xlVoRAgKWAKCOXqlC6cnEO5cUZueviwZHJ0/TewCaAjn+
+7n8uqSPNQOVruwmmQ70+5SY=3D
+=3DKXnI
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+ikvm_0.34.0.4-3.diff.gz
+  to pool/main/i/ikvm/ikvm_0.34.0.4-3.diff.gz
+ikvm_0.34.0.4-3.dsc
+  to pool/main/i/ikvm/ikvm_0.34.0.4-3.dsc
+ikvm_0.34.0.4-3_i386.deb
+  to pool/main/i/ikvm/ikvm_0.34.0.4-3_i386.deb
+libikvm-native_0.34.0.4-3_i386.deb
+  to pool/main/i/ikvm/libikvm-native_0.34.0.4-3_i386.deb
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

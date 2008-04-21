@@ -1,0 +1,412 @@
+From bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org Sun Apr 20 20:06:08 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org>)
+	id 1JnerS-0000b4-3w
+	for ddc@ddc.chris-lamb.co.uk; Sun, 20 Apr 2008 20:06:08 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 9005A13A51CA; Sun, 20 Apr 2008 19:06:00 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id BAD6B13A4FF1;
+	Sun, 20 Apr 2008 19:05:55 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jneok-00005t-77; Sun, 20 Apr 2008 19:03:14 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Matthias Klose <doko@debian.org>
+Subject: Bug#459560: marked as done (crashes at once on hppa architecture)
+Message-ID: <handler.459560.D459560.120871812828791.ackdone@bugs.debian.org>
+References: <E1JneKk-0002JZ-FE@ries.debian.org>
+ <20080107103334.25233.33372.reportbug@ls3545.wdf.sap.corp>
+X-Debian-PR-Message: closed 459560
+X-Debian-PR-Package: gij-4.3
+X-Debian-PR-Keywords: moreinfo wontfix
+X-Debian-PR-Source: gcj-4.3
+Content-Type: multipart/mixed; boundary="----------=_1208718194-32691-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 19:03:14 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <rP8Cv8votEL.A.jBG.YQ5CIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/133075
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 19:06:00 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208718194-32691-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 18:32:14 +0000
+with message-id <E1JneKk-0002JZ-FE@ries.debian.org>
+and subject line Bug#459560: fixed in gcj-4.3 4.3.0-3
+has caused the Debian Bug report #459560,
+regarding crashes at once on hppa architecture
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+459560: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D459560
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208718194-32691-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 7 Jan 2008 10:32:47 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.4 required=4.0 tests=BAYES_00,FOURLA,
+	FVGT_m_MULTI_ODD,HAS_PACKAGE,IMPRONONCABLE_2,MONEY,STOCKLIKE,
+	UNPARSEABLE_RELAY,X_DEBBUGS_CC autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <helge.deller@sap.com>
+Received: from smtpde03.sap-ag.de ([155.56.68.140])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <helge.deller@sap.com>)
+	id 1JBpHi-0007FR-PL
+	for submit@bugs.debian.org; Mon, 07 Jan 2008 10:32:47 +0000
+Received: from mail.sap.corp
+	by smtpde03.sap-ag.de (26) with ESMTP id m07AWPhq008806
+	for <submit@bugs.debian.org>; Mon, 7 Jan 2008 11:32:25 +0100 (MET)
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Helge Deller <helge.deller@sap.com>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Subject: crashes at once on hppa architecture
+Message-ID: <20080107103334.25233.33372.reportbug@ls3545.wdf.sap.corp>
+X-Mailer: reportbug 3.39
+Date: Mon, 07 Jan 2008 11:33:34 +0100
+X-Debbugs-Cc: deller@gmx.de
+X-Scanner: Virus Scanner virwal05
+X-SAP: out
+Delivered-To: submit@bugs.debian.org
+
+Package: ant
+Version: 1.7.0-3
+Severity: grave
+
+ant crashes at once on the hppa architecture if it's called from the command line.
+
+Example:
+[d036493@ls3545 ~]$ ant
+Segmentation fault
+
+the last part of strace gives:
+.....
+brk(0)                                  = 0x12000
+brk(0x33000)                            = 0x33000
+open("/usr/lib/locale/locale-archive", O_RDONLY|O_LARGEFILE) = 3
+fstat64(3, {st_mode=0, st_size=0, ...}) = 0
+mmap2(NULL, 2097152, PROT_READ, MAP_PRIVATE, 3, 0) = 0x438b4000
+mmap2(NULL, 1183744, PROT_READ, MAP_PRIVATE, 3, 0x222) = 0x434b4000
+close(3)                                = 0
+gettimeofday({1199701873, 548740}, NULL) = 0
+rt_sigaction(SIGHUP, {0x4012722a, [], 0}, NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], NULL, 8) = 0
+rt_sigaction(SIGPWR, {0x4012722a, ~[], SA_RESTART}, NULL, 8) = 0
+rt_sigaction(SIGXCPU, {0x4012722a, ~[], SA_RESTART}, NULL, 8) = 0
+open("/proc/stat", O_RDONLY)            = 3
+read(3, "cpu  89099 18209902 2666026 2211"..., 4096) = 447
+close(3)                                = 0
+sched_getscheduler(25290)               = 0 (SCHED_OTHER)
+sched_getparam(25290, { 0 })            = 0
+open("/proc/self/maps", O_RDONLY)       = 3
+getrlimit(RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=81920*1024}) = 0
+fstat64(3, {st_mode=0, st_size=46673409605649, ...}) = 0
+mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x4000b000
+read(3, "00010000-00011000 r-xp 00000000 "..., 1024) = 1024
+read(3, ".4\n40288000-40289000 rwxp 0000e0"..., 1024) = 1024
+read(3, "43663000 rwxp 0007a000 08:03 798"..., 1024) = 194
+close(3)                                = 0
+munmap(0x4000b000, 4096)                = 0
+mmap(NULL, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x4009c000
+mmap(0x400ac000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x400ac000
+mmap(0x400bc000, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x400bc000
+getpid()                                = 25290
+--- SIGSEGV (Segmentation fault) @ 0 (0) ---
++++ killed by SIGSEGV +++
+Process 25290 detached
+
+
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers testing
+  APT policy: (500, 'testing'), (500, 'stable')
+Architecture: hppa (parisc)
+
+Kernel: Linux 2.6.24-rc4
+Locale: LANG=C, LC_CTYPE=C (charmap=ANSI_X3.4-1968)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages ant depends on:
+ii  gij [java-virtual-machine]    4:4.2.1-6  The GNU Java bytecode interpreter
+ii  gij-4.1 [java1-runtime]       4.1.2-6    The GNU Java bytecode interpreter
+ii  gij-4.2 [java1-runtime]       4.2.1-5    The GNU Java bytecode interpreter
+ii  java-gcj-compat               1.0.76-5   Java runtime environment using GIJ
+ii  libxerces2-java               2.9.0-1    Validating XML parser for Java wit
+
+Versions of packages ant recommends:
+ii  ant-gcj                       1.7.0-3    Java based build tool like make
+ii  ant-optional                  1.7.0-3    Java based build tool like make - 
+
+-- no debconf information
+
+
+
+------------=_1208718194-32691-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 459560-close) by bugs.debian.org; 20 Apr 2008 19:02:08 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.7 required=4.0 tests=BAYES_00,FROMDEVELOPER,
+	FVGT_m_MULTI_ODD,HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_1,
+	IMPRONONCABLE_2,MURPHY_WRONG_WORD1,MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1Jneng-0007T2-Cp
+	for 459560-close@bugs.debian.org; Sun, 20 Apr 2008 19:02:08 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JneKk-0002JZ-FE; Sun, 20 Apr 2008 18:32:14 +0000
+From: Matthias Klose <doko@debian.org>
+To: 459560-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#459560: fixed in gcj-4.3 4.3.0-3
+Message-Id: <E1JneKk-0002JZ-FE@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 18:32:14 +0000
+Content-Transfer-Encoding: quoted-printable
+
+Source: gcj-4.3
+Source-Version: 4.3.0-3
+
+We believe that the bug you reported is fixed in the latest version of
+gcj-4.3, which is due to be installed in the Debian FTP archive:
+
+gappletviewer-4.3_4.3.0-3_amd64.deb
+  to pool/main/g/gcj-4.3/gappletviewer-4.3_4.3.0-3_amd64.deb
+gcj-4.3-base_4.3.0-3_amd64.deb
+  to pool/main/g/gcj-4.3/gcj-4.3-base_4.3.0-3_amd64.deb
+gcj-4.3_4.3.0-3.diff.gz
+  to pool/main/g/gcj-4.3/gcj-4.3_4.3.0-3.diff.gz
+gcj-4.3_4.3.0-3.dsc
+  to pool/main/g/gcj-4.3/gcj-4.3_4.3.0-3.dsc
+gcj-4.3_4.3.0-3_amd64.deb
+  to pool/main/g/gcj-4.3/gcj-4.3_4.3.0-3_amd64.deb
+gij-4.3_4.3.0-3_amd64.deb
+  to pool/main/g/gcj-4.3/gij-4.3_4.3.0-3_amd64.deb
+libgcj-doc_4.3.0-3_all.deb
+  to pool/main/g/gcj-4.3/libgcj-doc_4.3.0-3_all.deb
+libgcj9-0-awt_4.3.0-3_amd64.deb
+  to pool/main/g/gcj-4.3/libgcj9-0-awt_4.3.0-3_amd64.deb
+libgcj9-0_4.3.0-3_amd64.deb
+  to pool/main/g/gcj-4.3/libgcj9-0_4.3.0-3_amd64.deb
+libgcj9-dbg_4.3.0-3_amd64.deb
+  to pool/main/g/gcj-4.3/libgcj9-dbg_4.3.0-3_amd64.deb
+libgcj9-dev_4.3.0-3_amd64.deb
+  to pool/main/g/gcj-4.3/libgcj9-dev_4.3.0-3_amd64.deb
+libgcj9-jar_4.3.0-3_all.deb
+  to pool/main/g/gcj-4.3/libgcj9-jar_4.3.0-3_all.deb
+libgcj9-src_4.3.0-3_all.deb
+  to pool/main/g/gcj-4.3/libgcj9-src_4.3.0-3_all.deb
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 459560@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Matthias Klose <doko@debian.org> (supplier of updated gcj-4.3 package)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 15:14:27 +0000
+Source: gcj-4.3
+Binary: gcj-4.3-base gcj-4.3 gij-4.3 libgcj9-0 libgcj9-jar libgcj9-0-awt =
+gappletviewer-4.3 gcjwebplugin-4.3 libgcj9-dev libgcj9-dbg libgcj9-src li=
+bgcj-doc
+Architecture: source all amd64
+Version: 4.3.0-3
+Distribution: unstable
+Urgency: low
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Changed-By: Matthias Klose <doko@debian.org>
+Description:=20
+ gappletviewer-4.3 - Standalone application to execute Java (tm) applets
+ gcj-4.3    - The GNU compiler for Java(TM)
+ gcj-4.3-base - The GNU Compiler Collection (gcj base package)
+ gcjwebplugin-4.3 - Web browser plugin to execute Java (tm) applets
+ gij-4.3    - The GNU Java bytecode interpreter
+ libgcj-doc - libgcj API documentation and example programs
+ libgcj9-0  - Java runtime library for use with gcj
+ libgcj9-0-awt - AWT peer runtime libraries for use with gcj
+ libgcj9-dbg - Debugging symbols for libraries provided in libgcj9-dev
+ libgcj9-dev - Java development headers for use with gcj
+ libgcj9-jar - Java runtime library for use with gcj (jar files)
+ libgcj9-src - libgcj java sources for use in eclipse
+Closes: 459560
+Changes:=20
+ gcj-4.3 (4.3.0-3) unstable; urgency=3Dlow
+ .
+   * Update to SVN 20080420 from the gcc-4_3-branch.
+   * Stop building on alpha, arm and hppa. Closes: #459560.
+Checksums-Sha1:=20
+ a6d9a1aabbe1976653b98cd196aa3cf813345315 3229 gcj-4.3_4.3.0-3.dsc
+ e144827069ba755360a5c8c36790311db64ff371 4124141 gcj-4.3_4.3.0-3.diff.gz
+ 5ba61a4b5ae0ca6a4f30ebb8ddbab9dd214fc237 10063486 libgcj9-jar_4.3.0-3_al=
+l.deb
+ 7c5921ac6c4fc4ac19e223a822d5a9e8f801362c 12378446 libgcj9-src_4.3.0-3_al=
+l.deb
+ 94536a0f8ac94525523971925875f141026623a9 44437116 libgcj-doc_4.3.0-3_all=
+.deb
+ 9100741edbca25bdbcab88d001c81dc8f01ea4da 103548 gcj-4.3-base_4.3.0-3_amd=
+64.deb
+ aef8ff583a7339b91dc646ae0f8598e616a9e658 49406 gij-4.3_4.3.0-3_amd64.deb
+ f05941644fbbb4c8357cb470ac95df725406e17b 12479446 libgcj9-0_4.3.0-3_amd6=
+4.deb
+ cd95ee1a8231c6c31b3a41fb09120e8cca415179 82970 libgcj9-0-awt_4.3.0-3_amd=
+64.deb
+ f19d53ea9c4839e9881615375d7d4435d492a939 17606 gappletviewer-4.3_4.3.0-3=
+_amd64.deb
+ c518d5b25c6cfd142b7b89daa5ebf418989d3d37 769128 libgcj9-dev_4.3.0-3_amd6=
+4.deb
+ 794cd17a972dabb6989a690b6c51e7df3231b393 13821334 libgcj9-dbg_4.3.0-3_am=
+d64.deb
+ ad8b73ba6992a088ccece6a47ce93ad38d0294ed 3529502 gcj-4.3_4.3.0-3_amd64.d=
+eb
+Checksums-Sha256:=20
+ 804a8be8279143d83573a801433572906cf3d105008845b5524ce78034c069bb 3229 gc=
+j-4.3_4.3.0-3.dsc
+ 30b25233f4776c7dc398afcfacd07800b570edadf4e917f9f8f4ce29df6aab36 4124141=
+ gcj-4.3_4.3.0-3.diff.gz
+ edf9cd72ef5e41a3de7bc7a89bc47dcd4f39c6ae5ec1a2761124f0bce1fa18d9 1006348=
+6 libgcj9-jar_4.3.0-3_all.deb
+ 38c0fe6965c2d6eb5fed461e57e7931f052a2a367849aeb1bdfdb53cd637e9c5 1237844=
+6 libgcj9-src_4.3.0-3_all.deb
+ f43296572162b392fdfb2c8b0307df7bc39a13f262e752beedd39fac29fac8f7 4443711=
+6 libgcj-doc_4.3.0-3_all.deb
+ 5f2823b9704680068ac6be8dfe2c0b13a56b740455189b1557b55bf4ef562fc8 103548 =
+gcj-4.3-base_4.3.0-3_amd64.deb
+ 5ae297d2c6e61fe95e50d6adea9670d8fbfcc871bded26c613216233173f496b 49406 g=
+ij-4.3_4.3.0-3_amd64.deb
+ c630b356b6d83ce008d2a7027c95b37d81896d65a83d69e0ee477685bf8477f7 1247944=
+6 libgcj9-0_4.3.0-3_amd64.deb
+ 80fbc6580d1a1fdcbe4e7eb98124c387be2a032f9b7a07e7d63db6ebb311cadd 82970 l=
+ibgcj9-0-awt_4.3.0-3_amd64.deb
+ e9d39b36bf47457df7cfa1ad9f5853f23ab60b1fb9551d2c3d9e77c47271327a 17606 g=
+appletviewer-4.3_4.3.0-3_amd64.deb
+ a6f7e1a08eb4069ff04b42119a29affe9b36d5b4e8bba74d0e9b227ca150192b 769128 =
+libgcj9-dev_4.3.0-3_amd64.deb
+ 04b9f4be0bfddfb2cd209eb270a9c9d0041cdc0eb75f46ca244baedc440e9e76 1382133=
+4 libgcj9-dbg_4.3.0-3_amd64.deb
+ f23b4a325eaf4209427239ffcbcbb59fb1a60f78ae3fbb1c277fdab2830b9730 3529502=
+ gcj-4.3_4.3.0-3_amd64.deb
+Files:=20
+ c7132833ebbd2ada58f07157ce1a1dbf 3229 devel optional gcj-4.3_4.3.0-3.dsc
+ 47ec8692fb3a8a0e15b25a975d2a66a4 4124141 devel optional gcj-4.3_4.3.0-3.=
+diff.gz
+ ecf04ac1106c52117a820982ba001661 10063486 libs optional libgcj9-jar_4.3.=
+0-3_all.deb
+ a82789540684cab9313a9224d1b03ee6 12378446 libdevel optional libgcj9-src_=
+4.3.0-3_all.deb
+ d83683f2adc0ff060865465ecb53f0fd 44437116 doc optional libgcj-doc_4.3.0-=
+3_all.deb
+ 904963997588011a7abb69de6a3b23b6 103548 libs optional gcj-4.3-base_4.3.0=
+-3_amd64.deb
+ 7a897e3bba93d5f3395567a9ec44ba1c 49406 devel optional gij-4.3_4.3.0-3_am=
+d64.deb
+ 5be10263c7d9a1e7bfda14e084579136 12479446 libs optional libgcj9-0_4.3.0-=
+3_amd64.deb
+ 2c4c12025483e7ee5ef338ac17bd2ef9 82970 libs optional libgcj9-0-awt_4.3.0=
+-3_amd64.deb
+ 778333390dca2cfc3aae64b708e56cfe 17606 utils optional gappletviewer-4.3_=
+4.3.0-3_amd64.deb
+ cb27d38057cba4033a1f8a8e55adda71 769128 libdevel optional libgcj9-dev_4.=
+3.0-3_amd64.deb
+ 4459772001c8443ea9cfa99bb0b81153 13821334 libdevel extra libgcj9-dbg_4.3=
+.0-3_amd64.deb
+ 43548b2193dc1d5c372861791a42dd8b 3529502 devel optional gcj-4.3_4.3.0-3_=
+amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC3bXStlRaw+TLJwRAvSrAJ9JgBVJyawLTx9wKZtNbOF6eQHHxACgjWay
+BxYBFtpxqB+h6UBCKGujLFM=3D
+=3DCxAF
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208718194-32691-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

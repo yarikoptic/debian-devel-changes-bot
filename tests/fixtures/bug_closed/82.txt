@@ -1,0 +1,338 @@
+From bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org Sun Apr 20 03:19:44 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org>)
+	id 1JnP9U-00057X-Qb
+	for ddc@ddc.chris-lamb.co.uk; Sun, 20 Apr 2008 03:19:44 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 8943313A4DF4; Sun, 20 Apr 2008 02:19:35 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id EE27013A4DA7;
+	Sun, 20 Apr 2008 02:19:33 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnP58-0007jM-6w; Sun, 20 Apr 2008 02:15:06 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Daniel Dickinson <cshore@wightman.ca>
+Subject: Bug#466313: marked as done (rhythmbox: Rhythmbox must be launch 
+ twice to launch it)
+Message-ID: <handler.466313.D466313.120865765628074.ackdone@bugs.debian.org>
+References: <20080419215552.03b20eac@brennin.fionavar.com>
+ <20080217214045.32760.34836.reportbug@brennin.fionavar.dd>
+X-Debian-PR-Message: closed 466313
+X-Debian-PR-Package: rhythmbox
+X-Debian-PR-Source: rhythmbox
+Content-Type: multipart/mixed; boundary="----------=_1208657706-29435-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 02:15:06 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <JTMzVwxk0-P.A.4BF.3gqCIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/132888
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 02:19:35 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: Spam detection software, running on the system "chris-lamb.co.uk", has
+	identified this incoming email as possible spam.  The original message
+	has been attached to this so you can view it (if it isn't spam) or label
+	similar future email.  If you have any questions, see
+	the administrator of that system for details.
+	Content preview:  Your message dated Sat, 19 Apr 2008 21:55:52 -0400 with
+	message-id <20080419215552.03b20eac@brennin.fionavar.com> and subject
+	line Re: Bug#466313: rhythmbox: Rhythmbox must be launch twice to launch
+	it has caused the Debian Bug report #466313, regarding rhythmbox:
+	Rhythmbox must be launch twice to launch it to be marked as done. [...] 
+	Content analysis details:   (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208657706-29435-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sat, 19 Apr 2008 21:55:52 -0400
+with message-id <20080419215552.03b20eac@brennin.fionavar.com>
+and subject line Re: Bug#466313: rhythmbox: Rhythmbox must be launch twice =
+to launch it
+has caused the Debian Bug report #466313,
+regarding rhythmbox: Rhythmbox must be launch twice to launch it
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+466313: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D466313
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208657706-29435-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 17 Feb 2008 21:41:19 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.3 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,HAS_PACKAGE,IMPRONONCABLE_2,MDO_CABLE_TV4 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <cshore@wightman.ca>
+Received: from server01.clifford.wightman.ca ([216.110.227.141] helo=mail.wightman.on.ca)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <cshore@wightman.ca>)
+	id 1JQrGA-00041M-TL
+	for submit@bugs.debian.org; Sun, 17 Feb 2008 21:41:19 +0000
+Received: by mail.wightman.on.ca (Postfix, from userid 99)
+	id F2714D4129; Sun, 17 Feb 2008 16:41:17 -0500 (EST)
+Received: from brennin.fionavar.dd (unknown [74.220.173.40])
+	(using TLSv1 with cipher AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by mail.wightman.on.ca (Postfix) with ESMTP id 378C3D411E;
+	Sun, 17 Feb 2008 16:41:14 -0500 (EST)
+Received: from daniel by brennin.fionavar.dd with local (Exim 4.69)
+	(envelope-from <cshore@wightman.ca>)
+	id 1JQrFd-00005y-Af; Sun, 17 Feb 2008 16:40:45 -0500
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Daniel Dickinson <cshore@wightman.ca>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Subject: rhythmbox: Rhythmbox must be launch twice to launch it
+Message-ID: <20080217214045.32760.34836.reportbug@brennin.fionavar.dd>
+X-Mailer: reportbug 3.39
+Date: Sun, 17 Feb 2008 16:40:45 -0500
+Delivered-To: submit@bugs.debian.org
+
+Package: rhythmbox
+Version: 0.10.1-1+b3
+Severity: normal
+
+
+The first time (for a session) trying to launch rhythmbox fails and it must be launched a second time before it actually comes up.  This problem is also present in Ubuntu Gutsy on several machines I have worked on.  
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers testing
+  APT policy: (500, 'testing'), (500, 'stable')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.23-1-686 (SMP w/1 CPU core)
+Locale: LANG=en_CA.UTF-8, LC_CTYPE=en_CA.UTF-8 (charmap=UTF-8)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages rhythmbox depends on:
+ii  dbus                   1.1.2-1           simple interprocess messaging syst
+ii  gconf2                 2.20.1-2+b1       GNOME configuration database syste
+ii  gnome-icon-theme       2.20.0-1          GNOME Desktop icon theme
+ii  gstreamer0.10-alsa [gs 0.10.17-1         GStreamer plugin for ALSA
+ii  gstreamer0.10-esd [gst 0.10.6-4          GStreamer plugin for ESD
+ii  gstreamer0.10-gnomevfs 0.10.17-1         GStreamer plugin for GnomeVFS
+ii  gstreamer0.10-plugins- 0.10.17-1         GStreamer plugins from the "base" 
+ii  gstreamer0.10-plugins- 0.10.6-4          GStreamer plugins from the "good" 
+ii  gstreamer0.10-plugins- 0.10.6-3          GStreamer plugins from the "ugly" 
+ii  gstreamer0.10-pulseaud 0.9.7-2           GStreamer plugin for PulseAudio
+ii  gstreamer0.10-x        0.10.17-1         GStreamer plugins for X11 and Pang
+ii  libart-2.0-2           2.3.20-1          Library of functions for 2D graphi
+ii  libatk1.0-0            1.20.0-1          The ATK accessibility toolkit
+ii  libavahi-client3       0.6.22-2          Avahi client library
+ii  libavahi-common3       0.6.22-2          Avahi common library
+ii  libavahi-glib1         0.6.22-2          Avahi glib integration library
+ii  libbonobo2-0           2.21.90-1         Bonobo CORBA interfaces library
+ii  libbonoboui2-0         2.21.90-1         The Bonobo UI library
+ii  libc6                  2.7-6             GNU C Library: Shared libraries
+ii  libcairo2              1.4.14-1          The Cairo 2D vector graphics libra
+ii  libdbus-1-3            1.1.2-1           simple interprocess messaging syst
+ii  libdbus-glib-1-2       0.74-1            simple interprocess messaging syst
+ii  libexpat1              1.95.8-4          XML parsing C library - runtime li
+ii  libffi4                4.3-20080202-1    Foreign Function Interface library
+ii  libfontconfig1         2.5.0-2           generic font configuration library
+ii  libfreetype6           2.3.5-1+b1        FreeType 2 font engine, shared lib
+ii  libgconf2-4            2.20.1-2+b1       GNOME configuration database syste
+ii  libglade2-0            1:2.6.2-1         library to load .glade files at ru
+ii  libglib2.0-0           2.14.5-2          The GLib library of C routines
+ii  libgnome-keyring0      2.20.3-1          GNOME keyring services library
+ii  libgnome-media0        2.20.1-3          runtime libraries for the GNOME me
+ii  libgnome2-0            2.20.1.1-1        The GNOME 2 library - runtime file
+ii  libgnomecanvas2-0      2.20.1.1-1        A powerful object-oriented display
+ii  libgnomeui-0           2.20.1.1-1        The GNOME 2 libraries (User Interf
+ii  libgnomevfs2-0         1:2.20.1-1        GNOME Virtual File System (runtime
+ii  libgnutls13            2.0.4-1           the GNU TLS library - runtime libr
+ii  libgpod3               0.6.0-3           a library to read and write songs 
+ii  libgstreamer-plugins-b 0.10.17-1         GStreamer libraries from the "base
+ii  libgstreamer0.10-0     0.10.17-1         Core GStreamer libraries and eleme
+ii  libgtk2.0-0            2.12.5-2          The GTK+ graphical user interface 
+ii  libhal1                0.5.10-5          Hardware Abstraction Layer - share
+ii  libice6                2:1.0.4-1         X11 Inter-Client Exchange library
+ii  liblircclient0         0.8.0-13          infra-red remote control support -
+ii  libmusicbrainz4c2a     2.1.5-1           Second generation incarnation of t
+ii  libnautilus-burn4      2.20.0-1          Nautilus Burn Library - runtime ve
+ii  libnotify1 [libnotify1 0.4.4-3           sends desktop notifications to a n
+ii  liborbit2              1:2.14.10-0.1     libraries for ORBit2 - a CORBA ORB
+ii  libpango1.0-0          1.18.4-1          Layout and rendering of internatio
+ii  libpng12-0             1.2.15~beta5-3    PNG library - runtime
+ii  libpopt0               1.10-3            lib for parsing cmdline parameters
+ii  libsexy2               0.1.11-2          collection of additional GTK+ widg
+ii  libsm6                 2:1.0.3-1+b1      X11 Session Management library
+ii  libsoup2.2-8           2.2.104-1         an HTTP library implementation in 
+ii  libtotem-plparser7     2.20.3-1          Totem Playlist Parser library - ru
+ii  libx11-6               2:1.0.3-7         X11 client-side library
+ii  libxcursor1            1:1.1.9-1         X cursor management library
+ii  libxext6               1:1.0.3-2         X11 miscellaneous extension librar
+ii  libxfixes3             1:4.0.3-2         X11 miscellaneous 'fixes' extensio
+ii  libxi6                 2:1.1.3-1         X11 Input extension library
+ii  libxinerama1           1:1.0.2-1         X11 Xinerama extension library
+ii  libxml2                2.6.31.dfsg-1     GNOME XML library
+ii  libxrandr2             2:1.2.2-1         X11 RandR extension library
+ii  libxrender1            1:0.9.4-1         X Rendering Extension client libra
+ii  python                 2.4.4-6           An interactive high-level object-o
+ii  python-gnome2          2.20.1-2          Python bindings for the GNOME desk
+ii  python-gtk2            2.12.1-1          Python bindings for the GTK+ widge
+ii  python-support         0.7.6             automated rebuilding support for p
+ii  python2.4              2.4.4-7           An interactive high-level object-o
+ii  zlib1g                 1:1.2.3.3.dfsg-11 compression library - runtime
+
+Versions of packages rhythmbox recommends:
+ii  avahi-daemon                  0.6.22-2   Avahi mDNS/DNS-SD daemon
+ii  gnome-control-center          1:2.20.3-1 utilities to configure the GNOME d
+ii  gnome-volume-manager          2.22.1-1   GNOME daemon to auto-mount and man
+ii  hal                           0.5.10-5   Hardware Abstraction Layer
+ii  libgnomevfs2-extra            1:2.20.1-1 GNOME Virtual File System (extra m
+ii  notification-daemon           0.3.7-1+b1 a daemon that displays passive pop
+ii  scrollkeeper                  0.3.14-16  A free electronic cataloging syste
+ii  sound-juicer                  2.20.1-1   GNOME 2 CD Ripper
+ii  yelp                          2.20.0-1   Help browser for GNOME 2
+
+-- no debconf information
+
+
+
+------------=_1208657706-29435-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 466313-done) by bugs.debian.org; 20 Apr 2008 02:14:16 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-6.9 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	HAS_BUG_NUMBER autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <cshore@wightman.ca>
+Received: from server01.clifford.wightman.ca ([216.110.227.141] helo=mail.wightman.on.ca)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <cshore@wightman.ca>)
+	id 1JnP4J-0007Ic-Ry
+	for 466313-done@bugs.debian.org; Sun, 20 Apr 2008 02:14:16 +0000
+Received: by mail.wightman.on.ca (Postfix, from userid 99)
+	id 17BA9D4220; Sat, 19 Apr 2008 22:14:15 -0400 (EDT)
+Received: from matt.fionavar.dd (unknown [74.220.173.248])
+	(using TLSv1 with cipher AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by mail.wightman.on.ca (Postfix) with ESMTP id BA071D3FE4
+	for <466313-done@bugs.debian.org>; Sat, 19 Apr 2008 22:14:07 -0400 (EDT)
+Received: from [192.168.2.2] (helo=brennin.fionavar.com)
+	by matt.fionavar.dd with esmtp (Exim 4.69)
+	(envelope-from <cshore@wightman.ca>)
+	id 1JnOmh-000374-UE
+	for 466313-done@bugs.debian.org; Sat, 19 Apr 2008 21:56:03 -0400
+Date: Sat, 19 Apr 2008 21:55:52 -0400
+From: Daniel Dickinson <cshore@wightman.ca>
+To: 466313-done@bugs.debian.org
+Subject: Re: Bug#466313: rhythmbox: Rhythmbox must be launch twice to launch
+ it
+Message-ID: <20080419215552.03b20eac@brennin.fionavar.com>
+In-Reply-To: <1208363650.26913.31.camel@localhost>
+References: <20080217214045.32760.34836.reportbug@brennin.fionavar.dd>
+	<1208363650.26913.31.camel@localhost>
+X-Mailer: Claws Mail 3.3.1 (GTK+ 2.12.9; i486-pc-linux-gnu)
+X-Face: 4x$j-,zN=Psn<'4C~z8UtPDIyEIWym%?CEB3A{ep@%-Q%=^I;vWThhgd&W?SC:"~.qq6i|pn@wgJQ3.t+W:i@MIeq*BTFM6<]`COF(TeFgn(jEbXH{g5|i/k
+Mime-Version: 1.0
+Content-Type: multipart/signed; boundary="Sig_/IJ7guYIA8_bSb=kp83O6eda";
+ protocol="application/pgp-signature"; micalg=PGP-SHA1
+
+--Sig_/IJ7guYIA8_bSb=kp83O6eda
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: quoted-printable
+
+On Wed, 16 Apr 2008 18:34:09 +0200
+Sven Arvidsson <sa@whiz.se> wrote:
+
+> On Sun, 2008-02-17 at 16:40 -0500, Daniel Dickinson wrote:
+> > The first time (for a session) trying to launch rhythmbox fails and
+> > it must be launched a second time before it actually comes up.  This
+> > problem is also present in Ubuntu Gutsy on several machines I have
+> > worked on. =20
+>=20
+> Hi,
+>=20
+> Does this happen with version 0.11.5 too?
+>=20
+> Is there any error messages when launched from a terminal? You can
+> rhythmbox in debug mode by using the "-d" option.
+>=20
+This isn't happening to me anymore.  I suspect it may have had
+something to do with the panel applet, but I have also upgraded.
+
+--=20
+And that's my crabbing done for the day.  Got it out of the way early,=20
+now I have the rest of the afternoon to sniff fragrant tea-roses or=20
+strangle cute bunnies or something.   -- Michael Devore
+GnuPG Key Fingerprint 86 F5 81 A5 D4 2E 1F 1C      http://gnupg.org
+No more sea shells:  Daniel's Weblog    http://cshore.wordpress.com
+
+--Sig_/IJ7guYIA8_bSb=kp83O6eda
+Content-Type: application/pgp-signature; name=signature.asc
+Content-Disposition: attachment; filename=signature.asc
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICqKzhvWBpdQuHxwRAuBaAJ4t9dmg2PCKlcwac263avMyn3mRdgCguaYZ
+vHSb5g6S9PiL5y80HiB/G00=
+=ypXW
+-----END PGP SIGNATURE-----
+
+--Sig_/IJ7guYIA8_bSb=kp83O6eda--
+
+
+------------=_1208657706-29435-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

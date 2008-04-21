@@ -1,0 +1,145 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 17:25:46 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JncMH-0008Fo-MZ
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 17:25:46 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id B4A2C13A4F8C; Sun, 20 Apr 2008 16:25:40 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id D562E13A4FC7;
+	Sun, 20 Apr 2008 16:25:29 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JncHm-0007oO-BC; Sun, 20 Apr 2008 16:21:02 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#474644: libffi4-dev Provides: libffi-dev, but does not appear to actually be compatible
+Reply-To: Matthias Klose <doko@cs.tu-berlin.de>, 474644@bugs.debian.org
+Resent-From: Matthias Klose <doko@cs.tu-berlin.de>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Resent-Date: Sun, 20 Apr 2008 16:21:01 +0000
+Resent-Message-ID: <handler.474644.B474644.120870826924302@bugs.debian.org>
+X-Debian-PR-Message: report 474644
+X-Debian-PR-Package: libffi4-dev
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: gcc-4.3
+Received: via spool by 474644-submit@bugs.debian.org id=B474644.120870826924302
+          (code B ref 474644); Sun, 20 Apr 2008 16:21:01 +0000
+Received: (at 474644) by bugs.debian.org; 20 Apr 2008 16:17:49 +0000
+X-Amavis-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER,
+	UNPARSEABLE_RELAY,VALID_BTS_CONTROL autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from mail.cs.tu-berlin.de ([130.149.17.13])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <doko@cs.tu-berlin.de>)
+	id 1JncEf-0006In-55
+	for 474644@bugs.debian.org; Sun, 20 Apr 2008 16:17:49 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by localhost-12225.cs.tu-berlin.de (Postfix) with ESMTP id 30EFCD8DC
+	for <474644@bugs.debian.org>; Sun, 20 Apr 2008 18:17:48 +0200 (MEST)
+Received: from mailhost.cs.tu-berlin.de ([127.0.0.1])
+	by localhost (mail.cs.tu-berlin.de [127.0.0.1]) (amavisd-new, port 12224)
+	with ESMTP id 1DCCsokL+PWc 21250-13;
+	Sun, 20 Apr 2008 18:17:41 +0200 (MEST) 13658
+Received: from bolero.cs.tu-berlin.de (bolero.cs.tu-berlin.de [130.149.19.1])
+	(using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by mailhost.cs.tu-berlin.de (Postfix) with ESMTP;
+	Sun, 20 Apr 2008 18:17:41 +0200 (MEST)
+Received: (from doko@localhost)
+	by bolero.cs.tu-berlin.de (8.13.8+Sun/8.13.3/Submit) id m3KGHfcx016829;
+	Sun, 20 Apr 2008 18:17:41 +0200 (MEST)
+From: Matthias Klose <doko@cs.tu-berlin.de>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Message-ID: <18443.27813.270719.447712@gargle.gargle.HOWL>
+Date: Sun, 20 Apr 2008 18:17:41 +0200
+To: Nathaniel Smith <njs@pobox.com>, 474644@bugs.debian.org
+CC: control@bugs.debian.org
+In-Reply-To: <20080406222331.27411.26254.reportbug@frances>
+References: <20080406222331.27411.26254.reportbug@frances>
+X-Mailer: VM 7.17 under 21.4 (patch 21) "Educational Television" XEmacs Lucid
+X-Virus-Scanned: amavisd-new at cs.tu-berlin.de (including SpamAssassin)
+Resent-Date: Sun, 20 Apr 2008 16:21:02 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343637
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -35.5
+X-Spam-Report: (-35.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	17 AWL                    AWL: From: address is in the auto white-list
+
+reassign 474644 pygobject
+thanks
+
+libffi4-dev never had a pkgconfig file, and will not have one. either
+pygobject should tighten the b-d, or the configure check has to check
+for a libffi4-dev without a pkgconfig file.
+
+Nathaniel Smith writes:
+> Package: libffi4-dev
+> Version: 4.1.2-6
+> Severity: normal
+> 
+> I have python-gobject-dev installed; python-gobject-dev Depends: on
+> libffi-dev.  On my system, this dependency was satisfied by libffi4-dev,
+> because libffi4-dev Provides: libffi-dev.
+> 
+> However, this leaves me with a broken python-gobject-dev package, because
+> at least some operations seem to actually need libffi-dev; libffi4-dev
+> doesn't work:
+> 
+> # With libffi4-dev installed:
+> $ pkg-config --libs --cflags pygobject-2.0
+> Package libffi was not found in the pkg-config search path.
+> Perhaps you should add the directory containing `libffi.pc'
+> to the PKG_CONFIG_PATH environment variable
+> Package 'libffi', required by 'PyGObject', not found
+> 
+> # With libffi-dev installed instead:
+> $ pkg-config --libs --cflags pygobject-2.0
+> -I/usr/include/pygtk-2.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include  -lgobject-2.0 -lglib-2.0  
+> 
+> (I'm not entirely sure whether this should be considered a bug in
+> libffi or python-gobject; this is just my best guess.)
+> 
+> 
+> 
+> -- 
+> To UNSUBSCRIBE, email to debian-gcc-REQUEST@lists.debian.org
+> with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

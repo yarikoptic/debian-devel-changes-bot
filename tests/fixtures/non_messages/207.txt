@@ -1,0 +1,103 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 14:41:21 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnZnB-0007FO-BX
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 14:41:21 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 5FC8213A4908; Sun, 20 Apr 2008 13:41:16 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id C6D7313A4C28;
+	Sun, 20 Apr 2008 13:41:05 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnZiE-0006Uv-Qi; Sun, 20 Apr 2008 13:36:10 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#374452: closed by Matthias Klose <doko@debian.org> (Bug#374452: fixed in bash 3.2-2)
+Reply-To: Justin Pryzby <justinpryzby@users.sourceforge.net>, 374452@bugs.debian.org
+Resent-From: Justin Pryzby <justinpryzby@users.sourceforge.net>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Matthias Klose <doko@debian.org>
+Resent-Date: Sun, 20 Apr 2008 13:36:10 +0000
+Resent-Message-ID: <handler.374452.B374452.120869854324227@bugs.debian.org>
+X-Debian-PR-Message: report 374452
+X-Debian-PR-Package: bash
+X-Debian-PR-Keywords: patch
+X-Debian-PR-Source: bash
+Received: via spool by 374452-submit@bugs.debian.org id=B374452.120869854324227
+          (code B ref 374452); Sun, 20 Apr 2008 13:36:10 +0000
+Received: (at 374452) by bugs.debian.org; 20 Apr 2008 13:35:43 +0000
+X-Amavis-Spam-Status: No, score=-9.0 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER,
+	VALID_BTS_CONTROL autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from hrndva-omtalb.mail.rr.com ([71.74.56.122])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <justinpryzby@users.sourceforge.net>)
+	id 1JnZhn-0006Ft-Nc; Sun, 20 Apr 2008 13:35:43 +0000
+Received: from localhost ([74.71.209.227]) by hrndva-omta06.mail.rr.com
+          with ESMTP
+          id <20080420133537.TWFH7425.hrndva-omta06.mail.rr.com@localhost>;
+          Sun, 20 Apr 2008 13:35:37 +0000
+Received: from pryzbyj by localhost with local (Exim 4.63)
+	(envelope-from <justinpryzby@users.sourceforge.net>)
+	id 1JnZhh-0006dL-Av; Sun, 20 Apr 2008 09:35:37 -0400
+Date: Sun, 20 Apr 2008 09:35:37 -0400
+From: Justin Pryzby <justinpryzby@users.sourceforge.net>
+To: 374452@bugs.debian.org
+Cc: control@bugs.debian.org
+Message-ID: <20080420133537.GA25437@cetus>
+References: <E1JnWN1-0006fz-GD@ries.debian.org> <20060619144606.GC10855@andromeda> <handler.374452.D374452.120868754515148.notifdone@bugs.debian.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <handler.374452.D374452.120868754515148.notifdone@bugs.debian.org>
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+X-CrossAssassin-Score: 2
+Resent-Date: Sun, 20 Apr 2008 13:36:10 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343500
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -37.8
+X-Spam-Report: (-37.8 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	15 AWL                    AWL: From: address is in the auto white-list
+
+reopen 374452
+thanks
+
+On Sun, Apr 20, 2008 at 10:36:12AM +0000, Debian Bug Tracking System wrote:
+> #374452: bash: postrm maintscripts should check arguments
+I think the wrong bug got closed.
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

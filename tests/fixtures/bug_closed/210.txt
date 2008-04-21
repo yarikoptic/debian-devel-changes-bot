@@ -1,0 +1,437 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 18:34:59 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1JndRE-00006w-GZ
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 18:34:59 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 6B3A613A5005; Sun, 20 Apr 2008 17:34:51 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id E0CB513A4F99;
+	Sun, 20 Apr 2008 17:34:49 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JndPl-0000WC-Mc; Sun, 20 Apr 2008 17:33:22 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: =?UTF-8?Q?Gon=C3=A9ri?= Le Bouder <goneri@rulezlan.org>
+Subject: Bug#475063: marked as done (boson: Some fixes)
+Message-ID: <handler.475063.D475063.120871274427097.ackdone@bugs.debian.org>
+References: <E1JndOW-00070B-6g@ries.debian.org>
+ <20080408191211.17392.24403.reportbug@ubuntu>
+X-Debian-PR-Message: closed 475063
+X-Debian-PR-Package: boson
+X-Debian-PR-Keywords: patch
+X-Debian-PR-Source: boson
+Content-Type: multipart/mixed; boundary="----------=_1208712801-1833-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 17:33:21 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <uwfFUtXUC0H.A.EYD.763CIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/133055
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 17:34:51 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208712801-1833-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 17:32:04 +0000
+with message-id <E1JndOW-00070B-6g@ries.debian.org>
+and subject line Bug#475063: fixed in boson 0.13-4
+has caused the Debian Bug report #475063,
+regarding boson: Some fixes
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+475063: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D475063
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208712801-1833-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 8 Apr 2008 19:12:17 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-12.6 required=4.0 tests=BAYES_00,FOURLA,HAS_PACKAGE,
+	MURPHY_DRUGS_REL8,MURPHY_WRONG_WORD1,MURPHY_WRONG_WORD2,X_DEBBUGS_CC 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <hellboy195@gmail.com>
+Received: from d83-187-162-133.cust.tele2.at ([83.187.162.133] helo=[127.0.1.1])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <hellboy195@gmail.com>)
+	id 1JjJEv-0007FG-4o
+	for submit@bugs.debian.org; Tue, 08 Apr 2008 19:12:17 +0000
+Content-Type: multipart/mixed; boundary="===============1817902842=="
+MIME-Version: 1.0
+From: Stefan Ebner <hellboy195@gmail.com>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Subject: boson: Some fixes
+Message-ID: <20080408191211.17392.24403.reportbug@ubuntu>
+X-Mailer: reportbug 3.39ubuntu3
+Date: Tue, 08 Apr 2008 21:12:11 +0200
+X-Debbugs-Cc: hellboy195@gmail.com
+Delivered-To: submit@bugs.debian.org
+
+This is a multi-part MIME message sent by reportbug.
+
+
+--===============1817902842==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+Package: boson
+Version: 0.13-3
+Severity: normal
+Tags: patch
+User: ubuntu-devel@lists.ubuntu.com
+Usertags: origin-ubuntu hardy ubuntu-patch
+
+You may find the attached patch useful so we can sync next time.
+Thanks and have a nice day :)
+
+Stefan
+
+*** /tmp/tmpgqGMSc
+In Ubuntu, we've applied the attached patch to achieve the following:
+
+  * Merge from Debian unstable. (LP: #212250) Remaining Ubuntu changes:
+    - Modify Maintainer value to match Debian-Maintainer-Field Spec
+    - Added patch ubuntu_ftbfs_fixes to fix FTBFS on amd64 and ia64
+      (Changed placement in debian/patches/series to work with fix_python 
+      patch from Debian.)
+  * Added patch ubuntu_fix_desktop_files.diff to fix all .desktop files
+    in boson/data to be freedesktop compliant
+
+We thought you might be interested in doing the same. 
+
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers hardy-updates
+  APT policy: (500, 'hardy-updates'), (500, 'hardy-security'), (500, 'hardy-proposed'), (500, 'hardy-backports'), (500, 'hardy')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.24-15-generic (SMP w/2 CPU cores)
+Locale: LANG=en_GB.UTF-8, LC_CTYPE=en_GB.UTF-8 (charmap=UTF-8)
+Shell: /bin/sh linked to /bin/bash
+
+--===============1817902842==
+MIME-Version: 1.0
+Content-Type: text/x-c++; charset="utf-8"
+Content-Disposition: attachment; filename="tmpM0X3xC"
+Content-Transfer-Encoding: quoted-printable
+
+diff -u boson-0.13/debian/patches/series boson-0.13/debian/patches/series
+--- boson-0.13/debian/patches/series
++++ boson-0.13/debian/patches/series
+@@ -1,3 +1,4 @@
++ubuntu_fix_desktop_files.diff
+ fix_glGetString_with_amd64.diff
+ boson_0_13_upstream_fixes.diff
+ fix_gcc-4.2.diff
+@@ -8,0 +10 @@
++ubuntu_ftbfs_fixes
+diff -u boson-0.13/debian/changelog boson-0.13/debian/changelog
+diff -u boson-0.13/debian/control boson-0.13/debian/control
+--- boson-0.13/debian/control
++++ boson-0.13/debian/control
+@@ -1,7 +1,8 @@
+ Source: boson
+ Section: games
+ Priority: optional
+-Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
++Maintainer: Ubuntu MOTU Developers <ubuntu-motu@lists.ubuntu.com>
++XSBC-Original-Maintainer: Debian Games Team <pkg-games-devel@lists.aliot=
+h.debian.org>
+ Uploaders: Gon=C3=A9ri Le Bouder <goneri@rulezlan.org>, Alexander Schmeh=
+l <tolimar@debian.org>, Barry deFreese <bddebian@comcast.net>
+ Build-Depends: debhelper (>> 5.0.0), libkdegames-dev, wml, libqt3-mt-dev=
+,
+  kdelibs4-dev, lib3ds-dev, docbook-to-man, kdemultimedia-dev,
+only in patch2:
+unchanged:
+--- boson-0.13.orig/debian/patches/ubuntu_ftbfs_fixes
++++ boson-0.13/debian/patches/ubuntu_ftbfs_fixes
+@@ -0,0 +1,30 @@
++Index: boson-0.13/boson/gameengine/script/pythonscript.cpp
++=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
++--- boson-0.13.orig/boson/gameengine/script/pythonscript.cpp	2008-04-05 =
+16:40:52.000000000 +0200
+++++ boson-0.13/boson/gameengine/script/pythonscript.cpp	2008-04-05 16:42=
+:28.000000000 +0200
++@@ -688,7 +688,12 @@
++   //  variables or submodules dict if possible.
++   PyObject* key;
++   PyObject* value;
+++#if defined(__x86_64__) || defined(__ia64__)
+++  long pos =3D 0;
+++#else
++   Py_ssize_t pos =3D 0;
+++#endif
+++
++   while(PyDict_Next(moduledict, &pos, &key, &value))
++   {
++     // Check if value is any of the known types
++@@ -774,7 +779,12 @@
++   boDebug(700) << k_funcinfo << "Loading and merging " << PyDict_Size(s=
+ubmodules) << " submodules" << endl;
++   PyObject* key;
++   PyObject* value;
+++#if defined(__x86_64__) || defined(__ia64__)
+++  long pos =3D 0;
+++#else
++   Py_ssize_t pos =3D 0;
+++#endif
+++
++   while(PyDict_Next(submodules, &pos, &key, &value))
++   {
++     // Check if current module already has module with this name
+only in patch2:
+unchanged:
+--- boson-0.13.orig/debian/patches/ubuntu_fix_desktop_files.diff
++++ boson-0.13/debian/patches/ubuntu_fix_desktop_files.diff
+@@ -0,0 +1,52 @@
++Index: boson-0.13/boson/data/boson-boinfo.desktop
++=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
++--- boson-0.13.orig/boson/data/boson-boinfo.desktop	2008-04-05 16:01:39.=
+000000000 +0200
+++++ boson-0.13/boson/data/boson-boinfo.desktop	2008-04-05 16:02:47.00000=
+0000 +0200
++@@ -1,12 +1,10 @@
++ [Desktop Entry]
++-Encoding=3DUTF-8
+++Version=3D1.0
++ Name=3DBoson Info
++ GenericName=3DBoson System Information
++ Exec=3Dboinfo
++ Icon=3Dboson
++-Path=3D
++ X-DocPath=3Dboson/index.html
++ Type=3DApplication
++ Terminal=3Dfalse
++ Categories=3DQt;KDE;Game;StrategyGame;
++-
++Index: boson-0.13/boson/data/boson-boson.desktop
++=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
++--- boson-0.13.orig/boson/data/boson-boson.desktop	2008-04-05 16:01:54.0=
+00000000 +0200
+++++ boson-0.13/boson/data/boson-boson.desktop	2008-04-05 16:03:09.000000=
+000 +0200
++@@ -1,5 +1,5 @@
++ [Desktop Entry]
++-Encoding=3DUTF-8
+++Version=3D1.0
++ Name=3DBoson
++ Name[de]=3DBoson
++ Name[fr]=3DBoson
++@@ -12,6 +12,4 @@
++ X-DocPath=3Dboson/index.html
++ Terminal=3Dfalse
++ Type=3DApplication
++-Path=3D
++ Categories=3DQt;KDE;Game;StrategyGame;
++-
++Index: boson-0.13/boson/data/boson-bounit.desktop
++=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
++--- boson-0.13.orig/boson/data/boson-bounit.desktop	2008-04-05 16:02:01.=
+000000000 +0200
+++++ boson-0.13/boson/data/boson-bounit.desktop	2008-04-05 16:03:29.00000=
+0000 +0200
++@@ -1,10 +1,9 @@
++ [Desktop Entry]
++-Encoding=3DUTF-8
+++Version=3D1.0
++ GenericName=3DUnit Editor for Boson
++ Name=3DBoUnit
++ Exec=3Dbounit
++ Icon=3Dboson
++-Path=3D
++ X-DocPath=3Dboson/index.html
++ Type=3DApplication
++ Terminal=3Dfalse
+
+--===============1817902842==--
+
+
+
+------------=_1208712801-1833-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 475063-close) by bugs.debian.org; 20 Apr 2008 17:32:24 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.7 required=4.0 tests=BAYES_00,FVGT_m_MULTI_ODD,
+	HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_2,MURPHY_WRONG_WORD1,
+	MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JndOq-00072W-IS
+	for 475063-close@bugs.debian.org; Sun, 20 Apr 2008 17:32:24 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JndOW-00070B-6g; Sun, 20 Apr 2008 17:32:04 +0000
+From: =?utf-8?q?Gon=C3=A9ri_Le_Bouder?= <goneri@rulezlan.org>
+To: 475063-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#475063: fixed in boson 0.13-4
+Message-Id: <E1JndOW-00070B-6g@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 17:32:04 +0000
+Content-Transfer-Encoding: quoted-printable
+
+Source: boson
+Source-Version: 0.13-4
+
+We believe that the bug you reported is fixed in the latest version of
+boson, which is due to be installed in the Debian FTP archive:
+
+boson_0.13-4.diff.gz
+  to pool/main/b/boson/boson_0.13-4.diff.gz
+boson_0.13-4.dsc
+  to pool/main/b/boson/boson_0.13-4.dsc
+boson_0.13-4_sparc.deb
+  to pool/main/b/boson/boson_0.13-4_sparc.deb
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 475063@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Gon=C3=A9ri Le Bouder <goneri@rulezlan.org> (supplier of updated boson pa=
+ckage)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 02:41:24 +0200
+Source: boson
+Binary: boson
+Architecture: source sparc
+Version: 0.13-4
+Distribution: unstable
+Urgency: low
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Changed-By: Gon=C3=A9ri Le Bouder <goneri@rulezlan.org>
+Description:=20
+ boson      - core package for Boson
+Closes: 475063 476730
+Changes:=20
+ boson (0.13-4) unstable; urgency=3Dlow
+ .
+   * fix a FTBFS on hppa by adding -mlong-calls, many thanks to
+     Thibaut VARENE (Closes: #476730)
+   * pass CFLAGS to cmake correctly
+   * add fix_desktop_files.diff to make the desktop files Freedesktop
+     compliant, Thanks Stefan Ebner (Closes: #475063)
+   * remove boson-dbg, the package was big and not really useful
+   * remove a \n in 0.12dfsg1-1 entry of the changelog
+Checksums-Sha1:=20
+ 3af00cb91d4497a6c5eacbf351bef13be6902910 1459 boson_0.13-4.dsc
+ a7afc9c321516d55c07bd5b434d5d6c93fc37c1e 31899 boson_0.13-4.diff.gz
+ 3d86bc4e33cd1a24eafbbab65977af1ca146eb07 7737892 boson_0.13-4_sparc.deb
+Checksums-Sha256:=20
+ 1ee57e79064e376882db989b8a49c4cc39df9e442705b8c0b81e0d006807b1c0 1459 bo=
+son_0.13-4.dsc
+ 72c198fc7b54fd696d0dcd87b7607fec1fedff8be78ee003a9dd1af58b4fb775 31899 b=
+oson_0.13-4.diff.gz
+ 505ff8dc4f3ac270b5820017167c484f46f6588bcf446db1affd9abfabbd3d44 7737892=
+ boson_0.13-4_sparc.deb
+Files:=20
+ 6d190e52f348c981b2c63632ea2074bf 1459 games optional boson_0.13-4.dsc
+ 06fcc36adfa79f1769687479f8a990a6 31899 games optional boson_0.13-4.diff.=
+gz
+ 5f5ac60e8f5c1815812903f3b81c134b 7737892 games optional boson_0.13-4_spa=
+rc.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.5 (GNU/Linux)
+
+iD8DBQFIC3mlsKTFpDfZQSwRAlLUAJsE4xymQ84AIwEwqNBKDHoaoFkImQCgisNB
+thpgW9x6ARjvon/LUvbXILA=3D
+=3DQ7cr
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208712801-1833-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

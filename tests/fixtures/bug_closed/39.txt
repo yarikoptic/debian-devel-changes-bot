@@ -1,0 +1,277 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 14:11:02 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnZJm-00076H-KL
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 14:11:02 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id B2A4413A4FC0; Sun, 20 Apr 2008 13:10:53 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 50C1413A4D8F;
+	Sun, 20 Apr 2008 13:10:52 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnZF7-0002XP-Nb; Sun, 20 Apr 2008 13:06:05 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Ola Lundqvist <opal@debian.org>
+Subject: Bug#342632: marked as done (php-elisp: Missing a PHP 5 keyword: 
+ clone)
+Message-ID: <handler.342632.D342632.12086965872214.ackdone@bugs.debian.org>
+References: <E1JnZBF-0008Ak-0G@ries.debian.org> <E1EkZyJ-0000KI-UR@localhost>
+X-Debian-PR-Message: closed 342632
+X-Debian-PR-Package: php-elisp
+X-Debian-PR-Source: php-elisp
+Content-Type: multipart/mixed; boundary="----------=_1208696765-9700-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 13:06:05 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <AQjx7MqyyDC.A.h0.dD0CIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/132991
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 13:10:53 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208696765-9700-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 13:02:05 +0000
+with message-id <E1JnZBF-0008Ak-0G@ries.debian.org>
+and subject line Bug#342632: fixed in php-elisp 1.4.0-1
+has caused the Debian Bug report #342632,
+regarding php-elisp: Missing a PHP 5 keyword: clone
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+342632: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D342632
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208696765-9700-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 9 Dec 2005 04:35:06 +0000
+Return-path: <feldgendler@feldgendler.plesk.ru>
+Received: from plesk-gw.nsk.gldn.net ([194.67.59.14] helo=master.plesk.ru)
+	by spohr.debian.org with esmtp (Exim 4.50)
+	id 1EkZyL-00014m-M4
+	for submit@bugs.debian.org; Thu, 08 Dec 2005 20:35:06 -0800
+Received: from localhost (feldgendler.plesk.ru [192.168.62.79])
+	by master.plesk.ru (8.13.5/8.13.5) with ESMTP id jB94Z1QL022697
+	for <submit@bugs.debian.org>; Fri, 9 Dec 2005 10:35:01 +0600 (NOVT)
+	(envelope-from feldgendler@feldgendler.plesk.ru)
+Received: from feldgendler by localhost with local (Exim 4.54)
+	id 1EkZyJ-0000KI-UR
+	for submit@bugs.debian.org; Fri, 09 Dec 2005 10:35:04 +0600
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Subject: php-elisp: Missing a PHP 5 keyword: clone
+X-Debbugs-CC: Alexey Feldgendler <alexey@feldgendler.ru>
+User-Agent: SEMI/1.14.6 (Maruoka) FLIM/1.14.7 (=?ISO-8859-4?Q?Sanj=F2?=)
+ APEL/10.6 Emacs/21.4 (i386-pc-linux-gnu) MULE/5.0 (SAKAKI)
+MIME-Version: 1.0 (generated by SEMI 1.14.6 - "Maruoka")
+Content-Type: text/plain; charset=US-ASCII
+Message-Id: <E1EkZyJ-0000KI-UR@localhost>
+From: Alexey Feldgendler <feldgendler@feldgendler.plesk.ru>
+Date: Fri, 09 Dec 2005 10:35:03 +0600
+X-Antivirus: Dr.Web (R) for Mail Servers on master.plesk.ru host
+X-Antivirus-Code: 100000
+Delivered-To: submit@bugs.debian.org
+X-Spam-Checker-Version: SpamAssassin 2.60-bugs.debian.org_2005_01_02 
+	(1.212-2003-09-23-exp) on spohr.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, hits=-11.0 required=4.0 tests=BAYES_00,HAS_PACKAGE,
+	X_DEBBUGS_CC autolearn=ham version=2.60-bugs.debian.org_2005_01_02
+
+Package: php-elisp
+Version: 1.1.0-2
+Severity: normal
+
+PHP 5 has a new keyword: clone. This keyword should be highlighted
+properly.
+
+
+-- System Information:
+Debian Release: testing/unstable
+  APT prefers testing-proposed-updates
+  APT policy: (995, 'testing-proposed-updates'), (990, 'testing'), (500, 'stable'), (90, 'unstable')
+Architecture: i386 (i686)
+Shell:  /bin/sh linked to /bin/bash
+Kernel: Linux 2.6.14-2-k7
+Locale: LANG=ru_RU.KOI8-R, LC_CTYPE=ru_RU.KOI8-R (charmap=KOI8-R)
+
+Versions of packages php-elisp depends on:
+ii  emacs21 [emacsen]             21.4a-1    The GNU Emacs editor
+
+php-elisp recommends no packages.
+
+-- debconf-show failed
+
+
+------------=_1208696765-9700-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 342632-close) by bugs.debian.org; 20 Apr 2008 13:03:07 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.7 required=4.0 tests=BAYES_00,FROMDEVELOPER,
+	FVGT_m_MULTI_ODD,GMAIL,HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_2,
+	MURPHY_DRUGS_REL8,MURPHY_WRONG_WORD1,MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnZCE-0000Z8-KF
+	for 342632-close@bugs.debian.org; Sun, 20 Apr 2008 13:03:07 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnZBF-0008Ak-0G; Sun, 20 Apr 2008 13:02:05 +0000
+From: Ola Lundqvist <opal@debian.org>
+To: 342632-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#342632: fixed in php-elisp 1.4.0-1
+Message-Id: <E1JnZBF-0008Ak-0G@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 13:02:05 +0000
+Content-Transfer-Encoding: quoted-printable
+
+Source: php-elisp
+Source-Version: 1.4.0-1
+
+We believe that the bug you reported is fixed in the latest version of
+php-elisp, which is due to be installed in the Debian FTP archive:
+
+php-elisp_1.4.0-1.diff.gz
+  to pool/main/p/php-elisp/php-elisp_1.4.0-1.diff.gz
+php-elisp_1.4.0-1.dsc
+  to pool/main/p/php-elisp/php-elisp_1.4.0-1.dsc
+php-elisp_1.4.0-1_all.deb
+  to pool/main/p/php-elisp/php-elisp_1.4.0-1_all.deb
+php-elisp_1.4.0.orig.tar.gz
+  to pool/main/p/php-elisp/php-elisp_1.4.0.orig.tar.gz
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 342632@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Ola Lundqvist <opal@debian.org> (supplier of updated php-elisp package)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.7
+Date: Sun, 20 Apr 2008 14:45:09 +0200
+Source: php-elisp
+Binary: php-elisp
+Architecture: source all
+Version: 1.4.0-1
+Distribution: unstable
+Urgency: low
+Maintainer: Ola Lundqvist <opal@debian.org>
+Changed-By: Ola Lundqvist <opal@debian.org>
+Description:=20
+ php-elisp  - Emacs support for php files
+Closes: 342632
+Changes:=20
+ php-elisp (1.4.0-1) unstable; urgency=3Dlow
+ .
+   * New upstream release.
+   * This version have a copy of the 1.2.0 version with support for emacs=
+21
+     included as well.
+   * Applied patch with various fixes for the 1.2.0 version, closes: #342=
+632.
+     Thanks to Thue Janus Kristensen <thuejk@gmail.com> for the good patc=
+h.
+     Due to new upstream release two chunks had to be applied manually.
+   * Making Ola maintainer and Pontus co-maintainer.
+   * Debhelper compatibility version 4 support.
+   * Updated to 3.7.2 version of the debian standards version.
+     This include removing the old conffiles file in debian dir.
+   * Build depends on debhelper.
+   * Updated to new version of FSF address in copyright file.
+Files:=20
+ f99fbbecefc37c02fd4ea43188e6c207 614 text optional php-elisp_1.4.0-1.dsc
+ b6f969215d8e1ebcca3e247fac20f2c7 35672 text optional php-elisp_1.4.0.ori=
+g.tar.gz
+ b9d71407af6845eeb3dcb982a33ec9a3 17555 text optional php-elisp_1.4.0-1.d=
+iff.gz
+ 4704987a104854eaeb5bc96e5047b19d 34552 text optional php-elisp_1.4.0-1_a=
+ll.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICz27GKGxzw/lPdkRAiYXAJ94NW7jbq0tsgLWjcJ4ThtM46FVnwCgj4V2
+YCJRHHMeNgrkDRBqXfP5L+E=3D
+=3Dhvfg
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208696765-9700-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

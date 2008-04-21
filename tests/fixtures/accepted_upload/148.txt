@@ -1,0 +1,155 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 06:31:58 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnS9U-0005Rb-PG
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 06:31:57 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id C3FF013A4E22; Sun, 20 Apr 2008 05:31:46 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id 63F1E13A4DD3
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 05:31:46 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnRvO-0005Lf-NQ; Sun, 20 Apr 2008 05:17:14 +0000
+From: Eric Dorland <eric@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted iceweasel 2.0.0.14-1 (source all amd64)
+Message-Id: <E1JnRvO-0005Lf-NQ@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 05:17:14 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <V_R2AC_5lXL.A.g7F.CVtCIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301271
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 05:31:46 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sat, 19 Apr 2008 21:18:07 -0400
+Source: iceweasel
+Binary: iceweasel iceweasel-dom-inspector iceweasel-gnome-support iceweas=
+el-dbg
+Architecture: source all amd64
+Version: 2.0.0.14-1
+Distribution: unstable
+Urgency: low
+Maintainer: Eric Dorland <eric@debian.org>
+Changed-By: Eric Dorland <eric@debian.org>
+Description:=20
+ iceweasel  - lightweight web browser based on Mozilla
+ iceweasel-dbg - debugging symbols for iceweasel
+ iceweasel-dom-inspector - tool for inspecting the DOM of pages in Icewea=
+sel
+ iceweasel-gnome-support - Support for Gnome in Iceweasel
+Changes:=20
+ iceweasel (2.0.0.14-1) unstable; urgency=3Dlow
+ .
+   * New upstream security release.
+   * Fixes mfsa 2008-20 aka CVE-2008-1380.
+Checksums-Sha1:=20
+ 84349a748da21cf73e586e9c90f926b2f47813c2 1771 iceweasel_2.0.0.14-1.dsc
+ 9e052999b00a2e8209a0c094d5570c89c118e547 43546462 iceweasel_2.0.0.14.ori=
+g.tar.gz
+ a442c551983a8614a6070c72d4ef5a7a166d1be2 188823 iceweasel_2.0.0.14-1.dif=
+f.gz
+ 5e1cf794c52525a02ec73b6e7fc20f7766024446 240668 iceweasel-dom-inspector_=
+2.0.0.14-1_all.deb
+ 162ceae5364213307b34087e5649efe9a5bb4e2a 9250662 iceweasel_2.0.0.14-1_am=
+d64.deb
+ 69a548fc069c5ed388e8bd346269dbb510453fd5 88458 iceweasel-gnome-support_2=
+.0.0.14-1_amd64.deb
+ 9a49a9061ec28069065e689aa55205feabf4cb55 47901830 iceweasel-dbg_2.0.0.14=
+-1_amd64.deb
+Checksums-Sha256:=20
+ 92b9fdde13f554013287fbd6ae2268bbdb3a857ef2cdc8e2a543acf9c10949c4 1771 ic=
+eweasel_2.0.0.14-1.dsc
+ 17f28763685eef11846097623dcdc787e65ab6970c28dba32cb1581ae36a163a 4354646=
+2 iceweasel_2.0.0.14.orig.tar.gz
+ 00f403a9cb938cfdcb5baa654af8d732bdbe6c952283d6f4f62e85bcbad3687e 188823 =
+iceweasel_2.0.0.14-1.diff.gz
+ e49f37f135082713634b1ed5feb532f70d2b2c8c9809d63bef235f1f67ec7ff6 240668 =
+iceweasel-dom-inspector_2.0.0.14-1_all.deb
+ 4ef1af6218e1ada2e4521cba5105309dd628330e7c567a3ff21fca4d57680e71 9250662=
+ iceweasel_2.0.0.14-1_amd64.deb
+ 27496b007c643eb0ef7b061b1181125a71f3c98ce6ce309553c1d33836cca054 88458 i=
+ceweasel-gnome-support_2.0.0.14-1_amd64.deb
+ 906c139b2b9a74470f6e9b3a626e943e720dd888b47096282a827cea51a98417 4790183=
+0 iceweasel-dbg_2.0.0.14-1_amd64.deb
+Files:=20
+ d0ad26f09a9e470058c8fc0edd94ca00 1771 web optional iceweasel_2.0.0.14-1.=
+dsc
+ 0170d711d2fc68dfacf81c03a9f72929 43546462 web optional iceweasel_2.0.0.1=
+4.orig.tar.gz
+ 4ff9f909fb7a60b7ba6800034df09e57 188823 web optional iceweasel_2.0.0.14-=
+1.diff.gz
+ 64f082c89d68b6b127b72ca47545eb31 240668 web optional iceweasel-dom-inspe=
+ctor_2.0.0.14-1_all.deb
+ 11635767f4dd01c5b3a9218b4f31b 9250662 web optional iceweasel_2.0.0.14=
+-1_amd64.deb
+ 4a0cbbecfa6c79df66e589b884a409f7 88458 gnome optional iceweasel-gnome-su=
+pport_2.0.0.14-1_amd64.deb
+ 3025fe394d131a1816a82cac9f69b9bb 47901830 devel extra iceweasel-dbg_2.0.=
+0.14-1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICsfwYemOzxbZcMYRAiTQAKCOAUigKdHR3JaUw0EWZnvhQheFRQCgtEv8
+yEFOTfDiXWJBt819MEMTOlk=3D
+=3D/cbj
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+iceweasel-dbg_2.0.0.14-1_amd64.deb
+  to pool/main/i/iceweasel/iceweasel-dbg_2.0.0.14-1_amd64.deb
+iceweasel-dom-inspector_2.0.0.14-1_all.deb
+  to pool/main/i/iceweasel/iceweasel-dom-inspector_2.0.0.14-1_all.deb
+iceweasel-gnome-support_2.0.0.14-1_amd64.deb
+  to pool/main/i/iceweasel/iceweasel-gnome-support_2.0.0.14-1_amd64.deb
+iceweasel_2.0.0.14-1.diff.gz
+  to pool/main/i/iceweasel/iceweasel_2.0.0.14-1.diff.gz
+iceweasel_2.0.0.14-1.dsc
+  to pool/main/i/iceweasel/iceweasel_2.0.0.14-1.dsc
+iceweasel_2.0.0.14-1_amd64.deb
+  to pool/main/i/iceweasel/iceweasel_2.0.0.14-1_amd64.deb
+iceweasel_2.0.0.14.orig.tar.gz
+  to pool/main/i/iceweasel/iceweasel_2.0.0.14.orig.tar.gz
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

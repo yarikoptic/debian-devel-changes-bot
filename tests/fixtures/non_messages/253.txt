@@ -1,0 +1,135 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 21:05:40 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnfn3-0000sk-99
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 21:05:40 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 590CC13A526B; Sun, 20 Apr 2008 20:05:32 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.2 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	MURPHY_WRONG_WORD2,RCVD_IN_DNSWL_LOW,SARE_MSGID_LONG40 autolearn=ham
+	version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 1B81813A5273;
+	Sun, 20 Apr 2008 20:05:18 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnfkc-0004JR-VS; Sun, 20 Apr 2008 20:03:02 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#474183: [Python-apps-team] Bug#474183: does it help?
+Reply-To: Stani <spe.stani.be@gmail.com>, 474183@bugs.debian.org
+Resent-From: Stani <spe.stani.be@gmail.com>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Python Applications Packaging Team <python-apps-team@lists.alioth.debian.org>
+Resent-Date: Sun, 20 Apr 2008 20:03:02 +0000
+Resent-Message-ID: <handler.474183.B474183.120872170613719@bugs.debian.org>
+X-Debian-PR-Message: report 474183
+X-Debian-PR-Package: spe
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: spe
+Received: via spool by 474183-submit@bugs.debian.org id=B474183.120872170613719
+          (code B ref 474183); Sun, 20 Apr 2008 20:03:02 +0000
+Received: (at 474183) by bugs.debian.org; 20 Apr 2008 20:01:46 +0000
+X-Amavis-Spam-Status: No, score=-6.8 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER,
+	MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from wf-out-1314.google.com ([209.85.200.169])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <spe.stani.be@gmail.com>)
+	id 1JnfjO-0003Yo-AZ
+	for 474183@bugs.debian.org; Sun, 20 Apr 2008 20:01:46 +0000
+Received: by wf-out-1314.google.com with SMTP id 25so1315786wfc.11
+        for <474183@bugs.debian.org>; Sun, 20 Apr 2008 13:01:46 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:to:subject:in-reply-to:mime-version:content-type:content-transfer-encoding:content-disposition:references;
+        bh=WucG6SPheXeckJ9FchLSbc+lc5vvFNQim5OCnj6ZF30=;
+        b=nEIg1l98Cu4+Z0rm+ydzsEIwGmH4MwEffaruVk4TZrrJ/KOlVPnWUVBYgI/xMjt2JxoZww8COGYVp1Zx9S80fVn8Nn2HbkzfrtAZt+Xa143ktzlRJYGdIgrHJy7m8ZOCea6/DmMjJPvPMRx9on4sv+Da8sERF3txoxnsYxHHFrA=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:to:subject:in-reply-to:mime-version:content-type:content-transfer-encoding:content-disposition:references;
+        b=BJXTN+kkk8acwiDl+ihzMuLz6l1+uqbQYTBkLHrsKgijjpo/sCv8XPxwDHVZUwIGztrErFQgwILdzWW9pJgXbatMdpwZ48J/TcDhRn9leRQ3iGWz2lOWAyBEKJL001+7krnGtWWYd56KF0M+xRWok2z9ocbz67/++bsoG7+/IhU=
+Received: by 10.142.77.11 with SMTP id z11mr1433111wfa.98.1208721706166;
+        Sun, 20 Apr 2008 13:01:46 -0700 (PDT)
+Received: by 10.142.223.10 with HTTP; Sun, 20 Apr 2008 13:01:46 -0700 (PDT)
+Message-ID: <2078a7ad0804201301l51397c7agae57afe51803a9b5@mail.gmail.com>
+Date: Sun, 20 Apr 2008 22:01:46 +0200
+From: Stani <spe.stani.be@gmail.com>
+To: "Christophe Combelles" <ccomb@free.fr>, 474183@bugs.debian.org
+In-Reply-To: <480B71CA.1030708@free.fr>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+References: <480B71CA.1030708@free.fr>
+Resent-Date: Sun, 20 Apr 2008 20:03:02 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343763
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.6
+X-Spam-Report: (-52.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+On Sun, Apr 20, 2008 at 6:39 PM, Christophe Combelles <ccomb@free.fr> wrote:
+> This is from SVN rev339
+>  it goes through wxp/smdi.py (is wxp ok for linux?)
+yes wxp = wxpython
+
+>  I've put a set_trace on line 1000
+>
+>   >>> > /tmp/_spe/sm/wxp/smdi.py(1001)onFrameClose()
+>  -> parentFrame.tabs.DeletePage(current)
+>  (Pdb) s
+>  --Call--
+>   >
+>  /usr/lib/python2.4/site-packages/wx-2.6-gtk2-unicode/wx/_controls.py(3014)DeletePage()
+>  -> def DeletePage(*args, **kwargs):
+>  (Pdb)
+>   >
+>  /usr/lib/python2.4/site-packages/wx-2.6-gtk2-unicode/wx/_controls.py(3016)DeletePage()
+>  -> return _controls_.BookCtrlBase_DeletePage(*args, **kwargs)
+>  (Pdb) s
+>  ***<here it crashes>***
+>  --Call--
+>   > /tmp/_spe/plugins/Pycheck.py(68)__del__()
+>  -> def __del__(self):
+>  (pdb)
+This for sure does help. I was looking for the bug there as well, but
+good you confirmed the exact line. However it does not give me a
+solution yet. Can you try if with python-wxgtk2.8 from Debian
+Experimental it also happens?
+
+Stani
+-- 
+http://pythonide.stani.be
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,106 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 14:45:15 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnZqx-0007Ge-8D
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 14:45:15 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 100D913A4F96; Sun, 20 Apr 2008 13:45:10 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id CB26213A4EA1;
+	Sun, 20 Apr 2008 13:44:52 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnZnw-0001n7-87; Sun, 20 Apr 2008 13:42:04 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476931: emacs22: emacsclient may ignore line-number if called from shell-buffer
+Reply-To: Sven Joachim <svenjoac@gmx.de>, 476931@bugs.debian.org
+Resent-From: Sven Joachim <svenjoac@gmx.de>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Rob Browning <rlb@defaultvalue.org>
+Resent-Date: Sun, 20 Apr 2008 13:42:03 +0000
+Resent-Message-ID: <handler.476931.B476931.1208698792860@bugs.debian.org>
+X-Debian-PR-Message: report 476931
+X-Debian-PR-Package: emacs22
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: emacs22
+Received: via spool by 476931-submit@bugs.debian.org id=B476931.1208698792860
+          (code B ref 476931); Sun, 20 Apr 2008 13:42:03 +0000
+Received: (at 476931) by bugs.debian.org; 20 Apr 2008 13:39:52 +0000
+X-Amavis-Spam-Status: No, score=-7.0 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from mail.gmx.net ([213.165.64.20])
+	by rietz.debian.org with smtp (Exim 4.63)
+	(envelope-from <svenjoac@gmx.de>)
+	id 1JnZln-00008D-SS
+	for 476931@bugs.debian.org; Sun, 20 Apr 2008 13:39:52 +0000
+Received: (qmail invoked by alias); 20 Apr 2008 13:39:45 -0000
+Received: from p54863D83.dip.t-dialin.net (EHLO debian) [84.134.61.131]
+  by mail.gmx.net (mp014) with SMTP; 20 Apr 2008 15:39:45 +0200
+X-Authenticated: #28250155
+X-Provags-ID: V01U2FsdGVkX1811W1CtAg1WYH4zLfxbXUROjpvwhlSOtijLkLPMu
+	jNHUW1rSRYcpUj
+From: Sven Joachim <svenjoac@gmx.de>
+To: ziegler@uni-freiburg.de
+Cc: 476931@bugs.debian.org
+References: <E1JnVnT-0002nq-1V@tux00.mathematik.uni-freiburg.de>
+Date: Sun, 20 Apr 2008 15:36:52 +0200
+In-Reply-To: <E1JnVnT-0002nq-1V@tux00.mathematik.uni-freiburg.de>
+	(ziegler@uni-freiburg.de's message of "Sun, 20 Apr 2008 11:25:19
+	+0200")
+Message-ID: <87od84ps0b.fsf@gmx.de>
+User-Agent: Gnus/5.13 (Gnus v5.13) Emacs/23.0.60 (gnu/linux)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+X-Y-GMX-Trusted: 0
+Resent-Date: Sun, 20 Apr 2008 13:42:04 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343502
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -42.1
+X-Spam-Report: (-42.1 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	10 AWL                    AWL: From: address is in the auto white-list
+
+forwarded 476931 http://emacsbugs.donarmstrong.com/cgi-bin/bugreport.cgi?bug=151
+thanks
+
+I forwarded the bug to upstream's BTS (see URL above).
+
+Cheers,
+       Sven
+
+
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

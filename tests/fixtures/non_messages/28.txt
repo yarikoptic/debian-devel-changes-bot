@@ -1,0 +1,155 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 09:14:56 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnUhI-0005oK-8J
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 09:14:56 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id E104C13A4E85; Sun, 20 Apr 2008 08:14:50 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.9 required=4.0 tests=BAYES_00,FOURLA,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 7597013A497C;
+	Sun, 20 Apr 2008 08:14:41 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnUeY-0006HC-UU; Sun, 20 Apr 2008 08:12:03 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#475626: libnss-ldapd: Change to start level of nslcd
+Reply-To: Alex Samad <alex@samad.com.au>, 475626@bugs.debian.org
+Resent-From: Alex Samad <alex@samad.com.au>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Arthur de Jong <adejong@debian.org>
+Resent-Date: Sun, 20 Apr 2008 08:12:02 +0000
+Resent-Message-ID: <handler.475626.B475626.120867895219726@bugs.debian.org>
+X-Debian-PR-Message: report 475626
+X-Debian-PR-Package: libnss-ldapd
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: nss-ldapd
+Received: via spool by 475626-submit@bugs.debian.org id=B475626.120867895219726
+          (code B ref 475626); Sun, 20 Apr 2008 08:12:02 +0000
+Received: (at 475626) by bugs.debian.org; 20 Apr 2008 08:09:12 +0000
+X-Amavis-Spam-Status: No, score=-6.9 required=4.0 tests=BAYES_00,FOURLA,
+	HAS_BUG_NUMBER autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from mail11.tpgi.com.au ([203.12.160.161])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <alex@samad.com.au>)
+	id 1JnUbn-00057l-Vv
+	for 475626@bugs.debian.org; Sun, 20 Apr 2008 08:09:12 +0000
+X-TPG-Antivirus: Passed
+Received: from sydrt01.samad.com.au (adsl.samad.com.au [60.241.248.86])
+	by mail11.tpgi.com.au (envelope-from alex@samad.com.au) (8.14.2/8.14.2) with ESMTP id m3K8929A015985
+	(version=TLSv1/SSLv3 cipher=AES256-SHA bits=256 verify=NO)
+	for <475626@bugs.debian.org>; Sun, 20 Apr 2008 18:09:09 +1000
+Received: from alex by smtp.samad.com.au with local  (Exim 4.69 #1 (Debian))
+	id 1JnUbe-0006IQ-FB
+	for <475626@bugs.debian.org>; Sun, 20 Apr 2008 18:09:02 +1000
+Date: Sun, 20 Apr 2008 18:09:02 +1000
+From: Alex Samad <alex@samad.com.au>
+To: 475626@bugs.debian.org
+Message-ID: <20080420080902.GC27270@samad.com.au>
+References: <20080412020524.13547.79153.reportbug@hufpuf.lan1.hme1.samad.com.au> <1208613373.3539.7.camel@sorbet.thuis.net>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+	protocol="application/pgp-signature"; boundary="s2ZSL+KKDSLx8OML"
+Content-Disposition: inline
+In-Reply-To: <1208613373.3539.7.camel@sorbet.thuis.net>
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Resent-Date: Sun, 20 Apr 2008 08:12:02 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343353
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -37.8
+X-Spam-Report: (-37.8 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	15 AWL                    AWL: From: address is in the auto white-list
+
+
+--s2ZSL+KKDSLx8OML
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+On Sat, Apr 19, 2008 at 03:56:12PM +0200, Arthur de Jong wrote:
+> On Sat, 2008-04-12 at 12:05 +1000, Alex Samad wrote:
+> > Currenlt nscld is set to start by default at level 20, which is the same
+> > level as exim. exim coming first becuase of alphabet.  This mean for a
+> > period of time no ldap users are valid with regards to exim. I have seen
+> > bounced emails because of this.
+> >=20
+> > I was going to suggest 19 but it seems like slapd starts there and I
+> > would like to give slapd a chance to start before nscld starts because
+> > by backup (alternative URI's) are on a different site
+>=20
+> Starting nslcd before slapd can be done but is generally not a good idea
+> because it will slow down the boot process due to problems connecting to
+> the LDAP server. If nslcd knows that the LDAP server is down this could
+> also cause problems for subsequent lookups in a certain time period
+> until nslcd is aware that the LDAP server is available again.
+>=20
+> This means that sequence 19 may cause problems and 20 currently causes
+> problems for exim.
+
+yep, I have moved slapd done to 18, 19 for nslcd.
+
+>=20
+> I am in the process of rethinking/rewriting the reconnect logic in
+> nss-ldapd which could make it easier to start earlier.
+If i might suggest the ability to add a weight to each uri thus if would
+be possible to priorities slapd servers
+
+>=20
+> --=20
+> -- arthur - adejong@debian.org - http://people.debian.org/~adejong --
+
+
+
+--=20
+Dave Mack:	"Your stupidity, Allen, is simply not up to par."
+Allen Gwinn:	"Yours is."
+
+--s2ZSL+KKDSLx8OML
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: Digital signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICvoekZz88chpJ2MRAp15AJ4lektZaxf/xm/Mj4vuMdvOT/ZS4wCgoDND
+RVeRiRYjHxO0XMWQB4cIxFM=
+=fqvY
+-----END PGP SIGNATURE-----
+
+--s2ZSL+KKDSLx8OML--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

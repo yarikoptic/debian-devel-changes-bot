@@ -1,0 +1,166 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 20:05:04 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JneqN-0000aY-Tg
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 20:05:04 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 8403513A51B6; Sun, 20 Apr 2008 19:04:54 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id CB4CF13A518C;
+	Sun, 20 Apr 2008 19:04:38 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jneli-0005Da-Fo; Sun, 20 Apr 2008 19:00:06 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#477068: xulrunner_1.9~b5-2(mips/experimental): FTBFS: expected constructor, destructor, or type conversion before 'XPTC_InvokeByIndex'
+Reply-To: Frank Lichtenheld <djpig@debian.org>, 477068@bugs.debian.org
+Resent-From: Frank Lichtenheld <djpig@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Mike Hommey <glandium@debian.org>
+Resent-Date: Sun, 20 Apr 2008 19:00:01 +0000
+Resent-Message-ID: <handler.477068.B.12087178438864@bugs.debian.org>
+X-Debian-PR-Message: report 477068
+X-Debian-PR-Package: xulrunner
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: xulrunner
+Received: via spool by submit@bugs.debian.org id=B.12087178438864
+          (code B ref -1); Sun, 20 Apr 2008 19:00:01 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 18:57:23 +0000
+X-Amavis-Spam-Status: No, score=-11.9 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FROMDEVELOPER,HAS_PACKAGE autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from aiolos.lenk.info ([85.214.124.154])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <frank@lichtenheld.de>)
+	id 1Jnej4-0002HR-K6
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 18:57:23 +0000
+Received: from herkules.lenk.info
+	([213.239.194.154] helo=smtp.lenk.info ident=Debian-exim)
+	by mail.lenk.info with esmtpsa 
+	(Cipher TLS-1.0:RSA_AES_256_CBC_SHA1:32) (Exim 4.63 1)
+	id 1Jnej3-0005Ay-GC
+	for <submit@bugs.debian.org>; Sun, 20 Apr 2008 20:57:21 +0200
+Received: from p4fdd61b6.dip.t-dialin.net ([79.221.97.182] helo=feynman.djpig.de)
+	by smtp.lenk.info with esmtpsa 
+	(Cipher TLS-1.0:RSA_AES_256_CBC_SHA1:32) (Exim 4.63 1)
+	id 1Jneix-0001sc-Qz
+	for <submit@bugs.debian.org>; Sun, 20 Apr 2008 20:57:15 +0200
+Received: from djpig by feynman.djpig.de with local (Exim 4.69)
+	(envelope-from <frank@lichtenheld.de>)
+	id 1Jnej3-0001tN-Qe
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 20:57:21 +0200
+Date: Sun, 20 Apr 2008 20:57:21 +0200
+From: Frank Lichtenheld <djpig@debian.org>
+To: submit@bugs.debian.org
+Message-ID: <20080420185721.GQ15254@feynman.djpig.de>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 19:00:06 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343733
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.4
+X-Spam-Report: (-52.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.1 AWL                    AWL: From: address is in the auto white-list
+
+Package: xulrunner
+Version: 1.9~b5-2
+Severity: serious
+
+Hi,
+
+your package failed to build from source. This one seems to be mips
+sepcific.
+
+| Automatic build of xulrunner_1.9~b5-2 on signy by sbuild/mips 98-farm
+| Build started at 20080420-1035
+| ******************************************************************************
+| Checking available source versions...
+| Fetching source files...
+| Reading package lists...
+| Building dependency tree...
+| Need to get 39.7MB of source archives.
+| Get:1 http://sinclair.farm.ftbfs.de experimental/main xulrunner 1.9~b5-2 (dsc) [1749B]
+| Get:2 http://sinclair.farm.ftbfs.de experimental/main xulrunner 1.9~b5-2 (tar) [39.6MB]
+| Get:3 http://sinclair.farm.ftbfs.de experimental/main xulrunner 1.9~b5-2 (diff) [93.6kB]
+| Fetched 39.7MB in 52s (751kB/s)
+| Download complete and in download only mode
+| ** Using build dependencies supplied by package:
+| Build-Depends: debhelper (>= 5.0.37.2), autotools-dev, libx11-dev, libxt-dev, libidl-dev, libgtk2.0-dev (>= 2.10), libgnomevfs2-dev, libgnome2-dev, libgnomeui-dev, libcairo2-dev (>= 1.5), libpng12-dev, libjpeg62-dev, zlib1g-dev, libbz2-dev, libreadline5-dev | libreadline-dev, libkrb5-dev, python-dev, python-support (>= 0.3), dpkg-dev (>= 1.13.19), binutils (>= 2.17) [mips mipsel], libnspr4-dev (>= 3.7.0), libnss3-dev (>= 3.12.0~beta3), libhunspell-dev (>= 1.1.5-2), libdbus-glib-1-dev, libsqlite3-dev (>= 3.5), liblcms1-dev, zip
+| Build-Depends-Indep: java-gcj-compat-dev (>= 1.0.56)
+| Checking for already installed source dependencies...
+[...]
+| xptcinvoke_mips.cpp
+| c++ -o xptcinvoke_mips.o -c -fvisibility=hidden -DMOZILLA_INTERNAL_API -DOSTYPE=\"Linux2.6\" -DOSARCH=Linux -DEXPORT_XPTC_API -D_IMPL_NS_COM -I./../.. -I./../../../../xptinfo/src  -I../../../../../../dist/include/string -I../../../../../../dist/include  -I../../../../../../dist/include/xpcom -I/usr/include/nspr        -fPIC   -fno-rtti -fno-exceptions -Wall -Wconversion -Wpointer-arith -Woverloaded-virtual -Wsynth -Wno-ctor-dtor-privacy -Wno-non-virtual-dtor -Wcast-align -Wno-long-long -g -fno-strict-aliasing -fshort-wchar -pthread -pipe  -DNDEBUG -DTRIMMED -Os -freorder-blocks -fno-reorder-functions    -DMOZILLA_CLIENT -include ../../../../../../mozilla-config.h -Wp,-MD,.deps/xptcinvoke_mips.pp xptcinvoke_mips.cpp
+[... (some warnings)]
+| xptcinvoke_mips.cpp: At global scope:
+| xptcinvoke_mips.cpp:120: error: expected constructor, destructor, or type conversion before 'XPTC_InvokeByIndex'
+| make[9]: *** [xptcinvoke_mips.o] Error 1
+| make[9]: Leaving directory `/build/buildd/xulrunner-1.9~b5/xpcom/reflect/xptcall/src/md/unix'
+| make[8]: *** [libs] Error 2
+| make[8]: Leaving directory `/build/buildd/xulrunner-1.9~b5/xpcom/reflect/xptcall/src/md'
+| make[7]: *** [libs] Error 2
+| make[7]: Leaving directory `/build/buildd/xulrunner-1.9~b5/xpcom/reflect/xptcall/src'
+| make[6]: *** [libs] Error 2
+| make[6]: Leaving directory `/build/buildd/xulrunner-1.9~b5/xpcom/reflect/xptcall'
+| make[5]: *** [libs] Error 2
+| make[5]: Leaving directory `/build/buildd/xulrunner-1.9~b5/xpcom/reflect'
+| make[4]: *** [libs] Error 2
+| make[4]: Leaving directory `/build/buildd/xulrunner-1.9~b5/xpcom'
+| make[3]: *** [libs_tier_xpcom] Error 2
+| make[3]: Leaving directory `/build/buildd/xulrunner-1.9~b5'
+| make[2]: *** [tier_xpcom] Error 2
+| make[2]: Leaving directory `/build/buildd/xulrunner-1.9~b5'
+| make[1]: *** [default] Error 2
+| make[1]: Leaving directory `/build/buildd/xulrunner-1.9~b5'
+| make: *** [build-stamp] Error 2
+| dpkg-buildpackage: failure: debian/rules build gave error exit status 2
+| ******************************************************************************
+| Build finished at 20080420-1300
+| FAILED [dpkg-buildpackage died]
+
+Full build log(s): http://experimental.ftbfs.de/build.php?&ver=1.9~b5-2&pkg=xulrunner&arch=mips
+
+Gruesse,
+-- 
+Frank Lichtenheld <djpig@debian.org>
+www: http://www.djpig.de/
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

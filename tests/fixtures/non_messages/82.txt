@@ -1,0 +1,145 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 12:05:09 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnXLy-0006Zw-Rc
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 12:05:09 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id A6B2013A4F24; Sun, 20 Apr 2008 11:05:01 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.0 required=4.0 tests=BAYES_00,MIXEDBDN,
+	MURPHY_DRUGS_REL8,RCVD_IN_DNSWL_LOW autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 3816413A4EA9;
+	Sun, 20 Apr 2008 11:04:46 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnXK6-0002TW-0o; Sun, 20 Apr 2008 11:03:06 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476952: include /etc/nginx/conf.d/*.conf entry for nginx.conf
+Reply-To: David Dick <ddick@aapt.net.au>, 476952@bugs.debian.org
+Resent-From: David Dick <ddick@aapt.net.au>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Jose Parrella <bureado@debian.org>
+Resent-Date: Sun, 20 Apr 2008 11:03:01 +0000
+Resent-Message-ID: <handler.476952.B.12086891036007@bugs.debian.org>
+X-Debian-PR-Message: report 476952
+X-Debian-PR-Package: nginx
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: nginx
+Received: via spool by submit@bugs.debian.org id=B.12086891036007
+          (code B ref -1); Sun, 20 Apr 2008 11:03:01 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 10:58:23 +0000
+X-Amavis-Spam-Status: No, score=-8.6 required=4.0 tests=BAYES_00,DNS_FROM_RFC_ABUSE,
+	FORGED_RCVD_HELO,HAS_PACKAGE,MIXEDBDN,MURPHY_DRUGS_REL8 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from vfep02.mfe.bur.connect.com.au ([210.8.230.168])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <ddick@aapt.net.au>)
+	id 1JnXFX-0001Vc-9Z
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 10:58:23 +0000
+Received: from vfep02.mfe.bur.connect.com.au (localhost [127.0.0.1])
+	by localhost.vfep02.connect.com.au (Postfix) with ESMTP id 818C956D2E7
+	for <submit@bugs.debian.org>; Sun, 20 Apr 2008 20:58:17 +1000 (EST)
+Received: from fep07.mfe.bur.connect.com.au (fep07.mfe.bur.connect.com.au [203.63.86.27])
+	by vfep02.mfe.bur.connect.com.au (Postfix) with ESMTP id 023E156D2E6
+	for <submit@bugs.debian.org>; Sun, 20 Apr 2008 20:58:16 +1000 (EST)
+Received: from [203.63.86.27] (localhost [127.0.0.1])
+	by localhost.mfep07.connect.com.au (Postfix) with ESMTP id BC943F589
+	for <submit@bugs.debian.org>; Sun, 20 Apr 2008 20:58:16 +1000 (EST)
+Received: from matrix.lan (C-59-101-166-147.mel.connect.net.au [59.101.166.147])
+	by fep07.mfe.bur.connect.com.au (Postfix) with ESMTP id 85994F52B
+	for <submit@bugs.debian.org>; Sun, 20 Apr 2008 20:58:16 +1000 (EST)
+Message-ID: <480B21C7.5080303@aapt.net.au>
+Date: Sun, 20 Apr 2008 20:58:15 +1000
+From: David Dick <ddick@aapt.net.au>
+User-Agent: Thunderbird 2.0.0.12 (X11/20080226)
+MIME-Version: 1.0
+To: submit@bugs.debian.org
+Content-Type: multipart/mixed;
+ boundary="------------000401060707030603010901"
+X-BitDefender-Scanner: Clean, Agent: BitDefender POSTFIX 1.6.2 on
+ vfep02
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 11:03:06 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343436
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -27.3
+X-Spam-Report: (-27.3 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	25 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format.
+--------------000401060707030603010901
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 7bit
+
+Package:nginx
+Version:0.4.13-2
+
+in order to package web applications for nginx, the packager needs a way 
+to add entries to the nginx.conf file.  A method for doing that is 
+including a "include /etc/nginx/conf.d/*.conf" line in nginx.conf.  This 
+allows web application packagers to put a config file snippet into 
+/etc/nginx/conf.d/.  The include line must be before the first "server" 
+entry in nginx.conf to allow a web application to override the default 
+nginx home page.  Included is a patch to accomplish this
+
+--------------000401060707030603010901
+Content-Type: text/plain;
+ name="nginx_conf.patch"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline;
+ filename="nginx_conf.patch"
+
+--- etc/nginx/nginx.old	2006-11-25 00:07:16.000000000 +1100
++++ etc/nginx/nginx.new	2008-04-20 20:40:13.000000000 +1000
+@@ -23,9 +23,11 @@
+ 
+     gzip  on;
+ 
++    include /etc/nginx/conf.d/*.conf;
++
+     server {
+         listen       80;
+-        server_name  localhost;
++        server_name  _ *;
+ 
+         access_log  /var/log/nginx/localhost.access.log;
+ 
+
+--------------000401060707030603010901--
+
+
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

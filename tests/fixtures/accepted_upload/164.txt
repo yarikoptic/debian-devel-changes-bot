@@ -1,0 +1,141 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 21:02:06 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnfjf-0000pw-Dw
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 21:02:06 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id AF54B13A52AA; Sun, 20 Apr 2008 20:02:01 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id 53D8F13A5257
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 20:02:01 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnfV8-0006JX-KW; Sun, 20 Apr 2008 19:47:02 +0000
+From: Dave Beckett <dajobe@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted cairomm 1.6.0-1 (source all i386)
+Message-Id: <E1JnfV8-0006JX-KW@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 19:47:02 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <BIQYhXKoGQJ.A.ZpD.5E6CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301346
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 20:02:01 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.6
+X-Spam-Report: (-2.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.0 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 11:37:46 -0700
+Source: cairomm
+Binary: libcairomm-1.0-dev libcairomm-1.0-1 libcairomm-1.0-doc
+Architecture: source all i386
+Version: 1.6.0-1
+Distribution: unstable
+Urgency: low
+Maintainer: Dave Beckett <dajobe@debian.org>
+Changed-By: Dave Beckett <dajobe@debian.org>
+Description:=20
+ libcairomm-1.0-1 - C++ wrappers for Cairo (shared libraries)
+ libcairomm-1.0-dev - C++ wrappers for Cairo (development files)
+ libcairomm-1.0-doc - C++ wrappers for Cairo (documentation)
+Changes:=20
+ cairomm (1.6.0-1) unstable; urgency=3Dlow
+ .
+   * New upstream release
+Checksums-Sha1:=20
+ cad3902348f63fd064fb141bb32c24a520beacb3 1155 cairomm_1.6.0-1.dsc
+ 934dc378af07ad019a9063f88e975be2f885172c 797627 cairomm_1.6.0.orig.tar.g=
+z
+ 193fab54e478af8fb2e300f101c893dc44a2553c 2777 cairomm_1.6.0-1.diff.gz
+ ebbcfcca0ae912dcec21166417f0f52adbf7d199 282500 libcairomm-1.0-doc_1.6.0=
+-1_all.deb
+ 04cc6a90c055af5472cde2a7a83580fe4c7ac5e0 75420 libcairomm-1.0-dev_1.6.0-=
+1_i386.deb
+ 9e12de335ab13a9ce05a607fb69861e9ee363a95 51184 libcairomm-1.0-1_1.6.0-1_=
+i386.deb
+Checksums-Sha256:=20
+ 386fa207475c487ea7a0f0e73e5cfe49ad67235e1a108a2b893f7e9a3c781375 1155 ca=
+iromm_1.6.0-1.dsc
+ 8e027d1fb6f0e9fb9f8c871a16a85d19a8c95a069a97ea498422fdd675dda737 797627 =
+cairomm_1.6.0.orig.tar.gz
+ 4c20f209de189469441e0abab13c0e14afad29603f434895eb5bdfb2ad521203 2777 ca=
+iromm_1.6.0-1.diff.gz
+ b4563484a869352ab8eb5a9542949c98062b2f97d41b5e325e710a4903a3610b 282500 =
+libcairomm-1.0-doc_1.6.0-1_all.deb
+ 6af0b890a1f9e26281e11ea90627e8051a2a08a3044ab7ede1b3f784bac5f59e 75420 l=
+ibcairomm-1.0-dev_1.6.0-1_i386.deb
+ c2baa4895f4559cc6c3f3ca51ac272c252fa10b071c9e21019836e4175da7fc4 51184 l=
+ibcairomm-1.0-1_1.6.0-1_i386.deb
+Files:=20
+ 3ea46ae36ea917608871f961c5a3154a 1155 libs optional cairomm_1.6.0-1.dsc
+ 549b0c9eaa25d61c4dd92d2de1cb4a46 797627 libs optional cairomm_1.6.0.orig=
+.tar.gz
+ ce932f7d37ddf7f639c3357988013773 2777 libs optional cairomm_1.6.0-1.diff=
+.gz
+ a96ff3b812855f0099da158b766fb401 282500 doc optional libcairomm-1.0-doc_=
+1.6.0-1_all.deb
+ 1d73a3d9b591ec65e1c2726fe7ea66ed 75420 libdevel optional libcairomm-1.0-=
+dev_1.6.0-1_i386.deb
+ 53b8a4cb6705fd9088de3e32113f6543 51184 libs optional libcairomm-1.0-1_1.=
+6.0-1_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC5ijQ+ySUE9xlVoRAkO5AKCDMzGTSHazo49JkoxHTlLY31XPvgCfb/YX
+QtL6DAskZZXqol104neQNxY=3D
+=3D1uCp
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+cairomm_1.6.0-1.diff.gz
+  to pool/main/c/cairomm/cairomm_1.6.0-1.diff.gz
+cairomm_1.6.0-1.dsc
+  to pool/main/c/cairomm/cairomm_1.6.0-1.dsc
+cairomm_1.6.0.orig.tar.gz
+  to pool/main/c/cairomm/cairomm_1.6.0.orig.tar.gz
+libcairomm-1.0-1_1.6.0-1_i386.deb
+  to pool/main/c/cairomm/libcairomm-1.0-1_1.6.0-1_i386.deb
+libcairomm-1.0-dev_1.6.0-1_i386.deb
+  to pool/main/c/cairomm/libcairomm-1.0-dev_1.6.0-1_i386.deb
+libcairomm-1.0-doc_1.6.0-1_all.deb
+  to pool/main/c/cairomm/libcairomm-1.0-doc_1.6.0-1_all.deb
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

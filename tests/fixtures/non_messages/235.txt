@@ -1,0 +1,101 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 18:10:03 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnd38-0008SF-V5
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 18:10:03 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id E20E113A4FDB; Sun, 20 Apr 2008 17:09:57 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-3.0 required=4.0 tests=BAYES_00,MURPHY_DRUGS_REL8,
+	RCVD_IN_DNSWL_LOW autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id A044913A4FBD;
+	Sun, 20 Apr 2008 17:09:47 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnd2V-00009Y-ES; Sun, 20 Apr 2008 17:09:19 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#101607: actually this should be fixed
+Reply-To: md@Linux.IT (Marco d'Itri), 101607@bugs.debian.org
+Resent-From: md@Linux.IT (Marco d'Itri)
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Marco d'Itri <md@linux.it>
+Resent-Date: Sun, 20 Apr 2008 17:09:06 +0000
+Resent-Message-ID: <handler.101607.B101607.120871130330133@bugs.debian.org>
+X-Debian-PR-Message: report 101607
+X-Debian-PR-Package: rblcheck
+X-Debian-PR-Keywords: upstream wontfix
+X-Debian-PR-Source: rblcheck
+Received: via spool by 101607-submit@bugs.debian.org id=B101607.120871130330133
+          (code B ref 101607); Sun, 20 Apr 2008 17:09:06 +0000
+Received: (at 101607) by bugs.debian.org; 20 Apr 2008 17:08:23 +0000
+X-Amavis-Spam-Status: No, score=-6.0 required=4.0 tests=BAYES_00,MURPHY_DRUGS_REL8,
+	VALID_BTS_CONTROL autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from attila.bofh.it ([213.92.8.2] ident=postfix)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <md@Linux.IT>)
+	id 1Jnd1b-0007pO-H9; Sun, 20 Apr 2008 17:08:23 +0000
+Received: by attila.bofh.it (Postfix, from userid 10)
+	id 4CA255F702; Sun, 20 Apr 2008 19:08:22 +0200 (CEST)
+Received: by bongo.bofh.it (Postfix, from userid 1000)
+	id E06325545; Sun, 20 Apr 2008 19:08:10 +0200 (CEST)
+Date: Sun, 20 Apr 2008 19:08:10 +0200
+To: 101607@bugs.debian.org
+Cc: control@bugs.debian.org
+Message-ID: <20080420170810.GA8967@bongo.bofh.it>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+From: md@Linux.IT (Marco d'Itri)
+Resent-Date: Sun, 20 Apr 2008 17:09:19 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343667
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -42.2
+X-Spam-Report: (-42.2 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	10 AWL                    AWL: From: address is in the auto white-list
+
+severity 101607 minor
+tag 101607 -wontfix
+tag 101607 help
+thanks
+
+But I have no interest in working on it. Feel free to send a patch.
+
+-- 
+ciao,
+Marco
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

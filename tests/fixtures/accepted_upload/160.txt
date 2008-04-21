@@ -1,0 +1,119 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 12:01:42 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnXIh-0006ZE-LX
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 12:01:42 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 3AB0813A4EE1; Sun, 20 Apr 2008 11:01:38 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id 7F88F13A4EBC
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 11:01:37 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnX4Z-0000gI-BP; Sun, 20 Apr 2008 10:47:03 +0000
+From: Roland Stigge <stigge@antcom.de>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted autodia 2.03-2 (source all)
+Message-Id: <E1JnX4Z-0000gI-BP@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 10:47:03 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <-ZT1HZNFDfP.A.WNH.SKyCIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301283
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 11:01:38 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.6
+X-Spam-Report: (-2.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.0 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 11:56:38 +0200
+Source: autodia
+Binary: autodia
+Architecture: source all
+Version: 2.03-2
+Distribution: unstable
+Urgency: low
+Maintainer: Cedric Gehin <cedric.gehin@epita.fr>
+Changed-By: Roland Stigge <stigge@antcom.de>
+Description:=20
+ autodia    - generates UML diagrams from perl or C++ code
+Closes: 476176
+Changes:=20
+ autodia (2.03-2) unstable; urgency=3Dlow
+ .
+   * debian/README.Debian: Add note that until INLINE::Java is available =
+in
+     Debian, autodia_java only works with separately installed INLINE::Ja=
+va
+     (Closes: #476176)
+Checksums-Sha1:=20
+ 74665afe62090ce536e203768f777f2d7a375963 993 autodia_2.03-2.dsc
+ f696d708c0d9cb02216f34ce4b06cdc8aca4498a 2749 autodia_2.03-2.diff.gz
+ 5afe246694a1a8a2b1c38a3af8bd1fc51e337956 101686 autodia_2.03-2_all.deb
+Checksums-Sha256:=20
+ 7b282c987ac2f93edeeb0c6048b1e66070959efffb251a1e205a698faccda9a8 993 aut=
+odia_2.03-2.dsc
+ 92153330f15509a1b1d3bc566778b4a0cf6fb0b714da83d0afc7c4672f3a2d73 2749 au=
+todia_2.03-2.diff.gz
+ de97fb013eefcd46963418aa9b9a75d5c3f6669874d4a35cc135843319c0e 101686 =
+autodia_2.03-2_all.deb
+Files:=20
+ cd522a702ec08016308f89c665c85551 993 devel optional autodia_2.03-2.dsc
+ f802265b3acf75da82229c17df336226 2749 devel optional autodia_2.03-2.diff=
+.gz
+ 5c4d60dc267256444f5b9adb41815d7b 101686 devel optional autodia_2.03-2_al=
+l.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICxdWcaH/YBv43g8RAoIZAJ9NhugIpByTZ6HJnnsTlpOXQCaIsACfaT6N
+u2og3M5VI2Ct2YCaOa/qA6o=3D
+=3D88ab
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+autodia_2.03-2.diff.gz
+  to pool/main/a/autodia/autodia_2.03-2.diff.gz
+autodia_2.03-2.dsc
+  to pool/main/a/autodia/autodia_2.03-2.dsc
+autodia_2.03-2_all.deb
+  to pool/main/a/autodia/autodia_2.03-2_all.deb
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

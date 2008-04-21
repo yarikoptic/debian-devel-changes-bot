@@ -1,0 +1,209 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 20:02:16 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnenl-0000aD-3Z
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 20:02:16 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 97ECE13A51B3; Sun, 20 Apr 2008 19:02:11 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id 28DA813A50F6
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 19:02:11 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JneKk-0002JX-EK; Sun, 20 Apr 2008 18:32:14 +0000
+From: Matthias Klose <doko@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted gcj-4.3 4.3.0-3 (source all amd64)
+Message-Id: <E1JneKk-0002JX-EK@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 18:32:14 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <5JMvJd2spiB.A.BZF.zM5CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301338
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 19:02:11 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.5
+X-Spam-Report: (-2.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.1 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 15:14:27 +0000
+Source: gcj-4.3
+Binary: gcj-4.3-base gcj-4.3 gij-4.3 libgcj9-0 libgcj9-jar libgcj9-0-awt =
+gappletviewer-4.3 gcjwebplugin-4.3 libgcj9-dev libgcj9-dbg libgcj9-src li=
+bgcj-doc
+Architecture: source all amd64
+Version: 4.3.0-3
+Distribution: unstable
+Urgency: low
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Changed-By: Matthias Klose <doko@debian.org>
+Description:=20
+ gappletviewer-4.3 - Standalone application to execute Java (tm) applets
+ gcj-4.3    - The GNU compiler for Java(TM)
+ gcj-4.3-base - The GNU Compiler Collection (gcj base package)
+ gcjwebplugin-4.3 - Web browser plugin to execute Java (tm) applets
+ gij-4.3    - The GNU Java bytecode interpreter
+ libgcj-doc - libgcj API documentation and example programs
+ libgcj9-0  - Java runtime library for use with gcj
+ libgcj9-0-awt - AWT peer runtime libraries for use with gcj
+ libgcj9-dbg - Debugging symbols for libraries provided in libgcj9-dev
+ libgcj9-dev - Java development headers for use with gcj
+ libgcj9-jar - Java runtime library for use with gcj (jar files)
+ libgcj9-src - libgcj java sources for use in eclipse
+Closes: 459560
+Changes:=20
+ gcj-4.3 (4.3.0-3) unstable; urgency=3Dlow
+ .
+   * Update to SVN 20080420 from the gcc-4_3-branch.
+   * Stop building on alpha, arm and hppa. Closes: #459560.
+Checksums-Sha1:=20
+ a6d9a1aabbe1976653b98cd196aa3cf813345315 3229 gcj-4.3_4.3.0-3.dsc
+ e144827069ba755360a5c8c36790311db64ff371 4124141 gcj-4.3_4.3.0-3.diff.gz
+ 5ba61a4b5ae0ca6a4f30ebb8ddbab9dd214fc237 10063486 libgcj9-jar_4.3.0-3_al=
+l.deb
+ 7c5921ac6c4fc4ac19e223a822d5a9e8f801362c 12378446 libgcj9-src_4.3.0-3_al=
+l.deb
+ 94536a0f8ac94525523971925875f141026623a9 44437116 libgcj-doc_4.3.0-3_all=
+.deb
+ 9100741edbca25bdbcab88d001c81dc8f01ea4da 103548 gcj-4.3-base_4.3.0-3_amd=
+64.deb
+ aef8ff583a7339b91dc646ae0f8598e616a9e658 49406 gij-4.3_4.3.0-3_amd64.deb
+ f05941644fbbb4c8357cb470ac95df725406e17b 12479446 libgcj9-0_4.3.0-3_amd6=
+4.deb
+ cd95ee1a8231c6c31b3a41fb09120e8cca415179 82970 libgcj9-0-awt_4.3.0-3_amd=
+64.deb
+ f19d53ea9c4839e9881615375d7d4435d492a939 17606 gappletviewer-4.3_4.3.0-3=
+_amd64.deb
+ c518d5b25c6cfd142b7b89daa5ebf418989d3d37 769128 libgcj9-dev_4.3.0-3_amd6=
+4.deb
+ 794cd17a972dabb6989a690b6c51e7df3231b393 13821334 libgcj9-dbg_4.3.0-3_am=
+d64.deb
+ ad8b73ba6992a088ccece6a47ce93ad38d0294ed 3529502 gcj-4.3_4.3.0-3_amd64.d=
+eb
+Checksums-Sha256:=20
+ 804a8be8279143d83573a801433572906cf3d105008845b5524ce78034c069bb 3229 gc=
+j-4.3_4.3.0-3.dsc
+ 30b25233f4776c7dc398afcfacd07800b570edadf4e917f9f8f4ce29df6aab36 4124141=
+ gcj-4.3_4.3.0-3.diff.gz
+ edf9cd72ef5e41a3de7bc7a89bc47dcd4f39c6ae5ec1a2761124f0bce1fa18d9 1006348=
+6 libgcj9-jar_4.3.0-3_all.deb
+ 38c0fe6965c2d6eb5fed461e57e7931f052a2a367849aeb1bdfdb53cd637e9c5 1237844=
+6 libgcj9-src_4.3.0-3_all.deb
+ f43296572162b392fdfb2c8b0307df7bc39a13f262e752beedd39fac29fac8f7 4443711=
+6 libgcj-doc_4.3.0-3_all.deb
+ 5f2823b9704680068ac6be8dfe2c0b13a56b740455189b1557b55bf4ef562fc8 103548 =
+gcj-4.3-base_4.3.0-3_amd64.deb
+ 5ae297d2c6e61fe95e50d6adea9670d8fbfcc871bded26c613216233173f496b 49406 g=
+ij-4.3_4.3.0-3_amd64.deb
+ c630b356b6d83ce008d2a7027c95b37d81896d65a83d69e0ee477685bf8477f7 1247944=
+6 libgcj9-0_4.3.0-3_amd64.deb
+ 80fbc6580d1a1fdcbe4e7eb98124c387be2a032f9b7a07e7d63db6ebb311cadd 82970 l=
+ibgcj9-0-awt_4.3.0-3_amd64.deb
+ e9d39b36bf47457df7cfa1ad9f5853f23ab60b1fb9551d2c3d9e77c47271327a 17606 g=
+appletviewer-4.3_4.3.0-3_amd64.deb
+ a6f7e1a08eb4069ff04b42119a29affe9b36d5b4e8bba74d0e9b227ca150192b 769128 =
+libgcj9-dev_4.3.0-3_amd64.deb
+ 04b9f4be0bfddfb2cd209eb270a9c9d0041cdc0eb75f46ca244baedc440e9e76 1382133=
+4 libgcj9-dbg_4.3.0-3_amd64.deb
+ f23b4a325eaf4209427239ffcbcbb59fb1a60f78ae3fbb1c277fdab2830b9730 3529502=
+ gcj-4.3_4.3.0-3_amd64.deb
+Files:=20
+ c7132833ebbd2ada58f07157ce1a1dbf 3229 devel optional gcj-4.3_4.3.0-3.dsc
+ 47ec8692fb3a8a0e15b25a975d2a66a4 4124141 devel optional gcj-4.3_4.3.0-3.=
+diff.gz
+ ecf04ac1106c52117a820982ba001661 10063486 libs optional libgcj9-jar_4.3.=
+0-3_all.deb
+ a82789540684cab9313a9224d1b03ee6 12378446 libdevel optional libgcj9-src_=
+4.3.0-3_all.deb
+ d83683f2adc0ff060865465ecb53f0fd 44437116 doc optional libgcj-doc_4.3.0-=
+3_all.deb
+ 904963997588011a7abb69de6a3b23b6 103548 libs optional gcj-4.3-base_4.3.0=
+-3_amd64.deb
+ 7a897e3bba93d5f3395567a9ec44ba1c 49406 devel optional gij-4.3_4.3.0-3_am=
+d64.deb
+ 5be10263c7d9a1e7bfda14e084579136 12479446 libs optional libgcj9-0_4.3.0-=
+3_amd64.deb
+ 2c4c12025483e7ee5ef338ac17bd2ef9 82970 libs optional libgcj9-0-awt_4.3.0=
+-3_amd64.deb
+ 778333390dca2cfc3aae64b708e56cfe 17606 utils optional gappletviewer-4.3_=
+4.3.0-3_amd64.deb
+ cb27d38057cba4033a1f8a8e55adda71 769128 libdevel optional libgcj9-dev_4.=
+3.0-3_amd64.deb
+ 4459772001c8443ea9cfa99bb0b81153 13821334 libdevel extra libgcj9-dbg_4.3=
+.0-3_amd64.deb
+ 43548b2193dc1d5c372861791a42dd8b 3529502 devel optional gcj-4.3_4.3.0-3_=
+amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC3bXStlRaw+TLJwRAvSrAJ9JgBVJyawLTx9wKZtNbOF6eQHHxACgjWay
+BxYBFtpxqB+h6UBCKGujLFM=3D
+=3DCxAF
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+gappletviewer-4.3_4.3.0-3_amd64.deb
+  to pool/main/g/gcj-4.3/gappletviewer-4.3_4.3.0-3_amd64.deb
+gcj-4.3-base_4.3.0-3_amd64.deb
+  to pool/main/g/gcj-4.3/gcj-4.3-base_4.3.0-3_amd64.deb
+gcj-4.3_4.3.0-3.diff.gz
+  to pool/main/g/gcj-4.3/gcj-4.3_4.3.0-3.diff.gz
+gcj-4.3_4.3.0-3.dsc
+  to pool/main/g/gcj-4.3/gcj-4.3_4.3.0-3.dsc
+gcj-4.3_4.3.0-3_amd64.deb
+  to pool/main/g/gcj-4.3/gcj-4.3_4.3.0-3_amd64.deb
+gij-4.3_4.3.0-3_amd64.deb
+  to pool/main/g/gcj-4.3/gij-4.3_4.3.0-3_amd64.deb
+libgcj-doc_4.3.0-3_all.deb
+  to pool/main/g/gcj-4.3/libgcj-doc_4.3.0-3_all.deb
+libgcj9-0-awt_4.3.0-3_amd64.deb
+  to pool/main/g/gcj-4.3/libgcj9-0-awt_4.3.0-3_amd64.deb
+libgcj9-0_4.3.0-3_amd64.deb
+  to pool/main/g/gcj-4.3/libgcj9-0_4.3.0-3_amd64.deb
+libgcj9-dbg_4.3.0-3_amd64.deb
+  to pool/main/g/gcj-4.3/libgcj9-dbg_4.3.0-3_amd64.deb
+libgcj9-dev_4.3.0-3_amd64.deb
+  to pool/main/g/gcj-4.3/libgcj9-dev_4.3.0-3_amd64.deb
+libgcj9-jar_4.3.0-3_all.deb
+  to pool/main/g/gcj-4.3/libgcj9-jar_4.3.0-3_all.deb
+libgcj9-src_4.3.0-3_all.deb
+  to pool/main/g/gcj-4.3/libgcj9-src_4.3.0-3_all.deb
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

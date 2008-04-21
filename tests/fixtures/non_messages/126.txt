@@ -1,0 +1,100 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 09:55:26 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnVKU-0005uF-0Y
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 09:55:26 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 24FBC13A4E76; Sun, 20 Apr 2008 08:55:20 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 2A76A13A4E44;
+	Sun, 20 Apr 2008 08:55:05 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnVGI-0003JG-0g; Sun, 20 Apr 2008 08:51:02 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#385924: Audio distortion when volume not at 100% is a Totem-xine bug, not libxine1
+Reply-To: Mantas =?UTF-8?Q?Kriau=C4=8Di=C5=ABnas?= <mantas@akl.lt>, 385924@bugs.debian.org
+Resent-From: Mantas =?UTF-8?Q?Kriau=C4=8Di=C5=ABnas?= <mantas@akl.lt>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Reinhard Tartler <siretart@tauware.de>
+Resent-Date: Sun, 20 Apr 2008 08:51:01 +0000
+Resent-Message-ID: <handler.385924.B385924.120868075426241@bugs.debian.org>
+X-Debian-PR-Message: report 385924
+X-Debian-PR-Package: libxine1
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: xine-lib
+Received: via spool by 385924-submit@bugs.debian.org id=B385924.120868075426241
+          (code B ref 385924); Sun, 20 Apr 2008 08:51:01 +0000
+Received: (at 385924) by bugs.debian.org; 20 Apr 2008 08:39:14 +0000
+X-Amavis-Spam-Status: No, score=-4.0 required=4.0 tests=BAYES_00 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from diedas.soften.ktu.lt ([193.219.33.197] ident=postfix)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <akl-mantas@soften.ktu.lt>)
+	id 1JnV4r-0006jR-P3
+	for 385924@bugs.debian.org; Sun, 20 Apr 2008 08:39:14 +0000
+Received: by diedas.soften.ktu.lt (Postfix, from userid 11625)
+	id 0F9E88022C9; Sun, 20 Apr 2008 11:39:11 +0300 (EEST)
+Date: Sun, 20 Apr 2008 11:39:11 +0300
+From: Mantas =?UTF-8?Q?Kriau=C4=8Di=C5=ABnas?= <mantas@akl.lt>
+To: 385924@bugs.debian.org
+Message-ID: <20080420083911.GB10759@diedas.soften.ktu.lt>
+Mime-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Disposition: inline
+User-Agent: Mutt/1.5.9i
+Content-Transfer-Encoding: quoted-printable
+Resent-Date: Sun, 20 Apr 2008 08:51:02 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343368
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -27.6
+X-Spam-Report: (-27.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	25 AWL                    AWL: From: address is in the auto white-list
+
+Hi all,
+
+Sam Morris <sam@robots.org.uk> wrote:
+> When playing the file at http://www.alexisparkinn.com/photogallery/Vide=
+os/2006-migshootdown.wav
+> in totem, if totem's volume control is not at 100% then the audio is=20
+> horribly distorted.
+
+I can confirm this bug, but this is a totem-xine bug, not libxine1 - I=20
+also tested this wav file with gxine (using libxine1 ver 1.1.11.1) and
+didn't noticed any problems with sound in any volume level.
+
+--=20
+Labanaktis/Good luck,
+Mantas Kriau=C4=8Di=C5=ABnas	 Jabber ID: mantas@akl.lt 	 GPG ID: 43535BD5
+Public organization "Open Source for Lithuania" - www.akl.lt
+
+
+

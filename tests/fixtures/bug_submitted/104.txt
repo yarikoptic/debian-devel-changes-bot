@@ -1,0 +1,148 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 16:54:15 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnbrR-0007wL-4a
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 16:54:13 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id A6DE613A44A7; Sun, 20 Apr 2008 15:53:45 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.9 required=4.0 tests=BAYES_00,FOURLA,
+	FVGT_m_MULTI_ODD,LDO_WHITELIST,RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 57F0313A5117;
+	Sun, 20 Apr 2008 15:53:14 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnboh-0005Ej-8u; Sun, 20 Apr 2008 15:50:59 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#477035: lcms: missing /usr/lib/liblcms.so symlink, causes many FTBFS
+Reply-To: Lucas Nussbaum <lucas@lucas-nussbaum.net>, 477035@bugs.debian.org
+Resent-From: Lucas Nussbaum <lucas@lucas-nussbaum.net>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Oleksandr Moskalenko <malex@debian.org>
+Resent-Date: Sun, 20 Apr 2008 15:50:56 +0000
+Resent-Message-ID: <handler.477035.B.12087064213793@bugs.debian.org>
+X-Debian-PR-Message: report 477035
+X-Debian-PR-Package: lcms
+X-Debian-PR-Keywords: 
+Received: via spool by submit@bugs.debian.org id=B.12087064213793
+          (code B ref -1); Sun, 20 Apr 2008 15:50:56 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 15:47:01 +0000
+X-Amavis-Spam-Status: No, score=-9.9 required=4.0 tests=BAYES_00,FOURLA,
+	FVGT_m_MULTI_ODD,HAS_PACKAGE autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from xanadu.blop.info ([80.248.208.235])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <lucas@lucas-nussbaum.net>)
+	id 1Jnbkr-0000yT-LN
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 15:47:01 +0000
+Received: from localhost ([127.0.0.1] helo=xanadu.blop.info)
+	by xanadu.blop.info with smtp (Exim 4.63)
+	(envelope-from <lucas@lucas-nussbaum.net>)
+	id 1Jnbkq-0000Dz-BQ
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 17:47:00 +0200
+Received: (nullmailer pid 21308 invoked by uid 1000);
+	Sun, 20 Apr 2008 15:10:20 -0000
+Date: Sun, 20 Apr 2008 17:10:20 +0200
+From: Lucas Nussbaum <lucas@lucas-nussbaum.net>
+To: submit@bugs.debian.org
+Message-ID: <20080420151020.GA21279@xanadu.blop.info>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 15:50:59 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343585
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -36.9
+X-Spam-Report: (-36.9 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	16 AWL                    AWL: From: address is in the auto white-list
+
+Package: lcms
+Version: 1.16-9
+Severity: serious
+User: debian-qa@lists.debian.org
+Usertags: qa-ftbfs-20080419 qa-ftbfs
+Justification: FTBFS on i386
+
+Hi,
+
+While building vips:
+> /bin/sh ../libtool --tag=3DCXX   --mode=3Dcompile g++ -DHAVE_CONFIG_H -I.=
+ -I..     -g -O2 -g -Wall -O2 -c -o dummy2.lo dummy2.cpp
+>  g++ -DHAVE_CONFIG_H -I. -I.. -g -O2 -g -Wall -O2 -c dummy2.cpp  -fPIC -D=
+PIC -o .libs/dummy2.o
+>  g++ -DHAVE_CONFIG_H -I. -I.. -g -O2 -g -Wall -O2 -c dummy2.cpp -o dummy2=
+=2Eo >/dev/null 2>&1
+> /bin/sh ../libtool --tag=3DCXX   --mode=3Dlink g++  -g -O2 -g -Wall -O2 -=
+no-undefined -version-info 20:0:5   -o libvips.la -rpath /usr/lib dummy.lo =
+dummy2.lo acquire/libacquire.la arithmetic/libarithmetic.la boolean/libbool=
+ean.la colour/libcolour.la conversion/libconversion.la convolution/libconvo=
+lution.la cimg/libcimg.la freq_filt/libfreq_filt.la histograms_lut/libhisto=
+grams_lut.la inplace/libinplace.la iofuncs/libiofuncs.la matrix/libmatrix.l=
+a morphology/libmorphology.la mosaicing/libmosaicing.la other/libother.la r=
+elational/librelational.la video/libvideo.la -lWand -lMagick   -lpng12   -l=
+tiff -lz -ljpeg -pthread -lgthread-2.0 -lrt -lglib-2.0   -Wl,--export-dynam=
+ic -lgmodule-2.0 -ldl -lxml2 -lgobject-2.0 -lglib-2.0   -lpangoft2-1.0 -lpa=
+ngo-1.0 -lfreetype -lz -lfontconfig -lgobject-2.0 -lgmodule-2.0 -ldl -lglib=
+-2.0   -lfftw3 -lm    -llcms   -loil-0.3 -lm -lrt   -pthread -lIlmImf -lz -=
+lImath -lHalf -lIex -lIlmThread   -lexif -lm   -lm -lstdc++=20
+> g++ -shared -nostdlib /usr/lib/gcc/i486-linux-gnu/4.3.1/../../../../lib/c=
+rti.o /usr/lib/gcc/i486-linux-gnu/4.3.1/crtbeginS.o  .libs/dummy.o .libs/du=
+mmy2.o -Wl,--whole-archive acquire/.libs/libacquire.a arithmetic/.libs/liba=
+rithmetic.a boolean/.libs/libboolean.a colour/.libs/libcolour.a conversion/=
+=2Elibs/libconversion.a convolution/.libs/libconvolution.a cimg/.libs/libci=
+mg.a freq_filt/.libs/libfreq_filt.a histograms_lut/.libs/libhistograms_lut.=
+a inplace/.libs/libinplace.a iofuncs/.libs/libiofuncs.a matrix/.libs/libmat=
+rix.a morphology/.libs/libmorphology.a mosaicing/.libs/libmosaicing.a other=
+/.libs/libother.a relational/.libs/librelational.a video/.libs/libvideo.a -=
+Wl,--no-whole-archive  /usr/lib/libWand.so /usr/lib/libMagick.so -lpng12 /u=
+sr/lib/libtiff.so /usr/lib/libjpeg.so /usr/lib/libgthread-2.0.so /usr/lib/l=
+ibxml2.so /usr/lib/libpangoft2-1.0.so /usr/lib/libpango-1.0.so /usr/lib/lib=
+freetype.so -lfontconfig /usr/lib/libgobject-2.0.so /usr/lib/libgmodule-2.0=
+=2Eso -ldl /usr/lib/libglib-2.0.so /usr/lib/libfftw3.so /usr/lib/liblcms.so=
+ -loil-0.3 -lrt /usr/lib/libIlmImf.so -lz -lImath -lHalf -lIex -lIlmThread =
+/usr/lib/libexif.so -L/usr/lib/gcc/i486-linux-gnu/4.3.1 -L/usr/lib/gcc/i486=
+-linux-gnu/4.3.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib=
+/gcc/i486-linux-gnu/4.3.1/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/i4=
+86-linux-gnu/4.3.1/crtendS.o /usr/lib/gcc/i486-linux-gnu/4.3.1/../../../../=
+lib/crtn.o  -pthread -Wl,--export-dynamic -pthread -Wl,-soname -Wl,libvips.=
+so.15 -o .libs/libvips.so.15.5.0
+> g++: /usr/lib/liblcms.so: No such file or directory
+> make[4]: *** [libvips.la] Error 1
+
+did you drop the /usr/lib/liblcms.so symlink?
+--=20
+| Lucas Nussbaum
+| lucas@lucas-nussbaum.net   http://www.lucas-nussbaum.net/ |
+| jabber: lucas@nussbaum.fr             GPG: 1024D/023B3F4F |
+
+
+

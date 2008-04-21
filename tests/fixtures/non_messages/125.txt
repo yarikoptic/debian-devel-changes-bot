@@ -1,0 +1,144 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 14:20:57 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnZTQ-000793-2H
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 14:20:57 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id D5FC013A4FEB; Sun, 20 Apr 2008 13:20:50 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.9 required=4.0 tests=BAYES_00,FOURLA,
+	FVGT_m_MULTI_ODD,LDO_WHITELIST,RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 5833E13A4FB1;
+	Sun, 20 Apr 2008 13:20:32 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnZQm-0005JE-BR; Sun, 20 Apr 2008 13:18:08 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#466233: Confirming that lxdoom fails to start
+Reply-To: "brian m. carlson" <sandals@crustytoothpaste.ath.cx>, 466233@bugs.debian.org
+Resent-From: "brian m. carlson" <sandals@crustytoothpaste.ath.cx>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Joe Drew <drew@debian.org>
+Resent-Date: Sun, 20 Apr 2008 13:18:07 +0000
+Resent-Message-ID: <handler.466233.B466233.120869718728711@bugs.debian.org>
+X-Debian-PR-Message: report 466233
+X-Debian-PR-Package: lxdoom-x11
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: lxdoom
+Received: via spool by 466233-submit@bugs.debian.org id=B466233.120869718728711
+          (code B ref 466233); Sun, 20 Apr 2008 13:18:07 +0000
+Received: (at 466233) by bugs.debian.org; 20 Apr 2008 13:13:07 +0000
+X-Amavis-Spam-Status: No, score=-5.7 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,FVGT_m_MULTI_ODD,VALID_BTS_CONTROL autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from mknod.org ([209.223.236.42] ident=postfix)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <sandals@crustytoothpaste.ath.cx>)
+	id 1JnZLo-0007Nq-WC; Sun, 20 Apr 2008 13:13:01 +0000
+Received: from crustytoothpaste.ath.cx (c-98-194-252-152.hsd1.tx.comcast.net [98.194.252.152])
+	by mknod.org (Postfix) with ESMTPS id 2126A6B00AE;
+	Sun, 20 Apr 2008 08:13:00 -0500 (CDT)
+Received: from crustytoothpaste.ath.cx (lakeview.crustytoothpaste.ath.cx [172.16.2.249])
+	(authenticated bits=0)
+	by crustytoothpaste.ath.cx (8.14.2/8.14.2/Debian-4) with ESMTP id m3KDCXMZ026889
+	(version=TLSv1/SSLv3 cipher=AES128-SHA bits=128 verify=NO);
+	Sun, 20 Apr 2008 13:12:40 GMT
+Date: Sun, 20 Apr 2008 13:12:46 +0000
+From: "brian m. carlson" <sandals@crustytoothpaste.ath.cx>
+To: 466233@bugs.debian.org, control@bugs.debian.org
+Message-ID: <20080420131246.GA29506@crustytoothpaste.ath.cx>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+	protocol="application/pgp-signature"; boundary="/9DWx/yDrRhgMJTb"
+Content-Disposition: inline
+X-No-CC: If you CC me on this list, I will feed you to Branden Robinson.
+X-Machine: Running on lakeview using GNU/Linux on x86_64 (Linux kernel
+	2.6.25-trunk-amd64)
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Resent-Date: Sun, 20 Apr 2008 13:18:08 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343490
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -42.9
+X-Spam-Report: (-42.9 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	9.6 AWL                    AWL: From: address is in the auto white-list
+
+
+--/9DWx/yDrRhgMJTb
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+severity 466233 grave
+kthxbye
+
+I can confirm this bug.  It completely prevents lxdoom from starting.  I=20
+seem to recall that it used to work here.
+
+
+JFTR, I'm using an amd64 machine.
+
+--=20
+brian m. carlson / brian with sandals: Houston, Texas, US
++1 713 440 7475 | http://crustytoothpaste.ath.cx/~bmc | My opinion only
+troff on top of XML: http://crustytoothpaste.ath.cx/~bmc/code/thwack
+OpenPGP: RSA v4 4096b 88AC E9B2 9196 305B A994 7552 F1BA 225C 0223 B187
+
+--/9DWx/yDrRhgMJTb
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: Digital signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iQIVAwUBSAtBTb9TXYEfUvaLAQJ4RBAAzX8SGoDuLHhIqrIJlrjQqv5JoKhQBMp+
+iC7aw5egB8ZNAf6mcCPdY2DyIxL9XI0dgbmqsXH9GBk2praYUbSPGFSAgEvBZ3vk
+1mLtdUTm4TzY0uUekChFmbcGTC4x61Ndj9kw5rCsUPdM8ilStRTBJ3rGcZwEWRAb
+lqB2zC6Ok8FIi/RTDDmC50QhDC2SORj+VEkE3Zfxpf4p3NZtQEpbUcJQqpeF4QQF
+M2y7r08kJA7W7/YDHUn+rUvzGL0BP2rJDzcRP3GjZ9ftGUAYfWPkNgCUQKVw1A5z
+FQ1yNH7sN5ro0eUNisGRy1xM4IWD4KTafLaBip+YGe6kqap6/EQA3bxRjYgQdZgR
+sRcRmAMydnyWxKF5LmRYQtvgwRNpPScTlGPXDZYnzp1k0UiN/HCFM/hOwV/XzdAU
+pgWwJaA4AW9Jf/PekiPlZSwoPVCtOMTkY8WAmCNfFlpHM/IEFWwmq4jGTX8LS7cm
+Dkmc7xr0ccqOmPJwQWE5G5SBEZWbSNw76XWRwFYCoTVJePJ7L5JwREbLUC9VMSvb
+37mL4UsV+TaEM5JFI6EzLVjCC8VIaCjfH5/7ZnIg8M5bb953HC4WnKOtpd4o4jJT
+TLoYRrb/VqsO3+Gxv3Awa2f+UdeO0i4CV621dluzKRJfJyC9ntwVjti+zNYHTaUI
+k/tRNnaoYTU=
+=uA96
+-----END PGP SIGNATURE-----
+
+--/9DWx/yDrRhgMJTb--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

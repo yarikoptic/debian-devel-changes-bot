@@ -1,0 +1,104 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 16:56:04 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnbtI-0007zb-5Y
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 16:56:03 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id C407D13A4FB3; Sun, 20 Apr 2008 15:55:42 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.4 required=4.0 tests=BAYES_00,RCVD_IN_DNSWL_LOW,
+	SARE_MSGID_LONG40 autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 5697C13A4F70;
+	Sun, 20 Apr 2008 15:54:47 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnbj7-0007Nd-E8; Sun, 20 Apr 2008 15:45:13 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#471861: problem resolved
+Reply-To: "Gilberto Segundo" <gilberto.segundo@gmail.com>, 471861@bugs.debian.org
+Resent-From: "Gilberto Segundo" <gilberto.segundo@gmail.com>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian OpenOffice Team <debian-openoffice@lists.debian.org>
+Resent-Date: Sun, 20 Apr 2008 15:45:10 +0000
+Resent-Message-ID: <handler.471861.B471861.12087059753454@bugs.debian.org>
+X-Debian-PR-Message: report 471861
+X-Debian-PR-Package: openoffice.org-impress
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: openoffice.org
+Received: via spool by 471861-submit@bugs.debian.org id=B471861.12087059753454
+          (code B ref 471861); Sun, 20 Apr 2008 15:45:10 +0000
+Received: (at 471861) by bugs.debian.org; 20 Apr 2008 15:39:35 +0000
+X-Amavis-Spam-Status: No, score=-4.0 required=4.0 tests=BAYES_00 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from wr-out-0506.google.com ([64.233.184.224])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <gilberto.segundo@gmail.com>)
+	id 1Jnbdf-0000t6-3H
+	for 471861@bugs.debian.org; Sun, 20 Apr 2008 15:39:35 +0000
+Received: by wr-out-0506.google.com with SMTP id c48so542330wra.23
+        for <471861@bugs.debian.org>; Sun, 20 Apr 2008 08:39:34 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:to:subject:mime-version:content-type:content-transfer-encoding:content-disposition;
+        bh=ufNp1gw5vEHP3WSzV+KtgtX7g+XiPw7kw3nv1ereuts=;
+        b=rHYIatyWzX9vZqxh8wLBBqqc/niaxe1PLbdCpgGtDJ26rf8LbsjWKBIDUz8YDqndacc6fGoqmK6e8c856j70KZB5EnoYGApz2cwrD2yhqSETkjq3xI6gG+PJLeGK7ZXriXgjOK9F7bQ556Fo9QsCy8kNdSq1CleC3vPLFhadZ8M=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:to:subject:mime-version:content-type:content-transfer-encoding:content-disposition;
+        b=uhTrRSeHDQZgHR9vgHMeIRwpQWvQ44qhve5yuKqkftG5UKP/+rrRjKGlMxQwaQWgoBtmLyu9pMmMkyZzQ9PDQ4ZJaEaUMe5MBJI081oXyBELK3NsoTFnrTAF7RoH3A2UR7GqW+j+KdXRglp8bQoE9Ji10RuPv7S79OxfMtSgxn0=
+Received: by 10.142.70.2 with SMTP id s2mr1351415wfa.288.1208705973760;
+        Sun, 20 Apr 2008 08:39:33 -0700 (PDT)
+Received: by 10.142.79.14 with HTTP; Sun, 20 Apr 2008 08:39:33 -0700 (PDT)
+Message-ID: <33c2d0bc0804200839r6a091a83g7f9a098b4e111191@mail.gmail.com>
+Date: Sun, 20 Apr 2008 12:39:33 -0300
+From: "Gilberto Segundo" <gilberto.segundo@gmail.com>
+To: 471861@bugs.debian.org
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+Resent-Date: Sun, 20 Apr 2008 15:45:13 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343597
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -26.7
+X-Spam-Report: (-26.7 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	26 AWL                    AWL: From: address is in the auto white-list
+
+The new version, 2.4.0-3 resolved the problem. The characters and
+images are displayed correctly.
+
+The bug can be closed.
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

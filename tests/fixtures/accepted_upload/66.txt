@@ -1,0 +1,132 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 19:02:49 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JndsE-0000IA-0P
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 19:02:49 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id D03D713A5158; Sun, 20 Apr 2008 18:02:44 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id 77CBE13A514F
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 18:02:44 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1Jndd2-0007i7-0t; Sun, 20 Apr 2008 17:47:04 +0000
+From: Dave Beckett <dajobe@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted raptor 1.4.17-1 (source all i386)
+Message-Id: <E1Jndd2-0007i7-0t@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 17:47:04 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <2jhNmfIRWhB.A.WFB.EV4CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301330
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 18:02:44 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.6
+X-Spam-Report: (-2.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.0 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.7
+Date: Tue, 01 Apr 2008 22:06:01 -0700
+Source: raptor
+Binary: libraptor1-dev libraptor1 raptor-utils libraptor1-doc
+Architecture: source all i386
+Version: 1.4.17-1
+Distribution: unstable
+Urgency: low
+Maintainer: Dave Beckett <dajobe@debian.org>
+Changed-By: Dave Beckett <dajobe@debian.org>
+Description:=20
+ libraptor1 - Raptor RDF parser and serializer library
+ libraptor1-dev - Raptor RDF parser and serializer development libraries =
+and header
+ libraptor1-doc - Documentation for the Raptor RDF parser and serializer =
+library
+ raptor-utils - Raptor RDF parser and serializer utilities
+Closes: 463344
+Changes:=20
+ raptor (1.4.17-1) unstable; urgency=3Dlow
+ .
+   * New upstream release
+   * Rebuild against libcurl4-gnutls-dev rather than libcurl4-openssl-dev
+     (Closes: #463344)
+   * debian/control: depend on libtool 1.5 rather than older debian speci=
+fic
+     release
+   * debian/copyright: 2008
+   * debian/libraptor1-doc.doc-base: Use a correct Section:
+Files:=20
+ c2495481693d56ea5cc367b3c1fa0a71 718 devel optional raptor_1.4.17-1.dsc
+ 1cf4627c91fbe5f7ab3c358351a27f79 1580715 devel optional raptor_1.4.17.or=
+ig.tar.gz
+ 9843084626e75e78a1e522bcd61f5ce7 8656 devel optional raptor_1.4.17-1.dif=
+f.gz
+ 063b4259d8413c5628061ad2abaa4780 168584 doc optional libraptor1-doc_1.4.=
+17-1_all.deb
+ 5f0688eed11b3bbaaef21fe8df457652 237108 libdevel optional libraptor1-dev=
+_1.4.17-1_i386.deb
+ 2b6adde03792dc6e231d22e84bbd70d2 183266 libs optional libraptor1_1.4.17-=
+1_i386.deb
+ f2f3e6e70564a037663a94722bc1131e 57358 text optional raptor-utils_1.4.17=
+-1_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFH8xkWQ+ySUE9xlVoRAjXoAKCMKQCZd+/shMJxn1rvM/02Tf1yAwCeOfAN
+jyRuBklIECfM9FOIuuMsanE=3D
+=3DXChN
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+libraptor1-dev_1.4.17-1_i386.deb
+  to pool/main/r/raptor/libraptor1-dev_1.4.17-1_i386.deb
+libraptor1-doc_1.4.17-1_all.deb
+  to pool/main/r/raptor/libraptor1-doc_1.4.17-1_all.deb
+libraptor1_1.4.17-1_i386.deb
+  to pool/main/r/raptor/libraptor1_1.4.17-1_i386.deb
+raptor-utils_1.4.17-1_i386.deb
+  to pool/main/r/raptor/raptor-utils_1.4.17-1_i386.deb
+raptor_1.4.17-1.diff.gz
+  to pool/main/r/raptor/raptor_1.4.17-1.diff.gz
+raptor_1.4.17-1.dsc
+  to pool/main/r/raptor/raptor_1.4.17-1.dsc
+raptor_1.4.17.orig.tar.gz
+  to pool/main/r/raptor/raptor_1.4.17.orig.tar.gz
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

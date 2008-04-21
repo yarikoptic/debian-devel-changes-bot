@@ -1,0 +1,119 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 20:06:46 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnes7-0000ba-8G
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 20:06:46 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id DA76A13A51DF; Sun, 20 Apr 2008 19:06:41 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 8B7D313A51D6;
+	Sun, 20 Apr 2008 19:06:17 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jneod-0008SF-JA; Sun, 20 Apr 2008 19:03:07 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#475971: This is caused by LDFLAGS being set in the environment (by dpkg-buildpacakge)
+Reply-To: Adeodato =?UTF-8?Q?Sim=C3=B3?= <dato@net.com.org.es>, 475971@bugs.debian.org
+Resent-From: Adeodato =?UTF-8?Q?Sim=C3=B3?= <dato@net.com.org.es>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: debian-devel@bugs.debian.org, Michael Janssen <jamuraa@debian.org>
+Resent-Date: Sun, 20 Apr 2008 19:03:06 +0000
+Resent-Message-ID: <handler.475971.B475971.120871805423509@bugs.debian.org>
+X-Debian-PR-Message: report 475971
+X-Debian-PR-Package: player
+X-Debian-PR-Keywords: 
+Received: via spool by 475971-submit@bugs.debian.org id=B475971.120871805423509
+          (code B ref 475971); Sun, 20 Apr 2008 19:03:06 +0000
+Received: (at 475971) by bugs.debian.org; 20 Apr 2008 19:00:54 +0000
+X-Amavis-Spam-Status: No, score=-2.4 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	UNPARSEABLE_RELAY,URIBL_SBL,X_DEBBUGS_CC autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from 226.red-80-25-139.staticip.rima-tde.net ([80.25.139.226] helo=etc.inittab.org)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dato@net.com.org.es>)
+	id 1JnemU-00065Y-10
+	for 475971@bugs.debian.org; Sun, 20 Apr 2008 19:00:54 +0000
+Received: from chistera.yi.org (unknown [192.168.254.34])
+	by etc.inittab.org (Postfix) with ESMTP id A8A0C33380
+	for <475971@bugs.debian.org>; Sun, 20 Apr 2008 21:00:52 +0200 (CEST)
+Received: from userid 1000 by plumber with local (Exim 4.69) 
+	  id 1JnemR-00055K-Rv
+	  for 475971@bugs.debian.org; Sun, 20 Apr 2008 21:00:51 +0200
+Date: Sun, 20 Apr 2008 21:00:51 +0200
+From: Adeodato =?UTF-8?Q?Sim=C3=B3?= <dato@net.com.org.es>
+To: 475971@bugs.debian.org
+Message-ID: <20080420190051.GA18797@chistera.yi.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Disposition: inline
+X-No-CC: Please respect my Mail-Followup-To header
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Content-Transfer-Encoding: quoted-printable
+Resent-Date: Sun, 20 Apr 2008 19:03:07 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343735
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -39.1
+X-Spam-Report: (-39.1 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	13 AWL                    AWL: From: address is in the auto white-list
+
+After a bit of inspection, the root of this FTBFS seems to be
+dpkg-buildpackage having set LDFLAGS in the environment (even to an
+empty value, mind you).
+
+The generated Makefiles set 'LDFLAGS =3D -z,defs', and as LDFLAGS was
+previously in the environment, this new value is exported to processes
+spawned from make.
+
+Python's distutils honour LDFLAGS, and when building the python
+extension passes -z,defs to the linker, and the build obviously bombs.
+
+I guess the solution is to accept LDFLAGS is to be exported, and to make
+the part that builds python be robust against that.
+
+CCing -devel as a generic place so that reading it may save somebody
+somewhere some work some day. ;)
+
+Cheers,
+
+--=20
+Adeodato Sim=C3=B3                                     dato at net.com.or=
+g.es
+Debian Developer                                  adeodato at debian.org
+=20
+The reasonable man adapts himself to the world; the unreasonable one
+persists in trying to adapt the world to himself.  Therefore all
+progress depends on the unreasonable man.
+                -- George Bernard Shaw
+
+
+
+

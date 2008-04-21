@@ -1,0 +1,338 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 20:05:21 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jneqd-0000an-B6
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 20:05:21 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id BF82013A51CD; Sun, 20 Apr 2008 19:05:09 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 6B85B13A519C;
+	Sun, 20 Apr 2008 19:05:06 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jneoi-0008VF-DL; Sun, 20 Apr 2008 19:03:12 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Oleksandr Moskalenko <malex@debian.org>
+Subject: Bug#477035: marked as done (lcms: missing /usr/lib/liblcms.so 
+ symlink, causes many FTBFS)
+Message-ID: <handler.477035.D477035.120871812228129.ackdone@bugs.debian.org>
+References: <E1JneZ9-0002yc-34@ries.debian.org>
+ <20080420151020.GA21279@xanadu.blop.info>
+X-Debian-PR-Message: closed 477035
+X-Debian-PR-Package: lcms
+X-Debian-PR-Keywords: patch
+X-Debian-PR-Source: lcms
+Content-Type: multipart/mixed; boundary="----------=_1208718192-32671-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 19:03:12 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <7T0cwAOTStH.A.c0F.lP5CIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/133074
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 19:05:09 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208718192-32671-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 18:47:07 +0000
+with message-id <E1JneZ9-0002yc-34@ries.debian.org>
+and subject line Bug#477035: fixed in lcms 1.16-10
+has caused the Debian Bug report #477035,
+regarding lcms: missing /usr/lib/liblcms.so symlink, causes many FTBFS
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+477035: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D477035
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208718192-32671-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 15:47:01 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.9 required=4.0 tests=BAYES_00,FOURLA,
+	FVGT_m_MULTI_ODD,HAS_PACKAGE autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <lucas@lucas-nussbaum.net>
+Received: from xanadu.blop.info ([80.248.208.235])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <lucas@lucas-nussbaum.net>)
+	id 1Jnbkr-0000yT-LN
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 15:47:01 +0000
+Received: from localhost ([127.0.0.1] helo=xanadu.blop.info)
+	by xanadu.blop.info with smtp (Exim 4.63)
+	(envelope-from <lucas@lucas-nussbaum.net>)
+	id 1Jnbkq-0000Dz-BQ
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 17:47:00 +0200
+Received: (nullmailer pid 21308 invoked by uid 1000);
+	Sun, 20 Apr 2008 15:10:20 -0000
+Date: Sun, 20 Apr 2008 17:10:20 +0200
+From: Lucas Nussbaum <lucas@lucas-nussbaum.net>
+To: submit@bugs.debian.org
+Subject: lcms: missing /usr/lib/liblcms.so symlink, causes many FTBFS
+Message-ID: <20080420151020.GA21279@xanadu.blop.info>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Delivered-To: submit@bugs.debian.org
+
+Package: lcms
+Version: 1.16-9
+Severity: serious
+User: debian-qa@lists.debian.org
+Usertags: qa-ftbfs-20080419 qa-ftbfs
+Justification: FTBFS on i386
+
+Hi,
+
+While building vips:
+> /bin/sh ../libtool --tag=3DCXX   --mode=3Dcompile g++ -DHAVE_CONFIG_H -I.=
+ -I..     -g -O2 -g -Wall -O2 -c -o dummy2.lo dummy2.cpp
+>  g++ -DHAVE_CONFIG_H -I. -I.. -g -O2 -g -Wall -O2 -c dummy2.cpp  -fPIC -D=
+PIC -o .libs/dummy2.o
+>  g++ -DHAVE_CONFIG_H -I. -I.. -g -O2 -g -Wall -O2 -c dummy2.cpp -o dummy2=
+=2Eo >/dev/null 2>&1
+> /bin/sh ../libtool --tag=3DCXX   --mode=3Dlink g++  -g -O2 -g -Wall -O2 -=
+no-undefined -version-info 20:0:5   -o libvips.la -rpath /usr/lib dummy.lo =
+dummy2.lo acquire/libacquire.la arithmetic/libarithmetic.la boolean/libbool=
+ean.la colour/libcolour.la conversion/libconversion.la convolution/libconvo=
+lution.la cimg/libcimg.la freq_filt/libfreq_filt.la histograms_lut/libhisto=
+grams_lut.la inplace/libinplace.la iofuncs/libiofuncs.la matrix/libmatrix.l=
+a morphology/libmorphology.la mosaicing/libmosaicing.la other/libother.la r=
+elational/librelational.la video/libvideo.la -lWand -lMagick   -lpng12   -l=
+tiff -lz -ljpeg -pthread -lgthread-2.0 -lrt -lglib-2.0   -Wl,--export-dynam=
+ic -lgmodule-2.0 -ldl -lxml2 -lgobject-2.0 -lglib-2.0   -lpangoft2-1.0 -lpa=
+ngo-1.0 -lfreetype -lz -lfontconfig -lgobject-2.0 -lgmodule-2.0 -ldl -lglib=
+-2.0   -lfftw3 -lm    -llcms   -loil-0.3 -lm -lrt   -pthread -lIlmImf -lz -=
+lImath -lHalf -lIex -lIlmThread   -lexif -lm   -lm -lstdc++=20
+> g++ -shared -nostdlib /usr/lib/gcc/i486-linux-gnu/4.3.1/../../../../lib/c=
+rti.o /usr/lib/gcc/i486-linux-gnu/4.3.1/crtbeginS.o  .libs/dummy.o .libs/du=
+mmy2.o -Wl,--whole-archive acquire/.libs/libacquire.a arithmetic/.libs/liba=
+rithmetic.a boolean/.libs/libboolean.a colour/.libs/libcolour.a conversion/=
+=2Elibs/libconversion.a convolution/.libs/libconvolution.a cimg/.libs/libci=
+mg.a freq_filt/.libs/libfreq_filt.a histograms_lut/.libs/libhistograms_lut.=
+a inplace/.libs/libinplace.a iofuncs/.libs/libiofuncs.a matrix/.libs/libmat=
+rix.a morphology/.libs/libmorphology.a mosaicing/.libs/libmosaicing.a other=
+/.libs/libother.a relational/.libs/librelational.a video/.libs/libvideo.a -=
+Wl,--no-whole-archive  /usr/lib/libWand.so /usr/lib/libMagick.so -lpng12 /u=
+sr/lib/libtiff.so /usr/lib/libjpeg.so /usr/lib/libgthread-2.0.so /usr/lib/l=
+ibxml2.so /usr/lib/libpangoft2-1.0.so /usr/lib/libpango-1.0.so /usr/lib/lib=
+freetype.so -lfontconfig /usr/lib/libgobject-2.0.so /usr/lib/libgmodule-2.0=
+=2Eso -ldl /usr/lib/libglib-2.0.so /usr/lib/libfftw3.so /usr/lib/liblcms.so=
+ -loil-0.3 -lrt /usr/lib/libIlmImf.so -lz -lImath -lHalf -lIex -lIlmThread =
+/usr/lib/libexif.so -L/usr/lib/gcc/i486-linux-gnu/4.3.1 -L/usr/lib/gcc/i486=
+-linux-gnu/4.3.1/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib=
+/gcc/i486-linux-gnu/4.3.1/../../.. -lstdc++ -lm -lc -lgcc_s /usr/lib/gcc/i4=
+86-linux-gnu/4.3.1/crtendS.o /usr/lib/gcc/i486-linux-gnu/4.3.1/../../../../=
+lib/crtn.o  -pthread -Wl,--export-dynamic -pthread -Wl,-soname -Wl,libvips.=
+so.15 -o .libs/libvips.so.15.5.0
+> g++: /usr/lib/liblcms.so: No such file or directory
+> make[4]: *** [libvips.la] Error 1
+
+did you drop the /usr/lib/liblcms.so symlink?
+--=20
+| Lucas Nussbaum
+| lucas@lucas-nussbaum.net   http://www.lucas-nussbaum.net/ |
+| jabber: lucas@nussbaum.fr             GPG: 1024D/023B3F4F |
+
+
+
+------------=_1208718192-32671-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 477035-close) by bugs.debian.org; 20 Apr 2008 19:02:02 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.7 required=4.0 tests=BAYES_00,FROMDEVELOPER,
+	FVGT_m_MULTI_ODD,HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_2,
+	MURPHY_WRONG_WORD1,MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1Jnena-0007Io-IO
+	for 477035-close@bugs.debian.org; Sun, 20 Apr 2008 19:02:02 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JneZ9-0002yc-34; Sun, 20 Apr 2008 18:47:07 +0000
+From: Oleksandr Moskalenko <malex@debian.org>
+To: 477035-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#477035: fixed in lcms 1.16-10
+Message-Id: <E1JneZ9-0002yc-34@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 18:47:07 +0000
+Content-Transfer-Encoding: quoted-printable
+
+Source: lcms
+Source-Version: 1.16-10
+
+We believe that the bug you reported is fixed in the latest version of
+lcms, which is due to be installed in the Debian FTP archive:
+
+lcms_1.16-10.diff.gz
+  to pool/main/l/lcms/lcms_1.16-10.diff.gz
+lcms_1.16-10.dsc
+  to pool/main/l/lcms/lcms_1.16-10.dsc
+liblcms-utils_1.16-10_i386.deb
+  to pool/main/l/lcms/liblcms-utils_1.16-10_i386.deb
+liblcms1-dev_1.16-10_i386.deb
+  to pool/main/l/lcms/liblcms1-dev_1.16-10_i386.deb
+liblcms1_1.16-10_i386.deb
+  to pool/main/l/lcms/liblcms1_1.16-10_i386.deb
+python-liblcms_1.16-10_i386.deb
+  to pool/main/l/lcms/python-liblcms_1.16-10_i386.deb
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 477035@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Oleksandr Moskalenko <malex@debian.org> (supplier of updated lcms package=
+)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 12:31:46 -0600
+Source: lcms
+Binary: liblcms1 liblcms-utils liblcms1-dev python-liblcms
+Architecture: source i386
+Version: 1.16-10
+Distribution: unstable
+Urgency: high
+Maintainer: Oleksandr Moskalenko <malex@debian.org>
+Changed-By: Oleksandr Moskalenko <malex@debian.org>
+Description:=20
+ liblcms-utils - Color management library (Additional utilities)
+ liblcms1   - Color management library
+ liblcms1-dev - Color management library (Development headers)
+ python-liblcms - Python bindings for liblcms color management library
+Closes: 477035
+Changes:=20
+ lcms (1.16-10) unstable; urgency=3Dhigh
+ .
+   * debian/tmp/usr/lib/*.so usr/lib/ got lost from liblcms1-dev.install =
+at
+     some point of making 1.16-9. Add it back (Closes: #477035).
+Checksums-Sha1:=20
+ c9ca8b4835503e086d6b036ec890cfe0451eb224 1226 lcms_1.16-10.dsc
+ 6c6315a31c5f29f41a37f086d3014a1b32cdf732 28907 lcms_1.16-10.diff.gz
+ 2dba079b772d17039a2b53b0914245da074658d5 97460 liblcms1_1.16-10_i386.deb
+ 6c884d82ee65601db96fb8c101f13bcea4b6ebc6 53710 liblcms-utils_1.16-10_i38=
+6.deb
+ 39372a68092b40bf9b87362d6c714a7ea7b92187 186338 liblcms1-dev_1.16-10_i38=
+6.deb
+ 131374e61cd371eebc018d24136918acb174dd2f 152764 python-liblcms_1.16-10_i=
+386.deb
+Checksums-Sha256:=20
+ 01eab872e4c225f66be55f887a11ad0924553992bda33529129d5ff251b6a372 1226 lc=
+ms_1.16-10.dsc
+ ff6b1375e3f5e94a2cf9a97429035ca8c718784f47decee78493e4804f2e0950 28907 l=
+cms_1.16-10.diff.gz
+ 23377a830589153c7cdd6054aef7b109a54c43dc67e0f41afbe3f9f622a3d84e 97460 l=
+iblcms1_1.16-10_i386.deb
+ 5aaa181d07125a4a9f6a8b44a13dd148931f1b73dc8e0534e4092db786d62294 53710 l=
+iblcms-utils_1.16-10_i386.deb
+ 39e1c8aaddda3f1e203a70fe9c50037e261281a0770fa0fce54309fa44081aee 186338 =
+liblcms1-dev_1.16-10_i386.deb
+ 8a1d141f0daa1339565b2a7c0d52c1532e32694a15b57d19e287d0662d40c9e9 152764 =
+python-liblcms_1.16-10_i386.deb
+Files:=20
+ 141f25833b9fea4df0eb05073ea65eec 1226 libs optional lcms_1.16-10.dsc
+ 2c0bb8ef0c5ab380fcc0e1fdc808bfac 28907 libs optional lcms_1.16-10.diff.g=
+z
+ fe0eb7b869ded05f4230badd5c9b8931 97460 libs optional liblcms1_1.16-10_i3=
+86.deb
+ 7f47ad25ef7baa9a0b03c23bf2fce021 53710 utils optional liblcms-utils_1.16=
+-10_i386.deb
+ 2e52c5a215ef4e960aa59432c375eb52 186338 libdevel optional liblcms1-dev_1=
+.16-10_i386.deb
+ 225ff24d5cc47d06813db542422970cf 152764 python optional python-liblcms_1=
+.16-10_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC4z62ihvMmxfGWsRAtZMAJ4wjfC6wzfL/PZM9GlpSkfSM3LymwCbBj+i
+WgYLh9kQvn1ppUZCemJPouA=3D
+=3Dgsg9
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208718192-32671-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

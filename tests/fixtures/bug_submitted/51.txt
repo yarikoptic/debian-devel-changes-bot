@@ -1,0 +1,151 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 16:56:18 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnbtg-00080X-Qx
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 16:56:17 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 6471C13A504F; Sun, 20 Apr 2008 15:56:07 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.0 required=4.0 tests=BAYES_00,GENDER,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 0DB2113A4F93;
+	Sun, 20 Apr 2008 15:54:51 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnbo7-0004Ol-JM; Sun, 20 Apr 2008 15:50:24 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#477026: digikam: FTBFS: debian/tmp/usr/share/man/man1/digitaglinktree.1: No such file or directory at /usr/bin/dh_installman line 123, <IN> line 1.
+Reply-To: Lucas Nussbaum <lucas@lucas-nussbaum.net>, 477026@bugs.debian.org
+Resent-From: Lucas Nussbaum <lucas@lucas-nussbaum.net>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian KDE Extras Team <pkg-kde-extras@lists.alioth.debian.org>
+Resent-Date: Sun, 20 Apr 2008 15:50:20 +0000
+Resent-Message-ID: <handler.477026.B.12087064163417@bugs.debian.org>
+X-Debian-PR-Message: report 477026
+X-Debian-PR-Package: digikam
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: digikam
+Received: via spool by submit@bugs.debian.org id=B.12087064163417
+          (code B ref -1); Sun, 20 Apr 2008 15:50:20 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 15:46:56 +0000
+X-Amavis-Spam-Status: No, score=-9.0 required=4.0 tests=BAYES_00,GENDER,HAS_PACKAGE 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from xanadu.blop.info ([80.248.208.235])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <lucas@lucas-nussbaum.net>)
+	id 1Jnbkl-0000rV-Lz
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 15:46:55 +0000
+Received: from localhost ([127.0.0.1] helo=xanadu.blop.info)
+	by xanadu.blop.info with smtp (Exim 4.63)
+	(envelope-from <lucas@lucas-nussbaum.net>)
+	id 1Jnbkk-0000DC-MC
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 17:46:54 +0200
+Received: (nullmailer pid 22032 invoked by uid 1000);
+	Sun, 20 Apr 2008 15:23:44 -0000
+Date: Sun, 20 Apr 2008 17:23:44 +0200
+From: Lucas Nussbaum <lucas@lucas-nussbaum.net>
+To: submit@bugs.debian.org
+Message-ID: <20080420152344.GA22014@xanadu.blop.info>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 15:50:23 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343600
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -37.1
+X-Spam-Report: (-37.1 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	15 AWL                    AWL: From: address is in the auto white-list
+
+Package: digikam
+Version: 2:0.9.3-2
+Severity: serious
+User: debian-qa@lists.debian.org
+Usertags: qa-ftbfs-20080419 qa-ftbfs
+Justification: FTBFS on i386
+
+Hi,
+
+During a rebuild of all packages in sid, your package failed to build on i386.
+
+This rebuild was done with gcc 4.3 instead of gcc 4.2, because gcc 4.3 is now
+the default on most architectures (even if it's not the case on i386 yet).
+Feel free to downgrade this bug to 'important' if your package is only built
+on i386, and this bug is specific to gcc 4.3 (i.e the package builds fine with
+gcc 4.2).
+
+Relevant part:
+> make[3]: Entering directory `/build/user/digikam-0.9.3/obj-i486-linux-gnu'
+> make[3]: Nothing to be done for `install-exec-am'.
+> make[3]: Leaving directory `/build/user/digikam-0.9.3/obj-i486-linux-gnu'
+> make[2]: Leaving directory `/build/user/digikam-0.9.3/obj-i486-linux-gnu'
+> make[1]: Leaving directory `/build/user/digikam-0.9.3/obj-i486-linux-gnu'
+> dh_installdirs -pdigikam 
+> install -D -o root -g root -m 0644 debian/lintian /build/user/digikam-0.9.3/debian/digikam/usr/share/lintian/overrides/digikam
+> # Icon 32x32 digikam/digikam/pics/cr32-app-digikam.png digikam.xpm
+> # Icon 16x16 digikam/digikam/pics/cr16-app-digikam.png digikam-16.xpm
+> install -D -p -m 0644 debian/xpm.d/digikam.xpm /build/user/digikam-0.9.3/debian/digikam/usr/share/pixmaps/digikam.xpm
+> install -D -p -m 0644 debian/xpm.d/digikam-16.xpm /build/user/digikam-0.9.3/debian/digikam/usr/share/pixmaps/digikam-16.xpm
+> # remove empty API-docs dirs tree
+> rm -rf /build/user/digikam-0.9.3/debian/digikam/usr/share/doc/kde
+> dh_installdirs -pshowfoto 
+> # Icon 32x32 digikam/showfoto/cr32-app-showfoto.png showfoto.xpm
+> # Icon 16x16 digikam/showfoto/cr16-app-showfoto.png showfoto-16.xpm
+> install -D -p -m 0644 debian/xpm.d/showfoto.xpm /build/user/digikam-0.9.3/debian/showfoto/usr/share/pixmaps/showfoto.xpm
+> install -D -p -m 0644 debian/xpm.d/showfoto-16.xpm /build/user/digikam-0.9.3/debian/showfoto/usr/share/pixmaps/showfoto-16.xpm
+> dh_installdirs -pdigikam-dbg 
+> dh_installdocs -pdigikam   
+> dh_installexamples -pdigikam 
+> dh_installman -pdigikam  
+> debian/tmp/usr/share/man/man1/digitaglinktree.1: No such file or directory at /usr/bin/dh_installman line 123, <IN> line 1.
+> make: *** [binary-install/digikam] Error 2
+
+The full build log is available from:
+   http://people.debian.org/~lucas/logs/2008/04/19
+
+A list of current common problems and possible solutions is available at 
+http://wiki.debian.org/qa.debian.org/FTBFS . You're welcome to contribute!
+
+About the archive rebuild: The rebuild was done on about 50 AMD64 nodes
+of the Grid'5000 platform, using a clean chroot containing a sid i386
+environment.  Internet was not accessible from the build systems.
+
+-- 
+| Lucas Nussbaum
+| lucas@lucas-nussbaum.net   http://www.lucas-nussbaum.net/ |
+| jabber: lucas@nussbaum.fr             GPG: 1024D/023B3F4F |
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

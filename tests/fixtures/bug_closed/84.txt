@@ -1,0 +1,361 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 12:40:28 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnXuA-0006kE-1J
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 12:40:27 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id EE2C813A4F7B; Sun, 20 Apr 2008 11:40:20 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id B4D0E13A47D5;
+	Sun, 20 Apr 2008 11:40:18 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnXqC-00019y-ON; Sun, 20 Apr 2008 11:36:16 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Francois Marier <francois@debian.org>
+Subject: Bug#469986: marked as done (chkrootkit: [INTL:it] Italian debconf
+ templates translation)
+Message-ID: <handler.469986.D469986.120869113624430.ackdone@bugs.debian.org>
+References: <E1JnXXa-0002Ne-Sq@ries.debian.org>
+ <1783045764.20080308115513@tiscali.it>
+X-Debian-PR-Message: closed 469986
+X-Debian-PR-Package: chkrootkit
+X-Debian-PR-Keywords: l10n patch
+X-Debian-PR-Source: chkrootkit
+Content-Type: multipart/mixed; boundary="----------=_1208691376-4371-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 11:36:16 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <9i5U7Ahb3pN.A.zdG.kuyCIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/132971
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 11:40:20 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208691376-4371-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 11:17:02 +0000
+with message-id <E1JnXXa-0002Ne-Sq@ries.debian.org>
+and subject line Bug#469986: fixed in chkrootkit 0.48-1
+has caused the Debian Bug report #469986,
+regarding chkrootkit: [INTL:it] Italian debconf templates translation
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+469986: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D469986
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208691376-4371-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 8 Mar 2008 13:27:04 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.9 required=4.0 tests=BAYES_00,FOURLA,HAS_PACKAGE,
+	MURPHY_DRUGS_REL8 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <luca.mo@tiscali.it>
+Received: from smtp-out4.libero.it ([212.52.84.46])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <luca.mo@tiscali.it>)
+	id 1JXz4q-0008W3-66
+	for submit@bugs.debian.org; Sat, 08 Mar 2008 13:27:04 +0000
+Received: from mailrelay07.libero.it (192.168.32.94) by smtp-out4.libero.it (7.3.120)
+        id 4628C88307B9EBD5 for submit@bugs.debian.org; Sat, 8 Mar 2008 14:26:58 +0100
+X-IronPort-Anti-Spam-Filtered: true
+X-IronPort-Anti-Spam-Result: AusFAJEi0keXGxjJ/2dsb2JhbACFK6Yj
+Received: from ppp-201-24.27-151.libero.it ([151.27.24.201])
+  by OutRelay-b07.libero.it with ESMTP; 08 Mar 2008 14:26:55 +0100
+Date: Sat, 8 Mar 2008 11:55:13 +0100
+From: Luca Monducci <luca.mo@tiscali.it>
+X-Priority: 3 (Normal)
+Message-ID: <1783045764.20080308115513@tiscali.it>
+To: submit@bugs.debian.org
+Subject: chkrootkit: [INTL:it] Italian debconf templates translation
+MIME-Version: 1.0
+Content-Type: multipart/mixed;
+ boundary="----------811F218E19541F21"
+Delivered-To: submit@bugs.debian.org
+
+------------811F218E19541F21
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+Package: chkrootkit
+Severity: wishlist
+Tags: patch l10n
+
+Please update the italian debconf templates translation (attached).
+
+Thanks,
+Luca
+------------811F218E19541F21
+Content-Type: application/octet-stream; name="it.po"
+Content-transfer-encoding: base64
+Content-Disposition: attachment; filename="it.po"
+
+IyBJdGFsaWFuIHRyYW5zbGF0aW9ucyBvZiBwby1kZWJjb25mIHRlbXBsYXRlcyBmb3IgY2hr
+cm9vdGtpdC4KIyBDb3B5cmlnaHQgKGMpIDIwMDUgU29mdHdhcmUgaW4gdGhlIFB1YmxpYyBJ
+bnRlcmVzdAojIFRoaXMgZmlsZSBpcyBkaXN0cmlidXRlZCB1bmRlciB0aGUgc2FtZSBsaWNl
+bnNlIGFzIHRoZSBjaGtyb290a2l0IHBhY2thZ2UuCiMgTHVjYSBNb25kdWNjaSA8bHVjYS5t
+b0B0aXNjYWxpLml0PiwgMjAwNC0yMDA4CiMKbXNnaWQgIiIKbXNnc3RyICIiCiJQcm9qZWN0
+LUlkLVZlcnNpb246IGNoa3Jvb3RraXQgMC40N1xuIgoiUmVwb3J0LU1zZ2lkLUJ1Z3MtVG86
+IGNoa3Jvb3RraXRAcGFja2FnZXMuZGViaWFuLm9yZ1xuIgoiUE9ULUNyZWF0aW9uLURhdGU6
+IDIwMDgtMDItMjYgMDg6MDYrMDEwMFxuIgoiUE8tUmV2aXNpb24tRGF0ZTogMjAwOC0wMy0w
+OCAxMTo1NCswMTAwXG4iCiJMYXN0LVRyYW5zbGF0b3I6IEx1Y2EgTW9uZHVjY2kgPGx1Y2Eu
+bW9AdGlzY2FsaS5pdD5cbiIKIkxhbmd1YWdlLVRlYW06IEl0YWxpYW4gPGRlYmlhbi1sMTBu
+LWl0YWxpYW5AbGlzdHMuZGViaWFuLm9yZz5cbiIKIk1JTUUtVmVyc2lvbjogMS4wXG4iCiJD
+b250ZW50LVR5cGU6IHRleHQvcGxhaW47IGNoYXJzZXQ9VVRGLThcbiIKIkNvbnRlbnQtVHJh
+bnNmZXItRW5jb2Rpbmc6IDhiaXRcbiIKCiMuIFR5cGU6IGJvb2xlYW4KIy4gRGVzY3JpcHRp
+b24KIzogLi4vdGVtcGxhdGVzOjIwMDEKbXNnaWQgIlNob3VsZCBjaGtyb290a2l0IGJlIHJ1
+biBhdXRvbWF0aWNhbGx5IGV2ZXJ5IGRheT8iCm1zZ3N0ciAiRXNlZ3VpcmUgYXV0b21hdGlj
+YW1lbnRlIGNoa3Jvb3RraXQgdHV0dGkgaSBnaW9ybmk/IgoKIy4gVHlwZTogYm9vbGVhbgoj
+LiBEZXNjcmlwdGlvbgojOiAuLi90ZW1wbGF0ZXM6MjAwMQptc2dpZCAiIgoiVGhlIGNoa3Jv
+b3RraXQgcHJvZ3JhbSBjYW4gYmUgcnVuIGF1dG9tYXRpY2FsbHkgdmlhIGEgZGFpbHkgY3Jv
+biBqb2IuIElmIHlvdSAiCiJjaG9vc2UgdGhpcyBvcHRpb24sIHlvdSdsbCBhbHNvIGJlIGdp
+dmVuIHRoZSBvcHBvcnR1bml0eSB0byBzcGVjaWZ5IG9wdGlvbnMgIgoiZm9yIHRoZSBkYWls
+eSBydW4uIgptc2dzdHIgIiIKIklsIHByb2dyYW1tYSBjaGtyb290a2l0IHB1w7IgZXNzZXJl
+IGVzZWd1aXRvIGF1dG9tYXRpY2FtZW50ZSB0cmFtaXRlIHVuIGpvYiAiCiJxdW90aWRpYW5v
+IGRpIGNyb24uIFNlIHNpIGFjY2V0dGEsIHZlcnLDoCBkYXRhIGwnb3Bwb3J0dW5pdMOgIGRp
+IHNwZWNpZmljYXJlICIKImxlIG9wemlvbmkgcGVyIGwnZXNlY3V6aW9uZSBnaW9ybmFsaWVy
+YS4iCgojLiBUeXBlOiBzdHJpbmcKIy4gRGVzY3JpcHRpb24KIzogLi4vdGVtcGxhdGVzOjMw
+MDEKbXNnaWQgIkFyZ3VtZW50cyB0byB1c2Ugd2l0aCBjaGtyb290a2l0IGluIHRoZSBkYWls
+eSBydW46Igptc2dzdHIgIkFyZ29tZW50aSBkYSB1c2FyZSBjb24gbCdlc2VjdXppb25lIGdp
+b3JuYWxpZXJhIGRpIGNoa3Jvb3RraXQ6IgoKIy4gVHlwZTogc3RyaW5nCiMuIERlc2NyaXB0
+aW9uCiM6IC4uL3RlbXBsYXRlczozMDAxCm1zZ2lkICIiCiJUaGUgZm9sbG93aW5nIGFyZSB1
+c2VmdWwgYXJndW1lbnRzIHRvIHBhc3MgdG8gY2hrcm9va2l0OlxuIgoiIC1yIDxyb290Pjog
+dXNlIGFuIGFsdGVybmF0ZSByb290IGRpcmVjdG9yeTtcbiIKIiAtbiAgICAgICA6IGRvIG5v
+dCBhdHRlbXB0IHRvIGFuYWx5emUgTkZTLW1vdW50ZWQgZmlsZXM7XG4iCiIgLXEgICAgICAg
+OiBydW4gaW4gcXVpZXQgbW9kZSBbaGlnaGx5IHJlY29tbWVuZGVkXS4iCm1zZ3N0ciAiIgoi
+SSBzZWd1ZW50aSBzb25vIGFyZ29tZW50aSB1dGlsaSBkYSBwYXNzYXJlIGEgY2hrcm9vdGtp
+dDpcbiIKIiAtciA8cm9vdD46IHVzYSB1bmEgZGlyZWN0b3J5IHJvb3QgYWx0ZXJuYXRpdmE7
+XG4iCiIgLW4gICAgICAgOiBub24gYW5hbGl6emEgaSBmaWxlIG1vbnRhdGkgdHJhbWl0ZSBO
+RlM7XG4iCiIgLXEgICAgICAgOiBlc2VjdXppb25lIGluIG1vZGFsaXTDoCBzaWxlbnppb3Nh
+IFtyYWNjb21hbmRhdGFdLiIKCiMuIFR5cGU6IGJvb2xlYW4KIy4gRGVzY3JpcHRpb24KIzog
+Li4vdGVtcGxhdGVzOjQwMDEKbXNnaWQgIk9ubHkgcmVwb3J0IHByb2JsZW1zIGlmIHRoZXkg
+ZGlmZmVyIGZyb20gcHJldmlvdXMgZGF5J3MgcHJvYmxlbXM/Igptc2dzdHIgIlNlZ25hbGFy
+ZSBpIHByb2JsZW1pIHNvbG8gc2UgZGl2ZXJzaSBkYSBxdWVsbGkgZGVsIGdpb3JubyBwcmVj
+ZWRlbnRlPyIKCiMuIFR5cGU6IGJvb2xlYW4KIy4gRGVzY3JpcHRpb24KIzogLi4vdGVtcGxh
+dGVzOjQwMDEKbXNnaWQgIiIKIklmIHlvdSBjaG9vc2UgdGhpcyBvcHRpb24sIGNoa3Jvb3Rr
+aXQgd2lsbCBvbmx5IHJlcG9ydCBwcm9ibGVtcyB3aGVuIHRoZXkgIgoiZGlmZmVyIGZyb20g
+dGhlIHByZXZpb3VzIGRheSdzIHJ1bi4iCm1zZ3N0ciAiIgoiU2Ugc2kgYWNjZXR0YSwgY2hr
+cm9vdGtpdCBzZWduYWxlcsOgIHNvbG8gaSBwcm9ibGVtaSBjaGUgbm9uIHNpIGVyYW5vICIK
+InZlcmlmaWNhdGkgbmVsbCdlc2VjdXppb25lIGRlbCBnaW9ybm8gcHJlY2VkZW50ZS4iCgoj
+LiBUeXBlOiBib29sZWFuCiMuIERlc2NyaXB0aW9uCiM6IC4uL3RlbXBsYXRlczo0MDAxCm1z
+Z2lkICIiCiJVc2luZyB0aGlzIG9wdGlvbiBpcyBub3QgcmVjb21tZW5kZWQgYXMgaXQgaXMg
+bGlrZWx5IHRvIGhpZGUgZXhpc3RpbmcgIgoic2VjdXJpdHkgcHJvYmxlbXMuIgptc2dzdHIg
+IiIKIlNpIHJhY2NvbWFuZGEgZGkgbm9uIHVzYXJlIHF1ZXN0YSBvcHppb25lIHBvaWNow6kg
+cG90cmViYmUgbmFzY29uZGVyZSAiCiJkZWkgcHJvYmxlbWkgZGkgc2ljdXJlenphIGVzaXN0
+ZW50aS4iCg==
+------------811F218E19541F21--
+
+
+
+
+------------=_1208691376-4371-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 469986-close) by bugs.debian.org; 20 Apr 2008 11:32:16 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.7 required=4.0 tests=BAYES_00,FROMDEVELOPER,
+	FVGT_m_MULTI_ODD,HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_2,
+	MURPHY_WRONG_WORD1,MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnXmJ-0006Lc-Nc
+	for 469986-close@bugs.debian.org; Sun, 20 Apr 2008 11:32:15 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnXXa-0002Ne-Sq; Sun, 20 Apr 2008 11:17:02 +0000
+From: Francois Marier <francois@debian.org>
+To: 469986-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#469986: fixed in chkrootkit 0.48-1
+Message-Id: <E1JnXXa-0002Ne-Sq@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 11:17:02 +0000
+X-CrossAssassin-Score: 3
+Content-Transfer-Encoding: quoted-printable
+
+Source: chkrootkit
+Source-Version: 0.48-1
+
+We believe that the bug you reported is fixed in the latest version of
+chkrootkit, which is due to be installed in the Debian FTP archive:
+
+chkrootkit_0.48-1.diff.gz
+  to pool/main/c/chkrootkit/chkrootkit_0.48-1.diff.gz
+chkrootkit_0.48-1.dsc
+  to pool/main/c/chkrootkit/chkrootkit_0.48-1.dsc
+chkrootkit_0.48-1_amd64.deb
+  to pool/main/c/chkrootkit/chkrootkit_0.48-1_amd64.deb
+chkrootkit_0.48.orig.tar.gz
+  to pool/main/c/chkrootkit/chkrootkit_0.48.orig.tar.gz
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 469986@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Francois Marier <francois@debian.org> (supplier of updated chkrootkit pac=
+kage)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 23:01:41 +1200
+Source: chkrootkit
+Binary: chkrootkit
+Architecture: source amd64
+Version: 0.48-1
+Distribution: unstable
+Urgency: low
+Maintainer: Francois Marier <francois@debian.org>
+Changed-By: Francois Marier <francois@debian.org>
+Description:=20
+ chkrootkit - Checks for signs of rootkits on the local system
+Closes: 467531 468044 468079 468216 468480 469284 469300 469986 469988 47=
+0151 470510 470950 471241
+Changes:=20
+ chkrootkit (0.48-1) unstable; urgency=3Dlow
+ .
+   * New upstream release (closes: #471241)
+   * Set myself as maintainer for this orphaned package
+   * Add upstream homepage and packaging git repo
+   * Add watch file
+ .
+   * Packaging fixes:
+    - Always run debconf-updatepo in the clean target
+    - Bump Standards-Version to 3.7.3 and debhelper to 6
+    - Cleaned-up copyright file
+    - Remove empty prerm script
+    - Fix make clean lintian warning
+    - Don't translate default '-q' argument
+    - Fix trivial errors in manpages
+    - Remove unneeded lines in debian/rules
+ .
+   * Debconf templates:
+    - Fix lintian warnings
+    - New Norwegian translation (closes: #467531)
+    - New Basque translation (closes: #468044)
+    - New Finnish translation (closes: #468216)
+    - New Vietnamese translation (closes: #468480)
+    - New Russian translation (closes: #470510)
+    - Updated Galician translation (closes: #468079)
+    - Updated Spanish translation (closes: #469284)
+    - Updated French translation (closes: #469300)
+    - Updated Italian translation (closes: #469986)
+    - Updated German translation (closes: #469988)
+    - Updated Czech translation (closes: #470151)
+    - Updated Portugese translation (closes: #470950)
+Checksums-Sha1:=20
+ c48c62472c6c0c86200b94127512545792c8740f 1161 chkrootkit_0.48-1.dsc
+ edbaf062a78f4210a7dbe9ef935cb86d12695d91 38323 chkrootkit_0.48.orig.tar.=
+gz
+ ac58b07d059a8715ad8197dd735b4a4ad9a89055 23704 chkrootkit_0.48-1.diff.gz
+ cb25f5afafb0a41655ad7f06460051c3273cf169 289944 chkrootkit_0.48-1_amd64.=
+deb
+Checksums-Sha256:=20
+ 8866ad40fe5407c3a87e6ce334d3f6b9ec05f3d1020cae4718c17c98a8d81978 1161 ch=
+krootkit_0.48-1.dsc
+ b4b3d3540a7022aa7a81cae93f28c8475bc2660a21f88126725624c09769f1fb 38323 c=
+hkrootkit_0.48.orig.tar.gz
+ 633e876fdf096b17ba23cb13b235a5831d1ef79656b0fbbea89b203573e18543 23704 c=
+hkrootkit_0.48-1.diff.gz
+ 8074af95d67b8a7d3d3d09817d560f35b249cb48d3cedc50e390932350742a42 289944 =
+chkrootkit_0.48-1_amd64.deb
+Files:=20
+ 894b7e8b6256229a0de970910fa7179c 1161 misc optional chkrootkit_0.48-1.ds=
+c
+ de8b8b5013e7faa2b66c0e33c59677e8 38323 misc optional chkrootkit_0.48.ori=
+g.tar.gz
+ cd822e7e0fb0ed647cd424082d2e8e5a 23704 misc optional chkrootkit_0.48-1.d=
+iff.gz
+ 0c834d58b14069b0f403168a761e79dd 289944 misc optional chkrootkit_0.48-1_=
+amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICyN0ScUZKBnQNIYRAkysAJ0QR3cugsbArGfwaEd70ywK7MCNLACeLj5a
+sv/2ybxQJDcpWVhmX3OzZw8=3D
+=3DDtAS
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208691376-4371-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

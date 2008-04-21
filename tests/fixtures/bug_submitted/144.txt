@@ -1,0 +1,174 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 15:41:28 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnajK-0007WS-1e
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 15:41:28 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 1F46713A500B; Sun, 20 Apr 2008 14:41:21 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-6.7 required=4.0 tests=BAYES_00,FOURLA,
+	IMPRONONCABLE_1,LDO_WHITELIST,MURPHY_DRUGS_REL8,MURPHY_WRONG_WORD2,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id CAA9413A49A8;
+	Sun, 20 Apr 2008 14:41:04 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnaYa-0005k5-3E; Sun, 20 Apr 2008 14:30:16 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476981: [INTL:fi] Finnish translation of the debconf templates
+Reply-To: Esko =?UTF-8?Q?Araj=C3=A4rvi?= <edu@iki.fi>, 476981@bugs.debian.org
+Resent-From: Esko =?UTF-8?Q?Araj=C3=A4rvi?= <edu@iki.fi>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Ola Lundqvist <opal@debian.org>
+Resent-Date: Sun, 20 Apr 2008 14:30:05 +0000
+Resent-Message-ID: <handler.476981.B.120870171819056@bugs.debian.org>
+X-Debian-PR-Message: report 476981
+X-Debian-PR-Package: ntop
+X-Debian-PR-Keywords: l10n patch
+X-Debian-PR-Source: ntop
+Received: via spool by submit@bugs.debian.org id=B.120870171819056
+          (code B ref -1); Sun, 20 Apr 2008 14:30:05 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 14:28:38 +0000
+X-Amavis-Spam-Status: No, score=-8.5 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,HAS_PACKAGE,IMPRONONCABLE_1,MURPHY_DRUGS_REL8,
+	MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from smtp-69.nebula.fi ([83.145.220.69])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <edu@iki.fi>)
+	id 1JnaWz-0004wJ-QH
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 14:28:38 +0000
+Received: from localhost.localdomain (edu.iki.fi [83.145.207.8])
+	by smtp-69.nebula.fi (Postfix) with ESMTP id 27F4665E71A;
+	Sun, 20 Apr 2008 17:28:35 +0300 (EEST)
+Content-Type: multipart/mixed; boundary="===============1309900484=="
+MIME-Version: 1.0
+From: Esko =?UTF-8?Q?Araj=C3=A4rvi?= <edu@iki.fi>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Message-ID: <20080420142856.14856.47399.reportbug@localhost.localdomain>
+X-Mailer: reportbug 3.39-0.1
+Date: Sun, 20 Apr 2008 17:28:56 +0300
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 14:30:16 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343530
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -39.5
+X-Spam-Report: (-39.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	13 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part MIME message sent by reportbug.
+
+
+--===============1309900484==
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+Package: ntop
+Severity: wishlist
+Tags: l10n patch
+
+Please include attached translation fi.po to the package.
+
+Regards,
+Esko Araj=C3=A4rvi
+
+--===============1309900484==
+MIME-Version: 1.0
+Content-Type: text/x-po; charset="utf-8"
+Content-Disposition: attachment; filename="fi.po"
+Content-Transfer-Encoding: quoted-printable
+
+msgid ""
+msgstr ""
+"Project-Id-Version: ntop\n"
+"Report-Msgid-Bugs-To: opal@debian.org\n"
+"POT-Creation-Date: 2006-08-16 07:38+0200\n"
+"PO-Revision-Date: 2008-04-20 17:28+0200\n"
+"Last-Translator: Esko Araj=C3=A4rvi <edu@iki.fi>\n"
+"Language-Team: Finnish <debian-l10n-finnish@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=3DUTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3D2; plural=3D(n !=3D 1);\n"
+"X-Poedit-Language: Finnish\n"
+"X-Poedit-Country: FINLAND\n"
+
+#. Type: string
+#. Description
+#: ../templates:1001
+msgid "Which is the name of the user to run the ntop daemon as ?"
+msgstr "K=C3=A4ytt=C3=A4j=C3=A4tunnus, jolla ntop-taustaohjelmaa ajetaan:=
+"
+
+#. Type: string
+#. Description
+#: ../templates:1001
+msgid "The selected user will be created if not already available. Don't =
+choose root, it is not recommended and will be discarded anyway."
+msgstr "Annettu tunnus luodaan, jos sit=C3=A4 ei viel=C3=A4 ole olemassa.=
+ =C3=84l=C3=A4 valitse p=C3=A4=C3=A4k=C3=A4ytt=C3=A4j=C3=A4tunnusta (root=
+). Sit=C3=A4 ei tulisi k=C3=A4ytt=C3=A4=C3=A4, eik=C3=A4 sit=C3=A4 kuiten=
+kaan hyv=C3=A4ksyt=C3=A4."
+
+#. Type: string
+#. Description
+#: ../templates:1001
+msgid "If you select an empty string no user will be created on the syste=
+m and you will need to do that configuration yourself."
+msgstr "Jos kentt=C3=A4 j=C3=A4tet=C3=A4=C3=A4n tyhj=C3=A4ksi, j=C3=A4rje=
+stelm=C3=A4=C3=A4n ei luoda mit=C3=A4=C3=A4n k=C3=A4ytt=C3=A4j=C3=A4=C3=A4=
+ ja asetukset on teht=C3=A4v=C3=A4 k=C3=A4sin."
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid "Which interfaces should ntop listen on?"
+msgstr "Kuunneltavat liit=C3=A4nn=C3=A4t:"
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid "Please enter a comma separated list of interfaces ntop should list=
+en on."
+msgstr "Anna pilkuilla eroteltu lista verkkoliit=C3=A4nn=C3=B6ist=C3=A4, =
+joita ntopin tulisi kuunnella."
+
+
+--===============1309900484==--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

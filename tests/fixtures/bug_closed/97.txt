@@ -1,0 +1,289 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 17:07:23 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnc4T-00088Q-CQ
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 17:07:23 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 4824513A4FA9; Sun, 20 Apr 2008 16:07:16 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 14D9313A4F70;
+	Sun, 20 Apr 2008 16:07:14 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnc0T-00020l-1s; Sun, 20 Apr 2008 16:03:09 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Marco d'Itri <md@linux.it>
+Subject: Bug#285310: marked as done (rblcheck help text has wrong 
+ semanthics for -s)
+Message-ID: <handler.285310.D285310.12087073375244.ackdone@bugs.debian.org>
+References: <E1Jnbku-0000m2-Tn@ries.debian.org>
+ <20041212132411.GA11150@khazad-dum.debian.net>
+X-Debian-PR-Message: closed 285310
+X-Debian-PR-Package: rblcheck
+X-Debian-PR-Source: rblcheck
+Content-Type: multipart/mixed; boundary="----------=_1208707389-7592-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 16:03:09 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <BmS9TfteXKH.A.FXG.0o2CIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/133031
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 16:07:16 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208707389-7592-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 15:47:04 +0000
+with message-id <E1Jnbku-0000m2-Tn@ries.debian.org>
+and subject line Bug#285310: fixed in rblcheck 20020316-6
+has caused the Debian Bug report #285310,
+regarding rblcheck help text has wrong semanthics for -s
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+285310: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D285310
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208707389-7592-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 12 Dec 2004 13:24:14 +0000
+Return-path: <hmh@debian.org>
+Received: from master.debian.org [146.82.138.7] 
+	by spohr.debian.org with esmtp (Exim 3.35 1 (Debian))
+	id 1CdThu-0001zB-00; Sun, 12 Dec 2004 05:24:14 -0800
+Received: from rcm-200-220-132-60.nipnet.net.br (khazad-dum.debian.net) [200.220.132.60] 
+	by master.debian.org with esmtp (Exim 3.35 1 (Debian))
+	id 1CdTht-0006mA-00; Sun, 12 Dec 2004 07:24:14 -0600
+Received: from localhost (localhost [127.0.0.1])
+	by localhost.khazad-dum.debian.net (Postfix) with ESMTP id C376C205E49;
+	Sun, 12 Dec 2004 11:24:12 -0200 (BRST)
+Received: from khazad-dum.debian.net ([127.0.0.1])
+	by localhost (khazad-dum [127.0.0.1]) (amavisd-new, port 10024)
+	with LMTP id 10719-02; Sun, 12 Dec 2004 11:24:11 -0200 (BRST)
+Received: by khazad-dum.debian.net (Postfix, from userid 1000)
+	id 39A5F20012B; Sun, 12 Dec 2004 11:24:11 -0200 (BRST)
+Date: Sun, 12 Dec 2004 11:24:11 -0200
+From: Henrique de Moraes Holschuh <hmh@debian.org>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Subject: rblcheck help text has wrong semanthics for -s
+Message-ID: <20041212132411.GA11150@khazad-dum.debian.net>
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+X-Reportbug-Version: 3.4
+X-GPG-Fingerprint-1: 1024D/128D36EE 50AC 661A 7963 0BBA 8155  43D5 6EF7 F36B 128D 36EE
+X-GPG-Fingerprint-2: 1024D/1CDB0FE3 5422 5C61 F6B7 06FB 7E04  3738 EE25 DE3F 1CDB 0FE3
+User-Agent: Mutt/1.5.6+20040907i
+X-Virus-Scanned: by amavisd-new-20030616-p10 (Debian) at khazad-dum.debian.net
+Delivered-To: submit@bugs.debian.org
+X-Spam-Checker-Version: SpamAssassin 2.60-bugs.debian.org_2004_03_25 
+	(1.212-2003-09-23-exp) on spohr.debian.org
+X-Spam-Status: No, hits=-8.0 required=4.0 tests=BAYES_00,HAS_PACKAGE 
+	autolearn=no version=2.60-bugs.debian.org_2004_03_25
+X-Spam-Level: 
+
+Package: rblcheck
+Version: 20020316-5
+Severity: normal
+
+rblcheck -s *toggles* a service.  This is a crucial difference from
+what the program help text says.
+
+The .txt documentation is correct in this regard.
+
+The lack of a manual page with the proper documentation makes this bug 
+really, really annoying.
+
+-- System Information:
+Debian Release: 3.1
+  APT prefers unstable
+  APT policy: (990, 'unstable')
+Architecture: i386 (i686)
+Kernel: Linux 2.4.28-rc1-debian5+skas+lmsensors+3c59xvlan+lmlbt4x
+Locale: LANG=pt_BR, LC_CTYPE=pt_BR (charmap=ISO-8859-1)
+
+Versions of packages rblcheck depends on:
+ii  libc6                       2.3.2.ds1-19 GNU C Library: Shared libraries an
+
+-- no debconf information
+
+-- 
+  "One disk to rule them all, One disk to find them. One disk to bring
+  them all and in the darkness grind them. In the Land of Redmond
+  where the shadows lie." -- The Silicon Valley Tarot
+  Henrique Holschuh
+
+
+------------=_1208707389-7592-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 285310-close) by bugs.debian.org; 20 Apr 2008 16:02:17 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.7 required=4.0 tests=BAYES_00,FVGT_m_MULTI_ODD,
+	HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_2,MURPHY_WRONG_WORD1,
+	MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1Jnbzd-0001M1-6J
+	for 285310-close@bugs.debian.org; Sun, 20 Apr 2008 16:02:17 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1Jnbku-0000m2-Tn; Sun, 20 Apr 2008 15:47:04 +0000
+From: Marco d'Itri <md@linux.it>
+To: 285310-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#285310: fixed in rblcheck 20020316-6
+Message-Id: <E1Jnbku-0000m2-Tn@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 15:47:04 +0000
+Content-Transfer-Encoding: quoted-printable
+
+Source: rblcheck
+Source-Version: 20020316-6
+
+We believe that the bug you reported is fixed in the latest version of
+rblcheck, which is due to be installed in the Debian FTP archive:
+
+rblcheck_20020316-6.diff.gz
+  to pool/main/r/rblcheck/rblcheck_20020316-6.diff.gz
+rblcheck_20020316-6.dsc
+  to pool/main/r/rblcheck/rblcheck_20020316-6.dsc
+rblcheck_20020316-6_i386.deb
+  to pool/main/r/rblcheck/rblcheck_20020316-6_i386.deb
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 285310@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Marco d'Itri <md@linux.it> (supplier of updated rblcheck package)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 17:37:50 +0200
+Source: rblcheck
+Binary: rblcheck
+Architecture: source i386
+Version: 20020316-6
+Distribution: unstable
+Urgency: low
+Maintainer: Marco d'Itri <md@linux.it>
+Changed-By: Marco d'Itri <md@linux.it>
+Description:=20
+ rblcheck   - Tool to Query RBL Servers
+Closes: 87114 131541 285310 395740 406071
+Changes:=20
+ rblcheck (20020316-6) unstable; urgency=3Dlow
+ .
+   * Added a man page for rblcheck(1). (Closes: #87114, #131541)
+   * Added the binary-indep target to debian/rules. (Closes: #395740)
+   * Fixed the help text for the -s option. (Closes: #285310)
+   * Removed SPEWS.
+   * Added pbl.spamhaus.org and bl.spamcop.net. (Closes: #406071)
+   * s/RBL/DNSBL/ where practical.
+Checksums-Sha1:=20
+ 858d65065fc0d307c3d5c7ec871c0b20d98bc268 1105 rblcheck_20020316-6.dsc
+ f46111edf55ea990c43f1fa2010cc11c55b996dc 3964 rblcheck_20020316-6.diff.g=
+z
+ d1d9cee406db1888533046a984d6764c251d98ea 36974 rblcheck_20020316-6_i386.=
+deb
+Checksums-Sha256:=20
+ 333894bc5705c8dfb5f64f54bebe97a5de5860917f639abe1013c8ecd9c9a74c 1105 rb=
+lcheck_20020316-6.dsc
+ 255290fce0584aa984cd9d49abbab2087e7beea6dabaaf5ef754fa9ed1fea8c4 3964 rb=
+lcheck_20020316-6.diff.gz
+ b094e84c2706d671533a23ea4813319303a27c9593ee5b4c2edcb45bab555a86 36974 r=
+blcheck_20020316-6_i386.deb
+Files:=20
+ 6782ecdfeb882528ea15bbe868d7c23f 1105 net extra rblcheck_20020316-6.dsc
+ 0391d168995cd87bad75699e442a3d05 3964 net extra rblcheck_20020316-6.diff=
+.gz
+ ecd2b42c361e897fa63cb441cf1a8d1c 36974 net extra rblcheck_20020316-6_i38=
+6.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC2O0FGfw2OHuP7ERAiuTAJ0QEt+YCOUm3BrlrqcTUqL1QjagZACeJRGE
+6WKCUdW4mb0o+7+ksG0Pqkg=3D
+=3DvHzL
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208707389-7592-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

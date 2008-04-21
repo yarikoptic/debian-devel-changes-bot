@@ -1,0 +1,161 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 12:41:00 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnXug-0006l1-P7
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 12:41:00 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id A625913A4F87; Sun, 20 Apr 2008 11:40:53 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	MURPHY_DRUGS_REL8,RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 6D60C13A47D5;
+	Sun, 20 Apr 2008 11:40:41 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnXss-0003jw-Qv; Sun, 20 Apr 2008 11:39:02 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#469735: python-pyrex: hash() built-in function is broken if sizeof(long) > sizeof(int)
+Reply-To: Jakub Wilk <ubanus@users.sf.net>, 469735@bugs.debian.org
+Resent-From: Jakub Wilk <ubanus@users.sf.net>
+Original-Sender: Jakub Wilk <pronus@gmail.com>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Paul Brossier <piem@debian.org>
+Resent-Date: Sun, 20 Apr 2008 11:39:02 +0000
+Resent-Message-ID: <handler.469735.B469735.120869121528755@bugs.debian.org>
+X-Debian-PR-Message: report 469735
+X-Debian-PR-Package: python-pyrex
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: pyrex
+Received: via spool by 469735-submit@bugs.debian.org id=B469735.120869121528755
+          (code B ref 469735); Sun, 20 Apr 2008 11:39:02 +0000
+Received: (at 469735) by bugs.debian.org; 20 Apr 2008 11:33:35 +0000
+X-Amavis-Spam-Status: No, score=-4.0 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER,
+	MURPHY_DRUGS_REL8,RCVD_IN_SBLXBL,RCVD_IN_SBLXBL_CBL autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from fg-out-1718.google.com ([72.14.220.156])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <pronus@gmail.com>)
+	id 1JnXnb-0007Sg-I5
+	for 469735@bugs.debian.org; Sun, 20 Apr 2008 11:33:35 +0000
+Received: by fg-out-1718.google.com with SMTP id 22so1260191fge.23
+        for <469735@bugs.debian.org>; Sun, 20 Apr 2008 04:33:32 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:date:from:to:subject:message-id:references:mime-version:content-type:content-disposition:in-reply-to:user-agent:sender;
+        bh=59vCkfiZwW0mBQJILTxKcXn4dKxAnRv+Y5y25vBW+qs=;
+        b=pXoqHMZAAWEaxPlK5jrSQ1cg9Gk2GxuRdOPia+kgjUKZMIt0TtuJvuCJi4P9cjeP5m28ttAG57zMNDQ5EYizudwGSAUoHQP331wH1rxlvOpO6h2ieaWNRM8kGHAMvXV7usg8RAdFA0epFTogtTKJOq4H1xvoytF3RNjdoFkCm38=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=date:from:to:subject:message-id:references:mime-version:content-type:content-disposition:in-reply-to:user-agent:sender;
+        b=vAQsWdOlBEzGNm2tqdh+X3/l95RYjT5Z2xbxnZffO9xw/Z+33arK28D5J8foXaG5d2qaf0yTDgW+jpZ6GhSt4394Scvo+Meun83meWa7aB0CwlCiSbKnSxSzndAST2e68mSwE/9jR8XFXqjuvcVVSQy4aNWDqlkFrltH0UoRgfo=
+Received: by 10.86.54.3 with SMTP id c3mr10321239fga.73.1208691212352;
+        Sun, 20 Apr 2008 04:33:32 -0700 (PDT)
+Received: from localhost ( [212.87.13.66])
+        by mx.google.com with ESMTPS id z40sm4237588ikz.4.2008.04.20.04.33.30
+        (version=SSLv3 cipher=OTHER);
+        Sun, 20 Apr 2008 04:33:31 -0700 (PDT)
+Date: Sun, 20 Apr 2008 13:33:29 +0200
+From: Jakub Wilk <ubanus@users.sf.net>
+To: 469735@bugs.debian.org
+Message-ID: <20080420113329.GA2517@cavendish.icomputing.pl>
+References: <20080306193815.GA9788@cavendish.icomputing.pl>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="gBBFr7Ir9EOA20Yy"
+Content-Disposition: inline
+In-Reply-To: <20080306193815.GA9788@cavendish.icomputing.pl>
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Sender: Jakub Wilk <pronus@gmail.com>
+Resent-Date: Sun, 20 Apr 2008 11:39:02 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343451
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -35.4
+X-Spam-Report: (-35.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	17 AWL                    AWL: From: address is in the auto white-list
+
+
+--gBBFr7Ir9EOA20Yy
+Content-Type: text/plain; charset=us-ascii; format=flowed
+Content-Disposition: inline
+
+* Jakub Wilk <ubanus@users.sf.net>, 2008-03-06, 20:38:
+> Package: python-pyrex
+> Version: 0.9.6.4-1
+> Severity: normal
+>
+> $ echo "print hash('foobar')" > hash.pyx
+> $ pyrexc hash.pyx > hash.c
+>
+> [On a i386 machine:]
+>
+> $ python hash.pyx
+> -1969371895
+> $ gcc -fPIC -shared -I/usr/include/python2.4/ -lpython2.4 hash.c -o hash.so
+> $ python -c 'import hash'
+> -1969371895
+>
+> [On a amd64 machine:]
+>
+> $ python hash.pyx
+> 3433925302934160649
+> $ gcc -fPIC -shared-I /usr/include/python2.4/ -lpython2.4 hash.c -o hash.so
+> $ python -c 'import hash'
+> -1969371895
+
+Pyrex assumes that PyObject_Hash returns an int, but it actually returns 
+a long. The attached patch fixes this problem.
+
+-- 
+Jakub Wilk
+
+--gBBFr7Ir9EOA20Yy
+Content-Type: text/x-diff; charset=us-ascii
+Content-Disposition: attachment; filename="pyrex-0.9.6.4-hash.diff"
+
+diff -ur pyrex-0.9.6.4.orig/Pyrex/Compiler/Builtin.py pyrex-0.9.6.4/Pyrex/Compiler/Builtin.py
+--- pyrex-0.9.6.4.orig/Pyrex/Compiler/Builtin.py	2007-10-16 01:52:31.000000000 +0200
++++ pyrex-0.9.6.4/Pyrex/Compiler/Builtin.py	2008-04-20 13:20:16.000000000 +0200
+@@ -20,7 +20,7 @@
+     ('getattr',    "OO",   "O",     "PyObject_GetAttr"),
+     ('getattr3',   "OOO",  "O",     "__Pyx_GetAttr3",       "getattr"),
+     ('hasattr',    "OO",   "i",     "PyObject_HasAttr"),
+-    ('hash',       "O",    "i",     "PyObject_Hash"),
++    ('hash',       "O",    "l",     "PyObject_Hash"),
+     #('hex',       "",     "",      ""),
+     #('id',        "",     "",      ""),
+     #('input',     "",     "",      ""),
+
+--gBBFr7Ir9EOA20Yy--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,216 @@
+From bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org Sun Apr 20 11:51:44 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org>)
+	id 1JnX92-0006Vn-Qo
+	for ddc@ddc.chris-lamb.co.uk; Sun, 20 Apr 2008 11:51:44 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id D6DBB13A4F14; Sun, 20 Apr 2008 10:51:39 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 299C613A47D1;
+	Sun, 20 Apr 2008 10:51:38 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnX5Y-0007ry-Fi; Sun, 20 Apr 2008 10:48:04 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Matthias Klose <doko@cs.tu-berlin.de>
+Subject: Bug#333004: marked as done (bash fails badly with long brace 
+ expansion.)
+Message-ID: <handler.333004.D333004.120868834224813.ackdone@bugs.debian.org>
+References: <18443.7890.927270.128961@gargle.gargle.HOWL>
+ <E1EOkO2-0002vn-00@ares>
+X-Debian-PR-Message: closed 333004
+X-Debian-PR-Package: bash
+X-Debian-PR-Source: bash
+Content-Type: multipart/mixed; boundary="----------=_1208688484-30213-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 10:48:04 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <zfgvSZqTQ-H.A.HaE.7AyCIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/132955
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 10:51:39 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208688484-30213-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 12:45:38 +0200
+with message-id <18443.7890.927270.128961@gargle.gargle.HOWL>
+and subject line Re: bash fails badly with long brace expansion.
+has caused the Debian Bug report #333004,
+regarding bash fails badly with long brace expansion.
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+333004: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D333004
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208688484-30213-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 9 Oct 2005 23:16:08 +0000
+Return-path: <xyllyx@gmail.com>
+Received: from ultra7.eskimo.com [204.122.16.70] (root)
+	by spohr.debian.org with esmtp (Exim 3.36 1 (Debian))
+	id 1EOkOm-00081X-00; Sun, 09 Oct 2005 16:16:08 -0700
+Received: from ares (dialport129.west.eskimo.net [67.136.147.169])
+	by ultra7.eskimo.com (8.13.4/8.13.4) with ESMTP id j99NG2si004309;
+	Sun, 9 Oct 2005 16:16:02 -0700
+Received: from jhd by ares with local (Exim 3.36 #1 (Debian))
+	id 1EOkO2-0002vn-00; Sun, 09 Oct 2005 16:15:22 -0700
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: John Darrah <xyllyx@gmail.com>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Subject: bash fails badly with long brace expansion.
+X-Mailer: reportbug 3.17
+Date: Sun, 09 Oct 2005 16:15:22 -0700
+Message-Id: <E1EOkO2-0002vn-00@ares>
+Sender: John Darrah <xyllyx@gmail.com>
+Delivered-To: submit@bugs.debian.org
+X-Spam-Checker-Version: SpamAssassin 2.60-bugs.debian.org_2005_01_02 
+	(1.212-2003-09-23-exp) on spohr.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, hits=-8.0 required=4.0 tests=BAYES_00,HAS_PACKAGE 
+	autolearn=no version=2.60-bugs.debian.org_2005_01_02
+
+Package: bash
+Version: 3.0-16
+Severity: normal
+
+
+The following brace expansion:
+  echo {0,1,2,3,4,5,6,7,8,9}{0,1,2,3,4,5,6,7,8,9}{0,1,2,3,4,5,6,7,8,9}{0,1,2,3,4,5,6,7,8,9}{0,1,2,3,4,5,6,7,8,9}{0,1,2,3,4,5,6,7,8,9}{0,1,2,3,4,5,6,7,8,9}
+
+Fails with the following error:
+  bash: xmalloc: ../bash/make_cmd.c:167: cannot allocate 8 bytes (0 bytes allocated)
+
+And then the shell dies (crash).
+
+I'm quite sure that on older versions of the shell this worked OK.
+
+I used pdksh to execute the same command and see if it was running
+out of memory, but it worked fine.
+
+
+-- System Information:
+Debian Release: testing/unstable
+  APT prefers testing
+  APT policy: (500, 'testing')
+Architecture: i386 (i686)
+Shell:  /bin/sh linked to /bin/bash
+Kernel: Linux 2.6.8-2-686
+Locale: LANG=C, LC_CTYPE=C (charmap=ANSI_X3.4-1968)
+
+Versions of packages bash depends on:
+ii  base-files                    3.1.7      Debian base system miscellaneous f
+ii  libc6                         2.3.5-6    GNU C Library: Shared libraries an
+ii  libncurses5                   5.4-9      Shared libraries for terminal hand
+hi  passwd                        1:4.0.3-35 change and administer password and
+
+bash recommends no packages.
+
+-- no debconf information
+
+
+------------=_1208688484-30213-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 333004-done) by bugs.debian.org; 20 Apr 2008 10:45:42 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-3.0 required=4.0 tests=BAYES_00,UNPARSEABLE_RELAY 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <doko@cs.tu-berlin.de>
+Received: from mail.cs.tu-berlin.de ([130.149.17.13])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <doko@cs.tu-berlin.de>)
+	id 1JnX3G-0006Ra-65
+	for 333004-done@bugs.debian.org; Sun, 20 Apr 2008 10:45:42 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by localhost-12225.cs.tu-berlin.de (Postfix) with ESMTP id 30C3EED64
+	for <333004-done@bugs.debian.org>; Sun, 20 Apr 2008 12:45:41 +0200 (MEST)
+Received: from mailhost.cs.tu-berlin.de ([127.0.0.1])
+	by localhost (mail.cs.tu-berlin.de [127.0.0.1]) (amavisd-new, port 12224)
+	with ESMTP id TBuC3IrR3-43 10684-14 for <333004-done@bugs.debian.org>;
+	Sun, 20 Apr 2008 12:45:39 +0200 (MEST) 16299
+Received: from bolero.cs.tu-berlin.de (bolero.cs.tu-berlin.de [130.149.19.1])
+	(using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by mailhost.cs.tu-berlin.de (Postfix) with ESMTP
+	for <333004-done@bugs.debian.org>; Sun, 20 Apr 2008 12:45:39 +0200 (MEST)
+Received: (from doko@localhost)
+	by bolero.cs.tu-berlin.de (8.13.8+Sun/8.13.3/Submit) id m3KAjdja014535;
+	Sun, 20 Apr 2008 12:45:39 +0200 (MEST)
+From: Matthias Klose <doko@cs.tu-berlin.de>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Message-ID: <18443.7890.927270.128961@gargle.gargle.HOWL>
+Date: Sun, 20 Apr 2008 12:45:38 +0200
+To: 333004-done@bugs.debian.org
+Subject: Re: bash fails badly with long brace expansion.
+X-Mailer: VM 7.17 under 21.4 (patch 21) "Educational Television" XEmacs Lucid
+X-Virus-Scanned: amavisd-new at cs.tu-berlin.de (including SpamAssassin)
+
+Version: 3.2-2
+
+I don't see this with 3.2, but in any case, I don't consider this a
+bug.
+
+
+------------=_1208688484-30213-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

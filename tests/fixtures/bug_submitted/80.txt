@@ -1,0 +1,175 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 17:09:36 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnc6e-0008CB-6F
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 17:09:36 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 3CF6813A4FB3; Sun, 20 Apr 2008 16:09:31 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,FVGT_m_MULTI_ODD,
+	LDO_WHITELIST,RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id D6DD413A47C3;
+	Sun, 20 Apr 2008 16:09:16 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnc3k-0006Qo-O2; Sun, 20 Apr 2008 16:06:32 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#477042: kxneur: FTBFS: main.cpp:52: error: 'exit' was not declared in this scope
+Reply-To: Lucas Nussbaum <lucas@lucas-nussbaum.net>, 477042@bugs.debian.org
+Resent-From: Lucas Nussbaum <lucas@lucas-nussbaum.net>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Alexander GQ Gerasiov <gq@cs.msu.su>
+Resent-Date: Sun, 20 Apr 2008 16:06:28 +0000
+Resent-Message-ID: <handler.477042.B.120870753917765@bugs.debian.org>
+X-Debian-PR-Message: report 477042
+X-Debian-PR-Package: kxneur
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: kxneur
+Received: via spool by submit@bugs.debian.org id=B.120870753917765
+          (code B ref -1); Sun, 20 Apr 2008 16:06:28 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 16:05:39 +0000
+X-Amavis-Spam-Status: No, score=-10.0 required=4.0 tests=BAYES_00,FVGT_m_MULTI_ODD,
+	HAS_PACKAGE autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from xanadu.blop.info ([80.248.208.235])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <lucas@lucas-nussbaum.net>)
+	id 1Jnc2t-0004Zt-4b
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 16:05:39 +0000
+Received: from localhost ([127.0.0.1] helo=xanadu.blop.info)
+	by xanadu.blop.info with smtp (Exim 4.63)
+	(envelope-from <lucas@lucas-nussbaum.net>)
+	id 1Jnc2q-0000st-1U
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 18:05:37 +0200
+Received: (nullmailer pid 24534 invoked by uid 1000);
+	Sun, 20 Apr 2008 16:02:41 -0000
+Date: Sun, 20 Apr 2008 18:02:41 +0200
+From: Lucas Nussbaum <lucas@lucas-nussbaum.net>
+To: submit@bugs.debian.org
+Message-ID: <20080420160241.GA24522@xanadu.blop.info>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 16:06:32 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343629
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -37.4
+X-Spam-Report: (-37.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	15 AWL                    AWL: From: address is in the auto white-list
+
+Package: kxneur
+Version: 0.8.0+svn20080310-1
+Severity: serious
+User: debian-qa@lists.debian.org
+Usertags: qa-ftbfs-20080419 qa-ftbfs
+Justification: FTBFS on i386
+
+Hi,
+
+During a rebuild of all packages in sid, your package failed to build on i386.
+
+This rebuild was done with gcc 4.3 instead of gcc 4.2, because gcc 4.3 is now
+the default on most architectures (even if it's not the case on i386 yet).
+Feel free to downgrade this bug to 'important' if your package is only built
+on i386, and this bug is specific to gcc 4.3 (i.e the package builds fine with
+gcc 4.2).
+
+Relevant part:
+> if i486-linux-gnu-g++ -DHAVE_CONFIG_H -I. -I. -I.. -I/usr/include/kde -I/usr/share/qt3/include -I.   -DQT_THREAD_SUPPORT  -D_REENTRANT  -Wno-long-long -Wundef -ansi -D_XOPEN_SOURCE=500 -D_BSD_SOURCE -Wcast-align -Wconversion -Wchar-subscripts -Wall -W -Wpointer-arith -O2 -g -O2 -Wformat-security -Wmissing-format-attribute -Wno-non-virtual-dtor -fno-exceptions -fno-check-new -fno-common  -MT main.o -MD -MP -MF ".deps/main.Tpo" \
+> 	  -c -o main.o `test -f 'main.cpp' || echo './'`main.cpp; \
+> 	then mv -f ".deps/main.Tpo" ".deps/main.Po"; \
+> 	else rm -f ".deps/main.Tpo"; exit 1; \
+> 	fi
+> In file included from /usr/share/qt3/include/qtextstream.h:46,
+>                  from /usr/share/qt3/include/qtl.h:46,
+>                  from /usr/share/qt3/include/qvaluelist.h:45,
+>                  from /usr/include/kde/kaboutdata.h:22,
+>                  from main.cpp:22:
+> /usr/share/qt3/include/qstring.h: In member function 'char QChar::latin1() const':
+> /usr/share/qt3/include/qstring.h:197: warning: conversion to 'char' from 'int' may alter its value
+> /usr/share/qt3/include/qstring.h: In member function 'void QChar::setCell(uchar)':
+> /usr/share/qt3/include/qstring.h:222: warning: conversion to 'ushort' from 'int' may alter its value
+> /usr/share/qt3/include/qstring.h: In member function 'void QChar::setRow(uchar)':
+> /usr/share/qt3/include/qstring.h:223: warning: conversion to 'ushort' from 'int' may alter its value
+> /usr/share/qt3/include/qstring.h: In constructor 'QChar::QChar(uchar, uchar)':
+> /usr/share/qt3/include/qstring.h:267: warning: conversion to 'ushort' from 'int' may alter its value
+> /usr/share/qt3/include/qstring.h: In constructor 'QStringData::QStringData(QChar*, uint, uint)':
+> /usr/share/qt3/include/qstring.h:365: warning: conversion to 'unsigned int:30' from 'uint' may alter its value
+> /usr/share/qt3/include/qstring.h:365: warning: conversion to 'unsigned int:30' from 'uint' may alter its value
+> In file included from /usr/include/kde/kaboutdata.h:24,
+>                  from main.cpp:22:
+> /usr/share/qt3/include/qimage.h: In member function 'bool QImageTextKeyLang::operator<(const QImageTextKeyLang&) const':
+> /usr/share/qt3/include/qimage.h:61: warning: suggest parentheses around && within ||
+> In file included from /usr/share/qt3/include/qobject.h:48,
+>                  from /usr/share/qt3/include/qwidget.h:46,
+>                  from /usr/share/qt3/include/qdesktopwidget.h:43,
+>                  from /usr/share/qt3/include/qapplication.h:45,
+>                  from /usr/include/kde/kapplication.h:38,
+>                  from /usr/include/kde/kuniqueapplication.h:24,
+>                  from kxneur.h:29,
+>                  from main.cpp:25:
+> /usr/share/qt3/include/qevent.h: In member function 'void QDropEvent::setAction(QDropEvent::Action)':
+> /usr/share/qt3/include/qevent.h:523: warning: conversion to 'unsigned char' from 'uint' may alter its value
+> In file included from /usr/share/qt3/include/qwidget.h:52,
+>                  from /usr/share/qt3/include/qdesktopwidget.h:43,
+>                  from /usr/share/qt3/include/qapplication.h:45,
+>                  from /usr/include/kde/kapplication.h:38,
+>                  from /usr/include/kde/kuniqueapplication.h:24,
+>                  from kxneur.h:29,
+>                  from main.cpp:25:
+> /usr/share/qt3/include/qsizepolicy.h: In member function 'void QSizePolicy::transpose()':
+> /usr/share/qt3/include/qsizepolicy.h:125: warning: conversion to 'uchar' from 'uint' may alter its value
+> /usr/share/qt3/include/qsizepolicy.h:125: warning: conversion to 'uchar' from 'uint' may alter its value
+> main.cpp: In function 'int main(int, char**)':
+> main.cpp:52: error: 'exit' was not declared in this scope
+> make[3]: *** [main.o] Error 1
+
+The full build log is available from:
+   http://people.debian.org/~lucas/logs/2008/04/19
+
+A list of current common problems and possible solutions is available at 
+http://wiki.debian.org/qa.debian.org/FTBFS . You're welcome to contribute!
+
+About the archive rebuild: The rebuild was done on about 50 AMD64 nodes
+of the Grid'5000 platform, using a clean chroot containing a sid i386
+environment.  Internet was not accessible from the build systems.
+
+-- 
+| Lucas Nussbaum
+| lucas@lucas-nussbaum.net   http://www.lucas-nussbaum.net/ |
+| jabber: lucas@nussbaum.fr             GPG: 1024D/023B3F4F |
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

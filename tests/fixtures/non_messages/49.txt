@@ -1,0 +1,119 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 14:50:21 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnZvr-0007Iy-MG
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 14:50:21 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 36A9613A5012; Sun, 20 Apr 2008 13:50:14 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.0 required=4.0 tests=BAYES_00,GMAIL,
+	RCVD_IN_DNSWL_LOW autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 7A16013A4FD1;
+	Sun, 20 Apr 2008 13:50:02 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnZqw-0004Fm-1e; Sun, 20 Apr 2008 13:45:10 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476838: coreutils: Use --human-readable by default
+Reply-To: Jim Meyering <jim@meyering.net>, 476838@bugs.debian.org
+Resent-From: Jim Meyering <jim@meyering.net>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Michael Stone <mstone@debian.org>
+Resent-Date: Sun, 20 Apr 2008 13:45:09 +0000
+Resent-Message-ID: <handler.476838.B476838.120869902710802@bugs.debian.org>
+X-Debian-PR-Message: report 476838
+X-Debian-PR-Package: coreutils
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: coreutils
+Received: via spool by 476838-submit@bugs.debian.org id=B476838.120869902710802
+          (code B ref 476838); Sun, 20 Apr 2008 13:45:09 +0000
+Received: (at 476838) by bugs.debian.org; 20 Apr 2008 13:43:47 +0000
+X-Amavis-Spam-Status: No, score=-6.0 required=4.0 tests=BAYES_00,GMAIL,
+	HAS_BUG_NUMBER autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from mx.meyering.net ([82.230.74.64])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <jim@meyering.net>)
+	id 1JnZpb-0002nD-3a
+	for 476838@bugs.debian.org; Sun, 20 Apr 2008 13:43:47 +0000
+Received: from rho.meyering.net (localhost.localdomain [127.0.0.1])
+	by rho.meyering.net (Acme Bit-Twister) with ESMTP id A56716B6B;
+	Sun, 20 Apr 2008 15:43:45 +0200 (CEST)
+From: Jim Meyering <jim@meyering.net>
+To: "Olaf van der Spek" <olafvdspek@gmail.com>
+Cc: 476838@bugs.debian.org,  "Lucas Nussbaum" <lucas@lucas-nussbaum.net>
+In-Reply-To: <b2cc26e40804190934o5f106630p21fb68c2fbad894a@mail.gmail.com>
+	(Olaf van der Spek's message of "Sat, 19 Apr 2008 18:34:54 +0200")
+References: <20080419134330.9494.32949.reportbug@d.xwis.net>
+	<20080419165008.GA16105@xanadu.blop.info>
+	<b2cc26e40804190757t133468o77aac70292c320a2@mail.gmail.com>
+	<87d4olx18j.fsf@rho.meyering.net>
+	<b2cc26e40804190934o5f106630p21fb68c2fbad894a@mail.gmail.com>
+Date: Sun, 20 Apr 2008 15:43:45 +0200
+Message-ID: <8763ucvdym.fsf@rho.meyering.net>
+Lines: 23
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Resent-Date: Sun, 20 Apr 2008 13:45:10 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343507
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -34.4
+X-Spam-Report: (-34.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	18 AWL                    AWL: From: address is in the auto white-list
+
+"Olaf van der Spek" <olafvdspek@gmail.com> wrote:
+> On Sat, Apr 19, 2008 at 6:23 PM, Jim Meyering <jim@meyering.net> wrote:
+>> "Olaf van der Spek" <olafvdspek@gmail.com> wrote:
+>>  >>  > Could [df] use --human-readable by default?
+>>
+>> >>
+>>  >>  No, that would break many scripts that get the value from the third or
+>>  >>  fourth column and compare it to some constant, for example.
+>>  >
+>>  > What about doing it only if the output is a terminal?
+>>
+>>  Sorry, but no.
+>>  coreutils has a policy of not making behavior depend on that.
+>>  There are a few exceptions, but those are mandated.
+>
+> Hmm, that makes sense. Still, it'd be nice if humans wouldn't have to
+> suffer due to this.
+> Isn't there a common option, like --raw or --script, that scripts
+> could use to get machine readable output?
+> I guess df isn't the only app with this problem.
+
+Humans can use an alias or shell function to add
+the options of their choice.  Tastes/needs differ.
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

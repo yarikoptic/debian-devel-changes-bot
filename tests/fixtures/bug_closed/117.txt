@@ -1,0 +1,283 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 20:36:28 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnfKo-0000kq-UB
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 20:36:28 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id B6DAC13A526D; Sun, 20 Apr 2008 19:36:21 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id F0DD413A5255;
+	Sun, 20 Apr 2008 19:36:19 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnfHe-0006GD-3v; Sun, 20 Apr 2008 19:33:06 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Bart Samwel <bart@samwel.tk>
+Subject: Bug#475407: marked as done (Add iwlwifi power management support)
+Message-ID: <handler.475407.D475407.120871991922599.ackdone@bugs.debian.org>
+References: <E1Jnena-0003lR-M9@ries.debian.org> <47FE37B5.7010205@samwel.tk>
+X-Debian-PR-Message: closed 475407
+X-Debian-PR-Package: laptop-mode-tools
+X-Debian-PR-Keywords: upstream
+X-Debian-PR-Source: laptop-mode-tools
+Content-Type: multipart/mixed; boundary="----------=_1208719986-24038-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 19:33:06 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <MmrTK5Nd0vG.A.hhF.1s5CIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/133080
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 19:36:21 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208719986-24038-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 19:02:02 +0000
+with message-id <E1Jnena-0003lR-M9@ries.debian.org>
+and subject line Bug#475407: fixed in laptop-mode-tools 1.40-1
+has caused the Debian Bug report #475407,
+regarding Add iwlwifi power management support
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+475407: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D475407
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208719986-24038-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 10 Apr 2008 15:52:30 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-10.0 required=4.0 tests=BAYES_00,HAS_PACKAGE 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <bart@samwel.tk>
+Received: from customer-vserver-jkruis-1.all2all.org ([62.58.108.47] helo=jkruis.all2all.org)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <bart@samwel.tk>)
+	id 1Jjz4d-0008Bo-9o
+	for submit@bugs.debian.org; Thu, 10 Apr 2008 15:52:27 +0000
+Received: by jkruis.all2all.org (Postfix, from userid 65534)
+	id 29DC04904195; Thu, 10 Apr 2008 17:52:24 +0200 (CEST)
+Received: from [192.168.1.65] (gedoe.xs4all.nl [82.95.120.224])
+	by jkruis.all2all.org (Postfix) with ESMTP id AB76C49040D3
+	for <submit@bugs.debian.org>; Thu, 10 Apr 2008 17:52:21 +0200 (CEST)
+Message-ID: <47FE37B5.7010205@samwel.tk>
+Date: Thu, 10 Apr 2008 17:52:21 +0200
+From: Bart Samwel <bart@samwel.tk>
+User-Agent: Thunderbird 2.0.0.12 (X11/20080227)
+MIME-Version: 1.0
+To: submit@bugs.debian.org
+Subject: Add iwlwifi power management support
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 7bit
+Delivered-To: submit@bugs.debian.org
+
+Package: laptop-mode-tools
+Version: 1.36-1
+Severity: wishlist
+Tags: upstream
+
+We currently support power management only for wireless cards with ipw 
+drivers, not with iwlwifi. The appropriate file for iwlwifi is:
+
+/sys/bus/pci/devices/*/power_level
+
+* being the address of the device
+
+(Thanks to Alex Lam for reporting.)
+
+Cheers,
+Bart
+
+
+
+------------=_1208719986-24038-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 475407-close) by bugs.debian.org; 20 Apr 2008 19:31:59 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER,
+	HEADER_X_KATIE,IMPRONONCABLE_2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnfGZ-0005sK-He
+	for 475407-close@bugs.debian.org; Sun, 20 Apr 2008 19:31:59 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1Jnena-0003lR-M9; Sun, 20 Apr 2008 19:02:02 +0000
+From: Bart Samwel <bart@samwel.tk>
+To: 475407-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#475407: fixed in laptop-mode-tools 1.40-1
+Message-Id: <E1Jnena-0003lR-M9@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 19:02:02 +0000
+Content-Transfer-Encoding: quoted-printable
+
+Source: laptop-mode-tools
+Source-Version: 1.40-1
+
+We believe that the bug you reported is fixed in the latest version of
+laptop-mode-tools, which is due to be installed in the Debian FTP archive=
+:
+
+laptop-mode-tools_1.40-1.diff.gz
+  to pool/main/l/laptop-mode-tools/laptop-mode-tools_1.40-1.diff.gz
+laptop-mode-tools_1.40-1.dsc
+  to pool/main/l/laptop-mode-tools/laptop-mode-tools_1.40-1.dsc
+laptop-mode-tools_1.40-1_all.deb
+  to pool/main/l/laptop-mode-tools/laptop-mode-tools_1.40-1_all.deb
+laptop-mode-tools_1.40.orig.tar.gz
+  to pool/main/l/laptop-mode-tools/laptop-mode-tools_1.40.orig.tar.gz
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 475407@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Bart Samwel <bart@samwel.tk> (supplier of updated laptop-mode-tools packa=
+ge)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Tue, 15 Apr 2008 18:35:00 +0200
+Source: laptop-mode-tools
+Binary: laptop-mode-tools
+Architecture: source all
+Version: 1.40-1
+Distribution: unstable
+Urgency: high
+Maintainer: Bart Samwel <bart@samwel.tk>
+Changed-By: Bart Samwel <bart@samwel.tk>
+Description:=20
+ laptop-mode-tools - Scripts to spin down hard drive and save power
+Closes: 475304 475407 475926
+Changes:=20
+ laptop-mode-tools (1.40-1) unstable; urgency=3Dhigh
+ .
+   * Upgrade standards version to 3.7.3.
+   * Add hal to recommends due to upstream changes.
+   * New upstream version 1.40:
+     * Add support for getting lid button state from HAL instead of from
+       /proc/acpi.
+     * Support /sys/class/power_supply interface to determine battery lev=
+els.
+       Closes: #475926
+     * Add generic support for config file swapping. Closes: #475304
+     * Add module for iwlwifi power management. Closes: #475407
+     * Fully modularized configuration.
+Checksums-Sha1:=20
+ 32457f5937ea663995a5a0d761809c7b771ae1e6 1002 laptop-mode-tools_1.40-1.d=
+sc
+ eed809fae69087e39bb2225cb4d44a6e254e95e6 74394 laptop-mode-tools_1.40.or=
+ig.tar.gz
+ e5933cbae6e1c3a0b0f5dab8d2906aab2ee3929e 7903 laptop-mode-tools_1.40-1.d=
+iff.gz
+ 730e8ce0008af008f88dc9d007e79de5b90c6e15 76616 laptop-mode-tools_1.40-1_=
+all.deb
+Checksums-Sha256:=20
+ e85653668971a01cad4ba823164f4901951d453a3658211435b92a6c41c1502e 1002 la=
+ptop-mode-tools_1.40-1.dsc
+ e272c70ab92d38f284fef08d38426882505a1cc5bb5becf39b11b23da210e369 74394 l=
+aptop-mode-tools_1.40.orig.tar.gz
+ a6ba0e6323fddada7eb2ea8142060ecf6833e804c46921f9c5662ccc1d30a4eb 7903 la=
+ptop-mode-tools_1.40-1.diff.gz
+ 1f5e5debc0196798d43d311378bbe6fe2bdb59bf5b1bd1aa2654c483b2f8e6b2 76616 l=
+aptop-mode-tools_1.40-1_all.deb
+Files:=20
+ 7d0cb64f8e9ac992b962dcc64f6d053f 1002 utils optional laptop-mode-tools_1=
+.40-1.dsc
+ 8fa8b42e3be11b7905ebb5d5348c956c 74394 utils optional laptop-mode-tools_=
+1.40.orig.tar.gz
+ e39fd8ba79df26944a1aafb9fa18e48f 7903 utils optional laptop-mode-tools_1=
+.40-1.diff.gz
+ b893e8b0334deeb73d40964bfd3826a1 76616 utils optional laptop-mode-tools_=
+1.40-1_all.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC5CL4VUX8isJIMARAmsKAJ0fy9ve4U9uYrbo0aOXoFgImTb8/gCeMSlI
+LR18/X7vd8c38cO4EhfEmKU=3D
+=3D2QmG
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208719986-24038-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

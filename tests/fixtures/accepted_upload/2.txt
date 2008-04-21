@@ -1,0 +1,139 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 19:02:36 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnds1-0000Hg-Jt
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 19:02:36 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 4017F13A513F; Sun, 20 Apr 2008 18:02:32 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id DC16313A4F8F
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 18:02:31 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JndrY-0000Bc-Ln; Sun, 20 Apr 2008 18:02:04 +0000
+From: gregor herrmann <gregoa@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted liblocale-subcountry-perl 1.41-1 (source all)
+Message-Id: <E1JndrY-0000Bc-Ln@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 18:02:04 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <g7l__aMxVvK.A.6BB.4U4CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301328
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 18:02:32 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.6
+X-Spam-Report: (-2.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.0 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 19:45:49 +0200
+Source: liblocale-subcountry-perl
+Binary: liblocale-subcountry-perl
+Architecture: source all
+Version: 1.41-1
+Distribution: unstable
+Urgency: low
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.o=
+rg>
+Changed-By: gregor herrmann <gregoa@debian.org>
+Description:=20
+ liblocale-subcountry-perl - Perl modules for converting state, province =
+etc names to/from cod
+Changes:=20
+ liblocale-subcountry-perl (1.41-1) unstable; urgency=3Dlow
+ .
+   * New upstream release.
+   * Refresh debian/rules, no functional changes; don't install README an=
+y
+     more (text version of the inline POD).
+   * debian/control:
+     - add /me to Uploaders
+     - wrap long line
+     - mention module name in long description
+Checksums-Sha1:=20
+ cc63aef23886ddf1ceebcbae69f73c427342044e 1602 liblocale-subcountry-perl_=
+1.41-1.dsc
+ 1560f7a96b6b599782e954201f12fd1d168e85a2 65273 liblocale-subcountry-perl=
+_1.41.orig.tar.gz
+ f00ec44e46988d0a47b5ed9e62dbb3b6641549f7 3325 liblocale-subcountry-perl_=
+1.41-1.diff.gz
+ dc8dde90b9a7de891605b4b79f51ea42c4be7ad9 73700 liblocale-subcountry-perl=
+_1.41-1_all.deb
+Checksums-Sha256:=20
+ 53eeefa166fd2cd83ab4f85b0d3ee37f9a96392d50350d158ca63d86b07a94f2 1602 li=
+blocale-subcountry-perl_1.41-1.dsc
+ 1ed9b58d7dcd2af43b0236ea61d188bdf08397951698688cbc126e9e923eb114 65273 l=
+iblocale-subcountry-perl_1.41.orig.tar.gz
+ c73d84091e96c3332b0778d757ed1abb4af00b809843e4b08c1207a1f24e7bb1 3325 li=
+blocale-subcountry-perl_1.41-1.diff.gz
+ 44fd83308443b9fac432c30c7c5615a39af06cc5200a0b176cee3274e0e5f096 73700 l=
+iblocale-subcountry-perl_1.41-1_all.deb
+Files:=20
+ da00e3df96d56dd54c732b4a62a0dfde 1602 perl optional liblocale-subcountry=
+-perl_1.41-1.dsc
+ 44f6b0cc4b1ad5db591e45d1395d2d7f 65273 perl optional liblocale-subcountr=
+y-perl_1.41.orig.tar.gz
+ d75b169d9f12de53c8ff890a15fbdd4e 3325 perl optional liblocale-subcountry=
+-perl_1.41-1.diff.gz
+ 8467085b8f917d82ebe026fb7a8e77db 73700 perl optional liblocale-subcountr=
+y-perl_1.41-1_all.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC4FrOzKYnQDzz+QRAu5eAJwOE+HWa77XjZtWak1KFFRgep51HACfbwO5
+1cyEoGlerXvrBQCaG4Ol2l4=3D
+=3DKbLr
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+liblocale-subcountry-perl_1.41-1.diff.gz
+  to pool/main/libl/liblocale-subcountry-perl/liblocale-subcountry-perl_1=
+.41-1.diff.gz
+liblocale-subcountry-perl_1.41-1.dsc
+  to pool/main/libl/liblocale-subcountry-perl/liblocale-subcountry-perl_1=
+.41-1.dsc
+liblocale-subcountry-perl_1.41-1_all.deb
+  to pool/main/libl/liblocale-subcountry-perl/liblocale-subcountry-perl_1=
+.41-1_all.deb
+liblocale-subcountry-perl_1.41.orig.tar.gz
+  to pool/main/libl/liblocale-subcountry-perl/liblocale-subcountry-perl_1=
+.41.orig.tar.gz
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

@@ -1,0 +1,266 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 10:29:51 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnVrm-00060S-Bp
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 10:29:51 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id EDDCE13A4E90; Sun, 20 Apr 2008 09:29:44 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.8 required=4.0 tests=BAYES_00,MURPHY_DRUGS_REL6,
+	RCVD_IN_DNSWL_LOW autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 71B9C13A4E99;
+	Sun, 20 Apr 2008 09:29:34 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnVpB-0006TK-Ix; Sun, 20 Apr 2008 09:27:05 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476929: Python rtupdate does not work with boa-constructor
+Reply-To: Gabriel Mainberger <gabisoft@freesurf.ch>, 476929@bugs.debian.org
+Resent-From: Gabriel Mainberger <gabisoft@freesurf.ch>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Matthias Klose <doko@debian.org>
+Resent-Date: Sun, 20 Apr 2008 09:27:02 +0000
+Resent-Message-ID: <handler.476929.B.120868336423392@bugs.debian.org>
+X-Debian-PR-Message: report 476929
+X-Debian-PR-Package: python
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: python-defaults
+Received: via spool by submit@bugs.debian.org id=B.120868336423392
+          (code B ref -1); Sun, 20 Apr 2008 09:27:02 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 09:22:44 +0000
+X-Amavis-Spam-Status: No, score=-7.8 required=4.0 tests=BAYES_00,
+	DATE_IN_FUTURE_03_06,HAS_PACKAGE,MURPHY_DRUGS_REL6 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from mxout006.mail.hostpoint.ch ([217.26.49.185])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <gabisoft@freesurf.ch>)
+	id 1JnVUj-0004cs-0b
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 09:06:16 +0000
+Received: from [10.0.2.10] (helo=asmtp001.mail.hostpoint.ch)
+	by mxout006.mail.hostpoint.ch with esmtp (Exim 4.69 (FreeBSD))
+	(envelope-from <gabisoft@freesurf.ch>)
+	id 1JnVUh-000MKQ-D4
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 11:05:55 +0200
+Received: from [81.221.66.69] (helo=[192.168.0.54])
+	by asmtp001.mail.hostpoint.ch with esmtpa (Exim 4.63 (FreeBSD))
+	(envelope-from <gabisoft@freesurf.ch>)
+	id 1JnVUg-000LEI-9q
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 11:05:55 +0200
+X-Authenticated-Sender-Id: maili@codix.ch
+Message-ID: <480B3FC4.6090203@freesurf.ch>
+Date: Sun, 20 Apr 2008 15:06:12 +0200
+From: Gabriel Mainberger <gabisoft@freesurf.ch>
+User-Agent: Mozilla-Thunderbird 2.0.0.12 (X11/20080406)
+MIME-Version: 1.0
+To: submit@bugs.debian.org
+Content-Type: text/plain; charset=ISO-8859-15; format=flowed
+Content-Transfer-Encoding: 7bit
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 09:27:05 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343379
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.6
+X-Spam-Report: (-52.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+Package: python
+Version: 2.5.2-1
+Distribution: sid
+
+The python package can not be installed, when the package 
+boa-constructor (Version: 0.6.1-3) is installed.
+
+# dpkg -i Desktop/python_2.5.2-1_all.deb
+(Reading database ... 264231 files and directories currently installed.)
+Preparing to replace python 2.5.2-1 (using 
+Desktop/python_2.5.2-1_all.deb) ...
+Ignoring nonregistered document `python-policy'
+Unpacking replacement python ...
+Setting up python (2.5.2-1) ...
+running python rtupdate hooks for python2.5...
+Compiling /usr/share/boa-constructor/ZopeLib/zoa/metatypes.py ...
+   File "/usr/share/boa-constructor/ZopeLib/zoa/metatypes.py", line 13
+     return obj.objectMap()
+SyntaxError: 'return' outside function
+
+Compiling /usr/share/boa-constructor/ZopeLib/zoa/subobj_.py ...
+   File "/usr/share/boa-constructor/ZopeLib/zoa/subobj_.py", line 17
+     return subobj
+SyntaxError: 'return' outside function
+
+Compiling /usr/share/boa-constructor/ZopeLib/zoa/props/DBAdapter.py ...
+   File "/usr/share/boa-constructor/ZopeLib/zoa/props/DBAdapter.py", line 10
+     return {'title': context.title,
+SyntaxError: 'return' outside function
+
+Compiling /usr/share/boa-constructor/ZopeLib/zoa/props/User.py ...
+   File "/usr/share/boa-constructor/ZopeLib/zoa/props/User.py", line 12
+     return {'id': user.getId(),
+SyntaxError: 'return' outside function
+
+Compiling /usr/share/boa-constructor/ZopeLib/zoa/props/DTMLMethod.py ...
+   File "/usr/share/boa-constructor/ZopeLib/zoa/props/DTMLMethod.py", 
+line 12
+     return {'title': meth.title,
+SyntaxError: 'return' outside function
+
+Compiling /usr/share/boa-constructor/ZopeLib/zoa/props/ExternalMethod.py ...
+   File 
+"/usr/share/boa-constructor/ZopeLib/zoa/props/ExternalMethod.py", line 12
+     return {'title':    meth.title,
+SyntaxError: 'return' outside function
+
+Compiling /usr/share/boa-constructor/ZopeLib/zoa/props/MailHost.py ...
+   File "/usr/share/boa-constructor/ZopeLib/zoa/props/MailHost.py", line 11
+     return {'title': ctx.title,
+SyntaxError: 'return' outside function
+
+Compiling /usr/share/boa-constructor/ZopeLib/zoa/props/SiteErrorLog.py ...
+   File "/usr/share/boa-constructor/ZopeLib/zoa/props/SiteErrorLog.py", 
+line 12
+     return context.aq_parent.aq_parent.getProperties()
+SyntaxError: 'return' outside function
+
+Compiling /usr/share/boa-constructor/ZopeLib/zoa/props/SQLMethod.py ...
+   File "/usr/share/boa-constructor/ZopeLib/zoa/props/SQLMethod.py", line 10
+     return {'connection_id': context.connection_id,
+SyntaxError: 'return' outside function
+
+Compiling /usr/share/boa-constructor/ZopeLib/zoa/props/PageTemplate.py ...
+   File "/usr/share/boa-constructor/ZopeLib/zoa/props/PageTemplate.py", 
+line 12
+     return {'title': pt.title,
+SyntaxError: 'return' outside function
+
+Compiling 
+/usr/share/boa-constructor/ZopeLib/zoa/props/Formulator/move_field.py ...
+   File 
+"/usr/share/boa-constructor/ZopeLib/zoa/props/Formulator/move_field.py", 
+line 14
+     return ctx.manage_move_field_up(group, REQ)
+SyntaxError: 'return' outside function
+
+Compiling 
+/usr/share/boa-constructor/ZopeLib/zoa/props/Formulator/GroupedFields.py ...
+   File 
+"/usr/share/boa-constructor/ZopeLib/zoa/props/Formulator/GroupedFields.py", 
+line 17
+     return result
+SyntaxError: 'return' outside function
+
+Compiling 
+/usr/share/boa-constructor/ZopeLib/zoa/props/Formulator/Form.py ...
+   File 
+"/usr/share/boa-constructor/ZopeLib/zoa/props/Formulator/Form.py", line 12
+     return {'title': ctx.title,
+SyntaxError: 'return' outside function
+
+Compiling 
+/usr/share/boa-constructor/ZopeLib/zoa/props/Formulator/Field.py ...
+   File 
+"/usr/share/boa-constructor/ZopeLib/zoa/props/Formulator/Field.py", line 27
+     return fields
+SyntaxError: 'return' outside function
+
+Compiling /usr/share/boa-constructor/ZopeLib/zoa/docsrc.py ...
+   File "/usr/share/boa-constructor/ZopeLib/zoa/docsrc.py", line 10
+     return context.aq_parent.document_src()
+SyntaxError: 'return' outside function
+
+Compiling /usr/share/boa-constructor/ZopeLib/zoa/iconpath.py ...
+   File "/usr/share/boa-constructor/ZopeLib/zoa/iconpath.py", line 10
+     return context.aq_parent.icon
+SyntaxError: 'return' outside function
+
+Compiling /usr/share/boa-constructor/ZopeLib/zoa/find.py ...
+   File "/usr/share/boa-constructor/ZopeLib/zoa/find.py", line 22
+     return [(obj.meta_type, id) for id, obj in results]
+SyntaxError: 'return' outside function
+
+Compiling /usr/share/boa-constructor/ZopeLib/zoa/filteredmetatypes.py ...
+   File "/usr/share/boa-constructor/ZopeLib/zoa/filteredmetatypes.py", 
+line 10
+     return context.aq_parent.filtered_meta_types()
+SyntaxError: 'return' outside function
+
+Compiling /usr/share/boa-constructor/ZopeLib/zoa/ownerinfo.py ...
+   File "/usr/share/boa-constructor/ZopeLib/zoa/ownerinfo.py", line 13
+     try: return obj.owner_info()
+SyntaxError: 'return' outside function
+
+Compiling /usr/share/boa-constructor/ZopeLib/zoa/proxyroles.py ...
+   File "/usr/share/boa-constructor/ZopeLib/zoa/proxyroles.py", line 16
+     return res
+SyntaxError: 'return' outside function
+
+Compiling /usr/share/boa-constructor/ZopeLib/zoa/undo.py ...
+   File "/usr/share/boa-constructor/ZopeLib/zoa/undo.py", line 10
+     return str(context.aq_parent.undoable_transactions(start, end))
+SyntaxError: 'return' outside function
+
+Compiling /usr/share/boa-constructor/ZopeLib/zoa/objectids.py ...
+   File "/usr/share/boa-constructor/ZopeLib/zoa/objectids.py", line 15
+     return l
+SyntaxError: 'return' outside function
+
+Compiling /usr/share/boa-constructor/ZopeLib/zoa/items.py ...
+   File "/usr/share/boa-constructor/ZopeLib/zoa/items.py", line 10
+     return [container.metatypes(), container.objectids()]
+SyntaxError: 'return' outside function
+
+Compiling /usr/share/boa-constructor/ZopeLib/zoa/properties.py ...
+   File "/usr/share/boa-constructor/ZopeLib/zoa/properties.py", line 11
+     return [obj.propertyItems(), obj.propertyMap()]
+SyntaxError: 'return' outside function
+
+Compiling /usr/share/boa-constructor/ZopeLib/zoa/metatype.py ...
+   File "/usr/share/boa-constructor/ZopeLib/zoa/metatype.py", line 10
+     return context.aq_parent.meta_type
+SyntaxError: 'return' outside function
+
+Compiling /usr/share/boa-constructor/ZopeLib/zoa/version.py ...
+   File "/usr/share/boa-constructor/ZopeLib/zoa/version.py", line 10
+     return context.zoa_version
+SyntaxError: 'return' outside function
+
+pycentral: pycentral updatedefault: error byte-compiling files (290)
+pycentral updatedefault: error byte-compiling files (290)
+error running python rtupdate hook pycentral
+Updating *.pc symlinks for python-gst0.10...
+dpkg: error processing python (--install):
+  subprocess post-installation script returned error exit status 4
+Errors were encountered while processing:
+  python
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

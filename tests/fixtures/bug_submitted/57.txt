@@ -1,0 +1,192 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 12:50:01 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnY3P-0006nD-44
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 12:50:01 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id E6E7813A4F28; Sun, 20 Apr 2008 11:49:53 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.6 required=4.0 tests=BAYES_00,FOURLA,
+	FVGT_m_MULTI_ODD,LDO_WHITELIST,MURPHY_WRONG_WORD1,MURPHY_WRONG_WORD2,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 7B55513A4F07;
+	Sun, 20 Apr 2008 11:49:38 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnXym-0005dZ-LY; Sun, 20 Apr 2008 11:45:08 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476958: exim4 logrotate do not restart exim
+Reply-To: Klaus Ethgen <Klaus@Ethgen.de>, 476958@bugs.debian.org
+Resent-From: Klaus Ethgen <Klaus@Ethgen.de>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Exim4 Maintainers <pkg-exim4-maintainers@lists.alioth.debian.org>
+Resent-Date: Sun, 20 Apr 2008 11:45:02 +0000
+Resent-Message-ID: <handler.476958.B.12086917847808@bugs.debian.org>
+X-Debian-PR-Message: report 476958
+X-Debian-PR-Package: exim4-base
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: exim4
+Received: via spool by submit@bugs.debian.org id=B.12086917847808
+          (code B ref -1); Sun, 20 Apr 2008 11:45:02 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 11:43:04 +0000
+X-Amavis-Spam-Status: No, score=-9.4 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,FVGT_m_MULTI_ODD,HAS_PACKAGE,MURPHY_WRONG_WORD1,
+	MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from toomai.ethgen.de ([85.10.201.50])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <Klaus@Ethgen.de>)
+	id 1JnXwi-0001gK-Rh
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 11:43:02 +0000
+Received: from static-195-068.catv.glattnet.ch ([80.242.195.68] helo=ikki.ket)
+	by toomai.ethgen.de with esmtpsa (TLS-1.0:RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <klaus@ethgen.de>)
+	id 1JnXwb-0006La-Ty; Sun, 20 Apr 2008 13:42:54 +0200
+Received: from klaus by ikki.ket with local (Exim 4.63)
+	(envelope-from <klaus@ikki.ethgen.de>)
+	id 1JnXwb-0003Rw-7Y; Sun, 20 Apr 2008 13:42:53 +0200
+Date: Sun, 20 Apr 2008 13:42:53 +0200
+From: Klaus Ethgen <Klaus@Ethgen.de>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Message-ID: <20080420114251.GA13050@ikki.ethgen.de>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1; x-action=pgp-signed
+Content-Disposition: inline
+X-Reportbug-Version: 3.31
+User-Agent: Mutt/1.5.17 (2007-11-01)
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 11:45:08 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343452
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -33.8
+X-Spam-Report: (-33.8 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	19 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Package: exim4-base
+Version: 4.63-17
+Severity: normal
+
+On one of my hosts sometimes I get the message from it that exim holds
+the deleted file /var/log/exim4/mainlog.1 open. So it seems for me that
+it is not gracefully restart at the end of logrotate.
+
+So please do the following to not log messages to a deleted file.
+
+- --- exim4-base.orig	2007-12-10 20:26:47.000000000 +0100
++++ exim4-base	2008-04-20 13:36:21.000000000 +0200
+@@ -6,6 +6,10 @@
+ 	delaycompress
+ 	notifempty
+ 	create 640 Debian-exim adm
++        sharedscripts
++        postrotate
++            [ -f '/var/run/exim4/exim.pid' ] && /etc/init.d/exim restart || :
++        endscript
+ }
+ 
+ /var/log/exim4/paniclog {
+@@ -16,5 +20,9 @@
+ 	delaycompress
+ 	notifempty
+ 	create 640 Debian-exim adm
++        sharedscripts
++        postrotate
++            [ -f '/var/run/exim4/exim.pid' ] && /etc/init.d/exim restart || :
++        endscript
+ }
+ 
+
+- -- Package-specific info:
+Exim version 4.63 #1 built 20-Jan-2007 10:40:39
+Copyright (c) University of Cambridge 2006
+Berkeley DB: Sleepycat Software: Berkeley DB 4.3.29: (September  6, 2005)
+Support for: crypteq iconv() IPv6 GnuTLS move_frozen_messages
+Lookups: lsearch wildlsearch nwildlsearch iplsearch cdb dbm dbmnz dsearch nis nis0 passwd
+Authenticators: cram_md5 plaintext
+Routers: accept dnslookup ipliteral manualroute queryprogram redirect
+Transports: appendfile/maildir/mailstore autoreply lmtp pipe smtp
+Fixed never_users: 0
+Size of off_t: 8
+Configuration file is /var/lib/exim4/config.autogenerated
+
+- -- System Information:
+Debian Release: 4.0
+  APT prefers stable
+  APT policy: (800, 'stable'), (700, 'testing'), (600, 'unstable'), (60, 'experimental')
+Architecture: i386 (i686)
+Shell:  /bin/sh linked to /bin/dash
+Kernel: Linux 2.4.36.2
+Locale: LANG=de_DE, LC_CTYPE=de_DE (charmap=ISO-8859-1) (ignored: LC_ALL set to de_DE)
+
+Versions of packages exim4-base depends on:
+ii  adduser                3.102             Add and remove users and groups
+ii  cron                   3.0pl1-100        management of regular background p
+ii  debconf [debconf-2.0]  1.5.20            Debian configuration management sy
+ii  exim4-config [exim4-co 4.63-17           configuration for the exim MTA (v4
+ii  libc6                  2.3.6.ds1-13etch5 GNU C Library: Shared libraries
+ii  libdb4.3               4.3.29-8          Berkeley v4.3 Database Libraries [
+ii  lsb-base               3.1-23.2etch1     Linux Standard Base 3.1 init scrip
+ii  netbase                4.29              Basic TCP/IP networking system
+
+Versions of packages exim4-base recommends:
+ii  psmisc                        22.3-1     Utilities that use the proc filesy
+
+- -- debconf information:
+  exim4/purge_spool: false
+  exim4-base/drec:
+  exim4/move_exim3_spool: false
+
+- -- 
+Klaus Ethgen                            http://www.ethgen.de/
+pub  2048R/D1A4EDE5 2000-02-26 Klaus Ethgen <Klaus@Ethgen.de>
+Fingerprint: D7 67 71 C4 99 A6 D4 FE  EA 40 30 57 3C 88 26 2B
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iQEVAwUBSAssO5+OKpjRpO3lAQKfJAgAhZhgrrG+MTXYXhIyTkRtzffV+XSwN17x
+w9KgV0SayXLazaWeLzR0Pb+7gwzPVYca9+/so4rCBvK7IQguFvmJYX87iiigCuHp
+CHPhtau5y8UscMzxAF991YKRXdk48HBlHpUcF4JW0IsTNguKKaKR7gXnC/uSKLg7
++HQ8xEskYUE8M/v/tj7vJaD6dBfa9Iu7p5Q0lq6JFtDbra9O3qiN3L32hfDElaMq
+T5WthyuEWmiXBlzHrARTzm7yP/XrVuLQHvFGLYcg/WKUumIeNNv5l+DrD7Rx9Mk0
+8IG5sZ+oZbZy5yDGPUe+i+S191R51cRq2LET2dYFjJlKY807Ea0ctA==
+=SltX
+-----END PGP SIGNATURE-----
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

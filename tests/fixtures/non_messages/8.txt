@@ -1,0 +1,134 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 14:10:35 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnZJL-00075C-Dp
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 14:10:35 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 5DE3913A4FD4; Sun, 20 Apr 2008 13:10:25 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id CD63113A4F87;
+	Sun, 20 Apr 2008 13:10:02 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnZI3-0003jb-J4; Sun, 20 Apr 2008 13:09:07 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476905: gnome-orca: Orca gives a "cannot start" error now  that Python 2.5 is the Debian default in Sid
+Reply-To: Mario Lang <mlang@debian.org>, 476905@bugs.debian.org
+Resent-From: Mario Lang <mlang@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 13:09:06 +0000
+Resent-Message-ID: <handler.476905.B476905.120869678410699@bugs.debian.org>
+X-Debian-PR-Message: report 476905
+X-Debian-PR-Package: gnome-orca
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: gnome-orca
+Received: via spool by 476905-submit@bugs.debian.org id=B476905.120869678410699
+          (code B ref 476905); Sun, 20 Apr 2008 13:09:06 +0000
+Received: (at 476905) by bugs.debian.org; 20 Apr 2008 13:06:24 +0000
+X-Amavis-Spam-Status: No, score=-8.9 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FROMDEVELOPER,HAS_BUG_NUMBER autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from viefep18-int.chello.at ([213.46.255.22] helo=viefep14-int.chello.at)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <mlang@delysid.org>)
+	id 1JnZFQ-0002hH-4v
+	for 476905@bugs.debian.org; Sun, 20 Apr 2008 13:06:24 +0000
+Received: from x2.delysid.org ([84.115.136.207]) by viefep14-int.chello.at
+          (InterMail vM.7.08.02.02 201-2186-121-104-20070414) with ESMTP
+          id <20080420130617.QBSA15261.viefep14-int.chello.at@x2.delysid.org>;
+          Sun, 20 Apr 2008 15:06:17 +0200
+Received: from mlang by x2.delysid.org with local (Exim 4.69)
+	(envelope-from <mlang@delysid.org>)
+	id 1JnZFc-00013u-38; Sun, 20 Apr 2008 15:06:36 +0200
+To: Jason White <jason@jasonjgw.net>
+Cc: 476905@bugs.debian.org
+From: Mario Lang <mlang@debian.org>
+In-Reply-To: <20080420055940.12471.88521.reportbug@jdc.jasonjgw.net> (Jason White's message of "Sun\, 20 Apr 2008 15\:59\:40 +1000")
+User-Agent: Gnus/5.11 (Gnus v5.11) Emacs/22.2 (gnu/linux)
+References: <20080420055940.12471.88521.reportbug@jdc.jasonjgw.net>
+Date: Sun, 20 Apr 2008 15:06:36 +0200
+Message-ID: <874p9wfzfn.fsf@x2.delysid.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+Resent-Date: Sun, 20 Apr 2008 13:09:07 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343486
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -34.6
+X-Spam-Report: (-34.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	18 AWL                    AWL: From: address is in the auto white-list
+
+Jason White <jason@jasonjgw.net> writes:
+
+> Package: gnome-orca
+> Version: 2.22.1-1.1
+> Severity: normal
+>
+> Now that Python 2.5 is the default /usr/bin/python in Sid, Orca gives an
+
+> error ("cannot connect to the desktop") and terminates during
+> startup.
+>
+> The fix is to change the python path specified in the /usr/bin/orca scrip=
+t to
+> refer to Python 2.5:
+> PYTHONPATH=3D${PYTHONPATH}:${exec_prefix}/lib/python2.5/site-packages
+
+Actually, I think the correct fix is to remove the code altogether.
+
+> With this change, Orca starts up properly.
+>
+> I suppose you could also change the python command in /usr/bin/orca to re=
+fer
+> to a particular version of Python instead of whatever the /usr/bin/python
+> symlink refers to.
+
+As you can verify with:
+$ ls -d /var/lib/python-support/python2.?/orca
+/var/lib/python-support/python2.4/orca  /var/lib/python-support/python2.5/o=
+rca
+orca is already compiled for both python versions (2.4 and 2.5).
+The bug IMO is actually the frobbing of PYTHON_PATH, which I am going
+to remove in the next upload, thanks.
+
+--=20
+CYa,
+  =E2=A1=8D=E2=A0=81=E2=A0=97=E2=A0=8A=E2=A0=95 | Debian Developer <URL:htt=
+p://debian.org/>
+  .''`. | Get my public key via finger mlang@db.debian.org
+ : :' : | 1024D/7FC1A0854909BCCDBE6C102DDFFC022A6B113E44
+ `. `'
+   `-      <URL:http://delysid.org/>  <URL:http://www.staff.tugraz.at/mlang=
+/>
+
+
+

@@ -1,0 +1,132 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 20:32:34 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnfH5-0000ip-SZ
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 20:32:34 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 7662913A51F9; Sun, 20 Apr 2008 19:31:45 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id 06CBF13A519C
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 19:31:45 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1Jnf2S-0004qy-6X; Sun, 20 Apr 2008 19:17:24 +0000
+From: Bastian Blank <waldi@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted libextutils-autoinstall-perl 0.63-1 (source all)
+Message-Id: <E1Jnf2S-0004qy-6X@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 19:17:24 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <NRYEF4y_oeP.A.hqE.ho5CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301341
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 19:31:45 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.6
+X-Spam-Report: (-2.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.0 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 20:58:37 +0200
+Source: libextutils-autoinstall-perl
+Binary: libextutils-autoinstall-perl
+Architecture: source all
+Version: 0.63-1
+Distribution: unstable
+Urgency: low
+Maintainer: Bastian Blank <waldi@debian.org>
+Changed-By: Bastian Blank <waldi@debian.org>
+Description:=20
+ libextutils-autoinstall-perl - Automatic install of dependencies via CPA=
+N
+Changes:=20
+ libextutils-autoinstall-perl (0.63-1) unstable; urgency=3Dlow
+ .
+   * New upstream version.
+   * Use external orig.
+Checksums-Sha1:=20
+ 145b05c96d686708f1a256fa933940279764e28e 1141 libextutils-autoinstall-pe=
+rl_0.63-1.dsc
+ 2889fe7787ca61948456f280a7eaebe0c48cb89e 27490 libextutils-autoinstall-p=
+erl_0.63.orig.tar.gz
+ c15e77d5d9766e43e29589deaecf085b5bfeddd5 3481 libextutils-autoinstall-pe=
+rl_0.63-1.diff.gz
+ 99af680cc1e95e27d59a22a9735d8bb13f5a0780 22130 libextutils-autoinstall-p=
+erl_0.63-1_all.deb
+Checksums-Sha256:=20
+ afcd3652215dbb95324425f796dd4c277b28169710a170e1d161244392369394 1141 li=
+bextutils-autoinstall-perl_0.63-1.dsc
+ 234a795d723aa867f9de44834e358b632f41415b9d6f5a88456746abebd08ebe 27490 l=
+ibextutils-autoinstall-perl_0.63.orig.tar.gz
+ 758b61338c44dabe52a4b3aacf28d33827c4f73eb7861970a4ca7f5ece4b12db 3481 li=
+bextutils-autoinstall-perl_0.63-1.diff.gz
+ 61fd9a2627a6969dd3040749e7497287776c439e7ec7806415f31bfab25a55eb 22130 l=
+ibextutils-autoinstall-perl_0.63-1_all.deb
+Files:=20
+ e5bd34679fef63e265966eb164962878 1141 perl optional libextutils-autoinst=
+all-perl_0.63-1.dsc
+ 393a4cfb012297c11ce8f6f7cb4dffff 27490 perl optional libextutils-autoins=
+tall-perl_0.63.orig.tar.gz
+ 059d475afcc726f197189c7bfee8b4bd 3481 perl optional libextutils-autoinst=
+all-perl_0.63-1.diff.gz
+ 6a5a69e0f1b64375859bd3a7967d05b0 22130 perl optional libextutils-autoins=
+tall-perl_0.63-1_all.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iEYEARECAAYFAkgLktEACgkQxWtQqFixGB7A7gCeIb2ASzSXzsweP3xfE9SK7XKQ
+KIYAn2CJQF3fScwJGjpN+x5ysdxqdLSa
+=3DdJEZ
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+libextutils-autoinstall-perl_0.63-1.diff.gz
+  to pool/main/libe/libextutils-autoinstall-perl/libextutils-autoinstall-=
+perl_0.63-1.diff.gz
+libextutils-autoinstall-perl_0.63-1.dsc
+  to pool/main/libe/libextutils-autoinstall-perl/libextutils-autoinstall-=
+perl_0.63-1.dsc
+libextutils-autoinstall-perl_0.63-1_all.deb
+  to pool/main/libe/libextutils-autoinstall-perl/libextutils-autoinstall-=
+perl_0.63-1_all.deb
+libextutils-autoinstall-perl_0.63.orig.tar.gz
+  to pool/main/libe/libextutils-autoinstall-perl/libextutils-autoinstall-=
+perl_0.63.orig.tar.gz
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

@@ -1,0 +1,148 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 04:20:05 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnQ5t-0005FZ-31
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 04:20:04 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 06FE713A4E72; Sun, 20 Apr 2008 03:19:55 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 5D94613A49A8;
+	Sun, 20 Apr 2008 03:19:40 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnQ4H-0003ke-6m; Sun, 20 Apr 2008 03:18:17 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#468698: fix for bashisms
+Reply-To: Roberto C. =?UTF-8?Q?S=C3=A1nchez?= <roberto@connexer.com>, 468698@bugs.debian.org
+Resent-From: Roberto C. =?UTF-8?Q?S=C3=A1nchez?= <roberto@connexer.com>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: roberto@connexer.com (Roberto C. Sanchez)
+Resent-Date: Sun, 20 Apr 2008 03:18:07 +0000
+Resent-Message-ID: <handler.468698.B468698.120866142511988@bugs.debian.org>
+X-Debian-PR-Message: report 468698
+X-Debian-PR-Package: shorewall-lite
+X-Debian-PR-Keywords: upstream
+X-Debian-PR-Source: shorewall-lite
+Received: via spool by 468698-submit@bugs.debian.org id=B468698.120866142511988
+          (code B ref 468698); Sun, 20 Apr 2008 03:18:07 +0000
+Received: (at 468698) by bugs.debian.org; 20 Apr 2008 03:17:05 +0000
+X-Amavis-Spam-Status: No, score=-7.0 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from bogota.connexer.com ([66.93.22.231])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <roberto@connexer.com>)
+	id 1JnQ37-00036q-A4; Sun, 20 Apr 2008 03:17:05 +0000
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by bogota.connexer.com (Postfix) with ESMTP id 7A3D7C1F6;
+	Sat, 19 Apr 2008 23:17:04 -0400 (EDT)
+Received: from bogota.connexer.com ([127.0.0.1])
+	by localhost (bogota.connexer.com [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id UU9X+UAwP-NP; Sat, 19 Apr 2008 23:17:04 -0400 (EDT)
+Received: from miami.connexer.com (miami.connexer.com [66.93.22.253])
+	by bogota.connexer.com (Postfix) with ESMTP id 3AAA1C1F5;
+	Sat, 19 Apr 2008 23:17:04 -0400 (EDT)
+Received: by miami.connexer.com (Postfix, from userid 2000)
+	id A09E45026A; Sat, 19 Apr 2008 23:17:03 -0400 (EDT)
+Date: Sat, 19 Apr 2008 23:17:03 -0400
+From: Roberto C. =?UTF-8?Q?S=C3=A1nchez?= <roberto@connexer.com>
+To: Chris AtLee <chris@atlee.ca>
+Cc: 468698@bugs.debian.org, 468699@bugs.debian.org
+Message-ID: <20080420031703.GA28281@connexer.com>
+Mail-Followup-To: Chris AtLee <chris@atlee.ca>, 468698@bugs.debian.org,
+	468699@bugs.debian.org
+References: <7790b6530804181229m598100eaq608661f2e67beaa8@mail.gmail.com>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+	protocol="application/pgp-signature"; boundary="u3/rZRmxL6MmkK24"
+Content-Disposition: inline
+In-Reply-To: <7790b6530804181229m598100eaq608661f2e67beaa8@mail.gmail.com>
+User-Agent: Mutt/1.5.13 (2006-08-11)
+Resent-Date: Sun, 20 Apr 2008 03:18:17 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343325
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -30.7
+X-Spam-Report: (-30.7 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	22 AWL                    AWL: From: address is in the auto white-list
+
+
+--u3/rZRmxL6MmkK24
+Content-Type: text/plain; charset=iso-8859-1
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+On Fri, Apr 18, 2008 at 03:29:17PM -0400, Chris AtLee wrote:
+> Hello,
+>=20
+> I believe I've fixed the relevant bashisms for this package.  The new
+> packages can be found here:
+> http://atlee.ca/software/shorewall/
+>=20
+You built shorewall-common as a Debian native package and the .tar.gz
+file returns a 403 error when I try to access it.
+
+In any event, I looked at the shorewall-lite package you prepared.  This
+particular matter is one that is being dealt with upstream.  The 4.0
+branch of shorewall is a stable release.  The diff to fix every
+occurrence of bashisms is 2743 lines.  That is a huge diff for something
+that is a stable release.  In the next upload of the packages, I intend
+to simply replace /bin/sh with /bin/dash and then depend upon dash.
+
+Regards,
+
+-Roberto
+
+--=20
+Roberto C. S=E1nchez
+http://people.connexer.com/~roberto
+http://www.connexer.com
+
+--u3/rZRmxL6MmkK24
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: Digital signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICrWv5SXWIKfIlGQRAnOhAJwJZ4d9AWeyYEhNoXVJ4ZKRKNoFTgCghkW1
+PpjkTJuf0+Oy1tV7nDshFlk=
+=BFBV
+-----END PGP SIGNATURE-----
+
+--u3/rZRmxL6MmkK24--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,398 @@
+From bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org Sun Apr 20 01:39:56 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org>)
+	id 1JnNat-00041x-JW
+	for ddc@ddc.chris-lamb.co.uk; Sun, 20 Apr 2008 01:39:56 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 6E4BC13A4B6A; Sun, 20 Apr 2008 00:39:45 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id D287813A4B41;
+	Sun, 20 Apr 2008 00:39:43 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnNXH-0005Zo-1t; Sun, 20 Apr 2008 00:36:03 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Sam Morris <sam@robots.org.uk>
+Subject: Bug#476874: marked as done (udev: Should not create /dev/dm-* 
+ devices)
+Message-ID: <handler.476874.D476874.120865160017550.ackdone@bugs.debian.org>
+References: <1208651584.5135.1.camel@xerces>
+ <20080419191805.26533.46834.reportbug@xerces>
+X-Debian-PR-Message: closed 476874
+X-Debian-PR-Package: udev
+X-Debian-PR-Source: udev
+Content-Type: multipart/mixed; boundary="----------=_1208651763-21400-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 00:36:03 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <b4geToKBldB.A.rkG.RDpCIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/132884
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 00:39:45 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: Spam detection software, running on the system "chris-lamb.co.uk", has
+	identified this incoming email as possible spam.  The original message
+	has been attached to this so you can view it (if it isn't spam) or label
+	similar future email.  If you have any questions, see
+	the administrator of that system for details.
+	Content preview:  Your message dated Sun, 20 Apr 2008 01:33:04 +0100 with
+	message-id <1208651584.5135.1.camel@xerces> and subject line Re: udev:
+	Should not create /dev/dm-* devices has caused the Debian Bug report
+	#476874, regarding udev: Should not create /dev/dm-* devices to be
+	marked as done. [...] 
+	Content analysis details:   (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208651763-21400-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 01:33:04 +0100
+with message-id <1208651584.5135.1.camel@xerces>
+and subject line Re: udev: Should not create /dev/dm-* devices
+has caused the Debian Bug report #476874,
+regarding udev: Should not create /dev/dm-* devices
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+476874: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D476874
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208651763-21400-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 19 Apr 2008 19:18:16 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.6 required=4.0 tests=BAYES_00,FOURLA,HAS_PACKAGE,
+	IMPRONONCABLE_1,MURPHY_WRONG_WORD1,MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <sam@robots.org.uk>
+Received: from crypt.ethx.net ([82.165.27.140])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <sam@robots.org.uk>)
+	id 1JnIZi-0006SJ-C3
+	for submit@bugs.debian.org; Sat, 19 Apr 2008 19:18:16 +0000
+Received: from 79-66-177-233.dynamic.dsl.as9105.com ([79.66.177.233] helo=xerces)
+	by crypt.ethx.net with esmtpsa (TLS-1.0:RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <sam@robots.org.uk>)
+	id 1JnIZf-0001av-IU; Sat, 19 Apr 2008 20:18:13 +0100
+Received: from sam by xerces with local (Exim 4.69)
+	(envelope-from <sam@robots.org.uk>)
+	id 1JnIZZ-0006v7-4F; Sat, 19 Apr 2008 20:18:05 +0100
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Sam Morris <sam@robots.org.uk>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Subject: udev: Should not create /dev/dm-* devices
+Message-ID: <20080419191805.26533.46834.reportbug@xerces>
+X-Mailer: reportbug 3.39-0.1
+Date: Sat, 19 Apr 2008 20:18:05 +0100
+Delivered-To: submit@bugs.debian.org
+
+Package: udev
+Version: 0.114-2
+Severity: important
+
+A while back it seems that udev's rules were altered so that it doesn't
+create device-mapper devices at /dev/dm-*. According to #392623, this
+was done because some part of the hal/gnome-volume-manager stack
+required them in order for encrypted filesystems to be mounted
+automatically.
+
+Well, recently this stopped working--see #467200 for the details.
+Upstream said, "The root problem is that cryptsetup creates an
+intermediate dm device before creating the real one (check with
+udevmonitor).  Am pretty sure your udev rules don't handle that
+correctly. Try adding rules to ignore the temporary node (match on the
+dm name) and I think it'll work."
+
+Today I added the following rule to my udev configuration, and I was
+able to mount encrypted filesystems again!
+
+ # ignore device mapper nodes
+ # http://bugzilla.gnome.org/show_bug.cgi?id=525346
+ # https://bugs.freedesktop.org/show_bug.cgi?id=15285
+ # http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=467200
+ KERNEL="dm-[0-9]*", OPTIONS+="ignore_device"
+
+So I request that this rule be reinstated.
+
+-- Package-specific info:
+-- /etc/udev/rules.d/:
+/etc/udev/rules.d/:
+total 136
+lrwxrwxrwx 1 root root    20 2006-02-08 21:23 020_permissions.rules -> ../permissions.rules
+lrwxrwxrwx 1 root root    19 2006-08-01 11:12 025_libgphoto2.rules -> ../libgphoto2.rules
+-rw-r--r-- 1 root root    95 2006-05-10 16:58 aiptek.rules
+-rw-r--r-- 1 root root   236 2008-04-19 20:01 dm-node.rules
+-rw-r--r-- 1 root root 12288 2008-04-19 20:01 .dm-node.rules.swp
+lrwxrwxrwx 1 root root    16 2008-04-08 18:25 libmtp7.rules -> ../libmtp7.rules
+-rw-r--r-- 1 root root    92 2006-06-06 15:59 nokia.rules
+lrwxrwxrwx 1 root root    13 2006-02-08 21:23 udev.rules -> ../udev.rules
+lrwxrwxrwx 1 root root    25 2006-04-05 00:28 z20_persistent-input.rules -> ../persistent-input.rules
+lrwxrwxrwx 1 root root    19 2006-02-08 21:23 z20_persistent.rules -> ../persistent.rules
+-rw-r--r-- 1 root root  1034 2006-09-18 00:02 z25_persistent-cd.rules
+-rw-r--r-- 1 root root   625 2008-03-15 17:21 z25_persistent-net.rules
+lrwxrwxrwx 1 root root    33 2006-04-20 13:03 z45_persistent-net-generator.rules -> ../persistent-net-generator.rules
+lrwxrwxrwx 1 root root    12 2006-02-08 21:23 z50_run.rules -> ../run.rules
+lrwxrwxrwx 1 root root    16 2006-02-08 21:23 z55_hotplug.rules -> ../hotplug.rules
+lrwxrwxrwx 1 root root    19 2006-04-19 12:27 z60_alsa-utils.rules -> ../alsa-utils.rules
+lrwxrwxrwx 1 root root    15 2006-05-24 15:56 z60_hdparm.rules -> ../hdparm.rules
+-rw-r--r-- 1 root root  1914 2008-01-03 10:02 z60_libccid.rules
+-rw-r--r-- 1 root root  2656 2008-01-03 08:15 z60_libpisock9.rules
+-rw-r--r-- 1 root root 14883 2008-03-01 15:19 z60_libsane-extras.rules
+-rw-r--r-- 1 root root 72908 2008-03-28 22:20 z60_libsane.rules
+-rw-r--r-- 1 root root    80 2008-01-15 11:41 z60_virtualbox-ose.rules
+lrwxrwxrwx 1 root root    29 2006-04-05 00:39 z75_cd-aliases-generator.rules -> ../cd-aliases-generator.rules
+lrwxrwxrwx 1 root root    12 2008-03-30 02:28 z99_hal.rules -> ../hal.rules
+
+-- /sys/:
+/sys/block/dm-0/dev
+/sys/block/dm-1/dev
+/sys/block/hda/dev
+/sys/block/hda/hda1/dev
+/sys/block/hda/hda2/dev
+/sys/block/hdb/dev
+/sys/block/hdb/hdb1/dev
+/sys/block/hdb/hdb2/dev
+/sys/block/hdc/dev
+/sys/block/hdd/dev
+/sys/block/hde/dev
+/sys/block/hde/hde1/dev
+/sys/block/hdg/dev
+/sys/block/hdg/hdg1/dev
+/sys/block/hdg/hdg2/dev
+/sys/block/md0/dev
+/sys/block/ram0/dev
+/sys/block/ram10/dev
+/sys/block/ram11/dev
+/sys/block/ram12/dev
+/sys/block/ram13/dev
+/sys/block/ram14/dev
+/sys/block/ram15/dev
+/sys/block/ram1/dev
+/sys/block/ram2/dev
+/sys/block/ram3/dev
+/sys/block/ram4/dev
+/sys/block/ram5/dev
+/sys/block/ram6/dev
+/sys/block/ram7/dev
+/sys/block/ram8/dev
+/sys/block/ram9/dev
+/sys/class/graphics/fb0/dev
+/sys/class/hidraw/hidraw0/dev
+/sys/class/input/input0/event0/dev
+/sys/class/input/input1/event1/dev
+/sys/class/input/input1/mouse0/dev
+/sys/class/input/input2/event2/dev
+/sys/class/input/input3/event3/dev
+/sys/class/input/input4/event4/dev
+/sys/class/input/mice/dev
+/sys/class/misc/agpgart/dev
+/sys/class/misc/device-mapper/dev
+/sys/class/misc/fuse/dev
+/sys/class/misc/hpet/dev
+/sys/class/misc/psaux/dev
+/sys/class/misc/rtc/dev
+/sys/class/misc/snapshot/dev
+/sys/class/ppdev/parport0/dev
+/sys/class/printer/lp0/dev
+/sys/class/sound/admmidi/dev
+/sys/class/sound/adsp/dev
+/sys/class/sound/amidi/dev
+/sys/class/sound/audio/dev
+/sys/class/sound/controlC0/dev
+/sys/class/sound/dmmidi/dev
+/sys/class/sound/dsp/dev
+/sys/class/sound/hwC0D0/dev
+/sys/class/sound/hwC0D2/dev
+/sys/class/sound/midiC0D0/dev
+/sys/class/sound/midiC0D1/dev
+/sys/class/sound/midiC0D2/dev
+/sys/class/sound/midi/dev
+/sys/class/sound/mixer/dev
+/sys/class/sound/pcmC0D0c/dev
+/sys/class/sound/pcmC0D0p/dev
+/sys/class/sound/pcmC0D1c/dev
+/sys/class/sound/pcmC0D2c/dev
+/sys/class/sound/pcmC0D2p/dev
+/sys/class/sound/pcmC0D3p/dev
+/sys/class/sound/seq/dev
+/sys/class/sound/sequencer2/dev
+/sys/class/sound/sequencer/dev
+/sys/class/sound/timer/dev
+/sys/class/usb_device/usbdev1.1/dev
+/sys/class/usb_device/usbdev1.2/dev
+/sys/class/usb_device/usbdev2.1/dev
+/sys/class/usb_device/usbdev3.1/dev
+/sys/class/usb_device/usbdev4.1/dev
+/sys/class/usb_device/usbdev4.3/dev
+/sys/class/usb_endpoint/usbdev1.1_ep00/dev
+/sys/class/usb_endpoint/usbdev1.1_ep81/dev
+/sys/class/usb_endpoint/usbdev1.2_ep00/dev
+/sys/class/usb_endpoint/usbdev1.2_ep81/dev
+/sys/class/usb_endpoint/usbdev2.1_ep00/dev
+/sys/class/usb_endpoint/usbdev2.1_ep81/dev
+/sys/class/usb_endpoint/usbdev3.1_ep00/dev
+/sys/class/usb_endpoint/usbdev3.1_ep81/dev
+/sys/class/usb_endpoint/usbdev4.1_ep00/dev
+/sys/class/usb_endpoint/usbdev4.1_ep81/dev
+/sys/class/usb_endpoint/usbdev4.3_ep00/dev
+/sys/class/usb_endpoint/usbdev4.3_ep81/dev
+/sys/devices/pci0000:00/0000:00:10.0/usb1/1-2/dev
+/sys/devices/pci0000:00/0000:00:10.0/usb1/dev
+/sys/devices/pci0000:00/0000:00:10.1/usb2/dev
+/sys/devices/pci0000:00/0000:00:10.2/usb3/dev
+/sys/devices/pci0000:00/0000:00:10.3/usb4/4-1/dev
+/sys/devices/pci0000:00/0000:00:10.3/usb4/dev
+
+-- Kernel configuration:
+
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers testing
+  APT policy: (530, 'testing'), (520, 'unstable'), (510, 'experimental')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.24-1-686 (SMP w/1 CPU core)
+Locale: LANG=en_GB.UTF-8, LC_CTYPE=en_GB.UTF-8 (charmap=UTF-8)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages udev depends on:
+ii  debconf [debconf-2.0]         1.5.20     Debian configuration management sy
+ii  libc6                         2.7-10     GNU C Library: Shared libraries
+ii  libselinux1                   2.0.59-1   SELinux shared libraries
+ii  libvolume-id0                 0.114-2    libvolume_id shared library
+ii  lsb-base                      3.1-24     Linux Standard Base 3.1 init scrip
+
+udev recommends no packages.
+
+-- debconf information:
+  udev/new_kernel_needed: false
+  udev/devfs-warning:
+  udev/reboot_needed:
+  udev/reboot-warning:
+
+
+
+------------=_1208651763-21400-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 476874-done) by bugs.debian.org; 20 Apr 2008 00:33:20 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.0 required=4.0 tests=BAYES_00 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <sam@robots.org.uk>
+Received: from crypt.ethx.net ([82.165.27.140])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <sam@robots.org.uk>)
+	id 1JnNUe-0004Yl-DA
+	for 476874-done@bugs.debian.org; Sun, 20 Apr 2008 00:33:20 +0000
+Received: from 79-66-177-233.dynamic.dsl.as9105.com ([79.66.177.233] helo=xerces)
+	by crypt.ethx.net with esmtpsa (TLS-1.0:RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <sam@robots.org.uk>)
+	id 1JnNUY-0001Fm-Ig
+	for 476874-done@bugs.debian.org; Sun, 20 Apr 2008 01:33:19 +0100
+Received: from sam by xerces with local (Exim 4.69)
+	(envelope-from <sam@robots.org.uk>)
+	id 1JnNUO-0007Z2-TL
+	for 476874-done@bugs.debian.org; Sun, 20 Apr 2008 01:33:04 +0100
+Subject: Re: udev: Should not create /dev/dm-* devices
+From: Sam Morris <sam@robots.org.uk>
+To: 476874-done@bugs.debian.org
+Content-Type: multipart/signed; micalg=pgp-sha1; protocol="application/pgp-signature"; boundary="=-CXU7u3MXJrVmiDcvqgOt"
+Date: Sun, 20 Apr 2008 01:33:04 +0100
+Message-Id: <1208651584.5135.1.camel@xerces>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.22.1 
+
+
+--=-CXU7u3MXJrVmiDcvqgOt
+Content-Type: text/plain
+Content-Transfer-Encoding: quoted-printable
+
+Ok, forget this problem... it appears that it was sheer dumb luck that I
+avoided the race (between udev sending out notifies for the
+temporary-cryptsetup device and cryptsetup destroying it) that is the
+underlying cause of the bug.
+
+--=20
+Sam Morris
+http://robots.org.uk/
+
+PGP key id 1024D/5EA01078
+3412 EA18 1277 354B 991B  C869 B219 7FDB 5EA0 1078
+
+--=-CXU7u3MXJrVmiDcvqgOt
+Content-Type: application/pgp-signature; name=signature.asc
+Content-Description: This is a digitally signed message part
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQBICo9Ashl/216gEHgRArCuAJ9kOgDiReb59XERxrSsKmU2tRHwRwCbBp03
+w8H1NN8x2nn/9g3HYgQ5aRs=
+=hllL
+-----END PGP SIGNATURE-----
+
+--=-CXU7u3MXJrVmiDcvqgOt--
+
+
+------------=_1208651763-21400-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

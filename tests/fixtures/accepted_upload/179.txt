@@ -1,0 +1,110 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 17:31:53 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JncSE-0008ID-CI
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 17:31:53 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 928CA13A4F8F; Sun, 20 Apr 2008 16:31:48 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id 5197613A4F10
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 16:31:48 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JncDv-0002w5-Tb; Sun, 20 Apr 2008 16:17:03 +0000
+From: =?utf-8?q?Krzysztof_Krzy=C5=BCaniak_=28eloy=29?= <eloy@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted libcatalyst-modules-perl 27 (source all)
+Message-Id: <E1JncDv-0002w5-Tb@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 16:17:03 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <VA7KLEMTOAF.A.TZF.0_2CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301321
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 16:31:48 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.6
+X-Spam-Report: (-2.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.0 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.7
+Date: Sun, 20 Apr 2008 18:03:32 +0200
+Source: libcatalyst-modules-perl
+Binary: libcatalyst-modules-perl
+Architecture: source all
+Version: 27
+Distribution: unstable
+Urgency: low
+Maintainer: Debian Catalyst Maintainers <pkg-catalyst-maintainers@lists.a=
+lioth.debian.org>
+Changed-By: Krzysztof Krzy=C5=BCaniak (eloy) <eloy@debian.org>
+Description:=20
+ libcatalyst-modules-perl - Modules for Catalyst
+Changes:=20
+ libcatalyst-modules-perl (27) unstable; urgency=3Dlow
+ .
+   * Remove debian/preinst debian/postrm
+   * Updated modules:
+    + Catalyst::Plugin::Dumper 0.00005
+Files:=20
+ 6b35c1cb11b540be049a4e3ee5dc69ef 1587 perl optional libcatalyst-modules-=
+perl_27.dsc
+ 90e196d308d39507af2b4f7f15c481ec 860882 perl optional libcatalyst-module=
+s-perl_27.tar.gz
+ f460472a24ecbb28d421f2a51e06294f 747606 perl optional libcatalyst-module=
+s-perl_27_all.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC2qwy+HP4f7iC8sRAsvkAJ9dH0YZ+Z+9SP316eRLDkGi7APiLwCeNlkm
+ebg80qX7rRuhBjENvZBGPxg=3D
+=3D8h2w
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+libcatalyst-modules-perl_27.dsc
+  to pool/main/libc/libcatalyst-modules-perl/libcatalyst-modules-perl_27.=
+dsc
+libcatalyst-modules-perl_27.tar.gz
+  to pool/main/libc/libcatalyst-modules-perl/libcatalyst-modules-perl_27.=
+tar.gz
+libcatalyst-modules-perl_27_all.deb
+  to pool/main/libc/libcatalyst-modules-perl/libcatalyst-modules-perl_27_=
+all.deb
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

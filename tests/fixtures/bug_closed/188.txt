@@ -1,0 +1,276 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 13:39:46 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnYpZ-0006xD-7I
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 13:39:46 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 8571913A4F8B; Sun, 20 Apr 2008 12:39:39 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id E525813A4F5F;
+	Sun, 20 Apr 2008 12:39:37 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnYox-00049o-SC; Sun, 20 Apr 2008 12:39:03 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Mark Purcell <msp@debian.org>
+Subject: Bug#476939: marked as done (missing build-dependencies)
+Message-ID: <handler.476939.D476939.12086949167355.ackdone@bugs.debian.org>
+References: <E1JnYTe-0005pv-SR@ries.debian.org>
+ <20080420094403.GJ18495@kos.to>
+X-Debian-PR-Message: closed 476939
+X-Debian-PR-Package: cupsddk
+X-Debian-PR-Source: cupsddk
+Content-Type: multipart/mixed; boundary="----------=_1208695143-15962-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 12:39:03 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <uDDtTru2kID.A.D2B.LmzCIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/132984
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 12:39:39 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208695143-15962-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 12:17:02 +0000
+with message-id <E1JnYTe-0005pv-SR@ries.debian.org>
+and subject line Bug#476939: fixed in cupsddk 1.2.3-2
+has caused the Debian Bug report #476939,
+regarding missing build-dependencies
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+476939: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D476939
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208695143-15962-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 09:44:06 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.8 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	HAS_PACKAGE,MURPHY_DRUGS_REL8 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <nchip@kos.to>
+Received: from naru.obs2.net
+	([84.20.150.76] helo=narury.org ident=postfix)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <nchip@kos.to>)
+	id 1JnW5e-0002Bl-K6
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 09:44:06 +0000
+Received: from kos.to (localhost.localdomain [127.0.0.1])
+	(using TLSv1 with cipher ADH-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by narury.org (Postfix) with ESMTP id EC02A3274008
+	for <submit@bugs.debian.org>; Sun, 20 Apr 2008 12:44:03 +0300 (EEST)
+Received: by kos.to (Postfix, from userid 573)
+	id C1D96EE81DD; Sun, 20 Apr 2008 12:44:03 +0300 (EEST)
+Date: Sun, 20 Apr 2008 12:44:03 +0300
+From: Riku Voipio <riku.voipio@iki.fi>
+To: submit@bugs.debian.org
+Subject: missing build-dependencies
+Message-ID: <20080420094403.GJ18495@kos.to>
+References: <E1JnQ0v-0004ui-Fd@all6500-2>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <E1JnQ0v-0004ui-Fd@all6500-2>
+X-message-flag: Warning: message not sent with a DRM-Certified client
+User-Agent: Mutt/1.5.11+cvs20060126
+Delivered-To: submit@bugs.debian.org
+
+Package: cupsddk
+Version: 1.2.3-1
+Severity: serious
+
+Atleast dpatch build-dependency missing...
+
+> dh_testdir
+> dpatch deapply-all
+> make: dpatch: Command not found
+> make: *** [unpatch] Error 127
+> dpkg-buildpackage: failure: /usr/bin/fakeroot debian/rules clean gave error exit status 2
+
+
+
+------------=_1208695143-15962-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 476939-close) by bugs.debian.org; 20 Apr 2008 12:35:16 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.6 required=4.0 tests=BAYES_00,FOURLA,
+	FROMDEVELOPER,FVGT_m_MULTI_ODD,HAS_BUG_NUMBER,HEADER_X_KATIE,
+	IMPRONONCABLE_2,MURPHY_DRUGS_REL8,MURPHY_WRONG_WORD1,
+	MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnYlI-0001uD-Kc
+	for 476939-close@bugs.debian.org; Sun, 20 Apr 2008 12:35:16 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnYTe-0005pv-SR; Sun, 20 Apr 2008 12:17:02 +0000
+From: Mark Purcell <msp@debian.org>
+To: 476939-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#476939: fixed in cupsddk 1.2.3-2
+Message-Id: <E1JnYTe-0005pv-SR@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 12:17:02 +0000
+Content-Transfer-Encoding: quoted-printable
+
+Source: cupsddk
+Source-Version: 1.2.3-2
+
+We believe that the bug you reported is fixed in the latest version of
+cupsddk, which is due to be installed in the Debian FTP archive:
+
+cupsddk-drivers_1.2.3-2_powerpc.deb
+  to pool/main/c/cupsddk/cupsddk-drivers_1.2.3-2_powerpc.deb
+cupsddk_1.2.3-2.diff.gz
+  to pool/main/c/cupsddk/cupsddk_1.2.3-2.diff.gz
+cupsddk_1.2.3-2.dsc
+  to pool/main/c/cupsddk/cupsddk_1.2.3-2.dsc
+cupsddk_1.2.3-2_powerpc.deb
+  to pool/main/c/cupsddk/cupsddk_1.2.3-2_powerpc.deb
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 476939@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Mark Purcell <msp@debian.org> (supplier of updated cupsddk package)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Tue, 08 Apr 2008 20:20:03 +1000
+Source: cupsddk
+Binary: cupsddk cupsddk-drivers
+Architecture: source powerpc
+Version: 1.2.3-2
+Distribution: unstable
+Urgency: high
+Maintainer: Debian HPIJS and HPLIP maintainers <pkg-hpijs-devel@lists.ali=
+oth.debian.org>
+Changed-By: Mark Purcell <msp@debian.org>
+Description:=20
+ cupsddk    - CUPS Driver Development Kit
+ cupsddk-drivers - CUPS Driver Development Kit - Driver files
+Closes: 476939
+Changes:=20
+ cupsddk (1.2.3-2) unstable; urgency=3Dhigh
+ .
+   * Urgency high to fix serious bug
+   * Remove debian/rules ref to patch/ unpatch
+     - missing build-dependencies (Closes: #476939)
+Checksums-Sha1:=20
+ 0d5588874c7f74de3b799b893b8cb6bd507b6e3f 1289 cupsddk_1.2.3-2.dsc
+ 32df3ade0fec1377fad7c41c5e7aa1522d905dde 4534 cupsddk_1.2.3-2.diff.gz
+ 270f063ed918cfc3e82bcf417f7caf42dbb5422e 190512 cupsddk_1.2.3-2_powerpc.=
+deb
+ c67dd8d920b1976ce0fba0d46aa849dc38f76b91 127424 cupsddk-drivers_1.2.3-2_=
+powerpc.deb
+Checksums-Sha256:=20
+ b6273b279e321f9b49db5d6ade4ebbb381ed84d797ad57af76fe7d00baab5f4c 1289 cu=
+psddk_1.2.3-2.dsc
+ fe09752c390a1632c4fdfefec21c94e40e4ef552e0a45ffe492b53cff49c0284 4534 cu=
+psddk_1.2.3-2.diff.gz
+ c00b7e46290948c296dd070c46930a5f4cbcb75a47eb4c1488d48da568a8e2d8 190512 =
+cupsddk_1.2.3-2_powerpc.deb
+ 7149156217e2ead705f2d3980555573a03ba077ae3074ee6dba431553119137a 127424 =
+cupsddk-drivers_1.2.3-2_powerpc.deb
+Files:=20
+ a1e481966da05bc844e5fc9ebfebaa10 1289 text optional cupsddk_1.2.3-2.dsc
+ 424fe84e45bab42a8e8c92d8de901f21 4534 text optional cupsddk_1.2.3-2.diff=
+.gz
+ 8a5ac76edd0d5230a405410b6acbb6cd 190512 text optional cupsddk_1.2.3-2_po=
+werpc.deb
+ 724269e2c4c054d27a2d76b0fe7b82f1 127424 text optional cupsddk-drivers_1.=
+2.3-2_powerpc.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICzIloCzanz0IthIRArIHAKCE5gKruPMJeV8n8bwkTr6OTQWK8ACggq2d
+1TovG6T9e/XuTDgVrMHxtc0=3D
+=3DZkAU
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208695143-15962-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

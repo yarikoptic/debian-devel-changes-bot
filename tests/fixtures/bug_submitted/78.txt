@@ -1,0 +1,145 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 10:35:05 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnVwq-00062i-Ow
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 10:35:05 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 82C9413A4EA4; Sun, 20 Apr 2008 09:34:59 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.9 required=4.0 tests=BAYES_00,FOURLA,
+	RCVD_IN_DNSWL_LOW autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 3F5E913A4EAC;
+	Sun, 20 Apr 2008 09:34:48 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnVv0-00087c-O8; Sun, 20 Apr 2008 09:33:06 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476933: pdftk: Missing security provider GnuCrypto: should depend on libgnucrypto-java?
+Reply-To: Michael Krax <mk@krax.net>, 476933@bugs.debian.org
+Resent-From: Michael Krax <mk@krax.net>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: =?UTF-8?Q?Aur=C3=A9lien_?= =?UTF-8?Q?G=C3=89R=C3=94ME?= <ag@roxor.cx>
+Resent-Date: Sun, 20 Apr 2008 09:33:04 +0000
+Resent-Message-ID: <handler.476933.B.120868388229531@bugs.debian.org>
+X-Debian-PR-Message: report 476933
+X-Debian-PR-Package: pdftk
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: pdftk
+Received: via spool by submit@bugs.debian.org id=B.120868388229531
+          (code B ref -1); Sun, 20 Apr 2008 09:33:04 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 09:31:22 +0000
+X-Amavis-Spam-Status: No, score=-9.8 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,HAS_PACKAGE autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from outpost1.zedat.fu-berlin.de ([130.133.4.66])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <mk@krax.net>)
+	id 1JnVtK-0007fy-JV
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 09:31:22 +0000
+Received: from inpost2.zedat.fu-berlin.de ([130.133.4.69])
+          by outpost1.zedat.fu-berlin.de (Exim 4.69)
+          for submit@bugs.debian.org with esmtp
+          (envelope-from <mk@krax.net>)
+          id <1JnVtJ-0006gR-7o>; Sun, 20 Apr 2008 11:31:21 +0200
+Received: from port-87-193-158-245.static.qsc.de ([87.193.158.245] helo=krax.dialup.fu-berlin.de)
+          by inpost2.zedat.fu-berlin.de (Exim 4.69)
+          for submit@bugs.debian.org with esmtpsa
+          (envelope-from <mk@krax.net>)
+          id <1JnVtJ-0003sZ-49>; Sun, 20 Apr 2008 11:31:21 +0200
+Received: from mk by krax.net with local (masqmail 0.2.21) id
+ 1JnVtI-5Uf-00 for <submit@bugs.debian.org>; Sun, 20 Apr 2008 11:31:20
+ +0200
+Date: Sun, 20 Apr 2008 11:31:20 +0200
+From: Michael Krax <mk@krax.net>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Message-ID: <20080420092524.19048.16817.reportbug@carmen.bln.krax.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+X-Mailer: reportbug 3.39
+X-Gpg-Fingerprint: FCB3 B40D F472 A00E 238F  0FF0 9AC0 7217 AD12 ADBC
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+X-Originating-IP: 87.193.158.245
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 09:33:06 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343385
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.5
+X-Spam-Report: (-52.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+Package: pdftk
+Version: 1.41-2
+Severity: normal
+
+
+pdftk should probably depend on libgnucrypto-java
+
+Following error appears while trying to set a owner_pw on a dvipdfm
+generated pdf file:
+
+WARNING: Error loading security provider gnu.crypto.jce.GnuCrypto:
+java.lang.ClassNotFoundException: gnu.crypto.jce.GnuCrypto not found in
+gnu.gcj.runtime.SystemClassLoader{urls=[file:./],
+parent=gnu.gcj.runtime.ExtensionClassLoader{urls=[], parent=null}}
+
+After installing libgnucrypto-java, the error message disappears and the
+program works.
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (500, 'unstable'), (500, 'stable'), (1, 'experimental')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.22-3-k7 (SMP w/1 CPU core)
+Locale: LANG=de_DE@euro, LC_CTYPE=de_DE@euro (charmap=ISO-8859-15)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages pdftk depends on:
+ii  libc6                         2.7-10     GNU C Library: Shared libraries
+ii  libgcc1                       1:4.3.0-3  GCC support library
+ii  libgcj8-1                     4.2.3-3    Java runtime library for use with 
+ii  libstdc++6                    4.3.0-3    The GNU Standard C++ Library v3
+
+pdftk recommends no packages.
+
+-- no debconf information
+
+-- 
+Michael Krax
+Phone +49 30 69 20 64 32   Mobile +49 160 96 79 86 89
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

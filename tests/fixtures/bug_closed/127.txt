@@ -1,0 +1,205 @@
+From bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org Sun Apr 20 11:42:45 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org>)
+	id 1JnX0L-0006Qx-31
+	for ddc@ddc.chris-lamb.co.uk; Sun, 20 Apr 2008 11:42:45 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id CC1E213A4EB9; Sun, 20 Apr 2008 10:42:39 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 5CAB113A498D;
+	Sun, 20 Apr 2008 10:42:21 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnWwr-00036V-RA; Sun, 20 Apr 2008 10:39:05 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Riku Voipio <riku.voipio@iki.fi>
+Subject: Bug#326087: marked as done (Removing debian init script would be 
+ better than conflicting with alsa-base and aumix)
+Message-ID: <handler.326087.D326087.12086877687014.ackdone@bugs.debian.org>
+References: <20080420103606.GA17201@kos.to>
+ <20050901180328.MTLG3588.fed1rmmtao03.cox.net@yahoo.com>
+X-Debian-PR-Message: closed 326087
+X-Debian-PR-Package: setmixer
+X-Debian-PR-Source: setmixer
+Content-Type: multipart/mixed; boundary="----------=_1208687945-11928-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 10:39:05 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <C8Y-ROgcjXL.A.DEC.W4xCIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/132941
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 10:42:39 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208687945-11928-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 13:36:06 +0300
+with message-id <20080420103606.GA17201@kos.to>
+and subject line setmixer removed
+has caused the Debian Bug report #326087,
+regarding Removing debian init script would be better than conflicting with=
+ alsa-base and aumix
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+326087: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D326087
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208687945-11928-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 1 Sep 2005 18:04:04 +0000
+Return-path: <jimmybgood9@yahoo.com>
+Received: from fed1rmmtao03.cox.net [68.230.241.36] 
+	by spohr.debian.org with esmtp (Exim 3.36 1 (Debian))
+	id 1EAtPv-0002ok-00; Thu, 01 Sep 2005 11:04:03 -0700
+Received: from yahoo.com ([68.228.35.156]) by fed1rmmtao03.cox.net
+          (InterMail vM.6.01.05.02 201-2131-123-102-20050715) with ESMTP
+          id <20050901180328.MTLG3588.fed1rmmtao03.cox.net@yahoo.com>
+          for <submit@bugs.debian.org>; Thu, 1 Sep 2005 14:03:28 -0400
+Date: Thu, 1 Sep 2005 11:03:46 -0700 (MST)
+From: James Blanford <jimmybgood9@yahoo.com>
+Reply-To: jimmybgood9@yahoo.com
+Subject: Removing debian init script would be better than conflicting with
+ alsa-base and aumix
+To: submit@bugs.debian.org
+MIME-Version: 1.0
+Content-Type: TEXT/plain; charset=us-ascii
+Message-Id: <20050901180328.MTLG3588.fed1rmmtao03.cox.net@yahoo.com>
+Delivered-To: submit@bugs.debian.org
+X-Spam-Checker-Version: SpamAssassin 2.60-bugs.debian.org_2005_01_02 
+	(1.212-2003-09-23-exp) on spohr.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, hits=-0.1 required=4.0 tests=BAYES_00,FAKE_HELO_YAHOO,
+	FORGED_YAHOO_RCVD,HAS_PACKAGE,RCVD_FAKE_HELO_DOTCOM autolearn=no 
+	version=2.60-bugs.debian.org_2005_01_02
+
+Package: setmixer
+Version: 27DEC94ds1-1
+Severity: Wishlist
+
+I have yet to find any sound mixer application that can properly control
+all my sound devices.  With setmixer conflicting with alsa-base and
+aumix, I loose functionality.  Removing the functionality that saves and
+restores mixer settings on boot-up and the resulting conflicts would be
+a better solution than conflicting with similar programs and thereby
+leaving Debian users with one less option.  Just because a program _can_
+be run at system startup doesn't mean it _has_ to be.
+
+I can have multiple types of web browsers and editors and all manner of
+programs, why can't I have multiple types of mixers?
+
+The result of the recent changes is that one more useful piece of
+software - one more option - cannot be installed.  On the other hand, if
+the initscripts and conflicts were removed, functionality would be
+retained and I would still have all my options.  If someone wants to run
+setmixer at boot, it's relatively easy to put a little script in
+/etc/rc.boot. It's also reasonable to assume that someone wanting to use
+an obscure commandline program like setmixer would be capable of doing
+so.  An example startup script could even be placed in
+/usr/share/doc/setmixer/examples.
+
+Referencing bug # 202151, if the maintainer believes, "...looks like
+aumix has improved since I uploaded setmixer, so  there is not much
+specific need for setmixer anymore", he should probably give up the
+program.
+
+
+------------=_1208687945-11928-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 326087-done) by bugs.debian.org; 20 Apr 2008 10:36:08 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-3.9 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <nchip@kos.to>
+Received: from naru.obs2.net
+	([84.20.150.76] helo=narury.org ident=postfix)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <nchip@kos.to>)
+	id 1JnWtz-0001nA-J7; Sun, 20 Apr 2008 10:36:07 +0000
+Received: from kos.to (localhost.localdomain [127.0.0.1])
+	(using TLSv1 with cipher ADH-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by narury.org (Postfix) with ESMTP id 4A1B93274008;
+	Sun, 20 Apr 2008 13:36:06 +0300 (EEST)
+Received: by kos.to (Postfix, from userid 573)
+	id 24983EE81DD; Sun, 20 Apr 2008 13:36:06 +0300 (EEST)
+Date: Sun, 20 Apr 2008 13:36:06 +0300
+From: Riku Voipio <riku.voipio@iki.fi>
+To: 244467-done@bugs.debian.org, 368678-done@bugs.debian.org,
+	326087-done@bugs.debian.org
+Subject: setmixer removed
+Message-ID: <20080420103606.GA17201@kos.to>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+X-message-flag: Warning: message not sent with a DRM-Certified client
+User-Agent: Mutt/1.5.11+cvs20060126
+X-CrossAssassin-Score: 2
+
+Setmixer has now been removed from debian. Setting mixer by
+default on boottime is not done by alsa-base. Setting mixer
+from command line is done with "amixer" command
+from alsa-utils.
+
+-- 
+"rm -rf" only sounds scary if you don't have backups
+
+
+------------=_1208687945-11928-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

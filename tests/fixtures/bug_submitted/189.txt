@@ -1,0 +1,130 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 18:56:06 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jndli-0000Ep-CU
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 18:56:05 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id D81FD13A50F5; Sun, 20 Apr 2008 17:56:00 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.7 required=4.0 tests=BAYES_00,FOURLA,
+	IMPRONONCABLE_1,MURPHY_DRUGS_REL8,MURPHY_WRONG_WORD2,RCVD_IN_DNSWL_LOW
+	autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 83D4913A47C5;
+	Sun, 20 Apr 2008 17:55:36 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jndjs-0006KL-6K; Sun, 20 Apr 2008 17:54:08 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#477058: tipptrainer: annoying display flash every time one types a character
+Reply-To: Zack Weinberg <zackw@panix.com>, 477058@bugs.debian.org
+Resent-From: Zack Weinberg <zackw@panix.com>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: zackw@panix.com, Andreas Tille <tille@debian.org>
+Resent-Date: Sun, 20 Apr 2008 17:54:05 +0000
+Resent-Message-ID: <handler.477058.B.120871401623539@bugs.debian.org>
+X-Debian-PR-Message: report 477058
+X-Debian-PR-Package: tipptrainer
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: tipptrainer
+Received: via spool by submit@bugs.debian.org id=B.120871401623539
+          (code B ref -1); Sun, 20 Apr 2008 17:54:05 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 17:53:36 +0000
+X-Amavis-Spam-Status: No, score=-9.5 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,HAS_PACKAGE,IMPRONONCABLE_1,MURPHY_DRUGS_REL8,
+	MURPHY_WRONG_WORD2,RCVD_IN_SORBS_DUL,X_DEBBUGS_CC autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from c-24-126-158-138.hsd1.ga.comcast.net ([24.126.158.138] helo=mrtock.ucsd.edu)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <zackw@panix.com>)
+	id 1JndjM-00064r-Mx
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 17:53:36 +0000
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Zack Weinberg <zackw@panix.com>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Message-ID: <20080420175331.3747.47289.reportbug@mrtock.ucsd.edu>
+X-Mailer: reportbug 3.39-0.1
+Date: Sun, 20 Apr 2008 13:53:31 -0400
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 17:54:08 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343697
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.5
+X-Spam-Report: (-52.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+Package: tipptrainer
+Version: 0.6.0-13
+Severity: normal
+
+Every time one types a character in a tipptrainer lesson, the top half of the
+window flashes (the half showing the text to be typed).  At the beginning of
+a lesson this effect is hard to see, but as you get farther and farther along
+it gets worse and worse.
+
+I have traced the problem to outputcontrol.cpp, TtOutputControl::highlightChar,
+which calls ShowPosition() and SetInsertionPoint() every single time a
+character is typed.  I suspect that if this code were changed to call these
+functions (and the surrounding Freeze()/Thaw()) only when the cursor should
+move from one line to the next, the flashing would stop.
+
+Unfortunately, I can't figure out how to tell when that happens, so I cannot
+supply a patch.
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (500, 'unstable'), (500, 'testing')
+Architecture: amd64 (x86_64)
+
+Kernel: Linux 2.6.24-1-amd64 (SMP w/4 CPU cores)
+Locale: LANG=en_US.UTF-8, LC_CTYPE=en_US.UTF-8 (charmap=UTF-8)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages tipptrainer depends on:
+ii  libc6                        2.7-10      GNU C Library: Shared libraries
+ii  libgcc1                      1:4.3.0-3   GCC support library
+ii  libstdc++6                   4.3.0-3     The GNU Standard C++ Library v3
+ii  libwxbase2.6-0               2.6.3.2.2-2 wxBase library (runtime) - non-GUI
+ii  libwxgtk2.6-0                2.6.3.2.2-2 wxWidgets Cross-platform C++ GUI t
+ii  tipptrainer-data-en          0.6.0-13    English data for tipptrainer
+ii  wx2.6-i18n                   2.6.3.2.2-2 wxWidgets Cross-platform C++ GUI t
+
+tipptrainer recommends no packages.
+
+-- no debconf information
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

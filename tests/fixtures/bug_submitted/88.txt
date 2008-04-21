@@ -1,0 +1,138 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 08:19:53 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnTpz-0005gO-3q
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 08:19:53 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id E47FA13A4C5A; Sun, 20 Apr 2008 07:19:44 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.4 required=4.0 tests=BAYES_00,FOURLA,PHONENUMBER,
+	RCVD_IN_DNSWL_LOW autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 13DA713A4C2B;
+	Sun, 20 Apr 2008 07:19:35 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnTlQ-0007OA-NH; Sun, 20 Apr 2008 07:15:05 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476908: libmail-dkim-perl: version 0.31 available, please upload
+Reply-To: Michele Baldessari <michele@pupazzo.org>, 476908@bugs.debian.org
+Resent-From: Michele Baldessari <michele@pupazzo.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Magnus Holmgren <magnus@kibibyte.se>
+Resent-Date: Sun, 20 Apr 2008 07:15:01 +0000
+Resent-Message-ID: <handler.476908.B.12086755418069@bugs.debian.org>
+X-Debian-PR-Message: report 476908
+X-Debian-PR-Package: libmail-dkim-perl
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: libmail-dkim-perl
+Received: via spool by submit@bugs.debian.org id=B.12086755418069
+          (code B ref -1); Sun, 20 Apr 2008 07:15:01 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 07:12:21 +0000
+X-Amavis-Spam-Status: No, score=-8.3 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,HAS_PACKAGE,PHONENUMBER autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from mgrava.tizianodinca.com ([195.47.199.19] helo=mail2.rhx.it)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <michele@pupazzo.org>)
+	id 1JnTin-0001x2-Fv
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 07:12:21 +0000
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by mail2.rhx.it (Postfix) with ESMTP id 7D7B93F602D;
+	Sun, 20 Apr 2008 09:12:14 +0200 (CEST)
+X-Virus-Scanned: Debian amavisd-new at localhost.localdomain
+Received: from mail2.rhx.it ([127.0.0.1])
+	by localhost (mail2.rhx.it [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id mFU6F026U-I4; Sun, 20 Apr 2008 09:12:14 +0200 (CEST)
+Received: from unstable (host22-23-dynamic.20-79-r.retail.telecomitalia.it [79.20.23.22])
+	(using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+	(Client CN "kantele", Issuer "mail2.rhx.it" (not verified))
+	by mail2.rhx.it (Postfix) with ESMTPS id EA6223F602C;
+	Sun, 20 Apr 2008 09:12:13 +0200 (CEST)
+Received: by unstable (Postfix, from userid 1000)
+	id AF5661008A; Sun, 20 Apr 2008 09:09:24 +0200 (CEST)
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Michele Baldessari <michele@pupazzo.org>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Message-ID: <20080420070924.25817.33802.reportbug@conrad.int.rhx>
+X-Mailer: reportbug 3.39-0.1
+Date: Sun, 20 Apr 2008 09:09:24 +0200
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 07:15:04 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343343
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.5
+X-Spam-Report: (-52.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+Package: libmail-dkim-perl
+Version: 0.30.1-1
+Severity: wishlist
+
+Hello Magnus,
+
+0.31 came out with some interesting fixes (I've been bitten especially by #1878954),
+also amavisd-new-2.6.0-rc2 requires 0.31 now (yes, it's not packaged yet ;) ).
+Please upload it whenever you got a chance.
+
+Thanks,
+Michele
+
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (500, 'unstable')
+Architecture: amd64 (x86_64)
+
+Kernel: Linux 2.6.24-1-amd64 (SMP w/2 CPU cores)
+Locale: LANG=en_US.UTF-8, LC_CTYPE=en_US.UTF-8 (charmap=UTF-8)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages libmail-dkim-perl depends on:
+ii  libcrypt-openssl-rsa-perl     0.25-1     Perl module providing basic RSA fu
+ii  libdigest-sha-perl            5.46-1     Perl extension for SHA-1/224/256/3
+ii  libdigest-sha1-perl           2.11-2     NIST SHA-1 message digest algorith
+ii  liberror-perl                 0.17-1     Perl module for error/exception ha
+ii  libmailtools-perl             2.02-1     Manipulate email in perl programs
+ii  libnet-dns-perl               0.63-1     Perform DNS queries from a Perl sc
+ii  perl                          5.8.8-12   Larry Wall's Practical Extraction 
+
+libmail-dkim-perl recommends no packages.
+
+-- no debconf information
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

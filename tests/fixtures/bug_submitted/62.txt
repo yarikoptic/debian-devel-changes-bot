@@ -1,0 +1,283 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 16:51:11 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnboS-0007rv-Gc
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 16:51:10 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id CDDE413A50E2; Sun, 20 Apr 2008 15:50:42 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 1AA8513A50D2;
+	Sun, 20 Apr 2008 15:50:02 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnbn3-00033v-8y; Sun, 20 Apr 2008 15:49:17 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#477008: python-wsgiref: FTBFS: Unsatisfiable build-dependency: python(inst 2.5.2-1 ! << wanted 2.5)|python2.4(missing)
+Reply-To: Lucas Nussbaum <lucas@lucas-nussbaum.net>, 477008@bugs.debian.org
+Resent-From: Lucas Nussbaum <lucas@lucas-nussbaum.net>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Noah Slater <nslater@bytesexual.org>
+Resent-Date: Sun, 20 Apr 2008 15:49:12 +0000
+Resent-Message-ID: <handler.477008.B.12087064032616@bugs.debian.org>
+X-Debian-PR-Message: report 477008
+X-Debian-PR-Package: python-wsgiref
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: python-wsgiref
+Received: via spool by submit@bugs.debian.org id=B.12087064032616
+          (code B ref -1); Sun, 20 Apr 2008 15:49:12 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 15:46:43 +0000
+X-Amavis-Spam-Status: No, score=-10.0 required=4.0 tests=BAYES_00,HAS_PACKAGE 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from xanadu.blop.info ([80.248.208.235])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <lucas@lucas-nussbaum.net>)
+	id 1JnbkY-0000eB-EQ
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 15:46:43 +0000
+Received: from localhost ([127.0.0.1] helo=xanadu.blop.info)
+	by xanadu.blop.info with smtp (Exim 4.63)
+	(envelope-from <lucas@lucas-nussbaum.net>)
+	id 1JnbkX-0000Bc-Ch
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 17:46:41 +0200
+Received: (nullmailer pid 18905 invoked by uid 1000);
+	Sun, 20 Apr 2008 14:26:16 -0000
+Date: Sun, 20 Apr 2008 16:26:16 +0200
+From: Lucas Nussbaum <lucas@lucas-nussbaum.net>
+To: submit@bugs.debian.org
+Message-ID: <20080420142616.GA18874@xanadu.blop.info>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 15:49:17 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343567
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -36.6
+X-Spam-Report: (-36.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	16 AWL                    AWL: From: address is in the auto white-list
+
+Package: python-wsgiref
+Version: 0.1.2-3
+Severity: serious
+User: debian-qa@lists.debian.org
+Usertags: qa-ftbfs-20080419 qa-ftbfs
+Justification: FTBFS on i386
+
+Hi,
+
+During a rebuild of all packages in sid, your package failed to build on i386.
+
+This rebuild was done with gcc 4.3 instead of gcc 4.2, because gcc 4.3 is now
+the default on most architectures (even if it's not the case on i386 yet).
+Feel free to downgrade this bug to 'important' if your package is only built
+on i386, and this bug is specific to gcc 4.3 (i.e the package builds fine with
+gcc 4.2).
+
+Relevant part:
+> ** Using build dependencies supplied by package:
+> Build-Depends: cdbs (>= 0.4.42), debhelper (>= 5.0.37.2), python (>= 2.3), python (<< 2.5) | python2.4
+> Build-Depends-Indep: python-setuptools (>= 0.6b3), python-support (>= 0.6.4)
+> Checking for already installed source dependencies...
+> cdbs: missing
+> Using default version 0.4.52
+> debhelper: missing
+> Using default version 6.0.11
+> python: missing
+> Using default version 2.5.2-1
+> python: missing
+> Default version of python not sufficient, no suitable version found. Skipping for now, maybe there are alternatives.
+> python2.4: missing
+> python-setuptools: missing
+> Using default version 0.6c8-3
+> python-support: missing
+> Using default version 0.7.7
+> Checking for source dependency conflicts...
+> Reading package lists...
+> Building dependency tree...
+> Reading state information...
+> The following extra packages will be installed:
+>   bsdmainutils file gettext gettext-base groff-base html2text intltool-debian
+>   libdb4.5 libmagic1 libncursesw5 libsqlite3-0 libssl0.9.8 man-db mime-support
+>   po-debconf python-central python-minimal python-pkg-resources python2.5
+>   python2.5-minimal
+> Suggested packages:
+>   wamerican wordlist whois vacation devscripts doc-base dh-make cvs
+>   gettext-doc groff www-browser python-doc python-tk python-profiler
+>   python2.5-doc binfmt-support
+> Recommended packages:
+>   autotools-dev curl wget lynx libgpmg1 libcompress-zlib-perl libmail-box-perl
+>   libmail-sendmail-perl
+> The following NEW packages will be installed:
+>   bsdmainutils cdbs debhelper file gettext gettext-base groff-base html2text
+>   intltool-debian libdb4.5 libmagic1 libncursesw5 libsqlite3-0 libssl0.9.8
+>   man-db mime-support po-debconf python python-central python-minimal
+>   python-pkg-resources python-setuptools python-support python2.5
+>   python2.5-minimal
+> 0 upgraded, 25 newly installed, 0 to remove and 0 not upgraded.
+> Need to get 15.5MB of archives.
+> After this operation, 45.4MB of additional disk space will be used.
+> WARNING: The following packages cannot be authenticated!
+>   bsdmainutils groff-base libncursesw5 libssl0.9.8 man-db libmagic1 file
+>   gettext-base libdb4.5 mime-support libsqlite3-0 python2.5-minimal python2.5
+>   python-minimal python python-central python-support html2text gettext
+>   intltool-debian po-debconf debhelper cdbs python-pkg-resources
+>   python-setuptools
+> Authentication warning overridden.
+> Get:1 http://idpot.grenoble.grid5000.fr sid/main bsdmainutils 6.1.10 [172kB]
+> Get:2 http://idpot.grenoble.grid5000.fr sid/main groff-base 1.18.1.1-20 [846kB]
+> Get:3 http://idpot.grenoble.grid5000.fr sid/main libncursesw5 5.6+20080405-1 [348kB]
+> Get:4 http://idpot.grenoble.grid5000.fr sid/main libssl0.9.8 0.9.8g-8 [2900kB]
+> Get:5 http://idpot.grenoble.grid5000.fr sid/main man-db 2.5.1-3 [997kB]
+> Get:6 http://idpot.grenoble.grid5000.fr sid/main libmagic1 4.23-2 [342kB]
+> Get:7 http://idpot.grenoble.grid5000.fr sid/main file 4.23-2 [41.0kB]
+> Get:8 http://idpot.grenoble.grid5000.fr sid/main gettext-base 0.17-2 [123kB]
+> Get:9 http://idpot.grenoble.grid5000.fr sid/main libdb4.5 4.5.20-11 [525kB]
+> Get:10 http://idpot.grenoble.grid5000.fr sid/main mime-support 3.40-1.1 [31.3kB]
+> Get:11 http://idpot.grenoble.grid5000.fr sid/main libsqlite3-0 3.5.7-2 [197kB]
+> Get:12 http://idpot.grenoble.grid5000.fr sid/main python2.5-minimal 2.5.2-3 [1167kB]
+> Get:13 http://idpot.grenoble.grid5000.fr sid/main python2.5 2.5.2-3 [2884kB]
+> Get:14 http://idpot.grenoble.grid5000.fr sid/main python-minimal 2.5.2-1 [13.3kB]
+> Get:15 http://idpot.grenoble.grid5000.fr sid/main python 2.5.2-1 [141kB]
+> Get:16 http://idpot.grenoble.grid5000.fr sid/main python-central 0.6.4 [39.5kB]
+> Get:17 http://idpot.grenoble.grid5000.fr sid/main python-support 0.7.7 [26.7kB]
+> Get:18 http://idpot.grenoble.grid5000.fr sid/main html2text 1.3.2a-3 [98.9kB]
+> Get:19 http://idpot.grenoble.grid5000.fr sid/main gettext 0.17-2 [2683kB]
+> Get:20 http://idpot.grenoble.grid5000.fr sid/main intltool-debian 0.35.0+20060710.1 [30.8kB]
+> Get:21 http://idpot.grenoble.grid5000.fr sid/main po-debconf 1.0.12.1 [237kB]
+> Get:22 http://idpot.grenoble.grid5000.fr sid/main debhelper 6.0.11 [522kB]
+> Get:23 http://idpot.grenoble.grid5000.fr sid/main cdbs 0.4.52 [921kB]
+> Get:24 http://idpot.grenoble.grid5000.fr sid/main python-pkg-resources 0.6c8-3 [62.2kB]
+> Get:25 http://idpot.grenoble.grid5000.fr sid/main python-setuptools 0.6c8-3 [190kB]
+> debconf: delaying package configuration, since apt-utils is not installed
+> Fetched 15.5MB in 0s (35.6MB/s)
+> Selecting previously deselected package bsdmainutils.
+> (Reading database ... 9334 files and directories currently installed.)
+> Unpacking bsdmainutils (from .../bsdmainutils_6.1.10_i386.deb) ...
+> Selecting previously deselected package groff-base.
+> Unpacking groff-base (from .../groff-base_1.18.1.1-20_i386.deb) ...
+> Selecting previously deselected package libncursesw5.
+> Unpacking libncursesw5 (from .../libncursesw5_5.6+20080405-1_i386.deb) ...
+> Selecting previously deselected package libssl0.9.8.
+> Unpacking libssl0.9.8 (from .../libssl0.9.8_0.9.8g-8_i386.deb) ...
+> Selecting previously deselected package man-db.
+> Unpacking man-db (from .../man-db_2.5.1-3_i386.deb) ...
+> Selecting previously deselected package libmagic1.
+> Unpacking libmagic1 (from .../libmagic1_4.23-2_i386.deb) ...
+> Selecting previously deselected package file.
+> Unpacking file (from .../archives/file_4.23-2_i386.deb) ...
+> Selecting previously deselected package gettext-base.
+> Unpacking gettext-base (from .../gettext-base_0.17-2_i386.deb) ...
+> Selecting previously deselected package libdb4.5.
+> Unpacking libdb4.5 (from .../libdb4.5_4.5.20-11_i386.deb) ...
+> Selecting previously deselected package mime-support.
+> Unpacking mime-support (from .../mime-support_3.40-1.1_all.deb) ...
+> Selecting previously deselected package libsqlite3-0.
+> Unpacking libsqlite3-0 (from .../libsqlite3-0_3.5.7-2_i386.deb) ...
+> Selecting previously deselected package python2.5-minimal.
+> Unpacking python2.5-minimal (from .../python2.5-minimal_2.5.2-3_i386.deb) ...
+> Selecting previously deselected package python2.5.
+> Unpacking python2.5 (from .../python2.5_2.5.2-3_i386.deb) ...
+> Selecting previously deselected package python-minimal.
+> Unpacking python-minimal (from .../python-minimal_2.5.2-1_all.deb) ...
+> Selecting previously deselected package python.
+> Unpacking python (from .../python_2.5.2-1_all.deb) ...
+> Selecting previously deselected package python-central.
+> Unpacking python-central (from .../python-central_0.6.4_all.deb) ...
+> Selecting previously deselected package python-support.
+> Unpacking python-support (from .../python-support_0.7.7_all.deb) ...
+> Selecting previously deselected package html2text.
+> Unpacking html2text (from .../html2text_1.3.2a-3_i386.deb) ...
+> Selecting previously deselected package gettext.
+> Unpacking gettext (from .../gettext_0.17-2_i386.deb) ...
+> Selecting previously deselected package intltool-debian.
+> Unpacking intltool-debian (from .../intltool-debian_0.35.0+20060710.1_all.deb) ...
+> Selecting previously deselected package po-debconf.
+> Unpacking po-debconf (from .../po-debconf_1.0.12.1_all.deb) ...
+> Selecting previously deselected package debhelper.
+> Unpacking debhelper (from .../debhelper_6.0.11_all.deb) ...
+> Selecting previously deselected package cdbs.
+> Unpacking cdbs (from .../archives/cdbs_0.4.52_all.deb) ...
+> Selecting previously deselected package python-pkg-resources.
+> Unpacking python-pkg-resources (from .../python-pkg-resources_0.6c8-3_all.deb) ...
+> Selecting previously deselected package python-setuptools.
+> Unpacking python-setuptools (from .../python-setuptools_0.6c8-3_all.deb) ...
+> Setting up bsdmainutils (6.1.10) ...
+> Setting up groff-base (1.18.1.1-20) ...
+> Setting up libncursesw5 (5.6+20080405-1) ...
+> Setting up libssl0.9.8 (0.9.8g-8) ...
+> Setting up man-db (2.5.1-3) ...
+> Building database of manual pages ...
+> Setting up libmagic1 (4.23-2) ...
+> Setting up file (4.23-2) ...
+> Setting up gettext-base (0.17-2) ...
+> Setting up libdb4.5 (4.5.20-11) ...
+> Setting up mime-support (3.40-1.1) ...
+> Setting up libsqlite3-0 (3.5.7-2) ...
+> Setting up python2.5-minimal (2.5.2-3) ...
+> Setting up python2.5 (2.5.2-3) ...
+> Setting up python-minimal (2.5.2-1) ...
+> Setting up python (2.5.2-1) ...
+> Setting up python-central (0.6.4) ...
+> Setting up python-support (0.7.7) ...
+> Setting up html2text (1.3.2a-3) ...
+> Setting up gettext (0.17-2) ...
+> Setting up intltool-debian (0.35.0+20060710.1) ...
+> Setting up po-debconf (1.0.12.1) ...
+> Setting up debhelper (6.0.11) ...
+> Setting up cdbs (0.4.52) ...
+> Setting up python-pkg-resources (0.6c8-3) ...
+> Setting up python-setuptools (0.6c8-3) ...
+> Checking correctness of source dependencies...
+> After installing, the following source dependencies are still unsatisfied:
+> python(inst 2.5.2-1 ! << wanted 2.5)|python2.4(missing)
+
+The full build log is available from:
+   http://people.debian.org/~lucas/logs/2008/04/19
+
+A list of current common problems and possible solutions is available at 
+http://wiki.debian.org/qa.debian.org/FTBFS . You're welcome to contribute!
+
+About the archive rebuild: The rebuild was done on about 50 AMD64 nodes
+of the Grid'5000 platform, using a clean chroot containing a sid i386
+environment.  Internet was not accessible from the build systems.
+
+-- 
+| Lucas Nussbaum
+| lucas@lucas-nussbaum.net   http://www.lucas-nussbaum.net/ |
+| jabber: lucas@nussbaum.fr             GPG: 1024D/023B3F4F |
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

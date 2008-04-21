@@ -1,0 +1,179 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 06:35:00 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnSCT-0005Sr-SC
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 06:35:00 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id A1D4513A4DF6; Sun, 20 Apr 2008 05:34:52 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.9 required=4.0 tests=BAYES_00,FOURLA,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 4AD6B13A4B6A;
+	Sun, 20 Apr 2008 05:34:41 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnSAg-000339-RW; Sun, 20 Apr 2008 05:33:02 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#353586: ant-bootstrap.jar failure
+Reply-To: Michael Koch <konqueror@gmx.de>, 353586@bugs.debian.org
+Resent-From: Michael Koch <konqueror@gmx.de>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Resent-Date: Sun, 20 Apr 2008 05:33:02 +0000
+Resent-Message-ID: <handler.353586.B353586.120866946110386@bugs.debian.org>
+X-Debian-PR-Message: report 353586
+X-Debian-PR-Package: ant
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: ant
+Received: via spool by 353586-submit@bugs.debian.org id=B353586.120866946110386
+          (code B ref 353586); Sun, 20 Apr 2008 05:33:02 +0000
+Received: (at 353586) by bugs.debian.org; 20 Apr 2008 05:31:01 +0000
+X-Amavis-Spam-Status: No, score=-6.8 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,HAS_BUG_NUMBER autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from mail0.ewetel.de ([212.6.122.11])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <mkoch@konqueror.de>)
+	id 1JnS8i-0002gF-Tc
+	for 353586@bugs.debian.org; Sun, 20 Apr 2008 05:31:01 +0000
+Received: from quadriga.konqueror.de (dynadsl-080-228-205-225.ewetel.net [80.228.205.225])
+	by mail0.ewetel.de (8.12.1/8.12.9) with ESMTP id m3K5UpkV012346;
+	Sun, 20 Apr 2008 07:30:52 +0200 (CEST)
+Received: from mkoch by quadriga.konqueror.de with local (Exim 4.69)
+	(envelope-from <mkoch@quadriga.konqueror.de>)
+	id 1JnSCm-0002GQ-3w; Sun, 20 Apr 2008 07:35:12 +0200
+Date: Sun, 20 Apr 2008 07:35:12 +0200
+From: Michael Koch <konqueror@gmx.de>
+To: Paul Cager <paul-debian@home.paulcager.org>, 353586@bugs.debian.org
+Cc: EspeonEefi <espeoneefi@eep.dnsalias.org>
+Message-ID: <20080420053512.GJ20825@quadriga.konqueror.de>
+References: <45EA1CEA.4080709@home.paulcager.org> <1173119623.4569.78.camel@ceruleancity.mit.edu> <45EC9616.6060207@home.paulcager.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <45EC9616.6060207@home.paulcager.org>
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+X-CheckCompat: OK
+Resent-Date: Sun, 20 Apr 2008 05:33:02 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343332
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -36.7
+X-Spam-Report: (-36.7 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	16 AWL                    AWL: From: address is in the auto white-list
+
+On Mon, Mar 05, 2007 at 10:13:42PM +0000, Paul Cager wrote:
+> EspeonEefi wrote:
+> > reopen 353586
+> > severity 353586 minor
+> > thanks
+> > 
+> > I can reproduce this error using the attached very simple build.xml and
+> > HelloWorld java program. Indeed, ant by default still automatically
+> > adds /usr/share/ant/lib/ant-bootstrap.jar to the classpath. Note, though
+> > that the warning occurs only when the -Xlint compilerarg is passed to
+> > javac, and the warnings don't make anything fail, so I've downgraded the
+> > severity of this bug to minor.
+> > 
+> > Just as a refresher, the output that ant build gives is
+> > 
+> > ========================================================================
+> > Buildfile: build.xml
+> > 
+> > build:
+> >     [javac] Compiling 1 source file
+> >     [javac] warning: [path] bad path element "/usr/share/ant/lib/xml-apis.jar": no such file or directory
+> >     [javac] warning: [path] bad path element "/usr/share/ant/lib/xercesImpl.jar": no such file or directory
+> >     [javac] warning: [path] bad path element "/usr/share/ant/lib/xalan.jar": no such file or directory
+> >     [javac] 3 warnings
+> > 
+> > BUILD SUCCESSFUL
+> > Total time: 2 seconds
+> > ========================================================================
+> > 
+> > Some Googling turns up that the above warnings may be a result of
+> > extraneous things in the Class-Path attribute in the
+> > META-INF/MANIFEST.MF file of a JAR. Indeed, when I
+> > unjar /usr/share/ant/lib/ant-bootstrap.jar, I find in
+> > META-INF/MANIFEST.MF the line
+> > 
+> > Class-Path: ant.jar xml-apis.jar xercesImpl.jar xalan.jar
+> > 
+> > Now, according to the documentation for the JAR file format [1], the
+> > Class-Path attribute "specifies the relative URLs of the extensions or
+> > libraries that this application or extension needs." This is why javac
+> > is looking for xml-apis.jar, xercesImpl.jar, and xalan.jar
+> > in /usr/share/ant/lib/ (the same directory as ant-bootstrap.jar) and not
+> > in /usr/share/java/, where at least xercesImpl.jar lives. (Given that
+> > ant now uses Xerces and not Xalan, it's interesting that xml-apis.jar
+> > and xalan.jar still show up in this Class-Path line.)
+> > 
+> > [1] http://java.sun.com/j2se/1.5.0/docs/guide/jar/jar.html#Main%20Attributes
+> > 
+> > Thus, this is indeed a bug in ant that the Class-Path attribute in
+> > MANIFEST.MF in ant-bootstrap.jar is referencing non-existent jars.
+> > 
+> > 
+> > ------------------------------------------------------------------------
+> > 
+> > public class HelloWorld {
+> >     public static void main(String[] args) {
+> >         System.out.println("Hello, world!");
+> >     }
+> > }
+> 
+> Thank you for investigating this further. Yes, you are quite right -
+> bootstrap.jar is in /usr/share/ant/lib/ and *will* be included in the
+> class path.
+> 
+> Looking at the Apache binary download (of 1.7), I see that the bootstrap
+> Jar is normally in the "etc" directory, and the Debian packaging moves
+> it to /usr/share/ant/lib/. I am not sure this is the correct place for
+> the bootstrap Jar to live (but I agree that "etc" isn't the correct
+> place either). In fact, do we need to deliver it at all in the binary
+> deb package?
+> 
+> Maybe this bug can be fixed when the next upstream version is packaged?
+
+This can be fixed easily now. I checked for the explicite usage of
+ant-bootstrap.jar and it seems to be not used. I looked at all obvious
+places. The only class in ant-bootstrap.jar is also in ant.jar (same
+bytesize). I think its safe now to move that jar.
+
+
+Cheers
+Michael
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

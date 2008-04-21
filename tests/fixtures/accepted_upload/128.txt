@@ -1,0 +1,128 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 15:31:44 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnaZw-0007S8-1U
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 15:31:44 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 9896313A4FCD; Sun, 20 Apr 2008 14:31:38 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id 583F213A4EBC
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 14:31:38 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnaLm-00044c-RX; Sun, 20 Apr 2008 14:17:02 +0000
+From: Marco d'Itri <md@linux.it>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted inn 1:1.7.2debian-33 (source i386)
+Message-Id: <E1JnaLm-00044c-RX@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 14:17:02 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <Fws5rK7IzyF.A.FUG.KP1CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301304
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 14:31:38 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.5
+X-Spam-Report: (-2.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.1 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 03:43:16 +0200
+Source: inn
+Binary: inn
+Architecture: source i386
+Version: 1:1.7.2debian-33
+Distribution: unstable
+Urgency: medium
+Maintainer: Marco d'Itri <md@linux.it>
+Changed-By: Marco d'Itri <md@linux.it>
+Description:=20
+ inn        - News transport system `InterNetNews' by the ISC and Rich Sa=
+lz
+Changes:=20
+ inn (1:1.7.2debian-33) unstable; urgency=3Dmedium
+ .
+   * Updated control.ctl.
+   * Fixed the init script to create /var/run/innd/ instead of /var/run/n=
+ews/.
+   * New patch newsgroups_whitespace: ignore whitespace in Newsgroups hea=
+ders
+     instead of rejecting the article.
+   * Sanitize the perl ccopts and ldopts to prevent linking nnrpd with -l=
+m.
+   * Updated patch man_sections: fix some ten years old syntax errors in
+     the man pages.
+   * Do not use --stop and --exec in the init script because the on-disk
+     binary changes after upgrades.
+Checksums-Sha1:=20
+ 8e988da7120b8da1217359db432d281506de0d9d 998 inn_1.7.2debian-33.dsc
+ 1e062f1a5889e130712f6a7e1aaa918582dfe1a8 181433 inn_1.7.2debian-33.diff.=
+gz
+ 43e34c2c562492bb2fe72eeaf950971baf3daec8 809322 inn_1.7.2debian-33_i386.=
+deb
+Checksums-Sha256:=20
+ b342e3fcff29f33cd9623c2f968c32009448df5ea1eca11699df48dfce6f1aa4 998 inn=
+_1.7.2debian-33.dsc
+ 363d8f5e2abe73ff2b117a54d80ee0a01735eecea319e69890966bb420b5686b 181433 =
+inn_1.7.2debian-33.diff.gz
+ ccffaa74beb783d79822424d82034dde93184c5b87bf41dc76642efb666c15e0 809322 =
+inn_1.7.2debian-33_i386.deb
+Files:=20
+ b98eb1c0b9edec0b7e823a66d03b80e5 998 news extra inn_1.7.2debian-33.dsc
+ aceb0aa5bdf9f395155aa8f8703f0f87 181433 news extra inn_1.7.2debian-33.di=
+ff.gz
+ 28d604b7f3e0f857346972632e181880 809322 news extra inn_1.7.2debian-33_i3=
+86.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICp/wFGfw2OHuP7ERAp3vAJ4jeT9QfakTDnudIzDJMFW9zFg7ggCeJXM4
+idiGvvsT9O26qsPGf2vGYnA=3D
+=3D/9Qr
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+inn_1.7.2debian-33.diff.gz
+  to pool/main/i/inn/inn_1.7.2debian-33.diff.gz
+inn_1.7.2debian-33.dsc
+  to pool/main/i/inn/inn_1.7.2debian-33.dsc
+inn_1.7.2debian-33_i386.deb
+  to pool/main/i/inn/inn_1.7.2debian-33_i386.deb
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

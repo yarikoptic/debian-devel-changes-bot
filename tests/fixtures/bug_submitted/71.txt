@@ -1,0 +1,149 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 18:34:56 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JndRB-00006t-Ul
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 18:34:56 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id EDD4513A4FDF; Sun, 20 Apr 2008 17:34:48 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.3 required=4.0 tests=BAYES_00,FOURLA,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW,SARE_MSGID_LONG40 autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id B5BFD13A4F99;
+	Sun, 20 Apr 2008 17:34:36 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JndPZ-00005Z-Qn; Sun, 20 Apr 2008 17:33:09 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#477052: synaptic: Search results cleared by installing packages
+Reply-To: David <wizzardx@gmail.com>, 477052@bugs.debian.org
+Resent-From: David <wizzardx@gmail.com>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Michael Vogt <mvo@debian.org>
+Resent-Date: Sun, 20 Apr 2008 17:33:03 +0000
+Resent-Message-ID: <handler.477052.B.120871271425146@bugs.debian.org>
+X-Debian-PR-Message: report 477052
+X-Debian-PR-Package: synaptic
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: synaptic
+Received: via spool by submit@bugs.debian.org id=B.120871271425146
+          (code B ref -1); Sun, 20 Apr 2008 17:33:03 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 17:31:54 +0000
+X-Amavis-Spam-Status: No, score=-9.9 required=4.0 tests=BAYES_00,FOURLA,HAS_PACKAGE 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from yw-out-2324.google.com ([74.125.46.30])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <wizzardx@gmail.com>)
+	id 1JndOM-0006WR-2K
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 17:31:54 +0000
+Received: by yw-out-2324.google.com with SMTP id 5so746523ywh.77
+        for <submit@bugs.debian.org>; Sun, 20 Apr 2008 10:31:48 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:to:subject:mime-version:content-type:content-transfer-encoding:content-disposition;
+        bh=ydRAOTjR6I7XkQUdBTIQIOl/KFrali941XOymZlV8TM=;
+        b=d9hrAdK1b95EA/1zTZkCNzrce5e8kw6DQW5MhfbmZgBwkzd2gxReP5QCzJAYtTRYuEwbdUt2Eilce61YaDtoA1biuOo5IHd1tJh6PXd7dObsFqdhUyRkx/dN1F4mNGMNw6qOqaW86cUeja9NFo26hbOnRILii7K0gEabObKeCro=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:to:subject:mime-version:content-type:content-transfer-encoding:content-disposition;
+        b=DwGHMPjUo6Q1EvtzTLvVKu0F8KbxDzoH5AMiqYwAAZaNoMkB7MEqEwfv7z3N77il8+hNsoqa7xk449+2CPiux8/f+t8xD5wWnnwD46EiUsMI6jW3dSlsiy7td/qMjdqz0gd5L0MyXbCCiHkqvCC/meeeXBBf82gZBI9oCQnPcS4=
+Received: by 10.150.195.21 with SMTP id s21mr6016371ybf.114.1208712708840;
+        Sun, 20 Apr 2008 10:31:48 -0700 (PDT)
+Received: by 10.150.134.14 with HTTP; Sun, 20 Apr 2008 10:31:48 -0700 (PDT)
+Message-ID: <18c1e6480804201031i150300f0i3a00d2d88f30ab65@mail.gmail.com>
+Date: Sun, 20 Apr 2008 19:31:48 +0200
+From: David <wizzardx@gmail.com>
+To: "Debian Bug Tracking System" <submit@bugs.debian.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 17:33:09 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343676
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.6
+X-Spam-Report: (-52.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+Package: synaptic
+Version: 0.61+nmu1
+Severity: normal
+
+Installing packages clears the searches. This is unwanted - I use
+Synaptic to explore the Debian repo and try out new software. I like to
+install packages one at a time, but Synaptic forces me to either install
+everything I want to try out at once, or to re-run my searches.
+
+Please either make Synaptic keep searches, or add an option to do so
+under Preferences.
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (500, 'unstable')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.24-1-686 (SMP w/1 CPU core)
+Locale: LANG=en_ZA, LC_CTYPE=en_ZA (charmap=ISO-8859-1)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages synaptic depends on:
+ii  apt [libapt-pkg-libc6. 0.7.11            Advanced front-end for dpkg
+ii  apt-utils [libapt-inst 0.7.11            APT utility programs
+ii  libatk1.0-0            1.22.0-1          The ATK accessibility toolkit
+ii  libc6                  2.7-10            GNU C Library: Shared libraries
+ii  libcairo2              1.4.14-1          The Cairo 2D vector graphics libra
+ii  libfontconfig1         2.5.0-2           generic font configuration library
+ii  libfreetype6           2.3.5-1+b1        FreeType 2 font engine, shared lib
+ii  libgcc1                1:4.3.0-3         GCC support library
+ii  libglade2-0            1:2.6.2-1         library to load .glade files at ru
+ii  libglib2.0-0           2.16.3-1          The GLib library of C routines
+ii  libgtk2.0-0            2.12.9-3          The GTK+ graphical user interface
+ii  libpango1.0-0          1.20.2-2          Layout and rendering of internatio
+ii  libstdc++6             4.3.0-3           The GNU Standard C++ Library v3
+ii  libvte9                1:0.16.13-1       Terminal emulator widget for GTK+
+ii  libx11-6               2:1.0.3-7         X11 client-side library
+ii  libxft2                2.1.12-2          FreeType-based font drawing librar
+ii  libxml2                2.6.32.dfsg-1     GNOME XML library
+ii  scrollkeeper           0.3.14-16         A free electronic cataloging syste
+ii  zlib1g                 1:1.2.3.3.dfsg-12 compression library - runtime
+
+Versions of packages synaptic recommends:
+ii  deborphan                     1.7.23     Find orphaned libraries
+ii  gksu                          2.0.0-5    graphical frontend to su
+ii  libgnome2-perl                1.042-1    Perl interface to the GNOME librar
+
+-- no debconf information
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

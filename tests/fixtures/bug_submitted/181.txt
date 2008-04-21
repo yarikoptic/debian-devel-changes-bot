@@ -1,0 +1,501 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 16:54:16 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnbr9-0007vr-DL
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 16:54:15 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id AEAB413A5119; Sun, 20 Apr 2008 15:53:29 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-6.7 required=4.0 tests=BAYES_00,FOURLA,
+	FVGT_m_MULTI_ODD,IMPRONONCABLE_2,LDO_WHITELIST,MURPHY_WRONG_WORD2,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id D327713A50C2;
+	Sun, 20 Apr 2008 15:52:53 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnbmM-0002Fg-FM; Sun, 20 Apr 2008 15:48:34 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476996: openssl: FTBFS: ECDSA test failed
+Reply-To: Lucas Nussbaum <lucas@lucas-nussbaum.net>, 476996@bugs.debian.org
+Resent-From: Lucas Nussbaum <lucas@lucas-nussbaum.net>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>
+Resent-Date: Sun, 20 Apr 2008 15:48:32 +0000
+Resent-Message-ID: <handler.476996.B.12087063941901@bugs.debian.org>
+X-Debian-PR-Message: report 476996
+X-Debian-PR-Package: openssl
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: openssl
+Received: via spool by submit@bugs.debian.org id=B.12087063941901
+          (code B ref -1); Sun, 20 Apr 2008 15:48:32 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 15:46:34 +0000
+X-Amavis-Spam-Status: No, score=-8.7 required=4.0 tests=BAYES_00,FOURLA,
+	FVGT_m_MULTI_ODD,HAS_PACKAGE,IMPRONONCABLE_2,MURPHY_WRONG_WORD2 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from xanadu.blop.info ([80.248.208.235])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <lucas@lucas-nussbaum.net>)
+	id 1JnbkO-0000Q9-Uq
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 15:46:34 +0000
+Received: from localhost ([127.0.0.1] helo=xanadu.blop.info)
+	by xanadu.blop.info with smtp (Exim 4.63)
+	(envelope-from <lucas@lucas-nussbaum.net>)
+	id 1JnbkN-0000AS-MH
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 17:46:32 +0200
+Received: (nullmailer pid 22984 invoked by uid 1000);
+	Sun, 20 Apr 2008 15:43:17 -0000
+Date: Sun, 20 Apr 2008 17:43:17 +0200
+From: Lucas Nussbaum <lucas@lucas-nussbaum.net>
+To: submit@bugs.debian.org
+Message-ID: <20080420154317.GA22972@xanadu.blop.info>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 15:48:34 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343583
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -36.9
+X-Spam-Report: (-36.9 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	16 AWL                    AWL: From: address is in the auto white-list
+
+Package: openssl
+Version: 0.9.8g-8
+Severity: serious
+User: debian-qa@lists.debian.org
+Usertags: qa-ftbfs-20080419 qa-ftbfs
+Justification: FTBFS on i386
+
+Hi,
+
+During a rebuild of all packages in sid, your package failed to build on i386.
+
+This rebuild was done with gcc 4.3 instead of gcc 4.2, because gcc 4.3 is now
+the default on most architectures (even if it's not the case on i386 yet).
+Feel free to downgrade this bug to 'important' if your package is only built
+on i386, and this bug is specific to gcc 4.3 (i.e the package builds fine with
+gcc 4.2).
+
+Relevant part:
+> make[4]: Entering directory `/build/user/openssl-0.9.8g/apps'
+> make[4]: Nothing to be done for `all'.
+> make[4]: Leaving directory `/build/user/openssl-0.9.8g/apps'
+> make[3]: Leaving directory `/build/user/openssl-0.9.8g'
+> ../util/shlib_wrap.sh ./destest
+> Doing cbcm
+> Doing ecb
+> Doing ede ecb
+> Doing cbc
+> Doing desx cbc
+> Doing ede cbc
+> Doing pcbc
+> Doing cfb8 cfb16 cfb32 cfb48 cfb64 cfb64() ede_cfb64() done
+> Doing ofb
+> Doing ofb64
+> Doing ede_ofb64
+> Doing cbc_cksum
+> Doing quad_cksum
+> input word alignment test 0 1 2 3
+> output word alignment test 0 1 2 3
+> fast crypt test 
+> ../util/shlib_wrap.sh ./ideatest
+> No IDEA support
+> ../util/shlib_wrap.sh ./shatest
+> test 1 ok
+> test 2 ok
+> test 3 ok
+> ../util/shlib_wrap.sh ./sha1test
+> test 1 ok
+> test 2 ok
+> test 3 ok
+> ../util/shlib_wrap.sh ./sha256t
+> Testing SHA-256 ... passed.
+> Testing SHA-224 ... passed.
+> ../util/shlib_wrap.sh ./sha512t
+> Testing SHA-512 ... passed.
+> Testing SHA-384 ... passed.
+> ../util/shlib_wrap.sh ./md4test
+> test 1 ok
+> test 2 ok
+> test 3 ok
+> test 4 ok
+> test 5 ok
+> test 6 ok
+> test 7 ok
+> ../util/shlib_wrap.sh ./md5test
+> test 1 ok
+> test 2 ok
+> test 3 ok
+> test 4 ok
+> test 5 ok
+> test 6 ok
+> test 7 ok
+> ../util/shlib_wrap.sh ./hmactest
+> test 0 ok
+> test 1 ok
+> test 2 ok
+> test 3 ok
+> ../util/shlib_wrap.sh ./md2test
+> test 1 ok
+> test 2 ok
+> test 3 ok
+> test 4 ok
+> test 5 ok
+> test 6 ok
+> test 7 ok
+> ../util/shlib_wrap.sh ./mdc2test
+> No MDC2 support
+> ../util/shlib_wrap.sh ./rmdtest
+> test 1 ok
+> test 2 ok
+> test 3 ok
+> test 4 ok
+> test 5 ok
+> test 6 ok
+> test 7 ok
+> test 8 ok
+> ../util/shlib_wrap.sh ./rc2test
+> ecb RC2 ok
+> ../util/shlib_wrap.sh ./rc4test
+> test 0 ok
+> test 1 ok
+> test 2 ok
+> test 3 ok
+> test 4 ok
+> test 5 ok
+> test end processing ....................done
+> test multi-call ....................done
+> bulk test ok
+> ../util/shlib_wrap.sh ./rc5test
+> No RC5 support
+> ../util/shlib_wrap.sh ./bftest
+> testing blowfish in raw ecb mode
+> testing blowfish in ecb mode
+> testing blowfish set_key
+> testing blowfish in cbc mode
+> testing blowfish in cfb64 mode
+> testing blowfish in ofb64
+> ../util/shlib_wrap.sh ./casttest
+> ecb cast5 ok
+> This test will take some time....123456789ABCDEF ok
+> ../util/shlib_wrap.sh ./randtest
+> test 1 done
+> test 2 done
+> test 3 done
+> test 4 done
+> starting big number library test, could take a while...
+> test BN_add
+> test BN_sub
+> test BN_lshift1
+> test BN_lshift (fixed)
+> test BN_lshift
+> test BN_rshift1
+> test BN_rshift
+> test BN_sqr
+> test BN_mul
+> test BN_div
+> test BN_div_word
+> test BN_div_recp
+> test BN_mod
+> test BN_mod_mul
+> test BN_mont
+> test BN_mod_exp
+> test BN_mod_exp_mont_consttime
+> test BN_exp
+> test BN_kronecker
+> .......................++++++
+> ....................................................................................................
+> test BN_mod_sqrt
+> .....
+> .....
+> .....
+> .....
+> .....
+> .....
+> .....
+> .....
+> ................++++++++++++
+> .....
+> .......++++++++++++
+> .....
+> .........++++++++++++
+> .....
+> ................++++++++++++
+> .....
+> .....++++++++++++
+> .....
+> ........++++++++++++
+> .....
+> ......++++++++++++
+> .....
+> ...++++++++++++
+> .....
+> test BN_GF2m_add
+> test BN_GF2m_mod
+> test BN_GF2m_mod_mul
+> test BN_GF2m_mod_sqr
+> test BN_GF2m_mod_inv
+> test BN_GF2m_mod_div
+> test BN_GF2m_mod_exp
+> test BN_GF2m_mod_sqrt
+> test BN_GF2m_mod_solve_quad
+> running bc
+> 
+> verify BN_add....................................................................................................
+> verify BN_sub......................................................................................................................................................
+> verify BN_lshift1....................................................................................................
+> verify BN_lshift (fixed)....................................................................................................
+> verify BN_lshift....................................................................................................
+> verify BN_rshift1....................................................................................................
+> verify BN_rshift....................................................................................................
+> verify BN_sqr....................................................................................................
+> verify BN_mul......................................................................................................................................................
+> verify BN_div............................................................................................................................................................................................................................................................................................................
+> verify BN_div_word........................................................................................................................................................................................................
+> verify BN_div_recp............................................................................................................................................................................................................................................................................................................
+> verify BN_mod....................................................................................................
+> verify BN_mod_mul............................................................................................................................................................................................................................................................................................................
+> verify BN_mont.....
+> verify BN_mod_exp.....
+> verify BN_mod_exp_mont_consttime.....
+> verify BN_exp.....
+> verify BN_kronecker
+> verify BN_mod_sqrt
+> verify BN_GF2m_add
+> verify BN_GF2m_mod
+> verify BN_GF2m_mod_mul
+> verify BN_GF2m_mod_sqr
+> verify BN_GF2m_mod_inv
+> verify BN_GF2m_mod_div
+> verify BN_GF2m_mod_exp
+> verify BN_GF2m_mod_sqrt
+> verify BN_GF2m_mod_solve_quad
+> 2220 tests passed
+> test a^b%c implementations
+> ../util/shlib_wrap.sh ./exptest
+> ........................................................................................................................................................................................................ done
+> test elliptic curves
+> ../util/shlib_wrap.sh ./ectest
+> Curve defined by Weierstrass equation
+>      y^2 = x^3 + a*x + b  (mod 0x17)
+>      a = 0x1
+>      b = 0x1
+> A cyclic subgroup:
+>      point at infinity
+>      x = 0xD, y = 0x7
+>      x = 0x5, y = 0x4
+>      x = 0x11, y = 0x3
+>      x = 0x11, y = 0x14
+>      x = 0x5, y = 0x13
+>      x = 0xD, y = 0x10
+> Generator as octect string, compressed form:
+>      030D
+> Generator as octect string, uncompressed form:
+>      040D07
+> Generator as octect string, hybrid form:
+>      070D07
+> A representation of the inverse of that generator in
+> Jacobian projective coordinates:
+>      X = 0xC, Y = 0xF, Z = 0xA
+> 
+> SEC2 curve secp160r1 -- Generator:
+>      x = 0x4A96B5688EF573284664698968C38BB913CBFC82
+>      y = 0x23A628553168947D59DCC912042351377AC5FB32
+> verify degree ... ok
+> verify group order .... ok
+> 
+> NIST curve P-192 -- Generator:
+>      x = 0x188DA80EB03090F67CBF20EB43A18800F4FF0AFD82FF1012
+>      y = 0x7192B95FFC8DA78631011ED6B24CDD573F977A11E794811
+> verify degree ... ok
+> verify group order .... ok
+> 
+> NIST curve P-224 -- Generator:
+>      x = 0xB70E0CBD6BB4BF7F321390B94A03C1D356C21122343280D6115C1D21
+>      y = 0xBD376388B5F723FB4C22DFE6CD4375A05A07476444D5819985007E34
+> verify degree ... ok
+> verify group order .... ok
+> 
+> NIST curve P-256 -- Generator:
+>      x = 0x6B17D1F2E12C4247F8BCE6E563A440F277037D812DEB33A0F4A13945D898C296
+>      y = 0x4FE342E2FE1A7F9B8EE7EB4A7C0F9E162BCE33576B315ECECBB6406837BF51F5
+> verify degree ... ok
+> verify group order .... ok
+> 
+> NIST curve P-384 -- Generator:
+>      x = 0xAA87CA22BE8B05378EB1C71EF320AD746E1D3B628BA79B9859F741E082542A385502F25DBF55296C3A545E3872760AB7
+>      y = 0x3617DE4A96262C6F5D9E98BF9292DC29F8F41DBD289A147CE9DA3113B5F0B8C00A60B1CE1D7E819D7A431D7C90EA0E5F
+> verify degree ... ok
+> verify group order .... ok
+> 
+> NIST curve P-521 -- Generator:
+>      x = 0xC6858E06B70404E9CD9E3ECB662395B4429C648139053FB521F828AF606B4D3DBAA14B5E77EFE75928FE1DC127A2FFA8DE3348B3C1856A429BF97E7E31C2E5BD66
+>      y = 0x11839296A789A3BC0045C8A5FB42C7D1BD998F54449579B446817AFBD17273E662C97EE72995EF42640C550B9013FAD0761353C7086A272C24088BE94769FD16650
+> verify degree ... ok
+> verify group order .... ok
+> combined multiplication ..... ok
+> 
+> 
+> Curve defined by Weierstrass equation
+>      y^2 + x*y = x^3 + a*x^2 + b  (mod 0x13)
+>      a = 0x3
+>      b = 0x1
+> (0x... means binary polynomial)
+> A cyclic subgroup:
+>      point at infinity
+>      x = 0x6, y = 0x8
+>      x = 0x1, y = 0xD
+>      x = 0x7, y = 0x2
+>      x = 0x0, y = 0x1
+>      x = 0x7, y = 0x5
+>      x = 0x1, y = 0xC
+>      x = 0x6, y = 0xE
+> 
+> Generator as octet string, uncompressed form:
+>      040608
+> 
+> NIST curve K-163 -- Generator:
+>      x = 0x2FE13C0537BBC11ACAA07D793DE4E6D5E5C94EEE8
+>      y = 0x289070FB05D38FF58321F2E800536D538CCDAA3D9
+> verify degree ... ok
+> verify group order .... ok
+> 
+> NIST curve B-163 -- Generator:
+>      x = 0x3F0EBA16286A2D57EA0991168D4994637E8343E36
+>      y = 0xD51FBC6C71A0094FA2CDD545B11C5C0C797324F1
+> verify degree ... ok
+> verify group order .... ok
+> 
+> NIST curve K-233 -- Generator:
+>      x = 0x17232BA853A7E731AF129F22FF4149563A419C26BF50A4C9D6EEFAD6126
+>      y = 0x1DB537DECE819B7F70F555A67C427A8CD9BF18AEB9B56E0C11056FAE6A3
+> verify degree ... ok
+> verify group order .... ok
+> 
+> NIST curve B-233 -- Generator:
+>      x = 0xFAC9DFCBAC8313BB2139F1BB755FEF65BC391F8B36F8F8EB7371FD558B
+>      y = 0x1006A08A41903350678E58528BEBF8A0BEFF867A7CA36716F7E01F81052
+> verify degree ... ok
+> verify group order .... ok
+> 
+> NIST curve K-283 -- Generator:
+>      x = 0x503213F78CA44883F1A3B8162F188E553CD265F23C1567A16876913B0C2AC2458492836
+>      y = 0x1CCDA380F1C9E318D90F95D07E5426FE87E45C0E8184698E45962364E34116177DD2259
+> verify degree ... ok
+> verify group order .... ok
+> 
+> NIST curve B-283 -- Generator:
+>      x = 0x5F939258DB7DD90E1934F8C70B0DFEC2EED25B8557EAC9C80E2E198F8CDBECD86B12053
+>      y = 0x3676854FE24141CB98FE6D4B20D02B4516FF702350EDDB0826779C813F0DF45BE8112F4
+> verify degree ... ok
+> verify group order .... ok
+> 
+> NIST curve K-409 -- Generator:
+>      x = 0x60F05F658F49C1AD3AB1890F7184210EFD0987E307C84C27ACCFB8F9F67CC2C460189EB5AAAA62EE222EB1B35540CFE9023746
+>      y = 0x1E369050B7C4E42ACBA1DACBF04299C3460782F918EA427E6325165E9EA10E3DA5F6C42E9C55215AA9CA27A5863EC48D8E0286B
+> verify degree ... ok
+> verify group order .... ok
+> 
+> NIST curve B-409 -- Generator:
+>      x = 0x15D4860D088DDB3496B0C6064756260441CDE4AF1771D4DB01FFE5B34E59703DC255A868A1180515603AEAB60794E54BB7996A7
+>      y = 0x61B1CFAB6BE5F32BBFA78324ED106A7636B9C5A7BD198D0158AA4F5488D08F38514F1FDF4B4F40D2181B3681C364BA0273C706
+> verify degree ... ok
+> verify group order .... ok
+> 
+> NIST curve K-571 -- Generator:
+>      x = 0x26EB7A859923FBC82189631F8103FE4AC9CA2970012D5D46024804801841CA44370958493B205E647DA304DB4CEB08CBBD1BA39494776FB988B47174DCA88C7E2945283A01C8972
+>      y = 0x349DC807F4FBF374F4AEADE3BCA95314DD58CEC9F307A54FFC61EFC006D8A2C9D4979C0AC44AEA74FBEBBB9F772AEDCB620B01A7BA7AF1B320430C8591984F601CD4C143EF1C7A3
+> verify degree ... ok
+> verify group order .... ok
+> 
+> NIST curve B-571 -- Generator:
+>      x = 0x303001D34B856296C16C0D40D3CD7750A93D1D2955FA80AA5F40FC8DB7B2ABDBDE53950F4C0D293CDD711A35B67FB1499AE60038614F1394ABFA3B4C850D927E1E7769C8EEC2D19
+>      y = 0x37BF27342DA639B6DCCFFFEB73D69D78C6C27A6009CBBCA1980F8533921E8A684423E43BAB08A576291AF8F461BB2A8B3531D2F0485C19B16E2F1516E23DD3C1A4827AF1B8AC15B
+> verify degree ... ok
+> verify group order .... ok
+> combined multiplication ..... ok
+> 
+> testing internal curves: ................................................................... ok
+> test ecdsa
+> ../util/shlib_wrap.sh ./ecdsatest
+> some tests from X9.62:
+> testing prime192v1: .... ok
+> testing prime239v1: .... ok
+> testing c2tnb191v1: .... ok
+> testing c2tnb239v1: .... ok
+> 
+> testing ECDSA_sign() and ECDSA_verify() with some internal curves:
+> secp160k1: ....... ok
+> secp160r1: ....... ok
+> secp160r2: ....... ok
+> secp192k1: ....... ok
+> secp224k1: ....... ok
+> secp224r1: ....... ok
+> secp256k1: ....... ok
+> secp384r1: ....... ok
+> secp521r1: ....... ok
+> prime192v1: ....... ok
+> prime192v2: ....... ok
+> prime192v3: ....... ok
+> prime239v1: ....... ok
+> prime239v2: ....... ok
+> prime239v3: ....... ok
+> prime256v1: ....... ok
+> sect163k1: ....... ok
+> sect163r1: ....... ok
+> sect163r2: ....... ok
+> sect193r1: ....... ok
+> sect193r2: ...... failed
+> 
+> ECDSA test failed
+> make[2]: *** [test_ecdsa] Error 1
+
+The full build log is available from:
+   http://people.debian.org/~lucas/logs/2008/04/19
+
+A list of current common problems and possible solutions is available at 
+http://wiki.debian.org/qa.debian.org/FTBFS . You're welcome to contribute!
+
+About the archive rebuild: The rebuild was done on about 50 AMD64 nodes
+of the Grid'5000 platform, using a clean chroot containing a sid i386
+environment.  Internet was not accessible from the build systems.
+
+-- 
+| Lucas Nussbaum
+| lucas@lucas-nussbaum.net   http://www.lucas-nussbaum.net/ |
+| jabber: lucas@nussbaum.fr             GPG: 1024D/023B3F4F |
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

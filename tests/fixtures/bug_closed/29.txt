@@ -1,0 +1,291 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 10:39:45 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnW1M-00064V-B8
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 10:39:45 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 4351013A4E19; Sun, 20 Apr 2008 09:39:39 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id A865713A4969;
+	Sun, 20 Apr 2008 09:39:37 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnVxu-0000i3-Jb; Sun, 20 Apr 2008 09:36:06 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Daniel Baumann <daniel@debian.org>
+Subject: Bug#476828: marked as done ([rawstudio] New upstream 1.0 version)
+Message-ID: <handler.476828.D476828.120868399831551.ackdone@bugs.debian.org>
+References: <E1JnVfc-0004Ah-Vy@ries.debian.org>
+ <20080419123402.GA22075@lorien.arda>
+X-Debian-PR-Message: closed 476828
+X-Debian-PR-Package: rawstudio
+X-Debian-PR-Source: rawstudio
+Content-Type: multipart/mixed; boundary="----------=_1208684166-2715-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 09:36:06 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <yS6ulCjNrcO.A.vfD.b9wCIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/132910
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 09:39:39 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208684166-2715-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 09:17:12 +0000
+with message-id <E1JnVfc-0004Ah-Vy@ries.debian.org>
+and subject line Bug#476828: fixed in rawstudio 1.0-1
+has caused the Debian Bug report #476828,
+regarding [rawstudio] New upstream 1.0 version
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+476828: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D476828
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208684166-2715-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 19 Apr 2008 12:34:12 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-10.0 required=4.0 tests=BAYES_00,HAS_PACKAGE 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <debian+bugreport@derfel.net>
+Received: from vsmtp3.tin.it ([212.216.176.223])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <debian+bugreport@derfel.net>)
+	id 1JnCGi-0001D7-KV
+	for submit@bugs.debian.org; Sat, 19 Apr 2008 12:34:12 +0000
+Received: from finwe.lorien.arda (87.14.64.73) by vsmtp3.tin.it (7.3.122)
+        id 4676699A176B84CC for submit@bugs.debian.org; Sat, 19 Apr 2008 14:34:04 +0200
+Received: by finwe.lorien.arda (Postfix, from userid 1000)
+	id A6A2F602B6FF; Sat, 19 Apr 2008 14:34:02 +0200 (CEST)
+Date: Sat, 19 Apr 2008 14:34:02 +0200
+From: Federico 'Derfel' Stella <debian+bugreport@derfel.net>
+To: submit@bugs.debian.org
+Subject: [rawstudio] New upstream 1.0 version
+Message-ID: <20080419123402.GA22075@lorien.arda>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Delivered-To: submit@bugs.debian.org
+
+Package: rawstudio
+Version: 0.7+20080406-0.1
+Severity: wishlist
+
+--- Please enter the report below this line. ---
+New upstream 1.0 version is available.
+
+
+--- System information. ---
+Architecture: amd64
+Kernel:       Linux 2.6.24-1-amd64
+
+Debian Release: lenny/sid
+  500 unstable        www.debian-multimedia.org 
+  500 unstable        ftp.de.debian.org 
+    1 experimental    ftp.it.debian.org 
+
+--- Package information. ---
+Depends                 (Version) | Installed
+=================================-+-================
+libatk1.0-0           (>= 1.20.0) | 1.22.0-1
+libc6                  (>= 2.7-1) | 2.7-10
+libcairo2              (>= 1.4.0) | 1.6.4-1
+libdbus-1-3            (>= 1.1.1) | 1.2.1-1
+libgcc1           (>= 1:4.1.1-21) | 1:4.3.0-3
+libgconf2-4           (>= 2.13.5) | 2.22.0-1
+libglib2.0-0          (>= 2.16.0) | 2.16.3-2
+libgtk2.0-0           (>= 2.12.0) | 2.12.9-3
+libjpeg62                         | 6b-14
+liblcms1              (>= 1.15-1) | 1.16-8
+libpango1.0-0         (>= 1.20.0) | 1.20.2-2
+libstdc++6          (>= 4.1.1-21) | 4.3.0-3
+libtiff4                          | 3.8.2-8
+libx11-6                          | 2:1.0.3-7
+libxml2               (>= 2.6.27) | 2.6.32.dfsg-1
+
+
+
+
+------------=_1208684166-2715-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 476828-close) by bugs.debian.org; 20 Apr 2008 09:33:18 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.7 required=4.0 tests=BAYES_00,FROMDEVELOPER,
+	FVGT_m_MULTI_ODD,HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_2,
+	MURPHY_DRUGS_REL8,MURPHY_WRONG_WORD1,MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnVvB-0008Ck-NZ
+	for 476828-close@bugs.debian.org; Sun, 20 Apr 2008 09:33:17 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnVfc-0004Ah-Vy; Sun, 20 Apr 2008 09:17:12 +0000
+From: Daniel Baumann <daniel@debian.org>
+To: 476828-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#476828: fixed in rawstudio 1.0-1
+Message-Id: <E1JnVfc-0004Ah-Vy@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 09:17:12 +0000
+Content-Transfer-Encoding: quoted-printable
+
+Source: rawstudio
+Source-Version: 1.0-1
+
+We believe that the bug you reported is fixed in the latest version of
+rawstudio, which is due to be installed in the Debian FTP archive:
+
+rawstudio_1.0-1.diff.gz
+  to pool/main/r/rawstudio/rawstudio_1.0-1.diff.gz
+rawstudio_1.0-1.dsc
+  to pool/main/r/rawstudio/rawstudio_1.0-1.dsc
+rawstudio_1.0-1_i386.deb
+  to pool/main/r/rawstudio/rawstudio_1.0-1_i386.deb
+rawstudio_1.0.orig.tar.gz
+  to pool/main/r/rawstudio/rawstudio_1.0.orig.tar.gz
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 476828@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Daniel Baumann <daniel@debian.org> (supplier of updated rawstudio package=
+)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 10:52:00 +0200
+Source: rawstudio
+Binary: rawstudio
+Architecture: source i386
+Version: 1.0-1
+Distribution: unstable
+Urgency: low
+Maintainer: Daniel Baumann <daniel@debian.org>
+Changed-By: Daniel Baumann <daniel@debian.org>
+Description:=20
+ rawstudio  - open source raw-image converter
+Closes: 476828
+Changes:=20
+ rawstudio (1.0-1) unstable; urgency=3Dlow
+ .
+   * New upstream release (Closes: #476828).
+   * Removing 01-icon-path.dpatch, not required anymore.
+   * Removing watch file.
+Checksums-Sha1:=20
+ 8d4824e46ca478d90d82a8b1f85d62750f28ed7e 1091 rawstudio_1.0-1.dsc
+ 14e8f09107a24c2ec7fc07505c1d774833bb6458 430154 rawstudio_1.0.orig.tar.g=
+z
+ 323badd6a61c131d99827dd9fcf50d6b5cf65eca 30977 rawstudio_1.0-1.diff.gz
+ daf13e1dda078c234a422dde6c22a01c9f6b99f7 344460 rawstudio_1.0-1_i386.deb
+Checksums-Sha256:=20
+ d4f383e968126965bc3e7f269e6a045a7b2d170745ce30496f80555cb83c85f4 1091 ra=
+wstudio_1.0-1.dsc
+ 707429a3e1335d03f5d2196ee105d7fb8bf2db6e3c6bdd08c9d1a75e7ec493a9 430154 =
+rawstudio_1.0.orig.tar.gz
+ 55785a1444fbc9fbda61369572d465639ba587c15033a0063823d6c4cec0b618 30977 r=
+awstudio_1.0-1.diff.gz
+ facb751b91a69b6070578a41c9b5c56a8c42252deab85851ea69fb037cf15b4f 344460 =
+rawstudio_1.0-1_i386.deb
+Files:=20
+ 311f43ff4c66b9d0b8e3b2e6dc8de145 1091 graphics optional rawstudio_1.0-1.=
+dsc
+ 26ddd38ccb5d74f7c7c6759dae13b7ad 430154 graphics optional rawstudio_1.0.=
+orig.tar.gz
+ eee9750a3dfa2017e57ea25b77bc1cc7 30977 graphics optional rawstudio_1.0-1=
+.diff.gz
+ 60e357fd12ee8ea1dbdc260865788a2f 344460 graphics optional rawstudio_1.0-=
+1_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICwfP+C5cwEsrK54RAoWzAKCJUOhVkWXm8eEvHgIC+e9aSdpjEwCgylys
+8m6CZFD0/XNIQvzEPQtRbtg=3D
+=3DB70B
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208684166-2715-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

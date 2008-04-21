@@ -1,0 +1,302 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 17:07:44 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnc4p-000891-RP
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 17:07:44 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id ABB0213A4F8F; Sun, 20 Apr 2008 16:07:38 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id F32C913A47C3;
+	Sun, 20 Apr 2008 16:07:36 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnc3J-0005RC-Bp; Sun, 20 Apr 2008 16:06:05 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Mario Lang <mlang@debian.org>
+Subject: Bug#468681: marked as done (gnome-orca: bashism in /bin/sh script)
+Message-ID: <handler.468681.D468681.12087074008843.ackdone@bugs.debian.org>
+References: <E1JnbWR-0008Jv-DQ@ries.debian.org>
+ <200802291639.37226.atomo64@gmail.com>
+X-Debian-PR-Message: closed 468681
+X-Debian-PR-Package: gnome-orca
+X-Debian-PR-Keywords: patch
+X-Debian-PR-Source: gnome-orca
+Content-Type: multipart/mixed; boundary="----------=_1208707564-20720-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 16:06:05 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <AO_7YNFuZkL.A.2aG.Kp2CIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/133032
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 16:07:38 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208707564-20720-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 15:32:07 +0000
+with message-id <E1JnbWR-0008Jv-DQ@ries.debian.org>
+and subject line Bug#468681: fixed in gnome-orca 2.22.1-2
+has caused the Debian Bug report #468681,
+regarding gnome-orca: bashism in /bin/sh script
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+468681: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D468681
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208707564-20720-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at maintonly) by bugs.debian.org; 29 Feb 2008 22:39:42 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-12.9 required=4.0 tests=BAYES_00,FOURLA,HAS_PACKAGE,
+	X_DEBBUGS_NO_ACK autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <atomo64@gmail.com>
+Received: from an-out-0708.google.com ([209.85.132.247])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <atomo64@gmail.com>)
+	id 1JVDtF-00031G-O3
+	for maintonly@bugs.debian.org; Fri, 29 Feb 2008 22:39:41 +0000
+Received: by an-out-0708.google.com with SMTP id c10so1001183ana.18
+        for <maintonly@bugs.debian.org>; Fri, 29 Feb 2008 14:39:40 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:from:to:subject:user-agent:x-debbugs-no-ack:mime-version:content-disposition:date:content-type:content-transfer-encoding:message-id;
+        bh=jEbCreNJ1hNTb+6iHsAtUwPIa6Mt844/0Ud5u7hr3pM=;
+        b=oNbwudjEC/T6ft4V28duJoAYrilCGEirIX6usZzRqq6iSsR96FCL0TPzWE3jDbuRXUgRVL5+cWQHTFexvl/5ZSTu5BXXWW0lRHRx+fhKaIfh/Bi2VrF5zs2pO28UPLKYgIUqtRCoNuHlOPLkrxB0kycZ6NeagVyVqPaxa/Yg06w=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=from:to:subject:user-agent:x-debbugs-no-ack:mime-version:content-disposition:date:content-type:content-transfer-encoding:message-id;
+        b=dtgZ4IFJ0KTDV9PSshsSZ6VysZfC2dOitNQQyYhFpMuI4S2Se0II6kZe8ADVe/cytOs/BSSUWbIcNIiqTFr7lLcYNlttbwFtR3LxctGkaN9lhxdPsGTtdOUAjWAf3J7q3WwF2bwyi5uMcTdPZUWrrZTo0SGc/un6STq/dIR5+1s=
+Received: by 10.100.255.10 with SMTP id c10mr11626739ani.7.1204324780899;
+        Fri, 29 Feb 2008 14:39:40 -0800 (PST)
+Received: from nova.local ( [201.164.225.7])
+        by mx.google.com with ESMTPS id 39sm11204911agb.16.2008.02.29.14.39.39
+        (version=TLSv1/SSLv3 cipher=OTHER);
+        Fri, 29 Feb 2008 14:39:40 -0800 (PST)
+From: Raphael Geissert <atomo64@gmail.com>
+To: maintonly@bugs.debian.org
+Subject: gnome-orca: bashism in /bin/sh script
+User-Agent: KMail/1.9.7
+X-Debbugs-No-Ack: do as I say
+MIME-Version: 1.0
+Content-Disposition: inline
+Date: Fri, 29 Feb 2008 16:39:36 -0600
+Content-Type: text/plain;
+  charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+Message-Id: <200802291639.37226.atomo64@gmail.com>
+Delivered-To: maintonly@bugs.debian.org
+
+Package: gnome-orca
+Severity: important
+Version: 2.20.3-1
+User: debian-release@lists.debian.org
+Usertags: goal-dash
+
+Hello maintainer,
+
+While performing an archive wide checkbashisms (from the 'devscripts' package) 
+check I've found your package containing a /bin/sh script making 
+use of a bashism.
+
+checkbashisms' output:
+> possible bashism in ./usr/bin/orca line 253 (<<< here string):
+>     if [ `grep -c "\-q" <<< $ARGS` -gt 0 ]
+> possible bashism in ./usr/bin/orca line 265 (<<< here string):
+>         if [ `egrep -c "\-s|\-g|\-t|\-n|\-u|\-e|\-d" <<< $ARGS` -eq 0 ]
+
+
+Not using bash as /bin/sh would lead to errors or unexpected behaviours. 
+Please be aware that although 
+bash is currently the default /bin/sh there's a release goal for Lenny to 
+make dash the default /bin/sh[1].
+
+If you want more information about dash as /bin/sh, you can read:
+http://lists.debian.org/debian-release/2008/01/msg00189.html
+https://wiki.ubuntu.com/DashAsBinSh
+
+[1]http://release.debian.org/lenny/goals.txt
+
+Thank you,
+-- 
+Atomo64 - Raphael
+
+Please avoid sending me Word, PowerPoint or Excel attachments.
+See http://www.gnu.org/philosophy/no-word-attachments.html
+
+
+
+------------=_1208707564-20720-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 468681-close) by bugs.debian.org; 20 Apr 2008 16:03:20 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.7 required=4.0 tests=BAYES_00,FROMDEVELOPER,
+	FVGT_m_MULTI_ODD,HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_2,
+	MURPHY_WRONG_WORD1,MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1Jnc0e-0002HH-Dx
+	for 468681-close@bugs.debian.org; Sun, 20 Apr 2008 16:03:20 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnbWR-0008Jv-DQ; Sun, 20 Apr 2008 15:32:07 +0000
+From: Mario Lang <mlang@debian.org>
+To: 468681-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#468681: fixed in gnome-orca 2.22.1-2
+Message-Id: <E1JnbWR-0008Jv-DQ@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 15:32:07 +0000
+Content-Transfer-Encoding: quoted-printable
+
+Source: gnome-orca
+Source-Version: 2.22.1-2
+
+We believe that the bug you reported is fixed in the latest version of
+gnome-orca, which is due to be installed in the Debian FTP archive:
+
+gnome-orca_2.22.1-2.diff.gz
+  to pool/main/g/gnome-orca/gnome-orca_2.22.1-2.diff.gz
+gnome-orca_2.22.1-2.dsc
+  to pool/main/g/gnome-orca/gnome-orca_2.22.1-2.dsc
+gnome-orca_2.22.1-2_all.deb
+  to pool/main/g/gnome-orca/gnome-orca_2.22.1-2_all.deb
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 468681@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Mario Lang <mlang@debian.org> (supplier of updated gnome-orca package)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 15:16:35 +0200
+Source: gnome-orca
+Binary: gnome-orca
+Architecture: source all
+Version: 2.22.1-2
+Distribution: unstable
+Urgency: low
+Maintainer: Mario Lang <mlang@debian.org>
+Changed-By: Mario Lang <mlang@debian.org>
+Description:=20
+ gnome-orca - Scriptable screen reader
+Closes: 468681 476905
+Changes:=20
+ gnome-orca (2.22.1-2) unstable; urgency=3Dlow
+ .
+   * Fix bashisms in orca startup script (Closes: Bug#468681).
+   * Remove the explicit setting of PYTHONPATH in the orca startup
+     script (Closes: Bug#476905).
+   * Nack 2.22.1-1.1 NMU.
+Checksums-Sha1:=20
+ 1cffd6b99cd2909e07e3b478cfd50c0b9effe49f 1425 gnome-orca_2.22.1-2.dsc
+ 978b278bdd4b9e04ea0c288a7656d072b2da3766 5863 gnome-orca_2.22.1-2.diff.g=
+z
+ abebb302f3bea127b7c1390bdbfc2790cf6507e3 1680216 gnome-orca_2.22.1-2_all=
+.deb
+Checksums-Sha256:=20
+ 97a00b0fffb44ec1d75bd2554c8c4ed0471a3364fa393c88c0269d93148021cd 1425 gn=
+ome-orca_2.22.1-2.dsc
+ 02334912bc98bbbfacfa543f51c0890a2c4878dcf2ae9b078e143d5701d46063 5863 gn=
+ome-orca_2.22.1-2.diff.gz
+ 19ca482d567bf6da782ec8c622956d951999200ec1f5c5d4ddad44abdc041d15 1680216=
+ gnome-orca_2.22.1-2_all.deb
+Files:=20
+ 523f009346232ab08424fabc7c97cfa4 1425 gnome optional gnome-orca_2.22.1-2=
+.dsc
+ 3a32ab818eec0d0b859e57befb6042bf 5863 gnome optional gnome-orca_2.22.1-2=
+.diff.gz
+ c9b9ff81ab3c0e62c3921ee63a0d229a 1680216 gnome optional gnome-orca_2.22.=
+1-2_all.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC15m3/wCKmsRPkQRAqxOAJ9+aAAPMoepHyOXc+J4i13nUE0auQCfZRhJ
+KGqzQFH5MHPLsu4a4F7FO3A=3D
+=3D8Obd
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208707564-20720-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

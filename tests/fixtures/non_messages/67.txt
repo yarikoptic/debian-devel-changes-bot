@@ -1,0 +1,139 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 20:25:30 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnfA8-0000gH-7x
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 20:25:30 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 0D23E13A5236; Sun, 20 Apr 2008 19:25:19 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id B95B613A5234;
+	Sun, 20 Apr 2008 19:25:07 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnf8u-0002Wr-O1; Sun, 20 Apr 2008 19:24:04 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#474183: [Python-apps-team] Bug#474183: does it help?
+Reply-To: Emilio Pozuelo Monfort <pochu@ubuntu.com>, 474183@bugs.debian.org
+Resent-From: Emilio Pozuelo Monfort <pochu@ubuntu.com>
+Original-Sender: Emilio Pozuelo Monfort <pochu27@gmail.com>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Python Applications Packaging Team <python-apps-team@lists.alioth.debian.org>
+Resent-Date: Sun, 20 Apr 2008 19:24:03 +0000
+Resent-Message-ID: <handler.474183.B474183.120871887431287@bugs.debian.org>
+X-Debian-PR-Message: report 474183
+X-Debian-PR-Package: spe
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: spe
+Received: via spool by 474183-submit@bugs.debian.org id=B474183.120871887431287
+          (code B ref 474183); Sun, 20 Apr 2008 19:24:03 +0000
+Received: (at 474183) by bugs.debian.org; 20 Apr 2008 19:14:34 +0000
+X-Amavis-Spam-Status: No, score=-7.0 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from ug-out-1314.google.com ([66.249.92.174])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <pochu27@gmail.com>)
+	id 1Jnezf-0006z4-Jo
+	for 474183@bugs.debian.org; Sun, 20 Apr 2008 19:14:32 +0000
+Received: by ug-out-1314.google.com with SMTP id o4so598592uge.23
+        for <474183@bugs.debian.org>; Sun, 20 Apr 2008 12:13:28 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:user-agent:mime-version:to:subject:references:in-reply-to:x-enigmail-version:content-type:sender;
+        bh=Wq0VLGL2qnQozzFdwJraJkRotxVjcGzgB5oISt+oO6A=;
+        b=tz19AQ2XTI87YqME3Kagff1qpFIrcOMMs/v7FKu5RfIVgsPyr0aLlOkiC6PirP5YmHzQcIw3PH00Upz6xBLTattqPQdJl5M2xIvBvkX8PsnCVL8gf6FtYsgheDVYI62WG8xHG1FWy0leOQUTvl4RaFy/fsO3/cZgGsGFU8NZ10s=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:user-agent:mime-version:to:subject:references:in-reply-to:x-enigmail-version:content-type:sender;
+        b=cvqbGg7j3CNyEeLH7npB4j8rOi38jd9rLJL73027DtAd8HcrenlmVP7mNoeV7RiJUv2um2byjYcaa9jcrDfbbHNtXNAiv2YHMyQLhTB7j4MNDwkVMBuQ/TyDWBSHDZpa1zdg4UgtGN90klXBq2A0dTKMUACFr1wSvj0QnCMrSSU=
+Received: by 10.67.119.15 with SMTP id w15mr4196848ugm.73.1208718808809;
+        Sun, 20 Apr 2008 12:13:28 -0700 (PDT)
+Received: from ?192.168.1.35? ( [88.0.153.177])
+        by mx.google.com with ESMTPS id o24sm5701923ugd.41.2008.04.20.12.13.26
+        (version=SSLv3 cipher=RC4-MD5);
+        Sun, 20 Apr 2008 12:13:27 -0700 (PDT)
+Message-ID: <480B95CE.3@ubuntu.com>
+Date: Sun, 20 Apr 2008 21:13:18 +0200
+From: Emilio Pozuelo Monfort <pochu@ubuntu.com>
+User-Agent: Thunderbird 2.0.0.12 (X11/20080227)
+MIME-Version: 1.0
+To: Christophe Combelles <ccomb@free.fr>, 474183@bugs.debian.org
+References: <480B71CA.1030708@free.fr>
+In-Reply-To: <480B71CA.1030708@free.fr>
+X-Enigmail-Version: 0.95.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+ protocol="application/pgp-signature";
+ boundary="------------enig4FA3435A9D5B8B75D34FCA1C"
+Sender: Emilio Pozuelo Monfort <pochu27@gmail.com>
+Resent-Date: Sun, 20 Apr 2008 19:24:04 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343745
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -44.3
+X-Spam-Report: (-44.3 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	8.3 AWL                    AWL: From: address is in the auto white-list
+
+This is an OpenPGP/MIME signed message (RFC 2440 and 3156)
+--------------enig4FA3435A9D5B8B75D34FCA1C
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Christophe Combelles wrote:
+> /usr/lib/*python2.4*/site-packages/wx-2.6-gtk2-unicode/wx/_controls.py(=
+3014)DeletePage()
+
+Do you have python-defaults 2.5.2-1? If not, please update to it. The pre=
+vious
+version didn't run rtupdate so you may have ended running python2.5 with =
+some
+python2.4 modules.
+
+
+--------------enig4FA3435A9D5B8B75D34FCA1C
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: OpenPGP digital signature
+Content-Disposition: attachment; filename="signature.asc"
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC5XUhTV17EoIsv4RAkiJAKCx3fDGQVV4RuVoxhy1yzvubolZNwCggOst
+u39mSBu/dmq2nldYnR8nZxY=
+=ePva
+-----END PGP SIGNATURE-----
+
+--------------enig4FA3435A9D5B8B75D34FCA1C--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

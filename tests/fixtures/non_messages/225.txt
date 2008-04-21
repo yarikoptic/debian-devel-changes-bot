@@ -1,0 +1,153 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 19:26:08 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JneEm-0000Pa-Nz
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 19:26:08 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id BA61413A50DA; Sun, 20 Apr 2008 18:26:03 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,HS_INDEX_PARAM,
+	LDO_WHITELIST,MURPHY_DRUGS_REL8,RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 03EA613A50AE;
+	Sun, 20 Apr 2008 18:25:50 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JneCp-0000VG-Qk; Sun, 20 Apr 2008 18:24:03 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476863: source-highlight: Patch which makes stdout the default as well as adds "-" to enable stdout
+Reply-To: opal@debian.org, 476863@bugs.debian.org
+Resent-From: Ola Lundqvist <opal@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Ola Lundqvist <opal@debian.org>
+Resent-Date: Sun, 20 Apr 2008 18:24:03 +0000
+Resent-Message-ID: <handler.476863.B476863.120871571932259@bugs.debian.org>
+X-Debian-PR-Message: report 476863
+X-Debian-PR-Package: source-highlight
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: source-highlight
+Received: via spool by 476863-submit@bugs.debian.org id=B476863.120871571932259
+          (code B ref 476863); Sun, 20 Apr 2008 18:24:03 +0000
+Received: (at 476863) by bugs.debian.org; 20 Apr 2008 18:21:59 +0000
+X-Amavis-Spam-Status: No, score=-8.8 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FROMDEVELOPER,HAS_BUG_NUMBER,MURPHY_DRUGS_REL8 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from c-adt-5.ataco.se ([213.115.168.248] helo=bixbite.inguza.net)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <ola@inguza.net>)
+	id 1JneAo-0008Na-Lw
+	for 476863@bugs.debian.org; Sun, 20 Apr 2008 18:21:59 +0000
+Received: from ola by bixbite.inguza.net with local (Exim 4.63)
+	(envelope-from <ola@inguza.net>)
+	id 1JneAk-0007se-RS; Sun, 20 Apr 2008 20:21:54 +0200
+Date: Sun, 20 Apr 2008 20:21:54 +0200
+From: Ola Lundqvist <opal@debian.org>
+To: Kresten Kjeldgaard <gathond@gathond.dk>, 476863@bugs.debian.org
+Message-ID: <20080420182154.GA1767@inguza.net>
+References: <20080419173843.31158.93249.reportbug@laptop.gathond.dk> <20080420145328.GA9763@inguza.net> <20080420153157.GC1489@gathond.dk>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20080420153157.GC1489@gathond.dk>
+User-Agent: Mutt/1.5.13 (2006-08-11)
+Resent-Date: Sun, 20 Apr 2008 18:24:03 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343717
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -38.7
+X-Spam-Report: (-38.7 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	14 AWL                    AWL: From: address is in the auto white-list
+
+Hi
+
+Thanks for the information. I have report this upstream and the report is
+available in http://savannah.gnu.org/support/index.php?106347
+
+I'll see if I can get any good answer from there.
+
+Best regards,
+
+// Ola
+
+On Sun, Apr 20, 2008 at 05:31:57PM +0200, Kresten Kjeldgaard wrote:
+> On Sun, Apr 20, 2008 at 04:53:28PM +0200, Ola Lundqvist wrote:
+> > Hi
+> > 
+> > Thanks a lot for the patch. I'm not sure I want to change the default compared to
+> > "upstream". I would actually prefer to change the documentation in that case.
+> >
+> > Do you have an other opinion about this?
+> 
+> First of, I'm not personally using this software I just happened to be
+> on the same IRC channel as the original submitter and had nothing better
+> to do at the time so I started looking at it.
+> 
+> Personally I agree with the original submitter that having a default
+> which consists of writing $inputfilename.html overwriting anything
+> happening to be there already in the process seems wrong on some level. 
+> So I went with the assumption that the built in help function described
+> the intended way, and the code somehow went wrong along the way. 
+> 
+> I have since determined the upstream 2.9 has the same behaviour as the
+> debian package, as well as the same broken --help description. Actually
+> the whole -o/--output scheme seems to be broken upstream, I never
+> managed to make it do anything but STDOUT and $filename.html, no matter
+> what I specified.
+> 
+> Perhaps the best thing is to simply report this issue to upstream and
+> check what their oppinion is on what should be the correct behaviour and
+> then take it from there?
+> 
+> Then we can at some point send them a patch which at least makes the
+> behaviour and the --help text consistent.
+> 
+> Please let me know your thoughts about the above.
+> 
+> -- 
+> Med venlig hilsen / Kind regards
+> Kresten Kjeldgaard aka Gathond
+> For every complex problem, there is a solution that is simple, neat, and wrong.
+> -- H. L. Mencken
+
+
+
+-- 
+ --------------------- Ola Lundqvist ---------------------------
+/  opal@debian.org                     Annebergsslingan 37      \
+|  ola@inguza.com                      654 65 KARLSTAD          |
+|  http://inguza.com/                  +46 (0)70-332 1551       |
+\  gpg/f.p.: 7090 A92B 18FE 7994 0C36  4FE4 18A1 B1CF 0FE5 3DD9 /
+ ---------------------------------------------------------------
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

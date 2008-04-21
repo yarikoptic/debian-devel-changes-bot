@@ -1,0 +1,192 @@
+From bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org Sun Apr 20 11:52:01 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org>)
+	id 1JnX9J-0006W3-CK
+	for ddc@ddc.chris-lamb.co.uk; Sun, 20 Apr 2008 11:52:01 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 6B06C13A4F28; Sun, 20 Apr 2008 10:51:56 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id C2BAD13A4ED6;
+	Sun, 20 Apr 2008 10:51:54 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnX8V-0001Ke-MQ; Sun, 20 Apr 2008 10:51:07 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Matthias Klose <doko@cs.tu-berlin.de>
+Subject: Bug#416026: marked as done (Manpage not exact about {})
+Message-ID: <handler.416026.D416026.12086886203552.ackdone@bugs.debian.org>
+References: <18443.8169.956403.624119@gargle.gargle.HOWL>
+ <20070324062644.GE28308@bli.melix.com.mx>
+X-Debian-PR-Message: closed 416026
+X-Debian-PR-Package: bash
+X-Debian-PR-Source: bash
+Content-Type: multipart/mixed; boundary="----------=_1208688667-5116-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 10:51:07 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <Q9xTp3CNAvP.A.8bE.MByCIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/132956
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 10:51:56 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208688667-5116-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 12:50:17 +0200
+with message-id <18443.8169.956403.624119@gargle.gargle.HOWL>
+and subject line Re: Manpage not exact about {}
+has caused the Debian Bug report #416026,
+regarding Manpage not exact about {}
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+416026: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D416026
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208688667-5116-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 24 Mar 2007 06:26:49 +0000
+Return-path: <bli@melix.com.mx>
+Received: from melix.com.mx ([217.160.17.189])
+	by rietz.debian.org with esmtp (Exim 4.50)
+	id 1HUziD-0002hH-2y
+	for submit@bugs.debian.org; Sat, 24 Mar 2007 06:26:49 +0000
+Received: by melix.com.mx (Postfix, from userid 1002)
+	id 75925AB559; Sat, 24 Mar 2007 00:26:47 -0600 (CST)
+Received: from bli.melix.com.mx (vpnbli [10.8.0.6])
+	(using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by melix.com.mx (Postfix) with ESMTP id B261DAB1AA
+	for <submit@bugs.debian.org>; Sat, 24 Mar 2007 00:26:46 -0600 (CST)
+Received: by bli.melix.com.mx (Postfix, from userid 1000)
+	id C8DFA715AB; Sat, 24 Mar 2007 00:26:44 -0600 (CST)
+Date: Sat, 24 Mar 2007 00:26:44 -0600
+From: Thomas Bliesener <nospam@melix.com.mx>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Subject: Manpage not exact about {}
+Message-ID: <20070324062644.GE28308@bli.melix.com.mx>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1
+Content-Disposition: inline
+Delivered-To: submit@bugs.debian.org
+X-Spam-Checker-Version: SpamAssassin 2.60-bugs.debian.org_2005_01_02 
+	(1.212-2003-09-23-exp) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, hits=-8.0 required=4.0 tests=BAYES_01,HAS_PACKAGE 
+	autolearn=ham version=2.60-bugs.debian.org_2005_01_02
+
+Package: bash
+Version: 3.1dfsg-8
+Severity: minor
+
+| { list; }
+              [...]
+|              Since they do  not  cause  a  word break, 
+|              they  must  be  separated  from list by
+|              whitespace.
+
+Not only whitespaces are allowed. { list;} or {(list)} work also.
+
+
+------------=_1208688667-5116-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 416026-done) by bugs.debian.org; 20 Apr 2008 10:50:20 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-3.0 required=4.0 tests=BAYES_00,UNPARSEABLE_RELAY 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <doko@cs.tu-berlin.de>
+Received: from mail.cs.tu-berlin.de ([130.149.17.13])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <doko@cs.tu-berlin.de>)
+	id 1JnX7j-0000uy-V9
+	for 416026-done@bugs.debian.org; Sun, 20 Apr 2008 10:50:20 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by localhost-12225.cs.tu-berlin.de (Postfix) with ESMTP id 09237EFAF
+	for <416026-done@bugs.debian.org>; Sun, 20 Apr 2008 12:50:19 +0200 (MEST)
+Received: from mailhost.cs.tu-berlin.de ([127.0.0.1])
+	by localhost (mail.cs.tu-berlin.de [127.0.0.1]) (amavisd-new, port 12224)
+	with ESMTP id os8ukjW61PQV 10695-14 for <416026-done@bugs.debian.org>;
+	Sun, 20 Apr 2008 12:50:18 +0200 (MEST) 16496
+Received: from bolero.cs.tu-berlin.de (bolero.cs.tu-berlin.de [130.149.19.1])
+	(using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by mailhost.cs.tu-berlin.de (Postfix) with ESMTP
+	for <416026-done@bugs.debian.org>; Sun, 20 Apr 2008 12:50:18 +0200 (MEST)
+Received: (from doko@localhost)
+	by bolero.cs.tu-berlin.de (8.13.8+Sun/8.13.3/Submit) id m3KAoITY019196;
+	Sun, 20 Apr 2008 12:50:18 +0200 (MEST)
+From: Matthias Klose <doko@cs.tu-berlin.de>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Message-ID: <18443.8169.956403.624119@gargle.gargle.HOWL>
+Date: Sun, 20 Apr 2008 12:50:17 +0200
+To: 416026-done@bugs.debian.org
+Subject: Re: Manpage not exact about {}
+X-Mailer: VM 7.17 under 21.4 (patch 21) "Educational Television" XEmacs Lucid
+X-Virus-Scanned: amavisd-new at cs.tu-berlin.de (including SpamAssassin)
+
+> Not only whitespaces are allowed. { list;} or {(list)} work also.
+
+yes, but this is a compound command again; no need to document this
+extra.
+
+
+------------=_1208688667-5116-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

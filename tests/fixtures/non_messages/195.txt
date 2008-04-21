@@ -1,0 +1,175 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 20:07:15 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnesV-0000cR-JP
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 20:07:15 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 9188913A520C; Sun, 20 Apr 2008 19:07:05 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.9 required=4.0 tests=BAYES_00,FOURLA,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 88BF113A50BD;
+	Sun, 20 Apr 2008 19:06:36 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnerV-0001m1-FF; Sun, 20 Apr 2008 19:06:05 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476984: acpi-support: sleepbtn.sh does not work
+Reply-To: Bart Samwel <bart@samwel.tk>, 476984@bugs.debian.org
+Resent-From: Bart Samwel <bart@samwel.tk>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 19:06:04 +0000
+Resent-Message-ID: <handler.476984.B476984.12087183003351@bugs.debian.org>
+X-Debian-PR-Message: report 476984
+X-Debian-PR-Package: acpi-support
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: acpi-support
+Received: via spool by 476984-submit@bugs.debian.org id=B476984.12087183003351
+          (code B ref 476984); Sun, 20 Apr 2008 19:06:04 +0000
+Received: (at 476984) by bugs.debian.org; 20 Apr 2008 19:05:00 +0000
+X-Amavis-Spam-Status: No, score=-6.9 required=4.0 tests=BAYES_00,FOURLA,
+	HAS_BUG_NUMBER autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from customer-vserver-jkruis-1.all2all.org ([62.58.108.47] helo=jkruis.all2all.org)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <bart@samwel.tk>)
+	id 1JneqS-0000rV-CA
+	for 476984@bugs.debian.org; Sun, 20 Apr 2008 19:05:00 +0000
+Received: by jkruis.all2all.org (Postfix, from userid 65534)
+	id A938E49042EB; Sun, 20 Apr 2008 21:04:58 +0200 (CEST)
+Received: from [192.168.1.65] (gedoe.xs4all.nl [82.95.120.224])
+	by jkruis.all2all.org (Postfix) with ESMTP id E311A490429E;
+	Sun, 20 Apr 2008 21:04:55 +0200 (CEST)
+Message-ID: <480B93D7.4010002@samwel.tk>
+Date: Sun, 20 Apr 2008 21:04:55 +0200
+From: Bart Samwel <bart@samwel.tk>
+User-Agent: Thunderbird 2.0.0.12 (X11/20080227)
+MIME-Version: 1.0
+To: Wenjia Bai <baiwenjia@gmail.com>, 476984@bugs.debian.org
+References: <480B59CC.1040108@gmail.com>
+In-Reply-To: <480B59CC.1040108@gmail.com>
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 7bit
+Resent-Date: Sun, 20 Apr 2008 19:06:05 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343737
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -43.1
+X-Spam-Report: (-43.1 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	9.5 AWL                    AWL: From: address is in the auto white-list
+
+Hi Wenjia,
+
+I'm guessing that you don't run either gnome-power-manager or 
+klaptopdaemon. That could explain why the fake key isn't handled. Could 
+you confirm this?
+
+Cheers,
+Bart
+
+
+Wenjia Bai wrote:
+> Package: acpi-support
+> Version: 0.103-5
+> Severity: normal
+> 
+> *** Please type your report below this line ***
+> 
+> Hi, Dear Maintainers,
+> 
+> I have had a problem with sleepbtn.sh, which is provided by the 
+> acpi-support package.
+> 
+> I am using a Compaq Presario laptop. When I press the sleep button on 
+> the laptop, or the "suspend" option in the shutdown dialogue, I find 
+> that /etc/acpi/sleepbtn.sh is executed and acpi_fakekey sends 
+> $KEY_SLEEP=142 out. However, my laptop does not sleep. The screen turns 
+> black for about 10 seconds and turns on again.
+> 
+> When I log in as root and executes "echo -n "mem" > /sys/power/state", 
+> my laptop sleeps successfully. So I modified sleepbtn.sh, subsitituting 
+> the acpi_fakekey command with the echo "mem" command.
+> 
+> I do not know how acpi_fakekey works and where the problem is. I guess 
+> the bug has something to do with the acpid package. Hope it will be 
+> fixed in the future.
+> 
+> Best wishes,
+> Wenjia
+> 
+> -- System Information:
+> Debian Release: lenny/sid
+>   APT prefers unstable
+>   APT policy: (800, 'unstable')
+> Architecture: i386 (i686)
+> 
+> Kernel: Linux 2.6.24-1-686 (SMP w/2 CPU cores)
+> Locale: LANG=zh_CN.UTF-8, LC_CTYPE=zh_CN.UTF-8 (charmap=UTF-8)
+> Shell: /bin/sh linked to /bin/bash
+> 
+> Versions of packages acpi-support depends on:
+> ii  acpi-support-base             0.103-5    scripts for handling base 
+> ACPI eve
+> ii  acpid                         1.0.6-5.1  Utilities for using ACPI 
+> power man
+> ii  dmidecode                     2.9-1      Dump Desktop Management 
+> Interface
+> ii  finger                        0.17-12    user information lookup 
+> program
+> ii  hdparm                        8.6-1      tune hard disk parameters 
+> for high
+> ii  laptop-detect                 0.13.5     attempt to detect a laptop
+> ii  libc6                         2.7-10     GNU C Library: Shared 
+> libraries
+> ii  lsb-base                      3.2-8      Linux Standard Base 3.2 
+> init scrip
+> ii  nvclock                       0.8b3-1    Allows you to overclock 
+> your nVidi
+> ii  powermgmt-base                1.30       Common utils and configs 
+> for power
+> ii  radeontool                    1.5-5      utility to control ATI 
+> Radeon back
+> ii  toshset                       1.73-1     Access much of the Toshiba 
+> laptop
+> ii  vbetool                       1.0-1.1    run real-mode video BIOS 
+> code to a
+> ii  x11-xserver-utils             7.3+2      X server utilities
+> 
+> acpi-support recommends no packages.
+> 
+> -- no debconf information
+> 
+> 
+
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

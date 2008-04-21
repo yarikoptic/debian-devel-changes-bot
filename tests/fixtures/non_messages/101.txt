@@ -1,0 +1,131 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 10:32:37 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnVuS-00061a-VO
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 10:32:37 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id CF26C13A4E90; Sun, 20 Apr 2008 09:32:31 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 0FB7813A4E19;
+	Sun, 20 Apr 2008 09:32:14 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnVpF-0006Ux-5q; Sun, 20 Apr 2008 09:27:09 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476906: Bug#457906: mirror submission for debian.patan.com.ar
+Reply-To: Simon Paillard <simon.paillard@resel.enst-bretagne.fr>, 476906@bugs.debian.org
+Resent-From: Simon Paillard <simon.paillard@resel.enst-bretagne.fr>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian Mirrors Team <mirrors@debian.org>
+Resent-Date: Sun, 20 Apr 2008 09:27:08 +0000
+Resent-Message-ID: <handler.476906.B476906.120868345913179@bugs.debian.org>
+X-Debian-PR-Message: report 476906
+X-Debian-PR-Package: mirrors
+X-Debian-PR-Keywords: moreinfo
+Received: via spool by 476906-submit@bugs.debian.org id=B476906.120868345913179
+          (code B ref 476906); Sun, 20 Apr 2008 09:27:08 +0000
+Received: (at 476906) by bugs.debian.org; 20 Apr 2008 09:24:19 +0000
+X-Amavis-Spam-Status: No, score=-7.0 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from dedibox.ebzao.info ([88.191.19.23] ident=postfix)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <simon.paillard@resel.enst-bretagne.fr>)
+	id 1JnVmT-0003NL-U5
+	for 476906@bugs.debian.org; Sun, 20 Apr 2008 09:24:18 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by dedibox.ebzao.info (Postfix) with ESMTP id F280B3372;
+	Sun, 20 Apr 2008 11:24:16 +0200 (CEST)
+Received: from dedibox.ebzao.info ([127.0.0.1])
+	by localhost (dedibox.ebzao.info [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id N7ZmZ6Em9XbZ; Sun, 20 Apr 2008 11:24:16 +0200 (CEST)
+Received: by dedibox.ebzao.info (Postfix, from userid 1006)
+	id CD05D638A; Sun, 20 Apr 2008 11:24:16 +0200 (CEST)
+Date: Sun, 20 Apr 2008 11:24:16 +0200
+From: Simon Paillard <simon.paillard@resel.enst-bretagne.fr>
+To: John Knoll <jknoll@patan.com.ar>
+Cc: 476906@bugs.debian.org
+Message-ID: <20080420092416.GA6836@dedibox.ebzao.info>
+References: <e0ecd699.1c857a4.e08f09.74d@patan.com.ar> <20080305224839.GN7085@dedibox> <05f801c87f15$87db34f0$97919ed0$@com.ar> <20080418204405.GO15968@dedibox.ebzao.info>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-15
+Content-Disposition: inline
+In-Reply-To: <20080418204405.GO15968@dedibox.ebzao.info>
+X-Operating-System: Debian GNU/Linux
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Content-Transfer-Encoding: quoted-printable
+Resent-Date: Sun, 20 Apr 2008 09:27:09 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343382
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -42.0
+X-Spam-Report: (-42.0 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	11 AWL                    AWL: From: address is in the auto white-list
+
+Hello John,
+
+I noticed by myself that the mirror is running Linux now, and wrote this
+email two days ago.
+
+The remarks about anonftpsync must be applied as explained on
+http://debian.org/mirrors/ftmirror
+
+By the way, that would be great to make the ftp paths the same as for
+http, i.e. ftp://debian.patan.com.ar/debian/ instead of
+ftp://debian.patan.com.ar/mirrors/debian/debian/ because it is easier
+for users and for the mirror team.
+
+On Fri, Apr 18, 2008 at 10:44:05PM +0200, Simon Paillard wrote:
+> retitle 457906 mirror submission debian.patan.com.ar: should use anonft=
+psync
+> thanks
+>=20
+> Hello John,
+>=20
+> On Wed, Mar 05, 2008 at 09:06:22PM -0200, John Knoll wrote:
+> > I am  a m=EDgrate mirror to Linux
+>=20
+> I noticed by checking old mirror submission that your mirror is now
+> functionnal.
+>=20
+> However there are some remarks to apply so that it can be included :
+> * you must use anonftpsync that :
+>     - generates the required local trace file (take care to configure
+>       the HOSTNAME variable to "debian.patan.com.ar")
+>     - sync your mirror in a way it is not broken during updates
+
+
+Thanks !
+
+--=20
+Simon Paillard
+mirrors@debian.org
+
+
+

@@ -1,0 +1,222 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 03:51:54 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnPed-0005DC-Mt
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 03:51:53 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 919ED13A4DEB; Sun, 20 Apr 2008 02:51:46 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-5.8 required=4.0 tests=BAYES_00,IMPRONONCABLE_1,
+	IMPRONONCABLE_2,LDO_WHITELIST,MURPHY_DRUGS_REL8,MURPHY_WRONG_WORD2,
+	RCVD_IN_DNSWL_LOW autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 344D313A4D91;
+	Sun, 20 Apr 2008 02:51:36 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnPY8-0006Ex-FZ; Sun, 20 Apr 2008 02:45:04 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476899: dpkg: Leaves new conffiles as file.dpkg-new if the conffile is diverted
+Reply-To: Timothy G Abbott <tabbott@MIT.EDU>, 476899@bugs.debian.org
+Resent-From: Timothy G Abbott <tabbott@MIT.EDU>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Dpkg Developers <debian-dpkg@lists.debian.org>
+Resent-Date: Sun, 20 Apr 2008 02:45:01 +0000
+Resent-Message-ID: <handler.476899.B.120865947223329@bugs.debian.org>
+X-Debian-PR-Message: report 476899
+X-Debian-PR-Package: dpkg
+X-Debian-PR-Keywords: patch
+X-Debian-PR-Source: dpkg
+Received: via spool by submit@bugs.debian.org id=B.120865947223329
+          (code B ref -1); Sun, 20 Apr 2008 02:45:01 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 02:44:32 +0000
+X-Amavis-Spam-Status: No, score=-7.8 required=4.0 tests=BAYES_00,HAS_PACKAGE,
+	IMPRONONCABLE_1,IMPRONONCABLE_2,MURPHY_DRUGS_REL8,MURPHY_WRONG_WORD2 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from biscayne-one-station.mit.edu ([18.7.7.80])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <tabbott@MIT.EDU>)
+	id 1JnPXc-00063C-JY
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 02:44:32 +0000
+Received: from outgoing.mit.edu (OUTGOING-AUTH.MIT.EDU [18.7.22.103])
+	by biscayne-one-station.mit.edu (8.13.6/8.9.2) with ESMTP id m3K2iJbv002285
+	for <submit@bugs.debian.org>; Sat, 19 Apr 2008 22:44:19 -0400 (EDT)
+Received: from localhost (VINEGAR-POT.MIT.EDU [18.181.0.51])
+	(authenticated bits=0)
+        (User authenticated as tabbott@ATHENA.MIT.EDU)
+	by outgoing.mit.edu (8.13.6/8.12.4) with ESMTP id m3K2iI8w028697
+	for <submit@bugs.debian.org>; Sat, 19 Apr 2008 22:44:18 -0400 (EDT)
+Date: Sat, 19 Apr 2008 22:44:18 -0400 (EDT)
+From: Timothy G Abbott <tabbott@MIT.EDU>
+To: submit@bugs.debian.org
+Message-ID: <Pine.LNX.4.64L.0804192223410.28713@vinegar-pot.mit.edu>
+MIME-Version: 1.0
+Content-Type: MULTIPART/MIXED; BOUNDARY="-1257098496-634439064-1208659458=:28713"
+X-Scanned-By: MIMEDefang 2.42
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 02:45:04 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343322
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -43.9
+X-Spam-Report: (-43.9 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	8.7 AWL                    AWL: From: address is in the auto white-list
+
+  This message is in MIME format.  The first part should be readable text,
+  while the remaining parts are likely unreadable without MIME-aware tools.
+
+---1257098496-634439064-1208659458=:28713
+Content-Type: TEXT/PLAIN; charset=US-ASCII; format=flowed
+
+Package: dpkg
+Severity: normal
+Tags: patch
+
+When a conffile (e.g. /etc/ldap/ldap.conf) is diverted, and one upgrades 
+the package containing the conffile, dpkg sometimes fails to copy the 
+.dpkg-new file onto the diverted conffile location.  The cause is that it 
+uses the diverted location when unpacking files, but the non-diverted 
+location when comparing the user's and maintainer's changes.
+
+A transcript you can use to reproduce the problem is below (the version of 
+libldap2.deb being installed has had its conffile modified and version 
+bumped).
+
+While I realize that using dpkg-divert on conffiles is an uncommon 
+practice, the current behavior is clearly wrong.
+
+I've attached a simple git patch against current head that fixes this.
+
+Thanks,
+
+ 	-Tim Abbott
+
+mega-man:~# dpkg-divert --list | grep ldap
+diversion of /etc/ldap/ldap.conf to /etc/ldap/ldap.conf.debathena-orig by debathena-ldap-config
+
+mega-man:~# ls /etc/ldap/
+ldap.conf  ldap.conf.debathena  ldap.conf.debathena-orig
+
+mega-man:~# dpkg -D200 -i libldap2.deb
+(Reading database ... 323858 files and directories currently installed.)
+Preparing to replace libldap2 2.1.30-13.3 (using x.deb) ...
+D000200: process_archive conffile `/etc/ldap/ldap.conf' in package 
+libldap2 - conff ?
+D000200: oldconffsetflags `/etc/ldap/ldap.conf' namenode 0x88dc304 flags 5
+Unpacking replacement libldap2 ...
+D000200: conffderef in=`etc/ldap/ldap.conf.debathena-orig' current 
+working=`/etc/ldap/ldap.conf.debathena-orig'
+D000200: tarobject conffile extracted
+Replaced by files in installed package libldap-2.3-0 ...
+Setting up libldap2 (2.1.30-13.3tabbott) ...
+D000200: conffderef in=`/etc/ldap/ldap.conf' current 
+working=`/etc/ldap/ldap.conf'
+D000200: conffderef symlink loopprotect=0
+D000200: conffderef readlink realloc(255)=0x829b040
+D000200: conffderef readlink gave 19, `ldap.conf.debathena'
+D000200: conffderef readlink relative to `/etc/ldap/'
+D000200: conffderef in=`/etc/ldap/ldap.conf' current 
+working=`/etc/ldap/ldap.conf.debathena'
+
+mega-man:~# ls /etc/ldap/
+ldap.conf  ldap.conf.debathena  ldap.conf.debathena-orig  ldap.conf.debathena-orig.dpkg-new
+---1257098496-634439064-1208659458=:28713
+Content-Type: TEXT/x-diff; charset=US-ASCII; name=configure-divert.patch
+Content-ID: <Pine.LNX.4.64L.0804192244180.28713@vinegar-pot.mit.edu>
+Content-Description: 
+Content-Disposition: attachment; filename=configure-divert.patch
+Content-Transfer-Encoding: BASE64
+
+Y29tbWl0IDc5MGEzNWJkNjVjMDQ0OWJkOGQ2MGRhZTUwNTNmOTdhYjc1YzNh
+YjUNCkF1dGhvcjogVGltb3RoeSBHIEFiYm90dCA8dGFiYm90dEBtZWdhLW1h
+bi5taXQuZWR1Pg0KRGF0ZTogICBTYXQgQXByIDE5IDIyOjI2OjExIDIwMDgg
+LTA0MDANCg0KICAgIERvbid0IGxlYXZlIG5ldyBjb25mZmlsZXMgYXMgLmRw
+a2ctbmV3IHZlcnNpb25zIHdoZW4gdGhlIGNvbmZmaWxlIGhhcyBiZWVuIGRp
+dmVydGVkLg0KICAgIA0KICAgICogc3JjL2NvbmZpZ3VyZS5jOiAoZGVmZXJy
+ZWRfY29uZmlndXJlKSBDb21wYXJlIHRoZSBkaXZlcnRlZCB2ZXJzaW9ucyBv
+ZiBjb25mZmlsZXMuDQoNCmRpZmYgLS1naXQgYS9zcmMvY29uZmlndXJlLmMg
+Yi9zcmMvY29uZmlndXJlLmMNCmluZGV4IGNkZTJjNjguLmU2N2Y1N2UgMTAw
+NjQ0DQotLS0gYS9zcmMvY29uZmlndXJlLmMNCisrKyBiL3NyYy9jb25maWd1
+cmUuYw0KQEAgLTg1LDYgKzg1LDcgQEAgdm9pZCBkZWZlcnJlZF9jb25maWd1
+cmUoc3RydWN0IHBrZ2luZm8gKnBrZykgew0KIAlzdHJ1Y3Qgc3RhdCBzdGFi
+Ow0KIAllbnVtIGNvbmZmb3B0IHdoYXQ7DQogCXN0YXRpYyBjb25zdCBjaGFy
+ICpFTVBUWV9IQVNIID0gIi0iOw0KKwljb25zdCBjaGFyICp1c2VuYW1lOw0K
+IA0KIAlpZiAocGtnLT5zdGF0dXMgPT0gc3RhdF9ub3RpbnN0YWxsZWQpDQog
+CQlvaHNoaXQoXygibm8gcGFja2FnZSBuYW1lZCBgJXMnIGlzIGluc3RhbGxl
+ZCwgY2Fubm90IGNvbmZpZ3VyZSIpLHBrZy0+bmFtZSk7DQpAQCAtMTczLDcg
+KzE3NCw4IEBAIHZvaWQgZGVmZXJyZWRfY29uZmlndXJlKHN0cnVjdCBwa2dp
+bmZvICpwa2cpIHsNCiAJCXZhcmJ1ZmluaXQoJmNkcik7DQogCQl2YXJidWZp
+bml0KCZjZHIyKTsNCiAJCWZvciAoY29uZmY9IHBrZy0+aW5zdGFsbGVkLmNv
+bmZmaWxlczsgY29uZmY7IGNvbmZmPSBjb25mZi0+bmV4dCkgew0KLQkJCXI9
+IGNvbmZmZGVyZWYocGtnLCAmY2RyLCBjb25mZi0+bmFtZSk7DQorCQkJdXNl
+bmFtZSA9IG5hbWVub2RldG91c2UoZmluZG5hbWVub2RlKGNvbmZmLT5uYW1l
+LGZubl9ub2NvcHkpLHBrZyktPm5hbWU7DQorCQkJcj0gY29uZmZkZXJlZihw
+a2csICZjZHIsIHVzZW5hbWUpOw0KIAkJCWlmIChyID09IC0xKSB7DQogCQkJ
+CWNvbmZmLT5oYXNoPSBFTVBUWV9IQVNIOw0KIAkJCQljb250aW51ZTsNCkBA
+IC0yMDksNyArMjExLDcgQEAgdm9pZCBkZWZlcnJlZF9jb25maWd1cmUoc3Ry
+dWN0IHBrZ2luZm8gKnBrZykgew0KIAkJCQl3aGF0PSBjZm9faWRlbnRpY2Fs
+Ow0KIAkJCX0gZWxzZSBpZiAoIXN0cmNtcChjdXJyZW50aGFzaCxOT05FWElT
+VEVOVEZMQUcpICYmIGZjX2NvbmZmX21pc3MpIHsNCiAJCQkJZnByaW50Zihz
+dGRlcnIsIF8oIlxuQ29uZmlndXJhdGlvbiBmaWxlIGAlcycsIGRvZXMgbm90
+IGV4aXN0IG9uIHN5c3RlbS5cbiINCi0JCQkJCQkJIkluc3RhbGxpbmcgbmV3
+IGNvbmZpZyBmaWxlIGFzIHlvdSByZXF1ZXN0LlxuIiksIGNvbmZmLT5uYW1l
+KTsNCisJCQkJCQkJIkluc3RhbGxpbmcgbmV3IGNvbmZpZyBmaWxlIGFzIHlv
+dSByZXF1ZXN0LlxuIiksIHVzZW5hbWUpOw0KIAkJCQl3aGF0PSBjZm9fbmV3
+Y29uZmY7DQogCQkJCXVzZXJlZGl0ZWQ9IC0xOw0KIAkJCQlkaXN0ZWRpdGVk
+PSAtMTsNCkBAIC0yMzMsOSArMjM1LDkgQEAgdm9pZCBkZWZlcnJlZF9jb25m
+aWd1cmUoc3RydWN0IHBrZ2luZm8gKnBrZykgew0KIA0KIAkJCWRlYnVnKGRi
+Z19jb25mZiwNCiAJCQkJCSJkZWZlcnJlZF9jb25maWd1cmUgYCVzJyAoPSBg
+JXMnKSB1c2VyZWRpdGVkPSVkIGRpc3RlZGl0ZWQ9JWQgd2hhdD0lbyIsDQot
+CQkJCQljb25mZi0+bmFtZSwgY2RyLmJ1ZiwgdXNlcmVkaXRlZCwgZGlzdGVk
+aXRlZCwgd2hhdCk7DQorCQkJCQl1c2VuYW1lLCBjZHIuYnVmLCB1c2VyZWRp
+dGVkLCBkaXN0ZWRpdGVkLCB3aGF0KTsNCiANCi0JCQl3aGF0PXByb21wdGNv
+bmZhY3Rpb24oY29uZmYtPm5hbWUsIGNkci5idWYsIGNkcjIuYnVmLCB1c2Vy
+ZWRpdGVkLCBkaXN0ZWRpdGVkLCB3aGF0KTsNCisJCQl3aGF0PXByb21wdGNv
+bmZhY3Rpb24odXNlbmFtZSwgY2RyLmJ1ZiwgY2RyMi5idWYsIHVzZXJlZGl0
+ZWQsIGRpc3RlZGl0ZWQsIHdoYXQpOw0KIA0KIAkJCXN3aXRjaCAod2hhdCAm
+IH4oY2ZvZl9pc25ld3xjZm9mX3VzZXJybWQpKSB7DQogCQkJCWNhc2UgY2Zv
+X2tlZXAgfCBjZm9mX2JhY2t1cDoNCkBAIC0yODEsNyArMjgzLDcgQEAgdm9p
+ZCBkZWZlcnJlZF9jb25maWd1cmUoc3RydWN0IHBrZ2luZm8gKnBrZykgew0K
+IAkJCQkJCQkJcGtnLT5uYW1lLCBjZHIuYnVmLCBjZHIyLmJ1Ziwgc3RyZXJy
+b3IoZXJybm8pKTsNCiAJCQkJCS8qIGZhbGwgdGhyb3VnaCAqLw0KIAkJCQlj
+YXNlIGNmb19pbnN0YWxsOg0KLQkJCQkJcHJpbnRmKF8oIkluc3RhbGxpbmcg
+bmV3IHZlcnNpb24gb2YgY29uZmlnIGZpbGUgJXMgLi4uXG4iKSxjb25mZi0+
+bmFtZSk7DQorCQkJCQlwcmludGYoXygiSW5zdGFsbGluZyBuZXcgdmVyc2lv
+biBvZiBjb25maWcgZmlsZSAlcyAuLi5cbiIpLHVzZW5hbWUpOw0KIAkJCQlj
+YXNlIGNmb19uZXdjb25mZjoNCiAJCQkJCXN0cmNweShjZHIycmVzdCxEUEtH
+TkVXRVhUKTsNCiAJCQkJCXRyaWdfZmlsZV9hY3RpdmF0ZV9ieW5hbWUoY29u
+ZmYtPm5hbWUsIHBrZyk7DQo=
+
+---1257098496-634439064-1208659458=:28713--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

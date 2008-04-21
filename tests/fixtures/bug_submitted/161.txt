@@ -1,0 +1,185 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 15:50:14 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnarp-0007Z5-0K
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 15:50:14 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id D1E2413A4F8C; Sun, 20 Apr 2008 14:50:07 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-6.7 required=4.0 tests=BAYES_00,FOURLA,
+	IMPRONONCABLE_1,LDO_WHITELIST,MURPHY_DRUGS_REL8,MURPHY_WRONG_WORD2,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 18B8B13A49A3;
+	Sun, 20 Apr 2008 14:49:56 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnamt-0004q4-T9; Sun, 20 Apr 2008 14:45:03 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476982: [INTL:gl] Galician debconf template translation for ntop
+Reply-To: Jacobo Tarrio <jtarrio@trasno.net>, 476982@bugs.debian.org
+Resent-From: Jacobo Tarrio <jtarrio@trasno.net>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Ola Lundqvist <opal@debian.org>
+Resent-Date: Sun, 20 Apr 2008 14:45:01 +0000
+Resent-Message-ID: <handler.476982.B.120870259116328@bugs.debian.org>
+X-Debian-PR-Message: report 476982
+X-Debian-PR-Package: ntop
+X-Debian-PR-Keywords: l10n patch
+X-Debian-PR-Source: ntop
+Received: via spool by submit@bugs.debian.org id=B.120870259116328
+          (code B ref -1); Sun, 20 Apr 2008 14:45:01 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 14:43:11 +0000
+X-Amavis-Spam-Status: No, score=-8.7 required=4.0 tests=BAYES_00,FOURLA,HAS_PACKAGE,
+	IMPRONONCABLE_1,MURPHY_DRUGS_REL8,MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from viefep18-int.chello.at ([213.46.255.22])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <jtarrio@trasno.net>)
+	id 1Jnal4-0004Cj-OU
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 14:43:11 +0000
+Received: from edge04.upc.biz ([192.168.13.239]) by viefep18-int.chello.at
+          (InterMail vM.7.08.02.00 201-2186-121-20061213) with ESMTP
+          id <20080420144303.UFWH632.viefep18-int.chello.at@edge04.upc.biz>
+          for <submit@bugs.debian.org>; Sun, 20 Apr 2008 16:43:03 +0200
+Received: from localhost ([89.100.184.205])
+	by edge04.upc.biz with edge04
+	id Fqj11Z0254SJlzt01qj2Pc; Sun, 20 Apr 2008 16:43:03 +0200
+X-SourceIP: 89.100.184.205
+Received: from [127.0.0.1] (localhost [127.0.0.1])
+	by localhost (Postfix) with ESMTP id 5A39BA38052;
+	Sun, 20 Apr 2008 15:43:01 +0100 (IST)
+Content-Type: multipart/mixed; boundary="===============0330093758=="
+MIME-Version: 1.0
+From: Jacobo Tarrio <jtarrio@trasno.net>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Message-ID: <20080420144301.18621.29748.reportbug@localhost>
+X-Mailer: reportbug 3.39-0.1
+Date: Sun, 20 Apr 2008 15:43:01 +0100
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 14:45:03 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343535
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -38.6
+X-Spam-Report: (-38.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	14 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part MIME message sent by reportbug.
+
+
+--===============0330093758==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+Package: ntop
+Severity: wishlist
+Tags: l10n patch
+
+ It is attached to this report.
+
+--===============0330093758==
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Disposition: attachment; filename="gl.po"
+Content-Transfer-Encoding: quoted-printable
+
+# Galician translation of ntop's debconf templates
+# This file is distributed under the same license as the ntop package.
+# Jacobo Tarrio <jtarrio@debian.org>, 2008.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: ntop\n"
+"Report-Msgid-Bugs-To: opal@debian.org\n"
+"POT-Creation-Date: 2006-08-16 07:38+0200\n"
+"PO-Revision-Date: 2008-04-20 15:40+0100\n"
+"Last-Translator: Jacobo Tarrio <jtarrio@debian.org>\n"
+"Language-Team: Galician <proxecto@trasno.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=3DUTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: string
+#. Description
+#: ../templates:1001
+msgid "Which is the name of the user to run the ntop daemon as ?"
+msgstr "=C2=BFCal =C3=A9 o nome do usuario co que executar o servizo ntop=
+?"
+
+#. Type: string
+#. Description
+#: ../templates:1001
+msgid ""
+"The selected user will be created if not already available. Don't choose=
+ "
+"root, it is not recommended and will be discarded anyway."
+msgstr ""
+"Hase crear o usuario indicado se non existe xa. Non escolla \"root\"; no=
+n se "
+"recomenda e hase ignorar de t=C3=B3dolos xeitos."
+
+#. Type: string
+#. Description
+#: ../templates:1001
+msgid ""
+"If you select an empty string no user will be created on the system and =
+you "
+"will need to do that configuration yourself."
+msgstr ""
+"Se introduce unha cadea baleira, non se ha crear ning=C3=BAn usuario no =
+sistema e "
+"ha ter que facer esta configuraci=C3=B3n vostede mesmo."
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid "Which interfaces should ntop listen on?"
+msgstr "=C2=BFEn que interfaces debe escoitar ntop?"
+
+#. Type: string
+#. Description
+#: ../templates:2001
+msgid ""
+"Please enter a comma separated list of interfaces ntop should listen on.=
+"
+msgstr ""
+"Introduza unha lista de interfaces nas que debe escoitar ntop, separadas=
+ por "
+"comas."
+
+--===============0330093758==--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

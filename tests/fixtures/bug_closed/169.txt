@@ -1,0 +1,368 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 08:47:52 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnUH2-0005kY-Sh
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 08:47:51 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 9780213A4E7F; Sun, 20 Apr 2008 07:47:43 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 4053213A4E55;
+	Sun, 20 Apr 2008 07:47:40 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnUEk-0004TS-TL; Sun, 20 Apr 2008 07:45:22 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Reinhard Tartler <siretart@tauware.de>
+Subject: Bug#440702: marked as done (ffmpeg: surprise removal of MPEG2 
+ encoding capability)
+Message-ID: <handler.440702.D440702.120867670730500.ackdone@bugs.debian.org>
+References: <E1JnTnM-0002Wv-Cn@ries.debian.org>
+ <20070903185646.26332.17320.reportbug@hestia.domus>
+X-Debian-PR-Message: closed 440702
+X-Debian-PR-Package: ffmpeg
+X-Debian-PR-Source: ffmpeg-free
+Content-Type: multipart/mixed; boundary="----------=_1208677522-16654-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 07:45:22 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <_EWilECi0WP.A.aAF.fUvCIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/132905
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 07:47:43 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208677522-16654-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 07:17:04 +0000
+with message-id <E1JnTnM-0002Wv-Cn@ries.debian.org>
+and subject line Bug#440702: fixed in ffmpeg-free 0.svn20080206-3
+has caused the Debian Bug report #440702,
+regarding ffmpeg: surprise removal of MPEG2 encoding capability
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+440702: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D440702
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208677522-16654-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 3 Sep 2007 18:56:50 +0000
+Return-path: <cyrille@chepelov.org>
+Received: from smtp2-g19.free.fr ([212.27.42.28])
+	by rietz.debian.org with esmtp (Exim 4.50)
+	id 1ISH6Q-00020h-C5
+	for submit@bugs.debian.org; Mon, 03 Sep 2007 18:56:50 +0000
+Received: from smtp2-g19.free.fr (localhost.localdomain [127.0.0.1])
+	by smtp2-g19.free.fr (Postfix) with ESMTP id 7F5F799179
+	for <submit@bugs.debian.org>; Mon,  3 Sep 2007 20:56:49 +0200 (CEST)
+Received: from venilia.domus (sat78-8-88-174-224-115.fbx.proxad.net [88.174.224.115])
+	by smtp2-g19.free.fr (Postfix) with ESMTP id CC8EF99087
+	for <submit@bugs.debian.org>; Mon,  3 Sep 2007 20:56:48 +0200 (CEST)
+Received: from localhost (localhost [127.0.0.1])
+	by venilia.domus (Postfix) with ESMTP id D57E217E91;
+	Mon,  3 Sep 2007 20:24:12 +0200 (CEST)
+X-Virus-Scanned: Debian amavisd-new at chepelov.org
+Received: from venilia.domus ([127.0.0.1])
+	by localhost (venilia.domus [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id faWow30Lcvxt; Mon,  3 Sep 2007 20:24:12 +0200 (CEST)
+Received: from localhost (hestia.domus [192.168.0.65])
+	by venilia.domus (Postfix) with ESMTP id 827A217E8B;
+	Mon,  3 Sep 2007 20:24:12 +0200 (CEST)
+Received: from cyrille by localhost with local (Exim 4.67)
+	(envelope-from <cyrille@chepelov.org>)
+	id 1ISH6N-0006uy-2M; Mon, 03 Sep 2007 20:56:47 +0200
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: =?utf-8?b?Q3lyaWxsZSBDaMOpcMOpbG92?= <cyrille@chepelov.org>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Subject: ffmpeg: surprise removal of MPEG2 encoding capability
+Message-ID: <20070903185646.26332.17320.reportbug@hestia.domus>
+X-Mailer: reportbug 3.38
+Date: Mon, 03 Sep 2007 20:56:46 +0200
+Delivered-To: submit@bugs.debian.org
+X-Spam-Checker-Version: SpamAssassin 2.60-bugs.debian.org_2005_01_02 
+	(1.212-2003-09-23-exp) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, hits=-9.0 required=4.0 tests=BAYES_00,HAS_PACKAGE 
+	autolearn=ham version=2.60-bugs.debian.org_2005_01_02
+
+Package: ffmpeg
+Version: 0.cvs20070307-6
+Severity: important
+
+
+#439897 notwithstanding, version 0.cvs20070307-6 of the package added a
+debian/strip.sh script to disable MPEG2 encoding capabilities. It might not
+yet be disabled in all scenarios, but it has been disabled in an important
+capability, making it useless to a large class of users in a specific
+locale.
+
+Precisely, encoding on the fly as a stream output has been broken from the
+point of view of vlc, which breaks freeplayer. See bugs #440216, #440508.
+Yet, apart from this excerpt from the changelog.Debian:
+  * Add debian/strip.sh to strip ffmpeg upstream source disabling mpeg
+    based encoders as discussed with ftp-master at debconf7
+there appears to be zero information about the rationale for this removal in
+/usr/share/doc/ffmpeg, not even patents.txt.
+
+Please state the rationale for this removal, in a less terse way.
+
+Thanks.
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers testing
+  APT policy: (800, 'testing'), (600, 'unstable')
+Architecture: amd64 (x86_64)
+
+Kernel: Linux 2.6.22.1 (SMP w/2 CPU cores)
+Locale: LANG=fr_FR.UTF-8, LC_CTYPE=fr_FR.UTF-8 (charmap=UTF-8) (ignored: LC_ALL set to fr_FR.UTF-8)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages ffmpeg depends on:
+ii  libavcodec1d            0.cvs20070307-6  ffmpeg codec library
+ii  libavformat1d           0.cvs20070307-6  ffmpeg file format library
+ii  libavutil1d             0.cvs20070307-6  ffmpeg utility library
+ii  libc6                   2.6.1-1          GNU C Library: Shared libraries
+ii  libfreetype6            2.3.5-1+b1       FreeType 2 font engine, shared lib
+ii  libimlib2               1.3.0.0debian1-4 powerful image loading and renderi
+ii  libsdl1.2debian         1.2.11-9         Simple DirectMedia Layer
+ii  libswscale1d            0.cvs20070307-6  ffmpeg video scaling library
+
+ffmpeg recommends no packages.
+
+-- no debconf information
+
+
+------------=_1208677522-16654-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 440702-close) by bugs.debian.org; 20 Apr 2008 07:31:47 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.7 required=4.0 tests=BAYES_00,FVGT_m_MULTI_ODD,
+	HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_2,MURPHY_DRUGS_REL8,
+	MURPHY_WRONG_WORD1,MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnU1Z-0007rK-BD
+	for 440702-close@bugs.debian.org; Sun, 20 Apr 2008 07:31:45 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnTnM-0002Wv-Cn; Sun, 20 Apr 2008 07:17:04 +0000
+From: Reinhard Tartler <siretart@tauware.de>
+To: 440702-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#440702: fixed in ffmpeg-free 0.svn20080206-3
+Message-Id: <E1JnTnM-0002Wv-Cn@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 07:17:04 +0000
+Content-Transfer-Encoding: quoted-printable
+
+Source: ffmpeg-free
+Source-Version: 0.svn20080206-3
+
+We believe that the bug you reported is fixed in the latest version of
+ffmpeg-free, which is due to be installed in the Debian FTP archive:
+
+ffmpeg-dbg_0.svn20080206-3_i386.deb
+  to pool/main/f/ffmpeg-free/ffmpeg-dbg_0.svn20080206-3_i386.deb
+ffmpeg-free_0.svn20080206-3.diff.gz
+  to pool/main/f/ffmpeg-free/ffmpeg-free_0.svn20080206-3.diff.gz
+ffmpeg-free_0.svn20080206-3.dsc
+  to pool/main/f/ffmpeg-free/ffmpeg-free_0.svn20080206-3.dsc
+ffmpeg_0.svn20080206-3_i386.deb
+  to pool/main/f/ffmpeg-free/ffmpeg_0.svn20080206-3_i386.deb
+libavcodec-dev_0.svn20080206-3_i386.deb
+  to pool/main/f/ffmpeg-free/libavcodec-dev_0.svn20080206-3_i386.deb
+libavcodec51_0.svn20080206-3_i386.deb
+  to pool/main/f/ffmpeg-free/libavcodec51_0.svn20080206-3_i386.deb
+libavdevice-dev_0.svn20080206-3_i386.deb
+  to pool/main/f/ffmpeg-free/libavdevice-dev_0.svn20080206-3_i386.deb
+libavdevice52_0.svn20080206-3_i386.deb
+  to pool/main/f/ffmpeg-free/libavdevice52_0.svn20080206-3_i386.deb
+libavformat-dev_0.svn20080206-3_i386.deb
+  to pool/main/f/ffmpeg-free/libavformat-dev_0.svn20080206-3_i386.deb
+libavformat52_0.svn20080206-3_i386.deb
+  to pool/main/f/ffmpeg-free/libavformat52_0.svn20080206-3_i386.deb
+libavutil-dev_0.svn20080206-3_i386.deb
+  to pool/main/f/ffmpeg-free/libavutil-dev_0.svn20080206-3_i386.deb
+libavutil49_0.svn20080206-3_i386.deb
+  to pool/main/f/ffmpeg-free/libavutil49_0.svn20080206-3_i386.deb
+libpostproc-dev_0.svn20080206-3_i386.deb
+  to pool/main/f/ffmpeg-free/libpostproc-dev_0.svn20080206-3_i386.deb
+libpostproc51_0.svn20080206-3_i386.deb
+  to pool/main/f/ffmpeg-free/libpostproc51_0.svn20080206-3_i386.deb
+libswscale-dev_0.svn20080206-3_i386.deb
+  to pool/main/f/ffmpeg-free/libswscale-dev_0.svn20080206-3_i386.deb
+libswscale0_0.svn20080206-3_i386.deb
+  to pool/main/f/ffmpeg-free/libswscale0_0.svn20080206-3_i386.deb
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 440702@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Reinhard Tartler <siretart@tauware.de> (supplier of updated ffmpeg-free p=
+ackage)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.7
+Date: Fri, 18 Apr 2008 23:02:24 +0200
+Source: ffmpeg-free
+Binary: ffmpeg ffmpeg-dbg libavutil49 libavcodec51 libavdevice52 libpostp=
+roc51 libavformat52 libswscale0 libavutil-dev libavcodec-dev libavdevice-=
+dev libpostproc-dev libavformat-dev libswscale-dev
+Architecture: source i386
+Version: 0.svn20080206-3
+Distribution: experimental
+Urgency: low
+Maintainer: Debian multimedia packages maintainers <pkg-multimedia-mainta=
+iners@lists.alioth.debian.org>
+Changed-By: Reinhard Tartler <siretart@tauware.de>
+Description:=20
+ ffmpeg     - multimedia player, server and encoder
+ ffmpeg-dbg - Debug symbols for ffmpeg related packages
+ libavcodec-dev - development files for libavcodec
+ libavcodec51 - ffmpeg codec library
+ libavdevice-dev - development files for libavdevice
+ libavdevice52 - ffmpeg device handling library
+ libavformat-dev - development files for libavformat
+ libavformat52 - ffmpeg file format library
+ libavutil-dev - development files for libavutil
+ libavutil49 - ffmpeg utility library
+ libpostproc-dev - development files for libpostproc
+ libpostproc51 - ffmpeg video postprocessing library
+ libswscale-dev - development files for libswscale
+ libswscale0 - ffmpeg video scaling library
+Closes: 440702 470484
+Changes:=20
+ ffmpeg-free (0.svn20080206-3) experimental; urgency=3Dlow
+ .
+   * install qt-faststart. Thanks Stefan Hermann for the patch from ubunt=
+u.
+     (Closes: #470484)
+   * Reenable 020_fix_libswscale_pic_code, fixes FTBFS on amd64.
+   * Reenable altivec, fixes FTBFS on powerpc.
+   * Add some notes about the removed mpeg encoders (Closes: #440702)
+Files:=20
+ 907c6a9fc9c70ae01fce4b695d076757 1614 libs optional ffmpeg-free_0.svn200=
+80206-3.dsc
+ d34c502550484cae8cabb09bda827821 39590 libs optional ffmpeg-free_0.svn20=
+080206-3.diff.gz
+ 483816b19c29ac4e180dbd9b4d089936 214364 graphics optional ffmpeg_0.svn20=
+080206-3_i386.deb
+ ed0127d5388909ce656550a688d036cf 3676408 libs extra ffmpeg-dbg_0.svn2008=
+0206-3_i386.deb
+ 981fc615c7a2d663ad3aba5221dbe2bc 48622 libs optional libavutil49_0.svn20=
+080206-3_i386.deb
+ 8f3be546dbf33bf4647f00f7223af434 1642444 libs optional libavcodec51_0.sv=
+n20080206-3_i386.deb
+ be5e99eedbc888c0e5a353b9bf927596 41746 libs optional libavdevice52_0.svn=
+20080206-3_i386.deb
+ a20f305de22f39053f8c3bd1cefbe1c7 75830 libs optional libpostproc51_0.svn=
+20080206-3_i386.deb
+ d1535eb96425ee7aee965dd4158b3c8c 319080 libs optional libavformat52_0.sv=
+n20080206-3_i386.deb
+ 1a971c5d12f42d3dc80007be5f1f9a39 103602 libs optional libswscale0_0.svn2=
+0080206-3_i386.deb
+ 4ae1ab31e3765a1eaa5c949cec1b5461 62848 libdevel optional libavutil-dev_0=
+.svn20080206-3_i386.deb
+ 6a7dccc61785c369def559e22d0e2b34 1890746 libdevel optional libavcodec-de=
+v_0.svn20080206-3_i386.deb
+ 0dcda0ca7068c1ef06b242b2d2131fa2 41402 libdevel optional libavdevice-dev=
+_0.svn20080206-3_i386.deb
+ ab1c17ca3912dc560c3cd0e8ccaa86d0 76536 libdevel optional libpostproc-dev=
+_0.svn20080206-3_i386.deb
+ baeb2d58dfb3e4cc607a945d51b0662a 371996 libdevel optional libavformat-de=
+v_0.svn20080206-3_i386.deb
+ cc7ed0073e7319a5992c0ec2211949d3 118362 libdevel optional libswscale-dev=
+_0.svn20080206-3_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+Comment: Debian Powered!
+
+iD8DBQFICutkmAg1RJRTSKQRAp5qAJ0aBuOsk6PdQIWZGpOX/flGeM2IqACcDYit
+ciNNrBFwTzydDBz8B107G1E=3D
+=3DjF+/
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208677522-16654-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

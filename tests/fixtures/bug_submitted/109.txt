@@ -1,0 +1,196 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 09:24:51 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnUqs-0005qu-PW
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 09:24:51 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id D97A113A4D4B; Sun, 20 Apr 2008 08:24:45 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.7 required=4.0 tests=BAYES_00,FOURLA,
+	IMPRONONCABLE_1,MURPHY_DRUGS_REL8,MURPHY_WRONG_WORD2,RCVD_IN_DNSWL_LOW
+	autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 4832913A4999;
+	Sun, 20 Apr 2008 08:24:35 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnUqH-0001ld-5g; Sun, 20 Apr 2008 08:24:09 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476918: [INTL:eu]  nsca  openslp debconf templates Basque translation
+Reply-To: Piarres Beobide <pi+debian@beobide.net>, 476918@bugs.debian.org
+Resent-From: Piarres Beobide <pi+debian@beobide.net>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian Nagios Maintainer Group <pkg-nagios-devel@lists.alioth.debian.org>
+Resent-Date: Sun, 20 Apr 2008 08:24:06 +0000
+Resent-Message-ID: <handler.476918.B.12086798326512@bugs.debian.org>
+X-Debian-PR-Message: report 476918
+X-Debian-PR-Package: nsca
+X-Debian-PR-Keywords: l10n patch
+X-Debian-PR-Source: nsca
+Received: via spool by submit@bugs.debian.org id=B.12086798326512
+          (code B ref -1); Sun, 20 Apr 2008 08:24:06 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 08:23:52 +0000
+X-Amavis-Spam-Status: No, score=-6.5 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,HAS_PACKAGE,IMPRONONCABLE_1,MURPHY_DRUGS_REL8,
+	MURPHY_WRONG_WORD2,RCVD_IN_SORBS_DUL autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from 186.85-87-151.dynamic.clientes.euskaltel.es ([85.87.151.186] helo=zerb.beobide.net)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <pi+debian@beobide.net>)
+	id 1JnUpz-0001dU-C6
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 08:23:52 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by zerb.beobide.net (Postfix) with ESMTP id 55C22BA622;
+	Sun, 20 Apr 2008 10:24:07 +0200 (CEST)
+X-Virus-Scanned: Debian amavisd-new at beobide.net
+Received: from zerb.beobide.net ([127.0.0.1])
+	by localhost (zerb.beobide.net [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id 0KXHkIq27HOa; Sun, 20 Apr 2008 10:24:06 +0200 (CEST)
+Received: by zerb.beobide.net (Postfix, from userid 1000)
+	id 83B1ABCD0A; Sun, 20 Apr 2008 10:24:06 +0200 (CEST)
+Content-Type: multipart/mixed; boundary="===============0888920674=="
+MIME-Version: 1.0
+From: Piarres Beobide <pi+debian@beobide.net>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Message-ID: <20080420082406.23799.9305.reportbug@zerb.beobide.net>
+X-Mailer: reportbug 3.39-0.1
+Date: Sun, 20 Apr 2008 10:24:06 +0200
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 08:24:09 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343360
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -42.1
+X-Spam-Report: (-42.1 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	10 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part MIME message sent by reportbug.
+
+
+--===============0888920674==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+Package: nsca
+Severity: wishlist
+Tags: l10n patch
+
+Hi
+
+Attached nsca debconf templates Basque translation, please commit it.
+
+thx
+
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (500, 'unstable'), (500, 'testing'), (500, 'stable')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.24-1-686 (SMP w/1 CPU core)
+Locale: LANG=eu_ES.UTF-8, LC_CTYPE=eu_ES.UTF-8 (charmap=UTF-8)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages nsca depends on:
+ii  debconf [debconf-2.0]         1.5.20     Debian configuration management sy
+ii  libc6                         2.7-10     GNU C Library: Shared libraries
+ii  libmcrypt4                    2.5.7-5    De-/Encryption Library
+
+nsca recommends no packages.
+
+--===============0888920674==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="eu.po"
+
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: nsca-debiconf\n"
+"Report-Msgid-Bugs-To: pkg-nagios-devel@lists.alioth.debian.org\n"
+"POT-Creation-Date: 2006-11-01 19:55+0100\n"
+"PO-Revision-Date: 2008-04-10 11:50+0200\n"
+"Last-Translator: Piarres Beobide <pi@beobide.net>\n"
+"Language-Team: Euskara <debian-l10n-basque@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. Description
+#: ../nsca.templates:1001
+msgid "Should the nsca daemon be enabled by default?"
+msgstr "Lehenespen modura nsca deabru gaiturik egon behar da?"
+
+#. Type: boolean
+#. Description
+#: ../nsca.templates:1001
+msgid ""
+"The nsca daemon is the process that handles results service checks sent via "
+"send_nsca on remote hosts.  Typically the nsca daemon is only needed on "
+"hosts that run the nagios daemon."
+msgstr ""
+"Nsca deabrua urruneko ostalarietan send_nsca bidez bidalitako zerbitzu "
+"egiaztapen emaitzak kudeatzen dituen prozesua da.  Arruntean nsca "
+"deabruan nagios deabrua exekutatzen duen ostalarian bakarrik behar da."
+
+#. Type: boolean
+#. Description
+#: ../nsca.templates:1001
+msgid ""
+"If the system on which you are installing nsca also runs the nagios daemon, "
+"you should most likely choose this option.  If you are installing nsca on a "
+"remote \"satellite\" system for the purpose of sending service checks to a "
+"central nagios host, you should not choose this option.  If you wish to run "
+"nsca as a service through inetd/xinetd, you should also not choose this "
+"option."
+msgstr ""
+"Nsca instalatzen ari zaren sisteman dagoeneko nagios instalaturik "
+"badago ziurrenik aukera hau onartu beharko zenuke.  Nsca urruneko "
+"sistema \"satelite\" batetan instalatzen ari bazara zerbitzu egiaztapenak "
+"nagios zerbitzari bateratu batetara bidaltzeko asmoarekin ez zenuke "
+"aukera hau onartu beharko.  Nsca inetd/xinetd bidez zerbitzu bat bezala " 
+"exekutatu nahi baduzu ere ez zenuke aukera hau onartu beharko."
+
+--===============0888920674==--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

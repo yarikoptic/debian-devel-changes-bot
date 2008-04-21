@@ -1,0 +1,304 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 17:08:54 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnc5w-0008Ak-MY
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 17:08:54 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 3771913A4FD1; Sun, 20 Apr 2008 16:08:47 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 86EBE13A4F3B;
+	Sun, 20 Apr 2008 16:08:45 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnc3P-0005g4-RS; Sun, 20 Apr 2008 16:06:12 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Mario Lang <mlang@debian.org>
+Subject: Bug#476905: marked as done (gnome-orca: Orca gives a "cannot 
+ start" error now that Python 2.5 is the Debian default in Sid)
+Message-ID: <handler.476905.D476905.12087073968451.ackdone@bugs.debian.org>
+References: <E1JnbWR-0008Jx-EG@ries.debian.org>
+ <20080420055940.12471.88521.reportbug@jdc.jasonjgw.net>
+X-Debian-PR-Message: closed 476905
+X-Debian-PR-Package: gnome-orca
+X-Debian-PR-Source: gnome-orca
+Content-Type: multipart/mixed; boundary="----------=_1208707571-21058-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 16:06:11 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <yLvByYDG7kM.A.QmG.Pq2CIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/133039
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 16:08:47 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208707571-21058-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 15:32:07 +0000
+with message-id <E1JnbWR-0008Jx-EG@ries.debian.org>
+and subject line Bug#476905: fixed in gnome-orca 2.22.1-2
+has caused the Debian Bug report #476905,
+regarding gnome-orca: Orca gives a "cannot start" error now that Python 2.5=
+ is the Debian default in Sid
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+476905: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D476905
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208707571-21058-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 05:59:59 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.9 required=4.0 tests=BAYES_00,FOURLA,HAS_PACKAGE,
+	UNPARSEABLE_RELAY autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <jason@jasonjgw.net>
+Received: from opera.rednote.net ([74.53.93.34])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <jason@jasonjgw.net>)
+	id 1JnSak-00058p-UF
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 05:59:59 +0000
+Received: from jdc.jasonjgw.net ([IPv6:::1])
+	by opera.rednote.net (8.14.1/8.14.1) with ESMTP id m3K5xipE025090
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=FAIL);
+	Sun, 20 Apr 2008 05:59:47 GMT
+Received: from jdc.jasonjgw.net (ip6-localhost [IPv6:::1])
+	by jdc.jasonjgw.net (8.14.2/8.14.2/Debian-4) with ESMTP id m3K5xesZ012508
+	(version=TLSv1/SSLv3 cipher=DHE-RSA-AES256-SHA bits=256 verify=NOT);
+	Sun, 20 Apr 2008 15:59:40 +1000
+Received: (from jason@localhost)
+	by jdc.jasonjgw.net (8.14.2/8.14.2/Submit) id m3K5xepi012506;
+	Sun, 20 Apr 2008 15:59:40 +1000
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Jason White <jason@jasonjgw.net>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Subject: gnome-orca: Orca gives a "cannot start" error now that Python 2.5 is the
+ Debian default in Sid
+Message-ID: <20080420055940.12471.88521.reportbug@jdc.jasonjgw.net>
+X-Mailer: reportbug 3.39-0.1
+Date: Sun, 20 Apr 2008 15:59:40 +1000
+Delivered-To: submit@bugs.debian.org
+
+Package: gnome-orca
+Version: 2.22.1-1.1
+Severity: normal
+
+
+Now that Python 2.5 is the default /usr/bin/python in Sid, Orca gives an error
+("cannot connect to the desktop") and terminates during startup.
+
+The fix is to change the python path specified in the /usr/bin/orca script to
+refer to Python 2.5:
+PYTHONPATH=${PYTHONPATH}:${exec_prefix}/lib/python2.5/site-packages
+
+With this change, Orca starts up properly.
+
+I suppose you could also change the python command in /usr/bin/orca to refer
+to a particular version of Python instead of whatever the /usr/bin/python
+symlink refers to.
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (500, 'unstable'), (500, 'testing'), (1, 'experimental')
+Architecture: amd64 (x86_64)
+
+Kernel: Linux 2.6.24-1-amd64 (SMP w/4 CPU cores)
+Locale: LANG=en_AU.UTF-8, LC_CTYPE=en_AU.UTF-8 (charmap=UTF-8)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages gnome-orca depends on:
+ii  libgail-gnome-module          1.20.0-1   GNOME Accessibility Implementation
+ii  libgnome-speech7              1:0.4.18-1 GNOME text-to-speech library
+ii  python                        2.5.2-1    An interactive high-level object-o
+ii  python-brlapi                 3.9-7      Python bindings for BrlAPI
+ii  python-glade2                 2.12.1-1   GTK+ bindings: Glade support
+ii  python-gnome2                 2.22.0-1   Python bindings for the GNOME desk
+ii  python-gtk2                   2.12.1-1   Python bindings for the GTK+ widge
+ii  python-pyatspi                1.22.1-1   Assistive Technology Service Provi
+ii  python-support                0.7.7      automated rebuilding support for P
+
+Versions of packages gnome-orca recommends:
+ii  gnome-mag                 1:0.14.10-4+b1 a screen magnifier for the GNOME d
+ii  wget                      1.11.1-1       retrieves files from the web
+
+-- debconf-show failed
+
+
+
+------------=_1208707571-21058-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 476905-close) by bugs.debian.org; 20 Apr 2008 16:03:16 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.7 required=4.0 tests=BAYES_00,FROMDEVELOPER,
+	FVGT_m_MULTI_ODD,HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_2,
+	MURPHY_WRONG_WORD1,MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1Jnc0a-0002BU-Bl
+	for 476905-close@bugs.debian.org; Sun, 20 Apr 2008 16:03:16 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnbWR-0008Jx-EG; Sun, 20 Apr 2008 15:32:07 +0000
+From: Mario Lang <mlang@debian.org>
+To: 476905-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#476905: fixed in gnome-orca 2.22.1-2
+Message-Id: <E1JnbWR-0008Jx-EG@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 15:32:07 +0000
+Content-Transfer-Encoding: quoted-printable
+
+Source: gnome-orca
+Source-Version: 2.22.1-2
+
+We believe that the bug you reported is fixed in the latest version of
+gnome-orca, which is due to be installed in the Debian FTP archive:
+
+gnome-orca_2.22.1-2.diff.gz
+  to pool/main/g/gnome-orca/gnome-orca_2.22.1-2.diff.gz
+gnome-orca_2.22.1-2.dsc
+  to pool/main/g/gnome-orca/gnome-orca_2.22.1-2.dsc
+gnome-orca_2.22.1-2_all.deb
+  to pool/main/g/gnome-orca/gnome-orca_2.22.1-2_all.deb
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 476905@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Mario Lang <mlang@debian.org> (supplier of updated gnome-orca package)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 15:16:35 +0200
+Source: gnome-orca
+Binary: gnome-orca
+Architecture: source all
+Version: 2.22.1-2
+Distribution: unstable
+Urgency: low
+Maintainer: Mario Lang <mlang@debian.org>
+Changed-By: Mario Lang <mlang@debian.org>
+Description:=20
+ gnome-orca - Scriptable screen reader
+Closes: 468681 476905
+Changes:=20
+ gnome-orca (2.22.1-2) unstable; urgency=3Dlow
+ .
+   * Fix bashisms in orca startup script (Closes: Bug#468681).
+   * Remove the explicit setting of PYTHONPATH in the orca startup
+     script (Closes: Bug#476905).
+   * Nack 2.22.1-1.1 NMU.
+Checksums-Sha1:=20
+ 1cffd6b99cd2909e07e3b478cfd50c0b9effe49f 1425 gnome-orca_2.22.1-2.dsc
+ 978b278bdd4b9e04ea0c288a7656d072b2da3766 5863 gnome-orca_2.22.1-2.diff.g=
+z
+ abebb302f3bea127b7c1390bdbfc2790cf6507e3 1680216 gnome-orca_2.22.1-2_all=
+.deb
+Checksums-Sha256:=20
+ 97a00b0fffb44ec1d75bd2554c8c4ed0471a3364fa393c88c0269d93148021cd 1425 gn=
+ome-orca_2.22.1-2.dsc
+ 02334912bc98bbbfacfa543f51c0890a2c4878dcf2ae9b078e143d5701d46063 5863 gn=
+ome-orca_2.22.1-2.diff.gz
+ 19ca482d567bf6da782ec8c622956d951999200ec1f5c5d4ddad44abdc041d15 1680216=
+ gnome-orca_2.22.1-2_all.deb
+Files:=20
+ 523f009346232ab08424fabc7c97cfa4 1425 gnome optional gnome-orca_2.22.1-2=
+.dsc
+ 3a32ab818eec0d0b859e57befb6042bf 5863 gnome optional gnome-orca_2.22.1-2=
+.diff.gz
+ c9b9ff81ab3c0e62c3921ee63a0d229a 1680216 gnome optional gnome-orca_2.22.=
+1-2_all.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC15m3/wCKmsRPkQRAqxOAJ9+aAAPMoepHyOXc+J4i13nUE0auQCfZRhJ
+KGqzQFH5MHPLsu4a4F7FO3A=3D
+=3D8Obd
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208707571-21058-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

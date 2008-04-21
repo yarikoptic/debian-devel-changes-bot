@@ -1,0 +1,145 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 15:15:10 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnaJt-0007Ow-Nh
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 15:15:10 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id B199813A4CE2; Sun, 20 Apr 2008 14:15:03 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-6.8 required=4.0 tests=BAYES_00,IMPRONONCABLE_1,
+	LDO_WHITELIST,MURPHY_WRONG_WORD2,RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id D685E13A4B67;
+	Sun, 20 Apr 2008 14:14:45 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnaH0-000286-FC; Sun, 20 Apr 2008 14:12:06 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476483: libpcsclite1: should suggest pcsd, not recommend it
+Reply-To: Sam Morris <sam@robots.org.uk>, 476483@bugs.debian.org
+Resent-From: Sam Morris <sam@robots.org.uk>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Ludovic Rousseau <rousseau@debian.org>
+Resent-Date: Sun, 20 Apr 2008 14:12:05 +0000
+Resent-Message-ID: <handler.476483.B476483.12087006641117@bugs.debian.org>
+X-Debian-PR-Message: report 476483
+X-Debian-PR-Package: libpcsclite1
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: pcsc-lite
+Received: via spool by 476483-submit@bugs.debian.org id=B476483.12087006641117
+          (code B ref 476483); Sun, 20 Apr 2008 14:12:05 +0000
+Received: (at 476483) by bugs.debian.org; 20 Apr 2008 14:11:04 +0000
+X-Amavis-Spam-Status: No, score=-5.8 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER,
+	IMPRONONCABLE_1,MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from crypt.ethx.net ([82.165.27.140])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <sam@robots.org.uk>)
+	id 1JnaG0-0000Hr-DW
+	for 476483@bugs.debian.org; Sun, 20 Apr 2008 14:11:04 +0000
+Received: from 79-66-203-38.dynamic.dsl.as9105.com ([79.66.203.38] helo=xerces)
+	by crypt.ethx.net with esmtpsa (TLS-1.0:RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <sam@robots.org.uk>)
+	id 1JnaFy-0005T9-6Z
+	for 476483@bugs.debian.org; Sun, 20 Apr 2008 15:11:02 +0100
+Received: from sam by xerces with local (Exim 4.69)
+	(envelope-from <sam@robots.org.uk>)
+	id 1JnaFp-0000s9-ML
+	for 476483@bugs.debian.org; Sun, 20 Apr 2008 15:10:53 +0100
+From: Sam Morris <sam@robots.org.uk>
+To: 476483@bugs.debian.org
+In-Reply-To: <480B0A7B.9090102@free.fr>
+References: <20080416232521.21402.57411.reportbug@xerces>
+	 <480B0A7B.9090102@free.fr>
+Content-Type: multipart/signed; micalg=pgp-sha1; protocol="application/pgp-signature"; boundary="=-Rg60TJb1BSod3Ikt/pQF"
+Date: Sun, 20 Apr 2008 15:10:53 +0100
+Message-Id: <1208700653.6730.4.camel@xerces>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.22.1 
+Resent-Date: Sun, 20 Apr 2008 14:12:06 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343519
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -37.2
+X-Spam-Report: (-37.2 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	15 AWL                    AWL: From: address is in the auto white-list
+
+
+--=-Rg60TJb1BSod3Ikt/pQF
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+On Sun, 2008-04-20 at 11:18 +0200, Ludovic Rousseau wrote:
+> Sam Morris a =C3=A9crit :
+> > I think that only a fraction of the systems with libpcsclite1 installed
+> > will actually have a smart card reader. :)
+>=20
+> What are the problems to have pcscd installed on your system (except
+> disk space)?
+
+Just Yet Another Daemon that I don't need running, taking up memory and
+wasting my battery's energy. :)
+
+> In a future upstream version of pcsc-lite the pcscd process would only=20
+> start when a smart card reader is connected. So not extra process would=20
+> even be present in memory if you do not have a smart card reader.
+
+That's neat. I guess another way to do it would be to provide the daemon
+as a hal-addon, so that its lifetime is managed by hald, which would
+start and stop it when smart card readers are attached & detached.
+
+> bye
+
+--=20
+Sam Morris
+http://robots.org.uk/
+
+PGP key id 1024D/5EA01078
+3412 EA18 1277 354B 991B  C869 B219 7FDB 5EA0 1078
+
+--=-Rg60TJb1BSod3Ikt/pQF
+Content-Type: application/pgp-signature; name=signature.asc
+Content-Description: This is a digitally signed message part
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQBIC07tshl/216gEHgRAmagAJ9Qyow4ikRJNV9Ai3nVBxw6ggaL9gCgv04k
+guFY8owtW3r8bV24jh+x104=
+=bGtR
+-----END PGP SIGNATURE-----
+
+--=-Rg60TJb1BSod3Ikt/pQF--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

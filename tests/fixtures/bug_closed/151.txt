@@ -1,0 +1,245 @@
+From bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org Sun Apr 20 17:25:17 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org>)
+	id 1JncLn-0008FZ-CY
+	for ddc@ddc.chris-lamb.co.uk; Sun, 20 Apr 2008 17:25:17 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id EBC3313A4FF3; Sun, 20 Apr 2008 16:25:09 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id C44C313A4FE6;
+	Sun, 20 Apr 2008 16:25:07 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JncKq-0000in-Of; Sun, 20 Apr 2008 16:24:12 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Matthias Klose <doko@cs.tu-berlin.de>
+Subject: Bug#474104: marked as done (lib32gfortran3: /usr/lib32/libgfortran.so
+ link not created)
+Message-ID: <handler.474104.D474104.1208708561492.ackdone@bugs.debian.org>
+References: <18443.28106.411847.688562@gargle.gargle.HOWL>
+ <20080403114400.29249.96366.reportbug@localhost>
+X-Debian-PR-Message: closed 474104
+X-Debian-PR-Package: lib32gfortran3
+X-Debian-PR-Source: gcc-4.3
+Content-Type: multipart/mixed; boundary="----------=_1208708652-2756-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 16:24:12 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <3Mg7-RlL6lK.A.E9C.l52CIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/133043
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 16:25:09 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208708652-2756-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 18:22:34 +0200
+with message-id <18443.28106.411847.688562@gargle.gargle.HOWL>
+and subject line Re: Bug#474104: lib32gfortran3: /usr/lib32/libgfortran.so =
+link not created
+has caused the Debian Bug report #474104,
+regarding lib32gfortran3: /usr/lib32/libgfortran.so link not created
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+474104: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D474104
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208708652-2756-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 3 Apr 2008 11:44:40 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.8 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,HAS_PACKAGE,IMPRONONCABLE_2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <aluaces@udc.es>
+Received: from vi5.udc.es ([193.147.41.5] helo=smtp.udc.es)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <aluaces@udc.es>)
+	id 1JhNrU-0000uK-IR
+	for submit@bugs.debian.org; Thu, 03 Apr 2008 11:44:08 +0000
+Received: from [127.0.0.1] (eps142.cdf.udc.es [193.144.52.142])
+	by smtp.udc.es ("Servidor de correo de la UDC") with ESMTP id 2363913DB;
+	Thu,  3 Apr 2008 12:40:03 -0800 (PST)
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Alberto Luaces <aluaces@udc.es>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Subject: lib32gfortran3: /usr/lib32/libgfortran.so link not created
+Message-ID: <20080403114400.29249.96366.reportbug@localhost>
+X-Mailer: reportbug 3.39
+Date: Thu, 03 Apr 2008 13:44:00 +0200
+Delivered-To: submit@bugs.debian.org
+
+Package: lib32gfortran3
+Version: 4.3.0-1
+Severity: normal
+
+Hi,
+
+there is no symbolic link /usr/lib32/libgfortran.so to aid 32-bit linking gfortran objects.
+
+"gfortran -m32 myfile.f90 -o myfile" works fine, but if I try to link with gcc instead (-m32 -lgfortran), gfortran library is not found because /usr/lib32/libgfortran.so 
+does not exist.
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers testing
+  APT policy: (500, 'testing')
+Architecture: amd64 (x86_64)
+
+Kernel: Linux 2.6.24-1-amd64 (SMP w/2 CPU cores)
+Locale: LANG=es_ES.UTF-8, LC_CTYPE=es_ES.UTF-8 (charmap=UTF-8)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages lib32gfortran3 depends on:
+ii  gcc-4.3-base                  4.3.0-1    The GNU Compiler Collection (base 
+ii  libc6-i386                    2.7-6      GNU C Library: 32bit shared librar
+
+lib32gfortran3 recommends no packages.
+
+-- no debconf information
+
+
+
+------------=_1208708652-2756-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 474104-done) by bugs.debian.org; 20 Apr 2008 16:22:41 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.9 required=4.0 tests=BAYES_00,FOURLA,
+	HAS_BUG_NUMBER,IMPRONONCABLE_2,UNPARSEABLE_RELAY autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <doko@cs.tu-berlin.de>
+Received: from mail.cs.tu-berlin.de ([130.149.17.13])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <doko@cs.tu-berlin.de>)
+	id 1JncJN-00007m-Kt
+	for 474104-done@bugs.debian.org; Sun, 20 Apr 2008 16:22:41 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by localhost-12225.cs.tu-berlin.de (Postfix) with ESMTP id 8B176DC5F
+	for <474104-done@bugs.debian.org>; Sun, 20 Apr 2008 18:22:40 +0200 (MEST)
+Received: from mailhost.cs.tu-berlin.de ([127.0.0.1])
+	by localhost (mail.cs.tu-berlin.de [127.0.0.1]) (amavisd-new, port 12224)
+	with ESMTP id ei-Rc3YjApkd 02168-01;
+	Sun, 20 Apr 2008 18:22:39 +0200 (MEST) 13758
+Received: from bolero.cs.tu-berlin.de (bolero.cs.tu-berlin.de [130.149.19.1])
+	(using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by mailhost.cs.tu-berlin.de (Postfix) with ESMTP;
+	Sun, 20 Apr 2008 18:22:35 +0200 (MEST)
+Received: (from doko@localhost)
+	by bolero.cs.tu-berlin.de (8.13.8+Sun/8.13.3/Submit) id m3KGMYGV021550;
+	Sun, 20 Apr 2008 18:22:34 +0200 (MEST)
+From: Matthias Klose <doko@cs.tu-berlin.de>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Message-ID: <18443.28106.411847.688562@gargle.gargle.HOWL>
+Date: Sun, 20 Apr 2008 18:22:34 +0200
+To: Alberto Luaces <aluaces@udc.es>, 474104-done@bugs.debian.org
+Subject: Re: Bug#474104: lib32gfortran3: /usr/lib32/libgfortran.so link not created
+In-Reply-To: <20080403114400.29249.96366.reportbug@localhost>
+References: <20080403114400.29249.96366.reportbug@localhost>
+X-Mailer: VM 7.17 under 21.4 (patch 21) "Educational Television" XEmacs Lucid
+X-Virus-Scanned: amavisd-new at cs.tu-berlin.de (including SpamAssassin)
+
+please install gfortran-multilib.
+
+Alberto Luaces writes:
+> Package: lib32gfortran3
+> Version: 4.3.0-1
+> Severity: normal
+> 
+> Hi,
+> 
+> there is no symbolic link /usr/lib32/libgfortran.so to aid 32-bit linking gfortran objects.
+> 
+> "gfortran -m32 myfile.f90 -o myfile" works fine, but if I try to link with gcc instead (-m32 -lgfortran), gfortran library is not found because /usr/lib32/libgfortran.so 
+> does not exist.
+> 
+> -- System Information:
+> Debian Release: lenny/sid
+>   APT prefers testing
+>   APT policy: (500, 'testing')
+> Architecture: amd64 (x86_64)
+> 
+> Kernel: Linux 2.6.24-1-amd64 (SMP w/2 CPU cores)
+> Locale: LANG=es_ES.UTF-8, LC_CTYPE=es_ES.UTF-8 (charmap=UTF-8)
+> Shell: /bin/sh linked to /bin/bash
+> 
+> Versions of packages lib32gfortran3 depends on:
+> ii  gcc-4.3-base                  4.3.0-1    The GNU Compiler Collection (base 
+> ii  libc6-i386                    2.7-6      GNU C Library: 32bit shared librar
+> 
+> lib32gfortran3 recommends no packages.
+> 
+> -- no debconf information
+> 
+> 
+> 
+> -- 
+> To UNSUBSCRIBE, email to debian-gcc-REQUEST@lists.debian.org
+> with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+
+------------=_1208708652-2756-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

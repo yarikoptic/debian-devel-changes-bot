@@ -1,0 +1,169 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 12:22:26 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnXcj-0006f5-Gy
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 12:22:26 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 40E9E13A4F53; Sun, 20 Apr 2008 11:22:20 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-0.7 required=4.0 tests=BAYES_00,FOURLA,
+	FROM_HAS_MIXED_NUMS,RCVD_IN_DNSWL_LOW autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 8191313A4F4E;
+	Sun, 20 Apr 2008 11:22:03 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnXVh-0001XA-QL; Sun, 20 Apr 2008 11:15:05 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476956: openoffice.org-calc: INDIRECT_XL() FUNCTION MISSING
+Reply-To: Dominik <d0m1n1k@geekmail.de>, 476956@bugs.debian.org
+Resent-From: Dominik <d0m1n1k@geekmail.de>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian OpenOffice Team <debian-openoffice@lists.debian.org>
+Resent-Date: Sun, 20 Apr 2008 11:15:02 +0000
+Resent-Message-ID: <handler.476956.B.120868992821025@bugs.debian.org>
+X-Debian-PR-Message: report 476956
+X-Debian-PR-Package: openoffice.org-calc
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: openoffice.org
+Received: via spool by submit@bugs.debian.org id=B.120868992821025
+          (code B ref -1); Sun, 20 Apr 2008 11:15:02 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 11:12:08 +0000
+X-Amavis-Spam-Status: No, score=-8.8 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,FROM_HAS_MIXED_NUMS,HAS_PACKAGE autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from smtp-out04.alice-dsl.net ([88.44.63.6])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <d0m1n1k@geekmail.de>)
+	id 1JnXOH-0007DZ-Mq
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 11:07:25 +0000
+Received: from out.alice-dsl.de ([192.168.125.60]) by smtp-out04.alice-dsl.net with Microsoft SMTPSVC(6.0.3790.1830);
+	 Sun, 20 Apr 2008 13:00:28 +0200
+Received: from localhost.localdomain ([78.49.168.130]) by out.alice-dsl.de with Microsoft SMTPSVC(6.0.3790.1830);
+	 Sun, 20 Apr 2008 13:00:12 +0200
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Dominik <d0m1n1k@geekmail.de>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Message-ID: <20080420110614.16337.1392.reportbug@localhost.localdomain>
+X-Mailer: reportbug 3.39-0.1
+Date: Sun, 20 Apr 2008 13:06:14 +0200
+X-OriginalArrivalTime: 20 Apr 2008 11:00:12.0964 (UTC) FILETIME=[B511DE40:01C8A2D5]
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 11:15:05 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343444
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -50.3
+X-Spam-Report: (-50.3 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	2.2 FROM_HAS_MIXED_NUMS    From: contains numbers mixed in with letters
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+Package: openoffice.org-calc
+Version: 1:2.4.0-4
+Severity: normal
+
+
+INDIRECT_XL() function is missing after update to 2.4 from 2.2.
+xls-Files with INDIRECT() functions doesn't work correctly anymore. Just
+got "Err:502" when INDIRECT() ist used, because sepparator ! isn't
+interpreted correctly.
+So I can't use my .xls files anymore in OO Calc 2.4!
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (500, 'unstable')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.24.3-dom001 (PREEMPT)
+Locale: LANG=de_DE@euro, LC_CTYPE=de_DE@euro (charmap=ISO-8859-15)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages openoffice.org-calc depends on:
+ii  libc6                        2.7-4       GNU C Library: Shared libraries
+ii  libgcc1                      1:4.3.0-3   GCC support library
+ii  libstdc++6                   4.3.0-3     The GNU Standard C++ Library v3
+ii  libstlport4.6ldbl            4.6.2-3.2   STLport C++ class library
+ii  libsuitesparse-3.1.0         3.1.0-3     collection of libraries for comput
+ii  lp-solve                     5.5.0.10-10 Solve (mixed integer) linear progr
+ii  openoffice.org-base-core     1:2.4.0-4   OpenOffice.org office suite -- lib
+ii  openoffice.org-core          1:2.4.0-4   OpenOffice.org office suite archit
+
+openoffice.org-calc recommends no packages.
+
+Versions of packages openoffice.org-core depends on:
+ii  fontconfig              2.3.2-7          generic font configuration library
+ii  libc6                   2.7-4            GNU C Library: Shared libraries
+ii  libcairo2               1.4.4-1          The Cairo 2D vector graphics libra
+ii  libcurl3                7.18.0-1         Multi-protocol file transfer libra
+ii  libdb4.6                4.6.19-1         Berkeley v4.6 Database Libraries [
+ii  libexpat1               1.95.8-3.2       XML parsing C library - runtime li
+ii  libfreetype6            2.3.5-1+b1       FreeType 2 font engine, shared lib
+ii  libgcc1                 1:4.3.0-3        GCC support library
+ii  libglib2.0-0            2.16.3-2         The GLib library of C routines
+ii  libgstreamer-plugins-ba 0.10.19-1        GStreamer libraries from the "base
+ii  libgstreamer0.10-0      0.10.19-3        Core GStreamer libraries and eleme
+ii  libgtk2.0-0             2.12.3-2         The GTK+ graphical user interface 
+ii  libhunspell-1.2-0       1.2.2-1          spell checker and morphological an
+ii  libhyphen0              2.3.1-3          ALTLinux hyphenation library - sha
+ii  libice6                 1:1.0.0-3        X11 Inter-Client Exchange library
+ii  libicu38                3.8.1-1          International Components for Unico
+ii  libjpeg62               6b-13            The Independent JPEG Group's JPEG 
+ii  libldap-2.4-2           2.4.7-5          OpenLDAP libraries
+ii  libneon27               0.28.2-1         An HTTP and WebDAV client library
+ii  libnspr4-0d             4.6.7-1          NetScape Portable Runtime Library
+ii  libnss3-1d              3.12.0~beta3-1   Network Security Service libraries
+ii  libpam0g                0.99.7.1-5       Pluggable Authentication Modules l
+ii  libpango1.0-0           1.20.2-2         Layout and rendering of internatio
+ii  libsm6                  1:1.0.0-4        X11 Session Management library
+ii  libssl0.9.8             0.9.8g-3         SSL shared libraries
+ii  libstdc++6              4.3.0-3          The GNU Standard C++ Library v3
+ii  libstlport4.6ldbl       4.6.2-3.2        STLport C++ class library
+ii  libx11-6                2:1.0.0-8        X11 client-side library
+ii  libxaw7                 1:1.0.1-5        X11 Athena Widget library
+ii  libxext6                1:1.0.0-4        X11 miscellaneous extension librar
+ii  libxinerama1            1:1.0.1-4        X11 Xinerama extension library
+ii  libxml2                 2.6.29.dfsg-1    GNOME XML library
+ii  libxrender1             1:0.9.0.2-4      X Rendering Extension client libra
+ii  libxslt1.1              1.1.18-3         XSLT processing library - runtime 
+ii  libxt6                  1:1.0.0-5        X11 toolkit intrinsics library
+ii  libxtst6                1:1.0.1-5        X11 Testing -- Resource extension 
+ii  openoffice.org-common   1:2.4.0-4        OpenOffice.org office suite archit
+ii  ttf-opensymbol          2.0.3-4          The OpenSymbol TrueType font
+ii  zlib1g                  1:1.2.3.3.dfsg-5 compression library - runtime
+
+-- no debconf information
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

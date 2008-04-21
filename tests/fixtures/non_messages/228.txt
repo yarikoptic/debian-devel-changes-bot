@@ -1,0 +1,174 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 17:21:06 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JncHk-0008E0-VR
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 17:21:06 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 8331B13A4F44; Sun, 20 Apr 2008 16:20:59 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.8 required=4.0 tests=BAYES_00,IMPRONONCABLE_1,
+	LDO_WHITELIST,MEDS2,MURPHY_DRUGS_REL8,MURPHY_WRONG_WORD2,RCVD_IN_DNSWL_LOW
+	autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 1C29813A4F13;
+	Sun, 20 Apr 2008 16:20:44 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JncC5-0005Qf-Dy; Sun, 20 Apr 2008 16:15:09 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476732: aptitude: Updated Danish translation for 0.4.11.2-1
+Reply-To: Jens Seidel <jensseidel@users.sf.net>, 476732@bugs.debian.org
+Resent-From: Jens Seidel <jensseidel@users.sf.net>
+Original-Sender: tux-master@web.de
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Daniel Burrows <dburrows@debian.org>
+Resent-Date: Sun, 20 Apr 2008 16:15:08 +0000
+Resent-Message-ID: <handler.476732.B476732.120870796516724@bugs.debian.org>
+X-Debian-PR-Message: report 476732
+X-Debian-PR-Package: aptitude
+X-Debian-PR-Keywords: l10n patch
+X-Debian-PR-Source: aptitude
+Received: via spool by 476732-submit@bugs.debian.org id=B476732.120870796516724
+          (code B ref 476732); Sun, 20 Apr 2008 16:15:08 +0000
+Received: (at 476732) by bugs.debian.org; 20 Apr 2008 16:12:45 +0000
+X-Amavis-Spam-Status: No, score=-5.6 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	HAS_BUG_NUMBER,IMPRONONCABLE_1,MEDS2,MURPHY_DRUGS_REL8,
+	MURPHY_WRONG_WORD2,VALID_BTS_CONTROL autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from fmmailgate02.web.de ([217.72.192.227])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <tux-master@web.de>)
+	id 1Jnc9k-0004Ie-V0; Sun, 20 Apr 2008 16:12:45 +0000
+Received: from smtp08.web.de (fmsmtp08.dlan.cinetic.de [172.20.5.216])
+	by fmmailgate02.web.de (Postfix) with ESMTP id F0F56D980B17;
+	Sun, 20 Apr 2008 18:12:38 +0200 (CEST)
+Received: from [77.178.187.86] (helo=merkur.sol.de)
+	by smtp08.web.de with asmtp (TLSv1:AES256-SHA:256)
+	(WEB.DE 4.109 #226)
+	id 1Jnc9e-0003O0-00; Sun, 20 Apr 2008 18:12:38 +0200
+Received: from jens by merkur.sol.de with local (Exim 4.63)
+	(envelope-from <tux-master@web.de>)
+	id 1Jnc2Z-0001bY-98; Sun, 20 Apr 2008 18:05:20 +0200
+Date: Sun, 20 Apr 2008 18:05:19 +0200
+From: Jens Seidel <jensseidel@users.sf.net>
+To: Morten Bo Johansen <mbj@spamcop.net>, 476732@bugs.debian.org
+Cc: control@bugs.debian.org
+Message-ID: <20080420160518.GB5014@merkur.sol.de>
+References: <20080418201302.GA18748@gatsby.nal-medienet>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1
+Content-Disposition: inline
+In-Reply-To: <20080418201302.GA18748@gatsby.nal-medienet>
+User-Agent: Mutt/1.5.13 (2006-08-11)
+Sender: tux-master@web.de
+X-Sender: tux-master@web.de
+X-Provags-ID: V01U2FsdGVkX1+cG4rMZkyThsroBg7Oy58kNyZ8qyaBB2d553Ta
+	RvW5I+3Kb1rNUzd+zwUUauHarVZwFlAC6BdyqUMENxQ1QSTepd
+	yziW0ULFA=
+Content-Transfer-Encoding: quoted-printable
+Resent-Date: Sun, 20 Apr 2008 16:15:09 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343633
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.5
+X-Spam-Report: (-52.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+tags 476732 + pending
+thanks
+
+On Fri, Apr 18, 2008 at 10:13:02PM +0200, Morten Bo Johansen wrote:
+> Package: aptitude
+> Version: 0.4.11.2-1
+> Severity: wishlist
+> Tags: patch l10n
+>=20
+> Please find attached a completely updated Danish translation in
+> the attachment.
+
+Committed, thanks!
+
+I unfuzzied three strings. Please confirm that the following is OK:
+
+#: src/main.cc:159
+#, c-format
+msgid ""
+" reinstall    - Download and (possibly) reinstall a currently installed =
+"
+"package\n"
+msgstr ""
+" reinstall    - Hent og (om muligt) geninstall=E9r en aktuelt installere=
+t "
+"pakke\n"
+
+#: src/main.cc:160
+#, c-format
+msgid ""
+" why          - Show the manually installed packages that require a pack=
+age, "
+"or\n"
+"              - why one or more packages would require the given package=
+\n"
+msgstr ""
+" why          - Vis de manuelt installerede pakker som kr=E6ver en pakke=
+, "
+"eller\n"
+"              - hvorfor en eller flere pakker m=E5tte kr=E6ve en given p=
+akke\n"
+
+#: src/main.cc:162
+#, c-format
+msgid ""
+" why-not      - Show the manually installed packages that lead to a "
+"conflict\n"
+"                with the given package, or why one or more packages woul=
+d\n"
+"                lead to a conflict with the given package if installed\n=
+"
+msgstr ""
+" why-not      - Vis de manuelt installerede pakker som f=F8rer til en ko=
+nflikt\n"
+"                med den givne pakke, eller hvorfor en eller flere pakker=
+ m=E5tte\n"
+"                f=F8re til en konflikt med den givne pakke, hvis install=
+eret\n"
+
+#: src/main.cc:181
+#, c-format
+msgid ""
+" -q             In command-line mode, suppress the incremental progress\=
+n"
+"                indicators.\n"
+msgstr ""
+" -q             I kommandolinjetilstand, undertryk den fortl=F8bende fre=
+mgang\n"
+"                indikatorer.\n"
+
+Jens
+
+
+

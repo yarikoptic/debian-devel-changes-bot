@@ -1,0 +1,134 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 12:31:42 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnXli-0006g5-Pb
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 12:31:42 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id A40AF13A4F13; Sun, 20 Apr 2008 11:31:37 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id 530D113A4EF3
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 11:31:37 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnXXh-0002RM-Eq; Sun, 20 Apr 2008 11:17:09 +0000
+From: Matthias Klose <doko@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted rudiments 0.31-2 (source all amd64)
+Message-Id: <E1JnXXh-0002RM-Eq@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 11:17:09 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <b7mJN-EUlKE.A.WvE.ZmyCIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301285
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 11:31:37 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.5
+X-Spam-Report: (-2.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.1 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 13:08:23 +0200
+Source: rudiments
+Binary: librudiments0.31 librudiments-dev librudiments-doc
+Architecture: source all amd64
+Version: 0.31-2
+Distribution: unstable
+Urgency: low
+Maintainer: Matthias Klose <doko@debian.org>
+Changed-By: Matthias Klose <doko@debian.org>
+Description:=20
+ librudiments-dev - C++ class library providing base classes
+ librudiments-doc - C++ class library providing base classes
+ librudiments0.31 - C++ class library providing base classes
+Closes: 47394
+Changes:=20
+ rudiments (0.31-2) unstable; urgency=3Dlow
+ .
+   * Don't add -Wlong-double to CXXFLAGS. Closes: #47394.
+Checksums-Sha1:=20
+ 22abfdc17cda043a6f747f38f1def517534827b8 1005 rudiments_0.31-2.dsc
+ 6f6704b3a05b8e00da21ef5d1cb61074ba981906 151949 rudiments_0.31-2.diff.gz
+ b9c34693abb12a690403ec2c604f48fea1545133 107274 librudiments-doc_0.31-2_=
+all.deb
+ 92f3f1db6563741c1565df91e18c01309d615174 167506 librudiments0.31_0.31-2_=
+amd64.deb
+ 364274930b7301059bfbc7fcafc45033cf99a448 262684 librudiments-dev_0.31-2_=
+amd64.deb
+Checksums-Sha256:=20
+ 78dd4a7f7c78fc9205ee036b35e44d4b7a5312efc12630fa27e4bcd4dc633669 1005 ru=
+diments_0.31-2.dsc
+ 6055fc1668ab6002b0f24fc0bd63a9b649e8d46f8050530173d1e3ea6b5529b6 151949 =
+rudiments_0.31-2.diff.gz
+ 36bc5823d55272231f5b68955f245f1af37dd96d6f8d4851cab9ba3d21f51d38 107274 =
+librudiments-doc_0.31-2_all.deb
+ e254fec0986ecdf7b15db9ff218e57642a1213ff0e38e8d98746c99a91165421 167506 =
+librudiments0.31_0.31-2_amd64.deb
+ 0ce27a5bef0a9d31ad5f372f0677cdeb680bb2fa034dd57128b0a81dd031bb1d 262684 =
+librudiments-dev_0.31-2_amd64.deb
+Files:=20
+ 608ec0c99fec5a11a705595f96594df1 1005 libs optional rudiments_0.31-2.dsc
+ fa8c3869277d16afd9f90df530fa51c5 151949 libs optional rudiments_0.31-2.d=
+iff.gz
+ 58a972aab213bf7ae5a3f9ab526d5a52 107274 doc optional librudiments-doc_0.=
+31-2_all.deb
+ 99cf4756cc048d5bdee10cdaa6c103e9 167506 libs optional librudiments0.31_0=
+.31-2_amd64.deb
+ 5172a80cd25eb480afea6d7366c6db00 262684 libdevel optional librudiments-d=
+ev_0.31-2_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICyTzStlRaw+TLJwRAuwuAJ47Crthasl19Drj8nobcAFQx/h/9wCfbx4e
+Dozw42kB3SQblI+GNSpJSM8=3D
+=3DIOQj
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+librudiments-dev_0.31-2_amd64.deb
+  to pool/main/r/rudiments/librudiments-dev_0.31-2_amd64.deb
+librudiments-doc_0.31-2_all.deb
+  to pool/main/r/rudiments/librudiments-doc_0.31-2_all.deb
+librudiments0.31_0.31-2_amd64.deb
+  to pool/main/r/rudiments/librudiments0.31_0.31-2_amd64.deb
+rudiments_0.31-2.diff.gz
+  to pool/main/r/rudiments/rudiments_0.31-2.diff.gz
+rudiments_0.31-2.dsc
+  to pool/main/r/rudiments/rudiments_0.31-2.dsc
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

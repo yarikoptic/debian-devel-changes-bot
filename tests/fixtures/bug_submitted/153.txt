@@ -1,0 +1,151 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 09:41:28 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnV6w-0005tG-0y
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 09:41:28 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 849E313A4EAA; Sun, 20 Apr 2008 08:40:21 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 7AB6A13A4E3D;
+	Sun, 20 Apr 2008 08:39:48 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnV4p-0006jU-S0; Sun, 20 Apr 2008 08:39:11 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476922: [desktop-file-utils] desktop-file-validate: option --warn-kde is useless and other issues
+Reply-To: "Frank S. Thomas" <fst@debian.org>, 476922@bugs.debian.org
+Resent-From: "Frank S. Thomas" <fst@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Ross Burton <ross@debian.org>
+Resent-Date: Sun, 20 Apr 2008 08:39:08 +0000
+Resent-Message-ID: <handler.476922.B.12086805641469@bugs.debian.org>
+X-Debian-PR-Message: report 476922
+X-Debian-PR-Package: desktop-file-utils
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: desktop-file-utils
+Received: via spool by submit@bugs.debian.org id=B.12086805641469
+          (code B ref -1); Sun, 20 Apr 2008 08:39:08 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 08:36:04 +0000
+X-Amavis-Spam-Status: No, score=-12.0 required=4.0 tests=BAYES_00,FROMDEVELOPER,
+	HAS_PACKAGE autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from moutng.kundenserver.de ([212.227.126.179])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <fst@debian.org>)
+	id 1JnV1n-00008o-N5
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 08:36:04 +0000
+Received: from avalon (dslb-088-065-216-214.pools.arcor-ip.net [88.65.216.214])
+	by mrelayeu.kundenserver.de (node=mrelayeu6) with ESMTP (Nemesis)
+	id 0ML29c-1JnV1g0iV0-0008Mn; Sun, 20 Apr 2008 10:35:57 +0200
+From: "Frank S. Thomas" <fst@debian.org>
+To: submit@bugs.debian.org
+Date: Sun, 20 Apr 2008 10:35:40 +0200
+User-Agent: KMail/1.9.9
+Organization: Debian Project
+MIME-Version: 1.0
+Content-Type: multipart/signed;
+  boundary="nextPart6576878.lXNjW6fbq9";
+  protocol="application/pgp-signature";
+  micalg=pgp-sha1
+Content-Transfer-Encoding: 7bit
+Message-Id: <200804201035.48125.fst@debian.org>
+X-Provags-ID: V01U2FsdGVkX1+DInBLftxJmzxj8Jj3ixro2urb2qIXaiYiuQX
+ +Wjp/YVj+e0Q8CvI+lISNdLv3rTCdhVTNQFZ/HooRSBNOFAnUx
+ 10hChPsk1C96pD7yDTagca9vjdcx6Kd
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 08:39:11 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343366
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -34.4
+X-Spam-Report: (-34.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	18 AWL                    AWL: From: address is in the auto white-list
+
+--nextPart6576878.lXNjW6fbq9
+Content-Type: text/plain;
+  charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+Package: desktop-file-utils
+Version: 0.15-1
+Severity: normal
+
+Hello,
+
+Desktop-file-validate warns about reserved keys or values for KDE in the=20
+Desktop Entry group regardless if the --warn-kde option is given or not. On=
+e=20
+would assume that these warnings are suppressed if desktop-file-validate is=
+=20
+invoked without the --warn-kde option.
+It also complains about groups which begin with "PropertyDef::", for exampl=
+e:
+
+  error: file contains group "PropertyDef::X-KDE-Name", but groups extending
+  the format should start with "X-"
+
+But this extension is used by (at least) KDE3 service types, see:=20
+http://techbase.kde.org/index.php?title=3DDevelopment/Architecture/KDE3/Ser=
+vices
+Maybe desktop-file-validate should also suppress these errors unless=20
+the --warn-kde option is given.
+
+Another issue is that desktop-file-validate does not complain about commas=
+=20
+used as separators in lists (in the latest Desktop Entry Specification the=
+=20
+use of commas as separator is marked as deprecated in favor of semicolons).
+
+Thanks,
+=2D-=20
+=46rank S. Thomas <fst@debian.org>           PGP public key ID: 0xDC426429
+Debian Developer                            finger fst/key@db.debian.org
+
+--nextPart6576878.lXNjW6fbq9
+Content-Type: application/pgp-signature; name=signature.asc 
+Content-Description: This is a digitally signed message part.
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQBICwBkft6HNdxCZCkRAqw+AJsGLANFwFw7xhRhmAnVnX3QliueYACbBSlF
+B4Kh5rQzGulVohwfBKy+cTI=
+=ADZm
+-----END PGP SIGNATURE-----
+
+--nextPart6576878.lXNjW6fbq9--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

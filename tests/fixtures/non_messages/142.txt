@@ -1,0 +1,137 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 05:04:59 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnQnO-0005Iz-P8
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 05:04:59 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id F188313A4E8E; Sun, 20 Apr 2008 04:04:52 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-3.0 required=4.0 tests=BAYES_00,RCVD_IN_DNSWL_LOW
+	autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id DB76313A4E78;
+	Sun, 20 Apr 2008 04:04:42 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnQla-0002Si-Ti; Sun, 20 Apr 2008 04:03:02 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#206572: screen: -ls should list sessons sorted chronologically
+Reply-To: Ben Finney <ben+debian@benfinney.id.au>, 206572@bugs.debian.org
+Resent-From: Ben Finney <ben+debian@benfinney.id.au>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Jan Christoph Nordholz <hesso@pool.math.tu-berlin.de>
+Resent-Date: Sun, 20 Apr 2008 04:03:02 +0000
+Resent-Message-ID: <handler.206572.B206572.12086640997799@bugs.debian.org>
+X-Debian-PR-Message: report 206572
+X-Debian-PR-Package: screen
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: screen
+Received: via spool by 206572-submit@bugs.debian.org id=B206572.12086640997799
+          (code B ref 206572); Sun, 20 Apr 2008 04:03:02 +0000
+Received: (at 206572) by bugs.debian.org; 20 Apr 2008 04:01:39 +0000
+X-Amavis-Spam-Status: No, score=-6.9 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	HAS_BUG_NUMBER autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from eth595.vic.adsl.internode.on.net ([150.101.214.82] helo=mail.benfinney.id.au)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <ben+debian@benfinney.id.au>)
+	id 1JnQkF-000214-Ci
+	for 206572@bugs.debian.org; Sun, 20 Apr 2008 04:01:39 +0000
+Received: from fuschia.local.whitetree.org (fuschia.local.whitetree.org [192.168.5.7])
+	by mail.benfinney.id.au (Postfix) with ESMTP id B96EF72305;
+	Sun, 20 Apr 2008 14:01:35 +1000 (EST)
+Received: by fuschia.local.whitetree.org (Postfix, from userid 1000)
+	id 82879E80BC; Sun, 20 Apr 2008 14:01:35 +1000 (EST)
+Date: Sun, 20 Apr 2008 14:01:35 +1000
+From: Ben Finney <ben+debian@benfinney.id.au>
+To: Jan Christoph Nordholz <hesso@pool.math.tu-berlin.de>,
+	206572@bugs.debian.org
+Message-ID: <20080420040135.GC20585@benfinney.id.au>
+Mail-Followup-To: Ben Finney <ben+debian@benfinney.id.au>,
+	Jan Christoph Nordholz <hesso@pool.math.tu-berlin.de>,
+	206572@bugs.debian.org
+References: <20080419164406.GA21656@pool.math.tu-berlin.de>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+	protocol="application/pgp-signature"; boundary="R+My9LyyhiUvIEro"
+Content-Disposition: inline
+In-Reply-To: <20080419164406.GA21656@pool.math.tu-berlin.de>
+X-Public-Key-ID: 0xBD41714B
+X-Public-Key-Fingerprint: 9CFE 12B0 791A 4267 887F  520C B7AC 2E51 BD41 714B
+X-Public-Key-URL: http://www.benfinney.id.au/contact/bfinney-gpg.asc
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Resent-Date: Sun, 20 Apr 2008 04:03:02 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343328
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -27.1
+X-Spam-Report: (-27.1 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	25 AWL                    AWL: From: address is in the auto white-list
+
+
+--R+My9LyyhiUvIEro
+Content-Type: text/plain; charset=utf-8
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+On 19-Apr-2008, Jan Christoph Nordholz wrote:
+> the only timestamp we have is the time of last attachment/detachment=20
+> (and we can't even tell them apart)
+
+Doesn't the ctime value from fstat(2) give the time the session was=20
+created? That seems like a more useful criterion.
+
+--=20
+ \                   =E2=80=9CI wish there was a knob on the TV to turn up =
+the |
+  `\   intelligence. There's a knob called 'brightness' but it doesn't |
+_o__)                                      work.=E2=80=9D =E2=80=94Eugene P=
+=2E Gallagher |
+Ben Finney <ben@benfinney.id.au>
+
+--R+My9LyyhiUvIEro
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: Digital signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iEYEARECAAYFAkgKwB8ACgkQt6wuUb1BcUs5LgCfSJqeOS1P3rlE5XQYMOSDpXZE
+8cEAni8h0LuTtFVenBFCL0NumkqZG+y1
+=G+qw
+-----END PGP SIGNATURE-----
+
+--R+My9LyyhiUvIEro--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,141 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 10:40:05 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnW1g-00064n-Ed
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 10:40:05 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 56EDB13A4ED3; Sun, 20 Apr 2008 09:39:59 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.9 required=4.0 tests=BAYES_00,FOURLA,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id EE98B13A4EA1;
+	Sun, 20 Apr 2008 09:39:47 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnW0m-00015L-1k; Sun, 20 Apr 2008 09:39:04 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476936: phppgadmin: Breaks apache startup on IPv4-only machines
+Reply-To: Lupe Christoph <lupe@lupe-christoph.de>, 476936@bugs.debian.org
+Resent-From: Lupe Christoph <lupe@lupe-christoph.de>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Isaac Clerencia <isaac@debian.org>
+Resent-Date: Sun, 20 Apr 2008 09:39:01 +0000
+Resent-Message-ID: <handler.476936.B.12086842153125@bugs.debian.org>
+X-Debian-PR-Message: report 476936
+X-Debian-PR-Package: phppgadmin
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: phppgadmin
+Received: via spool by submit@bugs.debian.org id=B.12086842153125
+          (code B ref -1); Sun, 20 Apr 2008 09:39:01 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 09:36:55 +0000
+X-Amavis-Spam-Status: No, score=-9.9 required=4.0 tests=BAYES_00,FOURLA,HAS_PACKAGE 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from buexe.b-5.de ([84.19.0.30])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <lupe@lupe-christoph.de>)
+	id 1JnVyg-0000o5-Qq
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 09:36:55 +0000
+Received: from antalya.lupe-christoph.de (antalya.lupe-christoph.de [172.17.0.9])
+	by buexe.b-5.de (8.13.4/8.13.4/b-5/buexe-3.6.3) with ESMTP id m3K9apS2020502
+	for <submit@bugs.debian.org>; Sun, 20 Apr 2008 11:36:51 +0200
+Received: from localhost (localhost [127.0.0.1])
+	by antalya.lupe-christoph.de (Postfix) with ESMTP id 6756A344F7;
+	Sun, 20 Apr 2008 11:36:46 +0200 (CEST)
+X-Virus-Scanned: Debian amavisd-new at lupe-christoph.de
+Received: from antalya.lupe-christoph.de ([127.0.0.1])
+	by localhost (antalya.lupe-christoph.de [127.0.0.1]) (amavisd-new, port 10024)
+	with LMTP id hNRCbrr+p8ag; Sun, 20 Apr 2008 11:36:22 +0200 (CEST)
+Received: by antalya.lupe-christoph.de (Postfix, from userid 1000)
+	id BE40434552; Sun, 20 Apr 2008 11:36:21 +0200 (CEST)
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Lupe Christoph <lupe@lupe-christoph.de>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Message-ID: <20080420093621.3196.15475.reportbug@antalya.lupe-christoph.de>
+X-Mailer: reportbug 3.39-0.1
+Date: Sun, 20 Apr 2008 11:36:21 +0200
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 09:39:04 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343390
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -40.1
+X-Spam-Report: (-40.1 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	13 AWL                    AWL: From: address is in the auto white-list
+
+Package: phppgadmin
+Version: 4.1.3-0.2
+Severity: normal
+
+/etc/init.d/apache restart
+Configuration syntax error detected, not starting/reloading...
+Syntax error on line 13 of /etc/apache/conf.d/phppgadmin:
+syntax error in network portion of network/netmask
+ failed!
+
+Because of this:
+
+allow from 127.0.0.0/255.0.0.0 ::1/128
+
+This would be a minor bug except that it will kill lots of webservers
+once apache is restarted.
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers testing
+  APT policy: (990, 'testing'), (100, 'unstable')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.24-1-686 (SMP w/1 CPU core)
+Locale: LANG=en_US, LC_CTYPE=en_US (charmap=ISO-8859-1)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages phppgadmin depends on:
+ii  apache [httpd]          1.3.34-4.1       versatile, high-performance HTTP s
+ii  apache-perl [httpd]     1.3.34-4.1       versatile, high-performance HTTP s
+ii  debconf [debconf-2.0]   1.5.20           Debian configuration management sy
+ii  libapache-mod-php4      6:4.4.4-9+lenny1 server-side, HTML-embedded scripti
+ii  php4-cgi                6:4.4.4-9+lenny1 server-side, HTML-embedded scripti
+ii  php4-pgsql              6:4.4.4-9+lenny1 PostgreSQL module for php4
+ii  wwwconfig-common        0.1.0            Debian web auto configuration
+
+Versions of packages phppgadmin recommends:
+pn  postgresql                    <none>     (no description available)
+ii  postgresql-doc                8.3.1-1    documentation for the PostgreSQL d
+
+-- debconf information:
+* phppgadmin/webserver: Apache
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

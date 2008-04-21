@@ -1,0 +1,390 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 02:05:01 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnNzB-0004NW-9Z
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 02:05:01 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 5557613A4E22; Sun, 20 Apr 2008 01:04:52 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id BCCC413A4E15;
+	Sun, 20 Apr 2008 01:04:50 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnNxQ-0000zL-V1; Sun, 20 Apr 2008 01:03:04 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Luis Rodrigo Gallardo Cruz <rodrigo@debian.org>
+Subject: Bug#475603: marked as done (liferea: XML Parsing error in Search 
+ interface (in translation?))
+Message-ID: <handler.475603.D475603.1208653298307.ackdone@bugs.debian.org>
+References: <E1JnNhv-0000r1-67@ries.debian.org>
+ <20080411221522.14841.20189.reportbug@ulrik-ibook.lan>
+X-Debian-PR-Message: closed 475603
+X-Debian-PR-Package: liferea
+X-Debian-PR-Source: liferea
+Content-Type: multipart/mixed; boundary="----------=_1208653384-3690-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 01:03:04 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <V_nsQVRhy_H.A.VJG.0apCIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/132886
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 01:04:52 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: Spam detection software, running on the system "chris-lamb.co.uk", has
+	identified this incoming email as possible spam.  The original message
+	has been attached to this so you can view it (if it isn't spam) or label
+	similar future email.  If you have any questions, see
+	the administrator of that system for details.
+	Content preview:  Your message dated Sun, 20 Apr 2008 00:47:03 +0000 with
+	message-id <E1JnNhv-0000r1-67@ries.debian.org> and subject line
+	Bug#475603: fixed in liferea 1.4.15-1 has caused the Debian Bug report
+	#475603, regarding liferea: XML Parsing error in Search interface (in
+	translation?) to be marked as done. [...] 
+	Content analysis details:   (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208653384-3690-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 00:47:03 +0000
+with message-id <E1JnNhv-0000r1-67@ries.debian.org>
+and subject line Bug#475603: fixed in liferea 1.4.15-1
+has caused the Debian Bug report #475603,
+regarding liferea: XML Parsing error in Search interface (in translation?)
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+475603: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D475603
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208653384-3690-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 11 Apr 2008 22:38:12 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-10.7 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,HAS_PACKAGE,RCVD_IN_SORBS_DUL,X_DEBBUGS_CC autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <ulrik.sverdrup@gmail.com>
+Received: from p57b0a1d5.dip0.t-ipconnect.de ([87.176.161.213] helo=ulrik-ibook.lan)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <ulrik.sverdrup@gmail.com>)
+	id 1JkRWv-0001p5-QK
+	for submit@bugs.debian.org; Fri, 11 Apr 2008 22:15:36 +0000
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+From: Ulrik Sverdrup <ulrik.sverdrup@gmail.com>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Subject: liferea: XML Parsing error in Search interface (in translation?)
+Message-ID: <20080411221522.14841.20189.reportbug@ulrik-ibook.lan>
+X-Mailer: reportbug 3.39
+Date: Sat, 12 Apr 2008 00:15:22 +0200
+X-Debbugs-Cc: ulrik.sverdrup@gmail.com
+Delivered-To: submit@bugs.debian.org
+Content-Transfer-Encoding: quoted-printable
+
+Package: liferea
+Version: 1.4.14-1
+Severity: minor
+
+When searching (ctrl-F), an XML Parsing error is displayed in the lower
+pane. Search results show up as normal in the upper pane. This might be
+related to my locale only, but the error comes from a true unmatched tag.
+
+Error message:
+---
+XML Parsing Error: mismatched tag. Expected: </p>.
+Location: file:///
+Line Number 6, Column 294:<body><div class=3D'content'><h2>0 s=C3=B6kresu=
+ltat f=C3=B6r "epiphany"</h2><p>Artikellistan inneh=C3=A5ller nu alla art=
+iklar som matchar det angivna s=C3=B6km=C3=B6nstret. Om du vill spara des=
+sa s=C3=B6kningresultat permanent kan du klicka p=C3=A5 knappen "S=C3=B6k=
+mapp" i s=C3=B6kf=C3=B6nstret, s=C3=A5 skapar Liferea en s=C3=B6kmapp i d=
+in kanallista.</h2></p></div></body></html>
+---
+
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers testing
+  APT policy: (500, 'testing')
+Architecture: powerpc (ppc)
+
+Kernel: Linux 2.6.24-1-powerpc
+Locale: LANG=3Dsv_SE.UTF-8, LC_CTYPE=3Dsv_SE.UTF-8 (charmap=3DUTF-8)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages liferea depends on:
+ii  gconf2                 2.22.0-1          GNOME configuration database=
+ syste
+ii  libatk1.0-0            1.20.0-1          The ATK accessibility toolki=
+t
+ii  libc6                  2.7-10            GNU C Library: Shared librar=
+ies
+ii  libcairo2              1.4.14-1          The Cairo 2D vector graphics=
+ libra
+ii  libdbus-glib-1-2       0.74-1            simple interprocess messagin=
+g syst
+ii  libgcc1                1:4.3.0-1         GCC support library
+ii  libgconf2-4            2.22.0-1          GNOME configuration database=
+ syste
+ii  libgcrypt11            1.4.0-3           LGPL Crypto library - runtim=
+e libr
+ii  libglade2-0            1:2.6.2-1         library to load .glade files=
+ at ru
+ii  libglib2.0-0           2.16.1-2          The GLib library of C routin=
+es
+ii  libgnutls26            2.2.2-1           the GNU TLS library - runtim=
+e libr
+ii  libgtk2.0-0            2.12.9-2          The GTK+ graphical user inte=
+rface=20
+ii  libice6                2:1.0.4-1         X11 Inter-Client Exchange li=
+brary
+ii  liblua5.1-0            5.1.3-1           Simple, extensible, embeddab=
+le pro
+ii  libnm-glib0            0.6.5-5           network management framework=
+ (GLib
+ii  libnotify1 [libnotify1 0.4.4-3           sends desktop notifications =
+to a n
+ii  libpango1.0-0          1.20.0-1          Layout and rendering of inte=
+rnatio
+ii  libsm6                 2:1.0.3-1+b1      X11 Session Management libra=
+ry
+ii  libsqlite3-0           3.5.7-1           SQLite 3 shared library
+ii  libstdc++6             4.3.0-1           The GNU Standard C++ Library=
+ v3
+ii  libx11-6               2:1.0.3-7         X11 client-side library
+ii  libxml2                2.6.31.dfsg-2     GNOME XML library
+ii  libxslt1.1             1.1.22-1          XSLT processing library - ru=
+ntime=20
+ii  libxul0d               1.8.1.13-1        Gecko engine library
+ii  zlib1g                 1:1.2.3.3.dfsg-11 compression library - runtim=
+e
+
+Versions of packages liferea recommends:
+ii  curl                          7.18.0-1   Get a file from an HTTP, HTT=
+PS or=20
+ii  dbus                          1.1.20-1   simple interprocess messagin=
+g syst
+ii  dbus-x11                      1.1.20-1   simple interprocess messagin=
+g syst
+ii  wget                          1.11.1-1   retrieves files from the web
+
+-- no debconf information
+
+
+
+------------=_1208653384-3690-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 475603-close) by bugs.debian.org; 20 Apr 2008 01:01:38 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.7 required=4.0 tests=BAYES_00,FROMDEVELOPER,
+	FVGT_m_MULTI_ODD,HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_2,
+	MURPHY_DRUGS_REL8,MURPHY_WRONG_WORD1,MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnNw2-0008W0-HI
+	for 475603-close@bugs.debian.org; Sun, 20 Apr 2008 01:01:38 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnNhv-0000r1-67; Sun, 20 Apr 2008 00:47:03 +0000
+From: Luis Rodrigo Gallardo Cruz <rodrigo@debian.org>
+To: 475603-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#475603: fixed in liferea 1.4.15-1
+Message-Id: <E1JnNhv-0000r1-67@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 00:47:03 +0000
+Content-Transfer-Encoding: quoted-printable
+
+Source: liferea
+Source-Version: 1.4.15-1
+
+We believe that the bug you reported is fixed in the latest version of
+liferea, which is due to be installed in the Debian FTP archive:
+
+liferea-dbg_1.4.15-1_i386.deb
+  to pool/main/l/liferea/liferea-dbg_1.4.15-1_i386.deb
+liferea-webkit_1.4.15-1_i386.deb
+  to pool/main/l/liferea/liferea-webkit_1.4.15-1_i386.deb
+liferea-xulrunner_1.4.15-1_all.deb
+  to pool/main/l/liferea/liferea-xulrunner_1.4.15-1_all.deb
+liferea_1.4.15-1.diff.gz
+  to pool/main/l/liferea/liferea_1.4.15-1.diff.gz
+liferea_1.4.15-1.dsc
+  to pool/main/l/liferea/liferea_1.4.15-1.dsc
+liferea_1.4.15-1_i386.deb
+  to pool/main/l/liferea/liferea_1.4.15-1_i386.deb
+liferea_1.4.15.orig.tar.gz
+  to pool/main/l/liferea/liferea_1.4.15.orig.tar.gz
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 475603@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Luis Rodrigo Gallardo Cruz <rodrigo@debian.org> (supplier of updated life=
+rea package)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sat, 19 Apr 2008 19:18:20 -0500
+Source: liferea
+Binary: liferea liferea-dbg liferea-webkit liferea-xulrunner
+Architecture: source i386 all
+Version: 1.4.15-1
+Distribution: unstable
+Urgency: low
+Maintainer: Franz Pletz <fpletz@franz-pletz.org>
+Changed-By: Luis Rodrigo Gallardo Cruz <rodrigo@debian.org>
+Description:=20
+ liferea    - feed aggregator for GNOME
+ liferea-dbg - liferea debug symbols
+ liferea-webkit - webkit rendering engine for liferea
+ liferea-xulrunner - transitional dummy package
+Closes: 433393 475603
+Changes:=20
+ liferea (1.4.15-1) unstable; urgency=3Dlow
+ .
+   * New upstream release.
+    - Fixes subscription not updated anymore when number of flagged items=
+ =3D
+     cache limit (Closes: #433393).
+    - Fixes invalid XHTML in searches when using Swedish translation
+     (Closes: #475603).
+    - Several other bugfixes and translation updates, see upstream Change=
+log.
+   * Updated for new webkit:
+    - Remove webkit-update-revert patch, which existed for compatibility =
+with
+     older webkit snapshots.
+    - Update Build-Depends to libwebkit-dev
+Checksums-Sha1:=20
+ cc96b79b2ebd313f7676ea66314aac453ace7aed 1531 liferea_1.4.15-1.dsc
+ 8ff9ed78b03c89a8bc2ff4f8070e665a5cb496c5 1637046 liferea_1.4.15.orig.tar=
+.gz
+ dea8b3bc986e79479a071ed9128cf3cf69722afd 17746 liferea_1.4.15-1.diff.gz
+ a8a874445f725d0943fd2c7a74ff60d5215579a3 1057234 liferea_1.4.15-1_i386.d=
+eb
+ 4828698455526a5d0dc450f70fb48751ba50afed 616134 liferea-dbg_1.4.15-1_i38=
+6.deb
+ 62eba9b28eb021d7837534f3e2f1d83a6b789f25 25892 liferea-webkit_1.4.15-1_i=
+386.deb
+ aa30ae6e20821c56c8e29496e2654b4b8c3dde5c 19814 liferea-xulrunner_1.4.15-=
+1_all.deb
+Checksums-Sha256:=20
+ 8ebed051dc712180d3390c7d8f317f72397c4b909381ae2b531d2fed79a78167 1531 li=
+ferea_1.4.15-1.dsc
+ e6f780027e0a4576ca4784fb248dd14c1c7f75489a825d8e79d5812f7ea77189 1637046=
+ liferea_1.4.15.orig.tar.gz
+ 4d98343a6fdacc2694199e3842b868694fef1f8ed8b105b5e234ce76287df5a1 17746 l=
+iferea_1.4.15-1.diff.gz
+ e188e833544b1f3351e32d4ce193e0313d35f6b3b4a5c8da4f8ccc5b8e6892e7 1057234=
+ liferea_1.4.15-1_i386.deb
+ 487f0049b4607b87354a77816837cbbe8008cad81187441700049774fe7bc3e9 616134 =
+liferea-dbg_1.4.15-1_i386.deb
+ ff5c4c52a1f962268739db394ed54129be4e93aef909358523baa636661beb2d 25892 l=
+iferea-webkit_1.4.15-1_i386.deb
+ b0294ee5afe87e857ec6ef36caad7df5a41cf9299b69a612962146f39e07680d 19814 l=
+iferea-xulrunner_1.4.15-1_all.deb
+Files:=20
+ 6ff9cac4cf490937ec1e301236190f13 1531 gnome optional liferea_1.4.15-1.ds=
+c
+ e4ae96a0d41d94c31271ba791caec922 1637046 gnome optional liferea_1.4.15.o=
+rig.tar.gz
+ 0059fc498163a10a0db1836837a39151 17746 gnome optional liferea_1.4.15-1.d=
+iff.gz
+ ee6b0675abc378936a4795da56e6f123 1057234 gnome optional liferea_1.4.15-1=
+_i386.deb
+ 389ef471dd2c713b83e6a2576443ad60 616134 gnome extra liferea-dbg_1.4.15-1=
+_i386.deb
+ 7ea6e822af79aa515f4e88d6de164c7b 25892 gnome optional liferea-webkit_1.4=
+.15-1_i386.deb
+ c99f1ac8fefe87c4d3b5d7835d50605a 19814 gnome optional liferea-xulrunner_=
+1.4.15-1_all.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICpCgAZmDGK3JvCgRAmyWAJwJKPngsD5zvy1VrcjAlQaiDuPHagCfYcKj
+cqmjn8/oGAx4My6n3kZcufM=3D
+=3DIxGX
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208653384-3690-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

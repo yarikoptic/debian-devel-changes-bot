@@ -1,0 +1,300 @@
+From bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org Sun Apr 20 19:09:53 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org>)
+	id 1Jndz2-0000L7-De
+	for ddc@ddc.chris-lamb.co.uk; Sun, 20 Apr 2008 19:09:53 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 51F2013A50DE; Sun, 20 Apr 2008 18:09:47 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id E892413A50DA;
+	Sun, 20 Apr 2008 18:09:40 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JndvT-0005Ff-0S; Sun, 20 Apr 2008 18:06:07 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Dave Beckett <dajobe@debian.org>
+Subject: Bug#463344: marked as done (build against libcurl4-gnutls)
+Message-ID: <handler.463344.D463344.120871456227290.ackdone@bugs.debian.org>
+References: <E1Jndd2-0007i9-1l@ries.debian.org>
+ <200801302016.10073.mrosewarne@inoutbox.com>
+X-Debian-PR-Message: closed 463344
+X-Debian-PR-Package: raptor
+X-Debian-PR-Source: raptor
+Content-Type: multipart/mixed; boundary="----------=_1208714766-20073-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 18:06:07 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <_qTznemm0GI.A.kKC.rb4CIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/133068
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 18:09:47 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208714766-20073-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 17:47:04 +0000
+with message-id <E1Jndd2-0007i9-1l@ries.debian.org>
+and subject line Bug#463344: fixed in raptor 1.4.17-1
+has caused the Debian Bug report #463344,
+regarding build against libcurl4-gnutls
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+463344: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D463344
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208714766-20073-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 31 Jan 2008 01:16:18 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-3.9 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <mrosewarne@inoutbox.com>
+Received: from out2.smtp.messagingengine.com ([66.111.4.26])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <mrosewarne@inoutbox.com>)
+	id 1JKO2L-0002Vh-VT
+	for submit@bugs.debian.org; Thu, 31 Jan 2008 01:16:18 +0000
+Received: from compute1.internal (compute1.internal [10.202.2.41])
+	by out1.messagingengine.com (Postfix) with ESMTP id 087E58E39E
+	for <submit@bugs.debian.org>; Wed, 30 Jan 2008 20:16:17 -0500 (EST)
+Received: from heartbeat1.messagingengine.com ([10.202.2.160])
+  by compute1.internal (MEProxy); Wed, 30 Jan 2008 20:16:17 -0500
+X-Sasl-enc: fgTOOkhU6nlFX/PnDLvd919vmSVBzpLHmoHsE1Bet+KQ 1201742176
+Received: from mikhail.pvrm (c-76-99-140-69.hsd1.pa.comcast.net [76.99.140.69])
+	by mail.messagingengine.com (Postfix) with ESMTP id CED25133A2
+	for <submit@bugs.debian.org>; Wed, 30 Jan 2008 20:16:16 -0500 (EST)
+From: Matthew Rosewarne <mrosewarne@inoutbox.com>
+To: submit@bugs.debian.org
+Subject: build against libcurl4-gnutls
+Date: Wed, 30 Jan 2008 20:15:58 -0500
+User-Agent: KMail/1.9.7
+MIME-Version: 1.0
+Content-Type: multipart/signed;
+  boundary="nextPart10362990.pWSTB2g69S";
+  protocol="application/pgp-signature";
+  micalg=pgp-sha1
+Content-Transfer-Encoding: 7bit
+Message-Id: <200801302016.10073.mrosewarne@inoutbox.com>
+Delivered-To: submit@bugs.debian.org
+
+--nextPart10362990.pWSTB2g69S
+Content-Type: text/plain;
+  charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+Source: raptor
+Version: 1.4.16-1
+Severity: wishlist
+
+If possible, please build the raptor packages using libcurl4-gnutls-dev=20
+instead of libcurl4-openssl-dev, which conflicts with several other package=
+s.=20
+The raptor code does not directly use OpenSSL/GNUTLS, so a switch shouldn't=
+=20
+cause any problems.  I have built raptor packages against libcurl4-gnutls-d=
+ev=20
+and they appear to be working properly.
+
+--nextPart10362990.pWSTB2g69S
+Content-Type: application/pgp-signature; name=signature.asc 
+Content-Description: This is a digitally signed message part.
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQBHoSFaLE8yW/+QbWIRAgv+AKClO9D5FQhdt2HXPSRoQz4yyDQ9jwCfb2JO
+qTmUVd5pjWR+STzmflbnAtA=
+=sjbY
+-----END PGP SIGNATURE-----
+
+--nextPart10362990.pWSTB2g69S--
+
+
+
+------------=_1208714766-20073-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 463344-close) by bugs.debian.org; 20 Apr 2008 18:02:42 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.7 required=4.0 tests=BAYES_00,FROMDEVELOPER,
+	FVGT_m_MULTI_ODD,HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_2,
+	MURPHY_WRONG_WORD1,MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1Jnds9-00073W-PW
+	for 463344-close@bugs.debian.org; Sun, 20 Apr 2008 18:02:42 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1Jndd2-0007i9-1l; Sun, 20 Apr 2008 17:47:04 +0000
+From: Dave Beckett <dajobe@debian.org>
+To: 463344-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#463344: fixed in raptor 1.4.17-1
+Message-Id: <E1Jndd2-0007i9-1l@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 17:47:04 +0000
+Content-Transfer-Encoding: quoted-printable
+
+Source: raptor
+Source-Version: 1.4.17-1
+
+We believe that the bug you reported is fixed in the latest version of
+raptor, which is due to be installed in the Debian FTP archive:
+
+libraptor1-dev_1.4.17-1_i386.deb
+  to pool/main/r/raptor/libraptor1-dev_1.4.17-1_i386.deb
+libraptor1-doc_1.4.17-1_all.deb
+  to pool/main/r/raptor/libraptor1-doc_1.4.17-1_all.deb
+libraptor1_1.4.17-1_i386.deb
+  to pool/main/r/raptor/libraptor1_1.4.17-1_i386.deb
+raptor-utils_1.4.17-1_i386.deb
+  to pool/main/r/raptor/raptor-utils_1.4.17-1_i386.deb
+raptor_1.4.17-1.diff.gz
+  to pool/main/r/raptor/raptor_1.4.17-1.diff.gz
+raptor_1.4.17-1.dsc
+  to pool/main/r/raptor/raptor_1.4.17-1.dsc
+raptor_1.4.17.orig.tar.gz
+  to pool/main/r/raptor/raptor_1.4.17.orig.tar.gz
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 463344@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Dave Beckett <dajobe@debian.org> (supplier of updated raptor package)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.7
+Date: Tue, 01 Apr 2008 22:06:01 -0700
+Source: raptor
+Binary: libraptor1-dev libraptor1 raptor-utils libraptor1-doc
+Architecture: source all i386
+Version: 1.4.17-1
+Distribution: unstable
+Urgency: low
+Maintainer: Dave Beckett <dajobe@debian.org>
+Changed-By: Dave Beckett <dajobe@debian.org>
+Description:=20
+ libraptor1 - Raptor RDF parser and serializer library
+ libraptor1-dev - Raptor RDF parser and serializer development libraries =
+and header
+ libraptor1-doc - Documentation for the Raptor RDF parser and serializer =
+library
+ raptor-utils - Raptor RDF parser and serializer utilities
+Closes: 463344
+Changes:=20
+ raptor (1.4.17-1) unstable; urgency=3Dlow
+ .
+   * New upstream release
+   * Rebuild against libcurl4-gnutls-dev rather than libcurl4-openssl-dev
+     (Closes: #463344)
+   * debian/control: depend on libtool 1.5 rather than older debian speci=
+fic
+     release
+   * debian/copyright: 2008
+   * debian/libraptor1-doc.doc-base: Use a correct Section:
+Files:=20
+ c2495481693d56ea5cc367b3c1fa0a71 718 devel optional raptor_1.4.17-1.dsc
+ 1cf4627c91fbe5f7ab3c358351a27f79 1580715 devel optional raptor_1.4.17.or=
+ig.tar.gz
+ 9843084626e75e78a1e522bcd61f5ce7 8656 devel optional raptor_1.4.17-1.dif=
+f.gz
+ 063b4259d8413c5628061ad2abaa4780 168584 doc optional libraptor1-doc_1.4.=
+17-1_all.deb
+ 5f0688eed11b3bbaaef21fe8df457652 237108 libdevel optional libraptor1-dev=
+_1.4.17-1_i386.deb
+ 2b6adde03792dc6e231d22e84bbd70d2 183266 libs optional libraptor1_1.4.17-=
+1_i386.deb
+ f2f3e6e70564a037663a94722bc1131e 57358 text optional raptor-utils_1.4.17=
+-1_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFH8xkWQ+ySUE9xlVoRAjXoAKCMKQCZd+/shMJxn1rvM/02Tf1yAwCeOfAN
+jyRuBklIECfM9FOIuuMsanE=3D
+=3DXChN
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208714766-20073-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,133 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 04:32:07 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnQHZ-0005GV-6F
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 04:32:07 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 01E5B13A4E72; Sun, 20 Apr 2008 03:32:00 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id 9F18B13A4AF1
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 03:31:59 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnQ35-0007eI-Bf; Sun, 20 Apr 2008 03:17:03 +0000
+From: Vagrant Cascadian <vagrant@freegeek.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted ltspfs 0.5.1-1 (source i386)
+Message-Id: <E1JnQ35-0007eI-Bf@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 03:17:03 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <3Zwl0bNdyaD.A.vpE.vkrCIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301268
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 03:32:00 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.5
+X-Spam-Report: (-2.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.1 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sat, 19 Apr 2008 21:33:52 -0500
+Source: ltspfs
+Binary: ltspfs ltspfsd
+Architecture: source i386
+Version: 0.5.1-1
+Distribution: unstable
+Urgency: low
+Maintainer: LTSP Debian/Ubuntu Maintainers <pkg-ltsp-devel@lists.alioth.d=
+ebian.org>
+Changed-By: Vagrant Cascadian <vagrant@freegeek.org>
+Description:=20
+ ltspfs     - Fuse based remote filesystem for LTSP thin clients
+ ltspfsd    - Fuse based remote filesystem daemon for LTSP thin clients
+Changes:=20
+ ltspfs (0.5.1-1) unstable; urgency=3Dlow
+ .
+   * new upstream version:
+     - fix local devices when used with ldm's direct x mode enabled
+   * debian/control: add Vcs-Bzr and Vcs-Browser fields
+   * remove patch to fix ldm-delayed-mounter (applied upstream)
+Checksums-Sha1:=20
+ 86c63f9a07561a199dd8a64b56332881fa66201c 1479 ltspfs_0.5.1-1.dsc
+ 5358f0c7efd01e15572fdec13c872d9bc862abf7 219884 ltspfs_0.5.1.orig.tar.gz
+ 2fed04717bc95a77814a64e19e302a79b939336c 29423 ltspfs_0.5.1-1.diff.gz
+ e6c3c001ab3f758fa9b88f16a137e889faa9b4e3 19292 ltspfs_0.5.1-1_i386.deb
+ 46900480d2d9b66ba35a9b13ad06a8545bcf0a21 18266 ltspfsd_0.5.1-1_i386.deb
+Checksums-Sha256:=20
+ eb19aeca96f8c4058c1e13237ae6df9d64b9b6a44a240a1cd2e4c7e9e58c3ac5 1479 lt=
+spfs_0.5.1-1.dsc
+ 67178d83fa3c5b0b165378af499b2ed1992e2903104c965426849852d94fd237 219884 =
+ltspfs_0.5.1.orig.tar.gz
+ 0b7d3a2fe681e5fb08cff91a4d2cc86e0f27c8653cc8cd3b631ac7d832a41cd4 29423 l=
+tspfs_0.5.1-1.diff.gz
+ 5f06106fb3c07691d9bb5541e8453c127b6beda0741a0d3a1f87035293bcbbe8 19292 l=
+tspfs_0.5.1-1_i386.deb
+ cb81a5a21019eaf06052f22cb3f81af3d9d29a6ed1e155a86c644ed6c4e59787 18266 l=
+tspfsd_0.5.1-1_i386.deb
+Files:=20
+ 0b20ab021a6ae7c8af83c9c946f80cf0 1479 net optional ltspfs_0.5.1-1.dsc
+ 190db60732ce91ebaa99f2325f4e8ee9 219884 net optional ltspfs_0.5.1.orig.t=
+ar.gz
+ 0e59a42b36cadb6a418cc26d922aeeb6 29423 net optional ltspfs_0.5.1-1.diff.=
+gz
+ aa1d7677d2f4b350a392f62f607b2ad3 19292 net optional ltspfs_0.5.1-1_i386.=
+deb
+ 9225f9188919ca9f2ad90870125d8471 18266 net optional ltspfsd_0.5.1-1_i386=
+.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICrIglPc63BPWGpkRAusGAKCNPly2E6OEJZJtrkeSiTG3FJV2FACeKb5H
+2haIiABVMf2jL1ucFKK2Z5w=3D
+=3D+PXe
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+ltspfs_0.5.1-1.diff.gz
+  to pool/main/l/ltspfs/ltspfs_0.5.1-1.diff.gz
+ltspfs_0.5.1-1.dsc
+  to pool/main/l/ltspfs/ltspfs_0.5.1-1.dsc
+ltspfs_0.5.1-1_i386.deb
+  to pool/main/l/ltspfs/ltspfs_0.5.1-1_i386.deb
+ltspfs_0.5.1.orig.tar.gz
+  to pool/main/l/ltspfs/ltspfs_0.5.1.orig.tar.gz
+ltspfsd_0.5.1-1_i386.deb
+  to pool/main/l/ltspfs/ltspfsd_0.5.1-1_i386.deb
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

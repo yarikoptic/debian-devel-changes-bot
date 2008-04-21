@@ -1,0 +1,178 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 10:50:17 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnWBY-00066p-N1
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 10:50:17 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id A93C613A4EDA; Sun, 20 Apr 2008 09:50:11 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 8907913A4E19;
+	Sun, 20 Apr 2008 09:50:00 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnW6e-0002YW-1j; Sun, 20 Apr 2008 09:45:08 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#474630: new python-twisted-core breaks plugin packages using python-support
+Reply-To: Josselin Mouette <joss@debian.org>, 474630@bugs.debian.org
+Resent-From: Josselin Mouette <joss@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 09:45:07 +0000
+Resent-Message-ID: <handler.474630.B474630.12086845787393@bugs.debian.org>
+X-Debian-PR-Message: report 474630
+X-Debian-PR-Package: python-support
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: python-support
+Received: via spool by 474630-submit@bugs.debian.org id=B474630.12086845787393
+          (code B ref 474630); Sun, 20 Apr 2008 09:45:07 +0000
+Received: (at 474630) by bugs.debian.org; 20 Apr 2008 09:42:58 +0000
+X-Amavis-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,FROMDEVELOPER,
+	VALID_BTS_CONTROL autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from diva.malsain.org ([91.121.19.57])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <joss@debian.org>)
+	id 1JnW4X-0001uh-Lu; Sun, 20 Apr 2008 09:42:58 +0000
+Received: from localhost ([127.0.0.1])
+	by diva.malsain.org with esmtp (Exim 4.63)
+	(envelope-from <joss@debian.org>)
+	id 1JnW4U-0001zb-Ct; Sun, 20 Apr 2008 11:42:54 +0200
+From: Josselin Mouette <joss@debian.org>
+To: Vincent Bernat <bernat@luffy.cx>
+Cc: Matthias Klose <doko@cs.tu-berlin.de>, 474630@bugs.debian.org,  474630-submitter@bugs.debian.org
+In-Reply-To: <m34pa17ke1.fsf@neo.luffy.cx>
+References: <18436.36639.911107.676769@gargle.gargle.HOWL>
+	 <m34pa17ke1.fsf@neo.luffy.cx>
+Content-Type: multipart/signed; micalg=pgp-sha1; protocol="application/pgp-signature"; boundary="=-ExYQO/1MBpSqTRqs0u3l"
+Date: Sun, 20 Apr 2008 11:42:53 +0200
+Message-Id: <1208684573.3820.11.camel@shizuru>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.22.1 
+X-CrossAssassin-Score: 3
+Resent-Date: Sun, 20 Apr 2008 09:45:08 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343395
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -29.9
+X-Spam-Report: (-29.9 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	23 AWL                    AWL: From: address is in the auto white-list
+
+
+--=-ExYQO/1MBpSqTRqs0u3l
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+reassign 474630 python-twisted-core
+thanks
+
+Le mercredi 16 avril 2008 =C3=A0 19:57 +0200, Vincent Bernat a =C3=A9crit :
+> OoO Peu  avant le  d=C3=A9but de  l'apr=C3=A8s-midi du mardi  15 avril  2=
+008, vers
+> 13:18, Matthias Klose <doko@cs.tu-berlin.de> disait:
+>=20
+> > this is not a bug in python-twisted-core; it is known that the
+> > installation of modules/plugins in two different directories in
+> > sys.path breaks things.  python-nevow must install in the same
+> > location as python-twisted-core.
+>=20
+> I don't really  see the relation between the new  behavior of twisted of
+> not searching plugins in directories containing __init__.py and the fact
+> that multiple modules providing plugins may break things.
+>=20
+> Moreover,  your   proposed  fix  will  just  break   more  things  since
+> python-support will add __init__.py file into the target directory.
+>=20
+> I could fix this bug easily in python-nevow by removing this __init__.py
+> file  in  postinst. =20
+
+Please don=E2=80=99t do that. It will be re-added later.
+
+> However,  Sam   seems  to  report  a  more  general
+> problem. Fixing it in python-nevow won't solve it.
+>=20
+> If we  don't fix it  in twisted, we  could fix it in  python-support.  I
+> don't really  understand why python-support adds  __init__.py files. The
+> code says  that otherwise, python will  not take care  of package inside
+> those directories. I  don't find a case where a package  is shipped as a
+> package without __init__.py.
+
+There are already several packages relying on the "namespace packages"
+feature. The problem is when you have two modules, named foo.bar and
+foo.baz, shipped in two different packages. If each of them shipped
+foo/__init__.py, they couldn=E2=80=99t be installed together, and this is w=
+hy
+the empty __init__.py needs to be generated automaticaly.
+
+> Josselin,   any  hint   on  this   problem?   I  assign   this  bug   to
+> python-support.  If  you  don't  agree,  feel free  to  reassign  it  to
+> python-nevow, I know how to fix it for python-nevow.
+
+We=E2=80=99ve already discussed the issue on IRC before sam reported the bu=
+g,
+and I still think the bug lies in python-twisted. Shipping modules in
+the site-packages directory without making them available to the user
+through 'import' is a clear abuse of the python API.=20
+
+Of course it is possible to work around that bug in python-support by
+adding a specific exception for python-twisted, but this is a
+last-resort measure, and I don=E2=80=99t want to do this when it is so easy=
+ to
+fix twisted, by removing the __init__.py check that was recently added
+by upstream.
+
+Cheers,
+--=20
+ .''`.
+: :' :      We are debian.org. Lower your prices, surrender your code.
+`. `'       We will add your hardware and software distinctiveness to
+  `-        our own. Resistance is futile.
+
+--=-ExYQO/1MBpSqTRqs0u3l
+Content-Type: application/pgp-signature; name=signature.asc
+Content-Description: Ceci est une partie de message
+	=?ISO-8859-1?Q?num=E9riquement?= =?ISO-8859-1?Q?_sign=E9e?=
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQBICxAdrSla4ddfhTMRAhIoAJ43hyq10QGWFQrlqvRMuOpRXKHLBgCcDooo
+QYF47Gcuek1agTYBKH0ObSI=
+=+RuM
+-----END PGP SIGNATURE-----
+
+--=-ExYQO/1MBpSqTRqs0u3l--
+
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

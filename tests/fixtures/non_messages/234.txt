@@ -1,0 +1,251 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 17:49:09 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jncit-0008Kn-Qz
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 17:49:09 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id A365313A4ECC; Sun, 20 Apr 2008 16:49:02 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,FVGT_m_MULTI_ODD,
+	LDO_WHITELIST,MURPHY_DRUGS_REL8,RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 3B04313A4DD1;
+	Sun, 20 Apr 2008 16:48:46 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JncWM-0007XY-If; Sun, 20 Apr 2008 16:36:06 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#477012: hedgewars: FTBFS: make: *** [configure-stamp] Error 255
+Reply-To: "Dmitry E. Oboukhov" <dimka@avanto.org>, 477012@bugs.debian.org
+Resent-From: "Dmitry E. Oboukhov" <dimka@avanto.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: dimka@avanto.org (Dmitry E. Oboukhov)
+Resent-Date: Sun, 20 Apr 2008 16:36:04 +0000
+Resent-Message-ID: <handler.477012.B477012.120870922818057@bugs.debian.org>
+X-Debian-PR-Message: report 477012
+X-Debian-PR-Package: hedgewars
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: hedgewars
+Received: via spool by 477012-submit@bugs.debian.org id=B477012.120870922818057
+          (code B ref 477012); Sun, 20 Apr 2008 16:36:04 +0000
+Received: (at 477012) by bugs.debian.org; 20 Apr 2008 16:33:48 +0000
+X-Amavis-Spam-Status: No, score=-8.8 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FVGT_m_MULTI_ODD,HAS_BUG_NUMBER,MURPHY_DRUGS_REL8,VALID_BTS_CONTROL 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from vds.uvw.ru ([85.249.230.209])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dimka@uvw.ru>)
+	id 1JncU7-0004gW-Vk; Sun, 20 Apr 2008 16:33:48 +0000
+Received: from [81.9.63.169] (helo=home.uvw.ru)
+	by vds.uvw.ru with esmtp (Exim 4.63)
+	(envelope-from <dimka@uvw.ru>)
+	id 1JncU4-0004B8-CO; Sun, 20 Apr 2008 20:33:45 +0400
+Received: from [10.255.1.18] (helo=nbw.dhome.lan)
+	by home.uvw.ru with esmtp (Exim 4.68)
+	(envelope-from <dimka@uvw.ru>)
+	id 1JncTq-0002nb-VK; Sun, 20 Apr 2008 20:33:38 +0400
+Received: from dimka by nbw.dhome.lan with local (Exim 4.69)
+	(envelope-from <dimka@nbw.dhome.lan>)
+	id 1JncTq-0005kE-RD; Sun, 20 Apr 2008 20:33:30 +0400
+Date: Sun, 20 Apr 2008 20:33:30 +0400
+From: "Dmitry E. Oboukhov" <dimka@avanto.org>
+To: Lucas Nussbaum <lucas@lucas-nussbaum.net>, 477012@bugs.debian.org
+Cc: control@bugs.debian.org
+Message-ID: <20080420163330.GA21720@avanto.org>
+References: <20080420153606.GA22592@xanadu.blop.info>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+	protocol="application/pgp-signature"; boundary="yEPQxsgoJgBvi8ip"
+Content-Disposition: inline
+In-Reply-To: <20080420153606.GA22592@xanadu.blop.info>
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+X-SA-Exim-Connect-IP: 81.9.63.169
+X-SA-Exim-Mail-From: dimka@uvw.ru
+X-SA-Exim-Version: 4.2.1 (built Tue, 09 Jan 2007 17:23:22 +0000)
+X-SA-Exim-Scanned: Yes (on vds.uvw.ru)
+Resent-Date: Sun, 20 Apr 2008 16:36:06 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343648
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -31.8
+X-Spam-Report: (-31.8 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	21 AWL                    AWL: From: address is in the auto white-list
+
+
+--yEPQxsgoJgBvi8ip
+Content-Type: multipart/mixed; boundary="dDRMvlgZJXvWKvBx"
+Content-Disposition: inline
+
+
+--dDRMvlgZJXvWKvBx
+Content-Type: text/plain; charset=utf-8
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+tags 477012 patch pending
+thanls
+
+
+Thanks for You bug-report, see patch.
+
+On 17:36 Sun 20 Apr     , Lucas Nussbaum wrote:
+LN> Package: hedgewars
+LN> Version: 0.9.2-1
+LN> Severity: serious
+LN> User: debian-qa@lists.debian.org
+LN> Usertags: qa-ftbfs-20080419 qa-ftbfs
+LN> Justification: FTBFS on i386
+
+LN> Hi,
+
+LN> During a rebuild of all packages in sid, your package failed to build o=
+n i386.
+
+LN> This rebuild was done with gcc 4.3 instead of gcc 4.2, because gcc 4.3 =
+is now
+LN> the default on most architectures (even if it's not the case on i386 ye=
+t).
+LN> Feel free to downgrade this bug to 'important' if your package is only =
+built
+LN> on i386, and this bug is specific to gcc 4.3 (i.e the package builds fi=
+ne with
+LN> gcc 4.2).
+
+LN> Relevant part:
+>> /usr/bin/fakeroot debian/rules clean
+>> rm -fr build *-stamp
+>> dh_clean
+>> dpkg-source -b hedgewars-0.9.2
+>> dpkg-source: info: using source format `1.0'
+>> dpkg-source: info: building hedgewars using existing hedgewars_0.9.2.ori=
+g.tar.gz
+>> dpkg-source: info: building hedgewars in hedgewars_0.9.2-1.diff.gz
+>> dpkg-source: info: building hedgewars in hedgewars_0.9.2-1.dsc
+>> debian/rules build
+>> mkdir build
+>> tar xjf *.tar.bz2 -C build
+>> name_top=3D`ls build`; \
+>> mv build/$name_top/* build; \
+>> rmdir build/$name_top
+>> touch unpack-stamp
+>> dh_testdir
+>> cd build && \
+>> cmake -DCMAKE_INSTALL_PREFIX=3D/usr/lib/hedgewars \
+>> -DDATA_INSTALL_DIR=3D/usr/share/games .
+>> -- Check for working C compiler: /usr/bin/gcc
+>> -- Check for working C compiler: /usr/bin/gcc -- works
+>> -- Check size of void*
+>> -- Check size of void* - done
+>> -- Check for working CXX compiler: /usr/bin/c++
+>> -- Check for working CXX compiler: /usr/bin/c++ -- works
+>> -- Looking for Q_WS_X11
+>> -- Looking for Q_WS_X11 - found
+>> -- Looking for Q_WS_WIN
+>> -- Looking for Q_WS_WIN - not found.
+>> -- Looking for Q_WS_QWS
+>> -- Looking for Q_WS_QWS - not found.
+>> -- Looking for Q_WS_MAC
+>> -- Looking for Q_WS_MAC - not found.
+>> -- Found Qt-Version 4.4.0-rc1
+>> -- Looking for _POSIX_TIMERS
+>> -- Looking for _POSIX_TIMERS - found
+>> -- Looking for pthread.h
+>> -- Looking for pthread.h - found
+>> -- Looking for pthread_create in pthreads
+>> -- Looking for pthread_create in pthreads - not found
+>> -- Looking for pthread_create in pthread
+>> -- Looking for pthread_create in pthread - found
+>> CMake Error: This project requires some variables to be set,
+>> and cmake can not find them.
+>> Please set the following variables:
+>> QT_FONTCONFIG_LIBRARY (ADVANCED)
+>> QT_X11_ICE_LIBRARY (ADVANCED)
+>> QT_X11_SM_LIBRARY (ADVANCED)
+>> QT_XI_LIBRARY (ADVANCED)
+>> QT_XRANDR_LIBRARY (ADVANCED)
+>> QT_XRENDER_LIBRARY (ADVANCED)
+>>=20
+>> -- Configuring done
+>> make: *** [configure-stamp] Error 255
+
+LN> The full build log is available from:
+LN> http://people.debian.org/~lucas/logs/2008/04/19
+
+LN> A list of current common problems and possible solutions is available at
+LN> http://wiki.debian.org/qa.debian.org/FTBFS . You're welcome to contribu=
+te!
+
+LN> About the archive rebuild: The rebuild was done on about 50 AMD64 nodes
+LN> of the Grid'5000 platform, using a clean chroot containing a sid i386
+LN> environment.  Internet was not accessible from the build systems.
+
+--dDRMvlgZJXvWKvBx
+Content-Type: text/x-diff; charset=utf-8
+Content-Disposition: attachment; filename="ftbfs.fix.diff"
+Content-Transfer-Encoding: quoted-printable
+
+--- hedgewars-0.9.2/debian/control	2008-04-20 20:25:37.000000000 +0400
++++ hedgewars-0.9.2/debian/control	2008-04-20 20:16:03.000000000 +0400
+@@ -2,7 +2,7 @@
+ Section: games
+ Priority: extra
+ Maintainer: Dmitry E. Oboukhov <dimka@avanto.org>
+-Build-Depends: debhelper (>=3D 5), cmake, libqt4-dev (>=3D 4.2), fp-compil=
+er, libsdl1.2-dev, libsdl-ttf2.0-dev, libsdl-mixer1.2-dev, libsdl-image1.2-=
+dev, libsdl-net1.2-dev, bzip2
++Build-Depends: debhelper (>=3D 5), cmake, libqt4-dev (>=3D 4.2), fp-compil=
+er, libsdl1.2-dev, libsdl-ttf2.0-dev, libsdl-mixer1.2-dev, libsdl-image1.2-=
+dev, libsdl-net1.2-dev, bzip2, libxrandr-dev, libfontconfig1-dev, libxi-dev
+ Standards-Version: 3.7.3
+ Homepage: http://hedgewars.org
+=20
+
+--dDRMvlgZJXvWKvBx--
+
+--yEPQxsgoJgBvi8ip
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: Digital signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC3Baq4wAz/jiZTcRAh47AKCjYnCglQpKoyptjNOjSorLIeeA0ACggdjv
+38WCDvjXiT7uKEN4rY6D/6o=
+=Ns1b
+-----END PGP SIGNATURE-----
+
+--yEPQxsgoJgBvi8ip--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

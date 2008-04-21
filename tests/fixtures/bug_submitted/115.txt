@@ -1,0 +1,136 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 16:50:22 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnbo0-0007rV-54
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 16:50:22 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id F1F1113A50E0; Sun, 20 Apr 2008 15:50:14 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-5.9 required=4.0 tests=BAYES_00,FOURLA,LDO_WHITELIST,
+	LONGWORD,RCVD_IN_DNSWL_LOW autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id DFD4D13A5031;
+	Sun, 20 Apr 2008 15:49:50 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnbnX-0003XH-SH; Sun, 20 Apr 2008 15:49:47 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#477017: libopensync-plugin-opie: FTBFS: opie_comms.c:696: error: call to '_curl_easy_setopt_err_write_callback' declared with attribute warning: curl_easy_setopt expects a curl_write_callback argument for this option
+Reply-To: Lucas Nussbaum <lucas@lucas-nussbaum.net>, 477017@bugs.debian.org
+Resent-From: Lucas Nussbaum <lucas@lucas-nussbaum.net>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Michael Banck <mbanck@debian.org>
+Resent-Date: Sun, 20 Apr 2008 15:49:44 +0000
+Resent-Message-ID: <handler.477017.B.12087064092967@bugs.debian.org>
+X-Debian-PR-Message: report 477017
+X-Debian-PR-Package: libopensync-plugin-opie
+X-Debian-PR-Keywords: 
+Received: via spool by submit@bugs.debian.org id=B.12087064092967
+          (code B ref -1); Sun, 20 Apr 2008 15:49:44 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 15:46:49 +0000
+X-Amavis-Spam-Status: No, score=-7.9 required=4.0 tests=BAYES_00,FOURLA,HAS_PACKAGE,
+	LONGWORD autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from xanadu.blop.info ([80.248.208.235])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <lucas@lucas-nussbaum.net>)
+	id 1Jnbkf-0000lP-LA
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 15:46:49 +0000
+Received: from localhost ([127.0.0.1] helo=xanadu.blop.info)
+	by xanadu.blop.info with smtp (Exim 4.63)
+	(envelope-from <lucas@lucas-nussbaum.net>)
+	id 1Jnbke-0000CV-IV
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 17:46:48 +0200
+Received: (nullmailer pid 17369 invoked by uid 1000);
+	Sun, 20 Apr 2008 13:56:59 -0000
+Date: Sun, 20 Apr 2008 15:56:59 +0200
+From: Lucas Nussbaum <lucas@lucas-nussbaum.net>
+To: submit@bugs.debian.org
+Message-ID: <20080420135659.GA17352@xanadu.blop.info>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 15:49:47 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343565
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -36.6
+X-Spam-Report: (-36.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	16 AWL                    AWL: From: address is in the auto white-list
+
+Package: libopensync-plugin-opie
+Version: 0.22-1
+Severity: serious
+User: debian-qa@lists.debian.org
+Usertags: qa-ftbfs-20080419 qa-ftbfs
+Justification: FTBFS on i386
+
+Hi,
+
+During a rebuild of all packages in sid, your package failed to build on i386.
+
+This rebuild was done with gcc 4.3 instead of gcc 4.2, because gcc 4.3 is now
+the default on most architectures (even if it's not the case on i386 yet).
+Feel free to downgrade this bug to 'important' if your package is only built
+on i386, and this bug is specific to gcc 4.3 (i.e the package builds fine with
+gcc 4.2).
+
+Relevant part:
+>  i486-linux-gnu-gcc -DHAVE_CONFIG_H -I. -I/build/user/libopensync-plugin-opie-0.22/src -I.. -I/usr/include/opensync-1.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/libxml2 -Wno-pointer-sign -Wall -Werror -Wall -g -O2 -MT opie_comms.lo -MD -MP -MF .deps/opie_comms.Tpo -c /build/user/libopensync-plugin-opie-0.22/src/opie_comms.c  -fPIC -DPIC -o .libs/opie_comms.o
+> cc1: warnings being treated as errors
+> /build/user/libopensync-plugin-opie-0.22/src/opie_comms.c: In function 'ftp_put_notes':
+> /build/user/libopensync-plugin-opie-0.22/src/opie_comms.c:696: error: call to '_curl_easy_setopt_err_write_callback' declared with attribute warning: curl_easy_setopt expects a curl_write_callback argument for this option
+> /build/user/libopensync-plugin-opie-0.22/src/opie_comms.c:710: error: call to '_curl_easy_setopt_err_read_cb' declared with attribute warning: curl_easy_setopt expects a curl_read_callback argument for this option
+> /build/user/libopensync-plugin-opie-0.22/src/opie_comms.c: In function 'ftp_fetch_notes':
+> /build/user/libopensync-plugin-opie-0.22/src/opie_comms.c:581: error: call to '_curl_easy_setopt_err_write_callback' declared with attribute warning: curl_easy_setopt expects a curl_write_callback argument for this option
+> /build/user/libopensync-plugin-opie-0.22/src/opie_comms.c: In function 'ftp_fetch_files':
+> /build/user/libopensync-plugin-opie-0.22/src/opie_comms.c:487: error: call to '_curl_easy_setopt_err_write_callback' declared with attribute warning: curl_easy_setopt expects a curl_write_callback argument for this option
+> make[3]: *** [opie_comms.lo] Error 1
+
+The full build log is available from:
+   http://people.debian.org/~lucas/logs/2008/04/19
+
+A list of current common problems and possible solutions is available at 
+http://wiki.debian.org/qa.debian.org/FTBFS . You're welcome to contribute!
+
+About the archive rebuild: The rebuild was done on about 50 AMD64 nodes
+of the Grid'5000 platform, using a clean chroot containing a sid i386
+environment.  Internet was not accessible from the build systems.
+
+-- 
+| Lucas Nussbaum
+| lucas@lucas-nussbaum.net   http://www.lucas-nussbaum.net/ |
+| jabber: lucas@nussbaum.fr             GPG: 1024D/023B3F4F |
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

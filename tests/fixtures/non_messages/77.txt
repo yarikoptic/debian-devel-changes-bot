@@ -1,0 +1,136 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 09:21:10 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnUnJ-0005pD-OS
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 09:21:10 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id EED4313A4EA4; Sun, 20 Apr 2008 08:21:01 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.9 required=4.0 tests=BAYES_00,FOURLA,LDO_WHITELIST,
+	MURPHY_DRUGS_REL8,RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id E3A7513A4E85;
+	Sun, 20 Apr 2008 08:20:46 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnUlY-00006N-JK; Sun, 20 Apr 2008 08:19:26 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#475687: yaskkserv: setting LANG fails when build time
+Reply-To: Tatsuya Kinoshita <tats@vega.ocn.ne.jp>, 475687@bugs.debian.org
+Resent-From: Tatsuya Kinoshita <tats@vega.ocn.ne.jp>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: KURASHIKI Satoru <lurdan@gmail.com>
+Resent-Date: Sun, 20 Apr 2008 08:19:15 +0000
+Resent-Message-ID: <handler.475687.B475687.120867936630465@bugs.debian.org>
+X-Debian-PR-Message: report 475687
+X-Debian-PR-Package: yaskkserv
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: yaskkserv
+Received: via spool by 475687-submit@bugs.debian.org id=B475687.120867936630465
+          (code B ref 475687); Sun, 20 Apr 2008 08:19:15 +0000
+Received: (at 475687) by bugs.debian.org; 20 Apr 2008 08:16:06 +0000
+X-Amavis-Spam-Status: No, score=-8.9 required=4.0 tests=BAYES_00,FOURLA,
+	HAS_BUG_NUMBER,MURPHY_DRUGS_REL8,VALID_BTS_CONTROL autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from vega.ocn.ne.jp ([125.170.92.71] helo=smtp.vega.ocn.ne.jp)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <tats@vega.ocn.ne.jp>)
+	id 1JnUiS-0007tr-8R; Sun, 20 Apr 2008 08:16:05 +0000
+Received: from localhost (EM119-72-23-43.pool.e-mobile.ne.jp [119.72.23.43])
+	by smtp.vega.ocn.ne.jp (Postfix) with ESMTP
+	id 718BB42D4; Sun, 20 Apr 2008 17:15:59 +0900 (JST)
+Date: Sun, 20 Apr 2008 17:09:05 +0900 (JST)
+Message-Id: <20080420.170905.21105262.tats%nobody@tats.iris.ne.jp>
+To: 475687@bugs.debian.org
+From: Tatsuya Kinoshita <tats@vega.ocn.ne.jp>
+In-Reply-To: <handler.475687.D475687.12086748996231.notifdone@bugs.debian.org>
+References: <E1JnTKI-0000yI-OJ@ries.debian.org>
+	<20080412.193122.136328996.tats%nobody@tats.iris.ne.jp>
+	<handler.475687.D475687.12086748996231.notifdone@bugs.debian.org>
+X-Mailer: Mew version 6.0.51 on Emacs 22.2 / Mule 5.0 (SAKAKI)
+Mime-Version: 1.0
+Content-Type: Multipart/Signed; protocol="application/pgp-signature";
+ micalg=pgp-sha1;
+ boundary="--Security_Multipart(Sun_Apr_20_17_09_05_2008_692)--"
+Content-Transfer-Encoding: 7bit
+Resent-Date: Sun, 20 Apr 2008 08:19:16 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343354
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -49.8
+X-Spam-Report: (-49.8 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	2.8 AWL                    AWL: From: address is in the auto white-list
+
+----Security_Multipart(Sun_Apr_20_17_09_05_2008_692)--
+Content-Type: Text/Plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+reopen 475687
+found 475687 0.3.8-5
+tags 475687 + upstream
+thanks
+
+On April 20, 2008 at 7:03AM +0000,
+owner (at bugs.debian.org) wrote:
+
+>  yaskkserv (0.3.8-5) unstable; urgency=low
+[...]
+>    * configure:
+>      - replace LANG with LC_ALL, and change default from en_US
+>        to C. (Closes: #475687)
+
+This bug still exists, because applying the patch with dpatch has
+no effect at the clean target.
+
+This bug is in the upstream part, so please forward this bug to
+the upstream.
+
+Thanks,
+--
+Tatsuya Kinoshita
+
+----Security_Multipart(Sun_Apr_20_17_09_05_2008_692)--
+Content-Type: application/pgp-signature
+Content-Transfer-Encoding: 7bit
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQBICvohgV4LPvpMUpgRAgqqAJ90Qg0ikcM4pt5Fjf9z4huHGuuGiQCgnG2v
+e8de9ntFQaRXYAFThawrzeY=
+=wX8Z
+-----END PGP SIGNATURE-----
+
+----Security_Multipart(Sun_Apr_20_17_09_05_2008_692)----
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

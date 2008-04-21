@@ -1,0 +1,115 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 19:50:17 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnec8-0000Vu-9h
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 19:50:17 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id D178313A5135; Sun, 20 Apr 2008 18:50:10 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.9 required=4.0 tests=BAYES_00,BLOGSPOT,BLOGSPOTURI,
+	LDO_WHITELIST,RCVD_IN_DNSWL_LOW,SARE_MSGID_LONG40 autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 27B5413A50EF;
+	Sun, 20 Apr 2008 18:49:50 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JneXB-0000wu-GG; Sun, 20 Apr 2008 18:45:05 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#477066: ftp.debian.org: Priority of libcap2 should be optional
+Reply-To: "Torsten Werner" <mail.twerner@googlemail.com>, 477066@bugs.debian.org
+Resent-From: "Torsten Werner" <mail.twerner@googlemail.com>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: James Troup and others <ftpmaster@ftp-master.debian.org>
+Resent-Date: Sun, 20 Apr 2008 18:45:04 +0000
+Resent-Message-ID: <handler.477066.B477066.1208717000705@bugs.debian.org>
+X-Debian-PR-Message: report 477066
+X-Debian-PR-Package: ftp.debian.org
+X-Debian-PR-Keywords: 
+Received: via spool by 477066-submit@bugs.debian.org id=B477066.1208717000705
+          (code B ref 477066); Sun, 20 Apr 2008 18:45:04 +0000
+Received: (at 477066) by bugs.debian.org; 20 Apr 2008 18:43:20 +0000
+X-Amavis-Spam-Status: No, score=-1.5 required=4.0 tests=BAYES_00,BLOGSPOT,
+	BLOGSPOTURI,HAS_BUG_NUMBER autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from nf-out-0910.google.com ([64.233.182.185])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <mail.twerner@googlemail.com>)
+	id 1JneVT-0000Aq-R9
+	for 477066@bugs.debian.org; Sun, 20 Apr 2008 18:43:20 +0000
+Received: by nf-out-0910.google.com with SMTP id 4so408096nfv.17
+        for <477066@bugs.debian.org>; Sun, 20 Apr 2008 11:43:17 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=googlemail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:to:subject:in-reply-to:mime-version:content-type:content-transfer-encoding:content-disposition:references;
+        bh=erQ5qpcv2lrFC+g3DXCvP3MdIZeFaKPeVPOKsiOZUd8=;
+        b=txmcCVW68ME1czbwz08oHeIunfwfpRnCUPW18yiCNH6PqA8QL3OtkOR4B4tnsjgA9G7ujXFSfcVXyH0y4Xqzdh33O2Zcorn29CDKkDUEWDlWnnZRY0fHCzv1R5GqBzEq5oMkEXMP/+AwQ+082RNsA6g9WWZoJHSL8+ZFs6R7Fjc=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=googlemail.com; s=gamma;
+        h=message-id:date:from:to:subject:in-reply-to:mime-version:content-type:content-transfer-encoding:content-disposition:references;
+        b=gM7zItObId0hIiK1BNJaubL+qocsRbKH8x3QRAhqalI55qsQ5PbuJxz14buNnj6W6atqW+mN4+rcBzocgZJ+OuiyrV7inYAbp2T/8BZH1nuqDb3kWJa/kjgWXrqKwTIn7QQBDSHl+x2B0BysP0fs8lLJMYxo9MyjWXToC/3M4BM=
+Received: by 10.78.148.15 with SMTP id v15mr5473640hud.37.1208716996550;
+        Sun, 20 Apr 2008 11:43:16 -0700 (PDT)
+Received: by 10.78.169.20 with HTTP; Sun, 20 Apr 2008 11:43:16 -0700 (PDT)
+Message-ID: <a90bfcf0804201143m79db5130qda34951821943f5f@mail.gmail.com>
+Date: Sun, 20 Apr 2008 20:43:16 +0200
+From: "Torsten Werner" <mail.twerner@googlemail.com>
+To: "Sven Joachim" <svenjoac@gmx.de>, 477066@bugs.debian.org
+In-Reply-To: <87fxtgo02p.fsf@gmx.de>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+References: <87fxtgo02p.fsf@gmx.de>
+Resent-Date: Sun, 20 Apr 2008 18:45:05 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343727
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -27.6
+X-Spam-Report: (-27.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	25 AWL                    AWL: From: address is in the auto white-list
+
+On Sun, Apr 20, 2008 at 8:25 PM, Sven Joachim <svenjoac@gmx.de> wrote:
+>  The libcap2 package is currently of "Priority: Required", but there is
+>  absolutely no justification for that.
+
+There is: libcap2 is the successor to libcap1 which is of Priority:
+Required. I am not sure if that is correct but both libraries should
+have the same priority at least.
+
+Cheers,
+Torsten
+
+-- 
+http://twerner.blogspot.com
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

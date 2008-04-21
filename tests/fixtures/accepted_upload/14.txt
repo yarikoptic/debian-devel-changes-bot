@@ -1,0 +1,118 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 10:35:35 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnVxL-00063R-Et
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 10:35:35 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 2E75113A4ED8; Sun, 20 Apr 2008 09:35:30 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id C7F7213A4EA0
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 09:35:29 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnVtz-00052v-Nt; Sun, 20 Apr 2008 09:32:03 +0000
+From: Roland Stigge <stigge@antcom.de>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted gcvs 1.0final-17 (source i386)
+Message-Id: <E1JnVtz-00052v-Nt@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 09:32:03 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <52UpUklN2xN.A.dSC.i5wCIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301278
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 09:35:30 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.6
+X-Spam-Report: (-2.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.0 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 11:04:41 +0200
+Source: gcvs
+Binary: gcvs
+Architecture: source i386
+Version: 1.0final-17
+Distribution: unstable
+Urgency: low
+Maintainer: Roland Stigge <stigge@antcom.de>
+Changed-By: Roland Stigge <stigge@antcom.de>
+Description:=20
+ gcvs       - Graphical frontend for CVS
+Closes: 476036
+Changes:=20
+ gcvs (1.0final-17) unstable; urgency=3Dlow
+ .
+   * debian/rules: Unset compiler variables for ./configure (Closes: #476=
+036)
+Checksums-Sha1:=20
+ 470afe7c698b093a41347e75e5346b4111413449 1082 gcvs_1.0final-17.dsc
+ ff6680f685b22377390b41e257a110dd6b55b216 12083 gcvs_1.0final-17.diff.gz
+ dd392cccf4c82307676a045267e02c7b33f09111 737406 gcvs_1.0final-17_i386.de=
+b
+Checksums-Sha256:=20
+ 3a2ab1034af0ea9cd3749eeb35acaa40048f415b5294e184a5815f19f97ae755 1082 gc=
+vs_1.0final-17.dsc
+ 03c31a15fad13aeaa6464812d2ab92531008c8d0a82a2ceb31705ec9fdacbbe6 12083 g=
+cvs_1.0final-17.diff.gz
+ f7e3dfe0977b3849e6fdd3f6e00f1447715ec4447eae8f2f1d94123f9b4aee15 737406 =
+gcvs_1.0final-17_i386.deb
+Files:=20
+ 2490906b382d1f0ce662236b7ac8025f 1082 devel optional gcvs_1.0final-17.ds=
+c
+ 5f14dad9ca48972d8c2ce3b4822968f7 12083 devel optional gcvs_1.0final-17.d=
+iff.gz
+ c98e8d294e7445460d7a018712568aef 737406 devel optional gcvs_1.0final-17_=
+i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICwl/caH/YBv43g8RAg2vAJ47771J3WxTxD1/QZK3njqm8qnvSgCfTAWs
+f2Z4f+X7plWJ0ovEdNrVW3o=3D
+=3D5zWT
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+gcvs_1.0final-17.diff.gz
+  to pool/main/g/gcvs/gcvs_1.0final-17.diff.gz
+gcvs_1.0final-17.dsc
+  to pool/main/g/gcvs/gcvs_1.0final-17.dsc
+gcvs_1.0final-17_i386.deb
+  to pool/main/g/gcvs/gcvs_1.0final-17_i386.deb
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

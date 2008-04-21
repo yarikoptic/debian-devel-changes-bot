@@ -1,0 +1,280 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 11:08:00 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnWSh-0006Cc-HZ
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 11:08:00 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 8795913A4EE3; Sun, 20 Apr 2008 10:07:54 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.0 required=4.0 tests=BAYES_00,IMPRONONCABLE_2,
+	LDO_WHITELIST,RCVD_IN_DNSWL_LOW autolearn=unavailable version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id DCEF513A4ECF;
+	Sun, 20 Apr 2008 10:07:34 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnWQt-0005vW-Vp; Sun, 20 Apr 2008 10:06:04 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476944: O: bitcollider -- collects bitprint and other information from files for bitzi.com
+Reply-To: Thomas Huriaux <thomas.huriaux@gmail.com>, 476944@bugs.debian.org
+Resent-From: Thomas Huriaux <thomas.huriaux@gmail.com>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: <wnpp@debian.org>
+Resent-Date: Sun, 20 Apr 2008 10:06:01 +0000
+Resent-Message-ID: <handler.476944.B.120868580015948@bugs.debian.org>
+X-Debian-PR-Message: report 476944
+X-Debian-PR-Package: wnpp
+X-Debian-PR-Keywords: 
+Received: via spool by submit@bugs.debian.org id=B.120868580015948
+          (code B ref -1); Sun, 20 Apr 2008 10:06:01 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 10:03:20 +0000
+X-Amavis-Spam-Status: No, score=-9.0 required=4.0 tests=BAYES_00,HAS_PACKAGE,
+	IMPRONONCABLE_2 autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from smtp7-g19.free.fr ([212.27.42.64])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <thomas.huriaux@gmail.com>)
+	id 1JnWOF-00047T-EE
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 10:03:19 +0000
+Received: from smtp7-g19.free.fr (localhost [127.0.0.1])
+	by smtp7-g19.free.fr (Postfix) with ESMTP id 90C603227FA
+	for <submit@bugs.debian.org>; Sun, 20 Apr 2008 12:03:17 +0200 (CEST)
+Received: from localhost (bob75-9-88-181-0-169.fbx.proxad.net [88.181.0.169])
+	by smtp7-g19.free.fr (Postfix) with ESMTP id 5290E3227FD
+	for <submit@bugs.debian.org>; Sun, 20 Apr 2008 12:03:17 +0200 (CEST)
+Received: from thuriaux by localhost with local (Exim 4.69)
+	(envelope-from <thomas.huriaux@gmail.com>)
+	id 1JnWOD-00017Z-0v
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 12:03:17 +0200
+Date: Sun, 20 Apr 2008 12:03:16 +0200
+From: Thomas Huriaux <thomas.huriaux@gmail.com>
+To: submit@bugs.debian.org
+Message-ID: <20080420100316.GA3894@localhost>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 10:06:03 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343411
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -27.4
+X-Spam-Report: (-27.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	25 AWL                    AWL: From: address is in the auto white-list
+
+Package: wnpp
+Severity: normal
+
+The previous maintainer of bitcollider has set the maintainer to Debian QA
+without opening a wnpp bug.  Therefore, I orphan this package now.
+
+Maintaining a package requires time and skills. Please only adopt this
+package if you will have enough time and attention to work on it.
+
+If you want to be the new maintainer, please see
+http://www.debian.org/devel/wnpp/index.html#howto-o for detailed
+instructions how to adopt a package properly.
+
+Some information about this package:
+
+Package: bitcollider
+Binary: bitcollider, libbitcollider1, libbitcollider-dev, bitcollider-plugins
+Version: 0.6.0-1
+Priority: optional
+Section: utils
+Maintainer: Debian QA Group <packages@qa.debian.org>
+Build-Depends: debhelper (>= 5), libvorbis-dev, libtool, docbook-to-man, dpkg-dev (>= 1.13.19)
+Architecture: any
+Standards-Version: 3.7.3
+Format: 1.0
+Directory: pool/main/b/bitcollider
+Files:
+ e4ccf261642c11e57466238927201203 1116 bitcollider_0.6.0-1.dsc
+ 138c1f459add01279392939f5569addb 641374 bitcollider_0.6.0.orig.tar.gz
+ 3979af7226d4ef6cff0475be11b6ec72 964262 bitcollider_0.6.0-1.diff.gz
+
+
+Package: bitcollider
+Priority: optional
+Section: utils
+Installed-Size: 156
+Maintainer: Debian QA Group <packages@qa.debian.org>
+Architecture: i386
+Version: 0.6.0-1
+Depends: libc6 (>= 2.7-1), lynx | www-browser
+Suggests: bitcollider-plugins
+Filename: pool/main/b/bitcollider/bitcollider_0.6.0-1_i386.deb
+Size: 59522
+MD5sum: aa589e0e0da73946158371e8de8168f8
+SHA1: be598553491a90c464ccb75692dd79d163f92c40
+SHA256: 44098556db1321eedd9f420ca121bbab7daec3950a56f94c2e000d1d918da26d
+Description: collects bitprint and other information from files for bitzi.com
+ Think of it as a really big file hash database on the internet with
+ constant contributions from others of metadata on files.
+ .
+ Bitcollider is a small program to reliably identify and describe files
+ on your machine. When run with a specific file as input, this program
+ does two major things:
+ .
+ * It examines the file, calculating a distinctive digital fingerprint,
+   or bitprint, and taking note of some other identifying information that
+   can be extracted from the file, like file length and the local filename.
+ * It launches your web browser to do a lookup at our website, submitting
+   this identifying information as the search terms.
+ .
+ At bitzi.com you'll see what - if anything - others have said about your
+ file, and have a chance to contribute descriptions or comments yourself.
+ If your automatic submission included information useful to our database,
+ that new information will be contributed to the database under your screen
+ name.
+Tag: interface::commandline, network::client, network::service, protocol::http, role::program, use::scanning, works-with::file
+
+
+Package: libbitcollider1
+Priority: optional
+Section: libs
+Installed-Size: 124
+Maintainer: Debian QA Group <packages@qa.debian.org>
+Architecture: i386
+Source: bitcollider
+Version: 0.6.0-1
+Depends: libc6 (>= 2.7-1)
+Filename: pool/main/b/bitcollider/libbitcollider1_0.6.0-1_i386.deb
+Size: 46284
+MD5sum: 7738ab3fd959ea94dd5ac62f8002da50
+SHA1: 610ac211ebba2473a1ac0d2f7bb55eaefab9f37f
+SHA256: c8ab6b9fb1439a01afd182e495e634aabfacc184cdb75e6b38dea131e42f2473
+Description: bitcollider library
+ This is used by the bitcollider program.
+ .
+ Think of it as a really big file hash database on the internet with
+ constant contributions from others of metadata on files.
+ .
+ Bitcollider is a small program to reliably identify and describe files
+ on your machine. When run with a specific file as input, this program
+ does two major things:
+ .
+ * It examines the file, calculating a distinctive digital fingerprint,
+   or bitprint, and taking note of some other identifying information that
+   can be extracted from the file, like file length and the local filename.
+ * It launches your web browser to do a lookup at our website, submitting
+   this identifying information as the search terms.
+ .
+ At bitzi.com you'll see what - if anything - others have said about your
+ file, and have a chance to contribute descriptions or comments yourself.
+ If your automatic submission included information useful to our database,
+ that new information will be contributed to the database under your screen
+ name.
+Tag: devel::library, network::service, protocol::http, role::shared-lib, use::scanning, works-with::file
+
+
+Package: libbitcollider-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 172
+Maintainer: Debian QA Group <packages@qa.debian.org>
+Architecture: i386
+Source: bitcollider
+Version: 0.6.0-1
+Filename: pool/main/b/bitcollider/libbitcollider-dev_0.6.0-1_i386.deb
+Size: 50976
+MD5sum: e51584fe2312fc38f4097c82b69523de
+SHA1: 7ac45169d20d261c8563d7d0ce0465c4f3b14d46
+SHA256: 54703023b795bed0d38059b3d135fc5f32818d92d776f43c3f6974bbdae4d920
+Description: bitcollider library headers
+ This is the development headers for the bitcollider libs.
+ .
+ Think of it as a really big file hash database on the internet with
+ constant contributions from others of metadata on files.
+ .
+ Bitcollider is a small program to reliably identify and describe files
+ on your machine. When run with a specific file as input, this program
+ does two major things:
+ .
+ * It examines the file, calculating a distinctive digital fingerprint,
+   or bitprint, and taking note of some other identifying information that
+   can be extracted from the file, like file length and the local filename.
+ * It launches your web browser to do a lookup at our website, submitting
+   this identifying information as the search terms.
+ .
+ At bitzi.com you'll see what - if anything - others have said about your
+ file, and have a chance to contribute descriptions or comments yourself.
+ If your automatic submission included information useful to our database,
+ that new information will be contributed to the database under your screen
+ name.
+Tag: devel::library, network::service, protocol::http, role::devel-lib, use::scanning, works-with::file
+
+
+Package: bitcollider-plugins
+Priority: optional
+Section: utils
+Installed-Size: 72
+Maintainer: Debian QA Group <packages@qa.debian.org>
+Architecture: i386
+Source: bitcollider
+Version: 0.6.0-1
+Depends: libc6 (>= 2.7-1), bitcollider (= 0.6.0-1)
+Filename: pool/main/b/bitcollider/bitcollider-plugins_0.6.0-1_i386.deb
+Size: 13898
+MD5sum: c8776c4e7ebce130a650bce972f6dd20
+SHA1: ee48c42b9f82581c1083c40dc11a0b89b4307668
+SHA256: 3cecf10fb85b9552ea17af1a0b2690901f9b6a5a302237b6ca6db2aa70d0f1ba
+Description: bitcollider plugins
+ These plugins allow the bitcollider program to get metadata from rich media
+ files.  So far, there are plugins for wav files and images.
+ .
+ Think of it as a really big file hash database on the internet with
+ constant contributions from others of metadata on files.
+ .
+ Bitcollider is a small program to reliably identify and describe files
+ on your machine. When run with a specific file as input, this program
+ does two major things:
+ .
+ * It examines the file, calculating a distinctive digital fingerprint,
+   or bitprint, and taking note of some other identifying information that
+   can be extracted from the file, like file length and the local filename.
+ * It launches your web browser to do a lookup at our website, submitting
+   this identifying information as the search terms.
+ .
+ At bitzi.com you'll see what - if anything - others have said about your
+ file, and have a chance to contribute descriptions or comments yourself.
+ If your automatic submission included information useful to our database,
+ that new information will be contributed to the database under your screen
+ name.
+Tag: interface::commandline, network::service, protocol::http, role::plugin, use::scanning, works-with::audio, works-with::image, works-with-format::wav
+
+
+-- 
+Thomas Huriaux
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

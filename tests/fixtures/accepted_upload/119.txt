@@ -1,0 +1,179 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 08:31:53 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnU1b-0005hf-Sb
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 08:31:53 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 0F24413A4E3E; Sun, 20 Apr 2008 07:31:45 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id 87C4A13A4CF9
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 07:31:44 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnTnM-0002Wt-C3; Sun, 20 Apr 2008 07:17:04 +0000
+From: Reinhard Tartler <siretart@tauware.de>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted ffmpeg-free 0.svn20080206-3 (source i386)
+Message-Id: <E1JnTnM-0002Wt-C3@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 07:17:04 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <vzbgKSoRaAM.A.dVC.gFvCIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301275
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 07:31:45 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.7
+Date: Fri, 18 Apr 2008 23:02:24 +0200
+Source: ffmpeg-free
+Binary: ffmpeg ffmpeg-dbg libavutil49 libavcodec51 libavdevice52 libpostp=
+roc51 libavformat52 libswscale0 libavutil-dev libavcodec-dev libavdevice-=
+dev libpostproc-dev libavformat-dev libswscale-dev
+Architecture: source i386
+Version: 0.svn20080206-3
+Distribution: experimental
+Urgency: low
+Maintainer: Debian multimedia packages maintainers <pkg-multimedia-mainta=
+iners@lists.alioth.debian.org>
+Changed-By: Reinhard Tartler <siretart@tauware.de>
+Description:=20
+ ffmpeg     - multimedia player, server and encoder
+ ffmpeg-dbg - Debug symbols for ffmpeg related packages
+ libavcodec-dev - development files for libavcodec
+ libavcodec51 - ffmpeg codec library
+ libavdevice-dev - development files for libavdevice
+ libavdevice52 - ffmpeg device handling library
+ libavformat-dev - development files for libavformat
+ libavformat52 - ffmpeg file format library
+ libavutil-dev - development files for libavutil
+ libavutil49 - ffmpeg utility library
+ libpostproc-dev - development files for libpostproc
+ libpostproc51 - ffmpeg video postprocessing library
+ libswscale-dev - development files for libswscale
+ libswscale0 - ffmpeg video scaling library
+Closes: 440702 470484
+Changes:=20
+ ffmpeg-free (0.svn20080206-3) experimental; urgency=3Dlow
+ .
+   * install qt-faststart. Thanks Stefan Hermann for the patch from ubunt=
+u.
+     (Closes: #470484)
+   * Reenable 020_fix_libswscale_pic_code, fixes FTBFS on amd64.
+   * Reenable altivec, fixes FTBFS on powerpc.
+   * Add some notes about the removed mpeg encoders (Closes: #440702)
+Files:=20
+ 907c6a9fc9c70ae01fce4b695d076757 1614 libs optional ffmpeg-free_0.svn200=
+80206-3.dsc
+ d34c502550484cae8cabb09bda827821 39590 libs optional ffmpeg-free_0.svn20=
+080206-3.diff.gz
+ 483816b19c29ac4e180dbd9b4d089936 214364 graphics optional ffmpeg_0.svn20=
+080206-3_i386.deb
+ ed0127d5388909ce656550a688d036cf 3676408 libs extra ffmpeg-dbg_0.svn2008=
+0206-3_i386.deb
+ 981fc615c7a2d663ad3aba5221dbe2bc 48622 libs optional libavutil49_0.svn20=
+080206-3_i386.deb
+ 8f3be546dbf33bf4647f00f7223af434 1642444 libs optional libavcodec51_0.sv=
+n20080206-3_i386.deb
+ be5e99eedbc888c0e5a353b9bf927596 41746 libs optional libavdevice52_0.svn=
+20080206-3_i386.deb
+ a20f305de22f39053f8c3bd1cefbe1c7 75830 libs optional libpostproc51_0.svn=
+20080206-3_i386.deb
+ d1535eb96425ee7aee965dd4158b3c8c 319080 libs optional libavformat52_0.sv=
+n20080206-3_i386.deb
+ 1a971c5d12f42d3dc80007be5f1f9a39 103602 libs optional libswscale0_0.svn2=
+0080206-3_i386.deb
+ 4ae1ab31e3765a1eaa5c949cec1b5461 62848 libdevel optional libavutil-dev_0=
+.svn20080206-3_i386.deb
+ 6a7dccc61785c369def559e22d0e2b34 1890746 libdevel optional libavcodec-de=
+v_0.svn20080206-3_i386.deb
+ 0dcda0ca7068c1ef06b242b2d2131fa2 41402 libdevel optional libavdevice-dev=
+_0.svn20080206-3_i386.deb
+ ab1c17ca3912dc560c3cd0e8ccaa86d0 76536 libdevel optional libpostproc-dev=
+_0.svn20080206-3_i386.deb
+ baeb2d58dfb3e4cc607a945d51b0662a 371996 libdevel optional libavformat-de=
+v_0.svn20080206-3_i386.deb
+ cc7ed0073e7319a5992c0ec2211949d3 118362 libdevel optional libswscale-dev=
+_0.svn20080206-3_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+Comment: Debian Powered!
+
+iD8DBQFICutkmAg1RJRTSKQRAp5qAJ0aBuOsk6PdQIWZGpOX/flGeM2IqACcDYit
+ciNNrBFwTzydDBz8B107G1E=3D
+=3DjF+/
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+ffmpeg-dbg_0.svn20080206-3_i386.deb
+  to pool/main/f/ffmpeg-free/ffmpeg-dbg_0.svn20080206-3_i386.deb
+ffmpeg-free_0.svn20080206-3.diff.gz
+  to pool/main/f/ffmpeg-free/ffmpeg-free_0.svn20080206-3.diff.gz
+ffmpeg-free_0.svn20080206-3.dsc
+  to pool/main/f/ffmpeg-free/ffmpeg-free_0.svn20080206-3.dsc
+ffmpeg_0.svn20080206-3_i386.deb
+  to pool/main/f/ffmpeg-free/ffmpeg_0.svn20080206-3_i386.deb
+libavcodec-dev_0.svn20080206-3_i386.deb
+  to pool/main/f/ffmpeg-free/libavcodec-dev_0.svn20080206-3_i386.deb
+libavcodec51_0.svn20080206-3_i386.deb
+  to pool/main/f/ffmpeg-free/libavcodec51_0.svn20080206-3_i386.deb
+libavdevice-dev_0.svn20080206-3_i386.deb
+  to pool/main/f/ffmpeg-free/libavdevice-dev_0.svn20080206-3_i386.deb
+libavdevice52_0.svn20080206-3_i386.deb
+  to pool/main/f/ffmpeg-free/libavdevice52_0.svn20080206-3_i386.deb
+libavformat-dev_0.svn20080206-3_i386.deb
+  to pool/main/f/ffmpeg-free/libavformat-dev_0.svn20080206-3_i386.deb
+libavformat52_0.svn20080206-3_i386.deb
+  to pool/main/f/ffmpeg-free/libavformat52_0.svn20080206-3_i386.deb
+libavutil-dev_0.svn20080206-3_i386.deb
+  to pool/main/f/ffmpeg-free/libavutil-dev_0.svn20080206-3_i386.deb
+libavutil49_0.svn20080206-3_i386.deb
+  to pool/main/f/ffmpeg-free/libavutil49_0.svn20080206-3_i386.deb
+libpostproc-dev_0.svn20080206-3_i386.deb
+  to pool/main/f/ffmpeg-free/libpostproc-dev_0.svn20080206-3_i386.deb
+libpostproc51_0.svn20080206-3_i386.deb
+  to pool/main/f/ffmpeg-free/libpostproc51_0.svn20080206-3_i386.deb
+libswscale-dev_0.svn20080206-3_i386.deb
+  to pool/main/f/ffmpeg-free/libswscale-dev_0.svn20080206-3_i386.deb
+libswscale0_0.svn20080206-3_i386.deb
+  to pool/main/f/ffmpeg-free/libswscale0_0.svn20080206-3_i386.deb
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

@@ -1,0 +1,106 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 14:05:13 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnZE9-00072d-59
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 14:05:13 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id BB30213A4F90; Sun, 20 Apr 2008 13:05:03 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.9 required=4.0 tests=BAYES_00,FOURLA,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 7B41A13A4F98;
+	Sun, 20 Apr 2008 13:04:48 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnZ9k-0007Zs-1j; Sun, 20 Apr 2008 13:00:32 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476689: [debian-archive-keyring] Downgrading dependency of gnupg causes failure to cdebootstrap minimal chroot
+Reply-To: Kel Modderman <kel@otaku42.de>, 476689@bugs.debian.org
+Resent-From: Kel Modderman <kel@otaku42.de>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: APT Development Team <deity@lists.debian.org>, Debian Release Team <packages@release.debian.org>
+Resent-Date: Sun, 20 Apr 2008 13:00:31 +0000
+Resent-Message-ID: <handler.476689.B476689.120869636226223@bugs.debian.org>
+X-Debian-PR-Message: report 476689
+X-Debian-PR-Package: apt,debian-archive-keyring
+X-Debian-PR-Keywords: wontfix
+Received: via spool by 476689-submit@bugs.debian.org id=B476689.120869636226223
+          (code B ref 476689); Sun, 20 Apr 2008 13:00:31 +0000
+Received: (at 476689) by bugs.debian.org; 20 Apr 2008 12:59:22 +0000
+X-Amavis-Spam-Status: No, score=-6.9 required=4.0 tests=BAYES_00,FOURLA,
+	HAS_BUG_NUMBER autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from mail9.tpgi.com.au ([203.12.160.104])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <kel@otaku42.de>)
+	id 1JnZ8b-0006oI-Ng
+	for 476689@bugs.debian.org; Sun, 20 Apr 2008 12:59:22 +0000
+X-TPG-Antivirus: Passed
+Received: from [192.168.0.5] ([58.174.130.28])
+	(authenticated bits=0)
+	by mail9.tpgi.com.au (envelope-from kel@otaku42.de) (8.14.2/8.14.2) with ESMTP id m3KCxEJ1009467;
+	Sun, 20 Apr 2008 22:59:18 +1000
+From: Kel Modderman <kel@otaku42.de>
+To: Philipp Kern <pkern@debian.org>
+Date: Sun, 20 Apr 2008 22:59:13 +1000
+User-Agent: KMail/1.9.9
+Cc: 476689@bugs.debian.org
+References: <200804182343.33622.kel@otaku42.de> <20080418140358.GA25175@durotan.0x539.de>
+In-Reply-To: <20080418140358.GA25175@durotan.0x539.de>
+MIME-Version: 1.0
+Content-Type: text/plain;
+  charset="utf-8"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+Message-Id: <200804202259.13706.kel@otaku42.de>
+Resent-Date: Sun, 20 Apr 2008 13:00:32 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343481
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -35.7
+X-Spam-Report: (-35.7 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	17 AWL                    AWL: From: address is in the auto white-list
+
+On Saturday 19 April 2008 00:03:58 Philipp Kern wrote:
+> Not a bug in debian-archive-keyring, but in cdebootstrap.  It should
+> install recommends.  OTOH it's also #476532 in apt, as it should use
+> gpgv instead and depend on it
+
+Wouldn't it be easier to just revert to depending on gnupg considering the
+point in release timeline Debian is at, and fix up the collateral damage of
+this desired change (possibly with more coordination) when the core packages
+that require change are not in a state of frozen development?
+
+Thanks, Kel.
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

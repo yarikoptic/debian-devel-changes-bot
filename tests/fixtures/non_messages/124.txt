@@ -1,0 +1,163 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 17:22:21 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JncIx-0008F3-S1
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 17:22:21 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id E5CAE13A4F50; Sun, 20 Apr 2008 16:22:14 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-5.9 required=4.0 tests=BAYES_00,FOURLA,LDO_WHITELIST,
+	LONGLINEURL,RCVD_IN_DNSWL_LOW autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 3206413A4EB9;
+	Sun, 20 Apr 2008 16:21:54 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JncEs-0006OR-Jz; Sun, 20 Apr 2008 16:18:02 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476610: [pkg-cli-apps-team] Bug#476610: Processed: reassign bug #476610 to package beagle
+Reply-To: Mirco Bauer <meebey@debian.org>, 476610@bugs.debian.org
+Resent-From: Mirco Bauer <meebey@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian CLI Applications Team <pkg-cli-apps-team@lists.alioth.debian.org>
+Resent-Date: Sun, 20 Apr 2008 16:18:01 +0000
+Resent-Message-ID: <handler.476610.B476610.120870819723071@bugs.debian.org>
+X-Debian-PR-Message: report 476610
+X-Debian-PR-Package: beagle
+X-Debian-PR-Keywords: confirmed
+X-Debian-PR-Source: beagle
+Received: via spool by 476610-submit@bugs.debian.org id=B476610.120870819723071
+          (code B ref 476610); Sun, 20 Apr 2008 16:18:01 +0000
+Received: (at 476610) by bugs.debian.org; 20 Apr 2008 16:16:37 +0000
+X-Amavis-Spam-Status: No, score=-6.9 required=4.0 tests=BAYES_00,FOURLA,
+	FROMDEVELOPER,HAS_BUG_NUMBER,LONGLINEURL autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from booster.qnetp.net ([213.239.220.50] helo=smtp.qnetp.net)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <meebey@debian.org>)
+	id 1JncDV-0005zr-9R
+	for 476610@bugs.debian.org; Sun, 20 Apr 2008 16:16:37 +0000
+Received: from [192.168.0.14] (e182078190.adsl.alicedsl.de [85.182.78.190])
+	by smtp.qnetp.net (Postfix) with ESMTP id 6B46A2D82B7;
+	Sun, 20 Apr 2008 18:16:33 +0200 (CEST)
+From: Mirco Bauer <meebey@debian.org>
+To: D Bera <dbera.web@gmail.com>, 476610@bugs.debian.org
+In-Reply-To: <1f1f006d0804200850p290c2519y4bb089794e3ae6ee@mail.gmail.com>
+References: <480B2C90.2090009@punk-ass-bitch.org>
+	 <handler.s.C.120869186918893.transcript@bugs.debian.org>
+	 <1f1f006d0804200529u76c35c92h844006dc66c123e1@mail.gmail.com>
+	 <1208702377.11297.5.camel@redbull.qnetp.net>
+	 <1f1f006d0804200850p290c2519y4bb089794e3ae6ee@mail.gmail.com>
+Content-Type: multipart/signed; micalg=pgp-sha1; protocol="application/pgp-signature"; boundary="=-b5mZIWBD1UYPfjIMMm1m"
+Date: Sun, 20 Apr 2008 18:16:34 +0200
+Message-Id: <1208708194.11297.15.camel@redbull.qnetp.net>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.12.3 
+Resent-Date: Sun, 20 Apr 2008 16:18:02 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343636
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.6
+X-Spam-Report: (-52.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+
+--=-b5mZIWBD1UYPfjIMMm1m
+Content-Type: text/plain
+Content-Transfer-Encoding: quoted-printable
+
+On Sun, 2008-04-20 at 11:50 -0400, D Bera wrote:
+> >  connect(15, {sa_family=3DAF_FILE, path=3D"/home/meebey/.beagle/socket"=
+}, 110) =3D -1 EAGAIN (Resource temporarily unavailable)
+>=20
+> It is strange that connect() is returning EAGAIN. Does the socket
+> physically exist ?
+
+Yes the socket exist but is dead because of a crashed beagle (forgot the
+evolution# issue?).
+
+meebey@redbull:~$ stat .beagle/socket=20
+  File: `.beagle/socket'
+  Size: 0         	Blocks: 0          IO Block: 4096   socket
+Device: 806h/2054d	Inode: 328351      Links: 1
+Access: (0755/srwxr-xr-x)  Uid: ( 1000/  meebey)   Gid: ( 1000/  meebey)
+Access: 2008-04-20 16:28:33.000000000 +0200
+Modify: 2008-04-20 16:28:33.000000000 +0200
+Change: 2008-04-20 16:28:33.000000000 +0200
+meebey@redbull:~$=20
+
+Beagle doesn't crash completly btw, the process is still there but not
+even responding to kill, only kill -9 works in that stage, see #475640
+for the crash trigger / cause.
+
+After I killed beagled using kill -9, gnome-color-chooser and other GTK+
+apps "work" again (not hanging with EAGAIN).
+
+Beagle or libbeagle should handle this case gracefully though (when
+beagle crashes / hangs for some reason)
+
+> It is even stranger that gnome-color-chooser is using libbeagle.
+
+probably some gtk widget they use does it...
+
+> I will try to reproduce this on ubuntu and mandriva. Wish me luck.
+--=20
+Regards,
+
+Mirco 'meebey' Bauer
+
+PGP-Key ID: 0xEEF946C8
+
+FOSS Developer    meebey@meebey.net  http://www.meebey.net/
+PEAR Developer    meebey@php.net     http://pear.php.net/
+Debian Developer  meebey@debian.org  http://www.debian.org/
+
+--=-b5mZIWBD1UYPfjIMMm1m
+Content-Type: application/pgp-signature; name=signature.asc
+Content-Description: This is a digitally signed message part
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iQEVAwUASAtsYnEn5avu+UbIAQLn/gf+ODZZPE4v3a7Da2Nm/pu0Oii125o93yMi
+aeNU1enAfZp/YKtjaiS5NRYLDHGGuCwyeZmHYITFA9Sp0q3oykCtu7fEXDNJRBlc
+Vdds2jZvLZo6b3uI+RGwtwLLWNRLUcrRIgX/qPGG3X7YEjp6Zwy9boQyxErS+HPq
+wPB4uUiDM6L7avsD7z1RXK/vol9doFH7U6H8iqZUazblQ0enfVrfU3YH1AwUwfA1
+nhE+YCtWEDww+MnUkye1w3tthBLeWaGoFt6Pgl5vz3xqi/EpfhjxiMrGg8JhRjlc
+s+9eR+Y67rzbOTaD7uoAL7L3Kys+dik0kHNxmkBQJnnyZeUYJ/9OIA==
+=lahe
+-----END PGP SIGNATURE-----
+
+--=-b5mZIWBD1UYPfjIMMm1m--
+
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,348 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 21:05:07 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnfmT-0000ry-Tn
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 21:05:07 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id C2FD413A52A5; Sun, 20 Apr 2008 20:04:56 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 5F33813A5259;
+	Sun, 20 Apr 2008 20:04:54 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnfkg-0004Kc-MD; Sun, 20 Apr 2008 20:03:06 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: dimka@avanto.org (Dmitry E. Oboukhov)
+Subject: Bug#477012: marked as done (hedgewars: FTBFS: make: *** 
+ [configure-stamp] Error 255)
+Message-ID: <handler.477012.D477012.120872174815786.ackdone@bugs.debian.org>
+References: <E1JnfGz-0005dQ-Fl@ries.debian.org>
+ <20080420153606.GA22592@xanadu.blop.info>
+X-Debian-PR-Message: closed 477012
+X-Debian-PR-Package: hedgewars
+X-Debian-PR-Keywords: patch
+X-Debian-PR-Source: hedgewars
+Content-Type: multipart/mixed; boundary="----------=_1208721786-16614-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 20:03:06 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <-9PNBklPbVE.A.YdE.oH6CIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/133084
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 20:04:56 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208721786-16614-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 19:32:25 +0000
+with message-id <E1JnfGz-0005dQ-Fl@ries.debian.org>
+and subject line Bug#477012: fixed in hedgewars 0.9.2-2
+has caused the Debian Bug report #477012,
+regarding hedgewars: FTBFS: make: *** [configure-stamp] Error 255
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+477012: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D477012
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208721786-16614-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 15:46:45 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-10.0 required=4.0 tests=BAYES_00,FVGT_m_MULTI_ODD,
+	HAS_PACKAGE autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <lucas@lucas-nussbaum.net>
+Received: from xanadu.blop.info ([80.248.208.235])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <lucas@lucas-nussbaum.net>)
+	id 1Jnbka-0000gX-JA
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 15:46:45 +0000
+Received: from localhost ([127.0.0.1] helo=xanadu.blop.info)
+	by xanadu.blop.info with smtp (Exim 4.63)
+	(envelope-from <lucas@lucas-nussbaum.net>)
+	id 1JnbkZ-0000Bw-Hk
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 17:46:43 +0200
+Received: (nullmailer pid 22606 invoked by uid 1000);
+	Sun, 20 Apr 2008 15:36:06 -0000
+Date: Sun, 20 Apr 2008 17:36:06 +0200
+From: Lucas Nussbaum <lucas@lucas-nussbaum.net>
+To: submit@bugs.debian.org
+Subject: hedgewars: FTBFS: make: *** [configure-stamp] Error 255
+Message-ID: <20080420153606.GA22592@xanadu.blop.info>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Delivered-To: submit@bugs.debian.org
+
+Package: hedgewars
+Version: 0.9.2-1
+Severity: serious
+User: debian-qa@lists.debian.org
+Usertags: qa-ftbfs-20080419 qa-ftbfs
+Justification: FTBFS on i386
+
+Hi,
+
+During a rebuild of all packages in sid, your package failed to build on i386.
+
+This rebuild was done with gcc 4.3 instead of gcc 4.2, because gcc 4.3 is now
+the default on most architectures (even if it's not the case on i386 yet).
+Feel free to downgrade this bug to 'important' if your package is only built
+on i386, and this bug is specific to gcc 4.3 (i.e the package builds fine with
+gcc 4.2).
+
+Relevant part:
+>  /usr/bin/fakeroot debian/rules clean
+> rm -fr build *-stamp
+> dh_clean
+>  dpkg-source -b hedgewars-0.9.2
+> dpkg-source: info: using source format `1.0'
+> dpkg-source: info: building hedgewars using existing hedgewars_0.9.2.orig.tar.gz
+> dpkg-source: info: building hedgewars in hedgewars_0.9.2-1.diff.gz
+> dpkg-source: info: building hedgewars in hedgewars_0.9.2-1.dsc
+>  debian/rules build
+> mkdir build
+> tar xjf *.tar.bz2 -C build
+> name_top=`ls build`; \
+> 	mv build/$name_top/* build; \
+> 	rmdir build/$name_top
+> touch unpack-stamp
+> dh_testdir
+> cd build && \
+> 	cmake -DCMAKE_INSTALL_PREFIX=/usr/lib/hedgewars \
+> 		-DDATA_INSTALL_DIR=/usr/share/games .
+> -- Check for working C compiler: /usr/bin/gcc
+> -- Check for working C compiler: /usr/bin/gcc -- works
+> -- Check size of void*
+> -- Check size of void* - done
+> -- Check for working CXX compiler: /usr/bin/c++
+> -- Check for working CXX compiler: /usr/bin/c++ -- works
+> -- Looking for Q_WS_X11
+> -- Looking for Q_WS_X11 - found
+> -- Looking for Q_WS_WIN
+> -- Looking for Q_WS_WIN - not found.
+> -- Looking for Q_WS_QWS
+> -- Looking for Q_WS_QWS - not found.
+> -- Looking for Q_WS_MAC
+> -- Looking for Q_WS_MAC - not found.
+> -- Found Qt-Version 4.4.0-rc1
+> -- Looking for _POSIX_TIMERS
+> -- Looking for _POSIX_TIMERS - found
+> -- Looking for pthread.h
+> -- Looking for pthread.h - found
+> -- Looking for pthread_create in pthreads
+> -- Looking for pthread_create in pthreads - not found
+> -- Looking for pthread_create in pthread
+> -- Looking for pthread_create in pthread - found
+> CMake Error: This project requires some variables to be set,
+> and cmake can not find them.
+> Please set the following variables:
+> QT_FONTCONFIG_LIBRARY (ADVANCED)
+> QT_X11_ICE_LIBRARY (ADVANCED)
+> QT_X11_SM_LIBRARY (ADVANCED)
+> QT_XI_LIBRARY (ADVANCED)
+> QT_XRANDR_LIBRARY (ADVANCED)
+> QT_XRENDER_LIBRARY (ADVANCED)
+> 
+> -- Configuring done
+> make: *** [configure-stamp] Error 255
+
+The full build log is available from:
+   http://people.debian.org/~lucas/logs/2008/04/19
+
+A list of current common problems and possible solutions is available at 
+http://wiki.debian.org/qa.debian.org/FTBFS . You're welcome to contribute!
+
+About the archive rebuild: The rebuild was done on about 50 AMD64 nodes
+of the Grid'5000 platform, using a clean chroot containing a sid i386
+environment.  Internet was not accessible from the build systems.
+
+-- 
+| Lucas Nussbaum
+| lucas@lucas-nussbaum.net   http://www.lucas-nussbaum.net/ |
+| jabber: lucas@nussbaum.fr             GPG: 1024D/023B3F4F |
+
+
+
+------------=_1208721786-16614-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 477012-close) by bugs.debian.org; 20 Apr 2008 20:02:28 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.7 required=4.0 tests=BAYES_00,FVGT_m_MULTI_ODD,
+	HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_2,MURPHY_WRONG_WORD1,
+	MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1Jnfk4-00046G-M5
+	for 477012-close@bugs.debian.org; Sun, 20 Apr 2008 20:02:28 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnfGz-0005dQ-Fl; Sun, 20 Apr 2008 19:32:25 +0000
+From: dimka@avanto.org (Dmitry E. Oboukhov)
+To: 477012-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#477012: fixed in hedgewars 0.9.2-2
+Message-Id: <E1JnfGz-0005dQ-Fl@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 19:32:25 +0000
+Content-Transfer-Encoding: quoted-printable
+
+Source: hedgewars
+Source-Version: 0.9.2-2
+
+We believe that the bug you reported is fixed in the latest version of
+hedgewars, which is due to be installed in the Debian FTP archive:
+
+hedgewars-data_0.9.2-2_all.deb
+  to pool/main/h/hedgewars/hedgewars-data_0.9.2-2_all.deb
+hedgewars_0.9.2-2.diff.gz
+  to pool/main/h/hedgewars/hedgewars_0.9.2-2.diff.gz
+hedgewars_0.9.2-2.dsc
+  to pool/main/h/hedgewars/hedgewars_0.9.2-2.dsc
+hedgewars_0.9.2-2_i386.deb
+  to pool/main/h/hedgewars/hedgewars_0.9.2-2_i386.deb
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 477012@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Dmitry E. Oboukhov <dimka@avanto.org> (supplier of updated hedgewars pack=
+age)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 20:01:42 +0400
+Source: hedgewars
+Binary: hedgewars hedgewars-data
+Architecture: source all i386
+Version: 0.9.2-2
+Distribution: unstable
+Urgency: low
+Maintainer: Dmitry E. Oboukhov <dimka@avanto.org>
+Changed-By: Dmitry E. Oboukhov <dimka@avanto.org>
+Description:=20
+ hedgewars  - Worms style game
+ hedgewars-data - Data files for hedgewars
+Closes: 477012
+Changes:=20
+ hedgewars (0.9.2-2) unstable; urgency=3Dlow
+ .
+   * Fix FTBFS make configure-stamp (added libxrandr-dev, libfontconfig1-=
+dev,
+     libxi-dev, libsm-dev, libice-dev to build-depends), closes: #477012.
+Checksums-Sha1:=20
+ 2d3dba8adcc2e200ad63e6417e3a92f87a90c4a9 1215 hedgewars_0.9.2-2.dsc
+ 43f83bd2e7498ea7fad55b95dcc4090e3ca4abbe 4210 hedgewars_0.9.2-2.diff.gz
+ 6dfab4fd4e73f838afb78b906e2c5b74f2cbef1f 4596906 hedgewars-data_0.9.2-2_=
+all.deb
+ 3114f5a2fd6a5dea1d2189f8613d75e7ba9af9d1 440368 hedgewars_0.9.2-2_i386.d=
+eb
+Checksums-Sha256:=20
+ e62276575a933e66ecfcbc5309bbf9862beb53c7bd7ef217e67d6b732594a732 1215 he=
+dgewars_0.9.2-2.dsc
+ 54b6f66d5b6787045e8fcf0f73930f4da83d960cbd98cfeb6097c78d28ea2269 4210 he=
+dgewars_0.9.2-2.diff.gz
+ d9f4523eb6fa1c9054073e41576df20bf57174b67c4729426aebe247c716762f 4596906=
+ hedgewars-data_0.9.2-2_all.deb
+ b2ddeb7a56cdd08b1a5a61760cd19c8323af75120cd26b15120e6fef9a18e507 440368 =
+hedgewars_0.9.2-2_i386.deb
+Files:=20
+ 5467a9b99054309bcc96c38bd267bf68 1215 games extra hedgewars_0.9.2-2.dsc
+ 5070227ca8defa5f1d5c331f8619451a 4210 games extra hedgewars_0.9.2-2.diff=
+.gz
+ a15b944519ccd26a99e3f75ccf1a6c84 4596906 games extra hedgewars-data_0.9.=
+2-2_all.deb
+ 19874e2b3d607cc653874a54ebf75e35 440368 games extra hedgewars_0.9.2-2_i3=
+86.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC5eFv3x5OskTLdsRAnGbAJ4qXbfgTVawFrlFbwJHm3xPWmvXkQCgvEOf
+eiqEnBT+fqHRBYFWAT/latU=3D
+=3D+vR3
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208721786-16614-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

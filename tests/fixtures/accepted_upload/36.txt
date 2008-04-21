@@ -1,0 +1,121 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 03:31:41 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnPL7-00059w-KZ
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 03:31:41 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 7E88B13A4E8C; Sun, 20 Apr 2008 02:31:36 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id 3765513A4E11
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 02:31:36 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnP70-00056F-7g; Sun, 20 Apr 2008 02:17:02 +0000
+From: Dirk Eddelbuettel <edd@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted fasianoptions 260.72-4 (source i386)
+Message-Id: <E1JnP70-00056F-7g@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 02:17:02 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <EQzBosFuRtF.A.pt.IsqCIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301266
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 02:31:36 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.6
+X-Spam-Report: (-2.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.0 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sat, 19 Apr 2008 20:46:46 -0500
+Source: fasianoptions
+Binary: r-cran-fasianoptions
+Architecture: source i386
+Version: 260.72-4
+Distribution: unstable
+Urgency: low
+Maintainer: Dirk Eddelbuettel <edd@debian.org>
+Changed-By: Dirk Eddelbuettel <edd@debian.org>
+Description:=20
+ r-cran-fasianoptions - GNU R package for financial engineering -- fAsian=
+Options
+Closes: 476825
+Changes:=20
+ fasianoptions (260.72-4) unstable; urgency=3Dlow
+ .
+   * debian/control: Tighten Build-Depends: on r-cran-foptions to ensure =
+use
+     of a version built after the gfortran transition	(Closes: #476825)
+Checksums-Sha1:=20
+ 3cad6d62cc99069642e4e80ad7905418428cc125 1103 fasianoptions_260.72-4.dsc
+ 17903fa961f50a73c5b8f01902b37085718bf6ce 2195 fasianoptions_260.72-4.dif=
+f.gz
+ d8d71463a944012e85651088c094c9d1d3dfd710 152616 r-cran-fasianoptions_260=
+.72-4_i386.deb
+Checksums-Sha256:=20
+ c96406dda0ffdbac82a999ac367b96d6b376a4247c6e3f4d64ecc69d629cca37 1103 fa=
+sianoptions_260.72-4.dsc
+ f05bafd36b0221e77dde4e1caa5c671857f8a6808e6034e64272943559ad2f6a 2195 fa=
+sianoptions_260.72-4.diff.gz
+ 32ca28f01a7f6740e41fe7f844acee64648e1f025393cb74cbf21ca1bdc7dd1a 152616 =
+r-cran-fasianoptions_260.72-4_i386.deb
+Files:=20
+ 0b285d550ce427a0e166267388de6ca4 1103 math optional fasianoptions_260.72=
+-4.dsc
+ ec73ea4ab918029116147d9b87ae8fa7 2195 math optional fasianoptions_260.72=
+-4.diff.gz
+ 2c78a3258d96fd92219d8f2df4f22769 152616 math optional r-cran-fasianoptio=
+ns_260.72-4_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICqKgCZSR95Gw07cRAtlpAJ4zCPjQ/4RB7WCTlU0OZy7PvMgcVQCePhwt
+2rZd2DPVjOGIRR/SAinF1tM=3D
+=3DCVcn
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+fasianoptions_260.72-4.diff.gz
+  to pool/main/f/fasianoptions/fasianoptions_260.72-4.diff.gz
+fasianoptions_260.72-4.dsc
+  to pool/main/f/fasianoptions/fasianoptions_260.72-4.dsc
+r-cran-fasianoptions_260.72-4_i386.deb
+  to pool/main/f/fasianoptions/r-cran-fasianoptions_260.72-4_i386.deb
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

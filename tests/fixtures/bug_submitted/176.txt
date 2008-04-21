@@ -1,0 +1,141 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 01:34:51 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnNW2-0003rt-IF
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 01:34:51 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 8AFF813A4E78; Sun, 20 Apr 2008 00:34:45 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.9 required=4.0 tests=BAYES_00,FOURLA,
+	RCVD_IN_DNSWL_LOW autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 10C3613A4E29;
+	Sun, 20 Apr 2008 00:34:35 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnNUO-0004QT-Jr; Sun, 20 Apr 2008 00:33:04 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476894: parted_devices: should return /dev/md/X instead of /dev/mdX
+Reply-To: Frans Pop <elendil@planet.nl>, 476894@bugs.debian.org
+Resent-From: Frans Pop <elendil@planet.nl>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian Install System Team <debian-boot@lists.debian.org>
+Resent-Date: Sun, 20 Apr 2008 00:33:02 +0000
+Resent-Message-ID: <handler.476894.B.120865134610639@bugs.debian.org>
+X-Debian-PR-Message: report 476894
+X-Debian-PR-Package: partman-base
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: partman-base
+Received: via spool by submit@bugs.debian.org id=B.120865134610639
+          (code B ref -1); Sun, 20 Apr 2008 00:33:02 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 00:29:06 +0000
+X-Amavis-Spam-Status: No, score=-9.8 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,HAS_PACKAGE autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from cpsmtpo-eml03.kpnxchange.com ([213.75.38.152])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <elendil@planet.nl>)
+	id 1JnNQX-0002jc-Tl
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 00:29:06 +0000
+Received: from cpsmtp-eml114.kpnxchange.com ([213.75.84.114]) by cpsmtpo-eml03.kpnxchange.com with Microsoft SMTPSVC(6.0.3790.1830);
+	 Sun, 20 Apr 2008 02:28:59 +0200
+Received: from faramir.fjphome.nl ([84.85.147.182]) by cpsmtp-eml114.kpnxchange.com with Microsoft SMTPSVC(6.0.3790.1830);
+	 Sun, 20 Apr 2008 02:28:59 +0200
+From: Frans Pop <elendil@planet.nl>
+To: Debian BTS Submit <submit@bugs.debian.org>
+Date: Sun, 20 Apr 2008 02:28:42 +0200
+User-Agent: KMail/1.9.9
+MIME-Version: 1.0
+Content-Type: multipart/signed;
+  boundary="nextPart1511803.lZkdjakqJ5";
+  protocol="application/pgp-signature";
+  micalg=pgp-sha1
+Content-Transfer-Encoding: 7bit
+Message-Id: <200804200228.58860.elendil@planet.nl>
+X-OriginalArrivalTime: 20 Apr 2008 00:28:59.0430 (UTC) FILETIME=[86AF3460:01C8A27D]
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 00:33:04 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343307
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -29.9
+X-Spam-Report: Spam detection software, running on the system "chris-lamb.co.uk", has
+	identified this incoming email as possible spam.  The original message
+	has been attached to this so you can view it (if it isn't spam) or label
+	similar future email.  If you have any questions, see
+	the administrator of that system for details.
+	Content preview:  Package: partman-base As I understand it, RAID devices
+	are being transitioned from /dev/mdX to /dev/md/X. Currently
+	parted_devices (or probably rather libparted), still returns the former,
+	even if a RAID device was created as the latter. [...] 
+	Content analysis details:   (-29.9 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	23 AWL                    AWL: From: address is in the auto white-list
+
+--nextPart1511803.lZkdjakqJ5
+Content-Type: text/plain;
+  charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+Package: partman-base
+
+As I understand it, RAID devices are being transitioned from /dev/mdX=20
+to /dev/md/X. Currently parted_devices (or probably rather libparted),=20
+still returns the former, even if a RAID device was created as the latter.
+
+This is if both block device files exist. If the former does not exist,=20
+parted_devices fails to list the device.
+
+As partman prefers the latter notation over the former, the fact that=20
+parted_devices does not support the latter causes problems, for example in=
+=20
+partman-base's init.d/parted script.
+
+This BR is filed mostly as a reminder. See also #475479.
+
+--nextPart1511803.lZkdjakqJ5
+Content-Type: application/pgp-signature; name=signature.asc 
+Content-Description: This is a digitally signed message part.
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQBICo5Kgm/Kwh6ICoQRArlBAKDDuELe3wQuZH4tdKcYm/ZeNzyolwCeOWeD
+Prx4T9drB6mGta/tLi8pcmM=
+=Uag0
+-----END PGP SIGNATURE-----
+
+--nextPart1511803.lZkdjakqJ5--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,115 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 12:15:03 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnXVY-0006do-GN
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 12:15:02 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 3517E13A4EF9; Sun, 20 Apr 2008 11:14:55 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-3.0 required=4.0 tests=BAYES_00,MURPHY_DRUGS_REL8,
+	RCVD_IN_DNSWL_LOW autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 6FB3B13A4F19;
+	Sun, 20 Apr 2008 11:14:41 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnXSp-0005Qe-Ai; Sun, 20 Apr 2008 11:12:07 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476900: ITP: fglrx-kernel-modules -- fglrx (ATI driver) kernel module build against the last kernel
+Reply-To: Bertrand Marc <BeberKing@gmail.com>, 476900@bugs.debian.org
+Resent-From: Bertrand Marc <BeberKing@gmail.com>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: <wnpp@debian.org>, Bertrand Marc <beberking@gmail.com>
+Resent-Date: Sun, 20 Apr 2008 11:12:06 +0000
+Resent-Message-ID: <handler.476900.B476900.12086897896350@bugs.debian.org>
+X-Debian-PR-Message: report 476900
+X-Debian-PR-Package: wnpp
+X-Debian-PR-Keywords: 
+Received: via spool by 476900-submit@bugs.debian.org id=B476900.12086897896350
+          (code B ref 476900); Sun, 20 Apr 2008 11:12:06 +0000
+Received: (at 476900) by bugs.debian.org; 20 Apr 2008 11:09:49 +0000
+X-Amavis-Spam-Status: No, score=-7.0 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER,
+	MURPHY_DRUGS_REL8 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from smtp28.orange.fr ([80.12.242.100])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <BeberKing@gmail.com>)
+	id 1JnXQa-0001QW-Tl
+	for 476900@bugs.debian.org; Sun, 20 Apr 2008 11:09:49 +0000
+Received: from me-wanadoo.net (localhost [127.0.0.1])
+	by mwinf2809.orange.fr (SMTP Server) with ESMTP id 1661480000AC;
+	Sun, 20 Apr 2008 13:09:43 +0200 (CEST)
+Received: from [192.168.1.10] (ALyon-157-1-137-210.w90-42.abo.wanadoo.fr [90.42.144.210])
+	by mwinf2809.orange.fr (SMTP Server) with ESMTP id D5B0380000A8;
+	Sun, 20 Apr 2008 13:09:42 +0200 (CEST)
+X-ME-UUID: 20080420110942875.D5B0380000A8@mwinf2809.orange.fr
+Message-ID: <480B249F.8090209@gmail.com>
+Date: Sun, 20 Apr 2008 13:10:23 +0200
+From: Bertrand Marc <BeberKing@gmail.com>
+User-Agent: Mozilla-Thunderbird 2.0.0.9 (X11/20080110)
+MIME-Version: 1.0
+To: daniel@debian.org
+Cc: 476900@bugs.debian.org
+References: <20080420031130.7315.70370.reportbug@BBK> <480B02D1.5070103@debian.org>
+In-Reply-To: <480B02D1.5070103@debian.org>
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 7bit
+Resent-Date: Sun, 20 Apr 2008 11:12:07 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343443
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -40.1
+X-Spam-Report: (-40.1 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	12 AWL                    AWL: From: address is in the auto white-list
+
+Hi,
+
+I'd like to patch this linux-nonfree package. I also see that there is a 
+linux-modules-nonfree-2.6 here (and this is not referenced on the PTS): 
+http://svn.debian.org/wsvn/kernel/dists/trunk/linux-modules-nonfree-2.6/debian/?rev=0&sc=0
+
+So first, wich one should be patched?
+
+FYI, here is my work on the module :
+http://svn.debian.org/wsvn/pkg-fglrx/fglrx-kernel-module/trunk/debian/?rev=0&sc=0
+It is quite ready to upload as an extra package.
+
+To include it, I think that it would be very simple. The only problem is 
+that the name of the module source is "fglrx-kernel-src" and I 
+understand you prefer *-source.
+
+Regards,
+Bertrand
+
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

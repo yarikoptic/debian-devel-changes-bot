@@ -1,0 +1,200 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 16:01:48 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnb32-0007cI-8W
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 16:01:48 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id D0DA413A500A; Sun, 20 Apr 2008 15:01:42 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id 985EC13A4ECA
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 15:01:37 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1Jnaou-0005Z9-M4; Sun, 20 Apr 2008 14:47:08 +0000
+From: Chris Lawrence <lawrencc@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted lsb 3.2-10 (source all amd64)
+Message-Id: <E1Jnaou-0005Z9-M4@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 14:47:08 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <wTg2G9tzObE.A.03F.Wr1CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301306
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 15:01:42 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.6
+X-Spam-Report: (-2.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.0 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 09:28:20 -0500
+Source: lsb
+Binary: lsb-core lsb-graphics lsb-cxx lsb-desktop lsb-qt4 lsb-languages l=
+sb-multimedia lsb-printing lsb lsb-base lsb-release
+Architecture: source all amd64
+Version: 3.2-10
+Distribution: unstable
+Urgency: low
+Maintainer: Chris Lawrence <lawrencc@debian.org>
+Changed-By: Chris Lawrence <lawrencc@debian.org>
+Description:=20
+ lsb        - Linux Standard Base 3.2 support package
+ lsb-base   - Linux Standard Base 3.2 init script functionality
+ lsb-core   - Linux Standard Base 3.2 core support package
+ lsb-cxx    - Linux Standard Base 3.2 C++ support package
+ lsb-desktop - Linux Standard Base 3.2 Desktop support package
+ lsb-graphics - Linux Standard Base 3.2 graphics support package
+ lsb-languages - Linux Standard Base 3.2 Runtime Languages package
+ lsb-multimedia - Linux Standard Base 3.2 Multimedia package
+ lsb-printing - Linux Standard Base 3.2 Printing package
+ lsb-qt4    - Linux Standard Base 3.2 Qt4 support package
+ lsb-release - Linux Standard Base version reporting utility
+Closes: 476969
+Changes:=20
+ lsb (3.2-10) unstable; urgency=3Dlow
+ .
+   * Fix typo in lsb_release.  (Closes: #476969)
+Checksums-Sha1:=20
+ 9b601e8f9d4d480bb979b7a79fde760718991db2 958 lsb_3.2-10.dsc
+ b322105a06e28218fb7471c38fd1e33c721ee677 49477 lsb_3.2-10.tar.gz
+ 77c82f209dd61ecb0e0d91996ab490ae11d0f44f 12620 lsb_3.2-10_all.deb
+ 76dffecc5bf3d47646d6a76ba4c1aa010c17ac71 18098 lsb-base_3.2-10_all.deb
+ fc352a33c255e60c6b910863de4447b15c077372 18098 lsb-release_3.2-10_all.de=
+b
+ 91a2e8603cd8b338e77cc08eb4ef2a2a988b791d 35312 lsb-core_3.2-10_amd64.deb
+ 146e0401b7d685f84f127f25033851bc6e23b2e2 12656 lsb-graphics_3.2-10_amd64=
+.deb
+ 87b839d82ec65fbb321a867e75fde35eb2ef49c5 12624 lsb-cxx_3.2-10_amd64.deb
+ b57a9a01d5c6ce10f3e2bcef16c44022099e1efb 12748 lsb-desktop_3.2-10_amd64.=
+deb
+ 2b9755ca7c08456f1a4dad9b6defb68dff8ed4b2 12688 lsb-qt4_3.2-10_amd64.deb
+ e44991955c26b186d1cd0c25e6e893fc4b7838d0 12646 lsb-languages_3.2-10_amd6=
+4.deb
+ fa078856cca760f50a8fd68a2864f0257a00f 12626 lsb-multimedia_3.2-10_amd=
+64.deb
+ 35221897a4622d2afc35acac9108b4ade45d9efc 12648 lsb-printing_3.2-10_amd64=
+.deb
+Checksums-Sha256:=20
+ 68d613ba4e154e3914c038ee7546377b5982b9c97cce3899a10e2ba22267212b 958 lsb=
+_3.2-10.dsc
+ f248ee7ee59ca280bbaba28ee1098c118a2683990bcc7ef9f3b2a05a33e8b7b5 49477 l=
+sb_3.2-10.tar.gz
+ 514b90c95fdec73bc8165fe604b1da3882cec2f82056243d3ff5edb956e8235c 12620 l=
+sb_3.2-10_all.deb
+ d5beda781b39afebcf8cf7d82c61b3250c84331e03fe9eca036da5fa91fcb932 18098 l=
+sb-base_3.2-10_all.deb
+ 758890fc4159ac059940324e59a0994f6408becaf75641ed67c68a0be821a57a 18098 l=
+sb-release_3.2-10_all.deb
+ 84253ba7cbfef0d8c3897632a8a358ff1af7fbe9a2d2947cd48d11d41e5f4cf2 35312 l=
+sb-core_3.2-10_amd64.deb
+ 26950197479beb519934c05460dec6bf861780df411965e957e00c59132324ad 12656 l=
+sb-graphics_3.2-10_amd64.deb
+ 0a916d4bd946d07bdc42141324e5cce27fe1b19f26f270e954b6017cfb04c 12624 l=
+sb-cxx_3.2-10_amd64.deb
+ 1b64d5001b8cb09e70f3f448cbe5d3e9f64f57d8cea527ce9311670c166e9e63 12748 l=
+sb-desktop_3.2-10_amd64.deb
+ 02cded4500daa9a23153daeae945fd2c6b3f7bcbe57c57b8728ac098d55f5077 12688 l=
+sb-qt4_3.2-10_amd64.deb
+ 594deb25c438b02ea674874293df6a8c2baf1d3c00ca9cd90b48dd0d565d7ad1 12646 l=
+sb-languages_3.2-10_amd64.deb
+ 61d933edf8f99fb6d2124e3d8f27d7de15cb0b03bcd5919649f84d96be8b054d 12626 l=
+sb-multimedia_3.2-10_amd64.deb
+ f70649944cc3bed13de3e8cf3f30fbcf74b1167b75f46428dbe4cbbdbbab4031 12648 l=
+sb-printing_3.2-10_amd64.deb
+Files:=20
+ 4dda1bd0344d3af3c1c2978bd0439484 958 misc extra lsb_3.2-10.dsc
+ 30f32e086e942027c24170ec24dbe410 49477 misc extra lsb_3.2-10.tar.gz
+ fe032f48b855940feb8370ad20f41821 12620 misc extra lsb_3.2-10_all.deb
+ b2e8286ba2ebbf3aee90b9e065ed03b2 18098 misc required lsb-base_3.2-10_all=
+.deb
+ 17055fe52b8edbe80238dfe5a54ba3dc 18098 misc extra lsb-release_3.2-10_all=
+.deb
+ cab8bbbfd69bb8c895f3f0bb0f0251dd 35312 misc extra lsb-core_3.2-10_amd64.=
+deb
+ 6f5972d8136d5c47f4c666eed002d02b 12656 misc extra lsb-graphics_3.2-10_am=
+d64.deb
+ 5965551329b9d9604081b07fcfc66d20 12624 misc extra lsb-cxx_3.2-10_amd64.d=
+eb
+ ed3f724b76f7fd0b70c251b92252b204 12748 misc extra lsb-desktop_3.2-10_amd=
+64.deb
+ 7c1db59c063129179c3107fa7a525418 12688 misc extra lsb-qt4_3.2-10_amd64.d=
+eb
+ 788a3dbdbe84d5ca52c2223ad6808ec2 12646 misc extra lsb-languages_3.2-10_a=
+md64.deb
+ 0ac2cc70a45662c8b0d7295e8ebb941b 12626 misc extra lsb-multimedia_3.2-10_=
+amd64.deb
+ 11901a34745b5fd735ca70b32acee269 12648 misc extra lsb-printing_3.2-10_am=
+d64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC1M82wQKE6PXubwRApgZAJ0ewG9k8Gpkg6fooTKcNC+Ihw+JJgCg1JZk
+ONghYzLJDj6D03meedLZt5E=3D
+=3DGteA
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+lsb-base_3.2-10_all.deb
+  to pool/main/l/lsb/lsb-base_3.2-10_all.deb
+lsb-core_3.2-10_amd64.deb
+  to pool/main/l/lsb/lsb-core_3.2-10_amd64.deb
+lsb-cxx_3.2-10_amd64.deb
+  to pool/main/l/lsb/lsb-cxx_3.2-10_amd64.deb
+lsb-desktop_3.2-10_amd64.deb
+  to pool/main/l/lsb/lsb-desktop_3.2-10_amd64.deb
+lsb-graphics_3.2-10_amd64.deb
+  to pool/main/l/lsb/lsb-graphics_3.2-10_amd64.deb
+lsb-languages_3.2-10_amd64.deb
+  to pool/main/l/lsb/lsb-languages_3.2-10_amd64.deb
+lsb-multimedia_3.2-10_amd64.deb
+  to pool/main/l/lsb/lsb-multimedia_3.2-10_amd64.deb
+lsb-printing_3.2-10_amd64.deb
+  to pool/main/l/lsb/lsb-printing_3.2-10_amd64.deb
+lsb-qt4_3.2-10_amd64.deb
+  to pool/main/l/lsb/lsb-qt4_3.2-10_amd64.deb
+lsb-release_3.2-10_all.deb
+  to pool/main/l/lsb/lsb-release_3.2-10_all.deb
+lsb_3.2-10.dsc
+  to pool/main/l/lsb/lsb_3.2-10.dsc
+lsb_3.2-10.tar.gz
+  to pool/main/l/lsb/lsb_3.2-10.tar.gz
+lsb_3.2-10_all.deb
+  to pool/main/l/lsb/lsb_3.2-10_all.deb
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

@@ -1,0 +1,271 @@
+From bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org Sun Apr 20 11:52:17 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org>)
+	id 1JnX9Y-0006WX-S5
+	for ddc@ddc.chris-lamb.co.uk; Sun, 20 Apr 2008 11:52:17 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id D5AE113A4F14; Sun, 20 Apr 2008 10:52:11 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id CF4BA13A47D1;
+	Sun, 20 Apr 2008 10:52:07 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnX8T-0001KU-VL; Sun, 20 Apr 2008 10:51:05 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Sune Vuorela <Sune@vuorela.dk>
+Subject: Bug#343864: marked as done (Karm failes to save data)
+Message-ID: <handler.343864.D343864.1208688566776.ackdone@bugs.debian.org>
+References: <200804201249.18332.Sune@vuorela.dk>
+ <43A53F59.9080901@nung.edu.ua>
+X-Debian-PR-Message: closed 343864
+X-Debian-PR-Package: karm
+X-Debian-PR-Source: kdepim
+Content-Type: multipart/mixed; boundary="----------=_1208688665-5107-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 10:51:05 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <I2aTw44aGmE.A.8dE.bByCIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/132957
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 10:52:11 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208688665-5107-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 12:49:17 +0200
+with message-id <200804201249.18332.Sune@vuorela.dk>
+and subject line Re: Bug#343864: Bug seems to be fixed
+has caused the Debian Bug report #343864,
+regarding Karm failes to save data
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+343864: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D343864
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208688665-5107-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 18 Dec 2005 10:49:16 +0000
+Return-path: <s-andy@nung.edu.ua>
+Received: from [194.44.244.30] (helo=mail.tvnet.if.ua)
+	by spohr.debian.org with esmtp (Exim 4.50)
+	id 1Enw6N-0000Qx-Tl
+	for submit@bugs.debian.org; Sun, 18 Dec 2005 02:49:16 -0800
+Received: from [10.10.200.46] (unknown [10.10.200.46])
+	by mail.tvnet.if.ua (Postfix) with ESMTP id 1979860D9
+	for <submit@bugs.debian.org>; Sun, 18 Dec 2005 12:48:40 +0200 (EET)
+Message-ID: <43A53F59.9080901@nung.edu.ua>
+Date: Sun, 18 Dec 2005 12:52:09 +0200
+From: Andriy Lesyuk <s-andy@nung.edu.ua>
+User-Agent: Debian Thunderbird 1.0.7 (X11/20051017)
+X-Accept-Language: en-us, en
+MIME-Version: 1.0
+To: submit@bugs.debian.org
+Subject: Karm failes to save data
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 7bit
+Delivered-To: submit@bugs.debian.org
+X-Spam-Checker-Version: SpamAssassin 2.60-bugs.debian.org_2005_01_02 
+	(1.212-2003-09-23-exp) on spohr.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, hits=-6.0 required=4.0 tests=BAYES_00,HAS_PACKAGE,
+	RCVD_IN_SBLXBL,RCVD_IN_SBLXBL_CBL autolearn=no 
+	version=2.60-bugs.debian.org_2005_01_02
+
+Package: karm
+Version: 4:3.4.2-2
+Severity: important
+
+Karm successfully loads data from data file, continues tracking but... 
+failed to save data. It was not so all the time. I don't know when it 
+stoped working correctly...
+
+When loading from console it gives the error (when creating or changing 
+tasks):
+X Error: BadWindow (invalid Window parameter) 3
+   Major opcode:  20
+   Minor opcode:  0
+   Resource id:  0x240013d
+
+lsof (without libs) gives:
+$ lsof | grep -i karm | grep -v '/lib/'
+karm      3128     s-andy  cwd       DIR        3,3    4096    327145 
+/home/sandy
+karm      3128     s-andy  rtd       DIR        3,3    4096         2 /
+karm      3128     s-andy  txt       REG        3,3  272672    507189 
+/usr/bin/karm
+karm      3128     s-andy  mem       REG        0,0                 0 
+[heap] (stat: No such file or directory)
+karm      3128     s-andy  mem       REG        3,3  176359    950995 
+/usr/share/locale/ru/LC_MESSAGES/kio.mo
+karm      3128     s-andy  mem       REG        3,3  352020    802904 
+/usr/share/fonts/truetype/commercial/tahomabd.ttf
+karm      3128     s-andy  mem       REG        3,3  379588    802903 
+/usr/share/fonts/truetype/commercial/tahoma.ttf
+karm      3128     s-andy  mem       REG        3,3   17420    950941 
+/usr/share/locale/ru/LC_MESSAGES/karm.mo
+karm      3128     s-andy  mem       REG        3,3  210926    950988 
+/usr/share/locale/ru/LC_MESSAGES/kdelibs.mo
+karm      3128     s-andy  mem       REG        3,3    1474    916306 
+/usr/share/locale/en_GB/LC_MESSAGES/libc.mo
+karm      3128     s-andy    0u      CHR      136,0                 2 
+/dev/pts/0
+karm      3128     s-andy    1u      CHR      136,0                 2 
+/dev/pts/0
+karm      3128     s-andy    2u      CHR      136,0                 2 
+/dev/pts/0
+karm      3128     s-andy    3u     unix 0xc414e720              6317 socket
+karm      3128     s-andy    4u     unix 0xc414e5c0              6321 socket
+karm      3128     s-andy    5r     FIFO        0,5              6323 pipe
+karm      3128     s-andy    6w     FIFO        0,5              6323 pipe
+karm      3128     s-andy    7r     FIFO        0,5              6324 pipe
+karm      3128     s-andy    8w     FIFO        0,5              6324 pipe
+karm      3128     s-andy    9u     unix 0xc414e460              6328 socket
+karm      3128     s-andy   10r     FIFO        0,5              6339 pipe
+karm      3128     s-andy   11w     FIFO        0,5              6339 pipe
+karm      3128     s-andy  128r      DIR        3,3    8192    212878 
+/usr/share/applications/kde
+karm      3128     s-andy  129r      DIR        3,3    4096    556029 
+/home/sandy/.kde/share/apps/karm
+
+Please note "[heap] (stat: No such file or directory)" string above.
+
+-- System Information:
+Debian Release: testing/unstable
+   APT prefers testing
+   APT policy: (500, 'testing'), (500, 'stable')
+Architecture: i386 (i686)
+Shell:  /bin/sh linked to /bin/bash
+Kernel: Linux 2.6.12.5
+Locale: LANG=ru_RU.KOI8-R, LC_CTYPE=ru_RU.KOI8-R (charmap=KOI8-R)
+
+Versions of packages karm depends on:
+ii  kdelibs4c2               4:3.4.2-4       core libraries for all KDE 
+applica
+ii  libc6                    2.3.5-8         GNU C Library: Shared 
+libraries an
+ii  libgcc1                  1:4.0.2-5       GCC support library
+ii  libkcal2b                4:3.4.2-2       KDE calendaring library
+ii  libkdepim1a              4:3.4.2-2       KDE PIM library
+ii  libqt3-mt                3:3.3.5-1       Qt GUI Library (Threaded 
+runtime v
+ii  libstdc++6               4.0.2-5         The GNU Standard C++ Library v3
+ii  libxext6                 6.8.2.dfsg.1-11 X Window System 
+miscellaneous exte
+ii  libxss1                  6.8.2.dfsg.1-11 X Screen Saver client-side 
+library
+ii  xlibs                    6.8.2.dfsg.1-11 X Window System client 
+libraries m
+
+
+
+------------=_1208688665-5107-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 343864-done) by bugs.debian.org; 20 Apr 2008 10:49:26 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.0 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <Sune@vuorela.dk>
+Received: from elvira.killmulehill.net ([67.207.140.51])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <Sune@vuorela.dk>)
+	id 1JnX6s-0000CN-9s
+	for 343864-done@bugs.debian.org; Sun, 20 Apr 2008 10:49:26 +0000
+Received: by elvira.killmulehill.net with esmtpsa (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	id 1JnX6r-0005Q8-Ob
+	for 343864-done@bugs.debian.org; Sun, 20 Apr 2008 10:49:26 +0000
+From: Sune Vuorela <Sune@vuorela.dk>
+To: 343864-done@bugs.debian.org
+Subject: Re: Bug#343864: Bug seems to be fixed
+Date: Sun, 20 Apr 2008 12:49:17 +0200
+User-Agent: KMail/1.9.9
+References: <60255.91.124.9.113.1208689262.squirrel@mail.nung.edu.ua>
+In-Reply-To: <60255.91.124.9.113.1208689262.squirrel@mail.nung.edu.ua>
+MIME-Version: 1.0
+Content-Type: text/plain;
+  charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+Message-Id: <200804201249.18332.Sune@vuorela.dk>
+
+On Sunday 20 April 2008, s-andy@nung.edu.ua wrote:
+> Hello,
+>
+> It now works, thanks. I believe the bug can be closed!
+
+Okay. marking it as closed. Thanks for reporting back.
+
+/Sune
+
+=2D-=20
+How may I connect a password of a analogic prompt from Photoshop and from t=
+he=20
+preferences inside Mac 8.2?
+
+=46rom the control folder menu inside Netscape NT you should telnet to the=
+=20
+mailer and from AutoCAD 93 you either can't unmount the graphics board over=
+=20
+the 2D connection, or have to log from the controller on a clock on the=20
+device for clicking the RW AGP kernel.
+
+
+------------=_1208688665-5107-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

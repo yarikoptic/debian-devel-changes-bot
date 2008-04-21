@@ -1,0 +1,176 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 11:42:46 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnX0K-0006Qw-OR
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 11:42:46 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 51AC913A4F24; Sun, 20 Apr 2008 10:42:35 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.3 required=4.0 tests=BAYES_00,FOURLA,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW,SARE_MSGID_LONG40 autolearn=unavailable version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 42E5F13A4EAC;
+	Sun, 20 Apr 2008 10:42:13 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnWzl-0004Pa-SJ; Sun, 20 Apr 2008 10:42:05 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476876: xserver-xorg-video-s3: S3 server crash/lockup with S3 Trio 64+
+Reply-To: "Gary Lee Phillips" <tivo.overo@gmail.com>, 476876@bugs.debian.org
+Resent-From: "Gary Lee Phillips" <tivo.overo@gmail.com>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian X Strike Force <debian-x@lists.debian.org>
+Resent-Date: Sun, 20 Apr 2008 10:42:05 +0000
+Resent-Message-ID: <handler.476876.B476876.120868804614969@bugs.debian.org>
+X-Debian-PR-Message: report 476876
+X-Debian-PR-Package: xserver-xorg-video-s3
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: xserver-xorg-video-s3
+Received: via spool by 476876-submit@bugs.debian.org id=B476876.120868804614969
+          (code B ref 476876); Sun, 20 Apr 2008 10:42:05 +0000
+Received: (at 476876) by bugs.debian.org; 20 Apr 2008 10:40:46 +0000
+X-Amavis-Spam-Status: No, score=-6.8 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,HAS_BUG_NUMBER autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from smtp3-g19.free.fr ([212.27.42.29])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <Brice.Goglin@ens-lyon.org>)
+	id 1JnWyU-0003sx-GX
+	for 476876@bugs.debian.org; Sun, 20 Apr 2008 10:40:46 +0000
+Received: from smtp3-g19.free.fr (localhost.localdomain [127.0.0.1])
+	by smtp3-g19.free.fr (Postfix) with ESMTP id 469AA17B564
+	for <476876@bugs.debian.org>; Sun, 20 Apr 2008 12:40:45 +0200 (CEST)
+Received: from pignouf.loulous.org (maison.loulous.org [82.230.112.130])
+	by smtp3-g19.free.fr (Postfix) with ESMTP id 1B58E17B584
+	for <476876@bugs.debian.org>; Sun, 20 Apr 2008 12:40:45 +0200 (CEST)
+Received: from panpancucul.loulous.org ([192.168.44.21])
+	by pignouf.loulous.org with esmtp (Exim 4.63)
+	(envelope-from <Brice.Goglin@ens-lyon.org>)
+	id 1JnWyS-00078b-I0
+	for 476876@bugs.debian.org; Sun, 20 Apr 2008 12:40:44 +0200
+Resent-From: Brice Goglin <Brice.Goglin@ens-lyon.org>
+Resent-To: 476876@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 12:39:41 +0200
+Resent-Message-Id: <480B1D6D.3070702@ens-lyon.org>
+Resent-User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.9) Gecko/20080110 Thunderbird/2.0.0.9
+Received: (qmail 5150 invoked from network); 20 Apr 2008 00:30:54 -0000
+Received: from 140.77.166.68 (HELO toccata.ens-lyon.fr) (140.77.166.68)
+  by mrelay4-1.free.fr with SMTP; 20 Apr 2008 00:30:54 -0000
+Received: from localhost (localhost [127.0.0.1])
+	by toccata.ens-lyon.fr (Postfix) with ESMTP id F07A88406B
+	for <brice.goglin@free.fr>; Sun, 20 Apr 2008 02:30:53 +0200 (CEST)
+X-Virus-Scanned: Debian amavisd-new at toccata.ens-lyon.org
+Received: from toccata.ens-lyon.fr ([127.0.0.1])
+	by localhost (toccata.ens-lyon.fr [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id rNdu-7Hzjanr for <brice.goglin@free.fr>;
+	Sun, 20 Apr 2008 02:30:53 +0200 (CEST)
+Received: from rv-out-0506.google.com (rv-out-0506.google.com [209.85.198.237])
+	by toccata.ens-lyon.fr (Postfix) with ESMTP id 4B58684064
+	for <Brice.Goglin@ens-lyon.org>; Sun, 20 Apr 2008 02:30:33 +0200 (CEST)
+Received: by rv-out-0506.google.com with SMTP id k40so614468rvb.28
+        for <Brice.Goglin@ens-lyon.org>; Sat, 19 Apr 2008 17:30:27 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:to:subject:in-reply-to:mime-version:content-type:content-transfer-encoding:content-disposition:references;
+        bh=6NqepOY0eyf3DkVID2s3j7ndQs9D4ZFbXPBAxCPwrfg=;
+        b=il2vX8A6uCcxuFkh2KaU1nSP3YwFtoT0ZnJbIMbZMkopI5j049xBD0Z6Ktr2xExKDLJrv4kUddU0hcHgBnzxPUvNGVUokUP4QKmUbMDt8js1wzAh7meSW08oPjMF6gaJrRZi4ZxBgmdlDYIUEbTfhaa0mPf8rLmWy7OF3v5N2UI=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:to:subject:in-reply-to:mime-version:content-type:content-transfer-encoding:content-disposition:references;
+        b=K+S8bAxpBuTVW85+jm0tKplI7kgkDcPC+Nw8neDIdn3MpzFeb48THQUDSCr/8HeR1vwtk2EMhZg9rAW3vdxlMNUBaBLAsg7hQ0zhqJfUWOSJMw9rYcHhZR5FFcao+tteJY9EOpCLCGlHF4qDdPGDr/RV+T1lMdvPgSVAMDbsmNQ=
+Received: by 10.141.185.3 with SMTP id m3mr2457650rvp.40.1208651427508;
+        Sat, 19 Apr 2008 17:30:27 -0700 (PDT)
+Received: by 10.140.135.7 with HTTP; Sat, 19 Apr 2008 17:30:27 -0700 (PDT)
+Message-ID: <4eddfc4c0804191730k2e82db99v1f2355396face0d@mail.gmail.com>
+Date: Sat, 19 Apr 2008 19:30:27 -0500
+From: "Gary Lee Phillips" <tivo.overo@gmail.com>
+To: "Brice Goglin" <Brice.Goglin@ens-lyon.org>
+In-Reply-To: <480A7F35.7050706@ens-lyon.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+References: <20080419191826.2103.3081.reportbug@archie.tbears.org>
+	 <480A7F35.7050706@ens-lyon.org>
+Resent-Date: Sun, 20 Apr 2008 12:40:44 +0200
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343427
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.5
+X-Spam-Report: (-52.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+The Alpha BIOS itself doesn't enable or disable anything, so I'm not
+sure what I could do there. I'm not really sure what [disabled] means
+in the lspci output anyway. It also reports that the SCSI controller
+BIOS is disabled, but that is working fine.
+
+I have kept Etch up to date, but only with the "stable" configuration.
+The Xorg server shows a compile date in January of 2008, which really
+doesn't seem that old, but I suppose I might be able to install
+something from the testing or unstable packages. I tried switching to
+a different video card, ELSA Gloria L, that has an S3ViRGE chip, but
+that gives similar results, even though it seems to want the s3virge
+driver or possibly the glint (it has two 3DLabs coprocessors on it.)
+The ELSA card works with Windows NT on this box, but not with OpenVMS
+so I swapped back to the S3 Trio.
+
+On Sat, Apr 19, 2008 at 6:24 PM, Brice Goglin <Brice.Goglin@ens-lyon.org> wrote:
+> Gary Phillips wrote:
+>  > Package: xserver-xorg-video-s3
+>  > Version: 1:0.4.1-5
+>  > Severity: critical
+>  > Justification: breaks the whole system
+>  >
+>  > Digital Alpha PWS433au with 1GB RAM, Debian 4.0 (etch)
+>  > S3 Trio 64+ video card (which works on this hardware with both Windows
+>  > NT 4.0 and OpenVMS 8.3)
+>  > Whether manually configured or set up with Xorg -configure, when X is
+>  > run the display fills with random colored pixels, keyboard and mouse are
+>  > disabled, and machine must be rebooted in order to recover control. When
+>  > X is run with -probeonly, the only error it reports is "Unable to find
+>  > V_BIOS". When lspci -v is run, it reports that the Video ROM is present
+>  > but [disabled].
+>  >
+>
+>  Is there anything to configure in the Alpha BIOS or whatever to help this?
+>
+>  Can something more recent than Etch? The S3 driver is been a bit updated
+>  since Etch, and the Xserver is much more recent. Trying Xorg fro;
+>  testing might be good, for instance.
+>
+>  Brice
+>
+>
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,130 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 03:30:50 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnPKH-00059f-5D
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 03:30:50 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 6ACE013A4DFE; Sun, 20 Apr 2008 02:30:43 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.9 required=4.0 tests=BAYES_00,FOURLA,
+	IMPRONONCABLE_2,RCVD_IN_DNSWL_LOW autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 924D313A4DA7;
+	Sun, 20 Apr 2008 02:30:33 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnPJc-0002PC-Aq; Sun, 20 Apr 2008 02:30:04 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476898: schism: Recommends should be changed to Suggests
+Reply-To: Matti =?UTF-8?Q?H=C3=A4m=C3=A4l=C3=A4inen?= <mhamalai@students.oamk.fi>, 476898@bugs.debian.org
+Resent-From: Matti =?UTF-8?Q?H=C3=A4m=C3=A4l=C3=A4inen?= <mhamalai@students.oamk.fi>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: =?UTF-8?Q?G=C3=BCrkan_?= =?UTF-8?Q?Seng=C3=BCn?= <gurkan@phys.ethz.ch>
+Resent-Date: Sun, 20 Apr 2008 02:30:02 +0000
+Resent-Message-ID: <handler.476898.B.12086584637710@bugs.debian.org>
+X-Debian-PR-Message: report 476898
+X-Debian-PR-Package: schism
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: schism
+Received: via spool by submit@bugs.debian.org id=B.12086584637710
+          (code B ref -1); Sun, 20 Apr 2008 02:30:02 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 02:27:43 +0000
+X-Amavis-Spam-Status: No, score=-8.8 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,HAS_PACKAGE,IMPRONONCABLE_2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from relay2.oamk.fi ([193.167.100.69] helo=relay.oamk.fi)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <mhamalai@students.oamk.fi>)
+	id 1JnPHK-0001zV-SJ
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 02:27:43 +0000
+Received: from students.oamk.fi (daemon@rhea.oamk.fi [193.167.100.97])
+	by relay.oamk.fi (8.13.6/8.13.5) with ESMTP id m3K2ReJm003481
+	for <submit@bugs.debian.org>; Sun, 20 Apr 2008 05:27:40 +0300 (EEST)
+Received: from localhost (mhamalai@localhost)
+	by students.oamk.fi (8.13.6/8.13.5) with ESMTP id m3K2Rckp010732
+	for <submit@bugs.debian.org>; Sun, 20 Apr 2008 05:27:38 +0300 (EEST)
+Date: Sun, 20 Apr 2008 05:27:38 +0300 (EEST)
+From: Matti =?UTF-8?Q?H=C3=A4m=C3=A4l=C3=A4inen?= <mhamalai@students.oamk.fi>
+X-X-Sender: mhamalai@rhea
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Message-ID: <Pine.GSO.4.64.0804200526300.10678@rhea>
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; charset=US-ASCII
+X-Scanned-By: MIMEDefang 2.40
+X-Greylist: Sender IP whitelisted, not delayed by milter-greylist-3.0 (relay.oamk.fi [193.167.100.69]); Sun, 20 Apr 2008 05:27:40 +0300 (EEST)
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 02:30:04 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343320
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.5
+X-Spam-Report: (-52.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+Package: schism
+Version: 2:0+20080403-1
+Severity: normal
+
+Currently schism package defines Recommends for various "related" packages,
+but according to Debian policy Suggests would be more appropriate for these.
+
+http://www.debian.org/doc/debian-policy/ch-relationships.html
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers testing
+  APT policy: (500, 'testing')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.24.4-grsec-axp
+Locale: LANG=en_US, LC_CTYPE=en_US (charmap=ISO-8859-1)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages schism depends on:
+ii  libc6                         2.7-10     GNU C Library: Shared libraries
+ii  libgcc1                       1:4.2.2-4  GCC support library
+hi  libsdl1.2debian               1.2.11-7   Simple DirectMedia Layer
+ii  libstdc++6                    4.2.2-4    The GNU Standard C++ Library v3
+ii  libx11-6                      2:1.0.3-7  X11 client-side library
+ii  libxext6                      2:1.0.4-1  X11 miscellaneous extension librar
+ii  libxxf86misc1                 1:1.0.1-2  X11 XFree86 miscellaneous extensio
+
+Versions of packages schism recommends:
+pn  goattracker                   <none>     (no description available)
+pn  opencubicplayer               <none>     (no description available)
+pn  xmms2-plugin-modplug          <none>     (no description available)
+pn  xmp                           <none>     (no description available)
+
+-- no debconf information
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

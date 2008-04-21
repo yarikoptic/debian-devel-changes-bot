@@ -1,0 +1,2322 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 03:20:43 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnPA4-00057n-5b
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 03:20:42 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 7663913A4DFE; Sun, 20 Apr 2008 02:20:10 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.0 required=4.0 tests=BAYES_00,FOURLA,
+	FVGT_m_MULTI_ODD,IMPRONONCABLE_1,IMPRONONCABLE_2,LDO_WHITELIST,LONGLINEURL,
+	MURPHY_SEX_L5,MURPHY_WRONG_WORD1,MURPHY_WRONG_WORD2,PHONENUMBER,
+	RCVD_IN_DNSWL_LOW autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 6FC2213A4DA7;
+	Sun, 20 Apr 2008 02:19:43 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnP56-0007di-54; Sun, 20 Apr 2008 02:15:04 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476897: installation-report: apt-cdrom missing from i386 daily images
+Reply-To: Daniel Dickinson <cshore@wightman.ca>, 476897@bugs.debian.org
+Resent-From: Daniel Dickinson <cshore@wightman.ca>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian Install Team <debian-boot@lists.debian.org>
+Resent-Date: Sun, 20 Apr 2008 02:15:01 +0000
+Resent-Message-ID: <handler.476897.B.120865764127869@bugs.debian.org>
+X-Debian-PR-Message: report 476897
+X-Debian-PR-Package: installation-reports
+X-Debian-PR-Keywords: 
+Received: via spool by submit@bugs.debian.org id=B.120865764127869
+          (code B ref -1); Sun, 20 Apr 2008 02:15:01 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 02:14:01 +0000
+X-Amavis-Spam-Status: No, score=-3.8 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,FVGT_m_MULTI_ODD,HAS_PACKAGE,IMPRONONCABLE_1,IMPRONONCABLE_2,
+	LONGLINEURL,MURPHY_SEX_L5,MURPHY_WRONG_WORD1,MURPHY_WRONG_WORD2,
+	PHONENUMBER autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from server01.gorrie.wightman.ca ([216.110.227.151] helo=mail.wightman.on.ca)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <cshore@wightman.ca>)
+	id 1JnP44-0007Et-PY
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 02:14:01 +0000
+Received: by mail.wightman.on.ca (Postfix, from userid 99)
+	id A0B3D8470C; Sat, 19 Apr 2008 22:13:57 -0400 (EDT)
+Received: from matt.fionavar.dd (unknown [74.220.173.248])
+	(using TLSv1 with cipher AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by mail.wightman.on.ca (Postfix) with ESMTP id B0B24846F6;
+	Sat, 19 Apr 2008 22:13:42 -0400 (EDT)
+Received: from [192.168.2.2] (helo=brennin.fionavar.com)
+	by matt.fionavar.dd with esmtp (Exim 4.69)
+	(envelope-from <cshore@wightman.ca>)
+	id 1Jmvuy-0004h8-Qc; Fri, 18 Apr 2008 15:06:40 -0400
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+From: Daniel Dickinson <cshore@wightman.ca>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Message-ID: <20080418190641.15184.37570.reportbug@brennin.fionavar.com>
+X-Mailer: reportbug 3.39-0.1
+Date: Fri, 18 Apr 2008 15:06:41 -0400
+Content-Transfer-Encoding: quoted-printable
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 02:15:04 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343319
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -37.5
+X-Spam-Report: Spam detection software, running on the system "chris-lamb.co.uk", has
+	identified this incoming email as possible spam.  The original message
+	has been attached to this so you can view it (if it isn't spam) or label
+	similar future email.  If you have any questions, see
+	the administrator of that system for details.
+	Content preview:  Package: installation-reports Version: 2.32 Severity:
+	normal -- Package-specific info: Boot method: CD Image version: daily
+	netinst 20080412-2 Date: <Date and time of the install> [...] 
+	Content analysis details:   (-37.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	15 AWL                    AWL: From: address is in the auto white-list
+
+Package: installation-reports
+Version: 2.32
+Severity: normal
+
+
+
+-- Package-specific info:
+
+Boot method: CD
+Image version: daily netinst 20080412-2
+Date: <Date and time of the install>
+
+Machine: ASUS P4B, P4 @ 2GHZ, Hardware RAID (Dell Perc3/DCL=3DAmi MegaRAI=
+D Elite 1600), 1GB RAM
+Partitions: <df -Tl will do; the raw partition table is preferred>
+
+
+Base System Installation Checklist:
+[O] =3D OK, [E] =3D Error (please elaborate below), [ ] =3D didn't try it
+
+Initial boot:           [O]
+Detect network card:    [O]
+Configure network:      [O]
+Detect CD:              [O]
+Load installer modules: [O]
+Detect hard drives:     [/]
+Partition hard drives:  [O]
+Install base system:    [E]
+Clock/timezone setup:   [O]
+User/password setup:    [O]
+Install tasks:          [O]
+Install boot loader:    [O]
+Overall install:        [E]
+
+Comments/Problems:
+
+Detecting the RAID controller takes 4 minutes an initially reports that=20
+there is no hard drive (syslog shows the countdown, once it's done,=20
+redoing the module select allows d-i to find the drives).
+
+I used LVM on Crypto (but not on software RAID).  I had to backtrack to=20
+20080412-2 because 20080416-2 doesn't have the udebs for crypto (and repo=
+rts=20
+the appropriate error message when you try to use it).
+
+The base install step failed because apt-cdrom is missing so the=20
+installation of packages after the cdrom is supposed to scan and package=20
+lists updated fails.  I was able to get around this by editing=20
+/usr/lib/base-installer/library.sh apt_update() to copy a working apt=20
+configuration for a network mirror and then do apt-get update as usual.
+
+Once that defect was bypassed the rest of the install was fine.
+
+--=20
+
+Please make sure that the hardware-summary log file, and any other
+installation logs that you think would be useful are attached to this
+report. Please compress large files using gzip.
+
+Once you have filled out this report, mail it to submit@bugs.debian.org.
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+Installer lsb-release:
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+DISTRIB_ID=3DDebian
+DISTRIB_DESCRIPTION=3D"Debian GNU/Linux installer"
+DISTRIB_RELEASE=3D"lenny (installer build 20080412-19:03)"
+X_INSTALLATION_MEDIUM=3Dcdrom
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+Installer hardware-summary:
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+umame -a: Linux brennin 2.6.24-1-486 #1 Thu Mar 27 17:00:17 UTC 2008 i686=
+ unknown
+lspci -nn: 00:00.0 Host bridge [0600]: Intel Corporation 82845 845 [Brook=
+dale] Chipset Host Bridge [8086:1a30] (rev 04)
+lspci -nn: 00:01.0 PCI bridge [0604]: Intel Corporation 82845 845 [Brookd=
+ale] Chipset AGP Bridge [8086:1a31] (rev 04)
+lspci -nn: 00:1e.0 PCI bridge [0604]: Intel Corporation 82801 PCI Bridge =
+[8086:244e] (rev 05)
+lspci -nn: 00:1f.0 ISA bridge [0601]: Intel Corporation 82801BA ISA Bridg=
+e (LPC) [8086:2440] (rev 05)
+lspci -nn: 00:1f.1 IDE interface [0101]: Intel Corporation 82801BA IDE U1=
+00 Controller [8086:244b] (rev 05)
+lspci -nn: 00:1f.2 USB Controller [0c03]: Intel Corporation 82801BA/BAM U=
+SB Controller #1 [8086:2442] (rev 05)
+lspci -nn: 00:1f.3 SMBus [0c05]: Intel Corporation 82801BA/BAM SMBus Cont=
+roller [8086:2443] (rev 05)
+lspci -nn: 00:1f.4 USB Controller [0c03]: Intel Corporation 82801BA/BAM U=
+SB Controller #1 [8086:2444] (rev 05)
+lspci -nn: 00:1f.5 Multimedia audio controller [0401]: Intel Corporation =
+82801BA/BAM AC'97 Audio Controller [8086:2445] (rev 05)
+lspci -nn: 01:00.0 VGA compatible controller [0300]: ATI Technologies Inc=
+ Radeon RV100 QY [Radeon 7000/VE] [1002:5159]
+lspci -nn: 02:09.0 PCI bridge [0604]: Digital Equipment Corporation DECch=
+ip 21154 [1011:0026] (rev 05)
+lspci -nn: 02:0a.0 Ethernet controller [0200]: 3Com Corporation 3c905 100=
+BaseTX [Boomerang] [10b7:9050]
+lspci -nn: 02:0c.0 Serial controller [0700]: 3Com Corp, Modem Division 56=
+K FaxModem Model 5610 [12b9:1008] (rev 01)
+lspci -nn: 03:00.0 PCI bridge [0604]: Digital Equipment Corporation DECch=
+ip 21154 [1011:0026] (rev 05)
+lspci -nn: 03:01.0 SCSI storage controller [0100]: QLogic Corp. ISP12160 =
+Dual Channel Ultra3 SCSI Processor [1077:1216] (rev 06)
+lspci -nn: 04:00.0 RAID bus controller [0104]: American Megatrends Inc. M=
+egaRAID [101e:1960] (rev 20)
+lspci -vnn: 00:00.0 Host bridge [0600]: Intel Corporation 82845 845 [Broo=
+kdale] Chipset Host Bridge [8086:1a30] (rev 04)
+lspci -vnn: 	Subsystem: ASUSTeK Computer Inc. Unknown device [1043:8070]
+lspci -vnn: 	Flags: bus master, fast devsel, latency 0
+lspci -vnn: 	Memory at f0000000 (32-bit, prefetchable) [size=3D128M]
+lspci -vnn: 	Capabilities: [e4] Vendor Specific Information <?>
+lspci -vnn: 	Capabilities: [a0] AGP version 2.0
+lspci -vnn:=20
+lspci -vnn: 00:01.0 PCI bridge [0604]: Intel Corporation 82845 845 [Brook=
+dale] Chipset AGP Bridge [8086:1a31] (rev 04)
+lspci -vnn: 	Flags: bus master, 66MHz, fast devsel, latency 64
+lspci -vnn: 	Bus: primary=3D00, secondary=3D01, subordinate=3D01, sec-lat=
+ency=3D0
+lspci -vnn: 	I/O behind bridge: 0000d000-0000dfff
+lspci -vnn: 	Memory behind bridge: df000000-dfcfffff
+lspci -vnn: 	Prefetchable memory behind bridge: e7f00000-efffffff
+lspci -vnn:=20
+lspci -vnn: 00:1e.0 PCI bridge [0604]: Intel Corporation 82801 PCI Bridge=
+ [8086:244e] (rev 05)
+lspci -vnn: 	Flags: bus master, fast devsel, latency 0
+lspci -vnn: 	Bus: primary=3D00, secondary=3D02, subordinate=3D04, sec-lat=
+ency=3D32
+lspci -vnn: 	I/O behind bridge: 0000a000-0000bfff
+lspci -vnn: 	Memory behind bridge: de800000-deffffff
+lspci -vnn: 	Prefetchable memory behind bridge: dfd00000-e7efffff
+lspci -vnn:=20
+lspci -vnn: 00:1f.0 ISA bridge [0601]: Intel Corporation 82801BA ISA Brid=
+ge (LPC) [8086:2440] (rev 05)
+lspci -vnn: 	Flags: bus master, medium devsel, latency 0
+lspci -vnn:=20
+lspci -vnn: 00:1f.1 IDE interface [0101]: Intel Corporation 82801BA IDE U=
+100 Controller [8086:244b] (rev 05) (prog-if 80 [Master])
+lspci -vnn: 	Subsystem: ASUSTeK Computer Inc. Unknown device [1043:8028]
+lspci -vnn: 	Flags: bus master, medium devsel, latency 0
+lspci -vnn: 	[virtual] Memory at 000001f0 (32-bit, non-prefetchable) [dis=
+abled] [size=3D8]
+lspci -vnn: 	[virtual] Memory at 000003f0 (type 3, non-prefetchable) [dis=
+abled] [size=3D1]
+lspci -vnn: 	[virtual] Memory at 00000170 (32-bit, non-prefetchable) [dis=
+abled] [size=3D8]
+lspci -vnn: 	[virtual] Memory at 00000370 (type 3, non-prefetchable) [dis=
+abled] [size=3D1]
+lspci -vnn: 	I/O ports at 9800 [size=3D16]
+lspci -vnn: 	Kernel driver in use: PIIX_IDE
+lspci -vnn: 	Kernel modules: piix
+lspci -vnn:=20
+lspci -vnn: 00:1f.2 USB Controller [0c03]: Intel Corporation 82801BA/BAM =
+USB Controller #1 [8086:2442] (rev 05)
+lspci -vnn: 	Subsystem: ASUSTeK Computer Inc. Unknown device [1043:8028]
+lspci -vnn: 	Flags: bus master, medium devsel, latency 0, IRQ 17
+lspci -vnn: 	I/O ports at 9400 [size=3D32]
+lspci -vnn: 	Kernel driver in use: uhci_hcd
+lspci -vnn: 	Kernel modules: uhci-hcd
+lspci -vnn:=20
+lspci -vnn: 00:1f.3 SMBus [0c05]: Intel Corporation 82801BA/BAM SMBus Con=
+troller [8086:2443] (rev 05)
+lspci -vnn: 	Subsystem: ASUSTeK Computer Inc. Unknown device [1043:8028]
+lspci -vnn: 	Flags: medium devsel
+lspci -vnn: 	I/O ports at e800 [size=3D16]
+lspci -vnn:=20
+lspci -vnn: 00:1f.4 USB Controller [0c03]: Intel Corporation 82801BA/BAM =
+USB Controller #1 [8086:2444] (rev 05)
+lspci -vnn: 	Subsystem: ASUSTeK Computer Inc. Unknown device [1043:8028]
+lspci -vnn: 	Flags: bus master, medium devsel, latency 0, IRQ 18
+lspci -vnn: 	I/O ports at 9000 [size=3D32]
+lspci -vnn: 	Kernel driver in use: uhci_hcd
+lspci -vnn: 	Kernel modules: uhci-hcd
+lspci -vnn:=20
+lspci -vnn: 00:1f.5 Multimedia audio controller [0401]: Intel Corporation=
+ 82801BA/BAM AC'97 Audio Controller [8086:2445] (rev 05)
+lspci -vnn: 	Subsystem: ASUSTeK Computer Inc. Unknown device [1043:8072]
+lspci -vnn: 	Flags: bus master, medium devsel, latency 0, IRQ 5
+lspci -vnn: 	I/O ports at 8800 [size=3D256]
+lspci -vnn: 	I/O ports at 8400 [size=3D64]
+lspci -vnn:=20
+lspci -vnn: 01:00.0 VGA compatible controller [0300]: ATI Technologies In=
+c Radeon RV100 QY [Radeon 7000/VE] [1002:5159]
+lspci -vnn: 	Subsystem: C.P. Technology Co. Ltd Unknown device [148c:2037=
+]
+lspci -vnn: 	Flags: bus master, stepping, 66MHz, medium devsel, latency 6=
+4, IRQ 11
+lspci -vnn: 	Memory at e8000000 (32-bit, prefetchable) [size=3D128M]
+lspci -vnn: 	I/O ports at d800 [size=3D256]
+lspci -vnn: 	Memory at df000000 (32-bit, non-prefetchable) [size=3D64K]
+lspci -vnn: 	Expansion ROM at e7fe0000 [disabled] [size=3D128K]
+lspci -vnn: 	Capabilities: [58] AGP version 2.0
+lspci -vnn: 	Capabilities: [50] Power Management version 2
+lspci -vnn:=20
+lspci -vnn: 02:09.0 PCI bridge [0604]: Digital Equipment Corporation DECc=
+hip 21154 [1011:0026] (rev 05)
+lspci -vnn: 	Flags: bus master, 66MHz, medium devsel, latency 32
+lspci -vnn: 	Bus: primary=3D02, secondary=3D03, subordinate=3D04, sec-lat=
+ency=3D32
+lspci -vnn: 	I/O behind bridge: 0000b000-0000bfff
+lspci -vnn: 	Memory behind bridge: de800000-deffffff
+lspci -vnn: 	Prefetchable memory behind bridge: 00000000dfe00000-00000000=
+e7efffff
+lspci -vnn: 	Capabilities: [dc] Power Management version 1
+lspci -vnn:=20
+lspci -vnn: 02:0a.0 Ethernet controller [0200]: 3Com Corporation 3c905 10=
+0BaseTX [Boomerang] [10b7:9050]
+lspci -vnn: 	Flags: bus master, medium devsel, latency 32, IRQ 22
+lspci -vnn: 	I/O ports at a800 [size=3D64]
+lspci -vnn: 	[virtual] Expansion ROM at dfd00000 [disabled] [size=3D64K]
+lspci -vnn: 	Kernel driver in use: 3c59x
+lspci -vnn: 	Kernel modules: 3c59x
+lspci -vnn:=20
+lspci -vnn: 02:0c.0 Serial controller [0700]: 3Com Corp, Modem Division 5=
+6K FaxModem Model 5610 [12b9:1008] (rev 01) (prog-if 02)
+lspci -vnn: 	Subsystem: 3Com Corp, Modem Division Unknown device [12b9:00=
+aa]
+lspci -vnn: 	Flags: medium devsel, IRQ 16
+lspci -vnn: 	I/O ports at a400 [size=3D8]
+lspci -vnn: 	Capabilities: [dc] Power Management version 2
+lspci -vnn: 	Kernel driver in use: serial
+lspci -vnn:=20
+lspci -vnn: 03:00.0 PCI bridge [0604]: Digital Equipment Corporation DECc=
+hip 21154 [1011:0026] (rev 05)
+lspci -vnn: 	Flags: bus master, medium devsel, latency 32
+lspci -vnn: 	Bus: primary=3D03, secondary=3D04, subordinate=3D04, sec-lat=
+ency=3D32
+lspci -vnn: 	Memory behind bridge: de900000-de9fffff
+lspci -vnn: 	Prefetchable memory behind bridge: 00000000dff00000-00000000=
+e7efffff
+lspci -vnn: 	Capabilities: [dc] Power Management version 1
+lspci -vnn:=20
+lspci -vnn: 03:01.0 SCSI storage controller [0100]: QLogic Corp. ISP12160=
+ Dual Channel Ultra3 SCSI Processor [1077:1216] (rev 06)
+lspci -vnn: 	Subsystem: American Megatrends Inc. Unknown device [101e:849=
+3]
+lspci -vnn: 	Flags: bus master, 66MHz, medium devsel, latency 32, IRQ 9
+lspci -vnn: 	I/O ports at b800 [size=3D256]
+lspci -vnn: 	Memory at de800000 (32-bit, non-prefetchable) [size=3D4K]
+lspci -vnn: 	[virtual] Expansion ROM at dfe00000 [disabled] [size=3D128K]
+lspci -vnn: 	Capabilities: [44] Power Management version 1
+lspci -vnn: 	Kernel modules: qla1280
+lspci -vnn:=20
+lspci -vnn: 04:00.0 RAID bus controller [0104]: American Megatrends Inc. =
+MegaRAID [101e:1960] (rev 20)
+lspci -vnn: 	Subsystem: Dell Unknown device [1028:0493]
+lspci -vnn: 	Flags: bus master, medium devsel, latency 32, IRQ 19
+lspci -vnn: 	Memory at e0000000 (32-bit, prefetchable) [size=3D64M]
+lspci -vnn: 	[virtual] Expansion ROM at dff00000 [disabled] [size=3D64K]
+lspci -vnn: 	Capabilities: [80] Power Management version 2
+lspci -vnn: 	Kernel driver in use: megaraid
+lspci -vnn: 	Kernel modules: megaraid_mbox
+lspci -vnn:=20
+modulemap: 8086:244b piix
+modulemap: 8086:2442 uhci_hcd
+modulemap: 8086:2444 uhci_hcd
+modulemap: 10b7:9050 3c59x
+modulemap: 101e:1960 megaraid_mbox
+lsmod: Module                  Size  Used by
+lsmod: ufs                    71428  0=20
+lsmod: qnx4                   10628  0=20
+lsmod: ntfs                  199744  0=20
+lsmod: cbc                     4352  1=20
+lsmod: blkcipher               6532  1 cbc
+lsmod: sha256_generic         11008  0=20
+lsmod: aes_generic            27712  2=20
+lsmod: dm_crypt               13188  1=20
+lsmod: dm_mod                 54596  18 dm_crypt
+lsmod: xfs                   487540  0=20
+lsmod: reiserfs              207488  0=20
+lsmod: jfs                   163932  0=20
+lsmod: ext3                  120328  7=20
+lsmod: jbd                    39444  1 ext3
+lsmod: vfat                   11776  0=20
+lsmod: fat                    47772  1 vfat
+lsmod: sd_mod                 27024  3=20
+lsmod: st                     35100  0=20
+lsmod: osst                   49436  0=20
+lsmod: megaraid_mbox          30224  2=20
+lsmod: megaraid_mm            10524  1 megaraid_mbox
+lsmod: 3c59x                  41512  0=20
+lsmod: mii                     5248  1 3c59x
+lsmod: nls_iso8859_1           4096  0=20
+lsmod: isofs                  32164  0=20
+lsmod: zlib_inflate           14336  1 isofs
+lsmod: rsrc_nonstatic         11776  0=20
+lsmod: pcmcia_core            36624  1 rsrc_nonstatic
+lsmod: ide_generic             1152  0 [permanent]
+lsmod: usb_storage            76608  0=20
+lsmod: vga16fb                13068  2=20
+lsmod: vgastate                8192  1 vga16fb
+lsmod: fan                     4740  0=20
+lsmod: ide_cd                 36128  0=20
+lsmod: cdrom                  32416  1 ide_cd
+lsmod: parport_pc             33316  0=20
+lsmod: parport                33096  1 parport_pc
+lsmod: floppy                 54148  0=20
+lsmod: uhci_hcd               22800  0=20
+lsmod: qla1280               115340  0=20
+lsmod: usbcore               130924  3 usb_storage,uhci_hcd
+lsmod: scsi_mod              141068  6 sd_mod,st,osst,megaraid_mbox,usb_s=
+torage,qla1280
+lsmod: piix                    7300  0 [permanent]
+lsmod: generic                 4356  0 [permanent]
+lsmod: ide_core              106456  4 ide_generic,ide_cd,piix,generic
+lsmod: thermal                15900  0=20
+lsmod: processor              28208  1 thermal
+df: Filesystem           1k-blocks      Used Available Use% Mounted on
+df: tmpfs                   453204        20    453184   0% /dev
+df: tmpfs                   453204        20    453184   0% /dev
+df: /dev/mapper/ParasDerval-Root
+df:                         774064    109744    625000  15% /target
+df: /dev/sda1               233333    178180     43106  81% /target/boot
+df: /dev/mapper/ParasDerval-Home
+df:                      149270852    192088 141496252   0% /target/home
+df: /dev/mapper/ParasDerval-Tmp
+df:                        2064208     68688   1890664   4% /target/tmp
+df: /dev/mapper/ParasDerval-Usr
+df:                        5160576   1937156   2961276  40% /target/usr
+df: /dev/mapper/ParasDerval-Var
+df:                       10321208   1013168   8783752  10% /target/var
+df: /dev/mapper/ParasDerval-Amanda
+df:                       44026560    180240  41644312   0% /target/var/a=
+manda/hold
+df: /dev/mapper/ParasDerval-Root
+df:                         774064    109744    625000  15% /dev/.static/=
+dev
+df: tmpfs                   453204        20    453184   0% /target/dev
+free:               total         used         free       shared      buf=
+fers
+free:   Mem:       906408       880132        26276            0        9=
+3264
+free:  Swap:       524280            0       524280
+free: Total:      1430688       880132       550556
+cardctl status: /usr/bin/report-hw: line 50: cardctl: not found
+cardctl ident: /usr/bin/report-hw: line 51: cardctl: not found
+/proc/cpuinfo: processor	: 0
+/proc/cpuinfo: vendor_id	: GenuineIntel
+/proc/cpuinfo: cpu family	: 15
+/proc/cpuinfo: model		: 2
+/proc/cpuinfo: model name	: Intel(R) Pentium(R) 4 CPU 2.00GHz
+/proc/cpuinfo: stepping	: 4
+/proc/cpuinfo: cpu MHz		: 2018.119
+/proc/cpuinfo: cache size	: 512 KB
+/proc/cpuinfo: fdiv_bug	: no
+/proc/cpuinfo: hlt_bug		: no
+/proc/cpuinfo: f00f_bug	: no
+/proc/cpuinfo: coma_bug	: no
+/proc/cpuinfo: fpu		: yes
+/proc/cpuinfo: fpu_exception	: yes
+/proc/cpuinfo: cpuid level	: 2
+/proc/cpuinfo: wp		: yes
+/proc/cpuinfo: flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr =
+pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pebs b=
+ts sync_rdtsc
+/proc/cpuinfo: bogomips	: 4039.46
+/proc/cpuinfo: clflush size	: 64
+/proc/cpuinfo:=20
+/proc/ioports: 0000-001f : dma1
+/proc/ioports: 0020-0021 : pic1
+/proc/ioports: 0040-0043 : timer0
+/proc/ioports: 0050-0053 : timer1
+/proc/ioports: 0060-006f : keyboard
+/proc/ioports: 0080-008f : dma page reg
+/proc/ioports: 00a0-00a1 : pic2
+/proc/ioports: 00c0-00df : dma2
+/proc/ioports: 00f0-00ff : fpu
+/proc/ioports: 0170-0177 : 0000:00:1f.1
+/proc/ioports: 01f0-01f7 : 0000:00:1f.1
+/proc/ioports:   01f0-01f7 : ide0
+/proc/ioports: 02f8-02ff : serial
+/proc/ioports: 0376-0376 : 0000:00:1f.1
+/proc/ioports: 0378-037a : parport0
+/proc/ioports: 03c0-03df : vga+
+/proc/ioports: 03f0-03f1 : pnp 00:0e
+/proc/ioports: 03f2-03f5 : floppy
+/proc/ioports: 03f6-03f6 : 0000:00:1f.1
+/proc/ioports:   03f6-03f6 : ide0
+/proc/ioports: 03f7-03f7 : floppy DIR
+/proc/ioports: 03f8-03ff : serial
+/proc/ioports: 04d0-04d1 : pnp 00:03
+/proc/ioports: 0778-077a : parport0
+/proc/ioports: 0cf8-0cff : PCI conf1
+/proc/ioports: 8400-843f : 0000:00:1f.5
+/proc/ioports: 8800-88ff : 0000:00:1f.5
+/proc/ioports: 9000-901f : 0000:00:1f.4
+/proc/ioports:   9000-901f : uhci_hcd
+/proc/ioports: 9400-941f : 0000:00:1f.2
+/proc/ioports:   9400-941f : uhci_hcd
+/proc/ioports: 9800-980f : 0000:00:1f.1
+/proc/ioports:   9800-9807 : ide0
+/proc/ioports:   9808-980f : ide1
+/proc/ioports: a000-bfff : PCI Bus #02
+/proc/ioports:   a400-a407 : 0000:02:0c.0
+/proc/ioports:     a400-a407 : serial
+/proc/ioports:   a800-a83f : 0000:02:0a.0
+/proc/ioports:   b000-bfff : PCI Bus #03
+/proc/ioports:     b800-b8ff : 0000:03:01.0
+/proc/ioports: d000-dfff : PCI Bus #01
+/proc/ioports:   d800-d8ff : 0000:01:00.0
+/proc/ioports: e400-e47f : 0000:00:1f.0
+/proc/ioports:   e400-e47f : pnp 00:02
+/proc/ioports:     e400-e403 : ACPI PM1a_EVT_BLK
+/proc/ioports:     e404-e405 : ACPI PM1a_CNT_BLK
+/proc/ioports:     e408-e40b : ACPI PM_TMR
+/proc/ioports:     e428-e42b : ACPI GPE0_BLK
+/proc/ioports:     e42c-e42f : ACPI GPE1_BLK
+/proc/ioports: e800-e80f : 0000:00:1f.3
+/proc/ioports: ec00-ec3f : 0000:00:1f.0
+/proc/ioports:   ec00-ec3f : pnp 00:02
+/proc/iomem: 00000000-0009fbff : System RAM
+/proc/iomem: 0009fc00-0009ffff : reserved
+/proc/iomem: 000a0000-000bffff : Video RAM area
+/proc/iomem: 000c0000-000cbfff : Video ROM
+/proc/iomem: 000cc000-000cd3ff : Adapter ROM
+/proc/iomem: 000f0000-000fffff : System ROM
+/proc/iomem: 00100000-3fffbfff : System RAM
+/proc/iomem:   00100000-002b5ff0 : Kernel code
+/proc/iomem:   002b5ff1-0036ade3 : Kernel data
+/proc/iomem:   003bf000-003f595b : Kernel bss
+/proc/iomem: 3fffc000-3fffefff : ACPI Tables
+/proc/iomem: 3ffff000-3fffffff : ACPI Non-volatile Storage
+/proc/iomem: de800000-deffffff : PCI Bus #02
+/proc/iomem:   de800000-deffffff : PCI Bus #03
+/proc/iomem:     de800000-de800fff : 0000:03:01.0
+/proc/iomem:     de900000-de9fffff : PCI Bus #04
+/proc/iomem: df000000-dfcfffff : PCI Bus #01
+/proc/iomem:   df000000-df00ffff : 0000:01:00.0
+/proc/iomem: dfd00000-e7efffff : PCI Bus #02
+/proc/iomem:   dfd00000-dfd0ffff : 0000:02:0a.0
+/proc/iomem:   dfe00000-e7efffff : PCI Bus #03
+/proc/iomem:     dfe00000-dfe1ffff : 0000:03:01.0
+/proc/iomem:     dff00000-e7efffff : PCI Bus #04
+/proc/iomem:       dff00000-dff0ffff : 0000:04:00.0
+/proc/iomem:       e0000000-e3ffffff : 0000:04:00.0
+/proc/iomem:         e0000000-e3ffffff : MegaRAID: LSI Logic Corporation
+/proc/iomem: e7f00000-efffffff : PCI Bus #01
+/proc/iomem:   e7fe0000-e7ffffff : 0000:01:00.0
+/proc/iomem:   e8000000-efffffff : 0000:01:00.0
+/proc/iomem: f0000000-f7ffffff : 0000:00:00.0
+/proc/iomem: fec00000-fec00fff : reserved
+/proc/iomem: fee00000-fee00fff : reserved
+/proc/iomem: ffb80000-ffbfffff : pnp 00:02
+/proc/iomem: ffff0000-ffffffff : reserved
+/proc/interrupts:            CPU0      =20
+/proc/interrupts:   0:        215   IO-APIC-edge      timer
+/proc/interrupts:   1:       3175   IO-APIC-edge      i8042
+/proc/interrupts:   6:         18   IO-APIC-edge      floppy
+/proc/interrupts:   7:          0   IO-APIC-edge      parport0
+/proc/interrupts:  12:          3   IO-APIC-edge      i8042
+/proc/interrupts:  14:       3911   IO-APIC-edge      ide0
+/proc/interrupts:  17:        205   IO-APIC-fasteoi   uhci_hcd:usb1
+/proc/interrupts:  18:          0   IO-APIC-fasteoi   uhci_hcd:usb2
+/proc/interrupts:  19:     280715   IO-APIC-fasteoi   megaraid
+/proc/interrupts:  22:     488961   IO-APIC-fasteoi   acpi, eth0
+/proc/interrupts: NMI:          0   Non-maskable interrupts
+/proc/interrupts: LOC:     415198   Local timer interrupts
+/proc/interrupts: TRM:          0   Thermal event interrupts
+/proc/interrupts: SPU:          0   Spurious interrupts
+/proc/interrupts: ERR:          0
+/proc/interrupts: MIS:          0
+/proc/meminfo: MemTotal:       906408 kB
+/proc/meminfo: MemFree:         26308 kB
+/proc/meminfo: Buffers:         93264 kB
+/proc/meminfo: Cached:         727528 kB
+/proc/meminfo: SwapCached:          0 kB
+/proc/meminfo: Active:         251160 kB
+/proc/meminfo: Inactive:       577144 kB
+/proc/meminfo: SwapTotal:      524280 kB
+/proc/meminfo: SwapFree:       524280 kB
+/proc/meminfo: Dirty:            1712 kB
+/proc/meminfo: Writeback:           0 kB
+/proc/meminfo: AnonPages:        7536 kB
+/proc/meminfo: Mapped:           1856 kB
+/proc/meminfo: Slab:            41060 kB
+/proc/meminfo: SReclaimable:    30136 kB
+/proc/meminfo: SUnreclaim:      10924 kB
+/proc/meminfo: PageTables:        212 kB
+/proc/meminfo: NFS_Unstable:        0 kB
+/proc/meminfo: Bounce:              0 kB
+/proc/meminfo: CommitLimit:    977484 kB
+/proc/meminfo: Committed_AS:    10640 kB
+/proc/meminfo: VmallocTotal:   122564 kB
+/proc/meminfo: VmallocUsed:      7572 kB
+/proc/meminfo: VmallocChunk:   114588 kB
+/proc/meminfo: HugePages_Total:     0
+/proc/meminfo: HugePages_Free:      0
+/proc/meminfo: HugePages_Rsvd:      0
+/proc/meminfo: HugePages_Surp:      0
+/proc/meminfo: Hugepagesize:     4096 kB
+/proc/bus/input/devices: I: Bus=3D0011 Vendor=3D0001 Product=3D0001 Versi=
+on=3Dab41
+/proc/bus/input/devices: N: Name=3D"AT Translated Set 2 keyboard"
+/proc/bus/input/devices: P: Phys=3Disa0060/serio0/input0
+/proc/bus/input/devices: S: Sysfs=3D/class/input/input0
+/proc/bus/input/devices: U: Uniq=3D
+/proc/bus/input/devices: H: Handlers=3Dkbd=20
+/proc/bus/input/devices: B: EV=3D120013
+/proc/bus/input/devices: B: KEY=3D4 2000000 3803078 f800d001 feffffdf ffe=
+fffff ffffffff fffffffe
+/proc/bus/input/devices: B: MSC=3D10
+/proc/bus/input/devices: B: LED=3D7
+/proc/bus/input/devices:=20
+dmidecode: /usr/bin/report-hw: line 65: dmidecode: not found
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+Installer status:
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+Package: preseed-common
+Status: install ok unpacked
+Version: 1.35
+Depends: cdebconf-udeb, di-utils (>=3D 1.14)
+Description: common files for preseeding
+
+Package: udpkg
+Status: install ok unpacked
+Version: 1.06
+Depends: libc6 (>=3D 2.5-5), libdebian-installer4-udeb (>=3D 0.51)
+Description: tiny dpkg clone
+
+Package: localechooser
+Status: install ok installed
+Version: 2.00
+Depends: cdebconf-udeb, di-utils (>=3D 1.15), iso-3166-udeb
+Description: choose language/country/locale
+Installer-Menu-Item: 1000
+
+Package: fb-modules-2.6.24-1-486-di
+Status: install ok unpacked
+Version: 1.59
+Provides: fb-modules
+Depends: kernel-image-2.6.24-1-486-di
+Description: Frame buffer support
+
+Package: libnss-dns-udeb
+Status: install ok unpacked
+Version: 2.7-10
+Description: GNU C Library: NSS helper for DNS - udeb
+
+Package: cdrom-checker
+Status: install ok unpacked
+Version: 1.13
+Depends: cdebconf-udeb (>=3D 0.31), cdrom-detect
+Description: Verify the cd contents
+Installer-Menu-Item: 94000
+
+Package: lowmemcheck
+Status: install ok unpacked
+Version: 1.28
+Depends: cdebconf-udeb (>=3D 0.75), main-menu (>=3D 1.03)
+Description: detect low-memory systems and enter lowmem mode
+
+Package: cdrom-retriever
+Status: install ok installed
+Version: 1.16
+Provides: retriever
+Depends: cdebconf-udeb, cdrom-detect
+Description: Fetch modules from a CDROM
+
+Package: scsi-common-modules-2.6.24-1-486-di
+Status: install ok unpacked
+Version: 1.59
+Provides: scsi-common-modules
+Depends: cdrom-core-modules-2.6.24-1-486-di, kernel-image-2.6.24-1-486-di=
+, scsi-core-modules-2.6.24-1-486-di
+Description: Very common SCSI drivers
+
+Package: main-menu
+Status: install ok unpacked
+Version: 1.26
+Depends: cdebconf-udeb, libc6 (>=3D 2.7-1), libdebconfclient0-udeb, libde=
+bian-installer4-udeb (>=3D 0.57)
+Description: Debian installer main menu
+
+Package: di-utils-shell
+Status: install ok unpacked
+Version: 1.56
+Depends: cdebconf-udeb, di-utils (>=3D 1.18)
+Description: Execute a shell
+Installer-Menu-Item: 95000
+
+Package: di-utils
+Status: install ok installed
+Version: 1.56
+Depends: cdebconf-udeb, libc6 (>=3D 2.7-1), libdebian-installer4-udeb (>=3D=
+ 0.56)
+Description: Miscellaneous utilities for the debian installer
+
+Package: floppy-modules-2.6.24-1-486-di
+Status: install ok unpacked
+Version: 1.59
+Provides: floppy-modules
+Depends: kernel-image-2.6.24-1-486-di
+Description: Floppy driver
+
+Package: ide-core-modules-2.6.24-1-486-di
+Status: install ok unpacked
+Version: 1.59
+Provides: ide-core-modules
+Depends: kernel-image-2.6.24-1-486-di
+Description: IDE support
+
+Package: cdebconf-newt-udeb
+Status: install ok unpacked
+Version: 0.129
+Depends: cdebconf-udeb, di-utils-terminfo, libc6 (>=3D 2.7-1), libnewt0.5=
+2, libslang2-udeb (>=3D 2.0.7-1)
+Description: Newt frontend for Debian Configuration Management System
+
+Package: dhcp3-client-udeb
+Status: install ok installed
+Version: 3.1.0-5
+Depends: libc6 (>=3D 2.7-1)
+Description: DHCP Client for debian-installer
+
+Package: module-init-tools-udeb
+Status: install ok unpacked
+Version: 3.4-1
+Depends: libc6 (>=3D 2.7-1)
+Description: tools for managing Linux kernel modules
+
+Package: scsi-core-modules-2.6.24-1-486-di
+Status: install ok unpacked
+Version: 1.59
+Provides: scsi-core-modules
+Depends: kernel-image-2.6.24-1-486-di
+Description: Core SCSI subsystem
+
+Package: rootskel
+Status: install ok installed
+Version: 1.61
+Depends: cdebconf-udeb, di-utils (>=3D 1.43)
+Description: Skeleton root filesystem used by debian-installer
+
+Package: sata-modules-2.6.24-1-486-di
+Status: install ok unpacked
+Version: 1.59
+Provides: sata-modules
+Depends: ata-modules-2.6.24-1-486-di, kernel-image-2.6.24-1-486-di, scsi-=
+core-modules-2.6.24-1-486-di
+Description: SATA drivers
+
+Package: udev-udeb
+Status: install ok unpacked
+Version: 0.114-2
+Depends: libc6 (>=3D 2.6-1)
+Description: /dev/ and hotplug management daemon
+
+Package: pcmcia-storage-modules-2.6.24-1-486-di
+Status: install ok unpacked
+Version: 1.59
+Provides: pcmcia-storage-modules
+Depends: ata-modules-2.6.24-1-486-di, cdrom-core-modules-2.6.24-1-486-di,=
+ ide-core-modules-2.6.24-1-486-di, kernel-image-2.6.24-1-486-di, pcmcia-m=
+odules-2.6.24-1-486-di
+Description: PCMCIA storage drivers
+
+Package: brltty-udeb
+Status: install ok unpacked
+Version: 3.9-6
+Depends: libc6 (>=3D 2.7-1)
+Description: Access software for a blind person using a braille display
+
+Package: libfribidi0-udeb
+Status: install ok unpacked
+Version: 0.10.9-1
+Depends: libc6 (>=3D 2.7-1)
+Description: Free Implementation of the Unicode BiDi algorithm
+
+Package: firewire-core-modules-2.6.24-1-486-di
+Status: install ok unpacked
+Version: 1.59
+Provides: firewire-core-modules
+Depends: kernel-image-2.6.24-1-486-di, scsi-core-modules-2.6.24-1-486-di
+Description: Core FireWire drivers
+
+Package: libtextwrap1-udeb
+Status: install ok installed
+Version: 0.1-6
+Depends: libc6 (>=3D 2.7-1)
+Description: text-wrapping library with i18n - runtime udeb
+
+Package: auto-install
+Status: install ok unpacked
+Version: 1.2
+Depends: cdebconf-udeb, netcfg, preseed-common (>=3D 1.18)
+Description: Support for automatic installs
+Installer-Menu-Item: 1900
+
+Package: usb-serial-modules-2.6.24-1-486-di
+Status: install ok unpacked
+Version: 1.59
+Provides: usb-serial-modules
+Depends: kernel-image-2.6.24-1-486-di, usb-modules-2.6.24-1-486-di
+Description: USB serial drivers
+
+Package: rescue-check
+Status: install ok unpacked
+Version: 1.13
+Depends: cdebconf-udeb (>=3D 0.75), di-utils (>=3D 1.18), main-menu (>=3D=
+ 1.03)
+Description: enter d-i rescue mode if requested
+
+Package: nano-udeb
+Status: install ok unpacked
+Version: 2.0.7-1
+Provides: editor
+Depends: libc6 (>=3D 2.7-1), libslang2-udeb (>=3D 2.0.7-1)
+Description: free Pico clone with some new features - tiny build
+
+Package: cdebconf-udeb
+Status: install ok installed
+Version: 0.129
+Provides: debconf-2.0
+Depends: libc6 (>=3D 2.7-1), libdebian-installer4-udeb (>=3D 0.57), libte=
+xtwrap1-udeb
+Description: Debian Configuration Management System (C-implementation)
+
+Package: ai-choosers
+Status: install ok unpacked
+Version: 1.2
+Depends: keyboard-setup, localechooser (>=3D 1.23)
+Description: Delayed configuration of locale and keyboard for auto-instal=
+l
+Installer-Menu-Item: 2200
+
+Package: load-cdrom
+Status: install ok installed
+Version: 1.16
+Depends: anna (>=3D 1.07), cdebconf-udeb, cdrom-retriever
+Description: Load installer components from CD
+Installer-Menu-Item: 1600
+
+Package: cdebconf-text-udeb
+Status: install ok unpacked
+Version: 0.129
+Depends: cdebconf-udeb, libc6 (>=3D 2.7-1)
+Description: Plain text frontend for Debian Configuration Management Syst=
+em
+
+Package: ide-modules-2.6.24-1-486-di
+Status: install ok unpacked
+Version: 1.59
+Provides: ide-modules
+Depends: ide-core-modules-2.6.24-1-486-di, kernel-image-2.6.24-1-486-di, =
+zlib-modules-2.6.24-1-486-di
+Description: IDE drivers
+
+Package: iso-3166-udeb
+Status: install ok installed
+Version: 2.0-1
+Description: provides iso_3166.tab file
+
+Package: kernel-image-2.6.24-1-486-di
+Status: install ok unpacked
+Version: 1.59
+Provides: ext2-modules, kernel-image
+Description: Linux kernel binary image for the Debian installer
+
+Package: ata-modules-2.6.24-1-486-di
+Status: install ok unpacked
+Version: 1.59
+Provides: ata-modules
+Depends: kernel-image-2.6.24-1-486-di, scsi-core-modules-2.6.24-1-486-di
+Description: ATA disk modules
+
+Package: core-modules-2.6.24-1-486-di
+Status: install ok unpacked
+Version: 1.59
+Provides: core-modules
+Depends: kernel-image-2.6.24-1-486-di
+Description: Core modules
+
+Package: floppy-retriever
+Status: install ok unpacked
+Version: 1.17
+Provides: retriever
+Depends: cdebconf-udeb, mountfloppy
+Description: Fetches modules from a floppy
+
+Package: ethdetect
+Status: install ok installed
+Version: 1.60
+Provides: ethernet-card-detection
+Depends: cdebconf-udeb (>=3D 0.38), di-utils (>=3D 1.13), hw-detect, root=
+skel (>=3D 1.30)
+Description: Detect network hardware and load kernel drivers for it
+Installer-Menu-Item: 1700
+
+Package: busybox-udeb
+Status: install ok unpacked
+Version: 1:1.9.2-2
+Depends: libc6 (>=3D 2.7-1)
+Description: Tiny utilities for the debian-installer
+
+Package: initrd-preseed
+Status: install ok unpacked
+Version: 1.35
+Depends: preseed-common
+Description: load debconf preseed file from /preseed.cfg on the initrd
+
+Package: scsi-modules-2.6.24-1-486-di
+Status: install ok unpacked
+Version: 1.59
+Provides: scsi-modules
+Depends: cdrom-core-modules-2.6.24-1-486-di, core-modules-2.6.24-1-486-di=
+, kernel-image-2.6.24-1-486-di, parport-modules-2.6.24-1-486-di, scsi-cor=
+e-modules-2.6.24-1-486-di
+Description: SCSI drivers
+
+Package: usb-modules-2.6.24-1-486-di
+Status: install ok unpacked
+Version: 1.59
+Provides: usb-modules
+Depends: kernel-image-2.6.24-1-486-di
+Description: USB support
+
+Package: libiw29-udeb
+Status: install ok installed
+Version: 29-1
+Depends: libc6 (>=3D 2.6.1-1)
+Description: Tools for manipulating Linux Wireless Extensions
+
+Package: archdetect
+Status: install ok installed
+Version: 1.60
+Depends: libc6 (>=3D 2.7-1), libdebian-installer4-udeb (>=3D 0.57)
+Description: Hardware architecture detector
+
+Package: parport-modules-2.6.24-1-486-di
+Status: install ok unpacked
+Version: 1.59
+Provides: parport-modules
+Depends: kernel-image-2.6.24-1-486-di
+Description: Parallel port support
+
+Package: save-logs
+Status: install ok unpacked
+Version: 2.33
+Depends: cdebconf-udeb
+Description: save logs and configuration for debug purposes
+Installer-Menu-Item: 94000
+
+Package: cdrom-core-modules-2.6.24-1-486-di
+Status: install ok unpacked
+Version: 1.59
+Provides: cdrom-core-modules
+Depends: ide-modules-2.6.24-1-486-di, kernel-image-2.6.24-1-486-di, scsi-=
+core-modules-2.6.24-1-486-di
+Description: CDROM support
+
+Package: di-utils-reboot
+Status: install ok unpacked
+Version: 1.56
+Depends: cdebconf-udeb
+Description: Reboot
+Installer-Menu-Item: 99500
+
+Package: anna
+Status: install ok installed
+Version: 1.30
+Depends: cdebconf-udeb, libc6 (>=3D 2.7-1), libdebconfclient0-udeb, libde=
+bian-installer4-udeb (>=3D 0.55)
+Description: anna's not nearly apt, but for the Debian installer, it will=
+ do
+
+Package: libsysfs2-udeb
+Status: install ok unpacked
+Version: 2.1.0-4
+Depends: libc6 (>=3D 2.7-1)
+Description: interface library to sysfs
+
+Package: pcmciautils-udeb
+Status: install ok unpacked
+Version: 014-4
+Depends: udev-udeb, libc6 (>=3D 2.6-1), libsysfs2-udeb
+Description: PCMCIA utilities for Linux 2.6
+
+Package: pciutils-udeb
+Status: install ok unpacked
+Version: 1:2.2.10-1
+Depends: libc6 (>=3D 2.7-1), zlib1g-udeb (>=3D 1:1.2.3.3.dfsg-1)
+Description: Linux PCI Utilities (udeb)
+
+Package: console-keymaps-at
+Status: install ok installed
+Version: 2:1.06-2
+Provides: console-keymaps
+Depends: cdebconf-udeb
+Description: keymaps for PC-style (PS/2 and AT) keyboards
+
+Package: input-modules-2.6.24-1-486-di
+Status: install ok unpacked
+Version: 1.59
+Provides: input-modules
+Depends: kernel-image-2.6.24-1-486-di, usb-modules-2.6.24-1-486-di
+Description: Input devices support
+
+Package: zlib-modules-2.6.24-1-486-di
+Status: install ok unpacked
+Version: 1.59
+Provides: zlib-modules
+Depends: kernel-image-2.6.24-1-486-di
+Description: zlib modules
+
+Package: di-utils-terminfo
+Status: install ok unpacked
+Version: 1.56
+Description: Terminfo entries needed by newt/slang in debian installer
+
+Package: hw-detect
+Status: install ok installed
+Version: 1.60
+Depends: archdetect, cdebconf-udeb (>=3D 0.75), di-utils (>=3D 1.48), roo=
+tskel (>=3D 1.30)
+Description: Detect hardware and load kernel drivers for it
+
+Package: kbd-chooser
+Status: install ok installed
+Version: 1.43
+Provides: keyboard-setup
+Depends: cdebconf-udeb, console-keymaps, libc6 (>=3D 2.7-1), libdebconfcl=
+ient0-udeb, libdebian-installer4-udeb (>=3D 0.55)
+Description: Detect a keyboard and select layout
+Installer-Menu-Item: 1200
+
+Package: pcmcia-modules-2.6.24-1-486-di
+Status: install ok unpacked
+Version: 1.59
+Provides: pcmcia-modules
+Depends: core-modules-2.6.24-1-486-di, kernel-image-2.6.24-1-486-di
+Description: Common PCMCIA drivers
+
+Package: libdebian-installer4-udeb
+Status: install ok installed
+Version: 0.57
+Depends: libc6 (>=3D 2.7-1)
+Description: Library of common debian-installer functions
+
+Package: serial-modules-2.6.24-1-486-di
+Status: install ok unpacked
+Version: 1.59
+Provides: serial-modules
+Depends: kernel-image-2.6.24-1-486-di, pcmcia-modules-2.6.24-1-486-di
+Description: Serial drivers
+
+Package: usb-storage-modules-2.6.24-1-486-di
+Status: install ok unpacked
+Version: 1.59
+Provides: usb-storage-modules
+Depends: ide-core-modules-2.6.24-1-486-di, kernel-image-2.6.24-1-486-di, =
+scsi-core-modules-2.6.24-1-486-di, usb-modules-2.6.24-1-486-di
+Description: USB storage support
+
+Package: acpi-modules-2.6.24-1-486-di
+Status: install ok unpacked
+Version: 1.59
+Provides: acpi-modules
+Depends: kernel-image-2.6.24-1-486-di
+Description: ACPI support modules
+
+Package: installation-locale
+Status: install ok unpacked
+Version: 1.2
+Depends: rootskel
+Description: UTF-8 C locale
+
+Package: env-preseed
+Status: install ok unpacked
+Version: 1.35
+Description: debconf preseeding via environment variables
+
+Package: mountfloppy
+Status: install ok unpacked
+Version: 0.15
+Depends: cdebconf-udeb, di-utils (>=3D 1.48)
+Description: Mounts a floppy
+
+Package: cdebconf-priority
+Status: install ok unpacked
+Version: 0.129
+Depends: cdebconf-udeb
+Description: Change debconf priority
+Installer-Menu-Item: 93000
+
+Package: netcfg
+Status: install ok installed
+Version: 1.43
+Provides: configured-network
+Depends: dhcp3-client-udeb (>=3D 3.1.0-2), ethernet-card-detection, libc6=
+ (>=3D 2.7-1), libdebconfclient0-udeb, libdebian-installer4-udeb (>=3D 0.=
+57), libiw29-udeb (>=3D 28+29pre7)
+Description: Configure the network
+Installer-Menu-Item: 1800
+
+Package: file-preseed
+Status: install ok unpacked
+Version: 1.35
+Depends: cdebconf-udeb, di-utils, preseed-common
+Description: load debconf preseed file
+Installer-Menu-Item: 1400
+
+Package: zlib1g-udeb
+Status: install ok unpacked
+Version: 1:1.2.3.3.dfsg-12
+Description: compression library - runtime for Debian installer
+
+Package: fat-modules-2.6.24-1-486-di
+Status: install ok unpacked
+Version: 1.59
+Provides: fat-modules
+Depends: kernel-image-2.6.24-1-486-di
+Description: FAT filesystem support
+
+Package: libdebconfclient0-udeb
+Status: install ok installed
+Version: 0.129
+Depends: cdebconf-udeb, libc6 (>=3D 2.7-1)
+Description: Debian Configuration Management System (C-implementation)
+
+Package: bogl-bterm-udeb
+Status: install ok unpacked
+Version: 0.1.18-2
+Provides: editor
+Depends: libc-udeb
+Description: Ben's Own Graphics Library - graphical terminal
+
+Package: cdrom-detect
+Status: install ok installed
+Version: 1.27
+Depends: cdebconf-udeb, di-utils (>=3D 1.48), hw-detect
+Description: Detect CDROM devices and mount the CD
+Installer-Menu-Item: 1300
+
+Package: debian-installer
+Status: install ok installed
+Version: cdrom-isolinux-20080412-19:03
+Description: debian installation image
+
+Package: apt-cdrom-setup
+Status: install ok installed
+Priority: extra
+Section: debian-installer
+Installed-Size: 240
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1:0.35
+Depends: cdebconf-udeb, cdrom-detect
+Provides: apt-mirror-setup
+Description: set up a CD in sources.list
+
+Package: apt-mirror-setup
+Status: install ok installed
+Priority: extra
+Section: debian-installer
+Installed-Size: 172
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1:0.35
+Depends: cdebconf-udeb, choose-mirror-bin
+Description: set up a mirror in sources.list
+
+Package: apt-setup-udeb
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 156
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1:0.35
+Depends: apt-mirror-setup, cdebconf-udeb, installed-base
+Description: Configure apt
+Installer-Menu-Item: 7000
+
+Package: base-installer
+Status: install ok installed
+Priority: required
+Section: debian-installer
+Installed-Size: 152
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.89
+Depends: cdebconf-udeb, di-utils (>=3D 1.48), di-utils-mapdevfs, rootskel=
+ (>=3D 1.19)
+Description: base system installation framework
+
+Package: bootstrap-base
+Status: install ok installed
+Priority: required
+Section: debian-installer
+Installed-Size: 476
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.89
+Depends: archdetect, base-installer, created-fstab, debian-archive-keyrin=
+g-udeb, debootstrap-udeb (>=3D 1.0.7), gpgv-udeb, libc6 (>=3D 2.7-1), lib=
+debconfclient0-udeb, libdebian-installer4-udeb (>=3D 0.56), mounted-parti=
+tions
+Provides: installed-base, kernel-installer
+Description: Install the base system
+Installer-Menu-Item: 6500
+
+Package: choose-mirror-bin
+Status: install ok installed
+Priority: extra
+Section: debian-installer
+Installed-Size: 340
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 2.24
+Depends: cdebconf-udeb, libc6 (>=3D 2.7-1), libdebconfclient0-udeb, libde=
+bian-installer4-udeb (>=3D 0.57)
+Description: Choose mirror to install from (program)
+
+Package: clock-setup
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 116
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 0.95
+Depends: cdebconf-udeb, configured-network, di-utils, localechooser, rdat=
+e-udeb (>=3D 1:1.1.2-5), tzsetup-udeb (>=3D 1:0.18)
+Description: set up clock
+Installer-Menu-Item: 2600
+
+Package: crc-modules-2.6.24-1-486-di
+Status: install ok installed
+Priority: extra
+Section: debian-installer
+Installed-Size: 32
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.59
+Depends: kernel-image-2.6.24-1-486-di
+Provides: crc-modules
+Description: CRC modules
+ This package contains CRC support modules.
+
+Package: crypto-core-modules-2.6.24-1-486-di
+Status: install ok installed
+Priority: extra
+Section: debian-installer
+Installed-Size: 40
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.59
+Depends: kernel-image-2.6.24-1-486-di
+Provides: crypto-core-modules
+Description: Core crypto modules
+ This package contains crypto modules needed for both encrypted file syst=
+ems
+ and wireless networking (WEP).
+
+Package: debian-archive-keyring-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 32
+Maintainer: Michael Vogt <mvo@debian.org>
+Version: 2007.07.31
+Recommends: gpgv-udeb
+Description: GnuPG keys of the Debian archive
+ The Debian project digitally signs its Release files. This package
+ contains the archive keys used for that, in a minimal form for use
+ in the installer.
+
+Package: debootstrap-udeb
+Status: install ok installed
+Priority: extra
+Section: debian-installer
+Installed-Size: 96
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.0.8
+Depends: mounted-partitions
+Description: Bootstrap the Debian system
+
+Package: di-utils-mapdevfs
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 4
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.56
+Depends: libc6 (>=3D 2.7-1), libdebian-installer4-udeb (>=3D 0.56)
+Description: mapdevfs utility for the debian installer
+
+Package: disk-detect
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 68
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.60
+Depends: cdebconf-udeb (>=3D 0.38), di-utils (>=3D 1.13), hw-detect
+Provides: harddrive-detection
+Description: Detect disk drives
+Installer-Menu-Item: 3500
+
+Package: e2fsprogs-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 400
+Maintainer: Theodore Y. Ts'o <tytso@mit.edu>
+Version: 1.40.8-2
+Depends: libblkid1-udeb, libc6 (>=3D 2.7-1)
+Description: stripped-down versions of e2fsprogs, for debian-installer
+ This package is an e2fsprogs package built for a reduced size, so that
+ it can help to save space in debian-installer.
+ .
+ Don't attempt to install this package, it has no support for a couple of
+ features you surely want.  Anyway it should refuse to install.
+
+Package: efi-modules-2.6.24-1-486-di
+Status: install ok installed
+Priority: extra
+Section: debian-installer
+Installed-Size: 44
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.59
+Depends: kernel-image-2.6.24-1-486-di
+Provides: efi-modules
+Description: EFI modules
+ This package contains EFI modules.
+
+Package: eject-udeb
+Status: install ok unpacked
+Priority: optional
+Section: debian-installer
+Installed-Size: 212
+Maintainer: Frank Lichtenheld <djpig@debian.org>
+Version: 2.1.5-6
+Depends: libc6 (>=3D 2.6.1-1), cdebconf-udeb
+Description: ejects CDs from d-i menu
+Installer-Menu-Item: 96000
+
+Package: elilo-installer
+Status: install ok unpacked
+Priority: standard
+Section: debian-installer
+Installed-Size: 88
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.12
+Depends: cdebconf-udeb, installed-base, partconf-find-partitions (>=3D 1.=
+08), di-utils-mapdevfs, fat-modules, efi-modules
+Provides: bootable-system
+Description: Install elilo on a hard disk
+Installer-Menu-Item: 7600
+
+Package: ext3-modules-2.6.24-1-486-di
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 228
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.59
+Depends: kernel-image-2.6.24-1-486-di
+Provides: ext3-modules
+Description: EXT3 filesystem support
+ This package contains the EXT3 filesystem module for the Linux kernel.
+
+Package: fdisk-udeb
+Status: install ok unpacked
+Priority: extra
+Section: debian-installer
+Installed-Size: 160
+Maintainer: LaMont Jones <lamont@debian.org>
+Version: 2.13.1-4
+Depends: libc6 (>=3D 2.7-1)
+Description: Manually partition a hard drive (fdisk)
+Installer-Menu-Item: 99900
+
+Package: finish-install
+Status: install ok unpacked
+Priority: required
+Section: debian-installer
+Installed-Size: 116
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 2.16
+Depends: archdetect, bootable-system, cdebconf-udeb, created-fstab, insta=
+lled-base
+Description: Finish the installation and reboot
+Installer-Menu-Item: 7800
+
+Package: gpgv-udeb
+Status: install ok installed
+Priority: extra
+Section: debian-installer
+Installed-Size: 236
+Maintainer: James Troup <james@nocrew.org>
+Version: 1.4.6-2.1
+Depends: libc6 (>=3D 2.7-1), zlib1g-udeb (>=3D 1:1.2.3.3.dfsg-1)
+Description: minimal signature verification tool
+ GnuPG is GNU's tool for secure communication and data storage.
+ It can be used to encrypt data and to create digital signatures.
+ It includes an advanced key management facility and is compliant
+ with the proposed OpenPGP Internet standard as described in RFC2440.
+ .
+ This is GnuPG's signature verification tool, gpgv, packaged in minimal
+ form for use in debian-installer.
+
+Package: grub-installer
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 388
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.30
+Depends: cdebconf-udeb, created-fstab, di-utils (>=3D 1.15), di-utils-map=
+devfs, kernel-installer, os-prober, partman-utils
+Provides: bootable-system
+Description: Install GRUB on a hard disk
+Installer-Menu-Item: 7400
+
+Package: jfs-modules-2.6.24-1-486-di
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 224
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.59
+Depends: kernel-image-2.6.24-1-486-di
+Provides: jfs-modules
+Description: JFS filesystem support
+ This package contains the JFS filesystem module for the Linux kernel.
+
+Package: jfsutils-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 984
+Maintainer: Stefan Hornburg (Racke) <racke@linuxia.de>
+Version: 1.1.11-1
+Depends: libc6 (>=3D 2.3.6-6), libuuid1-udeb
+Description: A stripped-down version of jfsutils, for debian-installer
+ This package is a jfsutils package built for reduced size, so that it
+ can help to save space in debian-installer.
+ .
+ Don't attempt to install this package, it has no support for a couple of
+ features you surely want.  Anyway, it should fail to install.
+
+Package: kickseed-common
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 156
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 0.48
+Depends: di-utils (>=3D 1.20)
+Description: Common files for Kickstart compatibility
+ This package reads Kickstart files and preseeds an installation with the=
+m,
+ translating to the d-i preseeding infrastructure.
+
+Package: libblkid1-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 44
+Maintainer: Theodore Y. Ts'o <tytso@mit.edu>
+Version: 1.40.8-2
+Depends: libc6 (>=3D 2.7-1)
+Description: block device id library
+ The blkid library which allows system programs like fsck and
+ mount to quickly and easily find block devices by filesystem UUID and
+ LABEL.  This allows system administrators to avoid specifiying
+ filesystems by hard-coded device names, but via a logical naming
+ system instead.
+ .
+ This is a minimal package for debian-installer.
+
+Package: libc6-udeb
+Status: install ok installed
+Priority: extra
+Section: debian-installer
+Installed-Size: 1724
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Version: 2.7-10
+Provides: glibc-2.7-1, libc-udeb, libc6
+Description: GNU C Library: Shared libraries - udeb
+ Contains the standard libraries that are used by nearly all programs on
+ the system. This package includes shared versions of the standard C libr=
+ary
+ and the standard math library, as well as many others.
+ .
+ This package contains a minimal set of libraries needed for the Debian
+ installer.  Do not install it on a normal system.
+
+Package: libparted1.7-udeb
+Status: install ok installed
+Priority: extra
+Section: debian-installer
+Installed-Size: 340
+Maintainer: Parted Maintainer Team <parted-maintainers@lists.alioth.debia=
+n.org>
+Version: 1.7.1-5.1
+Depends: libc6 (>=3D 2.3.6-6), libuuid1-udeb
+Provides: libparted1.7-1
+Description: The GNU Parted disk partitioning shared library
+ GNU Parted is a program that allows you to create, destroy,
+ resize, move and copy hard disk partitions. This is useful
+ for creating space for new operating systems, reorganising
+ disk usage, and copying data to new hard disks. This package
+ contains the Parted binary and manual page.
+ .
+ This package contains libparted, the required shared library
+ used by Parted. This is a cut-down package with no normal
+ documentation intended to be used in debian-installer.
+ .
+ Parted currently supports DOS, Mac, Sun, BSD, GPT, MIPS and
+ PC98 disklabels/partition tables, as well as a 'loop' (raw
+ disk) type which allows use on RAID/LVM. Filesystems which
+ are currently fully supported are ext2, ext3, fat (FAT16
+ and FAT32), ReiserFS (with libreiserfs) and linux-swap.
+ Parted can also detect and remove HFS (Mac OS), JFS, NTFS,
+ UFS (Sun and HP), XFS and ASFS/AFFS/APFS (Amiga) filesystems,
+ but cannot create, resize or check these filesystems yet.
+ .
+ Note that ReiserFS support is only enabled if you install
+ the libreiserfs0.3-0 package. Since libreiserfs0.3-0 has been
+ removed from sarge, ReiserFS support is not compiled in the
+ default package.
+ .
+ The nature of this software means that any bugs could cause
+ massive data loss. While there are no known bugs at the moment,
+ they could exist, so please back up all important files before
+ running it, and do so at your own risk.
+
+Package: libpcre3-udeb
+Status: install ok installed
+Priority: important
+Section: debian-installer
+Installed-Size: 160
+Maintainer: Mark Baker <mark@mnb.org.uk>
+Version: 7.6-2
+Depends: libc6 (>=3D 2.7-1), libpcre3-udeb (>=3D 7.4)
+Description: Perl 5 Compatible Regular Expression Library - runtime files=
+ (udeb)
+ This is a library of functions to support regular expressions whose synt=
+ax
+ and semantics are as close as possible to those of the Perl 5 language.
+ .
+ This package contains the runtime libraries for the Debian Installer (ud=
+eb).
+
+Package: libuuid1-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 24
+Maintainer: Theodore Y. Ts'o <tytso@mit.edu>
+Version: 1.40.8-2
+Depends: libc6 (>=3D 2.7-1)
+Description: universally unique id library
+ libuuid generates and parses 128-bit universally unique id's (UUID's).
+ See RFC 4122 for more information.
+ .
+ This is a minimal package for debian-installer.
+
+Package: lilo-installer
+Status: install ok unpacked
+Priority: standard
+Section: debian-installer
+Installed-Size: 212
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.27
+Depends: cdebconf-udeb, di-utils (>=3D 1.15), di-utils-mapdevfs, fdisk-ud=
+eb, kernel-installer, os-prober
+Provides: bootable-system
+Description: Install LILO on a hard disk
+Installer-Menu-Item: 7500
+
+Package: loop-modules-2.6.24-1-486-di
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 52
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.59
+Depends: kernel-image-2.6.24-1-486-di
+Provides: loop-modules
+Description: Loopback filesystem support
+ This package contains loopback filesystem support for the Linux kernel.
+
+Package: md-modules-2.6.24-1-486-di
+Status: install ok installed
+Priority: extra
+Section: debian-installer
+Installed-Size: 504
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.59
+Depends: kernel-image-2.6.24-1-486-di
+Provides: md-modules
+Description: RAID and LVM support
+ This package contains RAID and LVM modules for the Linux kernel.
+
+Package: mdadm-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 172
+Maintainer: Debian mdadm maintainers <pkg-mdadm-devel@lists.alioth.debian=
+.org>
+Version: 2.6.4-1
+Depends: libc6 (>=3D 2.7-1)
+Description: tool to administer Linux MD arrays (software RAID)
+ mdadm is a program that can be used to create, manage, and monitor MD
+ arrays (e.g. software RAID, multipath devices).
+ .
+ mdadm-udeb is a minimal package used by the debian-installer.
+
+Package: mdcfg-utils
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 408
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.24
+Depends: cdebconf-udeb, di-utils (>=3D 1.16), md-modules, mdadm-udeb (>=3D=
+ 2.5.2), partconf-find-partitions
+Description: Configure MD devices
+ Use this module to configure the MD devices.
+
+Package: mkreiserfs-udeb
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 144
+Maintainer: Ed Boraas <ed@debian.org>
+Version: 1:3.6.19-6
+Depends: libc6 (>=3D 2.6-1), libuuid1-udeb
+Description: User-level tools for ReiserFS filesystems
+ This installer module contains the utility to create ReiserFS filesystem=
+s.
+ .
+  Homepage: http://www.namesys.com/
+
+Package: network-preseed
+Status: install ok unpacked
+Priority: standard
+Section: debian-installer
+Installed-Size: 20
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.35
+Depends: cdebconf-udeb, configured-network, preseed-common
+Description: download debconf preseed file
+Installer-Menu-Item: 2100
+
+Package: nic-extra-modules-2.6.24-1-486-di
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 2828
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.59
+Depends: core-modules-2.6.24-1-486-di, crc-modules-2.6.24-1-486-di, kerne=
+l-image-2.6.24-1-486-di, nic-shared-modules-2.6.24-1-486-di
+Provides: nic-extra-modules
+Description: Rare NIC drivers
+ This package contains rare NIC drivers for the Linux kernel.
+
+Package: nic-modules-2.6.24-1-486-di
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 428
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.59
+Depends: core-modules-2.6.24-1-486-di, firewire-core-modules-2.6.24-1-486=
+-di, kernel-image-2.6.24-1-486-di, nic-shared-modules-2.6.24-1-486-di
+Provides: nic-modules
+Description: Common NIC drivers
+ This package contains common NIC drivers for the Linux kernel.
+
+Package: nic-pcmcia-modules-2.6.24-1-486-di
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 672
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.59
+Depends: kernel-image-2.6.24-1-486-di, nic-shared-modules-2.6.24-1-486-di=
+, nic-wireless-modules-2.6.24-1-486-di, pcmcia-modules-2.6.24-1-486-di
+Provides: nic-pcmcia-modules
+Description: Common PCMCIA NIC drivers
+ This package contains common PCMCIA NIC drivers for the Linux kernel.
+
+Package: nic-shared-modules-2.6.24-1-486-di
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 56
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.59
+Depends: kernel-image-2.6.24-1-486-di
+Provides: nic-shared-modules
+Description: Shared NIC drivers
+ This package contains NIC drivers needed by combinations of nic-modules,
+ nic-extra-modules, nic-pcmcia-modules, and nic-wireless-modules.
+
+Package: nic-usb-modules-2.6.24-1-486-di
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 368
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.59
+Depends: core-modules-2.6.24-1-486-di, kernel-image-2.6.24-1-486-di, nic-=
+shared-modules-2.6.24-1-486-di, nic-wireless-modules-2.6.24-1-486-di, usb=
+-modules-2.6.24-1-486-di
+Provides: nic-usb-modules
+Description: USB NIC drivers
+ This package contains USB network adapter drivers for the Linux kernel.
+
+Package: nic-wireless-modules-2.6.24-1-486-di
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 996
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.59
+Depends: core-modules-2.6.24-1-486-di, crypto-core-modules-2.6.24-1-486-d=
+i, kernel-image-2.6.24-1-486-di, nic-shared-modules-2.6.24-1-486-di, usb-=
+modules-2.6.24-1-486-di
+Provides: nic-wireless-modules
+Description: Wireless NIC drivers
+ This package contains wireless NIC drivers for the Linux kernel.
+ Includes crypto modules only needed for wireless (WEP).
+
+Package: nobootloader
+Status: install ok unpacked
+Priority: standard
+Section: debian-installer
+Installed-Size: 176
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.20
+Depends: cdebconf-udeb, di-utils-mapdevfs, installed-base
+Provides: bootable-system
+Description: Don't install any bootloader.
+ This package will skip installing a boot-loader
+Installer-Menu-Item: 7700
+
+Package: ntfsprogs-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 188
+Maintainer: David Mart=C3=ADnez Moreno <ender@debian.org>
+Version: 2.0.0-1
+Depends: libc6 (>=3D 2.7-1)
+Provides: ntfstools-udeb
+Description: Tools for doing neat things in NTFS partitions from Linux - =
+udeb
+ Currently this udeb contains only ntfsresize.
+
+Package: os-prober-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 80
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.24
+Depends: anna (>=3D 1.16), di-utils-mapdevfs
+Provides: os-prober
+Description: utility to detect other OSes on a set of drives
+ This package is to be used by boot loader installers to detect other OSe=
+s
+ available on a system, in a generic format, which it can then adapt to i=
+ts
+ own configuration format.
+
+Package: partconf-find-partitions
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 12
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.25
+Depends: libc6 (>=3D 2.7-1), libdebian-installer4-udeb (>=3D 0.55), libpa=
+rted1.7-udeb (>=3D 1.7.1-1)
+Description: debian-installer utility for finding partitions
+ Helper program for finding partitions and detecting their size and
+ existing file system.
+
+Package: partman-auto
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 284
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 77
+Depends: cdebconf-udeb, di-utils, partman-base (>=3D 114), partman-basicf=
+ilesystems, partman-ext3
+Description: Automatically partition storage devices (partman)
+
+Package: partman-auto-raid
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 44
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 9
+Depends: cdebconf-udeb, partman-auto (>=3D 58), partman-base (>=3D 114), =
+partman-basicfilesystems, partman-ext3, partman-md
+Description: Allow preseeded RAID installs
+
+Package: partman-base
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 668
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 117
+Depends: archdetect, cdebconf-udeb, di-utils (>=3D 1.15), di-utils-mapdev=
+fs, harddrive-detection, libc6 (>=3D 2.7-1), libparted1.7-udeb (>=3D 1.7.=
+1-1), partman-partitioning (>=3D 54), partman-target, partman-utils
+Provides: created-fstab, made-filesystems, mounted-partitions, partitione=
+d-harddrives
+Description: Partition the storage devices (partman)
+Installer-Menu-Item: 4200
+
+Package: partman-basicfilesystems
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 616
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 59
+Depends: cdebconf-udeb, e2fsprogs-udeb, ext2-modules, fat-modules
+Provides: partman-filesystem
+Description: Add to partman support for ext2, linux-swap, fat16 and fat32
+
+Package: partman-basicmethods
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 84
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 38
+Depends: cdebconf-udeb
+Provides: partman-method
+Description: Basic partition usage methods for partman
+ This package provides partman with two methods to use partitions.
+ The first is to format the partition.  The second is to keep and use
+ the existing data in the partition as it is.
+
+Package: partman-efi
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 88
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 16
+Depends: efi-modules, partman-base (>=3D 114)
+Description: Add to partman support for EFI boot partitions
+
+Package: partman-ext3
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 184
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 51
+Depends: cdebconf-udeb, e2fsprogs-udeb, ext3-modules, partman-basicfilesy=
+stems (>=3D 59)
+Provides: partman-filesystem
+Description: Add to partman support for ext3
+
+Package: partman-jfs
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 240
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 26
+Depends: cdebconf-udeb, jfs-modules, jfsutils-udeb, partman-basicfilesyst=
+ems (>=3D 59)
+Provides: partman-filesystem
+Description: Add support for jfs to partman
+
+Package: partman-md
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 116
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 40
+Depends: cdebconf-udeb, mdadm-udeb, mdcfg-utils, partman-base (>=3D 114)
+Description: Add to partman support for MD
+
+Package: partman-partitioning
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 492
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 58
+Depends: cdebconf-udeb, e2fsprogs-udeb, ntfsprogs-udeb
+Description: Partitioning operations for partman
+ This udeb provides partman with editing operations for creation
+ of new partitions, deletion of partitions and initialisation of the
+ partition table.
+
+Package: partman-reiserfs
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 188
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 41
+Depends: cdebconf-udeb, mkreiserfs-udeb, partman-basicfilesystems (>=3D 5=
+9), reiserfs-modules
+Provides: partman-filesystem
+Description: Add to partman support for reiserfs
+
+Package: partman-target
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 292
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 54
+Depends: cdebconf-udeb, di-utils-mapdevfs, partman-basicfilesystems, part=
+man-basicmethods
+Description: Provides partman with ability to prepare /target
+ This udeb allows the user to choose how partitions should be used.
+
+Package: partman-utils
+Status: install ok installed
+Priority: extra
+Section: debian-installer
+Installed-Size: 8
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 117
+Depends: libc6 (>=3D 2.7-1), libparted1.7-udeb (>=3D 1.7.1-1)
+Description: Utilities related to partitioning
+
+Package: partman-xfs
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 184
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 40
+Depends: cdebconf-udeb, partman-basicfilesystems (>=3D 59), xfs-modules, =
+xfsprogs-udeb
+Provides: partman-filesystem
+Description: Add to partman support for xfs
+
+Package: pata-modules-2.6.24-1-486-di
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 88
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.59
+Depends: ata-modules-2.6.24-1-486-di, kernel-image-2.6.24-1-486-di
+Provides: pata-modules
+Description: PATA drivers
+ This package contains PATA drivers for the Linux kernel.
+
+Package: pkgsel
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 56
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 0.18
+Depends: apt-setup-udeb, cdebconf-udeb, di-utils (>=3D 1.20)
+Description: Select and install packages
+Installer-Menu-Item: 7000
+
+Package: rdate-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 12
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Version: 1:1.1.3-1
+Depends: libc6 (>=3D 2.7-1)
+Description: sets the system's date from a remote host
+
+Package: reiserfs-modules-2.6.24-1-486-di
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 268
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.59
+Depends: kernel-image-2.6.24-1-486-di
+Provides: reiserfs-modules
+Description: Reiser filesystem support
+ This package contains the Reiser filesystem module for the Linux kernel.
+
+Package: scsi-extra-modules-2.6.24-1-486-di
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 1968
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.59
+Depends: scsi-core-modules-2.6.24-1-486-di, scsi-modules-2.6.24-1-486-di
+Provides: scsi-extra-modules
+Description: Uncommon SCSI drivers
+ This package contains uncommon SCSI drivers for the Linux kernel.
+ This includes SCSI RAID drivers, and some of the less common SCSI
+ controllers.
+
+Package: tzsetup-udeb
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 268
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1:0.20
+Depends: cdebconf-udeb, localechooser
+Description: choose time zone
+
+Package: user-setup-udeb
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 332
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.19
+Depends: cdebconf-udeb
+Description: Set up users and passwords
+Installer-Menu-Item: 6900
+
+Package: wireless-tools-udeb
+Status: install ok installed
+Priority: extra
+Section: debian-installer
+Installed-Size: 28
+Maintainer: Guus Sliepen <guus@debian.org>
+Version: 29-1
+Depends: libc6 (>=3D 2.6.1-1), libiw29-udeb (>=3D 28+29pre7)
+Description: Tools for manipulating Linux Wireless Extensions
+ This package contains the Wireless tools, used to manipulate the Linux
+ Wireless Extensions. The Wireless Extension is an interface allowing you=
+ to
+ set Wireless LAN specific parameters and get the specific stats.
+ .
+ This is a udeb of the wireless tools.
+
+Package: xfs-modules-2.6.24-1-486-di
+Status: install ok installed
+Priority: standard
+Section: debian-installer
+Installed-Size: 576
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.59
+Depends: kernel-image-2.6.24-1-486-di
+Provides: xfs-modules
+Description: XFS filesystem support
+ This package contains the XFS filesystem module for the Linux kernel.
+
+Package: xfsprogs-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 240
+Maintainer: Nathan Scott <nathans@debian.org>
+Version: 2.9.7-1
+Depends: libc6 (>=3D 2.7-1), libuuid1-udeb
+Description: A stripped-down version of xfsprogs, for debian-installer
+ This package is an xfsprogs package built for reduced size, so that it
+ can help to save space in debian-installer.
+ .
+ Don't attempt to install this package, it has no support for a couple of
+ features you surely want.  Anyway, it should fail to install.
+
+Package: libdevmapper1.02.1-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 72
+Maintainer: Debian LVM Team <pkg-lvm-maintainers@lists.alioth.debian.org>
+Version: 2:1.02.24-4
+Depends: libc6 (>=3D 2.7-1)
+Description: The Linux Kernel Device Mapper userspace library
+ This is a udeb, or a microdeb, for the debian-installer.
+ .
+ The Linux Kernel Device Mapper is the LVM (Linux Logical Volume Manageme=
+nt)
+ Team's implementation of a minimalistic kernel-space driver that handles
+ volume management, while keeping knowledge of the underlying device layo=
+ut
+ in user-space.  This makes it useful for not only LVM, but EVMS, softwar=
+e
+ raid, and other drivers that create "virtual" block devices.
+
+Package: lvm2-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 448
+Maintainer: Debian LVM Team <pkg-lvm-maintainers@lists.alioth.debian.org>
+Version: 2.02.33-2
+Depends: libc6 (>=3D 2.7-1), libdevmapper1.02.1-udeb (>=3D 2:1.02.24)
+Description: The Linux Logical Volume Manager
+ This is a udeb, or a microdeb, for the debian-installer.
+ .
+ This is LVM2, the rewrite of The Linux Logical Volume Manager.  LVM
+ supports enterprise level volume management of disk and disk subsystems
+ by grouping arbitrary disks into volume groups. The total capacity of
+ volume groups can be allocated to logical volumes, which are accessed as
+ regular block devices.
+
+Package: partman-auto-lvm
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 132
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 26
+Depends: cdebconf-udeb, di-utils (>=3D 1.15), partman-auto (>=3D 74), par=
+tman-base (>=3D 114), partman-lvm (>=3D 58)
+Description: Automatically partition storage devices using LVM
+
+Package: partman-lvm
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 780
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 60
+Depends: cdebconf-udeb, di-utils (>=3D 1.14), lvm2-udeb, md-modules, part=
+man-base (>=3D 114)
+Description: Adds support for LVM to partman
+
+Package: partman-auto-crypto
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 20
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 7
+Depends: cdebconf-udeb, partman-auto (>=3D 73), partman-auto-lvm (>=3D 24=
+), partman-base (>=3D 114), partman-crypto (>=3D 25)
+Description: Automatically partition storage devices using crypto and LVM
+
+Package: partman-crypto
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 876
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 28
+Depends: cdebconf-udeb, libc6 (>=3D 2.7-1), partman-base (>=3D 114)
+Description: Add to partman support for block device encryption
+
+Package: cdebconf-newt-entropy
+Status: install ok installed
+Priority: extra
+Section: debian-installer
+Installed-Size: 8
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 0.6
+Depends: cdebconf-newt-udeb, libc6 (>=3D 2.6.1-1), libnewt0.52
+Description: cdebconf newt plugin for reading from /dev/random
+ cdebconf plugin to facilitate reading random data from /dev/random.
+ Asks the user to enter random characters on the keyboard and shows a
+ progressbar with percent-of-data read.
+
+Package: crypto-modules-2.6.24-1-486-di
+Status: install ok installed
+Priority: extra
+Section: debian-installer
+Installed-Size: 172
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.59
+Depends: crypto-core-modules-2.6.24-1-486-di, kernel-image-2.6.24-1-486-d=
+i
+Provides: crypto-modules
+Description: crypto modules
+ This package contains crypto modules.
+
+Package: cryptsetup-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 532
+Maintainer: Debian Cryptsetup Team <pkg-cryptsetup-devel@lists.alioth.deb=
+ian.org>
+Version: 2:1.0.6-1
+Depends: dmsetup-udeb, libc6 (>=3D 2.7-1), libdevmapper1.02.1-udeb (>=3D =
+2:1.02.24), libpopt0-udeb (>=3D 1.10), libuuid1-udeb
+Description: configures encrypted block devices
+ Cryptsetup provides a command-line interface for configuring encrypted
+ devices. This is done using the Linux kernel device mapper target
+ dm-crypt. This version of cryptsetup has integrated support for LUKS.
+ .
+ cryptsetup is backwards compatible with the on-disk format of cryptoloop=
+,
+ but also supports more secure formats. This package includes support for
+ automatically configuring encrypted devices at boot time via the config
+ file /etc/crypttab. Additional features are cryptoroot support through
+ initramfs-tools and several supported ways to read a passphrase or key.
+
+Package: dmsetup-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 36
+Maintainer: Debian LVM Team <pkg-lvm-maintainers@lists.alioth.debian.org>
+Version: 2:1.02.24-4
+Depends: libc6 (>=3D 2.7-1), libdevmapper1.02.1-udeb (>=3D 2:1.02.24)
+Description: The Linux Kernel Device Mapper userspace library
+ The Linux Kernel Device Mapper is the LVM (Linux Logical Volume Manageme=
+nt)
+ Team's implementation of a minimalistic kernel-space driver that handles
+ volume management, while keeping knowledge of the underlying device layo=
+ut
+ in user-space.  This makes it useful for not only LVM, but EVMS, softwar=
+e
+ raid, and other drivers that create "virtual" block devices.
+ .
+ This package contains a utility for modifying device mappings.
+
+Package: libpopt0-udeb
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 24
+Maintainer: Paul Martin <pm@debian.org>
+Version: 1.10-3
+Depends: libc6 (>=3D 2.3.6-6)
+Description: lib for parsing cmdline parameters
+ Popt was heavily influenced by the getopt() and getopt_long() functions,
+ but it allows more powerful argument expansion. It can parse arbitrary
+ argv[] style arrays and automatically set variables based on command
+ line arguments. It also allows command line arguments to be aliased via
+ configuration files and includes utility functions for parsing arbitrary
+ strings into argv[] arrays using shell-like rules.
+ .
+ This package contains the runtime library and locale data.
+ .
+ This is a minimal package for use in debian-installer.
+
+Package: partman-crypto-dm
+Status: install ok installed
+Priority: optional
+Section: debian-installer
+Installed-Size: 100
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 28
+Depends: cdebconf-newt-entropy (>=3D 0.3), crypto-modules, cryptsetup-ude=
+b, partman-crypto
+Description: Add to partman support for dm-crypt encryption
+
+Package: ntfs-modules-2.6.24-1-486-di
+Status: install ok installed
+Priority: extra
+Section: debian-installer
+Installed-Size: 272
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.59
+Depends: kernel-image-2.6.24-1-486-di
+Provides: ntfs-modules
+Description: NTFS filesystem support
+ This package contains the NTFS file system module for the Linux kernel.
+
+Package: qnx4-modules-2.6.24-1-486-di
+Status: install ok installed
+Priority: extra
+Section: debian-installer
+Installed-Size: 48
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.59
+Depends: kernel-image-2.6.24-1-486-di
+Provides: qnx4-modules
+Description: QNX4 filesystem support
+ This package contains the QNX4 filesystem module for the Linux kernel.
+
+Package: ufs-modules-2.6.24-1-486-di
+Status: install ok installed
+Priority: extra
+Section: debian-installer
+Installed-Size: 116
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.59
+Depends: kernel-image-2.6.24-1-486-di
+Provides: ufs-modules
+Description: UFS filesystem support
+ This package contains the UFS filesystem module for the Linux kernel.
+
+Package: rtc-modules-2.6.24-1-486-di
+Status: install ok installed
+Priority: extra
+Section: debian-installer
+Installed-Size: 52
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Version: 1.59
+Depends: kernel-image-2.6.24-1-486-di
+Provides: rtc-modules
+Description: RTC modules
+ This package contains RTC modules.
+
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers testing
+  APT policy: (500, 'testing')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.24-1-686 (SMP w/1 CPU core)
+Locale: LANG=3Den_CA.UTF-8, LC_CTYPE=3Den_CA.UTF-8 (charmap=3DUTF-8)
+Shell: /bin/sh linked to /bin/bash
+
+installation-report depends on no packages.
+
+Versions of packages installation-report recommends:
+ii  pciutils                      1:2.2.10-1 Linux PCI Utilities
+ii  reportbug                     3.39-0.1   reports bugs in the Debian d=
+istrib
+
+-- no debconf information
+
+
+

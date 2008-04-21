@@ -1,0 +1,327 @@
+From bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org Sun Apr 20 11:14:40 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org>)
+	id 1JnWZB-0006EI-7z
+	for ddc@ddc.chris-lamb.co.uk; Sun, 20 Apr 2008 11:14:40 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 1ED4D13A4EA1; Sun, 20 Apr 2008 10:14:36 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 941E413A47CD;
+	Sun, 20 Apr 2008 10:14:34 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnWWi-0003ca-GR; Sun, 20 Apr 2008 10:12:04 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Matthias Klose <doko@cs.tu-berlin.de>
+Subject: Bug#466895: marked as done (bash missing dependency could lead to
+ bash be removed by testing upgrade)
+Message-ID: <handler.466895.D466895.12086862568900.ackdone@bugs.debian.org>
+References: <18443.5801.321587.911328@gargle.gargle.HOWL>
+ <20080221181339.27826.15639.reportbug@eana.kheb.homelinux.org>
+X-Debian-PR-Message: closed 466895
+X-Debian-PR-Package: bash
+X-Debian-PR-Source: bash
+Content-Type: multipart/mixed; boundary="----------=_1208686324-13840-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 10:12:04 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <z1CH8SOdE9E.A.OID.MexCIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/132917
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 10:14:36 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.0 ADVANCE_FEE_1          Appears to be advance fee fraud (Nigerian 419)
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208686324-13840-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 12:10:49 +0200
+with message-id <18443.5801.321587.911328@gargle.gargle.HOWL>
+and subject line Re: Bug#466895: bash missing dependency could lead to bash=
+ be removed by testing upgrade
+has caused the Debian Bug report #466895,
+regarding bash missing dependency could lead to bash be removed by testing =
+upgrade
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+466895: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D466895
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208686324-13840-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 21 Feb 2008 18:13:52 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.8 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,HAS_PACKAGE autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <michelbriand@free.fr>
+Received: from smtp6-g19.free.fr ([212.27.42.36])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <michelbriand@free.fr>)
+	id 1JSFvb-0002eH-Mh
+	for submit@bugs.debian.org; Thu, 21 Feb 2008 18:13:52 +0000
+Received: from smtp6-g19.free.fr (localhost.localdomain [127.0.0.1])
+	by smtp6-g19.free.fr (Postfix) with ESMTP id 2502C5FE31;
+	Thu, 21 Feb 2008 19:13:48 +0100 (CET)
+Received: from eana.kheb.homelinux.org (cap31-2-82-224-152-139.fbx.proxad.net [82.224.152.139])
+	by smtp6-g19.free.fr (Postfix) with ESMTP id AA2D15FDAD;
+	Thu, 21 Feb 2008 19:13:42 +0100 (CET)
+Received: by eana.kheb.homelinux.org (Postfix, from userid 1000)
+	id 0A896141C7; Thu, 21 Feb 2008 19:13:39 +0100 (CET)
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Michel BRIAND <michelbriand@free.fr>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Subject: bash missing dependency could lead to bash be removed by testing upgrade
+Message-ID: <20080221181339.27826.15639.reportbug@eana.kheb.homelinux.org>
+X-Mailer: reportbug 3.39
+Date: Thu, 21 Feb 2008 19:13:39 +0100
+Delivered-To: submit@bugs.debian.org
+
+Package: bash
+Version: 3.1dfsg-8
+Severity: normal
+
+I'm running Stable/Testing[1] for month, and I've seen this behaviour
+only for the awfull Nvidia proprietary driver package : a testing
+update+upgrade could lead to have bash removed because of a missing
+dependency.
+
+Here is the Aptitude screen showing this:
+
+-------------
+
+ Actions  Undo  Package  Resolver  Search  Options  Views  Help
+C-T: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs
+                Packages                          Resolve Dependencies
+  --\ Keep the following packages at their current version:
+    bash                                               [3.1dfsg-8 (stable, now)]
+    nvidia-glx                                               [100.14.19-1 (now)]
+    nvidia-glx-dev                                           [100.14.19-1 (now)]
+
+NVIDIA binary Xorg driver
+nvidia-glx depends upon nvidia-kernel-169.09
+--\ The following actions will resolve this dependency:
+  -> Keep nvidia-glx at version 100.14.19-1 (now)
+  -> Downgrade nvidia-glx [100.14.19-1 (now) -> 1.0.8776-4 (stable)]
+  -> Remove nvidia-glx [100.14.19-1 (now)]
+
+[1(1)/...] Suggest 3 keeps
+e: Examine  !: Apply  .: Next  ,: Previous
+
+-------------
+
+One can see that there is an option to REMOVE bash.
+Indeed when one'll choose this option, aptitude will not select it
+for removal... Hopefully ;)
+
+But how could this be that an essential package like bash has a missing
+dependency in testing ? Should we improve/harden the frontier between
+unstable and testing ?
+
+I'd be interested in knowing more about this. You can count on my help if
+some is needed.
+
+Cheers,
+M.
+
+[1] From sid I have only nvidia and some packages I create locally.
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers testing
+  APT policy: (990, 'testing'), (500, 'unstable'), (500, 'stable')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.22-3-686 (SMP w/2 CPU cores)
+Locale: LANG=fr_FR@euro, LC_CTYPE=fr_FR@euro (charmap=ISO-8859-15)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages bash depends on:
+ii  base-files                4.0.2          Debian base system miscellaneous f
+ii  debianutils               2.28.2         Miscellaneous utilities specific t
+ii  libc6                     2.7-6          GNU C Library: Shared libraries
+ii  libncurses5               5.6+20080119-1 Shared libraries for terminal hand
+
+bash recommends no packages.
+
+-- no debconf information
+
+
+
+------------=_1208686324-13840-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 466895-done) by bugs.debian.org; 20 Apr 2008 10:10:56 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-5.9 required=4.0 tests=ADVANCE_FEE_1,BAYES_00,
+	FOURLA,HAS_BUG_NUMBER,UNPARSEABLE_RELAY autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <doko@cs.tu-berlin.de>
+Received: from mail.cs.tu-berlin.de ([130.149.17.13])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <doko@cs.tu-berlin.de>)
+	id 1JnWVb-0002IN-K8
+	for 466895-done@bugs.debian.org; Sun, 20 Apr 2008 10:10:56 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by localhost-12225.cs.tu-berlin.de (Postfix) with ESMTP id 0667AD919
+	for <466895-done@bugs.debian.org>; Sun, 20 Apr 2008 12:10:51 +0200 (MEST)
+Received: from mailhost.cs.tu-berlin.de ([127.0.0.1])
+	by localhost (mail.cs.tu-berlin.de [127.0.0.1]) (amavisd-new, port 12224)
+	with ESMTP id 6n9nv+mNK0q8 10733-10;
+	Sun, 20 Apr 2008 12:10:49 +0200 (MEST) 13656
+Received: from bolero.cs.tu-berlin.de (bolero.cs.tu-berlin.de [130.149.19.1])
+	(using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by mailhost.cs.tu-berlin.de (Postfix) with ESMTP;
+	Sun, 20 Apr 2008 12:10:49 +0200 (MEST)
+Received: (from doko@localhost)
+	by bolero.cs.tu-berlin.de (8.13.8+Sun/8.13.3/Submit) id m3KAAncA010878;
+	Sun, 20 Apr 2008 12:10:49 +0200 (MEST)
+From: Matthias Klose <doko@cs.tu-berlin.de>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Message-ID: <18443.5801.321587.911328@gargle.gargle.HOWL>
+Date: Sun, 20 Apr 2008 12:10:49 +0200
+To: Michel BRIAND <michelbriand@free.fr>, 466895-done@bugs.debian.org
+Subject: Re: Bug#466895: bash missing dependency could lead to bash be removed by testing upgrade
+In-Reply-To: <20080221181339.27826.15639.reportbug@eana.kheb.homelinux.org>
+References: <20080221181339.27826.15639.reportbug@eana.kheb.homelinux.org>
+X-Mailer: VM 7.17 under 21.4 (patch 21) "Educational Television" XEmacs Lucid
+X-Virus-Scanned: amavisd-new at cs.tu-berlin.de (including SpamAssassin)
+
+closing this, after private email from the bug submitter.
+
+Michel BRIAND writes:
+> Package: bash
+> Version: 3.1dfsg-8
+> Severity: normal
+> 
+> I'm running Stable/Testing[1] for month, and I've seen this behaviour
+> only for the awfull Nvidia proprietary driver package : a testing
+> update+upgrade could lead to have bash removed because of a missing
+> dependency.
+> 
+> Here is the Aptitude screen showing this:
+> 
+> -------------
+> 
+>  Actions  Undo  Package  Resolver  Search  Options  Views  Help
+> C-T: Menu  ?: Help  q: Quit  u: Update  g: Download/Install/Remove Pkgs
+>                 Packages                          Resolve Dependencies
+>   --\ Keep the following packages at their current version:
+>     bash                                               [3.1dfsg-8 (stable, now)]
+>     nvidia-glx                                               [100.14.19-1 (now)]
+>     nvidia-glx-dev                                           [100.14.19-1 (now)]
+> 
+> NVIDIA binary Xorg driver
+> nvidia-glx depends upon nvidia-kernel-169.09
+> --\ The following actions will resolve this dependency:
+>   -> Keep nvidia-glx at version 100.14.19-1 (now)
+>   -> Downgrade nvidia-glx [100.14.19-1 (now) -> 1.0.8776-4 (stable)]
+>   -> Remove nvidia-glx [100.14.19-1 (now)]
+> 
+> [1(1)/...] Suggest 3 keeps
+> e: Examine  !: Apply  .: Next  ,: Previous
+> 
+> -------------
+> 
+> One can see that there is an option to REMOVE bash.
+> Indeed when one'll choose this option, aptitude will not select it
+> for removal... Hopefully ;)
+> 
+> But how could this be that an essential package like bash has a missing
+> dependency in testing ? Should we improve/harden the frontier between
+> unstable and testing ?
+> 
+> I'd be interested in knowing more about this. You can count on my help if
+> some is needed.
+> 
+> Cheers,
+> M.
+> 
+> [1] From sid I have only nvidia and some packages I create locally.
+> 
+> -- System Information:
+> Debian Release: lenny/sid
+>   APT prefers testing
+>   APT policy: (990, 'testing'), (500, 'unstable'), (500, 'stable')
+> Architecture: i386 (i686)
+> 
+> Kernel: Linux 2.6.22-3-686 (SMP w/2 CPU cores)
+> Locale: LANG=fr_FR@euro, LC_CTYPE=fr_FR@euro (charmap=ISO-8859-15)
+> Shell: /bin/sh linked to /bin/bash
+> 
+> Versions of packages bash depends on:
+> ii  base-files                4.0.2          Debian base system miscellaneous f
+> ii  debianutils               2.28.2         Miscellaneous utilities specific t
+> ii  libc6                     2.7-6          GNU C Library: Shared libraries
+> ii  libncurses5               5.6+20080119-1 Shared libraries for terminal hand
+> 
+> bash recommends no packages.
+> 
+> -- no debconf information
+> 
+
+
+------------=_1208686324-13840-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

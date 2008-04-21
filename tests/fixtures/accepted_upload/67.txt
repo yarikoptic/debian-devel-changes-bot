@@ -1,0 +1,130 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 13:32:04 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnYi8-0006tx-RS
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 13:32:03 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 71A5213A4F89; Sun, 20 Apr 2008 12:31:59 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id 2124413A4EF9
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 12:31:59 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnYTj-0005rr-Bt; Sun, 20 Apr 2008 12:17:07 +0000
+From: SZALAY Attila <sasa@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted syslog-ng 2.0.9-1 (source i386)
+Message-Id: <E1JnYTj-0005rr-Bt@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 12:17:07 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <XJBZdY5BgIJ.A.63H._ezCIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301293
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 12:31:59 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.5
+X-Spam-Report: (-2.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.1 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 13:46:25 +0200
+Source: syslog-ng
+Binary: syslog-ng
+Architecture: source i386
+Version: 2.0.9-1
+Distribution: unstable
+Urgency: low
+Maintainer: SZALAY Attila <sasa@debian.org>
+Changed-By: SZALAY Attila <sasa@debian.org>
+Description:=20
+ syslog-ng  - Next generation logging daemon
+Closes: 397650 447105 475456
+Changes:=20
+ syslog-ng (2.0.9-1) unstable; urgency=3Dlow
+ .
+   * New upstream version. (Closes: #397650, #447105)
+   * Merged upstream patch to fix a possible segfault if optional file so=
+urce
+   is in use.
+   * Added $remote_fs to LSB dependencies in init script to made it able =
+to
+   stop correctly. (Closes: #475456)
+Checksums-Sha1:=20
+ ab75b79b73b58597341b73679f083bd141656 1054 syslog-ng_2.0.9-1.dsc
+ 59f16fea6618312e1cf120e88b2c3351f72ef411 214536 syslog-ng_2.0.9.orig.tar=
+.gz
+ 9965d3252027f37938dab5124d03d119fe64f3df 33519 syslog-ng_2.0.9-1.diff.gz
+ 316458809282c8637e1115f37e713e05db3fde0d 208108 syslog-ng_2.0.9-1_i386.d=
+eb
+Checksums-Sha256:=20
+ c64c84809a34db743adaf7ca5b43a91d253eef7a6e84e043c26e08653b3295ac 1054 sy=
+slog-ng_2.0.9-1.dsc
+ c931c53324955db14831bdf33202503a04ddd7026355823a7a748bcf20e20d77 214536 =
+syslog-ng_2.0.9.orig.tar.gz
+ 93e5fdb973e5d11b2b52fe5efaa0cdb235801bf8033aad211b2769f841486445 33519 s=
+yslog-ng_2.0.9-1.diff.gz
+ 948cf773c8d8d6456ee477bcc57427528c456ee85aa8c855db845f3bc9dcc398 208108 =
+syslog-ng_2.0.9-1_i386.deb
+Files:=20
+ a8fda29983314d6770fa5bc0363c62c9 1054 admin extra syslog-ng_2.0.9-1.dsc
+ 15b8f421fb3481e3bc660052f67a531f 214536 admin extra syslog-ng_2.0.9.orig=
+.tar.gz
+ 4ebd9ce44e11b580419f0cddd72f6f7f 33519 admin extra syslog-ng_2.0.9-1.dif=
+f.gz
+ 02bc4d77c911d06f14c88a17a8b0c5df 208108 admin extra syslog-ng_2.0.9-1_i3=
+86.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICzHQ23Gu/Kug6LIRAjNKAJ9F8a1xCBNhHOlpQwoZWzUpX5dS3wCfZjeE
+pYxJZUNsvidqDkCAQ3gADII=3D
+=3D/VTO
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+syslog-ng_2.0.9-1.diff.gz
+  to pool/main/s/syslog-ng/syslog-ng_2.0.9-1.diff.gz
+syslog-ng_2.0.9-1.dsc
+  to pool/main/s/syslog-ng/syslog-ng_2.0.9-1.dsc
+syslog-ng_2.0.9-1_i386.deb
+  to pool/main/s/syslog-ng/syslog-ng_2.0.9-1_i386.deb
+syslog-ng_2.0.9.orig.tar.gz
+  to pool/main/s/syslog-ng/syslog-ng_2.0.9.orig.tar.gz
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

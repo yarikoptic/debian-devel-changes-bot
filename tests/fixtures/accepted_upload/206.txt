@@ -1,0 +1,149 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 14:32:36 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnZei-0007Bm-M0
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 14:32:36 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 738E413A4FFD; Sun, 20 Apr 2008 13:32:31 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id 1538413A4F19
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 13:32:31 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnZeH-0001NS-8C; Sun, 20 Apr 2008 13:32:05 +0000
+From: Kumar Appaiah <akumar@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted libitpp 4.0.4-2 (source all amd64)
+Message-Id: <E1JnZeH-0001NS-8C@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 13:32:05 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <9jA1AQbWJKO.A.3dG.vX0CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301302
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 13:32:31 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.6
+X-Spam-Report: (-2.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.0 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 17:43:44 +0530
+Source: libitpp
+Binary: libitpp-dev libitpp6gf libitpp6-dbg libitpp-doc
+Architecture: source all amd64
+Version: 4.0.4-2
+Distribution: unstable
+Urgency: low
+Maintainer: Kumar Appaiah <akumar@debian.org>
+Changed-By: Kumar Appaiah <akumar@debian.org>
+Description:=20
+ libitpp-dev - C++ library of signal processing and communication routine=
+s: Head
+ libitpp-doc - C++ library of signal processing and communication routine=
+s: Docu
+ libitpp6-dbg - C++ library of signal processing and communication routin=
+es: Debu
+ libitpp6gf - C++ library of signal processing and communication routines
+Changes:=20
+ libitpp (4.0.4-2) unstable; urgency=3Dlow
+ .
+   * debian/libitpp-doc.doc-base:
+     + Move to section Science/Mathematics.
+   * debian/control:
+     + Update package description.
+     + Use debian.org e-mail address.
+Checksums-Sha1:=20
+ 995b5c5d0f229345468b79d144f6afaf0ee6edb1 1244 libitpp_4.0.4-2.dsc
+ 9b6732b251a86f23d6f336c762829bac04506d47 5603 libitpp_4.0.4-2.diff.gz
+ b09bc85d93b199ff46e30b76d2febc4aae7c6 4270408 libitpp-doc_4.0.4-2_all=
+.deb
+ 028bd837440d263e84ad071f96420eeaece08d76 251506 libitpp-dev_4.0.4-2_amd6=
+4.deb
+ 97d7f70d074c3853186511e79608de0a15f1e811 1302656 libitpp6gf_4.0.4-2_amd6=
+4.deb
+ cb245023ed9b29833b9eb1620889a3b1eba18d31 4644182 libitpp6-dbg_4.0.4-2_am=
+d64.deb
+Checksums-Sha256:=20
+ 51f95e4cba22ec64fc465a04e84ea462159b650b5c03f8d234d9903e344af6ab 1244 li=
+bitpp_4.0.4-2.dsc
+ 3b1ee5e4ce429a6ae34069fb7f01808da165105f03773d6da4fbac58a72d11ef 5603 li=
+bitpp_4.0.4-2.diff.gz
+ 13df1d982badc4409f6b455574880afff9edd8b40e6a93df408e709a1771e77a 4270408=
+ libitpp-doc_4.0.4-2_all.deb
+ 15a788403114046036609dfced7b755ec0d741f3d7bc2537298f5eaccb70c365 251506 =
+libitpp-dev_4.0.4-2_amd64.deb
+ 974f9477337c6c3def59a811bfe21df5f2ed2adb62b78181223e54a3639ce 1302656=
+ libitpp6gf_4.0.4-2_amd64.deb
+ 793925e803a4116adb5b74b6daeae40dd1e4d4a87ee66436b8b7c9ccadb81fe1 4644182=
+ libitpp6-dbg_4.0.4-2_amd64.deb
+Files:=20
+ 994c64ecb5dcdab31c0499f9026eab43 1244 libs optional libitpp_4.0.4-2.dsc
+ adc89d219687bb4d436045ef94a19b26 5603 libs optional libitpp_4.0.4-2.diff=
+.gz
+ 8da5df080243c78cc9046d25c536b857 4270408 doc optional libitpp-doc_4.0.4-=
+2_all.deb
+ 22901e6bf0d5e2fe5b242a7957992efc 251506 libdevel optional libitpp-dev_4.=
+0.4-2_amd64.deb
+ 341d714dc7888cdec1e55b25dba29a7b 1302656 libs optional libitpp6gf_4.0.4-=
+2_amd64.deb
+ ec527789596621bd9138121ca61b8686 4644182 libs extra libitpp6-dbg_4.0.4-2=
+_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICztlSd75awtatOcRApCSAJ97msy7i8S6josuqo32J3vKa7wDDACfc7Z+
+f3l2LYHn2xtdUIOs7ynNPTM=3D
+=3D9wt2
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+libitpp-dev_4.0.4-2_amd64.deb
+  to pool/main/libi/libitpp/libitpp-dev_4.0.4-2_amd64.deb
+libitpp-doc_4.0.4-2_all.deb
+  to pool/main/libi/libitpp/libitpp-doc_4.0.4-2_all.deb
+libitpp6-dbg_4.0.4-2_amd64.deb
+  to pool/main/libi/libitpp/libitpp6-dbg_4.0.4-2_amd64.deb
+libitpp6gf_4.0.4-2_amd64.deb
+  to pool/main/libi/libitpp/libitpp6gf_4.0.4-2_amd64.deb
+libitpp_4.0.4-2.diff.gz
+  to pool/main/libi/libitpp/libitpp_4.0.4-2.diff.gz
+libitpp_4.0.4-2.dsc
+  to pool/main/libi/libitpp/libitpp_4.0.4-2.dsc
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

@@ -1,0 +1,383 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 03:34:47 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnPO0-0005AW-Qt
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 03:34:47 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id B19EA13A4986; Sun, 20 Apr 2008 02:34:35 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 139C913A497E;
+	Sun, 20 Apr 2008 02:34:34 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnPMX-0003Dh-PH; Sun, 20 Apr 2008 02:33:05 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Chris Lawrence <lawrencc@debian.org>
+Subject: Bug#470993: marked as done (be sure that you are dealing with a 
+ terminal before using tput)
+Message-ID: <handler.470993.D470993.120865870210962.ackdone@bugs.debian.org>
+References: <E1JnOsU-0004ND-Hr@ries.debian.org>
+ <87r6ecq1rk.fsf_-_@jidanni.org>
+X-Debian-PR-Message: closed 470993
+X-Debian-PR-Package: lsb-base
+X-Debian-PR-Source: lsb
+Content-Type: multipart/mixed; boundary="----------=_1208658785-12369-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 02:33:05 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <lCstDJwg1KM.A.IWB.7uqCIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/132889
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 02:34:35 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208658785-12369-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 02:02:02 +0000
+with message-id <E1JnOsU-0004ND-Hr@ries.debian.org>
+and subject line Bug#470993: fixed in lsb 3.2-9
+has caused the Debian Bug report #470993,
+regarding be sure that you are dealing with a terminal before using tput
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+470993: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D470993
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208658785-12369-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 15 Mar 2008 00:17:39 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-11.3 required=4.0 tests=BAYES_00,FOURLA,HAS_PACKAGE,
+	NO_REAL_NAME,X_DEBBUGS_CC autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <jidanni@jidanni.org>
+Received: from lax-green-bigip-5.dreamhost.com ([208.113.200.5] helo=blingymail-a2.g.dreamhost.com)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <jidanni@jidanni.org>)
+	id 1JaK5i-00021I-Rx
+	for submit@bugs.debian.org; Sat, 15 Mar 2008 00:17:38 +0000
+Received: from jidanni1 (122-127-41-142.dynamic.hinet.net [122.127.41.142])
+	by blingymail-a2.g.dreamhost.com (Postfix) with ESMTP id AD33041099
+	for <submit@bugs.debian.org>; Fri, 14 Mar 2008 17:17:38 -0700 (PDT)
+X-Debbugs-Cc: jre-phoenix@users.sourceforge.net
+Subject: be sure that you are dealing with a terminal before using tput
+To: submit@bugs.debian.org
+References: <c5091dc50803131418j46b0eelaaa1ec3d85a26c6@mail.gmail.com>
+From: jidanni@jidanni.org
+Date: Sat, 15 Mar 2008 08:17:19 +0800
+Message-ID: <87r6ecq1rk.fsf_-_@jidanni.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Delivered-To: submit@bugs.debian.org
+
+Package: lsb-base
+Version: 3.2-4
+Severity: minor
+File: /lib/lsb/init-functions
+
+Gentlemen, I notice the possibility of raw terminal escapes ending up
+in email messages.
+
+That this can never be right is shown by the fact that one does not
+know what kind of terminal the person reading the email will be using.
+
+This is not to say you should go further and begin sending HTML mail,
+but instead take a step back: do further tests to determine if you are
+really dealing with a terminal.
+
+For instance, we see that you do
+    if [ "x$TERM" != "xdumb" ]
+but how about
+$ test $TERM
+or
+    if [ "x$TERM" != "" ]
+in the first place!
+
+Another test is
+$ test -t
+
+Only after being very sure that you are dealing with a real terminal
+should you proceed to send tput(1) stuff.
+
+>>>>> "m" == moblock  <jre-phoenix@users.sourceforge.net> writes:
+
+>> 2. What's with the raw terminfo escapes !!! Yuck. Took out for this
+>> email via col -b.
+>>
+>> >>>>> "A" == Anacron  <root@jidanni.org> writes:
+>>
+A> /etc/cron.daily/logrotate:
+A> cat: /var/run/moblock.pid: No such file or directory
+A> kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+A> error: error running postrotate script for /var/log/moblock.log
+A> run-parts: /etc/cron.daily/logrotate exited with return code 1
+A> /etc/cron.daily/moblock:
+A> 33m*39;49m MoBlock is configured not to update the blocklists automatically.
+A> 33m*39;49m To change this edit the MOBLOCK_CRON entry in /etc/moblock/moblock.conf.
+
+m> If I understand you correctly you're talking about these:
+m> 33m*39;49m
+m> They result from "log_warning_msg" in /lib/lsb/init-functions (Debian
+m> package lsb-base). I assume I didn't implement it wrong, so you'd have
+m> to talk to that package maintainer.
+
+
+
+------------=_1208658785-12369-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 470993-close) by bugs.debian.org; 20 Apr 2008 02:31:42 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.2 required=4.0 tests=BAYES_00,FOURLA,
+	FROMDEVELOPER,FVGT_m_MULTI_ODD,HAS_BUG_NUMBER,HEADER_X_KATIE,
+	IMPRONONCABLE_1,IMPRONONCABLE_2,MURPHY_WRONG_WORD2,PHONENUMBER 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnPLC-0002qZ-Lg
+	for 470993-close@bugs.debian.org; Sun, 20 Apr 2008 02:31:42 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnOsU-0004ND-Hr; Sun, 20 Apr 2008 02:02:02 +0000
+From: Chris Lawrence <lawrencc@debian.org>
+To: 470993-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#470993: fixed in lsb 3.2-9
+Message-Id: <E1JnOsU-0004ND-Hr@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 02:02:02 +0000
+X-CrossAssassin-Score: 2
+Content-Transfer-Encoding: quoted-printable
+
+Source: lsb
+Source-Version: 3.2-9
+
+We believe that the bug you reported is fixed in the latest version of
+lsb, which is due to be installed in the Debian FTP archive:
+
+lsb-base_3.2-9_all.deb
+  to pool/main/l/lsb/lsb-base_3.2-9_all.deb
+lsb-core_3.2-9_amd64.deb
+  to pool/main/l/lsb/lsb-core_3.2-9_amd64.deb
+lsb-cxx_3.2-9_amd64.deb
+  to pool/main/l/lsb/lsb-cxx_3.2-9_amd64.deb
+lsb-desktop_3.2-9_amd64.deb
+  to pool/main/l/lsb/lsb-desktop_3.2-9_amd64.deb
+lsb-graphics_3.2-9_amd64.deb
+  to pool/main/l/lsb/lsb-graphics_3.2-9_amd64.deb
+lsb-languages_3.2-9_amd64.deb
+  to pool/main/l/lsb/lsb-languages_3.2-9_amd64.deb
+lsb-multimedia_3.2-9_amd64.deb
+  to pool/main/l/lsb/lsb-multimedia_3.2-9_amd64.deb
+lsb-printing_3.2-9_amd64.deb
+  to pool/main/l/lsb/lsb-printing_3.2-9_amd64.deb
+lsb-qt4_3.2-9_amd64.deb
+  to pool/main/l/lsb/lsb-qt4_3.2-9_amd64.deb
+lsb-release_3.2-9_all.deb
+  to pool/main/l/lsb/lsb-release_3.2-9_all.deb
+lsb_3.2-9.dsc
+  to pool/main/l/lsb/lsb_3.2-9.dsc
+lsb_3.2-9.tar.gz
+  to pool/main/l/lsb/lsb_3.2-9.tar.gz
+lsb_3.2-9_all.deb
+  to pool/main/l/lsb/lsb_3.2-9_all.deb
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 470993@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Chris Lawrence <lawrencc@debian.org> (supplier of updated lsb package)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Thu, 17 Apr 2008 20:38:23 -0500
+Source: lsb
+Binary: lsb-core lsb-graphics lsb-cxx lsb-desktop lsb-qt4 lsb-languages l=
+sb-multimedia lsb-printing lsb lsb-base lsb-release
+Architecture: source all amd64
+Version: 3.2-9
+Distribution: unstable
+Urgency: low
+Maintainer: Chris Lawrence <lawrencc@debian.org>
+Changed-By: Chris Lawrence <lawrencc@debian.org>
+Description:=20
+ lsb        - Linux Standard Base 3.2 support package
+ lsb-base   - Linux Standard Base 3.2 init script functionality
+ lsb-core   - Linux Standard Base 3.2 core support package
+ lsb-cxx    - Linux Standard Base 3.2 C++ support package
+ lsb-desktop - Linux Standard Base 3.2 Desktop support package
+ lsb-graphics - Linux Standard Base 3.2 graphics support package
+ lsb-languages - Linux Standard Base 3.2 Runtime Languages package
+ lsb-multimedia - Linux Standard Base 3.2 Multimedia package
+ lsb-printing - Linux Standard Base 3.2 Printing package
+ lsb-qt4    - Linux Standard Base 3.2 Qt4 support package
+ lsb-release - Linux Standard Base version reporting utility
+Closes: 406059 470993 476288
+Changes:=20
+ lsb (3.2-9) unstable; urgency=3Dlow
+ .
+   * Fix lsb_release detection when apt-cache policy identifies no Debian
+     sources.  (Closes: #476288)
+   * Only use fancy TTY output if TERM is set and FD 1 is a terminal.
+     (Closes: #470993)
+   * Do not use eval in start_daemon().  (Closes: #406059)
+Checksums-Sha1:=20
+ 6ed024b64277a3c8db36633dfa12855cf84ba4fb 954 lsb_3.2-9.dsc
+ 8012777f98401542a412311b8ce8d837456358f6 49479 lsb_3.2-9.tar.gz
+ b92f6c90f06193d45dcb31fdefdebdb9039047dd 12602 lsb_3.2-9_all.deb
+ 1c1c40da2c98e2631e7e4c5a4f42b394846b703e 18066 lsb-base_3.2-9_all.deb
+ 239ea3a025ff53c0ef434a545310b39dc5226862 18094 lsb-release_3.2-9_all.deb
+ 3f8b8566b17ea368e536daa165846b59ee06741e 35512 lsb-core_3.2-9_amd64.deb
+ 8e17e5b2a3876945833b77b73507921fb435f2c3 12638 lsb-graphics_3.2-9_amd64.=
+deb
+ 73cada4ff30b9415e49b7d9ebcce1d190577637c 12600 lsb-cxx_3.2-9_amd64.deb
+ 2926e7951e8d3e3cd55f73fc841f543c6b3a7036 12734 lsb-desktop_3.2-9_amd64.d=
+eb
+ 199626c9abc36bd82df763e399aa871895cb4b2e 12666 lsb-qt4_3.2-9_amd64.deb
+ c90575323751be5ee9f971eabf1f3f557be3a708 12632 lsb-languages_3.2-9_amd64=
+.deb
+ f5754df8e9fafc0cc0748d4a7a5e146e1fadd487 12606 lsb-multimedia_3.2-9_amd6=
+4.deb
+ fa5379037d0b05d8cc3ef796c317745696e1c193 12628 lsb-printing_3.2-9_amd64.=
+deb
+Checksums-Sha256:=20
+ 85e87f8907c1c71bf3a1a9da45e17ae8f78b8773a124c91133c95636027204a8 954 lsb=
+_3.2-9.dsc
+ 9719ddd3f3fd833e6196d961ab06ccc0c08dc1362fbe09ceb7b81bd7e37152f5 49479 l=
+sb_3.2-9.tar.gz
+ 7bdde577b50bb0dec7c7351ca59731eed71bdb903d027e08b21e3ba17a1fdbad 12602 l=
+sb_3.2-9_all.deb
+ 133352e6ecef32527f83d4cd3c447b301677504628ea154b4a0bfe4ac2eb779b 18066 l=
+sb-base_3.2-9_all.deb
+ ec37cb3a2c7103ffd6b82cc20e19d9d5811593684af5ce48efe9be484feffb13 18094 l=
+sb-release_3.2-9_all.deb
+ faa3be0d6e80d8c0c0286278d99a043a8653ee264b32547c9a650e35a6119cde 35512 l=
+sb-core_3.2-9_amd64.deb
+ c0a1f03632126b18db029d494bdbc7d66d10797041aec5de4ab96cb95d0e57ea 12638 l=
+sb-graphics_3.2-9_amd64.deb
+ 2525fd46e8f376ac3a38f6b7a25f25585c507075afc89579a68064538d8ddd91 12600 l=
+sb-cxx_3.2-9_amd64.deb
+ 8e52eafabffc60494dbfa87f62e5762685f25b3d4684fbbf62cab549968929a5 12734 l=
+sb-desktop_3.2-9_amd64.deb
+ 0e9887a3dcffdba6ac01e89bd2da9f1d75c745a79a081a665a136c144df43b80 12666 l=
+sb-qt4_3.2-9_amd64.deb
+ 114b5c08f6988f00653bf12f98d6aea853c1340e753d152a6841278d69901d6d 12632 l=
+sb-languages_3.2-9_amd64.deb
+ 2d0cd760ef4adc6f184eabe2dcd4fbfc4954974b06b98c2fda3ff8d2c3ca25d8 12606 l=
+sb-multimedia_3.2-9_amd64.deb
+ fa9ce76c154bded00773e9105e0b7cb146b86bff209f036fe26f1802f3b3cbc5 12628 l=
+sb-printing_3.2-9_amd64.deb
+Files:=20
+ 015bbed536dc1dfe73ce64a85a2aa57f 954 misc extra lsb_3.2-9.dsc
+ 5deb1e74ad94b404de52bdc7288c0962 49479 misc extra lsb_3.2-9.tar.gz
+ 7388c34f68dac59187d171fc5f5eb88c 12602 misc extra lsb_3.2-9_all.deb
+ f6ab02f071010ea32d99ed517e2fa4ff 18066 misc required lsb-base_3.2-9_all.=
+deb
+ 29b0add17b6167b078276280ea253c87 18094 misc extra lsb-release_3.2-9_all.=
+deb
+ b2c83eb17e4dda5dd3055ae8ab167595 35512 misc extra lsb-core_3.2-9_amd64.d=
+eb
+ 36033b1654bfb90370a516dab3de8f07 12638 misc extra lsb-graphics_3.2-9_amd=
+64.deb
+ 6d56d46d406ea1db75f407be8e64ac86 12600 misc extra lsb-cxx_3.2-9_amd64.de=
+b
+ 8387f5602dae813eaa117224aaea9d18 12734 misc extra lsb-desktop_3.2-9_amd6=
+4.deb
+ d0fcc11a2247ad04d18747853e770687 12666 misc extra lsb-qt4_3.2-9_amd64.de=
+b
+ a280f8534a85a3654382a399ac0d7c58 12632 misc extra lsb-languages_3.2-9_am=
+d64.deb
+ d3f35c586cfeaad769093a36edae6d5f 12606 misc extra lsb-multimedia_3.2-9_a=
+md64.deb
+ 28ae693eb8289b9c21b6682f05d2a9bc 12628 misc extra lsb-printing_3.2-9_amd=
+64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIB/wb2wQKE6PXubwRAhlpAJ9wOLJl2EGyzWIIWAeJmYyoaSAAuACdEVrH
+HgQ2Vq9EV96RoJlFcaImwCA=3D
+=3DVcEs
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208658785-12369-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

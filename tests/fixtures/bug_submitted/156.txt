@@ -1,0 +1,134 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 19:20:20 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jne9A-0000NN-1o
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 19:20:20 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 634A113A5173; Sun, 20 Apr 2008 18:20:02 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 7C91B13A50BD;
+	Sun, 20 Apr 2008 18:19:37 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jne48-000353-S4; Sun, 20 Apr 2008 18:15:04 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#477061: Depends on makedev
+Reply-To: Marco d'Itri <md@linux.it>, 477061@bugs.debian.org
+Resent-From: Marco d'Itri <md@linux.it>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: md@linux.it, Markus Braun <mbr@debian.org>
+Resent-Date: Sun, 20 Apr 2008 18:15:02 +0000
+Resent-Message-ID: <handler.477061.B.120871510423836@bugs.debian.org>
+X-Debian-PR-Message: report 477061
+X-Debian-PR-Package: tpb
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: tpb
+Received: via spool by submit@bugs.debian.org id=B.120871510423836
+          (code B ref -1); Sun, 20 Apr 2008 18:15:02 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 18:11:44 +0000
+X-Amavis-Spam-Status: No, score=-13.0 required=4.0 tests=BAYES_00,HAS_PACKAGE,
+	X_DEBBUGS_CC autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from attila.bofh.it ([213.92.8.2] ident=postfix)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <md@linux.it>)
+	id 1Jne0u-0006Ag-Hm
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 18:11:44 +0000
+Received: by attila.bofh.it (Postfix, from userid 10)
+	id 649C95F702; Sun, 20 Apr 2008 20:11:43 +0200 (CEST)
+Received: by bongo.bofh.it (Postfix, from userid 1000)
+	id D3F655056; Sun, 20 Apr 2008 20:11:37 +0200 (CEST)
+Date: Sun, 20 Apr 2008 20:11:37 +0200
+From: Marco d'Itri <md@linux.it>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Message-ID: <20080420181137.GA11157@bongo.bofh.it>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+	protocol="application/pgp-signature"; boundary="wRRV7LY7NUeQGEoC"
+Content-Disposition: inline
+X-Reportbug-Version: 3.39-0.1
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 18:15:04 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343709
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -42.8
+X-Spam-Report: (-42.8 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	9.8 AWL                    AWL: From: address is in the auto white-list
+
+
+--wRRV7LY7NUeQGEoC
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+Package: tpb
+Severity: important
+
+tpb depends on makedev. At a minimum, it should add an alternative for
+udev. Better yet, it should not depend on any device scripts at all,
+and assume that the devices already exist, which they likely do on
+either a static /dev system or a udev-based system.
+
+You should also remove any code referencing devfs (which has been
+removed from kernels long ago) and /dev/.udev.tdb (this file does not
+exist anymore since well before etch).
+
+I also believe that it's inappropriate to have a debconf question about
+running MAKEDEV, if you really want to run it just do it unconditionally
+(even if udev is active). If you do, you must call /dev/MAKEDEV instead
+of /sbin/MAKEDEV, because the second one is not guaranteed to exist.
+
+--=20
+ciao,
+Marco
+
+--wRRV7LY7NUeQGEoC
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: Digital signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC4dZFGfw2OHuP7ERAvPhAKCNZhelVgcEjOkCmvA+Qt1ThUtHOACeNTkA
+Ua6KWDIj28PlD7NAaXbwnqc=
+=sNeB
+-----END PGP SIGNATURE-----
+
+--wRRV7LY7NUeQGEoC--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

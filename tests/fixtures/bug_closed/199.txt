@@ -1,0 +1,241 @@
+From bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org Sun Apr 20 19:05:08 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org>)
+	id 1JnduL-0000Iq-CZ
+	for ddc@ddc.chris-lamb.co.uk; Sun, 20 Apr 2008 19:05:08 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 5A34913A5163; Sun, 20 Apr 2008 18:04:56 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 06EF013A5162;
+	Sun, 20 Apr 2008 18:04:55 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jndpe-000177-Fy; Sun, 20 Apr 2008 18:00:06 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: John Stamp <jstamp@users.sourceforge.net>
+Subject: Bug#463031: marked as done (lastfm: lately does more buffering 
+ than playing)
+Message-ID: <handler.463031.D463031.12087143411174.ackdone@bugs.debian.org>
+References: <200804201058.52228.jstamp@users.sourceforge.net>
+ <479E6788.8080201@gmail.com>
+X-Debian-PR-Message: closed 463031
+X-Debian-PR-Package: lastfm
+X-Debian-PR-Keywords: unreproducible moreinfo
+X-Debian-PR-Source: lastfm
+Content-Type: multipart/mixed; boundary="----------=_1208714406-3897-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 18:00:06 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <sKkb_TJVcKK.A.CYB.IX4CIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/133067
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 18:04:56 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208714406-3897-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 10:58:52 -0700
+with message-id <200804201058.52228.jstamp@users.sourceforge.net>
+and subject line Re: Bug#463031: lastfm: lately does more buffering than pl=
+aying
+has caused the Debian Bug report #463031,
+regarding lastfm: lately does more buffering than playing
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+463031: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D463031
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208714406-3897-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 28 Jan 2008 23:38:50 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.9 required=4.0 tests=BAYES_00,FOURLA,HAS_PACKAGE 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <eddy.petrisor@gmail.com>
+Received: from fg-out-1718.google.com ([72.14.220.152])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <eddy.petrisor@gmail.com>)
+	id 1JJdYw-00040v-2L
+	for submit@bugs.debian.org; Mon, 28 Jan 2008 23:38:50 +0000
+Received: by fg-out-1718.google.com with SMTP id 22so1901935fge.23
+        for <submit@bugs.debian.org>; Mon, 28 Jan 2008 15:38:48 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:user-agent:mime-version:to:subject:content-type:content-transfer-encoding;
+        bh=oIAZPRYjf6iBqwFTS1tebxfUuS+x6jrxyr8fnkvQdLE=;
+        b=vBzoD2R9VreRI7SUkhlOUlZzm9It7pGdcMH1A9DXQJJ3v/FARWWOC8OEPMhM5CecVQd8K+2lWNHourfOy5vmZj92rv4pxyZVHqxeFyIc+ojR/FW03md7ImpC4tUmwoK2cMVNcqeYOZ80TpSBW8IxReceZMLLS/BNXteMW1mRaEc=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:user-agent:mime-version:to:subject:content-type:content-transfer-encoding;
+        b=qJUAzSWGsDRE9eVzGKHKlcFtN/YYOPkzBEEHX1EAwsdC5JFrPgT5+XY5iMEoWKXOe4OmcTgmZXstpgdO1li0wfCxlAi4N9w03VQEtoG42N6ZjgzJM1PFYaei4b6SC5ePbwpD06FTiOhlyqr2Nlr5QDlvPSts+HaOMPxF0VVldKA=
+Received: by 10.86.100.7 with SMTP id x7mr5791979fgb.7.1201563528561;
+        Mon, 28 Jan 2008 15:38:48 -0800 (PST)
+Received: from ?192.168.77.111? ( [78.96.193.43])
+        by mx.google.com with ESMTPS id e11sm6658860fga.5.2008.01.28.15.38.46
+        (version=SSLv3 cipher=RC4-MD5);
+        Mon, 28 Jan 2008 15:38:47 -0800 (PST)
+Message-ID: <479E6788.8080201@gmail.com>
+Date: Tue, 29 Jan 2008 01:38:48 +0200
+From: =?UTF-8?B?RWRkeSBQZXRyaciZb3I=?= <eddy.petrisor@gmail.com>
+User-Agent: Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.8.1.9) Gecko/20080109 Thunderbird/2.0.0.9 Mnenhy/0.7.5.0
+MIME-Version: 1.0
+To: submit@bugs.debian.org
+Subject: lastfm: lately does more buffering than playing
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: 7bit
+Delivered-To: submit@bugs.debian.org
+
+Package: lastfm
+Version: 1:1.4.1.57486.dfsg-1
+Severity: important
+
+--- Please enter the report below this line. ---
+Hello,
+
+I am not sure when exactly this happened, but it seems that, lately, lastfm
+interrupts a lot during playing and starts buffering. Last known version
+must have been somewhere at the begining of December.
+
+I have tried:
+- forcing the buffer at a bigger size(300kB) than the default (16kB)
+- restoring to automatic HTTP buffer size
+- purging and reinstalling lastfm
+- removing a significant part of the config file (I left only small sections
+   for the General, Radio and Users sections)
+
+All resulted in the same interruption issues.
+
+
+--- System information. ---
+Architecture: amd64
+Kernel:       Linux 2.6.22-3-amd64
+
+Debian Release: lenny/sid
+   900 testing         security.debian.org
+   900 testing         ftp.ro.debian.org
+    10 unstable        ftp.ro.debian.org
+
+--- Package information. ---
+Depends              (Version) | Installed
+==============================-+-===============
+libasound2         (>> 1.0.14) | 1.0.15-3
+libc6               (>= 2.7-1) | 2.7-6
+libgcc1           (>= 1:4.2.1) | 1:4.3-20080116-1
+libgpod3                       | 0.6.0-3
+libmad0           (>= 0.15.1b) | 0.15.1b-2.1
+libqt4-core         (>= 4.3.3) | 4.3.3-2
+libqt4-gui          (>= 4.3.3) | 4.3.3-2
+libqt4-sql          (>= 4.3.3) | 4.3.3-2
+libstdc++6          (>= 4.2.1) | 4.3-20080116-1
+libx11-6                       | 2:1.0.3-7
+zlib1g          (>= 1:1.1.4-1) | 1:1.2.3.3.dfsg-8
+
+
+-- 
+Regards,
+EddyP
+=============================================
+"Imagination is more important than knowledge" A.Einstein
+
+
+
+------------=_1208714406-3897-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 463031-done) by bugs.debian.org; 20 Apr 2008 17:59:01 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-6.7 required=4.0 tests=BAYES_00,DNS_FROM_RFC_ABUSE,
+	FORGED_RCVD_HELO,HAS_BUG_NUMBER autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <jstamp@users.sourceforge.net>
+Received: from elasmtp-junco.atl.sa.earthlink.net ([209.86.89.63])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <jstamp@users.sourceforge.net>)
+	id 1Jndob-0000Az-Ec
+	for 463031-done@bugs.debian.org; Sun, 20 Apr 2008 17:59:01 +0000
+Received: from [71.104.117.245] (helo=panurge.homenet)
+	by elasmtp-junco.atl.sa.earthlink.net with esmtpsa (TLSv1:AES256-SHA:256)
+	(Exim 4.67)
+	(envelope-from <jstamp@users.sourceforge.net>)
+	id 1JndoV-0000g9-VQ
+	for 463031-done@bugs.debian.org; Sun, 20 Apr 2008 13:58:56 -0400
+From: John Stamp <jstamp@users.sourceforge.net>
+To: 463031-done@bugs.debian.org
+Subject: Re: Bug#463031: lastfm: lately does more buffering than playing
+Date: Sun, 20 Apr 2008 10:58:52 -0700
+User-Agent: KMail/1.9.9
+References: <479E6788.8080201@gmail.com> <200802081344.59170.jstamp@users.sourceforge.net> <47C7D49E.9070400@gmail.com>
+In-Reply-To: <47C7D49E.9070400@gmail.com>
+MIME-Version: 1.0
+Content-Disposition: inline
+Content-Type: text/plain;
+  charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+Message-Id: <200804201058.52228.jstamp@users.sourceforge.net>
+X-ELNK-Trace: 2894c77d722b2950c2de14566fa15a4e4d2b10475b571120b6f167b3fed06797bc373b798bbdb696f966978d6047df59350badd9bab72f9c350badd9bab72f9c
+X-Originating-IP: 71.104.117.245
+
+There's been no activity, so I'm closing the bug as you requested.  Feel 
+free to reopen it if the problem appears again.
+
+
+------------=_1208714406-3897-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

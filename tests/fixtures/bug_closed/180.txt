@@ -1,0 +1,306 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 18:40:54 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1JndWy-00009b-Vo
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 18:40:54 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id C6BF613A50C4; Sun, 20 Apr 2008 17:40:47 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id D165E13A5068;
+	Sun, 20 Apr 2008 17:40:45 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JndVL-0008Jk-9N; Sun, 20 Apr 2008 17:39:07 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: =?UTF-8?Q?Gon=C3=A9ri?= Le Bouder <goneri@rulezlan.org>
+Subject: Bug#476730: marked as done (boson: FTBFS on hppa)
+Message-ID: <handler.476730.D476730.120871278031240.ackdone@bugs.debian.org>
+References: <E1JndOW-00070D-7Q@ries.debian.org>
+ <20080418185654.5433.96098.reportbug@gloria.rulezlan.org>
+X-Debian-PR-Message: closed 476730
+X-Debian-PR-Package: boson
+X-Debian-PR-Source: boson
+Content-Type: multipart/mixed; boundary="----------=_1208713147-31924-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 17:39:07 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <mwU6AVHGeMI.A.HrE.fA4CIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/133057
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 17:40:47 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208713147-31924-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 17:32:04 +0000
+with message-id <E1JndOW-00070D-7Q@ries.debian.org>
+and subject line Bug#476730: fixed in boson 0.13-4
+has caused the Debian Bug report #476730,
+regarding boson: FTBFS on hppa
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+476730: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D476730
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208713147-31924-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 18 Apr 2008 18:56:58 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.9 required=4.0 tests=BAYES_00,FOURLA,HAS_PACKAGE 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <goneri@rulezlan.org>
+Received: from smtp8-g19.free.fr ([212.27.42.65])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <goneri@rulezlan.org>)
+	id 1JmvlZ-00054z-RO
+	for submit@bugs.debian.org; Fri, 18 Apr 2008 18:56:58 +0000
+Received: from smtp8-g19.free.fr (localhost [127.0.0.1])
+	by smtp8-g19.free.fr (Postfix) with ESMTP id BC8EB17F574;
+	Fri, 18 Apr 2008 20:56:55 +0200 (CEST)
+Received: from gloria.rulezlan.org (gloria.rulezlan.org [82.66.223.28])
+	by smtp8-g19.free.fr (Postfix) with ESMTP id 327AA17F516;
+	Fri, 18 Apr 2008 20:56:55 +0200 (CEST)
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Goneri Le Bouder <goneri@rulezlan.org>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Subject: boson: FTBFS on hppa
+Message-ID: <20080418185654.5433.96098.reportbug@gloria.rulezlan.org>
+X-Mailer: reportbug 3.21.2
+Date: Fri, 18 Apr 2008 20:56:54 +0200
+Delivered-To: submit@bugs.debian.org
+
+Package: boson
+Version: 0.12dfsg1-2
+Severity: serious
+Justification: FTBFS
+
+http://buildd.debian.org/fetch.cgi?&pkg=boson&ver=0.13-3&arch=hppa&stamp=1207326631&file=log
+(...)
+[ 81%] Building CXX object
+boson/boufo/designer/CMakeFiles/boufodesigner.dir/bowidgettree.o
+/build/buildd/boson-0.13/boson/boufo/designer/bowidgettree.cpp:54:2:
+warning: #warning FIXME: code duplication
+[ 81%] Building CXX object
+boson/boufo/designer/CMakeFiles/boufodesigner.dir/bopropertieswidget.o
+[ 81%] Building CXX object
+boson/boufo/designer/CMakeFiles/boufodesigner.dir/bosignalsslotseditor.o
+[ 81%] Building CXX object
+boson/boufo/designer/CMakeFiles/boufodesigner.dir/optionsdialog.o
+[ 81%] Building CXX object
+boson/boufo/designer/CMakeFiles/boufodesigner.dir/main.o
+/build/buildd/boson-0.13/boson/boufo/designer/main.cpp:36:2: warning:
+#warning TODO: messagebox
+Linking CXX executable boufodesigner
+make[3]: Leaving directory `/build/buildd/boson-0.13/debian/build-area'
+[ 81%] Built target boufodesigner
+make[3]: Entering directory `/build/buildd/boson-0.13/debian/build-area'
+[ 81%] Generating boufobuttontest.moc
+Scanning dependencies of target boufobuttontest
+make[3]: Leaving directory `/build/buildd/boson-0.13/debian/build-area'
+make[3]: Entering directory `/build/buildd/boson-0.13/debian/build-area'
+[ 81%] Building CXX object
+boson/boufo/test/CMakeFiles/boufobuttontest.dir/boufobuttontest.o
+Linking CXX executable boufobuttontest
+/usr/bin/ld:
+/build/buildd/boson-0.13/debian/build-area/boson/boufo/libboufo.a(boufofontrenderer.o)(.text._ZN15BoUfoFontPlugin9listFontsERKN3ufo9UFontInfoE[BoUfoFontPlugin::listFonts(ufo::UFontInfo
+const&)]+0x9c): cannot reach
+00003b4f__ZNK9__gnu_cxx17__normal_iteratorIPN3ufo9UFontInfoESt6vectorIS2_SaIS2_EEEdeEv+0,
+recompile with -ffunction-sections
+/usr/bin/ld:
+/build/buildd/boson-0.13/debian/build-area/boson/boufo/libboufo.a(boufofontrenderer.o)(.text._ZN15BoUfoFontPlugin9listFontsERKN3ufo9UFontInfoE[BoUfoFontPlugin::listFonts(ufo::UFontInfo
+const&)]+0x9c): cannot handle R_PARISC_PCREL17F for
+__gnu_cxx::__normal_iterator<ufo::UFontInfo*,
+std::vector<ufo::UFontInfo, std::allocator<ufo::UFontInfo> >
+>::operator*() const
+/usr/bin/ld: final link failed: Bad value
+collect2: ld returned 1 exit status
+make[3]: *** [boson/boufo/test/boufobuttontest] Error 1
+make[3]: Leaving directory `/build/buildd/boson-0.13/debian/build-area'
+make[2]: *** [boson/boufo/test/CMakeFiles/boufobuttontest.dir/all] Error
+2
+make[2]: Leaving directory `/build/buildd/boson-0.13/debian/build-area'
+make[1]: *** [all] Error 2
+make[1]: Leaving directory `/build/buildd/boson-0.13/debian/build-area'
+make: *** [build-stamp] Error 2
+dpkg-buildpackage: failure: debian/rules build gave error exit status 2
+
+
+
+------------=_1208713147-31924-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 476730-close) by bugs.debian.org; 20 Apr 2008 17:33:00 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.7 required=4.0 tests=BAYES_00,FVGT_m_MULTI_ODD,
+	HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_2,MURPHY_WRONG_WORD1,
+	MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JndPP-00086U-Q3
+	for 476730-close@bugs.debian.org; Sun, 20 Apr 2008 17:33:00 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JndOW-00070D-7Q; Sun, 20 Apr 2008 17:32:04 +0000
+From: =?utf-8?q?Gon=C3=A9ri_Le_Bouder?= <goneri@rulezlan.org>
+To: 476730-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#476730: fixed in boson 0.13-4
+Message-Id: <E1JndOW-00070D-7Q@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 17:32:04 +0000
+Content-Transfer-Encoding: quoted-printable
+
+Source: boson
+Source-Version: 0.13-4
+
+We believe that the bug you reported is fixed in the latest version of
+boson, which is due to be installed in the Debian FTP archive:
+
+boson_0.13-4.diff.gz
+  to pool/main/b/boson/boson_0.13-4.diff.gz
+boson_0.13-4.dsc
+  to pool/main/b/boson/boson_0.13-4.dsc
+boson_0.13-4_sparc.deb
+  to pool/main/b/boson/boson_0.13-4_sparc.deb
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 476730@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Gon=C3=A9ri Le Bouder <goneri@rulezlan.org> (supplier of updated boson pa=
+ckage)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 02:41:24 +0200
+Source: boson
+Binary: boson
+Architecture: source sparc
+Version: 0.13-4
+Distribution: unstable
+Urgency: low
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Changed-By: Gon=C3=A9ri Le Bouder <goneri@rulezlan.org>
+Description:=20
+ boson      - core package for Boson
+Closes: 475063 476730
+Changes:=20
+ boson (0.13-4) unstable; urgency=3Dlow
+ .
+   * fix a FTBFS on hppa by adding -mlong-calls, many thanks to
+     Thibaut VARENE (Closes: #476730)
+   * pass CFLAGS to cmake correctly
+   * add fix_desktop_files.diff to make the desktop files Freedesktop
+     compliant, Thanks Stefan Ebner (Closes: #475063)
+   * remove boson-dbg, the package was big and not really useful
+   * remove a \n in 0.12dfsg1-1 entry of the changelog
+Checksums-Sha1:=20
+ 3af00cb91d4497a6c5eacbf351bef13be6902910 1459 boson_0.13-4.dsc
+ a7afc9c321516d55c07bd5b434d5d6c93fc37c1e 31899 boson_0.13-4.diff.gz
+ 3d86bc4e33cd1a24eafbbab65977af1ca146eb07 7737892 boson_0.13-4_sparc.deb
+Checksums-Sha256:=20
+ 1ee57e79064e376882db989b8a49c4cc39df9e442705b8c0b81e0d006807b1c0 1459 bo=
+son_0.13-4.dsc
+ 72c198fc7b54fd696d0dcd87b7607fec1fedff8be78ee003a9dd1af58b4fb775 31899 b=
+oson_0.13-4.diff.gz
+ 505ff8dc4f3ac270b5820017167c484f46f6588bcf446db1affd9abfabbd3d44 7737892=
+ boson_0.13-4_sparc.deb
+Files:=20
+ 6d190e52f348c981b2c63632ea2074bf 1459 games optional boson_0.13-4.dsc
+ 06fcc36adfa79f1769687479f8a990a6 31899 games optional boson_0.13-4.diff.=
+gz
+ 5f5ac60e8f5c1815812903f3b81c134b 7737892 games optional boson_0.13-4_spa=
+rc.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.5 (GNU/Linux)
+
+iD8DBQFIC3mlsKTFpDfZQSwRAlLUAJsE4xymQ84AIwEwqNBKDHoaoFkImQCgisNB
+thpgW9x6ARjvon/LUvbXILA=3D
+=3DQ7cr
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208713147-31924-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

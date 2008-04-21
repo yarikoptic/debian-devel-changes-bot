@@ -1,0 +1,144 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 20:02:10 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnene-0000Zy-Vz
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 20:02:10 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 9C2D613A5182; Sun, 20 Apr 2008 19:02:05 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id 3F4D513A50B5
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 19:02:05 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JneZ9-0002ya-2F; Sun, 20 Apr 2008 18:47:07 +0000
+From: Oleksandr Moskalenko <malex@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted lcms 1.16-10 (source i386)
+Message-Id: <E1JneZ9-0002ya-2F@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 18:47:07 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <SOMkunv_2HM.A.uWF.tM5CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301337
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 19:02:05 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.6
+X-Spam-Report: (-2.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.0 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 12:31:46 -0600
+Source: lcms
+Binary: liblcms1 liblcms-utils liblcms1-dev python-liblcms
+Architecture: source i386
+Version: 1.16-10
+Distribution: unstable
+Urgency: high
+Maintainer: Oleksandr Moskalenko <malex@debian.org>
+Changed-By: Oleksandr Moskalenko <malex@debian.org>
+Description:=20
+ liblcms-utils - Color management library (Additional utilities)
+ liblcms1   - Color management library
+ liblcms1-dev - Color management library (Development headers)
+ python-liblcms - Python bindings for liblcms color management library
+Closes: 477035
+Changes:=20
+ lcms (1.16-10) unstable; urgency=3Dhigh
+ .
+   * debian/tmp/usr/lib/*.so usr/lib/ got lost from liblcms1-dev.install =
+at
+     some point of making 1.16-9. Add it back (Closes: #477035).
+Checksums-Sha1:=20
+ c9ca8b4835503e086d6b036ec890cfe0451eb224 1226 lcms_1.16-10.dsc
+ 6c6315a31c5f29f41a37f086d3014a1b32cdf732 28907 lcms_1.16-10.diff.gz
+ 2dba079b772d17039a2b53b0914245da074658d5 97460 liblcms1_1.16-10_i386.deb
+ 6c884d82ee65601db96fb8c101f13bcea4b6ebc6 53710 liblcms-utils_1.16-10_i38=
+6.deb
+ 39372a68092b40bf9b87362d6c714a7ea7b92187 186338 liblcms1-dev_1.16-10_i38=
+6.deb
+ 131374e61cd371eebc018d24136918acb174dd2f 152764 python-liblcms_1.16-10_i=
+386.deb
+Checksums-Sha256:=20
+ 01eab872e4c225f66be55f887a11ad0924553992bda33529129d5ff251b6a372 1226 lc=
+ms_1.16-10.dsc
+ ff6b1375e3f5e94a2cf9a97429035ca8c718784f47decee78493e4804f2e0950 28907 l=
+cms_1.16-10.diff.gz
+ 23377a830589153c7cdd6054aef7b109a54c43dc67e0f41afbe3f9f622a3d84e 97460 l=
+iblcms1_1.16-10_i386.deb
+ 5aaa181d07125a4a9f6a8b44a13dd148931f1b73dc8e0534e4092db786d62294 53710 l=
+iblcms-utils_1.16-10_i386.deb
+ 39e1c8aaddda3f1e203a70fe9c50037e261281a0770fa0fce54309fa44081aee 186338 =
+liblcms1-dev_1.16-10_i386.deb
+ 8a1d141f0daa1339565b2a7c0d52c1532e32694a15b57d19e287d0662d40c9e9 152764 =
+python-liblcms_1.16-10_i386.deb
+Files:=20
+ 141f25833b9fea4df0eb05073ea65eec 1226 libs optional lcms_1.16-10.dsc
+ 2c0bb8ef0c5ab380fcc0e1fdc808bfac 28907 libs optional lcms_1.16-10.diff.g=
+z
+ fe0eb7b869ded05f4230badd5c9b8931 97460 libs optional liblcms1_1.16-10_i3=
+86.deb
+ 7f47ad25ef7baa9a0b03c23bf2fce021 53710 utils optional liblcms-utils_1.16=
+-10_i386.deb
+ 2e52c5a215ef4e960aa59432c375eb52 186338 libdevel optional liblcms1-dev_1=
+.16-10_i386.deb
+ 225ff24d5cc47d06813db542422970cf 152764 python optional python-liblcms_1=
+.16-10_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC4z62ihvMmxfGWsRAtZMAJ4wjfC6wzfL/PZM9GlpSkfSM3LymwCbBj+i
+WgYLh9kQvn1ppUZCemJPouA=3D
+=3Dgsg9
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+lcms_1.16-10.diff.gz
+  to pool/main/l/lcms/lcms_1.16-10.diff.gz
+lcms_1.16-10.dsc
+  to pool/main/l/lcms/lcms_1.16-10.dsc
+liblcms-utils_1.16-10_i386.deb
+  to pool/main/l/lcms/liblcms-utils_1.16-10_i386.deb
+liblcms1-dev_1.16-10_i386.deb
+  to pool/main/l/lcms/liblcms1-dev_1.16-10_i386.deb
+liblcms1_1.16-10_i386.deb
+  to pool/main/l/lcms/liblcms1_1.16-10_i386.deb
+python-liblcms_1.16-10_i386.deb
+  to pool/main/l/lcms/python-liblcms_1.16-10_i386.deb
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

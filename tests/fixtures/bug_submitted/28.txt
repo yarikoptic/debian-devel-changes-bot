@@ -1,0 +1,128 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 10:35:25 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnVxB-00063C-2n
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 10:35:25 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id E05B513A499D; Sun, 20 Apr 2008 09:35:19 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.9 required=4.0 tests=BAYES_00,FOURLA,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 8920513A4EAC;
+	Sun, 20 Apr 2008 09:35:02 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnVuy-000877-1t; Sun, 20 Apr 2008 09:33:04 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476932: ITP: libcgi-cookie-splitter-perl - Split big cookies into smaller ones
+Reply-To: Yves AGOSTINI <agostini@univ-metz.fr>, 476932@bugs.debian.org
+Resent-From: Yves AGOSTINI <agostini@univ-metz.fr>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: <wnpp@debian.org>, AGOSTINI Yves <agostini@univ-metz.fr>
+Resent-Date: Sun, 20 Apr 2008 09:33:01 +0000
+Resent-Message-ID: <handler.476932.B.120868365825428@bugs.debian.org>
+X-Debian-PR-Message: report 476932
+X-Debian-PR-Package: wnpp
+X-Debian-PR-Keywords: 
+Received: via spool by submit@bugs.debian.org id=B.120868365825428
+          (code B ref -1); Sun, 20 Apr 2008 09:33:01 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 09:27:38 +0000
+X-Amavis-Spam-Status: No, score=-9.8 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,HAS_PACKAGE autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from hermes-node1.univ-metz.fr ([195.220.226.244] ident=root)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <agostini@univ-metz.fr>)
+	id 1JnVpi-0006bE-2w
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 09:27:38 +0000
+Received: from localhost.localdomain (umail.univ-metz.fr [195.220.226.250])
+	by hermes-node1.univ-metz.fr (8.13.8/8.13.8/Debian-3) with ESMTP id m3K9RZPT003458
+	for <submit@bugs.debian.org>; Sun, 20 Apr 2008 11:27:35 +0200
+Message-Id: <200804200927.m3K9RZPT003458@hermes-node1.univ-metz.fr>
+Content-Type: text/plain
+Content-Disposition: inline
+MIME-Version: 1.0
+To: submit@bugs.debian.org
+From: Yves AGOSTINI <agostini@univ-metz.fr>
+Date: Sun, 20 Apr 2008 11:15:05 +0200
+X-Mailer: UMaiL v2.2.rc1
+X-Umail-Host: ra-80.236.21.225-xf--ip--via--cf--cx-
+X-Umail-User: agostini
+X-Greylist: Sender is SPF-compliant, not delayed by milter-greylist-3.0 (hermes-node1.univ-metz.fr [195.220.226.225]); Sun, 20 Apr 2008 11:27:35 +0200 (CEST)
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 09:33:04 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343387
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.4
+X-Spam-Report: (-52.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.0 AWL                    AWL: From: address is in the auto white-list
+
+Package: wnpp
+Severity: wishlist
+Owner: AGOSTINI Yves <agostini@univ-metz.fr>
+
+
+* Package name : libcgi-cookie-splitter-perl
+Version : 0.02
+Upstream Author :  Yuval Kogman <nothingmuch@woobling.org>
+* URL :  http://search.cpan.org/dist/CGI-Cookie-Splitter/
+* License : Perl
+Programming Lang: Perl
+Description : Split big cookies into smaller ones.
+ RFC 2109 reccomends that the minimal cookie size supported by the client=
+ is
+ 4096 bytes. This has become a pretty standard value, and if your server =
+sends
+ larger cookies than that it's considered a no-no.
+=20
+ This module provides a pretty simple interface to generate small cookies=
+ that
+ are under a certain limit, without wasting too much effort.
+
+
+-- System Information:
+Debian Release: lenny/sid
+APT prefers unstable
+APT policy: (500, 'unstable')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.18-5-xen-686 (SMP w/1 CPU core)
+Locale: LANG=3Dfr_FR.UTF-8, LC_CTYPE=3Dfr_FR.UTF-8 (charmap=3DUTF-8)
+Shell: /bin/sh linked to /bin/bash=20
+
+
+
+--=20
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

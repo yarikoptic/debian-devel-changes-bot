@@ -1,0 +1,451 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 17:07:29 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnc4T-00088S-Qv
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 17:07:29 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 6042313A4FB1; Sun, 20 Apr 2008 16:07:16 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-5.7 required=4.0 tests=BAYES_00,FOURLA,
+	FVGT_m_MULTI_ODD,GMAIL,IMPRONONCABLE_1,LDO_WHITELIST,MURPHY_DRUGS_REL8,
+	MURPHY_WRONG_WORD2,RCVD_IN_DNSWL_LOW autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id EA8B513A47C3;
+	Sun, 20 Apr 2008 16:06:59 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnc3g-0006Hp-7j; Sun, 20 Apr 2008 16:06:28 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#477041: matwrap: FTBFS: string.h:100: error: declaration of 'int strcmp(const char*, const char*) throw ()' throws different exceptions
+Reply-To: Lucas Nussbaum <lucas@lucas-nussbaum.net>, 477041@bugs.debian.org
+Resent-From: Lucas Nussbaum <lucas@lucas-nussbaum.net>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian Octave Group <pkg-octave-devel@lists.alioth.debian.org>
+Resent-Date: Sun, 20 Apr 2008 16:06:25 +0000
+Resent-Message-ID: <handler.477041.B.120870753717574@bugs.debian.org>
+X-Debian-PR-Message: report 477041
+X-Debian-PR-Package: matwrap
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: matwrap
+Received: via spool by submit@bugs.debian.org id=B.120870753717574
+          (code B ref -1); Sun, 20 Apr 2008 16:06:25 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 16:05:37 +0000
+X-Amavis-Spam-Status: No, score=-7.7 required=4.0 tests=BAYES_00,FOURLA,
+	FVGT_m_MULTI_ODD,GMAIL,HAS_PACKAGE,IMPRONONCABLE_1,MURPHY_DRUGS_REL8,
+	MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from xanadu.blop.info ([80.248.208.235])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <lucas@lucas-nussbaum.net>)
+	id 1Jnc2q-0004Ys-K2
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 16:05:37 +0000
+Received: from localhost ([127.0.0.1] helo=xanadu.blop.info)
+	by xanadu.blop.info with smtp (Exim 4.63)
+	(envelope-from <lucas@lucas-nussbaum.net>)
+	id 1Jnc2l-0000s7-IX
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 18:05:35 +0200
+Received: (nullmailer pid 24561 invoked by uid 1000);
+	Sun, 20 Apr 2008 16:03:10 -0000
+Date: Sun, 20 Apr 2008 18:03:10 +0200
+From: Lucas Nussbaum <lucas@lucas-nussbaum.net>
+To: submit@bugs.debian.org
+Message-ID: <20080420160310.GA24548@xanadu.blop.info>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 16:06:28 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343625
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -37.4
+X-Spam-Report: (-37.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	15 AWL                    AWL: From: address is in the auto white-list
+
+Package: matwrap
+Version: 0.57-10
+Severity: serious
+User: debian-qa@lists.debian.org
+Usertags: qa-ftbfs-20080419 qa-ftbfs
+Justification: FTBFS on i386
+
+Hi,
+
+During a rebuild of all packages in sid, your package failed to build on i386.
+
+This rebuild was done with gcc 4.3 instead of gcc 4.2, because gcc 4.3 is now
+the default on most architectures (even if it's not the case on i386 yet).
+Feel free to downgrade this bug to 'important' if your package is only built
+on i386, and this bug is specific to gcc 4.3 (i.e the package builds fine with
+gcc 4.2).
+
+Relevant part:
+> DC-Build-Header: matwrap 0.57-10 / Sat Apr 19 21:48:58 +0200 2008
+> Automatic build of matwrap_0.57-10 on gdx-74.orsay.grid5000.fr by sbuild/amd64 0.57.0
+> Build started at 20080419-2148
+> ******************************************************************************
+> Failed to open ./matwrap_0.57-10.dsc
+> Checking available source versions...
+> Fetching source files...
+> Reading package lists...
+> Building dependency tree...
+> Reading state information...
+> Need to get 94.9kB of source archives.
+> Get:1 http://idpot.grenoble.grid5000.fr sid/main matwrap 0.57-10 (dsc) [1285B]
+> Get:2 http://idpot.grenoble.grid5000.fr sid/main matwrap 0.57-10 (tar) [88.3kB]
+> Get:3 http://idpot.grenoble.grid5000.fr sid/main matwrap 0.57-10 (diff) [5320B]
+> Fetched 94.9kB in 0s (435kB/s)
+> Download complete and in download only mode
+> ** Using build dependencies supplied by package:
+> Build-Depends: debhelper (>= 4.0.0), cdbs, quilt
+> Build-Depends-Indep: octave2.1-headers (>= 1:2.1.73-14) | octave3.0-headers
+> Checking for already installed source dependencies...
+> debhelper: missing
+> Using default version 6.0.11
+> cdbs: missing
+> quilt: missing
+> octave2.1-headers: missing
+> Using default version 1:2.1.73-19
+> octave3.0-headers: missing
+> Checking for source dependency conflicts...
+> Reading package lists...
+> Building dependency tree...
+> Reading state information...
+> The following extra packages will be installed:
+>   bsdmainutils diffstat file gettext gettext-base gfortran gfortran-4.3
+>   groff-base html2text intltool-debian libblas-dev libblas3gf libfftw3-3
+>   libfftw3-dev libgfortran3 libhdf5-serial-1.6.6-0 libhdf5-serial-dev
+>   libjpeg62 libjpeg62-dev liblapack-dev liblapack3gf libmagic1 libncurses5-dev
+>   libreadline5-dev man-db octave2.1 po-debconf texinfo zlib1g-dev
+> Suggested packages:
+>   wamerican wordlist whois vacation devscripts doc-base dh-make cvs
+>   gettext-doc gfortran-doc gfortran-multilib gfortran-4.3-doc
+>   gfortran-4.3-multilib libgfortran3-dbg groff libhdf5-doc www-browser
+>   octave2.1-doc octave2.1-emacsen octave2.1-htmldoc octave2.1-info procmail
+>   graphviz texinfo-doc-nonfree texlive-base texlive-generic-recommended
+>   texlive-latex-base
+> Recommended packages:
+>   autotools-dev curl wget lynx gnuplot libatlas3gf-base libcompress-zlib-perl
+>   libmail-box-perl libmail-sendmail-perl
+> The following NEW packages will be installed:
+>   bsdmainutils cdbs debhelper diffstat file gettext gettext-base gfortran
+>   gfortran-4.3 groff-base html2text intltool-debian libblas-dev libblas3gf
+>   libfftw3-3 libfftw3-dev libgfortran3 libhdf5-serial-1.6.6-0
+>   libhdf5-serial-dev libjpeg62 libjpeg62-dev liblapack-dev liblapack3gf
+>   libmagic1 libncurses5-dev libreadline5-dev man-db octave2.1
+>   octave2.1-headers po-debconf quilt texinfo zlib1g-dev
+> 0 upgraded, 33 newly installed, 0 to remove and 0 not upgraded.
+> Need to get 30.2MB of archives.
+> After this operation, 92.2MB of additional disk space will be used.
+> WARNING: The following packages cannot be authenticated!
+>   bsdmainutils groff-base man-db libmagic1 file gettext-base texinfo html2text
+>   gettext intltool-debian po-debconf debhelper cdbs diffstat libgfortran3
+>   gfortran-4.3 gfortran libblas3gf libblas-dev libfftw3-3 libfftw3-dev
+>   libhdf5-serial-1.6.6-0 libjpeg62 libjpeg62-dev zlib1g-dev libhdf5-serial-dev
+>   liblapack3gf liblapack-dev libncurses5-dev libreadline5-dev octave2.1
+>   octave2.1-headers quilt
+> Authentication warning overridden.
+> Get:1 http://idpot.grenoble.grid5000.fr sid/main bsdmainutils 6.1.10 [172kB]
+> Get:2 http://idpot.grenoble.grid5000.fr sid/main groff-base 1.18.1.1-20 [846kB]
+> Get:3 http://idpot.grenoble.grid5000.fr sid/main man-db 2.5.1-3 [997kB]
+> Get:4 http://idpot.grenoble.grid5000.fr sid/main libmagic1 4.23-2 [342kB]
+> Get:5 http://idpot.grenoble.grid5000.fr sid/main file 4.23-2 [41.0kB]
+> Get:6 http://idpot.grenoble.grid5000.fr sid/main gettext-base 0.17-2 [123kB]
+> Get:7 http://idpot.grenoble.grid5000.fr sid/main texinfo 4.11.dfsg.1-4 [710kB]
+> Get:8 http://idpot.grenoble.grid5000.fr sid/main html2text 1.3.2a-3 [98.9kB]
+> Get:9 http://idpot.grenoble.grid5000.fr sid/main gettext 0.17-2 [2683kB]
+> Get:10 http://idpot.grenoble.grid5000.fr sid/main intltool-debian 0.35.0+20060710.1 [30.8kB]
+> Get:11 http://idpot.grenoble.grid5000.fr sid/main po-debconf 1.0.12.1 [237kB]
+> Get:12 http://idpot.grenoble.grid5000.fr sid/main debhelper 6.0.11 [522kB]
+> Get:13 http://idpot.grenoble.grid5000.fr sid/main cdbs 0.4.52 [921kB]
+> Get:14 http://idpot.grenoble.grid5000.fr sid/main diffstat 1.45-2 [21.1kB]
+> Get:15 http://idpot.grenoble.grid5000.fr sid/main libgfortran3 4.3.0-3 [221kB]
+> Get:16 http://idpot.grenoble.grid5000.fr sid/main gfortran-4.3 4.3.0-3 [3480kB]
+> Get:17 http://idpot.grenoble.grid5000.fr sid/main gfortran 4:4.3.0-4 [1198B]
+> Get:18 http://idpot.grenoble.grid5000.fr sid/main libblas3gf 1.2-1.5 [310kB]
+> Get:19 http://idpot.grenoble.grid5000.fr sid/main libblas-dev 1.2-1.5 [312kB]
+> Get:20 http://idpot.grenoble.grid5000.fr sid/main libfftw3-3 3.1.2-3 [1076kB]
+> Get:21 http://idpot.grenoble.grid5000.fr sid/main libfftw3-dev 3.1.2-3 [1489kB]
+> Get:22 http://idpot.grenoble.grid5000.fr sid/main libhdf5-serial-1.6.6-0 1.6.6-4 [629kB]
+> Get:23 http://idpot.grenoble.grid5000.fr sid/main libjpeg62 6b-14 [86.0kB]
+> Get:24 http://idpot.grenoble.grid5000.fr sid/main libjpeg62-dev 6b-14 [186kB]
+> Get:25 http://idpot.grenoble.grid5000.fr sid/main zlib1g-dev 1:1.2.3.3.dfsg-12 [157kB]
+> Get:26 http://idpot.grenoble.grid5000.fr sid/main libhdf5-serial-dev 1.6.6-4 [750kB]
+> Get:27 http://idpot.grenoble.grid5000.fr sid/main liblapack3gf 3.1.1-0.4 [2887kB]
+> Get:28 http://idpot.grenoble.grid5000.fr sid/main liblapack-dev 3.1.1-0.4 [3004kB]
+> Get:29 http://idpot.grenoble.grid5000.fr sid/main libncurses5-dev 5.6+20080405-1 [1502kB]
+> Get:30 http://idpot.grenoble.grid5000.fr sid/main libreadline5-dev 5.2-3 [220kB]
+> Get:31 http://idpot.grenoble.grid5000.fr sid/main octave2.1 1:2.1.73-19 [5560kB]
+> Get:32 http://idpot.grenoble.grid5000.fr sid/main octave2.1-headers 1:2.1.73-19 [294kB]
+> Get:33 http://idpot.grenoble.grid5000.fr sid/main quilt 0.46-4 [339kB]
+> debconf: delaying package configuration, since apt-utils is not installed
+> Fetched 30.2MB in 2s (11.6MB/s)
+> Selecting previously deselected package bsdmainutils.
+> (Reading database ... 9334 files and directories currently installed.)
+> Unpacking bsdmainutils (from .../bsdmainutils_6.1.10_i386.deb) ...
+> Selecting previously deselected package groff-base.
+> Unpacking groff-base (from .../groff-base_1.18.1.1-20_i386.deb) ...
+> Selecting previously deselected package man-db.
+> Unpacking man-db (from .../man-db_2.5.1-3_i386.deb) ...
+> Selecting previously deselected package libmagic1.
+> Unpacking libmagic1 (from .../libmagic1_4.23-2_i386.deb) ...
+> Selecting previously deselected package file.
+> Unpacking file (from .../archives/file_4.23-2_i386.deb) ...
+> Selecting previously deselected package gettext-base.
+> Unpacking gettext-base (from .../gettext-base_0.17-2_i386.deb) ...
+> Selecting previously deselected package texinfo.
+> Unpacking texinfo (from .../texinfo_4.11.dfsg.1-4_i386.deb) ...
+> Selecting previously deselected package html2text.
+> Unpacking html2text (from .../html2text_1.3.2a-3_i386.deb) ...
+> Selecting previously deselected package gettext.
+> Unpacking gettext (from .../gettext_0.17-2_i386.deb) ...
+> Selecting previously deselected package intltool-debian.
+> Unpacking intltool-debian (from .../intltool-debian_0.35.0+20060710.1_all.deb) ...
+> Selecting previously deselected package po-debconf.
+> Unpacking po-debconf (from .../po-debconf_1.0.12.1_all.deb) ...
+> Selecting previously deselected package debhelper.
+> Unpacking debhelper (from .../debhelper_6.0.11_all.deb) ...
+> Selecting previously deselected package cdbs.
+> Unpacking cdbs (from .../archives/cdbs_0.4.52_all.deb) ...
+> Selecting previously deselected package diffstat.
+> Unpacking diffstat (from .../diffstat_1.45-2_i386.deb) ...
+> Selecting previously deselected package libgfortran3.
+> Unpacking libgfortran3 (from .../libgfortran3_4.3.0-3_i386.deb) ...
+> Selecting previously deselected package gfortran-4.3.
+> Unpacking gfortran-4.3 (from .../gfortran-4.3_4.3.0-3_i386.deb) ...
+> Selecting previously deselected package gfortran.
+> Unpacking gfortran (from .../gfortran_4%3a4.3.0-4_i386.deb) ...
+> Selecting previously deselected package libblas3gf.
+> Unpacking libblas3gf (from .../libblas3gf_1.2-1.5_i386.deb) ...
+> Selecting previously deselected package libblas-dev.
+> Unpacking libblas-dev (from .../libblas-dev_1.2-1.5_i386.deb) ...
+> Selecting previously deselected package libfftw3-3.
+> Unpacking libfftw3-3 (from .../libfftw3-3_3.1.2-3_i386.deb) ...
+> Selecting previously deselected package libfftw3-dev.
+> Unpacking libfftw3-dev (from .../libfftw3-dev_3.1.2-3_i386.deb) ...
+> Selecting previously deselected package libhdf5-serial-1.6.6-0.
+> Unpacking libhdf5-serial-1.6.6-0 (from .../libhdf5-serial-1.6.6-0_1.6.6-4_i386.deb) ...
+> Selecting previously deselected package libjpeg62.
+> Unpacking libjpeg62 (from .../libjpeg62_6b-14_i386.deb) ...
+> Selecting previously deselected package libjpeg62-dev.
+> Unpacking libjpeg62-dev (from .../libjpeg62-dev_6b-14_i386.deb) ...
+> Selecting previously deselected package zlib1g-dev.
+> Unpacking zlib1g-dev (from .../zlib1g-dev_1%3a1.2.3.3.dfsg-12_i386.deb) ...
+> Selecting previously deselected package libhdf5-serial-dev.
+> Unpacking libhdf5-serial-dev (from .../libhdf5-serial-dev_1.6.6-4_i386.deb) ...
+> Selecting previously deselected package liblapack3gf.
+> Unpacking liblapack3gf (from .../liblapack3gf_3.1.1-0.4_i386.deb) ...
+> Selecting previously deselected package liblapack-dev.
+> Unpacking liblapack-dev (from .../liblapack-dev_3.1.1-0.4_i386.deb) ...
+> Selecting previously deselected package libncurses5-dev.
+> Unpacking libncurses5-dev (from .../libncurses5-dev_5.6+20080405-1_i386.deb) ...
+> Selecting previously deselected package libreadline5-dev.
+> Unpacking libreadline5-dev (from .../libreadline5-dev_5.2-3_i386.deb) ...
+> Selecting previously deselected package octave2.1.
+> Unpacking octave2.1 (from .../octave2.1_1%3a2.1.73-19_i386.deb) ...
+> Selecting previously deselected package octave2.1-headers.
+> Unpacking octave2.1-headers (from .../octave2.1-headers_1%3a2.1.73-19_i386.deb) ...
+> Selecting previously deselected package quilt.
+> Unpacking quilt (from .../archives/quilt_0.46-4_all.deb) ...
+> Setting up bsdmainutils (6.1.10) ...
+> Setting up groff-base (1.18.1.1-20) ...
+> Setting up man-db (2.5.1-3) ...
+> Building database of manual pages ...
+> Setting up libmagic1 (4.23-2) ...
+> Setting up file (4.23-2) ...
+> Setting up gettext-base (0.17-2) ...
+> Setting up texinfo (4.11.dfsg.1-4) ...
+> Setting up html2text (1.3.2a-3) ...
+> Setting up gettext (0.17-2) ...
+> Setting up intltool-debian (0.35.0+20060710.1) ...
+> Setting up po-debconf (1.0.12.1) ...
+> Setting up debhelper (6.0.11) ...
+> Setting up cdbs (0.4.52) ...
+> Setting up diffstat (1.45-2) ...
+> Setting up libgfortran3 (4.3.0-3) ...
+> Setting up gfortran-4.3 (4.3.0-3) ...
+> Setting up gfortran (4:4.3.0-4) ...
+> Setting up libblas3gf (1.2-1.5) ...
+> Setting up libblas-dev (1.2-1.5) ...
+> Setting up libfftw3-3 (3.1.2-3) ...
+> Setting up libfftw3-dev (3.1.2-3) ...
+> Setting up libhdf5-serial-1.6.6-0 (1.6.6-4) ...
+> Setting up libjpeg62 (6b-14) ...
+> Setting up libjpeg62-dev (6b-14) ...
+> Setting up zlib1g-dev (1:1.2.3.3.dfsg-12) ...
+> Setting up libhdf5-serial-dev (1.6.6-4) ...
+> Setting up liblapack3gf (3.1.1-0.4) ...
+> Setting up liblapack-dev (3.1.1-0.4) ...
+> Setting up libncurses5-dev (5.6+20080405-1) ...
+> Setting up libreadline5-dev (5.2-3) ...
+> Setting up octave2.1 (1:2.1.73-19) ...
+> Setting up octave2.1-headers (1:2.1.73-19) ...
+> Setting up quilt (0.46-4) ...
+> Checking correctness of source dependencies...
+> Kernel: Linux 2.6.18-3-amd64 i386 (x86_64)
+> Toolchain package versions: libc6-dev_2.7-10 linux-libc-dev_2.6.24-5 gcc-4.3_4.3.0-3 g++-4.3_4.3.0-3 binutils_2.18.1~cvs20080103-4 libstdc++6-4.3-dev_4.3.0-3 libstdc++6_4.3.0-3
+> ------------------------------------------------------------------------------
+> gpg: Signature made Sun Apr 13 17:57:25 2008 CEST using DSA key ID 4A5D72FE
+> gpg: Can't check signature: public key not found
+> dpkg-source: extracting matwrap in matwrap-0.57
+> dpkg-source: info: unpacking matwrap_0.57.orig.tar.gz
+> dpkg-source: info: applying matwrap_0.57-10.diff.gz
+> dpkg-buildpackage: set CFLAGS to default value: -g -O2
+> dpkg-buildpackage: set CPPFLAGS to default value: 
+> dpkg-buildpackage: set LDFLAGS to default value: 
+> dpkg-buildpackage: set FFLAGS to default value: -g -O2
+> dpkg-buildpackage: set CXXFLAGS to default value: -g -O2
+> dpkg-buildpackage: source package matwrap
+> dpkg-buildpackage: source version 0.57-10
+> dpkg-buildpackage: source changed by Thomas Weber <thomas.weber.mail@gmail.com>
+> dpkg-buildpackage: host architecture i386
+>  /usr/bin/fakeroot debian/rules clean
+> test -x debian/rules
+> dh_testroot
+> ( cd share/matwrap/Examples/simple ;	\
+> 	  make clean )
+> make[1]: Entering directory `/build/user/matwrap-0.57/share/matwrap/Examples/simple'
+> rm -f -rf wrap_m *.o *_matlab.c *_octave.cc *.mexaxp *.oct \
+> 	*.mex4 *_stub.m *_matlab.c octave-core so_locations *.ct tela_simple
+> make[1]: Leaving directory `/build/user/matwrap-0.57/share/matwrap/Examples/simple'
+> dh_clean 
+> /usr/bin/make  -C . CFLAGS="-g -O2 -g -Wall -O2" CXXFLAGS="-g -O2 -g -Wall -O2" CPPFLAGS="" LDFLAGS=""  -k clean
+> make[1]: Entering directory `/build/user/matwrap-0.57'
+> make[1]: *** No rule to make target `clean'.
+> make[1]: Leaving directory `/build/user/matwrap-0.57'
+> make: [makefile-clean] Error 2 (ignored)
+> rm -f debian/stamp-makefile-build
+> /usr/bin/make -f debian/rules reverse-config
+> make[1]: Entering directory `/build/user/matwrap-0.57'
+> make[1]: Nothing to be done for `reverse-config'.
+> make[1]: Leaving directory `/build/user/matwrap-0.57'
+> if [ -d "." ] ; then \
+> 	  cd . && QUILT_PATCHES=patches quilt --quiltrc /dev/null pop -a -R || test $? = 2 ; \
+> 	fi 
+> No patch removed
+> if [ -n "patches" ] ; then \
+> 	  if [ -L ./patches ] ; then \
+> 	    rm ./patches ; \
+> 	  fi ; \
+> 	fi
+> rm -rf ./.pc
+> rm -f debian/stamp-patch*
+>  dpkg-source -b matwrap-0.57
+> dpkg-source: info: using source format `1.0'
+> dpkg-source: info: building matwrap using existing matwrap_0.57.orig.tar.gz
+> dpkg-source: info: building matwrap in matwrap_0.57-10.diff.gz
+> dpkg-source: info: building matwrap in matwrap_0.57-10.dsc
+>  debian/rules build
+> test -x debian/rules
+> mkdir -p "."
+> /usr/bin/make -f debian/rules reverse-config
+> make[1]: Entering directory `/build/user/matwrap-0.57'
+> make[1]: Nothing to be done for `reverse-config'.
+> make[1]: Leaving directory `/build/user/matwrap-0.57'
+> if [ -n "patches" ] ; then \
+> 	  if [ -L ./patches ] ; then : ; else \
+> 	    (cd .; ln -s /build/user/matwrap-0.57/debian/patches patches) ; \
+> 	  fi ; \
+> 	fi
+> cd . && QUILT_PATCHES=patches quilt --quiltrc /dev/null push -a || test $? = 2
+> Applying patch namespace-std-for-string.diff
+> patching file share/matwrap/wrap_octave.pl
+> 
+> Applying patch strip-file-extension.diff
+> patching file share/matwrap/wrap_octave.pl
+> 
+> Applying patch install.pl-get-manpage.diff
+> patching file install.pl
+> 
+> Applying patch library-path-gcc-4.diff
+> patching file bin/matwrap
+> 
+> Applying patch makefile-build-target.diff
+> patching file Makefile
+> 
+> Applying patch use_iostream_for_iostream.h
+> patching file share/matwrap/Examples/simple/simple.h
+> patching file share/matwrap/Examples/single_axon/hodgkin_huxley.cxx
+> patching file share/matwrap/Examples/single_axon/single_axon.cxx
+> 
+> Now at patch use_iostream_for_iostream.h
+> touch debian/stamp-patched
+> /usr/bin/make -f debian/rules update-config
+> make[1]: Entering directory `/build/user/matwrap-0.57'
+> make[1]: Nothing to be done for `update-config'.
+> make[1]: Leaving directory `/build/user/matwrap-0.57'
+> /usr/bin/make  -C . CFLAGS="-g -O2 -g -Wall -O2" CXXFLAGS="-g -O2 -g -Wall -O2" CPPFLAGS="" LDFLAGS=""  
+> make[1]: Entering directory `/build/user/matwrap-0.57'
+> make[1]: Nothing to be done for `all'.
+> make[1]: Leaving directory `/build/user/matwrap-0.57'
+> touch debian/stamp-makefile-build
+> DEB_MAKE_CHECK_TARGET unset, not running checks
+> # Run checks
+> ( cd share/matwrap/Examples/simple ;		\
+> 	  make PERL="perl -I../.." octave ;		\
+> 	  echo "simple_stub; demo" | octave -qf )
+> make[1]: Entering directory `/build/user/matwrap-0.57/share/matwrap/Examples/simple'
+> perl -I../.. -w ../../../../bin/matwrap -language octave simple.h \
+> 		-o simple_octave.cc -stub simple_stub.m
+> mkoctfile simple_octave.cc
+> In file included from /usr/include/H5FDgass.h:28,
+>                  from /usr/include/hdf5.h:47,
+>                  from /usr/include/octave-2.1.73/octave/ov.h:38,
+>                  from /usr/include/octave-2.1.73/octave/oct-obj.h:37,
+>                  from /usr/include/octave-2.1.73/octave/ov-fcn.h:37,
+>                  from /usr/include/octave-2.1.73/octave/ov-builtin.h:33,
+>                  from /usr/include/octave-2.1.73/octave/defun-int.h:29,
+>                  from /usr/include/octave-2.1.73/octave/defun-dld.h:31,
+>                  from /usr/include/octave-2.1.73/octave/oct.h:36,
+>                  from simple_octave.cc:10:
+> /usr/include/string.h:100: error: declaration of 'int strcmp(const char*, const char*) throw ()' throws different exceptions
+> simple.h:94: error: from previous declaration 'int strcmp(const char*, const char*)'
+> make[1]: *** [simple_octave.oct] Error 1
+
+The full build log is available from:
+   http://people.debian.org/~lucas/logs/2008/04/19
+
+A list of current common problems and possible solutions is available at 
+http://wiki.debian.org/qa.debian.org/FTBFS . You're welcome to contribute!
+
+About the archive rebuild: The rebuild was done on about 50 AMD64 nodes
+of the Grid'5000 platform, using a clean chroot containing a sid i386
+environment.  Internet was not accessible from the build systems.
+
+-- 
+| Lucas Nussbaum
+| lucas@lucas-nussbaum.net   http://www.lucas-nussbaum.net/ |
+| jabber: lucas@nussbaum.fr             GPG: 1024D/023B3F4F |
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,139 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 16:32:04 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnbWK-0007jW-3x
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 16:32:04 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id C3FBF13A50B4; Sun, 20 Apr 2008 15:31:58 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id 65F2213A508B
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 15:31:58 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnbHw-0007Pp-3y; Sun, 20 Apr 2008 15:17:08 +0000
+From: James Vega <jamessan@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted vim-scripts 7.1.7 (source all)
+Message-Id: <E1JnbHw-0007Pp-3y@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 15:17:08 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <bBR5H1Hs8K.A.4GE.uH2CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301313
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 15:31:58 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.5
+X-Spam-Report: (-2.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.1 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 10:55:00 -0400
+Source: vim-scripts
+Binary: vim-scripts
+Architecture: source all
+Version: 7.1.7
+Distribution: unstable
+Urgency: low
+Maintainer: jamessan@debian.org
+Changed-By: James Vega <jamessan@debian.org>
+Description:=20
+ vim-scripts - plugins for vim, adding bells and whistles
+Closes: 465330 471890 473744 474599
+Changes:=20
+ vim-scripts (7.1.7) unstable; urgency=3Dlow
+ .
+   * debian/control:
+     - Update Standards-Version to 3.7.3.0 (no changes needed).
+   * Updated addons:
+     - xmledit, surround, debPlugin, Markdown syntax, NERD Commenter, Enh=
+anced
+       Commentify, vcscommand, calendar.
+   * New addons:
+     - DetectIndent: Automatically detect indent settings. (Closes: #4718=
+90)
+     - snippetsEmu: Emulate TextMate's snippet expansion. (Closes: #47374=
+4)
+   * Added patches:
+     - patches/disabledby-xml.dpatch:
+       + Do not let loaded_xml_ftplugin since that will prevent the ftplu=
+gin
+         from being run in other buffers.  Thanks to Marvin Renich for th=
+e
+         patch.  (Closes: #465330)
+     - patches/lbdbq-inputlist.dpatch:
+       + Correct the use of inputlist() and its results so the user is ab=
+le to
+         press <Enter> to cancel, as advertised.  (Closes: #474599)
+   * Change doc-base section to Editors.
+Checksums-Sha1:=20
+ 2eab42ee85a9543ee6f61ab865526f4d729efb5d 1114 vim-scripts_7.1.7.dsc
+ 6d2eb30ad810035c5e2080abf0d6fb62ec57ef87 726208 vim-scripts_7.1.7.tar.gz
+ a1ccc5c46fc5236dbb16f780a4c15e340a9ae01d 736740 vim-scripts_7.1.7_all.de=
+b
+Checksums-Sha256:=20
+ b64213da8a91408fe417d32b8f2776ad65de06f2cc5f78f08517a13d24c2d299 1114 vi=
+m-scripts_7.1.7.dsc
+ 89892ee1a80830dfea687f7ce525973c0b2b5bb210274cfc0f8c3baa8320e6f2 726208 =
+vim-scripts_7.1.7.tar.gz
+ 1e726bc3eb0b400fe84c5dd383151087ef4b5bb2dcf78a1a4b94dc23d346bc18 736740 =
+vim-scripts_7.1.7_all.deb
+Files:=20
+ 218d285c428f66b96a51f05c4dfb9393 1114 editors optional vim-scripts_7.1.7=
+.dsc
+ 78f79c9926ed710e3c2806b6b4785035 726208 editors optional vim-scripts_7.1=
+.7.tar.gz
+ de2d068c5176beceff34fd26ab2b217b 736740 editors optional vim-scripts_7.1=
+.7_all.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iEYEARECAAYFAkgLXHoACgkQDb3UpmEybUD8IACeM8UVC2tl7OiY359Sf8BCLA3O
+sS0AoIZpuSWCzpEsK/vnBVZixwJ+0r5t
+=3DDOgV
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+vim-scripts_7.1.7.dsc
+  to pool/main/v/vim-scripts/vim-scripts_7.1.7.dsc
+vim-scripts_7.1.7.tar.gz
+  to pool/main/v/vim-scripts/vim-scripts_7.1.7.tar.gz
+vim-scripts_7.1.7_all.deb
+  to pool/main/v/vim-scripts/vim-scripts_7.1.7_all.deb
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

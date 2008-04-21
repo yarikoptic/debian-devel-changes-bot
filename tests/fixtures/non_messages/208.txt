@@ -1,0 +1,133 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 17:28:45 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JncPA-0008HE-8i
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 17:28:45 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 4C1F413A4F8A; Sun, 20 Apr 2008 16:28:39 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id A64DE13A4F5B;
+	Sun, 20 Apr 2008 16:28:23 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JncKo-0000iQ-Uc; Sun, 20 Apr 2008 16:24:10 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476021: sketch: FTBFS: Died at make.pl line 21, <F> line 10.  (reproduced with new version)
+Reply-To: Lucas Nussbaum <lucas@lucas-nussbaum.net>, 476021@bugs.debian.org
+Resent-From: Lucas Nussbaum <lucas@lucas-nussbaum.net>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: David Bremner <bremner@unb.ca>
+Resent-Date: Sun, 20 Apr 2008 16:24:10 +0000
+Resent-Message-ID: <handler.476021.B476021.120870845729865@bugs.debian.org>
+X-Debian-PR-Message: report 476021
+X-Debian-PR-Package: sketch
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: sketch
+Received: via spool by 476021-submit@bugs.debian.org id=B476021.120870845729865
+          (code B ref 476021); Sun, 20 Apr 2008 16:24:10 +0000
+Received: (at 476021) by bugs.debian.org; 20 Apr 2008 16:20:57 +0000
+X-Amavis-Spam-Status: No, score=-7.0 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from xanadu.blop.info ([80.248.208.235])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <lucas@lucas-nussbaum.net>)
+	id 1JncHg-0007lJ-SS
+	for 476021@bugs.debian.org; Sun, 20 Apr 2008 16:20:57 +0000
+Received: from localhost ([127.0.0.1] helo=xanadu.blop.info)
+	by xanadu.blop.info with smtp (Exim 4.63)
+	(envelope-from <lucas@lucas-nussbaum.net>)
+	id 1JncHb-00019Y-51; Sun, 20 Apr 2008 18:20:52 +0200
+Received: (nullmailer pid 26161 invoked by uid 1000);
+	Sun, 20 Apr 2008 16:15:14 -0000
+Date: Sun, 20 Apr 2008 18:15:14 +0200
+From: Lucas Nussbaum <lucas@lucas-nussbaum.net>
+To: David Bremner <bremner@unb.ca>
+Cc: 476021@bugs.debian.org, Bas Wijnen <wijnen@debian.org>
+Message-ID: <20080420161514.GA25548@xanadu.blop.info>
+References: <20080414114920.GA4323@xanadu.blop.info> <20080415095714.GA21722@pcbcn10.phys.rug.nl> <0tprsqns8j.wl%bremner@pivot.cs.unb.ca> <0t7iewh1w7.wl%bremner@pivot.cs.unb.ca> <20080417205645.GA17710@xanadu.blop.info> <0t63udm2j7.wl%bremner@pivot.cs.unb.ca>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+	protocol="application/pgp-signature"; boundary="gKMricLos+KVdGMg"
+Content-Disposition: inline
+In-Reply-To: <0t63udm2j7.wl%bremner@pivot.cs.unb.ca>
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Resent-Date: Sun, 20 Apr 2008 16:24:10 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343642
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -37.5
+X-Spam-Report: (-37.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	15 AWL                    AWL: From: address is in the auto white-list
+
+
+--gKMricLos+KVdGMg
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+On 20/04/08 at 09:03 +0200, David Bremner wrote:
+>=20
+> Dear All;
+>=20
+> I placed a potential fix at
+>=20
+>   http://mentors.debian.net/debian/pool/main/s/sketch/sketch_0.2.60-1.dsc
+>=20
+> If Lucas can verify this fixes the bug for him, then maybe Bas could could
+> consider uploading to unstable? Or something like that.
+
+This package builds fine, thank you
+--=20
+| Lucas Nussbaum
+| lucas@lucas-nussbaum.net   http://www.lucas-nussbaum.net/ |
+| jabber: lucas@nussbaum.fr             GPG: 1024D/023B3F4F |
+
+--gKMricLos+KVdGMg
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: Digital signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC2wS2hliNwI7P08RAgJzAKCQHHmoNcqx02xxe4uF8qyJa6M5sACgrayX
+PyCh3b9EXTpWMjIfax8ZzcI=
+=tABo
+-----END PGP SIGNATURE-----
+
+--gKMricLos+KVdGMg--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

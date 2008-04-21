@@ -1,0 +1,114 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 16:04:59 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnb67-0007dt-8I
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 16:04:59 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 3A27F13A4FF3; Sun, 20 Apr 2008 15:04:54 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-5.3 required=4.0 tests=BAYES_00,GMAIL,LDO_WHITELIST,
+	MAILTO_TO_SPAM_ADDR,RCVD_IN_DNSWL_LOW autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 4799413A4F07;
+	Sun, 20 Apr 2008 15:04:42 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnb4Q-0004YQ-6q; Sun, 20 Apr 2008 15:03:10 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476951: aptitude: must run apt-listbugs before downloading packages
+Reply-To: Daniel Burrows <dburrows@debian.org>, 476951@bugs.debian.org
+Resent-From: Daniel Burrows <dburrows@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 15:03:09 +0000
+Resent-Message-ID: <handler.476951.B476951.120870374315752@bugs.debian.org>
+X-Debian-PR-Message: report 476951
+X-Debian-PR-Package: aptitude
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: aptitude
+Received: via spool by 476951-submit@bugs.debian.org id=B476951.120870374315752
+          (code B ref 476951); Sun, 20 Apr 2008 15:03:09 +0000
+Received: (at 476951) by bugs.debian.org; 20 Apr 2008 15:02:23 +0000
+X-Amavis-Spam-Status: No, score=-10.0 required=4.0 tests=BAYES_00,FROMDEVELOPER,
+	GMAIL,HAS_BUG_NUMBER,VALID_BTS_CONTROL autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from vms048pub.verizon.net ([206.46.252.48])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dburrows@debian.org>)
+	id 1Jnb3f-00043e-9G; Sun, 20 Apr 2008 15:02:23 +0000
+Received: from [127.0.1.1] ([71.112.18.250])
+ by vms048.mailsrvcs.net (Sun Java System Messaging Server 6.2-6.01 (built Apr
+ 3 2006)) with ESMTPA id <0JZM00AM6PRAJL00@vms048.mailsrvcs.net>; Sun,
+ 20 Apr 2008 10:01:59 -0500 (CDT)
+Date: Sun, 20 Apr 2008 08:01:57 -0700
+From: Daniel Burrows <dburrows@debian.org>
+In-reply-to: <20080420175146.29988.56557.reportbug@debian>
+To: Luca Bruno <lethalman88@gmail.com>, 476951@bugs.debian.org
+Cc: control@bugs.debian.org
+Message-id: <20080420150157.GA7649@alpaca>
+MIME-version: 1.0
+Content-type: text/plain; charset=us-ascii
+Content-disposition: inline
+References: <20080420175146.29988.56557.reportbug@debian>
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+X-CrossAssassin-Score: 2
+Resent-Date: Sun, 20 Apr 2008 15:03:10 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343547
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.1
+X-Spam-Report: (-52.1 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.5 AWL                    AWL: From: address is in the auto white-list
+
+package aptitude
+retitle 476951 There should be a way to invoke apt-listbugs before downloading packages.
+reassign 476951 apt-listbugs,apt
+thanks
+
+On Sun, Apr 20, 2008 at 12:51:46PM -0500, Luca Bruno <lethalman88@gmail.com> was heard to say:
+> Currently aptitude first downloads packages then check for bugs.
+> I think it's better to ask the user whether to continue or not downloading
+> packages after checking critical bugs.
+
+  apt-listbugs is invoked because it's listed in Dpkg::Pre-Install-Pkgs.
+This is the hook for commands that are invoked just before dpkg is
+called to install the new packages.  aptitude doesn't even invoke this
+directly; it happens behind the scenes when the apt library is told to
+run dpkg.
+
+  In order to get the effect you want, you would need a new hook that
+ran before any download started, and aptitude would have to explicitly
+ask to invoke it (as would all the other apt frontends).
+
+  Daniel
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

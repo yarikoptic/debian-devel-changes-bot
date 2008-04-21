@@ -1,0 +1,109 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 08:04:59 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnTbX-0005dl-4P
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 08:04:59 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 71B7513A4E76; Sun, 20 Apr 2008 07:04:49 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 2FE5113A4CA4;
+	Sun, 20 Apr 2008 07:04:34 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnTZm-00026t-HG; Sun, 20 Apr 2008 07:03:02 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#460191: fix for 460191
+Reply-To: daniel@debian.org, 460191@bugs.debian.org
+Resent-From: Daniel Baumann <daniel@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Daniel Baumann <daniel@debian.org>
+Resent-Date: Sun, 20 Apr 2008 07:03:01 +0000
+Resent-Message-ID: <handler.460191.B460191.12086748314798@bugs.debian.org>
+X-Debian-PR-Message: report 460191
+X-Debian-PR-Package: cdrdao
+X-Debian-PR-Keywords: patch
+X-Debian-PR-Source: cdrdao
+Received: via spool by 460191-submit@bugs.debian.org id=B460191.12086748314798
+          (code B ref 460191); Sun, 20 Apr 2008 07:03:01 +0000
+Received: (at 460191) by bugs.debian.org; 20 Apr 2008 07:00:31 +0000
+X-Amavis-Spam-Status: No, score=-8.9 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FROMDEVELOPER,HAS_BUG_NUMBER autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from static.88-198-44-35.clients.your-server.de ([88.198.44.35] helo=mail.unable-to-package.org)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <daniel@debian.org>)
+	id 1JnTXL-0001F3-1U
+	for 460191@bugs.debian.org; Sun, 20 Apr 2008 07:00:31 +0000
+Received: from daniel.127011.localhost (254-45-239-77-pool.cable.fcom.ch [77.239.45.254])
+	by mail.unable-to-package.org (Postfix) with ESMTP id 4D86E32FD7;
+	Sun, 20 Apr 2008 06:55:33 +0000 (UTC)
+Message-ID: <480AE94F.20102@debian.org>
+Date: Sun, 20 Apr 2008 08:57:19 +0200
+From: Daniel Baumann <daniel@debian.org>
+Organization: Debian GNU/Linux - The Universal Operating System
+User-Agent: Mozilla-Thunderbird 2.0.0.12 (X11/20080406)
+MIME-Version: 1.0
+To: peter green <plugwash@p10link.net>, 460191@bugs.debian.org
+References: <480AA495.3040004@p10link.net>
+In-Reply-To: <480AA495.3040004@p10link.net>
+X-Enigmail-Version: 0.95.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Resent-Date: Sun, 20 Apr 2008 07:03:02 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343340
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -33.9
+X-Spam-Report: (-33.9 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	19 AWL                    AWL: From: address is in the auto white-list
+
+peter green wrote:
+> add the following commands to the clean target near the end (I put them
+> just before dh_clean) to fix this bug.
+> 
+> -rm -rf /cdrdao-1.2.2/scsilib/librscg/OBJ
+> -rm -rf /cdrdao-1.2.2/scsilib/libscg/OBJ
+> -rm -rf /cdrdao-1.2.2/scsilib/libschily/OBJ
+
+thanks, will upload in some in a few hours.
+
+-- 
+Address:        Daniel Baumann, Burgunderstrasse 3, CH-4562 Biberist
+Email:          daniel.baumann@panthera-systems.net
+Internet:       http://people.panthera-systems.net/~daniel-baumann/
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

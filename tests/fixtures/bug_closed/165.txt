@@ -1,0 +1,330 @@
+From bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org Sun Apr 20 16:37:56 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnbc0-0007o1-IN
+	for ddc@ddc.chris-lamb.co.uk; Sun, 20 Apr 2008 16:37:56 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 85D4B13A4E5E; Sun, 20 Apr 2008 15:37:51 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 0C98B13A4983;
+	Sun, 20 Apr 2008 15:37:50 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnbXb-0007ZD-5Y; Sun, 20 Apr 2008 15:33:19 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: James Vega <jamessan@debian.org>
+Subject: Bug#465330: marked as done (vim-scripts: xml.vim only works for 
+ first buffer with ft=xml)
+Message-ID: <handler.465330.D465330.120870552226040.ackdone@bugs.debian.org>
+References: <E1JnbHw-0007Pr-4n@ries.debian.org>
+ <20080211210149.18630.54054.reportbug@flik.wdw>
+X-Debian-PR-Message: closed 465330
+X-Debian-PR-Package: vim-scripts
+X-Debian-PR-Keywords: patch
+X-Debian-PR-Source: vim-scripts
+Content-Type: multipart/mixed; boundary="----------=_1208705599-28907-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 15:33:19 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <f2_Ts2SvBBC.A.LkF.PN2CIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/133026
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 15:37:51 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208705599-28907-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 15:17:08 +0000
+with message-id <E1JnbHw-0007Pr-4n@ries.debian.org>
+and subject line Bug#465330: fixed in vim-scripts 7.1.7
+has caused the Debian Bug report #465330,
+regarding vim-scripts: xml.vim only works for first buffer with ft=3Dxml
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+465330: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D465330
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208705599-28907-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 11 Feb 2008 21:01:51 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.7 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,HAS_PACKAGE,RCVD_IN_SORBS_DUL autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <mrvn@renich.org>
+Received: from h184.242.140.67.ip.alltel.net ([67.140.242.184] helo=mail.renich.org)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <mrvn@renich.org>)
+	id 1JOfmh-0004Qu-LU
+	for submit@bugs.debian.org; Mon, 11 Feb 2008 21:01:51 +0000
+Received: from flik.wdw ([192.168.213.150])
+	by mail.renich.org with esmtp (Exim 4.63)
+	(envelope-from <mrvn@renich.org>)
+	id 1JOfmg-0006f8-0M; Mon, 11 Feb 2008 16:01:50 -0500
+Received: from mrvn by flik.wdw with local (Exim 4.68)
+	(envelope-from <mrvn@renich.org>)
+	id 1JOfmf-0004sh-Ms; Mon, 11 Feb 2008 16:01:49 -0500
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Marvin Renich <mrvn@renich.org>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Subject: vim-scripts: xml.vim only works for first buffer with ft=xml
+Message-ID: <20080211210149.18630.54054.reportbug@flik.wdw>
+X-Mailer: reportbug 3.39
+Date: Mon, 11 Feb 2008 16:01:49 -0500
+X-SA-Exim-Connect-IP: 192.168.213.150
+X-SA-Exim-Mail-From: mrvn@renich.org
+X-SA-Exim-Scanned: No (on mail.renich.org); SAEximRunCond expanded to false
+Delivered-To: submit@bugs.debian.org
+
+Package: vim-scripts
+Version: 7.1.5
+Severity: normal
+
+If you have enabled xml.vim from vim-scripts (overriding the xml.vim
+from vim-runtime), and you load several buffers with filetype xml, the
+mappings are only loaded for the first xml buffer.
+
+I checked the source for 7.1.6 and xml.vim did not change, so this
+affects both versions.
+
+A possible fix is to change the code at the top from this:
+
+" Only do this when not done yet for this buffer
+if exists("b:did_ftplugin") || exists("loaded_xml_ftplugin")
+  finish
+endif
+let b:did_ftplugin = 1
+let loaded_xml_ftplugin = 1
+
+To something like this:
+
+if exists("b:did_ftplugin")
+  finish
+endif
+let b:did_ftplugin = 1
+" (copy buffer-local stuff from the bottom of the script to here)
+if exists("loaded_xml_ftplugin")
+  finish
+endif
+let loaded_xml_ftplugin = 1
+
+...Marvin
+
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers testing
+  APT policy: (990, 'testing'), (500, 'unstable'), (500, 'stable')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.20 (PREEMPT)
+Locale: LANG=en_US.UTF-8, LC_CTYPE=en_US.UTF-8 (charmap=UTF-8)
+Shell: /bin/sh linked to /bin/bash
+
+vim-scripts depends on no packages.
+
+Versions of packages vim-scripts recommends:
+ii  vim                          1:7.1-241+1 Vi IMproved - enhanced vi editor
+ii  vim-addon-manager            0.4         manager of addons for the Vim edit
+ii  vim-gtk [gvim]               1:7.1-241+1 Vi IMproved - enhanced vi editor -
+
+-- no debconf information
+
+
+
+------------=_1208705599-28907-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 465330-close) by bugs.debian.org; 20 Apr 2008 15:32:02 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.7 required=4.0 tests=BAYES_00,FOURLA,
+	FROMDEVELOPER,FVGT_m_MULTI_ODD,HAS_BUG_NUMBER,HEADER_X_KATIE,
+	IMPRONONCABLE_2,MURPHY_DRUGS_REL8,MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnbWM-0006kH-0j
+	for 465330-close@bugs.debian.org; Sun, 20 Apr 2008 15:32:02 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnbHw-0007Pr-4n; Sun, 20 Apr 2008 15:17:08 +0000
+From: James Vega <jamessan@debian.org>
+To: 465330-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#465330: fixed in vim-scripts 7.1.7
+Message-Id: <E1JnbHw-0007Pr-4n@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 15:17:08 +0000
+Content-Transfer-Encoding: quoted-printable
+
+Source: vim-scripts
+Source-Version: 7.1.7
+
+We believe that the bug you reported is fixed in the latest version of
+vim-scripts, which is due to be installed in the Debian FTP archive:
+
+vim-scripts_7.1.7.dsc
+  to pool/main/v/vim-scripts/vim-scripts_7.1.7.dsc
+vim-scripts_7.1.7.tar.gz
+  to pool/main/v/vim-scripts/vim-scripts_7.1.7.tar.gz
+vim-scripts_7.1.7_all.deb
+  to pool/main/v/vim-scripts/vim-scripts_7.1.7_all.deb
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 465330@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+James Vega <jamessan@debian.org> (supplier of updated vim-scripts package=
+)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 10:55:00 -0400
+Source: vim-scripts
+Binary: vim-scripts
+Architecture: source all
+Version: 7.1.7
+Distribution: unstable
+Urgency: low
+Maintainer: jamessan@debian.org
+Changed-By: James Vega <jamessan@debian.org>
+Description:=20
+ vim-scripts - plugins for vim, adding bells and whistles
+Closes: 465330 471890 473744 474599
+Changes:=20
+ vim-scripts (7.1.7) unstable; urgency=3Dlow
+ .
+   * debian/control:
+     - Update Standards-Version to 3.7.3.0 (no changes needed).
+   * Updated addons:
+     - xmledit, surround, debPlugin, Markdown syntax, NERD Commenter, Enh=
+anced
+       Commentify, vcscommand, calendar.
+   * New addons:
+     - DetectIndent: Automatically detect indent settings. (Closes: #4718=
+90)
+     - snippetsEmu: Emulate TextMate's snippet expansion. (Closes: #47374=
+4)
+   * Added patches:
+     - patches/disabledby-xml.dpatch:
+       + Do not let loaded_xml_ftplugin since that will prevent the ftplu=
+gin
+         from being run in other buffers.  Thanks to Marvin Renich for th=
+e
+         patch.  (Closes: #465330)
+     - patches/lbdbq-inputlist.dpatch:
+       + Correct the use of inputlist() and its results so the user is ab=
+le to
+         press <Enter> to cancel, as advertised.  (Closes: #474599)
+   * Change doc-base section to Editors.
+Checksums-Sha1:=20
+ 2eab42ee85a9543ee6f61ab865526f4d729efb5d 1114 vim-scripts_7.1.7.dsc
+ 6d2eb30ad810035c5e2080abf0d6fb62ec57ef87 726208 vim-scripts_7.1.7.tar.gz
+ a1ccc5c46fc5236dbb16f780a4c15e340a9ae01d 736740 vim-scripts_7.1.7_all.de=
+b
+Checksums-Sha256:=20
+ b64213da8a91408fe417d32b8f2776ad65de06f2cc5f78f08517a13d24c2d299 1114 vi=
+m-scripts_7.1.7.dsc
+ 89892ee1a80830dfea687f7ce525973c0b2b5bb210274cfc0f8c3baa8320e6f2 726208 =
+vim-scripts_7.1.7.tar.gz
+ 1e726bc3eb0b400fe84c5dd383151087ef4b5bb2dcf78a1a4b94dc23d346bc18 736740 =
+vim-scripts_7.1.7_all.deb
+Files:=20
+ 218d285c428f66b96a51f05c4dfb9393 1114 editors optional vim-scripts_7.1.7=
+.dsc
+ 78f79c9926ed710e3c2806b6b4785035 726208 editors optional vim-scripts_7.1=
+.7.tar.gz
+ de2d068c5176beceff34fd26ab2b217b 736740 editors optional vim-scripts_7.1=
+.7_all.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iEYEARECAAYFAkgLXHoACgkQDb3UpmEybUD8IACeM8UVC2tl7OiY359Sf8BCLA3O
+sS0AoIZpuSWCzpEsK/vnBVZixwJ+0r5t
+=3DDOgV
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208705599-28907-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

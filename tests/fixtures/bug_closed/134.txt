@@ -1,0 +1,436 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 10:40:18 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnW1q-000655-Q5
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 10:40:17 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id A866F13A4EE2; Sun, 20 Apr 2008 09:40:09 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id C4FB013A4EDF;
+	Sun, 20 Apr 2008 09:40:04 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnW0s-00015q-1y; Sun, 20 Apr 2008 09:39:10 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Roland Stigge <stigge@antcom.de>
+Subject: Bug#476036: marked as done (gcvs: FTBFS: configure: error: can 
+ only configure for one host and one target at a time)
+Message-ID: <handler.476036.D476036.12086841331698.ackdone@bugs.debian.org>
+References: <E1JnVtz-00052x-Oh@ries.debian.org>
+ <20080414114021.GA3356@xanadu.blop.info>
+X-Debian-PR-Message: closed 476036
+X-Debian-PR-Package: gcvs
+X-Debian-PR-Source: gcvs
+Content-Type: multipart/mixed; boundary="----------=_1208684350-4203-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 09:39:10 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <kBzLwxEQxOE.A.ntD.59wCIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/132911
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 09:40:09 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208684350-4203-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 09:32:03 +0000
+with message-id <E1JnVtz-00052x-Oh@ries.debian.org>
+and subject line Bug#476036: fixed in gcvs 1.0final-17
+has caused the Debian Bug report #476036,
+regarding gcvs: FTBFS: configure: error: can only configure for one host an=
+d one target at a time
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+476036: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D476036
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208684350-4203-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 14 Apr 2008 09:52:24 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.9 required=4.0 tests=BAYES_00,FOURLA,
+	FVGT_m_MULTI_ODD,HAS_PACKAGE autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <lucas@lucas-nussbaum.net>
+Received: from xanadu.blop.info ([80.248.208.235])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <lucas@lucas-nussbaum.net>)
+	id 1JlLMN-0003YK-HJ
+	for submit@bugs.debian.org; Mon, 14 Apr 2008 09:52:24 +0000
+Received: from localhost ([127.0.0.1] helo=xanadu.blop.info)
+	by xanadu.blop.info with smtp (Exim 4.63)
+	(envelope-from <lucas@lucas-nussbaum.net>)
+	id 1JlLMM-0000ug-KM
+	for submit@bugs.debian.org; Mon, 14 Apr 2008 11:52:22 +0200
+Received: (nullmailer pid 3376 invoked by uid 1000);
+	Mon, 14 Apr 2008 11:40:21 -0000
+Date: Mon, 14 Apr 2008 13:40:21 +0200
+From: Lucas Nussbaum <lucas@lucas-nussbaum.net>
+To: submit@bugs.debian.org
+Subject: gcvs: FTBFS: configure: error: can only configure for one host and
+	one target at a time
+Message-ID: <20080414114021.GA3356@xanadu.blop.info>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Delivered-To: submit@bugs.debian.org
+
+Package: gcvs
+Version: 1.0final-16
+Severity: serious
+User: debian-qa@lists.debian.org
+Usertags: qa-ftbfs-20080413 qa-ftbfs
+Justification: FTBFS on i386
+
+Hi,
+
+During a rebuild of all packages in sid, your package failed to build on i386.
+
+This rebuild was done with gcc 4.3 instead of gcc 4.2, because gcc 4.3 is now
+the default on most architectures (even if it's not the case on i386 yet).
+Feel free to downgrade this bug to 'important' if your package is only built
+on i386, and this bug is specific to gcc 4.3 (i.e the package builds fine with
+gcc 4.2).
+
+Relevant part:
+>  /usr/bin/fakeroot debian/rules clean
+> dh_testdir
+> dh_testroot
+> rm -f build-stamp configure-stamp
+> # Add here commands to clean up after the build process.
+> [ ! -f Makefile ] || /usr/bin/make distclean
+> rm -f cvsunix/windows-NT/SCC/Makefile
+> dh_clean
+>  dpkg-source -b gcvs-1.0final
+> dpkg-source: info: using source format `1.0'
+> dpkg-source: info: building gcvs using existing gcvs_1.0final.orig.tar.gz
+> dpkg-source: info: building gcvs in gcvs_1.0final-16.diff.gz
+> dpkg-source: info: building gcvs in gcvs_1.0final-16.dsc
+>  debian/rules build
+> dh_testdir
+> # Add here commands to configure the package.
+> ./configure --prefix=/usr --mandir=\${prefix}/share/man --infodir=\${prefix}/share/info \
+> 		--with-tclinclude=/usr/include/tcl8.4 --with-tcllib=/usr/lib/tcl8.4
+> checking for gcvs... no
+> checking for a BSD-compatible install... /usr/bin/install -c
+> checking whether build environment is sane... yes
+> checking for gawk... no
+> checking for mawk... mawk
+> checking whether make sets ${MAKE}... yes
+> checking for gcc... gcc
+> checking for C compiler default output... a.out
+> checking whether the C compiler works... yes
+> checking whether we are cross compiling... no
+> checking for suffix of executables... 
+> checking for suffix of object files... o
+> checking whether we are using the GNU C compiler... yes
+> checking whether gcc accepts -g... yes
+> checking for gcc option to accept ANSI C... none needed
+> checking for style of include used by make... GNU
+> checking dependency style of gcc... gcc3
+> checking for g++... g++
+> checking whether we are using the GNU C++ compiler... yes
+> checking whether g++ accepts -g... yes
+> checking dependency style of g++... gcc3
+> checking how to run the C preprocessor... gcc -E
+> checking for egrep... grep -E
+> checking for AIX... no
+> checking for an ANSI C-conforming const... yes
+> checking for a BSD-compatible install... /usr/bin/install -c
+> checking for ranlib... ranlib
+> checking for bison... no
+> checking for byacc... no
+> checking for flex... flex
+> checking for yywrap in -lfl... yes
+> checking lex output file root... lex.yy
+> checking whether yytext is a pointer... yes
+> checking whether make sets ${MAKE}... (cached) yes
+> checking for ANSI C header files... yes
+> checking for sys/types.h... yes
+> checking for sys/stat.h... yes
+> checking for stdlib.h... yes
+> checking for string.h... yes
+> checking for memory.h... yes
+> checking for strings.h... yes
+> checking for inttypes.h... yes
+> checking for stdint.h... yes
+> checking for unistd.h... yes
+> checking errno.h usability... yes
+> checking errno.h presence... yes
+> checking for errno.h... yes
+> checking for unistd.h... (cached) yes
+> checking for string.h... (cached) yes
+> checking for strings.h... (cached) yes
+> checking for memory.h... (cached) yes
+> checking utime.h usability... yes
+> checking utime.h presence... yes
+> checking for utime.h... yes
+> checking fcntl.h usability... yes
+> checking fcntl.h presence... yes
+> checking for fcntl.h... yes
+> checking getopt.h usability... yes
+> checking getopt.h presence... yes
+> checking for getopt.h... yes
+> checking limits.h usability... yes
+> checking limits.h presence... yes
+> checking for limits.h... yes
+> checking sys/file.h usability... yes
+> checking sys/file.h presence... yes
+> checking for sys/file.h... yes
+> checking pwd.h usability... yes
+> checking pwd.h presence... yes
+> checking for pwd.h... yes
+> checking sys/param.h usability... yes
+> checking sys/param.h presence... yes
+> checking for sys/param.h... yes
+> checking sys/select.h usability... yes
+> checking sys/select.h presence... yes
+> checking for sys/select.h... yes
+> checking sys/time.h usability... yes
+> checking sys/time.h presence... yes
+> checking for sys/time.h... yes
+> checking sys/timeb.h usability... yes
+> checking sys/timeb.h presence... yes
+> checking for sys/timeb.h... yes
+> checking io.h usability... no
+> checking io.h presence... no
+> checking for io.h... no
+> checking direct.h usability... no
+> checking direct.h presence... no
+> checking for direct.h... no
+> checking for sys/wait.h that is POSIX.1 compatible... yes
+> checking whether stat file-mode macros are broken... no
+> checking whether time.h and sys/time.h may both be included... yes
+> checking for dirent.h that defines DIR... yes
+> checking for library containing opendir... none required
+> checking return type of signal handlers... void
+> checking for uid_t in sys/types.h... yes
+> checking for mode_t... yes
+> checking for size_t... yes
+> checking for pid_t... yes
+> checking for mkdir... yes
+> checking for rename... yes
+> checking for strerror... yes
+> checking for memmove... yes
+> checking for vasprintf... yes
+> checking for mktemp... yes
+> checking for putenv... yes
+> checking for vprintf... yes
+> checking for tempnam... yes
+> checking for unsetenv... yes
+> checking for X... no
+> checking for gtk-config... /usr/bin/gtk-config
+> checking for GTK - version >= 1.2.0... yes
+> checking for tcl.h... /usr/include/tcl8.4/tcl.h
+> checking for tclConfig.sh... /usr/lib/tcl8.4/tclConfig.sh
+> configure: creating ./config.status
+> config.status: creating Makefile
+> config.status: creating common/Makefile
+> config.status: creating cvstree/Makefile
+> config.status: creating rf/Makefile
+> config.status: creating rf/support/Makefile
+> config.status: creating rf/support/gtk/Makefile
+> config.status: creating gcvs/Makefile
+> config.status: creating gcvs/src/Makefile
+> config.status: creating Macros/Makefile
+> config.status: creating GuiDoc/Makefile
+> config.status: creating config.h
+> config.status: executing depfiles commands
+> configure: configuring in cvsunix
+> configure: running /bin/sh './configure' --prefix=/usr  '--prefix=/usr' '--mandir=${prefix}/share/man' '--infodir=${prefix}/share/info' '--with-tclinclude=/usr/include/tcl8.4' '--with-tcllib=/usr/lib/tcl8.4' 'CFLAGS=-g -O2' 'CPPFLAGS=' 'CXXFLAGS=-g -O2' 'LDFLAGS=' --cache-file=/dev/null --srcdir=.
+> configure: warning: CFLAGS=-g -O2: invalid host type
+> configure: warning: CPPFLAGS=: invalid host type
+> configure: error: can only configure for one host and one target at a time
+> configure: error: /bin/sh './configure' failed for cvsunix
+> make: *** [configure-stamp] Error 1
+
+The full build log is available from:
+   http://people.debian.org/~lucas/logs/2008/04/13
+
+A list of current common problems and possible solutions is available at 
+http://wiki.debian.org/qa.debian.org/FTBFS . You're welcome to contribute!
+
+About the archive rebuild: The rebuild was done on about 50 AMD64 nodes
+of the Grid'5000 platform, using a clean chroot containing a sid i386
+environment.  Internet was not accessible from the build systems.
+
+-- 
+| Lucas Nussbaum
+| lucas@lucas-nussbaum.net   http://www.lucas-nussbaum.net/ |
+| jabber: lucas@nussbaum.fr             GPG: 1024D/023B3F4F |
+
+
+
+------------=_1208684350-4203-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 476036-close) by bugs.debian.org; 20 Apr 2008 09:35:33 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.7 required=4.0 tests=BAYES_00,FVGT_m_MULTI_ODD,
+	HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_2,MURPHY_WRONG_WORD1,
+	MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnVxM-0000RF-QN
+	for 476036-close@bugs.debian.org; Sun, 20 Apr 2008 09:35:33 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnVtz-00052x-Oh; Sun, 20 Apr 2008 09:32:03 +0000
+From: Roland Stigge <stigge@antcom.de>
+To: 476036-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#476036: fixed in gcvs 1.0final-17
+Message-Id: <E1JnVtz-00052x-Oh@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 09:32:03 +0000
+Content-Transfer-Encoding: quoted-printable
+
+Source: gcvs
+Source-Version: 1.0final-17
+
+We believe that the bug you reported is fixed in the latest version of
+gcvs, which is due to be installed in the Debian FTP archive:
+
+gcvs_1.0final-17.diff.gz
+  to pool/main/g/gcvs/gcvs_1.0final-17.diff.gz
+gcvs_1.0final-17.dsc
+  to pool/main/g/gcvs/gcvs_1.0final-17.dsc
+gcvs_1.0final-17_i386.deb
+  to pool/main/g/gcvs/gcvs_1.0final-17_i386.deb
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 476036@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Roland Stigge <stigge@antcom.de> (supplier of updated gcvs package)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 11:04:41 +0200
+Source: gcvs
+Binary: gcvs
+Architecture: source i386
+Version: 1.0final-17
+Distribution: unstable
+Urgency: low
+Maintainer: Roland Stigge <stigge@antcom.de>
+Changed-By: Roland Stigge <stigge@antcom.de>
+Description:=20
+ gcvs       - Graphical frontend for CVS
+Closes: 476036
+Changes:=20
+ gcvs (1.0final-17) unstable; urgency=3Dlow
+ .
+   * debian/rules: Unset compiler variables for ./configure (Closes: #476=
+036)
+Checksums-Sha1:=20
+ 470afe7c698b093a41347e75e5346b4111413449 1082 gcvs_1.0final-17.dsc
+ ff6680f685b22377390b41e257a110dd6b55b216 12083 gcvs_1.0final-17.diff.gz
+ dd392cccf4c82307676a045267e02c7b33f09111 737406 gcvs_1.0final-17_i386.de=
+b
+Checksums-Sha256:=20
+ 3a2ab1034af0ea9cd3749eeb35acaa40048f415b5294e184a5815f19f97ae755 1082 gc=
+vs_1.0final-17.dsc
+ 03c31a15fad13aeaa6464812d2ab92531008c8d0a82a2ceb31705ec9fdacbbe6 12083 g=
+cvs_1.0final-17.diff.gz
+ f7e3dfe0977b3849e6fdd3f6e00f1447715ec4447eae8f2f1d94123f9b4aee15 737406 =
+gcvs_1.0final-17_i386.deb
+Files:=20
+ 2490906b382d1f0ce662236b7ac8025f 1082 devel optional gcvs_1.0final-17.ds=
+c
+ 5f14dad9ca48972d8c2ce3b4822968f7 12083 devel optional gcvs_1.0final-17.d=
+iff.gz
+ c98e8d294e7445460d7a018712568aef 737406 devel optional gcvs_1.0final-17_=
+i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICwl/caH/YBv43g8RAg2vAJ47771J3WxTxD1/QZK3njqm8qnvSgCfTAWs
+f2Z4f+X7plWJ0ovEdNrVW3o=3D
+=3D5zWT
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208684350-4203-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

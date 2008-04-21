@@ -1,0 +1,164 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 16:53:40 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnbqj-0007uu-7H
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 16:53:36 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 08FE113A4FAC; Sun, 20 Apr 2008 15:53:04 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.9 required=4.0 tests=BAYES_00,FOURLA,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 93E6813A50C1;
+	Sun, 20 Apr 2008 15:52:34 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnboI-0004cG-EM; Sun, 20 Apr 2008 15:50:34 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#477028: dc-qt: FTBFS: ./dcpp/File.h:41:18: error: zlib.h: No such file or directory
+Reply-To: Lucas Nussbaum <lucas@lucas-nussbaum.net>, 477028@bugs.debian.org
+Resent-From: Lucas Nussbaum <lucas@lucas-nussbaum.net>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Steffen Joeris <white@debian.org>
+Resent-Date: Sun, 20 Apr 2008 15:50:31 +0000
+Resent-Message-ID: <handler.477028.B.12087064173496@bugs.debian.org>
+X-Debian-PR-Message: report 477028
+X-Debian-PR-Package: dc-qt
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: dc-qt
+Received: via spool by submit@bugs.debian.org id=B.12087064173496
+          (code B ref -1); Sun, 20 Apr 2008 15:50:31 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 15:46:57 +0000
+X-Amavis-Spam-Status: No, score=-9.9 required=4.0 tests=BAYES_00,FOURLA,HAS_PACKAGE 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from xanadu.blop.info ([80.248.208.235])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <lucas@lucas-nussbaum.net>)
+	id 1Jnbkm-0000s3-7N
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 15:46:57 +0000
+Received: from localhost ([127.0.0.1] helo=xanadu.blop.info)
+	by xanadu.blop.info with smtp (Exim 4.63)
+	(envelope-from <lucas@lucas-nussbaum.net>)
+	id 1Jnbkl-0000DK-5t
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 17:46:55 +0200
+Received: (nullmailer pid 17254 invoked by uid 1000);
+	Sun, 20 Apr 2008 13:56:15 -0000
+Date: Sun, 20 Apr 2008 15:56:15 +0200
+From: Lucas Nussbaum <lucas@lucas-nussbaum.net>
+To: submit@bugs.debian.org
+Message-ID: <20080420135615.GA17237@xanadu.blop.info>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 15:50:34 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343580
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -36.8
+X-Spam-Report: (-36.8 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	16 AWL                    AWL: From: address is in the auto white-list
+
+Package: dc-qt
+Version: 0.2.0.alpha-3.1
+Severity: serious
+User: debian-qa@lists.debian.org
+Usertags: qa-ftbfs-20080419 qa-ftbfs
+Justification: FTBFS on i386
+
+Hi,
+
+During a rebuild of all packages in sid, your package failed to build on i386.
+
+This rebuild was done with gcc 4.3 instead of gcc 4.2, because gcc 4.3 is now
+the default on most architectures (even if it's not the case on i386 yet).
+Feel free to downgrade this bug to 'important' if your package is only built
+on i386, and this bug is specific to gcc 4.3 (i.e the package builds fine with
+gcc 4.2).
+
+Relevant part:
+> g++ -o backend/ClientNotifier.o -c -g -ggdb -O0 -DDEBUG -Wall -DTARGET_I386 -DHAVE_ASM_ATOMIC_H -I. -DENABLE_BINRELOC -D_FILE_OFFSET_BITS=64 -DXTHREADS -D_REENTRANT -DXUSE_MTSAFE_API -D_GNU_SOURCE -Wno-non-virtual-dtor -Irpcdriver -Idcpp backend/ClientNotifier.cpp
+> In file included from /usr/include/c++/4.3/ext/hash_map:64,
+>                  from ./dcpp/stdinc.h:96,
+>                  from backend/ClientNotifier.h:6,
+>                  from backend/ClientNotifier.cpp:1:
+> /usr/include/c++/4.3/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated.
+> In file included from ./dcpp/UserConnection.h:30,
+>                  from ./dcpp/UploadManager.h:26,
+>                  from backend/ClientNotifier.h:12,
+>                  from backend/ClientNotifier.cpp:1:
+> ./dcpp/File.h:41:18: error: zlib.h: No such file or directory
+> In file included from ./dcpp/User.h:28,
+>                  from ./dcpp/Client.h:26,
+>                  from backend/ClientNotifier.h:8,
+>                  from backend/ClientNotifier.cpp:1:
+> ./dcpp/CriticalSection.h: In constructor 'CriticalSection::CriticalSection()':
+> ./dcpp/CriticalSection.h:55: warning: missing braces around initializer for 'pthread_mutex_t::__pthread_mutex_s'
+> In file included from ./dcpp/DownloadManager.h:31,
+>                  from backend/ClientNotifier.h:13,
+>                  from backend/ClientNotifier.cpp:1:
+> ./dcpp/ZUtils.h: At global scope:
+> ./dcpp/ZUtils.h:49: error: 'z_stream' does not name a type
+> ./dcpp/ZUtils.h:69: error: 'z_stream' does not name a type
+> ./dcpp/ZUtils.h: In constructor 'CRC32Filter::CRC32Filter()':
+> ./dcpp/ZUtils.h:74: error: 'crc32' was not declared in this scope
+> ./dcpp/ZUtils.h: In member function 'void CRC32Filter::operator()(const void*, size_t)':
+> ./dcpp/ZUtils.h:76: error: ISO C++ forbids declaration of 'type name' with no type
+> ./dcpp/ZUtils.h:76: error: ISO C++ forbids declaration of 'type name' with no type
+> ./dcpp/ZUtils.h:76: error: expected primary-expression before 'const'
+> ./dcpp/ZUtils.h:76: error: expected `)' before 'const'
+> backend/ClientNotifier.cpp: In member function 'virtual void dcqt_backend::ClientNotifier::usersUpdated(int, const std::vector<int, std::allocator<int> >&)':
+> backend/ClientNotifier.cpp:139: warning: comparison between signed and unsigned integer expressions
+> backend/ClientNotifier.cpp: In member function 'virtual void dcqt_backend::ClientNotifier::searchResults(int, std::vector<SearchResult*, std::allocator<SearchResult*> >&)':
+> backend/ClientNotifier.cpp:191: warning: comparison between signed and unsigned integer expressions
+> scons: *** [backend/ClientNotifier.o] Error 1
+> scons: building terminated because of errors.
+> make: *** [common-configure-arch] Error 2
+
+The full build log is available from:
+   http://people.debian.org/~lucas/logs/2008/04/19
+
+A list of current common problems and possible solutions is available at 
+http://wiki.debian.org/qa.debian.org/FTBFS . You're welcome to contribute!
+
+About the archive rebuild: The rebuild was done on about 50 AMD64 nodes
+of the Grid'5000 platform, using a clean chroot containing a sid i386
+environment.  Internet was not accessible from the build systems.
+
+-- 
+| Lucas Nussbaum
+| lucas@lucas-nussbaum.net   http://www.lucas-nussbaum.net/ |
+| jabber: lucas@nussbaum.fr             GPG: 1024D/023B3F4F |
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,98 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 02:29:48 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnONE-0004uF-81
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 02:29:48 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 6D6BC13A4DB6; Sun, 20 Apr 2008 01:29:42 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.8 required=4.0 tests=BAYES_00,RCVD_IN_DNSWL_LOW,
+	SUBJ_HAS_UNIQ_ID autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 7D3BE13A4D80;
+	Sun, 20 Apr 2008 01:29:33 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnOKc-0006YW-Bg; Sun, 20 Apr 2008 01:27:02 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#423920: Probably the same as bug #444314
+Reply-To: Omer Zak <w1@zak.co.il>, 423920@bugs.debian.org
+Resent-From: Omer Zak <w1@zak.co.il>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian spca5xx Maintainers <pkg-spca5xx-devel@lists.alioth.debian.org>
+Resent-Date: Sun, 20 Apr 2008 01:27:01 +0000
+Resent-Message-ID: <handler.423920.B423920.120865463012533@bugs.debian.org>
+X-Debian-PR-Message: report 423920
+X-Debian-PR-Package: gspca
+X-Debian-PR-Keywords: 
+Received: via spool by 423920-submit@bugs.debian.org id=B423920.120865463012533
+          (code B ref 423920); Sun, 20 Apr 2008 01:27:01 +0000
+Received: (at 423920) by bugs.debian.org; 20 Apr 2008 01:23:50 +0000
+X-Amavis-Spam-Status: No, score=-2.3 required=4.0 tests=BAYES_00,RCVD_IN_NIX1,
+	SUBJ_HAS_UNIQ_ID autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from mtaout7.012.net.il ([84.95.2.19])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <w1@zak.co.il>)
+	id 1JnOHV-0003BS-NS
+	for 423920@bugs.debian.org; Sun, 20 Apr 2008 01:23:49 +0000
+Received: from [77.127.124.56] by i-mtaout7.012.net.il (HyperSendmail v2007.08) with ESMTPA id <0JZL00KDBN1VW570@i-mtaout7.012.net.il> for 423920@bugs.debian.org; Sun, 20 Apr 2008 04:06:01 +0300 (IDT)
+Date: Sun, 20 Apr 2008 04:10:08 +0300
+From: Omer Zak <w1@zak.co.il>
+X-012-Sender: omerz1@012.net.il
+To: 423920@bugs.debian.org
+Message-id: <1208653808.4582.77.camel@c2.home.zak.co.il>
+MIME-version: 1.0
+X-Mailer: Evolution 2.6.3
+Content-type: text/plain
+Content-transfer-encoding: 7bit
+Resent-Date: Sun, 20 Apr 2008 01:27:02 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343313
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.5
+X-Spam-Report: Spam detection software, running on the system "chris-lamb.co.uk", has
+	identified this incoming email as possible spam.  The original message
+	has been attached to this so you can view it (if it isn't spam) or label
+	similar future email.  If you have any questions, see
+	the administrator of that system for details.
+	Content preview:  -- To UNSUBSCRIBE, email to
+	debian-bugs-dist-REQUEST@lists.debian.org with a subject of
+	"unsubscribe". Trouble? Contact listmaster@lists.debian.org [...] 
+	Content analysis details:   (-52.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.2 SUBJ_HAS_UNIQ_ID       Subject contains a unique ID
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	-0.0 AWL                    AWL: From: address is in the auto white-list
+
+
+
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

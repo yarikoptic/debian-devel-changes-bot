@@ -1,0 +1,135 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 14:54:53 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jna0H-0007JT-Sg
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 14:54:53 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id CBC9713A502F; Sun, 20 Apr 2008 13:54:48 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.9 required=4.0 tests=BAYES_00,FOURLA,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 119B813A5011;
+	Sun, 20 Apr 2008 13:54:38 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnZwe-0000fH-1o; Sun, 20 Apr 2008 13:51:04 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476974: coreutils: date -d '18:00 -1 hour' wrong answer
+Reply-To: Greg Wooledge <greg@wooledge.org>, 476974@bugs.debian.org
+Resent-From: Greg Wooledge <greg@wooledge.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Michael Stone <mstone@debian.org>
+Resent-Date: Sun, 20 Apr 2008 13:51:01 +0000
+Resent-Message-ID: <handler.476974.B.120869934027983@bugs.debian.org>
+X-Debian-PR-Message: report 476974
+X-Debian-PR-Package: coreutils
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: coreutils
+Received: via spool by submit@bugs.debian.org id=B.120869934027983
+          (code B ref -1); Sun, 20 Apr 2008 13:51:01 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 13:49:00 +0000
+X-Amavis-Spam-Status: No, score=-9.9 required=4.0 tests=BAYES_00,FOURLA,HAS_PACKAGE 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from wooledge.org
+	([209.142.155.49] helo=pegasus.wooledge.org ident=rfc1413)
+	by rietz.debian.org with smtp (Exim 4.63)
+	(envelope-from <greg@wooledge.org>)
+	id 1JnZue-0007Eu-7W
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 13:49:00 +0000
+Received: (qmail 12574 invoked from network); 20 Apr 2008 13:48:58 -0000
+Received: from unknown (HELO griffon.wooledge.org) (192.168.2.5)
+	by 192.168.2.1 with SMTP; Sun, 20 Apr 2008 09:48:58 -0400
+Received: (qmail 11306 invoked by uid 1000); 20 Apr 2008 13:48:57 -0000
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Greg Wooledge <greg@wooledge.org>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Message-ID: <20080420134857.11142.29120.reportbug@griffon.wooledge.org>
+X-Mailer: reportbug 3.39
+Date: Sun, 20 Apr 2008 09:48:57 -0400
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 13:51:04 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343508
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -27.6
+X-Spam-Report: (-27.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	25 AWL                    AWL: From: address is in the auto white-list
+
+Package: coreutils
+Version: 6.10-6
+Severity: normal
+
+
+These results are correct:
+
+  griffon:~$ date
+  Sun Apr 20 09:44:18 EDT 2008
+  griffon:~$ date -d 'Sun Apr 20 18:00:00 EDT 2008 -1 hour'
+  Sun Apr 20 17:00:00 EDT 2008
+  griffon:~$ date -d '18:00:00 EDT -1 hour'
+  Sun Apr 20 17:00:00 EDT 2008
+
+But if I leave off the time zone name, I get:
+
+  griffon:~$ date -d '18:00:00 -1 hour'
+  Sun Apr 20 15:01:00 EDT 2008
+  griffon:~$ date -d '18:00:00 -4 hour'
+  Sun Apr 20 15:04:00 EDT 2008
+  griffon:~$ date -d '18:00:00 -5 hour'
+  Sun Apr 20 15:05:00 EDT 2008
+
+This is clearly not correct or useful behavior.
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (500, 'unstable')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.24-1-686 (SMP w/1 CPU core)
+Locale: LANG=en_US.ISO8859-1, LC_CTYPE=en_US.ISO8859-1 (charmap=ISO-8859-1)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages coreutils depends on:
+ii  libacl1                       2.2.39-1   Access control list shared library
+ii  libc6                         2.7-10     GNU C Library: Shared libraries
+ii  libselinux1                   2.0.59-1   SELinux shared libraries
+
+coreutils recommends no packages.
+
+-- debconf-show failed
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

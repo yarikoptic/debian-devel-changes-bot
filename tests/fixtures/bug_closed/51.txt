@@ -1,0 +1,378 @@
+From bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org Sun Apr 20 01:34:49 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org>)
+	id 1JnNVz-0003rq-8T
+	for ddc@ddc.chris-lamb.co.uk; Sun, 20 Apr 2008 01:34:49 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 3DF1E13A4E8B; Sun, 20 Apr 2008 00:34:42 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 37AE313A4E78;
+	Sun, 20 Apr 2008 00:34:40 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnNUR-0004TC-Ut; Sun, 20 Apr 2008 00:33:07 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Andres Mejia <mcitadel@gmail.com>
+Subject: Bug#457700: marked as done (alien-arena: mouse constantly looks up)
+Message-ID: <handler.457700.D457700.120865150414990.ackdone@bugs.debian.org>
+References: <E1JnNEt-00081e-99@ries.debian.org>
+ <20071224170821.21155.7764.reportbug@konishi.dowland>
+X-Debian-PR-Message: closed 457700
+X-Debian-PR-Package: alien-arena
+X-Debian-PR-Source: alien-arena
+Content-Type: multipart/mixed; boundary="----------=_1208651587-17175-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 00:33:07 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <XLi6ekjGlID.A.SlE.i-oCIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/132882
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 00:34:42 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: Spam detection software, running on the system "chris-lamb.co.uk", has
+	identified this incoming email as possible spam.  The original message
+	has been attached to this so you can view it (if it isn't spam) or label
+	similar future email.  If you have any questions, see
+	the administrator of that system for details.
+	Content preview:  Your message dated Sun, 20 Apr 2008 00:17:03 +0000 with
+	message-id <E1JnNEt-00081e-99@ries.debian.org> and subject line
+	Bug#457700: fixed in alien-arena 7.0-1 has caused the Debian Bug report
+	#457700, regarding alien-arena: mouse constantly looks up to be marked
+	as done. [...] 
+	Content analysis details:   (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208651587-17175-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 00:17:03 +0000
+with message-id <E1JnNEt-00081e-99@ries.debian.org>
+and subject line Bug#457700: fixed in alien-arena 7.0-1
+has caused the Debian Bug report #457700,
+regarding alien-arena: mouse constantly looks up
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+457700: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D457700
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208651587-17175-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 24 Dec 2007 17:09:22 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.8 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,HAS_PACKAGE,IMPRONONCABLE_2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <jon+bts@alcopop.org>
+Received: from smtp1.betherenow.co.uk ([87.194.0.68] helo=smtp1.bethere.co.uk)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <jon+bts@alcopop.org>)
+	id 1J6qnq-0005gu-3J
+	for submit@bugs.debian.org; Mon, 24 Dec 2007 17:09:22 +0000
+Received: from konishi.dowland (87-194-117-25.bethere.co.uk [87.194.117.25])
+	by smtp1.bethere.co.uk (Postfix) with SMTP id B856B98E67;
+	Mon, 24 Dec 2007 17:08:21 +0000 (GMT)
+Received: from jon by konishi.dowland with local (Exim 4.68)
+	(envelope-from <jon+bts@alcopop.org>)
+	id 1J6qmr-0005tG-4H; Mon, 24 Dec 2007 17:08:21 +0000
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Jon Dowland <jon+bts@alcopop.org>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Subject: alien-arena: mouse constantly looks up
+Message-ID: <20071224170821.21155.7764.reportbug@konishi.dowland>
+X-Mailer: reportbug 3.39
+Date: Mon, 24 Dec 2007 17:08:21 +0000
+Delivered-To: submit@bugs.debian.org
+
+Package: alien-arena
+Version: 6.05-4.1
+Severity: minor
+
+Hello,
+
+I'm finding that as soon as mouse input is received, AA has
+a constant upwards motion that makes the view look up. You
+can fight it by moving the mouse down, but you have to
+more-or-less keep it moving permanently. It makes the game
+unplayable for me.
+
+I experience the same thing with quake2, weirdly enough,
+but not quake3.
+
+I have three mouse input device (a USB mouse, and an
+ultranav keyboard which has a trackpoint and a trackpad).
+I've disabled each in turn with sysfs to see if one of them
+was the culprit, but it occurs with any combination or any
+of them in isolation.
+
+I don't get drag in X generally and the evdev devices are
+quiet when the mouse isn't moving.
+
+UPDATE: I've just removed ~/.alien-arena and that solved
+it. Foolishly I didn't move it aside and inspect the
+contents first.
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (990, 'unstable')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.22-3-686 (SMP w/2 CPU cores)
+Locale: LANG=en_GB.UTF-8, LC_CTYPE=en_GB.UTF-8 (charmap=UTF-8)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages alien-arena depends on:
+ii  alien-arena-data              6.05-1     Game data files for Alien Arena
+ii  libc6                         2.7-5      GNU C Library: Shared libraries
+ii  libgl1-mesa-glx [libgl1]      7.0.2-3    A free implementation of the OpenG
+ii  libglu1-mesa [libglu1]        7.0.2-3    The OpenGL utility library (GLU)
+ii  libjpeg62                     6b-14      The Independent JPEG Group's JPEG 
+ii  libsdl1.2debian               1.2.12-3   Simple DirectMedia Layer
+ii  libx11-6                      2:1.0.3-7  X11 client-side library
+ii  libxext6                      1:1.0.3-2  X11 miscellaneous extension librar
+ii  libxxf86dga1                  2:1.0.2-1  X11 Direct Graphics Access extensi
+ii  libxxf86vm1                   1:1.0.1-2  X11 XFree86 video mode extension l
+
+alien-arena recommends no packages.
+
+-- no debconf information
+
+
+
+------------=_1208651587-17175-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 457700-close) by bugs.debian.org; 20 Apr 2008 00:31:44 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-6.7 required=4.0 tests=BAYES_00,FVGT_m_MULTI_ODD,
+	GMAIL,HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_2,MURPHY_DRUGS_REL8,
+	MURPHY_WRONG_WORD1,MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnNT5-0003tQ-Tl
+	for 457700-close@bugs.debian.org; Sun, 20 Apr 2008 00:31:44 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnNEt-00081e-99; Sun, 20 Apr 2008 00:17:03 +0000
+From: Andres Mejia <mcitadel@gmail.com>
+To: 457700-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#457700: fixed in alien-arena 7.0-1
+Message-Id: <E1JnNEt-00081e-99@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 00:17:03 +0000
+X-CrossAssassin-Score: 2
+Content-Transfer-Encoding: quoted-printable
+
+Source: alien-arena
+Source-Version: 7.0-1
+
+We believe that the bug you reported is fixed in the latest version of
+alien-arena, which is due to be installed in the Debian FTP archive:
+
+alien-arena-browser_7.0-1_all.deb
+  to pool/contrib/a/alien-arena/alien-arena-browser_7.0-1_all.deb
+alien-arena-server_7.0-1_amd64.deb
+  to pool/contrib/a/alien-arena/alien-arena-server_7.0-1_amd64.deb
+alien-arena_7.0-1.diff.gz
+  to pool/contrib/a/alien-arena/alien-arena_7.0-1.diff.gz
+alien-arena_7.0-1.dsc
+  to pool/contrib/a/alien-arena/alien-arena_7.0-1.dsc
+alien-arena_7.0-1_amd64.deb
+  to pool/contrib/a/alien-arena/alien-arena_7.0-1_amd64.deb
+alien-arena_7.0.orig.tar.gz
+  to pool/contrib/a/alien-arena/alien-arena_7.0.orig.tar.gz
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 457700@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Andres Mejia <mcitadel@gmail.com> (supplier of updated alien-arena packag=
+e)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Fri, 18 Apr 2008 17:43:24 -0400
+Source: alien-arena
+Binary: alien-arena alien-arena-server alien-arena-browser
+Architecture: source amd64 all
+Version: 7.0-1
+Distribution: unstable
+Urgency: low
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Changed-By: Andres Mejia <mcitadel@gmail.com>
+Description:=20
+ alien-arena - Standalone 3D first person online deathmatch shooter
+ alien-arena-browser - stand alone server browser for Alien Arena
+ alien-arena-server - Dedicated server for Alien Arena
+Closes: 453555 457700
+Changes:=20
+ alien-arena (7.0-1) unstable; urgency=3Dlow
+ .
+   [ Barry deFreese ]
+   * Escape - in alien-arena-server.6.
+   * Add myself to uploaders.
+ .
+   [ Ansgar Burchardt ]
+   * Remove deprecated Encoding key from .desktop file.
+ .
+   [ Gon=C3=A9ri Le Bouder ]
+   * Remove Homepage from package description.
+ .
+   [ Andres Mejia ]
+   * New upstream release.
+   * Removing XS- part for Vcs-* lines.
+   * Removing +ssh part of Vcs-Svn line.
+   * Bumped to Standards-Version 3.7.3.
+   * Test for existence of *-stamp stamps before removing them.
+   * Removed Encoding field in desktop file.
+   * Modify patch for upstream Makefile to make Makefile more useful in b=
+uilding
+     Debian packages.
+     + Also fixes problem not detecting the existence of libcurl.
+   * Remove debug packages for release. Will support nostrip option inste=
+ad.
+   * Add description for fix-CVE-2007-4754-CVE-2007-4755.dpatch, silences
+     lintian warning.
+   * Add new link for watchfile.
+     + Closes: #453555
+   * Moved debian/scripts/alien-arena-tarball.sh to
+     debian/alien-arena-get-orig-source.
+   * Modified alien-arena-data-get-orig-source to make it easier to maint=
+ain.
+   * Switched from dpatch to quilt.
+   * Cut down package description.
+   * Closing bug about mouse constantly looking up. The submitter could n=
+ot
+     reproduce the bug after deleting the ~/.alien-arena directory.
+     + Closes: #457700
+   * Updated copyright file for new release.
+   * Updated README.Debian files.
+   * Adding new images for icons. Need build dependency on sharutils.
+Checksums-Sha1:=20
+ 3cd6af1cf817f66f142385f0a9bd4e2dce50aa73 1575 alien-arena_7.0-1.dsc
+ fa477af367bac522e6ec703c461af726e433ba56 1095678 alien-arena_7.0.orig.ta=
+r.gz
+ 07b67c324239f96ba9252ec48bd76c1917968b20 85866 alien-arena_7.0-1.diff.gz
+ 101a3ad9bf6da67b4c5baafb2883d57181df9bc5 642848 alien-arena_7.0-1_amd64.=
+deb
+ 3ac2ff90c8a69ff4543e81fa46a048b43598c8ad 143186 alien-arena-server_7.0-1=
+_amd64.deb
+ a1e20abdb74a80ce2dd56953481e1d82e61fb8a4 37128 alien-arena-browser_7.0-1=
+_all.deb
+Checksums-Sha256:=20
+ 681c6b044205cffd1b3c4af64c4b4c20fe128661e14aa800733dfa299fa8113a 1575 al=
+ien-arena_7.0-1.dsc
+ 6155f70db7539d05c6395ca725362d0791d9138eef86d3060cc925b661149303 1095678=
+ alien-arena_7.0.orig.tar.gz
+ 253748e1ea7e8acfc2bde5728a268b3c54b07480373f08f4b8dfba44937e26a3 85866 a=
+lien-arena_7.0-1.diff.gz
+ 3f3dccf309cdd66d629b6bd84a8870e059fed12ce333cb76088259af31ca4073 642848 =
+alien-arena_7.0-1_amd64.deb
+ 9cae3eefef8a1c96af0640702318e0d71730519365771379cc328a4abc709553 143186 =
+alien-arena-server_7.0-1_amd64.deb
+ dc7df3afa6c25f32753be48042186d15f9048a9a218930c890f4b0141ffa0613 37128 a=
+lien-arena-browser_7.0-1_all.deb
+Files:=20
+ c14885c380ebb200a864c052b92ea424 1575 contrib/games extra alien-arena_7.=
+0-1.dsc
+ cc3eab52ca4e3a1452f74064929a3592 1095678 contrib/games extra alien-arena=
+_7.0.orig.tar.gz
+ 8b2850cc8c22549fc14239ac436324c2 85866 contrib/games extra alien-arena_7=
+.0-1.diff.gz
+ fed7c664a13bad08f7c3368443543376 642848 contrib/games extra alien-arena_=
+7.0-1_amd64.deb
+ 1b6478aab20e185064cd1e4626f1a0c4 143186 contrib/games extra alien-arena-=
+server_7.0-1_amd64.deb
+ 343aab4c68a02f5fac368392500bbfe2 37128 contrib/games extra alien-arena-b=
+rowser_7.0-1_all.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICmgRsKTFpDfZQSwRAj34AJwPmUYmFxKNtHmCks9XdX/NDb7ZTQCglHUQ
+J9Tj/IozMDZfSBjqKeknsdM=3D
+=3D9PO8
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208651587-17175-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

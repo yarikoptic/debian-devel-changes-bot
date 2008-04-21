@@ -1,0 +1,123 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 13:43:59 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnYtf-0006y6-TN
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 13:43:59 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id DF39F13A4F93; Sun, 20 Apr 2008 12:43:54 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: ***
+X-Spam-Status: No, score=3.1 required=4.0 tests=BAYES_00,BLOGSPOT,BLOGSPOTURI,
+	RCVD_IN_DNSWL_LOW,SARE_MSGID_LONG40 autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 1A7B213A4D13;
+	Sun, 20 Apr 2008 12:43:44 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnYow-00049C-7W; Sun, 20 Apr 2008 12:39:02 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476610: Processed: reassign bug #476610 to package beagle
+Reply-To: "D Bera" <dbera.web@gmail.com>, 476610@bugs.debian.org
+Resent-From: "D Bera" <dbera.web@gmail.com>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian CLI Applications Team <pkg-cli-apps-team@lists.alioth.debian.org>
+Resent-Date: Sun, 20 Apr 2008 12:39:01 +0000
+Resent-Message-ID: <handler.476610.B476610.120869500410956@bugs.debian.org>
+X-Debian-PR-Message: report 476610
+X-Debian-PR-Package: beagle
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: beagle
+Received: via spool by 476610-submit@bugs.debian.org id=B476610.120869500410956
+          (code B ref 476610); Sun, 20 Apr 2008 12:39:01 +0000
+Received: (at 476610) by bugs.debian.org; 20 Apr 2008 12:36:44 +0000
+X-Amavis-Spam-Status: No, score=1.5 required=4.0 tests=BAYES_00,BLOGSPOT,BLOGSPOTURI 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from py-out-1112.google.com ([64.233.166.183])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dbera.web@gmail.com>)
+	id 1JnYmh-0002Tz-QE
+	for 476610@bugs.debian.org; Sun, 20 Apr 2008 12:36:44 +0000
+Received: by py-out-1112.google.com with SMTP id f31so1460235pyh.17
+        for <476610@bugs.debian.org>; Sun, 20 Apr 2008 05:36:05 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:to:subject:in-reply-to:mime-version:content-type:content-transfer-encoding:content-disposition:references;
+        bh=lYyJDEXojsDdmIQXI2XNEDieTmDNewPyrWicJ/oy6Y8=;
+        b=Ptyy7IdJdIBtFhV0ZKPD04YvyPrOfbDTCZAocwhW123mZ69HzBoz7pVGzpCPjvCev3R5dQyq+FK88k4E9E7DrxnByO/8j7Ef049+vYWvz2R1uW2+i7vF79oiT3YEaIhMmLEpfLjPuZ8ChOehp2xECORPILryu/twmt523RBNSuw=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:to:subject:in-reply-to:mime-version:content-type:content-transfer-encoding:content-disposition:references;
+        b=AeZpiQnctSN65g6pqlgppQNmgeVAFfEcKJNlOR0gW9ak06ZREXn9eBHMvouDBFA5Lk+BgjzhjJGG9nT1H6q2Kz/y6y1vBCFE9jghdTtoJl6c8sXfJtX8HVGerXY7XqKal6SjT+4gqmShKUqUOT+WTFcqHYbQfS3mDmkK0FB3ybU=
+Received: by 10.65.193.15 with SMTP id v15mr8636238qbp.55.1208694586983;
+        Sun, 20 Apr 2008 05:29:46 -0700 (PDT)
+Received: by 10.64.209.7 with HTTP; Sun, 20 Apr 2008 05:29:46 -0700 (PDT)
+Message-ID: <1f1f006d0804200529u76c35c92h844006dc66c123e1@mail.gmail.com>
+Date: Sun, 20 Apr 2008 08:29:46 -0400
+From: "D Bera" <dbera.web@gmail.com>
+To: 476610@bugs.debian.org
+In-Reply-To: <handler.s.C.120869186918893.transcript@bugs.debian.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+References: <480B2C90.2090009@punk-ass-bitch.org>
+	 <handler.s.C.120869186918893.transcript@bugs.debian.org>
+Resent-Date: Sun, 20 Apr 2008 12:39:02 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343472
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.6
+X-Spam-Report: (-52.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+On 4/20/08, Debian Bug Tracking System <owner@bugs.debian.org> wrote:
+> Processing commands for control@bugs.debian.org:
+> > reassign 476610 beagle
+> Bug#476610: gnome-color-chooser: Won't start
+> Bug reassigned from package `gnome-color-chooser' to `beagle'.
+...
+> > retitle 476610 beagle: EAGAIN prevents apps from being started
+> Bug#476610: gnome-color-chooser: Won't start
+> Changed Bug title to `beagle: EAGAIN prevents apps from being started' from
+> `gnome-color-chooser: Won't start'.
+
+Which version of beagle and libbeagle do you have ?
+Thanks,
+- dBera
+
+
+-- 
+-----------------------------------------------------
+Debajyoti Bera @ http://dtecht.blogspot.com
+beagle / KDE fan
+Mandriva / Inspiron-1100 user
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

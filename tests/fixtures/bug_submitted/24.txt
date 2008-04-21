@@ -1,0 +1,335 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 16:57:31 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnbuk-00082Q-3o
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 16:57:30 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id B995C13A49B2; Sun, 20 Apr 2008 15:57:12 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.5 required=4.0 tests=BAYES_00,FOURLA,LDO_WHITELIST,
+	MURPHY_DRUGS_REL6,MURPHY_WRONG_WORD2,RCVD_IN_DNSWL_LOW autolearn=ham
+	version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 4ABC713A4ECA;
+	Sun, 20 Apr 2008 15:55:39 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnbmD-00027x-VN; Sun, 20 Apr 2008 15:48:25 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476993: koffice: FTBFS: cp: cannot stat `./debian/tmp/usr/share/applications/kde/krita.desktop': No such file or directory
+Reply-To: Lucas Nussbaum <lucas@lucas-nussbaum.net>, 476993@bugs.debian.org
+Resent-From: Lucas Nussbaum <lucas@lucas-nussbaum.net>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Resent-Date: Sun, 20 Apr 2008 15:48:23 +0000
+Resent-Message-ID: <handler.476993.B.12087063931741@bugs.debian.org>
+X-Debian-PR-Message: report 476993
+X-Debian-PR-Package: koffice
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: koffice
+Received: via spool by submit@bugs.debian.org id=B.12087063931741
+          (code B ref -1); Sun, 20 Apr 2008 15:48:23 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 15:46:33 +0000
+X-Amavis-Spam-Status: No, score=-9.5 required=4.0 tests=BAYES_00,FOURLA,HAS_PACKAGE,
+	MURPHY_DRUGS_REL6,MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from xanadu.blop.info ([80.248.208.235])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <lucas@lucas-nussbaum.net>)
+	id 1JnbkO-0000PR-6J
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 15:46:33 +0000
+Received: from localhost ([127.0.0.1] helo=xanadu.blop.info)
+	by xanadu.blop.info with smtp (Exim 4.63)
+	(envelope-from <lucas@lucas-nussbaum.net>)
+	id 1JnbkM-0000AN-Ve
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 17:46:31 +0200
+Received: (nullmailer pid 21858 invoked by uid 1000);
+	Sun, 20 Apr 2008 15:20:59 -0000
+Date: Sun, 20 Apr 2008 17:20:59 +0200
+From: Lucas Nussbaum <lucas@lucas-nussbaum.net>
+To: submit@bugs.debian.org
+Message-ID: <20080420152059.GA21841@xanadu.blop.info>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 15:48:25 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343607
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -37.2
+X-Spam-Report: (-37.2 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	15 AWL                    AWL: From: address is in the auto white-list
+
+Package: koffice
+Version: 1:1.6.3-5
+Severity: serious
+User: debian-qa@lists.debian.org
+Usertags: qa-ftbfs-20080419 qa-ftbfs
+Justification: FTBFS on i386
+
+Hi,
+
+During a rebuild of all packages in sid, your package failed to build on i386.
+
+This rebuild was done with gcc 4.3 instead of gcc 4.2, because gcc 4.3 is now
+the default on most architectures (even if it's not the case on i386 yet).
+Feel free to downgrade this bug to 'important' if your package is only built
+on i386, and this bug is specific to gcc 4.3 (i.e the package builds fine with
+gcc 4.2).
+
+Relevant part:
+> make[1]: Entering directory `/build/user/koffice-1.6.3/obj-i486-linux-gnu'
+> installing ./apidocs/
+> target directory /build/user/koffice-1.6.3/debian/tmp//usr/share/doc/kde/HTML/en/koffice-apidocs
+> make[1]: Leaving directory `/build/user/koffice-1.6.3/obj-i486-linux-gnu'
+> dh_installdirs -pkoffice 
+> dh_installdirs -pkoffice-doc 
+> dh_installdirs -pkoffice-doc-html 
+> dh_installdirs -pkivio-data 
+> dh_installdirs -pkpresenter-data 
+> dh_installdirs -pkrita-data 
+> install -m 755 -d debian/krita-data/usr/share/apps/krita/profiles/
+> uudecode -o debian/krita-data/usr/share/apps/krita/profiles/fogra27l.icm debian/fogra27l.icm.uu
+> dh_installdirs -pkword-data 
+> dh_installdirs -pkoffice-data 
+> ( set -e; \
+> 	tmpf=`mktemp debian/versions.XXXXXX`; \
+> 	perl debian/cdbs/versions.pl >$tmpf; \
+> 	for p in koffice koffice-doc koffice-doc-html kivio-data kpresenter-data krita-data kword-data koffice-data; do \
+> 	    cat $tmpf >>debian/$p.substvars; \
+> 	done; \
+> 	rm -f $tmpf )
+> dh_installdocs -pkoffice   
+> dh_installexamples -pkoffice 
+> dh_installman -pkoffice  
+> dh_installinfo -pkoffice  
+> dh_installmenu -pkoffice 
+> dh_installcron -pkoffice 
+> dh_installinit -pkoffice   
+> dh_installdebconf -pkoffice 
+> dh_installemacsen -pkoffice   
+> dh_installcatalogs -pkoffice 
+> dh_installpam -pkoffice 
+> dh_installlogrotate -pkoffice 
+> dh_installlogcheck -pkoffice 
+> dh_installchangelogs -pkoffice   
+> dh_installudev -pkoffice 
+> dh_lintian -pkoffice 
+> dh_install -pkoffice  
+> dh_link -pkoffice  
+> dh_installmime -pkoffice 
+> if test -x /usr/bin/dh_desktop; then dh_desktop -pkoffice ; fi
+> if test -e debian/koffice.lintian; then \
+> 		install -p -D -m644 debian/koffice.lintian \
+> 			debian/koffice/usr/share/lintian/overrides/koffice; \
+> 	fi
+> if test -e debian/koffice.presubj; then \
+> 		install -p -D -m644 debian/koffice.presubj \
+> 			debian/koffice/usr/share/bug/koffice/presubj; \
+> 	fi
+> dh_installdocs -pkoffice-doc   
+> dh_installexamples -pkoffice-doc 
+> dh_installman -pkoffice-doc  
+> dh_installinfo -pkoffice-doc  
+> dh_installmenu -pkoffice-doc 
+> dh_installcron -pkoffice-doc 
+> dh_installinit -pkoffice-doc   
+> dh_installdebconf -pkoffice-doc 
+> dh_installemacsen -pkoffice-doc   
+> dh_installcatalogs -pkoffice-doc 
+> dh_installpam -pkoffice-doc 
+> dh_installlogrotate -pkoffice-doc 
+> dh_installlogcheck -pkoffice-doc 
+> dh_installchangelogs -pkoffice-doc   
+> dh_installudev -pkoffice-doc 
+> dh_lintian -pkoffice-doc 
+> dh_install -pkoffice-doc  
+> dh_link -pkoffice-doc  
+> dh_installmime -pkoffice-doc 
+> if test -x /usr/bin/dh_desktop; then dh_desktop -pkoffice-doc ; fi
+> if test -e debian/koffice-doc.lintian; then \
+> 		install -p -D -m644 debian/koffice-doc.lintian \
+> 			debian/koffice-doc/usr/share/lintian/overrides/koffice-doc; \
+> 	fi
+> if test -e debian/koffice-doc.presubj; then \
+> 		install -p -D -m644 debian/koffice-doc.presubj \
+> 			debian/koffice-doc/usr/share/bug/koffice-doc/presubj; \
+> 	fi
+> dh_installdocs -pkoffice-doc-html   
+> dh_installexamples -pkoffice-doc-html 
+> dh_installman -pkoffice-doc-html  
+> dh_installinfo -pkoffice-doc-html  
+> dh_installmenu -pkoffice-doc-html 
+> dh_installcron -pkoffice-doc-html 
+> dh_installinit -pkoffice-doc-html   
+> dh_installdebconf -pkoffice-doc-html 
+> dh_installemacsen -pkoffice-doc-html   
+> dh_installcatalogs -pkoffice-doc-html 
+> dh_installpam -pkoffice-doc-html 
+> dh_installlogrotate -pkoffice-doc-html 
+> dh_installlogcheck -pkoffice-doc-html 
+> dh_installchangelogs -pkoffice-doc-html   
+> dh_installudev -pkoffice-doc-html 
+> dh_lintian -pkoffice-doc-html 
+> dh_install -pkoffice-doc-html  
+> dh_link -pkoffice-doc-html  
+> dh_installmime -pkoffice-doc-html 
+> if test -x /usr/bin/dh_desktop; then dh_desktop -pkoffice-doc-html ; fi
+> if test -e debian/koffice-doc-html.lintian; then \
+> 		install -p -D -m644 debian/koffice-doc-html.lintian \
+> 			debian/koffice-doc-html/usr/share/lintian/overrides/koffice-doc-html; \
+> 	fi
+> if test -e debian/koffice-doc-html.presubj; then \
+> 		install -p -D -m644 debian/koffice-doc-html.presubj \
+> 			debian/koffice-doc-html/usr/share/bug/koffice-doc-html/presubj; \
+> 	fi
+> set -e; \
+> 	for doc in `cd /build/user/koffice-1.6.3/debian/tmp//usr/share/doc/kde/HTML/en; find . -name index.docbook`; do \
+> 		pkg=${doc%/index.docbook}; pkg=${pkg#./}; \
+> 		echo Building $pkg HTML docs...; \
+> 		mkdir -p /build/user/koffice-1.6.3/debian/koffice-doc-html/usr/share/doc/kde/HTML/en/$pkg; \
+> 		cd /build/user/koffice-1.6.3/debian/koffice-doc-html/usr/share/doc/kde/HTML/en/$pkg; \
+> 		meinproc /build/user/koffice-1.6.3/debian/tmp//usr/share/doc/kde/HTML/en/$pkg/index.docbook; \
+> 	done
+> Building koffice HTML docs...
+> Building kivio HTML docs...
+> Building kugar HTML docs...
+> Building kplato HTML docs...
+> Building kword HTML docs...
+> Building kpresenter HTML docs...
+> Building krita HTML docs...
+> Building kspread HTML docs...
+> Building thesaurus HTML docs...
+> Building koshell HTML docs...
+> Building kexi HTML docs...
+> Building kchart HTML docs...
+> Building kformula HTML docs...
+> Building karbon HTML docs...
+> for pkg in  ; do \
+> 	  rm -rf debian/koffice-doc-html/usr/share/doc/kde/HTML/en/$pkg; \
+> 	done
+> dh_installdocs -pkivio-data   
+> dh_installexamples -pkivio-data 
+> dh_installman -pkivio-data  
+> dh_installinfo -pkivio-data  
+> dh_installmenu -pkivio-data 
+> dh_installcron -pkivio-data 
+> dh_installinit -pkivio-data   
+> dh_installdebconf -pkivio-data 
+> dh_installemacsen -pkivio-data   
+> dh_installcatalogs -pkivio-data 
+> dh_installpam -pkivio-data 
+> dh_installlogrotate -pkivio-data 
+> dh_installlogcheck -pkivio-data 
+> dh_installchangelogs -pkivio-data   
+> dh_installudev -pkivio-data 
+> dh_lintian -pkivio-data 
+> dh_install -pkivio-data  
+> dh_link -pkivio-data  
+> dh_installmime -pkivio-data 
+> if test -x /usr/bin/dh_desktop; then dh_desktop -pkivio-data ; fi
+> if test -e debian/kivio-data.lintian; then \
+> 		install -p -D -m644 debian/kivio-data.lintian \
+> 			debian/kivio-data/usr/share/lintian/overrides/kivio-data; \
+> 	fi
+> if test -e debian/kivio-data.presubj; then \
+> 		install -p -D -m644 debian/kivio-data.presubj \
+> 			debian/kivio-data/usr/share/bug/kivio-data/presubj; \
+> 	fi
+> dh_installdocs -pkpresenter-data   
+> dh_installexamples -pkpresenter-data 
+> dh_installman -pkpresenter-data  
+> dh_installinfo -pkpresenter-data  
+> dh_installmenu -pkpresenter-data 
+> dh_installcron -pkpresenter-data 
+> dh_installinit -pkpresenter-data   
+> dh_installdebconf -pkpresenter-data 
+> dh_installemacsen -pkpresenter-data   
+> dh_installcatalogs -pkpresenter-data 
+> dh_installpam -pkpresenter-data 
+> dh_installlogrotate -pkpresenter-data 
+> dh_installlogcheck -pkpresenter-data 
+> dh_installchangelogs -pkpresenter-data   
+> dh_installudev -pkpresenter-data 
+> dh_lintian -pkpresenter-data 
+> dh_install -pkpresenter-data  
+> dh_link -pkpresenter-data  
+> dh_installmime -pkpresenter-data 
+> if test -x /usr/bin/dh_desktop; then dh_desktop -pkpresenter-data ; fi
+> if test -e debian/kpresenter-data.lintian; then \
+> 		install -p -D -m644 debian/kpresenter-data.lintian \
+> 			debian/kpresenter-data/usr/share/lintian/overrides/kpresenter-data; \
+> 	fi
+> if test -e debian/kpresenter-data.presubj; then \
+> 		install -p -D -m644 debian/kpresenter-data.presubj \
+> 			debian/kpresenter-data/usr/share/bug/kpresenter-data/presubj; \
+> 	fi
+> dh_installdocs -pkrita-data   
+> dh_installexamples -pkrita-data 
+> dh_installman -pkrita-data  
+> dh_installinfo -pkrita-data  
+> dh_installmenu -pkrita-data 
+> dh_installcron -pkrita-data 
+> dh_installinit -pkrita-data   
+> dh_installdebconf -pkrita-data 
+> dh_installemacsen -pkrita-data   
+> dh_installcatalogs -pkrita-data 
+> dh_installpam -pkrita-data 
+> dh_installlogrotate -pkrita-data 
+> dh_installlogcheck -pkrita-data 
+> dh_installchangelogs -pkrita-data   
+> dh_installudev -pkrita-data 
+> dh_lintian -pkrita-data 
+> dh_install -pkrita-data  
+> cp: cannot stat `./debian/tmp/usr/share/applications/kde/krita.desktop': No such file or directory
+> dh_install: command returned error code 256
+> make: *** [binary-install/krita-data] Error 1
+
+The full build log is available from:
+   http://people.debian.org/~lucas/logs/2008/04/19
+
+A list of current common problems and possible solutions is available at 
+http://wiki.debian.org/qa.debian.org/FTBFS . You're welcome to contribute!
+
+About the archive rebuild: The rebuild was done on about 50 AMD64 nodes
+of the Grid'5000 platform, using a clean chroot containing a sid i386
+environment.  Internet was not accessible from the build systems.
+
+-- 
+| Lucas Nussbaum
+| lucas@lucas-nussbaum.net   http://www.lucas-nussbaum.net/ |
+| jabber: lucas@nussbaum.fr             GPG: 1024D/023B3F4F |
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

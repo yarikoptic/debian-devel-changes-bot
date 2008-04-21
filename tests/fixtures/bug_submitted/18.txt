@@ -1,0 +1,138 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 16:20:44 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnbLL-0007hd-W9
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 16:20:44 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id C067713A480D; Sun, 20 Apr 2008 15:20:29 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-3.0 required=4.0 tests=BAYES_00,RCVD_IN_DNSWL_LOW
+	autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 9A3DF13A499E;
+	Sun, 20 Apr 2008 15:20:14 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnbIp-0002jE-OQ; Sun, 20 Apr 2008 15:18:03 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476948: [evolution-rss]
+Reply-To: CruX <crux@lugmen.org.ar>, 476948@bugs.debian.org
+Resent-From: CruX <crux@lugmen.org.ar>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian Evolution Maintainers <pkg-evolution-maintainers@lists.alioth.debian.org>
+Resent-Date: Sun, 20 Apr 2008 15:18:02 +0000
+Resent-Message-ID: <handler.476948.B476948.12087044774283@bugs.debian.org>
+X-Debian-PR-Message: report 476948
+X-Debian-PR-Package: evolution-rss
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: evolution-rss
+Received: via spool by 476948-submit@bugs.debian.org id=B476948.12087044774283
+          (code B ref 476948); Sun, 20 Apr 2008 15:18:02 +0000
+Received: (at 476948) by bugs.debian.org; 20 Apr 2008 15:14:37 +0000
+X-Amavis-Spam-Status: No, score=-7.0 required=4.0 tests=BAYES_00,HAS_PACKAGE,ONEWORD 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from gisworking.com ([190.15.198.141] helo=ozono.gisworking.com)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <crux@lugmen.org.ar>)
+	id 1JnbFV-00016N-Gv
+	for 476948@bugs.debian.org; Sun, 20 Apr 2008 15:14:37 +0000
+Received: from [200.112.136.136] (200-112-136-136.bbt.net.ar [200.112.136.136])
+	(using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by ozono (Postfix) with ESMTP id B68BDCC001
+	for <476948@bugs.debian.org>; Sun, 20 Apr 2008 12:14:33 -0300 (ART)
+From: CruX <crux@lugmen.org.ar>
+To: 476948@bugs.debian.org
+Content-Type: multipart/signed; micalg=pgp-sha1; protocol="application/pgp-signature"; boundary="=-+6svRw1rH4kfj6x+6b/S"
+Organization: LUGMen
+Date: Sun, 20 Apr 2008 12:15:37 -0300
+Message-Id: <1208704537.11893.1.camel@umbanda.homelinux.org>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.22.1 
+Resent-Date: Sun, 20 Apr 2008 15:18:03 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343555
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.6
+X-Spam-Report: (-52.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+
+--=-+6svRw1rH4kfj6x+6b/S
+Content-Type: text/plain
+Content-Transfer-Encoding: quoted-printable
+
+Package: evolution-rss
+Version: 0.0.8-1
+
+--- Please enter the report below this line. ---
+
+This is just to confirm that this happens on amd64 too.
+
+--- System information. ---
+Architecture: amd64
+Kernel:       Linux 2.6.24-1-amd64
+
+Debian Release: lenny/sid
+  900 testing         security.debian.org=20
+  900 testing         ftp.debian.org=20
+  600 unstable        ftp.debian.org=20
+  500 testing         www.debian-multimedia.org=20
+  500 gutsy           download.tuxfamily.org=20
+
+--- Package information. ---
+Depends                  (Version) | Installed
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D-+-=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+libc6                   (>=3D 2.7-1) | 2.7-10
+libdbus-1-3             (>=3D 1.0.2) | 1.1.20-1
+libdbus-glib-1-2         (>=3D 0.74) | 0.74-1
+libglib2.0-0           (>=3D 2.12.0) | 2.16.1-2
+gconf2               (>=3D 2.10.1-2) | 2.22.0-1
+
+
+--=-+6svRw1rH4kfj6x+6b/S
+Content-Type: application/pgp-signature; name=signature.asc
+Content-Description: This is a digitally signed message part
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQBIC14ZBPcT47A9ZMQRAgPeAKCc39eVguJRTgC4acPDQHwZz2527ACeMrNH
+3mg74JSRZdBkhmE1jt+nNow=
+=L0ts
+-----END PGP SIGNATURE-----
+
+--=-+6svRw1rH4kfj6x+6b/S--
+
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

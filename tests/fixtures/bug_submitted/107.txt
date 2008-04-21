@@ -1,0 +1,117 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 07:29:55 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnT3d-0005Zq-Fm
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 07:29:55 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id E8A3913A4D8F; Sun, 20 Apr 2008 06:29:47 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=0.7 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RAZOR2_CF_RANGE_51_100,RAZOR2_CF_RANGE_E8_51_100,RAZOR2_CHECK,
+	RCVD_IN_DNSWL_LOW,TVD_SPACE_RATIO autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 0387613A4D02;
+	Sun, 20 Apr 2008 06:29:34 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnT0x-00088z-T5; Sun, 20 Apr 2008 06:27:03 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476906: mirror submission for debian.patan.com.ar
+Reply-To: "John Knoll" <jknoll@patan.com.ar>, 476906@bugs.debian.org
+Resent-From: "John Knoll" <jknoll@patan.com.ar>
+Original-Sender: www-data <www-data@master.debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian Mirrors Team <mirrors@debian.org>
+Resent-Date: Sun, 20 Apr 2008 06:27:01 +0000
+Resent-Message-ID: <handler.476906.B.120867269928851@bugs.debian.org>
+X-Debian-PR-Message: report 476906
+X-Debian-PR-Package: mirrors
+X-Debian-PR-Keywords: 
+Received: via spool by submit@bugs.debian.org id=B.120867269928851
+          (code B ref -1); Sun, 20 Apr 2008 06:27:01 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 06:24:59 +0000
+X-Amavis-Spam-Status: No, score=-5.1 required=4.0 tests=BAYES_05,HAS_PACKAGE,
+	OUR_MTA_MSGID autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from master.debian.org ([70.103.162.29])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <www-data@master.debian.org>)
+	id 1JnSyx-0007V7-C4
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 06:24:59 +0000
+Received: from www-data by master.debian.org with local (Exim 4.63)
+	(envelope-from <www-data@master.debian.org>)
+	id 1JnSyw-0008HL-Ov
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 06:24:58 +0000
+From: "John Knoll" <jknoll@patan.com.ar>
+To: submit@bugs.debian.org
+X-Sender: unauthenticated web user of submit_mirror.pl, by submit@bugs.debian.org
+Message-Id: <E1JnSyw-0008HL-Ov@master.debian.org>
+Sender: www-data <www-data@master.debian.org>
+Date: Sun, 20 Apr 2008 06:24:58 +0000
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 06:27:03 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343336
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -50.1
+X-Spam-Report: (-50.1 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	1.5 RAZOR2_CF_RANGE_E8_51_100 Razor2 gives engine 8 confidence level
+	above 50%
+	[cf:  59]
+	0.5 RAZOR2_CHECK           Listed in Razor2 (http://razor.sf.net/)
+	0.5 RAZOR2_CF_RANGE_51_100 Razor2 gives confidence level above 50%
+	[cf:  59]
+
+Package: mirrors
+Severity: wishlist
+
+Submission-Type: new
+Site: debian.patan.com.ar
+Type: leaf
+Archive-architecture: ALL alpha amd64 arm hppa hurd-i386 i386 ia64 m68k mips mipsel powerpc s390 sparc 
+Archive-ftp: /mirrors/debian/debian/
+Archive-http: /debian/
+CDImage-ftp: /mirrors/debian/debian-cd/
+CDImage-http: /debian-cd/
+Volatile-ftp: /mirrors/debian/debian-volatile/
+Volatile-http: /debian-volatile/
+IPv6: no
+Archive-upstream: ftp.br.debian.org
+Volatile-upstream: ftp.br.debian.org
+CDImage-upstream: ftp.br.debian.org
+Updates: once
+Maintainer: John Knoll <jknoll@patan.com.ar>
+Country: AR Argentina
+Location: Buenos Aires
+Sponsor: PATAN.COM.AR http://www.patan.com.ar
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

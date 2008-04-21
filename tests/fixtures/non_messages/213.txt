@@ -1,0 +1,160 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 15:10:10 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnaF2-0007NF-CV
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 15:10:09 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id D77A313A5079; Sun, 20 Apr 2008 14:10:02 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-3.0 required=4.0 tests=BAYES_00,RCVD_IN_DNSWL_LOW
+	autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 743B313A5039;
+	Sun, 20 Apr 2008 14:09:44 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnaBO-0005Us-8S; Sun, 20 Apr 2008 14:06:18 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#475097: 2nd Report
+Reply-To: Sheridan Hutchinson <Sheridan@Shezza.org>, 475097@bugs.debian.org
+Resent-From: Sheridan Hutchinson <Sheridan@Shezza.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Michael Biebl <biebl@debian.org>
+Resent-Date: Sun, 20 Apr 2008 14:06:17 +0000
+Resent-Message-ID: <handler.475097.B475097.120870024214993@bugs.debian.org>
+X-Debian-PR-Message: report 475097
+X-Debian-PR-Package: powersaved
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: powersave
+Received: via spool by 475097-submit@bugs.debian.org id=B475097.120870024214993
+          (code B ref 475097); Sun, 20 Apr 2008 14:06:17 +0000
+Received: (at 475097) by bugs.debian.org; 20 Apr 2008 14:04:02 +0000
+X-Amavis-Spam-Status: No, score=-4.0 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER,
+	RCVD_IN_SBLXBL,RCVD_IN_SBLXBL_CBL autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from karpinski.uscs.susx.ac.uk ([139.184.14.85])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <Sheridan@Shezza.org>)
+	id 1Jna9C-0003rT-2c
+	for 475097@bugs.debian.org; Sun, 20 Apr 2008 14:04:02 +0000
+Received: from host81-155-27-224.range81-155.btcentralplus.com ([81.155.27.224]:42576 helo=[10.0.0.117])
+	by karpinski.uscs.susx.ac.uk with esmtpsa (TLSv1:AES256-SHA:256)
+	(Exim 4.64)
+	(envelope-from <Sheridan@Shezza.org>)
+	id JZMN2O-000MJ3-1S; Sun, 20 Apr 2008 15:04:00 +0100
+Message-ID: <480B4D44.2030804@Shezza.org>
+Date: Sun, 20 Apr 2008 15:03:48 +0100
+From: Sheridan Hutchinson <Sheridan@Shezza.org>
+Organization: Sheridan Enterprises
+User-Agent: Mozilla-Thunderbird 2.0.0.9 (X11/20080110)
+MIME-Version: 1.0
+To: 475097@bugs.debian.org
+CC: Michael Biebl <biebl@debian.org>
+References: <480A4486.207@Shezza.org> <480B3ADD.7060404@debian.org> <480B47B6.5010808@debian.org>
+In-Reply-To: <480B47B6.5010808@debian.org>
+X-Enigmail-Version: 0.95.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+ protocol="application/pgp-signature";
+ boundary="------------enig0DC8908CD8BDF6D7894157F5"
+X-Sussex: true 
+X-Sussex-transport: remote_smtp 
+Resent-Date: Sun, 20 Apr 2008 14:06:18 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343515
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -46.9
+X-Spam-Report: (-46.9 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	5.7 AWL                    AWL: From: address is in the auto white-list
+
+This is an OpenPGP/MIME signed message (RFC 2440 and 3156)
+--------------enig0DC8908CD8BDF6D7894157F5
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+Michael Biebl wrote:
+> Hi again,
+>=20
+> looking more into it, it might also be a problem in hal itself. Could
+>  you please try the packages from http://debs.michaelbiebl.de/hal
+>=20
+> You can add deb http://debs.michaelbiebl.de/hal ./ to
+> /etc/apt/sources.list or download and install them manually.
+
+I'm glad you said that because I've spent 1/2 an hour looking at my hal
+configuration wondering why it won't work.
+
+I installed libhal, libhal-storage1, and hal, all versioned 0.5.11~rc2-2
+from the above source.
+
+The service has been restarted however still the same problem is
+showing.  I'm presuming that hal is actually getting the keyboard events
+because if I do:
+lshal -m
+
+and then do FN+F4 I get:
+15:00:51.534: computer_logicaldev_input_3 condition ButtonPressed =3D sle=
+ep
+15:00:51.534: computer condition ButtonPressed =3D sleep
+15:00:51.572: platform_i8042_i8042_KBD_port_logicaldev_input condition
+ButtonPressed =3D sleep
+
+However I don't get any S3 action.  Same for FN + F12 for hibernating.
+
+As far as I can ascertain, all the configuration that hal should need is
+in place, even the XML file describing all the keys as an 'X4' entry (I
+have an IBM Thinkpad X40).  I can only think that either the XML entry
+is incorrect for my hardware (unlikely IMO) so something else has gone aw=
+ry.
+
+--=20
+Regards,
+Sheridan Hutchinson
+Sheridan@Shezza.org
+
+
+--------------enig0DC8908CD8BDF6D7894157F5
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: OpenPGP digital signature
+Content-Disposition: attachment; filename="signature.asc"
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC01KnBrliHqz8aARAiImAJ9xWdxu7uESNoLUA3Xq9aVagxDuHgCfRySi
+R0mn8auaIfpsE9aIOFPepS0=
+=FJOv
+-----END PGP SIGNATURE-----
+
+--------------enig0DC8908CD8BDF6D7894157F5--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,238 @@
+From bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org Sun Apr 20 19:42:20 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org>)
+	id 1JneUS-0000UM-Lm
+	for ddc@ddc.chris-lamb.co.uk; Sun, 20 Apr 2008 19:42:20 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 89BCE13A5073; Sun, 20 Apr 2008 18:42:15 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 0ED6113A4F12;
+	Sun, 20 Apr 2008 18:42:14 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JneOT-0005uC-KU; Sun, 20 Apr 2008 18:36:05 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Marc Haber <mh+debian-packages@zugschlus.de>
+Subject: Bug#453958: marked as done (exim4: Init script tries to kill 
+ wrong process)
+Message-ID: <handler.453958.D449287.120871645719328.ackdone@bugs.debian.org>
+References: <20080420183408.GA30411@nechayev.zugschlus.de>
+ <20071202155306.10328.95658.reportbug@localhost.localdomain>
+X-Debian-PR-Message: closed 453958
+X-Debian-PR-Package: exim4
+X-Debian-PR-Source: exim4
+Content-Type: multipart/mixed; boundary="----------=_1208716565-22596-2"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 18:36:05 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <2z1d3zHK8CJ.A.oFB.H64CIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/133070
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 18:42:15 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208716565-22596-2
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 20:34:08 +0200
+with message-id <20080420183408.GA30411@nechayev.zugschlus.de>
+and subject line Re: Bug#449287: Bug#453958: Bug#449287: /etc/init.d/exim4 =
+gives "no such process" error when stopping exim4
+has caused the Debian Bug report #449287,
+regarding exim4: Init script tries to kill wrong process
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+449287: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D449287
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208716565-22596-2
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 2 Dec 2007 15:53:09 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.8 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,HAS_PACKAGE autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <bice77@malmo2.net>
+Received: from smtp.bredband2.net ([82.209.166.4])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <bice77@malmo2.net>)
+	id 1Iyr81-00036K-Ci
+	for submit@bugs.debian.org; Sun, 02 Dec 2007 15:53:09 +0000
+Received: (qmail 6410 invoked from network); 2 Dec 2007 15:06:12 -0000
+Received: from mkb-153-229-209-82.3.cust.bredband2.com (HELO localhost.localdomain) ([82.209.153.229])
+          (envelope-sender <bice77@malmo2.net>)
+          by smtp.bredband2.net (qmail-ldap-1.03) with SMTP
+          for <submit@bugs.debian.org>; 2 Dec 2007 15:06:12 -0000
+Received: from vincent by localhost.localdomain with local (Exim 4.68)
+	(envelope-from <bice77@malmo2.net>)
+	id 1Iyr7y-0002iL-U8; Sun, 02 Dec 2007 16:53:07 +0100
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: =?utf-8?q?Vincent_L=C3=B6nngren?= <bice77@malmo2.net>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Subject: exim4: Init script tries to kill wrong process
+Message-ID: <20071202155306.10328.95658.reportbug@localhost.localdomain>
+X-Mailer: reportbug 3.39
+Date: Sun, 02 Dec 2007 16:53:06 +0100
+Delivered-To: submit@bugs.debian.org
+
+Package: exim4
+Version: 4.68-2
+Severity: minor
+
+Hi. The exim4 script in /etc/init.d complains:
+
+Stopping MTA:/sbin/start-stop-daemon: warning: failed to kill 2174: No such process
+ exim4_listener.
+
+This happens every time it is run, including but not limited to system shutdown. I've marked it as a minor bug since I haven't noticed 
+any problems apart from the warning. I guess it isn't such a big deal.
+
+-- Package-specific info:
+Exim version 4.68 #1 built 01-Nov-2007 19:21:36
+Copyright (c) University of Cambridge 2006
+Berkeley DB: Berkeley DB 4.6.21: (September 27, 2007)
+Support for: crypteq iconv() IPv6 GnuTLS move_frozen_messages
+Lookups: lsearch wildlsearch nwildlsearch iplsearch cdb dbm dbmnz dnsdb dsearch nis nis0 passwd
+Authenticators: cram_md5 plaintext
+Routers: accept dnslookup ipliteral manualroute queryprogram redirect
+Transports: appendfile/maildir/mailstore autoreply lmtp pipe smtp
+Fixed never_users: 0
+Size of off_t: 8
+Configuration file is /var/lib/exim4/config.autogenerated
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (500, 'unstable'), (500, 'stable')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.22
+Locale: LANG=sv_SE.UTF-8, LC_CTYPE=sv_SE.UTF-8 (charmap=UTF-8)
+Shell: /bin/sh linked to /bin/dash
+
+Versions of packages exim4 depends on:
+ii  cdebconf [debconf-2.0]        0.125      Debian Configuration Management Sy
+ii  debconf [debconf-2.0]         1.5.17     Debian configuration management sy
+ii  exim4-base                    4.68-2     support files for all Exim MTA (v4
+ii  exim4-daemon-light            4.68-2     lightweight Exim MTA (v4) daemon
+
+exim4 recommends no packages.
+
+-- debconf information:
+  exim4/drec:
+
+
+
+------------=_1208716565-22596-2
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 449287-done) by bugs.debian.org; 20 Apr 2008 18:34:17 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.0 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <mh+debian-packages@zugschlus.de>
+Received: from torres.zugschlus.de ([85.214.68.41])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <mh+debian-packages@zugschlus.de>)
+	id 1JneMj-00051H-Ix; Sun, 20 Apr 2008 18:34:17 +0000
+Received: from nechayev.zugschlus.de ([83.246.116.35])
+	by torres.zugschlus.de with esmtpsa (TLS-1.0:RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.69)
+	(envelope-from <mh+debian-packages@zugschlus.de>)
+	id 1JneMi-0000Wp-En; Sun, 20 Apr 2008 20:34:16 +0200
+Received: from mh by nechayev.zugschlus.de with local (Exim 4.69)
+	(envelope-from <mh+debian-packages@zugschlus.de>)
+	id 1JneMa-0007up-2z; Sun, 20 Apr 2008 20:34:08 +0200
+Date: Sun, 20 Apr 2008 20:34:08 +0200
+From: Marc Haber <mh+debian-packages@zugschlus.de>
+To: Marc Haber <mh+debian-packages@zugschlus.de>,
+	449287-done@bugs.debian.org, 449287-submitter@bugs.debian.org
+Cc: Kevin Baradon <kevin.baradon@gmail.com>, 449287-quiet@bugs.debian.org,
+	Frans Pop <elendil@planet.nl>,
+	Andreas Metzler <ametzler@downhill.at.eu.org>
+Subject: Re: Bug#449287: Bug#453958: Bug#449287: /etc/init.d/exim4 gives
+	"no such process" error when stopping exim4
+Message-ID: <20080420183408.GA30411@nechayev.zugschlus.de>
+References: <200711280057.40628.elendil@planet.nl> <200802122036.11329.Kevin.Baradon@gmail.com> <20080213174226.GA14460@torres.zugschlus.de> <200802132019.10802.Kevin.Baradon@gmail.com> <20080213193644.GG14460@torres.zugschlus.de>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20080213193644.GG14460@torres.zugschlus.de>
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+
+On Wed, Feb 13, 2008 at 08:36:44PM +0100, Marc Haber wrote:
+> I still intend to close this bug by the end of March 2008.
+
+Which I do now.
+
+Greetings
+Marc
+
+-- 
+-----------------------------------------------------------------------------
+Marc Haber         | "I don't trust Computers. They | Mailadresse im Header
+Mannheim, Germany  |  lose things."    Winona Ryder | Fon: *49 621 72739834
+Nordisch by Nature |  How to make an American Quilt | Fax: *49 621 72739835
+
+
+------------=_1208716565-22596-2--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

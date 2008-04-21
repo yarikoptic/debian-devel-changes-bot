@@ -1,0 +1,150 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 18:31:48 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JndOC-00005Q-So
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 18:31:48 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 8AB2013A509A; Sun, 20 Apr 2008 17:31:43 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id 2BD0513A508B
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 17:31:43 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1Jnd9z-0006Hs-8P; Sun, 20 Apr 2008 17:17:03 +0000
+From: Mario Lang <mlang@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted espeak 1.37-1 (source amd64)
+Message-Id: <E1Jnd9z-0006Hs-8P@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 17:17:03 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <K2MRnonCgKJ.A.euC._33CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301324
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 17:31:43 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.6
+X-Spam-Report: (-2.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.0 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 19:01:41 +0200
+Source: espeak
+Binary: espeak espeak-data libespeak1 libespeak-dev
+Architecture: source amd64
+Version: 1.37-1
+Distribution: unstable
+Urgency: low
+Maintainer: Mario Lang <mlang@debian.org>
+Changed-By: Mario Lang <mlang@debian.org>
+Description:=20
+ espeak     - A multi-lingual software speech synthesizer
+ espeak-data - A multi-lingual software speech synthesizer: speech data f=
+iles
+ libespeak-dev - A multi-lingual software speech synthesizer: development=
+ files
+ libespeak1 - A multi-lingual software speech synthesizer: shared library
+Changes:=20
+ espeak (1.37-1) unstable; urgency=3Dlow
+ .
+   * New upstream release.
+Checksums-Sha1:=20
+ 31d49e39918ac21bac199540b2a952b9951f8d5d 1022 espeak_1.37-1.dsc
+ 060627888f75254e4c9b40b58cebe42923756c30 1182880 espeak_1.37.orig.tar.gz
+ 6b78c048c9aed8e82e7afc81eaeab637ff857ec9 19057 espeak_1.37-1.diff.gz
+ 919c5f14f78935769eafabea508136652bc1e047 67490 espeak_1.37-1_amd64.deb
+ 8c5ad4d0126df03b2519b32013e34773f7d3be18 460654 espeak-data_1.37-1_amd64=
+.deb
+ 0382ef160481e38336c85257afb97ecf3f7c1ad2 128720 libespeak1_1.37-1_amd64.=
+deb
+ 4abe6a96767d2130be5074cd7e34af660f4aec23 13474 libespeak-dev_1.37-1_amd6=
+4.deb
+Checksums-Sha256:=20
+ f6ac305c56e824ab592e2aac3c724a471a3996145d24682f2cebac4079ec999e 1022 es=
+peak_1.37-1.dsc
+ 7da3c87170fde2055c53514d45922dd849a01c78e079e4412ed2f895d6763a69 1182880=
+ espeak_1.37.orig.tar.gz
+ 698ba40a3d0693ea992e2e428e8e5413f21c4767c92a8b053950468d0a5f911e 19057 e=
+speak_1.37-1.diff.gz
+ b0219695ba02194b76e7ee01120b953a368709b5ccd0020a16133a91ef9ef5b2 67490 e=
+speak_1.37-1_amd64.deb
+ ef3cb3fbffa728a5506bdc15584d80ec8e35d447a039fe07703ded55a65185ac 460654 =
+espeak-data_1.37-1_amd64.deb
+ 47c4694098ec24403186bd69115a9b349a671b8e14be79e6aeca097cc497c87a 128720 =
+libespeak1_1.37-1_amd64.deb
+ 6293508162f725f7e42cf70c354a224ae123442ca6669f99242f407b2597351c 13474 l=
+ibespeak-dev_1.37-1_amd64.deb
+Files:=20
+ c66f98b9b3439814faf1b0c377343c6f 1022 sound optional espeak_1.37-1.dsc
+ 0d40ae8d629dc9113bac3a813860661d 1182880 sound optional espeak_1.37.orig=
+.tar.gz
+ eba1fcd40823dd918ffa74d004597584 19057 sound optional espeak_1.37-1.diff=
+.gz
+ 0d45586508582e7a2aa54de33e1d071d 67490 sound optional espeak_1.37-1_amd6=
+4.deb
+ 235cc920bebd04ac7611e1bbcafd445f 460654 sound optional espeak-data_1.37-=
+1_amd64.deb
+ 2a23bf1fb5072de74ab04490db5e64cb 128720 libs optional libespeak1_1.37-1_=
+amd64.deb
+ d808bf653e98223fc9ae494932be1762 13474 libdevel optional libespeak-dev_1=
+.37-1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC3iB3/wCKmsRPkQRAqgyAJ9aXID6LD743PpLNKqQ16tRoa9GrQCfeQho
+B/9It95lTS/nUkClqDgZ/08=3D
+=3D8g5Q
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+espeak-data_1.37-1_amd64.deb
+  to pool/main/e/espeak/espeak-data_1.37-1_amd64.deb
+espeak_1.37-1.diff.gz
+  to pool/main/e/espeak/espeak_1.37-1.diff.gz
+espeak_1.37-1.dsc
+  to pool/main/e/espeak/espeak_1.37-1.dsc
+espeak_1.37-1_amd64.deb
+  to pool/main/e/espeak/espeak_1.37-1_amd64.deb
+espeak_1.37.orig.tar.gz
+  to pool/main/e/espeak/espeak_1.37.orig.tar.gz
+libespeak-dev_1.37-1_amd64.deb
+  to pool/main/e/espeak/libespeak-dev_1.37-1_amd64.deb
+libespeak1_1.37-1_amd64.deb
+  to pool/main/e/espeak/libespeak1_1.37-1_amd64.deb
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

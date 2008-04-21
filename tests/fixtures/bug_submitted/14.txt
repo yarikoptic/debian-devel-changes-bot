@@ -1,0 +1,168 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 18:50:09 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jndfs-0000Ah-Jk
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 18:50:09 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id ABC2C13A510B; Sun, 20 Apr 2008 17:49:58 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	MURPHY_DRUGS_REL8,RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 6F97413A50F5;
+	Sun, 20 Apr 2008 17:49:39 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnde5-0004B0-Bb; Sun, 20 Apr 2008 17:48:09 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#477053: evolution-rss: implicit pointer conversions
+Reply-To: dann frazier <dannf@debian.org>, 477053@bugs.debian.org
+Resent-From: dann frazier <dannf@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian Evolution Maintainers <pkg-evolution-maintainers@lists.alioth.debian.org>
+Resent-Date: Sun, 20 Apr 2008 17:48:03 +0000
+Resent-Message-ID: <handler.477053.B.120871299223503@bugs.debian.org>
+X-Debian-PR-Message: report 477053
+X-Debian-PR-Package: evolution-rss
+X-Debian-PR-Keywords: patch
+X-Debian-PR-Source: evolution-rss
+Received: via spool by submit@bugs.debian.org id=B.120871299223503
+          (code B ref -1); Sun, 20 Apr 2008 17:48:03 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 17:36:32 +0000
+X-Amavis-Spam-Status: No, score=-12.0 required=4.0 tests=BAYES_00,FROMDEVELOPER,
+	HAS_PACKAGE,MURPHY_DRUGS_REL8 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from g5t0008.atlanta.hp.com ([15.192.0.45])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dannf@ldl.fc.hp.com>)
+	id 1JndSq-0005uz-2A
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 17:36:32 +0000
+Received: from smtp1.fc.hp.com (smtp1.fc.hp.com [15.15.136.127])
+	by g5t0008.atlanta.hp.com (Postfix) with ESMTP id 077CD24448
+	for <submit@bugs.debian.org>; Sun, 20 Apr 2008 17:36:23 +0000 (UTC)
+Received: from ldl.fc.hp.com (ldl.fc.hp.com [15.11.146.30])
+	by smtp1.fc.hp.com (Postfix) with ESMTP id 92A951E7141
+	for <submit@bugs.debian.org>; Sun, 20 Apr 2008 17:33:53 +0000 (UTC)
+Received: from localhost (ldl.fc.hp.com [127.0.0.1])
+	by ldl.fc.hp.com (Postfix) with ESMTP id 9131C39C002
+	for <submit@bugs.debian.org>; Sun, 20 Apr 2008 11:36:23 -0600 (MDT)
+X-Virus-Scanned: Debian amavisd-new at ldl.fc.hp.com
+Received: from ldl.fc.hp.com ([127.0.0.1])
+	by localhost (ldl.fc.hp.com [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id ajtFP3qaa+n1 for <submit@bugs.debian.org>;
+	Sun, 20 Apr 2008 11:36:22 -0600 (MDT)
+Received: from krebs (krebs.dannf [10.8.0.7])
+	by ldl.fc.hp.com (Postfix) with ESMTP id 457AC39C001
+	for <submit@bugs.debian.org>; Sun, 20 Apr 2008 11:36:22 -0600 (MDT)
+Received: by krebs (Postfix, from userid 20800)
+	id CD7683B63F8; Sun, 20 Apr 2008 11:36:21 -0600 (MDT)
+Date: Sun, 20 Apr 2008 11:36:21 -0600
+From: dann frazier <dannf@debian.org>
+To: submit@bugs.debian.org
+Message-ID: <20080420173621.GA3661@ldl.fc.hp.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="oyUTqETQ0mS9luUI"
+Content-Disposition: inline
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 17:48:09 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343683
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -30.1
+X-Spam-Report: (-30.1 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	23 AWL                    AWL: From: address is in the auto white-list
+
+
+--oyUTqETQ0mS9luUI
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+
+Package: evolution-rss
+Version: 0.0.8-1
+Severity: serious
+Tags: patch
+Usertags: implicit-pointer-conversion
+
+Our automated buildd log filter[1] detected a problem that is likely to
+cause your package to segfault on architectures where the size of a
+pointer is greater than the size of an integer, such as ia64 and amd64.
+
+  Function `mail_tools_folder_to_url' implicitly converted to pointer at rss.c:817
+  Function `camel_stream_fs_new_with_name' implicitly converted to pointer at rss.c:3671
+  Function `e_mkdtemp' implicitly converted to pointer at rss.c:3747
+
+This is often due to a missing function prototype definition.
+For more information, see [2].
+
+Though it is guaranteed that this codepath will cause a segfault on certain
+architectures, it is not guaranteed that this codepath would ever be executed
+(e.g., if the returned pointer is never dereferenced). However, this bug
+does prevent the ia64 buildd from successfully building this package, resulting
+in a practical FTBFS issue and warranting the serious severity.
+
+[1] http://people.debian.org/~dannf/check-implicit-pointer-functions
+[2] http://wiki.debian.org/ImplicitPointerConversions
+
+--oyUTqETQ0mS9luUI
+Content-Type: text/x-diff; charset=us-ascii
+Content-Disposition: attachment; filename="missing-includes.patch"
+
+diff -urpN evolution-rss-0.0.8.orig/src/rss.c evolution-rss-0.0.8/src/rss.c
+--- evolution-rss-0.0.8.orig/src/rss.c	2008-03-03 06:26:04.000000000 -0700
++++ evolution-rss-0.0.8/src/rss.c	2008-04-20 11:31:16.000000000 -0600
+@@ -32,10 +32,12 @@
+ #include <camel/camel-exception.h>
+ #include <camel/camel-multipart.h>
+ #include <camel/camel-stream-mem.h>
++#include <camel/camel-stream-fs.h>
+ 
+ #include <mail/em-popup.h>
+ #include <e-util/e-error.h>
+ #include <e-util/e-icon-factory.h>
++#include <e-util/e-mktemp.h>
+ 
+ #include <mail/em-config.h>
+ 
+@@ -52,6 +54,7 @@
+ //////////////////////////////////
+ #include <mail/mail-component.h>
+ //////////////////////////////////
++#include <mail/mail-tools.h>
+ 
+ #include <misc/e-activity-handler.h>
+ 
+
+--oyUTqETQ0mS9luUI--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

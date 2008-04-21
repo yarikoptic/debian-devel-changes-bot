@@ -1,0 +1,142 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 13:33:29 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnYjU-0006uV-Nt
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 13:33:29 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 9589E13A4915; Sun, 20 Apr 2008 12:33:23 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 0733013A4F73;
+	Sun, 20 Apr 2008 12:33:13 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnYj8-0007sK-V1; Sun, 20 Apr 2008 12:33:03 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#434396: [Buildd-tools-devel] Bug#434396: Bug#434396: sbuild: LVM snapshot -source chroot not correctly managed
+Reply-To: Roger Leigh <rleigh@whinlatter.ukfsn.org>, 434396@bugs.debian.org
+Resent-From: Roger Leigh <rleigh@whinlatter.ukfsn.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian buildd-tools Developers <buildd-tools-devel@lists.alioth.debian.org>
+Resent-Date: Sun, 20 Apr 2008 12:33:02 +0000
+Resent-Message-ID: <handler.434396.B434396.120869460322642@bugs.debian.org>
+X-Debian-PR-Message: report 434396
+X-Debian-PR-Package: sbuild
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: sbuild
+Received: via spool by 434396-submit@bugs.debian.org id=B434396.120869460322642
+          (code B ref 434396); Sun, 20 Apr 2008 12:33:02 +0000
+Received: (at 434396) by bugs.debian.org; 20 Apr 2008 12:30:03 +0000
+X-Amavis-Spam-Status: No, score=-6.9 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	HAS_BUG_NUMBER autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from mx1.ukfsn.org ([77.75.108.10] helo=mail.ukfsn.org)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <rleigh@whinlatter.ukfsn.org>)
+	id 1JnYgE-0005rn-Sh
+	for 434396@bugs.debian.org; Sun, 20 Apr 2008 12:30:03 +0000
+Received: from localhost (smtp-filter.ukfsn.org [192.168.54.205])
+	by mail.ukfsn.org (Postfix) with ESMTP id 4BF9EDECE7;
+	Sun, 20 Apr 2008 13:31:46 +0100 (BST)
+Received: from mail.ukfsn.org ([192.168.54.25])
+	by localhost (smtp-filter.ukfsn.org [192.168.54.205]) (amavisd-new, port 10024)
+	with ESMTP id c6TuC-Kpr7SP; Sun, 20 Apr 2008 13:17:47 +0100 (BST)
+Received: from hardknott.home (client-81-107-214-164.glfd.adsl.virgin.net [81.107.214.164])
+	by mail.ukfsn.org (Postfix) with ESMTP id 06836DECBC;
+	Sun, 20 Apr 2008 13:31:46 +0100 (BST)
+Received: by hardknott.home (Postfix, from userid 1000)
+	id 956CAC004; Sun, 20 Apr 2008 13:29:59 +0100 (BST)
+To: Vincent Danjean <vdanjean@debian.org>
+Cc: 434396@bugs.debian.org
+References: <87odbe68r9.fsf@hardknott.home> <4795AD5C.4090704@debian.org>
+From: Roger Leigh <rleigh@whinlatter.ukfsn.org>
+Date: Sun, 20 Apr 2008 13:29:59 +0100
+In-Reply-To: <4795AD5C.4090704@debian.org> (Vincent Danjean's message of "Tue\, 22 Jan 2008 09\:46\:20 +0100")
+Message-ID: <87zlrok8u0.fsf@hardknott.home>
+User-Agent: Gnus/5.11 (Gnus v5.11) Emacs/22.2 (gnu/linux)
+MIME-Version: 1.0
+Content-Type: multipart/signed; boundary="=-=-=";
+	micalg=pgp-sha1; protocol="application/pgp-signature"
+Resent-Date: Sun, 20 Apr 2008 12:33:02 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343469
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -38.5
+X-Spam-Report: (-38.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	14 AWL                    AWL: From: address is in the auto white-list
+
+--=-=-=
+Content-Transfer-Encoding: quoted-printable
+
+Vincent Danjean <vdanjean@debian.org> writes:
+
+> Roger Leigh wrote:
+>> Hi,
+>>=20
+>> Sorry for the delay in replying to this bug.  testing migrations
+>> and time prevented a new sbuild upload until a few weeks ago.
+>> sbuild 0.57.0-1 or later should fix this bug.
+>>=20
+>> Please could you confirm if this fixes the bug for you?
+>
+> I will not have the time this week: I need to keep a working sbuild
+> and will not have time to correct the situation if there is still a bug.
+>   I will try next week. Do not hesitate to ping me if I forget.
+
+Hi, did you have a chance to check this was fixed yet?
+
+
+Thanks,
+Roger
+
+=2D-=20
+  .''`.  Roger Leigh
+ : :' :  Debian GNU/Linux             http://people.debian.org/~rleigh/
+ `. `'   Printing on GNU/Linux?       http://gutenprint.sourceforge.net/
+   `-    GPG Public Key: 0x25BFB848   Please GPG sign your mail.
+
+--=-=-=
+Content-Type: application/pgp-signature
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICzdHVcFcaSW/uEgRAhQ5AKCUnzk8rE4Vc1D75W1H/BF+fsqfXACgtFYZ
+ahh1BxiGF2D42yjhCujZx7Y=
+=GYL8
+-----END PGP SIGNATURE-----
+--=-=-=--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

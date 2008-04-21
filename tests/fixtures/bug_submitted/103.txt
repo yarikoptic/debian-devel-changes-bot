@@ -1,0 +1,329 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 16:58:00 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnbvG-00083Q-MP
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 16:57:59 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 265B313A4DF6; Sun, 20 Apr 2008 15:57:45 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.7 required=4.0 tests=BAYES_00,FOURLA,
+	FVGT_m_MULTI_ODD,LDO_WHITELIST,MURPHY_WRONG_WORD2,RCVD_IN_DNSWL_LOW
+	autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id C891D13A4F23;
+	Sun, 20 Apr 2008 15:55:54 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnbnn-0003rl-HA; Sun, 20 Apr 2008 15:50:03 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#477022: italc: FTBFS: configure: error: *** you do not have installed the OpenSSL-library and/or development-files are missing!
+Reply-To: Lucas Nussbaum <lucas@lucas-nussbaum.net>, 477022@bugs.debian.org
+Resent-From: Lucas Nussbaum <lucas@lucas-nussbaum.net>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Patrick Winnertz <winnie@debian.org>
+Resent-Date: Sun, 20 Apr 2008 15:50:00 +0000
+Resent-Message-ID: <handler.477022.B.12087064133256@bugs.debian.org>
+X-Debian-PR-Message: report 477022
+X-Debian-PR-Package: italc
+X-Debian-PR-Keywords: 
+Received: via spool by submit@bugs.debian.org id=B.12087064133256
+          (code B ref -1); Sun, 20 Apr 2008 15:50:00 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 15:46:53 +0000
+X-Amavis-Spam-Status: No, score=-9.7 required=4.0 tests=BAYES_00,FOURLA,
+	FVGT_m_MULTI_ODD,HAS_PACKAGE,MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from xanadu.blop.info ([80.248.208.235])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <lucas@lucas-nussbaum.net>)
+	id 1Jnbki-0000ob-Ps
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 15:46:53 +0000
+Received: from localhost ([127.0.0.1] helo=xanadu.blop.info)
+	by xanadu.blop.info with smtp (Exim 4.63)
+	(envelope-from <lucas@lucas-nussbaum.net>)
+	id 1Jnbkh-0000Cp-OK
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 17:46:51 +0200
+Received: (nullmailer pid 22630 invoked by uid 1000);
+	Sun, 20 Apr 2008 15:36:19 -0000
+Date: Sun, 20 Apr 2008 17:36:19 +0200
+From: Lucas Nussbaum <lucas@lucas-nussbaum.net>
+To: submit@bugs.debian.org
+Message-ID: <20080420153619.GA22617@xanadu.blop.info>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 15:50:03 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343611
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -37.3
+X-Spam-Report: (-37.3 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	15 AWL                    AWL: From: address is in the auto white-list
+
+Package: italc
+Version: 1:1.0.7-2
+Severity: serious
+User: debian-qa@lists.debian.org
+Usertags: qa-ftbfs-20080419 qa-ftbfs
+Justification: FTBFS on i386
+
+Hi,
+
+During a rebuild of all packages in sid, your package failed to build on i386.
+
+This rebuild was done with gcc 4.3 instead of gcc 4.2, because gcc 4.3 is now
+the default on most architectures (even if it's not the case on i386 yet).
+Feel free to downgrade this bug to 'important' if your package is only built
+on i386, and this bug is specific to gcc 4.3 (i.e the package builds fine with
+gcc 4.2).
+
+Relevant part:
+> make[1]: Entering directory `/build/user/italc-1.0.7'
+> if test -e /usr/share/misc/config.guess ; then \
+> 		for i in ./config.guess ; do \
+> 			if ! test -e $i.cdbs-orig ; then \
+> 				mv $i $i.cdbs-orig ; \
+> 				cp --remove-destination /usr/share/misc/config.guess $i ; \
+> 			fi ; \
+> 		done ; \
+> 	fi
+> if test -e /usr/share/misc/config.sub ; then \
+> 		for i in ./config.sub ; do \
+> 			if ! test -e $i.cdbs-orig ; then \
+> 				mv $i $i.cdbs-orig ; \
+> 				cp --remove-destination /usr/share/misc/config.sub $i ; \
+> 			fi ; \
+> 		done ; \
+> 	fi
+> make[1]: Leaving directory `/build/user/italc-1.0.7'
+> if test -e /usr/share/misc/config.guess ; then \
+> 		for i in ./config.guess ; do \
+> 			if ! test -e $i.cdbs-orig ; then \
+> 				mv $i $i.cdbs-orig ; \
+> 				cp --remove-destination /usr/share/misc/config.guess $i ; \
+> 			fi ; \
+> 		done ; \
+> 	fi
+> if test -e /usr/share/misc/config.sub ; then \
+> 		for i in ./config.sub ; do \
+> 			if ! test -e $i.cdbs-orig ; then \
+> 				mv $i $i.cdbs-orig ; \
+> 				cp --remove-destination /usr/share/misc/config.sub $i ; \
+> 			fi ; \
+> 		done ; \
+> 	fi
+> touch debian/stamp-autotools-files
+> chmod a+x /build/user/italc-1.0.7/./configure
+> cd . && CC="cc" CXX="g++" CFLAGS="-g -O2 -g -Wall -O2 -fPIC" CXXFLAGS="-g -O2 -g -Wall -O2 -fPIC" CPPFLAGS=" -I/usr/X11R6/include" LDFLAGS="" /build/user/italc-1.0.7/./configure --build=i486-linux-gnu --prefix=/usr --includedir="\${prefix}/include" --mandir="\${prefix}/share/man" --infodir="\${prefix}/share/info" --sysconfdir=/etc --localstatedir=/var --libexecdir="\${prefix}/lib/italc" --disable-maintainer-mode --disable-dependency-tracking --srcdir=.  --with-linux LDFLAGS=-L/usr/X11R6/lib 
+> checking for a BSD-compatible install... /usr/bin/install -c
+> checking whether build environment is sane... yes
+> checking for gawk... no
+> checking for mawk... mawk
+> checking whether make sets $(MAKE)... yes
+> checking for gcc... cc
+> checking for C compiler default output file name... a.out
+> checking whether the C compiler works... yes
+> checking whether we are cross compiling... no
+> checking for suffix of executables... 
+> checking for suffix of object files... o
+> checking whether we are using the GNU C compiler... yes
+> checking whether cc accepts -g... yes
+> checking for cc option to accept ISO C89... none needed
+> checking for style of include used by make... GNU
+> checking dependency style of cc... none
+> checking whether we are using the GNU C++ compiler... yes
+> checking whether g++ accepts -g... yes
+> checking dependency style of g++... none
+> checking build system type... i486-pc-linux-gnu
+> checking host system type... i486-pc-linux-gnu
+> checking for a sed that does not truncate output... /bin/sed
+> checking for grep that handles long lines and -e... /bin/grep
+> checking for egrep... /bin/grep -E
+> checking for ld used by cc... /usr/bin/ld
+> checking if the linker (/usr/bin/ld) is GNU ld... yes
+> checking for /usr/bin/ld option to reload object files... -r
+> checking for BSD-compatible nm... /usr/bin/nm -B
+> checking whether ln -s works... yes
+> checking how to recognize dependent libraries... pass_all
+> checking how to run the C preprocessor... cc -E
+> checking for ANSI C header files... yes
+> checking for sys/types.h... yes
+> checking for sys/stat.h... yes
+> checking for stdlib.h... yes
+> checking for string.h... yes
+> checking for memory.h... yes
+> checking for strings.h... yes
+> checking for inttypes.h... yes
+> checking for stdint.h... yes
+> checking for unistd.h... yes
+> checking dlfcn.h usability... yes
+> checking dlfcn.h presence... yes
+> checking for dlfcn.h... yes
+> checking how to run the C++ preprocessor... g++ -E
+> checking for g77... no
+> checking for xlf... no
+> checking for f77... no
+> checking for frt... no
+> checking for pgf77... no
+> checking for cf77... no
+> checking for fort77... no
+> checking for fl32... no
+> checking for af77... no
+> checking for xlf90... no
+> checking for f90... no
+> checking for pgf90... no
+> checking for pghpf... no
+> checking for epcf90... no
+> checking for gfortran... no
+> checking for g95... no
+> checking for xlf95... no
+> checking for f95... no
+> checking for fort... no
+> checking for ifort... no
+> checking for ifc... no
+> checking for efc... no
+> checking for pgf95... no
+> checking for lf95... no
+> checking for ftn... no
+> checking whether we are using the GNU Fortran 77 compiler... no
+> checking whether  accepts -g... no
+> checking the maximum length of command line arguments... 98304
+> checking command to parse /usr/bin/nm -B output from cc object... ok
+> checking for objdir... .libs
+> checking for ar... ar
+> checking for ranlib... ranlib
+> checking for strip... strip
+> checking if cc supports -fno-rtti -fno-exceptions... no
+> checking for cc option to produce PIC... -fPIC
+> checking if cc PIC flag -fPIC works... yes
+> checking if cc static flag -static works... yes
+> checking if cc supports -c -o file.o... yes
+> checking whether the cc linker (/usr/bin/ld) supports shared libraries... yes
+> checking whether -lc should be explicitly linked in... no
+> checking dynamic linker characteristics... GNU/Linux ld.so
+> checking how to hardcode library paths into programs... immediate
+> checking whether stripping libraries is possible... yes
+> checking if libtool supports shared libraries... yes
+> checking whether to build shared libraries... yes
+> checking whether to build static libraries... yes
+> configure: creating libtool
+> appending configuration tag "CXX" to libtool
+> checking for ld used by g++... /usr/bin/ld
+> checking if the linker (/usr/bin/ld) is GNU ld... yes
+> checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+> checking for g++ option to produce PIC... -fPIC
+> checking if g++ PIC flag -fPIC works... yes
+> checking if g++ static flag -static works... yes
+> checking if g++ supports -c -o file.o... yes
+> checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+> checking dynamic linker characteristics... GNU/Linux ld.so
+> (cached) (cached) checking how to hardcode library paths into programs... immediate
+> appending configuration tag "F77" to libtool
+> checking platform to build for... Linux, will enable support for it
+> checking for X... libraries , headers 
+> checking for gethostbyname... yes
+> checking for connect... yes
+> checking for remove... yes
+> checking for shmat... yes
+> checking for IceConnectionNumber in -lICE... no
+> checking QTDIR... /usr
+> checking Qt includes... /usr/include/qt4
+> checking for moc-qt4... /usr/bin/moc-qt4
+> checking for uic-qt4... /usr/bin/uic-qt4
+> checking for rcc-qt4... no
+> checking for rcc... /usr/bin/rcc
+> checking for lupdate-qt4... /usr/bin/lupdate-qt4
+> checking for lrelease-qt4... /usr/bin/lrelease-qt4
+> checking QT_CXXFLAGS... -I/usr/include/qt4 -I/usr/include/qt4/Qt -D_REENTRANT -DQT_NO_DEBUG -DQT_CORE_LIB -DQT_XML_LIB -DQT_THREAD_SUPPORT
+> checking Qt4 libraries... found: -L/usr/lib -L/usr/lib/qt4 -lQtCore -lQtXml -lQtNetwork
+> checking for XGetImage in -lX11... yes
+> checking for XShmGetImage in -lXext... yes
+> checking for XReadScreen in -lXext... no
+> checking for X11/extensions/readdisplay.h... no
+> checking for FBPMForceLevel in -lXext... no
+> checking for DPMSForceLevel in -lXext... yes
+> checking for XTestGrabControl in -lXtst... yes
+> checking for XTestFakeKeyEvent in -lXtst... yes
+> checking for XRecordEnableContextAsync in -lXtst... yes
+> checking for X11/XKBlib.h... yes
+> checking for XkbSelectEvents in -lX11... yes
+> checking for XineramaQueryScreens in -lXinerama... no
+> checking for XRRSelectInput in -lXrandr... no
+> checking for XFixesGetCursorImage in -lXfixes... no
+> checking for XDamageQueryExtension in -lXdamage... no
+> checking for crypt... no
+> checking for crypt in -lcrypt... yes
+> checking linux/videodev.h usability... yes
+> checking linux/videodev.h presence... yes
+> checking for linux/videodev.h... yes
+> checking linux/fb.h usability... yes
+> checking linux/fb.h presence... yes
+> checking for linux/fb.h... yes
+> checking linux/input.h usability... yes
+> checking linux/input.h presence... yes
+> checking for linux/input.h... yes
+> checking for linux/uinput.h... yes
+> checking zlib.h usability... yes
+> checking zlib.h presence... yes
+> checking for zlib.h... yes
+> checking jpeglib.h usability... yes
+> checking jpeglib.h presence... yes
+> checking for jpeglib.h... yes
+> checking openssl/dsa.h usability... no
+> checking openssl/dsa.h presence... no
+> checking for openssl/dsa.h... no
+> checking for deflate in -lz... yes
+> checking for jpeg_CreateCompress in -ljpeg... yes
+> checking for SSL_library_init in -lssl... no
+> checking for RAND_file_name in -lcrypto... no
+> checking for DSA_new in -leay32... no
+> configure: error: *** you do not have installed the OpenSSL-library and/or development-files are missing!
+> make: *** [config.status] Error 1
+
+The full build log is available from:
+   http://people.debian.org/~lucas/logs/2008/04/19
+
+A list of current common problems and possible solutions is available at 
+http://wiki.debian.org/qa.debian.org/FTBFS . You're welcome to contribute!
+
+About the archive rebuild: The rebuild was done on about 50 AMD64 nodes
+of the Grid'5000 platform, using a clean chroot containing a sid i386
+environment.  Internet was not accessible from the build systems.
+
+-- 
+| Lucas Nussbaum
+| lucas@lucas-nussbaum.net   http://www.lucas-nussbaum.net/ |
+| jabber: lucas@nussbaum.fr             GPG: 1024D/023B3F4F |
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

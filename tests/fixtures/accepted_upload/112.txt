@@ -1,0 +1,107 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 21:02:32 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnfk4-0000qg-8h
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 21:02:32 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 0A34F13A52B1; Sun, 20 Apr 2008 20:02:27 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id BDF8813A5245
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 20:02:26 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnfV9-0006K6-V4; Sun, 20 Apr 2008 19:47:03 +0000
+From: Christoph Haas <haas@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted cream 0.41-1 (source all)
+Message-Id: <E1JnfV9-0006K6-V4@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 19:47:03 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <vph_Jz1c7hI.A.muD.TF6CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301349
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 20:02:27 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.6
+X-Spam-Report: (-2.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.0 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.7
+Date: Sun, 20 Apr 2008 21:19:50 +0200
+Source: cream
+Binary: cream
+Architecture: source all
+Version: 0.41-1
+Distribution: unstable
+Urgency: low
+Maintainer: Christoph Haas <haas@debian.org>
+Changed-By: Christoph Haas <haas@debian.org>
+Description:=20
+ cream      - VIM macros that make the VIM easier to use for beginners
+Changes:=20
+ cream (0.41-1) unstable; urgency=3Dlow
+ .
+   * New upstream release.
+Files:=20
+ eefa6e501b73a0d85dd188ae131f0b4b 549 editors optional cream_0.41-1.dsc
+ d059e5566afdf2d3bbdd320ad53ff314 763732 editors optional cream_0.41.orig=
+.tar.gz
+ 12146097f9b828ce3c623b6d723cd4d2 8666 editors optional cream_0.41-1.diff=
+.gz
+ b32d3f945f52dd15083d4f412c083249 761044 editors optional cream_0.41-1_al=
+l.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC5d1CV53xXnMZYYRAvOlAJ491fTrHwwN5N9RmOVHu3vT1tVaLQCg4/cI
+XGCk+WiJHYbwetojYFPdn/4=3D
+=3DYNUm
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+cream_0.41-1.diff.gz
+  to pool/main/c/cream/cream_0.41-1.diff.gz
+cream_0.41-1.dsc
+  to pool/main/c/cream/cream_0.41-1.dsc
+cream_0.41-1_all.deb
+  to pool/main/c/cream/cream_0.41-1_all.deb
+cream_0.41.orig.tar.gz
+  to pool/main/c/cream/cream_0.41.orig.tar.gz
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

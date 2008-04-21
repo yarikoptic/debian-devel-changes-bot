@@ -1,0 +1,140 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 15:50:33 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnas8-0007ZK-Ea
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 15:50:33 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 69AA813A5011; Sun, 20 Apr 2008 14:50:27 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.9 required=4.0 tests=BAYES_00,FOURLA,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 3E25413A49A3;
+	Sun, 20 Apr 2008 14:50:13 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnan1-00051c-7H; Sun, 20 Apr 2008 14:45:11 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476784: boinc-manager: boincmgr -s doesn't work
+Reply-To: "Frank S. Thomas" <fst@debian.org>, 476784@bugs.debian.org
+Resent-From: "Frank S. Thomas" <fst@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian BOINC Maintainers <pkg-boinc-devel@lists.alioth.debian.org>
+Resent-Date: Sun, 20 Apr 2008 14:45:10 +0000
+Resent-Message-ID: <handler.476784.B476784.120870268518093@bugs.debian.org>
+X-Debian-PR-Message: report 476784
+X-Debian-PR-Package: boinc-manager
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: boinc
+Received: via spool by 476784-submit@bugs.debian.org id=B476784.120870268518093
+          (code B ref 476784); Sun, 20 Apr 2008 14:45:10 +0000
+Received: (at 476784) by bugs.debian.org; 20 Apr 2008 14:44:45 +0000
+X-Amavis-Spam-Status: No, score=-8.9 required=4.0 tests=BAYES_00,FOURLA,
+	FROMDEVELOPER,HAS_BUG_NUMBER autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from moutng.kundenserver.de ([212.227.126.171])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <fst@debian.org>)
+	id 1Jnamb-0004gZ-DC
+	for 476784@bugs.debian.org; Sun, 20 Apr 2008 14:44:45 +0000
+Received: from avalon (dslb-088-065-216-214.pools.arcor-ip.net [88.65.216.214])
+	by mrelayeu.kundenserver.de (node=mrelayeu4) with ESMTP (Nemesis)
+	id 0ML21M-1JnamU04TU-00049N; Sun, 20 Apr 2008 16:44:38 +0200
+From: "Frank S. Thomas" <fst@debian.org>
+To: Bill Wohler <wohler@newt.com>,
+ 476784@bugs.debian.org
+Date: Sun, 20 Apr 2008 16:44:31 +0200
+User-Agent: KMail/1.9.9
+References: <9306.1208586356@olgas.newt.com>
+In-Reply-To: <9306.1208586356@olgas.newt.com>
+Organization: Debian Project
+MIME-Version: 1.0
+Content-Type: multipart/signed;
+  boundary="nextPart1694605.pKCVQE2sJ6";
+  protocol="application/pgp-signature";
+  micalg=pgp-sha1
+Content-Transfer-Encoding: 7bit
+Message-Id: <200804201644.37301.fst@debian.org>
+X-Provags-ID: V01U2FsdGVkX180W7L6yYqQrHfCcgYHvkvV54+u6KJ4Kcrs1so
+ 4X2TOB4k9tU1BvJtv9DcHl/Oqndhoh/PMIytLeyxmuUOJjvSxu
+ yWmvZEsJ+Ldpc04Ubg1r+o/zKf48EGR
+Resent-Date: Sun, 20 Apr 2008 14:45:11 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343536
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -35.3
+X-Spam-Report: (-35.3 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	17 AWL                    AWL: From: address is in the auto white-list
+
+--nextPart1694605.pKCVQE2sJ6
+Content-Type: text/plain;
+  charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+
+forcemerge 464192 476784
+thanks
+
+Hi,
+
+On Saturday 19 April 2008 08:25, Bill Wohler wrote:
+> By the way, any thoughts on why boincmgr shows the correct SETI@Home
+> icons and images when run from the menus, but shows the BOINC icon and
+> image when run from the command line? Looking at the menu's properties,
+> there do not appear to be any arguments passed to boincmgr.
+
+On my system regardless whether boincmgr is started from the menu or the=20
+command line, the same icon is shown in the KDE panel and boincmgr's window=
+=20
+decoration. Could you provide some screenshots to illustrate this behaviour?
+
+Cheers,
+=2D-=20
+=46rank S. Thomas <fst@debian.org>           PGP public key ID: 0xDC426429
+Debian Developer                            finger fst/key@db.debian.org
+
+--nextPart1694605.pKCVQE2sJ6
+Content-Type: application/pgp-signature; name=signature.asc 
+Content-Description: This is a digitally signed message part.
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQBIC1bVft6HNdxCZCkRApJ1AJ9TkTl13x9EIukDBwadN7LRQZ8jDwCeMset
+SJnbiFq++14Z6hTmAqITA+w=
+=5sbI
+-----END PGP SIGNATURE-----
+
+--nextPart1694605.pKCVQE2sJ6--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

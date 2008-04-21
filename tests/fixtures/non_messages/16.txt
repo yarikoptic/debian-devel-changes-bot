@@ -1,0 +1,142 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 11:07:22 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnWS5-0006BU-0o
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 11:07:22 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id AE3E213A4EEE; Sun, 20 Apr 2008 10:07:15 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.6 required=4.0 tests=BAYES_00,FOURLA,
+	IMPRONONCABLE_1,MURPHY_WRONG_WORD1,MURPHY_WRONG_WORD2,RCVD_IN_DNSWL_LOW
+	autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id AEBE813A4ECF;
+	Sun, 20 Apr 2008 10:07:00 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnWO2-00044j-N8; Sun, 20 Apr 2008 10:03:06 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476645: Extra information (dpkg, ls) as requested
+Reply-To: Friedrich Dominicus <frido@q-software-solutions.de>, 476645@bugs.debian.org
+Resent-From: Friedrich Dominicus <frido@q-software-solutions.de>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Resent-Date: Sun, 20 Apr 2008 10:03:06 +0000
+Resent-Message-ID: <handler.476645.B476645.120868571413357@bugs.debian.org>
+X-Debian-PR-Message: report 476645
+X-Debian-PR-Package: gcc-4.2
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: gcc-4.2
+Received: via spool by 476645-submit@bugs.debian.org id=B476645.120868571413357
+          (code B ref 476645); Sun, 20 Apr 2008 10:03:06 +0000
+Received: (at 476645) by bugs.debian.org; 20 Apr 2008 10:01:54 +0000
+X-Amavis-Spam-Status: No, score=-2.6 required=4.0 tests=BAYES_00,FOURLA,
+	IMPRONONCABLE_1,MURPHY_WRONG_WORD1,MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from mail.q-software-solutions.de ([213.239.199.46] helo=www.q-software-solutions.de)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <frido@q-software-solutions.de>)
+	id 1JnWMr-0003Gr-Nx
+	for 476645@bugs.debian.org; Sun, 20 Apr 2008 10:01:54 +0000
+Received: from p5b1363ae.dip.t-dialin.net ([91.19.99.174] helo=fvl)
+	by www.q-software-solutions.de with esmtpa (Exim 4.67)
+	(envelope-from <frido@q-software-solutions.de>)
+	id 1JnWMd-0001YG-6S
+	for 476645@bugs.debian.org; Sun, 20 Apr 2008 12:01:44 +0200
+Received: from frido by fvl with local (Exim 4.69)
+	(envelope-from <frido@q-software-solutions.de>)
+	id 1JnWMK-0005OS-8p
+	for 476645@bugs.debian.org; Sun, 20 Apr 2008 12:01:20 +0200
+To: 476645@bugs.debian.org
+From: Friedrich Dominicus <frido@q-software-solutions.de>
+Organization: Q-Software Solutions GmbH
+Date: Sun, 20 Apr 2008 12:01:19 +0200
+Message-ID: <87k5isc0b4.fsf@q-software-solutions.de>
+User-Agent: Gnus/5.1008 (Gnus v5.10.8) XEmacs/21.5-b28 (linux)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: quoted-printable
+X-SA-Exim-Connect-IP: 91.19.99.174
+X-SA-Exim-Mail-From: frido@q-software-solutions.de
+X-SA-Exim-Version: 4.2.1 (built Thu, 26 Apr 2007 18:30:04 +0000)
+X-SA-Exim-Scanned: Yes (on www.q-software-solutions.de)
+Resent-Date: Sun, 20 Apr 2008 10:03:06 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343408
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.6
+X-Spam-Report: (-52.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+
+Here'e the output:
+Desired=3DUnknown/Install/Remove/Purge/Hold
+| Status=3DNot/Inst/Cfg-files/Unpacked/Failed-cfg/Half-inst/trig-aWait/Trig=
+-pend
+|/ Err?=3D(none)/Hold/Reinst-required/X=3Dboth-problems (Status,Err: upperc=
+ase=3Dbad)
+||/ Name                                 Version                    Beschre=
+ibung
++++-=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D-=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D-=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+ii  gcc                                  4:4.2.3-8                  The GNU=
+ C compiler
+ii  gcc-4.2                              4.2.3-3                    The GNU=
+ C compiler
+ii  gcc-4.2-multilib                     4.2.3-3                    The GNU=
+ C compiler (multilib files)
+pn  gcc-multilib                         <keine>                    (keine =
+Beschreibung vorhanden)
+
+and=20
+insgesamt 220
+-rw-r--r-- 1 root root  1608 25. M=E4r 06:52 crtbegin.o
+-rw-r--r-- 1 root root  2184 25. M=E4r 06:52 crtbeginS.o
+-rw-r--r-- 1 root root  1928 25. M=E4r 06:52 crtbeginT.o
+-rw-r--r-- 1 root root  1300 25. M=E4r 06:52 crtend.o
+-rw-r--r-- 1 root root  1544 25. M=E4r 06:52 crtendS.o
+-rw-r--r-- 1 root root  3656 25. M=E4r 06:52 crtfastmath.o
+-rw-r--r-- 1 root root 78946 25. M=E4r 06:54 libgcc.a
+-rw-r--r-- 1 root root 33260 25. M=E4r 06:54 libgcc_eh.a
+lrwxrwxrwx 1 root root    38 19. Apr 08:11 libgcc_s.so -> /emul/ia32-linux/=
+usr/lib/libgcc_s.so.1
+-rw-r--r-- 1 root root 25538 25. M=E4r 06:54 libgcov.a
+-rw-r--r-- 1 root root 45444 25. M=E4r 06:54 libgomp.a
+lrwxrwxrwx 1 root root    37 19. Apr 08:11 libgomp.so -> /emul/ia32-linux/u=
+sr/lib/libgomp.so.1
+
+With best regards
+Friedrich
+
+--=20
+Q-Software Solutions GmbH; Sitz: Bruchsal; Registergericht: Mannheim=20
+Registriernummer: HRB232138; Geschaeftsfuehrer: Friedrich Dominicus
+
+
+

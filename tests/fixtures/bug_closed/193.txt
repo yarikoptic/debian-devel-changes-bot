@@ -1,0 +1,216 @@
+From bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org Sun Apr 20 14:50:09 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org>)
+	id 1JnZvb-0007Hm-25
+	for ddc@ddc.chris-lamb.co.uk; Sun, 20 Apr 2008 14:50:09 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id A058413A4FDD; Sun, 20 Apr 2008 13:49:57 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 62DF213A4FD1;
+	Sun, 20 Apr 2008 13:49:52 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnZr2-0004Rr-6I; Sun, 20 Apr 2008 13:45:16 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: md@Linux.IT (Marco d'Itri)
+Subject: Bug#413659: marked as done (bug with postinst script for 
+ openbsd-inetd)
+Message-ID: <handler.413659.D413659.120869902510727.ackdone@bugs.debian.org>
+References: <20080420133822.GA31616@bongo.bofh.it>
+ <20070306125659.GA18895@cs.unm.edu>
+X-Debian-PR-Message: closed 413659
+X-Debian-PR-Package: openbsd-inetd
+X-Debian-PR-Source: openbsd-inetd
+Content-Type: multipart/mixed; boundary="----------=_1208699116-16833-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 13:45:16 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <dAWwx6-UL1P.A.ZmC.Fo0CIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/132997
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 13:49:57 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208699116-16833-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 15:38:22 +0200
+with message-id <20080420133822.GA31616@bongo.bofh.it>
+and subject line Re: Bug#413659: bug with postinst script for openbsd-inetd
+has caused the Debian Bug report #413659,
+regarding bug with postinst script for openbsd-inetd
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+413659: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D413659
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208699116-16833-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 6 Mar 2007 12:57:57 +0000
+Return-path: <moret@cs.unm.edu>
+Received: from mail.cs.unm.edu ([64.106.20.33])
+	by rietz.debian.org with esmtp (Exim 4.50)
+	id 1HOZEH-0008OS-0K
+	for submit@bugs.debian.org; Tue, 06 Mar 2007 12:57:21 +0000
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by mail.cs.unm.edu (Postfix) with ESMTP id 435F3E40D3
+	for <submit@bugs.debian.org>; Tue,  6 Mar 2007 05:56:50 -0700 (MST)
+Received: from mail.cs.unm.edu ([127.0.0.1])
+	by localhost (mail [127.0.0.1]) (amavisd-new, port 10024) with ESMTP
+	id 23463-09 for <submit@bugs.debian.org>;
+	Tue, 6 Mar 2007 05:56:49 -0700 (MST)
+Received: from localhost.localdomain (chawla.cs.unm.edu [64.106.21.46])
+	by mail.cs.unm.edu (Postfix) with SMTP id E4014E40D1
+	for <submit@bugs.debian.org>; Tue,  6 Mar 2007 05:56:49 -0700 (MST)
+Received: by localhost.localdomain (sSMTP sendmail emulation); Tue,  6 Mar 2007 05:56:59 -0700
+From: "Bernard Moret" <moret@cs.unm.edu>
+Date: Tue, 6 Mar 2007 05:56:59 -0700
+To: submit@bugs.debian.org
+Subject: bug with postinst script for openbsd-inetd
+Message-ID: <20070306125659.GA18895@cs.unm.edu>
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.9i
+X-Virus-Scanned: by amavisd-new-20030616-p10 (Debian) at cs.unm.edu
+Delivered-To: submit@bugs.debian.org
+X-Spam-Checker-Version: SpamAssassin 2.60-bugs.debian.org_2005_01_02 
+	(1.212-2003-09-23-exp) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, hits=-9.0 required=4.0 tests=BAYES_00,HAS_PACKAGE 
+	autolearn=ham version=2.60-bugs.debian.org_2005_01_02
+
+Package: openbsd-inetd
+Version: 0.20050402-5
+
+The postinst script returns failure if /etc/inetd.conf
+has all services commented out.
+
+That's because the postinst script attempts to start
+inetd and expects a successful start, but running
+	/etc/init.d/openbsd-inetd start
+with an empty inetd.conf generates the error message
+	* Not starting internet superserver: no services enabled.
+
+The installation of package openbsd-inetd thus fails, along
+with all packages depending on it (netbase most prominently).
+
+
+
+------------=_1208699116-16833-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 413659-done) by bugs.debian.org; 20 Apr 2008 13:43:45 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.0 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <md@Linux.IT>
+Received: from attila.bofh.it ([213.92.8.2] ident=postfix)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <md@Linux.IT>)
+	id 1JnZpZ-0002mF-IP; Sun, 20 Apr 2008 13:43:45 +0000
+Received: by attila.bofh.it (Postfix, from userid 10)
+	id 6008F5F73C; Sun, 20 Apr 2008 15:43:44 +0200 (CEST)
+Received: by bongo.bofh.it (Postfix, from userid 1000)
+	id 92C005543; Sun, 20 Apr 2008 15:38:22 +0200 (CEST)
+Date: Sun, 20 Apr 2008 15:38:22 +0200
+To: 413659-done@bugs.debian.org, 413797-done@bugs.debian.org
+Subject: Re: Bug#413659: bug with postinst script for openbsd-inetd
+Message-ID: <20080420133822.GA31616@bongo.bofh.it>
+References: <1HOprc-0vi-00@npp> <20070306125659.GA18895@cs.unm.edu>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+	protocol="application/pgp-signature"; boundary="T4sUOijqQbZv57TR"
+Content-Disposition: inline
+In-Reply-To: <1HOprc-0vi-00@npp> <20070306125659.GA18895@cs.unm.edu>
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+From: md@Linux.IT (Marco d'Itri)
+X-CrossAssassin-Score: 2
+
+
+--T4sUOijqQbZv57TR
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+Version: 0.20050402-6
+
+These bugs are duplicates of #386469, which was fixed last year.
+
+--=20
+ciao,
+Marco
+
+--T4sUOijqQbZv57TR
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: Digital signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC0dOFGfw2OHuP7ERAqX+AJ9np29LjsmpFx4r9caqZJesu7zH/wCgjEl4
+//ZBScF2/bHwA7BEJoFf1Kw=
+=ApfO
+-----END PGP SIGNATURE-----
+
+--T4sUOijqQbZv57TR--
+
+
+------------=_1208699116-16833-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

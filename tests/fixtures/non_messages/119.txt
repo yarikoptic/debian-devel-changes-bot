@@ -1,0 +1,127 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 15:40:39 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnaiY-0007VB-KR
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 15:40:39 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id A480F13A4FDD; Sun, 20 Apr 2008 14:40:33 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.9 required=4.0 tests=BAYES_00,FOURLA,
+	RCVD_IN_DNSWL_LOW autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id E31DD13A49A9;
+	Sun, 20 Apr 2008 14:40:19 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnaeA-0008UP-Pi; Sun, 20 Apr 2008 14:36:02 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476821: openoffice.org-voikko - FTBFS: build/oxt/META-INF/manifest.xml: No such file or directory
+Reply-To: Rene Engelhard <rene@rene-engelhard.de>, 476821@bugs.debian.org
+Resent-From: Rene Engelhard <rene@rene-engelhard.de>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Timo Jyrinki <timo.jyrinki@iki.fi>
+Resent-Date: Sun, 20 Apr 2008 14:36:02 +0000
+Resent-Message-ID: <handler.476821.B476821.120870198527221@bugs.debian.org>
+X-Debian-PR-Message: report 476821
+X-Debian-PR-Package: openoffice.org-voikko
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: openoffice.org-voikko
+Received: via spool by 476821-submit@bugs.debian.org id=B476821.120870198527221
+          (code B ref 476821); Sun, 20 Apr 2008 14:36:02 +0000
+Received: (at 476821) by bugs.debian.org; 20 Apr 2008 14:33:05 +0000
+X-Amavis-Spam-Status: No, score=-6.9 required=4.0 tests=BAYES_00,FOURLA,
+	HAS_BUG_NUMBER autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from moutng.kundenserver.de ([212.227.126.188])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <rene@rene-engelhard.de>)
+	id 1JnabJ-00070W-1U
+	for 476821@bugs.debian.org; Sun, 20 Apr 2008 14:33:05 +0000
+Received: from frodo (p57A154B9.dip.t-dialin.net [87.161.84.185])
+	by mrelayeu.kundenserver.de (node=mrelayeu7) with ESMTP (Nemesis)
+	id 0ML2xA-1Jnab71VJ4-0003ce; Sun, 20 Apr 2008 16:32:53 +0200
+Received: by frodo (Postfix, from userid 1000)
+	id 2B2921280A1; Sun, 20 Apr 2008 16:32:53 +0200 (CEST)
+Date: Sun, 20 Apr 2008 16:32:53 +0200
+From: Rene Engelhard <rene@rene-engelhard.de>
+To: Harri =?UTF-8?Q?Pitk=C3=A4nen?= <hatapitk@iki.fi>,
+	476821@bugs.debian.org
+Message-ID: <20080420143253.GA6261@rene-engelhard.de>
+References: <20080419120138.GB28315@wavehammer.waldi.eu.org> <200804192255.07276.hatapitk@iki.fi>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1
+Content-Disposition: inline
+In-Reply-To: <200804192255.07276.hatapitk@iki.fi>
+X-PGP-Key: 248AEB73
+X-PGP-Fingerprint: 41FA F208 28D4 7CA5 19BB  7AD9 F859 90B0 248A EB73
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Content-Transfer-Encoding: quoted-printable
+X-Provags-ID: V01U2FsdGVkX19/2tLN2WLDAfIaR1T0qZWqMiCiROyYBCTARI6
+ ExzvRIKnaZ0Z+2GQjjo54PihZH2MF5LDvJqf46fOFU/6+DsRZ1
+ AOnzhO+9ItJcxV0FvrnN2ZU70zOAWqjKqM/Yi7NIJE=
+Resent-Date: Sun, 20 Apr 2008 14:36:02 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343526
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.6
+X-Spam-Report: (-52.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+Harri Pitk=E4nen wrote:
+> The command here should be
+>   mkdir -p build/oxt/META-INF
+> which leads me to believe that neither $(MKDIR) nor $(PS) (that should =
+get=20
+> defined in /usr/lib/openoffice/sdk/settings/settings.mk) are properly=20
+> defined. This would be the case if platform detection fails in that fil=
+e. The=20
+> detection is done by
+>=20
+>   (...)
+>   # test for the platform
+>   PLATFORM :=3D $(shell $(PRJ)/config.guess | cut -d"-" -f3,4)
+>   (...)
+>   ifeq "$(PLATFORM)" "linux-gnu"
+>   (...)
+[...]
+> Maybe this does not work on s390?
+>=20
+> In addition to this, you should make sure that $(UNOPKG_PLATFORM) gets =
+defined=20
+> correctly as well. If it does not, the package may build but fail to wo=
+rk=20
+[...]
+
+This sound likke the SDK might not yet define values for the new archs
+(-> OOo bug).
+
+Will have a look.
+
+Regards,
+
+Rene
+
+
+

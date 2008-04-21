@@ -1,0 +1,209 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 12:40:24 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnXu3-0006jn-0Q
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 12:40:24 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id E8F4013A4F63; Sun, 20 Apr 2008 11:40:13 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-6.8 required=4.0 tests=BAYES_00,IMPRONONCABLE_1,
+	LDO_WHITELIST,MURPHY_WRONG_WORD2,RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id A6D5613A4F79;
+	Sun, 20 Apr 2008 11:39:54 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnXpy-0000vT-65; Sun, 20 Apr 2008 11:36:02 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476803: Debconf use is utterly broken
+Reply-To: Vincent Bernat <bernat@debian.org>, 476803@bugs.debian.org
+Resent-From: Vincent Bernat <bernat@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian Roundcube Maintainers <pkg-roundcube-maintainers@lists.alioth.debian.org>
+Resent-Date: Sun, 20 Apr 2008 11:36:01 +0000
+Resent-Message-ID: <handler.476803.B476803.120869110321999@bugs.debian.org>
+X-Debian-PR-Message: report 476803
+X-Debian-PR-Package: roundcube
+X-Debian-PR-Keywords: pending
+X-Debian-PR-Source: roundcube
+Received: via spool by 476803-submit@bugs.debian.org id=B476803.120869110321999
+          (code B ref 476803); Sun, 20 Apr 2008 11:36:01 +0000
+Received: (at 476803) by bugs.debian.org; 20 Apr 2008 11:31:43 +0000
+X-Amavis-Spam-Status: No, score=-7.8 required=4.0 tests=BAYES_00,FROMDEVELOPER,
+	HAS_BUG_NUMBER,IMPRONONCABLE_1,MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from bart.luffy.cx ([78.47.78.131])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <bernat@luffy.cx>)
+	id 1JnXlm-0005gl-HL
+	for 476803@bugs.debian.org; Sun, 20 Apr 2008 11:31:43 +0000
+Received: by bart.luffy.cx (Postfix, from userid 65534)
+	id 7895514651; Sun, 20 Apr 2008 13:31:40 +0200 (CEST)
+Received: from neo.luffy.cx (cl-350.bru-01.be.sixxs.net [IPv6:2001:6f8:202:15d::2])
+	by bart.luffy.cx (Postfix) with ESMTP id 386311462F;
+	Sun, 20 Apr 2008 13:31:40 +0200 (CEST)
+Received: from neo.luffy.cx (localhost.localdomain [127.0.0.1])
+	by neo.luffy.cx (Postfix) with ESMTP id CDAB4380E5;
+	Sun, 20 Apr 2008 13:31:37 +0200 (CEST)
+From: Vincent Bernat <bernat@debian.org>
+To: Michael Tautschnig <mt@debian.org>
+Cc: 476803@bugs.debian.org
+In-Reply-To: <20080420100730.GA2845@l03.local> (Michael Tautschnig's message
+	of "Sun, 20 Apr 2008 12:07:32 +0200")
+Organization: Debian
+References: <20080419094700.GA1704@l03.local> <m3tzhxzyvd.fsf@neo.luffy.cx>
+	<20080420100730.GA2845@l03.local>
+User-Agent: Gnus/5.110007 (No Gnus v0.7) Emacs/22.2 (x86_64-pc-linux-gnu)
+X-PGP-KeyID: 0xF22A794E
+X-PGP-Fingerprint: 5854 AF2B 65B2 0E96 2161  E32B 285B D7A1 F22A 794E
+Date: Sun, 20 Apr 2008 13:31:33 +0200
+Message-ID: <m3bq44yd7u.fsf@neo.luffy.cx>
+MIME-Version: 1.0
+Content-Type: multipart/signed; boundary="=-=-=";
+	micalg=pgp-sha1; protocol="application/pgp-signature"
+Resent-Date: Sun, 20 Apr 2008 11:36:02 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343450
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.6
+X-Spam-Report: (-52.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+--=-=-=
+Content-Transfer-Encoding: quoted-printable
+
+OoO Pendant  le temps  de midi  du dimanche 20  avril 2008,  vers 12:07,
+Michael Tautschnig <mt@debian.org> disait:
+
+>> Thanks  for your report.  I have  used a  clean sid  chroot to  do those
+>> tests. Here is my preseed file:
+>>=20
+> [...]
+
+> I'm missing one important answer in this preseeding:=20
+
+> # Configure database for roundcube with dbconfig-common?
+> roundcube-core roundcube/dbconfig-install boolean
+
+> The answer must obviously be yes, because otherwise it doesn't put any us=
+eful
+> information into debian-db.php at all  (only dbuser and dbname will be
+> set).
+
+I suppose this is the default value since I did not need to use it.
+
+> corn:/# debconf-set-selections < bla
+
+I use debconf-set-selections bla, but I think this is unimportant.
+
+> dbconfig-common: writing config to /etc/dbconfig-common/roundcube.conf
+
+> Creating config file /etc/dbconfig-common/roundcube.conf with new version
+
+> Creating config file /etc/roundcube/debian-db.php with new version
+> ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/=
+var/run/mysqld/mysqld.sock' (2).
+> unable to connect to mysql server.
+> error encountered creating user:
+> ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/=
+var/run/mysqld/mysqld.sock' (2)
+> dbconfig-common: roundcube configure: ignoring errors from here forwards
+> populating database via sql...  done.
+> dbconfig-common: flushing administrative password
+
+> Creating config file /etc/roundcube/main.inc.php with new version
+> Lighttpd not installed, skipping
+> Setting up roundcube (0.1.1-1) ...
+
+I have exactly the same  output (including mysql errors, ignored because
+of roundcube/install-error value).
+
+> corn:/# cat /etc/roundcube/debian-db.php=20
+> <?php
+> ##
+> ## database access settings in php format
+> ## automatically generated from /etc/dbconfig-common/roundcube.conf
+> ## by /usr/sbin/dbconfig-generate-include
+> ## Sun, 20 Apr 2008 09:25:10 +0000
+> ##
+> ## by default this file is managed via ucf, so you shouldn't have to
+> ## worry about manual changes being silently discarded.  *however*,
+> ## you'll probably also want to edit the configuration file mentioned
+> ## above too.
+> ##
+> $dbuser=3D'roundcube';
+> $dbpass=3D'Wwb66E5nDGNx';
+> $basepath=3D'';
+> $dbname=3D'roundcube';
+> $dbserver=3D'';
+> $dbport=3D'';
+> $dbtype=3D'mysql';
+
+This  is   really  odd.   Does  the  correct   values  are   present  in
+/etc/dbconfig-common/roundcube.conf?  What kind of  fresh sid  system do
+you use? I made my own tests on a freshly updated pbuilder.
+
+>> Because of  some black magic in config,  roundcube/language gets ignored
+>> when preseeded. I will try to fix this one.
+
+> So, well, let me try to refine my report:
+> - Preseeding does work, apart from the language, which you have fixed in =
+SVN
+>   already.
+> - The configuration of a remote mysql server, however, seems not to work.
+
+> Then, this is not actually the work of roundcube, but rather dbconfig-com=
+mon,
+> which is doing this work. I will thus clone and reassign this bug, leavin=
+g the
+> original bug for the locale-reconfiguration problem.
+
+Fine for me.
+
+Thanks.
+=2D-=20
+panic("aha1740.c"); /* Goodbye */
+	2.2.16 /usr/src/linux/drivers/scsi/aha1740.c
+
+--=-=-=
+Content-Type: application/pgp-signature
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICymZKFvXofIqeU4RAs71AKDBet03th07BSbZHxdFEN3mLveVtwCffHoZ
+KWokRP5yGm51TC+7oq3F9rk=
+=uqSk
+-----END PGP SIGNATURE-----
+--=-=-=--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

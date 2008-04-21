@@ -1,0 +1,134 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 13:05:00 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnYHv-0006q6-GW
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 13:05:00 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 92CCD13A4E73; Sun, 20 Apr 2008 12:04:54 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.5 required=4.0 tests=BAYES_00,MDO_CABLE_TV3,
+	RCVD_IN_DNSWL_LOW autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id C81DA13A4F5C;
+	Sun, 20 Apr 2008 12:04:43 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnYDD-0006fq-Aa; Sun, 20 Apr 2008 12:00:03 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476890: linux-image-2.6.24-1-686: nfs4 crash after resuming from suspend2disk
+Reply-To: Duns Ens <dunsens@web.de>, 476890@bugs.debian.org
+Resent-From: Duns Ens <dunsens@web.de>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian Kernel Team <debian-kernel@lists.debian.org>
+Resent-Date: Sun, 20 Apr 2008 12:00:02 +0000
+Resent-Message-ID: <handler.476890.B476890.120869269923360@bugs.debian.org>
+X-Debian-PR-Message: report 476890
+X-Debian-PR-Package: linux-image-2.6.24-1-686
+X-Debian-PR-Keywords: moreinfo
+X-Debian-PR-Source: linux-2.6
+Received: via spool by 476890-submit@bugs.debian.org id=B476890.120869269923360
+          (code B ref 476890); Sun, 20 Apr 2008 12:00:02 +0000
+Received: (at 476890) by bugs.debian.org; 20 Apr 2008 11:58:19 +0000
+X-Amavis-Spam-Status: No, score=-6.5 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER,
+	MDO_CABLE_TV3 autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from moutng.kundenserver.de ([212.227.126.183])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dunsens@web.de>)
+	id 1JnYBW-0005ys-SH
+	for 476890@bugs.debian.org; Sun, 20 Apr 2008 11:58:19 +0000
+Received: from [10.13.37.112] (mnhm-590e081a.pool.einsundeins.de [89.14.8.26])
+	by mrelayeu.kundenserver.de (node=mrelayeu8) with ESMTP (Nemesis)
+	id 0ML31I-1JnYBQ3WcQ-00032r; Sun, 20 Apr 2008 13:58:13 +0200
+From: Duns Ens <dunsens@web.de>
+To: Bastian Blank <waldi@debian.org>
+Cc: 476890@bugs.debian.org
+In-Reply-To: <20080420074331.GA21466@wavehammer.waldi.eu.org>
+References:
+	 <20080419230026.6995.42084.reportbug@galateia.whiletaker.homeip.net>
+	 <20080420074331.GA21466@wavehammer.waldi.eu.org>
+Content-Type: text/plain
+Date: Sun, 20 Apr 2008 13:58:11 +0200
+Message-Id: <1208692691.5950.10.camel@galateia.whiletaker.homeip.net>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.12.3 
+Content-Transfer-Encoding: 7bit
+X-Provags-ID: V01U2FsdGVkX1+HVHN/sdqTkdQfceI+46AjwchFRyyJKmWcDUP
+ Q2OeRznjPjOPdDX4Bc1V29+1Wx4xTdTN+X12jFDKUGrasCqnUB
+ ni3RvqO1qmP7hpdqvFbR+yoMZRkXpseDjdPVOcYQH0=
+Resent-Date: Sun, 20 Apr 2008 12:00:03 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343458
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.6
+X-Spam-Report: (-52.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+> tags 476890 moreinfo
+> thanks
+> 
+> On Sun, Apr 20, 2008 at 01:00:26AM +0200, Dunsens wrote:
+> > After resuming from a suspend2disk, the system comes back up (the whole disk is luks+lvm including swap space), but then fails to reinitialize the wireless lan connection (iwl3945), configured within /etc/network/interfaces with wpa_supplicant. 
+> > I get a backtrace like with dmesg (see below), showing that sunrpc/nfs4 crashes occur inside the kernel before I am able to try to reconfigure the iwl3945 driver with ifup/ifdown. I cannot get any wlan information, like iwlist scanning, afterwards, so it might be a problem with the iwl3945 driver, since I have used ipw3945 before. On my iBook I have to reconfigure the b43 wlan driver with ifup/ifdown after suspending, too.
+> 
+> I use a similar configuration. iwl3945, some nfs4 mounts, suspend to ram
+> and suspend to disk. I've never seen such bugs with .23, .24 and later.
+S2Ram hangs after switching on (hd-led switched on) on since 2.6.24
+here. Even alt+print+reisub does not show any effect. This might be
+another bug report.
+Can you connect to your NFS4 mounts without using the portmapper? I have
+had to open it in the firewall to reenable my clients again, which
+should not be necessary.
+> 
+> > I am using /home on nfs4, which renders the whole system for all users with /home unusable (in my case only me) and causes data loss. 
+> 
+> You use iwl3945, which is usualy a mini-PCIe card, in a multiuser
+> machine? Anyway, any kernel crash can cause data loss.
+Several people can be logged in a graphical session at the same time,
+even on a laptop.
+> 
+> Also I see loaded vboxdrv as tainting because it modifies core kernel
+> status. So, please recheck without vboxdrv and/or with 2.6.25[1].
+I have removed the module and have tried 2.6.25-trunk. Then I have tried
+2.6.24-1 again. It always worked. It even worked with going back to my
+old setup, so I guess that the error is not reproducable with a freshly
+booted system and this information is useless. I will try to recheck it
+during the next days with longer sessions.
+> 
+> Bastian
+> 
+> [1]: http://wiki.debian.org/DebianKernel
+
+Cheers,
+duns
+
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,125 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 03:05:59 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnOwE-00055T-F4
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 03:05:59 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 8434513A4AF9; Sun, 20 Apr 2008 02:05:53 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-6.8 required=4.0 tests=BAYES_00,IMPRONONCABLE_1,
+	LDO_WHITELIST,MURPHY_WRONG_WORD2,RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 4F73713A4CA3;
+	Sun, 20 Apr 2008 02:05:44 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnOtS-00043S-5o; Sun, 20 Apr 2008 02:03:02 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#473164: Autobuilding of sun-java6
+Reply-To: =?UTF-8?Q?Lo=C3=AFc?= Minier <lool@dooz.org>, 473164@bugs.debian.org
+Resent-From: =?UTF-8?Q?Lo=C3=AFc?= Minier <lool@dooz.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Matthias Klose <doko@ubuntu.com>
+Resent-Date: Sun, 20 Apr 2008 02:03:01 +0000
+Resent-Message-ID: <handler.473164.B473164.120865686014401@bugs.debian.org>
+X-Debian-PR-Message: report 473164
+X-Debian-PR-Package: sun-java6
+X-Debian-PR-Keywords: 
+Received: via spool by 473164-submit@bugs.debian.org id=B473164.120865686014401
+          (code B ref 473164); Sun, 20 Apr 2008 02:03:01 +0000
+Received: (at 473164) by bugs.debian.org; 20 Apr 2008 02:01:00 +0000
+X-Amavis-Spam-Status: No, score=-2.8 required=4.0 tests=BAYES_00,IMPRONONCABLE_1,
+	MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from duck.dooz.org ([194.146.227.125])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <lool@dooz.org>)
+	id 1JnOrU-0003jo-E3
+	for 473164@bugs.debian.org; Sun, 20 Apr 2008 02:01:00 +0000
+Received: from bee.dooz.org (unknown [12.198.128.163])
+	(using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by duck.dooz.org (Postfix) with ESMTP id 91244C809C;
+	Sun, 20 Apr 2008 03:58:59 +0200 (CEST)
+Received: by bee.dooz.org (Postfix, from userid 1000)
+	id 6755565D9; Sun, 20 Apr 2008 04:00:54 +0200 (CEST)
+Date: Sun, 20 Apr 2008 04:00:54 +0200
+From: =?UTF-8?Q?Lo=C3=AFc?= Minier <lool@dooz.org>
+To: Marc 'HE' Brockschmidt <marc@marcbrockschmidt.de>
+Cc: 473164@bugs.debian.org, nonfree@release.debian.net
+Message-ID: <20080420020054.GA19315@bee.dooz.org>
+References: <20080401115112.GA13326@bee.dooz.org> <20080401130203.GA23247@bee.dooz.org> <87r6d1pnf9.fsf@pindar.marcbrockschmidt.de>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1
+Content-Disposition: inline
+In-Reply-To: <87r6d1pnf9.fsf@pindar.marcbrockschmidt.de>
+Content-Transfer-Encoding: quoted-printable
+Resent-Date: Sun, 20 Apr 2008 02:03:02 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343315
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.6
+X-Spam-Report: Spam detection software, running on the system "chris-lamb.co.uk", has
+	identified this incoming email as possible spam.  The original message
+	has been attached to this so you can view it (if it isn't spam) or label
+	similar future email.  If you have any questions, see
+	the administrator of that system for details.
+	Content preview:  On Sat, Apr 19, 2008, Marc 'HE' Brockschmidt wrote: >
+	Loïc Minier <lool@dooz.org> writes: > > On Tue, Apr 01, 2008, Loïc
+	Minier wrote: > >> I intend to NMU the package to add the "XS-Autobuild:
+	yes" field as > >> described in: > >>
+	http://lists.debian.org/debian-devel-announce/2006/11/msg00012.html > >>
+	and a note in debian/copyright. > > It seems it's not required to add it
+	immediately, so I probably wont > > NMU to add it after all. > > > >
+	Could you also add sun-java5 to the list of autobuilt packages? > >
+	Done. [...] 
+	Content analysis details:   (-52.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+On Sat, Apr 19, 2008, Marc 'HE' Brockschmidt wrote:
+> Lo=EFc Minier <lool@dooz.org> writes:
+> > On Tue, Apr 01, 2008, Lo=EFc Minier wrote:
+> >>  I intend to NMU the package to add the "XS-Autobuild: yes" field as
+> >>  described in:
+> >>  http://lists.debian.org/debian-devel-announce/2006/11/msg00012.html
+> >>  and a note in debian/copyright.
+> >  It seems it's not required to add it immediately, so I probably wont
+> >  NMU to add it after all.
+> >
+> >  Could you also add sun-java5 to the list of autobuilt packages?
+>=20
+> Done.
+
+ Thanks; I saw this happen recently and I confirm it autobuilt the
+ latest versions fine
+
+   Thanks again
+
+--=20
+Lo=EFc Minier
+
+
+

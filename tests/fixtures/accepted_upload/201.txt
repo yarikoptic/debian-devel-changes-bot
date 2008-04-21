@@ -1,0 +1,115 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 11:31:51 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnWpo-0006Jo-0d
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 11:31:51 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 5622913A4F29; Sun, 20 Apr 2008 10:31:46 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id AF4E213A4F19
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 10:31:45 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnWbW-0007i0-LB; Sun, 20 Apr 2008 10:17:02 +0000
+From: Kumar Appaiah <akumar@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted logapp 0.9-2 (source i386)
+Message-Id: <E1JnWbW-0007i0-LB@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 10:17:02 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <ki_dRz7Yf4I.A.WM.SuxCIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301280
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 10:31:46 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.6
+X-Spam-Report: (-2.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 15:16:50 +0530
+Source: logapp
+Binary: logapp
+Architecture: source i386
+Version: 0.9-2
+Distribution: unstable
+Urgency: low
+Maintainer: Kumar Appaiah <akumar@debian.org>
+Changed-By: Kumar Appaiah <akumar@debian.org>
+Description:=20
+ logapp     - supervise execution of applications producing heavy output
+Changes:=20
+ logapp (0.9-2) unstable; urgency=3Dlow
+ .
+   * debian/control:
+     + Update e-mail my address.
+     + Update to use new Vcs-* locations.
+Checksums-Sha1:=20
+ 8af06b948b72e567b8cea7c106b17c351febc1f0 1077 logapp_0.9-2.dsc
+ 2271a462678291b8fb58a564142a988c1fd0c88b 2597 logapp_0.9-2.diff.gz
+ f0c7147c3709e8afe03c37647911f01392c0727e 30054 logapp_0.9-2_i386.deb
+Checksums-Sha256:=20
+ 40e83a5dcb8fdbc02aa13b21a3ff6ae50b492b20873a44add72e16511ead27f1 1077 lo=
+gapp_0.9-2.dsc
+ ef4f84fc03b10cbdf757890eb58a0860cfe307402ef514b636ec31be1d192203 2597 lo=
+gapp_0.9-2.diff.gz
+ a31f59aacec83dda1e4faae16e4ffc2c3d8559eae633922b345dc08a6951b46d 30054 l=
+ogapp_0.9-2_i386.deb
+Files:=20
+ f8f0f194de3f306f2ef55a1bf2a0e923 1077 utils optional logapp_0.9-2.dsc
+ 3afca0c219bffc544c7dcc48e8c81f11 2597 utils optional logapp_0.9-2.diff.g=
+z
+ e42584620047d0eebef29db9dc9c87ab 30054 utils optional logapp_0.9-2_i386.=
+deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICxcZSd75awtatOcRAgzvAJ9PCOzPI34bmupzXldiXq2zchy+aACeMPDo
+JCWnoJQQcui03a1ofiwWEvs=3D
+=3DoHYW
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+logapp_0.9-2.diff.gz
+  to pool/main/l/logapp/logapp_0.9-2.diff.gz
+logapp_0.9-2.dsc
+  to pool/main/l/logapp/logapp_0.9-2.dsc
+logapp_0.9-2_i386.deb
+  to pool/main/l/logapp/logapp_0.9-2_i386.deb
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

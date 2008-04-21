@@ -1,0 +1,312 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 13:36:04 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnYm0-0006w2-QQ
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 13:36:04 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id ABCA713A4F28; Sun, 20 Apr 2008 12:35:59 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 3052D13A49A5;
+	Sun, 20 Apr 2008 12:35:58 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnYjC-0007wu-U4; Sun, 20 Apr 2008 12:33:06 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: SZALAY Attila <sasa@debian.org>
+Subject: Bug#475456: marked as done (syslog-ng: missing LSB dependency in 
+ initscript)
+Message-ID: <handler.475456.D475456.120869471627351.ackdone@bugs.debian.org>
+References: <E1JnYTj-0005rx-E7@ries.debian.org>
+ <20080410211945.GA10399@freesources.org>
+X-Debian-PR-Message: closed 475456
+X-Debian-PR-Package: syslog-ng
+X-Debian-PR-Keywords: patch
+X-Debian-PR-Source: syslog-ng
+Content-Type: multipart/mixed; boundary="----------=_1208694786-30522-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 12:33:06 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <EU-CNGFa-HC.A.ks.vizCIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/132982
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 12:35:59 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208694786-30522-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 12:17:07 +0000
+with message-id <E1JnYTj-0005rx-E7@ries.debian.org>
+and subject line Bug#475456: fixed in syslog-ng 2.0.9-1
+has caused the Debian Bug report #475456,
+regarding syslog-ng: missing LSB dependency in initscript
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+475456: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D475456
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208694786-30522-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 10 Apr 2008 21:20:33 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.8 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,HAS_PACKAGE autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <jonas@freesources.org>
+Received: from ns1.kidns.de ([85.25.86.81] helo=diana50.kidns.de)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <jonas@freesources.org>)
+	id 1Jk4C9-00054x-Hl
+	for submit@bugs.debian.org; Thu, 10 Apr 2008 21:20:33 +0000
+Received: from p57a6bdf6.dip.t-dialin.net ([87.166.189.246] helo=resivo.wgnet.de)
+	by diana50.kidns.de with esmtpsa (TLS-1.0:RSA_AES_256_CBC_SHA:32)
+	(Exim 4.50)
+	id 1Jk4C0-0004oJ-NG; Thu, 10 Apr 2008 23:20:29 +0200
+Received: from resivo by resivo.wgnet.de with local (Exim 4.69)
+	(envelope-from <jonas@freesources.org>)
+	id 1Jk4BR-0002ht-Qe; Thu, 10 Apr 2008 23:19:49 +0200
+Date: Thu, 10 Apr 2008 23:19:48 +0200
+From: Jonas Meurer <jonas@freesources.org>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Bcc: Jonas Meurer <jonas@freesources.org>
+Message-ID: <20080410211945.GA10399@freesources.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+X-Reportbug-Version: 3.39-0.1
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+X-SA-Exim-Connect-IP: 87.166.189.246
+X-SA-Exim-Mail-From: jonas@freesources.org
+Subject: syslog-ng: missing LSB dependency in initscript
+X-SA-Exim-Version: 4.2 (built Thu, 03 Mar 2005 10:44:12 +0100)
+X-SA-Exim-Scanned: Yes (on diana50.kidns.de)
+Delivered-To: submit@bugs.debian.org
+
+Package: syslog-ng
+Version: 2.0.8~1-1
+Severity: important
+User: initscripts-ng-devel@lists.alioth.debian.org
+Usertags: missing-dependency
+
+Hello,
+
+I've just enabled dependency based ordering of the initscripts via
+insserv. Since this change, syslog-ng fails to stop at shutdown process:
+it is already stopped by the sendsigs, and /var is not available any
+longer.
+
+This can simply be fixed by adding a dependency on $remote_fs to both
+Required-Start and Required-Stop.
+
+Please see the Petter Reinholdtsens comments on the initscripts-ng-devel
+mailinglist regarding this issue:
+http://lists.alioth.debian.org/pipermail/initscripts-ng-devel/2008-April/000528.html
+
+greetings,
+ jonas
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (500, 'unstable'), (1, 'experimental')
+Architecture: amd64 (x86_64)
+
+Kernel: Linux 2.6.24-8-amd64-resivo (SMP w/2 CPU cores)
+Locale: LANG=C, LC_CTYPE=de_DE.UTF-8 (charmap=UTF-8)
+Shell: /bin/sh linked to /bin/dash
+
+Versions of packages syslog-ng depends on:
+ii  libc6                         2.7-10     GNU C Library: Shared libraries
+ii  lsb-base                      3.2-7      Linux Standard Base 3.2 init scrip
+
+Versions of packages syslog-ng recommends:
+ii  logrotate                     3.7.1-3    Log rotation utility
+
+-- no debconf information
+
+
+
+------------=_1208694786-30522-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 475456-close) by bugs.debian.org; 20 Apr 2008 12:31:56 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.8 required=4.0 tests=BAYES_00,FROMDEVELOPER,
+	FVGT_m_MULTI_ODD,HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_2,
+	MURPHY_DRUGS_REL8,MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnYi4-00076V-GE
+	for 475456-close@bugs.debian.org; Sun, 20 Apr 2008 12:31:56 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnYTj-0005rx-E7; Sun, 20 Apr 2008 12:17:07 +0000
+From: SZALAY Attila <sasa@debian.org>
+To: 475456-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#475456: fixed in syslog-ng 2.0.9-1
+Message-Id: <E1JnYTj-0005rx-E7@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 12:17:07 +0000
+X-CrossAssassin-Score: 2
+Content-Transfer-Encoding: quoted-printable
+
+Source: syslog-ng
+Source-Version: 2.0.9-1
+
+We believe that the bug you reported is fixed in the latest version of
+syslog-ng, which is due to be installed in the Debian FTP archive:
+
+syslog-ng_2.0.9-1.diff.gz
+  to pool/main/s/syslog-ng/syslog-ng_2.0.9-1.diff.gz
+syslog-ng_2.0.9-1.dsc
+  to pool/main/s/syslog-ng/syslog-ng_2.0.9-1.dsc
+syslog-ng_2.0.9-1_i386.deb
+  to pool/main/s/syslog-ng/syslog-ng_2.0.9-1_i386.deb
+syslog-ng_2.0.9.orig.tar.gz
+  to pool/main/s/syslog-ng/syslog-ng_2.0.9.orig.tar.gz
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 475456@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+SZALAY Attila <sasa@debian.org> (supplier of updated syslog-ng package)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 13:46:25 +0200
+Source: syslog-ng
+Binary: syslog-ng
+Architecture: source i386
+Version: 2.0.9-1
+Distribution: unstable
+Urgency: low
+Maintainer: SZALAY Attila <sasa@debian.org>
+Changed-By: SZALAY Attila <sasa@debian.org>
+Description:=20
+ syslog-ng  - Next generation logging daemon
+Closes: 397650 447105 475456
+Changes:=20
+ syslog-ng (2.0.9-1) unstable; urgency=3Dlow
+ .
+   * New upstream version. (Closes: #397650, #447105)
+   * Merged upstream patch to fix a possible segfault if optional file so=
+urce
+   is in use.
+   * Added $remote_fs to LSB dependencies in init script to made it able =
+to
+   stop correctly. (Closes: #475456)
+Checksums-Sha1:=20
+ ab75b79b73b58597341b73679f083bd141656 1054 syslog-ng_2.0.9-1.dsc
+ 59f16fea6618312e1cf120e88b2c3351f72ef411 214536 syslog-ng_2.0.9.orig.tar=
+.gz
+ 9965d3252027f37938dab5124d03d119fe64f3df 33519 syslog-ng_2.0.9-1.diff.gz
+ 316458809282c8637e1115f37e713e05db3fde0d 208108 syslog-ng_2.0.9-1_i386.d=
+eb
+Checksums-Sha256:=20
+ c64c84809a34db743adaf7ca5b43a91d253eef7a6e84e043c26e08653b3295ac 1054 sy=
+slog-ng_2.0.9-1.dsc
+ c931c53324955db14831bdf33202503a04ddd7026355823a7a748bcf20e20d77 214536 =
+syslog-ng_2.0.9.orig.tar.gz
+ 93e5fdb973e5d11b2b52fe5efaa0cdb235801bf8033aad211b2769f841486445 33519 s=
+yslog-ng_2.0.9-1.diff.gz
+ 948cf773c8d8d6456ee477bcc57427528c456ee85aa8c855db845f3bc9dcc398 208108 =
+syslog-ng_2.0.9-1_i386.deb
+Files:=20
+ a8fda29983314d6770fa5bc0363c62c9 1054 admin extra syslog-ng_2.0.9-1.dsc
+ 15b8f421fb3481e3bc660052f67a531f 214536 admin extra syslog-ng_2.0.9.orig=
+.tar.gz
+ 4ebd9ce44e11b580419f0cddd72f6f7f 33519 admin extra syslog-ng_2.0.9-1.dif=
+f.gz
+ 02bc4d77c911d06f14c88a17a8b0c5df 208108 admin extra syslog-ng_2.0.9-1_i3=
+86.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICzHQ23Gu/Kug6LIRAjNKAJ9F8a1xCBNhHOlpQwoZWzUpX5dS3wCfZjeE
+pYxJZUNsvidqDkCAQ3gADII=3D
+=3D/VTO
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208694786-30522-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

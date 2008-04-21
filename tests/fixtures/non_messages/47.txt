@@ -1,0 +1,162 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 17:30:13 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JncQZ-0008HT-DP
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 17:30:13 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id A92C513A4F93; Sun, 20 Apr 2008 16:30:05 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.7 required=4.0 tests=BAYES_00,FOURLA,
+	FVGT_m_MULTI_ODD,IMPRONONCABLE_2,MURPHY_WRONG_WORD2,RCVD_IN_DNSWL_LOW
+	autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 68B8E13A4F5F;
+	Sun, 20 Apr 2008 16:29:47 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JncNd-0002E2-4L; Sun, 20 Apr 2008 16:27:05 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#448581: fglrx-kernel-src: fglrx on ibm thinkpad r52 - X session freeze when killing it
+Reply-To: eric <eric@collectifs.net>, 448581@bugs.debian.org
+Resent-From: eric <eric@collectifs.net>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Fglrx packaging team <pkg-fglrx-devel@lists.alioth.debian.org>
+Resent-Date: Sun, 20 Apr 2008 16:27:04 +0000
+Resent-Message-ID: <handler.448581.B448581.12087086312098@bugs.debian.org>
+X-Debian-PR-Message: report 448581
+X-Debian-PR-Package: fglrx-kernel-src
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: fglrx-driver
+Received: via spool by 448581-submit@bugs.debian.org id=B448581.12087086312098
+          (code B ref 448581); Sun, 20 Apr 2008 16:27:04 +0000
+Received: (at 448581) by bugs.debian.org; 20 Apr 2008 16:23:51 +0000
+X-Amavis-Spam-Status: No, score=-2.5 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,FVGT_m_MULTI_ODD,IMPRONONCABLE_2,MURPHY_WRONG_WORD2 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from customer-colocation-collectif-1.all2all.org ([62.58.108.140] helo=altern.domainepublic.net)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <eric@collectifs.net>)
+	id 1JncKU-0000Vv-Jf
+	for 448581@bugs.debian.org; Sun, 20 Apr 2008 16:23:50 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by altern.domainepublic.net (Postfix) with ESMTP id 60ED32EB78
+	for <448581@bugs.debian.org>; Sun, 20 Apr 2008 18:23:38 +0200 (CEST)
+Received: from altern.domainepublic.net ([127.0.0.1])
+	by localhost (domainepublic [127.0.0.1]) (amavisd-new, port 10024)
+	with LMTP id 19709-01 for <448581@bugs.debian.org>;
+	Sun, 20 Apr 2008 18:23:37 +0200 (CEST)
+Received: from [78.29.201.243] (cable-78.29.201.243.coditel.net [78.29.201.243])
+	(using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by altern.domainepublic.net (Postfix) with ESMTP id D16F42EB0F
+	for <448581@bugs.debian.org>; Sun, 20 Apr 2008 18:23:37 +0200 (CEST)
+Message-ID: <480B6E10.4040403@collectifs.net>
+Date: Sun, 20 Apr 2008 18:23:44 +0200
+From: eric <eric@collectifs.net>
+User-Agent: Mozilla-Thunderbird 2.0.0.9 (X11/20080110)
+MIME-Version: 1.0
+To: Debian Bug Tracking System <448581@bugs.debian.org>
+References: <20080418230555.4683.24923.reportbug@yoda.lan>
+In-Reply-To: <20080418230555.4683.24923.reportbug@yoda.lan>
+X-Enigmail-Version: 0.95.0
+Content-Type: text/plain; charset=UTF-8
+X-Virus-Scanned: by amavisd-new-20030616-p10 (Debian) at altern.domainepublic.net
+Content-Transfer-Encoding: quoted-printable
+Resent-Date: Sun, 20 Apr 2008 16:27:05 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343643
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.5
+X-Spam-Report: (-52.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Eric Gianquinto a =C3=A9crit :
+> Package: fglrx-kernel-src
+> Version: 8.47.3-3
+> Followup-For: Bug #448581
+>=20
+>=20
+> Hello,
+>=20
+> My card is a ATI Technologies Inc M22 [Mobility Radeon X300]
+>=20
+> Everything start with X until i want close my session or kill the X
+> session. X freeze and c'ant be killed even with kill -9 !
+> When i want to force a rmmod -f fglrx, i had a kernel panik.
+>=20
+> Any hint or a upstream bug report to the amd/ati dev ?
+>=20
+> Thanks
+>=20
+> PS: I d'ont now how to send the the kernel panik debug, if you have sol=
+ution
+> let me know ?
+>=20
+> -- System Information:
+> Debian Release: lenny/sid
+>   APT prefers testing
+>   APT policy: (500, 'testing'), (500, 'stable')
+> Architecture: i386 (i686)
+>=20
+> Kernel: Linux 2.6.24-1-686 (SMP w/1 CPU core)
+> Locale: LANG=3Dfr_BE.UTF-8, LC_CTYPE=3Dfr_BE.UTF-8 (charmap=3DUTF-8)
+> Shell: /bin/sh linked to /bin/bash
+>=20
+> Versions of packages fglrx-kernel-src depends on:
+> ii  bzip2                         1.0.5-0.1  high-quality block-sorting=
+ file co
+> ii  debhelper                     6.0.11     helper programs for debian=
+/rules
+> ii  make                          3.81-4     The GNU version of the "ma=
+ke" util
+>=20
+> Versions of packages fglrx-kernel-src recommends:
+> ii  module-assistant              0.10.11.0  tool to make module packag=
+e creati
+>=20
+> -- no debconf information
+
+More information !
+
+My /etc/X11/xorg.conf > http://pastebin.com/f361a573c
+My /var/log/Xorg.O.log > http://pastebin.com/fd85b901
+
+Thanks
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+Comment: Using GnuPG with Mozilla - http://enigmail.mozdev.org
+
+iD8DBQFIC24P5OIxjq5GfYERAuncAJ440YshCv5dUb8j66Xe8rZJRiknJwCeIpP3
+vj32sGdZTbUlw/il7/BwGb4=3D
+=3DH1J3
+-----END PGP SIGNATURE-----
+
+
+

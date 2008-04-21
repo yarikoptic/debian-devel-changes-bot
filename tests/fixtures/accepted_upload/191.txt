@@ -1,0 +1,138 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 18:33:08 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JndPV-00006F-Ia
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 18:33:08 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 58D0C13A50B5; Sun, 20 Apr 2008 17:33:04 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id F23C113A50A5
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 17:33:03 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JndOY-00070i-0b; Sun, 20 Apr 2008 17:32:06 +0000
+From: =?utf-8?q?Gon=C3=A9ri_Le_Bouder?= <goneri@rulezlan.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted gamine 0.0.1-3 (source all sparc)
+Message-Id: <E1JndOY-00070i-0b@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 17:32:06 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <oikFxodmcWC.A.76C.Q53CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301326
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 17:33:04 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.6
+X-Spam-Report: (-2.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.0 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 18:40:20 +0200
+Source: gamine
+Binary: gamine gamine-data
+Architecture: source all sparc
+Version: 0.0.1-3
+Distribution: unstable
+Urgency: low
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Changed-By: Gon=C3=A9ri Le Bouder <goneri@rulezlan.org>
+Description:=20
+ gamine     - an interactive game for young children
+ gamine-data - data files for gamine game
+Closes: 456484 457726
+Changes:=20
+ gamine (0.0.1-3) unstable; urgency=3Dlow
+ .
+   [ Gon=C3=A9ri Le Bouder ]
+   * Fix the copyright file since Sam Hocevar name had been removed from =
+it by
+     the author in the initial tarball.
+   * Use the upstream icon instead of mine.
+   * Bump standard version to 3.7.3, no change
+ .
+   [ Cyril Brulebois ]
+   * Improve long descriptions, thanks to David Ammouial for the suggesti=
+ons
+     (Closes: #457726).
+ .
+   [ Evgeni Golov ]
+   * debian/control: add missing path to Vcs-* fields
+   * fix the watch file (Closes: #456484)
+Checksums-Sha1:=20
+ 3b8fab3cce6538efd47d2925f228bdf1bdc87733 1267 gamine_0.0.1-3.dsc
+ 166dddb7caf4ed4f79027aa6d82daf4b4283d82f 7274 gamine_0.0.1-3.diff.gz
+ b2ee7980aedd62cafab99dc977b8556e07533aa1 5054266 gamine-data_0.0.1-3_all=
+.deb
+ 8661c7e1b0e4ef5e9d705050665a773d60e5be6e 13394 gamine_0.0.1-3_sparc.deb
+Checksums-Sha256:=20
+ 3456f85f25e6e3112b9bf70fdba2c2d450fee119efd0491fccc1255a65470242 1267 ga=
+mine_0.0.1-3.dsc
+ 75ede2af9b902c35954966fd61ac57420e874895f1f299d42aae49fe16f5ffa6 7274 ga=
+mine_0.0.1-3.diff.gz
+ 4b639a15d1a9cb9c5324454c4d6e2433c14a1e11e953f6f815badfc802d270b1 5054266=
+ gamine-data_0.0.1-3_all.deb
+ afaa7fc192c0e748f609d2dac56e9730b4c520beead0902e5bc66b8612b07fb3 13394 g=
+amine_0.0.1-3_sparc.deb
+Files:=20
+ d2342477d60320780b065f1d32f335d5 1267 games optional gamine_0.0.1-3.dsc
+ c071af5dba95e43133fc1c6c7df0f54f 7274 games optional gamine_0.0.1-3.diff=
+.gz
+ e05ebb52a9352e931931ff4fa3c05c3e 5054266 games optional gamine-data_0.0.=
+1-3_all.deb
+ 513dd1031f516708d9df1b825f7ccb5d 13394 games optional gamine_0.0.1-3_spa=
+rc.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.5 (GNU/Linux)
+
+iD8DBQFIC3r8sKTFpDfZQSwRAgrmAKCDyKcuxYnBBZvIBwMcXnT5GakqZQCfW2M8
+1g5I6R7tZm095HryqGokWOs=3D
+=3D+nko
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+gamine-data_0.0.1-3_all.deb
+  to pool/main/g/gamine/gamine-data_0.0.1-3_all.deb
+gamine_0.0.1-3.diff.gz
+  to pool/main/g/gamine/gamine_0.0.1-3.diff.gz
+gamine_0.0.1-3.dsc
+  to pool/main/g/gamine/gamine_0.0.1-3.dsc
+gamine_0.0.1-3_sparc.deb
+  to pool/main/g/gamine/gamine_0.0.1-3_sparc.deb
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

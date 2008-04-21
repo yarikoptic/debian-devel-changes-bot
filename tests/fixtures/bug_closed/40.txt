@@ -1,0 +1,196 @@
+From bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org Sun Apr 20 12:05:34 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org>)
+	id 1JnXMP-0006aB-Dd
+	for ddc@ddc.chris-lamb.co.uk; Sun, 20 Apr 2008 12:05:33 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 5668713A4F11; Sun, 20 Apr 2008 11:05:28 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 153FE13A4ECA;
+	Sun, 20 Apr 2008 11:05:27 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnXKC-0002bH-2S; Sun, 20 Apr 2008 11:03:12 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Matthias Klose <doko@cs.tu-berlin.de>
+Subject: Bug#389322: marked as done (Undo command)
+Message-ID: <handler.389322.D389322.12086892711865.ackdone@bugs.debian.org>
+References: <18443.8820.462051.471471@gargle.gargle.HOWL>
+ <c241693f0609242018r2ea4946dk8cd3ca1352eadee7@mail.gmail.com>
+X-Debian-PR-Message: closed 389322
+X-Debian-PR-Package: bash
+X-Debian-PR-Source: bash
+Content-Type: multipart/mixed; boundary="----------=_1208689392-9856-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 11:03:12 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <Q_lXoYie_NI.A.hO.4NyCIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/132962
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 11:05:28 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208689392-9856-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 13:01:08 +0200
+with message-id <18443.8820.462051.471471@gargle.gargle.HOWL>
+and subject line Re: Undo command
+has caused the Debian Bug report #389322,
+regarding Undo command
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+389322: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D389322
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208689392-9856-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 25 Sep 2006 03:18:53 +0000
+Return-path: <jasonspiro@gmail.com>
+Received: from nz-out-0102.google.com ([64.233.162.193])
+	by spohr.debian.org with esmtp (Exim 4.50)
+	id 1GRgzd-0000fL-GH
+	for submit@bugs.debian.org; Sun, 24 Sep 2006 20:18:53 -0700
+Received: by nz-out-0102.google.com with SMTP id n29so656445nzf
+        for <submit@bugs.debian.org>; Sun, 24 Sep 2006 20:18:49 -0700 (PDT)
+DomainKey-Signature: a=rsa-sha1; q=dns; c=nofws;
+        s=beta; d=gmail.com;
+        h=received:message-id:date:from:sender:to:subject:mime-version:content-type:content-transfer-encoding:content-disposition:x-google-sender-auth;
+        b=Y364N6+T7nKh0fPbViRXmy0E3BGTC3OaJOY+zYkP81DFauqLyjFRV4MOwSmxFc4njZpJ2eDaC0zYnLbryUmI+f7fGelu+bjq4AqXxISTUBlrd/15iAo9idLJlcnMbd5TuSOfaZY2YgRIn3KXaAuYnEbkXTL4AZkCfzM3jIi38O8=
+Received: by 10.65.137.5 with SMTP id p5mr4163059qbn;
+        Sun, 24 Sep 2006 20:18:49 -0700 (PDT)
+Received: by 10.65.52.8 with HTTP; Sun, 24 Sep 2006 20:18:49 -0700 (PDT)
+Message-ID: <c241693f0609242018r2ea4946dk8cd3ca1352eadee7@mail.gmail.com>
+Date: Sun, 24 Sep 2006 23:18:49 -0400
+From: "Jason Spiro" <jasonspiro4@gmail.com>
+Sender: jasonspiro@gmail.com
+To: submit@bugs.debian.org
+Subject: Undo command
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+X-Google-Sender-Auth: 786e4b922a577a05
+Delivered-To: submit@bugs.debian.org
+X-Spam-Checker-Version: SpamAssassin 2.60-bugs.debian.org_2005_01_02 
+	(1.212-2003-09-23-exp) on spohr.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, hits=-5.1 required=4.0 tests=BAYES_44,HAS_PACKAGE 
+	autolearn=no version=2.60-bugs.debian.org_2005_01_02
+
+Package: bash
+Version: 3.1-4
+Severity: wishlist
+
+It would be great if bash had an undo command. This command would
+attempt to undo the last command typed, such as cp, mv, or apt-get.
+
+-- 
+Jason Spiro: computer consulting with a smile.
+I also provide training and spyware removal services for homes and businesses.
+Call or email for a FREE 5-minute consultation. Satisfaction guaranteed.
+416-781-5938 / info@jspiro.com / MSN instant chat: jasonspiro@hotmail.com
+
+
+------------=_1208689392-9856-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 389322-done) by bugs.debian.org; 20 Apr 2008 11:01:11 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-3.0 required=4.0 tests=BAYES_00,UNPARSEABLE_RELAY 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <doko@cs.tu-berlin.de>
+Received: from mail.cs.tu-berlin.de ([130.149.17.13])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <doko@cs.tu-berlin.de>)
+	id 1JnXIF-0000Sg-Hr
+	for 389322-done@bugs.debian.org; Sun, 20 Apr 2008 11:01:11 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by localhost-12225.cs.tu-berlin.de (Postfix) with ESMTP id 8AFDBD67F
+	for <389322-done@bugs.debian.org>; Sun, 20 Apr 2008 13:01:09 +0200 (MEST)
+Received: from mailhost.cs.tu-berlin.de ([127.0.0.1])
+	by localhost (mail.cs.tu-berlin.de [127.0.0.1]) (amavisd-new, port 12224)
+	with ESMTP id NXja2gzi9Fno 10673-15 for <389322-done@bugs.debian.org>;
+	Sun, 20 Apr 2008 13:01:09 +0200 (MEST) 16546
+Received: from bolero.cs.tu-berlin.de (bolero.cs.tu-berlin.de [130.149.19.1])
+	(using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by mailhost.cs.tu-berlin.de (Postfix) with ESMTP
+	for <389322-done@bugs.debian.org>; Sun, 20 Apr 2008 13:01:09 +0200 (MEST)
+Received: (from doko@localhost)
+	by bolero.cs.tu-berlin.de (8.13.8+Sun/8.13.3/Submit) id m3KB189F000422;
+	Sun, 20 Apr 2008 13:01:08 +0200 (MEST)
+From: Matthias Klose <doko@cs.tu-berlin.de>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Message-ID: <18443.8820.462051.471471@gargle.gargle.HOWL>
+Date: Sun, 20 Apr 2008 13:01:08 +0200
+To: 389322-done@bugs.debian.org
+Subject: Re: Undo command
+X-Mailer: VM 7.17 under 21.4 (patch 21) "Educational Television" XEmacs Lucid
+X-Virus-Scanned: amavisd-new at cs.tu-berlin.de (including SpamAssassin)
+
+> It would be great if bash had an undo command. This command would
+> attempt to undo the last command typed, such as cp, mv, or apt-get.
+
+sorry, this can't work. what are the options to undo cp, mv, or apt-get?
+
+
+------------=_1208689392-9856-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

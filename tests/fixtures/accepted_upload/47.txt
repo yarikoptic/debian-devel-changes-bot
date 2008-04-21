@@ -1,0 +1,110 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 18:33:15 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JndPc-00006V-NE
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 18:33:15 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 5794C13A50B9; Sun, 20 Apr 2008 17:33:11 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id 0CF2813A50A5
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 17:33:11 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JndA0-0006IN-5M; Sun, 20 Apr 2008 17:17:04 +0000
+From: John Hasler <jhasler@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted sysvconfig 0.80 (source all)
+Message-Id: <E1JndA0-0006IN-5M@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 17:17:04 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <-K4PcEEMWB.A.Y-C.X53CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301327
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 17:33:11 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.6
+X-Spam-Report: (-2.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.7
+Date: Sun, 20 Apr 2008 08:16:02 -0500
+Source: sysvconfig
+Binary: sysvconfig
+Architecture: source all
+Version: 0.80
+Distribution: unstable
+Urgency: low
+Maintainer: John Hasler <jhasler@debian.org>
+Changed-By: John Hasler <jhasler@debian.org>
+Description:=20
+ sysvconfig - A text menu based utility for configuring init script links
+Closes: 323712 389888
+Changes:=20
+ sysvconfig (0.80) unstable; urgency=3Dlow
+ .
+   * Applied patch from Andrew Pollock <apollock@debian.org> to add Argus
+     to guide.
+     Closes: #323712 sysvconfig: Please add daemon description for Argus
+ .
+   * Replaced "X" with "*".
+     Closes: #389888 sysvconfig: not X's
+Files:=20
+ 0bf9c7a22678b0e97c2647b78c964a98 605 admin optional sysvconfig_0.80.dsc
+ 2c63513109ace3a74b9384f56789c038 20874 admin optional sysvconfig_0.80.ta=
+r.gz
+ 17d79d49db7049a7fcf0a2349458ee10 23648 admin optional sysvconfig_0.80_al=
+l.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iQCVAwUBSAtqf/c1CeQKxb5hAQLsTQP/TfpEPclT6lyXu+Pk+9+TMXgBQDwowZ3J
+jz94yTAxIOLeq4m8vIgNnlKnDXWJnxlYfOpB1MAoz3VJn1nErVtnP+dgu8tl3KYL
+ooBscQGAdILtyeCm6aJozcbWrvE8tTYztFwmB3f3QxDLsFzp8o2yfD9zWmvK6jTV
+1hE1E1cORik=3D
+=3DXkim
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+sysvconfig_0.80.dsc
+  to pool/main/s/sysvconfig/sysvconfig_0.80.dsc
+sysvconfig_0.80.tar.gz
+  to pool/main/s/sysvconfig/sysvconfig_0.80.tar.gz
+sysvconfig_0.80_all.deb
+  to pool/main/s/sysvconfig/sysvconfig_0.80_all.deb
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

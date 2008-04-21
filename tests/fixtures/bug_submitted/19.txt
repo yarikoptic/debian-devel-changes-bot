@@ -1,0 +1,165 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 16:20:26 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnbL1-0007hN-MT
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 16:20:26 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id D71F013A4FF3; Sun, 20 Apr 2008 15:20:16 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.9 required=4.0 tests=BAYES_00,FOURLA,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id F021013A5036;
+	Sun, 20 Apr 2008 15:20:03 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnbFx-0001Sp-2y; Sun, 20 Apr 2008 15:15:05 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476987: exim4-daemon-light: fails to install: incompatible command-line options or arguments
+Reply-To: Laurent Fousse <laurent@komite.net>, 476987@bugs.debian.org
+Resent-From: Laurent Fousse <laurent@komite.net>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Exim4 Maintainers <pkg-exim4-maintainers@lists.alioth.debian.org>
+Resent-Date: Sun, 20 Apr 2008 15:15:01 +0000
+Resent-Message-ID: <handler.476987.B.12087043551090@bugs.debian.org>
+X-Debian-PR-Message: report 476987
+X-Debian-PR-Package: exim4-daemon-light
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: exim4
+Received: via spool by submit@bugs.debian.org id=B.12087043551090
+          (code B ref -1); Sun, 20 Apr 2008 15:15:01 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 15:12:35 +0000
+X-Amavis-Spam-Status: No, score=-9.9 required=4.0 tests=BAYES_00,FOURLA,HAS_PACKAGE 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from imag.imag.fr ([129.88.30.1])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <Laurent.Fousse@imag.fr>)
+	id 1JnbDX-0000HK-0v
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 15:12:35 +0000
+Received: from kama.imag.fr (kama.imag.fr [129.88.33.254])
+	by imag.imag.fr (8.13.8/8.13.8) with ESMTP id m3KFC6jT017460;
+	Sun, 20 Apr 2008 17:12:06 +0200 (CEST)
+Received: by kama.imag.fr (Postfix, from userid 105)
+	id 6073779B; Sun, 20 Apr 2008 17:12:04 +0200 (CEST)
+Received: from bourrasque.imag.fr (bourrasque.imag.fr [129.88.33.88])
+	by kama.imag.fr (Postfix) with ESMTP id 251D75E8;
+	Sun, 20 Apr 2008 17:12:04 +0200 (CEST)
+Received: from lfousse by bourrasque.imag.fr with local (Exim 4.69)
+	(envelope-from <lfousse@bourrasque.imag.fr>)
+	id 1JnbD0-0005DT-P1; Sun, 20 Apr 2008 17:12:02 +0200
+Date: Sun, 20 Apr 2008 17:12:02 +0200
+From: Laurent Fousse <laurent@komite.net>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Message-ID: <20080420151201.GA19758@bourrasque.imag.fr>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+X-Reportbug-Version: 3.39-0.1
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+X-Greylist: Sender IP whitelisted, not delayed by milter-greylist-3.0 (imag.imag.fr [129.88.30.1]); Sun, 20 Apr 2008 17:12:06 +0200 (CEST)
+X-IMAG-MailScanner-Information: Please contact MI2S MIM for more information
+X-IMAG-MailScanner: Found to be clean
+X-IMAG-MailScanner-SpamCheck: 
+X-IMAG-MailScanner-From: lfousse@bourrasque.imag.fr
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 15:15:05 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343554
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -34.6
+X-Spam-Report: (-34.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	18 AWL                    AWL: From: address is in the auto white-list
+
+Package: exim4-daemon-light
+Version: 4.69-2+b1
+Severity: serious
+Justification: fails to install
+
+Hello,
+
+I get the following installation error:
+
+    Setting up exim4-daemon-light (4.69-2+b1) ...
+    Starting MTA:exim: incompatible command-line options or arguments
+    invoke-rc.d: initscript exim4, action "start" failed.
+    dpkg: error processing exim4-daemon-light (--configure):
+     subprocess post-installation script returned error exit status 1
+    Errors were encountered while processing:
+     exim4-daemon-light
+    E: Sub-process /usr/bin/dpkg returned an error code (1)
+
+Looking at `EX4DEBUG=1 /etc/init.d/exim4 restart`, exim is run with
+arguments "-bd -q30m '' '' ''". The three empty strings seem to
+confuse exim.
+
+Regards,
+
+Laurent.
+
+-- Package-specific info:
+Exim version 4.69 #1 built 12-Apr-2008 09:26:11
+Copyright (c) University of Cambridge 2006
+Berkeley DB: Berkeley DB 4.6.21: (September 27, 2007)
+Support for: crypteq iconv() IPv6 GnuTLS move_frozen_messages
+Lookups: lsearch wildlsearch nwildlsearch iplsearch cdb dbm dbmnz dnsdb dsearch nis nis0 passwd
+Authenticators: cram_md5 plaintext
+Routers: accept dnslookup ipliteral manualroute queryprogram redirect
+Transports: appendfile/maildir/mailstore autoreply lmtp pipe smtp
+Fixed never_users: 0
+Size of off_t: 8
+Configuration file is /var/lib/exim4/config.autogenerated
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (500, 'unstable'), (500, 'stable')
+Architecture: amd64 (x86_64)
+
+Kernel: Linux 2.6.24.2vmsplice (SMP w/2 CPU cores)
+Locale: LANG=en_US.UTF-8, LC_CTYPE=en_US.UTF-8 (charmap=UTF-8)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages exim4-daemon-light depends on:
+ii  debconf [debconf-2.0]         1.5.21     Debian configuration management sy
+ii  exim4-base                    4.69-2+b1  support files for all Exim MTA (v4
+ii  libc6                         2.7-10     GNU C Library: Shared libraries
+ii  libdb4.6                      4.6.21-7   Berkeley v4.6 Database Libraries [
+ii  libgnutls26                   2.2.2-1    the GNU TLS library - runtime libr
+ii  libpcre3                      7.6-2      Perl 5 Compatible Regular Expressi
+
+exim4-daemon-light recommends no packages.
+
+-- debconf information:
+  exim4-daemon-light/drec:
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

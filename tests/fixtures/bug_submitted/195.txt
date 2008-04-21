@@ -1,0 +1,154 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 11:05:17 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnWQ5-00069d-9s
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 11:05:17 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 8A79D13A4C13; Sun, 20 Apr 2008 10:05:09 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-3.9 required=4.0 tests=BAYES_00,FOURLA,GMAIL,
+	LDO_WHITELIST,RCVD_IN_DNSWL_LOW,URIBL_BLACK autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 940A913A4832;
+	Sun, 20 Apr 2008 10:04:45 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnWLV-0000GQ-TV; Sun, 20 Apr 2008 10:00:29 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476942: ITP: sussen -- check for vulnerabilities and configuration issues
+Reply-To: David Paleino <d.paleino@gmail.com>, 476942@bugs.debian.org
+Resent-From: David Paleino <d.paleino@gmail.com>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: <wnpp@debian.org>
+Resent-Date: Sun, 20 Apr 2008 10:00:23 +0000
+Resent-Message-ID: <handler.476942.B.120868551112635@bugs.debian.org>
+X-Debian-PR-Message: report 476942
+X-Debian-PR-Package: wnpp
+X-Debian-PR-Keywords: 
+Received: via spool by submit@bugs.debian.org id=B.120868551112635
+          (code B ref -1); Sun, 20 Apr 2008 10:00:23 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 09:58:31 +0000
+X-Amavis-Spam-Status: No, score=-8.9 required=4.0 tests=BAYES_00,FOURLA,GMAIL,
+	HAS_PACKAGE autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from wx-out-0506.google.com ([66.249.82.229])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <d.paleino@gmail.com>)
+	id 1JnWJa-0003GF-DI
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 09:58:30 +0000
+Received: by wx-out-0506.google.com with SMTP id h31so1054415wxd.11
+        for <submit@bugs.debian.org>; Sun, 20 Apr 2008 02:58:29 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:date:from:to:subject:message-id:x-mailer:x-face:mime-version:content-type;
+        bh=R3+EY8BFN6bAxJ2iye8LAA3PZ59nXF+E9GNTBw8/Zsc=;
+        b=Ky3b6DFr9tZ21NSymB2U8iKh85GePpwOV8ek0ec4P7i8k/dYPgCScowaJvH3sj9yqJq52kzaMdLV15271X9L69fX7kz+Nmx5V8eVEMN0cK6sTYXIo+QM5+CmIcjPjLtKpmAbHSmdCdQoWlFjO7bCB9JQ5iBtJ8ELFQOpoQoW6Ys=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=date:from:to:subject:message-id:x-mailer:x-face:mime-version:content-type;
+        b=G8Y6US6a5WQwijP1BnFmt3GEHL6pncLSjl5Z2m6k23Z+VBetxU1opjDuc3ynUL55wiT4KjpzUaOaEX2ti0KeCgJhTZGfSLNE8D9/rPl6zblFvGK97x05lDv7XYFlOqNGxmijRbIS/HA56tZse+iExRtPIj4HsOoiekRHq2cDkCM=
+Received: by 10.70.36.20 with SMTP id j20mr6197579wxj.57.1208685509020;
+        Sun, 20 Apr 2008 02:58:29 -0700 (PDT)
+Received: from localhost ( [79.27.174.242])
+        by mx.google.com with ESMTPS id h37sm9145930wxd.18.2008.04.20.02.58.27
+        (version=SSLv3 cipher=OTHER);
+        Sun, 20 Apr 2008 02:58:28 -0700 (PDT)
+Date: Sun, 20 Apr 2008 11:58:26 +0200
+From: David Paleino <d.paleino@gmail.com>
+To: submit@bugs.debian.org
+Message-ID: <20080420115826.7b8a8a1e@gmail.com>
+X-Mailer: Claws Mail 3.3.1 (GTK+ 2.12.9; i486-pc-linux-gnu)
+X-Face: 
+Mime-Version: 1.0
+Content-Type: multipart/signed; boundary="Sig_/YPM9e6.wvgrIQDIU=6AZWTL";
+ protocol="application/pgp-signature"; micalg=PGP-SHA1
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 10:00:29 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343402
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -37.2
+X-Spam-Report: (-37.2 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	15 AWL                    AWL: From: address is in the auto white-list
+
+--Sig_/YPM9e6.wvgrIQDIU=6AZWTL
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: quoted-printable
+
+Package: wnpp
+Severity: wishlist
+Owner: David Paleino <d.paleino@gmail.com>
+
+* Package name    : sussen
+  Version         : 0.90
+  Upstream Author : Loren Bandiera <lorenb@mmgsecurity.com>
+* URL             : http://www.lbtechservices.com/projects/sussen/
+* License         : GPL-3
+  Programming Lang: Mono C#
+  Description     : check for vulnerabilities and configuration issues
+
+ Sussen is a tool that checks for vulnerabilities and configuration issues
+ on computer systems. It is based on the Open Vulnerability and Assessment=
+=20
+ Language (http://oval.mitre.org/)
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (500, 'unstable'), (500, 'testing'), (1, 'experimental')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.23-1-686 (SMP w/1 CPU core)
+Locale: LANG=3Dit_IT.UTF-8, LC_CTYPE=3Dit_IT.UTF-8 (charmap=3DUTF-8)
+Shell: /bin/sh linked to /bin/bash
+
+--=20
+ . ''`.  Debian maintainer | http://wiki.debian.org/DavidPaleino
+ : :'  : Linuxer #334216 --|-- http://www.hanskalabs.net/
+ `. `'`  GPG: 1392B174 ----|---- http://snipr.com/qa_page
+   `-   2BAB C625 4E66 E7B8 450A C3E1 E6AA 9017 1392 B174
+
+--Sig_/YPM9e6.wvgrIQDIU=6AZWTL
+Content-Type: application/pgp-signature; name=signature.asc
+Content-Disposition: attachment; filename=signature.asc
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICxPC5qqQFxOSsXQRArmeAJ9EsY+Qez0lMkMcCMKpsD3zUP9CcACgmmmI
+XmrKNBMKAaaXeNSBWbZ2f1Q=
+=iSYw
+-----END PGP SIGNATURE-----
+
+--Sig_/YPM9e6.wvgrIQDIU=6AZWTL--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

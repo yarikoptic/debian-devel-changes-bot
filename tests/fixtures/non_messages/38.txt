@@ -1,0 +1,114 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 14:04:58 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnZDx-00072H-Nz
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 14:04:58 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 5D80513A4FA7; Sun, 20 Apr 2008 13:04:52 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.7 required=4.0 tests=BAYES_00,FOURLA,LDO_WHITELIST,
+	MIME_BASE64_BLANKS,RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id EBA5313A49AD;
+	Sun, 20 Apr 2008 13:04:35 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnZCF-0000ZD-7B; Sun, 20 Apr 2008 13:03:07 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476966: ITP: libfile-policy-perl - Simple policy for file I/O functions
+Reply-To: Yves AGOSTINI <agostini@univ-metz.fr>, 476966@bugs.debian.org
+Resent-From: Yves AGOSTINI <agostini@univ-metz.fr>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: <wnpp@debian.org>, AGOSTINI Yves <agostini@univ-metz.fr>
+Resent-Date: Sun, 20 Apr 2008 13:03:04 +0000
+Resent-Message-ID: <handler.476966.B.120869649530645@bugs.debian.org>
+X-Debian-PR-Message: report 476966
+X-Debian-PR-Package: wnpp
+X-Debian-PR-Keywords: 
+Received: via spool by submit@bugs.debian.org id=B.120869649530645
+          (code B ref -1); Sun, 20 Apr 2008 13:03:04 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 13:01:35 +0000
+X-Amavis-Spam-Status: No, score=-9.5 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,HAS_PACKAGE,MIME_BASE64_NO_NAME autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from hermes-node1.univ-metz.fr ([195.220.226.244] ident=root)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <agostini@univ-metz.fr>)
+	id 1JnZAl-0007wb-31
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 13:01:35 +0000
+Received: from localhost.localdomain (umail.univ-metz.fr [195.220.226.250])
+	by hermes-node1.univ-metz.fr (8.13.8/8.13.8/Debian-3) with ESMTP id m3KD1XTi029979
+	for <submit@bugs.debian.org>; Sun, 20 Apr 2008 15:01:33 +0200
+Message-Id: <200804201301.m3KD1XTi029979@hermes-node1.univ-metz.fr>
+Content-Type: text/plain
+Content-Disposition: inline
+MIME-Version: 1.0
+To: submit@bugs.debian.org
+From: Yves AGOSTINI <agostini@univ-metz.fr>
+Date: Sun, 20 Apr 2008 14:49:01 +0200
+X-Mailer: UMaiL v2.2.rc1
+X-Umail-Host: ra-80.236.21.225-xf--ip--via--cf--cx-
+X-Umail-User: agostini
+X-Greylist: Sender is SPF-compliant, not delayed by milter-greylist-3.0 (hermes-node1.univ-metz.fr [195.220.226.225]); Sun, 20 Apr 2008 15:01:33 +0200 (CEST)
+Content-Transfer-Encoding: base64
+X-MIME-Autoconverted: from 8bit to base64 by hermes-node1.univ-metz.fr id m3KD1XTi029979
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 13:03:07 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343479
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.2
+X-Spam-Report: (-52.2 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 MIME_BASE64_BLANKS     RAW: Extra blank lines in base64 encoding
+	0.2 MIME_BASE64_NO_NAME    RAW: base64 attachment does not have a file name
+	-0.2 AWL                    AWL: From: address is in the auto white-list
+
+UGFja2FnZTogd25wcA0KU2V2ZXJpdHk6IHdpc2hsaXN0DQpPd25lcjogQUdPU1RJTkkgWXZl
+cyA8YWdvc3RpbmlAdW5pdi1tZXR6LmZyPg0KDQoNCiogUGFja2FnZSBuYW1lIDogbGliZmls
+ZS1wb2xpY3ktcGVybA0KVmVyc2lvbiA6IDEuMDA1DQpVcHN0cmVhbSBBdXRob3IgOiBNdXJy
+YXkgV2Fsa2VyIDxjcGFuIF9hdF8gYmJjIF9kb3RfIGNvIF9kb3RfIHVrPg0KKiBVUkwgOiBo
+dHRwOi8vc2VhcmNoLmNwYW4ub3JnL2Rpc3QvRmlsZS1Qb2xpY3kvDQoqIExpY2Vuc2UgOiBH
+UEwNClByb2dyYW1taW5nIExhbmc6IFBlcmwNCkRlc2NyaXB0aW9uIDogICBTaW1wbGUgcG9s
+aWN5IGZvciBmaWxlIEkvTyBmdW5jdGlvbnMNCiBUaGlzIGRlZmluZXMgYSBzaW1wbGUgcG9s
+aWN5IGZvciBmaWxlIEkvTyB3aXRoIG1vZHVsZXMgc3VjaCBhcyBGaWxlOjpTbHVycDo6V2l0
+aGluUG9saWN5Lg0KIA0KIFVzZSBJTiBOTyBXQVkgaW1wbGllcyBhbnkgc2FmZXR5IHRvIHlv
+dXIgZmlsZSBJL08sIGl0IGlzIHNpbXBseSBwcm92aWRlZCB0byBoZWxwDQogZGVtb25zdHJh
+dGUgaG93IHlvdSBtaWdodCBpbXBsZW1lbnQgYSBGaWxlIFBvbGljeSBhdCB5b3VyIHNpdGUu
+DQoNCi0tIFN5c3RlbSBJbmZvcm1hdGlvbjoNCkRlYmlhbiBSZWxlYXNlOiBsZW5ueS9zaWQN
+CkFQVCBwcmVmZXJzIHVuc3RhYmxlDQpBUFQgcG9saWN5OiAoNTAwLCAndW5zdGFibGUnKQ0K
+QXJjaGl0ZWN0dXJlOiBpMzg2IChpNjg2KQ0KDQpLZXJuZWw6IExpbnV4IDIuNi4xOC01LXhl
+bi02ODYgKFNNUCB3LzEgQ1BVIGNvcmUpDQpMb2NhbGU6IExBTkc9ZnJfRlIuVVRGLTgsIExD
+X0NUWVBFPWZyX0ZSLlVURi04IChjaGFybWFwPVVURi04KQ0KU2hlbGw6IC9iaW4vc2ggbGlu
+a2VkIHRvIC9iaW4vYmFzaCANCg0KLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0t
+LS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0NCkFHT1NUSU5JIFl2ZXMgICAgIENS
+SVVNIC0gVW5pdmVyc2l06SBQYXVsIFZlcmxhaW5lIC0gTWV0eg0KYWdvc3RpbmlAdW5pdi1t
+ZXR6LmZyICAgIGh0dHA6Ly93d3cuY3JpdW0udW5pdi1tZXR6LmZyDQp0ZWw6IDAzIDg3IDMx
+IDUyIDYzICAgICAgICAgIGZheDogMDMgODcgMzEgNTMgMzMNCg==
+
+
+

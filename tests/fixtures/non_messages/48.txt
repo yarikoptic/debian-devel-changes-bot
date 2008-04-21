@@ -1,0 +1,275 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 11:11:21 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnWVw-0006Dh-9O
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 11:11:21 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id F0E5013A4F0E; Sun, 20 Apr 2008 10:11:14 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-6.8 required=4.0 tests=BAYES_00,IMPRONONCABLE_1,
+	LDO_WHITELIST,MURPHY_WRONG_WORD2,RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 094BE13A4F06;
+	Sun, 20 Apr 2008 10:10:53 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnWTm-0000bx-Gl; Sun, 20 Apr 2008 10:09:02 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476803: Debconf use is utterly broken
+Reply-To: Michael Tautschnig <mt@debian.org>, 476803@bugs.debian.org
+Resent-From: Michael Tautschnig <mt@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian Roundcube Maintainers <pkg-roundcube-maintainers@lists.alioth.debian.org>
+Resent-Date: Sun, 20 Apr 2008 10:09:01 +0000
+Resent-Message-ID: <handler.476803.B476803.120868608731992@bugs.debian.org>
+X-Debian-PR-Message: report 476803
+X-Debian-PR-Package: roundcube
+X-Debian-PR-Keywords: unreproducible moreinfo
+X-Debian-PR-Source: roundcube
+Received: via spool by 476803-submit@bugs.debian.org id=B476803.120868608731992
+          (code B ref 476803); Sun, 20 Apr 2008 10:09:01 +0000
+Received: (at 476803) by bugs.debian.org; 20 Apr 2008 10:08:07 +0000
+X-Amavis-Spam-Status: No, score=-7.7 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FROMDEVELOPER,HAS_BUG_NUMBER,IMPRONONCABLE_1,MURPHY_WRONG_WORD2 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from lnx131.hrz.tu-darmstadt.de ([130.83.174.25] ident=root)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <tautschnig@forsyte.cs.tu-darmstadt.de>)
+	id 1JnWSt-0008Ex-28
+	for 476803@bugs.debian.org; Sun, 20 Apr 2008 10:08:07 +0000
+Received: from calf.forsyte.informatik.tu-darmstadt.de (calf.forsyte.informatik.tu-darmstadt.de [130.83.161.206])
+	by lnx131.hrz.tu-darmstadt.de (8.13.4/8.12.10) with ESMTP id m3KA7qdA002518;
+	Sun, 20 Apr 2008 12:07:52 +0200
+Received: from localhost (localhost [127.0.0.1])
+	by calf.forsyte.informatik.tu-darmstadt.de (Postfix) with ESMTP id 3EC1C3F03;
+	Sun, 20 Apr 2008 12:07:52 +0200 (CEST)
+X-Virus-Scanned: by amavisd-new/clamav/sophos at
+	mail.forsyte.informatik.tu-darmstadt.de
+Received: from calf.forsyte.informatik.tu-darmstadt.de ([127.0.0.1])
+	by localhost (calf.forsyte [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id ljaUN8z9aVIZ; Sun, 20 Apr 2008 12:07:49 +0200 (CEST)
+Received: by calf.forsyte.informatik.tu-darmstadt.de (Postfix, from userid 8)
+	id B9F653F05; Sun, 20 Apr 2008 12:07:49 +0200 (CEST)
+Received: from mail.forsyte.cs.tu-darmstadt.de (bull.forsyte [192.168.46.2])
+	by calf.forsyte.informatik.tu-darmstadt.de (Postfix) with ESMTP id E39753F03;
+	Sun, 20 Apr 2008 12:07:40 +0200 (CEST)
+Received: from localhost (vpn.forsyte.informatik.tu-darmstadt.de [130.83.161.205])
+	(Authenticated sender: tautschnig)
+	by mail.forsyte.cs.tu-darmstadt.de (Postfix) with ESMTP id 4CEC861ACB;
+	Sun, 20 Apr 2008 12:07:34 +0200 (CEST)
+Date: Sun, 20 Apr 2008 12:07:32 +0200
+From: Michael Tautschnig <mt@debian.org>
+To: Vincent Bernat <bernat@debian.org>
+Cc: 476803@bugs.debian.org
+Message-ID: <20080420100730.GA2845@l03.local>
+References: <20080419094700.GA1704@l03.local> <m3tzhxzyvd.fsf@neo.luffy.cx>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+	protocol="application/pgp-signature"; boundary="HcAYCG3uE/tztfnV"
+Content-Disposition: inline
+In-Reply-To: <m3tzhxzyvd.fsf@neo.luffy.cx>
+User-Agent: Mutt/1.5.17 (2007-11-01)
+X-TUD-HRZ-MailScanner: Found to be clean
+X-TUD-HRZ-MailScanner-SpamCheck: 
+X-MailScanner-From: tautschnig@forsyte.cs.tu-darmstadt.de
+Resent-Date: Sun, 20 Apr 2008 10:09:02 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343412
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.5
+X-Spam-Report: (-52.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+
+--HcAYCG3uE/tztfnV
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+Hi Vincent,
+
+Thanks for your really quick reply.
+
+>=20
+> Thanks  for your report.  I have  used a  clean sid  chroot to  do those
+> tests. Here is my preseed file:
+>=20
+[...]
+
+I'm missing one important answer in this preseeding:=20
+
+# Configure database for roundcube with dbconfig-common?
+roundcube-core roundcube/dbconfig-install boolean
+
+The answer must obviously be yes, because otherwise it doesn't put any usef=
+ul
+information into debian-db.php at all (only dbuser and dbname will be set).
+Actually I would have guessed that I don't want to use dbconfig because I'd
+prefer to set up the database myself, but anyway:
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+corn:/# debconf-get-selections | grep roundcube
+corn:/# cat bla
+roundcube-core  roundcube/mysql/method  select  tcp/ip
+roundcube-core  roundcube/dbconfig-reinstall    boolean false
+roundcube-core  roundcube/purge boolean false
+roundcube-core  roundcube/language      select  de_DE
+roundcube-core  roundcube/db/dbname     string  roundcube
+roundcube-core  roundcube/remote/newhost        string  127.0.0.2
+roundcube-core  roundcube/remote/port   string  3319
+roundcube-core  roundcube/restart-webserver     boolean false
+roundcube-core  roundcube/install-error select  ignore
+roundcube-core  roundcube/mysql/admin-user      string  root
+roundcube-core  roundcube/hosts string  ssl://dummy.test:993
+roundcube-core  roundcube/database-type select  mysql
+roundcube-core  roundcube/remote/host   select  127.0.0.2
+roundcube-core  roundcube/db/app-user   string  roundcube
+
+corn:/# debconf-set-selections < bla
+corn:/# apt-get -y -q install roundcube-mysql roundcube-core roundcube
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer requi=
+red:
+  libneon26 libace5.4.7ldbl python2.4-minimal libcwidget1 python2.4
+Use 'apt-get autoremove' to remove them.
+Suggested packages:
+  mysql-server
+The following NEW packages will be installed:
+  roundcube roundcube-core roundcube-mysql
+0 upgraded, 3 newly installed, 0 to remove and 0 not upgraded.
+Need to get 0B/601kB of archives.
+After this operation, 3449kB of additional disk space will be used.
+Preconfiguring packages ...
+Can not write log, openpty() failed (/dev/pts not mounted?)
+Selecting previously deselected package roundcube-mysql.
+(Reading database ... 69249 files and directories currently installed.)
+Unpacking roundcube-mysql (from .../roundcube-mysql_0.1.1-1_all.deb) ...
+Selecting previously deselected package roundcube-core.
+Unpacking roundcube-core (from .../roundcube-core_0.1.1-1_all.deb) ...
+Selecting previously deselected package roundcube.
+Unpacking roundcube (from .../roundcube_0.1.1-1_all.deb) ...
+Can not write log, openpty() failed (/dev/pts not mounted?)
+Setting up roundcube-mysql (0.1.1-1) ...
+Setting up roundcube-core (0.1.1-1) ...
+dbconfig-common: writing config to /etc/dbconfig-common/roundcube.conf
+
+Creating config file /etc/dbconfig-common/roundcube.conf with new version
+
+Creating config file /etc/roundcube/debian-db.php with new version
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/va=
+r/run/mysqld/mysqld.sock' (2).
+unable to connect to mysql server.
+error encountered creating user:
+ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/va=
+r/run/mysqld/mysqld.sock' (2)
+dbconfig-common: roundcube configure: ignoring errors from here forwards
+populating database via sql...  done.
+dbconfig-common: flushing administrative password
+
+Creating config file /etc/roundcube/main.inc.php with new version
+Lighttpd not installed, skipping
+Setting up roundcube (0.1.1-1) ...
+corn:/# cat /etc/roundcube/debian-db.php=20
+<?php
+##
+## database access settings in php format
+## automatically generated from /etc/dbconfig-common/roundcube.conf
+## by /usr/sbin/dbconfig-generate-include
+## Sun, 20 Apr 2008 09:25:10 +0000
+##
+## by default this file is managed via ucf, so you shouldn't have to
+## worry about manual changes being silently discarded.  *however*,
+## you'll probably also want to edit the configuration file mentioned
+## above too.
+##
+$dbuser=3D'roundcube';
+$dbpass=3D'Wwb66E5nDGNx';
+$basepath=3D'';
+$dbname=3D'roundcube';
+$dbserver=3D'';
+$dbport=3D'';
+$dbtype=3D'mysql';
+corn:/#=20
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+>=20
+> This seems to work fine for me. What is your preseed file?
+>=20
+So, even using your preseeding on an up-to-date sid system, it doesn't real=
+ly
+work. Of course I don't actually have a server named dummy.test and the lik=
+e,
+but dbconfig is not really making use of this, but rather attempts to conne=
+ct to
+the local socket, which doesn't exist (because I don't have a local mysqld
+here).
+
+> Because of  some black magic in config,  roundcube/language gets ignored
+> when preseeded. I will try to fix this one.
+
+So, well, let me try to refine my report:
+- Preseeding does work, apart from the language, which you have fixed in SVN
+  already.
+- The configuration of a remote mysql server, however, seems not to work.
+
+Then, this is not actually the work of roundcube, but rather dbconfig-commo=
+n,
+which is doing this work. I will thus clone and reassign this bug, leaving =
+the
+original bug for the locale-reconfiguration problem.
+
+Thanks again for your quick response,
+Michael
+
+
+--HcAYCG3uE/tztfnV
+Content-Type: application/pgp-signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (Darwin)
+
+iEYEARECAAYFAkgLFd0ACgkQvx6dH3bVKsSfoACg6W1PiN7zlKTmFBvFTT1sCPPo
+ZqUAoMR3lDjbOZIGrz0tGNtpnvIlmPBg
+=4lXn
+-----END PGP SIGNATURE-----
+
+--HcAYCG3uE/tztfnV--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

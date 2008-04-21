@@ -1,0 +1,120 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 16:31:52 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnbW8-0007j4-5C
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 16:31:52 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id CD2F913A50B0; Sun, 20 Apr 2008 15:31:46 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id 7789F13A509A
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 15:31:46 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnbHt-0007Ov-PM; Sun, 20 Apr 2008 15:17:05 +0000
+From: Loic Minier <lool@dooz.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted elisa-plugins-ugly 0.3.4-3 (source all)
+Message-Id: <E1JnbHt-0007Ov-PM@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 15:17:05 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <KyO_UkVtxBI.A.6EE.iH2CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301312
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 15:31:46 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Wed, 16 Apr 2008 13:05:44 +0200
+Source: elisa-plugins-ugly
+Binary: elisa-plugins-ugly
+Architecture: source all
+Version: 0.3.4-3
+Distribution: unstable
+Urgency: high
+Maintainer: Maintainers of GStreamer packages <pkg-gstreamer-maintainers@=
+lists.alioth.debian.org>
+Changed-By: Loic Minier <lool@dooz.org>
+Description:=20
+ elisa-plugins-ugly - Elisa plugins from the "ugly" set
+Changes:=20
+ elisa-plugins-ugly (0.3.4-3) unstable; urgency=3Dhigh
+ .
+   * Recommend gstreamer0.10-plugins-bad for flvdemux used in the youtube
+     plugin.
+Checksums-Sha1:=20
+ c6bd0370e6c23ec4121060bb3b883cf649073009 1389 elisa-plugins-ugly_0.3.4-3=
+.dsc
+ 6292e2cc3062b04aa85d51160e164e92d96631b0 2572 elisa-plugins-ugly_0.3.4-3=
+.diff.gz
+ 4fb4546c9192f0a53ce5b6f5041c5fc97af0f991 25724 elisa-plugins-ugly_0.3.4-=
+3_all.deb
+Checksums-Sha256:=20
+ ea2adec5614091c2ae5fd9ef128f41e4442d5bc5a36912b634600d88897f78de 1389 el=
+isa-plugins-ugly_0.3.4-3.dsc
+ c7bc7388fe99d4bda0dec56f9f6db16e3c214771d879a80f894b87abd0c17627 2572 el=
+isa-plugins-ugly_0.3.4-3.diff.gz
+ b31ad9dadbf50cb01c39534cc0c403b1d972aa432fff8a1744c2b221afe4f41a 25724 e=
+lisa-plugins-ugly_0.3.4-3_all.deb
+Files:=20
+ 7d1d21c811b4f38775bd0d9084e2ce6a 1389 gnome optional elisa-plugins-ugly_=
+0.3.4-3.dsc
+ a67d8c10b2172a18475bc3dc3bbbc73f 2572 gnome optional elisa-plugins-ugly_=
+0.3.4-3.diff.gz
+ 078fcfb52031976ed07fface6a9bacfe 25724 gnome optional elisa-plugins-ugly=
+_0.3.4-3_all.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC1sC4VUX8isJIMARAswsAJ9ZedtX7EEGPyIgdqd3c4KjN4YGKgCdHJyu
+snaQyPShKEAtCw+nl8KnNHk=3D
+=3D3YNC
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+elisa-plugins-ugly_0.3.4-3.diff.gz
+  to pool/main/e/elisa-plugins-ugly/elisa-plugins-ugly_0.3.4-3.diff.gz
+elisa-plugins-ugly_0.3.4-3.dsc
+  to pool/main/e/elisa-plugins-ugly/elisa-plugins-ugly_0.3.4-3.dsc
+elisa-plugins-ugly_0.3.4-3_all.deb
+  to pool/main/e/elisa-plugins-ugly/elisa-plugins-ugly_0.3.4-3_all.deb
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

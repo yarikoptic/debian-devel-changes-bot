@@ -1,0 +1,306 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 16:38:28 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnbcW-0007oH-9k
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 16:38:28 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 48BDB13A4FAC; Sun, 20 Apr 2008 15:38:23 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id C5C0F13A4F66;
+	Sun, 20 Apr 2008 15:38:21 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnbXo-0007jl-0f; Sun, 20 Apr 2008 15:33:32 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Filippo Giunchedi <filippo@debian.org>
+Subject: Bug#474399: marked as done (bluez-gnome: Freedesktop menu entry 
+ in wrong category.)
+Message-ID: <handler.474399.D474399.120870552326150.ackdone@bugs.debian.org>
+References: <E1JnbHq-0007Nf-L0@ries.debian.org>
+ <20080405135215.26540.90909.reportbug@solid.paris.klabs.be>
+X-Debian-PR-Message: closed 474399
+X-Debian-PR-Package: bluez-gnome
+X-Debian-PR-Source: bluez-gnome
+Content-Type: multipart/mixed; boundary="----------=_1208705611-29706-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 15:33:32 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <lokk8VbkgeK.A.2nF.vN2CIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/133027
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 15:38:23 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208705611-29706-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 15:17:02 +0000
+with message-id <E1JnbHq-0007Nf-L0@ries.debian.org>
+and subject line Bug#474399: fixed in bluez-gnome 0.26-1
+has caused the Debian Bug report #474399,
+regarding bluez-gnome: Freedesktop menu entry in wrong category.
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+474399: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D474399
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208705611-29706-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 5 Apr 2008 13:52:16 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-11.1 required=4.0 tests=BAYES_00,DNS_FROM_RFC_POST,
+	FORGED_RCVD_HELO,FOURLA,HAS_PACKAGE,X_DEBBUGS_CC autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <fpiat@bigfoot.com>
+Received: from klabs.be ([82.224.65.140] helo=solid.paris.klabs.be)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <fpiat@bigfoot.com>)
+	id 1Ji8oZ-0002CD-NX
+	for submit@bugs.debian.org; Sat, 05 Apr 2008 13:52:16 +0000
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Franklin PIAT <fpiat@bigfoot.com>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Subject: bluez-gnome: Freedesktop menu entry in wrong category.
+Message-ID: <20080405135215.26540.90909.reportbug@solid.paris.klabs.be>
+X-Mailer: reportbug 3.39
+Date: Sat, 05 Apr 2008 15:52:15 +0200
+X-Debbugs-Cc: fpiat@bigfoot.com
+Delivered-To: submit@bugs.debian.org
+
+Package: bluez-gnome
+Version: 0.22-1
+Severity: normal
+
+Hello,
+
+bluetooth-analyzer.desktop says "Category=..;Utility;..." therefore the icon
+ends up in Gnome's "Accessories" section [1].
+
+I think "Categories=System;Monitor;GTK;GNOME" would be more appropriate.
+(Actually, this would be a closer match to the pre-existing /usr/share/menu
+file)
+
+Franklin
+
+[1] http://standards.freedesktop.org/menu-spec/latest/apa.html
+
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers testing
+  APT policy: (990, 'testing'), (50, 'unstable')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.24-1-686 (SMP w/2 CPU cores)
+Locale: LANG=en_US.UTF-8, LC_CTYPE=en_US.UTF-8 (charmap=UTF-8)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages bluez-gnome depends on:
+ii  dbus                       1.1.20-1      simple interprocess messaging syst
+ii  gconf2                     2.22.0-1      GNOME configuration database syste
+ii  gnome-icon-theme           2.22.0-1      GNOME Desktop icon theme
+ii  libatk1.0-0                1.20.0-1      The ATK accessibility toolkit
+ii  libc6                      2.7-6         GNU C Library: Shared libraries
+ii  libcairo2                  1.4.14-1      The Cairo 2D vector graphics libra
+ii  libdbus-1-3                1.1.20-1      simple interprocess messaging syst
+ii  libdbus-glib-1-2           0.74-1        simple interprocess messaging syst
+ii  libgconf2-4                2.22.0-1      GNOME configuration database syste
+ii  libglib2.0-0               2.16.1-2      The GLib library of C routines
+ii  libgtk2.0-0                2.12.9-2      The GTK+ graphical user interface 
+ii  libhal1                    0.5.11~rc2-1  Hardware Abstraction Layer - share
+ii  libnotify1 [libnotify1-gtk 0.4.4-3       sends desktop notifications to a n
+ii  liborbit2                  1:2.14.12-0.1 libraries for ORBit2 - a CORBA ORB
+ii  libpango1.0-0              1.20.0-1      Layout and rendering of internatio
+
+Versions of packages bluez-gnome recommends:
+ii  bluez-utils                   3.24-1     Bluetooth tools and daemons
+ii  gnome-vfs-obexftp             0.4-1      GNOME VFS module for OBEX FTP
+
+-- no debconf information
+
+
+
+------------=_1208705611-29706-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 474399-close) by bugs.debian.org; 20 Apr 2008 15:32:03 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.9 required=4.0 tests=BAYES_00,FOURLA,
+	FROMDEVELOPER,FVGT_m_MULTI_ODD,HAS_BUG_NUMBER,HEADER_X_KATIE,
+	IMPRONONCABLE_2 autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnbWM-0006mP-W9
+	for 474399-close@bugs.debian.org; Sun, 20 Apr 2008 15:32:03 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnbHq-0007Nf-L0; Sun, 20 Apr 2008 15:17:02 +0000
+From: Filippo Giunchedi <filippo@debian.org>
+To: 474399-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#474399: fixed in bluez-gnome 0.26-1
+Message-Id: <E1JnbHq-0007Nf-L0@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 15:17:02 +0000
+Content-Transfer-Encoding: quoted-printable
+
+Source: bluez-gnome
+Source-Version: 0.26-1
+
+We believe that the bug you reported is fixed in the latest version of
+bluez-gnome, which is due to be installed in the Debian FTP archive:
+
+bluez-gnome_0.26-1.diff.gz
+  to pool/main/b/bluez-gnome/bluez-gnome_0.26-1.diff.gz
+bluez-gnome_0.26-1.dsc
+  to pool/main/b/bluez-gnome/bluez-gnome_0.26-1.dsc
+bluez-gnome_0.26-1_amd64.deb
+  to pool/main/b/bluez-gnome/bluez-gnome_0.26-1_amd64.deb
+bluez-gnome_0.26.orig.tar.gz
+  to pool/main/b/bluez-gnome/bluez-gnome_0.26.orig.tar.gz
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 474399@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Filippo Giunchedi <filippo@debian.org> (supplier of updated bluez-gnome p=
+ackage)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 16:04:42 +0200
+Source: bluez-gnome
+Binary: bluez-gnome
+Architecture: source amd64
+Version: 0.26-1
+Distribution: unstable
+Urgency: low
+Maintainer: Debian Bluetooth Maintainers <pkg-bluetooth-maintainers@lists=
+.alioth.debian.org>
+Changed-By: Filippo Giunchedi <filippo@debian.org>
+Description:=20
+ bluez-gnome - Bluetooth utilities for GNOME
+Closes: 474399 475003
+Changes:=20
+ bluez-gnome (0.26-1) unstable; urgency=3Dlow
+ .
+   * New upstream release
+     + fix menu entry for bluetooth-analyzer (Closes: #474399)
+   * Add XFCE to bluetooth-applet.desktop for autostarting (Closes: #4750=
+03)
+Checksums-Sha1:=20
+ 9c451e39c63a6d0b33913367475da29244e43950 1457 bluez-gnome_0.26-1.dsc
+ 303170aa3422b46d181a0128405f893fca9ea06f 387236 bluez-gnome_0.26.orig.ta=
+r.gz
+ f70af64668ca951987da6cce0dade98505dd7649 3743 bluez-gnome_0.26-1.diff.gz
+ 3a3df30906836aea6023aec8bb88904cd0cb4659 255894 bluez-gnome_0.26-1_amd64=
+.deb
+Checksums-Sha256:=20
+ e80eeea5d599c9f2f49de9410c5db18817bda178ca7b5efc991363d599be44ea 1457 bl=
+uez-gnome_0.26-1.dsc
+ e03a131c26f1f1c51b8cadb4e68db8a3d0f64c43b4aefc706b07129336ebe5c2 387236 =
+bluez-gnome_0.26.orig.tar.gz
+ 071d3eea67df783f532fcb34e866a8ac12e5363c1ed6e3861434b6f9614136e8 3743 bl=
+uez-gnome_0.26-1.diff.gz
+ f86d8daf2979ae749078e7e04a3e9535f4efd0f1b85ceff8681fbb578477212b 255894 =
+bluez-gnome_0.26-1_amd64.deb
+Files:=20
+ d577ea57e94d687f7d2ecf440f4e023b 1457 gnome optional bluez-gnome_0.26-1.=
+dsc
+ d1e68cf63458472eaeb70ef1b3f1df5d 387236 gnome optional bluez-gnome_0.26.=
+orig.tar.gz
+ 8b8a1b519bdcf47e3df9019192826a63 3743 gnome optional bluez-gnome_0.26-1.=
+diff.gz
+ 43b4da8e180b6f581d9d157df78aa7a4 255894 gnome optional bluez-gnome_0.26-=
+1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC1omABzeamt51AERAhvlAKC075B9bzIAsARV2fCIwDVZ2jaKAwCeLIyO
+4rokdDEvEuPkjTxEz2/sXZo=3D
+=3D7NKy
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208705611-29706-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

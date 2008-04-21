@@ -1,0 +1,239 @@
+From bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org Sun Apr 20 15:50:43 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org>)
+	id 1JnasK-0007Zp-Fg
+	for ddc@ddc.chris-lamb.co.uk; Sun, 20 Apr 2008 15:50:43 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 77B6D13A5012; Sun, 20 Apr 2008 14:50:39 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 132AF13A4F17;
+	Sun, 20 Apr 2008 14:50:38 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnamy-0004xT-01; Sun, 20 Apr 2008 14:45:08 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Jan Christoph Nordholz <hesso@pool.math.tu-berlin.de>
+Subject: Bug#463014: marked as done (NAME section of rxvt-xterm.1 and 
+ rclock.1 man pages is incorrect (for the whatis index))
+Message-ID: <handler.463014.D463014.120870251313590.ackdone@bugs.debian.org>
+References: <20080420144147.GA29194@pool.math.tu-berlin.de>
+ <20080128215245.GA9552@vin.lip.ens-lyon.fr>
+X-Debian-PR-Message: closed 463014
+X-Debian-PR-Package: rxvt
+X-Debian-PR-Source: rxvt
+Content-Type: multipart/mixed; boundary="----------=_1208702707-18995-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 14:45:08 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <MvFhW-tFJQN.A.60C._g1CIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/133013
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 14:50:39 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208702707-18995-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 16:41:47 +0200
+with message-id <20080420144147.GA29194@pool.math.tu-berlin.de>
+and subject line Re: NAME section of rxvt-xterm.1 and rclock.1 man pages is=
+ incorrect
+has caused the Debian Bug report #463014,
+regarding NAME section of rxvt-xterm.1 and rclock.1 man pages is incorrect =
+(for the whatis index)
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+463014: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D463014
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208702707-18995-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 28 Jan 2008 21:52:48 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.9 required=4.0 tests=BAYES_00,FOURLA,HAS_PACKAGE 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <vincent@vinc17.org>
+Received: from vin.lip.ens-lyon.fr ([140.77.13.170])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <vincent@vinc17.org>)
+	id 1JJbuJ-00075B-SR
+	for submit@bugs.debian.org; Mon, 28 Jan 2008 21:52:48 +0000
+Received: from vlefevre by vin.lip.ens-lyon.fr with local (Exim 4.69)
+	(envelope-from <vincent@vinc17.org>)
+	id 1JJbuH-0002eR-63; Mon, 28 Jan 2008 22:52:45 +0100
+Date: Mon, 28 Jan 2008 22:52:45 +0100
+From: Vincent Lefevre <vincent@vinc17.org>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Subject: NAME section of rxvt-xterm.1 man page is incorrect (for the whatis
+	index)
+Message-ID: <20080128215245.GA9552@vin.lip.ens-lyon.fr>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+X-Reportbug-Version: 3.39
+X-Mailer-Info: http://www.vinc17.org/mutt/
+User-Agent: Mutt/1.5.17-vl-r19795 (2008-01-17)
+Delivered-To: submit@bugs.debian.org
+
+Package: rxvt
+Version: 1:2.6.4-12
+Severity: normal
+
+The NAME section of the rxvt-xterm.1 man page
+
+  rxvt (ouR XVT) \- a VT102 emulator for the X window system
+
+is incorrect. It must contain only names (without whitespace)
+separated by commas. See lexgrog(1). The consequence:
+
+vin:~> whatis rxvt-xterm
+rxvt-xterm (1)       - (unknown subject)
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (500, 'unstable'), (500, 'stable')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.23-1-686-bigmem (SMP w/2 CPU cores)
+Locale: LANG=POSIX, LC_CTYPE=en_US.ISO8859-1 (charmap=ISO-8859-1)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages rxvt depends on:
+ii  libc6                         2.7-6      GNU C Library: Shared libraries
+ii  libx11-6                      2:1.0.3-7  X11 client-side library
+ii  libxpm4                       1:3.5.7-1  X11 pixmap library
+
+rxvt recommends no packages.
+
+-- no debconf information
+
+
+
+------------=_1208702707-18995-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 463014-done) by bugs.debian.org; 20 Apr 2008 14:41:53 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.9 required=4.0 tests=BAYES_00,FOURLA,GENDER 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <hesso@pool.math.tu-berlin.de>
+Received: from s9.math.tu-berlin.de ([130.149.11.90] helo=mail-pool.math.tu-berlin.de)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <hesso@pool.math.tu-berlin.de>)
+	id 1Jnajp-0003RK-4A
+	for 463014-done@bugs.debian.org; Sun, 20 Apr 2008 14:41:53 +0000
+Received: from s4.math.tu-berlin.de ([130.149.11.40] ident=Debian-exim)
+	by mail-pool.math.tu-berlin.de with esmtps (TLS-1.0:RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <hesso@pool.math.tu-berlin.de>)
+	id 1Jnaji-0004j2-Mf
+	for 463014-done@bugs.debian.org; Sun, 20 Apr 2008 16:41:46 +0200
+Received: from hesso by s4.math.tu-berlin.de with local (Exim 4.69)
+	(envelope-from <hesso@pool.math.tu-berlin.de>)
+	id 1Jnajj-0007ic-VZ
+	for 463014-done@bugs.debian.org; Sun, 20 Apr 2008 16:41:47 +0200
+Date: Sun, 20 Apr 2008 16:41:47 +0200
+From: Jan Christoph Nordholz <hesso@pool.math.tu-berlin.de>
+To: 463014-done@bugs.debian.org
+Subject: Re: NAME section of rxvt-xterm.1 and rclock.1 man pages is
+	incorrect
+Message-ID: <20080420144147.GA29194@pool.math.tu-berlin.de>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+	protocol="application/pgp-signature"; boundary="3MwIy2ne0vdjdPXF"
+Content-Disposition: inline
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+
+
+--3MwIy2ne0vdjdPXF
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+
+Version: 1:2.6.4-13
+
+Hi Vincent,
+
+this bug is fixed in 2.6.4-13, but I had overlooked your report
+when preparing that upload. Nevertheless thanks for the hint!
+
+
+Regards,
+
+Jan
+
+--3MwIy2ne0vdjdPXF
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: Digital signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC1YrJnGRgaR03R4RAog/AJ9ofcr+qf81F/84iKq+IrVvbwDvmACg6I6J
+ibq+/JmNxFtX3vthMsg2SLQ=
+=nE8l
+-----END PGP SIGNATURE-----
+
+--3MwIy2ne0vdjdPXF--
+
+
+------------=_1208702707-18995-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

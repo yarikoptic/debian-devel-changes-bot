@@ -1,0 +1,121 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 18:32:38 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JndP1-00005x-Bv
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 18:32:38 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 4553013A50AB; Sun, 20 Apr 2008 17:32:34 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id 050B413A508B
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 17:32:34 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JndOW-000709-5r; Sun, 20 Apr 2008 17:32:04 +0000
+From: =?utf-8?q?Gon=C3=A9ri_Le_Bouder?= <goneri@rulezlan.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted boson 0.13-4 (source sparc)
+Message-Id: <E1JndOW-000709-5r@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 17:32:04 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <QIKMUqOfD_M.A.V0C.y43CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301325
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 17:32:34 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.6
+X-Spam-Report: (-2.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.0 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 02:41:24 +0200
+Source: boson
+Binary: boson
+Architecture: source sparc
+Version: 0.13-4
+Distribution: unstable
+Urgency: low
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Changed-By: Gon=C3=A9ri Le Bouder <goneri@rulezlan.org>
+Description:=20
+ boson      - core package for Boson
+Closes: 475063 476730
+Changes:=20
+ boson (0.13-4) unstable; urgency=3Dlow
+ .
+   * fix a FTBFS on hppa by adding -mlong-calls, many thanks to
+     Thibaut VARENE (Closes: #476730)
+   * pass CFLAGS to cmake correctly
+   * add fix_desktop_files.diff to make the desktop files Freedesktop
+     compliant, Thanks Stefan Ebner (Closes: #475063)
+   * remove boson-dbg, the package was big and not really useful
+   * remove a \n in 0.12dfsg1-1 entry of the changelog
+Checksums-Sha1:=20
+ 3af00cb91d4497a6c5eacbf351bef13be6902910 1459 boson_0.13-4.dsc
+ a7afc9c321516d55c07bd5b434d5d6c93fc37c1e 31899 boson_0.13-4.diff.gz
+ 3d86bc4e33cd1a24eafbbab65977af1ca146eb07 7737892 boson_0.13-4_sparc.deb
+Checksums-Sha256:=20
+ 1ee57e79064e376882db989b8a49c4cc39df9e442705b8c0b81e0d006807b1c0 1459 bo=
+son_0.13-4.dsc
+ 72c198fc7b54fd696d0dcd87b7607fec1fedff8be78ee003a9dd1af58b4fb775 31899 b=
+oson_0.13-4.diff.gz
+ 505ff8dc4f3ac270b5820017167c484f46f6588bcf446db1affd9abfabbd3d44 7737892=
+ boson_0.13-4_sparc.deb
+Files:=20
+ 6d190e52f348c981b2c63632ea2074bf 1459 games optional boson_0.13-4.dsc
+ 06fcc36adfa79f1769687479f8a990a6 31899 games optional boson_0.13-4.diff.=
+gz
+ 5f5ac60e8f5c1815812903f3b81c134b 7737892 games optional boson_0.13-4_spa=
+rc.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.5 (GNU/Linux)
+
+iD8DBQFIC3mlsKTFpDfZQSwRAlLUAJsE4xymQ84AIwEwqNBKDHoaoFkImQCgisNB
+thpgW9x6ARjvon/LUvbXILA=3D
+=3DQ7cr
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+boson_0.13-4.diff.gz
+  to pool/main/b/boson/boson_0.13-4.diff.gz
+boson_0.13-4.dsc
+  to pool/main/b/boson/boson_0.13-4.dsc
+boson_0.13-4_sparc.deb
+  to pool/main/b/boson/boson_0.13-4_sparc.deb
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

@@ -1,0 +1,148 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 16:32:26 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnbWh-0007k0-KY
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 16:32:26 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 41C7013A50AE; Sun, 20 Apr 2008 15:32:22 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id DABF013A508B
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 15:32:21 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1Jnb3N-0006QB-OO; Sun, 20 Apr 2008 15:02:05 +0000
+From: Simon Huggins <huggie@earth.li>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted xfce4-places-plugin 1.0.0r4636-1 (source amd64)
+Message-Id: <E1Jnb3N-0006QB-OO@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 15:02:05 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <D21Y9CvbVjD.A.sIE.GI2CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301315
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 15:32:22 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.5
+X-Spam-Report: (-2.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.1 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 12:17:55 +0100
+Source: xfce4-places-plugin
+Binary: xfce4-places-plugin
+Architecture: source amd64
+Version: 1.0.0r4636-1
+Distribution: unstable
+Urgency: low
+Maintainer: Debian Xfce Maintainers <pkg-xfce-devel@lists.alioth.debian.o=
+rg>
+Changed-By: Simon Huggins <huggie@earth.li>
+Description:=20
+ xfce4-places-plugin - quick access to folders, documents and removable m=
+edia
+Closes: 462134
+Changes:=20
+ xfce4-places-plugin (1.0.0r4636-1) unstable; urgency=3Dlow
+ .
+   [ Simon Huggins ]
+   * Add Vcs-* headers to debian/control
+   * Update to SVN version
+    - more sane positioning after clearing the recent documents menu
+    - no longer displays Remove in the recent documents menu when empty
+                                                                  closes:=
+ 462134
+   * wrap long lines at 80 characters.
+   * Add libxml-parser-perl as a build-dep for intltool
+   * If you're not an Uploader you can't be in the changelog trailer...
+ .
+   [ David Paleino ]
+   * debian/control:
+     - removed old XS-Vcs-* fields
+     - wrapped long lines
+     - Standards-Version is now 3.7.3
+     - removed myself from Uploaders
+Checksums-Sha1:=20
+ 25fa2bf30d7b4d2d2f57cda6bc250f56b1a7f51c 1741 xfce4-places-plugin_1.0.0r=
+4636-1.dsc
+ 94f6afd0f4c4e712ffb0977a0702ee8c6a2ec76b 422795 xfce4-places-plugin_1.0.=
+0r4636.orig.tar.gz
+ b41fd08357b806769655abd9dd043cf444663b57 2544 xfce4-places-plugin_1.0.0r=
+4636-1.diff.gz
+ cacf79f046186c32125b5e527296699b14a692a2 42278 xfce4-places-plugin_1.0.0=
+r4636-1_amd64.deb
+Checksums-Sha256:=20
+ 92129b5645ad0c7ef511bce87fbf5e5f977f911663e705c366d89b14cf37ffce 1741 xf=
+ce4-places-plugin_1.0.0r4636-1.dsc
+ d60c920bf7153551fd0a21cbb770bbeb6eea348e40190fa36dae42015c02c555 422795 =
+xfce4-places-plugin_1.0.0r4636.orig.tar.gz
+ 7e68655afc0164b13660934377e8e048a16229e4cb0dfe3d510e677d76da46c1 2544 xf=
+ce4-places-plugin_1.0.0r4636-1.diff.gz
+ 395da76e5ba13544224a0412e47448006e18c82216e65f54b763e8cc03d09d15 42278 x=
+fce4-places-plugin_1.0.0r4636-1_amd64.deb
+Files:=20
+ 0413bb8752d49198d7c3e9a8adc9b1b7 1741 utils optional xfce4-places-plugin=
+_1.0.0r4636-1.dsc
+ cb4edeadac1f5eff40a0175ded25dc5a 422795 utils optional xfce4-places-plug=
+in_1.0.0r4636.orig.tar.gz
+ 163da7863dd0edc01a32f4c20e76ec90 2544 utils optional xfce4-places-plugin=
+_1.0.0r4636-1.diff.gz
+ 3169b0122b4a3bd347595ecda18581a1 42278 utils optional xfce4-places-plugi=
+n_1.0.0r4636-1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC1jRMQdl+99c4rQRAmgXAJ9cVxo6YG2CCUAq2MYU0QzTyCgAhQCeLX8F
+7xywAlwpbK6dM32UtaHEkCo=3D
+=3DKP9z
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+xfce4-places-plugin_1.0.0r4636-1.diff.gz
+  to pool/main/x/xfce4-places-plugin/xfce4-places-plugin_1.0.0r4636-1.dif=
+f.gz
+xfce4-places-plugin_1.0.0r4636-1.dsc
+  to pool/main/x/xfce4-places-plugin/xfce4-places-plugin_1.0.0r4636-1.dsc
+xfce4-places-plugin_1.0.0r4636-1_amd64.deb
+  to pool/main/x/xfce4-places-plugin/xfce4-places-plugin_1.0.0r4636-1_amd=
+64.deb
+xfce4-places-plugin_1.0.0r4636.orig.tar.gz
+  to pool/main/x/xfce4-places-plugin/xfce4-places-plugin_1.0.0r4636.orig.=
+tar.gz
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

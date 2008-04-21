@@ -1,0 +1,116 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 12:11:43 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnXSN-0006c9-11
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 12:11:43 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 9EA5713A4B5E; Sun, 20 Apr 2008 11:11:37 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 93E0113A4EAF;
+	Sun, 20 Apr 2008 11:11:25 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnXPw-0000Oe-TC; Sun, 20 Apr 2008 11:09:08 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#475754: fixed
+Reply-To: Julien Cristau <jcristau@debian.org>, 475754@bugs.debian.org
+Resent-From: Julien Cristau <jcristau@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: James Troup and others <ftpmaster@ftp-master.debian.org>
+Resent-Date: Sun, 20 Apr 2008 11:09:07 +0000
+Resent-Message-ID: <handler.475754.B475754.120868961125371@bugs.debian.org>
+X-Debian-PR-Message: report 475754
+X-Debian-PR-Package: ftp.debian.org
+X-Debian-PR-Keywords: 
+Received: via spool by 475754-submit@bugs.debian.org id=B475754.120868961125371
+          (code B ref 475754); Sun, 20 Apr 2008 11:09:07 +0000
+Received: (at 475754) by bugs.debian.org; 20 Apr 2008 11:06:51 +0000
+X-Amavis-Spam-Status: No, score=-8.9 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FROMDEVELOPER,HAS_BUG_NUMBER autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from coloquinte.cristau.org ([91.121.16.100])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <julien@cristau.org>)
+	id 1JnXNj-0006Yg-E7
+	for 475754@bugs.debian.org; Sun, 20 Apr 2008 11:06:51 +0000
+Received: from patate.is-a-geek.org (did75-19-88-173-251-109.fbx.proxad.net [88.173.251.109])
+	(using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+	(Client did not present a certificate)
+	by coloquinte.cristau.org (Postfix) with ESMTP id DF974B98C;
+	Sun, 20 Apr 2008 13:06:49 +0200 (CEST)
+Received: by patate.is-a-geek.org (Postfix, from userid 1000)
+	id A04CD7EF5; Sun, 20 Apr 2008 13:06:49 +0200 (CEST)
+Date: Sun, 20 Apr 2008 13:06:49 +0200
+From: Julien Cristau <jcristau@debian.org>
+To: Debian Archive Maintenance <ftpmaster@ftp-master.debian.org>
+Cc: 475754@bugs.debian.org
+Message-ID: <20080420110649.GB7407@patate.is-a-geek.org>
+References: <E1JmszN-0002wk-Ir@ries.debian.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <E1JmszN-0002wk-Ir@ries.debian.org>
+X-Operating-System: Linux 2.6.24-1-686 i686
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Resent-Date: Sun, 20 Apr 2008 11:09:08 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343440
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -50.3
+X-Spam-Report: (-50.3 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	2.2 AWL                    AWL: From: address is in the auto white-list
+
+On Fri, Apr 18, 2008 at 15:59:01 +0000, Debian Archive Maintenance wrote:
+
+> We believe that the bug you reported is now fixed; the following
+> package(s) have been removed from unstable:
+> 
+> xserver-xorg-video-intel | 2:2.2.0.90-3 | hppa, m68k, mips, mipsel, powerpc
+> xserver-xorg-video-intel |  2:2.2.1-1 | alpha, arm, armel, ia64
+> xserver-xorg-video-intel-dbg | 2:2.2.0.90-3 | hppa, m68k, mips, mipsel, powerpc
+> xserver-xorg-video-intel-dbg |  2:2.2.1-1 | alpha, arm, armel, ia64
+> 
+Looks like I forgot sparc:
+xserver-xorg-video-intel-dbg |  2:2.1.1-4 |      unstable | sparc
+(no idea why the -dbg package is there but the other one isn't)
+
+Can you remove that too?
+
+Thanks,
+Julien
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

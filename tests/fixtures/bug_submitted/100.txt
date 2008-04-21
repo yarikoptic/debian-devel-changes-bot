@@ -1,0 +1,133 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 03:14:53 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnP4q-000574-7i
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 03:14:53 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 43D9513A4E70; Sun, 20 Apr 2008 02:14:47 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-5.8 required=4.0 tests=BAYES_00,IMPRONONCABLE_1,
+	IMPRONONCABLE_2,LDO_WHITELIST,MURPHY_DRUGS_REL8,MURPHY_WRONG_WORD2,
+	RCVD_IN_DNSWL_LOW autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 8285313A4E67;
+	Sun, 20 Apr 2008 02:14:33 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnP2D-0006Nv-0t; Sun, 20 Apr 2008 02:12:05 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476896: kdelibs4c2a: Crash when rendering some pages (including debianhelp.org)
+Reply-To: Ted Percival <ted@midg3t.net>, 476896@bugs.debian.org
+Resent-From: Ted Percival <ted@midg3t.net>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Resent-Date: Sun, 20 Apr 2008 02:12:02 +0000
+Resent-Message-ID: <handler.476896.B.120865738321543@bugs.debian.org>
+X-Debian-PR-Message: report 476896
+X-Debian-PR-Package: kdelibs4c2a
+X-Debian-PR-Keywords: fixed-upstream patch upstream
+X-Debian-PR-Source: kdelibs
+Received: via spool by submit@bugs.debian.org id=B.120865738321543
+          (code B ref -1); Sun, 20 Apr 2008 02:12:02 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 02:09:43 +0000
+X-Amavis-Spam-Status: No, score=-7.6 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	HAS_PACKAGE,IMPRONONCABLE_1,IMPRONONCABLE_2,MURPHY_DRUGS_REL8,
+	MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from nskntmtas01p.mx.bigpond.com ([61.9.168.137])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <ted@midg3t.net>)
+	id 1JnOzv-0005Zj-Az
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 02:09:43 +0000
+Received: from nskntotgx02p.mx.bigpond.com ([121.210.210.178])
+          by nskntmtas01p.mx.bigpond.com with ESMTP
+          id <20080420020935.WCVT5404.nskntmtas01p.mx.bigpond.com@nskntotgx02p.mx.bigpond.com>
+          for <submit@bugs.debian.org>; Sun, 20 Apr 2008 02:09:35 +0000
+Received: from erwin.midg3t.net ([121.210.210.178])
+          by nskntotgx02p.mx.bigpond.com with ESMTP
+          id <20080420020935.NJOR1995.nskntotgx02p.mx.bigpond.com@erwin.midg3t.net>
+          for <submit@bugs.debian.org>; Sun, 20 Apr 2008 02:09:35 +0000
+Received: from murky.network.midg3t.net ([10.0.0.15])
+	by erwin.midg3t.net with esmtps (TLS-1.0:RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.69)
+	(envelope-from <ted@midg3t.net>)
+	id 1JnOzl-0007Cf-Lh; Sun, 20 Apr 2008 12:09:33 +1000
+Received: from ted by murky.network.midg3t.net with local (Exim 4.69)
+	(envelope-from <ted@midg3t.net>)
+	id 1JnOzh-0007Qq-NU; Sun, 20 Apr 2008 12:09:29 +1000
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Ted Percival <ted@midg3t.net>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Message-ID: <20080420020929.28005.63693.reportbug@murky.network.midg3t.net>
+X-Mailer: reportbug 3.39
+Date: Sun, 20 Apr 2008 12:09:29 +1000
+X-SA-Exim-Connect-IP: 10.0.0.15
+X-SA-Exim-Mail-From: ted@midg3t.net
+X-SA-Exim-Scanned: No (on erwin.midg3t.net); SAEximRunCond expanded to false
+X-RPD-ScanID: Class unknown; VirusThreatLevel unknown, RefID str=0001.0A150202.480AA5DF.005F,ss=1,fgs=0
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 02:12:05 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343318
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -26.8
+X-Spam-Report: Spam detection software, running on the system "chris-lamb.co.uk", has
+	identified this incoming email as possible spam.  The original message
+	has been attached to this so you can view it (if it isn't spam) or label
+	similar future email.  If you have any questions, see
+	the administrator of that system for details.
+	Content preview:  Package: kdelibs4c2a Version: 4:3.5.9.dfsg.1-2+b1
+	Severity: important Tags: patch, upstream, fixed-upstream libkhtml
+	crashes in khtml::RenderBlock::addChildToFlow when rendering some pages.
+	There are 12 duplicates upstream, so I guess it's popular. [...] 
+	Content analysis details:   (-26.8 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	26 AWL                    AWL: From: address is in the auto white-list
+
+Package: kdelibs4c2a
+Version: 4:3.5.9.dfsg.1-2+b1
+Severity: important
+Tags: patch, upstream, fixed-upstream
+
+libkhtml crashes in khtml::RenderBlock::addChildToFlow when rendering
+some pages. There are 12 duplicates upstream, so I guess it's popular.
+
+You can trigger it by loading a forum page from
+debianhelp.org such as http://www.debianhelp.org/node/13217
+It is fixed by the patch attached to the bug report, which has been
+committed upstream:
+https://bugs.kde.org/attachment.cgi?id=23875&action=view
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

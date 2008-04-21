@@ -1,0 +1,135 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 20:06:55 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnesF-0000bp-0h
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 20:06:54 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id D68AD13A51E4; Sun, 20 Apr 2008 19:06:48 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-3.0 required=4.0 tests=BAYES_00,RCVD_IN_DNSWL_LOW
+	autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 40ADF13A51EE;
+	Sun, 20 Apr 2008 19:06:25 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jneoc-0008Q1-Ho; Sun, 20 Apr 2008 19:03:06 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#475783: busybox: mounting loopback device fails in initrd (using live-initramfs)
+Reply-To: Michael Prokop <mika@grml.org>, 475783@bugs.debian.org
+Resent-From: Michael Prokop <mika@grml.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian Install System Team <debian-boot@lists.debian.org>
+Resent-Date: Sun, 20 Apr 2008 19:03:05 +0000
+Resent-Message-ID: <handler.475783.B475783.120871801120691@bugs.debian.org>
+X-Debian-PR-Message: report 475783
+X-Debian-PR-Package: busybox
+X-Debian-PR-Keywords: moreinfo
+X-Debian-PR-Source: busybox
+Received: via spool by 475783-submit@bugs.debian.org id=B475783.120871801120691
+          (code B ref 475783); Sun, 20 Apr 2008 19:03:05 +0000
+Received: (at 475783) by bugs.debian.org; 20 Apr 2008 19:00:11 +0000
+X-Amavis-Spam-Status: No, score=-7.0 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from mail.michael-prokop.at ([88.198.6.110])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <msmtp@michael-prokop.at>)
+	id 1Jneln-0005Mj-94
+	for 475783@bugs.debian.org; Sun, 20 Apr 2008 19:00:11 +0000
+Received: from mail.michael-prokop.at (grmlvrs [127.0.0.1])
+	by mail.michael-prokop.at (Postfix) with ESMTP id 9DBC55F4036
+	for <475783@bugs.debian.org>; Sun, 20 Apr 2008 21:00:06 +0200 (CEST)
+Received: by mail.michael-prokop.at (Postfix, from userid 5001)
+	id 892185F4035; Sun, 20 Apr 2008 21:00:06 +0200 (CEST)
+Received: from localhost (grmlvrs [127.0.0.1])
+	by mail.michael-prokop.at (Postfix) with ESMTP id 5FBD65F4021
+	for <475783@bugs.debian.org>; Sun, 20 Apr 2008 20:59:59 +0200 (CEST)
+Date: Sun, 20 Apr 2008 20:59:59 +0200
+From: Michael Prokop <mika@grml.org>
+To: 475783@bugs.debian.org
+Message-ID: <2008-04-20T20-52-58@devnull.michael-prokop.at>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+	protocol="application/pgp-signature"; boundary="JlJsEFsx9RQyiX4C"
+Content-Disposition: inline
+X-URL: http://michael-prokop.at/
+X-GPG-Key-ID: 0x37E272E8
+X-GPG-Key: http://www.michael-prokop.at/gpg
+X-GPG-Fingerprint: 04AE E62C 9502 CD34 A7DA 857B D8DF 53FB 37E2 72E8
+User-Agent: Mutt/1.5.13 (2006-08-11)
+X-Virus-Scanned: ClamAV using ClamSMTP
+Resent-Date: Sun, 20 Apr 2008 19:03:06 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343736
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -37.6
+X-Spam-Report: (-37.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	15 AWL                    AWL: From: address is in the auto white-list
+
+
+--JlJsEFsx9RQyiX4C
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+
+Why should this be a bug in my setup? It used to work just fine. I
+never said that this is a bug in klibc-utils or in busybox, but
+anyway it's a bug in one of all the involved packages. So why are
+you closing my bugreport?
+
+When I use:
+
+  mount -t squashfs /dev/loop0 /mnt
+
+mounting the squashfs file works, though I get return code 255 with:
+
+  mount: Permission denied
+
+regards,
+-mika-
+
+--JlJsEFsx9RQyiX4C
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: Digital signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD4DBQFIC5Kv2N9T+zficugRAvirAJ9z2FPCulXTAhs/n/X6dWUMUFZOcQCY895t
+QQyJLC1RkBk7aq5XRWYMTA==
+=u6vU
+-----END PGP SIGNATURE-----
+
+--JlJsEFsx9RQyiX4C--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,151 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 12:55:41 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnY8u-0006oO-7K
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 12:55:41 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 23E7C13A4F51; Sun, 20 Apr 2008 11:55:35 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 4B39D13A4D7A;
+	Sun, 20 Apr 2008 11:55:25 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnY7P-0002sh-14; Sun, 20 Apr 2008 11:54:03 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476954: texlive-extra-utils: epstopdf is missing gs
+Reply-To: Frank =?UTF-8?Q?K=C3=BCster?= <frank@debian.org>, 476954@bugs.debian.org
+Resent-From: Frank =?UTF-8?Q?K=C3=BCster?= <frank@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian TeX Maintainers <debian-tex-maint@lists.debian.org>
+Resent-Date: Sun, 20 Apr 2008 11:54:02 +0000
+Resent-Message-ID: <handler.476954.B.120869225115911@bugs.debian.org>
+X-Debian-PR-Message: report 476954
+X-Debian-PR-Package: texlive-extra-utils
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: texlive-bin
+Received: via spool by submit@bugs.debian.org id=B.120869225115911
+          (code B ref -1); Sun, 20 Apr 2008 11:54:02 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 11:50:51 +0000
+X-Amavis-Spam-Status: No, score=-9.0 required=4.0 tests=BAYES_00,FROMDEVELOPER,
+	HAS_BUG_NUMBER autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from moutng.kundenserver.de ([212.227.126.186])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <frank@kuesterei.ch>)
+	id 1JnY4I-0003yE-QY; Sun, 20 Apr 2008 11:50:51 +0000
+Received: from riesling (p5B0AF3DD.dip.t-dialin.net [91.10.243.221])
+	by mrelayeu.kundenserver.de (node=mrelayeu0) with ESMTP (Nemesis)
+	id 0MKwh2-1JnY4B25SH-0007bi; Sun, 20 Apr 2008 13:50:43 +0200
+Received: from localhost ([127.0.0.1] helo=riesling.zuerich.kuesterei.ch)
+	by riesling with esmtp (Exim 4.63)
+	(envelope-from <frank@kuesterei.ch>)
+	id 1JnY9X-0003ja-Rn; Sun, 20 Apr 2008 13:56:15 +0200
+To: Roland Stigge <stigge@antcom.de>
+Cc: 476954@bugs.debian.org,
+	  Debian Bug Tracking System <submit@bugs.debian.org>
+X-Attribution: fant
+X-Ehrenamt: http://www.langau.de
+In-Reply-To: <20080420110639.26259.39714.reportbug@dent.philosys.de> (Roland Stigge's message of "Sun\, 20 Apr 2008 13\:06\:39 +0200")
+User-Agent: Gnus/5.11 (Gnus v5.11) Emacs/22.1 (gnu/linux)
+References: <20080420110639.26259.39714.reportbug@dent.philosys.de>
+From: Frank =?UTF-8?Q?K=C3=BCster?= <frank@debian.org>
+Date: Sun, 20 Apr 2008 13:56:15 +0200
+Message-ID: <8763uc210g.fsf@riesling.zuerich.kuesterei.ch>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: quoted-printable
+X-Provags-ID: V01U2FsdGVkX19nUM/MqAMiTVB6wuxf8M77ieZeR3PcScnVztX
+ hGTAPacNjMa6wF2GCSqdtc0dadYvzBWcvjS5dGEPoNN156lGDv
+ a7gfpDYdU/4QtneslMbcOAr2uif+Xlu
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 11:54:03 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343455
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -35.2
+X-Spam-Report: (-35.2 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	17 AWL                    AWL: From: address is in the auto white-list
+
+Roland Stigge <stigge@antcom.de> wrote:
+
+> Package: texlive-extra-utils
+> Version: 2007.dfsg.1-2
+> Severity: normal
+>
+> Hi,
+>
+> epstopdf (included in texlive-extra-utils) is missing gs:
+>
+> # epstopdf bassclef.eps=20
+> sh: gs: command not found
+> #
+>
+> installing the additional package ghostscript fixes the problem.
+
+The package currently Suggests: gs-gpl | gs-esp | gs-afpl, which, on a
+first glance, looks correct[1]: epstopdf is one of 30 executables in the
+package, and probably the only one needing ghostscript.=20
+
+On the other hand, I must admit that I have never used myself, and
+rarely heard anyone using any of these programs except:
+
+bibtex8  [2]
+patgen   (very rarely)
+epstopdf
+pdfcrop
+pdfclose (rarely on Linux)
+pdfopen  (rarely on Linux)
+
+(tangle and weave are also included and used on my system when I build
+texlive-bin, but I guess that doesn't use the installed version).
+
+So, seeing that epstopdf is probably one of the two or three most used
+programs in texlive-extra-utils, and in many cases the reason why people
+install that package, I think gs should be present in "all but unusual
+installations", and thus it should be changed:
+
+trunk/all/debian/tpm2deb.cfg
+-suggests;texlive-extra-utils;ghostscript
++recommends;texlive-extra-utils;ghostscript
+
+Regards, Frank
+
+
+
+[1] except for the obsolete package names, of course, but that's already
+    fixed in our repository
+[2] wasn't there an attempt to replace bibtex by bibtex8 generally, as
+    MikTeX has done it AFAIK?
+
+--=20
+Frank K=FCster
+Debian Developer (teTeX/TeXLive)
+
+
+

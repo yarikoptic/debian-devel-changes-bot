@@ -1,0 +1,151 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 18:55:50 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JndlO-0000E6-5D
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 18:55:50 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 12CED13A4941; Sun, 20 Apr 2008 17:55:41 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.8 required=4.0 tests=BAYES_00,IMPRONONCABLE_1,
+	MURPHY_WRONG_WORD2,RCVD_IN_DNSWL_LOW autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id CFE0F13A5048;
+	Sun, 20 Apr 2008 17:55:11 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JndhJ-0005Nj-HL; Sun, 20 Apr 2008 17:51:29 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476987: exim4-daemon-light: fails to install: incompatible command-line options or arguments
+Reply-To: Marc Haber <mh+debian-packages@zugschlus.de>, 476987@bugs.debian.org
+Resent-From: Marc Haber <mh+debian-packages@zugschlus.de>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Exim4 Maintainers <pkg-exim4-maintainers@lists.alioth.debian.org>
+Resent-Date: Sun, 20 Apr 2008 17:51:28 +0000
+Resent-Message-ID: <handler.476987.B476987.120871384619973@bugs.debian.org>
+X-Debian-PR-Message: report 476987
+X-Debian-PR-Package: exim4-daemon-light
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: exim4
+Received: via spool by 476987-submit@bugs.debian.org id=B476987.120871384619973
+          (code B ref 476987); Sun, 20 Apr 2008 17:51:28 +0000
+Received: (at 476987) by bugs.debian.org; 20 Apr 2008 17:50:46 +0000
+X-Amavis-Spam-Status: No, score=-0.8 required=4.0 tests=BAYES_50,HAS_BUG_NUMBER,
+	IMPRONONCABLE_1,MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from torres.zugschlus.de ([85.214.68.41])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <mh+debian-packages@zugschlus.de>)
+	id 1Jndgb-0005Bd-Vv
+	for 476987@bugs.debian.org; Sun, 20 Apr 2008 17:50:46 +0000
+Received: from mh by torres.zugschlus.de with local (Exim 4.69)
+	(envelope-from <mh+debian-packages@zugschlus.de>)
+	id 1Jndga-0008Pv-KX; Sun, 20 Apr 2008 19:50:44 +0200
+Date: Sun, 20 Apr 2008 19:50:44 +0200
+From: Marc Haber <mh+debian-packages@zugschlus.de>
+To: Laurent Fousse <laurent@komite.net>, 476987@bugs.debian.org
+Cc: Andreas Metzler <ametzler@downhill.at.eu.org>
+Message-ID: <20080420175044.GC28704@torres.zugschlus.de>
+References: <20080420151201.GA19758@bourrasque.imag.fr> <20080420153248.GC3135@downhill.g.la> <20080420165259.GT16783@liche.lateralis.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Disposition: inline
+In-Reply-To: <20080420165259.GT16783@liche.lateralis.org>
+User-Agent: Mutt/1.5.13 (2006-08-11)
+Resent-Date: Sun, 20 Apr 2008 17:51:29 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343694
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -34.3
+X-Spam-Report: (-34.3 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	18 AWL                    AWL: From: address is in the auto white-list
+
+On Sun, Apr 20, 2008 at 06:52:59PM +0200, Laurent Fousse wrote:
+> + /sbin/start-stop-daemon --start --nicelevel 0 --quiet --exec /usr/sbi=
+n/exim4 --oknodo --pidfile /var/run/exim4/exim.pid -- -bd -q30m '' '' ''
+> exim: incompatible command-line options or arguments
+
+This seems to have been introduced by lsb-base 3.2-9, as _my_ debug
+output (with lsb-base 3.2-8) goes:
+
++ exec=3D/usr/sbin/exim4
++ shift
++ '[' 0 =3D 1 ']'
++ '[' /var/run/exim4/exim.pid ']'
++ eval /sbin/start-stop-daemon --start --nicelevel 0 --quiet --exec /usr/=
+sbin/exim4 --oknodo --pidfile /var/run/exim4/exim.pid -- -bd -q30m '' '' =
+''
+++ /sbin/start-stop-daemon --start --nicelevel 0 --quiet --exec /usr/sbin=
+/exim4 --oknodo --pidfile /var/run/exim4/exim.pid -- -bd -q30m
+
+This is now #477055, but I'll try to find a workaround.
+
+Quick fix is a downgrade to lsb-base 3.2-8.
+
+Greetings
+Marc
+
+--=20
+-------------------------------------------------------------------------=
+----
+Marc Haber         | "I don't trust Computers. They | Mailadresse im Head=
+er
+Mannheim, Germany  |  lose things."    Winona Ryder | Fon: *49 621 727398=
+34
+Nordisch by Nature |  How to make an American Quilt | Fax: *49 3221 23231=
+90
+
+Bitte beachten Sie, da=C3=9F dem [m.E. grundgesetzwidrigen] Gesetz zur
+Vorratsdatenspeicherung zufolge, seit dem 1. Januar 2008 jeglicher
+elektronische Kontakt (E-Mail, Telefongespr=C3=A4che, SMS, Internet-
+Telefonie, Mobilfunk, Fax) mit mir oder anderen Nutzern verdachts-
+unabh=C3=A4ngig f=C3=BCr den automatisierten geheimen Zugriff durch Straf=
+ver-
+folgungs- u. Polizeivollzugsbeh=C3=B6rden, die Bundesanstalt f=C3=BCr Fin=
+anz-
+dienstleistungsaufsicht, Zollkriminal- und Zollfahndungs=C3=A4mter,die
+Zollverwaltung zur Schwarzarbeitsbek=C3=A4mpfung, Notrufabfragestellen,
+Verfassungsschutzbeh=C3=B6rden, den Milit=C3=A4rischen Abschirmdienst, Bu=
+ndes-
+nachrichtendienst sowie 52 Staaten wie beispielsweise Aserbeidschan
+oder die USA sechs Monate lang gespeichert wird, einschlie=C3=9Flich der
+Kommunikation mit Berufsgeheimnistr=C3=A4gern wie =C3=84rzten, Journalist=
+en und
+Anw=C3=A4lten. Mehr Infos zur totalen Protokollierung Ihrer Kommunikation=
+s-
+daten auf www.vorratsdatenspeicherung.de. (leicht ver=C3=A4ndert =C3=BCbe=
+rnommen
+kopiert von www.lawblog.de)
+
+
+
+--=20
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

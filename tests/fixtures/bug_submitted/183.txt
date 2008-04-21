@@ -1,0 +1,141 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 14:40:04 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnZlv-0007Dz-CR
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 14:40:04 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 6591413A5020; Sun, 20 Apr 2008 13:39:58 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.9 required=4.0 tests=BAYES_00,FOURLA,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 037B213A4F0E;
+	Sun, 20 Apr 2008 13:39:47 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnZl1-0008An-Q0; Sun, 20 Apr 2008 13:39:03 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476973: dpkg-divert: Can't divert files in not (yet) existing directories
+Reply-To: Roland Stigge <stigge@antcom.de>, 476973@bugs.debian.org
+Resent-From: Roland Stigge <stigge@antcom.de>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Dpkg Developers <debian-dpkg@lists.debian.org>
+Resent-Date: Sun, 20 Apr 2008 13:39:01 +0000
+Resent-Message-ID: <handler.476973.B.120869863426751@bugs.debian.org>
+X-Debian-PR-Message: report 476973
+X-Debian-PR-Package: dpkg
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: dpkg
+Received: via spool by submit@bugs.debian.org id=B.120869863426751
+          (code B ref -1); Sun, 20 Apr 2008 13:39:01 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 13:37:14 +0000
+X-Amavis-Spam-Status: No, score=-9.9 required=4.0 tests=BAYES_00,FOURLA,HAS_PACKAGE 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from shadow.prohost.de ([216.71.84.228])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <stigge@antcom.de>)
+	id 1JnZjG-0006wt-Hi
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 13:37:14 +0000
+Received: from dent (localhost [127.0.0.1])
+	(authenticated bits=0)
+	by shadow.prohost.de (8.13.8/8.13.8) with ESMTP id m3KDbBYt011617;
+	Sun, 20 Apr 2008 15:37:12 +0200
+Received: by dent (Postfix, from userid 1000)
+	id DCAFA17C008; Sun, 20 Apr 2008 15:37:07 +0200 (CEST)
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Roland Stigge <stigge@antcom.de>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Message-ID: <20080420133707.11933.45744.reportbug@dent.philosys.de>
+X-Mailer: reportbug 3.39-0.1
+Date: Sun, 20 Apr 2008 15:37:07 +0200
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 13:39:03 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343498
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -49.6
+X-Spam-Report: (-49.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	3.0 AWL                    AWL: From: address is in the auto white-list
+
+Package: dpkg
+Version: 1.14.18
+Severity: normal
+
+Hi,
+
+dpkg-divert can't divert files in (currently) non-existing directories:
+
+======================================================================
+# dpkg-divert --rename --add /boot/a/a.txt
+Adding `local diversion of /boot/a/a.txt to /boot/a/a.txt.distrib'
+dpkg-divert: error checking `/boot/a/a.txt.distrib': No such file or
+directory
+# dpkg-divert --rename --add /boot/a.txt
+Adding `local diversion of /boot/a.txt to /boot/a.txt.distrib'
+======================================================================
+
+Scenario:
+
+A package contains a file to be diverted. It is located in a
+subdirectory which is also contained in another package. Unfortunately,
+the other package isn't installed when the first package is installed
+and running "dpkg-divert --add" in its preinst script. At this point,
+the described directory (with the file to be diverted) doesn't exist at
+all, yet, leading to the above error.
+
+Thanks for considering.
+
+bye,
+  Roland
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (500, 'unstable')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.24-rt1 (SMP w/1 CPU core; PREEMPT)
+Locale: LANG=en_GB.UTF-8, LC_CTYPE=en_GB.UTF-8 (charmap=UTF-8) (ignored: LC_ALL set to en_GB.UTF-8)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages dpkg depends on:
+ii  coreutils                     6.10-6     The GNU core utilities
+ii  libc6                         2.7-10     GNU C Library: Shared libraries
+
+dpkg recommends no packages.
+
+-- debconf-show failed
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

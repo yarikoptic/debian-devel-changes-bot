@@ -1,0 +1,155 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 07:10:04 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnSkP-0005Xe-Oa
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 07:10:04 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id D451813A4DC8; Sun, 20 Apr 2008 06:09:56 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.0 required=4.0 tests=BAYES_00,GMAIL,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 3F76013A4DA7;
+	Sun, 20 Apr 2008 06:09:42 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnSgf-00014I-TH; Sun, 20 Apr 2008 06:06:05 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#474663: iceweasel: rendering garbled for long pages
+Reply-To: Eric Dorland <eric@debian.org>, 474663@bugs.debian.org
+Resent-From: Eric Dorland <eric@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 06:06:05 +0000
+Resent-Message-ID: <handler.474663.B474663.120867144119430@bugs.debian.org>
+X-Debian-PR-Message: report 474663
+X-Debian-PR-Package: iceweasel
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: iceweasel
+Received: via spool by 474663-submit@bugs.debian.org id=B474663.120867144119430
+          (code B ref 474663); Sun, 20 Apr 2008 06:06:05 +0000
+Received: (at 474663) by bugs.debian.org; 20 Apr 2008 06:04:01 +0000
+X-Amavis-Spam-Status: No, score=-7.9 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FROMDEVELOPER,GMAIL,HAS_BUG_NUMBER autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from havok.kuroneko.ca ([67.207.128.61])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <eric@gambit.kuroneko.ca>)
+	id 1JnSef-00051F-0J
+	for 474663@bugs.debian.org; Sun, 20 Apr 2008 06:04:01 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by havok.kuroneko.ca (Postfix) with ESMTP id 284437E9FE;
+	Sun, 20 Apr 2008 02:04:00 -0400 (EDT)
+X-Virus-Scanned: Debian amavisd-new at kuroneko.ca
+Received: from havok.kuroneko.ca ([127.0.0.1])
+	by localhost (havok.kuroneko.ca [127.0.0.1]) (amavisd-new, port 10024)
+	with LMTP id iNAyGpyHCfQv; Sun, 20 Apr 2008 02:03:51 -0400 (EDT)
+Received: from gambit.kuroneko.ca (cpe-24-90-130-208.nyc.res.rr.com [24.90.130.208])
+	by havok.kuroneko.ca (Postfix) with ESMTP id AEE447E96D;
+	Sun, 20 Apr 2008 02:03:51 -0400 (EDT)
+Received: by gambit.kuroneko.ca (Postfix, from userid 1000)
+	id D668F52004C; Sun, 20 Apr 2008 02:04:14 -0400 (EDT)
+Date: Sun, 20 Apr 2008 02:04:14 -0400
+From: Eric Dorland <eric@debian.org>
+To: Kevin Mitchell <kevmitch@gmail.com>, 474663@bugs.debian.org
+Message-ID: <20080420060414.GV18466@gambit>
+References: <20080407020304.11647.96520.reportbug@homunculus.physics.ubc.ca>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+	protocol="application/pgp-signature"; boundary="mjrw6G9AoRBv8oQK"
+Content-Disposition: inline
+In-Reply-To: <20080407020304.11647.96520.reportbug@homunculus.physics.ubc.ca>
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Resent-Date: Sun, 20 Apr 2008 06:06:05 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343335
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -41.2
+X-Spam-Report: (-41.2 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	11 AWL                    AWL: From: address is in the auto white-list
+
+
+--mjrw6G9AoRBv8oQK
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+* Kevin Mitchell (kevmitch@gmail.com) wrote:
+> Package: iceweasel
+> Version: 3.0~b5-1
+> Severity: normal
+>=20
+>=20
+> OK, I know this package is experimental, but part of the reason why I'm
+> trying it out is to improve the firefox 3 codebase by submitting bugs like
+> this. I have not submitted an upstream bug as I cannot reproduce this
+> bug on upstream. Everything seems to work fine (at least in regards to
+> this problem) with the latest nightly build.
+>=20
+> To reproduce run:
+>=20
+> 1. MOZ_DISABLE_PANGO=3D1 firefox -safe-mode http://www.littletechshoppe.c=
+om/ns1625/winchest.html
+> 2. select "continue in safe mode".
+> 3. scroll down
+> 4. observe ugly diagonal lines streaking across the page that remain ther=
+e after you stop scrolling.
+>=20
+> I have observered this occuring on a few pages, but this is the only one
+> I can remember off hand at the moment. It seems to happen more
+> frequently on long pages.
+
+Can you install libcairo2 1.6.4 and restart iceweasel and see if that
+solves the problem?
+
+--=20
+Eric Dorland <eric@kuroneko.ca>
+ICQ: #61138586, Jabber: hooty@jabber.com
+
+
+--mjrw6G9AoRBv8oQK
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: Digital signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICtzeYemOzxbZcMYRAo7CAJoDa2ps716voCiSFJHDk1ofD7iZsACgsfZN
+0wx5q8GLQijh9FFaS9r6blQ=
+=YwIn
+-----END PGP SIGNATURE-----
+
+--mjrw6G9AoRBv8oQK--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

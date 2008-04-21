@@ -1,0 +1,136 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 20:32:45 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnfHE-0000jM-7F
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 20:32:44 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id C2B8713A5200; Sun, 20 Apr 2008 19:31:57 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id 4CF9B13A517E
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 19:31:57 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1Jnena-0003lN-KT; Sun, 20 Apr 2008 19:02:02 +0000
+From: Bart Samwel <bart@samwel.tk>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted laptop-mode-tools 1.40-1 (source all)
+Message-Id: <E1Jnena-0003lN-KT@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 19:02:02 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <Vevx1LleiFN.A.-sE.to5CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301344
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 19:31:57 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.6
+X-Spam-Report: (-2.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Tue, 15 Apr 2008 18:35:00 +0200
+Source: laptop-mode-tools
+Binary: laptop-mode-tools
+Architecture: source all
+Version: 1.40-1
+Distribution: unstable
+Urgency: high
+Maintainer: Bart Samwel <bart@samwel.tk>
+Changed-By: Bart Samwel <bart@samwel.tk>
+Description:=20
+ laptop-mode-tools - Scripts to spin down hard drive and save power
+Closes: 475304 475407 475926
+Changes:=20
+ laptop-mode-tools (1.40-1) unstable; urgency=3Dhigh
+ .
+   * Upgrade standards version to 3.7.3.
+   * Add hal to recommends due to upstream changes.
+   * New upstream version 1.40:
+     * Add support for getting lid button state from HAL instead of from
+       /proc/acpi.
+     * Support /sys/class/power_supply interface to determine battery lev=
+els.
+       Closes: #475926
+     * Add generic support for config file swapping. Closes: #475304
+     * Add module for iwlwifi power management. Closes: #475407
+     * Fully modularized configuration.
+Checksums-Sha1:=20
+ 32457f5937ea663995a5a0d761809c7b771ae1e6 1002 laptop-mode-tools_1.40-1.d=
+sc
+ eed809fae69087e39bb2225cb4d44a6e254e95e6 74394 laptop-mode-tools_1.40.or=
+ig.tar.gz
+ e5933cbae6e1c3a0b0f5dab8d2906aab2ee3929e 7903 laptop-mode-tools_1.40-1.d=
+iff.gz
+ 730e8ce0008af008f88dc9d007e79de5b90c6e15 76616 laptop-mode-tools_1.40-1_=
+all.deb
+Checksums-Sha256:=20
+ e85653668971a01cad4ba823164f4901951d453a3658211435b92a6c41c1502e 1002 la=
+ptop-mode-tools_1.40-1.dsc
+ e272c70ab92d38f284fef08d38426882505a1cc5bb5becf39b11b23da210e369 74394 l=
+aptop-mode-tools_1.40.orig.tar.gz
+ a6ba0e6323fddada7eb2ea8142060ecf6833e804c46921f9c5662ccc1d30a4eb 7903 la=
+ptop-mode-tools_1.40-1.diff.gz
+ 1f5e5debc0196798d43d311378bbe6fe2bdb59bf5b1bd1aa2654c483b2f8e6b2 76616 l=
+aptop-mode-tools_1.40-1_all.deb
+Files:=20
+ 7d0cb64f8e9ac992b962dcc64f6d053f 1002 utils optional laptop-mode-tools_1=
+.40-1.dsc
+ 8fa8b42e3be11b7905ebb5d5348c956c 74394 utils optional laptop-mode-tools_=
+1.40.orig.tar.gz
+ e39fd8ba79df26944a1aafb9fa18e48f 7903 utils optional laptop-mode-tools_1=
+.40-1.diff.gz
+ b893e8b0334deeb73d40964bfd3826a1 76616 utils optional laptop-mode-tools_=
+1.40-1_all.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC5CL4VUX8isJIMARAmsKAJ0fy9ve4U9uYrbo0aOXoFgImTb8/gCeMSlI
+LR18/X7vd8c38cO4EhfEmKU=3D
+=3D2QmG
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+laptop-mode-tools_1.40-1.diff.gz
+  to pool/main/l/laptop-mode-tools/laptop-mode-tools_1.40-1.diff.gz
+laptop-mode-tools_1.40-1.dsc
+  to pool/main/l/laptop-mode-tools/laptop-mode-tools_1.40-1.dsc
+laptop-mode-tools_1.40-1_all.deb
+  to pool/main/l/laptop-mode-tools/laptop-mode-tools_1.40-1_all.deb
+laptop-mode-tools_1.40.orig.tar.gz
+  to pool/main/l/laptop-mode-tools/laptop-mode-tools_1.40.orig.tar.gz
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

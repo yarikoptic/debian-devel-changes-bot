@@ -1,0 +1,150 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 12:40:19 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnXtv-0006ji-9v
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 12:40:19 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id D7ACB13A4F75; Sun, 20 Apr 2008 11:40:05 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.4 required=4.0 tests=BAYES_00,FOURLA,LDO_WHITELIST,
+	RAZOR2_CF_RANGE_51_100,RAZOR2_CF_RANGE_E8_51_100,RAZOR2_CHECK,
+	RCVD_IN_DNSWL_LOW autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id F371713A4F6F;
+	Sun, 20 Apr 2008 11:39:49 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnXst-0003l2-W1; Sun, 20 Apr 2008 11:39:03 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#471369: pgf: new upstream version (2.00)
+Reply-To: OHURA Makoto <ohura@debian.org>, 471369@bugs.debian.org
+Resent-From: OHURA Makoto <ohura@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 11:39:03 +0000
+Resent-Message-ID: <handler.471369.B471369.12086913704124@bugs.debian.org>
+X-Debian-PR-Message: report 471369
+X-Debian-PR-Package: pgf
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: pgf
+Received: via spool by 471369-submit@bugs.debian.org id=B471369.12086913704124
+          (code B ref 471369); Sun, 20 Apr 2008 11:39:03 +0000
+Received: (at 471369) by bugs.debian.org; 20 Apr 2008 11:36:10 +0000
+X-Amavis-Spam-Status: No, score=-10.9 required=4.0 tests=BAYES_00,FOURLA,
+	FROMDEVELOPER,HAS_BUG_NUMBER,VALID_BTS_CONTROL autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from mx1.seikyou.ne.jp ([61.122.128.75])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <ohura@debian.org>)
+	id 1JnXq4-0000wx-QC; Sun, 20 Apr 2008 11:36:09 +0000
+Received: from penell (123.65.145.122.ap.yournet.ne.jp [122.145.65.123])
+        by mx1.seikyou.ne.jp  with ESMTP id m3KBa9wm016689;
+        Sun, 20 Apr 2008 20:36:09 +0900
+Received: from localhost (penell [127.0.0.1])
+	by penell (Postfix) with ESMTP id CB1DD49F58;
+	Sun, 20 Apr 2008 20:36:01 +0900 (JST)
+Date: Sun, 20 Apr 2008 20:35:41 +0900 (JST)
+Message-Id: <20080420.203541.35014596.ohura@debian.org>
+To: johfel@gmx.de, 471369@bugs.debian.org
+Cc: control@bugs.debian.org
+From: OHURA Makoto <ohura@debian.org>
+In-Reply-To: <1205779448.5914.3.camel@localhost>
+References: <1205779448.5914.3.camel@localhost>
+X-Mailer: Mew version 5.2 on XEmacs 21.4.21 (Educational Television)
+Mime-Version: 1.0
+Content-Type: Multipart/Signed; protocol="application/pgp-signature";
+ micalg=pgp-sha1;
+ boundary="--Security_Multipart(Sun_Apr_20_20_35_41_2008_324)--"
+Content-Transfer-Encoding: 7bit
+X-CrossAssassin-Score: 2
+Resent-Date: Sun, 20 Apr 2008 11:39:03 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343449
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -50.1
+X-Spam-Report: (-50.1 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	1.5 RAZOR2_CF_RANGE_E8_51_100 Razor2 gives engine 8 confidence level
+	above 50%
+	[cf:  78]
+	0.5 RAZOR2_CHECK           Listed in Razor2 (http://razor.sf.net/)
+	0.5 RAZOR2_CF_RANGE_51_100 Razor2 gives confidence level above 50%
+	[cf:  78]
+
+----Security_Multipart(Sun_Apr_20_20_35_41_2008_324)--
+Content-Type: Text/Plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+tags 471369 pending
+thanks
+
+  Hi.  Thanks for your report.
+
+  I'm preparing a new package of pgf.  Please wait a few days.
+
+  Thanks.
+
+From: Johann Felix Soden <johfel@gmx.de>
+Subject: Bug#471369: pgf: new upstream version (2.00)
+Date: Mon, 17 Mar 2008 19:44:08 +0100
+
+> Package: pgf
+> Version: 1.18-1
+> Severity: wishlist
+>
+> --- Please enter the report below this line. ---
+> There is a new upstream version of pgf released on
+> http://sourceforge.net/projects/pgf/
+>
+> Thanks for updating!
+
+----
+  OHURA Makoto: ohura@debian.org(Debian Project)
+                ohura@netfort.gr.jp(LILO/Netfort)
+  GnuPG public key: http://www.netfort.gr.jp/~ohura/gpg.asc.txt
+        fingerprint: 54F6 D1B1 2EE1 81CD 65E3  A1D3 EEA2 EFA2 77DC E083
+  http://www.netfort.gr.jp/~ohura/
+
+----Security_Multipart(Sun_Apr_20_20_35_41_2008_324)--
+Content-Type: application/pgp-signature
+Content-Transfer-Encoding: 7bit
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQBICyqP7qLvonfc4IMRAsdhAKDjzRBKZByGZLz0RqpUOKE9o39bMgCgv9kk
+dvQs/1O1Fk1lkBEfJc/6Vkc=
+=8TsW
+-----END PGP SIGNATURE-----
+
+----Security_Multipart(Sun_Apr_20_20_35_41_2008_324)----
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

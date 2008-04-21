@@ -1,0 +1,127 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 10:32:43 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnVuY-00061q-OM
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 10:32:43 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id B162613A4E19; Sun, 20 Apr 2008 09:32:37 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.3 required=4.0 tests=BAYES_00,FOURLA,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW,SARE_MSGID_LONG40 autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id A6BE113A4994;
+	Sun, 20 Apr 2008 09:32:27 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnVpJ-0006VT-3a; Sun, 20 Apr 2008 09:27:13 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476930: compiz: quanta crashes X
+Reply-To: David <wizzardx@gmail.com>, 476930@bugs.debian.org
+Resent-From: David <wizzardx@gmail.com>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian X Strike Force <debian-x@lists.debian.org>
+Resent-Date: Sun, 20 Apr 2008 09:27:09 +0000
+Resent-Message-ID: <handler.476930.B.120868347918216@bugs.debian.org>
+X-Debian-PR-Message: report 476930
+X-Debian-PR-Package: compiz
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: compiz
+Received: via spool by submit@bugs.debian.org id=B.120868347918216
+          (code B ref -1); Sun, 20 Apr 2008 09:27:09 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 09:24:39 +0000
+X-Amavis-Spam-Status: No, score=-9.9 required=4.0 tests=BAYES_00,FOURLA,HAS_PACKAGE 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from rv-out-0506.google.com ([209.85.198.230])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <wizzardx@gmail.com>)
+	id 1JnVO3-0000yr-Nm
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 08:59:06 +0000
+Received: by rv-out-0506.google.com with SMTP id k40so678746rvb.17
+        for <submit@bugs.debian.org>; Sun, 20 Apr 2008 01:59:03 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:to:subject:mime-version:content-type:content-transfer-encoding:content-disposition;
+        bh=uxhJROnUgZtWtb+KBL81RNlpDAegZ7GxVAcId0ega60=;
+        b=jxSbCuooVUEaGD62SyFGKJ3ogVmYTjoGALF4+ulf7ToJMiuv09Byi+T+0MpLU1wjY4jMcvZmrQ0QDa/bOdmCZSSPi2vwfgLCcQfvoT/KSgty+g+l9Cq0wF9y7AfAYXY+OobRc8B+M4NKL/IN+KYXyf8lkZ/ef3S7j9FgOn8h+IM=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:to:subject:mime-version:content-type:content-transfer-encoding:content-disposition;
+        b=AMHaOJ7Y8aTuU9bwOcWJhIm9K77R+/QIA0jjg7/7baPQ/jIydEz/DB3GAh1Iw1nEEs8ysZE5vfRNT6UPg6hz731sKjHBHkglbQOvjsQlMAAV0TB6eirnIWkqLCfiBnY1tncUEzPqL2i/AOvKMKi/nIAhJ5FHs8bqS5JrOH379xA=
+Received: by 10.141.122.20 with SMTP id z20mr2583159rvm.93.1208681943598;
+        Sun, 20 Apr 2008 01:59:03 -0700 (PDT)
+Received: by 10.141.172.11 with HTTP; Sun, 20 Apr 2008 01:59:03 -0700 (PDT)
+Message-ID: <18c1e6480804200159i57e0b28la386bb39cb1732ae@mail.gmail.com>
+Date: Sun, 20 Apr 2008 10:59:03 +0200
+From: David <wizzardx@gmail.com>
+To: "Debian Bug Tracking System" <submit@bugs.debian.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 09:27:13 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343383
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -47.6
+X-Spam-Report: (-47.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	5.0 AWL                    AWL: From: address is in the auto white-list
+
+Package: compiz
+Version: 0.6.3~git20080115.0ea58487-1
+Severity: normal
+
+X crashes immediately when you run 'quanta' (web editor) and Compiz is
+running.
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (500, 'unstable')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.24-1-686 (SMP w/1 CPU core)
+Locale: LANG=en_ZA, LC_CTYPE=en_ZA (charmap=ISO-8859-1)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages compiz depends on:
+ii  compiz-core 0.6.3~git20080115.0ea58487-1 OpenGL window and compositing mana
+ii  compiz-gnom 0.6.3~git20080115.0ea58487-1 OpenGL window and compositing mana
+ii  compiz-gtk  0.6.3~git20080115.0ea58487-1 OpenGL window and compositing mana
+ii  compiz-plug 0.6.3~git20080115.0ea58487-1 OpenGL window and compositing mana
+
+compiz recommends no packages.
+
+-- no debconf information
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

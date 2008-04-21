@@ -1,0 +1,103 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 20:55:43 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnfdR-0000om-5g
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 20:55:43 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 097DE13A5273; Sun, 20 Apr 2008 19:55:36 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	MURPHY_DRUGS_REL8,RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id DA72213A5257;
+	Sun, 20 Apr 2008 19:55:24 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnfby-0007ae-W9; Sun, 20 Apr 2008 19:54:07 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#477035: Patch to fix 477035
+Reply-To: Thomas Viehmann <tv@beamnet.de>, 477035@bugs.debian.org
+Resent-From: Thomas Viehmann <tv@beamnet.de>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Oleksandr Moskalenko <malex@debian.org>
+Resent-Date: Sun, 20 Apr 2008 19:54:06 +0000
+Resent-Message-ID: <handler.477035.B477035.120872077915064@bugs.debian.org>
+X-Debian-PR-Message: report 477035
+X-Debian-PR-Package: lcms
+X-Debian-PR-Keywords: patch
+Received: via spool by 477035-submit@bugs.debian.org id=B477035.120872077915064
+          (code B ref 477035); Sun, 20 Apr 2008 19:54:06 +0000
+Received: (at 477035) by bugs.debian.org; 20 Apr 2008 19:46:19 +0000
+X-Amavis-Spam-Status: No, score=-4.0 required=4.0 tests=BAYES_00,MURPHY_DRUGS_REL8 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from mail.beamnet.de ([87.106.188.137] helo=server2.beamnet.de)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <tv@beamnet.de>)
+	id 1JnfUR-0003ql-8d
+	for 477035@bugs.debian.org; Sun, 20 Apr 2008 19:46:19 +0000
+Received: from [192.168.0.29] (a.vman.de [87.230.125.6])
+	by server2.beamnet.de (Postfix) with ESMTP id BCD2815D9CB;
+	Sun, 20 Apr 2008 21:46:17 +0200 (CEST)
+Message-ID: <480B9D93.5060300@beamnet.de>
+Date: Sun, 20 Apr 2008 21:46:27 +0200
+From: Thomas Viehmann <tv@beamnet.de>
+User-Agent: Mozilla-Thunderbird 2.0.0.12 (X11/20080405)
+MIME-Version: 1.0
+To: Kumar Appaiah <akumar@ee.iitm.ac.in>
+CC: 477035@bugs.debian.org
+References: <20080420172013.GA32634@debian.akumar.iitm.ac.in> (sfid-20080420_191159_513663_BE9C9969AB35FFFD)
+In-Reply-To: <20080420172013.GA32634@debian.akumar.iitm.ac.in> (sfid-20080420_191159_513663_BE9C9969AB35FFFD)
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 7bit
+Resent-Date: Sun, 20 Apr 2008 19:54:06 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343759
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -33.7
+X-Spam-Report: (-33.7 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	19 AWL                    AWL: From: address is in the auto white-list
+
+Kumar Appaiah wrote:
+> Please find attached a patch to fix this bug. I think it adds the so
+> link, but please double check.
+Uh. I missed that when changing the installation order. That mixes well with 
+rushing people to upload substandard patches...
+Sorry, Alex!
+
+Thanks Kumar for correcting me on this.
+
+Kind regards
+
+T.
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

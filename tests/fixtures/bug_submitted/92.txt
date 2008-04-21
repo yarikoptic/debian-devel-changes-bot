@@ -1,0 +1,156 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 19:07:27 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jndwe-0000Jy-Ak
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 19:07:26 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id AE21013A44EA; Sun, 20 Apr 2008 18:07:18 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.9 required=4.0 tests=BAYES_00,FOURLA,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=unavailable version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 7DCE813A50FF;
+	Sun, 20 Apr 2008 18:07:01 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JndvV-0005I5-US; Sun, 20 Apr 2008 18:06:10 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#477060: texlive-base: license of amslatex is unclear
+Reply-To: Frank =?UTF-8?Q?K=C3=BCster?= <frank@debian.org>, 477060@bugs.debian.org
+Resent-From: Frank =?UTF-8?Q?K=C3=BCster?= <frank@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Frank =?UTF-8?Q?K=C3=BCster?= <frank@debian.org>, Debian TeX Maintainers <debian-tex-maint@lists.debian.org>
+Resent-Date: Sun, 20 Apr 2008 18:06:07 +0000
+Resent-Message-ID: <handler.477060.B.120871474818199@bugs.debian.org>
+X-Debian-PR-Message: report 477060
+X-Debian-PR-Package: texlive-base
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: texlive-base
+Received: via spool by submit@bugs.debian.org id=B.120871474818199
+          (code B ref -1); Sun, 20 Apr 2008 18:06:07 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 18:05:48 +0000
+X-Amavis-Spam-Status: No, score=-14.9 required=4.0 tests=BAYES_00,FOURLA,
+	FROMDEVELOPER,HAS_PACKAGE,X_DEBBUGS_CC autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from moutng.kundenserver.de ([212.227.126.188])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <frank@kuesterei.ch>)
+	id 1Jndv9-0004XX-N5
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 18:05:48 +0000
+Received: from riesling (p5B0AF3DD.dip.t-dialin.net [91.10.243.221])
+	by mrelayeu.kundenserver.de (node=mrelayeu3) with ESMTP (Nemesis)
+	id 0MKxQS-1Jndv32nYa-0003jA; Sun, 20 Apr 2008 20:05:41 +0200
+Received: from localhost ([127.0.0.1] helo=riesling.zuerich.kuesterei.ch)
+	by riesling with esmtp (Exim 4.63)
+	(envelope-from <frank@kuesterei.ch>)
+	id 1Jne0P-0006oZ-V3
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 20:11:14 +0200
+From: Frank =?UTF-8?Q?K=C3=BCster?= <frank@debian.org>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+X-Attribution: fant
+X-Ehrenamt: http://www.langau.de
+User-Agent: Gnus/5.11 (Gnus v5.11) Emacs/22.1 (gnu/linux)
+Date: Sun, 20 Apr 2008 20:11:13 +0200
+Message-ID: <877iesxupq.fsf@riesling.zuerich.kuesterei.ch>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: quoted-printable
+X-Provags-ID: V01U2FsdGVkX1/rr35F5zZANua9bpuoMzmEt4z+U4/duh01owJ
+ Dl4B0kcD4VEfOPJ9MclPRsbH9zPTn6eVHnN1SlWGiOKQ6jIdgk
+ OGsmCeGW/6QMYd6lPpEkptvJRFCZzD/
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 18:06:09 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343705
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -35.9
+X-Spam-Report: (-35.9 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	17 AWL                    AWL: From: address is in the auto white-list
+
+Package: texlive-base
+Version: 2007-13
+Severity: serious
+
+Hi,
+
+this is somewhat a follow up bug for #356853, in which this issue was
+discussed earlier. Since this bug contains information about half a
+gazillion of different TeX packages, most of which are now settled to be
+free, or removed, it's hard to track the real issues. Therefore I am
+opening bugs for the things that remain, and this is for amslatex.  I'll
+try to gather all the information about this particular package and
+forward the messages individually, as soon as I get a bug number.
+
+Regards, Frank
+
+
+
+-- System Information:
+Debian Release: 4.0
+  APT prefers stable
+  APT policy: (500, 'stable'), (99, 'unstable')
+Architecture: i386 (i686)
+Shell:  /bin/sh linked to /bin/bash
+Kernel: Linux 2.6.18-6-686
+Locale: LANG=3Dde_DE@euro, LC_CTYPE=3Dde_DE@euro (charmap=3DISO-8859-15)
+
+Versions of packages texlive-base depends on:
+ii  texlive-base-bin 2007.dfsg.1-2.np.etch.1 TeX Live: Essential binaries
+ii  texlive-common   2007-13                 TeX Live: Base component
+ii  texlive-doc-base 2007-3                  TeX Live: Base documentation
+
+Versions of packages texlive-base recommends:
+ii  dvipdfmx                    1:20050831-5 A DVI to PDF translator with C=
+JK s
+ii  lmodern                     1.010x-4     scalable PostScript and OpenTy=
+pe f
+
+Versions of packages tex-common depends on:
+ii  debconf                      1.5.11etch1 Debian configuration managemen=
+t sy
+ii  ucf                          2.0020      Update Configuration File: pre=
+serv
+
+Versions of packages texlive-base is related to:
+pn  tetex-base                    <none>     (no description available)
+ii  tetex-bin                     2007-13    TeX Live: teTeX transitional p=
+acka
+ii  tetex-extra                   2007-13    TeX Live: teTeX transitional p=
+acka
+ii  tex-common                    1.10       common infrastructure for buil=
+ding
+
+-- debconf information:
+  tex-common/check_texmf_wrong:
+  tex-common/check_texmf_missing:
+
+--=20
+Frank K=FCster
+Debian Developer (teTeX/TeXLive)
+
+
+

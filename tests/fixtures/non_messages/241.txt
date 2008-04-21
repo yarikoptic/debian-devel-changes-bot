@@ -1,0 +1,146 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 18:10:27 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnd3T-0008So-Tm
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 18:10:27 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 9027313A4F70; Sun, 20 Apr 2008 17:10:18 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.5 required=4.0 tests=BAYES_00,RCVD_IN_DNSWL_LOW,
+	WHOIS_DMNBYPROXY autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 30C2B13A4FDD;
+	Sun, 20 Apr 2008 17:10:02 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnczM-0005IB-Ld; Sun, 20 Apr 2008 17:06:04 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476988: apt-listbugs: please implement a command to query the BTS about a given bug in given package/version
+Reply-To: Francesco Poli <frx@firenze.linux.it>, 476988@bugs.debian.org
+Resent-From: Francesco Poli <frx@firenze.linux.it>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Junichi Uekawa <dancer@debian.org>
+Resent-Date: Sun, 20 Apr 2008 17:06:03 +0000
+Resent-Message-ID: <handler.476988.B476988.120871103711383@bugs.debian.org>
+X-Debian-PR-Message: report 476988
+X-Debian-PR-Package: apt-listbugs
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: apt-listbugs
+Received: via spool by 476988-submit@bugs.debian.org id=B476988.120871103711383
+          (code B ref 476988); Sun, 20 Apr 2008 17:06:03 +0000
+Received: (at 476988) by bugs.debian.org; 20 Apr 2008 17:03:57 +0000
+X-Amavis-Spam-Status: No, score=-4.0 required=4.0 tests=BAYES_00 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from smtpi1.ngi.it ([88.149.128.20])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <frx@firenze.linux.it>)
+	id 1JncxI-0002wv-GY
+	for 476988@bugs.debian.org; Sun, 20 Apr 2008 17:03:56 +0000
+Received: from homebrew (88-149-179-128.static.ngi.it [88.149.179.128])
+	by smtpi1.ngi.it (8.13.8/8.13.8) with ESMTP id m3KH3tH4004435
+	for <476988@bugs.debian.org>; Sun, 20 Apr 2008 19:03:55 +0200
+Received: from frx by homebrew with local (Exim 4.69)
+	(envelope-from <frx@firenze.linux.it>)
+	id 1Jncxy-0002KX-4Y
+	for 476988@bugs.debian.org; Sun, 20 Apr 2008 19:04:38 +0200
+Date: Sun, 20 Apr 2008 19:04:28 +0200
+From: Francesco Poli <frx@firenze.linux.it>
+To: 476988@bugs.debian.org
+Message-Id: <20080420190428.3cda5017.frx@firenze.linux.it>
+In-Reply-To: <20080420154003.8503.79983.reportbug@homebrew>
+References: <20080420154003.8503.79983.reportbug@homebrew>
+X-Mailer: Sylpheed 2.5.0beta1 (GTK+ 2.12.9; x86_64-pc-linux-gnu)
+Mime-Version: 1.0
+Content-Type: multipart/signed; protocol="application/pgp-signature";
+ micalg="PGP-SHA1";
+ boundary="Signature=_Sun__20_Apr_2008_19_04_28_+0200_hZsZPZADku+kNevV"
+Resent-Date: Sun, 20 Apr 2008 17:06:04 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343668
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -36.3
+X-Spam-Report: (-36.3 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	16 AWL                    AWL: From: address is in the auto white-list
+
+--Signature=_Sun__20_Apr_2008_19_04_28_+0200_hZsZPZADku+kNevV
+Content-Type: text/plain; charset=UTF-8
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+On Sun, 20 Apr 2008 17:40:03 +0200 Francesco Poli wrote:
+
+[...]
+>    =C2=B7  query  <package[/version]>  <bugnumber1> <bugnumber2>...   Rea=
+ds
+>       a package name from the first argument and bug numbers from the
+>       remaining arguments; lists given bugs and their status with respect
+>       to the package.  Package  version  may be specified with a slash, f=
+or
+>       example, like apt/1.0
+
+Please note that this feature should treat bugs that have been
+downgraded below the RC threshold and bugs that have been reassigned to
+another package exactly as if they had been fixed.
+
+In other words: a bug should _not_ be counted in the final summary line
+
+ * if it's fixed in <package[/version]>, or
+
+ * if it has been downgraded below the RC threshold, or
+
+ * if it has been reassigned to another package
+
+
+I hope I managed to explain what I mean.
+
+
+--=20
+ http://frx.netsons.org/doc/index.html#nanodocs
+ The nano-document series is here!
+..................................................... Francesco Poli .
+ GnuPG key fpr =3D=3D C979 F34B 27CE 5CD8 DC12  31B5 78F4 279B DD6D FCF4
+
+--Signature=_Sun__20_Apr_2008_19_04_28_+0200_hZsZPZADku+kNevV
+Content-Type: application/pgp-signature
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC3ejePQnm91t/PQRAu3ZAJ91RfWzO6NkunHkEMu8bx/JcS40tACdEiq6
+CmL/a0gomFOwtANh9+q6a28=
+=81iC
+-----END PGP SIGNATURE-----
+
+--Signature=_Sun__20_Apr_2008_19_04_28_+0200_hZsZPZADku+kNevV--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,290 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 20:35:22 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnfJi-0000kG-MV
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 20:35:21 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 3575213A5263; Sun, 20 Apr 2008 19:35:13 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id EE11513A5255;
+	Sun, 20 Apr 2008 19:35:10 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnfHi-0006HC-85; Sun, 20 Apr 2008 19:33:10 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: William Pitcock <nenolod@sacredspiral.co.uk>
+Subject: Bug#477051: marked as done (incorrect depends on libprojectm1-data)
+Message-ID: <handler.477051.D477051.120871989721889.ackdone@bugs.debian.org>
+References: <E1Jnf2U-0004s0-MG@ries.debian.org>
+ <20080420165514.GA15487@kos.to>
+X-Debian-PR-Message: closed 477051
+X-Debian-PR-Package: libprojectm
+X-Debian-PR-Source: libprojectm
+Content-Type: multipart/mixed; boundary="----------=_1208719990-24099-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 19:33:10 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <t03UoHShgsJ.A.vKF.xr5CIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/133078
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 19:35:13 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208719990-24099-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 19:17:26 +0000
+with message-id <E1Jnf2U-0004s0-MG@ries.debian.org>
+and subject line Bug#477051: fixed in libprojectm 1.01-6
+has caused the Debian Bug report #477051,
+regarding incorrect depends on libprojectm1-data
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+477051: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D477051
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208719990-24099-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 16:55:19 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.9 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	HAS_PACKAGE autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <nchip@kos.to>
+Received: from naru.obs2.net
+	([84.20.150.76] helo=narury.org ident=postfix)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <nchip@kos.to>)
+	id 1Jncov-00068j-Kp
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 16:55:18 +0000
+Received: from kos.to (localhost.localdomain [127.0.0.1])
+	(using TLSv1 with cipher ADH-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by narury.org (Postfix) with ESMTP id 207E63274008
+	for <submit@bugs.debian.org>; Sun, 20 Apr 2008 19:55:15 +0300 (EEST)
+Received: by kos.to (Postfix, from userid 573)
+	id ED027EE81DD; Sun, 20 Apr 2008 19:55:14 +0300 (EEST)
+Date: Sun, 20 Apr 2008 19:55:14 +0300
+From: Riku Voipio <riku.voipio@iki.fi>
+To: submit@bugs.debian.org
+Subject: incorrect depends on libprojectm1-data
+Message-ID: <20080420165514.GA15487@kos.to>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+X-message-flag: Warning: message not sent with a DRM-Certified client
+User-Agent: Mutt/1.5.11+cvs20060126
+Delivered-To: submit@bugs.debian.org
+
+Package: libprojectm
+Version: 1.01-5
+Severity: important
+
+libprojectm1 has the following in depends:
+
+	libprojectm1-data (>= ${binary:Version})
+
+libprojectm1-data is arch:all, so this will make binNMU
+versions of libprojectm1 impossible to install. Please use
+${source:Version} instead. Or even better, if contents
+of libprojectm1-data are same for each debian revision (-1,-2,-3...)
+use ${source:Upstream-Version}.
+
+
+
+
+-- 
+"rm -rf" only sounds scary if you don't have backups
+
+
+
+------------=_1208719990-24099-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 477051-close) by bugs.debian.org; 20 Apr 2008 19:31:37 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.7 required=4.0 tests=BAYES_00,FVGT_m_MULTI_ODD,
+	HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_2,MURPHY_WRONG_WORD1,
+	MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnfGD-0005gX-CS
+	for 477051-close@bugs.debian.org; Sun, 20 Apr 2008 19:31:37 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1Jnf2U-0004s0-MG; Sun, 20 Apr 2008 19:17:26 +0000
+From: William Pitcock <nenolod@sacredspiral.co.uk>
+To: 477051-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#477051: fixed in libprojectm 1.01-6
+Message-Id: <E1Jnf2U-0004s0-MG@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 19:17:26 +0000
+Content-Transfer-Encoding: quoted-printable
+
+Source: libprojectm
+Source-Version: 1.01-6
+
+We believe that the bug you reported is fixed in the latest version of
+libprojectm, which is due to be installed in the Debian FTP archive:
+
+libprojectm-dev_1.01-6_i386.deb
+  to pool/main/libp/libprojectm/libprojectm-dev_1.01-6_i386.deb
+libprojectm1-data_1.01-6_all.deb
+  to pool/main/libp/libprojectm/libprojectm1-data_1.01-6_all.deb
+libprojectm1_1.01-6_i386.deb
+  to pool/main/libp/libprojectm/libprojectm1_1.01-6_i386.deb
+libprojectm_1.01-6.diff.gz
+  to pool/main/libp/libprojectm/libprojectm_1.01-6.diff.gz
+libprojectm_1.01-6.dsc
+  to pool/main/libp/libprojectm/libprojectm_1.01-6.dsc
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 477051@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+William Pitcock <nenolod@sacredspiral.co.uk> (supplier of updated libproj=
+ectm package)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 13:44:21 -0500
+Source: libprojectm
+Binary: libprojectm-dev libprojectm1-data libprojectm1
+Architecture: source i386 all
+Version: 1.01-6
+Distribution: unstable
+Urgency: low
+Maintainer: William Pitcock <nenolod@sacredspiral.co.uk>
+Changed-By: William Pitcock <nenolod@sacredspiral.co.uk>
+Description:=20
+ libprojectm-dev - Advanced Milkdrop-compatible music visualization libra=
+ry - dev
+ libprojectm1 - Advanced Milkdrop-compatible music visualization library
+ libprojectm1-data - Advanced Milkdrop-compatible music visualization lib=
+rary - data
+Closes: 477051
+Changes:=20
+ libprojectm (1.01-6) unstable; urgency=3Dlow
+ .
+   * Fix a bogus dependency relation. (Closes: #477051)
+Checksums-Sha1:=20
+ b79c2ba7f4c27df74710755853a27b1e0b5ab34a 1248 libprojectm_1.01-6.dsc
+ 136aca4ca24c1900263cfa0781d296bc3a96e 7068 libprojectm_1.01-6.diff.gz
+ 9d34378534c585132efce5168bf67549c46b3ba0 11076 libprojectm-dev_1.01-6_i3=
+86.deb
+ e6224e07ae7eaf27f5b95f6f5a93699a5e4054f7 408562 libprojectm1-data_1.01-6=
+_all.deb
+ 86dd8c75fa9c00f2fe30bd8c19f03b791120f20a 227426 libprojectm1_1.01-6_i386=
+.deb
+Checksums-Sha256:=20
+ 5ed8e635af59a0e2e829372028fac37b592e5098d00fd521e40e6e336c78f526 1248 li=
+bprojectm_1.01-6.dsc
+ 345b5a69ce66c0fc09b237c6d327bdb6c52f8bde39a1b42818df933fc4b04d48 7068 li=
+bprojectm_1.01-6.diff.gz
+ abde4969e1c0ff662efb2298d8b94ee691042df4c9a296e05c8df368845bb8b5 11076 l=
+ibprojectm-dev_1.01-6_i386.deb
+ f3e0e7a44e8f0de5172560bc22198edbf32237d690e485473ed71a457cea9dd4 408562 =
+libprojectm1-data_1.01-6_all.deb
+ f930e287635069e4bbb9c5ad38a17025870c7cba139ac19d9846d8b0b8fa6d0b 227426 =
+libprojectm1_1.01-6_i386.deb
+Files:=20
+ 52953cb43d016c28322af76aed734e44 1248 libs optional libprojectm_1.01-6.d=
+sc
+ 648e7c26c6d75e34d34e61a97264c561 7068 libs optional libprojectm_1.01-6.d=
+iff.gz
+ 0b08cf69511c42eb8fd89b7e680e5417 11076 libdevel optional libprojectm-dev=
+_1.01-6_i386.deb
+ ac126d66ea8ab62dd411e84166ecfd99 408562 libs optional libprojectm1-data_=
+1.01-6_all.deb
+ c6bd97f466a06eed3745c6053d42fd85 227426 libs optional libprojectm1_1.01-=
+6_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC5D2ibPvMsrqrwMRAit+AJ9W0aaZdn3rz9AaHcxm+hKtG0UC9ACcDKgD
+gcGz+fdjqbDJtJFW/AeuPwA=3D
+=3DdIdo
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208719990-24099-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

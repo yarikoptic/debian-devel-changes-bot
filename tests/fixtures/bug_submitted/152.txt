@@ -1,0 +1,137 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 20:30:18 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnfEo-0000hV-0N
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 20:30:17 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 04B1E13A5249; Sun, 20 Apr 2008 19:30:09 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.9 required=4.0 tests=BAYES_00,FOURLA,
+	IMPRONONCABLE_2,RCVD_IN_DNSWL_LOW autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 2710E13A5135;
+	Sun, 20 Apr 2008 19:29:57 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnfBo-0003lD-Pb; Sun, 20 Apr 2008 19:27:04 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#477073: dansguardian: Bad rule in lists/safelabel/banned
+Reply-To: Greg Kochanski <gpk@kochanski.org>, 477073@bugs.debian.org
+Resent-From: Greg Kochanski <gpk@kochanski.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Alexander Wirt <formorer@debian.org>
+Resent-Date: Sun, 20 Apr 2008 19:27:01 +0000
+Resent-Message-ID: <handler.477073.B.12087193457351@bugs.debian.org>
+X-Debian-PR-Message: report 477073
+X-Debian-PR-Package: dansguardian
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: dansguardian
+Received: via spool by submit@bugs.debian.org id=B.12087193457351
+          (code B ref -1); Sun, 20 Apr 2008 19:27:01 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 19:22:25 +0000
+X-Amavis-Spam-Status: No, score=-8.9 required=4.0 tests=BAYES_00,FOURLA,HAS_PACKAGE,
+	IMPRONONCABLE_2 autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from pih-relay04.plus.net ([212.159.14.131])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <gpk@kochanski.org>)
+	id 1Jnf7J-0001sD-CQ
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 19:22:25 +0000
+Received: from [212.159.16.190] (helo=kochanski.plus.com)
+	 by pih-relay04.plus.net with esmtp (Exim) id 1Jnf7C-0005ZN-PI
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 20:22:18 +0100
+Received: from gpk by kochanski.plus.com with local (Exim 4.69)
+	(envelope-from <gpk@kochanski.org>)
+	id 1Jnf7B-0006Ut-TT; Sun, 20 Apr 2008 20:22:17 +0100
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Greg Kochanski <gpk@kochanski.org>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Message-ID: <20080420192217.24932.12213.reportbug@kochanski.plus.com>
+X-Mailer: reportbug 3.39-0.1
+Date: Sun, 20 Apr 2008 20:22:17 +0100
+X-Plusnet-Relay: d5a0afe2c86ffda12893f1771bfbdf95
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 19:27:04 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343748
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -32.2
+X-Spam-Report: (-32.2 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	20 AWL                    AWL: From: address is in the auto white-list
+
+Package: dansguardian
+Version: 2.9.9.3-2
+Severity: normal
+
+
+The rule
+/etc/dansguardian/lists/phraselists/safelabel/banned
+<meta name="Rating" content="General">
+should not be there.   I've found several websites with
+completely eafe content that give themselves a
+"General" rating.
+
+I think this is a thinko, or maybe it was derived from
+some odd websites.    A "General" rating should mean that
+it's suitable for more-or-less everyone.    One shouldn't
+ban a site based on that.
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers testing
+  APT policy: (500, 'testing')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.24-1-686 (SMP w/1 CPU core)
+Locale: LANG=en_GB, LC_CTYPE=en_GB (charmap=ISO-8859-1)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages dansguardian depends on:
+ii  adduser                3.107             add and remove users and groups
+ii  clamav                 0.92.1~dfsg2-0.1  anti-virus utility for Unix - comm
+ii  libbz2-1.0             1.0.5-0.1         high-quality block-sorting file co
+ii  libc6                  2.7-10            GNU C Library: Shared libraries
+ii  libclamav3             0.92.1~dfsg2-0.1  anti-virus utility for Unix - libr
+ii  libgcc1                1:4.3.0-3         GCC support library
+ii  libgmp3c2              2:4.2.2+dfsg-2    Multiprecision arithmetic library
+ii  libpcre3               7.4-1+lenny1      Perl 5 Compatible Regular Expressi
+ii  libstdc++6             4.3.0-3           The GNU Standard C++ Library v3
+ii  perl                   5.8.8-12          Larry Wall's Practical Extraction 
+ii  zlib1g                 1:1.2.3.3.dfsg-11 compression library - runtime
+
+dansguardian recommends no packages.
+
+-- no debconf information
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

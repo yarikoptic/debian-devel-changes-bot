@@ -1,0 +1,134 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 07:49:58 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnTN2-0005bg-Ee
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 07:49:58 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 13F8713A4E55; Sun, 20 Apr 2008 06:49:49 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-3.0 required=4.0 tests=BAYES_00,MURPHY_DRUGS_REL8,
+	RCVD_IN_DNSWL_LOW autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id D25FA13A4D4B;
+	Sun, 20 Apr 2008 06:49:33 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnTLG-0002V3-NH; Sun, 20 Apr 2008 06:48:02 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#415896: Record window with composite manager - patch
+Reply-To: Luca Bruno <lucab@debian.org>, 415896@bugs.debian.org
+Resent-From: Luca Bruno <lucab@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 06:48:01 +0000
+Resent-Message-ID: <handler.415896.B415896.120867388331530@bugs.debian.org>
+X-Debian-PR-Message: report 415896
+X-Debian-PR-Package: istanbul
+X-Debian-PR-Keywords: upstream help confirmed
+X-Debian-PR-Source: istanbul
+Received: via spool by 415896-submit@bugs.debian.org id=B415896.120867388331530
+          (code B ref 415896); Sun, 20 Apr 2008 06:48:01 +0000
+Received: (at 415896) by bugs.debian.org; 20 Apr 2008 06:44:43 +0000
+X-Amavis-Spam-Status: No, score=-7.8 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FROMDEVELOPER,MURPHY_DRUGS_REL8,VALID_BTS_CONTROL autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from www.unstable.it ([64.22.94.226] helo=mail.unstable.it)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <lucab@debian.org>)
+	id 1JnTI2-0008Bj-PS; Sun, 20 Apr 2008 06:44:42 +0000
+Received: from thetis (213-156-35-243.ip.fastwebnet.it [213.156.35.243])
+	(using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by mail.unstable.it (Postfix) with ESMTP id BC233541E3;
+	Sun, 20 Apr 2008 02:44:39 -0400 (EDT)
+Date: Sun, 20 Apr 2008 08:45:01 +0200
+From: Luca Bruno <lucab@debian.org>
+To: 415896@bugs.debian.org, Adolf Winterer <adolf.j.winterer@inn-salzach.de>
+Cc: control@bugs.debian.org
+Message-Id: <20080420084501.c788d2e1.lucab@debian.org>
+Organization: www.debian.org
+X-Mailer: Sylpheed 2.5.0beta2 (GTK+ 2.12.9; i486-pc-linux-gnu)
+Mime-Version: 1.0
+Content-Type: multipart/signed; protocol="application/pgp-signature";
+ micalg="PGP-SHA1";
+ boundary="Signature=_Sun__20_Apr_2008_08_45_01_+0200_M5Paz4uUdGbME.rg"
+X-CrossAssassin-Score: 2
+Resent-Date: Sun, 20 Apr 2008 06:48:02 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343339
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -35.3
+X-Spam-Report: (-35.3 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	17 AWL                    AWL: From: address is in the auto white-list
+
+--Signature=_Sun__20_Apr_2008_08_45_01_+0200_M5Paz4uUdGbME.rg
+Content-Type: text/plain; charset=US-ASCII
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+tags 415896 - help
+tags 415896 + patch
+tags 415896 + pending
+thanks=20
+
+This patch should fix the issue:
+http://bugzilla.gnome.org/attachment.cgi?id=3D107832&action=3Dview
+
+The file to patch is=20
+/var/lib/python-support/python2.5/istanbul/main/window_select.py
+or
+/var/lib/python-support/python2.4/istanbul/main/window_select.py
+depending on the python version in use on your system.
+
+Cheers, Luca
+
+--=20
+ .''`.  ** Debian GNU/Linux **  | Luca Bruno
+: :'  :   The Universal O.S.    | lucab (AT) debian.org
+`. `'`  			| GPG Key ID: 3BFB9FB3
+  `-     http://www.debian.org 	| Debian GNU/Linux Developer
+
+--Signature=_Sun__20_Apr_2008_08_45_01_+0200_M5Paz4uUdGbME.rg
+Content-Type: application/pgp-signature
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICuZtRqobajv7n7MRAmAtAJwM/6z+PPOZrPpH3QC1oG9Vro/I2ACdHwG+
+aI2cufkT50L3vf2JawQnQOE=
+=7MEa
+-----END PGP SIGNATURE-----
+
+--Signature=_Sun__20_Apr_2008_08_45_01_+0200_M5Paz4uUdGbME.rg--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

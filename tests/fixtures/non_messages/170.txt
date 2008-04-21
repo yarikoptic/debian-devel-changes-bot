@@ -1,0 +1,125 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 18:01:26 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jncuo-0008QK-F9
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 18:01:26 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 7511C13A4F50; Sun, 20 Apr 2008 17:01:21 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 8BF8713A4681;
+	Sun, 20 Apr 2008 17:01:08 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jncqi-0007ND-DA; Sun, 20 Apr 2008 16:57:08 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#472386: epiphany-browser: Location box no longer empty when home page loaded in new tab
+Reply-To: Moray Allan <moray@sermisy.org>, 472386@bugs.debian.org
+Resent-From: Moray Allan <moray@sermisy.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Josselin Mouette <joss@debian.org>
+Resent-Date: Sun, 20 Apr 2008 16:57:07 +0000
+Resent-Message-ID: <handler.472386.B472386.120871058927089@bugs.debian.org>
+X-Debian-PR-Message: report 472386
+X-Debian-PR-Package: epiphany-browser
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: epiphany-browser
+Received: via spool by 472386-submit@bugs.debian.org id=B472386.120871058927089
+          (code B ref 472386); Sun, 20 Apr 2008 16:57:07 +0000
+Received: (at 472386) by bugs.debian.org; 20 Apr 2008 16:56:29 +0000
+X-Amavis-Spam-Status: No, score=-7.0 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from smtp3-g19.free.fr ([212.27.42.29])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <moray@sermisy.org>)
+	id 1Jncq5-00072B-9A
+	for 472386@bugs.debian.org; Sun, 20 Apr 2008 16:56:29 +0000
+Received: from smtp3-g19.free.fr (localhost.localdomain [127.0.0.1])
+	by smtp3-g19.free.fr (Postfix) with ESMTP id A11B817B593
+	for <472386@bugs.debian.org>; Sun, 20 Apr 2008 18:56:27 +0200 (CEST)
+Received: from [192.168.0.11] (mut38-6-88-167-71-36.fbx.proxad.net [88.167.71.36])
+	by smtp3-g19.free.fr (Postfix) with ESMTP id 75EB417B58D
+	for <472386@bugs.debian.org>; Sun, 20 Apr 2008 18:56:27 +0200 (CEST)
+From: Moray Allan <moray@sermisy.org>
+To: 472386@bugs.debian.org
+In-Reply-To: <1208703119.3820.42.camel@shizuru>
+References: <1206320332.4531.6.camel@josquin.sermisy.org>
+	 <1208703119.3820.42.camel@shizuru>
+Content-Type: text/plain; charset=utf-8
+Date: Sun, 20 Apr 2008 18:56:35 +0200
+Message-Id: <1208710595.18623.67.camel@josquin.sermisy.org>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.12.3 
+Content-Transfer-Encoding: quoted-printable
+Resent-Date: Sun, 20 Apr 2008 16:57:08 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343663
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.3
+X-Spam-Report: (-52.3 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.3 AWL                    AWL: From: address is in the auto white-list
+
+
+Le dimanche 20 avril 2008 =C3=A0 16:51 +0200, Josselin Mouette a =C3=A9cr=
+it :
+> There is a better way to do that: just middle-click on the "new tab"
+> button. It will open the new tab with the URL in the clipboard, and is
+> one click less.
+
+I don't have a new tab button, except in the menu; I use control-T to
+get a new tab....
+
+Watching myself more carefully, I noticed that I sometimes also paste
+bug numbers this way then add bugs.debian.org/ in front: I'm not only
+pasting valid URLs.
+
+(With a non-blank URL bar, if I use control-L or otherwise select the
+existing URL to overtype it with this, Epiphany loses my previous
+selection for middle-pasting.  I can paste the number on the end of the
+URL then clear out what I don't want, but that's rather fiddly.  Of
+course ideally all bug numbers would always work as links and I wouldn't
+need to paste stuff around like this -- or I should learn to use
+control-C/control-V instead of middle clicking.)
+
+> This is also more consistent, because you don=E2=80=99t get a page load=
+ed
+> without the correponding address in the URL bar. I think this is
+> intentional, as there are better ways to achieve what you are doing wit=
+h
+> it in the old behavior.
+
+So why does opening a new window give the old behaviour, i.e. an empty
+URL bar?
+
+--=20
+Moray
+
+
+
+

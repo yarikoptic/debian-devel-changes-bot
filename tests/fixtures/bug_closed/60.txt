@@ -1,0 +1,345 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 06:35:10 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnSCc-0005T6-GI
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 06:35:10 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 19B0413A4DF7; Sun, 20 Apr 2008 05:35:01 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 97BD913A4B6A;
+	Sun, 20 Apr 2008 05:34:59 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnSAj-00033Y-W3; Sun, 20 Apr 2008 05:33:05 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: roberto@connexer.com (Roberto C. Sanchez)
+Subject: Bug#468699: marked as done (shorewall-common: bashism in /bin/sh 
+ script)
+Message-ID: <handler.468699.D468699.120866950410791.ackdone@bugs.debian.org>
+References: <E1JnRgh-0004XR-Cr@ries.debian.org>
+ <200802291725.57284.atomo64@gmail.com>
+X-Debian-PR-Message: closed 468699
+X-Debian-PR-Package: shorewall-common
+X-Debian-PR-Keywords: upstream
+X-Debian-PR-Source: shorewall-common
+Content-Type: multipart/mixed; boundary="----------=_1208669585-11745-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 05:33:05 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <edy8VwNTanK.A.SLG.FYtCIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/132896
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 05:35:01 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208669585-11745-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 05:02:03 +0000
+with message-id <E1JnRgh-0004XR-Cr@ries.debian.org>
+and subject line Bug#468699: fixed in shorewall-common 4.0.10-2
+has caused the Debian Bug report #468699,
+regarding shorewall-common: bashism in /bin/sh script
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+468699: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D468699
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208669585-11745-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at maintonly) by bugs.debian.org; 29 Feb 2008 23:26:03 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-12.9 required=4.0 tests=BAYES_00,FOURLA,HAS_PACKAGE,
+	X_DEBBUGS_NO_ACK autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <atomo64@gmail.com>
+Received: from hs-out-0708.google.com ([64.233.178.250])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <atomo64@gmail.com>)
+	id 1JVEc6-0007TG-6W
+	for maintonly@bugs.debian.org; Fri, 29 Feb 2008 23:26:02 +0000
+Received: by hs-out-0708.google.com with SMTP id x43so3376359hsb.9
+        for <maintonly@bugs.debian.org>; Fri, 29 Feb 2008 15:26:01 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:from:to:subject:user-agent:x-debbugs-no-ack:mime-version:content-disposition:date:content-type:content-transfer-encoding:message-id;
+        bh=dZgnpIKrJYQaPM02Ze7S4EKm8gpIOhNUmpkO76GhAKU=;
+        b=kqlDs2WL/3tyy9lqlNrnrPZOySSfM3/T12vtyDyhzT1IO+KVlv9/GlKI4yeYb9QpS277unLC4QI8XuVjyUH6GsYiBtswoDPe4EopVFsIND0mYDjK32MUgf0JmayVxoyIVRNaPbDuYWFF7yPlEAZzTzgUz9NJHxsoysOetgtdDrA=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=from:to:subject:user-agent:x-debbugs-no-ack:mime-version:content-disposition:date:content-type:content-transfer-encoding:message-id;
+        b=khapJUDIkCngEoM7jly4G7R4zw8wfbJU/lnf9bZzNW4gXdiuClwMGQ8D7IQ/m4vB65BpI9VF6l9eL7oMfE+PQCtbdIPoRrsCNCpcvQhQhnaDxAC3hVooTgYKwFi1ZSC1QP/GKHzfnA8pUyWk1VN0odlGtMRXgRmczV6dJnsaIBk=
+Received: by 10.100.92.9 with SMTP id p9mr12018976anb.3.1204327561132;
+        Fri, 29 Feb 2008 15:26:01 -0800 (PST)
+Received: from nova.local ( [201.164.225.7])
+        by mx.google.com with ESMTPS id 8sm11244196agd.30.2008.02.29.15.25.59
+        (version=TLSv1/SSLv3 cipher=OTHER);
+        Fri, 29 Feb 2008 15:26:00 -0800 (PST)
+From: Raphael Geissert <atomo64@gmail.com>
+To: maintonly@bugs.debian.org
+Subject: shorewall-common: bashism in /bin/sh script
+User-Agent: KMail/1.9.7
+X-Debbugs-No-Ack: do as I say
+MIME-Version: 1.0
+Content-Disposition: inline
+Date: Fri, 29 Feb 2008 17:25:54 -0600
+Content-Type: text/plain;
+  charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+Message-Id: <200802291725.57284.atomo64@gmail.com>
+Delivered-To: maintonly@bugs.debian.org
+
+Package: shorewall-common
+Severity: important
+Version: VERSION
+User: debian-release@lists.debian.org
+Usertags: goal-dash
+
+Hello maintainer,
+
+While performing an archive wide checkbashisms (from the 'devscripts' package) 
+check I've found your package containing a /bin/sh script making 
+use of a bashism.
+
+checkbashisms' output:
+> possible bashism in ./sbin/shorewall line 253 (EXP: local foo=bar):
+>     local sc=${SHELLSHAREDIR}/compiler
+> possible bashism in ./sbin/shorewall line 254 (EXP: local foo=bar):
+>     local pc=${PERLSHAREDIR}/compiler.pl
+> possible bashism in ./sbin/shorewall line 261 (EXP: local foo=bar):
+>     local command=$1
+> possible bashism in ./sbin/shorewall line 366 (EXP: local foo=bar):
+>     local finished=0
+> possible bashism in ./sbin/shorewall line 369 (EXP: local foo=bar):
+>         local rc=0
+> possible bashism in ./sbin/shorewall line 495 (EXP: local foo=bar):
+>     local finished=0
+> possible bashism in ./sbin/shorewall line 587 (EXP: local foo=bar):
+>     local finished=0
+> possible bashism in ./sbin/shorewall line 665 (EXP: local foo=bar):
+>     local finished=0 rc=0
+> possible bashism in ./sbin/shorewall line 748 (EXP: local foo=bar):
+>     local finished=0
+> possible bashism in ./sbin/shorewall line 815 (EXP: local foo=bar):
+>     local finished=0
+> possible bashism in ./sbin/shorewall line 953 (EXP: local foo=bar):
+>     local finished=0 timeout=
+> possible bashism in ./sbin/shorewall line 1098 (EXP: local foo=bar):
+>     local verbose=$(make_verbose) file= capabilities= finished=0 saveit=
+> result directory system getcaps= root=root compiler= possible bashism in
+> ./sbin/shorewall line 1211 (EXP: local foo=bar): local
+> verbose=$(make_verbose) file= finished=0 directory target compiler=
+> possible bashism in ./sbin/shorewall line 1422 (EXP: local foo=bar): local
+> finished=0 all=
+> possible bashism in ./sbin/shorewall line 1518 ($HOST(TYPE|NAME)):
+> banner="Shorewall-$version Status at $HOSTNAME -"
+> possible bashism in ./sbin/shorewall line 1614 ($HOST(TYPE|NAME)):
+>         echo "Shorewall-$version Status at $HOSTNAME - $(date)"
+> possible bashism in ./sbin/shorewall line 1660 ($HOST(TYPE|NAME)):
+>         banner="Shorewall-$version Logwatch at $HOSTNAME -"
+
+
+Not using bash as /bin/sh would lead to errors or unexpected behaviours. 
+Please be aware that although 
+bash is currently the default /bin/sh there's a release goal for Lenny to 
+make dash the default /bin/sh[1].
+
+If you want more information about dash as /bin/sh, you can read:
+http://lists.debian.org/debian-release/2008/01/msg00189.html
+https://wiki.ubuntu.com/DashAsBinSh
+
+[1]http://release.debian.org/lenny/goals.txt
+
+Thank you,
+-- 
+Atomo64 - Raphael
+
+Please avoid sending me Word, PowerPoint or Excel attachments.
+See http://www.gnu.org/philosophy/no-word-attachments.html
+
+
+
+------------=_1208669585-11745-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 468699-close) by bugs.debian.org; 20 Apr 2008 05:31:44 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.7 required=4.0 tests=BAYES_00,FVGT_m_MULTI_ODD,
+	HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_2,MURPHY_DRUGS_REL8,
+	MURPHY_WRONG_WORD1,MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnS9P-0002nt-QB
+	for 468699-close@bugs.debian.org; Sun, 20 Apr 2008 05:31:44 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnRgh-0004XR-Cr; Sun, 20 Apr 2008 05:02:03 +0000
+From: roberto@connexer.com (Roberto C. Sanchez)
+To: 468699-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#468699: fixed in shorewall-common 4.0.10-2
+Message-Id: <E1JnRgh-0004XR-Cr@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 05:02:03 +0000
+Content-Transfer-Encoding: quoted-printable
+
+Source: shorewall-common
+Source-Version: 4.0.10-2
+
+We believe that the bug you reported is fixed in the latest version of
+shorewall-common, which is due to be installed in the Debian FTP archive:
+
+shorewall-common_4.0.10-2.diff.gz
+  to pool/main/s/shorewall-common/shorewall-common_4.0.10-2.diff.gz
+shorewall-common_4.0.10-2.dsc
+  to pool/main/s/shorewall-common/shorewall-common_4.0.10-2.dsc
+shorewall-common_4.0.10-2_all.deb
+  to pool/main/s/shorewall-common/shorewall-common_4.0.10-2_all.deb
+shorewall_4.0.10-2_all.deb
+  to pool/main/s/shorewall-common/shorewall_4.0.10-2_all.deb
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 468699@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Roberto C. Sanchez <roberto@connexer.com> (supplier of updated shorewall-=
+common package)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 00:04:13 -0400
+Source: shorewall-common
+Binary: shorewall-common shorewall
+Architecture: source all
+Version: 4.0.10-2
+Distribution: unstable
+Urgency: low
+Maintainer: Roberto C. Sanchez <roberto@connexer.com>
+Changed-By: Roberto C. Sanchez <roberto@connexer.com>
+Description:=20
+ shorewall  - Shoreline Firewall, netfilter configurator - transitional p=
+ackage
+ shorewall-common - Shoreline Firewall, netfilter configurator - common f=
+iles
+Closes: 468699
+Changes:=20
+ shorewall-common (4.0.10-2) unstable; urgency=3Dlow
+ .
+   * Incorporate patch for upstream point release (4.0.10.1).
+   * Change /bin/sh -> /bin/dash in several files because of "bashisms".
+     (Closes: #468699)
+Checksums-Sha1:=20
+ 19be6464c9df02bd08ae2c7802561d559c32313d 1223 shorewall-common_4.0.10-2.=
+dsc
+ 743f964eadfe75d6f9146b726f09fb8877c2151b 36991 shorewall-common_4.0.10-2=
+.diff.gz
+ 23df0104174d10ab629e47a8e052d22936b28409 208790 shorewall-common_4.0.10-=
+2_all.deb
+ af033fae0378049cae65e42830f8c8313ed15d32 7372 shorewall_4.0.10-2_all.deb
+Checksums-Sha256:=20
+ 51c35a882351fca6505e3dc72d75f71c8e39f1bd21ef36a7baabbffa32222947 1223 sh=
+orewall-common_4.0.10-2.dsc
+ 0196ee16e9126f071776911862f5402f2bc1ec49444cb800bbb68deacc919dcb 36991 s=
+horewall-common_4.0.10-2.diff.gz
+ 883194c6da5590eb15d5dca56ae81ab8c5eefa8c4ece96dd677c452ca8c7f906 208790 =
+shorewall-common_4.0.10-2_all.deb
+ 076b7de49862bd5244040c5052e0f68a1b60b8d45b942a3e78c729838a63488b 7372 sh=
+orewall_4.0.10-2_all.deb
+Files:=20
+ e93ea028962d1594109a0ef076f77da7 1223 net optional shorewall-common_4.0.=
+10-2.dsc
+ 14a77b96ce36cab2cb824e934470316e 36991 net optional shorewall-common_4.0=
+.10-2.diff.gz
+ 2802430528bf890d78614a0b72bd74c6 208790 net optional shorewall-common_4.=
+0.10-2_all.deb
+ 5ecf8aa878010a35e777ea207ae73c85 7372 net optional shorewall_4.0.10-2_al=
+l.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICsud5SXWIKfIlGQRAsakAJ9k5H2fiYZ31iqxxn3b2Qo+jR/YFwCfSHZb
+8VEtYnWdgB4vBGbRQolrXi0=3D
+=3DuIHM
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208669585-11745-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

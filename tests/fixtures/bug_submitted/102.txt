@@ -1,0 +1,370 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 16:52:03 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnbp1-0007sU-JW
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 16:51:58 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 9F86313A50CC; Sun, 20 Apr 2008 15:51:17 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-6.4 required=4.0 tests=BAYES_00,FOURLA,
+	FVGT_m_MULTI_ODD,LDO_WHITELIST,PHONENUMBER,RCVD_IN_DNSWL_LOW autolearn=ham
+	version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 5ABC013A50E8;
+	Sun, 20 Apr 2008 15:50:17 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnbnC-0003BL-TU; Sun, 20 Apr 2008 15:49:26 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#477010: pycaml: FTBFS: pycaml_ml.c:922: error: 'PyRun_SimpleString' undeclared here (not in a function)
+Reply-To: Lucas Nussbaum <lucas@lucas-nussbaum.net>, 477010@bugs.debian.org
+Resent-From: Lucas Nussbaum <lucas@lucas-nussbaum.net>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian OCaml Maintainers <debian-ocaml-maint@lists.debian.org>
+Resent-Date: Sun, 20 Apr 2008 15:49:23 +0000
+Resent-Message-ID: <handler.477010.B.12087064052685@bugs.debian.org>
+X-Debian-PR-Message: report 477010
+X-Debian-PR-Package: pycaml
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: pycaml
+Received: via spool by submit@bugs.debian.org id=B.12087064052685
+          (code B ref -1); Sun, 20 Apr 2008 15:49:23 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 15:46:45 +0000
+X-Amavis-Spam-Status: No, score=-8.4 required=4.0 tests=BAYES_00,FOURLA,
+	FVGT_m_MULTI_ODD,HAS_PACKAGE,PHONENUMBER autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from xanadu.blop.info ([80.248.208.235])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <lucas@lucas-nussbaum.net>)
+	id 1JnbkZ-0000ed-HL
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 15:46:44 +0000
+Received: from localhost ([127.0.0.1] helo=xanadu.blop.info)
+	by xanadu.blop.info with smtp (Exim 4.63)
+	(envelope-from <lucas@lucas-nussbaum.net>)
+	id 1JnbkY-0000Bm-EZ
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 17:46:42 +0200
+Received: (nullmailer pid 17451 invoked by uid 1000);
+	Sun, 20 Apr 2008 13:57:19 -0000
+Date: Sun, 20 Apr 2008 15:57:19 +0200
+From: Lucas Nussbaum <lucas@lucas-nussbaum.net>
+To: submit@bugs.debian.org
+Message-ID: <20080420135719.GA17434@xanadu.blop.info>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 15:49:26 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343570
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -36.7
+X-Spam-Report: (-36.7 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	16 AWL                    AWL: From: address is in the auto white-list
+
+Package: pycaml
+Version: 0.82-7
+Severity: serious
+User: debian-qa@lists.debian.org
+Usertags: qa-ftbfs-20080419 qa-ftbfs
+Justification: FTBFS on i386
+
+Hi,
+
+During a rebuild of all packages in sid, your package failed to build on i386.
+
+This rebuild was done with gcc 4.3 instead of gcc 4.2, because gcc 4.3 is now
+the default on most architectures (even if it's not the case on i386 yet).
+Feel free to downgrade this bug to 'important' if your package is only built
+on i386, and this bug is specific to gcc 4.3 (i.e the package builds fine with
+gcc 4.2).
+
+Relevant part:
+> DC-Build-Header: pycaml 0.82-7 / Sat Apr 19 21:56:20 +0200 2008
+> Automatic build of pycaml_0.82-7 on gdx-42.orsay.grid5000.fr by sbuild/amd64 0.57.0
+> Build started at 20080419-2156
+> ******************************************************************************
+> Failed to open ./pycaml_0.82-7.dsc
+> Checking available source versions...
+> Fetching source files...
+> Reading package lists...
+> Building dependency tree...
+> Reading state information...
+> Need to get 123kB of source archives.
+> Get:1 http://idpot.grenoble.grid5000.fr sid/main pycaml 0.82-7 (dsc) [871B]
+> Get:2 http://idpot.grenoble.grid5000.fr sid/main pycaml 0.82-7 (tar) [119kB]
+> Get:3 http://idpot.grenoble.grid5000.fr sid/main pycaml 0.82-7 (diff) [4049B]
+> Fetched 123kB in 0s (521kB/s)
+> Download complete and in download only mode
+> ** Using build dependencies supplied by package:
+> Build-Depends: debhelper (>= 5.0.37.2), python-support (>= 0.3), ocaml-nox (>= 3.10), python-dev (>= 2.3), ocamlmakefile
+> Checking for already installed source dependencies...
+> debhelper: missing
+> Using default version 6.0.11
+> python-support: missing
+> Using default version 0.7.7
+> ocaml-nox: missing
+> Using default version 3.10.1-1
+> python-dev: missing
+> Using default version 2.5.2-1
+> ocamlmakefile: missing
+> Checking for source dependency conflicts...
+> Reading package lists...
+> Building dependency tree...
+> Reading state information...
+> The following extra packages will be installed:
+>   bsdmainutils file gettext gettext-base groff-base html2text intltool-debian
+>   libdb4.5 libmagic1 libncurses5-dev libncursesw5 libsqlite3-0 libssl0.9.8
+>   man-db mime-support ocaml-base-nox ocaml-interp po-debconf python
+>   python-minimal python2.5 python2.5-dev python2.5-minimal
+> Suggested packages:
+>   wamerican wordlist whois vacation dh-make cvs gettext-doc groff www-browser
+>   libgdbm-dev ocaml-doc tuareg-mode ocaml-mode python-doc python-tk
+>   python-profiler python2.5-doc binfmt-support
+> Recommended packages:
+>   curl wget lynx libgpmg1 ledit camlp4 libcompress-zlib-perl libmail-box-perl
+>   libmail-sendmail-perl
+> The following NEW packages will be installed:
+>   bsdmainutils debhelper file gettext gettext-base groff-base html2text
+>   intltool-debian libdb4.5 libmagic1 libncurses5-dev libncursesw5 libsqlite3-0
+>   libssl0.9.8 man-db mime-support ocaml-base-nox ocaml-interp ocaml-nox
+>   ocamlmakefile po-debconf python python-dev python-minimal python-support
+>   python2.5 python2.5-dev python2.5-minimal
+> 0 upgraded, 28 newly installed, 0 to remove and 0 not upgraded.
+> Need to get 25.1MB of archives.
+> After this operation, 81.3MB of additional disk space will be used.
+> WARNING: The following packages cannot be authenticated!
+>   bsdmainutils groff-base libncursesw5 libssl0.9.8 man-db libmagic1 file
+>   gettext-base libdb4.5 mime-support libsqlite3-0 python2.5-minimal python2.5
+>   python-minimal python python-support html2text gettext intltool-debian
+>   po-debconf debhelper libncurses5-dev ocaml-base-nox ocaml-interp ocaml-nox
+>   python2.5-dev python-dev ocamlmakefile
+> Authentication warning overridden.
+> Get:1 http://idpot.grenoble.grid5000.fr sid/main bsdmainutils 6.1.10 [172kB]
+> Get:2 http://idpot.grenoble.grid5000.fr sid/main groff-base 1.18.1.1-20 [846kB]
+> Get:3 http://idpot.grenoble.grid5000.fr sid/main libncursesw5 5.6+20080405-1 [348kB]
+> Get:4 http://idpot.grenoble.grid5000.fr sid/main libssl0.9.8 0.9.8g-8 [2900kB]
+> Get:5 http://idpot.grenoble.grid5000.fr sid/main man-db 2.5.1-3 [997kB]
+> Get:6 http://idpot.grenoble.grid5000.fr sid/main libmagic1 4.23-2 [342kB]
+> Get:7 http://idpot.grenoble.grid5000.fr sid/main file 4.23-2 [41.0kB]
+> Get:8 http://idpot.grenoble.grid5000.fr sid/main gettext-base 0.17-2 [123kB]
+> Get:9 http://idpot.grenoble.grid5000.fr sid/main libdb4.5 4.5.20-11 [525kB]
+> Get:10 http://idpot.grenoble.grid5000.fr sid/main mime-support 3.40-1.1 [31.3kB]
+> Get:11 http://idpot.grenoble.grid5000.fr sid/main libsqlite3-0 3.5.7-2 [197kB]
+> Get:12 http://idpot.grenoble.grid5000.fr sid/main python2.5-minimal 2.5.2-3 [1167kB]
+> Get:13 http://idpot.grenoble.grid5000.fr sid/main python2.5 2.5.2-3 [2884kB]
+> Get:14 http://idpot.grenoble.grid5000.fr sid/main python-minimal 2.5.2-1 [13.3kB]
+> Get:15 http://idpot.grenoble.grid5000.fr sid/main python 2.5.2-1 [141kB]
+> Get:16 http://idpot.grenoble.grid5000.fr sid/main python-support 0.7.7 [26.7kB]
+> Get:17 http://idpot.grenoble.grid5000.fr sid/main html2text 1.3.2a-3 [98.9kB]
+> Get:18 http://idpot.grenoble.grid5000.fr sid/main gettext 0.17-2 [2683kB]
+> Get:19 http://idpot.grenoble.grid5000.fr sid/main intltool-debian 0.35.0+20060710.1 [30.8kB]
+> Get:20 http://idpot.grenoble.grid5000.fr sid/main po-debconf 1.0.12.1 [237kB]
+> Get:21 http://idpot.grenoble.grid5000.fr sid/main debhelper 6.0.11 [522kB]
+> Get:22 http://idpot.grenoble.grid5000.fr sid/main libncurses5-dev 5.6+20080405-1 [1502kB]
+> Get:23 http://idpot.grenoble.grid5000.fr sid/main ocaml-base-nox 3.10.1-1 [347kB]
+> Get:24 http://idpot.grenoble.grid5000.fr sid/main ocaml-interp 3.10.1-1 [1210kB]
+> Get:25 http://idpot.grenoble.grid5000.fr sid/main ocaml-nox 3.10.1-1 [5789kB]
+> Get:26 http://idpot.grenoble.grid5000.fr sid/main python2.5-dev 2.5.2-3 [1874kB]
+> Get:27 http://idpot.grenoble.grid5000.fr sid/main python-dev 2.5.2-1 [932B]
+> Get:28 http://idpot.grenoble.grid5000.fr sid/main ocamlmakefile 6.27.0-1 [33.1kB]
+> debconf: delaying package configuration, since apt-utils is not installed
+> Fetched 25.1MB in 2s (11.5MB/s)
+> Selecting previously deselected package bsdmainutils.
+> (Reading database ... 9334 files and directories currently installed.)
+> Unpacking bsdmainutils (from .../bsdmainutils_6.1.10_i386.deb) ...
+> Selecting previously deselected package groff-base.
+> Unpacking groff-base (from .../groff-base_1.18.1.1-20_i386.deb) ...
+> Selecting previously deselected package libncursesw5.
+> Unpacking libncursesw5 (from .../libncursesw5_5.6+20080405-1_i386.deb) ...
+> Selecting previously deselected package libssl0.9.8.
+> Unpacking libssl0.9.8 (from .../libssl0.9.8_0.9.8g-8_i386.deb) ...
+> Selecting previously deselected package man-db.
+> Unpacking man-db (from .../man-db_2.5.1-3_i386.deb) ...
+> Selecting previously deselected package libmagic1.
+> Unpacking libmagic1 (from .../libmagic1_4.23-2_i386.deb) ...
+> Selecting previously deselected package file.
+> Unpacking file (from .../archives/file_4.23-2_i386.deb) ...
+> Selecting previously deselected package gettext-base.
+> Unpacking gettext-base (from .../gettext-base_0.17-2_i386.deb) ...
+> Selecting previously deselected package libdb4.5.
+> Unpacking libdb4.5 (from .../libdb4.5_4.5.20-11_i386.deb) ...
+> Selecting previously deselected package mime-support.
+> Unpacking mime-support (from .../mime-support_3.40-1.1_all.deb) ...
+> Selecting previously deselected package libsqlite3-0.
+> Unpacking libsqlite3-0 (from .../libsqlite3-0_3.5.7-2_i386.deb) ...
+> Selecting previously deselected package python2.5-minimal.
+> Unpacking python2.5-minimal (from .../python2.5-minimal_2.5.2-3_i386.deb) ...
+> Selecting previously deselected package python2.5.
+> Unpacking python2.5 (from .../python2.5_2.5.2-3_i386.deb) ...
+> Selecting previously deselected package python-minimal.
+> Unpacking python-minimal (from .../python-minimal_2.5.2-1_all.deb) ...
+> Selecting previously deselected package python.
+> Unpacking python (from .../python_2.5.2-1_all.deb) ...
+> Selecting previously deselected package python-support.
+> Unpacking python-support (from .../python-support_0.7.7_all.deb) ...
+> Selecting previously deselected package html2text.
+> Unpacking html2text (from .../html2text_1.3.2a-3_i386.deb) ...
+> Selecting previously deselected package gettext.
+> Unpacking gettext (from .../gettext_0.17-2_i386.deb) ...
+> Selecting previously deselected package intltool-debian.
+> Unpacking intltool-debian (from .../intltool-debian_0.35.0+20060710.1_all.deb) ...
+> Selecting previously deselected package po-debconf.
+> Unpacking po-debconf (from .../po-debconf_1.0.12.1_all.deb) ...
+> Selecting previously deselected package debhelper.
+> Unpacking debhelper (from .../debhelper_6.0.11_all.deb) ...
+> Selecting previously deselected package libncurses5-dev.
+> Unpacking libncurses5-dev (from .../libncurses5-dev_5.6+20080405-1_i386.deb) ...
+> Selecting previously deselected package ocaml-base-nox.
+> Unpacking ocaml-base-nox (from .../ocaml-base-nox_3.10.1-1_i386.deb) ...
+> Selecting previously deselected package ocaml-interp.
+> Unpacking ocaml-interp (from .../ocaml-interp_3.10.1-1_i386.deb) ...
+> Selecting previously deselected package ocaml-nox.
+> Unpacking ocaml-nox (from .../ocaml-nox_3.10.1-1_i386.deb) ...
+> Selecting previously deselected package python2.5-dev.
+> Unpacking python2.5-dev (from .../python2.5-dev_2.5.2-3_i386.deb) ...
+> Selecting previously deselected package python-dev.
+> Unpacking python-dev (from .../python-dev_2.5.2-1_all.deb) ...
+> Selecting previously deselected package ocamlmakefile.
+> Unpacking ocamlmakefile (from .../ocamlmakefile_6.27.0-1_all.deb) ...
+> Setting up bsdmainutils (6.1.10) ...
+> Setting up groff-base (1.18.1.1-20) ...
+> Setting up libncursesw5 (5.6+20080405-1) ...
+> Setting up libssl0.9.8 (0.9.8g-8) ...
+> Setting up man-db (2.5.1-3) ...
+> Building database of manual pages ...
+> Setting up libmagic1 (4.23-2) ...
+> Setting up file (4.23-2) ...
+> Setting up gettext-base (0.17-2) ...
+> Setting up libdb4.5 (4.5.20-11) ...
+> Setting up mime-support (3.40-1.1) ...
+> Setting up libsqlite3-0 (3.5.7-2) ...
+> Setting up python2.5-minimal (2.5.2-3) ...
+> Setting up python2.5 (2.5.2-3) ...
+> Setting up python-minimal (2.5.2-1) ...
+> Setting up python (2.5.2-1) ...
+> Setting up python-support (0.7.7) ...
+> Setting up html2text (1.3.2a-3) ...
+> Setting up gettext (0.17-2) ...
+> Setting up intltool-debian (0.35.0+20060710.1) ...
+> Setting up po-debconf (1.0.12.1) ...
+> Setting up debhelper (6.0.11) ...
+> Setting up libncurses5-dev (5.6+20080405-1) ...
+> Setting up ocaml-base-nox (3.10.1-1) ...
+> Setting up ocaml-interp (3.10.1-1) ...
+> Setting up ocaml-nox (3.10.1-1) ...
+> Setting up python2.5-dev (2.5.2-3) ...
+> Setting up python-dev (2.5.2-1) ...
+> Setting up ocamlmakefile (6.27.0-1) ...
+> Checking correctness of source dependencies...
+> Kernel: Linux 2.6.18-3-amd64 i386 (x86_64)
+> Toolchain package versions: libc6-dev_2.7-10 linux-libc-dev_2.6.24-5 gcc-4.3_4.3.0-3 g++-4.3_4.3.0-3 binutils_2.18.1~cvs20080103-4 libstdc++6-4.3-dev_4.3.0-3 libstdc++6_4.3.0-3
+> ------------------------------------------------------------------------------
+> gpg: Signature made Sat Sep  8 01:08:36 2007 CEST using DSA key ID 800969EF
+> gpg: Can't check signature: public key not found
+> dpkg-source: extracting pycaml in pycaml-0.82
+> dpkg-source: info: unpacking pycaml_0.82.orig.tar.gz
+> dpkg-source: info: applying pycaml_0.82-7.diff.gz
+> dpkg-buildpackage: set CFLAGS to default value: -g -O2
+> dpkg-buildpackage: set CPPFLAGS to default value: 
+> dpkg-buildpackage: set LDFLAGS to default value: 
+> dpkg-buildpackage: set FFLAGS to default value: -g -O2
+> dpkg-buildpackage: set CXXFLAGS to default value: -g -O2
+> dpkg-buildpackage: source package pycaml
+> dpkg-buildpackage: source version 0.82-7
+> dpkg-buildpackage: source changed by Samuel Mimram <smimram@debian.org>
+> dpkg-buildpackage: host architecture i386
+>  /usr/bin/fakeroot debian/rules clean
+> dh_testdir
+> dh_testroot
+> rm -f build-stamp
+> [ ! -f Makefile ] || /usr/bin/make clean
+> dh_clean
+> rm -f *.cm* *.mli *.a *.o config.log *.opt *.so pycaml.customtop Makefile config.status
+> rm -rf ./._d
+> rm -f config.cache
+>  dpkg-source -b pycaml-0.82
+> dpkg-source: info: using source format `1.0'
+> dpkg-source: info: building pycaml using existing pycaml_0.82.orig.tar.gz
+> dpkg-source: info: building pycaml in pycaml_0.82-7.diff.gz
+> dpkg-source: info: building pycaml in pycaml_0.82-7.dsc
+>  debian/rules build
+> for f in debian/override; do sed -e 's/@OCamlABI@/3.10.1/g' $f.in > $f; done
+> dh_testdir
+> #CFLAGS="-Wall -g -O2" ./configure --host=i486-linux-gnu --build=i486-linux-gnu --prefix=/usr --mandir=\${prefix}/share/man --infodir=\${prefix}/share/info
+> dh_testdir
+> cp debian/Makefile .
+> if [ -x /usr/bin/ocamlopt ]; then /usr/bin/make allopt; else /usr/bin/make all; fi
+> make[1]: Entering directory `/build/user/pycaml-0.82'
+> make[2]: Entering directory `/build/user/pycaml-0.82'
+> ocamldep pycaml.ml > ._d/pycaml.d
+> make[2]: Leaving directory `/build/user/pycaml-0.82'
+> make[2]: Entering directory `/build/user/pycaml-0.82'
+> ocamlc -c -cc "cc" -ccopt "-fPIC -fPIC \
+> 				-DPIC -DNATIVE_CODE   \
+> 				  -I/usr/include/python2.5  -o pycaml_ml.o " pycaml_ml.c
+> pycaml_ml.c: In function 'pygencall':
+> pycaml_ml.c:478: warning: passing argument 2 of '(int (*)(struct PyObject *, const char **, int *))func' from incompatible pointer type
+> pycaml_ml.c: At top level:
+> pycaml_ml.c:922: error: 'PyRun_SimpleString' undeclared here (not in a function)
+> pycaml_ml.c:924: error: 'PyRun_AnyFile' undeclared here (not in a function)
+> pycaml_ml.c:925: error: 'PyRun_SimpleFile' undeclared here (not in a function)
+> pycaml_ml.c:926: error: 'PyRun_InteractiveOne' undeclared here (not in a function)
+> pycaml_ml.c:927: error: 'PyRun_InteractiveLoop' undeclared here (not in a function)
+> pycaml_ml.c:930: error: 'PyRun_AnyFileEx' undeclared here (not in a function)
+> pycaml_ml.c:931: error: 'PyRun_SimpleFileEx' undeclared here (not in a function)
+> pycaml_ml.c:945: error: 'PyRun_String' undeclared here (not in a function)
+> pycaml_ml.c:947: error: 'PyRun_File' undeclared here (not in a function)
+> pycaml_ml.c:949: error: 'PyRun_FileEx' undeclared here (not in a function)
+> pycaml_ml.c:951: error: 'Py_CompileString' undeclared here (not in a function)
+> pycaml_ml.c:1066: error: 'PyRange_New' undeclared here (not in a function)
+> pycaml_ml.c: In function 'pymodule_initmodule':
+> pycaml_ml.c:1377: warning: assignment makes pointer from integer without a cast
+> make[2]: *** [pycaml_ml.o] Error 2
+
+The full build log is available from:
+   http://people.debian.org/~lucas/logs/2008/04/19
+
+A list of current common problems and possible solutions is available at 
+http://wiki.debian.org/qa.debian.org/FTBFS . You're welcome to contribute!
+
+About the archive rebuild: The rebuild was done on about 50 AMD64 nodes
+of the Grid'5000 platform, using a clean chroot containing a sid i386
+environment.  Internet was not accessible from the build systems.
+
+-- 
+| Lucas Nussbaum
+| lucas@lucas-nussbaum.net   http://www.lucas-nussbaum.net/ |
+| jabber: lucas@nussbaum.fr             GPG: 1024D/023B3F4F |
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

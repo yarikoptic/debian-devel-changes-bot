@@ -1,0 +1,113 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 18:39:50 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JndVz-000096-LN
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 18:39:50 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id E13A313A50C6; Sun, 20 Apr 2008 17:39:45 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-3.0 required=4.0 tests=BAYES_00,RCVD_IN_DNSWL_LOW
+	autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 455AC13A4BAF;
+	Sun, 20 Apr 2008 17:39:36 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JndVH-0008Gr-S0; Sun, 20 Apr 2008 17:39:03 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#436267: Firewire support in lenny
+Reply-To: maximilian attems <max@stro.at>, 436267@bugs.debian.org
+Resent-From: maximilian attems <max@stro.at>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian Kernel Team <debian-kernel@lists.debian.org>
+Resent-Date: Sun, 20 Apr 2008 17:39:01 +0000
+Resent-Message-ID: <handler.436267.B436267.120871278732337@bugs.debian.org>
+X-Debian-PR-Message: report 436267
+X-Debian-PR-Package: linux-2.6
+X-Debian-PR-Keywords: 
+Received: via spool by 436267-submit@bugs.debian.org id=B436267.120871278732337
+          (code B ref 436267); Sun, 20 Apr 2008 17:39:01 +0000
+Received: (at 436267) by bugs.debian.org; 20 Apr 2008 17:33:07 +0000
+X-Amavis-Spam-Status: No, score=-7.0 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from baikonur.stro.at ([213.239.196.228])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <max@baikonur.stro.at>)
+	id 1JndPW-0008Na-Hg
+	for 436267@bugs.debian.org; Sun, 20 Apr 2008 17:33:06 +0000
+Received: by baikonur.stro.at (Postfix, from userid 1001)
+	id DABFB5C016; Sun, 20 Apr 2008 19:30:48 +0200 (CEST)
+Date: Sun, 20 Apr 2008 19:30:48 +0200
+From: maximilian attems <max@stro.at>
+To: Michael Stone <mstone@debian.org>, 436267@bugs.debian.org
+Message-ID: <20080420173048.GC15111@baikonur.stro.at>
+References: <20080420170215.GB2626@mathom.us>
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20080420170215.GB2626@mathom.us>
+User-Agent: Mutt/1.5.9i
+X-Virus-Scanned: by Amavis (ClamAV) at stro.at
+Resent-Date: Sun, 20 Apr 2008 17:39:03 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343682
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -35.2
+X-Spam-Report: (-35.2 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	17 AWL                    AWL: From: address is in the auto white-list
+
+On Sun, Apr 20, 2008 at 01:02:18PM -0400, Michael Stone wrote:
+> I've tried the 2.6.25-trunk kernel, and the latest in sid and as of 
+> today (2008-04-20) the only way I can transfer videos from my dv camera 
+> to my hard disk is with Holger's kernels (the ones with the old firewire 
+> stack enabled). I do not understand why the debian kernel maintainers 
+> are so unwilling to allow people to choose which firewire stack they 
+> use. This is clearly a case of theory not matching reality--it is 
+> irrelevant whether the new stack is conceptually cleaner if it doesn't 
+> work with the software people are trying to use. In my experience, the 
+> new stack is much better for firewire attached disks, but unusable for 
+> video work. Are the people pushing for having only the new stack in the 
+> debian kernels doing video work? 
+
+boaah as debian developer can you please send in a proper bug report.
+open a new bug with all your hardware info dmesg, lspci.
+used firewire userspace components.
+ 
+that would be a start to do something useful.
+
+regards
+
+-- 
+maks
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,137 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 14:02:44 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnZBp-00071E-JN
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 14:02:44 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 61E8613A4F68; Sun, 20 Apr 2008 13:02:40 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id 06F6D13A4F12
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 13:02:40 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnZBG-0008BF-QC; Sun, 20 Apr 2008 13:02:06 +0000
+From: Guido Guenther <agx@sigxcpu.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted twisted-calendarserver 0.2.0.svn19773-1 (source powerpc)
+Message-Id: <E1JnZBG-0008BF-QC@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 13:02:06 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <UbP224bY7YF.A.s2G.w7zCIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301296
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 13:02:40 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.6
+X-Spam-Report: (-2.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.0 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 13:24:03 +0200
+Source: twisted-calendarserver
+Binary: python-twisted-calendarserver
+Architecture: source powerpc
+Version: 0.2.0.svn19773-1
+Distribution: unstable
+Urgency: low
+Maintainer: Guido Guenther <agx@sigxcpu.org>
+Changed-By: Guido Guenther <agx@sigxcpu.org>
+Description:=20
+ python-twisted-calendarserver - Twisted components for Apple's Calendars=
+erver
+Changes:=20
+ twisted-calendarserver (0.2.0.svn19773-1) unstable; urgency=3Dlow
+ .
+   * first upload to unstable
+   * conflict with python-twisted-core since otherwise the module loading
+     breaks - in the long run we need to depend on python-twisted-core an=
+d
+     provide a patched python-twisted-web2 only
+   * choose version number based on the web2 component's version
+   * switch to python 2.5
+Checksums-Sha1:=20
+ 8eed531de7ef3d8467b28f4d64683429094a7b8b 1348 twisted-calendarserver_0.2=
+.0.svn19773-1.dsc
+ 0e448d328d78933b0d80d76fd5d755411c7c3503 2792305 twisted-calendarserver_=
+0.2.0.svn19773.orig.tar.gz
+ 717acadc4cca76865b78efdeded61791d10280eb 31733 twisted-calendarserver_0.=
+2.0.svn19773-1.diff.gz
+ 48b524558faedf5f4a5c76f27d4bcf1e6b59aa2f 4138874 python-twisted-calendar=
+server_0.2.0.svn19773-1_powerpc.deb
+Checksums-Sha256:=20
+ ee561d354719875bbbf51d778f3b9f8cac792f4ec79820ad15b0d9e90a4681f0 1348 tw=
+isted-calendarserver_0.2.0.svn19773-1.dsc
+ fd83b2e0f3e545464ce7715aeff13809fc9e9059fe42a6a23dae0a414a0a1a8e 2792305=
+ twisted-calendarserver_0.2.0.svn19773.orig.tar.gz
+ f70ee1a33895bd4eefbf4cbf46f3a0defdfdaff88e2b6561c77e4fe8fbdb36c2 31733 t=
+wisted-calendarserver_0.2.0.svn19773-1.diff.gz
+ 2efe2f34e00ad7d97ed9f02738d451702268d5220c7760b5a720bbc27fe6388b 4138874=
+ python-twisted-calendarserver_0.2.0.svn19773-1_powerpc.deb
+Files:=20
+ 4d5cae8cf0da3d961e38cefefe224b8a 1348 python optional twisted-calendarse=
+rver_0.2.0.svn19773-1.dsc
+ fc46421445d2163e8bd4bdaff14e2cfd 2792305 python optional twisted-calenda=
+rserver_0.2.0.svn19773.orig.tar.gz
+ 67a79c501ce3d6bba3acea9c8da89468 31733 python optional twisted-calendars=
+erver_0.2.0.svn19773-1.diff.gz
+ 9aa5f796b1941127a7b8e71feed55f9f 4138874 python optional python-twisted-=
+calendarserver_0.2.0.svn19773-1_powerpc.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICzyLn88szT8+ZCYRArioAJwMt3ECMQbbWn/Xkl3pfsayuSCAsQCdHTn2
+MrER++fU07HQnPD2jx5n7VY=3D
+=3DOPuA
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+python-twisted-calendarserver_0.2.0.svn19773-1_powerpc.deb
+  to pool/main/t/twisted-calendarserver/python-twisted-calendarserver_0.2=
+.0.svn19773-1_powerpc.deb
+twisted-calendarserver_0.2.0.svn19773-1.diff.gz
+  to pool/main/t/twisted-calendarserver/twisted-calendarserver_0.2.0.svn1=
+9773-1.diff.gz
+twisted-calendarserver_0.2.0.svn19773-1.dsc
+  to pool/main/t/twisted-calendarserver/twisted-calendarserver_0.2.0.svn1=
+9773-1.dsc
+twisted-calendarserver_0.2.0.svn19773.orig.tar.gz
+  to pool/main/t/twisted-calendarserver/twisted-calendarserver_0.2.0.svn1=
+9773.orig.tar.gz
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

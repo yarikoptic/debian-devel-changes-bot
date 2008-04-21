@@ -1,0 +1,137 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 03:05:58 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnOwC-00055Q-UM
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 03:05:58 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 53EB913A4DDE; Sun, 20 Apr 2008 02:05:51 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 7AA2D13A4AF9;
+	Sun, 20 Apr 2008 02:05:37 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnOtT-00044P-Kc; Sun, 20 Apr 2008 02:03:03 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#473808: Volume insert/removal events doubled up
+Reply-To: Sam Morris <sam@robots.org.uk>, 473808@bugs.debian.org
+Resent-From: Sam Morris <sam@robots.org.uk>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Sjoerd Simons <sjoerd@debian.org>
+Resent-Date: Sun, 20 Apr 2008 02:03:02 +0000
+Resent-Message-ID: <handler.473808.B473808.120865690314863@bugs.debian.org>
+X-Debian-PR-Message: report 473808
+X-Debian-PR-Package: gnome-volume-manager
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: gnome-volume-manager
+Received: via spool by 473808-submit@bugs.debian.org id=B473808.120865690314863
+          (code B ref 473808); Sun, 20 Apr 2008 02:03:02 +0000
+Received: (at 473808) by bugs.debian.org; 20 Apr 2008 02:01:43 +0000
+X-Amavis-Spam-Status: No, score=-4.0 required=4.0 tests=BAYES_00 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from crypt.ethx.net ([82.165.27.140])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <sam@robots.org.uk>)
+	id 1JnOsB-0003rZ-5m
+	for 473808@bugs.debian.org; Sun, 20 Apr 2008 02:01:43 +0000
+Received: from 79-66-177-233.dynamic.dsl.as9105.com ([79.66.177.233] helo=xerces)
+	by crypt.ethx.net with esmtpsa (TLS-1.0:RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <sam@robots.org.uk>)
+	id 1JnOs8-0003Xl-Rm
+	for 473808@bugs.debian.org; Sun, 20 Apr 2008 03:01:41 +0100
+Received: from sam by xerces with local (Exim 4.69)
+	(envelope-from <sam@robots.org.uk>)
+	id 1JnOs0-0003FC-FM
+	for 473808@bugs.debian.org; Sun, 20 Apr 2008 03:01:32 +0100
+From: Sam Morris <sam@robots.org.uk>
+To: 473808@bugs.debian.org
+Content-Type: multipart/signed; micalg=pgp-sha1; protocol="application/pgp-signature"; boundary="=-z4TVb5jC+gYlSytEcyDb"
+Date: Sun, 20 Apr 2008 03:01:27 +0100
+Message-Id: <1208656887.6730.1.camel@xerces>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.22.1 
+Resent-Date: Sun, 20 Apr 2008 02:03:03 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343314
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -37.0
+X-Spam-Report: Spam detection software, running on the system "chris-lamb.co.uk", has
+	identified this incoming email as possible spam.  The original message
+	has been attached to this so you can view it (if it isn't spam) or label
+	similar future email.  If you have any questions, see
+	the administrator of that system for details.
+	Content preview:  So, g-v-m is going away? News to me. If only things like
+	this were ever documented anywhere.
+	http://bugzilla.gnome.org/show_bug.cgi?id=509823 We should probably keep
+	nautilus 2.22 out of testing until this situation is cleaned up! [...] 
+	Content analysis details:   (-37.0 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	16 AWL                    AWL: From: address is in the auto white-list
+
+
+--=-z4TVb5jC+gYlSytEcyDb
+Content-Type: text/plain
+Content-Transfer-Encoding: quoted-printable
+
+So, g-v-m is going away? News to me. If only things like this were ever
+documented anywhere.
+
+http://bugzilla.gnome.org/show_bug.cgi?id=3D509823
+
+We should probably keep nautilus 2.22 out of testing until this
+situation is cleaned up!
+
+--=20
+Sam Morris
+http://robots.org.uk/
+
+PGP key id 1024D/5EA01078
+3412 EA18 1277 354B 991B  C869 B219 7FDB 5EA0 1078
+
+--=-z4TVb5jC+gYlSytEcyDb
+Content-Type: application/pgp-signature; name=signature.asc
+Content-Description: This is a digitally signed message part
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQBICqP2shl/216gEHgRAvb7AJ41iDYbERBx4IycAtvcNq2rIBh8zQCgrc2i
+FILihGH7p2qcNFjpJp/xe20=
+=Spzt
+-----END PGP SIGNATURE-----
+
+--=-z4TVb5jC+gYlSytEcyDb--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

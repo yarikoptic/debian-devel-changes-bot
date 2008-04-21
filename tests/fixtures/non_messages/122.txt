@@ -1,0 +1,432 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 13:33:02 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnYj1-0006uC-SJ
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 13:33:02 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 3D1BC13A4F7C; Sun, 20 Apr 2008 12:32:54 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-5.4 required=4.0 tests=BAYES_00,FOURLA,
+	IMPRONONCABLE_2,LDO_WHITELIST,MONEY,MURPHY_DRUGS_REL8,RCVD_IN_DNSWL_LOW,
+	STOCKLIKE autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id DD6A313A4F73;
+	Sun, 20 Apr 2008 12:32:43 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnYdW-0004Bn-Tt; Sun, 20 Apr 2008 12:27:14 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#475777: [Buildd-tools-devel] Bug#475777: sbuild: Add support for appending a tag to version numbers
+Reply-To: Roger Leigh <rleigh@whinlatter.ukfsn.org>, 475777@bugs.debian.org
+Resent-From: Roger Leigh <rleigh@whinlatter.ukfsn.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian buildd-tools Developers <buildd-tools-devel@lists.alioth.debian.org>
+Resent-Date: Sun, 20 Apr 2008 12:27:14 +0000
+Resent-Message-ID: <handler.475777.B475777.120869430712481@bugs.debian.org>
+X-Debian-PR-Message: report 475777
+X-Debian-PR-Package: sbuild
+X-Debian-PR-Keywords: patch
+X-Debian-PR-Source: sbuild
+Received: via spool by 475777-submit@bugs.debian.org id=B475777.120869430712481
+          (code B ref 475777); Sun, 20 Apr 2008 12:27:14 +0000
+Received: (at 475777) by bugs.debian.org; 20 Apr 2008 12:25:07 +0000
+X-Amavis-Spam-Status: No, score=-4.2 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,HAS_BUG_NUMBER,IMPRONONCABLE_2,MONEY,MURPHY_DRUGS_REL8,
+	STOCKLIKE autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from mx1.ukfsn.org ([77.75.108.10] helo=mail.ukfsn.org)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <rleigh@whinlatter.ukfsn.org>)
+	id 1JnYbS-0003CW-4b; Sun, 20 Apr 2008 12:25:06 +0000
+Received: from localhost (smtp-filter.ukfsn.org [192.168.54.205])
+	by mail.ukfsn.org (Postfix) with ESMTP id BDFF9DEC51;
+	Sun, 20 Apr 2008 13:26:48 +0100 (BST)
+Received: from mail.ukfsn.org ([192.168.54.25])
+	by localhost (smtp-filter.ukfsn.org [192.168.54.205]) (amavisd-new, port 10024)
+	with ESMTP id GioRiNdzmxlU; Sun, 20 Apr 2008 13:12:50 +0100 (BST)
+Received: from hardknott.home (client-81-107-214-164.glfd.adsl.virgin.net [81.107.214.164])
+	by mail.ukfsn.org (Postfix) with ESMTP id F2FC1DEC71;
+	Sun, 20 Apr 2008 13:26:47 +0100 (BST)
+Received: by hardknott.home (Postfix, from userid 1000)
+	id 79B3CC004; Sun, 20 Apr 2008 13:25:01 +0100 (BST)
+To: Timothy G Abbott <tabbott@MIT.EDU>
+Cc: 475777@bugs.debian.org,  submit@bugs.debian.org
+References: <Pine.LNX.4.64L.0804121720360.10671@vinegar-pot.mit.edu>
+From: Roger Leigh <rleigh@whinlatter.ukfsn.org>
+Date: Sun, 20 Apr 2008 13:24:53 +0100
+In-Reply-To: <Pine.LNX.4.64L.0804121720360.10671@vinegar-pot.mit.edu> (Timothy G. Abbott's message of "Sat\, 12 Apr 2008 17\:54\:08 -0400 \(EDT\)")
+Message-ID: <87bq44lnmy.fsf@hardknott.home>
+User-Agent: Gnus/5.11 (Gnus v5.11) Emacs/22.2 (gnu/linux)
+MIME-Version: 1.0
+Content-Type: multipart/signed; boundary="==-=-=";
+	micalg=pgp-sha1; protocol="application/pgp-signature"
+Resent-Date: Sun, 20 Apr 2008 12:27:14 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343467
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -37.1
+X-Spam-Report: (-37.1 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	15 AWL                    AWL: From: address is in the auto white-list
+
+--==-=-=
+Content-Type: multipart/mixed; boundary="=-=-="
+
+--=-=-=
+Content-Transfer-Encoding: quoted-printable
+
+Timothy G Abbott <tabbott@MIT.EDU> writes:
+
+> I think sbuild should support appending a string to the version number
+> of the package at build time, similar in function to --binNMU, but
+> with support for appending arbitrary strings to the version numbers.
+[...]
+
+> One thing that I do not handle in my patch is how one should append
+> failed builds using --append-to-version to the job log, since I'm not
+> familiar with the parsers for the job log that are in use.  My patch
+> contains a comment noting this in the relevant section of the code;
+> this should be replaced with whatever the right solution is.
+
+Many thanks for the patch.  I reviewed the patch, and it looks good.
+A slightly modified version of this is attached; I altered the
+binNMU_version function for compatibility with other programs using
+binNMU_version in Sbuild.pm who won't provide the third argument
+(wanna-build).  I also added some further details to your comment
+about the failed builds.
+
+The patch looks good and works, but I did find a bug with combining
+=2D-append-to-version and --make-binNMU:
+
+
+% sbuild --append-to-version=3Drleigh --make-binNMU=3DTest. --binNMU=3D2 -d=
+ unstable -s -A dadadodo_1.04-3
+[...]
+dpkg-shlibdeps -Tdebian/dadadodo.substvars -dDepends \
+                        /build/rleigh/dadadodo_1.04-3/debian/dadadodo/usr/b=
+in/dadadodo
+install -d /build/rleigh/dadadodo_1.04-3/debian/dadadodo/DEBIAN
+cd /build/rleigh/dadadodo_1.04-3/debian/dadadodo >/dev/null ;\
+         find * -type f ! -regex '^DEBIAN/.*' -print0 | xargs -r0 md5sum > =
+DEBIAN/md5sums
+dpkg-gencontrol -isp -pdadadodo -Tdebian/dadadodo.substvars \
+                        -P/build/rleigh/dadadodo_1.04-3/debian/dadadodo
+dpkg --build /build/rleigh/dadadodo_1.04-3/debian/dadadodo ..
+dpkg-deb: building package `dadadodo' in `../dadadodo_1.04-3rleigh+b2_power=
+pc.deb'.
+ dpkg-genchanges  >../dadadodo_1.04-3rleigh+b2_powerpc.changes
+dpkg-genchanges: failure: cannot open .dsc file ../dadadodo_1.04-3rleigh.ds=
+c: No such file or directory
+dpkg-buildpackage: failure: dpkg-genchanges gave error exit status 2
+***************************************************************************=
+***
+Build finished at 20080420-1259
+FAILED [dpkg-buildpackage died]
+=2D------------------------------------------------------------------------=
+-----
+***************************************************************************=
+***
+Finished at 20080420-1259
+Build needed 00:00:13, 404k disk space
+
+
+I'm not sure why dpkg-genchanges fails here: I can run it with the
+same version outside the chroot and it works fine.  It may be a bug in
+dpkg-buildpackage, but I'm not really sure about that.
+
+Due to this problem, I haven't applied the patch as yet.  Once this
+bug can be fixed, I'll be happy to apply the patch.  If you have any
+idea what might be causing this, that would expedite merging this
+change.
+
+By the way, the patch is diffed against the latest version in our GIT
+repository.  You can get a copy with
+
+  % git clone git://git.debian.org/git/buildd-tools/sbuild.git sbuild
+
+While diffs against earlier versions were fine in this case, it does
+make things easier if patches are based against the master head.
+
+
+There is also a problem here in that sbuild does not clean up the
+build directory and generated files in the chroot when
+dpkg-buildpackage fails at this point.  I'm thinking of adding a
+temporary directory inside /build/$user for each build so that the
+entire directory can be purged on failure.
+
+
+Regards,
+Roger
+
+=2D-=20
+  .''`.  Roger Leigh
+ : :' :  Debian GNU/Linux             http://people.debian.org/~rleigh/
+ `. `'   Printing on GNU/Linux?       http://gutenprint.sourceforge.net/
+   `-    GPG Public Key: 0x25BFB848   Please GPG sign your mail.
+
+--=-=-=
+Content-Type: text/x-diff
+Content-Disposition: inline;
+ filename=sbuild-append-version-tabbot-rev2.patch
+Content-Transfer-Encoding: quoted-printable
+Content-Description: Amended append version patch
+
+diff --git a/bin/sbuild b/bin/sbuild
+index 22f09fb..673cb67 100755
+=2D-- a/bin/sbuild
++++ b/bin/sbuild
+@@ -147,6 +147,7 @@ $main::chroot_build_dir =3D "";
+ @main::toolchain_pkgs =3D ();
+ $main::override_distribution =3D 0;
+ $main::sub_task =3D "initialisation";
++$main::append_to_version =3D "";
+=20
+ # Be verbose by default if on a tty
+ if (-t STDIN && -t STDOUT && $main::verbose =3D=3D 0) {
+@@ -190,6 +191,7 @@ exit 1 if !GetOptions ("arch=3Ds" =3D> \$main::user_arc=
+h,
+ 			   $main::binNMUver ||=3D 1;
+ 		       },
+ 		       "binNMU=3Di" =3D> \$main::binNMUver,
++		       "append-to-version=3Ds" =3D> \$main::append_to_version,
+ 		       "database=3Ds" =3D> \$main::database,
+ 		       "D|debug+" =3D> \$conf::debug,
+ 		       "apt-update" =3D> \$conf::apt_update,
+@@ -308,9 +310,9 @@ foreach $dscfile (@ARGV) {
+ 	# TODO: This should be $pkg_start_time, set in build().
+ 	my $date =3D strftime("%Y%m%d-%H%M",localtime);
+=20
+=2D	if ($main::binNMU) {
++	if ($main::binNMU || $main::append_to_version) {
+ 	    $tpkg =3D~ /^([^_]+)_([^_]+)(.*)$/;
+=2D	    $tpkg =3D $1 . "_" . binNMU_version($2,$main::binNMUver);
++	    $tpkg =3D $1 . "_" . binNMU_version($2,$main::binNMUver,$main::append=
+_to_version);
+ 	    $main::binNMU_name =3D $tpkg;
+ 	    $tpkg .=3D $3;
+ 	}
+@@ -661,8 +663,8 @@ sub build ($$) {
+ 	    return 0;
+ 	}
+ 	my $tree_version =3D $1;
+=2D	my $cmp_version =3D ($main::binNMU && -f "$dir/debian/.sbuild-binNMU-do=
+ne") ?
+=2D	    binNMU_version($version,$main::binNMUver) : $version;
++	my $cmp_version =3D (($main::binNMU || $main::append_to_version) && -f "$=
+dir/debian/.sbuild-binNMU-done") ?
++	    binNMU_version($version,$main::binNMUver,$main::append_to_version) : =
+$version;
+ 	if ($tree_version ne $cmp_version) {
+ 	    print PLOG "The unpacked source tree $dir is version ".
+ 		"$tree_version, not wanted $cmp_version!\n";
+@@ -694,7 +696,7 @@ sub build ($$) {
+     }
+=20
+     $main::pkg_fail_stage =3D "hack-binNMU";
+=2D    if ($main::binNMU && ! -f "debian/.sbuild-binNMU-done") {
++    if (($main::binNMU || $main::append_to_version) && ! -f "debian/.sbuil=
+d-binNMU-done") {
+ 	if (open( F, "<debian/changelog" )) {
+ 	    my($firstline, $text);
+ 	    $firstline =3D "";
+@@ -703,7 +705,7 @@ sub build ($$) {
+ 	    close( F );
+ 	    $firstline =3D~ /^(\S+)\s+\((\S+)\)\s+([^;]+)\s*;\s*urgency=3D(\S+)\s=
+*$/;
+ 	    my ($name, $version, $dists, $urgent) =3D ($1, $2, $3, $4);
+=2D	    my $NMUversion =3D binNMU_version($version,$main::binNMUver);
++	    my $NMUversion =3D binNMU_version($version,$main::binNMUver,$main::ap=
+pend_to_version);
+ 	    chomp( my $date =3D `date -R` );
+ 	    if (!open( F, ">debian/changelog" )) {
+ 		print PLOG "Can't open debian/changelog for binNMU hack: $!\n";
+@@ -712,9 +714,15 @@ sub build ($$) {
+ 	    }
+ 	    $dists =3D $main::distribution;
+ 	    print F "$name ($NMUversion) $dists; urgency=3Dlow\n\n";
+=2D	    print F "  * Binary-only non-maintainer upload for $main::arch; ",
++	    if ($main::append_to_version) {
++		print F "  * Append $main::append_to_version to version; no source chang=
+es\n";
++	    }
++	    if ($main::binNMU) {
++		print F "  * Binary-only non-maintainer upload for $main::arch; ",
+ 	    "no source changes.\n";
+=2D	    print F "  * ", join( "    ", split( "\n", $main::binNMU )), "\n\n";
++		print F "  * ", join( "    ", split( "\n", $main::binNMU )), "\n";
++	    }
++	    print F "\n";
+ 	    print F " -- $conf::maintainer_name  $date\n\n";
+=20
+ 	    print F $firstline, $text;
+@@ -854,7 +862,8 @@ EOF
+ 	}
+=20
+ 	$changes =3D "${pkg}_".
+=2D	    ($main::binNMU ? binNMU_version($sversion,$main::binNMUver) : $sver=
+sion).
++	    (($main::binNMU || $main::append_to_version) ?=20
++	     binNMU_version($sversion,$main::binNMUver,$main::append_to_version) =
+: $sversion).
+ 	    "_$main::arch.changes";
+ 	my @cfiles;
+ 	if (-r "$main::chroot_build_dir/$changes") {
+@@ -2525,6 +2534,14 @@ sub shutdown ($) {
+     if (open( F, ">>$f" )) {
+ 	foreach $job (@npkgs) {
+ 	    next if grep( /^\Q$job\E\s/, @pkgs );
++            # This is not correctly handled with --append-to-version
++	    # because I'm not sure what the line below should look like.
++	    # -- Timothy G Abbott
++	    # REDO is read by buildd, so the format buildd reads would
++	    # need updating at the same time.  --append-to-version
++	    # would most likely not be used by buildd, so we will
++	    # leave the code as is for the time being.
++	    # -- Roger Leigh
+ 	    if (not defined $main::binNMUver) {
+ 		print F "$job $main::distribution\n";
+ 	    } else {
+@@ -2776,6 +2793,7 @@ sub add_space_entry ($$) {
+=20
+ sub dump_main_state () {
+     print STDERR Data::Dumper->Dump([\@main::additional_deps,
++				     $main::append_to_version,
+ 				     $main::arch,
+ 				     $main::auto_giveback,
+ 				     $main::auto_giveback_host,
+@@ -2825,6 +2843,7 @@ sub dump_main_state () {
+ 				     $main::useSNAP,
+ 				     $main::verbose],
+ 				    [qw(@main::additional_deps
++					$main::append_to_version
+ 					$main::arch
+ 					$main::auto_giveback
+ 					$main::auto_giveback_host
+diff --git a/lib/Sbuild.pm b/lib/Sbuild.pm
+index 46c106c..a72835c 100644
+=2D-- a/lib/Sbuild.pm
++++ b/lib/Sbuild.pm
+@@ -42,7 +42,7 @@ sub do_version_cmp ($$);
+ sub order ($);
+ sub version_cmp_single ($$);
+ sub split_version ($);
+=2Dsub binNMU_version ($$);
++sub binNMU_version ($$$);
+ sub parse_date ($);
+ sub isin ($@);
+=20
+@@ -179,11 +179,19 @@ sub split_version ($) {
+ 	return( $epoch, $vers, $revision );
+ }
+=20
+=2Dsub binNMU_version ($$) {
++sub binNMU_version ($$$) {
+ 	my $v =3D shift;
+ 	my $binNMUver =3D shift;
++	my $append_to_version =3D shift;
+=20
+=2D	return "$v+b$binNMUver";
++	my $ver =3D $v;
++	if (defined($append_to_version) && $append_to_version) {
++	    $ver .=3D $append_to_version;
++	}
++	if (defined($binNMUver) && $binNMUver) {
++	    $ver .=3D "+b$binNMUver";
++	}
++	return $ver;
+ }
+=20
+ my %monname =3D ('jan', 0, 'feb', 1, 'mar', 2, 'apr', 3, 'may', 4, 'jun', =
+5,
+diff --git a/man/sbuild.1.in b/man/sbuild.1.in
+index 41d5607..d79f109 100644
+=2D-- a/man/sbuild.1.in
++++ b/man/sbuild.1.in
+@@ -152,14 +152,23 @@ Be quiet.  This is the opposite of \-\-verbose.
+ .IR "\-\-make\-binNMU=3D<entry>"
+ With this option, \fBsbuild\fR will create a new changelog entry in
+ debian/changelog of every package built. The version number will be in the
+=2Dformat for binary-only NMUs (three dotted parts in the Debian revision);=
+ the
+=2Dmaintainer is set to the maintainer name configured for \fBsbuild\fR. The
+=2D\fIentry\fR parameter will be used as a changelog entry after a fixed one
+=2D\[lq]Binary-only non-maintainer upload for ARCH -- no source
+=2Dchanges\[rq]. Please note that the versions in the \fIpackage-to-build\fR
+=2Darguments still have to be the unmodified (non-NMU ones) so that sources=
+ can be
+=2Dfound. The version number in log files and mails will be modified by
+=2D\fBsbuild\fR automatically.
++format for binary-only NMUs (ending with +b<number>); the maintainer is se=
+t to
++the maintainer name configured for \fBsbuild\fR. The \fIentry\fR parameter=
+ will
++be used as a changelog entry after a fixed one \[lq]Binary-only non-mainta=
+iner
++upload for ARCH -- no source changes\[rq]. Please note that the versions i=
+n the
++\fIpackage-to-build\fR arguments still have to be the unmodified (non-NMU =
+ones)
++so that sources can be found. The version number in log files and mails wi=
+ll be
++modified by \fBsbuild\fR automatically.
++.TP
++.IR "\-\-binNMU=3D<number>"
++This option sets the number in the Debian revision added by --make-binNMU.=
+  The
++default is 1.
++.TP
++.IR "\-\-append\-to\-version=3D<string>"
++This option is similar to --make-binNMU except that it allows the user to
++specify an arbitrary string to be appended to the version number (immediat=
+ely
++before the second dot in the Debian revision if --make-binNMU is also prov=
+ided).
++.TP
+ .SH ENVIRONMENT VARIABLES
+ The following environment variables are used by \fBsbuild\fR:
+ .IP "HOME"
+
+--=-=-=--
+
+--==-=-=
+Content-Type: application/pgp-signature
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICzYdVcFcaSW/uEgRAjLlAJ0c/iO1K4FfpbhGBa0TOykBGBvYiQCglvuO
+jgH4CJ6PiNuVj32R0SOzWFU=
+=EGtu
+-----END PGP SIGNATURE-----
+--==-=-=--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,139 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 20:02:03 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnenX-0000Zi-4d
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 20:02:03 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id B8F4F13A517E; Sun, 20 Apr 2008 19:01:57 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id 5226513A50F6
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 19:01:57 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JneKn-0002Ke-Q8; Sun, 20 Apr 2008 18:32:17 +0000
+From: Bastian Blank <waldi@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted lvm2 2.02.35-1 (source amd64)
+Message-Id: <E1JneKn-0002Ke-Q8@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 18:32:17 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <8zS6-hBzdML.A.MVF.lM5CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301336
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 19:01:57 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.6
+X-Spam-Report: (-2.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.0 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 20:11:53 +0200
+Source: lvm2
+Binary: lvm2 lvm2-udeb clvm
+Architecture: source amd64
+Version: 2.02.35-1
+Distribution: unstable
+Urgency: low
+Maintainer: Debian LVM Team <pkg-lvm-maintainers@lists.alioth.debian.org>
+Changed-By: Bastian Blank <waldi@debian.org>
+Description:=20
+ clvm       - Cluster LVM Daemon for lvm2
+ lvm2       - The Linux Logical Volume Manager
+ lvm2-udeb  - The Linux Logical Volume Manager (udeb)
+Changes:=20
+ lvm2 (2.02.35-1) unstable; urgency=3Dlow
+ .
+   * New upstream version.
+Checksums-Sha1:=20
+ d7429260b3ad3bdd30af54641ea1f537d045e8a2 1132 lvm2_2.02.35-1.dsc
+ 4e27de7cd1217623e5e2ff47810c9fd869c479d6 584037 lvm2_2.02.35.orig.tar.gz
+ 3fdfb72254a29f56448bbe8e11cd1bd91cd3bd98 13951 lvm2_2.02.35-1.diff.gz
+ 067fc4750222abdfd711a6fa929e27736f4314b4 355016 lvm2_2.02.35-1_amd64.deb
+ 26f560b84044c510c7c8c36fe1d18ac95ea96c9f 230766 clvm_2.02.35-1_amd64.deb
+ 0ed6357da7b6494911ec4bedb5a3df8428c8c1e1 225986 lvm2-udeb_2.02.35-1_amd6=
+4.udeb
+Checksums-Sha256:=20
+ c0605815476f2e60b759ae482db12842dd5c234ae80657d2486a31cf40290ca2 1132 lv=
+m2_2.02.35-1.dsc
+ 7b95733687ebee7f5b276817dffdd3a7262c1564989c5ae688be048615b66bcb 584037 =
+lvm2_2.02.35.orig.tar.gz
+ 7fe96545f69fc071e3616d2494e3b2f3f356c81a82100349aed5dc5b8a381778 13951 l=
+vm2_2.02.35-1.diff.gz
+ b5af2cb3214fc80622846097fd040c5c5aad810af31be1e90c61875461d33dfe 355016 =
+lvm2_2.02.35-1_amd64.deb
+ 079c1d79091a84e1b2b958a3ca2d564d48eb7463e0236ef08dc8a09095bdf449 230766 =
+clvm_2.02.35-1_amd64.deb
+ 33f867b4b6229fd51b54780fea7654158323da4086cabbf95dbcd469e6a83bb1 225986 =
+lvm2-udeb_2.02.35-1_amd64.udeb
+Files:=20
+ a87f740eb9bf0040960bd331cbcb03a1 1132 admin optional lvm2_2.02.35-1.dsc
+ a6266d7a849b30b2e4113f537d39b5af 584037 admin optional lvm2_2.02.35.orig=
+.tar.gz
+ 215cf5f134ac67accf0a31ed60058cde 13951 admin optional lvm2_2.02.35-1.dif=
+f.gz
+ f250aed318e8f2b09328313d7ee02388 355016 admin optional lvm2_2.02.35-1_am=
+d64.deb
+ 877c1afefcb94d71f7208f3b792b0493 230766 admin extra clvm_2.02.35-1_amd64=
+.deb
+ be67fe54ed2c3e65fd109c3804c4e296 225986 debian-installer optional lvm2-u=
+deb_2.02.35-1_amd64.udeb
+Package-Type: udeb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iEYEARECAAYFAkgLiKAACgkQxWtQqFixGB6OuQCeKlREjoHqOLUK6cTToxrfFwwp
+mwsAn3Nni+al98BgDiB0qJDaOU/A8nF2
+=3D4HGu
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+clvm_2.02.35-1_amd64.deb
+  to pool/main/l/lvm2/clvm_2.02.35-1_amd64.deb
+lvm2-udeb_2.02.35-1_amd64.udeb
+  to pool/main/l/lvm2/lvm2-udeb_2.02.35-1_amd64.udeb
+lvm2_2.02.35-1.diff.gz
+  to pool/main/l/lvm2/lvm2_2.02.35-1.diff.gz
+lvm2_2.02.35-1.dsc
+  to pool/main/l/lvm2/lvm2_2.02.35-1.dsc
+lvm2_2.02.35-1_amd64.deb
+  to pool/main/l/lvm2/lvm2_2.02.35-1_amd64.deb
+lvm2_2.02.35.orig.tar.gz
+  to pool/main/l/lvm2/lvm2_2.02.35.orig.tar.gz
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

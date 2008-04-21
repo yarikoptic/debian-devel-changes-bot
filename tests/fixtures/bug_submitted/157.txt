@@ -1,0 +1,140 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 20:36:58 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnfLK-0000lk-0V
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 20:36:58 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 013AB13A526F; Sun, 20 Apr 2008 19:36:53 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.9 required=4.0 tests=BAYES_00,FOURLA,
+	IMPRONONCABLE_2,RCVD_IN_DNSWL_LOW autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id EE3EC13A5255;
+	Sun, 20 Apr 2008 19:36:41 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnfEl-00051M-Jk; Sun, 20 Apr 2008 19:30:07 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#477077: dansguardian: segmentation fault crash
+Reply-To: Greg Kochanski <gpk@kochanski.org>, 477077@bugs.debian.org
+Resent-From: Greg Kochanski <gpk@kochanski.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Alexander Wirt <formorer@debian.org>
+Resent-Date: Sun, 20 Apr 2008 19:30:05 +0000
+Resent-Message-ID: <handler.477077.B.120871972416542@bugs.debian.org>
+X-Debian-PR-Message: report 477077
+X-Debian-PR-Package: dansguardian
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: dansguardian
+Received: via spool by submit@bugs.debian.org id=B.120871972416542
+          (code B ref -1); Sun, 20 Apr 2008 19:30:05 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 19:28:44 +0000
+X-Amavis-Spam-Status: No, score=-8.9 required=4.0 tests=BAYES_00,FOURLA,HAS_PACKAGE,
+	IMPRONONCABLE_2 autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from ptb-relay01.plus.net ([212.159.14.212])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <gpk@kochanski.org>)
+	id 1JnfDP-0004HS-RO
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 19:28:44 +0000
+Received: from [212.159.16.190] (helo=kochanski.plus.com)
+	 by ptb-relay01.plus.net with esmtp (Exim) id 1JnfDJ-0006Ht-Ez
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 20:28:37 +0100
+Received: from gpk by kochanski.plus.com with local (Exim 4.69)
+	(envelope-from <gpk@kochanski.org>)
+	id 1JnfDI-0006VX-Nd; Sun, 20 Apr 2008 20:28:36 +0100
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Greg Kochanski <gpk@kochanski.org>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Message-ID: <20080420192836.24985.90402.reportbug@kochanski.plus.com>
+X-Mailer: reportbug 3.39-0.1
+Date: Sun, 20 Apr 2008 20:28:36 +0100
+X-Plusnet-Relay: 9d512cf66a4eb013b8d7abd5bffb008c
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 19:30:07 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343753
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -32.8
+X-Spam-Report: (-32.8 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	20 AWL                    AWL: From: address is in the auto white-list
+
+Package: dansguardian
+Version: 2.9.9.3-2
+Severity: important
+
+
+With a modified dansguardian configuration, it segmentation faults.
+See the following line from /var/log/syslog:
+
+
+
+Apr 20 17:35:27 gpk kernel: dansguardian[22862]: segfault at 0000002d eip 0807e8f7 esp bf9d1760 error 4
+Apr 20 18:41:49 gpk kernel: dansguardian[24366]: segfault at 0000002d eip 0807e8f7 esp bf8035a0 error 4
+Apr 20 18:48:32 gpk kernel: dansguardian[24456]: segfault at 0000002d eip 0807e8f7 esp bffa0540 error 4
+Apr 20 20:10:48 gpk kernel: dansguardian[24781]: segfault at 0000002d eip 0807e8f7 esp bfc91230 error 4
+
+I haven't sorted out what modifications are important yet.    None of them
+seemed particularly strange to me, and most of them were copied in
+from the config files of the previous version.
+
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers testing
+  APT policy: (500, 'testing')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.24-1-686 (SMP w/1 CPU core)
+Locale: LANG=en_GB, LC_CTYPE=en_GB (charmap=ISO-8859-1)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages dansguardian depends on:
+ii  adduser                3.107             add and remove users and groups
+ii  clamav                 0.92.1~dfsg2-0.1  anti-virus utility for Unix - comm
+ii  libbz2-1.0             1.0.5-0.1         high-quality block-sorting file co
+ii  libc6                  2.7-10            GNU C Library: Shared libraries
+ii  libclamav3             0.92.1~dfsg2-0.1  anti-virus utility for Unix - libr
+ii  libgcc1                1:4.3.0-3         GCC support library
+ii  libgmp3c2              2:4.2.2+dfsg-2    Multiprecision arithmetic library
+ii  libpcre3               7.4-1+lenny1      Perl 5 Compatible Regular Expressi
+ii  libstdc++6             4.3.0-3           The GNU Standard C++ Library v3
+ii  perl                   5.8.8-12          Larry Wall's Practical Extraction 
+ii  zlib1g                 1:1.2.3.3.dfsg-11 compression library - runtime
+
+dansguardian recommends no packages.
+
+-- no debconf information
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

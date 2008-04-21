@@ -1,0 +1,421 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 14:34:55 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnZgu-0007CM-W8
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 14:34:55 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 0422A13A500B; Sun, 20 Apr 2008 13:34:48 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-0.3 required=4.0 tests=BAYES_00,FOURLA,
+	FROM_HAS_ULINE_NUMS,IMPRONONCABLE_1,MURPHY_WRONG_WORD1,MURPHY_WRONG_WORD2,
+	NUMONLY,RCVD_IN_DNSWL_LOW autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 63BCD13A4CA4;
+	Sun, 20 Apr 2008 13:34:35 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnZcK-0002Yt-I1; Sun, 20 Apr 2008 13:30:04 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476970: linux-image-2.6.24-1-686: Generic RTC support hard compiled into kernel, should be compiled as a module.
+Reply-To: Eric <e_yager1977@verizon.net>, 476970@bugs.debian.org
+Resent-From: Eric <e_yager1977@verizon.net>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian Kernel Team <debian-kernel@lists.debian.org>
+Resent-Date: Sun, 20 Apr 2008 13:30:01 +0000
+Resent-Message-ID: <handler.476970.B.12086980966342@bugs.debian.org>
+X-Debian-PR-Message: report 476970
+X-Debian-PR-Package: linux-image-2.6.24-1-686
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: linux-2.6
+Received: via spool by submit@bugs.debian.org id=B.12086980966342
+          (code B ref -1); Sun, 20 Apr 2008 13:30:01 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 13:28:16 +0000
+X-Amavis-Spam-Status: No, score=-5.4 required=4.0 tests=BAYES_00,DNS_FROM_RFC_ABUSE,
+	DNS_FROM_RFC_POST,FOURLA,FROM_HAS_ULINE_NUMS,HAS_PACKAGE,
+	IMPRONONCABLE_1,MURPHY_WRONG_WORD1,MURPHY_WRONG_WORD2,NUMONLY 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from vms046pub.verizon.net ([206.46.252.46])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <e_yager1977@verizon.net>)
+	id 1JnZaa-0001c1-Go
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 13:28:16 +0000
+Received: from videosrv ([71.186.24.240])
+ by vms046.mailsrvcs.net (Sun Java System Messaging Server 6.2-6.01 (built Apr
+ 3 2006)) with ESMTPA id <0JZM004DMLDVN840@vms046.mailsrvcs.net> for
+ submit@bugs.debian.org; Sun, 20 Apr 2008 08:28:11 -0500 (CDT)
+Date: Sun, 20 Apr 2008 09:27:31 -0400 (EDT)
+From: Eric <e_yager1977@verizon.net>
+X-X-Sender: eyager@videosrv
+To: submit@bugs.debian.org
+Message-id: <alpine.DEB.1.00.0804200915550.20484@videosrv>
+MIME-version: 1.0
+Content-type: TEXT/PLAIN; format=flowed; charset=US-ASCII
+User-Agent: Alpine 1.00 (DEB 882 2007-12-20)
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 13:30:04 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343495
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.3
+X-Spam-Report: (-52.3 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.3 FROM_HAS_ULINE_NUMS    From: contains an underline and numbers/letters
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+
+Package: linux-image-2.6.24-1-686
+Version: 2.6.24-5
+Severity: important
+
+This bug is causing the problems described in #475959 and #468745.
+
+I have run into this problem with the debian 2.6.24 kernel across 
+multiple architectures (i686 and amd64).  Support for a generic RTC has 
+been hard compiled into the kernel instead of being compiled as a 
+module.  This generic RTC support does not work with all motherboards 
+and does not support the new /proc/sys/class/rtc interface.  All other 
+RTC clock modules will fail to work, including those needed for proper 
+system operation because the RTC is perpetually busy due to the generic 
+RTC module being hard compiled into the kernel and thus is unloadable.
+
+As seen in the kernel log below 'modprobe rtc_cmos' fails due to a busy 
+code.
+
+This bug MUST be fixed if this kernel is to be releaseed with lenny, 
+because many cmos hardware clocks in intel based motherboards are 
+incompatible with the generic rtc code compiled into the kernel.  In 
+those instances hwclock will fail to work without the --directisa 
+option.
+
+I have fixed this problem by recompling the kernel with following 
+changes to the kernel config file.
+
+CONFIG_RTC=m
+CONFIG_GEN_RTC=m
+# CONFIG_GEN_RTC_X is not set
+
+
+-- Package-specific info:
+** Version:
+Linux version 2.6.24-1-686 (Debian 2.6.24-5) (waldi@debian.org) (gcc version 4.1.3 20080308 (prerelease) (Debian 4.1.2-21)) #1 SMP Thu Mar 27 17:45:04 UTC 2008
+
+** Command line:
+root=/dev/sda3 ro quiet
+
+** Tainted: P (1)
+
+** Kernel log:
+rtc_cmos: probe of 00:03 failed with error -16
+
+** Loaded modules:
+Module                  Size  Used by
+rtc_cmos                8352  0 
+rtc_core               17992  1 rtc_cmos
+rtc_lib                 3040  1 rtc_core
+cifs                  210132  0 
+nls_iso8859_1           4128  1 
+ntfs                  204960  1 
+wlan_tkip              11936  3 
+ath_pci               175820  0 
+i915                   22048  2 
+drm                    74132  3 i915
+ipv6                  240836  14 
+ppdev                   8804  0 
+parport_pc             33668  0 
+lp                     11076  0 
+parport                34280  3 ppdev,parport_pc,lp
+acpi_cpufreq            9260  1 
+cpufreq_powersave       1856  0 
+cpufreq_ondemand        8492  1 
+cpufreq_stats           5184  0 
+cpufreq_conservative     7560  0 
+freq_table              4512  3 acpi_cpufreq,cpufreq_ondemand,cpufreq_stats
+cpufreq_userspace       4260  0 
+loop                   16804  0 
+joydev                 11360  0 
+snd_hda_intel         275264  0 
+snd_pcm_oss            38272  0 
+snd_pcm                71780  2 snd_hda_intel,snd_pcm_oss
+snd_mixer_oss          15296  1 snd_pcm_oss
+snd_seq_dummy           3780  0 
+snd_seq_oss            29472  0 
+snd_seq_midi            8160  0 
+snd_rawmidi            22624  1 snd_seq_midi
+snd_seq_midi_event      6976  2 snd_seq_oss,snd_seq_midi
+snd_seq                46544  6 snd_seq_dummy,snd_seq_oss,snd_seq_midi,snd_seq_midi_event
+snd_timer              21092  2 snd_pcm,snd_seq
+snd_seq_device          7820  5 snd_seq_dummy,snd_seq_oss,snd_seq_midi,snd_rawmidi,snd_seq
+snd                    48612  9 snd_hda_intel,snd_pcm_oss,snd_pcm,snd_mixer_oss,snd_seq_oss,snd_rawmidi,snd_seq,snd_timer,snd_seq_device
+psmouse                36464  0 
+i2c_i801                9232  0 
+wlan_scan_sta          12640  1 
+iTCO_wdt               11268  0 
+i2c_core               22432  1 i2c_i801
+soundcore               7552  1 snd
+ath_rate_sample        13504  1 
+serio_raw               6660  0 
+rtc                    13052  0 
+intel_agp              23412  1 
+video                  18672  0 
+output                  3744  1 video
+ac                      6116  0 
+button                  8432  0 
+battery                13572  0 
+agpgart                31688  3 drm,intel_agp
+snd_page_alloc         10056  2 snd_hda_intel,snd_pcm
+wlan                  225616  5 wlan_tkip,ath_pci,wlan_scan_sta,ath_rate_sample
+ath_hal               279328  3 ath_pci,ath_rate_sample
+evdev                  11104  7 
+ext3                  122888  1 
+jbd                    43732  1 ext3
+mbcache                 8288  1 ext3
+sd_mod                 27200  4 
+ide_cd                 36224  0 
+cdrom                  32512  1 ide_cd
+ata_generic             7428  0 
+generic                 4388  0 [permanent]
+8139too                25600  0 
+ahci                   26084  3 
+ehci_hcd               32524  0 
+libata                144464  2 ata_generic,ahci
+scsi_mod              141164  2 sd_mod,libata
+8139cp                 21856  0 
+mii                     5312  2 8139too,8139cp
+piix                    7492  0 [permanent]
+ide_core              108292  3 ide_cd,generic,piix
+uhci_hcd               23376  0 
+usbcore               132940  3 ehci_hcd,uhci_hcd
+thermal                16028  0 
+processor              36520  4 acpi_cpufreq,thermal
+fan                     4772  0
+
+** PCI devices:
+00:00.0 Host bridge [0600]: Intel Corporation Mobile PM965/GM965/GL960 Memory Controller Hub [8086:2a00] (rev 03)
+ 	Subsystem: Hewlett-Packard Company Unknown device [103c:30d9]
+ 	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+ 	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort+ >SERR- <PERR- INTx-
+ 	Latency: 0
+ 	Capabilities: <access denied>
+ 	Kernel driver in use: agpgart-intel
+ 	Kernel modules: intel-agp
+
+00:02.0 VGA compatible controller [0300]: Intel Corporation Mobile GM965/GL960 Integrated Graphics Controller [8086:2a02] (rev 03) (prog-if 00 [VGA controller])
+ 	Subsystem: Hewlett-Packard Company Unknown device [103c:30d9]
+ 	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+ 	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+ 	Latency: 0
+ 	Interrupt: pin A routed to IRQ 21
+ 	Region 0: Memory at 71000000 (64-bit, non-prefetchable) [size=1M]
+ 	Region 2: Memory at 60000000 (64-bit, prefetchable) [size=256M]
+ 	Region 4: I/O ports at 30d0 [size=8]
+ 	Capabilities: <access denied>
+
+00:02.1 Display controller [0380]: Intel Corporation Mobile GM965/GL960 Integrated Graphics Controller [8086:2a03] (rev 03)
+ 	Subsystem: Hewlett-Packard Company Unknown device [103c:30d9]
+ 	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+ 	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+ 	Latency: 0
+ 	Region 0: Memory at 71100000 (64-bit, non-prefetchable) [size=1M]
+ 	Capabilities: <access denied>
+
+00:1b.0 Audio device [0403]: Intel Corporation 82801H (ICH8 Family) HD Audio Controller [8086:284b] (rev 03)
+ 	Subsystem: Conexant Unknown device [14f1:5051]
+ 	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+ 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+ 	Latency: 0
+ 	Interrupt: pin A routed to IRQ 23
+ 	Region 0: Memory at 72400000 (64-bit, non-prefetchable) [size=16K]
+ 	Capabilities: <access denied>
+ 	Kernel driver in use: HDA Intel
+ 	Kernel modules: snd-hda-intel
+
+00:1c.0 PCI bridge [0604]: Intel Corporation 82801H (ICH8 Family) PCI Express Port 1 [8086:283f] (rev 03) (prog-if 00 [Normal decode])
+ 	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+ 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+ 	Latency: 0
+ 	Bus: primary=00, secondary=01, subordinate=01, sec-latency=0
+ 	I/O behind bridge: 00002000-00002fff
+ 	Memory behind bridge: 71300000-723fffff
+ 	Prefetchable memory behind bridge: 0000000070000000-0000000070ffffff
+ 	Secondary status: 66MHz- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- <SERR- <PERR-
+ 	BridgeCtl: Parity- SERR- NoISA- VGA- MAbort- >Reset- FastB2B-
+ 		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+ 	Capabilities: <access denied>
+ 	Kernel driver in use: pcieport-driver
+ 	Kernel modules: shpchp
+
+00:1d.0 USB Controller [0c03]: Intel Corporation 82801H (ICH8 Family) USB UHCI Controller #1 [8086:2830] (rev 03) (prog-if 00 [UHCI])
+ 	Subsystem: Hewlett-Packard Company Unknown device [103c:30d9]
+ 	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+ 	Status: Cap- 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+ 	Latency: 0
+ 	Interrupt: pin D routed to IRQ 17
+ 	Region 4: I/O ports at 3080 [size=32]
+ 	Kernel driver in use: uhci_hcd
+ 	Kernel modules: uhci-hcd
+
+00:1d.1 USB Controller [0c03]: Intel Corporation 82801H (ICH8 Family) USB UHCI Controller #2 [8086:2831] (rev 03) (prog-if 00 [UHCI])
+ 	Subsystem: Hewlett-Packard Company Unknown device [103c:30d9]
+ 	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+ 	Status: Cap- 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+ 	Latency: 0
+ 	Interrupt: pin B routed to IRQ 18
+ 	Region 4: I/O ports at 3060 [size=32]
+ 	Kernel driver in use: uhci_hcd
+ 	Kernel modules: uhci-hcd
+
+00:1d.2 USB Controller [0c03]: Intel Corporation 82801H (ICH8 Family) USB UHCI Controller #3 [8086:2832] (rev 03) (prog-if 00 [UHCI])
+ 	Subsystem: Hewlett-Packard Company Unknown device [103c:30d9]
+ 	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+ 	Status: Cap- 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+ 	Latency: 0
+ 	Interrupt: pin C routed to IRQ 19
+ 	Region 4: I/O ports at 3040 [size=32]
+ 	Kernel driver in use: uhci_hcd
+ 	Kernel modules: uhci-hcd
+
+00:1d.7 USB Controller [0c03]: Intel Corporation 82801H (ICH8 Family) USB2 EHCI Controller #1 [8086:2836] (rev 03) (prog-if 20 [EHCI])
+ 	Subsystem: Hewlett-Packard Company Unknown device [103c:30d9]
+ 	Control: I/O- Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+ 	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+ 	Latency: 0
+ 	Interrupt: pin A routed to IRQ 20
+ 	Region 0: Memory at 72404800 (32-bit, non-prefetchable) [size=1K]
+ 	Capabilities: <access denied>
+ 	Kernel driver in use: ehci_hcd
+ 	Kernel modules: ehci-hcd
+
+00:1e.0 PCI bridge [0604]: Intel Corporation 82801 Mobile PCI Bridge [8086:2448] (rev f3) (prog-if 01 [Subtractive decode])
+ 	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+ 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+ 	Latency: 0
+ 	Bus: primary=00, secondary=02, subordinate=02, sec-latency=32
+ 	I/O behind bridge: 00001000-00001fff
+ 	Memory behind bridge: 71200000-712fffff
+ 	Secondary status: 66MHz- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort+ <SERR- <PERR-
+ 	BridgeCtl: Parity- SERR- NoISA- VGA- MAbort- >Reset- FastB2B-
+ 		PriDiscTmr- SecDiscTmr- DiscTmrStat- DiscTmrSERREn-
+ 	Capabilities: <access denied>
+
+00:1f.0 ISA bridge [0601]: Intel Corporation 82801HEM (ICH8M) LPC Interface Controller [8086:2815] (rev 03)
+ 	Subsystem: Hewlett-Packard Company Unknown device [103c:30d9]
+ 	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+ 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+ 	Latency: 0
+ 	Capabilities: <access denied>
+ 	Kernel modules: iTCO_wdt
+
+00:1f.1 IDE interface [0101]: Intel Corporation 82801HBM/HEM (ICH8M/ICH8M-E) IDE Controller [8086:2850] (rev 03) (prog-if 8a [Master SecP PriP])
+ 	Subsystem: Hewlett-Packard Company Unknown device [103c:30d9]
+ 	Control: I/O+ Mem- BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+ 	Status: Cap- 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+ 	Latency: 0
+ 	Interrupt: pin B routed to IRQ 19
+ 	Region 0: I/O ports at 01f0 [size=8]
+ 	Region 1: I/O ports at 03f4 [size=1]
+ 	Region 2: I/O ports at 0170 [size=8]
+ 	Region 3: I/O ports at 0374 [size=1]
+ 	Region 4: I/O ports at 30a0 [size=16]
+ 	Kernel driver in use: PIIX_IDE
+ 	Kernel modules: piix
+
+00:1f.2 SATA controller [0106]: Intel Corporation 82801HBM/HEM (ICH8M/ICH8M-E) SATA AHCI Controller [8086:2829] (rev 03) (prog-if 01 [AHCI 1.0])
+ 	Subsystem: Hewlett-Packard Company Unknown device [103c:30d9]
+ 	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx+
+ 	Status: Cap+ 66MHz+ UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+ 	Latency: 0
+ 	Interrupt: pin C routed to IRQ 222
+ 	Region 0: I/O ports at 30b8 [size=8]
+ 	Region 1: I/O ports at 30dc [size=4]
+ 	Region 2: I/O ports at 30b0 [size=8]
+ 	Region 3: I/O ports at 30d8 [size=4]
+ 	Region 4: I/O ports at 3020 [size=32]
+ 	Region 5: Memory at 72404000 (32-bit, non-prefetchable) [size=2K]
+ 	Capabilities: <access denied>
+ 	Kernel driver in use: ahci
+ 	Kernel modules: ahci
+
+00:1f.3 SMBus [0c05]: Intel Corporation 82801H (ICH8 Family) SMBus Controller [8086:283e] (rev 03)
+ 	Subsystem: Hewlett-Packard Company Unknown device [103c:30d9]
+ 	Control: I/O+ Mem+ BusMaster- SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+ 	Status: Cap- 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+ 	Interrupt: pin D routed to IRQ 19
+ 	Region 0: Memory at 72404c00 (32-bit, non-prefetchable) [size=256]
+ 	Region 4: I/O ports at 3000 [size=32]
+ 	Kernel driver in use: i801_smbus
+ 	Kernel modules: i2c-i801
+
+01:00.0 Ethernet controller [0200]: Atheros Communications, Inc. AR242x 802.11abg Wireless PCI Express Adapter [168c:001c] (rev 01)
+ 	Subsystem: Hewlett-Packard Company Unknown device [103c:137a]
+ 	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+ 	Status: Cap+ 66MHz- UDF- FastB2B- ParErr- DEVSEL=fast >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+ 	Latency: 0, Cache Line Size: 32 bytes
+ 	Interrupt: pin A routed to IRQ 21
+ 	Region 0: Memory at 71300000 (64-bit, non-prefetchable) [size=64K]
+ 	Capabilities: <access denied>
+ 	Kernel driver in use: ath_pci
+ 	Kernel modules: ath5k, ath_pci
+
+02:01.0 Ethernet controller [0200]: Realtek Semiconductor Co., Ltd. RTL-8139/8139C/8139C+ [10ec:8139] (rev 10)
+ 	Subsystem: Hewlett-Packard Company Unknown device [103c:30d9]
+ 	Control: I/O+ Mem+ BusMaster+ SpecCycle- MemWINV- VGASnoop- ParErr- Stepping- SERR- FastB2B- DisINTx-
+ 	Status: Cap+ 66MHz- UDF- FastB2B+ ParErr- DEVSEL=medium >TAbort- <TAbort- <MAbort- >SERR- <PERR- INTx-
+ 	Latency: 64 (8000ns min, 16000ns max)
+ 	Interrupt: pin A routed to IRQ 21
+ 	Region 0: I/O ports at 1000 [size=256]
+ 	Region 1: Memory at 71200000 (32-bit, non-prefetchable) [size=256]
+ 	Capabilities: <access denied>
+ 	Kernel driver in use: 8139too
+ 	Kernel modules: 8139cp, 8139too
+
+
+
+-- System Information:
+Debian Release: lenny/sid
+   APT prefers testing
+   APT policy: (500, 'testing')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.24-1-686 (SMP w/2 CPU cores)
+Locale: LANG=en_US.UTF-8, LC_CTYPE=en_US.UTF-8 (charmap=UTF-8)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages linux-image-2.6.24-1-686 depends on:
+ii  debconf [debconf-2.0]         1.5.20     Debian configuration management sy
+ii  initramfs-tools [linux-initra 0.91e      tools for generating an initramfs
+ii  module-init-tools             3.4-1      tools for managing Linux kernel mo
+
+Versions of packages linux-image-2.6.24-1-686 recommends:
+ii  libc6-i686                    2.7-10     GNU C Library: Shared libraries [i
+
+-- debconf information excluded
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

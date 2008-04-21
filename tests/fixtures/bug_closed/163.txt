@@ -1,0 +1,277 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 16:05:49 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnb6p-0007f1-Q7
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 16:05:49 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 7BC9D13A4FF8; Sun, 20 Apr 2008 15:05:38 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 0213E13A505F;
+	Sun, 20 Apr 2008 15:05:20 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnb4X-0004db-Fy; Sun, 20 Apr 2008 15:03:17 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Thomas Viehmann <tv@beamnet.de>
+Subject: Bug#476160: marked as done (pyg - FTBFS: execvp: ./wlp.o: 
+ Permission denied)
+Message-ID: <handler.476160.D476160.120870372915382.ackdone@bugs.debian.org>
+References: <E1Jnb3L-0006PQ-UN@ries.debian.org>
+ <20080414190415.GM7190@wavehammer.waldi.eu.org>
+X-Debian-PR-Message: closed 476160
+X-Debian-PR-Package: pyg
+X-Debian-PR-Keywords: patch
+X-Debian-PR-Source: pyg
+Content-Type: multipart/mixed; boundary="----------=_1208703797-17790-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 15:03:17 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <EhYBmYDqTJN.A.80G.5u1CIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/133015
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 15:05:38 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208703797-17790-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 15:02:03 +0000
+with message-id <E1Jnb3L-0006PQ-UN@ries.debian.org>
+and subject line Bug#476160: fixed in pyg 0.9.6-4.2
+has caused the Debian Bug report #476160,
+regarding pyg - FTBFS: execvp: ./wlp.o: Permission denied
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+476160: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D476160
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208703797-17790-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 14 Apr 2008 19:04:17 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-11.0 required=4.0 tests=BAYES_00,FROMDEVELOPER,
+	HAS_PACKAGE,IMPRONONCABLE_2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <waldi@debian.org>
+Received: from wavehammer.waldi.eu.org ([82.139.201.20])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <waldi@debian.org>)
+	id 1JlTyS-0001MS-Oc
+	for submit@bugs.debian.org; Mon, 14 Apr 2008 19:04:17 +0000
+Received: by wavehammer.waldi.eu.org (Postfix, from userid 1000)
+	id B053254109; Mon, 14 Apr 2008 21:04:15 +0200 (CEST)
+Date: Mon, 14 Apr 2008 21:04:15 +0200
+From: Bastian Blank <waldi@debian.org>
+To: submit@bugs.debian.org
+Subject: pyg - FTBFS: execvp: ./wlp.o: Permission denied
+Message-ID: <20080414190415.GM7190@wavehammer.waldi.eu.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Disposition: inline
+User-Agent: Mutt/1.5.13 (2006-08-11)
+Delivered-To: submit@bugs.debian.org
+
+Package: pyg
+Version: 0.9.6-4.1+b2
+Severity: serious
+
+There was an error while trying to autobuild your package:
+
+> Automatic build of pyg_0.9.6-4.1+b2 on lxdebian.bfinv.de by sbuild/s390 98
+[...]
+> make[3]: Entering directory `/build/buildd/pyg-0.9.6/wlp/module'
+> gcc -pthread -fPIC -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -I/usr/include/python2.5 -I/usr/include/python2.5    -c ../C/wlp.c -o ./wlp.o
+> ../C/wlp.c: In function 'wlp_setfilebyname':
+> ../C/wlp.c:40: warning: suggest parentheses around assignment used as truth value
+> ../C/wlp.c: In function 'wlp_mkdict':
+> ../C/wlp.c:93: warning: implicit declaration of function 'parse'
+> ../C/wlp.c: At top level:
+> ../C/wlp.c:181: warning: function declaration isn't a prototype
+> ../C/wlp.c:154: warning: 'node2dict2' defined but not used
+> ./wlp.o  ../C/wlp.a  -o ./wlp.so
+> make[3]: execvp: ./wlp.o: Permission denied
+> make[3]: *** [wlp.so] Error 127
+> make[3]: Leaving directory `/build/buildd/pyg-0.9.6/wlp/module'
+> make[2]: *** [makemodule] Error 2
+> make[2]: Leaving directory `/build/buildd/pyg-0.9.6/wlp'
+> make[1]: *** [bin] Error 2
+> make[1]: Leaving directory `/build/buildd/pyg-0.9.6'
+> make: *** [build-stamp] Error 2
+> dpkg-buildpackage: failure: debian/rules build gave error exit status 2
+> ******************************************************************************
+> Build finished at 20080414-0222
+> FAILED [dpkg-buildpackage died]
+
+
+
+------------=_1208703797-17790-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 476160-close) by bugs.debian.org; 20 Apr 2008 15:02:09 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.7 required=4.0 tests=BAYES_00,FVGT_m_MULTI_ODD,
+	HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_2,MURPHY_WRONG_WORD1,
+	MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1Jnb3R-0003zj-BM
+	for 476160-close@bugs.debian.org; Sun, 20 Apr 2008 15:02:09 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1Jnb3L-0006PQ-UN; Sun, 20 Apr 2008 15:02:03 +0000
+From: Thomas Viehmann <tv@beamnet.de>
+To: 476160-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#476160: fixed in pyg 0.9.6-4.2
+Message-Id: <E1Jnb3L-0006PQ-UN@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 15:02:03 +0000
+Content-Transfer-Encoding: quoted-printable
+
+Source: pyg
+Source-Version: 0.9.6-4.2
+
+We believe that the bug you reported is fixed in the latest version of
+pyg, which is due to be installed in the Debian FTP archive:
+
+pyg_0.9.6-4.2.dsc
+  to pool/main/p/pyg/pyg_0.9.6-4.2.dsc
+pyg_0.9.6-4.2.tar.gz
+  to pool/main/p/pyg/pyg_0.9.6-4.2.tar.gz
+pyg_0.9.6-4.2_amd64.deb
+  to pool/main/p/pyg/pyg_0.9.6-4.2_amd64.deb
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 476160@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Thomas Viehmann <tv@beamnet.de> (supplier of updated pyg package)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 16:49:23 +0200
+Source: pyg
+Binary: pyg
+Architecture: source amd64
+Version: 0.9.6-4.2
+Distribution: unstable
+Urgency: high
+Maintainer: Cosimo Alfarano <kalfa@debian.org>
+Changed-By: Thomas Viehmann <tv@beamnet.de>
+Description:=20
+ pyg        - Python Mail <-> News Gateway
+Closes: 476160
+Changes:=20
+ pyg (0.9.6-4.2) unstable; urgency=3Dhigh
+ .
+   * Non-maintainer upload.
+   * Add BLDSHARED to Makefile.pre.in for python2.5 compatibility.
+     Closes: #476160
+   * Add shlibs:Depends in debian/control.
+Checksums-Sha1:=20
+ 0684c230c116b5adf784bb29a0c6d306431163e9 744 pyg_0.9.6-4.2.dsc
+ 0216fa6d1b3995be3ec7c60b50320ac0c67e6214 34252 pyg_0.9.6-4.2.tar.gz
+ a4d08741534cfff2c01b9bf26fa06c7cdd57f84c 30050 pyg_0.9.6-4.2_amd64.deb
+Checksums-Sha256:=20
+ 42a7460f492afc182a8265299438d171615ca5e4954c9eca0201327f504cf9ed 744 pyg=
+_0.9.6-4.2.dsc
+ 3b2c585d50812dfd7f7e337967e0ffdd533162b1288cc31afab816621226ae0c 34252 p=
+yg_0.9.6-4.2.tar.gz
+ ffcd363788bcbfa60dd1bf8f9f37d6dddffada09bb57b790295c3b4a574312c5 30050 p=
+yg_0.9.6-4.2_amd64.deb
+Files:=20
+ 7a1cc86e9a611ee9ec9254c3b6cdeaec 744 news optional pyg_0.9.6-4.2.dsc
+ f56b176863b1607d721c8961b1e9e7a8 34252 news optional pyg_0.9.6-4.2.tar.g=
+z
+ eb0b52e06a913f730e835d7dc7d1c73e 30050 news optional pyg_0.9.6-4.2_amd64=
+.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC1owriZpaaIa1PkRAqE2AKCP4vxuMJSXxgGd9yu+8wOsaxnaLQCgpJqr
+t/8Ixe6Uv4N2HFQgtyFQ2/E=3D
+=3D9ein
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208703797-17790-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

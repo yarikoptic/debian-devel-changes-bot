@@ -1,0 +1,141 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 15:00:24 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jna5b-0007Kc-9J
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 15:00:24 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id D3BF513A500B; Sun, 20 Apr 2008 14:00:17 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.9 required=4.0 tests=BAYES_00,FOURLA,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 71D8013A5009;
+	Sun, 20 Apr 2008 14:00:07 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jna2g-0001XA-3i; Sun, 20 Apr 2008 13:57:18 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476976: scons: Doesn't work at all
+Reply-To: Christian Marillat <marillat@debian.org>, 476976@bugs.debian.org
+Resent-From: Christian Marillat <marillat@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Mark Brown <broonie@debian.org>
+Resent-Date: Sun, 20 Apr 2008 13:57:15 +0000
+Resent-Message-ID: <handler.476976.B.120869974827214@bugs.debian.org>
+X-Debian-PR-Message: report 476976
+X-Debian-PR-Package: scons
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: scons
+Received: via spool by submit@bugs.debian.org id=B.120869974827214
+          (code B ref -1); Sun, 20 Apr 2008 13:57:15 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 13:55:48 +0000
+X-Amavis-Spam-Status: No, score=-11.9 required=4.0 tests=BAYES_00,FOURLA,
+	FROMDEVELOPER,HAS_PACKAGE autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from smtp1-g19.free.fr ([212.27.42.27])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <marillat@debian.org>)
+	id 1Jna1E-00071D-Bi
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 13:55:48 +0000
+Received: from smtp1-g19.free.fr (localhost.localdomain [127.0.0.1])
+	by smtp1-g19.free.fr (Postfix) with ESMTP id 31AAC1AB2DC
+	for <submit@bugs.debian.org>; Sun, 20 Apr 2008 15:55:47 +0200 (CEST)
+Received: from christian.marillat.net (marillat.net [82.225.139.42])
+	by smtp1-g19.free.fr (Postfix) with ESMTP id 158481AB303
+	for <submit@bugs.debian.org>; Sun, 20 Apr 2008 15:55:47 +0200 (CEST)
+Received: from marillat by christian.marillat.net with local (Exim 4.69)
+	(envelope-from <marillat@debian.org>)
+	id 1Jna1C-0007o0-SG
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 15:55:46 +0200
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Christian Marillat <marillat@debian.org>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Message-ID: <20080420135546.29929.47374.reportbug@christian.marillat.net>
+X-Mailer: reportbug 3.39-0.1
+Date: Sun, 20 Apr 2008 15:55:46 +0200
+X-SA-Exim-Connect-IP: <locally generated>
+X-SA-Exim-Mail-From: marillat@debian.org
+X-SA-Exim-Scanned: No (on christian.marillat.net); SAEximRunCond expanded to false
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 13:57:18 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343511
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -33.0
+X-Spam-Report: (-33.0 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	20 AWL                    AWL: From: address is in the auto white-list
+
+Package: scons
+Version: 0.98.1-1
+Severity: grave
+Justification: renders package unusable
+
+Hi,
+
+This version doesn't start at all :
+
+
+
+$ scons
+Traceback (most recent call last):
+  File "/usr/bin/scons", line 161, in <module>
+    import SCons.Script
+  File "/usr/lib/scons/SCons/Script/__init__.py", line 80, in <module>
+    import SCons.Options
+ImportError: Bad magic number in /usr/lib/scons/SCons/Options/__init__.pyc
+
+
+
+Christian
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (500, 'unstable')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.24 (SMP w/4 CPU cores)
+Locale: LANG=fr_FR.UTF-8, LC_CTYPE=fr_FR.UTF-8 (charmap=UTF-8)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages scons depends on:
+ii  python                        2.5.2-1    An interactive high-level object-o
+ii  python-central                0.6.4      register and build utility for Pyt
+
+scons recommends no packages.
+
+-- no debconf information
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

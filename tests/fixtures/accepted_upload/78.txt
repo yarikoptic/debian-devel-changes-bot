@@ -1,0 +1,121 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 06:31:46 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnS9M-0005RI-SB
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 06:31:45 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 465FA13A4DFC; Sun, 20 Apr 2008 05:31:39 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id E2E3313A4DD3
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 05:31:38 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnRgi-0004Y0-W4; Sun, 20 Apr 2008 05:02:05 +0000
+From: roberto@connexer.com (Roberto C. Sanchez)
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted shorewall-lite 4.0.10-2 (source all)
+Message-Id: <E1JnRgi-0004Y0-W4@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 05:02:04 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <XaNEOx7eZmM.A.35F.7UtCIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301269
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 05:31:39 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.5
+X-Spam-Report: (-2.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.1 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 00:06:15 -0400
+Source: shorewall-lite
+Binary: shorewall-lite
+Architecture: source all
+Version: 4.0.10-2
+Distribution: unstable
+Urgency: low
+Maintainer: Roberto C. Sanchez <roberto@connexer.com>
+Changed-By: Roberto C. Sanchez <roberto@connexer.com>
+Description:=20
+ shorewall-lite - Shorewall (lite version), a high-level tool for configu=
+ring Netfi
+Closes: 468698
+Changes:=20
+ shorewall-lite (4.0.10-2) unstable; urgency=3Dlow
+ .
+   * Change /bin/sh -> /bin/dash in several files because of "bashisms".
+     (Closes: #468698)
+Checksums-Sha1:=20
+ 5e5637d2433e41af395501a82bafa048061f355f 1180 shorewall-lite_4.0.10-2.ds=
+c
+ 511fd70b8253d17346290b6dce413250d0a83cd6 5072 shorewall-lite_4.0.10-2.di=
+ff.gz
+ e03cb40b8266c1ce790c0587e1e91e84409f4ce8 67248 shorewall-lite_4.0.10-2_a=
+ll.deb
+Checksums-Sha256:=20
+ c2f0e813785e262045e3f78fa63b193c765496acb4b1aa9b5edae8cbe9d2e6a8 1180 sh=
+orewall-lite_4.0.10-2.dsc
+ 5664092472b5f86ea502413917688474be095f39eed49a6a8cb92f2f6d57e60b 5072 sh=
+orewall-lite_4.0.10-2.diff.gz
+ a6f436cf29657a4a0301e974bf4e12140bac2c5bb2eaf8cc1a69b5059ed5cf07 67248 s=
+horewall-lite_4.0.10-2_all.deb
+Files:=20
+ 165a5b18bf6bcf5c22956bfe5229930d 1180 net optional shorewall-lite_4.0.10=
+-2.dsc
+ f1032c41a92c2aaccb2663345a0386aa 5072 net optional shorewall-lite_4.0.10=
+-2.diff.gz
+ 46d38f66e1dc3e2e70ffb36e7ef5933e 67248 net optional shorewall-lite_4.0.1=
+0-2_all.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICsut5SXWIKfIlGQRAvUkAKDB4hazby++OfelwUK6jgruGaZXRwCgsXXR
+1Iu0+INOphfXrYAVq5sitdM=3D
+=3DdkzT
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+shorewall-lite_4.0.10-2.diff.gz
+  to pool/main/s/shorewall-lite/shorewall-lite_4.0.10-2.diff.gz
+shorewall-lite_4.0.10-2.dsc
+  to pool/main/s/shorewall-lite/shorewall-lite_4.0.10-2.dsc
+shorewall-lite_4.0.10-2_all.deb
+  to pool/main/s/shorewall-lite/shorewall-lite_4.0.10-2_all.deb
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

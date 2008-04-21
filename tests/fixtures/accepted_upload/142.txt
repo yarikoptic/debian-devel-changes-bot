@@ -1,0 +1,111 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 14:31:46 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnZdu-0007BI-EH
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 14:31:46 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 4613C13A4F90; Sun, 20 Apr 2008 13:31:41 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id E91A413A4CA4
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 13:31:40 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnZPo-0000g5-51; Sun, 20 Apr 2008 13:17:08 +0000
+From: Ola Lundqvist <opal@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted vnc4 4.1.1+X4.3.0-24 (source i386)
+Message-Id: <E1JnZPo-0000g5-51@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 13:17:08 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <AbrS80RT_kN.A.LXG.9W0CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301300
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 13:31:41 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.5
+X-Spam-Report: (-2.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.1 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.7
+Date: Sun, 20 Apr 2008 11:04:10 +0200
+Source: vnc4
+Binary: vnc4server xvnc4viewer
+Architecture: source i386
+Version: 4.1.1+X4.3.0-24
+Distribution: unstable
+Urgency: low
+Maintainer: Ola Lundqvist <opal@debian.org>
+Changed-By: Ola Lundqvist <opal@debian.org>
+Description:=20
+ vnc4server - Virtual network computing server software
+ xvnc4viewer - Virtual network computing client software for X
+Closes: 474981
+Changes:=20
+ vnc4 (4.1.1+X4.3.0-24) unstable; urgency=3Dlow
+ .
+   * Correction of FTBFS with g++-4.3, closes: #474981.
+     Thanks to Michael Meskes <meskes@debian.org> for the patch.
+Files:=20
+ e1a9304e664759d22efc9a2148547115 663 x11 optional vnc4_4.1.1+X4.3.0-24.d=
+sc
+ a75c3b62b42f81881e844821dad8a833 50282 x11 optional vnc4_4.1.1+X4.3.0-24=
+.diff.gz
+ 9a211253642269f2a647e0ab8d65f6ce 1894076 x11 optional vnc4server_4.1.1+X=
+4.3.0-24_i386.deb
+ c7401601455ea2107605507d0978287e 139044 net optional xvnc4viewer_4.1.1+X=
+4.3.0-24_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICz5AGKGxzw/lPdkRAtnwAJ9x6ZRSFfedn0JkrdVB+0AlA5rcQACeMzPN
+Enu9ztn7zti1SnTt1NPHXIM=3D
+=3DOWnH
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+vnc4_4.1.1+X4.3.0-24.diff.gz
+  to pool/main/v/vnc4/vnc4_4.1.1+X4.3.0-24.diff.gz
+vnc4_4.1.1+X4.3.0-24.dsc
+  to pool/main/v/vnc4/vnc4_4.1.1+X4.3.0-24.dsc
+vnc4server_4.1.1+X4.3.0-24_i386.deb
+  to pool/main/v/vnc4/vnc4server_4.1.1+X4.3.0-24_i386.deb
+xvnc4viewer_4.1.1+X4.3.0-24_i386.deb
+  to pool/main/v/vnc4/xvnc4viewer_4.1.1+X4.3.0-24_i386.deb
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

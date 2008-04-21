@@ -1,0 +1,112 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 18:55:33 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jndl9-0000Dr-DH
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 18:55:33 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 0CBF513A505F; Sun, 20 Apr 2008 17:55:25 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.0 required=4.0 tests=BAYES_00,GMAIL,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 04E4F13A503C;
+	Sun, 20 Apr 2008 17:55:06 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jndh6-0005KB-Ff; Sun, 20 Apr 2008 17:51:16 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#477038: aptitude why doesn't work on automatically	installed packages
+Reply-To: Daniel Burrows <dburrows@debian.org>, 477038@bugs.debian.org
+Resent-From: Daniel Burrows <dburrows@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 17:51:15 +0000
+Resent-Message-ID: <handler.477038.B477038.120871352513350@bugs.debian.org>
+X-Debian-PR-Message: report 477038
+X-Debian-PR-Package: aptitude
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: aptitude
+Received: via spool by 477038-submit@bugs.debian.org id=B477038.120871352513350
+          (code B ref 477038); Sun, 20 Apr 2008 17:51:15 +0000
+Received: (at 477038) by bugs.debian.org; 20 Apr 2008 17:45:25 +0000
+X-Amavis-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,FROMDEVELOPER,GMAIL,
+	HAS_BUG_NUMBER autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from vms048pub.verizon.net ([206.46.252.48])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dburrows@debian.org>)
+	id 1JndbR-0003R4-CF
+	for 477038@bugs.debian.org; Sun, 20 Apr 2008 17:45:25 +0000
+Received: from [127.0.1.1] ([71.112.18.250])
+ by vms048.mailsrvcs.net (Sun Java System Messaging Server 6.2-6.01 (built Apr
+ 3 2006)) with ESMTPA id <0JZM00EGOXAMR540@vms048.mailsrvcs.net> for
+ 477038@bugs.debian.org; Sun, 20 Apr 2008 12:44:47 -0500 (CDT)
+Date: Sun, 20 Apr 2008 10:43:04 -0700
+From: Daniel Burrows <dburrows@debian.org>
+In-reply-to: <20080420155037.1890.10081.reportbug@1501-debian.YFHOME>
+To: "Eugene V. Lyubimkin" <jackyf.devel@gmail.com>, 477038@bugs.debian.org
+Message-id: <20080420174304.GF16065@alpaca>
+MIME-version: 1.0
+Content-type: text/plain; charset=us-ascii
+Content-disposition: inline
+References: <20080420155037.1890.10081.reportbug@1501-debian.YFHOME>
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Resent-Date: Sun, 20 Apr 2008 17:51:16 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343693
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.1
+X-Spam-Report: (-52.1 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.5 AWL                    AWL: From: address is in the auto white-list
+
+On Sun, Apr 20, 2008 at 06:50:37PM +0300, "Eugene V. Lyubimkin" <jackyf.devel@gmail.com> was heard to say:
+> Package: aptitude
+> Version: 0.4.11.2-1
+> Severity: normal
+> 
+> The 'why' command doesn't work when package is automatically installed.
+
+  You mean *not* automatically installed, right?
+
+  This is expected behavior.  When "why" is run with only a target, it
+tries to find the package that's keeping the automatically installed
+target on the system.  If the target is manually installed, the search
+would terminate immediately (because the package is keeping itself on
+the system).
+
+  You can give the search a different starting point if you want something
+else, e.g.,
+
+aptitude why '?installed ?not(?name(^laptop-detect$))' laptop-detect
+
+  Daniel
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

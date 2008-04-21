@@ -1,0 +1,274 @@
+From bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org Sun Apr 20 14:40:49 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org>)
+	id 1JnZmb-0007ET-W4
+	for ddc@ddc.chris-lamb.co.uk; Sun, 20 Apr 2008 14:40:49 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id F29F413A496C; Sun, 20 Apr 2008 13:40:40 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 8170613A4954;
+	Sun, 20 Apr 2008 13:40:39 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnZi8-0006SL-N9; Sun, 20 Apr 2008 13:36:04 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: "Sandro Tosi" <matrixhasu@gmail.com>
+Subject: Bug#442785: marked as done (aspect++: FTBFS if build twice in a row)
+Message-ID: <handler.442785.D442785.120869836318141.ackdone@bugs.debian.org>
+References: <8b2d7b4d0804200632k21ea2e8ey3288f4ebb7355669@mail.gmail.com>
+ <20070916201007.GA15417@h1190993.stratoserver.net>
+X-Debian-PR-Message: closed 442785
+X-Debian-PR-Package: aspectc++
+X-Debian-PR-Source: aspectc++
+Content-Type: multipart/mixed; boundary="----------=_1208698564-24767-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 13:36:04 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <cKVggSB063F.A.In.Yf0CIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/132995
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 13:40:40 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208698564-24767-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 15:32:39 +0200
+with message-id <8b2d7b4d0804200632k21ea2e8ey3288f4ebb7355669@mail.gmail.co=
+m>
+and subject line Bug#442785: fixed in aspectc++ 1.0pre4~svn.20080409+dfsg-1
+has caused the Debian Bug report #442785,
+regarding aspect++: FTBFS if build twice in a row
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+442785: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D442785
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208698564-24767-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at maintonly) by bugs.debian.org; 16 Sep 2007 20:10:17 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.9 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	HAS_PACKAGE autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <winnie@der-winnie.de>
+Received: from der-winnie.de ([85.214.90.186])
+	by rietz.debian.org with esmtp (Exim 4.50)
+	id 1IX0Rd-0005QB-Fa
+	for maintonly@bugs.debian.org; Sun, 16 Sep 2007 20:10:17 +0000
+Received: from der-winnie.de (h1190993.stratoserver.net [127.0.0.1])
+	by der-winnie.de (Postfix) with ESMTP id B9033224811C
+	for <maintonly@bugs.debian.org>; Sun, 16 Sep 2007 22:10:09 +0200 (CEST)
+Received: by der-winnie.de (Postfix, from userid 1000)
+	id 99386224811E; Sun, 16 Sep 2007 22:10:09 +0200 (CEST)
+Date: Sun, 16 Sep 2007 22:10:09 +0200
+From: Patrick Winnertz <winnie@der-winnie.de>
+To: maintonly@bugs.debian.org
+Subject: aspect++: FTBFS if build twice in a row
+Message-ID: <20070916201007.GA15417@h1190993.stratoserver.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: mutt-ng/devel-r804 (Debian)
+X-AV-Checked: ClamAV using ClamSMTP
+Delivered-To: maintonly@bugs.debian.org
+
+Package: aspect++
+Severity: important
+Version: 0.99+1.0pre3-2
+User: debian-qa@lists.debian.org
+Usertags: qa-doublebuild
+
+Hi,
+
+Lucas Nussbaum has rebuilt the whole archive on i386 and your package FTBFS if
+built twice in a row with the following error:
+
+
+dh_testdir
+dh_testroot
+rm -f build-stamp puma.config
+# cleaning up source directories:
+/usr/bin/make -s -C Puma libclean tools-clean 
+Removing library and object files...
+Making tools clean...
+# this was forgotten in libclean, will be fixed upstream in the next release
+rm -rf Puma/gen-release/step2/dep/*
+/usr/bin/make -s -C AspectC++ clean
+Making it clean.
+/usr/bin/make -s -C Ag++ clean
+CLEAN    # only leftover during testruns. will be fixed next upstream release
+rm -rf AspectC++/tests/RepoVersion/repo.use
+# remove generated manpages:
+rm -f ac++.1 ag++.1
+# standard cleaning:
+dh_clean 
+ dpkg-source -b aspectc++-0.99+1.0pre3
+dpkg-source: building aspectc++ using existing aspectc++_0.99+1.0pre3.orig.tar.gz
+dpkg-source: building aspectc++ in aspectc++_0.99+1.0pre3-2.diff.gz
+dpkg-source: warning: newly created empty file 'AspectC++/tests/RepoVersion/feature.out' will not be represented in diff
+dpkg-source: warning: executable mode 0755 of 'AspectC++/bin/linux-release/ag++' will not be represented in diff
+dpkg-source: cannot represent change to AspectC++/bin/linux-release/ag++: binary file contents changed
+dpkg-source: warning: ignoring deletion of file AspectC++/tests/RepoVersion/repo.use
+dpkg-source: warning: ignoring deletion of directory Puma/gen-release/step2/dep
+dpkg-source: building aspectc++ in aspectc++_0.99+1.0pre3-2.dsc
+dpkg-source: unrepresentable changes to source
+******************************************************************************
+Build finished at 20070905-2123
+#### END OF BUILD NO 2 ####
+
+The full build-log can be found at: http://people.debian.org/~lucas/logs/2007/doublebuild-09-05/failed-build-2/
+
+
+About the archive rebuild: The rebuild was done on about 50 AMD64 nodes
+of the Grid'5000 platform, using a clean chroot containing a sid i386
+environment.  Internet was not accessible from the build systems. All
+packages have been rebuilt twice in a row, with unpack, build, clean,
+build.
+
+Please read the mail of Martin Zobel-Helas on debian-devel [0], for a explanation 
+for this mass bug filling.
+
+
+[0]: http://lists.debian.org/debian-devel/2007/05/msg00490.html
+
+dh_testdir
+dh_testroot
+rm -f build-stamp puma.config
+# cleaning up source directories:
+/usr/bin/make -s -C Puma libclean tools-clean 
+Removing library and object files...
+Making tools clean...
+# this was forgotten in libclean, will be fixed upstream in the next release
+rm -rf Puma/gen-release/step2/dep/*
+/usr/bin/make -s -C AspectC++ clean
+Making it clean.
+/usr/bin/make -s -C Ag++ clean
+CLEAN    # only leftover during testruns. will be fixed next upstream release
+rm -rf AspectC++/tests/RepoVersion/repo.use
+# remove generated manpages:
+rm -f ac++.1 ag++.1
+# standard cleaning:
+dh_clean 
+ dpkg-source -b aspectc++-0.99+1.0pre3
+dpkg-source: building aspectc++ using existing aspectc++_0.99+1.0pre3.orig.tar.gz
+dpkg-source: building aspectc++ in aspectc++_0.99+1.0pre3-2.diff.gz
+dpkg-source: warning: newly created empty file 'AspectC++/tests/RepoVersion/feature.out' will not be represented in diff
+dpkg-source: warning: executable mode 0755 of 'AspectC++/bin/linux-release/ag++' will not be represented in diff
+dpkg-source: cannot represent change to AspectC++/bin/linux-release/ag++: binary file contents changed
+dpkg-source: warning: ignoring deletion of file AspectC++/tests/RepoVersion/repo.use
+dpkg-source: warning: ignoring deletion of directory Puma/gen-release/step2/dep
+dpkg-source: building aspectc++ in aspectc++_0.99+1.0pre3-2.dsc
+dpkg-source: unrepresentable changes to source
+******************************************************************************
+Build finished at 20070905-2123
+#### END OF BUILD NO 2 ####
+
+
+
+------------=_1208698564-24767-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 442785-close) by bugs.debian.org; 20 Apr 2008 13:32:43 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.0 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <matrixhasu@gmail.com>
+Received: from mu-out-0910.google.com ([209.85.134.185])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <matrixhasu@gmail.com>)
+	id 1JnZet-0004hc-Dc
+	for 442785-close@bugs.debian.org; Sun, 20 Apr 2008 13:32:43 +0000
+Received: by mu-out-0910.google.com with SMTP id i2so993174mue.7
+        for <442785-close@bugs.debian.org>; Sun, 20 Apr 2008 06:32:40 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:to:subject:mime-version:content-type:content-transfer-encoding:content-disposition;
+        bh=DNles/IsyD3sKC8fWv2whR+cXw0QwoQ10S/VjgvUavw=;
+        b=ODQ0E2CJ35R05w16ydHu/qOqpC/JZEMkLGXBRlYBoqtluGHuXWN1NyYGflDbthBjuwEIU4AA/3CSPdg8VfB+x9xnUjWMTO2leYsew8rlImuTyO8rqUuDh0mIl6Rs+0BugwmTLHlFAOw3D5mg+FfNNlg0L3UW1VOZiAuSUBiX37A=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:to:subject:mime-version:content-type:content-transfer-encoding:content-disposition;
+        b=PH67EGJYOix/SP/8YQRtJk3/V42/P0JPLqHtl3Cswon3uEx0gIwevhMEdZ8l/Y8UrGqJwACTexNOZAVCkErxLKr7FlAau9e+ipfXftTP8A8lFdygU56qiyb/1YjH9tYpprt1Pc8gQc/7VM79zcUxtJhYPoHzlyYT2ge8d+COa6Y=
+Received: by 10.78.196.10 with SMTP id t10mr5133365huf.113.1208698359802;
+        Sun, 20 Apr 2008 06:32:39 -0700 (PDT)
+Received: by 10.78.129.2 with HTTP; Sun, 20 Apr 2008 06:32:39 -0700 (PDT)
+Message-ID: <8b2d7b4d0804200632k21ea2e8ey3288f4ebb7355669@mail.gmail.com>
+Date: Sun, 20 Apr 2008 15:32:39 +0200
+From: "Sandro Tosi" <matrixhasu@gmail.com>
+To: 442785-close@bugs.debian.org
+Subject: Bug#442785: fixed in aspectc++ 1.0pre4~svn.20080409+dfsg-1
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+Source: aspectc++
+Source-Version: 1.0pre4~svn.20080409+dfsg-1
+
+clone of 424106
+
+-- 
+Sandro Tosi (aka morph, Morpheus, matrixhasu)
+My website: http://matrixhasu.altervista.org/
+Me at Debian: http://wiki.debian.org/SandroTosi
+
+
+------------=_1208698564-24767-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

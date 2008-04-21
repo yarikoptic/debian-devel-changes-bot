@@ -1,0 +1,301 @@
+From bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org Sun Apr 20 20:07:02 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org>)
+	id 1JnesM-0000c4-KE
+	for ddc@ddc.chris-lamb.co.uk; Sun, 20 Apr 2008 20:07:02 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 4CAC013A51F1; Sun, 20 Apr 2008 19:06:57 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id D2C8213A51EC;
+	Sun, 20 Apr 2008 19:06:54 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jneog-0008Ur-M4; Sun, 20 Apr 2008 19:03:10 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Frans Pop <fjp@debian.org>
+Subject: Bug#472595: marked as done (iso-scan: should search partitions 
+ before disks on powerpc at least)
+Message-ID: <handler.472595.D472595.120871810026560.ackdone@bugs.debian.org>
+References: <E1JneKm-0002K4-B5@ries.debian.org>
+ <alpine.DEB.1.00.0803242331110.23926@mars.oddbox.org>
+X-Debian-PR-Message: closed 472595
+X-Debian-PR-Package: iso-scan
+X-Debian-PR-Source: iso-scan
+Content-Type: multipart/mixed; boundary="----------=_1208718190-32513-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 19:03:10 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <12KVEl7EHiI.A.AdG.RR5CIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/133076
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 19:06:57 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208718190-32513-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 18:32:16 +0000
+with message-id <E1JneKm-0002K4-B5@ries.debian.org>
+and subject line Bug#472595: fixed in iso-scan 1.25
+has caused the Debian Bug report #472595,
+regarding iso-scan: should search partitions before disks on powerpc at lea=
+st
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+472595: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D472595
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208718190-32513-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 25 Mar 2008 07:01:39 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.9 required=4.0 tests=BAYES_00,FOURLA,HAS_PACKAGE 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <sam@rm-r.net>
+Received: from oddbox.org
+	([69.9.146.89] helo=mars.oddbox.org ident=postfix)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <sam@rm-r.net>)
+	id 1Je3AB-0007k3-Qh
+	for submit@bugs.debian.org; Tue, 25 Mar 2008 07:01:39 +0000
+Received: by mars.oddbox.org (Postfix, from userid 1004)
+	id 1CB608A4089; Tue, 25 Mar 2008 00:01:58 -0700 (PDT)
+Received: from localhost (localhost [127.0.0.1])
+	by mars.oddbox.org (Postfix) with ESMTP id 16E4B8A407B
+	for <submit@bugs.debian.org>; Tue, 25 Mar 2008 00:01:58 -0700 (PDT)
+Date: Tue, 25 Mar 2008 00:01:58 -0700 (PDT)
+From: Sam Powers <sam@rm-r.net>
+X-X-Sender: sam@mars.oddbox.org
+To: submit@bugs.debian.org
+Subject: iso-scan: should search partitions before disks on powerpc at
+ least
+Message-ID: <alpine.DEB.1.00.0803242331110.23926@mars.oddbox.org>
+User-Agent: Alpine 1.00 (DEB 882 2007-12-20)
+MIME-Version: 1.0
+Content-Type: TEXT/PLAIN; format=flowed; charset=US-ASCII
+Delivered-To: submit@bugs.debian.org
+
+Package: iso-scan
+Version: 1.24
+Severity: important
+
+More version info: lenny hd-media 20080227 booted via BootX
+
+Hello,
+
+I'm working on a Lenny install on my Wallstreet Powerbook G3 powerpc 
+system and ran into an unexpected result with iso-scan mounting up the iso 
+as it should, but this caused the partitioner to break.
+
+I have what I believe is a pretty standard Mac partition setup on this 
+system, using the Macintosh layout, which has a bunch of partitions at the 
+beginning, usually putting the first real partition of any size, an HFS 
+partition containing Mac OS 9.2 at hda9, at less than 1mb into the disk, 
+and I'm starting my debian system at hda10 for root and hda11 for swap.
+
+The problem comes in when iso-scan runs through the list of devices to 
+look for the ISO image to complete the install, and actually selects the 
+whole disk hda first, and mounts it.  At this point, all of the mkfs 
+programs I tried flat out refused to format /dev/hda10.  mkreiserfs was 
+willing to do the necessary work, but the device could not be mounted as 
+the system already thought the whole device was in use, which perhaps it 
+might have been, as /dev/hda (the whole thing) was mounted on /hd-media.
+
+Line 116 of iso-scan.postinst reads:
+
+DEVS="$(list-devices disk; list-devices partition; list-devices maybe-usb-floppy)"
+
+I believe this might work better for my situation if the scan order were 
+partition, disk, floppy.  I'm assuming that in that case, it would scan 
+individual partitions first, find the iso in /dev/hda9, and everything 
+from that point would continue as expected.  That is to say nothing about 
+anyone else's situation with this program, but of course I must leave that 
+to your discretion.
+
+I was able to work around the problem by unmounting /hd-media, skipping 
+back to the menu and formatting, then going back to the menu once more to 
+continue from the scanning part.  So it's not impossible, it just might 
+seem that way.
+
+Thanks for a great installer, and please let me know if I can help with 
+additional testing or information.  I hope I am not overstating the 
+severity of the bug, but the usability of the package is in my opinion 
+degraded severely for the hd-media install case.
+
+-Sam
+
+
+
+------------=_1208718190-32513-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 472595-close) by bugs.debian.org; 20 Apr 2008 19:01:40 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.7 required=4.0 tests=BAYES_00,FROMDEVELOPER,
+	HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_2,MURPHY_DRUGS_REL8,
+	MURPHY_WRONG_WORD1,MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnenD-0006tm-O6
+	for 472595-close@bugs.debian.org; Sun, 20 Apr 2008 19:01:39 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JneKm-0002K4-B5; Sun, 20 Apr 2008 18:32:16 +0000
+From: Frans Pop <fjp@debian.org>
+To: 472595-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#472595: fixed in iso-scan 1.25
+Message-Id: <E1JneKm-0002K4-B5@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 18:32:16 +0000
+Content-Transfer-Encoding: quoted-printable
+
+Source: iso-scan
+Source-Version: 1.25
+
+We believe that the bug you reported is fixed in the latest version of
+iso-scan, which is due to be installed in the Debian FTP archive:
+
+iso-scan_1.25.dsc
+  to pool/main/i/iso-scan/iso-scan_1.25.dsc
+iso-scan_1.25.tar.gz
+  to pool/main/i/iso-scan/iso-scan_1.25.tar.gz
+iso-scan_1.25_all.udeb
+  to pool/main/i/iso-scan/iso-scan_1.25_all.udeb
+load-iso_1.25_all.udeb
+  to pool/main/i/iso-scan/load-iso_1.25_all.udeb
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 472595@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Frans Pop <fjp@debian.org> (supplier of updated iso-scan package)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.7
+Date: Sun, 20 Apr 2008 20:16:44 +0200
+Source: iso-scan
+Binary: iso-scan load-iso
+Architecture: source all
+Version: 1.25
+Distribution: unstable
+Urgency: low
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Changed-By: Frans Pop <fjp@debian.org>
+Description:=20
+ iso-scan   - Scan hard drives for an installer ISO image (udeb)
+ load-iso   - Load installer components from an installer ISO (udeb)
+Closes: 472595
+Changes:=20
+ iso-scan (1.25) unstable; urgency=3Dlow
+ .
+   * Scan partitions before scanning the whole disk to avoid blocking par=
+tition
+     changes in partman. Thanks to Sam Powers for tracking the issue down=
+ and
+     providing the patch. Closes: #472595.
+ .
+   [ Updated translations ]
+   * Amharic (am.po) by tegegne tefera
+   * Marathi (mr.po)
+   * Panjabi (pa.po) by Amanpreet Singh Alam
+Files:=20
+ 81da54c5c04677d0734b660b61d9a442 665 debian-installer optional iso-scan_=
+1.25.dsc
+ 61a6c132fd0eb42dd3ca436c01223258 67092 debian-installer optional iso-sca=
+n_1.25.tar.gz
+ 60d2531815787074b71d794c6d71399d 42490 debian-installer optional iso-sca=
+n_1.25_all.udeb
+ f80f94c12ffa0bcaeebd6656b7393553 3536 debian-installer extra load-iso_1.=
+25_all.udeb
+Package-Type: udeb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC4iugm/Kwh6ICoQRAm5PAKDW3qT7JtKFLzLEsjP1PxciQ/37WwCgsQhi
+4n9FIRiZBn8KPF4hNqa+uF8=3D
+=3DciS1
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208718190-32513-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

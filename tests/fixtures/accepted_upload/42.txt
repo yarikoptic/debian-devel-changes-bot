@@ -1,0 +1,117 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 12:32:56 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnXmv-0006hd-Ks
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 12:32:56 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 45A9113A4F58; Sun, 20 Apr 2008 11:32:52 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id F348413A47D5
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 11:32:51 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnXXk-0002SN-L2; Sun, 20 Apr 2008 11:17:12 +0000
+From: Robert Luberda <robert@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted solid-pop3d 0.15-20 (source i386)
+Message-Id: <E1JnXXk-0002SN-L2@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 11:17:12 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <R0jPjpI-pjJ.A.c5E.knyCIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301291
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 11:32:52 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.5
+X-Spam-Report: (-2.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.1 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sat, 19 Apr 2008 18:28:08 +0200
+Source: solid-pop3d
+Binary: solid-pop3d
+Architecture: source i386
+Version: 0.15-20
+Distribution: unstable
+Urgency: low
+Maintainer: Robert Luberda <robert@debian.org>
+Changed-By: Robert Luberda <robert@debian.org>
+Description:=20
+ solid-pop3d - POP3 server supporting Maildir, PAM, vhosting
+Changes:=20
+ solid-pop3d (0.15-20) unstable; urgency=3Dlow
+ .
+   * 16_manpage_hyphens.dpatch: fix hyphens in man pages (lintian).
+   * debian/copyright: Add copyright notice (lintian).
+Checksums-Sha1:=20
+ 3102e4653e94d8ba892b66c1c1f3a353fb5eede2 1054 solid-pop3d_0.15-20.dsc
+ 2e340b4e9ff3287f859044721fa09f5fee370d28 34076 solid-pop3d_0.15-20.diff.=
+gz
+ 198270b349b62cbf84b43372cf80381680f02d49 58876 solid-pop3d_0.15-20_i386.=
+deb
+Checksums-Sha256:=20
+ 477d616f548ab2d9971d849e6907c1a5b840383613736cf1e41422b48f5d0125 1054 so=
+lid-pop3d_0.15-20.dsc
+ 088e0145433d4a37ab83cd326245fdfe5e83200fc704a5108cafad5ed07742d4 34076 s=
+olid-pop3d_0.15-20.diff.gz
+ 181e6fa01c47be0469a9e258e49330166becb501b8f024e452d952df8c70b661 58876 s=
+olid-pop3d_0.15-20_i386.deb
+Files:=20
+ 0dfd6796dc9ebbad5894233506c49d60 1054 mail extra solid-pop3d_0.15-20.dsc
+ bf0bb53e78614dd34e774dab56d18404 34076 mail extra solid-pop3d_0.15-20.di=
+ff.gz
+ c08f41ea1365a6f59d52b0a9cfed9ed9 58876 mail extra solid-pop3d_0.15-20_i3=
+86.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICiCxThh1cJ0wnDsRAnyhAJ4/bBWjwDybT1ttV0ANcKoBfMaySgCfXhQi
+d5pycjGUXJ5a7bNDX9Dm9bY=3D
+=3D1UwI
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+solid-pop3d_0.15-20.diff.gz
+  to pool/main/s/solid-pop3d/solid-pop3d_0.15-20.diff.gz
+solid-pop3d_0.15-20.dsc
+  to pool/main/s/solid-pop3d/solid-pop3d_0.15-20.dsc
+solid-pop3d_0.15-20_i386.deb
+  to pool/main/s/solid-pop3d/solid-pop3d_0.15-20_i386.deb
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

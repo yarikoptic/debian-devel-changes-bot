@@ -1,0 +1,138 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 16:35:39 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnbZm-0007lJ-BA
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 16:35:39 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 2901E13A4FFE; Sun, 20 Apr 2008 15:35:33 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 1A94C13A50BD;
+	Sun, 20 Apr 2008 15:35:18 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnbUQ-0005HG-SZ; Sun, 20 Apr 2008 15:30:02 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476846: Bug does NOT happen for sid version (9:1.1.7.1-1) of genisoimage  on armel
+Reply-To: Peter Samuelson <peter@p12n.org>, 476846@bugs.debian.org
+Resent-From: Peter Samuelson <peter@p12n.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Joerg Jaspert <joerg@debian.org>
+Resent-Date: Sun, 20 Apr 2008 15:30:01 +0000
+Resent-Message-ID: <handler.476846.B476846.120870508819846@bugs.debian.org>
+X-Debian-PR-Message: report 476846
+X-Debian-PR-Package: genisoimage
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: cdrkit
+Received: via spool by 476846-submit@bugs.debian.org id=B476846.120870508819846
+          (code B ref 476846); Sun, 20 Apr 2008 15:30:01 +0000
+Received: (at 476846) by bugs.debian.org; 20 Apr 2008 15:24:48 +0000
+X-Amavis-Spam-Status: No, score=-6.9 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	HAS_BUG_NUMBER autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from smtp102.sbc.mail.mud.yahoo.com ([68.142.198.201])
+	by rietz.debian.org with smtp (Exim 4.63)
+	(envelope-from <ps@p12n.org>)
+	id 1JnbPM-0004rG-Hs
+	for 476846@bugs.debian.org; Sun, 20 Apr 2008 15:24:48 +0000
+Received: (qmail 17462 invoked from network); 20 Apr 2008 15:24:42 -0000
+Received: from unknown (HELO wire.p12n.org) (ps.2@sbcglobal.net@71.158.220.154 with login)
+  by smtp102.sbc.mail.mud.yahoo.com with SMTP; 20 Apr 2008 15:24:42 -0000
+X-YMail-OSG: hIMl2acVM1mcCnDtmP98iyyovf1jOEVS7BLiLBBJ2Egwyhm4TH3SXr0xWvj1Jh6WfrMPHXSzxFNgc4SOAwFRHXC0p5OBpBhdbInyrluZGxm.IgTnKymmfJNrMDw-
+X-Yahoo-Newman-Property: ymail-3
+Received: by wire.p12n.org (Postfix, from userid 1001)
+	id 400B15C0AC4; Sun, 20 Apr 2008 10:24:41 -0500 (CDT)
+Date: Sun, 20 Apr 2008 10:24:41 -0500
+From: Peter Samuelson <peter@p12n.org>
+To: Barry Tennison <barry@ukph.org>, 476846@bugs.debian.org
+Cc: martinwguy@gmail.com, Tim Small <tim@buttersideup.com>,
+	Tobias Frost <tobi@coldtobi.de>,
+	Bill Gatliff <bgat@billgatliff.com>
+Message-ID: <20080420152441.GQ646@p12n.org>
+References: <480B0ED9.3060403@ukph.org>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+	protocol="application/pgp-signature"; boundary="0hHDr/TIsw4o3iPK"
+Content-Disposition: inline
+In-Reply-To: <480B0ED9.3060403@ukph.org>
+User-Agent: Mutt/1.5.17 (2007-11-01)
+Resent-Date: Sun, 20 Apr 2008 15:30:02 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343558
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.5
+X-Spam-Report: (-52.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+
+--0hHDr/TIsw4o3iPK
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+
+[Barry Tennison]
+> Thanks again to Martin Guy, I can confirm that the buggy behaviour does N=
+OT=20
+> happen for genisoimage version 1.1.7.1-1 (sid current) on armel. Instead,=
+=20
+> the behaviour is just as on i386 and amd64: the RR signatures are detecte=
+d=20
+> and the iso successfully updated.
+>
+> Maybe this is support for the explanation as an endian problem?
+
+No, it's not an endian problem.  i386, amd64, arm, and armel are _all_
+little-endian.
+
+My theory is a bad build due to a buggy gcc-4.2.  It is only a theory.
+--=20
+Peter Samuelson | org-tld!p12n!peter | http://p12n.org/
+
+--0hHDr/TIsw4o3iPK
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: Digital signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC2A5Xk7sIRPQRh0RAqkAAKC8Mlttgk7OmDgvp6X2QXohF81BEQCeOFXj
+gF1qT+TNCGdUZSXgZt7bLiQ=
+=wIEg
+-----END PGP SIGNATURE-----
+
+--0hHDr/TIsw4o3iPK--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

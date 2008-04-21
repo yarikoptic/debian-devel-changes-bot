@@ -1,0 +1,126 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 16:58:49 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnbw0-00084i-PQ
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 16:58:49 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 89C7913A4F23; Sun, 20 Apr 2008 15:58:31 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.4 required=4.0 tests=BAYES_00,RCVD_IN_DNSWL_LOW,
+	SARE_MSGID_LONG40 autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 0337E13A4F8F;
+	Sun, 20 Apr 2008 15:56:24 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnbos-0005VG-Bi; Sun, 20 Apr 2008 15:51:10 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476610: [pkg-cli-apps-team] Bug#476610: Processed: reassign bug #476610 to package beagle
+Reply-To: "D Bera" <dbera.web@gmail.com>, 476610@bugs.debian.org
+Resent-From: "D Bera" <dbera.web@gmail.com>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian CLI Applications Team <pkg-cli-apps-team@lists.alioth.debian.org>
+Resent-Date: Sun, 20 Apr 2008 15:51:09 +0000
+Resent-Message-ID: <handler.476610.B476610.120870661616400@bugs.debian.org>
+X-Debian-PR-Message: report 476610
+X-Debian-PR-Package: beagle
+X-Debian-PR-Keywords: confirmed
+X-Debian-PR-Source: beagle
+Received: via spool by 476610-submit@bugs.debian.org id=B476610.120870661616400
+          (code B ref 476610); Sun, 20 Apr 2008 15:51:09 +0000
+Received: (at 476610) by bugs.debian.org; 20 Apr 2008 15:50:16 +0000
+X-Amavis-Spam-Status: No, score=-7.0 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from py-out-1112.google.com ([64.233.166.181])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dbera.web@gmail.com>)
+	id 1Jnbnz-0004EB-Mo
+	for 476610@bugs.debian.org; Sun, 20 Apr 2008 15:50:15 +0000
+Received: by py-out-1112.google.com with SMTP id f31so1525979pyh.17
+        for <476610@bugs.debian.org>; Sun, 20 Apr 2008 08:50:11 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:to:subject:in-reply-to:mime-version:content-type:content-transfer-encoding:content-disposition:references;
+        bh=zIcZTEG1CxCUkU1j8TSx/sTgbZxR4Yxiem+N8LLnn30=;
+        b=I9xQUqHFTuK+4q8LUKYirP9omcnCFn3fG2E7HfvN4cQpvqIkT8xMiw6mGQq90xvA3pWQFPW4Il71XUjQb61B+rbrgEnN+ov8zepn1tytlT0WzvzTMvx/Gw4KHeAhzVsXNZeZ5cR7xGkgh864GrNpOSpFriFO9vajgXWekjR5c/0=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:to:subject:in-reply-to:mime-version:content-type:content-transfer-encoding:content-disposition:references;
+        b=Ngmee/1y3kOQ2Y6bXXYbZbYcrqutlBXyW7p4aGmA3Ozr8mNG5cREU7L9jjaEYgZxNRBpdBOsGl1uhg8d6A/rwaZBPeFq+6x4EBOfzKxW7Rar54GflXhF+KWb450vbfxDVu4Xh/6NdtDYT5CcJw0o8aeC8Rzrfi4fhnISB/YzMsY=
+Received: by 10.65.216.19 with SMTP id t19mr8982649qbq.0.1208706611483;
+        Sun, 20 Apr 2008 08:50:11 -0700 (PDT)
+Received: by 10.64.209.7 with HTTP; Sun, 20 Apr 2008 08:50:11 -0700 (PDT)
+Message-ID: <1f1f006d0804200850p290c2519y4bb089794e3ae6ee@mail.gmail.com>
+Date: Sun, 20 Apr 2008 11:50:11 -0400
+From: "D Bera" <dbera.web@gmail.com>
+To: "Mirco Bauer" <meebey@debian.org>, 476610@bugs.debian.org
+In-Reply-To: <1208702377.11297.5.camel@redbull.qnetp.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+References: <480B2C90.2090009@punk-ass-bitch.org>
+	 <handler.s.C.120869186918893.transcript@bugs.debian.org>
+	 <1f1f006d0804200529u76c35c92h844006dc66c123e1@mail.gmail.com>
+	 <1208702377.11297.5.camel@redbull.qnetp.net>
+Resent-Date: Sun, 20 Apr 2008 15:51:10 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343617
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.6
+X-Spam-Report: (-52.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+>  I can reproduce this bug with the following versions:
+>
+>  meebey@redbull:~$ dpkg -l beagle | grep ii
+>  ii  beagle                                     0.3.5-1                     indexing and search tool for your personal data
+>  meebey@redbull:~$ dpkg -l libbeagle1 | grep ii
+>  ii  libbeagle1                                 0.3.5-1+b1                  library for accessing beagle using C
+>  meebey@redbull:~$ dpkg -l gnome-color-chooser  | grep ii
+>  ii  gnome-color-chooser                        0.2.3-2                     GTK+/GNOME desktop appearance customization tool
+>
+>  here a strace related snippet:
+>
+>  open("/usr/lib/libbeagle.so.1", O_RDONLY) = 15
+>  stat64("/home/meebey/.beagle", {st_mode=S_IFDIR|0700, st_size=4096, ...}) = 0
+>  stat64("/home/meebey/.beagle/socket", {st_mode=S_IFSOCK|0755, st_size=0, ...}) = 0
+>  socket(PF_FILE, SOCK_STREAM, 0)         = 15
+>  connect(15, {sa_family=AF_FILE, path="/home/meebey/.beagle/socket"}, 110) = -1 EAGAIN (Resource temporarily unavailable)
+>  connect(15, {sa_family=AF_FILE, path="/home/meebey/.beagle/socket"}, 110) = -1 EAGAIN (Resource temporarily unavailable)
+
+It is strange that connect() is returning EAGAIN. Does the socket
+physically exist ?
+It is even stranger that gnome-color-chooser is using libbeagle.
+I will try to reproduce this on ubuntu and mandriva. Wish me luck.
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

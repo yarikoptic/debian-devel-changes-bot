@@ -1,0 +1,135 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 16:14:57 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnbFl-0007gu-8P
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 16:14:57 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id E8AFF13A4F99; Sun, 20 Apr 2008 15:14:51 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.9 required=4.0 tests=BAYES_00,FOURLA,
+	RCVD_IN_DNSWL_LOW autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 260F713A49A3;
+	Sun, 20 Apr 2008 15:14:41 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnbD2-0000BN-42; Sun, 20 Apr 2008 15:12:04 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476986: When installing (or upgrading) qt4-dev-tools Qt Assistant "breaks"
+Reply-To: Tobias Gruetzmacher <tobias-debian@23.gs>, 476986@bugs.debian.org
+Resent-From: Tobias Gruetzmacher <tobias-debian@23.gs>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Resent-Date: Sun, 20 Apr 2008 15:12:01 +0000
+Resent-Message-ID: <handler.476986.B.120870424531375@bugs.debian.org>
+X-Debian-PR-Message: report 476986
+X-Debian-PR-Package: qt4-dev-tools
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: qt4-x11
+Received: via spool by submit@bugs.debian.org id=B.120870424531375
+          (code B ref -1); Sun, 20 Apr 2008 15:12:01 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 15:10:45 +0000
+X-Amavis-Spam-Status: No, score=-9.9 required=4.0 tests=BAYES_00,FOURLA,HAS_PACKAGE 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from zoidberg.org
+	([213.133.99.5] helo=cthulhu.zoidberg.org ident=daemon)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <tobias@portfolio16.de>)
+	id 1JnbBk-00089G-6t
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 15:10:45 +0000
+Received: from localhost (xdsl-81-173-150-100.netcologne.de [::ffff:81.173.150.100])
+  (AUTH: PLAIN tobias, TLS: TLSv1/SSLv3,128bits,AES128-SHA)
+  by cthulhu.zoidberg.org with esmtp; Sun, 20 Apr 2008 17:10:39 +0200
+  id 0016F1FF.480B5CF0.00000318
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Tobias Gruetzmacher <tobias-debian@23.gs>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Message-ID: <20080420150736.22299.68839.reportbug@ruri.local>
+X-Mailer: reportbug 3.39-0.1
+Date: Sun, 20 Apr 2008 17:07:36 +0200
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 15:12:04 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343553
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.6
+X-Spam-Report: (-52.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+Package: qt4-dev-tools
+Version: 4.4.0~rc1-4
+Severity: normal
+
+The new Qt Assistant seems to need libqt4-sql-sqlite to open its help
+databases, so when starting the Assistant without this package the user
+might think the Assistant is broken. Using libqt4-sql-sqlite as the
+first alternative for SQL driver in libqt4-sql would make the problem go
+away, without requiring the user to install more packages he doesn't
+need, but a Suggest would probably also work.
+
+Greetings, Tobi
+
+PS: The assistant manpage is for the legacy Assistant, now called
+assistant_adp...
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (500, 'unstable'), (1, 'experimental')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.24-1-686 (SMP w/1 CPU core)
+Locale: LANG=de_DE.UTF-8, LC_CTYPE=de_DE.UTF-8 (charmap=UTF-8)
+Shell: /bin/sh linked to /bin/dash
+
+Versions of packages qt4-dev-tools depends on:
+ii  libc6                        2.7-10      GNU C Library: Shared libraries
+ii  libgcc1                      1:4.3.0-3   GCC support library
+ii  libqt4-dbus                  4.4.0~rc1-4 Qt 4 D-Bus module
+ii  libqt4-gui                   4.4.0~rc1-4 Qt 4 GUI module
+ii  libqt4-help                  4.4.0~rc1-4 Qt 4 help module
+ii  libqt4-network               4.4.0~rc1-4 Qt 4 network module
+ii  libqt4-xml                   4.4.0~rc1-4 Qt 4 XML module
+ii  libqt4-xmlpatterns           4.4.0~rc1-4 Qt 4 XML patterns module
+ii  libqtcore4                   4.4.0~rc1-4 Qt 4 core module
+ii  libstdc++6                   4.3.0-3     The GNU Standard C++ Library v3
+
+Versions of packages qt4-dev-tools recommends:
+ii  libqt4-dev                   4.4.0~rc1-4 Qt 4 development files
+ii  qt4-designer                 4.4.0~rc1-4 Qt 4 Designer
+ii  qt4-doc                      4.4.0~rc1-4 Qt 4 API documentation
+
+-- no debconf information
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

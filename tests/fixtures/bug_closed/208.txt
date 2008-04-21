@@ -1,0 +1,316 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 17:35:54 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1JncW5-0008JF-Mx
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 17:35:54 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 6B96C13A5023; Sun, 20 Apr 2008 16:35:48 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 0B71E13A4EDB;
+	Sun, 20 Apr 2008 16:35:47 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JncTV-0004VX-Dm; Sun, 20 Apr 2008 16:33:09 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Daniel Baumann <daniel@debian.org>
+Subject: Bug#477002: marked as done (gitosis: FTBFS: No such file or 
+ directory: '/build/user/gitosis-0.2+20080319/debian/gitosis/usr/lib/python2.5/s
+ ite-packages/test-easy-install-23971.pth')
+Message-ID: <handler.477002.D477002.120870909715252.ackdone@bugs.debian.org>
+References: <E1JncDv-0002va-17@ries.debian.org>
+ <20080420153518.GA22558@xanadu.blop.info>
+X-Debian-PR-Message: closed 477002
+X-Debian-PR-Package: gitosis
+X-Debian-PR-Source: gitosis
+Content-Type: multipart/mixed; boundary="----------=_1208709189-17314-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 16:33:09 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <SSS0r96s2FJ.A.BWG.kD3CIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/133045
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 16:35:48 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208709189-17314-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 16:17:03 +0000
+with message-id <E1JncDv-0002va-17@ries.debian.org>
+and subject line Bug#477002: fixed in gitosis 0.2+20080319-3
+has caused the Debian Bug report #477002,
+regarding gitosis: FTBFS: No such file or directory: '/build/user/gitosis-0=
+.2+20080319/debian/gitosis/usr/lib/python2.5/s ite-packages/test-easy-insta=
+ll-23971.pth'
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+477002: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D477002
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208709189-17314-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 15:46:40 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-10.0 required=4.0 tests=BAYES_00,HAS_PACKAGE 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <lucas@lucas-nussbaum.net>
+Received: from xanadu.blop.info ([80.248.208.235])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <lucas@lucas-nussbaum.net>)
+	id 1JnbkV-0000al-IA
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 15:46:39 +0000
+Received: from localhost ([127.0.0.1] helo=xanadu.blop.info)
+	by xanadu.blop.info with smtp (Exim 4.63)
+	(envelope-from <lucas@lucas-nussbaum.net>)
+	id 1JnbkU-0000BH-FC
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 17:46:38 +0200
+Received: (nullmailer pid 22575 invoked by uid 1000);
+	Sun, 20 Apr 2008 15:35:18 -0000
+Date: Sun, 20 Apr 2008 17:35:18 +0200
+From: Lucas Nussbaum <lucas@lucas-nussbaum.net>
+To: submit@bugs.debian.org
+Subject: gitosis: FTBFS: No such file or directory:
+	'/build/user/gitosis-0.2+20080319/debian/gitosis/usr/lib/python2.5/s
+	ite-packages/test-easy-install-23971.pth'
+Message-ID: <20080420153518.GA22558@xanadu.blop.info>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Delivered-To: submit@bugs.debian.org
+
+Package: gitosis
+Version: 0.2+20080319-2
+Severity: serious
+User: debian-qa@lists.debian.org
+Usertags: qa-ftbfs-20080419 qa-ftbfs
+Justification: FTBFS on i386
+
+Hi,
+
+During a rebuild of all packages in sid, your package failed to build on i386.
+
+This rebuild was done with gcc 4.3 instead of gcc 4.2, because gcc 4.3 is now
+the default on most architectures (even if it's not the case on i386 yet).
+Feel free to downgrade this bug to 'important' if your package is only built
+on i386, and this bug is specific to gcc 4.3 (i.e the package builds fine with
+gcc 4.2).
+
+Relevant part:
+>  /usr/bin/fakeroot debian/rules binary
+> dh_testdir
+> dh_testroot
+> dh_clean -k
+> dh_installdirs
+> # Installing package
+> mkdir -p debian/gitosis/usr/lib/python2.4/site-packages
+> PYTHONPATH=/build/user/gitosis-0.2+20080319/debian/gitosis/usr/lib/python2.4/site-packages \
+> 	python setup.py install --prefix=/build/user/gitosis-0.2+20080319/debian/gitosis/usr
+> running install
+> Checking .pth file support in /build/user/gitosis-0.2+20080319/debian/gitosis/usr/lib/python2.5/site-packages/
+> error: can't create or remove files in install directory
+> 
+> The following error occurred while trying to add or remove files in the
+> installation directory:
+> 
+>     [Errno 2] No such file or directory: '/build/user/gitosis-0.2+20080319/debian/gitosis/usr/lib/python2.5/site-packages/test-easy-install-23971.pth'
+> 
+> The installation directory you specified (via --install-dir, --prefix, or
+> the distutils default setting) was:
+> 
+>     /build/user/gitosis-0.2+20080319/debian/gitosis/usr/lib/python2.5/site-packages/
+> 
+> This directory does not currently exist.  Please create it and try again, or
+> choose a different installation directory (using the -d or --install-dir
+> option).
+> 
+> make: *** [install] Error 1
+
+The full build log is available from:
+   http://people.debian.org/~lucas/logs/2008/04/19
+
+A list of current common problems and possible solutions is available at 
+http://wiki.debian.org/qa.debian.org/FTBFS . You're welcome to contribute!
+
+About the archive rebuild: The rebuild was done on about 50 AMD64 nodes
+of the Grid'5000 platform, using a clean chroot containing a sid i386
+environment.  Internet was not accessible from the build systems.
+
+-- 
+| Lucas Nussbaum
+| lucas@lucas-nussbaum.net   http://www.lucas-nussbaum.net/ |
+| jabber: lucas@nussbaum.fr             GPG: 1024D/023B3F4F |
+
+
+
+------------=_1208709189-17314-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 477002-close) by bugs.debian.org; 20 Apr 2008 16:31:37 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.8 required=4.0 tests=BAYES_00,FROMDEVELOPER,
+	FVGT_m_MULTI_ODD,HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_2,
+	MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JncS1-0003xr-Jm
+	for 477002-close@bugs.debian.org; Sun, 20 Apr 2008 16:31:37 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JncDv-0002va-17; Sun, 20 Apr 2008 16:17:03 +0000
+From: Daniel Baumann <daniel@debian.org>
+To: 477002-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#477002: fixed in gitosis 0.2+20080319-3
+Message-Id: <E1JncDv-0002va-17@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 16:17:03 +0000
+Content-Transfer-Encoding: quoted-printable
+
+Source: gitosis
+Source-Version: 0.2+20080319-3
+
+We believe that the bug you reported is fixed in the latest version of
+gitosis, which is due to be installed in the Debian FTP archive:
+
+gitosis_0.2+20080319-3.diff.gz
+  to pool/main/g/gitosis/gitosis_0.2+20080319-3.diff.gz
+gitosis_0.2+20080319-3.dsc
+  to pool/main/g/gitosis/gitosis_0.2+20080319-3.dsc
+gitosis_0.2+20080319-3_all.deb
+  to pool/main/g/gitosis/gitosis_0.2+20080319-3_all.deb
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 477002@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Daniel Baumann <daniel@debian.org> (supplier of updated gitosis package)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 17:59:00 +0200
+Source: gitosis
+Binary: gitosis
+Architecture: source all
+Version: 0.2+20080319-3
+Distribution: unstable
+Urgency: medium
+Maintainer: Daniel Baumann <daniel@debian.org>
+Changed-By: Daniel Baumann <daniel@debian.org>
+Description:=20
+ gitosis    - git repository hosting application
+Closes: 477002
+Changes:=20
+ gitosis (0.2+20080319-3) unstable; urgency=3Dmedium
+ .
+   * Adjusting installation hack to python 2.5 (Closes: #477002).
+Checksums-Sha1:=20
+ c90520391d2955b147307514ecbcf54478c8b311 1038 gitosis_0.2+20080319-3.dsc
+ 1f23d66e89e46954e21cf5adef16fad46a5b4a5d 2530 gitosis_0.2+20080319-3.dif=
+f.gz
+ 9c134ff85b9e93aa4d2cdad46284c0f83dfb2b4c 30042 gitosis_0.2+20080319-3_al=
+l.deb
+Checksums-Sha256:=20
+ 02d8975d22386dafdd153e093cc5775c6dc3e5b09b70ec42753aa65d3d1e29fa 1038 gi=
+tosis_0.2+20080319-3.dsc
+ 1ecf41da4a5f09e2001317496637300393733b41905e0e445518653d84d12d29 2530 gi=
+tosis_0.2+20080319-3.diff.gz
+ c11f139f5216ca7323738c2130a854754d2ebb2348b5d684725f915f9ccf0e5e 30042 g=
+itosis_0.2+20080319-3_all.deb
+Files:=20
+ abc62f190cfef506a366dd98563741ef 1038 admin optional gitosis_0.2+2008031=
+9-3.dsc
+ c34c96bad8c01fc9344c9174a069ce61 2530 admin optional gitosis_0.2+2008031=
+9-3.diff.gz
+ aafd7d59f91b4068531c3fe9ef0745ca 30042 admin optional gitosis_0.2+200803=
+19-3_all.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC2hc+C5cwEsrK54RAhNMAJsFRFjylZplr0cWEYVaBusrNekNeQCfRsyG
+bWVssEas0rBCR73PLrnTUN0=3D
+=3DYtm7
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208709189-17314-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

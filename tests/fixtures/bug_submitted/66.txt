@@ -1,0 +1,136 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 13:43:22 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnYt3-0006xn-Sd
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 13:43:22 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id F0BE913A4FA1; Sun, 20 Apr 2008 12:43:16 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-6.9 required=4.0 tests=BAYES_00,FOURLA,
+	IMPRONONCABLE_2,LDO_WHITELIST,RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 1787B13A4F98;
+	Sun, 20 Apr 2008 12:43:07 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnYrs-0005Ty-5t; Sun, 20 Apr 2008 12:42:04 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476962: searchandrescue: Please add a .desktop file
+Reply-To: Tourneur Henry-Nicolas <henry.nicolas@tourneur.be>, 476962@bugs.debian.org
+Resent-From: Tourneur Henry-Nicolas <henry.nicolas@tourneur.be>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Phil Brooke <pjb@debian.org>
+Resent-Date: Sun, 20 Apr 2008 12:42:01 +0000
+Resent-Message-ID: <handler.476962.B.120869529720364@bugs.debian.org>
+X-Debian-PR-Message: report 476962
+X-Debian-PR-Package: searchandrescue
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: searchandrescue
+Received: via spool by submit@bugs.debian.org id=B.120869529720364
+          (code B ref -1); Sun, 20 Apr 2008 12:42:01 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 12:41:37 +0000
+X-Amavis-Spam-Status: No, score=-8.8 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,HAS_PACKAGE,IMPRONONCABLE_2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from smtp-out.coditel.net ([212.95.66.33])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <henry.nicolas@tourneur.be>)
+	id 1JnYrQ-0005I5-RR
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 12:41:37 +0000
+Received: from smtp.coditel.net (localhost.localdomain [127.0.0.1])
+	by smtp-out.coditel.net (Postfix) with ESMTP
+	id D6054EB237; Sun, 20 Apr 2008 14:41:34 +0200 (CEST)
+Received: from Virgil.TOURNEUR (cable-85.28.64.79.coditel.net [85.28.64.79])
+	by smtp.coditel.net (Postfix) with ESMTP
+	id 95E112FD23; Sun, 20 Apr 2008 14:41:33 +0200 (CEST)
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Tourneur Henry-Nicolas <henry.nicolas@tourneur.be>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Message-ID: <20080420124133.5672.24209.reportbug@Virgil.TOURNEUR>
+X-Mailer: reportbug 3.39-0.1
+Date: Sun, 20 Apr 2008 14:41:33 +0200
+X-AV-Checked: clean on smtp.coditel.net
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 12:42:04 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343471
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -44.1
+X-Spam-Report: (-44.1 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	8.4 AWL                    AWL: From: address is in the auto white-list
+
+Package: searchandrescue
+Version: 0.8.2-9
+Severity: wishlist
+
+Hi,
+
+Please add a .desktop file in order to see the game in the menu.
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers testing
+  APT policy: (500, 'testing')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.24-1-686 (SMP w/2 CPU cores)
+Locale: LANG=fr_BE@euro, LC_CTYPE=fr_BE@euro (charmap=ISO-8859-15)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages searchandrescue depends on:
+ii  libc6                       2.7-10       GNU C Library: Shared libraries
+ii  libgcc1                     1:4.3.0-3    GCC support library
+ii  libgl1-mesa-glx [libgl1]    7.0.3~rc2-2  A free implementation of the OpenG
+ii  libglu1-mesa [libglu1]      7.0.3~rc2-2  The OpenGL utility library (GLU)
+ii  libice6                     2:1.0.4-1    X11 Inter-Client Exchange library
+ii  libjsw2                     1:1.5.5-1+b1 Joystick Library
+ii  libsm6                      2:1.0.3-1+b1 X11 Session Management library
+ii  libstdc++6                  4.3.0-3      The GNU Standard C++ Library v3
+ii  libx11-6                    2:1.0.3-7    X11 client-side library
+ii  libxext6                    2:1.0.4-1    X11 miscellaneous extension librar
+ii  libxmu6                     2:1.0.4-1    X11 miscellaneous utility library
+ii  libxpm4                     1:3.5.7-1    X11 pixmap library
+ii  libxxf86vm1                 1:1.0.1-2    X11 XFree86 video mode extension l
+ii  liby2-14                    2.14.5-4     Y Sound Server Library
+ii  searchandrescue-common      0.8.2-9      common files and documentation for
+ii  searchandrescue-data        0.8.2-1      common data files for searchandres
+
+Versions of packages searchandrescue recommends:
+pn  yiff-server                   <none>     (no description available)
+
+-- no debconf information
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,112 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 15:55:13 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnawe-0007aM-Vn
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 15:55:13 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 0BE4F13A4FDD; Sun, 20 Apr 2008 14:55:08 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	MURPHY_DRUGS_REL8,RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id E769D13A4ECA;
+	Sun, 20 Apr 2008 14:54:48 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnask-0007fZ-Cg; Sun, 20 Apr 2008 14:51:06 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476954: texlive-extra-utils: epstopdf is missing gs
+Reply-To: Frank =?UTF-8?Q?K=C3=BCster?= <frank@debian.org>, 476954@bugs.debian.org
+Resent-From: Frank =?UTF-8?Q?K=C3=BCster?= <frank@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian TeX Maintainers <debian-tex-maint@lists.debian.org>
+Resent-Date: Sun, 20 Apr 2008 14:51:05 +0000
+Resent-Message-ID: <handler.476954.B476954.120870301027795@bugs.debian.org>
+X-Debian-PR-Message: report 476954
+X-Debian-PR-Package: texlive-extra-utils
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: texlive-bin
+Received: via spool by 476954-submit@bugs.debian.org id=B476954.120870301027795
+          (code B ref 476954); Sun, 20 Apr 2008 14:51:05 +0000
+Received: (at 476954) by bugs.debian.org; 20 Apr 2008 14:50:10 +0000
+X-Amavis-Spam-Status: No, score=-11.0 required=4.0 tests=BAYES_00,FROMDEVELOPER,
+	HAS_BUG_NUMBER,MURPHY_DRUGS_REL8,VALID_BTS_CONTROL autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from moutng.kundenserver.de ([212.227.126.183])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <frank@kuesterei.ch>)
+	id 1Jnarq-00075f-0a; Sun, 20 Apr 2008 14:50:10 +0000
+Received: from riesling (p5B0AF3DD.dip.t-dialin.net [91.10.243.221])
+	by mrelayeu.kundenserver.de (node=mrelayeu6) with ESMTP (Nemesis)
+	id 0ML29c-1Jnark0MLR-0000Cn; Sun, 20 Apr 2008 16:50:04 +0200
+Received: from localhost ([127.0.0.1] helo=riesling.zuerich.kuesterei.ch)
+	by riesling with esmtp (Exim 4.63)
+	(envelope-from <frank@kuesterei.ch>)
+	id 1Jnax6-0004cf-CI; Sun, 20 Apr 2008 16:55:36 +0200
+To: Debian Bug Control Server <control@bugs.debian.org>
+Cc: 476954@bugs.debian.org
+X-Attribution: fant
+X-Ehrenamt: http://www.langau.de
+In-Reply-To: <8763uc210g.fsf@riesling.zuerich.kuesterei.ch> ("Frank
+ =?UTF-8?Q?K=C3=BCster"'s?= message of "Sun\, 20 Apr 2008 13\:56\:15
+ +0200")
+User-Agent: Gnus/5.11 (Gnus v5.11) Emacs/22.1 (gnu/linux)
+References: <20080420110639.26259.39714.reportbug@dent.philosys.de>
+	<8763uc210g.fsf@riesling.zuerich.kuesterei.ch>
+From: Frank =?UTF-8?Q?K=C3=BCster?= <frank@debian.org>
+Date: Sun, 20 Apr 2008 16:55:36 +0200
+Message-ID: <87prskzic7.fsf@riesling.zuerich.kuesterei.ch>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: quoted-printable
+X-Provags-ID: V01U2FsdGVkX1/eQaiZK4heXTTiYVpo4oXIbU8U9eDjDX9xyTT
+ rcZ+oDp9N+v5a5BR9jo/TQsiCaYhaBaeYQcYBvi5LtDelgI3CX
+ fCxSwK0fe9g2b3xZPFUY/NJVKSgcDZJ
+X-CrossAssassin-Score: 2
+Resent-Date: Sun, 20 Apr 2008 14:51:06 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343539
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -35.6
+X-Spam-Report: (-35.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	17 AWL                    AWL: From: address is in the auto white-list
+
+tags 476954 patch
+thanks
+
+Frank K=FCster <frank@debian.org> wrote:
+
+> trunk/all/debian/tpm2deb.cfg
+> -suggests;texlive-extra-utils;ghostscript
+> +recommends;texlive-extra-utils;ghostscript
+
+--=20
+Frank K=FCster
+Debian Developer (teTeX/TeXLive)
+
+
+

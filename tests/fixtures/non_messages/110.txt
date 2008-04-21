@@ -1,0 +1,137 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 15:55:15 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnawh-0007aQ-Or
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 15:55:15 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id BBB5013A500B; Sun, 20 Apr 2008 14:55:10 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 2BB1013A4F97;
+	Sun, 20 Apr 2008 14:54:55 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnava-00008b-Ch; Sun, 20 Apr 2008 14:54:02 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#472386: epiphany-browser: Location box no longer empty when home page loaded in new tab
+Reply-To: 472386@bugs.debian.org, 472386@bugs.debian.org
+Resent-From: Josselin Mouette <joss@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Josselin Mouette <joss@debian.org>
+Resent-Date: Sun, 20 Apr 2008 14:54:01 +0000
+Resent-Message-ID: <handler.472386.B472386.120870312830920@bugs.debian.org>
+X-Debian-PR-Message: report 472386
+X-Debian-PR-Package: epiphany-browser
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: epiphany-browser
+Received: via spool by 472386-submit@bugs.debian.org id=B472386.120870312830920
+          (code B ref 472386); Sun, 20 Apr 2008 14:54:01 +0000
+Received: (at 472386) by bugs.debian.org; 20 Apr 2008 14:52:08 +0000
+X-Amavis-Spam-Status: No, score=-9.0 required=4.0 tests=BAYES_00,FROMDEVELOPER,
+	HAS_BUG_NUMBER autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from diva.malsain.org ([91.121.19.57])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <joss@debian.org>)
+	id 1Jnatk-00081l-CH
+	for 472386@bugs.debian.org; Sun, 20 Apr 2008 14:52:08 +0000
+Received: from localhost ([127.0.0.1])
+	by diva.malsain.org with esmtp (Exim 4.63)
+	(envelope-from <joss@debian.org>)
+	id 1Jnatc-00004u-6T; Sun, 20 Apr 2008 16:52:00 +0200
+From: Josselin Mouette <joss@debian.org>
+To: Moray Allan <moray@sermisy.org>, 472386@bugs.debian.org
+In-Reply-To: <1206320332.4531.6.camel@josquin.sermisy.org>
+References: <1206320332.4531.6.camel@josquin.sermisy.org>
+Content-Type: multipart/signed; micalg=pgp-sha1; protocol="application/pgp-signature"; boundary="=-YnVRogAOPte2+PNSxxUN"
+Date: Sun, 20 Apr 2008 16:51:59 +0200
+Message-Id: <1208703119.3820.42.camel@shizuru>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.22.1 
+Resent-Date: Sun, 20 Apr 2008 14:54:02 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343540
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -30.9
+X-Spam-Report: (-30.9 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	22 AWL                    AWL: From: address is in the auto white-list
+
+
+--=-YnVRogAOPte2+PNSxxUN
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Le lundi 24 mars 2008 =C3=A0 01:58 +0100, Moray Allan a =C3=A9crit :
+> Previously when I created a new tab, the location/URL entry box was
+> left=20
+> blank.  I found this very useful, and would frequently select a URL=20
+> elsewhere, create a new tab in the Epiphany window where I wanted to=20
+> view it, then middle-click and press enter to load it.
+
+There is a better way to do that: just middle-click on the "new tab"
+button. It will open the new tab with the URL in the clipboard, and is
+one click less.
+
+> Epiphany now instead fills in the URL of my home page=20
+> (http://www.google.com/).
+
+This is also more consistent, because you don=E2=80=99t get a page loaded
+without the correponding address in the URL bar. I think this is
+intentional, as there are better ways to achieve what you are doing with
+it in the old behavior.
+
+Cheers,
+--=20
+ .''`.
+: :' :      We are debian.org. Lower your prices, surrender your code.
+`. `'       We will add your hardware and software distinctiveness to
+  `-        our own. Resistance is futile.
+
+--=-YnVRogAOPte2+PNSxxUN
+Content-Type: application/pgp-signature; name=signature.asc
+Content-Description: Ceci est une partie de message
+	=?ISO-8859-1?Q?num=E9riquement?= =?ISO-8859-1?Q?_sign=E9e?=
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQBIC1iPrSla4ddfhTMRAoyOAJ41ZOllMBjyp7eybtRwTK3mYGK6BgCg32uw
+uBAEzfytA62cL8/YiF9Fh+I=
+=Nkch
+-----END PGP SIGNATURE-----
+
+--=-YnVRogAOPte2+PNSxxUN--
+
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

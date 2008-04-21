@@ -1,0 +1,273 @@
+From bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org Sun Apr 20 03:34:53 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org>)
+	id 1JnPO5-0005AZ-7r
+	for ddc@ddc.chris-lamb.co.uk; Sun, 20 Apr 2008 03:34:53 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 12F0C13A4A26; Sun, 20 Apr 2008 02:34:40 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 8B8FC13A497E;
+	Sun, 20 Apr 2008 02:34:38 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnPMb-0003Fh-5C; Sun, 20 Apr 2008 02:33:09 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Dirk Eddelbuettel <edd@debian.org>
+Subject: Bug#476825: marked as done (fasianoptions - FTBFS: Error: package
+ 'fOptions' could not be loaded)
+Message-ID: <handler.476825.D476825.120865869810912.ackdone@bugs.debian.org>
+References: <E1JnP70-00056H-8T@ries.debian.org>
+ <20080419120618.GH28315@wavehammer.waldi.eu.org>
+X-Debian-PR-Message: closed 476825
+X-Debian-PR-Package: fasianoptions
+X-Debian-PR-Source: fasianoptions
+Content-Type: multipart/mixed; boundary="----------=_1208658789-12501-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 02:33:09 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <PXX4FSFwVMI.A.XYB.AvqCIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/132890
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 02:34:40 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208658789-12501-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 02:17:02 +0000
+with message-id <E1JnP70-00056H-8T@ries.debian.org>
+and subject line Bug#476825: fixed in fasianoptions 260.72-4
+has caused the Debian Bug report #476825,
+regarding fasianoptions - FTBFS: Error: package 'fOptions' could not be loa=
+ded
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+476825: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D476825
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208658789-12501-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 19 Apr 2008 12:06:19 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-12.0 required=4.0 tests=BAYES_00,FROMDEVELOPER,
+	HAS_PACKAGE autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <waldi@debian.org>
+Received: from wavehammer.waldi.eu.org ([82.139.201.20])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <waldi@debian.org>)
+	id 1JnBpj-0000wV-Ah
+	for submit@bugs.debian.org; Sat, 19 Apr 2008 12:06:19 +0000
+Received: by wavehammer.waldi.eu.org (Postfix, from userid 1000)
+	id 13BE5540F3; Sat, 19 Apr 2008 14:06:18 +0200 (CEST)
+Date: Sat, 19 Apr 2008 14:06:18 +0200
+From: Bastian Blank <waldi@debian.org>
+To: submit@bugs.debian.org
+Subject: fasianoptions - FTBFS: Error: package 'fOptions' could not be loaded
+Message-ID: <20080419120618.GH28315@wavehammer.waldi.eu.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Disposition: inline
+User-Agent: Mutt/1.5.13 (2006-08-11)
+Delivered-To: submit@bugs.debian.org
+
+Package: fasianoptions
+Version: 260.72-3
+Severity: serious
+
+There was an error while trying to autobuild your package:
+
+> Automatic build of fasianoptions_260.72-3 on debian-31.osdl.marist.edu by sbuild/s390 98
+[...]
+> Loading required package: tcltk
+> Loading Tcl/Tk interface ... done
+> Loading required package: zoo
+> Error in dyn.load(file, DLLpath = DLLpath, ...) : 
+>   unable to load shared library '/usr/lib/R/site-library/fOptions/libs/fOptions.so':
+>   libRlapack.so: cannot open shared object file: No such file or directory
+> Error: package 'fOptions' could not be loaded
+> Execution halted
+> ERROR: lazy loading failed for package 'fAsianOptions'
+> ** Removing '/build/buildd/fasianoptions-260.72/debian/r-cran-fasianoptions/usr/lib/R/site-library/fAsianOptions'
+> make: *** [R_any_arch] Error 1
+> dpkg-buildpackage: failure: /usr/bin/fakeroot debian/rules binary-arch gave error exit status 2
+> ******************************************************************************
+> Build finished at 20080417-1233
+> FAILED [dpkg-buildpackage died]
+
+
+
+------------=_1208658789-12501-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 476825-close) by bugs.debian.org; 20 Apr 2008 02:31:38 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.6 required=4.0 tests=BAYES_00,FOURLA,
+	FROMDEVELOPER,FVGT_m_MULTI_ODD,HAS_BUG_NUMBER,HEADER_X_KATIE,
+	IMPRONONCABLE_2,MURPHY_WRONG_WORD1,MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnPL8-0002pp-Ha
+	for 476825-close@bugs.debian.org; Sun, 20 Apr 2008 02:31:38 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnP70-00056H-8T; Sun, 20 Apr 2008 02:17:02 +0000
+From: Dirk Eddelbuettel <edd@debian.org>
+To: 476825-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#476825: fixed in fasianoptions 260.72-4
+Message-Id: <E1JnP70-00056H-8T@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 02:17:02 +0000
+Content-Transfer-Encoding: quoted-printable
+
+Source: fasianoptions
+Source-Version: 260.72-4
+
+We believe that the bug you reported is fixed in the latest version of
+fasianoptions, which is due to be installed in the Debian FTP archive:
+
+fasianoptions_260.72-4.diff.gz
+  to pool/main/f/fasianoptions/fasianoptions_260.72-4.diff.gz
+fasianoptions_260.72-4.dsc
+  to pool/main/f/fasianoptions/fasianoptions_260.72-4.dsc
+r-cran-fasianoptions_260.72-4_i386.deb
+  to pool/main/f/fasianoptions/r-cran-fasianoptions_260.72-4_i386.deb
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 476825@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Dirk Eddelbuettel <edd@debian.org> (supplier of updated fasianoptions pac=
+kage)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sat, 19 Apr 2008 20:46:46 -0500
+Source: fasianoptions
+Binary: r-cran-fasianoptions
+Architecture: source i386
+Version: 260.72-4
+Distribution: unstable
+Urgency: low
+Maintainer: Dirk Eddelbuettel <edd@debian.org>
+Changed-By: Dirk Eddelbuettel <edd@debian.org>
+Description:=20
+ r-cran-fasianoptions - GNU R package for financial engineering -- fAsian=
+Options
+Closes: 476825
+Changes:=20
+ fasianoptions (260.72-4) unstable; urgency=3Dlow
+ .
+   * debian/control: Tighten Build-Depends: on r-cran-foptions to ensure =
+use
+     of a version built after the gfortran transition	(Closes: #476825)
+Checksums-Sha1:=20
+ 3cad6d62cc99069642e4e80ad7905418428cc125 1103 fasianoptions_260.72-4.dsc
+ 17903fa961f50a73c5b8f01902b37085718bf6ce 2195 fasianoptions_260.72-4.dif=
+f.gz
+ d8d71463a944012e85651088c094c9d1d3dfd710 152616 r-cran-fasianoptions_260=
+.72-4_i386.deb
+Checksums-Sha256:=20
+ c96406dda0ffdbac82a999ac367b96d6b376a4247c6e3f4d64ecc69d629cca37 1103 fa=
+sianoptions_260.72-4.dsc
+ f05bafd36b0221e77dde4e1caa5c671857f8a6808e6034e64272943559ad2f6a 2195 fa=
+sianoptions_260.72-4.diff.gz
+ 32ca28f01a7f6740e41fe7f844acee64648e1f025393cb74cbf21ca1bdc7dd1a 152616 =
+r-cran-fasianoptions_260.72-4_i386.deb
+Files:=20
+ 0b285d550ce427a0e166267388de6ca4 1103 math optional fasianoptions_260.72=
+-4.dsc
+ ec73ea4ab918029116147d9b87ae8fa7 2195 math optional fasianoptions_260.72=
+-4.diff.gz
+ 2c78a3258d96fd92219d8f2df4f22769 152616 math optional r-cran-fasianoptio=
+ns_260.72-4_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICqKgCZSR95Gw07cRAtlpAJ4zCPjQ/4RB7WCTlU0OZy7PvMgcVQCePhwt
+2rZd2DPVjOGIRR/SAinF1tM=3D
+=3DCVcn
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208658789-12501-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

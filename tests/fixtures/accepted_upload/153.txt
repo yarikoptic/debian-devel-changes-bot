@@ -1,0 +1,107 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 16:31:49 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnbW5-0007j1-FA
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 16:31:48 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 3B00013A509F; Sun, 20 Apr 2008 15:31:44 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id ECEF013A508B
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 15:31:43 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnbHv-0007PQ-02; Sun, 20 Apr 2008 15:17:07 +0000
+From: Ross Burton <ross@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted postr 0.11-1 (source all)
+Message-Id: <E1JnbHv-0007PQ-02@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 15:17:07 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <jbTq1fniepH.A.BEE.gH2CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301311
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 15:31:44 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.5
+X-Spam-Report: (-2.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.1 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.7
+Date: Sun, 20 Apr 2008 15:40:03 +0100
+Source: postr
+Binary: postr
+Architecture: source all
+Version: 0.11-1
+Distribution: unstable
+Urgency: low
+Maintainer: Ross Burton <ross@debian.org>
+Changed-By: Ross Burton <ross@debian.org>
+Description:=20
+ postr      - upload photos to Flickr
+Changes:=20
+ postr (0.11-1) unstable; urgency=3Dlow
+ .
+   * New upstream release.
+Files:=20
+ 2e160a378fe64327bc34bfbbf6b7bb91 606 graphics optional postr_0.11-1.dsc
+ ef1680ef342096ba209e966e2faf3c3e 74265 graphics optional postr_0.11.orig=
+.tar.gz
+ 7b65dfbbc6a7c570826dbd847c06ff11 2366 graphics optional postr_0.11-1.dif=
+f.gz
+ ea993469871b31061b8ebeb4c0d37b35 66150 graphics optional postr_0.11-1_al=
+l.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC1j0LQnkR9C0M98RAm5oAKCSqPgRMruHphtJFDLx2wGzK4DrpgCdFTJi
+APhdR6FNvzIT0LYz+KypA98=3D
+=3D//nO
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+postr_0.11-1.diff.gz
+  to pool/main/p/postr/postr_0.11-1.diff.gz
+postr_0.11-1.dsc
+  to pool/main/p/postr/postr_0.11-1.dsc
+postr_0.11-1_all.deb
+  to pool/main/p/postr/postr_0.11-1_all.deb
+postr_0.11.orig.tar.gz
+  to pool/main/p/postr/postr_0.11.orig.tar.gz
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

@@ -1,0 +1,132 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 11:55:08 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnXCF-0006XW-U3
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 11:55:08 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 9626313A4E9C; Sun, 20 Apr 2008 10:54:58 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.9 required=4.0 tests=BAYES_00,FOURLA,
+	RCVD_IN_DNSWL_LOW autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 756FE13A4B67;
+	Sun, 20 Apr 2008 10:54:43 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnXBM-0002Ey-9o; Sun, 20 Apr 2008 10:54:04 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476951: aptitude: must run apt-listbugs before downloading packages
+Reply-To: Luca Bruno <lethalman88@gmail.com>, 476951@bugs.debian.org
+Resent-From: Luca Bruno <lethalman88@gmail.com>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Daniel Burrows <dburrows@debian.org>
+Resent-Date: Sun, 20 Apr 2008 10:54:01 +0000
+Resent-Message-ID: <handler.476951.B.12086886985682@bugs.debian.org>
+X-Debian-PR-Message: report 476951
+X-Debian-PR-Package: aptitude
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: aptitude
+Received: via spool by submit@bugs.debian.org id=B.12086886985682
+          (code B ref -1); Sun, 20 Apr 2008 10:54:01 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 10:51:38 +0000
+X-Amavis-Spam-Status: No, score=-8.2 required=4.0 tests=BAYES_00,
+	DATE_IN_FUTURE_06_12,FOURLA,HAS_PACKAGE autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from smtp-out05a.alice.it ([85.33.3.5])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <lethalman88@gmail.com>)
+	id 1JnX90-0001Q2-BK
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 10:51:38 +0000
+Received: from FBCMMO01.fbc.local ([192.168.68.195]) by smtp-OUT05A.alice.it with Microsoft SMTPSVC(6.0.3790.1830);
+	 Sun, 20 Apr 2008 12:50:39 +0200
+Received: from FBCMCL01B07.fbc.local ([192.168.171.45]) by FBCMMO01.fbc.local with Microsoft SMTPSVC(6.0.3790.1830);
+	 Sun, 20 Apr 2008 12:51:25 +0200
+Received: from debian ([79.3.193.88]) by FBCMCL01B07.fbc.local with Microsoft SMTPSVC(6.0.3790.1830);
+	 Sun, 20 Apr 2008 12:50:26 +0200
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Luca Bruno <lethalman88@gmail.com>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Message-ID: <20080420175146.29988.56557.reportbug@debian>
+X-Mailer: reportbug 3.39-0.1
+Date: Sun, 20 Apr 2008 12:51:46 -0500
+X-OriginalArrivalTime: 20 Apr 2008 10:50:26.0171 (UTC) FILETIME=[57505CB0:01C8A2D4]
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 10:54:04 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343434
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.6
+X-Spam-Report: (-52.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+Package: aptitude
+Version: 0.4.10-1+b1
+Severity: wishlist
+
+Currently aptitude first downloads packages then check for bugs.
+I think it's better to ask the user whether to continue or not downloading
+packages after checking critical bugs.
+
+
+-- Package-specific info:
+Terminal: xterm
+$DISPLAY is set.
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers testing
+  APT policy: (990, 'testing'), (500, 'unstable'), (500, 'stable')
+Architecture: amd64 (x86_64)
+
+Kernel: Linux 2.6.24-1-amd64 (SMP w/1 CPU core)
+Locale: LANG=en_US.UTF-8, LC_CTYPE=en_US.UTF-8 (charmap=UTF-8)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages aptitude depends on:
+ii  apt [libapt-pkg-libc6.7-6 0.7.11         Advanced front-end for dpkg
+ii  libc6                     2.7-10         GNU C Library: Shared libraries
+ii  libcwidget1               0.5.6.1-3      high-level terminal interface libr
+ii  libgcc1                   1:4.3.0-3      GCC support library
+ii  libncursesw5              5.6+20080308-1 Shared libraries for terminal hand
+ii  libsigc++-2.0-0c2a        2.0.18-2       type-safe Signal Framework for C++
+ii  libstdc++6                4.3.0-3        The GNU Standard C++ Library v3
+
+Versions of packages aptitude recommends:
+pn  aptitude-doc-en | aptitude-do <none>     (no description available)
+ii  libparse-debianchangelog-perl 1.1.1-2    parse Debian changelogs and output
+
+-- no debconf information
+
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,118 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 19:10:09 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JndzE-0000Lm-Jq
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 19:10:07 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 60F9713A50FF; Sun, 20 Apr 2008 18:09:59 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-6.2 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	MURPHY_SEX_L4,RCVD_IN_DNSWL_LOW,SARE_RECV_IP_069060096 autolearn=ham
+	version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 5AA3213A50BD;
+	Sun, 20 Apr 2008 18:09:44 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JndyI-0001Qy-Uc; Sun, 20 Apr 2008 18:09:03 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#473364: installation-report: some install glitches (grub2, tasksel, serial mouse)
+Reply-To: Robert Millan <rmh@aybabtu.com>, 473364@bugs.debian.org
+Resent-From: Robert Millan <rmh@aybabtu.com>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian Install System Team <debian-boot@lists.debian.org>
+Resent-Date: Sun, 20 Apr 2008 18:09:02 +0000
+Resent-Message-ID: <handler.473364.B473364.120871479822020@bugs.debian.org>
+X-Debian-PR-Message: report 473364
+X-Debian-PR-Package: win32-loader
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: win32-loader
+Received: via spool by 473364-submit@bugs.debian.org id=B473364.120871479822020
+          (code B ref 473364); Sun, 20 Apr 2008 18:09:02 +0000
+Received: (at 473364) by bugs.debian.org; 20 Apr 2008 18:06:38 +0000
+X-Amavis-Spam-Status: No, score=-9.9 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER,
+	MURPHY_SEX_L4,X_DEBBUGS_NO_ACK autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from aybabtu.com ([69.60.117.155])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <rmh@aybabtu.com>)
+	id 1Jndvx-0005im-Nx
+	for 473364@bugs.debian.org; Sun, 20 Apr 2008 18:06:37 +0000
+Received: from [192.168.10.6] (helo=thorin)
+	by aybabtu.com with esmtps (TLS-1.0:RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <rmh@aybabtu.com>)
+	id 1Jndvr-0007OS-Fd; Sun, 20 Apr 2008 20:06:32 +0200
+Received: from rmh by thorin with local (Exim 4.63)
+	(envelope-from <rmh@aybabtu.com>)
+	id 1JndvO-0003ni-2O; Sun, 20 Apr 2008 20:06:02 +0200
+Date: Sun, 20 Apr 2008 20:06:02 +0200
+From: Robert Millan <rmh@aybabtu.com>
+To: Paul Wise <pabs@debian.org>, 473364@bugs.debian.org
+Cc: Joey Hess <joeyh@debian.org>
+Message-ID: <20080420180602.GA14535@thorin>
+References: <1206858167.4920.106.camel@chianamo> <20080403191239.GA9742@kodama.kitenet.net> <1207294200.32527.82.camel@chianamo>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <1207294200.32527.82.camel@chianamo>
+Organization: free as in freedom
+X-Message-Flag: Worried about Outlook viruses? Switch to Thunderbird! www.mozilla.com/thunderbird
+User-Agent: Mutt/1.5.13 (2006-08-11)
+Resent-Date: Sun, 20 Apr 2008 18:09:02 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343708
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -33.2
+X-Spam-Report: (-33.2 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	19 AWL                    AWL: From: address is in the auto white-list
+
+On Fri, Apr 04, 2008 at 03:29:59PM +0800, Paul Wise wrote:
+> get to nice blue grub2 splash - shouldn't the bootloader and d-i use consistent themes?
+> [...]
+> hmm, no splashy
+> gdm comes up - again theme consistency would be good
+> [...]
+> again the blue theme, perhaps d-i needs changing to use blue instead of read?
+
+Makes me wonder, is splashy better than usplash at theme consistency?
+
+-- 
+Robert Millan
+
+"The technological evasion of the license is as unacceptable as the
+ legal evasion of the license [...].  That's the provision in section
+ 1 regarding keys. [...]  We say one thing: when you sell somebody a
+ home... give him the keys"  -- Eben Moglen on GPLv3
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

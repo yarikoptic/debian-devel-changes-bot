@@ -1,0 +1,142 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 10:51:02 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnWCG-00067L-VZ
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 10:51:02 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 0DF0113A4EE1; Sun, 20 Apr 2008 09:50:56 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.4 required=4.0 tests=BAYES_00,HTML_MESSAGE,
+	RCVD_IN_DNSWL_LOW,SARE_MSGID_LONG40 autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id EF34B13A4E19;
+	Sun, 20 Apr 2008 09:50:45 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnW9T-0004w7-10; Sun, 20 Apr 2008 09:48:03 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#305471: gnome-session-save -kill hangs
+Reply-To: "Bohan Huang" <bh.inbox@gmail.com>, 305471@bugs.debian.org
+Resent-From: "Bohan Huang" <bh.inbox@gmail.com>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Josselin Mouette <joss@debian.org>
+Resent-Date: Sun, 20 Apr 2008 09:48:02 +0000
+Resent-Message-ID: <handler.305471.B305471.120868479012278@bugs.debian.org>
+X-Debian-PR-Message: report 305471
+X-Debian-PR-Package: gnome-session
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: gnome-session
+Received: via spool by 305471-submit@bugs.debian.org id=B305471.120868479012278
+          (code B ref 305471); Sun, 20 Apr 2008 09:48:02 +0000
+Received: (at 305471) by bugs.debian.org; 20 Apr 2008 09:46:30 +0000
+X-Amavis-Spam-Status: No, score=-4.7 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER,
+	HTML_00_10,HTML_MESSAGE autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from rv-out-0506.google.com ([209.85.198.226])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <bh.inbox@gmail.com>)
+	id 1JnW7y-0003Bt-PW
+	for 305471@bugs.debian.org; Sun, 20 Apr 2008 09:46:30 +0000
+Received: by rv-out-0506.google.com with SMTP id k40so684267rvb.17
+        for <305471@bugs.debian.org>; Sun, 20 Apr 2008 02:46:30 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:to:subject:in-reply-to:mime-version:content-type:references;
+        bh=fLRNE2aOde71YlRkKMpjMcHhnyUJstk3n7e93uVKWlY=;
+        b=iyzNOmK3Fjn+MrafYaeXbVochdCl0u90R0z4mJStP26zj5+QGhRFmvP7cH+6Ro6KVKGBVS0BlQHRXPAm1pg381sq8L4vBo+Nr6oJBmcxwPxUjhZ5QCqWawmhZtqxJT+eCfQ934OkRP3d9BQg3lKECBcsVN0Z8kp8CnWC+enJFIU=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:to:subject:in-reply-to:mime-version:content-type:references;
+        b=qfmNOuo42K7xASNGKEJTPds7PyYnwtBJdwmfdhp//R2F0OHzD/TRXavJjcsDWj8tAATE0IIKtVhRLbOHPYp1ioke+gKXoKHVtwZs1c5ADwr/VcLHYGmrRswZtChWUkdCADAKM2SAS17NdB5Oi7sKYtMIcPwhS2F3a2XjyWr06jY=
+Received: by 10.141.153.17 with SMTP id f17mr2572432rvo.267.1208684790150;
+        Sun, 20 Apr 2008 02:46:30 -0700 (PDT)
+Received: by 10.141.113.13 with HTTP; Sun, 20 Apr 2008 02:46:30 -0700 (PDT)
+Message-ID: <9df57f4f0804200246i5f8debf6w11175185ece23dea@mail.gmail.com>
+Date: Sun, 20 Apr 2008 19:46:30 +1000
+From: "Bohan Huang" <bh.inbox@gmail.com>
+To: 305471@bugs.debian.org
+In-Reply-To: <1208683572.3820.1.camel@shizuru>
+MIME-Version: 1.0
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2837_12027845.1208684790172"
+References: <9df57f4f0804192023w771594b5qccfebf8cb20ced5a@mail.gmail.com>
+	 <1208683572.3820.1.camel@shizuru>
+Resent-Date: Sun, 20 Apr 2008 09:48:03 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343397
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -51.6
+X-Spam-Report: (-51.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	0.8 HTML_00_10             BODY: Message is 0% to 10% HTML
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.5 HTML_MESSAGE           BODY: HTML included in message
+	-0.3 AWL                    AWL: From: address is in the auto white-list
+
+------=_Part_2837_12027845.1208684790172
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+Actually the problem is now gone. Unfortunately I was not careful to record
+the order of steps taken, but here goes:
+
+I looked at the logs and noticed exim4 (MTA) has not starting up properly,
+so did dpkg-reconfigure exim4-config, which fixed that. I disabled acpid
+(But I think I this this before with no difference). I also purged and
+reinstalled portmap as that was unresponsesive to stop and restart commands.
+At the end I installed kde-core in the hope that KDE would fare better.
+After this I tried to log out of Gnome to start a KDE session, only to
+dicover the logout now works.
+
+It been a weird experience, but at the time I experience the issue the
+system was 'clean'. I did a standard install from etch CD1 only (base +
+desktop environment tasks). upgraded to testing and then sid. during the
+upgrade apt had to remove gnome-desktop-environment to fulfill dependencies
+(also I had to force glibc in manually with dpkg). after the system was
+completely on sid I installed gnome-desktop-environment back and had could
+not logout after restarting into a gnome session. No configuration changes
+of  happened during the process.
+
+Anyway thanks for your help.
+
+------=_Part_2837_12027845.1208684790172
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+Actually the problem is now gone. Unfortunately I was not careful to record the order of steps taken, but here goes:<br><br>I looked at the logs and noticed exim4 (MTA) has not starting up properly, so did dpkg-reconfigure exim4-config, which fixed that. I disabled acpid (But I think I this this before with no difference). I also purged and reinstalled portmap as that was unresponsesive to stop and restart commands. At the end I installed kde-core in the hope that KDE would fare better. After this I tried to log out of Gnome to start a KDE session, only to dicover the logout now works.<br>
+<br>It been a weird experience, but at the time I experience the issue the system was &#39;clean&#39;. I did a standard install from etch CD1 only (base + desktop environment tasks). upgraded to testing and then sid. during the upgrade apt had to remove gnome-desktop-environment to fulfill dependencies (also I had to force glibc in manually with dpkg). after the system was completely on sid I installed gnome-desktop-environment back and had could not logout after restarting into a gnome session. No configuration changes of&nbsp; happened during the process.<br>
+<br>Anyway thanks for your help.<br>
+
+------=_Part_2837_12027845.1208684790172--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,162 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 13:11:28 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnYOB-0006rb-0M
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 13:11:28 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id D6D5613A4F76; Sun, 20 Apr 2008 12:11:21 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.2 required=4.0 tests=BAYES_00,FOURLA,
+	FVGT_m_MULTI_ODD,GMAIL,LDO_WHITELIST,MAILTO_TO_SPAM_ADDR,RCVD_IN_DNSWL_LOW,
+	URIBL_BLACK autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 5580413A4F69;
+	Sun, 20 Apr 2008 12:11:08 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnYLx-0004xo-8X; Sun, 20 Apr 2008 12:09:05 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476959: ITP: galaxium -- instant messenger application designed for the GNOME desktop
+Reply-To: David Paleino <d.paleino@gmail.com>, 476959@bugs.debian.org
+Resent-From: David Paleino <d.paleino@gmail.com>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: <wnpp@debian.org>
+Resent-Date: Sun, 20 Apr 2008 12:09:01 +0000
+Resent-Message-ID: <handler.476959.B.120869313629888@bugs.debian.org>
+X-Debian-PR-Message: report 476959
+X-Debian-PR-Package: wnpp
+X-Debian-PR-Keywords: 
+Received: via spool by submit@bugs.debian.org id=B.120869313629888
+          (code B ref -1); Sun, 20 Apr 2008 12:09:01 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 12:05:36 +0000
+X-Amavis-Spam-Status: No, score=-8.9 required=4.0 tests=BAYES_00,FOURLA,
+	FVGT_m_MULTI_ODD,GMAIL,HAS_PACKAGE autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from wx-out-0506.google.com ([66.249.82.237])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <d.paleino@gmail.com>)
+	id 1JnYIa-0007ju-AO
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 12:05:36 +0000
+Received: by wx-out-0506.google.com with SMTP id h31so1076016wxd.11
+        for <submit@bugs.debian.org>; Sun, 20 Apr 2008 05:05:35 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:date:from:to:subject:message-id:x-mailer:x-face:mime-version:content-type;
+        bh=Vn2CQmMbkZkwpuK6nrIts+qWnlOU+WPpQLM6iNjEYNE=;
+        b=v2KLVE9FNKVEbSdngZM8vmtyhDpiF8qDAWhMYPo5YqK7mEnPe5faIp9JWspg22BtflBty1w2xnONApzEcqTPmjYjcm/b/e1q8XBeQ4FsNuH1YqgD6okKEcv6psk1TcUP+pOzZUyBy0x6Lo9WqZDSLY1eKj6dCgDdxgEp4hPmGms=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=date:from:to:subject:message-id:x-mailer:x-face:mime-version:content-type;
+        b=brHUDOWoXZun+cX/Z+i5LFcZBYw+fK+MH+ENai9o2fAsBtbGLCumnFigd5pNWReHLJ4Afo7gQzZgiy5O5CyfwwBxm7CnGIcxF7woFyDUsENwTPQc3rk/AuU0E9nRM0UVQJtZjZDE//zK7dtcSqNwzlGJc8AA0jJywvmvITEcDI8=
+Received: by 10.70.62.11 with SMTP id k11mr6323072wxa.82.1208693135097;
+        Sun, 20 Apr 2008 05:05:35 -0700 (PDT)
+Received: from localhost ( [79.27.174.242])
+        by mx.google.com with ESMTPS id h35sm9573123wxd.9.2008.04.20.05.05.33
+        (version=SSLv3 cipher=OTHER);
+        Sun, 20 Apr 2008 05:05:34 -0700 (PDT)
+Date: Sun, 20 Apr 2008 14:05:31 +0200
+From: David Paleino <d.paleino@gmail.com>
+To: submit@bugs.debian.org
+Message-ID: <20080420140531.7a1f1fa9@gmail.com>
+X-Mailer: Claws Mail 3.3.1 (GTK+ 2.12.9; i486-pc-linux-gnu)
+X-Face: 
+Mime-Version: 1.0
+Content-Type: multipart/signed; boundary="Sig_/dQJMpYN9/oDJunD0TyCsEDz";
+ protocol="application/pgp-signature"; micalg=PGP-SHA1
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 12:09:05 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343462
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -37.6
+X-Spam-Report: (-37.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	15 AWL                    AWL: From: address is in the auto white-list
+
+--Sig_/dQJMpYN9/oDJunD0TyCsEDz
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: quoted-printable
+
+Package: wnpp
+Severity: wishlist
+Owner: David Paleino <d.paleino@gmail.com>
+
+* Package name    : galaxium
+  Version         : 0.7.0.416
+  Upstream Author : Philippe Durand <draekz@gmail.com>
+                    Ben Motmans <ben.motmans@gmail.com>
+                    Paul Burton <paulburton89@gmail.com>
+* URL             : http://code.google.com/p/galaxium/
+* License         : GPL-2+
+  Programming Lang: Mono C#
+  Description     : instant messenger application designed for the GNOME de=
+sktop
+
+Galaxium is an instant messenger application designed for the GNOME desktop=
+. It
+will allow you to connect to MSN, Jabber, GTalk and IRC (and Yahoo, AIM and=
+ ICQ
+in the future) through the use of addins.
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (500, 'unstable'), (500, 'testing'), (1, 'experimental')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.23-1-686 (SMP w/1 CPU core)
+Locale: LANG=3Dit_IT.UTF-8, LC_CTYPE=3Dit_IT.UTF-8 (charmap=3DUTF-8)
+Shell: /bin/sh linked to /bin/bash
+
+
+
+--=20
+ . ''`.  Debian maintainer | http://wiki.debian.org/DavidPaleino
+ : :'  : Linuxer #334216 --|-- http://www.hanskalabs.net/
+ `. `'`  GPG: 1392B174 ----|---- http://snipr.com/qa_page
+   `-   2BAB C625 4E66 E7B8 450A C3E1 E6AA 9017 1392 B174
+
+--Sig_/dQJMpYN9/oDJunD0TyCsEDz
+Content-Type: application/pgp-signature; name=signature.asc
+Content-Disposition: attachment; filename=signature.asc
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICzGL5qqQFxOSsXQRApjuAJ9tgkthBk6B4Acccyk8/Dv0xaJpTwCbBYn8
+G1P1jUGQobf0TqEvmYt8d90=
+=ZMLY
+-----END PGP SIGNATURE-----
+
+--Sig_/dQJMpYN9/oDJunD0TyCsEDz--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

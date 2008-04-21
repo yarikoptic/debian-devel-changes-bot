@@ -1,0 +1,301 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 16:34:59 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnbZA-0007kM-Aw
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 16:34:59 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 6828713A50A5; Sun, 20 Apr 2008 15:34:55 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id E1B5713A5073;
+	Sun, 20 Apr 2008 15:34:53 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnbXm-0007hT-2x; Sun, 20 Apr 2008 15:33:30 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Simon Huggins <huggie@earth.li>
+Subject: Bug#462134: marked as done (xfce4-places-plugin: Please hide 
+ =?UTF-8?Q?=E2=80=9CRemove=E2=80=9D?= from the =?UTF-8?Q?=E2=80=9CRecent_?=
+ =?UTF-8?Q?documents=E2=80=9D?= popup menu when empty.)
+Message-ID: <handler.462134.D462134.120870554427028.ackdone@bugs.debian.org>
+References: <E1Jnb3N-0006QD-PD@ries.debian.org>
+ <20080122182213.1007.52063.reportbug@evy.ikibiki.org>
+X-Debian-PR-Message: closed 462134
+X-Debian-PR-Package: xfce4-places-plugin
+X-Debian-PR-Keywords: fixed-upstream
+X-Debian-PR-Source: xfce4-places-plugin
+Content-Type: multipart/mixed; boundary="----------=_1208705610-29559-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 15:33:30 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <ryi5w4mFTdJ.A.9dE.fK2CIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/133017
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 15:34:55 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -1.5
+X-Spam-Report: (-1.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	1.7 SUBJECT_ENCODED_TWICE  Subject: MIME encoded twice
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	-0.6 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208705610-29559-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 15:02:05 +0000
+with message-id <E1Jnb3N-0006QD-PD@ries.debian.org>
+and subject line Bug#462134: fixed in xfce4-places-plugin 1.0.0r4636-1
+has caused the Debian Bug report #462134,
+regarding xfce4-places-plugin: Please hide =E2=80=9CRemove=E2=80=9D from th=
+e =E2=80=9CRecent documents=E2=80=9D popup menu when empty.
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+462134: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D462134
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208705610-29559-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 22 Jan 2008 18:22:30 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.1 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	HAS_PACKAGE,SUBJECT_ENCODED_TWICE autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <cyril.brulebois@enst-bretagne.fr>
+Received: from mailfe09.tele2.fr ([212.247.155.12] helo=swip.net)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <cyril.brulebois@enst-bretagne.fr>)
+	id 1JHNlV-00019z-PX
+	for submit@bugs.debian.org; Tue, 22 Jan 2008 18:22:29 +0000
+X-Cloudmark-Score:   0.000000 []
+Received: from [77.218.34.5] (account eu1498667@tele2.fr HELO duckcorp.org)
+  by mailfe09.swip.net (CommuniGate Pro SMTP 5.1.13)
+  with ESMTPA id 606475872; Tue, 22 Jan 2008 19:22:21 +0100
+Received: by duckcorp.org (Postfix, from userid 1000)
+	id 3ED0AC8497; Tue, 22 Jan 2008 19:22:14 +0100 (CET)
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+From: Cyril Brulebois <cyril.brulebois@enst-bretagne.fr>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Subject: =?utf-8?q?xfce4-places-plugin=3A_Please_hide_=E2=80=9CRemove=E2=80=9D_fro?=
+ =?utf-8?q?m_the_=E2=80=9CRecent_documents=E2=80=9D_popup_menu_when_empty?=
+ =?utf-8?q?=2E?=
+Message-ID: <20080122182213.1007.52063.reportbug@evy.ikibiki.org>
+X-Mailer: reportbug 3.39
+Date: Tue, 22 Jan 2008 19:22:13 +0100
+Delivered-To: submit@bugs.debian.org
+Content-Transfer-Encoding: quoted-printable
+
+Package: xfce4-places-plugin
+Version: 1.0.0-1
+Severity: wishlist
+
+Hi,
+
+the subject says it all; a single grayed =E2=80=9CNo item.=E2=80=9D would=
+ be very
+sufficient.
+
+Cheers,
+
+--=20
+Cyril Brulebois
+
+
+
+------------=_1208705610-29559-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 462134-close) by bugs.debian.org; 20 Apr 2008 15:32:24 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.8 required=4.0 tests=BAYES_00,FVGT_m_MULTI_ODD,
+	HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_2,MURPHY_WRONG_WORD2 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnbWi-00071T-Fg
+	for 462134-close@bugs.debian.org; Sun, 20 Apr 2008 15:32:24 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1Jnb3N-0006QD-PD; Sun, 20 Apr 2008 15:02:05 +0000
+From: Simon Huggins <huggie@earth.li>
+To: 462134-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#462134: fixed in xfce4-places-plugin 1.0.0r4636-1
+Message-Id: <E1Jnb3N-0006QD-PD@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 15:02:05 +0000
+Content-Transfer-Encoding: quoted-printable
+
+Source: xfce4-places-plugin
+Source-Version: 1.0.0r4636-1
+
+We believe that the bug you reported is fixed in the latest version of
+xfce4-places-plugin, which is due to be installed in the Debian FTP archi=
+ve:
+
+xfce4-places-plugin_1.0.0r4636-1.diff.gz
+  to pool/main/x/xfce4-places-plugin/xfce4-places-plugin_1.0.0r4636-1.dif=
+f.gz
+xfce4-places-plugin_1.0.0r4636-1.dsc
+  to pool/main/x/xfce4-places-plugin/xfce4-places-plugin_1.0.0r4636-1.dsc
+xfce4-places-plugin_1.0.0r4636-1_amd64.deb
+  to pool/main/x/xfce4-places-plugin/xfce4-places-plugin_1.0.0r4636-1_amd=
+64.deb
+xfce4-places-plugin_1.0.0r4636.orig.tar.gz
+  to pool/main/x/xfce4-places-plugin/xfce4-places-plugin_1.0.0r4636.orig.=
+tar.gz
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 462134@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Simon Huggins <huggie@earth.li> (supplier of updated xfce4-places-plugin =
+package)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 12:17:55 +0100
+Source: xfce4-places-plugin
+Binary: xfce4-places-plugin
+Architecture: source amd64
+Version: 1.0.0r4636-1
+Distribution: unstable
+Urgency: low
+Maintainer: Debian Xfce Maintainers <pkg-xfce-devel@lists.alioth.debian.o=
+rg>
+Changed-By: Simon Huggins <huggie@earth.li>
+Description:=20
+ xfce4-places-plugin - quick access to folders, documents and removable m=
+edia
+Closes: 462134
+Changes:=20
+ xfce4-places-plugin (1.0.0r4636-1) unstable; urgency=3Dlow
+ .
+   [ Simon Huggins ]
+   * Add Vcs-* headers to debian/control
+   * Update to SVN version
+    - more sane positioning after clearing the recent documents menu
+    - no longer displays Remove in the recent documents menu when empty
+                                                                  closes:=
+ 462134
+   * wrap long lines at 80 characters.
+   * Add libxml-parser-perl as a build-dep for intltool
+   * If you're not an Uploader you can't be in the changelog trailer...
+ .
+   [ David Paleino ]
+   * debian/control:
+     - removed old XS-Vcs-* fields
+     - wrapped long lines
+     - Standards-Version is now 3.7.3
+     - removed myself from Uploaders
+Checksums-Sha1:=20
+ 25fa2bf30d7b4d2d2f57cda6bc250f56b1a7f51c 1741 xfce4-places-plugin_1.0.0r=
+4636-1.dsc
+ 94f6afd0f4c4e712ffb0977a0702ee8c6a2ec76b 422795 xfce4-places-plugin_1.0.=
+0r4636.orig.tar.gz
+ b41fd08357b806769655abd9dd043cf444663b57 2544 xfce4-places-plugin_1.0.0r=
+4636-1.diff.gz
+ cacf79f046186c32125b5e527296699b14a692a2 42278 xfce4-places-plugin_1.0.0=
+r4636-1_amd64.deb
+Checksums-Sha256:=20
+ 92129b5645ad0c7ef511bce87fbf5e5f977f911663e705c366d89b14cf37ffce 1741 xf=
+ce4-places-plugin_1.0.0r4636-1.dsc
+ d60c920bf7153551fd0a21cbb770bbeb6eea348e40190fa36dae42015c02c555 422795 =
+xfce4-places-plugin_1.0.0r4636.orig.tar.gz
+ 7e68655afc0164b13660934377e8e048a16229e4cb0dfe3d510e677d76da46c1 2544 xf=
+ce4-places-plugin_1.0.0r4636-1.diff.gz
+ 395da76e5ba13544224a0412e47448006e18c82216e65f54b763e8cc03d09d15 42278 x=
+fce4-places-plugin_1.0.0r4636-1_amd64.deb
+Files:=20
+ 0413bb8752d49198d7c3e9a8adc9b1b7 1741 utils optional xfce4-places-plugin=
+_1.0.0r4636-1.dsc
+ cb4edeadac1f5eff40a0175ded25dc5a 422795 utils optional xfce4-places-plug=
+in_1.0.0r4636.orig.tar.gz
+ 163da7863dd0edc01a32f4c20e76ec90 2544 utils optional xfce4-places-plugin=
+_1.0.0r4636-1.diff.gz
+ 3169b0122b4a3bd347595ecda18581a1 42278 utils optional xfce4-places-plugi=
+n_1.0.0r4636-1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC1jRMQdl+99c4rQRAmgXAJ9cVxo6YG2CCUAq2MYU0QzTyCgAhQCeLX8F
+7xywAlwpbK6dM32UtaHEkCo=3D
+=3DKP9z
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208705610-29559-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

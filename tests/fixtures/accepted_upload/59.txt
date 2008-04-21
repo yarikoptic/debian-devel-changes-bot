@@ -1,0 +1,114 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 16:02:13 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnb3S-0007cm-GC
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 16:02:13 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id E8B7813A5023; Sun, 20 Apr 2008 15:02:08 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id 9FD6913A4EAA
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 15:02:08 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnaaJ-0004nN-7v; Sun, 20 Apr 2008 14:32:03 +0000
+From: Robert Luberda <robert@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted whichman 2.4-5 (source i386)
+Message-Id: <E1JnaaJ-0004nN-7v@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 14:32:03 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <YRhKP5z7J6E.A.M7F.wr1CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301308
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 15:02:08 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.5
+X-Spam-Report: (-2.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.1 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sat, 19 Apr 2008 16:04:29 +0200
+Source: whichman
+Binary: whichman
+Architecture: source i386
+Version: 2.4-5
+Distribution: unstable
+Urgency: low
+Maintainer: Robert Luberda <robert@debian.org>
+Changed-By: Robert Luberda <robert@debian.org>
+Description:=20
+ whichman   - Fault tolerant search utilities: whichman, ftff, ftwhich
+Changes:=20
+ whichman (2.4-5) unstable; urgency=3Dlow
+ .
+   * Add copyright notice (lintian),
+Checksums-Sha1:=20
+ d6e7cb9003ec323adfb3c8e4f4cf4a03cb3ae74f 942 whichman_2.4-5.dsc
+ b23ffd8af19d368a7ed73575054284ce2ed72ab1 6180 whichman_2.4-5.diff.gz
+ 5838d5a6f3e17e10333a5829f5c2a22dfc628957 18616 whichman_2.4-5_i386.deb
+Checksums-Sha256:=20
+ 73e9db33b554118af4ebae073d062752b254fe63b0403e7514cbc16f51d44b9e 942 whi=
+chman_2.4-5.dsc
+ ca1c58c6c16b9f6bd4bf3cbc2106376b05a8f5d7580fa9548000490475c556a0 6180 wh=
+ichman_2.4-5.diff.gz
+ 0095dccc9be47224facca54476d5730566f9622971f9415770d37a226a09530d 18616 w=
+hichman_2.4-5_i386.deb
+Files:=20
+ 092b7958844442cc67807a608d258b56 942 utils optional whichman_2.4-5.dsc
+ dccfa8685d1ba16709cd80ea0805ef98 6180 utils optional whichman_2.4-5.diff=
+.gz
+ 315ee8095e3434f5a61fe9d47715acab 18616 utils optional whichman_2.4-5_i38=
+6.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICfyUThh1cJ0wnDsRApXOAKCIHE9GTHYL3lPFTrTWzh7sgz+USgCfSwBP
+CNYI4G1xsMSF4zhvdS0WbEU=3D
+=3D8l78
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+whichman_2.4-5.diff.gz
+  to pool/main/w/whichman/whichman_2.4-5.diff.gz
+whichman_2.4-5.dsc
+  to pool/main/w/whichman/whichman_2.4-5.dsc
+whichman_2.4-5_i386.deb
+  to pool/main/w/whichman/whichman_2.4-5_i386.deb
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

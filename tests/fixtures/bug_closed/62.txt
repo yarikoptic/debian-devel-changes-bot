@@ -1,0 +1,245 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 18:40:47 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1JndWt-00009M-P0
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 18:40:47 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id B59BF13A50C1; Sun, 20 Apr 2008 17:40:42 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 3175113A50B8;
+	Sun, 20 Apr 2008 17:40:41 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JndSP-0005So-2G; Sun, 20 Apr 2008 17:36:05 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: John Hasler <jhasler@debian.org>
+Subject: Bug#389888: marked as done (sysvconfig: not X's)
+Message-ID: <handler.389888.D389888.1208712789334.ackdone@bugs.debian.org>
+References: <E1JndA0-0006IR-72@ries.debian.org>
+ <E1GSrV5-0000rM-S2@jidanni.org>
+X-Debian-PR-Message: closed 389888
+X-Debian-PR-Package: sysvconfig
+X-Debian-PR-Source: sysvconfig
+Content-Type: multipart/mixed; boundary="----------=_1208712965-20766-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 17:36:05 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <3PS0GFrwhPC.A.UqE.aA4CIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/133056
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 17:40:42 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208712965-20766-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 17:17:04 +0000
+with message-id <E1JndA0-0006IR-72@ries.debian.org>
+and subject line Bug#389888: fixed in sysvconfig 0.80
+has caused the Debian Bug report #389888,
+regarding sysvconfig: not X's
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+389888: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D389888
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208712965-20766-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 28 Sep 2006 09:21:26 +0000
+Return-path: <jidanni@jidanni.org>
+Received: from frodo.hserus.net ([204.74.68.40])
+	by spohr.debian.org with esmtp (Exim 4.50)
+	id 1GSs58-00009A-M6
+	for submit@bugs.debian.org; Thu, 28 Sep 2006 02:21:26 -0700
+Received: from tc218-187-23-252.dialup.dynamic.apol.com.tw ([218.187.23.252]:2300 helo=jidanni1)
+	by frodo.hserus.net with esmtpsa 
+	(Cipher TLSv1:AES256-SHA:256) (Exim 4.63 #0)
+	id 1GSs52-00054A-IH by authid <jidanni> with plain
+	for <submit@bugs.debian.org>; Thu, 28 Sep 2006 14:51:23 +0530
+Subject: sysvconfig: not X's
+Message-Id: <E1GSrV5-0000rM-S2@jidanni.org>
+From: Dan Jacobson <jidanni@jidanni.org>
+Date: Thu, 28 Sep 2006 16:44:11 +0800
+Delivered-To: submit@bugs.debian.org
+X-Spam-Checker-Version: SpamAssassin 2.60-bugs.debian.org_2005_01_02 
+	(1.212-2003-09-23-exp) on spohr.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, hits=-7.0 required=4.0 tests=BAYES_00,HAS_PACKAGE,
+	RCVD_IN_SORBS autolearn=no version=2.60-bugs.debian.org_2005_01_02
+
+Package: sysvconfig
+Version: 0.10
+Severity: minor
+File: /usr/sbin/sysvconfig
+
+We see:
+  Services marked with a X are enabled.
+  [*] acpid
+  [ ] alsa
+  [ ] alsa-utils
+  [*] anacron
+But those aren't X's, they are *'s!
+
+
+------------=_1208712965-20766-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 389888-close) by bugs.debian.org; 20 Apr 2008 17:33:09 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.7 required=4.0 tests=BAYES_00,FROMDEVELOPER,
+	FVGT_m_MULTI_ODD,HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_2,
+	MURPHY_DRUGS_REL8,MURPHY_WRONG_WORD1,MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JndPY-0008TB-Be
+	for 389888-close@bugs.debian.org; Sun, 20 Apr 2008 17:33:08 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JndA0-0006IR-72; Sun, 20 Apr 2008 17:17:04 +0000
+From: John Hasler <jhasler@debian.org>
+To: 389888-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#389888: fixed in sysvconfig 0.80
+Message-Id: <E1JndA0-0006IR-72@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 17:17:04 +0000
+Content-Transfer-Encoding: quoted-printable
+
+Source: sysvconfig
+Source-Version: 0.80
+
+We believe that the bug you reported is fixed in the latest version of
+sysvconfig, which is due to be installed in the Debian FTP archive:
+
+sysvconfig_0.80.dsc
+  to pool/main/s/sysvconfig/sysvconfig_0.80.dsc
+sysvconfig_0.80.tar.gz
+  to pool/main/s/sysvconfig/sysvconfig_0.80.tar.gz
+sysvconfig_0.80_all.deb
+  to pool/main/s/sysvconfig/sysvconfig_0.80_all.deb
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 389888@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+John Hasler <jhasler@debian.org> (supplier of updated sysvconfig package)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.7
+Date: Sun, 20 Apr 2008 08:16:02 -0500
+Source: sysvconfig
+Binary: sysvconfig
+Architecture: source all
+Version: 0.80
+Distribution: unstable
+Urgency: low
+Maintainer: John Hasler <jhasler@debian.org>
+Changed-By: John Hasler <jhasler@debian.org>
+Description:=20
+ sysvconfig - A text menu based utility for configuring init script links
+Closes: 323712 389888
+Changes:=20
+ sysvconfig (0.80) unstable; urgency=3Dlow
+ .
+   * Applied patch from Andrew Pollock <apollock@debian.org> to add Argus
+     to guide.
+     Closes: #323712 sysvconfig: Please add daemon description for Argus
+ .
+   * Replaced "X" with "*".
+     Closes: #389888 sysvconfig: not X's
+Files:=20
+ 0bf9c7a22678b0e97c2647b78c964a98 605 admin optional sysvconfig_0.80.dsc
+ 2c63513109ace3a74b9384f56789c038 20874 admin optional sysvconfig_0.80.ta=
+r.gz
+ 17d79d49db7049a7fcf0a2349458ee10 23648 admin optional sysvconfig_0.80_al=
+l.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iQCVAwUBSAtqf/c1CeQKxb5hAQLsTQP/TfpEPclT6lyXu+Pk+9+TMXgBQDwowZ3J
+jz94yTAxIOLeq4m8vIgNnlKnDXWJnxlYfOpB1MAoz3VJn1nErVtnP+dgu8tl3KYL
+ooBscQGAdILtyeCm6aJozcbWrvE8tTYztFwmB3f3QxDLsFzp8o2yfD9zWmvK6jTV
+1hE1E1cORik=3D
+=3DXkim
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208712965-20766-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

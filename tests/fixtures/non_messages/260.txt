@@ -1,0 +1,164 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 18:51:38 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jndgw-0000C3-Q5
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 18:51:37 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id A8DC013A4CE5; Sun, 20 Apr 2008 17:51:00 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-1.9 required=4.0 tests=BAYES_00,FOURLA,GMAIL,
+	MURPHY_DRUGS_REL8,RCVD_IN_DNSWL_LOW autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id EB06E13A47D6;
+	Sun, 20 Apr 2008 17:50:36 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JndeH-0004EU-2i; Sun, 20 Apr 2008 17:48:21 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#389068: Jabref patch
+Reply-To: Gerardo Curiel <gcuriel@debian.org.ve>, 389068@bugs.debian.org
+Resent-From: Gerardo Curiel <gcuriel@debian.org.ve>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: gregor herrmann <gregor+debian@comodo.priv.at>
+Resent-Date: Sun, 20 Apr 2008 17:48:20 +0000
+Resent-Message-ID: <handler.389068.B389068.120871303926864@bugs.debian.org>
+X-Debian-PR-Message: report 389068
+X-Debian-PR-Package: jabref
+X-Debian-PR-Keywords: patch
+X-Debian-PR-Source: jabref
+Received: via spool by 389068-submit@bugs.debian.org id=B389068.120871303926864
+          (code B ref 389068); Sun, 20 Apr 2008 17:48:20 +0000
+Received: (at 389068) by bugs.debian.org; 20 Apr 2008 17:37:19 +0000
+X-Amavis-Spam-Status: No, score=-7.9 required=4.0 tests=BAYES_00,FOURLA,
+	FROMDEVELOPER,GMAIL,HAS_BUG_NUMBER,MURPHY_DRUGS_REL8 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from rs26s12.datacenter.cha.cantv.net ([200.44.33.17])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <gcuriel@debian.org.ve>)
+	id 1JndTb-0006uT-Aq
+	for 389068@bugs.debian.org; Sun, 20 Apr 2008 17:37:19 +0000
+X-DNSBL-MILTER: Passed
+Received: from [190.79.70.61] ([190.79.70.61])
+	by rs26s12.datacenter.cha.cantv.net (8.13.8/8.13.0/3.0) with ESMTP id m3KHbCch017783;
+	Sun, 20 Apr 2008 13:07:12 -0430
+X-Matched-Lists: []
+From: Gerardo Curiel <gcuriel@debian.org.ve>
+To: gregor herrmann <gregoa@debian.org>
+Cc: 389068@bugs.debian.org, Tony Mancill <tmancill@debian.org>
+In-Reply-To: <20080420132357.GM4935@belanna.comodo.priv.at>
+References: <1208643762.5805.32.camel@sophie.gerardo.com.ve>
+	 <20080420132357.GM4935@belanna.comodo.priv.at>
+Content-Type: multipart/signed; micalg=pgp-sha1; protocol="application/pgp-signature"; boundary="=-EVNMHMLLwDZS0qPB9ubk"
+Date: Sun, 20 Apr 2008 13:13:42 -0430
+Message-Id: <1208713422.13125.9.camel@sophie.gerardo.com.ve>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.12.3 
+X-Virus-Scanned: ClamAV version 0.93, clamav-milter version 0.93 on 10.128.1.89
+X-Virus-Status: Clean
+Resent-Date: Sun, 20 Apr 2008 17:48:21 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343690
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -40.1
+X-Spam-Report: (-40.1 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	12 AWL                    AWL: From: address is in the auto white-list
+
+
+--=-EVNMHMLLwDZS0qPB9ubk
+Content-Type: text/plain
+Content-Transfer-Encoding: quoted-printable
+
+
+On dom, 2008-04-20 at 15:23 +0200, gregor herrmann wrote:
+> > So you can repackage the upstream tarball and remove those jarfiles and
+> > make it DFSG-Free.
+>=20
+> I'm not sure this is really necessary, the problem is not that the
+> jars are not free but that they are used by the build system. All we
+> would gain is a decrease in size of the .orig.tar.gz.
+
+
+Yes, you're right, it's not necessary. But just in case you decide to
+remove the lib/ dir, you already have the solution to the jarbundle
+target issue.
+
+=20
+> > * 06proposed_upstream_fix_ruleNestingLevel: Upstream still uses antlr3
+> > beta, the debian version is the stable one, this patch allows using the
+> > debian version. I've not tested extensively, but it works for me :).
+>=20
+> Integrated as 05_antlr.dpatch; that was my "old" name but your patch
+> is much better than my first attempt!
+> =20
+> I've reorganized my svn repository a bit, so that 2.3 is in trunk
+> again, and the new 2.4-beta is in branches/2.4:
+> http://svn.toastfreeware.priv.at/debian/jabref/trunk
+> http://svn.toastfreeware.priv.at/debian/jabref/branches/2.4
+
+
+Great! :)
+
+I'd like to see the package in main, looks like the only problem left
+now is with libpdfbox-java in contrib.
+
+Thanks for your good work!
+
+>=20
+>=20
+> Thanks again for your help!
+>=20
+> Cheers,
+> gregor
+--=20
+Gerardo Curiel  <gcuriel@debian.org.ve>  <gcuriel@gmail.com>
+Geek By NaTure,LiNuX By ChOiCe,DebiAn of CoUrsE
+gpg fingerprint: 228B 0F96 8653 DF52 9740  B75E FB32 9C30 E179 7BD2
+http://www.debian.org
+
+--=-EVNMHMLLwDZS0qPB9ubk
+Content-Type: application/pgp-signature; name=signature.asc
+Content-Description: Esta parte del mensaje =?ISO-8859-1?Q?est=E1?= firmada
+	digitalmente
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQBIC4DO+zKcMOF5e9IRAgJtAJ9GfgBYpwsGy+/oXynfo8OQA6rbjACfWX48
+UV4abTtWOlwSqIqseQ8tzB8=
+=lcvt
+-----END PGP SIGNATURE-----
+
+--=-EVNMHMLLwDZS0qPB9ubk--
+
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

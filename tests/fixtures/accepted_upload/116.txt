@@ -1,0 +1,108 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 20:32:02 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnfGW-0000iV-HP
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 20:32:02 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 19FC113A51D1; Sun, 20 Apr 2008 19:31:41 +0000 (UTC)
+Old-Return-Path: <killer@ries.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id B908E13A519C
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 19:31:40 +0000 (UTC)
+Received: from killer by ries.debian.org with local (Exim 4.63)
+	(envelope-from <killer@ries.debian.org>)
+	id 1JnfAZ-0005L5-N2; Sun, 20 Apr 2008 19:25:47 +0000
+From: Daniel Baumann <daniel@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-new
+X-Katie: lisa $Revision: 1.31 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted nilfs2-tools 2.0.1-1 (source i386)
+Message-Id: <E1JnfAZ-0005L5-N2@ries.debian.org>
+Sender: Kalle Kivimaa <killer@ries.debian.org>
+Date: Sun, 20 Apr 2008 19:25:47 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <h2tVuZxrHhN.A.tpE.do5CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301340
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 19:31:41 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.7
+Date: Wed,  9 Apr 2008 08:01:00 +0200
+Source: nilfs2-tools
+Binary: nilfs2-tools
+Architecture: source i386
+Version: 2.0.1-1
+Distribution: unstable
+Urgency: low
+Maintainer: Daniel Baumann <daniel@debian.org>
+Changed-By: Daniel Baumann <daniel@debian.org>
+Description:=20
+ nilfs2-tools - Continuous Snapshotting Log-structured Filesystem
+Changes:=20
+ nilfs2-tools (2.0.1-1) unstable; urgency=3Dlow
+ .
+   * Initial release.
+Files:=20
+ 33d497a71d0e83b23b57a1b4cdf78d1a 635 admin optional nilfs2-tools_2.0.1-1=
+.dsc
+ 2b82572fc98a40f95fe3cbb4d95f7102 420924 admin optional nilfs2-tools_2.0.=
+1.orig.tar.gz
+ 3a023ab79b53053c24bff761882c2027 2267 admin optional nilfs2-tools_2.0.1-=
+1.diff.gz
+ 9f93ba2191a9f5cba9ac86a11d193e76 68926 admin optional nilfs2-tools_2.0.1=
+-1_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFH/HY6+C5cwEsrK54RAvroAKC/fwXvji+wQFI19noEpxovKmA+HgCfadag
+oGd7RG/fOysSb4RG1+tdLFs=3D
+=3DpTzc
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+nilfs2-tools_2.0.1-1.diff.gz
+  to pool/main/n/nilfs2-tools/nilfs2-tools_2.0.1-1.diff.gz
+nilfs2-tools_2.0.1-1.dsc
+  to pool/main/n/nilfs2-tools/nilfs2-tools_2.0.1-1.dsc
+nilfs2-tools_2.0.1-1_i386.deb
+  to pool/main/n/nilfs2-tools/nilfs2-tools_2.0.1-1_i386.deb
+nilfs2-tools_2.0.1.orig.tar.gz
+  to pool/main/n/nilfs2-tools/nilfs2-tools_2.0.1.orig.tar.gz
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

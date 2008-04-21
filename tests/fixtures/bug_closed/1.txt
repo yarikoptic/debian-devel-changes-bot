@@ -1,0 +1,312 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 14:39:49 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnZlc-0007De-MY
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 14:39:49 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 8F2C313A500E; Sun, 20 Apr 2008 13:39:39 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id CC9CE13A493E;
+	Sun, 20 Apr 2008 13:39:37 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnZiB-0006TW-V3; Sun, 20 Apr 2008 13:36:07 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Vincent Bernat <bernat@luffy.cx>
+Subject: Bug#476162: marked as done (conf.d/roundcube shouldn't contain 
+ any Alias entries)
+Message-ID: <handler.476162.D476162.120869836218025.ackdone@bugs.debian.org>
+References: <E1JnZPj-0000fT-OC@ries.debian.org>
+ <20080414190552.27603.45157.reportbug@jagular.ibcinc.com>
+X-Debian-PR-Message: closed 476162
+X-Debian-PR-Package: roundcube
+X-Debian-PR-Keywords: confirmed
+X-Debian-PR-Source: roundcube
+Content-Type: multipart/mixed; boundary="----------=_1208698567-24867-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 13:36:07 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <XLb3CFFruKG.A.KM.be0CIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/132993
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 13:39:39 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208698567-24867-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 13:17:03 +0000
+with message-id <E1JnZPj-0000fT-OC@ries.debian.org>
+and subject line Bug#476162: fixed in roundcube 0.1.1-2
+has caused the Debian Bug report #476162,
+regarding conf.d/roundcube shouldn't contain any Alias entries
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+476162: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D476162
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208698567-24867-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 14 Apr 2008 19:05:59 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-10.0 required=4.0 tests=BAYES_00,HAS_PACKAGE 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <roderick@argon.org>
+Received: from jagular.ibcinc.com ([198.22.130.92])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <roderick@argon.org>)
+	id 1JlU06-0003WG-7f
+	for submit@bugs.debian.org; Mon, 14 Apr 2008 19:05:58 +0000
+Received: from roderick by jagular.ibcinc.com with local (Exim 4.63)
+	(envelope-from <roderick@argon.org>)
+	id 1JlU00-0007RE-5V; Mon, 14 Apr 2008 15:05:52 -0400
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Roderick Schertler <roderick@argon.org>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Subject: conf.d/roundcube shouldn't contain any Alias entries
+Message-ID: <20080414190552.27603.45157.reportbug@jagular.ibcinc.com>
+X-Mailer: reportbug 3.31
+Date: Mon, 14 Apr 2008 15:05:52 -0400
+Delivered-To: submit@bugs.debian.org
+
+Package: roundcube
+Version: 0.1-4
+Severity: normal
+
+The Apache configuration snippet in /etc/apache2/conf.d/roundcube is
+loaded by the server outside of any virtual host definition, so it
+applies to all viertual hosts.  This means that the 
+
+    Alias /roundcube/program/js/tiny_mce/ /usr/share/tinymce/www/
+
+there applies to all virtual hosts, and so that path allows access to
+that directory from all your virtual hosts.
+
+Just a few lines down from there is this entry:
+
+    # This alias does not work properly with several hosts on your apache server
+    # Uncomment it to use it
+    #    Alias /roundcube /var/lib/roundcube
+
+The tiny_mce Alias should similarly be commented out by default.
+
+-- 
+Roderick Schertler
+roderick@argon.org
+
+
+
+------------=_1208698567-24867-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 476162-close) by bugs.debian.org; 20 Apr 2008 13:32:42 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.9 required=4.0 tests=BAYES_00,FOURLA,
+	FVGT_m_MULTI_ODD,HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_2 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnZer-0004gJ-PA
+	for 476162-close@bugs.debian.org; Sun, 20 Apr 2008 13:32:42 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnZPj-0000fT-OC; Sun, 20 Apr 2008 13:17:03 +0000
+From: Vincent Bernat <bernat@luffy.cx>
+To: 476162-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#476162: fixed in roundcube 0.1.1-2
+Message-Id: <E1JnZPj-0000fT-OC@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 13:17:03 +0000
+X-CrossAssassin-Score: 2
+Content-Transfer-Encoding: quoted-printable
+
+Source: roundcube
+Source-Version: 0.1.1-2
+
+We believe that the bug you reported is fixed in the latest version of
+roundcube, which is due to be installed in the Debian FTP archive:
+
+roundcube-core_0.1.1-2_all.deb
+  to pool/main/r/roundcube/roundcube-core_0.1.1-2_all.deb
+roundcube-mysql_0.1.1-2_all.deb
+  to pool/main/r/roundcube/roundcube-mysql_0.1.1-2_all.deb
+roundcube-pgsql_0.1.1-2_all.deb
+  to pool/main/r/roundcube/roundcube-pgsql_0.1.1-2_all.deb
+roundcube-sqlite_0.1.1-2_all.deb
+  to pool/main/r/roundcube/roundcube-sqlite_0.1.1-2_all.deb
+roundcube_0.1.1-2.diff.gz
+  to pool/main/r/roundcube/roundcube_0.1.1-2.diff.gz
+roundcube_0.1.1-2.dsc
+  to pool/main/r/roundcube/roundcube_0.1.1-2.dsc
+roundcube_0.1.1-2_all.deb
+  to pool/main/r/roundcube/roundcube_0.1.1-2_all.deb
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 476162@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Vincent Bernat <bernat@luffy.cx> (supplier of updated roundcube package)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sat, 19 Apr 2008 16:50:28 +0200
+Source: roundcube
+Binary: roundcube-core roundcube roundcube-mysql roundcube-pgsql roundcub=
+e-sqlite
+Architecture: source all
+Version: 0.1.1-2
+Distribution: unstable
+Urgency: low
+Maintainer: Debian Roundcube Maintainers <pkg-roundcube-maintainers@lists=
+.alioth.debian.org>
+Changed-By: Vincent Bernat <bernat@luffy.cx>
+Description:=20
+ roundcube  - skinnable AJAX based webmail solution for IMAP servers
+ roundcube-core - skinnable AJAX based webmail solution for IMAP servers
+ roundcube-mysql - virtual package providing MySQL dependencies for Round=
+Cube
+ roundcube-pgsql - virtual package providing PostgreSQL dependencies for =
+RoundCube
+ roundcube-sqlite - virtual package providing sqlite dependencies for Rou=
+ndCube
+Closes: 476162 476803
+Changes:=20
+ roundcube (0.1.1-2) unstable; urgency=3Dlow
+ .
+   * Comment by default Alias directive for tinymce in Apache configurati=
+on
+     file (Closes: #476162).
+   * Allow to preseed language value (Closes: #476803).
+Checksums-Sha1:=20
+ 5ef69c859dfce816ef9235ca15891f91632e436d 1369 roundcube_0.1.1-2.dsc
+ c4d5bf789788f14995428f32d98fccf6f3c41983 22623 roundcube_0.1.1-2.diff.gz
+ a17ef6dc980d893363c7097f6360b93c67f03cc0 577698 roundcube-core_0.1.1-2_a=
+ll.deb
+ e189e8650e09db3e6cf84c36c11bc69af0580e74 12206 roundcube_0.1.1-2_all.deb
+ 9c5cf6b680d06b5dcac1b1ead5b1e5446c944853 11468 roundcube-mysql_0.1.1-2_a=
+ll.deb
+ c0f1cc21d3fa46771d1682452f397ded5e76f875 11472 roundcube-pgsql_0.1.1-2_a=
+ll.deb
+ 73f6ffb152ef0d8fa1405a1d3644a5a509fd3601 11448 roundcube-sqlite_0.1.1-2_=
+all.deb
+Checksums-Sha256:=20
+ 16dfe37bf859a68096076b16603a31dd752f4fd1cffcf0824fa4a9dcbcf7070e 1369 ro=
+undcube_0.1.1-2.dsc
+ c7366b589a040e6b95121013efff75a29e84971983f75509c18c08f3d84de35a 22623 r=
+oundcube_0.1.1-2.diff.gz
+ 57f3fb43eb5936ac6e9b1f4db87e126c4618c720fd3a4f847185b99956496656 577698 =
+roundcube-core_0.1.1-2_all.deb
+ 7abdf189674a2dc94e4931c9994f2115b576e79a09534e8b109583f4ae798019 12206 r=
+oundcube_0.1.1-2_all.deb
+ f2d7cd6e520b0be14c989e72c8229e816980ac0d3ea2f46fc833772ba0cd553f 11468 r=
+oundcube-mysql_0.1.1-2_all.deb
+ 4397ad660d712190086a1445c58827e591a8e6300cb96b83fd0a010df89f28f0 11472 r=
+oundcube-pgsql_0.1.1-2_all.deb
+ c5b924a57f7eec2978c8e5b81427442ea2555ec81f2dc279495ff65947e51bd2 11448 r=
+oundcube-sqlite_0.1.1-2_all.deb
+Files:=20
+ fcd0b0b252accdca0ec369860e0cd852 1369 web extra roundcube_0.1.1-2.dsc
+ d18bc05ad30ed4dc8ebfaa6b818177d2 22623 web extra roundcube_0.1.1-2.diff.=
+gz
+ cf810596373b714cfe9fdb00a8e56746 577698 web extra roundcube-core_0.1.1-2=
+_all.deb
+ b80aad493a0541cb87ce4fa86ffe2239 12206 web extra roundcube_0.1.1-2_all.d=
+eb
+ 27a960699ef831bce57a50740acb5a48 11468 web extra roundcube-mysql_0.1.1-2=
+_all.deb
+ 8a36a4af9043820fcf5af44c67a7e476 11472 web extra roundcube-pgsql_0.1.1-2=
+_all.deb
+ 8a8c133f0dbed2b2c68f41ab71cc536c 11448 web extra roundcube-sqlite_0.1.1-=
+2_all.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICz8kKFvXofIqeU4RAqyYAJ41AMJRDYvzJxqOaz1Rq4oYd1/3QACeK6vU
+/uvP8QWuxsyyBLXEv08K68k=3D
+=3DVPbk
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208698567-24867-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

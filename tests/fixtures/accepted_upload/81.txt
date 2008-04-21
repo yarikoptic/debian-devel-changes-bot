@@ -1,0 +1,120 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 12:32:04 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnXm4-0006gK-9c
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 12:32:04 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 2C44413A4F10; Sun, 20 Apr 2008 11:31:59 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id E892E13A4EF3
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 11:31:58 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnXXl-0002Sn-Og; Sun, 20 Apr 2008 11:17:13 +0000
+From: Robert Luberda <robert@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted super 3.30.0-2 (source i386)
+Message-Id: <E1JnXXl-0002Sn-Og@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 11:17:13 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <eX8Htuy2H3.A.fyE.vmyCIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301286
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 11:31:59 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.5
+X-Spam-Report: (-2.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.1 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sat, 19 Apr 2008 17:24:05 +0200
+Source: super
+Binary: super
+Architecture: source i386
+Version: 3.30.0-2
+Distribution: unstable
+Urgency: low
+Maintainer: Robert Luberda <robert@debian.org>
+Changed-By: Robert Luberda <robert@debian.org>
+Description:=20
+ super      - Execute commands setuid root
+Changes:=20
+ super (3.30.0-2) unstable; urgency=3Dlow
+ .
+   * Bump build-dependency on debhelper.
+   * Fix hyphens in man pages (lintian).
+   * Pass -Wl,-as-needed to LD_FLAGS to quit dpkg-shlibdeps warnings.
+   * Add support for cross-compiling.
+   * Move to quilt for managing patches, split debian diff into 0[1-5]*.p=
+atch.
+   * 06_gcc_warnings.patch: fix gcc -Wall warnings.
+Checksums-Sha1:=20
+ 21c6b99e63d26ce05bc246caded5e1a6e396e32d 972 super_3.30.0-2.dsc
+ e2c5dbb4cd59f47753167f80172ce356e6dcabc8 10530 super_3.30.0-2.diff.gz
+ 2afd92df50c6ddd1a87f48d75e9296420ed2a8ec 130114 super_3.30.0-2_i386.deb
+Checksums-Sha256:=20
+ e1441ef96fb2496f57f6bbd49470da07c9d4579548e45be743a8e4f38981736e 972 sup=
+er_3.30.0-2.dsc
+ f238b6022709dc5b7b85d4963765b1df0700975f4bff0231ec65fc5cd2cc6 10530 s=
+uper_3.30.0-2.diff.gz
+ 1a48f1eabc479d35941e75ffc9c6b7787b1a285d9a4357ba23bf714870bf6b05 130114 =
+super_3.30.0-2_i386.deb
+Files:=20
+ ad6319b095f447f2d00c6fade64c4477 972 admin optional super_3.30.0-2.dsc
+ f03c1b2ed4b49bd3073833fddad6938c 10530 admin optional super_3.30.0-2.dif=
+f.gz
+ 64fb68cb0fde2aa94d9afa84b85b120d 130114 admin optional super_3.30.0-2_i3=
+86.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIChekThh1cJ0wnDsRArXDAJoCHTGJ0cFY5g/BKl/Di0RG5O3tpwCdHgWi
+XcyBfbSvKcStQZP6tOnyF8o=3D
+=3DJ4Al
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+super_3.30.0-2.diff.gz
+  to pool/main/s/super/super_3.30.0-2.diff.gz
+super_3.30.0-2.dsc
+  to pool/main/s/super/super_3.30.0-2.dsc
+super_3.30.0-2_i386.deb
+  to pool/main/s/super/super_3.30.0-2_i386.deb
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

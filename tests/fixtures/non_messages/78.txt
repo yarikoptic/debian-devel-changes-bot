@@ -1,0 +1,125 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 14:20:49 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnZTH-00078l-IB
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 14:20:49 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id BB7FC13A4FEE; Sun, 20 Apr 2008 13:20:40 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 0552813A4FD0;
+	Sun, 20 Apr 2008 13:20:25 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnZQj-0005Dx-Ol; Sun, 20 Apr 2008 13:18:05 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#311188: Debian edu messed up my Ubuntu system.
+Reply-To: Petter Reinholdtsen <pere@hungry.com>, 311188@bugs.debian.org
+Resent-From: Petter Reinholdtsen <pere@hungry.com>
+Original-Sender: Petter Reinholdtsen <petter.reinholdtsen@usit.uio.no>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian Edu Developers <debian-edu@lists.debian.org>
+Resent-Date: Sun, 20 Apr 2008 13:18:05 +0000
+Resent-Message-ID: <handler.311188.B311188.120869739916053@bugs.debian.org>
+X-Debian-PR-Message: report 311188
+X-Debian-PR-Package: debian-edu-config
+X-Debian-PR-Keywords: sarge-ignore
+X-Debian-PR-Source: debian-edu-config
+Received: via spool by 311188-submit@bugs.debian.org id=B311188.120869739916053
+          (code B ref 311188); Sun, 20 Apr 2008 13:18:05 +0000
+Received: (at 311188) by bugs.debian.org; 20 Apr 2008 13:16:39 +0000
+X-Amavis-Spam-Status: No, score=-7.0 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from pat.uio.no ([129.240.10.15])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <pre@klodrik.uio.no>)
+	id 1JnZPK-00044j-R4
+	for 311188@bugs.debian.org; Sun, 20 Apr 2008 13:16:39 +0000
+Received: from mail-mx4.uio.no ([129.240.10.45])
+	by pat.uio.no with esmtp (Exim 4.67)
+	(envelope-from <pre@klodrik.uio.no>)
+	id 1JnZPE-0000UL-9n; Sun, 20 Apr 2008 15:16:32 +0200
+Received: from klodrik.uio.no ([129.240.12.6])
+	by mail-mx4.uio.no with esmtp (Exim 4.67)
+	(envelope-from <pre@klodrik.uio.no>)
+	id 1JnZPE-0003hg-06; Sun, 20 Apr 2008 15:16:32 +0200
+Received: from pre by klodrik.uio.no with local (Exim 4.44)
+	id 1JnZPD-0005sC-SH; Sun, 20 Apr 2008 15:16:31 +0200
+Date: Sun, 20 Apr 2008 15:16:31 +0200
+From: Petter Reinholdtsen <pere@hungry.com>
+To: Virginia Hicks <ginnyh532@gmail.com>, 311188@bugs.debian.org
+Message-ID: <20080420131631.GA15494@klodrik.uio.no>
+References: <e742d1340804191341j1bd89bd9lfe631ae53429c37@mail.gmail.com>
+Mime-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <e742d1340804191341j1bd89bd9lfe631ae53429c37@mail.gmail.com>
+User-Agent: Mutt/1.5.10i
+Sender: Petter Reinholdtsen <petter.reinholdtsen@usit.uio.no>
+X-UiO-Spam-info: not spam, SpamAssassin (score=-5.0, required=5.0, autolearn=disabled, UIO_MAIL_IS_INTERNAL=-5)
+X-UiO-Scanned: 6F51CFCF938154795486C4E5D7908C327B1A70ED
+X-UiO-SR-test: A6B5E5C8BBC47455BF2670196C732499ED98979A
+X-UiO-SPAM-Test: remote_host: 129.240.12.6 spam_score: -49 maxlevel 99990 minaction 0 bait 0 mail/h: 2 total 37585 max/h 400 blacklist 0 greylist 0 ratelimit 0
+Resent-Date: Sun, 20 Apr 2008 13:18:05 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343489
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -34.4
+X-Spam-Report: (-34.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	18 AWL                    AWL: From: address is in the auto white-list
+
+[Virginia Hicks]
+> My computer is running Ubuntu 7.10, Gutsy Gibbon.  After I installed
+> Debian Edu, I found that 1) my boot menu states that I am using
+> Debian, and 2) my program Ubuntu Tweak won't work because it is
+> being told I run Debian and not Ubuntu.  Please help.
+
+As Andreas said, mixed distribution solutions might give strange
+results.  But to give some ideas on where the problem might originate,
+I will provide some notes.  It is unclear to me what you mean by
+installing Debian Edu, as it is a cluster of profiles and more
+specific information is needed to know what you did.
+
+When that is said, I suspect the file /etc/lsb-release in the
+debian-edu-config package is the only file capable of changing what
+other programs believe to be the distribution name.  Try to drop the
+package, modify the file or move the file away to see if it solve your
+problem.
+
+Happy hacking,
+-- 
+Petter Reinholdtsen
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

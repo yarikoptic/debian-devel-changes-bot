@@ -1,0 +1,158 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 18:35:02 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JndRF-00006z-9Q
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 18:35:02 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 5053B13A5099; Sun, 20 Apr 2008 17:34:52 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id CA32B13A4F9E;
+	Sun, 20 Apr 2008 17:34:40 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JndMZ-0004x0-O7; Sun, 20 Apr 2008 17:30:04 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#477015: jmagick: FTBFS: /usr/bin/install: cannot stat `/build/user/jmagick-6.2.6-0/lib/libJMagick.so': No such file or directory
+Reply-To: Kumar Appaiah <akumar@ee.iitm.ac.in>, 477015@bugs.debian.org
+Resent-From: Kumar Appaiah <akumar@ee.iitm.ac.in>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian Java maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Resent-Date: Sun, 20 Apr 2008 17:30:02 +0000
+Resent-Message-ID: <handler.477015.B477015.120871244011618@bugs.debian.org>
+X-Debian-PR-Message: report 477015
+X-Debian-PR-Package: jmagick
+X-Debian-PR-Keywords: confirmed
+Received: via spool by 477015-submit@bugs.debian.org id=B477015.120871244011618
+          (code B ref 477015); Sun, 20 Apr 2008 17:30:02 +0000
+Received: (at 477015) by bugs.debian.org; 20 Apr 2008 17:27:20 +0000
+X-Amavis-Spam-Status: No, score=-9.0 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER,
+	VALID_BTS_CONTROL autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from hsmtp.iitm.ac.in ([203.199.213.31])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <akumar@ee.iitm.ac.in>)
+	id 1JndJw-0002xf-2F; Sun, 20 Apr 2008 17:27:20 +0000
+Received: from localhost (unknown [127.0.0.1])
+	by hsmtp.iitm.ac.in (Postfix) with ESMTP
+	id C2D3E1E0004; Sun, 20 Apr 2008 22:57:13 +0530 (IST)
+Received: from hsmtp.iitm.ac.in ([127.0.0.1])
+ by localhost (hsmtp.iitm.ac.in [127.0.0.1]) (amavisd-new, port 10024)
+ with ESMTP id 03093-07; Sun, 20 Apr 2008 22:57:11 +0530 (IST)
+Received: from debian.debdomain (unknown [10.94.2.249])
+	by hsmtp.iitm.ac.in (Postfix) with ESMTP
+	id 866C61E0002; Sun, 20 Apr 2008 22:57:11 +0530 (IST)
+Received: from kumar by debian.debdomain with local (Exim 4.69)
+	(envelope-from <akumar@ee.iitm.ac.in>)
+	id 1JndS0-0006sk-2p; Sun, 20 Apr 2008 23:05:40 +0530
+Date: Sun, 20 Apr 2008 23:05:39 +0530
+From: Kumar Appaiah <akumar@ee.iitm.ac.in>
+To: Lucas Nussbaum <lucas@lucas-nussbaum.net>, 477015@bugs.debian.org
+Message-ID: <20080420173539.GA26324@debian.akumar.iitm.ac.in>
+References: <20080420152032.GA21805@xanadu.blop.info>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+	protocol="application/pgp-signature"; boundary="bp/iNruPH9dso1Pn"
+Content-Disposition: inline
+In-Reply-To: <20080420152032.GA21805@xanadu.blop.info>
+X-OS: Linux debian 2.6.24.2 i686
+X-Operating-System: Linux debian 2.6.24.2 i686
+X-Editor: GNU Emacs 22.2.1
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+X-Virus-Scanned: by amavisd-new at iitm.ac.in
+Resent-Date: Sun, 20 Apr 2008 17:30:03 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343677
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -31.3
+X-Spam-Report: (-31.3 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	21 AWL                    AWL: From: address is in the auto white-list
+
+
+--bp/iNruPH9dso1Pn
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+tags 477015 + pending
+block 477015 by 477035
+thanks
+
+On Sun, Apr 20, 2008 at 05:20:32PM +0200, Lucas Nussbaum wrote:
+> Relevant part:
+> > make[3]: Entering directory `/build/user/jmagick-6.2.6-0/src/magick'
+> > /usr/bin/install -c -d /build/user/jmagick-6.2.6-0/debian/tmp//usr/lib/=
+jni
+> > /bin/sh /build/user/jmagick-6.2.6-0/libtool --mode=3Dinstall /usr/bin/i=
+nstall -c /build/user/jmagick-6.2.6-0/lib/libJMagick.so /build/user/jmagick=
+-6.2.6-0/debian/tmp//usr/lib/jni
+> > /usr/bin/install -c /build/user/jmagick-6.2.6-0/lib/libJMagick.so /buil=
+d/user/jmagick-6.2.6-0/debian/tmp//usr/lib/jni/libJMagick.so
+> > /usr/bin/install: cannot stat `/build/user/jmagick-6.2.6-0/lib/libJMagi=
+ck.so': No such file or directory
+> > make[3]: *** [extra-install] Error 1
+
+Thanks for the report. Indeed, it does fail, and I fixed it by
+specifying the compiler to be gcc.
+
+However, the build now fails due to the absence of liblcms.so in
+liblcms1-dev, as you have described already in 477035. So, I shall
+upload the fix for this bug as soon as that is resolved.
+
+Thanks!
+
+Kumar
+--=20
+Kumar Appaiah,
+458, Jamuna Hostel,
+Indian Institute of Technology Madras,
+Chennai - 600 036
+
+--bp/iNruPH9dso1Pn
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: Digital signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC37rSd75awtatOcRAmiSAJ9mKDRXIgr5NlrftycNV+MB4fhRJACfWUlv
+K2Qkotoz5VMoRKCF3zRf4Ug=
+=Ga8F
+-----END PGP SIGNATURE-----
+
+--bp/iNruPH9dso1Pn--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

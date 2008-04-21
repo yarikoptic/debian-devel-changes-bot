@@ -1,0 +1,115 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 16:58:51 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnbwA-00084z-Cm
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 16:58:51 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 38BBA13A4FB1; Sun, 20 Apr 2008 15:58:41 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 60FE813A4F70;
+	Sun, 20 Apr 2008 15:56:39 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnbno-0003vE-Me; Sun, 20 Apr 2008 15:50:04 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#160478: [debian-vrms] Bug#160478: vrms: optionally list contrib packages
+Reply-To: Bdale Garbee <bdale@gag.com>, 160478@bugs.debian.org
+Resent-From: Bdale Garbee <bdale@gag.com>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian vrms Maintainers <debian-vrms@lists.gag.com>
+Resent-Date: Sun, 20 Apr 2008 15:50:03 +0000
+Resent-Message-ID: <handler.160478.B160478.120870615118480@bugs.debian.org>
+X-Debian-PR-Message: report 160478
+X-Debian-PR-Package: vrms
+X-Debian-PR-Keywords: patch
+X-Debian-PR-Source: vrms
+Received: via spool by 160478-submit@bugs.debian.org id=B160478.120870615118480
+          (code B ref 160478); Sun, 20 Apr 2008 15:50:03 +0000
+Received: (at 160478) by bugs.debian.org; 20 Apr 2008 15:42:31 +0000
+X-Amavis-Spam-Status: No, score=-7.0 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from winfree.gag.com ([192.133.104.8] ident=postfix)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <bdale@gag.com>)
+	id 1JnbgV-0004nt-0T
+	for 160478@bugs.debian.org; Sun, 20 Apr 2008 15:42:31 +0000
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by winfree.gag.com (Postfix) with ESMTP id 10712304A;
+	Sun, 20 Apr 2008 09:42:30 -0600 (MDT)
+X-Virus-Scanned: Debian amavisd-new at gag.com
+Received: from winfree.gag.com ([127.0.0.1])
+	by localhost (winfree.gag.com [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id JBB1F3p-eh46; Sun, 20 Apr 2008 09:42:19 -0600 (MDT)
+Received: from rover.gag.com (localhost.localdomain [127.0.0.1])
+	by winfree.gag.com (Postfix) with ESMTP id 7E5773049;
+	Sun, 20 Apr 2008 09:42:19 -0600 (MDT)
+Received: by rover.gag.com (Postfix, from userid 1000)
+	id 69B8C15E2D0; Sun, 20 Apr 2008 09:42:19 -0600 (MDT)
+From: Bdale Garbee <bdale@gag.com>
+To: Robert Millan <rmh@aybabtu.com>, 160478@bugs.debian.org, Debian vrms Maintainers <debian-vrms@lists.gag.com>
+Cc: Simon Josefsson <jas@extundo.com>
+In-Reply-To: <20080418110250.GA25797@thorin>
+References: <iluofb52bap.fsf@latte.josefsson.org>
+	 <20070731102912.GA8718@acklap03>  <20080418110250.GA25797@thorin>
+Content-Type: text/plain
+Content-Transfer-Encoding: 7bit
+Date: Sun, 20 Apr 2008 09:42:19 -0600
+Message-Id: <1208706139.31544.31.camel@rover.gag.com>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.22.1 
+Resent-Date: Sun, 20 Apr 2008 15:50:04 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343619
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -37.7
+X-Spam-Report: (-37.7 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	15 AWL                    AWL: From: address is in the auto white-list
+
+On Fri, 2008-04-18 at 13:02 +0200, Robert Millan wrote:
+> Hi!
+> 
+> Any news about this?
+> 
+> If I don't hear any reply within a week I'll NMU.
+
+I don't see anything wrong with including this. 
+
+Rogerio, any opinion?
+
+Bdale
+
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

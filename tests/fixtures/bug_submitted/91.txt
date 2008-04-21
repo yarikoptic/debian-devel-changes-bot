@@ -1,0 +1,168 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 13:50:40 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnZ05-0006z9-0S
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 13:50:40 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 03DE313A47E5; Sun, 20 Apr 2008 12:50:32 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 6705F13A4F12;
+	Sun, 20 Apr 2008 12:50:15 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnYxf-0008OW-VO; Sun, 20 Apr 2008 12:48:04 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476963: chrony_1.23-1(hppa/experimental): FTBFS: "I don't know the values of the _IOC_* constants for your architecture"
+Reply-To: Frank Lichtenheld <djpig@debian.org>, 476963@bugs.debian.org
+Resent-From: Frank Lichtenheld <djpig@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: John Hasler <jhasler@debian.org>
+Resent-Date: Sun, 20 Apr 2008 12:48:01 +0000
+Resent-Message-ID: <handler.476963.B.120869559628510@bugs.debian.org>
+X-Debian-PR-Message: report 476963
+X-Debian-PR-Package: chrony
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: chrony
+Received: via spool by submit@bugs.debian.org id=B.120869559628510
+          (code B ref -1); Sun, 20 Apr 2008 12:48:01 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 12:46:36 +0000
+X-Amavis-Spam-Status: No, score=-11.9 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FROMDEVELOPER,HAS_PACKAGE autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from aiolos.lenk.info ([85.214.124.154])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <frank@lichtenheld.de>)
+	id 1JnYwF-0007PK-L5
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 12:46:36 +0000
+Received: from herkules.lenk.info
+	([213.239.194.154] helo=smtp.lenk.info ident=Debian-exim)
+	by mail.lenk.info with esmtpsa 
+	(Cipher TLS-1.0:RSA_AES_256_CBC_SHA1:32) (Exim 4.63 1)
+	id 1JnYwE-00044F-5u
+	for <submit@bugs.debian.org>; Sun, 20 Apr 2008 14:46:34 +0200
+Received: from p4fdd7496.dip.t-dialin.net ([79.221.116.150] helo=feynman.djpig.de)
+	by smtp.lenk.info with esmtpsa 
+	(Cipher TLS-1.0:RSA_AES_256_CBC_SHA1:32) (Exim 4.63 1)
+	id 1JnYwB-0002Kv-IQ
+	for <submit@bugs.debian.org>; Sun, 20 Apr 2008 14:46:31 +0200
+Received: from djpig by feynman.djpig.de with local (Exim 4.69)
+	(envelope-from <frank@lichtenheld.de>)
+	id 1JnYwF-0004Bv-CS
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 14:46:35 +0200
+Date: Sun, 20 Apr 2008 14:46:35 +0200
+From: Frank Lichtenheld <djpig@debian.org>
+To: submit@bugs.debian.org
+Message-ID: <20080420124635.GH15254@feynman.djpig.de>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 12:48:03 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343474
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.4
+X-Spam-Report: (-52.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.1 AWL                    AWL: From: address is in the auto white-list
+
+Package: chrony
+Version: 1.23-1
+Severity: serious
+
+Hi,
+
+your package failed to build from source.
+
+| Automatic build of chrony_1.23-1 on lofn by sbuild/hppa 98-farm
+| Build started at 20080420-1411
+| ******************************************************************************
+| Checking available source versions...
+| Fetching source files...
+| Reading package lists...
+| Building dependency tree...
+| Need to get 478kB of source archives.
+| Get:1 http://ftp2.de.debian.org experimental/main chrony 1.23-1 (dsc) [723B]
+| Get:2 http://ftp2.de.debian.org experimental/main chrony 1.23-1 (tar) [321kB]
+| Get:3 http://ftp2.de.debian.org experimental/main chrony 1.23-1 (diff) [156kB]
+| Fetched 478kB in 0s (912kB/s)
+| Download complete and in download only mode
+| ** Using build dependencies supplied by package:
+| Build-Depends: bison, debhelper (>= 4), libreadline5-dev | libreadline-dev, texinfo
+| Checking for already installed source dependencies...
+[...]
+| gcc -Wmissing-prototypes -Wall -g -O2  -DFEAT_RTC=1 -DLINUX -DHAS_STDINT_H -DHAS_INTTYPES_H -c rtc_linux.c
+| In file included from rtc_linux.c:61:
+| io_linux.h:39:2: error: #error "I don't know the values of the _IOC_* constants for your architecture"
+| rtc_linux.c: In function 'switch_interrupts':
+| rtc_linux.c:680: error: 'CHRONY_IOC_NONE' undeclared (first use in this function)
+| rtc_linux.c:680: error: (Each undeclared identifier is reported only once
+| rtc_linux.c:680: error: for each function it appears in.)
+| rtc_linux.c:680: error: 'CHRONY_IOC_NRBITS' undeclared (first use in this function)
+| rtc_linux.c:680: error: 'CHRONY_IOC_TYPEBITS' undeclared (first use in this function)
+| rtc_linux.c:680: error: 'CHRONY_IOC_SIZEBITS' undeclared (first use in this function)
+| rtc_linux.c: In function 'set_rtc':
+| rtc_linux.c:721: error: 'CHRONY_IOC_WRITE' undeclared (first use in this function)
+| rtc_linux.c:721: error: 'CHRONY_IOC_NRBITS' undeclared (first use in this function)
+| rtc_linux.c:721: error: 'CHRONY_IOC_TYPEBITS' undeclared (first use in this function)
+| rtc_linux.c:721: error: 'CHRONY_IOC_SIZEBITS' undeclared (first use in this function)
+| rtc_linux.c: In function 'read_from_device':
+| rtc_linux.c:902: error: 'CHRONY_IOC_READ' undeclared (first use in this function)
+| rtc_linux.c:902: error: 'CHRONY_IOC_NRBITS' undeclared (first use in this function)
+| rtc_linux.c:902: error: 'CHRONY_IOC_TYPEBITS' undeclared (first use in this function)
+| rtc_linux.c:902: error: 'CHRONY_IOC_SIZEBITS' undeclared (first use in this function)
+| rtc_linux.c: In function 'RTC_Linux_TimePreInit':
+| rtc_linux.c:1058: error: 'CHRONY_IOC_READ' undeclared (first use in this function)
+| rtc_linux.c:1058: error: 'CHRONY_IOC_NRBITS' undeclared (first use in this function)
+| rtc_linux.c:1058: error: 'CHRONY_IOC_TYPEBITS' undeclared (first use in this function)
+| rtc_linux.c:1058: error: 'CHRONY_IOC_SIZEBITS' undeclared (first use in this function)
+| make[1]: *** [rtc_linux.o] Error 1
+| make[1]: Leaving directory `/build/buildd/chrony-1.23'
+| make: *** [build-stamp] Error 2
+| dpkg-buildpackage: failure: debian/rules build gave error exit status 2
+| ******************************************************************************
+| Build finished at 20080420-1413
+| FAILED [dpkg-buildpackage died]
+
+Full build log(s): http://experimental.ftbfs.de/build.php?&ver=1.23-1&pkg=chrony&arch=hppa
+
+Gruesse,
+-- 
+Frank Lichtenheld <djpig@debian.org>
+www: http://www.djpig.de/
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

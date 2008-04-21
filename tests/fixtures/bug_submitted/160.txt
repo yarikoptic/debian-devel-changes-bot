@@ -1,0 +1,138 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 06:04:47 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnRjI-0005Mr-Rg
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 06:04:47 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id B460E13A4D13; Sun, 20 Apr 2008 05:04:43 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-3.0 required=4.0 tests=BAYES_00,RCVD_IN_DNSWL_LOW
+	autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 386BA13A4CEA;
+	Sun, 20 Apr 2008 05:04:34 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnRhg-0005pH-Mh; Sun, 20 Apr 2008 05:03:04 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476903: gnome-mount: default vfat mount option shortname=lower is wrong
+Reply-To: Paul Wise <pabs@debian.org>, 476903@bugs.debian.org
+Resent-From: Paul Wise <pabs@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Michael Biebl <biebl@debian.org>
+Resent-Date: Sun, 20 Apr 2008 05:03:02 +0000
+Resent-Message-ID: <handler.476903.B.120866765821180@bugs.debian.org>
+X-Debian-PR-Message: report 476903
+X-Debian-PR-Package: gnome-mount
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: gnome-mount
+Received: via spool by submit@bugs.debian.org id=B.120866765821180
+          (code B ref -1); Sun, 20 Apr 2008 05:03:02 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 05:00:58 +0000
+X-Amavis-Spam-Status: No, score=-12.0 required=4.0 tests=BAYES_00,FROMDEVELOPER,
+	HAS_PACKAGE autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from master.debian.org ([70.103.162.29])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <pabs@debian.org>)
+	id 1JnRfe-0005VR-4o
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 05:00:58 +0000
+Received: from localhost ([127.0.0.1])
+	by master.debian.org with esmtp (Exim 4.63)
+	(envelope-from <pabs@debian.org>)
+	id 1JnRfc-0007Qw-SW
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 05:00:57 +0000
+From: Paul Wise <pabs@debian.org>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+X-Reportbug-Version: 3.39-0.1
+Content-Type: multipart/signed; micalg=pgp-sha1; protocol="application/pgp-signature"; boundary="=-4t2Gs0iQjPtRj6wVgbFi"
+Organization: Debian
+Date: Sun, 20 Apr 2008 12:49:57 +0800
+Message-Id: <1208666998.6214.3.camel@chianamo>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.22.1 
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 05:03:04 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343330
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -38.0
+X-Spam-Report: (-38.0 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	15 AWL                    AWL: From: address is in the auto white-list
+
+
+--=-4t2Gs0iQjPtRj6wVgbFi
+Content-Type: text/plain
+Content-Transfer-Encoding: quoted-printable
+
+Package: gnome-mount
+Version: 0.7-2
+Severity: normal
+
+This file:
+
+	/usr/share/gconf/schemas/gnome-mount.schemas
+
+Contains this:
+
+	<default>[shortname=3Dlower,uid=3D]</default>
+
+This is wrong because it makes files who have all-uppercase names in
+Windows are listed as all-lowercase on GNOME.
+
+This should be changed to this so that GNOME and Windows show the
+filenames exactly the same:
+
+	<default>[shortname=3Dmixed,uid=3D]</default>
+
+--=20
+bye,
+pabs
+
+http://wiki.debian.org/PaulWise
+
+--=-4t2Gs0iQjPtRj6wVgbFi
+Content-Type: application/pgp-signature; name=signature.asc
+Content-Description: This is a digitally signed message part
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQBICst15Sc9mGvjxCMRAge9AKC086F4pKR+kt8/EK0CyR+ifi5PmwCZAV5p
++V8RAq4FR/kNV4SHGq4g5fw=
+=FaR8
+-----END PGP SIGNATURE-----
+
+--=-4t2Gs0iQjPtRj6wVgbFi--
+
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,129 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 16:32:11 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnbWR-0007jl-8b
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 16:32:11 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 085DC13A50B5; Sun, 20 Apr 2008 15:32:06 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id AF0C113A50A6
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 15:32:05 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnbHq-0007Nd-KE; Sun, 20 Apr 2008 15:17:02 +0000
+From: Filippo Giunchedi <filippo@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted bluez-gnome 0.26-1 (source amd64)
+Message-Id: <E1JnbHq-0007Nd-KE@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 15:17:02 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <NAx-IYeAyrL.A.6HE.2H2CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301314
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 15:32:06 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.6
+X-Spam-Report: (-2.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.0 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 16:04:42 +0200
+Source: bluez-gnome
+Binary: bluez-gnome
+Architecture: source amd64
+Version: 0.26-1
+Distribution: unstable
+Urgency: low
+Maintainer: Debian Bluetooth Maintainers <pkg-bluetooth-maintainers@lists=
+.alioth.debian.org>
+Changed-By: Filippo Giunchedi <filippo@debian.org>
+Description:=20
+ bluez-gnome - Bluetooth utilities for GNOME
+Closes: 474399 475003
+Changes:=20
+ bluez-gnome (0.26-1) unstable; urgency=3Dlow
+ .
+   * New upstream release
+     + fix menu entry for bluetooth-analyzer (Closes: #474399)
+   * Add XFCE to bluetooth-applet.desktop for autostarting (Closes: #4750=
+03)
+Checksums-Sha1:=20
+ 9c451e39c63a6d0b33913367475da29244e43950 1457 bluez-gnome_0.26-1.dsc
+ 303170aa3422b46d181a0128405f893fca9ea06f 387236 bluez-gnome_0.26.orig.ta=
+r.gz
+ f70af64668ca951987da6cce0dade98505dd7649 3743 bluez-gnome_0.26-1.diff.gz
+ 3a3df30906836aea6023aec8bb88904cd0cb4659 255894 bluez-gnome_0.26-1_amd64=
+.deb
+Checksums-Sha256:=20
+ e80eeea5d599c9f2f49de9410c5db18817bda178ca7b5efc991363d599be44ea 1457 bl=
+uez-gnome_0.26-1.dsc
+ e03a131c26f1f1c51b8cadb4e68db8a3d0f64c43b4aefc706b07129336ebe5c2 387236 =
+bluez-gnome_0.26.orig.tar.gz
+ 071d3eea67df783f532fcb34e866a8ac12e5363c1ed6e3861434b6f9614136e8 3743 bl=
+uez-gnome_0.26-1.diff.gz
+ f86d8daf2979ae749078e7e04a3e9535f4efd0f1b85ceff8681fbb578477212b 255894 =
+bluez-gnome_0.26-1_amd64.deb
+Files:=20
+ d577ea57e94d687f7d2ecf440f4e023b 1457 gnome optional bluez-gnome_0.26-1.=
+dsc
+ d1e68cf63458472eaeb70ef1b3f1df5d 387236 gnome optional bluez-gnome_0.26.=
+orig.tar.gz
+ 8b8a1b519bdcf47e3df9019192826a63 3743 gnome optional bluez-gnome_0.26-1.=
+diff.gz
+ 43b4da8e180b6f581d9d157df78aa7a4 255894 gnome optional bluez-gnome_0.26-=
+1_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC1omABzeamt51AERAhvlAKC075B9bzIAsARV2fCIwDVZ2jaKAwCeLIyO
+4rokdDEvEuPkjTxEz2/sXZo=3D
+=3D7NKy
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+bluez-gnome_0.26-1.diff.gz
+  to pool/main/b/bluez-gnome/bluez-gnome_0.26-1.diff.gz
+bluez-gnome_0.26-1.dsc
+  to pool/main/b/bluez-gnome/bluez-gnome_0.26-1.dsc
+bluez-gnome_0.26-1_amd64.deb
+  to pool/main/b/bluez-gnome/bluez-gnome_0.26-1_amd64.deb
+bluez-gnome_0.26.orig.tar.gz
+  to pool/main/b/bluez-gnome/bluez-gnome_0.26.orig.tar.gz
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

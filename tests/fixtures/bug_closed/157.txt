@@ -1,0 +1,311 @@
+From bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org Sun Apr 20 17:35:37 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org>)
+	id 1JncVo-0008J0-1N
+	for ddc@ddc.chris-lamb.co.uk; Sun, 20 Apr 2008 17:35:37 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id EB6FE13A501E; Sun, 20 Apr 2008 16:35:30 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 223EB13A4FA1;
+	Sun, 20 Apr 2008 16:35:29 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JncTT-0004Ut-Qq; Sun, 20 Apr 2008 16:33:07 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Magnus Holmgren <holmgren@debian.org>
+Subject: Bug#476908: marked as done (libmail-dkim-perl: version 0.31 
+ available, please upload)
+Message-ID: <handler.476908.D476908.120870915216343.ackdone@bugs.debian.org>
+References: <E1JncDx-0002wX-AG@ries.debian.org>
+ <20080420070924.25817.33802.reportbug@conrad.int.rhx>
+X-Debian-PR-Message: closed 476908
+X-Debian-PR-Package: libmail-dkim-perl
+X-Debian-PR-Source: libmail-dkim-perl
+Content-Type: multipart/mixed; boundary="----------=_1208709187-17251-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 16:33:07 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <Un-UZo0kpmP.A.lQG.SD3CIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/133044
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 16:35:30 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208709187-17251-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 16:17:05 +0000
+with message-id <E1JncDx-0002wX-AG@ries.debian.org>
+and subject line Bug#476908: fixed in libmail-dkim-perl 0.31-1
+has caused the Debian Bug report #476908,
+regarding libmail-dkim-perl: version 0.31 available, please upload
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+476908: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D476908
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208709187-17251-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 07:12:21 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.3 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,HAS_PACKAGE,PHONENUMBER autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <michele@pupazzo.org>
+Received: from mgrava.tizianodinca.com ([195.47.199.19] helo=mail2.rhx.it)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <michele@pupazzo.org>)
+	id 1JnTin-0001x2-Fv
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 07:12:21 +0000
+Received: from localhost (localhost.localdomain [127.0.0.1])
+	by mail2.rhx.it (Postfix) with ESMTP id 7D7B93F602D;
+	Sun, 20 Apr 2008 09:12:14 +0200 (CEST)
+X-Virus-Scanned: Debian amavisd-new at localhost.localdomain
+Received: from mail2.rhx.it ([127.0.0.1])
+	by localhost (mail2.rhx.it [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id mFU6F026U-I4; Sun, 20 Apr 2008 09:12:14 +0200 (CEST)
+Received: from unstable (host22-23-dynamic.20-79-r.retail.telecomitalia.it [79.20.23.22])
+	(using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+	(Client CN "kantele", Issuer "mail2.rhx.it" (not verified))
+	by mail2.rhx.it (Postfix) with ESMTPS id EA6223F602C;
+	Sun, 20 Apr 2008 09:12:13 +0200 (CEST)
+Received: by unstable (Postfix, from userid 1000)
+	id AF5661008A; Sun, 20 Apr 2008 09:09:24 +0200 (CEST)
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Michele Baldessari <michele@pupazzo.org>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Subject: libmail-dkim-perl: version 0.31 available, please upload
+Message-ID: <20080420070924.25817.33802.reportbug@conrad.int.rhx>
+X-Mailer: reportbug 3.39-0.1
+Date: Sun, 20 Apr 2008 09:09:24 +0200
+Delivered-To: submit@bugs.debian.org
+
+Package: libmail-dkim-perl
+Version: 0.30.1-1
+Severity: wishlist
+
+Hello Magnus,
+
+0.31 came out with some interesting fixes (I've been bitten especially by #1878954),
+also amavisd-new-2.6.0-rc2 requires 0.31 now (yes, it's not packaged yet ;) ).
+Please upload it whenever you got a chance.
+
+Thanks,
+Michele
+
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (500, 'unstable')
+Architecture: amd64 (x86_64)
+
+Kernel: Linux 2.6.24-1-amd64 (SMP w/2 CPU cores)
+Locale: LANG=en_US.UTF-8, LC_CTYPE=en_US.UTF-8 (charmap=UTF-8)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages libmail-dkim-perl depends on:
+ii  libcrypt-openssl-rsa-perl     0.25-1     Perl module providing basic RSA fu
+ii  libdigest-sha-perl            5.46-1     Perl extension for SHA-1/224/256/3
+ii  libdigest-sha1-perl           2.11-2     NIST SHA-1 message digest algorith
+ii  liberror-perl                 0.17-1     Perl module for error/exception ha
+ii  libmailtools-perl             2.02-1     Manipulate email in perl programs
+ii  libnet-dns-perl               0.63-1     Perform DNS queries from a Perl sc
+ii  perl                          5.8.8-12   Larry Wall's Practical Extraction 
+
+libmail-dkim-perl recommends no packages.
+
+-- no debconf information
+
+
+
+------------=_1208709187-17251-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 476908-close) by bugs.debian.org; 20 Apr 2008 16:32:32 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.8 required=4.0 tests=BAYES_00,FROMDEVELOPER,
+	FVGT_m_MULTI_ODD,HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_2,
+	MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JncSu-0004FI-I1
+	for 476908-close@bugs.debian.org; Sun, 20 Apr 2008 16:32:32 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JncDx-0002wX-AG; Sun, 20 Apr 2008 16:17:05 +0000
+From: Magnus Holmgren <holmgren@debian.org>
+To: 476908-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#476908: fixed in libmail-dkim-perl 0.31-1
+Message-Id: <E1JncDx-0002wX-AG@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 16:17:05 +0000
+Content-Transfer-Encoding: quoted-printable
+
+Source: libmail-dkim-perl
+Source-Version: 0.31-1
+
+We believe that the bug you reported is fixed in the latest version of
+libmail-dkim-perl, which is due to be installed in the Debian FTP archive=
+:
+
+libmail-dkim-perl_0.31-1.diff.gz
+  to pool/main/libm/libmail-dkim-perl/libmail-dkim-perl_0.31-1.diff.gz
+libmail-dkim-perl_0.31-1.dsc
+  to pool/main/libm/libmail-dkim-perl/libmail-dkim-perl_0.31-1.dsc
+libmail-dkim-perl_0.31-1_all.deb
+  to pool/main/libm/libmail-dkim-perl/libmail-dkim-perl_0.31-1_all.deb
+libmail-dkim-perl_0.31.orig.tar.gz
+  to pool/main/libm/libmail-dkim-perl/libmail-dkim-perl_0.31.orig.tar.gz
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 476908@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Magnus Holmgren <holmgren@debian.org> (supplier of updated libmail-dkim-p=
+erl package)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 18:08:09 +0200
+Source: libmail-dkim-perl
+Binary: libmail-dkim-perl
+Architecture: source all
+Version: 0.31-1
+Distribution: unstable
+Urgency: low
+Maintainer: Magnus Holmgren <holmgren@debian.org>
+Changed-By: Magnus Holmgren <holmgren@debian.org>
+Description:=20
+ libmail-dkim-perl - cryptographically identify the sender of email - per=
+l library
+Closes: 476908
+Changes:=20
+ libmail-dkim-perl (0.31-1) unstable; urgency=3Dlow
+ .
+   * New upstream release (Closes: 476908).
+   * Change debian/watch to use search.cpan.org only.
+   * New maintainer email address.
+   * Increase minimum version of libcrypt-openssl-rsa-perl to 0.24 (shoul=
+d
+     have done that at version 0.28 of this package).
+Checksums-Sha1:=20
+ fb5aaab43b868069820daa627daca923a33df849 1328 libmail-dkim-perl_0.31-1.d=
+sc
+ 7439dcefb184c93ee25747ac76cbb192745a29e4 69421 libmail-dkim-perl_0.31.or=
+ig.tar.gz
+ 3f28915a2f71c3724504383df82b87a4bef44aa7 3286 libmail-dkim-perl_0.31-1.d=
+iff.gz
+ 0e2f356f3f72d3b9e089e5c08c2c344a23dc977c 101038 libmail-dkim-perl_0.31-1=
+_all.deb
+Checksums-Sha256:=20
+ 88e1200a239b185966917ccbda3177608c49d71be26045846b8ef36b0f1e2f1d 1328 li=
+bmail-dkim-perl_0.31-1.dsc
+ 7fff70e762d137cc6b477262a7aaf5ceb93dfd6d672f49d21eee448e4c1ec29f 69421 l=
+ibmail-dkim-perl_0.31.orig.tar.gz
+ 00cffff976e321bf6d9b8dc3a52fc70cde7fb8cfe65fb33d702da2d5cb33b3e9 3286 li=
+bmail-dkim-perl_0.31-1.diff.gz
+ 4a846abda8be6282d12ab9d5396fad44e0b32e4023f56aa90b26af141380fd92 101038 =
+libmail-dkim-perl_0.31-1_all.deb
+Files:=20
+ 587d7f662874e0caebd81577c930fe5d 1328 perl optional libmail-dkim-perl_0.=
+31-1.dsc
+ d83c8d6bf8dadfe4101e90e23d607dee 69421 perl optional libmail-dkim-perl_0=
+.31.orig.tar.gz
+ 10b1a46c6556656df040f021e2a26441 3286 perl optional libmail-dkim-perl_0.=
+31-1.diff.gz
+ efd4b35d56636047b03a861d7fd43f90 101038 perl optional libmail-dkim-perl_=
+0.31-1_all.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC2r1k7mRNn1h4+YRApkjAKCjUqIt0OGQ+i5vhrmpR6nVdXa1TACfZWW9
+xhS2i3sVORewQSnb8sppK3w=3D
+=3DOp7h
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208709187-17251-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,305 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 16:37:02 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnbb8-0007mm-TQ
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 16:37:02 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id B0C6313A50C6; Sun, 20 Apr 2008 15:36:57 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 61F6213A508B;
+	Sun, 20 Apr 2008 15:36:56 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnbXV-0007Rf-FY; Sun, 20 Apr 2008 15:33:13 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Reinhard Tartler <siretart@tauware.de>
+Subject: Bug#440156: marked as done (FTBFS on kFreeBSD (both i386 and amd64))
+Message-ID: <handler.440156.D440156.120870550024969.ackdone@bugs.debian.org>
+References: <E1JnbHs-0007OP-B9@ries.debian.org>
+ <877indtlsp.fsf_-_@faui44a.informatik.uni-erlangen.de>
+X-Debian-PR-Message: closed 440156
+X-Debian-PR-Package: boxbackup
+X-Debian-PR-Source: boxbackup
+Content-Type: multipart/mixed; boundary="----------=_1208705593-28579-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 15:33:13 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <TWDIrNP8oUD.A.bIF.ZM2CIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/133023
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 15:36:57 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208705593-28579-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 15:17:04 +0000
+with message-id <E1JnbHs-0007OP-B9@ries.debian.org>
+and subject line Bug#440156: fixed in boxbackup 0.11~rc2-1
+has caused the Debian Bug report #440156,
+regarding FTBFS on kFreeBSD (both i386 and amd64)
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+440156: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D440156
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208705593-28579-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 30 Aug 2007 09:29:49 +0000
+Return-path: <siretart@tauware.de>
+Received: from tauware.de ([213.239.249.200] ident=Debian-exim)
+	by rietz.debian.org with esmtp (Exim 4.50)
+	id 1IQgJK-0006Yy-Dk
+	for submit@bugs.debian.org; Thu, 30 Aug 2007 09:27:34 +0000
+Received: from siretart by tauware.de with local-bsmtp (Exim 4.50)
+	id 1IQgJJ-0001CN-AD
+	for submit@bugs.debian.org; Thu, 30 Aug 2007 11:27:33 +0200
+Received: from siretart by faui44a.informatik.uni-erlangen.de with local (Exim 4.67)
+	(envelope-from <siretart@debian.org>)
+	id 1IQgIo-0001tS-1a; Thu, 30 Aug 2007 11:27:02 +0200
+From: Reinhard Tartler <siretart@debian.org>
+To: Chris Wilson <chris@qwirx.com>
+Subject: FTBFS on kFreeBSD (both i386 and amd64)
+References: <20070329080549.6867.90854.reportbug@hermes.olymp.tauware.de>
+	<Pine.LNX.4.64.0703292348140.8580@top.qwarx.com>
+	<87648jkxam.fsf@hermes.olymp.tauware.de>
+	<Pine.LNX.4.64.0703300907410.8580@top.qwarx.com>
+	<87y7iavp7x.fsf@hermes.olymp.tauware.de>
+	<Pine.LNX.4.64.0706241547160.13935@top.qwarx.com>
+	<871wg1uk1r.fsf@hermes.olymp.tauware.de>
+	<Pine.LNX.4.64.0706242225270.13935@top.qwarx.com>
+	<87odj1u6sr.fsf@hermes.olymp.tauware.de>
+	<Pine.LNX.4.64.0706272046580.2326@top.qwarx.com>
+	<87abukhv8f.fsf@faui44a.informatik.uni-erlangen.de>
+	<Pine.LNX.4.64.0706301620250.14181@top.qwarx.com>
+	<873b04abif.fsf@faui44a.informatik.uni-erlangen.de>
+	<Pine.LNX.4.64.0707041922200.22167@top.qwarx.com>
+	<871wfne2sp.fsf@faui44a.informatik.uni-erlangen.de>
+	<Pine.LNX.4.64.0707052113500.22167@top.qwarx.com>
+	<Pine.LNX.4.64.0708251803260.20516@top.qwarx.com>
+	<87ps17whe2.fsf@faui44a.informatik.uni-erlangen.de>
+	<87zm0am94e.fsf@faui44a.informatik.uni-erlangen.de>
+	<Pine.LNX.4.64.0708292245380.20516@top.qwarx.com>
+X-Url: http://qa.debian.org/developer.php?login=siretart@tauware.de
+Date: Thu, 30 Aug 2007 11:27:02 +0200
+In-Reply-To: <Pine.LNX.4.64.0708292245380.20516@top.qwarx.com> (Chris Wilson's
+	message of "Wed, 29 Aug 2007 22:46:58 +0100 (BST)")
+Message-ID: <877indtlsp.fsf_-_@faui44a.informatik.uni-erlangen.de>
+User-Agent: Gnus/5.110007 (No Gnus v0.7) Emacs/22.1 (gnu/linux)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Sender: Reinhard Tartler <siretart@tauware.de>
+Delivered-To: submit@bugs.debian.org
+X-Spam-Checker-Version: SpamAssassin 2.60-bugs.debian.org_2005_01_02 
+	(1.212-2003-09-23-exp) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, hits=-11.0 required=4.0 tests=BAYES_00,FROMDEVELOPER,
+	HAS_PACKAGE autolearn=ham version=2.60-bugs.debian.org_2005_01_02
+
+Package: boxbackup
+
+Chris Wilson <chris@qwirx.com> writes:
+
+> I think the problem on kfreebsd is that /usr/bin/make is GNU make, but
+> we detect BSD make based on `uname` not matching a list of hardcoded
+> strings, so we call make with the wrong parameters.
+>
+> What does `uname` output on such systems?
+
+I don't have access to such a machine, but I remember an offer from the
+kFreeBSD team to create shell accounts on such developer machines on
+request. I'll apply for one and try to find that out.
+
+For now I'm submitting a bugreport in the debian bts about this.
+
+-- 
+Gruesse/greetings,
+Reinhard Tartler, KeyID 945348A4
+
+
+------------=_1208705593-28579-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 440156-close) by bugs.debian.org; 20 Apr 2008 15:31:40 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.7 required=4.0 tests=BAYES_00,FVGT_m_MULTI_ODD,
+	HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_2,MURPHY_WRONG_WORD1,
+	MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnbW0-0006UP-I5
+	for 440156-close@bugs.debian.org; Sun, 20 Apr 2008 15:31:40 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnbHs-0007OP-B9; Sun, 20 Apr 2008 15:17:04 +0000
+From: Reinhard Tartler <siretart@tauware.de>
+To: 440156-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#440156: fixed in boxbackup 0.11~rc2-1
+Message-Id: <E1JnbHs-0007OP-B9@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 15:17:04 +0000
+Content-Transfer-Encoding: quoted-printable
+
+Source: boxbackup
+Source-Version: 0.11~rc2-1
+
+We believe that the bug you reported is fixed in the latest version of
+boxbackup, which is due to be installed in the Debian FTP archive:
+
+boxbackup-client_0.11~rc2-1_i386.deb
+  to pool/main/b/boxbackup/boxbackup-client_0.11~rc2-1_i386.deb
+boxbackup-server_0.11~rc2-1_i386.deb
+  to pool/main/b/boxbackup/boxbackup-server_0.11~rc2-1_i386.deb
+boxbackup_0.11~rc2-1.diff.gz
+  to pool/main/b/boxbackup/boxbackup_0.11~rc2-1.diff.gz
+boxbackup_0.11~rc2-1.dsc
+  to pool/main/b/boxbackup/boxbackup_0.11~rc2-1.dsc
+boxbackup_0.11~rc2.orig.tar.gz
+  to pool/main/b/boxbackup/boxbackup_0.11~rc2.orig.tar.gz
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 440156@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Reinhard Tartler <siretart@tauware.de> (supplier of updated boxbackup pac=
+kage)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.7
+Date: Sun, 20 Apr 2008 14:01:27 +0200
+Source: boxbackup
+Binary: boxbackup-server boxbackup-client
+Architecture: source i386
+Version: 0.11~rc2-1
+Distribution: unstable
+Urgency: low
+Maintainer: Reinhard Tartler <siretart@tauware.de>
+Changed-By: Reinhard Tartler <siretart@tauware.de>
+Description:=20
+ boxbackup-client - client for the BoxBackup remote backup system
+ boxbackup-server - server for the BoxBackup remote backup system
+Closes: 435860 440156 442515 442640 476090
+Changes:=20
+ boxbackup (0.11~rc2-1) unstable; urgency=3Dlow
+ .
+   * new upstream release.
+   * update watch file.
+   * bump standards version to 3.7.3 (No changes needed)
+   * update frensh debconf template translations. Thanks to
+     Christian Perrier (Closes: #476090)
+ .
+ boxbackup (0.11~rc1-1) experimental; urgency=3Dlow
+ .
+   * New upstream release.
+     - should fix builds on kFreeBSD architectures: (Closes: #440156).
+     - build against libbd4.6 instead of libdb4.3. (Closes: #442640).
+     - the config file template has been updated to be more specific for
+       the AlwaysIncludeFile Option (Closes: #435860).
+   * remove all generated files in clean target of debian/rules. Allows
+     package to build twice in a row (Closes: #442515).
+   * Install file ExceptionCodes.txt to documentation directories. The fi=
+le
+     contains a list of Error codes found in logfiles.
+   * Simplify debian/rules by removing code to build arch-independent
+     packages. There are none.
+Files:=20
+ 8eade56d91375269b70416face43ffac 844 utils optional boxbackup_0.11~rc2-1=
+.dsc
+ 68052f963a944c717a50bd65a54375ff 811043 utils optional boxbackup_0.11~rc=
+2.orig.tar.gz
+ 26a2ddd58841d876b779370de9d3b3a2 52995 utils optional boxbackup_0.11~rc2=
+-1.diff.gz
+ 913fe4a6049a04395351d61de709b42a 627088 utils optional boxbackup-server_=
+0.11~rc2-1_i386.deb
+ 99ffea644921b9ffb1d2b19348a20d36 635496 utils optional boxbackup-client_=
+0.11~rc2-1_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+Comment: Debian Powered!
+
+iD8DBQFIC1txmAg1RJRTSKQRAnalAJ9ExFWjLUBIU0+redEsUNKMYgVsCgCeNp2C
+fZJUw+I60UTGV4tI3E99aC0=3D
+=3DxkXD
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208705593-28579-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,121 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 10:37:20 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnVz1-00063w-7p
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 10:37:20 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 095A213A4EC0; Sun, 20 Apr 2008 09:37:14 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-6.2 required=4.0 tests=BAYES_00,FOURLA,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW,SARE_RECV_IP_069060096 autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 2858A13A4969;
+	Sun, 20 Apr 2008 09:37:04 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnVv2-00089N-Mw; Sun, 20 Apr 2008 09:33:08 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#462835: Acknowledgement (grub-pc: alloc magic is broken)
+Reply-To: Robert Millan <rmh@aybabtu.com>, 462835@bugs.debian.org
+Resent-From: Robert Millan <rmh@aybabtu.com>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: GRUB Maintainers <pkg-grub-devel@lists.alioth.debian.org>
+Resent-Date: Sun, 20 Apr 2008 09:33:08 +0000
+Resent-Message-ID: <handler.462835.B462835.120868368925877@bugs.debian.org>
+X-Debian-PR-Message: report 462835
+X-Debian-PR-Package: grub-pc
+X-Debian-PR-Keywords: moreinfo
+X-Debian-PR-Source: grub2
+Received: via spool by 462835-submit@bugs.debian.org id=B462835.120868368925877
+          (code B ref 462835); Sun, 20 Apr 2008 09:33:08 +0000
+Received: (at 462835) by bugs.debian.org; 20 Apr 2008 09:28:09 +0000
+X-Amavis-Spam-Status: No, score=-9.9 required=4.0 tests=BAYES_00,FOURLA,
+	HAS_BUG_NUMBER,X_DEBBUGS_NO_ACK autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from aybabtu.com ([69.60.117.155])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <rmh@aybabtu.com>)
+	id 1JnVqD-0006jB-6P
+	for 462835@bugs.debian.org; Sun, 20 Apr 2008 09:28:09 +0000
+Received: from [192.168.10.6] (helo=thorin)
+	by aybabtu.com with esmtps (TLS-1.0:RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <rmh@aybabtu.com>)
+	id 1JnVqB-0002gL-OL; Sun, 20 Apr 2008 11:28:08 +0200
+Received: from rmh by thorin with local (Exim 4.63)
+	(envelope-from <rmh@aybabtu.com>)
+	id 1JnVpo-00043g-G4; Sun, 20 Apr 2008 11:27:44 +0200
+Date: Sun, 20 Apr 2008 11:27:44 +0200
+From: Robert Millan <rmh@aybabtu.com>
+To: Bharath Ramesh <krosswindz@gmail.com>
+Cc: 462835@bugs.debian.org
+Message-ID: <20080420092744.GA15479@thorin>
+References: <20080127190156.2886.35133.reportbug@dahlia.cs.vt.edu> <handler.462835.B.12014605408759.ack@bugs.debian.org> <c775eb9b0801271205l758555bbnad330208144e520d@mail.gmail.com> <20080127204822.GA11478@thorin> <20080127233938.GA27702@thorin> <c775eb9b0801280015u2a45be91y5601f947db8f9839@mail.gmail.com> <20080128093147.GA29819@thorin> <c775eb9b0804191541ode038ecj293b82d4c7e8c360@mail.gmail.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=utf-8
+Content-Disposition: inline
+In-Reply-To: <c775eb9b0804191541ode038ecj293b82d4c7e8c360@mail.gmail.com>
+Organization: free as in freedom
+X-Message-Flag: Worried about Outlook viruses? Switch to Thunderbird! www.mozilla.com/thunderbird
+User-Agent: Mutt/1.5.13 (2006-08-11)
+Resent-Date: Sun, 20 Apr 2008 09:33:08 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343389
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -33.1
+X-Spam-Report: (-33.1 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	19 AWL                    AWL: From: address is in the auto white-list
+
+On Sat, Apr 19, 2008 at 06:41:05PM -0400, Bharath Ramesh wrote:
+> I am still having problems with grub2. Is there any particular way
+> that grub-emu should be called. I tried to google around for any
+> documents on how to use grub-emu, couldnt find one. Does on just run
+> grub-emu or is there some option that one must follow. Any help on
+> this is much appreciated.
+
+grub-emu is a GRUB emulator.  You'd just run it (see --help for options),
+then issue grub commands to reproduce the problem.
+
+In your case, it's likely to crash right away, since lvm.mod is loaded
+automatically.
+
+--=20
+Robert Millan
+
+<GPLv2> I know my rights; I want my phone call!
+<DRM> What use is a phone call=E2=80=A6 if you are unable to speak?
+(as seen on /.)
+
+
+
+--=20
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

@@ -1,0 +1,326 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 16:37:12 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnbbI-0007nG-LH
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 16:37:12 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 5BD0013A4881; Sun, 20 Apr 2008 15:37:05 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 8B4F313A46A6;
+	Sun, 20 Apr 2008 15:37:03 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnbXX-0007U9-I8; Sun, 20 Apr 2008 15:33:15 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Reinhard Tartler <siretart@tauware.de>
+Subject: Bug#442515: marked as done (boxbackup: FTBFS if build twice in a row)
+Message-ID: <handler.442515.D442515.120870549424727.ackdone@bugs.debian.org>
+References: <E1JnbHs-0007OR-By@ries.debian.org>
+ <20070916143708.GA24317@h1190993.stratoserver.net>
+X-Debian-PR-Message: closed 442515
+X-Debian-PR-Package: boxbackup
+X-Debian-PR-Source: boxbackup
+Content-Type: multipart/mixed; boundary="----------=_1208705595-28661-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 15:33:15 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <48GA0d11s0E.A.JNF.hM2CIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/133024
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 15:37:05 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208705595-28661-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 15:17:04 +0000
+with message-id <E1JnbHs-0007OR-By@ries.debian.org>
+and subject line Bug#442515: fixed in boxbackup 0.11~rc2-1
+has caused the Debian Bug report #442515,
+regarding boxbackup: FTBFS if build twice in a row
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+442515: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D442515
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208705595-28661-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at maintonly) by bugs.debian.org; 16 Sep 2007 14:37:17 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-6.6 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FVGT_m_MULTI_ODD,HAS_PACKAGE,IMPRONONCABLE_1,IMPRONONCABLE_2,
+	MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <winnie@der-winnie.de>
+Received: from der-winnie.de ([85.214.90.186])
+	by rietz.debian.org with esmtp (Exim 4.50)
+	id 1IWvFM-0005mu-M2
+	for maintonly@bugs.debian.org; Sun, 16 Sep 2007 14:37:17 +0000
+Received: from der-winnie.de (h1190993.stratoserver.net [127.0.0.1])
+	by der-winnie.de (Postfix) with ESMTP id CE876224811C
+	for <maintonly@bugs.debian.org>; Sun, 16 Sep 2007 16:37:10 +0200 (CEST)
+Received: by der-winnie.de (Postfix, from userid 1000)
+	id BEEA9224811E; Sun, 16 Sep 2007 16:37:10 +0200 (CEST)
+Date: Sun, 16 Sep 2007 16:37:10 +0200
+From: Patrick Winnertz <winnie@der-winnie.de>
+To: maintonly@bugs.debian.org
+Subject: boxbackup: FTBFS if build twice in a row
+Message-ID: <20070916143708.GA24317@h1190993.stratoserver.net>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: mutt-ng/devel-r804 (Debian)
+X-AV-Checked: ClamAV using ClamSMTP
+Delivered-To: maintonly@bugs.debian.org
+
+Package: boxbackup
+Severity: important
+Version: 0.10+really0.10-1
+User: debian-qa@lists.debian.org
+Usertags: qa-doublebuild
+
+Hi,                                                                                                                                                                                                                           
+                                                                                                                                                                                                                              
+Lucas Nussbaum has rebuilt the whole archive on i386 and your package FTBFS if
+built twice in a row with the following error:
+
+
+dpkg-source:  new version is symlink
+ dpkg-source:  old version is nonexistent
+ dpkg-source: warning: executable mode 0744 of 'debug/test/bbackupd/testfiles/restore-Test1-x1-2/cxfxcv/.profile' will not be represented in diff
+ dpkg-source: warning: executable mode 0755 of 'debug/bin/bbstored/bbstored' will not be represented in diff
+ dpkg-source: cannot represent change to debug/bin/bbstored/bbstored: binary file contents changed
+ dpkg-source: warning: executable mode 0755 of 'debug/bin/bbstoreaccounts/bbstoreaccounts' will not be represented in diff
+ dpkg-source: cannot represent change to debug/bin/bbstoreaccounts/bbstoreaccounts: binary file contents changed
+ dpkg-source: warning: executable mode 0755 of 'debug/bin/bbackupd/bbackupd' will not be represented in diff
+ dpkg-source: cannot represent change to debug/bin/bbackupd/bbackupd: binary file contents changed
+ dpkg-source: warning: executable mode 0755 of 'debug/bin/bbackupquery/bbackupquery' will not be represented in diff
+ dpkg-source: cannot represent change to debug/bin/bbackupquery/bbackupquery: binary file contents changed
+ dpkg-source: warning: executable mode 0755 of 'debug/bin/bbackupctl/bbackupctl' will not be represented in diff
+ dpkg-source: cannot represent change to debug/bin/bbackupctl/bbackupctl: binary file contents changed
+ dpkg-source: building boxbackup in boxbackup_0.10+really0.10-1.dsc
+ dpkg-source: unrepresentable changes to source
+ ******************************************************************************
+ Build finished at 20070905-1947
+ #### END OF BUILD NO 2 ####
+ FAILED [dpkg-buildpackage died]
+ Purging /var/lib/schroot/mount/sid32-281dc6a3-cf3a-4724-9c9a-a08acbdb1030/build/user/boxbackup-0.10+really0.10
+ ------------------------------------------------------------------------------
+ Not removing build depends: session managed chroot in use
+ ******************************************************************************
+ Finished at 20070905-1947
+ Build needed 00:12:10, 66064k disk space
+ DC-Build-Status: Failed 741.871043s
+ mv: cannot stat `*.changes': No such file or directory
+ mv: cannot stat `*.dsc': No such file or directory
+ mv: cannot stat `*gz': No such file or directory
+ mv: cannot stat `*deb': No such file or directory
+
+
+
+The full build-log can be found at: http://people.debian.org/~lucas/logs/2007/doublebuild-09-05/failed-build-2/
+
+
+About the archive rebuild: The rebuild was done on about 50 AMD64 nodes
+of the Grid'5000 platform, using a clean chroot containing a sid i386
+environment.  Internet was not accessible from the build systems. All
+packages have been rebuilt twice in a row, with unpack, build, clean,
+build.
+
+Please read the mail of Martin Zobel-Helas on debian-devel [0], for a explanation 
+for this mass bug filling.
+
+
+[0]: http://lists.debian.org/debian-devel/2007/05/msg00490.html
+
+
+
+
+------------=_1208705595-28661-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 442515-close) by bugs.debian.org; 20 Apr 2008 15:31:34 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.7 required=4.0 tests=BAYES_00,FVGT_m_MULTI_ODD,
+	HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_2,MURPHY_WRONG_WORD1,
+	MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnbVu-0006QV-Fk
+	for 442515-close@bugs.debian.org; Sun, 20 Apr 2008 15:31:34 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnbHs-0007OR-By; Sun, 20 Apr 2008 15:17:04 +0000
+From: Reinhard Tartler <siretart@tauware.de>
+To: 442515-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#442515: fixed in boxbackup 0.11~rc2-1
+Message-Id: <E1JnbHs-0007OR-By@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 15:17:04 +0000
+Content-Transfer-Encoding: quoted-printable
+
+Source: boxbackup
+Source-Version: 0.11~rc2-1
+
+We believe that the bug you reported is fixed in the latest version of
+boxbackup, which is due to be installed in the Debian FTP archive:
+
+boxbackup-client_0.11~rc2-1_i386.deb
+  to pool/main/b/boxbackup/boxbackup-client_0.11~rc2-1_i386.deb
+boxbackup-server_0.11~rc2-1_i386.deb
+  to pool/main/b/boxbackup/boxbackup-server_0.11~rc2-1_i386.deb
+boxbackup_0.11~rc2-1.diff.gz
+  to pool/main/b/boxbackup/boxbackup_0.11~rc2-1.diff.gz
+boxbackup_0.11~rc2-1.dsc
+  to pool/main/b/boxbackup/boxbackup_0.11~rc2-1.dsc
+boxbackup_0.11~rc2.orig.tar.gz
+  to pool/main/b/boxbackup/boxbackup_0.11~rc2.orig.tar.gz
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 442515@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Reinhard Tartler <siretart@tauware.de> (supplier of updated boxbackup pac=
+kage)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.7
+Date: Sun, 20 Apr 2008 14:01:27 +0200
+Source: boxbackup
+Binary: boxbackup-server boxbackup-client
+Architecture: source i386
+Version: 0.11~rc2-1
+Distribution: unstable
+Urgency: low
+Maintainer: Reinhard Tartler <siretart@tauware.de>
+Changed-By: Reinhard Tartler <siretart@tauware.de>
+Description:=20
+ boxbackup-client - client for the BoxBackup remote backup system
+ boxbackup-server - server for the BoxBackup remote backup system
+Closes: 435860 440156 442515 442640 476090
+Changes:=20
+ boxbackup (0.11~rc2-1) unstable; urgency=3Dlow
+ .
+   * new upstream release.
+   * update watch file.
+   * bump standards version to 3.7.3 (No changes needed)
+   * update frensh debconf template translations. Thanks to
+     Christian Perrier (Closes: #476090)
+ .
+ boxbackup (0.11~rc1-1) experimental; urgency=3Dlow
+ .
+   * New upstream release.
+     - should fix builds on kFreeBSD architectures: (Closes: #440156).
+     - build against libbd4.6 instead of libdb4.3. (Closes: #442640).
+     - the config file template has been updated to be more specific for
+       the AlwaysIncludeFile Option (Closes: #435860).
+   * remove all generated files in clean target of debian/rules. Allows
+     package to build twice in a row (Closes: #442515).
+   * Install file ExceptionCodes.txt to documentation directories. The fi=
+le
+     contains a list of Error codes found in logfiles.
+   * Simplify debian/rules by removing code to build arch-independent
+     packages. There are none.
+Files:=20
+ 8eade56d91375269b70416face43ffac 844 utils optional boxbackup_0.11~rc2-1=
+.dsc
+ 68052f963a944c717a50bd65a54375ff 811043 utils optional boxbackup_0.11~rc=
+2.orig.tar.gz
+ 26a2ddd58841d876b779370de9d3b3a2 52995 utils optional boxbackup_0.11~rc2=
+-1.diff.gz
+ 913fe4a6049a04395351d61de709b42a 627088 utils optional boxbackup-server_=
+0.11~rc2-1_i386.deb
+ 99ffea644921b9ffb1d2b19348a20d36 635496 utils optional boxbackup-client_=
+0.11~rc2-1_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+Comment: Debian Powered!
+
+iD8DBQFIC1txmAg1RJRTSKQRAnalAJ9ExFWjLUBIU0+redEsUNKMYgVsCgCeNp2C
+fZJUw+I60UTGV4tI3E99aC0=3D
+=3DxkXD
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208705595-28661-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,273 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 09:41:27 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnV6w-0005tH-1E
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 09:41:27 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id DB16C13A40B0; Sun, 20 Apr 2008 08:40:23 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.6 required=4.0 tests=BAYES_00,FOURLA,
+	FVGT_m_MULTI_ODD,MURPHY_WRONG_WORD1,MURPHY_WRONG_WORD2,RCVD_IN_DNSWL_LOW
+	autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id E488913A4E44;
+	Sun, 20 Apr 2008 08:39:55 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnV4l-0006Zv-G4; Sun, 20 Apr 2008 08:39:07 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476921: xulrunner_1.9~b5-2(experimental/ia64/alkman): symbol changes
+Reply-To: Marc 'HE' Brockschmidt <marc@marcbrockschmidt.de>, 476921@bugs.debian.org
+Resent-From: Marc 'HE' Brockschmidt <marc@marcbrockschmidt.de>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Mike Hommey <glandium@debian.org>
+Resent-Date: Sun, 20 Apr 2008 08:39:02 +0000
+Resent-Message-ID: <handler.476921.B.120868049825086@bugs.debian.org>
+X-Debian-PR-Message: report 476921
+X-Debian-PR-Package: xulrunner
+X-Debian-PR-Keywords: experimental
+X-Debian-PR-Source: xulrunner
+Received: via spool by submit@bugs.debian.org id=B.120868049825086
+          (code B ref -1); Sun, 20 Apr 2008 08:39:02 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 08:34:58 +0000
+X-Amavis-Spam-Status: No, score=-9.6 required=4.0 tests=BAYES_00,FOURLA,
+	FVGT_m_MULTI_ODD,HAS_PACKAGE,MURPHY_WRONG_WORD1,MURPHY_WRONG_WORD2 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from alius.turmzimmer.net ([88.198.169.140])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <marc@marcbrockschmidt.de>)
+	id 1JnV0j-0006VQ-GF
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 08:34:57 +0000
+Received: from cl-2769.ham-01.de.sixxs.net ([2001:6f8:900:ad0::2] helo=pindar.localnet)
+	by alius.turmzimmer.net with esmtpa (Exim 4.63)
+	(envelope-from <marc@marcbrockschmidt.de>)
+	id 1JnV0h-0002QM-TR
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 08:34:56 +0000
+Received: from localhost ([127.0.0.1] helo=pindar.localnet)
+	by pindar.localnet with esmtp (Exim 4.69)
+	(envelope-from <marc@marcbrockschmidt.de>)
+	id 1JnUzP-00035g-SM
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 10:33:35 +0200
+From: Marc 'HE' Brockschmidt <marc@marcbrockschmidt.de>
+To: submit@bugs.debian.org
+Date: Sun, 20 Apr 2008 10:33:35 +0200
+Message-ID: <87od85gc2o.fsf@pindar.marcbrockschmidt.de>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 08:39:07 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343367
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -38.6
+X-Spam-Report: (-38.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	14 AWL                    AWL: From: address is in the auto white-list
+
+Package: xulrunner
+Version: 1.9~b5-2
+Severity: serious
+Tags: experimental
+
+Heya,
+
+Building xulrunner on my experimental buildds failed on i386 and ia64.
+
+| Automatic build of xulrunner_1.9~b5-2 on alkman by sbuild/ia64 98-farm
+| Build started at 20080419-2330
+| ******************************************************************************
+
+[...]
+
+| dh_makeshlibs -plibxpcomglue0d -V 'libxpcomglue0d (>= 1.9~b5-2)' -- -c4
+| dpkg-gensymbols: warning: some new symbols appeared in the symbols file: see diff output below
+| dpkg-gensymbols: warning: some symbols disappeared in the symbols file: see diff output below
+| dpkg-gensymbols: warning: debian/libxpcomglue0d/DEBIAN/symbols doesn't match completely debian/libxpcomglue0d.symbols
+| --- dpkg-gensymbolsvJwHRQ	2008-04-20 00:53:52.000000000 +0000
+| +++ dpkg-gensymbolsB7iz3F	2008-04-20 00:53:52.000000000 +0000
+| @@ -145,7 +145,7 @@
+|   _ZN11nsINIParser4InitEPKc@Base 1.9~b4
+|   _ZN11nsINIParser9GetStringEPKcS1_Pcj@Base 1.9~b4
+|   _ZN11nsINIParser9GetStringEPKcS1_R10nsACString@Base 1.9~b4
+| - _ZN11nsINIParserD1Ev@Base 1.9~b4
+| +#MISSING: 1.9~b5-2# _ZN11nsINIParserD1Ev@Base 1.9~b4
+|   _ZN11nsVoidArray11GrowArrayByEi@Base 1.9~b4
+|   _ZN11nsVoidArray11MoveElementEii@Base 1.9~b4
+|   _ZN11nsVoidArray13RemoveElementEPv@Base 1.9~b4
+| @@ -182,6 +182,7 @@
+|   _ZN13nsCOMPtr_base18assign_from_gs_cidE17nsGetServiceByCIDRK4nsID@Base 1.9~b4
+|   _ZN13nsCOMPtr_base18assign_from_helperERK15nsCOMPtr_helperRK4nsID@Base 1.9~b4
+|   _ZN13nsCOMPtr_base18assign_with_AddRefEP11nsISupports@Base 1.9~b4
+| + _ZN13nsCOMPtr_base22assign_assuming_AddRefEP11nsISupports@Base 1.9~b5-2
+|   _ZN13nsCOMPtr_base25assign_from_gs_contractidE24nsGetServiceByContractIDRK4nsID@Base 1.9~b4
+|   _ZN13nsCOMPtr_base25assign_from_qi_with_errorERK25nsQueryInterfaceWithErrorRK4nsID@Base 1.9~b4
+|   _ZN13nsCOMPtr_base29assign_from_gs_cid_with_errorERK26nsGetServiceByCIDWithErrorRK4nsID@Base 1.9~b4
+| @@ -232,11 +233,12 @@
+|   _ZN14nsCStringArrayD1Ev@Base 1.9~b4
+|   _ZN14nsCStringArrayD2Ev@Base 1.9~b4
+|   _ZN14nsCStringArrayaSERKS_@Base 1.9~b4
+| + _ZN15nsAutoVoidArray17ResetToAutoBufferEv@Base 1.9~b5-2
+|   _ZN15nsAutoVoidArrayC1Ev@Base 1.9~b4
+|   _ZN15nsAutoVoidArrayC2Ev@Base 1.9~b4
+|   _ZN15nsBaseHashtableI16nsCStringHashKey18nsCString_externalS1_E3PutERK10nsACStringS1_@Base 1.9~b5-2~
+|   _ZN15nsBaseHashtableI16nsDepCharHashKey9nsAutoPtrIN11nsINIParser8INIValueEEPS3_E14s_EnumReadStubEP12PLDHashTableP15PLDHashEntryHdrjPv@Base 1.9~b5-2~
+| - _ZN15nsBaseHashtableI16nsDepCharHashKey9nsAutoPtrIN11nsINIParser8INIValueEEPS3_E3PutEPKcS5_@Base 1.9~b5-2~
+| +#MISSING: 1.9~b5-2# _ZN15nsBaseHashtableI16nsDepCharHashKey9nsAutoPtrIN11nsINIParser8INIValueEEPS3_E3PutEPKcS5_@Base 1.9~b5-2~
+|   _ZN15nsCOMArray_base12RemoveObjectEP11nsISupports@Base 1.9~b4
+|   _ZN15nsCOMArray_base14InsertObjectAtEP11nsISupportsi@Base 1.9~b4
+|   _ZN15nsCOMArray_base14RemoveObjectAtEi@Base 1.9~b4
+| @@ -279,19 +281,19 @@
+|   _ZN16nsSmallVoidArrayD1Ev@Base 1.9~b4
+|   _ZN16nsSmallVoidArrayD2Ev@Base 1.9~b4
+|   _ZN16nsSmallVoidArrayaSERS_@Base 1.9~b4
+| - _ZN17nsBaseHashtableETI16nsCStringHashKey18nsCString_externalEC1EPK10nsACString@Base 1.9~b5-2~
+| - _ZN17nsBaseHashtableETI16nsCStringHashKey18nsCString_externalED1Ev@Base 1.9~b5-2~
+| +#MISSING: 1.9~b5-2# _ZN17nsBaseHashtableETI16nsCStringHashKey18nsCString_externalEC1EPK10nsACString@Base 1.9~b5-2~
+| +#MISSING: 1.9~b5-2# _ZN17nsBaseHashtableETI16nsCStringHashKey18nsCString_externalED1Ev@Base 1.9~b5-2~
+|   _ZN17nsLowerUpperUtils12kLower2UpperE@Base 1.9~b4
+|   _ZN17nsLowerUpperUtils12kUpper2LowerE@Base 1.9~b4
+| - _ZN17nsString_externalC1ERK9nsAString@Base 1.9~b5-2~
+| - _ZN17nsString_externalC1ERKS_@Base 1.9~b5-2~
+| +#MISSING: 1.9~b5-2# _ZN17nsString_externalC1ERK9nsAString@Base 1.9~b5-2~
+| +#MISSING: 1.9~b5-2# _ZN17nsString_externalC1ERKS_@Base 1.9~b5-2~
+|   _ZN17nsUnionEnumeratorC1EP19nsISimpleEnumeratorS1_@Base 1.9~b5-2~
+|   _ZN17nsUnionEnumeratorC2EP19nsISimpleEnumeratorS1_@Base 1.9~b5-2~
+|   _ZN17nsUnionEnumeratorD1Ev@Base 1.9~b5-2~
+|   _ZN17nsUnionEnumeratorD2Ev@Base 1.9~b5-2~
+| - _ZN18nsCString_external5AdoptEPKcj@Base 1.9~b5-2~
+| - _ZN18nsCString_externalC1EPKcj@Base 1.9~b5-2~
+| - _ZN18nsCString_externalC1ERK10nsACString@Base 1.9~b5-2~
+| +#MISSING: 1.9~b5-2# _ZN18nsCString_external5AdoptEPKcj@Base 1.9~b5-2~
+| +#MISSING: 1.9~b5-2# _ZN18nsCString_externalC1EPKcj@Base 1.9~b5-2~
+| +#MISSING: 1.9~b5-2# _ZN18nsCString_externalC1ERK10nsACString@Base 1.9~b5-2~
+|   _ZN18nsCString_externalC1ERKS_@Base 1.9~b5-2~
+|   _ZN18nsCategoryObserver12ListenerDiedEv@Base 1.9~b4
+|   _ZN18nsCategoryObserverC1EPKcP18nsCategoryListener@Base 1.9~b4
+| @@ -311,6 +313,7 @@
+|   _ZN21nsTObserverArray_base15AdjustIteratorsEji@Base 1.9~b4
+|   _ZN23nsSupportsWeakReference16GetWeakReferenceEPP16nsIWeakReference@Base 1.9~b4
+|   _ZN23nsSupportsWeakReference19ClearWeakReferencesEv@Base 1.9~b4
+| + _ZN24nsCGetterCopies_externalD1Ev@Base 1.9~b5-2
+|   _ZN29nsDependentSubstring_externalC1ERK9nsAStringj@Base 1.9~b4
+|   _ZN29nsDependentSubstring_externalC1ERK9nsAStringjj@Base 1.9~b4
+|   _ZN29nsDependentSubstring_externalC2ERK9nsAStringj@Base 1.9~b4
+| @@ -319,8 +322,8 @@
+|   _ZN30nsDependentCSubstring_externalC1ERK10nsACStringjj@Base 1.9~b4
+|   _ZN30nsDependentCSubstring_externalC2ERK10nsACStringj@Base 1.9~b4
+|   _ZN30nsDependentCSubstring_externalC2ERK10nsACStringjj@Base 1.9~b4
+| - _ZN31NS_ConvertASCIItoUTF16_externalC1EPKcj@Base 1.9~b5-2~
+| - _ZN31NS_ConvertASCIItoUTF16_externalC1ERK10nsACString@Base 1.9~b5-2~
+| +#MISSING: 1.9~b5-2# _ZN31NS_ConvertASCIItoUTF16_externalC1EPKcj@Base 1.9~b5-2~
+| +#MISSING: 1.9~b5-2# _ZN31NS_ConvertASCIItoUTF16_externalC1ERK10nsACString@Base 1.9~b5-2~
+|   _ZN33nsXPCOMCycleCollectionParticipant12UnmarkPurpleEP11nsISupports@Base 1.9~b4
+|   _ZN33nsXPCOMCycleCollectionParticipant22CheckForRightISupportsEP11nsISupports@Base 1.9~b4
+|   _ZN33nsXPCOMCycleCollectionParticipant22RootAndUnlinkJSObjectsEPv@Base 1.9~b4
+| @@ -354,11 +357,12 @@
+|   _ZN9nsAString13AssignLiteralEPKc@Base 1.9~b5-2~
+|   _ZN9nsAString17DefaultComparatorEPKtS1_j@Base 1.9~b5-2~
+|   _ZN9nsAString4TrimEPKcii@Base 1.9~b5-2~
+| - _ZN9nsAString7ReplaceEjjRKS_@Base 1.9~b5-2~
+| +#MISSING: 1.9~b5-2# _ZN9nsAString7ReplaceEjjRKS_@Base 1.9~b5-2~
+|   _ZN9nsAString9AppendIntEii@Base 1.9~b5-2~
+|   _ZN9nsAString9SetLengthEj@Base 1.9~b5-2~
+| - _ZN9nsAutoPtrIN11nsINIParser8INIValueEE6assignEPS1_@Base 1.9~b5-2~
+| +#MISSING: 1.9~b5-2# _ZN9nsAutoPtrIN11nsINIParser8INIValueEE6assignEPS1_@Base 1.9~b5-2~
+|   _ZN9nsAutoPtrIN11nsINIParser8INIValueEED1Ev@Base 1.9~b5-2~
+| + _ZN9nsAutoPtrIN11nsINIParser8INIValueEEaSEPS1_@Base 1.9~b5-2
+|   _ZNK10nsACString10EndReadingEv@Base 1.9~b5-2~
+|   _ZNK10nsACString12BeginReadingEPPKcS2_@Base 1.9~b5-2~
+|   _ZNK10nsACString12BeginReadingEv@Base 1.9~b5-2~
+| @@ -379,8 +383,8 @@
+|   _ZNK14nsCStringArray9CStringAtEi@Base 1.9~b4
+|   _ZNK14nsCStringArray9CStringAtEiR10nsACString@Base 1.9~b4
+|   _ZNK14nsGetInterfaceclERK4nsIDPPv@Base 1.9~b4
+| - _ZNK15nsBaseHashtableI16nsCStringHashKey18nsCString_externalS1_E3GetERK10nsACStringPS1_@Base 1.9~b5-2~
+| - _ZNK15nsBaseHashtableI16nsDepCharHashKey9nsAutoPtrIN11nsINIParser8INIValueEEPS3_E13EnumerateReadEPF15PLDHashOperatorPKcS5_PvESA_@Base 1.9~b5-2~
+| +#MISSING: 1.9~b5-2# _ZNK15nsBaseHashtableI16nsCStringHashKey18nsCString_externalS1_E3GetERK10nsACStringPS1_@Base 1.9~b5-2~
+| +#MISSING: 1.9~b5-2# _ZNK15nsBaseHashtableI16nsDepCharHashKey9nsAutoPtrIN11nsINIParser8INIValueEEPS3_E13EnumerateReadEPF15PLDHashOperatorPKcS5_PvESA_@Base 1.9~b5-2~
+|   _ZNK15nsCOMArray_base13IndexOfObjectEP11nsISupports@Base 1.9~b4
+|   _ZNK15nsDequeIterator7ForEachER14nsDequeFunctor@Base 1.9~b4
+|   _ZNK15nsDequeIterator9FirstThatER14nsDequeFunctor@Base 1.9~b4
+| @@ -389,7 +393,7 @@
+|   _ZNK16nsQueryInterfaceclERK4nsIDPPv@Base 1.9~b4
+|   _ZNK16nsSmallVoidArray12GetArraySizeEv@Base 1.9~b4
+|   _ZNK16nsSmallVoidArray13FastElementAtEi@Base 1.9~b4
+| - _ZNK16nsSmallVoidArray13SafeElementAtEi@Base 1.9~b4
+| +#MISSING: 1.9~b5-2# _ZNK16nsSmallVoidArray13SafeElementAtEi@Base 1.9~b4
+|   _ZNK16nsSmallVoidArray5CountEv@Base 1.9~b4
+|   _ZNK16nsSmallVoidArray7IndexOfEPv@Base 1.9~b4
+|   _ZNK17nsGetServiceByCIDclERK4nsIDPPv@Base 1.9~b4
+| dh_makeshlibs: command returned error code 256
+| make: *** [binary-arch] Error 1
+| dpkg-buildpackage: failure: /usr/bin/fakeroot debian/rules binary-arch gave error exit status 2
+| ******************************************************************************
+| Build finished at 20080420-0053
+| FAILED [dpkg-buildpackage died]
+| Build needed 01:20:14, 2386860k disk space
+
+A complete build log can be found at
+http://experimental.debian.net/build.php?arch=ia64&pkg=xulrunner&ver=1.9~b5-2
+
+For i386, the problem looks like this:
+| --- dpkg-gensymbolskAFWWn	2008-04-20 00:49:52.000000000 +0000
+| +++ dpkg-gensymbolstd4hhb	2008-04-20 00:49:52.000000000 +0000
+| @@ -301,7 +301,8 @@
+|   _ZN19EmptyEnumeratorImpl9kInstanceE@Base 1.9~b5-2~
+|   _ZN20nsCOMArrayEnumeratorD1Ev@Base 1.9~b5-2~
+|   _ZN20nsCOMArrayEnumeratorD2Ev@Base 1.9~b5-2~
+| - _ZN20nsCOMArrayEnumeratornwEmRK15nsCOMArray_base@Base 1.9~b5-2~
+| + _ZN20nsCOMArrayEnumeratornwEjRK15nsCOMArray_base@Base 1.9~b5-2
+| +#MISSING: 1.9~b5-2# _ZN20nsCOMArrayEnumeratornwEmRK15nsCOMArray_base@Base 1.9~b5-2~
+|   _ZN20nsScriptObjectTracer21TraverseScriptObjectsEPvR34nsCycleCollectionTraversalCallback@Base 1.9~b4
+|   _ZN21nsSingletonEnumeratorC1EP11nsISupports@Base 1.9~b5-2~
+|   _ZN21nsSingletonEnumeratorC2EP11nsISupports@Base 1.9~b5-2~
+| @@ -345,7 +346,8 @@
+|   _ZN7nsDequeD2Ev@Base 1.9~b4
+|   _ZN8nsMemory12HeapMinimizeEi@Base 1.9~b4
+|   _ZN8nsMemory22GetGlobalMemoryServiceEv@Base 1.9~b4
+| - _ZN8nsMemory5CloneEPKvm@Base 1.9~b4
+| + _ZN8nsMemory5CloneEPKvj@Base 1.9~b5-2
+| +#MISSING: 1.9~b5-2# _ZN8nsMemory5CloneEPKvm@Base 1.9~b4
+|   _ZN9nsAString10EndWritingEv@Base 1.9~b5-2~
+|   _ZN9nsAString10StripCharsEPKc@Base 1.9~b5-2~
+|   _ZN9nsAString12BeginWritingEPPtS1_j@Base 1.9~b5-2~
+| dh_makeshlibs: command returned error code 256
+
+A complete build log can be found at
+http://experimental.debian.net/build.php?arch=i386&pkg=xulrunner&ver=1.9~b5-2
+
+Marc
+-- 
+BOFH #448:
+vi needs to be upgraded to vii
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,138 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 14:14:56 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnZNb-000774-89
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 14:14:56 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id F340613A4F07; Sun, 20 Apr 2008 13:14:49 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=unavailable version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 43E2413A4FD3;
+	Sun, 20 Apr 2008 13:14:35 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnZKv-0002eT-N0; Sun, 20 Apr 2008 13:12:05 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#311188: Apt repository interoperability (was: Bug#311188: Debian edu messed up my Ubuntu system.)
+Reply-To: "Herman Robak" <herman@skolelinux.no>, 311188@bugs.debian.org
+Resent-From: "Herman Robak" <herman@skolelinux.no>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian Edu Developers <debian-edu@lists.debian.org>
+Resent-Date: Sun, 20 Apr 2008 13:12:04 +0000
+Resent-Message-ID: <handler.311188.B311188.120869699815552@bugs.debian.org>
+X-Debian-PR-Message: report 311188
+X-Debian-PR-Package: debian-edu-config
+X-Debian-PR-Keywords: sarge-ignore
+X-Debian-PR-Source: debian-edu-config
+Received: via spool by 311188-submit@bugs.debian.org id=B311188.120869699815552
+          (code B ref 311188); Sun, 20 Apr 2008 13:12:04 +0000
+Received: (at 311188) by bugs.debian.org; 20 Apr 2008 13:09:58 +0000
+X-Amavis-Spam-Status: No, score=-7.0 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from init.linpro.no ([80.232.38.252])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <herman@skolelinux.no>)
+	id 1JnZIs-0003xv-18
+	for 311188@bugs.debian.org; Sun, 20 Apr 2008 13:09:58 +0000
+Received: from [158.36.191.139] (helo=localhost)
+	(Authenticated Sender=herman@skolelinux.no)
+	by init.linpro.no with esmtpa (Exim 4.50 #1 (Debian))
+	id 1JnZIi-0002FA-6x; Sun, 20 Apr 2008 15:09:51 +0200
+Date: Sun, 20 Apr 2008 15:09:38 +0200
+To: 311188@bugs.debian.org
+From: "Herman Robak" <herman@skolelinux.no>
+Cc: "Debian Edu Developers" <debian-edu@lists.debian.org>, ubuntu-devel@lists.ubuntu.com
+Content-Type: text/plain; format=flowed; delsp=yes; charset=iso-8859-15
+MIME-Version: 1.0
+References: <e742d1340804191341j1bd89bd9lfe631ae53429c37@mail.gmail.com> <alpine.DEB.1.10.0804201002010.23154@wr-linux02>
+Content-Transfer-Encoding: 7bit
+Message-ID: <op.t9wuucth5056ey@localhost>
+In-Reply-To: <alpine.DEB.1.10.0804201002010.23154@wr-linux02>
+User-Agent: Opera Mail/9.24 (Linux)
+X-DSPAM-Signature: !DSPAM:480b3e3e74922066052538!
+X-DSPAM-Probability: -2.0000
+X-DSPAM-Confidence: 0.9997
+Resent-Date: Sun, 20 Apr 2008 13:12:05 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343488
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.6
+X-Spam-Report: (-52.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+(ubuntu-devel cc-ed)
+
+On Sun, 20 Apr 2008 10:05:24 +0200, Andreas Tille <tillea@rki.de> wrote:
+
+> If you mix up different distributions you can not expect things are
+> working flawlessly.  The only advise we could give is to use plain Debian
+> if you expect Debian packages working flawlessly.  We do not feel  
+> responsible
+> if our packages do not work in Ubuntu as you expect them to work.
+
+  Andreas, you are completely right.  However, this story is being told
+again and again and again.  Why?  Because it violates assumptions that
+many, many users make.  Especially those new to Linux.
+
+  For a user of "Linux for human beings" (Ubuntu) the principle of least
+surprise is violated when an action that is likely to break Ubuntu can
+happen without a warning.  A big fat warning would suffice, if the
+purpose is to wash hands, saying "we told you so!".  But washing hands,
+either automatically (warning dialog) or manually (Andreas' reply here)
+isn't quite what we should aim for in the long run.
+
+  Repositories that look alike on the surface may or may not play nice
+with each other.  They may be binary incompatible.  Their maintainers
+may not endorse (i.e. support) other repositories that are intended to
+be binary compatible, either.  Users who add third party repositories
+are left to figure out this for themselves.  It's as if adding an apt
+repository is an expert operation; User Beware!
+
+  Apt is an awesome package manager framework.  It has a lot of power!
+But it is a powertool with few safety features aimed at Joe Average.
+I don't think we want to advertise loudly the lack of such safety
+features.  But unless we do, I think it is the duty of Debian and its
+derivatives to improve the safety nets.
+
+  Before anyone suggests more onerous warning dialogs telling the users
+that they are on their own (more washing of hands) I would like to
+propose "upstream" as a metadata item for apt.  debian-multimedia.org
+would have a debian.org apt source as it's upstream, for example.
+Basically, apt sources could declare binary interoperability with
+other apt sources.  Any thoughts?
+
+-- 
+Herman Robak
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

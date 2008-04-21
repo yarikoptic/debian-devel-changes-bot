@@ -1,0 +1,126 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 17:55:44 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JncpH-0008NT-A1
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 17:55:43 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 657DC13A4EE9; Sun, 20 Apr 2008 16:55:38 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.9 required=4.0 tests=BAYES_00,FOURLA,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 327B013A4EE3;
+	Sun, 20 Apr 2008 16:55:19 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jncl4-0002hj-W6; Sun, 20 Apr 2008 16:51:19 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#477049: didiwiki: debian/copyright - Upstream URL no longer exists
+Reply-To: Jari Aalto <jari.aalto@cante.net>, 477049@bugs.debian.org
+Resent-From: Jari Aalto <jari.aalto@cante.net>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Hanna Wallach <hmw26@cam.ac.uk>
+Resent-Date: Sun, 20 Apr 2008 16:51:15 +0000
+Resent-Message-ID: <handler.477049.B.120870997111780@bugs.debian.org>
+X-Debian-PR-Message: report 477049
+X-Debian-PR-Package: didiwiki
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: didiwiki
+Received: via spool by submit@bugs.debian.org id=B.120870997111780
+          (code B ref -1); Sun, 20 Apr 2008 16:51:15 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 16:46:11 +0000
+X-Amavis-Spam-Status: No, score=-12.8 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,HAS_PACKAGE,X_DEBBUGS_NO_ACK autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from emh03.mail.saunalahti.fi ([62.142.5.109])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <jari.aalto@cante.net>)
+	id 1Jncg6-0002zP-Sj
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 16:46:11 +0000
+Received: from saunalahti-vams (vs3-10.mail.saunalahti.fi [62.142.5.94])
+	by emh03-2.mail.saunalahti.fi (Postfix) with SMTP id 414A8ECBF9
+	for <submit@bugs.debian.org>; Sun, 20 Apr 2008 19:46:09 +0300 (EEST)
+Received: from emh03.mail.saunalahti.fi ([62.142.5.109])
+	by vs3-10.mail.saunalahti.fi ([62.142.5.94])
+	with SMTP (gateway) id A001A2343B7; Sun, 20 Apr 2008 19:46:09 +0300
+Received: from cante.cante.net (a91-155-187-119.elisa-laajakaista.fi [91.155.187.119])
+	by emh03.mail.saunalahti.fi (Postfix) with ESMTP id 346BA158A8C
+	for <submit@bugs.debian.org>; Sun, 20 Apr 2008 19:46:07 +0300 (EEST)
+Received: from root by cante.cante.net with local (Exim 4.69)
+	(envelope-from <jari.aalto@cante.net>)
+	id 1Jncg2-0000uZ-RZ; Sun, 20 Apr 2008 19:46:06 +0300
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: Jari Aalto <jari.aalto@cante.net>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Message-ID: <20080420164606.3462.61086.reportbug@mail.cante.net>
+X-Mailer: reportbug 3.39-0.1
+Date: Sun, 20 Apr 2008 19:46:06 +0300
+X-SA-Exim-Connect-IP: <locally generated>
+X-SA-Exim-Mail-From: jari.aalto@cante.net
+X-SA-Exim-Scanned: No (on cante.cante.net); SAEximRunCond expanded to false
+X-Antivirus: VAMS
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 16:51:18 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343655
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -34.4
+X-Spam-Report: (-34.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	18 AWL                    AWL: From: address is in the auto white-list
+
+Package: didiwiki
+Version: 0.5-5.1
+Severity: minor
+
+
+Please update debian/copyright to read:
+
+       It was downloaded from http://didiwiki.org/
++      which YYYY-MM-DD no longer hosts upstream sources.
+
+The domain owned by somebody else than didiwiki maintainer.
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (500, 'unstable')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.22-2-686 (SMP w/1 CPU core)
+Locale: LANG=en_DK.UTF-8, LC_CTYPE=en_DK.UTF-8 (charmap=ISO-8859-1) (ignored: LC_ALL set to en_US.iso88591)
+Shell: /bin/sh linked to /bin/dash
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

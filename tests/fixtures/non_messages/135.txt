@@ -1,0 +1,134 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 17:09:57 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnc6y-0008CQ-Rk
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 17:09:57 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 6D04513A4FBC; Sun, 20 Apr 2008 16:09:51 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.4 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW,SARE_MSGID_LONG40 autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 8C28513A47C3;
+	Sun, 20 Apr 2008 16:09:36 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnc6B-0001Yv-B3; Sun, 20 Apr 2008 16:09:03 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#468699: Bug#468698: fix for bashisms
+Reply-To: "Chris AtLee" <chris@atlee.ca>, 468699@bugs.debian.org
+Resent-From: "Chris AtLee" <chris@atlee.ca>
+Original-Sender: chris.atlee@gmail.com
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: roberto@connexer.com (Roberto C. Sanchez)
+Resent-Date: Sun, 20 Apr 2008 16:09:02 +0000
+Resent-Message-ID: <handler.468699.B468699.120870759725585@bugs.debian.org>
+X-Debian-PR-Message: report 468699
+X-Debian-PR-Package: shorewall-common
+X-Debian-PR-Keywords: upstream
+X-Debian-PR-Source: shorewall-common
+Received: via spool by 468699-submit@bugs.debian.org id=B468699.120870759725585
+          (code B ref 468699); Sun, 20 Apr 2008 16:09:02 +0000
+Received: (at 468699) by bugs.debian.org; 20 Apr 2008 16:06:37 +0000
+X-Amavis-Spam-Status: No, score=-7.0 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from wx-out-0506.google.com ([66.249.82.230])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <chris.atlee@gmail.com>)
+	id 1Jnc3p-0006d4-9B
+	for 468699@bugs.debian.org; Sun, 20 Apr 2008 16:06:37 +0000
+Received: by wx-out-0506.google.com with SMTP id h31so1139623wxd.11
+        for <468699@bugs.debian.org>; Sun, 20 Apr 2008 09:06:36 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:message-id:date:from:sender:to:subject:in-reply-to:mime-version:content-type:content-transfer-encoding:content-disposition:references:x-google-sender-auth;
+        bh=cK70ICWWwUwYZ3VdzcXV3N7fEpNHBiyHG6bpgEGPq5E=;
+        b=uz4TVeZyMNXtKiCkMQf8vvQV2GCy67wrIMaSXVSZNRu/Fzb4XuNZRBRr8U26cOY4mh//QMYzNPIEiI6HZYpF3ia7AEBVbOx4yBeuLVma6oT9A7AsqSfVvIjiq8wPLym3sFSeYY1Hzaesj/Fvc8paxfSCz9zbXcwGhgO+3s39mcE=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=message-id:date:from:sender:to:subject:in-reply-to:mime-version:content-type:content-transfer-encoding:content-disposition:references:x-google-sender-auth;
+        b=qb/eZ5kzGKrBLEzr0fNZeXwRVMuH8cmCbCeFuZRTg25ylKJswRAmtfqgclPHsfyVRxVN+CXcScju8BE6e0QTSgldmCNjjfCBWI6/mHg2vHeVC4H4AY4hvIwfTu8Hl9duQBjAeRj/Yt89bH7yOnEuEN6sSK30fvdBjPaBkfJFVaM=
+Received: by 10.142.70.13 with SMTP id s13mr1368946wfa.162.1208707595910;
+        Sun, 20 Apr 2008 09:06:35 -0700 (PDT)
+Received: by 10.142.104.5 with HTTP; Sun, 20 Apr 2008 09:06:35 -0700 (PDT)
+Message-ID: <7790b6530804200906i1eb7bd43r191a0a321d8dbabd@mail.gmail.com>
+Date: Sun, 20 Apr 2008 12:06:35 -0400
+From: "Chris AtLee" <chris@atlee.ca>
+Sender: chris.atlee@gmail.com
+To: 468698@bugs.debian.org, 468699@bugs.debian.org
+In-Reply-To: <20080420031703.GA28281@connexer.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+Content-Disposition: inline
+References: <7790b6530804181229m598100eaq608661f2e67beaa8@mail.gmail.com>
+	 <20080420031703.GA28281@connexer.com>
+X-Google-Sender-Auth: e8fdb810b80d79fa
+Resent-Date: Sun, 20 Apr 2008 16:09:03 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343630
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.6
+X-Spam-Report: (-52.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+Hi Roberto,
+
+On Sat, Apr 19, 2008 at 11:17 PM, Roberto C. S=E1nchez
+<roberto@connexer.com> wrote:
+> On Fri, Apr 18, 2008 at 03:29:17PM -0400, Chris AtLee wrote:
+>  > Hello,
+>  >
+>  > I believe I've fixed the relevant bashisms for this package.  The new
+>  > packages can be found here:
+>  > http://atlee.ca/software/shorewall/
+>  >
+>  You built shorewall-common as a Debian native package and the .tar.gz
+>  file returns a 403 error when I try to access it.
+
+Sorry about that, I've fixed the permissions.
+
+>  In any event, I looked at the shorewall-lite package you prepared.  This
+>  particular matter is one that is being dealt with upstream.  The 4.0
+>  branch of shorewall is a stable release.  The diff to fix every
+>  occurrence of bashisms is 2743 lines.  That is a huge diff for something
+>  that is a stable release.  In the next upload of the packages, I intend
+>  to simply replace /bin/sh with /bin/dash and then depend upon dash.
+>
+>  Regards,
+>
+>  -Roberto
+
+Will replacing /bin/sh with /bin/dash really fix the problems though?
+I suppose it will cause shorewall to break if a non-portable bashism
+is used.  How would this interact with SHOREWALL_SHELL in
+shorewall.conf?
+
+Cheers,
+Chris
+
+
+

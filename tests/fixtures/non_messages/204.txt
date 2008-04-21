@@ -1,0 +1,125 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 18:51:24 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jndgc-0000BY-LG
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 18:51:21 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 9AAC913A4889; Sun, 20 Apr 2008 17:50:40 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: **
+X-Spam-Status: No, score=2.5 required=4.0 tests=BAYES_00,BLOGSPOT,BLOGSPOTURI,
+	RCVD_IN_DNSWL_LOW autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 65C8713A50FF;
+	Sun, 20 Apr 2008 17:50:07 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JndeM-0004GL-BY; Sun, 20 Apr 2008 17:48:26 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476951: aptitude: must run apt-listbugs before downloading packages
+Reply-To: Luca Bruno <lethalman88@gmail.com>, 476951@bugs.debian.org
+Resent-From: Luca Bruno <lethalman88@gmail.com>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Junichi Uekawa <dancer@debian.org>, APT Development Team <deity@lists.debian.org>
+Resent-Date: Sun, 20 Apr 2008 17:48:25 +0000
+Resent-Message-ID: <handler.476951.B476951.12087132022729@bugs.debian.org>
+X-Debian-PR-Message: report 476951
+X-Debian-PR-Package: apt-listbugs,apt
+X-Debian-PR-Keywords: 
+Received: via spool by 476951-submit@bugs.debian.org id=B476951.12087132022729
+          (code B ref 476951); Sun, 20 Apr 2008 17:48:25 +0000
+Received: (at 476951) by bugs.debian.org; 20 Apr 2008 17:40:02 +0000
+X-Amavis-Spam-Status: No, score=0.2 required=4.0 tests=BAYES_00,BLOGSPOT,BLOGSPOTURI,
+	DATE_IN_FUTURE_06_12,HAS_BUG_NUMBER autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from ug-out-1314.google.com ([66.249.92.175])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <lethalman88@gmail.com>)
+	id 1JndWD-0000ST-Si
+	for 476951@bugs.debian.org; Sun, 20 Apr 2008 17:40:02 +0000
+Received: by ug-out-1314.google.com with SMTP id o4so581310uge.23
+        for <476951@bugs.debian.org>; Sun, 20 Apr 2008 10:39:50 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=domainkey-signature:received:received:date:from:to:cc:subject:message-id:in-reply-to:references:x-mailer:mime-version:content-type:content-transfer-encoding;
+        bh=1296hwtGYtNvNPXKNRilT18QqfgRxDZZAo1EaDrQDKU=;
+        b=MSfF1DM29mk1fzGOAFlD531jn75ShfDtdcpoDkC4twJwhu2Gvv7uitqmotLBE5miyBT/zKzmUu2qX1L7loBV5wryscws/1d9f8cHRqGWZH5bhKmUocAferFCn1efuP9ThZl8TXZ+W0ogcGpRvqvhYWTcbhpnbpvxkc/RNWO/M6Y=
+DomainKey-Signature: a=rsa-sha1; c=nofws;
+        d=gmail.com; s=gamma;
+        h=date:from:to:cc:subject:message-id:in-reply-to:references:x-mailer:mime-version:content-type:content-transfer-encoding;
+        b=xjUSkWgFXXt7Y1QbOPhbIgkjz/dbDRrWUrnWO8XY6DptmaMpaJLdoYcGob2ho1SKx8XbEfTTDW6TRSRJw+1N2JsYJBH/q6ZwU8H+bXZrCw80iqwyLq3ZvcI0AzwM0w4MAvJVLWannQ2yCeshxmJG+CMoHZsflppxU+/SOtZHAew=
+Received: by 10.67.115.17 with SMTP id s17mr4106779ugm.56.1208713188766;
+        Sun, 20 Apr 2008 10:39:48 -0700 (PDT)
+Received: from debian ( [84.223.201.100])
+        by mx.google.com with ESMTPS id i39sm5479987ugd.32.2008.04.20.10.39.45
+        (version=SSLv3 cipher=OTHER);
+        Sun, 20 Apr 2008 10:39:47 -0700 (PDT)
+Date: Sun, 20 Apr 2008 19:40:10 -0500
+From: Luca Bruno <lethalman88@gmail.com>
+To: Daniel Burrows <dburrows@debian.org>
+Cc: 476951@bugs.debian.org
+Message-ID: <20080420194010.4c9caf01@debian>
+In-Reply-To: <20080420150157.GA7649@alpaca>
+References: <20080420175146.29988.56557.reportbug@debian>
+	<20080420150157.GA7649@alpaca>
+X-Mailer: Claws Mail 3.3.1 (GTK+ 2.12.9; x86_64-pc-linux-gnu)
+Mime-Version: 1.0
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: 7bit
+Resent-Date: Sun, 20 Apr 2008 17:48:26 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343687
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.6
+X-Spam-Report: (-52.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+On Sun, 20 Apr 2008 08:01:57 -0700
+Daniel Burrows <dburrows@debian.org> wrote:
+>   apt-listbugs is invoked because it's listed in Dpkg::Pre-Install-Pkgs.
+> This is the hook for commands that are invoked just before dpkg is
+> called to install the new packages.  aptitude doesn't even invoke this
+> directly; it happens behind the scenes when the apt library is told to
+> run dpkg.
+> 
+>   In order to get the effect you want, you would need a new hook that
+> ran before any download started, and aptitude would have to explicitly
+> ask to invoke it (as would all the other apt frontends).
+
+It seems that this might lead to complex changes.
+Do you think this is the only right thing to do?
+
+-- 
+http://syx.googlecode.com - Smalltalk YX
+http://lethalman.blogspot.com - Thoughts about computer technologies
+http://www.ammazzatecitutti.org - Ammazzateci tutti
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

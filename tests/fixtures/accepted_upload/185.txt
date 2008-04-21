@@ -1,0 +1,135 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 12:32:52 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnXmq-0006hO-0c
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 12:32:52 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id C977613A4F45; Sun, 20 Apr 2008 11:32:46 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id 73A6413A47D5
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 11:32:46 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnXm9-0003Dz-HB; Sun, 20 Apr 2008 11:32:05 +0000
+From: Sylvestre Ledru <sylvestre.ledru@inria.fr>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted libfwbuilder 2.1.18-1 (source i386)
+Message-Id: <E1JnXm9-0003Dz-HB@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 11:32:05 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <PhIpsOo4f9K.A.q4E.enyCIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301290
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 11:32:46 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.6
+X-Spam-Report: (-2.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.0 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Wed, 16 Apr 2008 13:50:39 +0200
+Source: libfwbuilder
+Binary: libfwbuilder-dev libfwbuilder7
+Architecture: source i386
+Version: 2.1.18-1
+Distribution: unstable
+Urgency: low
+Maintainer: Sylvestre Ledru <sylvestre.ledru@inria.fr>
+Changed-By: Sylvestre Ledru <sylvestre.ledru@inria.fr>
+Description:=20
+ libfwbuilder-dev - Firewall Builder API library development files
+ libfwbuilder7 - Firewall Builder API library
+Changes:=20
+ libfwbuilder (2.1.18-1) unstable; urgency=3Dlow
+ .
+   * New upstream version
+   * Lintian warning removed
+Checksums-Sha1:=20
+ 3170b0afa0328fed0da356da5e89450939989bed 1325 libfwbuilder_2.1.18-1.dsc
+ 6b66366d513bf783a1d04dfc2fb760bc1aefc516 318269 libfwbuilder_2.1.18.orig=
+.tar.gz
+ 465024513c337162fdc7add280177587b71f28b7 5085 libfwbuilder_2.1.18-1.diff=
+.gz
+ 417f4bb7c729638e15d2d7b4649ff5283bc9b64e 108068 libfwbuilder-dev_2.1.18-=
+1_i386.deb
+ 67daee58fd476421164f625f5b71470d97e03fb0 547760 libfwbuilder7_2.1.18-1_i=
+386.deb
+Checksums-Sha256:=20
+ a9503d59c4172fd93ff5aace7fba9e3fc072dddbc2ea59f898e9343038ae5891 1325 li=
+bfwbuilder_2.1.18-1.dsc
+ b987255828505fb64f1a6487a790299e94642d60e7f509f9db1e803a258ea8b0 318269 =
+libfwbuilder_2.1.18.orig.tar.gz
+ 25f9cd0ab47cd0073bb292c4a509b597f40746d6847f86e6eaac0606c120f9c8 5085 li=
+bfwbuilder_2.1.18-1.diff.gz
+ 803224547d016a0c68f54e3b7e06980cbf5ae488a06de49db668c3e8844b8b9a 108068 =
+libfwbuilder-dev_2.1.18-1_i386.deb
+ 267c8c1668177a83abe94914064ffd24290da9b5dd871e5e759a6a4e2a8d59eb 547760 =
+libfwbuilder7_2.1.18-1_i386.deb
+Files:=20
+ 5d55291a08c8020aade313cdbd3fb 1325 libs optional libfwbuilder_2.1.18-=
+1.dsc
+ 9641028c46a58f0369ad6bf4cc4bbf19 318269 libs optional libfwbuilder_2.1.1=
+8.orig.tar.gz
+ 560e76b24d7c4e114675128afb47f9fe 5085 libs optional libfwbuilder_2.1.18-=
+1.diff.gz
+ a39310318586c3bec58a88857ae2ab02 108068 libdevel optional libfwbuilder-d=
+ev_2.1.18-1_i386.deb
+ f43e1a233f3cb7a983cdca39292ff031 547760 libs optional libfwbuilder7_2.1.=
+18-1_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICybjfY3dicTPjsMRAp+JAKCO7w4IRmioQHo0vtAMNX6V0ciL8ACeOMTd
+w52ACmg3JiniY1BsV9E/QAE=3D
+=3D5Vq+
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+libfwbuilder-dev_2.1.18-1_i386.deb
+  to pool/main/libf/libfwbuilder/libfwbuilder-dev_2.1.18-1_i386.deb
+libfwbuilder7_2.1.18-1_i386.deb
+  to pool/main/libf/libfwbuilder/libfwbuilder7_2.1.18-1_i386.deb
+libfwbuilder_2.1.18-1.diff.gz
+  to pool/main/libf/libfwbuilder/libfwbuilder_2.1.18-1.diff.gz
+libfwbuilder_2.1.18-1.dsc
+  to pool/main/libf/libfwbuilder/libfwbuilder_2.1.18-1.dsc
+libfwbuilder_2.1.18.orig.tar.gz
+  to pool/main/libf/libfwbuilder/libfwbuilder_2.1.18.orig.tar.gz
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

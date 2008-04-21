@@ -1,0 +1,118 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 16:02:17 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnb3W-0007cp-8T
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 16:02:17 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id B6CB113A502E; Sun, 20 Apr 2008 15:02:12 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id 602BA13A4EAA
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 15:02:12 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1Jnb3L-0006PO-TZ; Sun, 20 Apr 2008 15:02:03 +0000
+From: Thomas Viehmann <tv@beamnet.de>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted pyg 0.9.6-4.2 (source amd64)
+Message-Id: <E1Jnb3L-0006PO-TZ@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 15:02:03 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <F_SJuqbFC0C.A.97F.0r1CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301309
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 15:02:12 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.6
+X-Spam-Report: (-2.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.0 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 16:49:23 +0200
+Source: pyg
+Binary: pyg
+Architecture: source amd64
+Version: 0.9.6-4.2
+Distribution: unstable
+Urgency: high
+Maintainer: Cosimo Alfarano <kalfa@debian.org>
+Changed-By: Thomas Viehmann <tv@beamnet.de>
+Description:=20
+ pyg        - Python Mail <-> News Gateway
+Closes: 476160
+Changes:=20
+ pyg (0.9.6-4.2) unstable; urgency=3Dhigh
+ .
+   * Non-maintainer upload.
+   * Add BLDSHARED to Makefile.pre.in for python2.5 compatibility.
+     Closes: #476160
+   * Add shlibs:Depends in debian/control.
+Checksums-Sha1:=20
+ 0684c230c116b5adf784bb29a0c6d306431163e9 744 pyg_0.9.6-4.2.dsc
+ 0216fa6d1b3995be3ec7c60b50320ac0c67e6214 34252 pyg_0.9.6-4.2.tar.gz
+ a4d08741534cfff2c01b9bf26fa06c7cdd57f84c 30050 pyg_0.9.6-4.2_amd64.deb
+Checksums-Sha256:=20
+ 42a7460f492afc182a8265299438d171615ca5e4954c9eca0201327f504cf9ed 744 pyg=
+_0.9.6-4.2.dsc
+ 3b2c585d50812dfd7f7e337967e0ffdd533162b1288cc31afab816621226ae0c 34252 p=
+yg_0.9.6-4.2.tar.gz
+ ffcd363788bcbfa60dd1bf8f9f37d6dddffada09bb57b790295c3b4a574312c5 30050 p=
+yg_0.9.6-4.2_amd64.deb
+Files:=20
+ 7a1cc86e9a611ee9ec9254c3b6cdeaec 744 news optional pyg_0.9.6-4.2.dsc
+ f56b176863b1607d721c8961b1e9e7a8 34252 news optional pyg_0.9.6-4.2.tar.g=
+z
+ eb0b52e06a913f730e835d7dc7d1c73e 30050 news optional pyg_0.9.6-4.2_amd64=
+.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC1owriZpaaIa1PkRAqE2AKCP4vxuMJSXxgGd9yu+8wOsaxnaLQCgpJqr
+t/8Ixe6Uv4N2HFQgtyFQ2/E=3D
+=3D9ein
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+pyg_0.9.6-4.2.dsc
+  to pool/main/p/pyg/pyg_0.9.6-4.2.dsc
+pyg_0.9.6-4.2.tar.gz
+  to pool/main/p/pyg/pyg_0.9.6-4.2.tar.gz
+pyg_0.9.6-4.2_amd64.deb
+  to pool/main/p/pyg/pyg_0.9.6-4.2_amd64.deb
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

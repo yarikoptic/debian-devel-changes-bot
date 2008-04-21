@@ -1,0 +1,120 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 20:01:44 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnenE-0000Z0-Pm
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 20:01:44 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 4DB0913A510B; Sun, 20 Apr 2008 19:01:39 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id EF33D13A50D7
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 19:01:38 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JneKm-0002K2-AG; Sun, 20 Apr 2008 18:32:16 +0000
+From: Frans Pop <fjp@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted iso-scan 1.25 (source all)
+Message-Id: <E1JneKm-0002K2-AG@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 18:32:16 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <UGE1i2V3B6J.A.qPF.TM5CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301334
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 19:01:39 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.6
+X-Spam-Report: (-2.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.0 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.7
+Date: Sun, 20 Apr 2008 20:16:44 +0200
+Source: iso-scan
+Binary: iso-scan load-iso
+Architecture: source all
+Version: 1.25
+Distribution: unstable
+Urgency: low
+Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
+Changed-By: Frans Pop <fjp@debian.org>
+Description:=20
+ iso-scan   - Scan hard drives for an installer ISO image (udeb)
+ load-iso   - Load installer components from an installer ISO (udeb)
+Closes: 472595
+Changes:=20
+ iso-scan (1.25) unstable; urgency=3Dlow
+ .
+   * Scan partitions before scanning the whole disk to avoid blocking par=
+tition
+     changes in partman. Thanks to Sam Powers for tracking the issue down=
+ and
+     providing the patch. Closes: #472595.
+ .
+   [ Updated translations ]
+   * Amharic (am.po) by tegegne tefera
+   * Marathi (mr.po)
+   * Panjabi (pa.po) by Amanpreet Singh Alam
+Files:=20
+ 81da54c5c04677d0734b660b61d9a442 665 debian-installer optional iso-scan_=
+1.25.dsc
+ 61a6c132fd0eb42dd3ca436c01223258 67092 debian-installer optional iso-sca=
+n_1.25.tar.gz
+ 60d2531815787074b71d794c6d71399d 42490 debian-installer optional iso-sca=
+n_1.25_all.udeb
+ f80f94c12ffa0bcaeebd6656b7393553 3536 debian-installer extra load-iso_1.=
+25_all.udeb
+Package-Type: udeb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC4iugm/Kwh6ICoQRAm5PAKDW3qT7JtKFLzLEsjP1PxciQ/37WwCgsQhi
+4n9FIRiZBn8KPF4hNqa+uF8=3D
+=3DciS1
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+iso-scan_1.25.dsc
+  to pool/main/i/iso-scan/iso-scan_1.25.dsc
+iso-scan_1.25.tar.gz
+  to pool/main/i/iso-scan/iso-scan_1.25.tar.gz
+iso-scan_1.25_all.udeb
+  to pool/main/i/iso-scan/iso-scan_1.25_all.udeb
+load-iso_1.25_all.udeb
+  to pool/main/i/iso-scan/load-iso_1.25_all.udeb
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

@@ -1,0 +1,109 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 15:45:51 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnana-0007Xt-Mp
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 15:45:51 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id B2B2F13A4FD4; Sun, 20 Apr 2008 14:45:45 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-3.0 required=4.0 tests=BAYES_00,RCVD_IN_DNSWL_LOW
+	autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 3D6DB13A5036;
+	Sun, 20 Apr 2008 14:45:29 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnamu-0004u6-Vv; Sun, 20 Apr 2008 14:45:05 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#461924: Using drivers from linuxwireless.org works for me in Lenny.
+Reply-To: Peter Lewis <prlewis@letterboxes.org>, 461924@bugs.debian.org
+Resent-From: Peter Lewis <prlewis@letterboxes.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian Kernel Team <debian-kernel@lists.debian.org>
+Resent-Date: Sun, 20 Apr 2008 14:45:04 +0000
+Resent-Message-ID: <handler.461924.B461924.120870254815194@bugs.debian.org>
+X-Debian-PR-Message: report 461924
+X-Debian-PR-Package: firmware-iwlwifi
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: firmware-nonfree
+Received: via spool by 461924-submit@bugs.debian.org id=B461924.120870254815194
+          (code B ref 461924); Sun, 20 Apr 2008 14:45:04 +0000
+Received: (at 461924) by bugs.debian.org; 20 Apr 2008 14:42:28 +0000
+X-Amavis-Spam-Status: No, score=-3.9 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from sun60.bham.ac.uk ([147.188.128.137])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <prlewis@letterboxes.org>)
+	id 1JnakO-0003wg-0Z
+	for 461924@bugs.debian.org; Sun, 20 Apr 2008 14:42:28 +0000
+Received: from [147.188.128.127] (helo=bham.ac.uk)
+	by sun60.bham.ac.uk with esmtp (Exim 4.67)
+	(envelope-from <prlewis@letterboxes.org>)
+	id 1JnakM-0004sX-O8
+	for 461924@bugs.debian.org; Sun, 20 Apr 2008 15:42:26 +0100
+Received: from sun19.bham.ac.uk ([147.188.128.18])
+	by bham.ac.uk with esmtp (Exim 4.43)
+	id 1JnakM-00054x-EE
+	for 461924@bugs.debian.org; Sun, 20 Apr 2008 15:42:26 +0100
+Received: from 82-46-173-121.cable.ubr01.king.blueyonder.co.uk ([82.46.173.121] helo=nutkin.local)
+	by sun19.bham.ac.uk with asmtp (TLSv1:AES256-SHA:256)
+	(Exim 4.30)
+	id 1JnakM-0002Nv-7w
+	for 461924@bugs.debian.org; Sun, 20 Apr 2008 15:42:26 +0100
+From: Peter Lewis <prlewis@letterboxes.org>
+To: 461924@bugs.debian.org
+Date: Sun, 20 Apr 2008 15:41:47 +0100
+User-Agent: KMail/1.9.9
+MIME-Version: 1.0
+Content-Type: text/plain;
+  charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+Message-Id: <200804201541.47800.prlewis@letterboxes.org>
+Resent-Date: Sun, 20 Apr 2008 14:45:04 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343533
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -52.5
+X-Spam-Report: (-52.5 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+
+Just thought I'd report that I had this problem using a fresh install of Lenny 
+on a Samsung Q35 laptop with an intel 3945 wireless NIC.
+
+Installing the latest drivers from linuxwireless.org fixed the problem for me 
+using the standard Lenny kernel.
+
+Pete.
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

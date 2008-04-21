@@ -1,0 +1,307 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 08:05:23 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnTby-0005f1-Bc
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 08:05:22 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 958DC13A4E77; Sun, 20 Apr 2008 07:05:16 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id E240013A4DF9;
+	Sun, 20 Apr 2008 07:05:13 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnTZo-00027Y-5x; Sun, 20 Apr 2008 07:03:04 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: KURASHIKI Satoru <lurdan@gmail.com>
+Subject: Bug#474880: marked as done (yaskkserv: FTBFS: !!! Fatal : G++ is 
+ too old. You need version 3.3 or newer.)
+Message-ID: <handler.474880.D474880.12086748996252.ackdone@bugs.debian.org>
+References: <E1JnTKI-0000yE-Mb@ries.debian.org>
+ <20080407205504.GA20825@xanadu.blop.info>
+X-Debian-PR-Message: closed 474880
+X-Debian-PR-Package: yaskkserv
+X-Debian-PR-Source: yaskkserv
+Content-Type: multipart/mixed; boundary="----------=_1208674984-8121-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 07:03:04 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <sp25wJaBWbO.A.-eF.ssuCIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/132903
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 07:05:16 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.2
+X-Spam-Report: (-2.2 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.3 PLING_PLING            Subject has lots of exclamation marks
+	0.0 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208674984-8121-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 06:47:02 +0000
+with message-id <E1JnTKI-0000yE-Mb@ries.debian.org>
+and subject line Bug#474880: fixed in yaskkserv 0.3.8-5
+has caused the Debian Bug report #474880,
+regarding yaskkserv: FTBFS: !!! Fatal : G++ is too old. You need version 3.=
+3 or newer.
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+474880: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D474880
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208674984-8121-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 7 Apr 2008 20:56:47 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.7 required=4.0 tests=BAYES_00,HAS_PACKAGE,
+	PLING_PLING autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <lucas@lucas-nussbaum.net>
+Received: from xanadu.blop.info ([80.248.208.235])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <lucas@lucas-nussbaum.net>)
+	id 1JiyOV-0002pF-8R
+	for submit@bugs.debian.org; Mon, 07 Apr 2008 20:56:47 +0000
+Received: from localhost ([127.0.0.1] helo=xanadu.blop.info)
+	by xanadu.blop.info with smtp (Exim 4.63)
+	(envelope-from <lucas@lucas-nussbaum.net>)
+	id 1JiyOU-0000x5-CI
+	for submit@bugs.debian.org; Mon, 07 Apr 2008 22:56:46 +0200
+Received: (nullmailer pid 20846 invoked by uid 1000);
+	Mon, 07 Apr 2008 20:55:04 -0000
+Date: Mon, 7 Apr 2008 22:55:04 +0200
+From: Lucas Nussbaum <lucas@lucas-nussbaum.net>
+To: submit@bugs.debian.org
+Subject: yaskkserv: FTBFS: !!! Fatal : G++ is too old. You need version 3.3
+	or newer.
+Message-ID: <20080407205504.GA20825@xanadu.blop.info>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Delivered-To: submit@bugs.debian.org
+
+Package: yaskkserv
+Version: 0.3.8-3
+Severity: serious
+User: debian-qa@lists.debian.org
+Usertags: qa-ftbfs-20080407 qa-ftbfs
+Justification: FTBFS on i386
+
+Hi,
+
+During a rebuild of all packages in sid, your package failed to build on i386.
+
+This rebuild was done with gcc 4.3 instead of gcc 4.2, because gcc 4.3 is now
+the default on most architectures (even if it's not the case on i386 yet).
+Feel free to downgrade this bug to 'important' if your package is only built
+on i386, and this bug is specific to gcc 4.3 (i.e the package builds fine with
+gcc 4.2).
+
+Relevant part:
+>  /usr/bin/fakeroot debian/rules clean
+> dh_testdir
+> # Add here commands to configure the package.
+> ./configure --prefix=/build/user/yaskkserv-0.3.8/debian/yaskkserv/usr CFLAGS="" LDFLAGS="-Wl,-z,defs"
+> GNU Make (make)
+> Use of uninitialized value in numeric ge (>=) at ./configure line 30.
+> !!! Fatal : G++ is too old. You need version 3.3 or newer.
+> Died at ./configure line 313.
+> make: *** [Makefile.config] Error 9
+
+The full build log is available from:
+   http://people.debian.org/~lucas/logs/2008/04/07
+
+A list of current common problems and possible solutions is available at 
+http://wiki.debian.org/qa.debian.org/FTBFS . You're welcome to contribute!
+
+About the archive rebuild: The rebuild was done on about 50 AMD64 nodes
+of the Grid'5000 platform, using a clean chroot containing a sid i386
+environment.  Internet was not accessible from the build systems.
+
+-- 
+| Lucas Nussbaum
+| lucas@lucas-nussbaum.net   http://www.lucas-nussbaum.net/ |
+| jabber: lucas@nussbaum.fr             GPG: 1024D/023B3F4F |
+
+
+
+------------=_1208674984-8121-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 474880-close) by bugs.debian.org; 20 Apr 2008 07:01:39 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-6.6 required=4.0 tests=BAYES_00,FOURLA,
+	FVGT_m_MULTI_ODD,GMAIL,HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_2,
+	MURPHY_WRONG_WORD1,MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnTYR-0001ch-Gm
+	for 474880-close@bugs.debian.org; Sun, 20 Apr 2008 07:01:39 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnTKI-0000yE-Mb; Sun, 20 Apr 2008 06:47:02 +0000
+From: KURASHIKI Satoru <lurdan@gmail.com>
+To: 474880-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#474880: fixed in yaskkserv 0.3.8-5
+Message-Id: <E1JnTKI-0000yE-Mb@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 06:47:02 +0000
+X-CrossAssassin-Score: 4
+Content-Transfer-Encoding: quoted-printable
+
+Source: yaskkserv
+Source-Version: 0.3.8-5
+
+We believe that the bug you reported is fixed in the latest version of
+yaskkserv, which is due to be installed in the Debian FTP archive:
+
+yaskkserv_0.3.8-5.diff.gz
+  to pool/main/y/yaskkserv/yaskkserv_0.3.8-5.diff.gz
+yaskkserv_0.3.8-5.dsc
+  to pool/main/y/yaskkserv/yaskkserv_0.3.8-5.dsc
+yaskkserv_0.3.8-5_i386.deb
+  to pool/main/y/yaskkserv/yaskkserv_0.3.8-5_i386.deb
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 474880@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+KURASHIKI Satoru <lurdan@gmail.com> (supplier of updated yaskkserv packag=
+e)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 12:01:00 +0900
+Source: yaskkserv
+Binary: yaskkserv
+Architecture: source i386
+Version: 0.3.8-5
+Distribution: unstable
+Urgency: low
+Maintainer: KURASHIKI Satoru <lurdan@gmail.com>
+Changed-By: KURASHIKI Satoru <lurdan@gmail.com>
+Description:=20
+ yaskkserv  - small and fast SKK dictionary server intended for embedded =
+use
+Closes: 474880 475686 475687 475815 476776 476778
+Changes:=20
+ yaskkserv (0.3.8-5) unstable; urgency=3Dlow
+ .
+   * complete LSB header for the init.d script. (Closes: #476776)
+   * remove incorrect Build-Depends. (Closes: #476778)
+   * fixup lintian warnings: (Closes: #475686)
+     - debian/changelog: shorten line length of 0.3.8-4.
+     - debian/preinst: remove.
+   * configure:
+     - replace LANG with LC_ALL, and change default from en_US
+       to C. (Closes: #475687)
+     - remove g++ version checking, leaving it to dpkg.
+       (Closes: #474880, #475815)
+   * source/unit_test_benchmark/unit_test_benchmark.cpp:
+     - remove storage specifier. (for porting to gcc-4.3).
+Checksums-Sha1:=20
+ 2f3f21b0e872ccd4ee6c67db98437484bc6f19bf 1051 yaskkserv_0.3.8-5.dsc
+ 1050ccf7659cbc213a46cbb64f4a4d9effc111f9 10787 yaskkserv_0.3.8-5.diff.gz
+ 1832247ff02ea2f505026e2c301a5d11dfbf7f20 65154 yaskkserv_0.3.8-5_i386.de=
+b
+Checksums-Sha256:=20
+ c12bca63ca5da3812e48b03b798f753983eaa4cb973bc8e5de098f13e60ba2de 1051 ya=
+skkserv_0.3.8-5.dsc
+ 04d914437e4bd15e2da8fc8b52085cae22c30c282a9ed48c6fd5790e8c724ff1 10787 y=
+askkserv_0.3.8-5.diff.gz
+ 897d88c00354b37c91592dfdaf646668d0a958245d244949e358e7add25a8d8a 65154 y=
+askkserv_0.3.8-5_i386.deb
+Files:=20
+ 00dd63ee432124694266920d52213cbb 1051 utils extra yaskkserv_0.3.8-5.dsc
+ 5349c1cc1b669c3c8fc87e51317cef50 10787 utils extra yaskkserv_0.3.8-5.dif=
+f.gz
+ 54f85e9db20f298e268052fdfce18181 65154 utils extra yaskkserv_0.3.8-5_i38=
+6.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICuN8gV4LPvpMUpgRAhSuAKCHbzhgAoZRM0ukFtGixhWnnGom3gCZAcdl
+Th2zgqt++vuzAefk/IkOIek=3D
+=3DCcpn
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208674984-8121-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

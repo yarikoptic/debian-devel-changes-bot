@@ -1,0 +1,115 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 14:22:19 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnZUj-00079j-U5
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 14:22:19 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 9510E13A4FD0; Sun, 20 Apr 2008 13:22:12 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 229EA13A4FFF;
+	Sun, 20 Apr 2008 13:21:54 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnZQi-0005Bu-M8; Sun, 20 Apr 2008 13:18:04 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476969: syntax error in lsb_release
+Reply-To: Matthias Klose <doko@cs.tu-berlin.de>, 476969@bugs.debian.org
+Resent-From: Matthias Klose <doko@cs.tu-berlin.de>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Chris Lawrence <lawrencc@debian.org>
+Resent-Date: Sun, 20 Apr 2008 13:18:02 +0000
+Resent-Message-ID: <handler.476969.B.120869744618620@bugs.debian.org>
+X-Debian-PR-Message: report 476969
+X-Debian-PR-Package: lsb-release
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: lsb
+Received: via spool by submit@bugs.debian.org id=B.120869744618620
+          (code B ref -1); Sun, 20 Apr 2008 13:18:02 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 13:17:26 +0000
+X-Amavis-Spam-Status: No, score=-9.0 required=4.0 tests=BAYES_00,HAS_PACKAGE,
+	UNPARSEABLE_RELAY autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from mail.cs.tu-berlin.de ([130.149.17.13])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <doko@cs.tu-berlin.de>)
+	id 1JnZQ6-0004pF-KX
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 13:17:26 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by localhost-12225.cs.tu-berlin.de (Postfix) with ESMTP id 4CCD8D699
+	for <submit@bugs.debian.org>; Sun, 20 Apr 2008 15:17:22 +0200 (MEST)
+Received: from mailhost.cs.tu-berlin.de ([127.0.0.1])
+	by localhost (mail.cs.tu-berlin.de [127.0.0.1]) (amavisd-new, port 12224)
+	with ESMTP id H8yQQPUh5Qej 24589-03 for <submit@bugs.debian.org>;
+	Sun, 20 Apr 2008 15:17:21 +0200 (MEST) 16359
+Received: from bolero.cs.tu-berlin.de (bolero.cs.tu-berlin.de [130.149.19.1])
+	(using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by mailhost.cs.tu-berlin.de (Postfix) with ESMTP
+	for <submit@bugs.debian.org>; Sun, 20 Apr 2008 15:17:21 +0200 (MEST)
+Received: (from doko@localhost)
+	by bolero.cs.tu-berlin.de (8.13.8+Sun/8.13.3/Submit) id m3KDHLuk027120;
+	Sun, 20 Apr 2008 15:17:21 +0200 (MEST)
+From: Matthias Klose <doko@cs.tu-berlin.de>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Message-ID: <18443.16992.965343.581342@gargle.gargle.HOWL>
+Date: Sun, 20 Apr 2008 15:17:20 +0200
+To: submit@bugs.debian.org
+X-Mailer: VM 7.17 under 21.4 (patch 21) "Educational Television" XEmacs Lucid
+X-Virus-Scanned: amavisd-new at cs.tu-berlin.de (including SpamAssassin)
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 13:18:04 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343492
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -35.3
+X-Spam-Report: (-35.3 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	17 AWL                    AWL: From: address is in the auto white-list
+
+Package: lsb-release
+Version: 3.2-9
+Severity: grave
+
+$ lsb_release -is
+  File "/usr/bin/lsb_release", line 190
+    elif release.endswith('/sid')
+                                ^
+SyntaxError: invalid syntax
+
+':' missing ...
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

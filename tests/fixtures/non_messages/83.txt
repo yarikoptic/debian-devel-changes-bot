@@ -1,0 +1,108 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 17:56:34 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jncq5-0008O5-8t
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 17:56:33 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 7D1E713A4F45; Sun, 20 Apr 2008 16:56:27 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 110DA13A4AF5;
+	Sun, 20 Apr 2008 16:56:08 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnco2-0004zT-Fs; Sun, 20 Apr 2008 16:54:22 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476784: boinc-manager: boincmgr -s doesn't work
+Reply-To: Bill Wohler <wohler@newt.com>, 476784@bugs.debian.org
+Resent-From: Bill Wohler <wohler@newt.com>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian BOINC Maintainers <pkg-boinc-devel@lists.alioth.debian.org>
+Resent-Date: Sun, 20 Apr 2008 16:54:19 +0000
+Resent-Message-ID: <handler.476784.B476784.120871003019333@bugs.debian.org>
+X-Debian-PR-Message: report 476784
+X-Debian-PR-Package: boinc-manager
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: boinc
+Received: via spool by 476784-submit@bugs.debian.org id=B476784.120871003019333
+          (code B ref 476784); Sun, 20 Apr 2008 16:54:19 +0000
+Received: (at 476784) by bugs.debian.org; 20 Apr 2008 16:47:10 +0000
+X-Amavis-Spam-Status: No, score=-6.9 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	HAS_BUG_NUMBER autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from tassie.newt.com ([70.85.162.231])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <wohler@newt.com>)
+	id 1Jnch4-00051Z-Cs
+	for 476784@bugs.debian.org; Sun, 20 Apr 2008 16:47:10 +0000
+Received: from olgas.localdomain (h-64-105-136-152.snvacaid.dynamic.covad.net [64.105.136.152])
+	by tassie.newt.com (Postfix) with ESMTP id 1BA561D0242;
+	Sun, 20 Apr 2008 09:47:09 -0700 (PDT)
+Received: by olgas.localdomain (Postfix, from userid 1000)
+	id 254811FE75; Sun, 20 Apr 2008 09:47:08 -0700 (PDT)
+Received: from olgas.newt.com (localhost [127.0.0.1])
+	by olgas.localdomain (Postfix) with ESMTP id 150631FE63;
+	Sun, 20 Apr 2008 09:47:09 -0700 (PDT)
+To: "Frank S. Thomas" <fst@debian.org>
+cc: 476784@bugs.debian.org
+In-reply-to: <200804201644.37301.fst@debian.org>
+References: <9306.1208586356@olgas.newt.com> <200804201644.37301.fst@debian.org>
+Comments: In-reply-to "Frank S. Thomas" <fst@debian.org>
+   message dated "Sun, 20 Apr 2008 16:44:31 +0200."
+Organization: Newt Software
+X-Mailer: MH-E 8.0.3+cvs; nmh 1.2; GNU Emacs 22.1.1
+X-Image-URL: http://www.newt.com/wohler/images/bill-diving.png
+Date: Sun, 20 Apr 2008 09:47:08 -0700
+Message-ID: <28188.1208710028@olgas.newt.com>
+From: Bill Wohler <wohler@newt.com>
+Resent-Date: Sun, 20 Apr 2008 16:54:22 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343656
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -38.8
+X-Spam-Report: (-38.8 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	14 AWL                    AWL: From: address is in the auto white-list
+
+Frank S. Thomas <fst@debian.org> wrote:
+
+> forcemerge 464192 476784
+
+Not sure how I missed that! Sorry. I'll submit the screen shots under a
+different report.
+
+-- 
+Bill Wohler <wohler@newt.com>  http://www.newt.com/wohler/  GnuPG ID:610BD9AD
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

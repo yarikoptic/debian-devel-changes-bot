@@ -1,0 +1,106 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 15:00:58 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jna6A-0007Kz-IQ
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 15:00:58 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 2A10B13A500A; Sun, 20 Apr 2008 14:00:53 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-6.8 required=4.0 tests=BAYES_00,IMPRONONCABLE_1,
+	LDO_WHITELIST,MURPHY_WRONG_WORD2,RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 04A2B13A4FFE;
+	Sun, 20 Apr 2008 14:00:43 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jna5V-0005cJ-NR; Sun, 20 Apr 2008 14:00:13 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476483: libpcsclite1: should suggest pcsd, not recommend it
+Reply-To: 476483@bugs.debian.org, 476483@bugs.debian.org
+Resent-From: Ludovic Rousseau <ludovic.rousseau@free.fr>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Ludovic Rousseau <rousseau@debian.org>
+Resent-Date: Sun, 20 Apr 2008 14:00:12 +0000
+Resent-Message-ID: <handler.476483.B476483.12086998537698@bugs.debian.org>
+X-Debian-PR-Message: report 476483
+X-Debian-PR-Package: libpcsclite1
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: pcsc-lite
+Received: via spool by 476483-submit@bugs.debian.org id=B476483.12086998537698
+          (code B ref 476483); Sun, 20 Apr 2008 14:00:12 +0000
+Received: (at 476483) by bugs.debian.org; 20 Apr 2008 13:57:33 +0000
+X-Amavis-Spam-Status: No, score=-5.7 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	HAS_BUG_NUMBER,IMPRONONCABLE_1,MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from smtp5-g19.free.fr ([212.27.42.35])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <ludovic.rousseau@free.fr>)
+	id 1Jna2v-0001zJ-JI
+	for 476483@bugs.debian.org; Sun, 20 Apr 2008 13:57:33 +0000
+Received: from smtp5-g19.free.fr (localhost.localdomain [127.0.0.1])
+	by smtp5-g19.free.fr (Postfix) with ESMTP id EEBF43374DD;
+	Sun, 20 Apr 2008 12:18:48 +0200 (CEST)
+Received: from ordinateur-de-ludovic-rousseau.local (au113-1-82-235-203-188.fbx.proxad.net [82.235.203.188])
+	by smtp5-g19.free.fr (Postfix) with ESMTP id 3A7C037ED55;
+	Sun, 20 Apr 2008 11:18:51 +0200 (CEST)
+Message-ID: <480B0A7B.9090102@free.fr>
+Date: Sun, 20 Apr 2008 11:18:51 +0200
+From: Ludovic Rousseau <ludovic.rousseau@free.fr>
+User-Agent: Thunderbird 2.0.0.12 (Macintosh/20080213)
+MIME-Version: 1.0
+To: Sam Morris <sam@robots.org.uk>, 476483@bugs.debian.org
+References: <20080416232521.21402.57411.reportbug@xerces>
+In-Reply-To: <20080416232521.21402.57411.reportbug@xerces>
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: quoted-printable
+Resent-Date: Sun, 20 Apr 2008 14:00:13 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343512
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -30.3
+X-Spam-Report: (-30.3 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	22 AWL                    AWL: From: address is in the auto white-list
+
+Sam Morris a =E9crit :
+> I think that only a fraction of the systems with libpcsclite1 installed
+> will actually have a smart card reader. :)
+
+What are the problems to have pcscd installed on your system (except
+disk space)?
+
+In a future upstream version of pcsc-lite the pcscd process would only=20
+start when a smart card reader is connected. So not extra process would=20
+even be present in memory if you do not have a smart card reader.
+
+bye
+
+--=20
+  Dr. Ludovic Rousseau
+
+
+

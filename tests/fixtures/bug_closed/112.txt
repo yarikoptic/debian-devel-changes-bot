@@ -1,0 +1,323 @@
+From bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org Sun Apr 20 16:35:29 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org>)
+	id 1JnbZd-0007l3-9H
+	for ddc@ddc.chris-lamb.co.uk; Sun, 20 Apr 2008 16:35:29 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 4A19113A50C2; Sun, 20 Apr 2008 15:35:24 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id C272713A4FFE;
+	Sun, 20 Apr 2008 15:35:22 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnbXc-0007aM-RI; Sun, 20 Apr 2008 15:33:20 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: James Vega <jamessan@debian.org>
+Subject: Bug#471890: marked as done (vim-scripts: please include 
+ DetectIndent script on the package)
+Message-ID: <handler.471890.D471890.120870551925831.ackdone@bugs.debian.org>
+References: <E1JnbHw-0007Pt-5f@ries.debian.org>
+ <20080320215936.GA4256@softwarelivre.org>
+X-Debian-PR-Message: closed 471890
+X-Debian-PR-Package: vim-scripts
+X-Debian-PR-Source: vim-scripts
+Content-Type: multipart/mixed; boundary="----------=_1208705600-29115-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 15:33:20 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <R-uodyJ-oLI.A.jrE.8K2CIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/133018
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 15:35:24 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208705600-29115-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 15:17:08 +0000
+with message-id <E1JnbHw-0007Pt-5f@ries.debian.org>
+and subject line Bug#471890: fixed in vim-scripts 7.1.7
+has caused the Debian Bug report #471890,
+regarding vim-scripts: please include DetectIndent script on the package
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+471890: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D471890
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208705600-29115-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 20 Mar 2008 21:59:47 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.9 required=4.0 tests=BAYES_00,FOURLA,HAS_PACKAGE,
+	MURPHY_DRUGS_REL8 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <terceiro@softwarelivre.org>
+Received: from beethoven.softwarelivre.org ([200.198.173.178])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <terceiro@softwarelivre.org>)
+	id 1JcSna-0005YK-TR
+	for submit@bugs.debian.org; Thu, 20 Mar 2008 21:59:47 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by beethoven.softwarelivre.org (Postfix) with ESMTP id BE11B1690F;
+	Thu, 20 Mar 2008 18:59:39 -0300 (BRT)
+Received: from beethoven.softwarelivre.org ([127.0.0.1])
+	by localhost (beethoven [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id 02870-08; Thu, 20 Mar 2008 18:59:39 -0300 (BRT)
+Received: from localhost (unknown [189.13.106.210])
+	(using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+	(No client certificate requested)
+	by beethoven.softwarelivre.org (Postfix) with ESMTP id 300221690E;
+	Thu, 20 Mar 2008 18:59:38 -0300 (BRT)
+Date: Thu, 20 Mar 2008 18:59:36 -0300
+From: Antonio Terceiro <terceiro@softwarelivre.org>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Subject: vim-scripts: please include DetectIndent script on the package
+Message-ID: <20080320215936.GA4256@softwarelivre.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+X-Reportbug-Version: 3.39
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+X-Virus-Scanned: by amavisd-new-20030616-p10 (Debian) at softwarelivre.org
+Delivered-To: submit@bugs.debian.org
+
+Package: vim-scripts
+Version: 7.1.6
+Severity: wishlist
+
+The DetectIndent script is a very useful script that (as the name says)
+detects the indentation of the files you open and adjusts several
+parameters (tabstop, softtabstop, shiftwidth, expandtab etc)
+accordingly. This way you don't mess up with other people's indentation,
+hitting tab always means "one more indentation level", and hitting
+backspace with only blanks to the left of the cursor always means
+"remove one level of indentation".
+
+The script page is here:
+http://www.vim.org/scripts/script.php?script_id=1171
+
+If the maintainers think it is a good idea, I'll make the necessary
+patch to include the script in the package; just let me know.
+
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (500, 'unstable')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.24-1-686 (SMP w/1 CPU core)
+Locale: LANG=pt_BR.utf8, LC_CTYPE=pt_BR.utf8 (charmap=UTF-8)
+Shell: /bin/sh linked to /bin/bash
+
+vim-scripts depends on no packages.
+
+Versions of packages vim-scripts recommends:
+ii  vim-addon-manager            0.4         manager of addons for the Vim edit
+ii  vim-gtk [vim]                1:7.1-266+1 Vi IMproved - enhanced vi editor -
+ii  vim-ruby [gvim]              1:7.1-266+1 Vi IMproved - enhanced vi editor (
+
+-- no debconf information
+
+-- 
+Antonio Terceiro <terceiro@softwarelivre.org>
+http://people.softwarelivre.org/~terceiro/
+GnuPG ID: 0F9CB28F
+
+
+
+
+
+------------=_1208705600-29115-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 471890-close) by bugs.debian.org; 20 Apr 2008 15:31:59 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.7 required=4.0 tests=BAYES_00,FOURLA,
+	FROMDEVELOPER,FVGT_m_MULTI_ODD,HAS_BUG_NUMBER,HEADER_X_KATIE,
+	IMPRONONCABLE_2,MURPHY_DRUGS_REL8,MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnbWJ-0006hf-79
+	for 471890-close@bugs.debian.org; Sun, 20 Apr 2008 15:31:59 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnbHw-0007Pt-5f; Sun, 20 Apr 2008 15:17:08 +0000
+From: James Vega <jamessan@debian.org>
+To: 471890-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#471890: fixed in vim-scripts 7.1.7
+Message-Id: <E1JnbHw-0007Pt-5f@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 15:17:08 +0000
+Content-Transfer-Encoding: quoted-printable
+
+Source: vim-scripts
+Source-Version: 7.1.7
+
+We believe that the bug you reported is fixed in the latest version of
+vim-scripts, which is due to be installed in the Debian FTP archive:
+
+vim-scripts_7.1.7.dsc
+  to pool/main/v/vim-scripts/vim-scripts_7.1.7.dsc
+vim-scripts_7.1.7.tar.gz
+  to pool/main/v/vim-scripts/vim-scripts_7.1.7.tar.gz
+vim-scripts_7.1.7_all.deb
+  to pool/main/v/vim-scripts/vim-scripts_7.1.7_all.deb
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 471890@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+James Vega <jamessan@debian.org> (supplier of updated vim-scripts package=
+)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 10:55:00 -0400
+Source: vim-scripts
+Binary: vim-scripts
+Architecture: source all
+Version: 7.1.7
+Distribution: unstable
+Urgency: low
+Maintainer: jamessan@debian.org
+Changed-By: James Vega <jamessan@debian.org>
+Description:=20
+ vim-scripts - plugins for vim, adding bells and whistles
+Closes: 465330 471890 473744 474599
+Changes:=20
+ vim-scripts (7.1.7) unstable; urgency=3Dlow
+ .
+   * debian/control:
+     - Update Standards-Version to 3.7.3.0 (no changes needed).
+   * Updated addons:
+     - xmledit, surround, debPlugin, Markdown syntax, NERD Commenter, Enh=
+anced
+       Commentify, vcscommand, calendar.
+   * New addons:
+     - DetectIndent: Automatically detect indent settings. (Closes: #4718=
+90)
+     - snippetsEmu: Emulate TextMate's snippet expansion. (Closes: #47374=
+4)
+   * Added patches:
+     - patches/disabledby-xml.dpatch:
+       + Do not let loaded_xml_ftplugin since that will prevent the ftplu=
+gin
+         from being run in other buffers.  Thanks to Marvin Renich for th=
+e
+         patch.  (Closes: #465330)
+     - patches/lbdbq-inputlist.dpatch:
+       + Correct the use of inputlist() and its results so the user is ab=
+le to
+         press <Enter> to cancel, as advertised.  (Closes: #474599)
+   * Change doc-base section to Editors.
+Checksums-Sha1:=20
+ 2eab42ee85a9543ee6f61ab865526f4d729efb5d 1114 vim-scripts_7.1.7.dsc
+ 6d2eb30ad810035c5e2080abf0d6fb62ec57ef87 726208 vim-scripts_7.1.7.tar.gz
+ a1ccc5c46fc5236dbb16f780a4c15e340a9ae01d 736740 vim-scripts_7.1.7_all.de=
+b
+Checksums-Sha256:=20
+ b64213da8a91408fe417d32b8f2776ad65de06f2cc5f78f08517a13d24c2d299 1114 vi=
+m-scripts_7.1.7.dsc
+ 89892ee1a80830dfea687f7ce525973c0b2b5bb210274cfc0f8c3baa8320e6f2 726208 =
+vim-scripts_7.1.7.tar.gz
+ 1e726bc3eb0b400fe84c5dd383151087ef4b5bb2dcf78a1a4b94dc23d346bc18 736740 =
+vim-scripts_7.1.7_all.deb
+Files:=20
+ 218d285c428f66b96a51f05c4dfb9393 1114 editors optional vim-scripts_7.1.7=
+.dsc
+ 78f79c9926ed710e3c2806b6b4785035 726208 editors optional vim-scripts_7.1=
+.7.tar.gz
+ de2d068c5176beceff34fd26ab2b217b 736740 editors optional vim-scripts_7.1=
+.7_all.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iEYEARECAAYFAkgLXHoACgkQDb3UpmEybUD8IACeM8UVC2tl7OiY359Sf8BCLA3O
+sS0AoIZpuSWCzpEsK/vnBVZixwJ+0r5t
+=3DDOgV
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208705600-29115-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

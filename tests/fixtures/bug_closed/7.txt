@@ -1,0 +1,968 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 16:35:42 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnbZl-0007lI-Vb
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 16:35:42 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 9B70913A50A5; Sun, 20 Apr 2008 15:35:32 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id AD0A413A508B;
+	Sun, 20 Apr 2008 15:35:30 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnbXh-0007e5-RU; Sun, 20 Apr 2008 15:33:25 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Reinhard Tartler <siretart@tauware.de>
+Subject: Bug#476090: marked as done (boxbackup: [INTL:fr] French debconf 
+ templates translation update)
+Message-ID: <handler.476090.D476090.120870549524784.ackdone@bugs.debian.org>
+References: <E1JnbHs-0007OV-DS@ries.debian.org>
+ <20080414124252.24964.23908.reportbug@mykerinos.kheops.frmug.org>
+X-Debian-PR-Message: closed 476090
+X-Debian-PR-Package: boxbackup
+X-Debian-PR-Keywords: l10n patch
+X-Debian-PR-Source: boxbackup
+Content-Type: multipart/mixed; boundary="----------=_1208705605-29371-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 15:33:25 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <cIogCqi5kgK.A.tuE.EL2CIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/133019
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 15:35:32 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208705605-29371-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 15:17:04 +0000
+with message-id <E1JnbHs-0007OV-DS@ries.debian.org>
+and subject line Bug#476090: fixed in boxbackup 0.11~rc2-1
+has caused the Debian Bug report #476090,
+regarding boxbackup: [INTL:fr] French debconf templates translation update
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+476090: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D476090
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208705605-29371-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 14 Apr 2008 12:43:01 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-10.5 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,FROMDEVELOPER,FVGT_m_MULTI_ODD,HAS_PACKAGE,IMPRONONCABLE_1,
+	MURPHY_DRUGS_REL8,MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <bubulle@debian.org>
+Received: from coi78-1-88-169-112-155.fbx.proxad.net ([88.169.112.155] helo=kheops.perrier.eu.org)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <bubulle@debian.org>)
+	id 1JlO1U-0004uX-I1
+	for submit@bugs.debian.org; Mon, 14 Apr 2008 12:43:01 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by kheops.perrier.eu.org (Postfix) with ESMTP id A42D34F9B8;
+	Mon, 14 Apr 2008 14:42:54 +0200 (CEST)
+Received: from kheops.perrier.eu.org ([127.0.0.1])
+	by localhost (kheops.kheops.frmug.org [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id 3TPoPxA0Kf+G; Mon, 14 Apr 2008 14:42:54 +0200 (CEST)
+Received: from mykerinos.kheops.frmug.org (localhost [127.0.0.1])
+	by kheops.perrier.eu.org (Postfix) with ESMTP id 8D2EC4F95A;
+	Mon, 14 Apr 2008 14:42:53 +0200 (CEST)
+Received: by mykerinos.kheops.frmug.org (Postfix, from userid 1000)
+	id B443940ECEC; Mon, 14 Apr 2008 14:42:52 +0200 (CEST)
+Content-Type: multipart/mixed; boundary="===============0136359889=="
+MIME-Version: 1.0
+From: Christian Perrier <bubulle@debian.org>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Subject: boxbackup: [INTL:fr] French debconf templates translation update
+Message-ID: <20080414124252.24964.23908.reportbug@mykerinos.kheops.frmug.org>
+X-Mailer: reportbug 3.39-0.1
+Date: Mon, 14 Apr 2008 14:42:52 +0200
+X-Debbugs-Cc: 
+Delivered-To: submit@bugs.debian.org
+
+This is a multi-part MIME message sent by reportbug.
+
+
+--===============0136359889==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline
+
+Package: boxbackup
+Version: N/A
+Severity: wishlist
+Tags: patch l10n
+
+Please find attached the french debconf templates update, proofread by the
+debian-l10n-french mailing list contributors.
+
+If you do not already use it, you might consider using the
+"podebconf-report-po" utility, which helps warning translators about
+changes when you modify some debconf templates in your packages.
+
+The usual policy when using it is sending a warning to translators
+when you plan to upload a version of your package with debconf
+templates changes (even typo corrections). Then leave about one week
+for them to update their files (several translation teams have a QA
+process which requires time).
+
+podebconf-report-po will take care of sending the translators the
+needed material as well as getting the translators adresses from the
+PO files. All you have to do is just using the utility..:-)
+
+Example use (from your package build tree):
+
+$ podebconf-report-po
+
+This will go through debian/po/*.po files, find those needing an
+update, extract the translators data from these files and prepare a
+mail to send to these translators (you can also use the
+"--languageteam" switch to also mail the mail addresses listed in
+"Language-Team" field).
+
+You can also use this utility to request for new translations:
+
+$ podebconf-report-po --call
+
+This will send a mail to debian-i18n@lists.debian.org with all the
+needed information and material for new translators to add new
+languages to your supported languages.
+
+If you apply this policy, please forget about these remarks, of
+course....This message is generic..:-)
+
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (500, 'unstable')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.24-1-686 (SMP w/1 CPU core)
+Locale: LANG=fr_FR.UTF-8, LC_CTYPE=fr_FR.UTF-8 (charmap=UTF-8)
+Shell: /bin/sh linked to /bin/dash
+
+--===============0136359889==
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Content-Disposition: attachment; filename="fr.po"
+Content-Transfer-Encoding: quoted-printable
+
+# Copyright (C) 2007, Vincent Bernat <bernat@luffy.cx>
+# This file is distributed under the same license as the boxbackup packag=
+e.
+#
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: boxbackup_0.10-1\n"
+"Report-Msgid-Bugs-To: boxbackup@packages.debian.org\n"
+"POT-Creation-Date: 2008-04-13 11:39+0200\n"
+"PO-Revision-Date: 2007-06-26 07:42+0200\n"
+"Last-Translator: Vincent Bernat <bernat@luffy.cx>\n"
+"Language-Team: French <debian-l10n-french@lists.debian.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=3DUTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. Type: boolean
+#. Description
+#: ../boxbackup-client.templates:2001
+msgid "Should the BoxBackup client be configured automatically?"
+msgstr "Faut-il automatiquement configurer le client BoxBackup=C2=A0?"
+
+#. Type: boolean
+#. Description
+#: ../boxbackup-client.templates:2001
+msgid ""
+"The package configuration scripts can create the configuration files for=
+ the "
+"BoxBackup client."
+msgstr ""
+"Les scripts de configuration de ce paquet peuvent cr=C3=A9er les fichier=
+s de "
+"configuration pour le client BoxBackup."
+
+#. Type: boolean
+#. Description
+#: ../boxbackup-client.templates:2001
+msgid ""
+"You should choose this option if you are not familiar with BoxBackup's "
+"configuration options."
+msgstr ""
+"Vous devriez utiliser cette option si les options de configuration de "
+"BoxBackup ne vous sont pas famili=C3=A8res."
+
+#. Type: boolean
+#. Description
+#: ../boxbackup-client.templates:2001
+msgid ""
+"Please read the /usr/share/doc/boxbackup-client/README.Debian for detail=
+s "
+"about the configuration of the BoxBackup client."
+msgstr ""
+"Veuillez consulter le fichier /usr/share/doc/boxbackup-client/README.Deb=
+ian "
+"pour obtenir des d=C3=A9tails sur la configuration du client BoxBackup."
+
+#. Type: select
+#. Description
+#: ../boxbackup-client.templates:3001
+msgid "Run mode for the BoxBackup client:"
+msgstr "Mode d'ex=C3=A9cution pour le client BoxBackup=C2=A0:"
+
+#. Type: select
+#. Description
+#: ../boxbackup-client.templates:3001
+msgid "The BoxBackup client supports two modes of backup:"
+msgstr "Le client BoxBackup g=C3=A8re deux modes de sauvegarde=C2=A0:"
+
+#. Type: select
+#. Description
+#. Translators, please keep reference to 'lazy' and 'snapshot' as
+#. these options are written as is in the software documentation
+#: ../boxbackup-client.templates:3001
+msgid ""
+"In the 'lazy' mode, the backup daemon will regularly scan the file syste=
+m "
+"searching for modified files. It will then upload the files older than a=
+ "
+"specified age to the backup server."
+msgstr ""
+"Avec le mode simplifi=C3=A9 (=C2=AB=C2=A0lazy=C2=A0=C2=BB), le d=C3=A9mo=
+n de sauvegarde recherchera "
+"r=C3=A9guli=C3=A8rement les fichiers modifi=C3=A9s sur le syst=C3=A8me. =
+Il enverra les fichiers "
+"plus anciens qu'un =C3=A2ge donn=C3=A9 au serveur de sauvegarde."
+
+#. Type: select
+#. Description
+#: ../boxbackup-client.templates:3001
+msgid ""
+"In the 'snapshot' mode the backup will be explicitly run at regular "
+"intervals. A cron file (/etc/cron.d/boxbackup-client) is provided with t=
+he "
+"package and should be adapted to suit your needs."
+msgstr ""
+"Avec le mode instantan=C3=A9 (=C2=AB=C2=A0snapshot=C2=A0=C2=BB), la sauv=
+egarde sera lanc=C3=A9e "
+"explicitement =C3=A0 intervalles r=C3=A9guliers. Le fichier /etc/cron.d/=
+boxbackup-"
+"client pour le d=C3=A9mon cron est fourni avec le paquet et devra =C3=AA=
+tre adapt=C3=A9 =C3=A0 "
+"vos besoins."
+
+#. Type: string
+#. Description
+#: ../boxbackup-client.templates:4001
+msgid "Account number for this node on the backup server:"
+msgstr "Num=C3=A9ro de compte pour ce n=C5=93ud sur le serveur de sauvega=
+rde=C2=A0:"
+
+#. Type: string
+#. Description
+#: ../boxbackup-client.templates:4001
+msgid ""
+"The administrator of the BoxBackup server should have assigned this clie=
+nt a "
+"hexadecimal account number."
+msgstr ""
+"L'administrateur de BoxBackup doit assigner =C3=A0 ce client un num=C3=A9=
+ro de compte "
+"en hexad=C3=A9cimal."
+
+#. Type: string
+#. Description
+#: ../boxbackup-client.templates:4001
+msgid ""
+"If no account number has been assigned yet, leave this field blank and "
+"configure it later by running 'dpkg-reconfigure boxbackup-client' as roo=
+t."
+msgstr ""
+"Si aucun num=C3=A9ro de compte n'est encore assign=C3=A9, laissez ce cha=
+mp vide et "
+"remplissez le plus tard en lan=C3=A7ant la commande =C2=AB=C2=A0dpkg-rec=
+onfigure boxbackup-"
+"client=C2=A0=C2=BB en tant qu'utilisateur root."
+
+#. Type: error
+#. Description
+#: ../boxbackup-client.templates:5001
+msgid "Invalid account number"
+msgstr "Num=C3=A9ro de compte invalide"
+
+#. Type: error
+#. Description
+#: ../boxbackup-client.templates:5001
+msgid "The account number must be a hexadecimal number (such as 1F04 or 4=
+500)."
+msgstr ""
+"Le num=C3=A9ro de compte doit =C3=AAtre un nombre en hexad=C3=A9cimal (c=
+omme 1F04 ou 4500)."
+
+#. Type: string
+#. Description
+#: ../boxbackup-client.templates:6001
+msgid "Fully qualified domain name of the backup server:"
+msgstr "Nom d'h=C3=B4te complet (FQDN) du serveur de sauvegarde=C2=A0:"
+
+#. Type: string
+#. Description
+#: ../boxbackup-client.templates:6001
+msgid ""
+"Please enter the fully qualified domain name of the BoxBackup server whi=
+ch "
+"your client will use."
+msgstr ""
+"Veuillez indiquer le nom d'h=C3=B4te complet (FQDN) du serveur BoxBackup=
+ que "
+"votre client doit utiliser."
+
+#. Type: string
+#. Description
+#: ../boxbackup-client.templates:6001
+msgid "The client will connect to the server on TCP port 2201."
+msgstr "Le client se connectera sur le port TCP 2201 du serveur."
+
+#. Type: string
+#. Description
+#: ../boxbackup-client.templates:7001
+msgid "List of directories to backup:"
+msgstr "Liste des r=C3=A9pertoires =C3=A0 sauvegarder=C2=A0:"
+
+#. Type: string
+#. Description
+#: ../boxbackup-client.templates:7001
+msgid ""
+"Please give a space-separated list of directories to be backed up onto t=
+he "
+"remote server."
+msgstr ""
+"Veuillez indiquer une liste de r=C3=A9pertoires, s=C3=A9par=C3=A9s par d=
+es espaces, =C3=A0 "
+"sauvegarder sur le serveur distant."
+
+#. Type: string
+#. Description
+#: ../boxbackup-client.templates:7001
+msgid ""
+"Those directories should not contain mounted file systems at any level i=
+n "
+"their subdirectories."
+msgstr ""
+"Ces r=C3=A9pertoires ne doivent pas contenir de syst=C3=A8mes de fichier=
+s mont=C3=A9s dans "
+"l'un de leurs sous-r=C3=A9pertoires, quelle que soit la profondeur."
+
+#. Type: error
+#. Description
+#: ../boxbackup-client.templates:8001
+msgid "Invalid path name"
+msgstr "Chemin invalide"
+
+#. Type: error
+#. Description
+#: ../boxbackup-client.templates:8001 ../boxbackup-server.templates:4001
+msgid ""
+"The path names to the directories must be absolute path names, separated=
+ by "
+"spaces."
+msgstr ""
+"Ces r=C3=A9pertoires doivent =C3=AAtre indiqu=C3=A9s sous forme de chemi=
+ns absolus et "
+"s=C3=A9par=C3=A9s par des espaces."
+
+#. Type: error
+#. Description
+#: ../boxbackup-client.templates:8001
+msgid "For example: /home/myaccount /etc/"
+msgstr "Exemple=C2=A0: /home/myaccount /etc/."
+
+#. Type: string
+#. Description
+#: ../boxbackup-client.templates:9001
+msgid "Interval (in seconds) between directory scans:"
+msgstr "Intervalle (en secondes) entre deux parcours du r=C3=A9pertoire=C2=
+=A0:"
+
+#. Type: string
+#. Description
+#: ../boxbackup-client.templates:9001
+msgid ""
+"BoxBackup regularly scans the selected directories, looking for modified=
+ "
+"files."
+msgstr ""
+"BoxBackup parcourt r=C3=A9guli=C3=A8rement les r=C3=A9pertoires s=C3=A9l=
+ectionn=C3=A9s =C3=A0 la recherche "
+"de fichiers modifi=C3=A9s."
+
+#. Type: string
+#. Description
+#: ../boxbackup-client.templates:9001
+msgid "Please choose the scan interval in seconds."
+msgstr "Veuillez choisir l'intervalle entre deux parcours en secondes."
+
+#. Type: string
+#. Description
+#: ../boxbackup-client.templates:10001
+msgid "Minimum time to wait (in seconds) before uploading a file:"
+msgstr "Temps minimum =C3=A0 attendre (en secondes) avant d'envoyer un fi=
+chier=C2=A0:"
+
+#. Type: string
+#. Description
+#: ../boxbackup-client.templates:10001
+msgid ""
+"A file will be uploaded to the server only after a certain time after it=
+s "
+"last modification."
+msgstr ""
+"Un fichier est envoy=C3=A9 au serveur uniquement apr=C3=A8s un certain t=
+emps apr=C3=A8s sa "
+"date de derni=C3=A8re modification."
+
+#. Type: string
+#. Description
+#: ../boxbackup-client.templates:10001
+msgid ""
+"Low interval values will trigger frequent uploads to the server and more=
+ "
+"revisions being created with older revisions being removed earlier."
+msgstr ""
+"Un intervalle faible provoquera des envois fr=C3=A9quents vers le serveu=
+r et des "
+"versions successives en grand nombre. Les versions plus anciennes seront=
+ "
+"=C3=A9galement supprim=C3=A9es plus t=C3=B4t."
+
+#. Type: string
+#. Description
+#: ../boxbackup-client.templates:11001
+msgid "Maximum time to wait (in seconds) before uploading a file:"
+msgstr "D=C3=A9lai maximum (en secondes) avant d'envoyer un fichier=C2=A0=
+:"
+
+#. Type: string
+#. Description
+#: ../boxbackup-client.templates:11001
+msgid ""
+"Frequently modified files are likely to never get uploaded if they never=
+ "
+"reach the minimum wait time."
+msgstr ""
+"Des fichiers fr=C3=A9quemment modifi=C3=A9s risquent de ne jamais =C3=AA=
+tre envoy=C3=A9s si le "
+"temps minimal avant envoi n'est jamais atteint."
+
+#. Type: string
+#. Description
+#: ../boxbackup-client.templates:11001
+msgid ""
+"Please enter the maximum time to reach before the upload of a modified f=
+ile "
+"to the server is enforced."
+msgstr ""
+"Veuillez indiquer le d=C3=A9lai maximum =C3=A0 attendre avant de forcer =
+l'envoi d'un "
+"fichier vers le serveur."
+
+#. Type: error
+#. Description
+#: ../boxbackup-client.templates:12001
+msgid "Invalid time entered"
+msgstr "D=C3=A9lai non valable"
+
+#. Type: error
+#. Description
+#: ../boxbackup-client.templates:12001
+msgid "Please enter an integer value greater null."
+msgstr "Veuillez indiquer un entier strictement positif."
+
+#. Type: string
+#. Description
+#: ../boxbackup-client.templates:13001
+msgid "Recipient for alert notifications:"
+msgstr "Destinataire des notifications d'alertes=C2=A0:"
+
+#. Type: string
+#. Description
+#: ../boxbackup-client.templates:13001
+msgid ""
+"The BoxBackup client sends alert notifications when a problem occurs dur=
+ing "
+"the backup."
+msgstr ""
+"Le client BoxBackup envoie des notifications d'alertes quand un probl=C3=
+=A8me "
+"survient lors d'une sauvegarde."
+
+#. Type: string
+#. Description
+#: ../boxbackup-client.templates:13001
+msgid ""
+"Please enter either a local user name (for example 'root') or an email "
+"address (for example 'admin@example.org')."
+msgstr ""
+"Vous pouvez soit indiquer un identifiant local (par exemple =C2=AB=C2=A0=
+root=C2=A0=C2=BB) ou une "
+"adresse de courrier =C3=A9lectronique (par exemple =C2=AB=C2=A0admin@exa=
+mple.org=C2=A0=C2=BB)."
+
+#. Type: boolean
+#. Description
+#: ../boxbackup-client.templates:14001
+msgid "Generate the client private key and X.509 certificate request?"
+msgstr ""
+"Faut-il cr=C3=A9er la clef priv=C3=A9e et la demande de certificat X.509=
+ du client=C2=A0?"
+
+#. Type: boolean
+#. Description
+#: ../boxbackup-client.templates:14001
+msgid ""
+"The BoxBackup client needs an RSA private key and the corresponding X.50=
+9 "
+"certificate to authenticate itself with the server."
+msgstr ""
+"Le client BoxBackup a besoin d'une clef priv=C3=A9e RSA et d'un certific=
+at X.509 "
+"correspondant pour s'authentifier aupr=C3=A8s du serveur."
+
+#. Type: boolean
+#. Description
+#: ../boxbackup-client.templates:14001
+msgid ""
+"Both can be generated automatically. You will need to send the certifica=
+te "
+"request to the BoxBackup server administrator who will sign it and send =
+it "
+"back to you along with the server's Certification Authority certificate.=
+"
+msgstr ""
+"Tous deux peuvent =C3=AAtre cr=C3=A9=C3=A9s automatiquement. Vous devrez=
+ envoyer la demande "
+"de certificat =C3=A0 l'administrateur du serveur BoxBackup qui la signer=
+a et vous "
+"la renverra accompagn=C3=A9e du certificat de l'autorit=C3=A9 de certifi=
+cation (CA) du "
+"serveur."
+
+#. Type: boolean
+#. Description
+#: ../boxbackup-client.templates:14001
+msgid ""
+"These files should be copied into BoxBackup's configuration directory. T=
+he "
+"file names to use are given in the /etc/boxbackup/bbackupd.conf file."
+msgstr ""
+"Ces fichiers doivent =C3=AAtre copi=C3=A9s dans le r=C3=A9pertoire de co=
+nfiguration de "
+"BoxBackup. Les noms de fichier =C3=A0 utiliser sont indiqu=C3=A9s dans l=
+e fichier /etc/"
+"boxbackup/bbackupd.conf."
+
+#. Type: boolean
+#. Description
+#: ../boxbackup-server.templates:2001
+msgid "Should BoxBackup be configured automatically?"
+msgstr "Faut-il automatiquement configurer BoxBackup=C2=A0?"
+
+#. Type: boolean
+#. Description
+#: ../boxbackup-server.templates:2001
+msgid ""
+"The package configuration scripts can create the configuration files for=
+ the "
+"BoxBackup server."
+msgstr ""
+"Les scripts de configuration de ce paquet peuvent cr=C3=A9er les fichier=
+s de "
+"configuration pour le serveur BoxBackup."
+
+#. Type: boolean
+#. Description
+#: ../boxbackup-server.templates:2001
+msgid ""
+"You should choose this option if you are not familiar with BoxBackup's "
+"configuration options. The configuration can be done manually with the "
+"'raidfile-config' and 'bbstored-config' scripts."
+msgstr ""
+"Vous devriez utiliser cette option si les options de configuration de "
+"BoxBackup ne vous sont pas famili=C3=A8res. Vous pouvez aussi configurer=
+ le "
+"serveur vous-m=C3=AAme =C3=A0 l'aide des scripts =C2=AB=C2=A0raidfile-co=
+nfig=C2=A0=C2=BB et =C2=AB=C2=A0bbstored-"
+"config=C2=A0=C2=BB."
+
+#. Type: boolean
+#. Description
+#: ../boxbackup-server.templates:2001
+msgid ""
+"The server will not start if it is not configured. In all cases, reading=
+ "
+"the /usr/share/doc/boxbackup-server/README.Debian is recommended."
+msgstr ""
+"Le serveur ne d=C3=A9marrera pas s'il n'est pas configur=C3=A9. Dans tou=
+s les cas, la "
+"lecture de /usr/share/doc/boxbackup-server/README.Debian est recommand=C3=
+=A9e."
+
+#. Type: string
+#. Description
+#: ../boxbackup-server.templates:3001
+msgid "Location of the RAID directories:"
+msgstr "Emplacement des r=C3=A9pertoires RAID=C2=A0:"
+
+#. Type: string
+#. Description
+#: ../boxbackup-server.templates:3001
+msgid "Please choose the location for the three RAID file directories."
+msgstr "Veuillez choisir l'emplacement des trois r=C3=A9pertoires RAID."
+
+#. Type: string
+#. Description
+#: ../boxbackup-server.templates:3001
+msgid ""
+"To enable RAID, the directory names should be a space-separated list of =
+"
+"three partitions, each on different physical hard drives (for example: '=
+/"
+"raid/0.0 /raid/0.1 /raid/0.2')."
+msgstr ""
+"Pour activer la gestion RAID, veuillez indiquer, s=C3=A9par=C3=A9s par d=
+es espaces, "
+"les noms de trois partitions situ=C3=A9es sur des disques physiques diff=
+=C3=A9rents "
+"(par exemple=C2=A0: =C2=AB=C2=A0/raid/0.0 /raid/0.1 /raid/0.2=C2=A0=C2=BB=
+)."
+
+#. Type: string
+#. Description
+#: ../boxbackup-server.templates:3001
+msgid ""
+"If you don't want to enable RAID, just specify the path to one directory=
+ "
+"where the backups will be stored (for example, /usr/local/lib/boxbackup)=
+."
+msgstr ""
+"Si vous ne voulez pas activer la gestion du RAID, indiquez seulement le =
+"
+"chemin d'un r=C3=A9pertoire o=C3=B9 les sauvegardes seront stock=C3=A9es=
+ (par exemple, /usr/"
+"local/lib/boxbackup)."
+
+#. Type: string
+#. Description
+#: ../boxbackup-server.templates:3001
+msgid "These directories will be created if they do not exist."
+msgstr "Ces r=C3=A9pertoires seront cr=C3=A9=C3=A9s s'ils n'existent pas.=
+"
+
+#. Type: error
+#. Description
+#: ../boxbackup-server.templates:4001
+msgid "Invalid path names"
+msgstr "Chemins non valables"
+
+#. Type: error
+#. Description
+#: ../boxbackup-server.templates:4001
+msgid "For example: /raid/0.0 /raid/0.1 /raid/0.2"
+msgstr "Par exemple=C2=A0: /raid/0.0 /raid/0.1 /raid/0.2"
+
+#. Type: string
+#. Description
+#: ../boxbackup-server.templates:5001
+msgid "Block size for the userland RAID system:"
+msgstr "Taille des blocs pour le syst=C3=A8me RAID en espace utilisateur=C2=
+=A0:"
+
+#. Type: string
+#. Description
+#: ../boxbackup-server.templates:5001
+msgid "BoxBackup uses userland RAID techniques."
+msgstr "BoxBackup utilise un syst=C3=A8me de RAID en espace utilisateur."
+
+#. Type: string
+#. Description
+#: ../boxbackup-server.templates:5001
+#, fuzzy
+#| msgid ""
+#| "Please choose the block size to use for the storage. For maximum "
+#| "efficiency, you should choose the block size of the underlying file "
+#| "system (which can be displayed with the 'tune2fs -l' command)."
+msgid ""
+"Please choose the block size to use for the storage. For maximum efficie=
+ncy, "
+"you should choose the block size of the underlying file system (which ca=
+n be "
+"displayed for ext2 filesystems with the 'tune2fs -l' command)."
+msgstr ""
+"Veuillez choisir une taille de blocs pour le stockage. Pour une efficaci=
+t=C3=A9 "
+"maximale, vous devriez choisir la m=C3=AAme taille de blocs que le syst=C3=
+=A8me de "
+"fichiers sous-jacent (que vous pouvez obtenir, pour les syst=C3=A8mes de=
+ fichiers ext2 et ext3, avec la commande =C2=AB=C2=A0tune2fs -"
+"l=C2=A0=C2=BB)."
+
+#. Type: string
+#. Description
+#: ../boxbackup-server.templates:5001
+msgid "This value should be set even if you don't plan to use RAID."
+msgstr ""
+"Cette valeur est n=C3=A9cessaire m=C3=AAme si vous ne comptez pas utilis=
+er le RAID."
+
+#. Type: boolean
+#. Description
+#: ../boxbackup-server.templates:6001
+msgid "Generate a server private key and X.509 certificate request?"
+msgstr ""
+"Faut-il cr=C3=A9er une clef priv=C3=A9e et une demande de certificat X.5=
+09 pour le "
+"serveur=C2=A0?"
+
+#. Type: boolean
+#. Description
+#: ../boxbackup-server.templates:6001
+msgid ""
+"The BoxBackup server needs an RSA private key and the corresponding X.50=
+9 "
+"certificate to perform client-server authentication and communication "
+"encryption."
+msgstr ""
+"Le serveur BoxBackup a besoin d'une clef priv=C3=A9e RSA et du certifica=
+t X.509 "
+"correspondant pour l'authentification et le chiffrement entre le client =
+et "
+"le serveur."
+
+#. Type: boolean
+#. Description
+#: ../boxbackup-server.templates:6001
+msgid ""
+"Both can be generated automatically. You will need to sign the certifica=
+te "
+"with your root CA (see the boxbackup-utils package) and put this signed =
+"
+"certificate and the root CA certificate in the configuration folder."
+msgstr ""
+"Ces deux =C3=A9l=C3=A9ments peuvent =C3=AAtre cr=C3=A9=C3=A9s automatiqu=
+ement. Vous aurez besoin de "
+"faire signer le certificat par votre autorit=C3=A9 de certification prin=
+cipale "
+"(voir le paquet boxbackup-utils) et de placer le certificat sign=C3=A9 a=
+ccompagn=C3=A9 "
+"du certificat du CA racine dans le r=C3=A9pertoire de configuration."
+
+#. Type: error
+#. Description
+#: ../boxbackup-server.templates:7001
+msgid "Invalid block size"
+msgstr "Taille de blocs non valable"
+
+#. Type: error
+#. Description
+#: ../boxbackup-server.templates:7001
+msgid "The block size must be a power of two (e.g. 1024 or 4096)."
+msgstr ""
+"La taille d'un bloc doit =C3=AAtre une puissance de deux (par exemple 10=
+24 ou "
+"4096)."
+
+--===============0136359889==--
+
+
+
+------------=_1208705605-29371-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 476090-close) by bugs.debian.org; 20 Apr 2008 15:31:35 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.7 required=4.0 tests=BAYES_00,FVGT_m_MULTI_ODD,
+	HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_2,MURPHY_WRONG_WORD1,
+	MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnbVv-0006Qu-9a
+	for 476090-close@bugs.debian.org; Sun, 20 Apr 2008 15:31:35 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnbHs-0007OV-DS; Sun, 20 Apr 2008 15:17:04 +0000
+From: Reinhard Tartler <siretart@tauware.de>
+To: 476090-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#476090: fixed in boxbackup 0.11~rc2-1
+Message-Id: <E1JnbHs-0007OV-DS@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 15:17:04 +0000
+Content-Transfer-Encoding: quoted-printable
+
+Source: boxbackup
+Source-Version: 0.11~rc2-1
+
+We believe that the bug you reported is fixed in the latest version of
+boxbackup, which is due to be installed in the Debian FTP archive:
+
+boxbackup-client_0.11~rc2-1_i386.deb
+  to pool/main/b/boxbackup/boxbackup-client_0.11~rc2-1_i386.deb
+boxbackup-server_0.11~rc2-1_i386.deb
+  to pool/main/b/boxbackup/boxbackup-server_0.11~rc2-1_i386.deb
+boxbackup_0.11~rc2-1.diff.gz
+  to pool/main/b/boxbackup/boxbackup_0.11~rc2-1.diff.gz
+boxbackup_0.11~rc2-1.dsc
+  to pool/main/b/boxbackup/boxbackup_0.11~rc2-1.dsc
+boxbackup_0.11~rc2.orig.tar.gz
+  to pool/main/b/boxbackup/boxbackup_0.11~rc2.orig.tar.gz
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 476090@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Reinhard Tartler <siretart@tauware.de> (supplier of updated boxbackup pac=
+kage)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.7
+Date: Sun, 20 Apr 2008 14:01:27 +0200
+Source: boxbackup
+Binary: boxbackup-server boxbackup-client
+Architecture: source i386
+Version: 0.11~rc2-1
+Distribution: unstable
+Urgency: low
+Maintainer: Reinhard Tartler <siretart@tauware.de>
+Changed-By: Reinhard Tartler <siretart@tauware.de>
+Description:=20
+ boxbackup-client - client for the BoxBackup remote backup system
+ boxbackup-server - server for the BoxBackup remote backup system
+Closes: 435860 440156 442515 442640 476090
+Changes:=20
+ boxbackup (0.11~rc2-1) unstable; urgency=3Dlow
+ .
+   * new upstream release.
+   * update watch file.
+   * bump standards version to 3.7.3 (No changes needed)
+   * update frensh debconf template translations. Thanks to
+     Christian Perrier (Closes: #476090)
+ .
+ boxbackup (0.11~rc1-1) experimental; urgency=3Dlow
+ .
+   * New upstream release.
+     - should fix builds on kFreeBSD architectures: (Closes: #440156).
+     - build against libbd4.6 instead of libdb4.3. (Closes: #442640).
+     - the config file template has been updated to be more specific for
+       the AlwaysIncludeFile Option (Closes: #435860).
+   * remove all generated files in clean target of debian/rules. Allows
+     package to build twice in a row (Closes: #442515).
+   * Install file ExceptionCodes.txt to documentation directories. The fi=
+le
+     contains a list of Error codes found in logfiles.
+   * Simplify debian/rules by removing code to build arch-independent
+     packages. There are none.
+Files:=20
+ 8eade56d91375269b70416face43ffac 844 utils optional boxbackup_0.11~rc2-1=
+.dsc
+ 68052f963a944c717a50bd65a54375ff 811043 utils optional boxbackup_0.11~rc=
+2.orig.tar.gz
+ 26a2ddd58841d876b779370de9d3b3a2 52995 utils optional boxbackup_0.11~rc2=
+-1.diff.gz
+ 913fe4a6049a04395351d61de709b42a 627088 utils optional boxbackup-server_=
+0.11~rc2-1_i386.deb
+ 99ffea644921b9ffb1d2b19348a20d36 635496 utils optional boxbackup-client_=
+0.11~rc2-1_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+Comment: Debian Powered!
+
+iD8DBQFIC1txmAg1RJRTSKQRAnalAJ9ExFWjLUBIU0+redEsUNKMYgVsCgCeNp2C
+fZJUw+I60UTGV4tI3E99aC0=3D
+=3DxkXD
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208705605-29371-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

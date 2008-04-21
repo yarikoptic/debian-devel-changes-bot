@@ -1,0 +1,166 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 18:00:21 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnctg-0008P4-C1
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 18:00:20 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 5B44413A4FBF; Sun, 20 Apr 2008 17:00:11 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.5 required=4.0 tests=BAYES_00,MURPHY_DRUGS_REL8,
+	RCVD_IN_DNSWL_LOW,WHOIS_DMNBYPROXY autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id CC2D813A4AF5;
+	Sun, 20 Apr 2008 16:59:56 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jncqj-0007PL-LG; Sun, 20 Apr 2008 16:57:09 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#473175: apt-listbugs: pinned packages are not automatically unpinned
+Reply-To: Francesco Poli <frx@firenze.linux.it>, 473175@bugs.debian.org
+Resent-From: Francesco Poli <frx@firenze.linux.it>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Junichi Uekawa <dancer@debian.org>
+Resent-Date: Sun, 20 Apr 2008 16:57:08 +0000
+Resent-Message-ID: <handler.473175.B473175.120871047920483@bugs.debian.org>
+X-Debian-PR-Message: report 473175
+X-Debian-PR-Package: apt-listbugs
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: apt-listbugs
+Received: via spool by 473175-submit@bugs.debian.org id=B473175.120871047920483
+          (code B ref 473175); Sun, 20 Apr 2008 16:57:08 +0000
+Received: (at 473175) by bugs.debian.org; 20 Apr 2008 16:54:39 +0000
+X-Amavis-Spam-Status: No, score=-7.0 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER,
+	MURPHY_DRUGS_REL8 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from smtpi1.ngi.it ([88.149.128.20])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <frx@firenze.linux.it>)
+	id 1JncoI-0005IB-UP
+	for 473175@bugs.debian.org; Sun, 20 Apr 2008 16:54:39 +0000
+Received: from homebrew (88-149-179-128.static.ngi.it [88.149.179.128])
+	by smtpi1.ngi.it (8.13.8/8.13.8) with ESMTP id m3KGsa1G003686
+	for <473175@bugs.debian.org>; Sun, 20 Apr 2008 18:54:37 +0200
+Received: from frx by homebrew with local (Exim 4.69)
+	(envelope-from <frx@firenze.linux.it>)
+	id 1Jncox-0002Jn-Tg
+	for 473175@bugs.debian.org; Sun, 20 Apr 2008 18:55:19 +0200
+Date: Sun, 20 Apr 2008 18:55:12 +0200
+From: Francesco Poli <frx@firenze.linux.it>
+To: 473175@bugs.debian.org
+Message-Id: <20080420185512.e112a4df.frx@firenze.linux.it>
+In-Reply-To: <8763udgf41.dancerj%dancer@netfort.gr.jp>
+References: <20080328231810.6982.159.reportbug@homebrew>
+	<87prtcu7tr.dancerj%dancer@netfort.gr.jp>
+	<20080330111844.4dd9483d.frx@firenze.linux.it>
+	<20080412162728.8cc6f360.frx@firenze.linux.it>
+	<20080412172537.b75f75c9.frx@firenze.linux.it>
+	<8763udgf41.dancerj%dancer@netfort.gr.jp>
+X-Mailer: Sylpheed 2.5.0beta1 (GTK+ 2.12.9; x86_64-pc-linux-gnu)
+Mime-Version: 1.0
+Content-Type: multipart/signed; protocol="application/pgp-signature";
+ micalg="PGP-SHA1";
+ boundary="Signature=_Sun__20_Apr_2008_18_55_12_+0200_KWbOx7QQXubYjItb"
+Resent-Date: Sun, 20 Apr 2008 16:57:09 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343659
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -36.0
+X-Spam-Report: (-36.0 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	17 AWL                    AWL: From: address is in the auto white-list
+
+--Signature=_Sun__20_Apr_2008_18_55_12_+0200_KWbOx7QQXubYjItb
+Content-Type: text/plain; charset=US-ASCII
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+On Sun, 20 Apr 2008 16:27:58 +0900 Junichi Uekawa wrote:
+
+> Hi,
+
+Hi!  :)
+
+>=20
+> > Again assuming that the above is correct, I don't think that this logic
+> > is appropriate for aptcleanup.
+[...]
+> > I think the design of aptcleanup could be changed as follows.
+[...]
+> >         1.2.1) query the BTS about the bug and find out whether the bug
+> >                is still present *and* still RC in the
+> >                unpinned_candidate_version
+[...]
+> > Well, what do you think about my proposed redesign of aptcleanup?
+[...]
+> Your logic sounds reasonable, patch is welcome. It's going to be a
+> major rewrite since aptcleanup currently is a very simple script.
+
+I have to learn Ruby before I can implement my redesign.
+This is a non-negligible obstacle...
+
+Anyway, let's implement it step by step in a bottom-up strategy.
+I will need the help of a Ruby guru like you, though.
+
+First brick I will need is a means to query the BTS about one or more
+bugs in order to get their status in a given package/version (step
+1.2.1 above).
+I've just filed a wishlist bug for this feature (see #476988): could you
+please implement it in apt-listbugs?
+I think that /usr/sbin/apt-listbugs is the right place where this
+feature should be added, but I would rather avoid making invasive
+modifications to /usr/sbin/apt-listbugs by myself, since I am still a
+Ruby illiterate.
+
+In the meanwhile, I'll try and learn a bit of Ruby, so that I will
+(hopefully) be able to modify /usr/share/apt-listbugs/aptcleanup
+by myself (or, at worst, with minimum assistance from you).
+
+--=20
+ http://frx.netsons.org/doc/index.html#nanodocs
+ The nano-document series is here!
+..................................................... Francesco Poli .
+ GnuPG key fpr =3D=3D C979 F34B 27CE 5CD8 DC12  31B5 78F4 279B DD6D FCF4
+
+--Signature=_Sun__20_Apr_2008_18_55_12_+0200_KWbOx7QQXubYjItb
+Content-Type: application/pgp-signature
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC3V1ePQnm91t/PQRAoBeAJ9ap08CKY5elI2cjBSiggIghGMjNQCcC8ZA
+EiPJMswL8lU767TyDiACVzU=
+=9YZh
+-----END PGP SIGNATURE-----
+
+--Signature=_Sun__20_Apr_2008_18_55_12_+0200_KWbOx7QQXubYjItb--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

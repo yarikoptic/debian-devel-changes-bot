@@ -1,0 +1,121 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 17:03:33 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnc0f-000872-2P
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 17:03:32 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 0337013A4F06; Sun, 20 Apr 2008 16:03:20 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id B811E13A49B2
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 16:03:19 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnbWR-0008Jt-Cb; Sun, 20 Apr 2008 15:32:07 +0000
+From: Mario Lang <mlang@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted gnome-orca 2.22.1-2 (source all)
+Message-Id: <E1JnbWR-0008Jt-Cb@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 15:32:07 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <pJas9ZxVwtN.A.NXF.Hl2CIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301318
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 16:03:20 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.6
+X-Spam-Report: (-2.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.0 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 15:16:35 +0200
+Source: gnome-orca
+Binary: gnome-orca
+Architecture: source all
+Version: 2.22.1-2
+Distribution: unstable
+Urgency: low
+Maintainer: Mario Lang <mlang@debian.org>
+Changed-By: Mario Lang <mlang@debian.org>
+Description:=20
+ gnome-orca - Scriptable screen reader
+Closes: 468681 476905
+Changes:=20
+ gnome-orca (2.22.1-2) unstable; urgency=3Dlow
+ .
+   * Fix bashisms in orca startup script (Closes: Bug#468681).
+   * Remove the explicit setting of PYTHONPATH in the orca startup
+     script (Closes: Bug#476905).
+   * Nack 2.22.1-1.1 NMU.
+Checksums-Sha1:=20
+ 1cffd6b99cd2909e07e3b478cfd50c0b9effe49f 1425 gnome-orca_2.22.1-2.dsc
+ 978b278bdd4b9e04ea0c288a7656d072b2da3766 5863 gnome-orca_2.22.1-2.diff.g=
+z
+ abebb302f3bea127b7c1390bdbfc2790cf6507e3 1680216 gnome-orca_2.22.1-2_all=
+.deb
+Checksums-Sha256:=20
+ 97a00b0fffb44ec1d75bd2554c8c4ed0471a3364fa393c88c0269d93148021cd 1425 gn=
+ome-orca_2.22.1-2.dsc
+ 02334912bc98bbbfacfa543f51c0890a2c4878dcf2ae9b078e143d5701d46063 5863 gn=
+ome-orca_2.22.1-2.diff.gz
+ 19ca482d567bf6da782ec8c622956d951999200ec1f5c5d4ddad44abdc041d15 1680216=
+ gnome-orca_2.22.1-2_all.deb
+Files:=20
+ 523f009346232ab08424fabc7c97cfa4 1425 gnome optional gnome-orca_2.22.1-2=
+.dsc
+ 3a32ab818eec0d0b859e57befb6042bf 5863 gnome optional gnome-orca_2.22.1-2=
+.diff.gz
+ c9b9ff81ab3c0e62c3921ee63a0d229a 1680216 gnome optional gnome-orca_2.22.=
+1-2_all.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC15m3/wCKmsRPkQRAqxOAJ9+aAAPMoepHyOXc+J4i13nUE0auQCfZRhJ
+KGqzQFH5MHPLsu4a4F7FO3A=3D
+=3D8Obd
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+gnome-orca_2.22.1-2.diff.gz
+  to pool/main/g/gnome-orca/gnome-orca_2.22.1-2.diff.gz
+gnome-orca_2.22.1-2.dsc
+  to pool/main/g/gnome-orca/gnome-orca_2.22.1-2.dsc
+gnome-orca_2.22.1-2_all.deb
+  to pool/main/g/gnome-orca/gnome-orca_2.22.1-2_all.deb
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

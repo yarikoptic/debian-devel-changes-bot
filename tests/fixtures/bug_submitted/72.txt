@@ -1,0 +1,153 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 09:21:41 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnUno-0005q0-My
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 09:21:41 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id CB46813A4E9E; Sun, 20 Apr 2008 08:21:35 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-2.9 required=4.0 tests=BAYES_00,FOURLA,
+	RCVD_IN_DNSWL_LOW autolearn=no version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 4D91813A4E85;
+	Sun, 20 Apr 2008 08:21:14 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnUn7-0000uR-Kp; Sun, 20 Apr 2008 08:20:53 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476915: gst-plugins-good0.10_0.10.7.2-1(experimental/powerpc/anakreon): undefined reference to `ppc_zoom_G4'
+Reply-To: Marc 'HE' Brockschmidt <marc@marcbrockschmidt.de>, 476915@bugs.debian.org
+Resent-From: Marc 'HE' Brockschmidt <marc@marcbrockschmidt.de>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Maintainers of GStreamer packages <pkg-gstreamer-maintainers@lists.alioth.debian.org>
+Resent-Date: Sun, 20 Apr 2008 08:20:51 +0000
+Resent-Message-ID: <handler.476915.B.1208679555378@bugs.debian.org>
+X-Debian-PR-Message: report 476915
+X-Debian-PR-Package: gst-plugins-good0.10
+X-Debian-PR-Keywords: experimental
+Received: via spool by submit@bugs.debian.org id=B.1208679555378
+          (code B ref -1); Sun, 20 Apr 2008 08:20:51 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 08:19:15 +0000
+X-Amavis-Spam-Status: No, score=-9.9 required=4.0 tests=BAYES_00,FOURLA,HAS_PACKAGE 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from alius.turmzimmer.net ([88.198.169.140])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <marc@marcbrockschmidt.de>)
+	id 1JnUkQ-0008O2-BR
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 08:18:13 +0000
+Received: from cl-2769.ham-01.de.sixxs.net ([2001:6f8:900:ad0::2] helo=pindar.localnet)
+	by alius.turmzimmer.net with esmtpa (Exim 4.63)
+	(envelope-from <marc@marcbrockschmidt.de>)
+	id 1JnUkO-0001yt-N6
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 08:18:04 +0000
+Received: from localhost ([127.0.0.1] helo=pindar.localnet)
+	by pindar.localnet with esmtp (Exim 4.69)
+	(envelope-from <marc@marcbrockschmidt.de>)
+	id 1JnUj8-0002fl-3K
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 10:16:46 +0200
+From: Marc 'HE' Brockschmidt <marc@marcbrockschmidt.de>
+To: submit@bugs.debian.org
+Date: Sun, 20 Apr 2008 10:16:45 +0200
+Message-ID: <87d4ollz4i.fsf@pindar.marcbrockschmidt.de>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 08:20:53 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343357
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -35.8
+X-Spam-Report: (-35.8 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	17 AWL                    AWL: From: address is in the auto white-list
+
+Package: gst-plugins-good0.10
+Version: 0.10.7.2-1
+Severity: serious
+Tags: experimental
+
+Heya,
+
+Building your package failed on my ppc buildd:
+
+| Automatic build of gst-plugins-good0.10_0.10.7.2-1 on anakreon.ftwca.de b=
+y sbuild/powerpc 98-farm
+| Build started at 20080414-2328
+| *************************************************************************=
+*****
+
+[...]
+
+|  cc -shared  .libs/libgstgoom_la-gstgoom.o .libs/libgstgoom_la-drawmethod=
+s.o .libs/libgstgoom_la-sound_tester.o .libs/libgstgoom_la-mathtools.o .lib=
+s/libgstgoom_la-goomsl_heap.o .libs/libgstgoom_la-goomsl_hash.o .libs/libgs=
+tgoom_la-goomsl.o .libs/libgstgoom_la-lines.o .libs/libgstgoom_la-ifs.o .li=
+bs/libgstgoom_la-surf3d.o .libs/libgstgoom_la-tentacle3d.o .libs/libgstgoom=
+_la-v3d.o .libs/libgstgoom_la-convolve_fx.o .libs/libgstgoom_la-flying_star=
+s_fx.o .libs/libgstgoom_la-plugin_info.o .libs/libgstgoom_la-goom_tools.o .=
+libs/libgstgoom_la-config_param.o .libs/libgstgoom_la-filters.o .libs/libgs=
+tgoom_la-goom_core.o .libs/libgstgoom_la-graphic.o -Wl,--whole-archive ./.l=
+ibs/libgstgoomconfigparse.a -Wl,--no-whole-archive  -Wl,--as-needed /usr/li=
+b/libgstbase-0.10.so /usr/lib/libgstreamer-0.10.so /usr/lib/libgobject-2.0.=
+so /usr/lib/libgmodule-2.0.so -ldl /usr/lib/libgthread-2.0.so /usr/lib/libx=
+ml2.so /usr/lib/libglib-2.0.so -loil-0.3 -lm -lrt  -Wl,-z -Wl,defs -Wl,-O1 =
+-pthread -pthread -Wl,-soname -Wl,libgstgoom.so -Wl,-version-script -Wl,.li=
+bs/libgstgoom.ver -o .libs/libgstgoom.so
+| .libs/libgstgoom_la-plugin_info.o:(.got2+0x50): undefined reference to `p=
+pc_zoom_G4'
+| .libs/libgstgoom_la-plugin_info.o:(.got2+0x54): undefined reference to `p=
+pc_zoom_generic'
+| collect2: ld returned 1 exit status
+| make[4]: *** [libgstgoom.la] Error 1
+| make[4]: Leaving directory `/build/buildd/gst-plugins-good0.10-0.10.7.2/g=
+st/goom'
+| make[3]: *** [all-recursive] Error 1
+| make[3]: Leaving directory `/build/buildd/gst-plugins-good0.10-0.10.7.2/g=
+st'
+| make[2]: *** [all-recursive] Error 1
+| make[2]: Leaving directory `/build/buildd/gst-plugins-good0.10-0.10.7.2'
+| make[1]: *** [all] Error 2
+| make[1]: Leaving directory `/build/buildd/gst-plugins-good0.10-0.10.7.2'
+| make: *** [debian/stamp-makefile-build] Error 2
+| dpkg-buildpackage: failure: debian/rules build gave error exit status 2
+| *************************************************************************=
+*****
+| Build finished at 20080414-2333
+| FAILED [dpkg-buildpackage died]
+| Build needed 00:03:21, 38196k disk space
+
+A complete build log can be found at
+http://experimental.debian.net/build.php?arch=3Dpowerpc&pkg=3Dgst-plugins-g=
+ood0.10&ver=3D0.10.7.2-1
+
+Marc
+--=20
+BOFH #172:
+pseudo-user on a pseudo-terminal
+
+
+

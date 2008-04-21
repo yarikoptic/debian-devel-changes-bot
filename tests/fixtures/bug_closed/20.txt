@@ -1,0 +1,439 @@
+From bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org Sun Apr 20 03:35:30 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org>)
+	id 1JnPOh-0005B4-Pt
+	for ddc@ddc.chris-lamb.co.uk; Sun, 20 Apr 2008 03:35:29 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id C417213A4DF6; Sun, 20 Apr 2008 02:35:18 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 5404913A4986;
+	Sun, 20 Apr 2008 02:35:16 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnPMW-0003DT-6F; Sun, 20 Apr 2008 02:33:04 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Chris Lawrence <lawrencc@debian.org>
+Subject: Bug#406067: marked as done (start_daemon regression: spaces in 
+ args broken)
+Message-ID: <handler.406067.D406059.120865870310995.ackdone@bugs.debian.org>
+References: <E1JnOsU-0004NB-H7@ries.debian.org>
+ <45A24EBB.6090601@kandl.houston.tx.us>
+X-Debian-PR-Message: closed 406067
+X-Debian-PR-Package: lsb-base
+X-Debian-PR-Source: lsb
+Content-Type: multipart/mixed; boundary="----------=_1208658784-12289-2"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 02:33:04 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <2Y8TOnwL8AG.A.boB.mvqCIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/132891
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 02:35:18 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208658784-12289-2
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 02:02:02 +0000
+with message-id <E1JnOsU-0004NB-H7@ries.debian.org>
+and subject line Bug#406059: fixed in lsb 3.2-9
+has caused the Debian Bug report #406059,
+regarding start_daemon regression: spaces in args broken
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+406059: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D406059
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208658784-12289-2
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 8 Jan 2007 14:04:48 +0000
+Return-path: <lpb@kandl.houston.tx.us>
+Received: from 66-100-35-36-static.dsl.oplink.net ([66.100.35.36] helo=mailhost.dmz.focalpoint.com)
+	by spohr.debian.org with esmtp (Exim 4.50)
+	id 1H3v4j-00064L-GA
+	for submit@bugs.debian.org; Mon, 08 Jan 2007 06:02:09 -0800
+Received: from [10.17.1.100] (unknown [10.254.254.196])
+	by mailhost.dmz.focalpoint.com (Postfix) with ESMTP id 52A4D49DBD0;
+	Mon,  8 Jan 2007 08:01:36 -0600 (CST)
+Message-ID: <45A24EBB.6090601@kandl.houston.tx.us>
+Disposition-Notification-To: Luigi Bai <lpb@kandl.houston.tx.us>
+Date: Mon, 08 Jan 2007 08:01:31 -0600
+From: Luigi Bai <lpb@kandl.houston.tx.us>
+Reply-To: Luigi Bai <lpb+deb@kandl.houston.tx.us>
+User-Agent: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.6) Gecko/20050331 Thunderbird/1.0.2 Mnenhy/0.7.1
+MIME-Version: 1.0
+To: Max Kellermann <max@duempel.org>
+CC: submit@bugs.debian.org
+Subject: Re: start_daemon regression: spaces in args broken
+References: <20070108123545.GA18536@roonstrasse.net>
+In-Reply-To: <20070108123545.GA18536@roonstrasse.net>
+X-Habeas-SWE-1: winter into spring
+X-Habeas-SWE-2: brightly anticipated
+X-Habeas-SWE-3: like Habeas SWE (tm)
+X-Habeas-SWE-4: Copyright 2002 Habeas (tm)
+X-Habeas-SWE-5: Sender Warranted Email (SWE) (tm). The sender of this
+X-Habeas-SWE-6: email in exchange for a license for this Habeas
+X-Habeas-SWE-7: warrant mark warrants that this is a Habeas Compliant
+X-Habeas-SWE-8: Message (HCM) and not spam. Please report use of this
+X-Habeas-SWE-9: mark in spam to http://www.habeas.com/report/.
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+Delivered-To: submit@bugs.debian.org
+X-Spam-Checker-Version: SpamAssassin 2.60-bugs.debian.org_2005_01_02 
+	(1.212-2003-09-23-exp) on spohr.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, hits=-8.0 required=4.0 tests=BAYES_00,HAS_PACKAGE 
+	autolearn=no version=2.60-bugs.debian.org_2005_01_02
+
+Package: lsb-base
+Version: 3.1-22
+Severity: important
+
+The problem arose in the use of the start_daemon function in
+/etc/init.d/sleepd (from the sleepd package). The sleepd daemon has a -F
+parameter which can take spaces. This is not unlike other applications
+(such as bash!) which can take parameters with spaces, like -c.
+
+Assuming the configuration infrastructure that requires parameters to
+sleepd to reside in /etc/default/sleepd, I see a problem. This PARAMS
+environment variable must somehow encode a command line parameter which
+can have spaces. Absent re-writing the sleepd to read its configuration
+from a file, how would you encode the PARAMS environment variable to
+work in this case? As you state, it's quite clear that quotes in the
+variable value are only printable characters - they're not performing
+the function you expect them to if they were actually on the command
+line. Eval, however, restores that semantic to the quotes. I am not a
+good enough shell programmer to know how to do this without the 'eval';
+I have tried many various combinations of embedded quotes and backslashes.
+
+In particular, what I need is for the start_daemon function to finally
+execute the following:
+
+/sbin/start-stop-daemon --start --nicelevel $nice --quiet --startas $exe
+c --pidfile /dev/null --oknodo -- /usr/sbin/sleepd --unused 0
+--ac-unused 0 --battery 10 --sleep-command '/usr/sbin/hibernate -F
+/etc/hibernate/suspend.conf'
+
+Note that the $PARAMS value is sent to the start_daemon function as part
+of $@, and is put in the command line of start-stop-daemon after the --.
+
+For what value of $PARAMS can I make this work to create the output above:
+
+start_daemon -p /tmp/sleepd.pid /usr/sbin/sleepd $PARAMS
+
+With the "eval" in start_daemon, I can make it work, and I haven't seen
+any other start scripts break. While you do document strange possible
+behaviour for the function, where does that breakage happen in practice?
+id est, is it a "real" regression or a "potential" one? And if it is a
+regression, then how should the sleepd script be written to work
+correctly with the LSB functions?
+
+Luigi
+
+Max Kellermann wrote, On 01/08/2007 06:35 AM:
+> Package: lsb-base
+> Version: 3.1-22
+> Severity: important
+> 
+> I believe bug #388836 is invalid and the workaround introduced in
+> 3.1-18 is not only wrong, but introduces a "real" bug.
+> 
+>  PARAMS="--this --that --start-command 'hibernate -F hibernate.conf'"
+> 
+> [remark: I had to add double quotes around the value, because the
+> submitter used invalid shell syntax - I assume this is what he meant]
+> 
+> This just doesn't do what the submitter probably thinks it should.
+> You can't use bash quotes inside a string value.  It's a string, you
+> can't nest quotes.  The single quotes in the string are not being used
+> to quote strings, they're just printable characters that happen to
+> look like a single quote.  There was no need to fix a bug because
+> there was none.
+> 
+> Let's talk about the new bug: spaces in parameters don't work at all
+> if you specify them correctly:
+> 
+>  start_daemon -- /usr/sbin/foobard --foo "one two  three"
+> 
+> This should result in two parameters passed to /usr/sbin/foobard:
+> first one is "--foo" and the second one is "one two  three".  Instead,
+> start_daemon passes four parameters: "--foo", "one", "two", "tree".
+> 
+> Please see the attached test scripts and try running foo.sh.  The
+> first invocation (directly, without start_daemon) is perfectly
+> correct, the second one (with start_daemon) breaks in every case.
+> 
+> Here's list of breakages caused by the "eval":
+> 
+> - whitespaces in parameters cause the values to be split
+> - can't use quotes in parameter values ("unexpected EOF while looking
+>   for matching `''")
+> - can't use dollars in parameter values
+> - empty paramers are dismissed
+> - any amount of any whitespace is replaced with a single space
+> - try backquotes! it's fun!
+> - probably a lot more breakages due to bash syntax conflicting with
+>   parameter values
+> 
+> Please remove the eval.  It's evil.
+> 
+> Max
+> 
+
+
+
+------------=_1208658784-12289-2
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 406059-close) by bugs.debian.org; 20 Apr 2008 02:31:43 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.2 required=4.0 tests=BAYES_00,FOURLA,
+	FROMDEVELOPER,FVGT_m_MULTI_ODD,HAS_BUG_NUMBER,HEADER_X_KATIE,
+	IMPRONONCABLE_1,IMPRONONCABLE_2,MURPHY_WRONG_WORD2,PHONENUMBER 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnPLD-0002r9-E3
+	for 406059-close@bugs.debian.org; Sun, 20 Apr 2008 02:31:43 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnOsU-0004NB-H7; Sun, 20 Apr 2008 02:02:02 +0000
+From: Chris Lawrence <lawrencc@debian.org>
+To: 406059-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#406059: fixed in lsb 3.2-9
+Message-Id: <E1JnOsU-0004NB-H7@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 02:02:02 +0000
+X-CrossAssassin-Score: 3
+Content-Transfer-Encoding: quoted-printable
+
+Source: lsb
+Source-Version: 3.2-9
+
+We believe that the bug you reported is fixed in the latest version of
+lsb, which is due to be installed in the Debian FTP archive:
+
+lsb-base_3.2-9_all.deb
+  to pool/main/l/lsb/lsb-base_3.2-9_all.deb
+lsb-core_3.2-9_amd64.deb
+  to pool/main/l/lsb/lsb-core_3.2-9_amd64.deb
+lsb-cxx_3.2-9_amd64.deb
+  to pool/main/l/lsb/lsb-cxx_3.2-9_amd64.deb
+lsb-desktop_3.2-9_amd64.deb
+  to pool/main/l/lsb/lsb-desktop_3.2-9_amd64.deb
+lsb-graphics_3.2-9_amd64.deb
+  to pool/main/l/lsb/lsb-graphics_3.2-9_amd64.deb
+lsb-languages_3.2-9_amd64.deb
+  to pool/main/l/lsb/lsb-languages_3.2-9_amd64.deb
+lsb-multimedia_3.2-9_amd64.deb
+  to pool/main/l/lsb/lsb-multimedia_3.2-9_amd64.deb
+lsb-printing_3.2-9_amd64.deb
+  to pool/main/l/lsb/lsb-printing_3.2-9_amd64.deb
+lsb-qt4_3.2-9_amd64.deb
+  to pool/main/l/lsb/lsb-qt4_3.2-9_amd64.deb
+lsb-release_3.2-9_all.deb
+  to pool/main/l/lsb/lsb-release_3.2-9_all.deb
+lsb_3.2-9.dsc
+  to pool/main/l/lsb/lsb_3.2-9.dsc
+lsb_3.2-9.tar.gz
+  to pool/main/l/lsb/lsb_3.2-9.tar.gz
+lsb_3.2-9_all.deb
+  to pool/main/l/lsb/lsb_3.2-9_all.deb
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 406059@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Chris Lawrence <lawrencc@debian.org> (supplier of updated lsb package)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Thu, 17 Apr 2008 20:38:23 -0500
+Source: lsb
+Binary: lsb-core lsb-graphics lsb-cxx lsb-desktop lsb-qt4 lsb-languages l=
+sb-multimedia lsb-printing lsb lsb-base lsb-release
+Architecture: source all amd64
+Version: 3.2-9
+Distribution: unstable
+Urgency: low
+Maintainer: Chris Lawrence <lawrencc@debian.org>
+Changed-By: Chris Lawrence <lawrencc@debian.org>
+Description:=20
+ lsb        - Linux Standard Base 3.2 support package
+ lsb-base   - Linux Standard Base 3.2 init script functionality
+ lsb-core   - Linux Standard Base 3.2 core support package
+ lsb-cxx    - Linux Standard Base 3.2 C++ support package
+ lsb-desktop - Linux Standard Base 3.2 Desktop support package
+ lsb-graphics - Linux Standard Base 3.2 graphics support package
+ lsb-languages - Linux Standard Base 3.2 Runtime Languages package
+ lsb-multimedia - Linux Standard Base 3.2 Multimedia package
+ lsb-printing - Linux Standard Base 3.2 Printing package
+ lsb-qt4    - Linux Standard Base 3.2 Qt4 support package
+ lsb-release - Linux Standard Base version reporting utility
+Closes: 406059 470993 476288
+Changes:=20
+ lsb (3.2-9) unstable; urgency=3Dlow
+ .
+   * Fix lsb_release detection when apt-cache policy identifies no Debian
+     sources.  (Closes: #476288)
+   * Only use fancy TTY output if TERM is set and FD 1 is a terminal.
+     (Closes: #470993)
+   * Do not use eval in start_daemon().  (Closes: #406059)
+Checksums-Sha1:=20
+ 6ed024b64277a3c8db36633dfa12855cf84ba4fb 954 lsb_3.2-9.dsc
+ 8012777f98401542a412311b8ce8d837456358f6 49479 lsb_3.2-9.tar.gz
+ b92f6c90f06193d45dcb31fdefdebdb9039047dd 12602 lsb_3.2-9_all.deb
+ 1c1c40da2c98e2631e7e4c5a4f42b394846b703e 18066 lsb-base_3.2-9_all.deb
+ 239ea3a025ff53c0ef434a545310b39dc5226862 18094 lsb-release_3.2-9_all.deb
+ 3f8b8566b17ea368e536daa165846b59ee06741e 35512 lsb-core_3.2-9_amd64.deb
+ 8e17e5b2a3876945833b77b73507921fb435f2c3 12638 lsb-graphics_3.2-9_amd64.=
+deb
+ 73cada4ff30b9415e49b7d9ebcce1d190577637c 12600 lsb-cxx_3.2-9_amd64.deb
+ 2926e7951e8d3e3cd55f73fc841f543c6b3a7036 12734 lsb-desktop_3.2-9_amd64.d=
+eb
+ 199626c9abc36bd82df763e399aa871895cb4b2e 12666 lsb-qt4_3.2-9_amd64.deb
+ c90575323751be5ee9f971eabf1f3f557be3a708 12632 lsb-languages_3.2-9_amd64=
+.deb
+ f5754df8e9fafc0cc0748d4a7a5e146e1fadd487 12606 lsb-multimedia_3.2-9_amd6=
+4.deb
+ fa5379037d0b05d8cc3ef796c317745696e1c193 12628 lsb-printing_3.2-9_amd64.=
+deb
+Checksums-Sha256:=20
+ 85e87f8907c1c71bf3a1a9da45e17ae8f78b8773a124c91133c95636027204a8 954 lsb=
+_3.2-9.dsc
+ 9719ddd3f3fd833e6196d961ab06ccc0c08dc1362fbe09ceb7b81bd7e37152f5 49479 l=
+sb_3.2-9.tar.gz
+ 7bdde577b50bb0dec7c7351ca59731eed71bdb903d027e08b21e3ba17a1fdbad 12602 l=
+sb_3.2-9_all.deb
+ 133352e6ecef32527f83d4cd3c447b301677504628ea154b4a0bfe4ac2eb779b 18066 l=
+sb-base_3.2-9_all.deb
+ ec37cb3a2c7103ffd6b82cc20e19d9d5811593684af5ce48efe9be484feffb13 18094 l=
+sb-release_3.2-9_all.deb
+ faa3be0d6e80d8c0c0286278d99a043a8653ee264b32547c9a650e35a6119cde 35512 l=
+sb-core_3.2-9_amd64.deb
+ c0a1f03632126b18db029d494bdbc7d66d10797041aec5de4ab96cb95d0e57ea 12638 l=
+sb-graphics_3.2-9_amd64.deb
+ 2525fd46e8f376ac3a38f6b7a25f25585c507075afc89579a68064538d8ddd91 12600 l=
+sb-cxx_3.2-9_amd64.deb
+ 8e52eafabffc60494dbfa87f62e5762685f25b3d4684fbbf62cab549968929a5 12734 l=
+sb-desktop_3.2-9_amd64.deb
+ 0e9887a3dcffdba6ac01e89bd2da9f1d75c745a79a081a665a136c144df43b80 12666 l=
+sb-qt4_3.2-9_amd64.deb
+ 114b5c08f6988f00653bf12f98d6aea853c1340e753d152a6841278d69901d6d 12632 l=
+sb-languages_3.2-9_amd64.deb
+ 2d0cd760ef4adc6f184eabe2dcd4fbfc4954974b06b98c2fda3ff8d2c3ca25d8 12606 l=
+sb-multimedia_3.2-9_amd64.deb
+ fa9ce76c154bded00773e9105e0b7cb146b86bff209f036fe26f1802f3b3cbc5 12628 l=
+sb-printing_3.2-9_amd64.deb
+Files:=20
+ 015bbed536dc1dfe73ce64a85a2aa57f 954 misc extra lsb_3.2-9.dsc
+ 5deb1e74ad94b404de52bdc7288c0962 49479 misc extra lsb_3.2-9.tar.gz
+ 7388c34f68dac59187d171fc5f5eb88c 12602 misc extra lsb_3.2-9_all.deb
+ f6ab02f071010ea32d99ed517e2fa4ff 18066 misc required lsb-base_3.2-9_all.=
+deb
+ 29b0add17b6167b078276280ea253c87 18094 misc extra lsb-release_3.2-9_all.=
+deb
+ b2c83eb17e4dda5dd3055ae8ab167595 35512 misc extra lsb-core_3.2-9_amd64.d=
+eb
+ 36033b1654bfb90370a516dab3de8f07 12638 misc extra lsb-graphics_3.2-9_amd=
+64.deb
+ 6d56d46d406ea1db75f407be8e64ac86 12600 misc extra lsb-cxx_3.2-9_amd64.de=
+b
+ 8387f5602dae813eaa117224aaea9d18 12734 misc extra lsb-desktop_3.2-9_amd6=
+4.deb
+ d0fcc11a2247ad04d18747853e770687 12666 misc extra lsb-qt4_3.2-9_amd64.de=
+b
+ a280f8534a85a3654382a399ac0d7c58 12632 misc extra lsb-languages_3.2-9_am=
+d64.deb
+ d3f35c586cfeaad769093a36edae6d5f 12606 misc extra lsb-multimedia_3.2-9_a=
+md64.deb
+ 28ae693eb8289b9c21b6682f05d2a9bc 12628 misc extra lsb-printing_3.2-9_amd=
+64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIB/wb2wQKE6PXubwRAhlpAJ9wOLJl2EGyzWIIWAeJmYyoaSAAuACdEVrH
+HgQ2Vq9EV96RoJlFcaImwCA=3D
+=3DVcEs
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208658784-12289-2--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

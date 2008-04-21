@@ -1,0 +1,116 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 21:13:17 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnfuU-0000uQ-T0
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 21:13:17 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id E22A513A52D7; Sun, 20 Apr 2008 20:13:13 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.7 required=4.0 tests=BAYES_00,FOURLA,LDO_WHITELIST,
+	MURPHY_WRONG_WORD2,RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 45D9313A51F3;
+	Sun, 20 Apr 2008 20:13:04 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnfna-0005et-Jl; Sun, 20 Apr 2008 20:06:06 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#475971: This is caused by LDFLAGS being set in the environment (by dpkg-buildpacakge)
+Reply-To: Bernd Zeimetz <bernd@bzed.de>, 475971@bugs.debian.org
+Resent-From: Bernd Zeimetz <bernd@bzed.de>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Michael Janssen <jamuraa@debian.org>
+Resent-Date: Sun, 20 Apr 2008 20:06:05 +0000
+Resent-Message-ID: <handler.475971.B475971.120872183917979@bugs.debian.org>
+X-Debian-PR-Message: report 475971
+X-Debian-PR-Package: player
+X-Debian-PR-Keywords: 
+Received: via spool by 475971-submit@bugs.debian.org id=B475971.120872183917979
+          (code B ref 475971); Sun, 20 Apr 2008 20:06:05 +0000
+Received: (at 475971) by bugs.debian.org; 20 Apr 2008 20:03:59 +0000
+X-Amavis-Spam-Status: No, score=-6.7 required=4.0 tests=BAYES_00,FOURLA,
+	HAS_BUG_NUMBER,MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from mail.recluse.de ([78.47.255.98])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <bernd@bzed.de>)
+	id 1JnflX-0004fd-85
+	for 475971@bugs.debian.org; Sun, 20 Apr 2008 20:03:59 +0000
+Received: from localhost (local.mail.recluse.de [10.10.10.98])
+	by mail.recluse.de (Postfix) with ESMTP id D006D1B8032;
+	Sun, 20 Apr 2008 22:03:56 +0200 (CEST)
+X-Virus-Scanned: Debian amavisd-new at recluse.de
+Received: from mail.recluse.de ([10.10.10.98])
+	by localhost (mail.recluse.de [10.10.10.98]) (amavisd-new, port 10024)
+	with ESMTP id ecnKQYk0JKfs; Sun, 20 Apr 2008 22:03:56 +0200 (CEST)
+Received: from [IPv6:2001:6f8:118a:1:21d:e0ff:fe94:d13f] (think-wl.mg.bzed.de [IPv6:2001:6f8:118a:1:21d:e0ff:fe94:d13f])
+	by mail.recluse.de (Postfix) with ESMTP id AC2E91B8003;
+	Sun, 20 Apr 2008 22:03:55 +0200 (CEST)
+Message-ID: <480BA1AA.3020307@bzed.de>
+Date: Sun, 20 Apr 2008 22:03:54 +0200
+From: Bernd Zeimetz <bernd@bzed.de>
+User-Agent: Mozilla-Thunderbird 2.0.0.9 (X11/20080109)
+MIME-Version: 1.0
+To: debian-devel@lists.debian.org, 475971@bugs.debian.org
+References: <20080420190051.GA18797@chistera.yi.org>
+In-Reply-To: <20080420190051.GA18797@chistera.yi.org>
+X-Enigmail-Version: 0.95.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Resent-Date: Sun, 20 Apr 2008 20:06:06 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343767
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -35.1
+X-Spam-Report: (-35.1 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	18 AWL                    AWL: From: address is in the auto white-list
+
+Adeodato Sim=C3=B3 wrote:
+> After a bit of inspection, the root of this FTBFS seems to be
+> dpkg-buildpackage having set LDFLAGS in the environment (even to an
+> empty value, mind you).
+
+Two of my packages were affected by this uglyness, too.
+If you use LDFLAGS as _make_ variable to build up the linker flags you
+need, for some reason this _make_ variable is now exported into the
+environment, resulting in this weirdness.
+I'm not sure where the sense behind all this is - I prety much know when
+I want to have such flags in the environment or not, there's no need
+that dpkg helps me with that.
+For one package I used unset on all this environment nonsense in the
+build target, for one LDFLAGS was renamed to LINKER_FLAGS. I'm pretty
+much annoyed that those hacks are necesary at all.
+
+Just another, untested change in dpkg which resulted in a lot of
+unnecessary FTBFSs.
+
+--=20
+ Bernd Zeimetz                           Debian GNU/Linux Developer
+ GPG Fingerprint: 06C8 C9A2 EAAD E37E 5B2C BE93 067A AD04 C93B FF79
+
+
+

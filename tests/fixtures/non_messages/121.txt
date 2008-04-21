@@ -1,0 +1,294 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 11:46:42 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnX48-0006TP-4d
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 11:46:42 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 1FA8113A4ED6; Sun, 20 Apr 2008 10:46:35 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-6.9 required=4.0 tests=BAYES_00,FOURLA,
+	IMPRONONCABLE_2,LDO_WHITELIST,MURPHY_DRUGS_REL8,RCVD_IN_DNSWL_LOW
+	autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 4694713A498D;
+	Sun, 20 Apr 2008 10:46:23 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnWzk-0004OP-Td; Sun, 20 Apr 2008 10:42:04 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#472350: [Buildd-tools-devel] Bug#472350: sbuild: Add support for running apt-get update before a build
+Reply-To: Roger Leigh <rleigh@whinlatter.ukfsn.org>, 472350@bugs.debian.org
+Resent-From: Roger Leigh <rleigh@whinlatter.ukfsn.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian buildd-tools Developers <buildd-tools-devel@lists.alioth.debian.org>
+Resent-Date: Sun, 20 Apr 2008 10:42:04 +0000
+Resent-Message-ID: <handler.472350.B472350.120868793411743@bugs.debian.org>
+X-Debian-PR-Message: report 472350
+X-Debian-PR-Package: sbuild
+X-Debian-PR-Keywords: patch
+X-Debian-PR-Source: sbuild
+Received: via spool by 472350-submit@bugs.debian.org id=B472350.120868793411743
+          (code B ref 472350); Sun, 20 Apr 2008 10:42:04 +0000
+Received: (at 472350) by bugs.debian.org; 20 Apr 2008 10:38:54 +0000
+X-Amavis-Spam-Status: No, score=-7.7 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,HAS_BUG_NUMBER,IMPRONONCABLE_2,MURPHY_DRUGS_REL8,
+	VALID_BTS_CONTROL autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from mx1.ukfsn.org ([77.75.108.10] helo=mail.ukfsn.org)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <rleigh@whinlatter.ukfsn.org>)
+	id 1JnWwf-00032g-HI; Sun, 20 Apr 2008 10:38:53 +0000
+Received: from localhost (smtp-filter.ukfsn.org [192.168.54.205])
+	by mail.ukfsn.org (Postfix) with ESMTP id D0ECCDED11;
+	Sun, 20 Apr 2008 11:40:35 +0100 (BST)
+Received: from mail.ukfsn.org ([192.168.54.25])
+	by localhost (smtp-filter.ukfsn.org [192.168.54.205]) (amavisd-new, port 10024)
+	with ESMTP id kzcqIX7XiTqf; Sun, 20 Apr 2008 11:26:41 +0100 (BST)
+Received: from hardknott.home (client-81-107-214-164.glfd.adsl.virgin.net [81.107.214.164])
+	by mail.ukfsn.org (Postfix) with ESMTP id F13D3DECF6;
+	Sun, 20 Apr 2008 11:40:34 +0100 (BST)
+Received: by hardknott.home (Postfix, from userid 1000)
+	id 2C466C004; Sun, 20 Apr 2008 11:38:48 +0100 (BST)
+To: Timothy G Abbott <tabbott@MIT.EDU>
+Cc: 472350@bugs.debian.org
+References: <Pine.LNX.4.64L.0803222103140.5226@vinegar-pot.mit.edu>
+From: Roger Leigh <rleigh@whinlatter.ukfsn.org>
+Date: Sun, 20 Apr 2008 11:38:40 +0100
+In-Reply-To: <Pine.LNX.4.64L.0803222103140.5226@vinegar-pot.mit.edu> (Timothy G. Abbott's message of "Sun\, 23 Mar 2008 14\:00\:28 -0400 \(EDT\)")
+Message-ID: <87r6d0lsjz.fsf@hardknott.home>
+User-Agent: Gnus/5.11 (Gnus v5.11) Emacs/22.2 (gnu/linux)
+MIME-Version: 1.0
+Content-Type: multipart/signed; boundary="=-=-=";
+	micalg=pgp-sha1; protocol="application/pgp-signature"
+X-CrossAssassin-Score: 2
+Resent-Date: Sun, 20 Apr 2008 10:42:04 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343430
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -33.2
+X-Spam-Report: (-33.2 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	19 AWL                    AWL: From: address is in the auto white-list
+
+--=-=-=
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+tags 472350 + fixed-upstream pending
+thanks
+
+Timothy G Abbott <tabbott@MIT.EDU> writes:
+
+> I would find it useful to have an option in sbuild that automatically
+> runs "apt-get update" in the build chroot immediately prior to
+> building, which ensures the build gets the newest dependencies, even
+> if one has not done an apt update in the source chroot recently.
+>
+> I've attached a patch to implement this feature.
+
+Many thanks.  I have applied the patch with a couple of minor
+modifications (error handling and config file update).  What I have
+applied follows below, and is also here:
+
+http://git.debian.org/?p=3Dbuildd-tools/sbuild.git;a=3Dcommitdiff;h=3Dd2582=
+f13ea7e376d875d736cbbb350e92453e33b
+
+
+Regards,
+Roger
+
+
+diff --git a/AUTHORS b/AUTHORS
+index 2daf8c3..de90446 100644
+=2D-- a/AUTHORS
++++ b/AUTHORS
+@@ -16,3 +16,7 @@ Roger Leigh		<rleigh@debian.org>
+ Ryan Murray		<rmurray@debian.org>
+      	modifications for security building
+ 	maintenance
++
++Timothy G Abbott	<tabbott@mit.edu>
++	support for running "apt-get update" in chroots prior to
++	fetching sources and building
+\ No newline at end of file
+diff --git a/bin/sbuild b/bin/sbuild
+index 83ef805..22f09fb 100755
+=2D-- a/bin/sbuild
++++ b/bin/sbuild
+@@ -3,7 +3,8 @@
+ # sbuild: build packages, obeying source dependencies
+ # Copyright =C2=A9 1998-2000 Roman Hodek <Roman.Hodek@informatik.uni-erlan=
+gen.de>
+ # Copyright =C2=A9 2005      Ryan Murray <rmurray@debian.org>
+=2D# Copyright =C2=A9 2005-2007 Roger Leigh <rleigh@debian.org>
++# Copyright =C2=A9 2005-2008 Roger Leigh <rleigh@debian.org
++# Copyright =C2=A9 2008      Timothy G Abbott <tabbott@mit.edu>
+ #
+ # This program is free software: you can redistribute it and/or modify
+ # it under the terms of the GNU General Public License as published by
+@@ -191,6 +192,7 @@ exit 1 if !GetOptions ("arch=3Ds" =3D> \$main::user_arc=
+h,
+ 		       "binNMU=3Di" =3D> \$main::binNMUver,
+ 		       "database=3Ds" =3D> \$main::database,
+ 		       "D|debug+" =3D> \$conf::debug,
++		       "apt-update" =3D> \$conf::apt_update,
+ 		       "d|dist=3Ds" =3D> sub {
+ 			   $main::distribution =3D $_[1];
+ 			   $main::distribution =3D "oldstable"
+@@ -337,6 +339,22 @@ foreach $dscfile (@ARGV) {
+=20
+     $main::arch =3D chroot_arch();
+=20
++    # Update APT cache.
++    if ($conf::apt_update) {
++	if (!open(PIPE, Sbuild::Chroot::get_apt_command("$conf::apt_get", "-q upd=
+ate", "root", 1) . " 2>&1 |")) {
++	    print PLOG "Can't open pipe to apt-get: $!\n";
++	    return 0;
++	}
++	while(<PIPE>) {
++	    print PLOG $_;
++	}
++	close(PIPE);
++	if ($?) {
++	    print PLOG "apt-get update failed\n" ;
++	    $main::pkg_status =3D "skipped";
++	    goto cleanup_close;
++	}
++    }
+=20
+     $main::pkg_fail_stage =3D "fetch-src";
+     my @files_to_rm =3D fetch_source_files( \$dscfile,
+@@ -433,7 +451,7 @@ sub fetch_source_files ($$$$$) {
+ 	}
+     } else {
+ 	my %entries =3D ();
+=2D	my $retried =3D 0;
++	my $retried =3D $conf::apt_update;
+       retry:
+ 	print PLOG "Checking available source versions...\n";
+ 	my $command =3D get_apt_command("$conf::apt_cache", "-q showsrc $pkg", $m=
+ain::username, 0);
+diff --git a/etc/sbuild.conf b/etc/sbuild.conf
+index 46e9d9d..1cea5b5 100644
+=2D-- a/etc/sbuild.conf
++++ b/etc/sbuild.conf
+@@ -85,6 +85,10 @@
+ # cost.
+ #$apt_policy =3D 1;
+=20
++# APT update.  1 to enable running "apt-get update" at the start of
++# each build, or 0 to disable.
++#$apt_update =3D 0;
++
+ # Check watched packages to discover missing build dependencies.  This
+ # can be disabled to increase the speed of builds
+ #$check_watches =3D 1;
+diff --git a/lib/Sbuild/Conf.pm b/lib/Sbuild/Conf.pm
+index f13cf91..cc36717 100644
+=2D-- a/lib/Sbuild/Conf.pm
++++ b/lib/Sbuild/Conf.pm
+@@ -33,19 +33,20 @@ BEGIN {
+=20
+     @ISA =3D qw(Exporter);
+=20
+=2D    @EXPORT =3D qw($HOME %alternatives $apt_policy $check_watches $cwd
+=2D		 $username $verbose $nolog $mailprog $dpkg $su
+=2D		 $schroot $schroot_options $fakeroot $apt_get
+=2D		 $apt_cache $dpkg_source $md5sum $avg_time_db
+=2D		 $avg_space_db $package_checklist $build_env_cmnd
+=2D		 $pgp_options $log_dir $mailto $mailfrom
+=2D		 @no_auto_upgrade $check_depends_algorithm
++    @EXPORT =3D qw($HOME %alternatives $apt_policy $apt_update
++		 $check_watches $cwd $username $verbose $nolog
++		 $mailprog $dpkg $su $schroot $schroot_options
++		 $fakeroot $apt_get $apt_cache $dpkg_source $md5sum
++		 $avg_time_db $avg_space_db $package_checklist
++		 $build_env_cmnd $pgp_options $log_dir $mailto
++		 $mailfrom @no_auto_upgrade $check_depends_algorithm
+ 		 $purge_build_directory @toolchain_regex
+ 		 $stalled_pkg_timeout $srcdep_lock_dir
+ 		 $srcdep_lock_wait @ignore_watches_no_build_deps
+ 		 $build_dir $sbuild_mode $debug $force_orig_source
+ 		 %individual_stalled_pkg_timeout $path
+=2D		 $maintainer_name $uploader_name %watches $key_id); }
++		 $maintainer_name $uploader_name %watches $key_id);
++}
+=20
+ # Originally from the main namespace.
+ (our $HOME =3D $ENV{'HOME'})
+@@ -100,6 +101,7 @@ our $path =3D "/usr/local/sbin:/usr/local/bin:/usr/sbin=
+:/usr/bin:/sbin:/bin:/usr/X
+ our $maintainer_name;
+ our $uploader_name;
+ our $key_id;
++our $apt_update =3D 0;
+ our %alternatives =3D ("info-browser"		=3D> "info",
+ 		     "httpd"			=3D> "apache",
+ 		     "postscript-viewer"	=3D> "ghostview",
+diff --git a/man/sbuild.1.in b/man/sbuild.1.in
+index 9ad7818..41d5607 100644
+=2D-- a/man/sbuild.1.in
++++ b/man/sbuild.1.in
+@@ -111,6 +111,9 @@ is a line of source dependencies in the same format as =
+in
+ .IR \-D , "\-\-debug"
+ Enable debug output.
+ .TP
++.IR "\-\-apt\-update"
++Run apt-get update in the chroot before executing the build.
++.TP
+ .IR \-m , "\-\-maintainer=3D<maintainer>"
+ Passed to dpkg\-genchanges and is used to set the Maintainer: field in
+ the .changes file(s).
+
+
+=2D-=20
+  .''`.  Roger Leigh
+ : :' :  Debian GNU/Linux             http://people.debian.org/~rleigh/
+ `. `'   Printing on GNU/Linux?       http://gutenprint.sourceforge.net/
+   `-    GPG Public Key: 0x25BFB848   Please GPG sign your mail.
+
+--=-=-=
+Content-Type: application/pgp-signature
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICx04VcFcaSW/uEgRAnVaAKDR4gV7vCRtHNEfInwNTBqLSWFrXgCcC6yg
+RY9RwkcktIJpHzkbxTw26aY=
+=+AuJ
+-----END PGP SIGNATURE-----
+--=-=-=--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

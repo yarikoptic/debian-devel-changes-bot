@@ -1,0 +1,155 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 15:50:03 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnard-0007Yq-6N
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 15:50:02 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 1EDAE13A4ED0; Sun, 20 Apr 2008 14:49:56 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 565C013A4F17;
+	Sun, 20 Apr 2008 14:49:42 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnapp-00067J-D2; Sun, 20 Apr 2008 14:48:05 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476076: gitweb fails with pathinfo and project with ++ in the name
+Reply-To: martin f krafft <madduck@madduck.net>, 476076@bugs.debian.org
+Resent-From: martin f krafft <madduck@madduck.net>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Gerrit Pape <pape@smarden.org>
+Resent-Date: Sun, 20 Apr 2008 14:48:04 +0000
+Resent-Message-ID: <handler.476076.B476076.120870282922375@bugs.debian.org>
+X-Debian-PR-Message: report 476076
+X-Debian-PR-Package: gitweb
+X-Debian-PR-Keywords: upstream
+X-Debian-PR-Source: git-core
+Received: via spool by 476076-submit@bugs.debian.org id=B476076.120870282922375
+          (code B ref 476076); Sun, 20 Apr 2008 14:48:04 +0000
+Received: (at 476076) by bugs.debian.org; 20 Apr 2008 14:47:09 +0000
+X-Amavis-Spam-Status: No, score=-3.9 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from clegg.madduck.net ([82.197.162.59])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <madduck@piper.madduck.net>)
+	id 1Jnaou-0005oG-RV
+	for 476076@bugs.debian.org; Sun, 20 Apr 2008 14:47:09 +0000
+Received: from wall.oerlikon.madduck.net (84-75-148-163.dclient.hispeed.ch [84.75.148.163])
+	(using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+	(Client CN "wall.oerlikon.madduck.net", Issuer "CAcert Class 3 Root" (verified OK))
+	by clegg.madduck.net (postfix) with ESMTP id 5156EA80FF;
+	Sun, 20 Apr 2008 16:46:55 +0200 (CEST)
+Received: from piper.oerlikon.madduck.net (piper.oerlikon.madduck.net [192.168.14.3])
+	by wall.oerlikon.madduck.net (Postfix) with ESMTP id 7567A9F18E;
+	Sun, 20 Apr 2008 16:46:54 +0200 (CEST)
+Received: by piper.oerlikon.madduck.net (Postfix, from userid 1000)
+	id 2C94BC1757; Sun, 20 Apr 2008 16:46:54 +0200 (CEST)
+Date: Sun, 20 Apr 2008 16:46:54 +0200
+From: martin f krafft <madduck@madduck.net>
+To: git discussion list <git@vger.kernel.org>
+Cc: 476076@bugs.debian.org
+Message-ID: <20080420144654.GA11479@piper.oerlikon.madduck.net>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+	protocol="application/pgp-signature"; boundary="M9NhX3UHpAaciwkO"
+Content-Disposition: inline
+X-Motto: Keep the good times rollin'
+X-OS: Debian GNU/Linux lenny/sid kernel 2.6.24-1-amd64 x86_64
+X-Spamtrap: madduck.bogus@madduck.net
+X-Subliminal-Message: debian/rules!
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+X-Virus-Scanned: ClamAV 0.91.2/6847/Sun Apr 20 16:14:42 2008 on clegg.madduck.net
+X-Virus-Status: Clean
+Resent-Date: Sun, 20 Apr 2008 14:48:05 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343534
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -42.4
+X-Spam-Report: (-42.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	10 AWL                    AWL: From: address is in the auto white-list
+
+
+--M9NhX3UHpAaciwkO
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+Hi all,
+
+please have a look at http://git.madduck.net/v/code/libfactory++.git
+or http://git.madduck.net/v/code/libfactory%2b%2b.git.
+
+I narrowed this down to the first line of CGI.pm's path_info sub:
+
+  my ($self,$info) =3D self_or_default(@_);
+
+but then my perl-foo wouldn't take me further.
+
+gitweb works fine if I turn off pathinfo, but when it's turned on,
+it cannot deal with two ++ in the name of projects.
+
+The bug seems to be in CGI.pm, and I now wonder what to do about it.
+
+Please keep the bug address <476076@bugs.debian.org> in Cc.
+
+--=20
+martin | http://madduck.net/ | http://two.sentenc.es/
+=20
+"the association on this web site and in peter chappell
+ publications, articles and books, made between remedy and diseases
+ is used for clarity, but is not the functional reality and does not
+ imply these resonances treat any disease. they merely vitalise and
+ inform the self healing system."
+                                                   -- peter chappell
+=20
+spamtraps: madduck.bogus@madduck.net
+
+--M9NhX3UHpAaciwkO
+Content-Type: application/pgp-signature; name="digital_signature_gpg.asc"
+Content-Description: Digital signature (see http://martin-krafft.net/gpg/)
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC1dZIgvIgzMMSnURAoOPAKDuGSj0rA93MEskjekomFJ4gWTP5ACfYzPG
+1xPqMiIzq4yHLMU5fv4O5RM=
+=3Ytb
+-----END PGP SIGNATURE-----
+
+--M9NhX3UHpAaciwkO--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

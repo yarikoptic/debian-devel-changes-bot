@@ -1,0 +1,242 @@
+From bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org Sun Apr 20 09:04:48 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed=ddc=ddc.chris-lamb.co.uk@lists.debian.org>)
+	id 1JnUXS-0005m0-Dc
+	for ddc@ddc.chris-lamb.co.uk; Sun, 20 Apr 2008 09:04:48 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 3618113A4E7F; Sun, 20 Apr 2008 08:04:41 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 4603F13A4E78;
+	Sun, 20 Apr 2008 08:04:38 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnUVr-0002aG-Iz; Sun, 20 Apr 2008 08:03:03 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Andreas Metzler <ametzler@downhill.at.eu.org>
+Subject: Bug#449338: marked as done (find -xdev crosses -obind mountpoints)
+Message-ID: <handler.449338.D449338.12086784978385.ackdone@bugs.debian.org>
+References: <20080420080128.GB3135@downhill.g.la>
+ <87lk9dgjaf.wl%peterc@chubb.wattle.id.au>
+X-Debian-PR-Message: closed 449338
+X-Debian-PR-Package: findutils
+X-Debian-PR-Source: findutils
+Content-Type: multipart/mixed; boundary="----------=_1208678583-9843-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 08:03:03 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <-Bq8xYwGhjI.A.z3.ZkvCIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/132906
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 08:04:41 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208678583-9843-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 10:01:28 +0200
+with message-id <20080420080128.GB3135@downhill.g.la>
+and subject line Re: Bug#449338: find -xdev crosses -obind mountpoints
+has caused the Debian Bug report #449338,
+regarding find -xdev crosses -obind mountpoints
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+449338: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D449338
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208678583-9843-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 5 Nov 2007 08:59:48 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.9 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	HAS_PACKAGE,XXXBODY autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <peterc@gelato.unsw.edu.au>
+Received: from lemon.ertos.nicta.com.au ([203.143.174.143] helo=lemon.gelato.unsw.edu.au)
+	by rietz.debian.org with esmtp (Exim 4.50)
+	id 1IoxoC-0002Wu-Kq
+	for submit@bugs.debian.org; Mon, 05 Nov 2007 08:59:48 +0000
+Received: from c220-237-0-198.randw1.nsw.optusnet.com.au ([220.237.0.198]:41743 helo=localhost)
+	by lemon.gelato.unsw.edu.au with esmtpsa (TLS-1.0:RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <peterc@gelato.unsw.edu.au>)
+	id 1IoxnY-0002O9-1e
+	for submit@bugs.debian.org; Mon, 05 Nov 2007 19:59:16 +1100
+Received: from [127.0.0.1] (helo=localhost.chubb.wattle.id.au)
+	by localhost with esmtp (Exim 4.63)
+	(envelope-from <peterc@gelato.unsw.edu.au>)
+	id 1IoxnU-0003yY-Uh
+	for submit@bugs.debian.org; Mon, 05 Nov 2007 19:59:05 +1100
+Date: Mon, 05 Nov 2007 19:59:04 +1100
+Message-ID: <87lk9dgjaf.wl%peterc@chubb.wattle.id.au>
+From: Peter Chubb <peterc@gelato.unsw.edu.au>
+To: submit@bugs.debian.org
+User-Agent: Wanderlust/2.15.5 (Almost Unreal) SEMI/1.14.6 (Maruoka)
+ FLIM/1.14.8 (=?ISO-8859-4?Q?Shij=F2?=) APEL/10.7 MULE XEmacs/21.4 (patch
+ 20) (Double Solitaire) (x86_64-linux-gnu)
+X-Face:  GgFg(Z>fx((4\32hvXq<)|jndSniCH~~$D)Ka:P@e@JR1P%Vr}EwUdfwf-4j\rUs#JR{'h#
+ !]])6%Jh~b$VA|ALhnpPiHu[-x~@<"@Iv&|%R)Fq[[,(&Z'O)Q)xCqe1\M[F8#9l8~}#u$S$Rm`S9%
+ \'T@`:&8>Sb*c5d'=eDYI&GF`+t[LfDH="MP5rwOO]w>ALi7'=QJHz&y&C&TE_3j!
+Organization: Gelato@UNSW
+MIME-Version: 1.0 (generated by SEMI 1.14.6 - "Maruoka")
+Content-Type: text/plain; charset=US-ASCII
+X-SA-Exim-Connect-IP: 220.237.0.198
+X-SA-Exim-Mail-From: peterc@gelato.unsw.edu.au
+Subject: find -xdev crosses -obind mountpoints
+X-SA-Exim-Version: 4.2 (built Thu, 03 Mar 2005 10:39:27 +0000)
+X-SA-Exim-Scanned: Yes (on lemon.gelato.unsw.edu.au)
+Delivered-To: submit@bugs.debian.org
+
+
+Package: findutils
+Version: 4.2.31-1
+
+-xdev isn't supposed to cross mountpoints, but it can if the
+subdirectory is on the same device.
+
+To show the problem:
+
+	mkdir -p a/b/c/d
+	cd a
+	mkdir e
+	> e/foo
+	mount -obind e b/c/d
+	find b -xdev
+
+find prints b/c/d/foo which is across the mountpoint.
+
+On my system, this causes some large directories (/home) to be backed
+up multiple times because they're bind-mounted in /var/chroot/xxx/home
+
+
+--
+Dr Peter Chubb  http://www.gelato.unsw.edu.au  peterc AT gelato.unsw.edu.au
+http://www.ertos.nicta.com.au           ERTOS within National ICT Australia
+
+
+
+------------=_1208678583-9843-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 449338-done) by bugs.debian.org; 20 Apr 2008 08:01:37 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-6.9 required=4.0 tests=BAYES_00,FOURLA,
+	HAS_BUG_NUMBER autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <ametzler@downhill.at.eu.org>
+Received: from m26s25.vlinux.de ([83.151.30.59] ident=[8AQDcETLi0V6PzOVuE7VWOd66xgdu9TC])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <ametzler@downhill.at.eu.org>)
+	id 1JnUUT-0002B0-GY
+	for 449338-done@bugs.debian.org; Sun, 20 Apr 2008 08:01:37 +0000
+Received: from adsl-013.229.166.194.arpa.as1901.net ([194.166.229.13] ident=[TOdM9LmTWY+o1YHaHZvEKVt3Qkw5z4pb])
+	by m26s25.vlinux.de with esmtpa (Exim 4.69)
+	(envelope-from <ametzler@downhill.at.eu.org>)
+	id 1JnUN5-0000PQ-MO
+	for 449338-done@bugs.debian.org; Sun, 20 Apr 2008 07:54:02 +0000
+Received: from ametzler by argenau.downhill.at.eu.org with local (Exim 4.69)
+	(envelope-from <ametzler@downhill.at.eu.org>)
+	id 1JnUUK-0001PW-RN
+	for 449338-done@bugs.debian.org; Sun, 20 Apr 2008 10:01:28 +0200
+Date: Sun, 20 Apr 2008 10:01:28 +0200
+From: Andreas Metzler <ametzler@downhill.at.eu.org>
+To: 449338-done@bugs.debian.org
+Subject: Re: Bug#449338: find -xdev crosses -obind mountpoints
+Message-ID: <20080420080128.GB3135@downhill.g.la>
+References: <87lk9dgjaf.wl%peterc@chubb.wattle.id.au> <20071105180512.GA5727@downhill.g.la>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+In-Reply-To: <20071105180512.GA5727@downhill.g.la>
+X-GPG-Fingerprint: BCF7 1345 BE42 B5B8 1A57  EE09 1D33 9C65 8B8D 7663
+User-Agent: Mutt/1.5.13 (2006-08-11)
+
+On 2007-11-05 Andreas Metzler <ametzler@downhill.at.eu.org> wrote:
+> On 2007-11-05 Peter Chubb <peterc@gelato.unsw.edu.au> wrote:
+
+> > Package: findutils
+> > Version: 4.2.31-1
+
+> > -xdev isn't supposed to cross mountpoints, but it can if the
+> > subdirectory is on the same device.
+> [...]
+
+> Hello,
+> This is kind of documented behavior, find does not care about
+> mountpoints, it cares about filesystems/devices. The bind mounted
+> stuff still lifes on the same device according to stat.
+
+> | -- Option: -xdev
+> | -- Option: -mount
+> |     Don't descend directories on other filesystems.  These options are
+> |     synonyms.
+
+> This is also the way POSIX/SUSv2 specifies it:
+
+> | -xdev
+> |     The primary shall always evaluate as true; it shall cause find not
+> |     to continue descending past directories that have a different
+> |     device ID ( st_dev, see the stat() function defined in the System
+> |     Interfaces volume of IEEE Std 1003.1-2001). If any -xdev primary
+> |     is specified, it shall apply to the entire expression even if the
+> |     -xdev primary would not normally be evaluated.
+
+
+
+------------=_1208678583-9843-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

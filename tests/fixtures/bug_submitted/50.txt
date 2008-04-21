@@ -1,0 +1,299 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 16:53:18 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnbqc-0007um-He
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 16:53:17 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id CD6CE13A50EF; Sun, 20 Apr 2008 15:52:48 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-6.7 required=4.0 tests=BAYES_00,FOURLA,
+	FVGT_m_MULTI_ODD,IMPRONONCABLE_1,LDO_WHITELIST,MURPHY_WRONG_WORD2,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 3BE5B13A50C2;
+	Sun, 20 Apr 2008 15:52:07 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1Jnbo4-0004MA-9j; Sun, 20 Apr 2008 15:50:20 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#477025: bug-buddy: FTBFS: configure: error: libelf.h not found.
+Reply-To: Lucas Nussbaum <lucas@lucas-nussbaum.net>, 477025@bugs.debian.org
+Resent-From: Lucas Nussbaum <lucas@lucas-nussbaum.net>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Resent-Date: Sun, 20 Apr 2008 15:50:17 +0000
+Resent-Message-ID: <handler.477025.B.12087064163363@bugs.debian.org>
+X-Debian-PR-Message: report 477025
+X-Debian-PR-Package: bug-buddy
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: bug-buddy
+Received: via spool by submit@bugs.debian.org id=B.12087064163363
+          (code B ref -1); Sun, 20 Apr 2008 15:50:17 +0000
+Received: (at submit) by bugs.debian.org; 20 Apr 2008 15:46:56 +0000
+X-Amavis-Spam-Status: No, score=-8.7 required=4.0 tests=BAYES_00,FOURLA,
+	FVGT_m_MULTI_ODD,HAS_PACKAGE,IMPRONONCABLE_1,MURPHY_WRONG_WORD2 
+	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Received: from xanadu.blop.info ([80.248.208.235])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <lucas@lucas-nussbaum.net>)
+	id 1Jnbkk-0000rM-Ig
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 15:46:55 +0000
+Received: from localhost ([127.0.0.1] helo=xanadu.blop.info)
+	by xanadu.blop.info with smtp (Exim 4.63)
+	(envelope-from <lucas@lucas-nussbaum.net>)
+	id 1Jnbkj-0000D4-Hs
+	for submit@bugs.debian.org; Sun, 20 Apr 2008 17:46:53 +0200
+Received: (nullmailer pid 22002 invoked by uid 1000);
+	Sun, 20 Apr 2008 15:23:24 -0000
+Date: Sun, 20 Apr 2008 17:23:24 +0200
+From: Lucas Nussbaum <lucas@lucas-nussbaum.net>
+To: submit@bugs.debian.org
+Message-ID: <20080420152324.GA21984@xanadu.blop.info>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
+Delivered-To: submit@bugs.debian.org
+Resent-Date: Sun, 20 Apr 2008 15:50:20 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343578
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -36.8
+X-Spam-Report: (-36.8 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	16 AWL                    AWL: From: address is in the auto white-list
+
+Package: bug-buddy
+Version: 2.22.0+dfsg-2
+Severity: serious
+User: debian-qa@lists.debian.org
+Usertags: qa-ftbfs-20080419 qa-ftbfs
+Justification: FTBFS on i386
+
+Hi,
+
+During a rebuild of all packages in sid, your package failed to build on i386.
+
+This rebuild was done with gcc 4.3 instead of gcc 4.2, because gcc 4.3 is now
+the default on most architectures (even if it's not the case on i386 yet).
+Feel free to downgrade this bug to 'important' if your package is only built
+on i386, and this bug is specific to gcc 4.3 (i.e the package builds fine with
+gcc 4.2).
+
+Relevant part:
+> make[1]: Entering directory `/build/user/bug-buddy-2.22.0+dfsg'
+> if test -e /usr/share/misc/config.guess ; then \
+> 		for i in ./config.guess ; do \
+> 			if ! test -e $i.cdbs-orig ; then \
+> 				mv $i $i.cdbs-orig ; \
+> 				cp --remove-destination /usr/share/misc/config.guess $i ; \
+> 			fi ; \
+> 		done ; \
+> 	fi
+> if test -e /usr/share/misc/config.sub ; then \
+> 		for i in ./config.sub ; do \
+> 			if ! test -e $i.cdbs-orig ; then \
+> 				mv $i $i.cdbs-orig ; \
+> 				cp --remove-destination /usr/share/misc/config.sub $i ; \
+> 			fi ; \
+> 		done ; \
+> 	fi
+> make[1]: Leaving directory `/build/user/bug-buddy-2.22.0+dfsg'
+> if test -e /usr/share/misc/config.guess ; then \
+> 		for i in ./config.guess ; do \
+> 			if ! test -e $i.cdbs-orig ; then \
+> 				mv $i $i.cdbs-orig ; \
+> 				cp --remove-destination /usr/share/misc/config.guess $i ; \
+> 			fi ; \
+> 		done ; \
+> 	fi
+> if test -e /usr/share/misc/config.sub ; then \
+> 		for i in ./config.sub ; do \
+> 			if ! test -e $i.cdbs-orig ; then \
+> 				mv $i $i.cdbs-orig ; \
+> 				cp --remove-destination /usr/share/misc/config.sub $i ; \
+> 			fi ; \
+> 		done ; \
+> 	fi
+> touch debian/stamp-autotools-files
+> chmod a+x /build/user/bug-buddy-2.22.0+dfsg/./configure
+> cd . && CC="cc" CXX="g++" CFLAGS="-g -O2 -g -Wall -O2" CXXFLAGS="-g -O2 -g -Wall -O2" CPPFLAGS="" LDFLAGS=" -Wl,-z,defs -Wl,-O1 -Wl,--as-needed" /build/user/bug-buddy-2.22.0+dfsg/./configure --build=i486-linux-gnu --prefix=/usr --includedir="\${prefix}/include" --mandir="\${prefix}/share/man" --infodir="\${prefix}/share/info" --sysconfdir=/etc --localstatedir=/var --libexecdir="\${prefix}/lib/bug-buddy" --disable-maintainer-mode --disable-dependency-tracking --srcdir=.   --disable-scrollkeeper --disable-google-breakpad 
+> checking build system type... i486-pc-linux-gnu
+> checking host system type... i486-pc-linux-gnu
+> checking target system type... i486-pc-linux-gnu
+> checking for a BSD-compatible install... /usr/bin/install -c
+> checking whether build environment is sane... yes
+> checking for a thread-safe mkdir -p... /bin/mkdir -p
+> checking for gawk... no
+> checking for mawk... mawk
+> checking whether make sets $(MAKE)... yes
+> checking for pkg-config... /usr/bin/pkg-config
+> checking pkg-config is at least version 0.9.0... yes
+> checking whether to enable maintainer-specific portions of Makefiles... no
+> checking for style of include used by make... GNU
+> checking for gcc... cc
+> checking for C compiler default output file name... a.out
+> checking whether the C compiler works... yes
+> checking whether we are cross compiling... no
+> checking for suffix of executables... 
+> checking for suffix of object files... o
+> checking whether we are using the GNU C compiler... yes
+> checking whether cc accepts -g... yes
+> checking for cc option to accept ISO C89... none needed
+> checking dependency style of cc... none
+> checking for intltool >= 0.35.0... 0.37.1 found
+> checking for xgettext... /usr/bin/xgettext
+> checking for msgmerge... /usr/bin/msgmerge
+> checking for msgfmt... /usr/bin/msgfmt
+> checking for perl... /usr/bin/perl
+> checking for XML::Parser... ok
+> checking for gconftool-2... /usr/bin/gconftool-2
+> Using config source xml:merged:/etc/gconf/gconf.xml.defaults for schema installation
+> Using $(sysconfdir)/gconf/schemas as install directory for schema files
+> checking for scrollkeeper-config... /usr/bin/scrollkeeper-config
+> checking for gcc... (cached) cc
+> checking whether we are using the GNU C compiler... (cached) yes
+> checking whether cc accepts -g... (cached) yes
+> checking for cc option to accept ISO C89... (cached) none needed
+> checking dependency style of cc... (cached) none
+> checking whether we are using the GNU C++ compiler... yes
+> checking whether g++ accepts -g... yes
+> checking dependency style of g++... none
+> checking for library containing strerror... none required
+> checking how to run the C preprocessor... cc -E
+> checking for grep that handles long lines and -e... /bin/grep
+> checking for egrep... /bin/grep -E
+> checking for ANSI C header files... yes
+> checking for a sed that does not truncate output... /bin/sed
+> checking for ld used by cc... /usr/bin/ld
+> checking if the linker (/usr/bin/ld) is GNU ld... yes
+> checking for /usr/bin/ld option to reload object files... -r
+> checking for BSD-compatible nm... /usr/bin/nm -B
+> checking whether ln -s works... yes
+> checking how to recognize dependent libraries... pass_all
+> checking for sys/types.h... yes
+> checking for sys/stat.h... yes
+> checking for stdlib.h... yes
+> checking for string.h... yes
+> checking for memory.h... yes
+> checking for strings.h... yes
+> checking for inttypes.h... yes
+> checking for stdint.h... yes
+> checking for unistd.h... yes
+> checking dlfcn.h usability... yes
+> checking dlfcn.h presence... yes
+> checking for dlfcn.h... yes
+> checking how to run the C++ preprocessor... g++ -E
+> checking for g77... no
+> checking for xlf... no
+> checking for f77... no
+> checking for frt... no
+> checking for pgf77... no
+> checking for cf77... no
+> checking for fort77... no
+> checking for fl32... no
+> checking for af77... no
+> checking for xlf90... no
+> checking for f90... no
+> checking for pgf90... no
+> checking for pghpf... no
+> checking for epcf90... no
+> checking for gfortran... no
+> checking for g95... no
+> checking for xlf95... no
+> checking for f95... no
+> checking for fort... no
+> checking for ifort... no
+> checking for ifc... no
+> checking for efc... no
+> checking for pgf95... no
+> checking for lf95... no
+> checking for ftn... no
+> checking whether we are using the GNU Fortran 77 compiler... no
+> checking whether  accepts -g... no
+> checking the maximum length of command line arguments... 98304
+> checking command to parse /usr/bin/nm -B output from cc object... ok
+> checking for objdir... .libs
+> checking for ar... ar
+> checking for ranlib... ranlib
+> checking for strip... strip
+> checking if cc supports -fno-rtti -fno-exceptions... no
+> checking for cc option to produce PIC... -fPIC
+> checking if cc PIC flag -fPIC works... yes
+> checking if cc static flag -static works... yes
+> checking if cc supports -c -o file.o... yes
+> checking whether the cc linker (/usr/bin/ld) supports shared libraries... yes
+> checking whether -lc should be explicitly linked in... no
+> checking dynamic linker characteristics... GNU/Linux ld.so
+> checking how to hardcode library paths into programs... immediate
+> checking whether stripping libraries is possible... yes
+> checking if libtool supports shared libraries... yes
+> checking whether to build shared libraries... yes
+> checking whether to build static libraries... no
+> configure: creating libtool
+> appending configuration tag "CXX" to libtool
+> checking for ld used by g++... /usr/bin/ld
+> checking if the linker (/usr/bin/ld) is GNU ld... yes
+> checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+> checking for g++ option to produce PIC... -fPIC
+> checking if g++ PIC flag -fPIC works... yes
+> checking if g++ static flag -static works... yes
+> checking if g++ supports -c -o file.o... yes
+> checking whether the g++ linker (/usr/bin/ld) supports shared libraries... yes
+> checking dynamic linker characteristics... GNU/Linux ld.so
+> (cached) (cached) checking how to hardcode library paths into programs... immediate
+> appending configuration tag "F77" to libtool
+> checking for BUG_BUDDY... yes
+> checking for BUG_BUDDY_EDS... yes
+> checking for elf_version in -lelf... yes
+> checking libelf.h usability... no
+> checking libelf.h presence... no
+> checking for libelf.h... no
+> configure: error: libelf.h not found.
+> make: *** [config.status] Error 1
+
+The full build log is available from:
+   http://people.debian.org/~lucas/logs/2008/04/19
+
+A list of current common problems and possible solutions is available at 
+http://wiki.debian.org/qa.debian.org/FTBFS . You're welcome to contribute!
+
+About the archive rebuild: The rebuild was done on about 50 AMD64 nodes
+of the Grid'5000 platform, using a clean chroot containing a sid i386
+environment.  Internet was not accessible from the build systems.
+
+-- 
+| Lucas Nussbaum
+| lucas@lucas-nussbaum.net   http://www.lucas-nussbaum.net/ |
+| jabber: lucas@nussbaum.fr             GPG: 1024D/023B3F4F |
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

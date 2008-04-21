@@ -1,0 +1,138 @@
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 11:06:50 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnWRY-0006Ad-BZ
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 11:06:50 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 10C8813A4EDF; Sun, 20 Apr 2008 10:06:42 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.9 required=4.0 tests=BAYES_00,FOURLA,LDO_WHITELIST,
+	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Original-To: debian-bugs-dist@lists.debian.org
+Delivered-To: lists-debian-bugs-dist@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 82FCE13A4EB9;
+	Sun, 20 Apr 2008 10:06:24 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnWQv-0005wB-0p; Sun, 20 Apr 2008 10:06:05 +0000
+X-Loop: owner@bugs.debian.org
+Subject: Bug#476902: debian-installer: Progress bar resizing NTFS partitions doesn't function
+Reply-To: =?UTF-8?Q?J=C3=A9r=C3=A9my?= Bobbio <lunar@debian.org>, 476902@bugs.debian.org
+Resent-From: =?UTF-8?Q?J=C3=A9r=C3=A9my?= Bobbio <lunar@debian.org>
+Resent-To: debian-bugs-dist@lists.debian.org
+Resent-CC: Debian Install System Team <debian-boot@lists.debian.org>
+Resent-Date: Sun, 20 Apr 2008 10:06:04 +0000
+Resent-Message-ID: <handler.476902.B476902.120868591420095@bugs.debian.org>
+X-Debian-PR-Message: report 476902
+X-Debian-PR-Package: debian-installer
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: debian-installer
+Received: via spool by 476902-submit@bugs.debian.org id=B476902.120868591420095
+          (code B ref 476902); Sun, 20 Apr 2008 10:06:04 +0000
+Received: (at 476902) by bugs.debian.org; 20 Apr 2008 10:05:14 +0000
+X-Amavis-Spam-Status: No, score=-10.8 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,FROMDEVELOPER,HAS_BUG_NUMBER,VALID_BTS_CONTROL autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from 40.241.214.195.in-addr.arpa ([195.214.241.40] helo=int.irq7.fr)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <lunar@debian.org>)
+	id 1JnWQ5-00059Y-V9; Sun, 20 Apr 2008 10:05:14 +0000
+Received: from localhost (recolte.poivron.org [195.214.241.40])
+	by int.irq7.fr (Postfix) with ESMTP id 909E740F245;
+	Sun, 20 Apr 2008 12:04:22 +0200 (CEST)
+Date: Sun, 20 Apr 2008 12:05:07 +0200
+From: =?UTF-8?Q?J=C3=A9r=C3=A9my?= Bobbio <lunar@debian.org>
+To: Andrew Moise <chops@demiurgestudios.com>, 476902@bugs.debian.org
+Cc: control@bugs.debian.org
+Message-ID: <20080420100507.GD10682@qamar>
+Mail-Followup-To: Andrew Moise <chops@demiurgestudios.com>,
+	476902@bugs.debian.org, control@bugs.debian.org
+References: <20080420043831.19661.46517.reportbug@www.burstnet.com>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha1;
+	protocol="application/pgp-signature"; boundary="d01dLTUuW90fS44H"
+Content-Disposition: inline
+In-Reply-To: <20080420043831.19661.46517.reportbug@www.burstnet.com>
+User-Agent: Mutt/1.5.13 (2006-08-11)
+Resent-Date: Sun, 20 Apr 2008 10:06:05 +0000
+X-Debian-Message: from BTS
+X-Rc-Virus: 2007-09-13_01
+X-Rc-Spam: 2007-10-04_01
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343405
+X-Loop: debian-bugs-dist@lists.debian.org
+List-Id: <debian-bugs-dist.lists.debian.org>
+List-Post: <mailto:debian-bugs-dist@lists.debian.org>
+List-Help: <mailto:debian-bugs-dist-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-dist-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-dist-request@lists.debian.org
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -31.1
+X-Spam-Report: (-31.1 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-50 D_FOR_BOT              For debian-devel-changes bot
+	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
+	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	21 AWL                    AWL: From: address is in the auto white-list
+
+
+--d01dLTUuW90fS44H
+Content-Type: text/plain; charset=utf-8
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+
+reassign 476902 partman-partitioning
+forcemerge 402956 476902
+thanks
+
+On Sun, Apr 20, 2008 at 12:38:31AM -0400, Andrew Moise wrote:
+>   I installed Debian using the win32 installer from
+> goodbye-microsoft.com, and while resizing my NTFS partition the progress
+> bar stayed at 0% until the operation was completed.  This is especially
+> problematic because immediately before, the installer warns that
+> resizing partitions may take a very long time, and it does :-).
+
+The issue is already known.  Let's hope someone we'll find enough time
+to tackle this=E2=80=A6
+
+Cheers,
+--=20
+J=C3=A9r=C3=A9my Bobbio                        .''`.=20
+lunar@debian.org                    : :=E2=92=B6  :  # apt-get install anar=
+chism
+                                    `. `'`=20
+                                      `-  =20
+
+--d01dLTUuW90fS44H
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: Digital signature
+Content-Disposition: inline
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICxVT2PUjs9fQ72URAr1KAJ0YbXQqFKZ1c3zlLE4UXHW0nski1wCff2iw
+ZUQrKg5r4lBuZwub3YeHf8M=
+=bUdU
+-----END PGP SIGNATURE-----
+
+--d01dLTUuW90fS44H--
+
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-dist-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+

@@ -1,0 +1,134 @@
+From bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org Sun Apr 20 13:01:50 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-devel-changes==chris-lamb.co.uk@lists.debian.org>)
+	id 1JnYEs-0006pJ-EX
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 13:01:50 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 1B00813A4F50; Sun, 20 Apr 2008 12:01:45 +0000 (UTC)
+Old-Return-Path: <dak@ftp-master.debian.org>
+X-Original-To: debian-devel-changes@lists.debian.org
+Delivered-To: lists-debian-devel-changes@liszt.debian.org
+Received: from ries.debian.org (ries.debian.org [128.148.34.103])
+	by liszt.debian.org (Postfix) with ESMTP id AA8E813A4F07
+	for <debian-devel-changes@lists.debian.org>; Sun, 20 Apr 2008 12:01:44 +0000 (UTC)
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnY0d-0003u2-TQ; Sun, 20 Apr 2008 11:47:03 +0000
+From: Christophe Prud'homme <prudhomm@debian.org>
+To: debian-devel-changes@lists.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Accepted gmsh 2.2.0-1 (source i386)
+Message-Id: <E1JnY0d-0003u2-TQ@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 11:47:03 +0000
+X-Debian-Message: from Katie
+Resent-Message-ID: <lEB4Dyn2etF.A.Q7C.pCzCIB@liszt>
+Resent-From: debian-devel-changes@lists.debian.org
+X-Mailing-List: <debian-devel-changes@lists.debian.org> archive/latest/301292
+X-Loop: debian-devel-changes@lists.debian.org
+List-Id: <debian-devel-changes.lists.debian.org>
+List-Post: <mailto:debian-devel-changes@lists.debian.org>
+List-Help: <mailto:debian-devel-changes-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-devel-changes-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-devel-changes-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 12:01:45 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.6
+X-Spam-Report: (-2.6 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.0 AWL                    AWL: From: address is in the auto white-list
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 13:33:44 +0200
+Source: gmsh
+Binary: gmsh
+Architecture: source i386
+Version: 2.2.0-1
+Distribution: unstable
+Urgency: low
+Maintainer: Debian Scientific Computing Team <pkg-scicomp-devel@lists.ali=
+oth.debian.org>
+Changed-By: Christophe Prud'homme <prudhomm@debian.org>
+Description:=20
+ gmsh       - three-dimensional finite element mesh generator
+Changes:=20
+ gmsh (2.2.0-1) unstable; urgency=3Dlow
+ .
+   * New upstream release
+     + new model-based post-processing backend;
+     + added MED I/O for mesh and post-processing;
+     + fixed BDF vertex ordering for 2nd order elements;
+     + replaced Mesh.ConstrainedBackgroundMesh with
+       Mesh.CharacteristicLength{FromPoints,ExtendFromBoundary};
+     + new Fields interface;
+     + control windows are now non-modal by default;
+     + new experimental 2D frontal algorithm;
+     + fixed various bugs.
+   * debian/control: build-dep on libgl1-mesa-dev|nvidia-glx-dev and
+     libglu1-xorg-dev
+   * debian/patches: no need for stdlib.patch anymore
+   * debian/control: renamed XS-Vcs-* to Vcs-*
+Checksums-Sha1:=20
+ 5f4444ab88b6cea88b324857431e56b52d2a7e5d 1315 gmsh_2.2.0-1.dsc
+ 58b6dd2c94d19e1520d9d7c365c27538882bb728 2361156 gmsh_2.2.0.orig.tar.gz
+ 08b7124a87414a0c6ccf19d8115fed86f2977dc9 8415 gmsh_2.2.0-1.diff.gz
+ 1de2f8e8b7cf51ec3a933020d44175df228c03fe 2810102 gmsh_2.2.0-1_i386.deb
+Checksums-Sha256:=20
+ 79678f52a021c91310455a439d9a3bf9b666f11eeddf773911fb1e0d2009c402 1315 gm=
+sh_2.2.0-1.dsc
+ 5e489eab58cba5549c6662abdba814b4d982ebc4aa9be5fa09c5f24f390066d3 2361156=
+ gmsh_2.2.0.orig.tar.gz
+ 9c0c744d0cccfef6db0289b1013e4e103339316bc94b22e524c5812e28e7c074 8415 gm=
+sh_2.2.0-1.diff.gz
+ 5498a33e6299e0cbd160175faeaf70b783be531865e944e55bcd952e629eafc1 2810102=
+ gmsh_2.2.0-1_i386.deb
+Files:=20
+ 4cc189463e42206e7a1682a01fadb3e1 1315 math optional gmsh_2.2.0-1.dsc
+ aa7b264706b0f7462ccd52b67be2f7a3 2361156 math optional gmsh_2.2.0.orig.t=
+ar.gz
+ 213839805c6ccc34f708873d390caab8 8415 math optional gmsh_2.2.0-1.diff.gz
+ ebc407956dd2bf926b332dcfafde2231 2810102 math optional gmsh_2.2.0-1_i386=
+.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFICyvBoY+0C9S+FFARAvgTAJ9mD1uvYRLYv1KHpYBi6poNooHX2QCghyKq
+SMrGZNNBeLD/bMG8ZfSdxc0=3D
+=3DnTgj
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+gmsh_2.2.0-1.diff.gz
+  to pool/main/g/gmsh/gmsh_2.2.0-1.diff.gz
+gmsh_2.2.0-1.dsc
+  to pool/main/g/gmsh/gmsh_2.2.0-1.dsc
+gmsh_2.2.0-1_i386.deb
+  to pool/main/g/gmsh/gmsh_2.2.0-1_i386.deb
+gmsh_2.2.0.orig.tar.gz
+  to pool/main/g/gmsh/gmsh_2.2.0.orig.tar.gz
+
+
+--=20
+To UNSUBSCRIBE, email to debian-devel-changes-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian=
+.org
+
+

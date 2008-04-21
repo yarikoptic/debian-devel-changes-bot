@@ -1,0 +1,337 @@
+From bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org Sun Apr 20 15:39:51 2008
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-bugs-closed==chris-lamb.co.uk@lists.debian.org>)
+	id 1Jnahl-0007US-0l
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 15:39:51 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 88A1C13A4FDD; Sun, 20 Apr 2008 14:39:43 +0000 (UTC)
+Old-Return-Path: <debbugs@rietz.debian.org>
+X-Original-To: debian-bugs-closed@lists.debian.org
+Delivered-To: lists-debian-bugs-closed@liszt.debian.org
+Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
+	by liszt.debian.org (Postfix) with ESMTP id 0F43813A4FD4;
+	Sun, 20 Apr 2008 14:39:42 +0000 (UTC)
+Received: from debbugs by rietz.debian.org with local (Exim 4.63)
+	(envelope-from <debbugs@rietz.debian.org>)
+	id 1JnabP-00076U-Nq; Sun, 20 Apr 2008 14:33:11 +0000
+MIME-Version: 1.0
+X-Mailer: MIME-tools 5.420 (Entity 5.420)
+X-Loop: owner@bugs.debian.org
+From: owner@bugs.debian.org (Debian Bug Tracking System)
+To: Marco d'Itri <md@linux.it>
+Subject: Bug#465732: marked as done (Message error for usage)
+Message-ID: <handler.465732.D465732.120870190124449.ackdone@bugs.debian.org>
+References: <E1Jna7H-00036R-Ko@ries.debian.org>
+ <47B427CB.5030407@teledetection.fr>
+X-Debian-PR-Message: closed 465732
+X-Debian-PR-Package: openbsd-inetd
+X-Debian-PR-Keywords: patch
+X-Debian-PR-Source: openbsd-inetd
+Content-Type: multipart/mixed; boundary="----------=_1208701991-27294-0"
+Sender: Debian BTS <debbugs@rietz.debian.org>
+Date: Sun, 20 Apr 2008 14:33:11 +0000
+X-Debian-Message: from BTS
+Resent-Message-ID: <DMfu44XljKC.A.H8H.vW1CIB@liszt>
+Resent-From: debian-bugs-closed@lists.debian.org
+X-Mailing-List: <debian-bugs-closed@lists.debian.org> archive/latest/133006
+X-Loop: debian-bugs-closed@lists.debian.org
+List-Id: <debian-bugs-closed.lists.debian.org>
+List-Post: <mailto:debian-bugs-closed@lists.debian.org>
+List-Help: <mailto:debian-bugs-closed-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-bugs-closed-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-bugs-closed-request@lists.debian.org
+Resent-Date: Sun, 20 Apr 2008 14:39:43 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+X-Spam-Score: -2.4
+X-Spam-Report: (-2.4 points, 5.0 required)
+	pts rule name              description
+	---- ---------------------- --------------------------------------------------
+	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
+	[score: 0.0000]
+	0.2 AWL                    AWL: From: address is in the auto white-list
+
+This is a multi-part message in MIME format...
+
+------------=_1208701991-27294-0
+Content-Disposition: inline
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/plain; charset=utf-8
+
+
+Your message dated Sun, 20 Apr 2008 14:02:03 +0000
+with message-id <E1Jna7H-00036R-Ko@ries.debian.org>
+and subject line Bug#465732: fixed in openbsd-inetd 0.20080125-1
+has caused the Debian Bug report #465732,
+regarding Message error for usage
+to be marked as done.
+
+This means that you claim that the problem has been dealt with.
+If this is not the case it is now your responsibility to reopen the
+Bug report if necessary, and/or fix the problem forthwith.
+
+(NB: If you are a system administrator and have no idea what this
+message is talking about, this may indicate a serious mail system
+misconfiguration somewhere. Please contact owner@bugs.debian.org
+immediately.)
+
+
+--=20
+465732: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=3D465732
+Debian Bug Tracking System
+Contact owner@bugs.debian.org with problems
+
+------------=_1208701991-27294-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at submit) by bugs.debian.org; 14 Feb 2008 11:36:51 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-9.0 required=4.0 tests=BAYES_00,HAS_PACKAGE,
+	MIXEDBDN,MURPHY_DRUGS_REL8 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <guy.roussin@teledetection.fr>
+Received: from mafalda.teledetection.fr ([193.48.189.7])
+	by rietz.debian.org with smtp (Exim 4.63)
+	(envelope-from <guy.roussin@teledetection.fr>)
+	id 1JPcOZ-0001nJ-CX
+	for submit@bugs.debian.org; Thu, 14 Feb 2008 11:36:51 +0000
+Received: from [172.16.10.134] (lan101.teledetection.fr [193.48.189.101])
+	by mafalda.teledetection.fr (Postfix) with ESMTP id 390443686D
+	for <submit@bugs.debian.org>; Thu, 14 Feb 2008 12:36:44 +0100 (CET)
+X-LocalMTD: Oui
+Message-ID: <47B427CB.5030407@teledetection.fr>
+Date: Thu, 14 Feb 2008 12:36:43 +0100
+From: Guy Roussin <guy.roussin@teledetection.fr>
+User-Agent: Mozilla-Thunderbird 2.0.0.9 (X11/20080110)
+MIME-Version: 1.0
+To: submit@bugs.debian.org
+Subject: Message error for usage
+Content-Type: multipart/mixed;
+ boundary="------------040809060500080802030902"
+Delivered-To: submit@bugs.debian.org
+
+This is a multi-part message in MIME format.
+--------------040809060500080802030902
+Content-Type: text/plain; charset=ISO-8859-1; format=flowed
+Content-Transfer-Encoding: 7bit
+
+Package: openbsd-inetd
+Version: 0.20050402-6
+Severity: minor
+Tags: patch
+
+--- Please enter the report below this line. ---
+
+Hi,
+
+I notice a little bug in the usage message
+(inetd instead of openbsd-inetd) :
+# /etc/init.d/openbsd-inetd
+Usage: /etc/init.d/inetd {start|stop|reload|force-reload|restart}
+
+So i propose a little patch  ...
+
+Guy
+
+--- System information. ---
+Architecture: i386
+Kernel:       Linux 2.6.24-1-686
+
+Debian Release: lenny/sid
+   501 testing         debian.gfoss.it
+   501 stable          wine.budgetdedicated.com
+   500 unstable        www.debian-multimedia.org
+   500 unstable        ftp.fr.debian.org
+   500 etch-wx         apt.wxwidgets.org
+   300 testing         ftp.fr.debian.org
+     1 experimental    ftp.fr.debian.org
+
+--- Package information. ---
+Depends             (Version) | Installed
+=============================-+-=============
+libc6            (>= 2.3.6-6) | 2.7-6
+libwrap0                      | 7.6.dbs-14
+lsb-base          (>= 3.0-10) | 3.1-24
+update-inetd                  | 4.29
+tcpd                          | 7.6.dbs-14
+
+--------------040809060500080802030902
+Content-Type: patch;
+ name="etc_init_d_openbsd-inetd.diff"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline;
+ filename="etc_init_d_openbsd-inetd.diff"
+
+--- openbsd-inetd.orig	2008-02-14 12:32:51.000000000 +0100
++++ openbsd-inetd	2008-02-14 12:33:23.000000000 +0100
+@@ -74,7 +74,7 @@
+ 	log_end_msg 0
+ 	;;
+     *)
+-	echo "Usage: /etc/init.d/inetd {start|stop|reload|force-reload|restart}"
++	echo "Usage: /etc/init.d/openbsd-inetd {start|stop|reload|force-reload|restart}"
+ 	exit 2
+ 	;;
+ esac
+
+--------------040809060500080802030902--
+
+
+
+------------=_1208701991-27294-0
+Content-Type: message/rfc822
+Content-Disposition: inline
+Content-Transfer-Encoding: 7bit
+
+Received: (at 465732-close) by bugs.debian.org; 20 Apr 2008 14:31:41 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.7 required=4.0 tests=BAYES_00,FVGT_m_MULTI_ODD,
+	HAS_BUG_NUMBER,HEADER_X_KATIE,IMPRONONCABLE_2,MURPHY_WRONG_WORD1,
+	MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1JnaZw-0006M1-RW
+	for 465732-close@bugs.debian.org; Sun, 20 Apr 2008 14:31:41 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1Jna7H-00036R-Ko; Sun, 20 Apr 2008 14:02:03 +0000
+From: Marco d'Itri <md@linux.it>
+To: 465732-close@bugs.debian.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+Subject: Bug#465732: fixed in openbsd-inetd 0.20080125-1
+Message-Id: <E1Jna7H-00036R-Ko@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Sun, 20 Apr 2008 14:02:03 +0000
+Content-Transfer-Encoding: quoted-printable
+
+Source: openbsd-inetd
+Source-Version: 0.20080125-1
+
+We believe that the bug you reported is fixed in the latest version of
+openbsd-inetd, which is due to be installed in the Debian FTP archive:
+
+openbsd-inetd_0.20080125-1.diff.gz
+  to pool/main/o/openbsd-inetd/openbsd-inetd_0.20080125-1.diff.gz
+openbsd-inetd_0.20080125-1.dsc
+  to pool/main/o/openbsd-inetd/openbsd-inetd_0.20080125-1.dsc
+openbsd-inetd_0.20080125-1_i386.deb
+  to pool/main/o/openbsd-inetd/openbsd-inetd_0.20080125-1_i386.deb
+openbsd-inetd_0.20080125.orig.tar.gz
+  to pool/main/o/openbsd-inetd/openbsd-inetd_0.20080125.orig.tar.gz
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 465732@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+Marco d'Itri <md@linux.it> (supplier of updated openbsd-inetd package)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 20 Apr 2008 15:12:31 +0200
+Source: openbsd-inetd
+Binary: openbsd-inetd
+Architecture: source i386
+Version: 0.20080125-1
+Distribution: unstable
+Urgency: low
+Maintainer: Marco d'Itri <md@linux.it>
+Changed-By: Marco d'Itri <md@linux.it>
+Description:=20
+ openbsd-inetd - The OpenBSD Internet Superserver
+Closes: 125181 416010 435658 436803 458564 465613 465732
+Changes:=20
+ openbsd-inetd (0.20080125-1) unstable; urgency=3Dlow
+ .
+   * New CVS snapshot.
+   * Package painfully converted to quilt.
+   * Fixed a typo in debian/control. (Closes: #125181)
+   * Fixed a typo in the init script. (Closes: #465613, #465732)
+   * Delete /etc/rc[2345].d/S20inetd too when upgrading from netkit-inetd=
+.
+     (Closes: #416010)
+   * Do not use log_warning_msg in the init script when inetd.conf is emt=
+py,
+     this is not something deserving extra attention. (Closes: #435658)
+   * Document in inetd(8) that datagram services must read some network
+     input or inetd will continue spawning them.
+     Many thanks to James Cameron for the analysis. (Closes: #436803)
+   * Use a real characters class instead of character ranges with grep
+     in the init script, because some locales have weird ranges.
+     Spotted by Meelis Roos. (Closes: #458564)
+Checksums-Sha1:=20
+ e2a14ad51fdd677f2ceb7e4516548ea32c8e5027 1042 openbsd-inetd_0.20080125-1=
+.dsc
+ 0037cba36d0369f9557653022a3a99144bee5cb9 24627 openbsd-inetd_0.20080125.=
+orig.tar.gz
+ 9adb8bf6d6c5d9f48dac3e261aa83d49a2b08b57 14599 openbsd-inetd_0.20080125-=
+1.diff.gz
+ ab4f23660b9d9e7973f9add0596f3e2004f46a90 33250 openbsd-inetd_0.20080125-=
+1_i386.deb
+Checksums-Sha256:=20
+ ceeefe4d4ef22cfe2c435b0a16492d8fa97658099deaf5dabe3787dd88e168f8 1042 op=
+enbsd-inetd_0.20080125-1.dsc
+ 4c2818fd128ea6428c5f87e678789404f88eb4d71a8379bb85cf6f90d907e44f 24627 o=
+penbsd-inetd_0.20080125.orig.tar.gz
+ b50c07ab209429fbac8af3f35621f7f1216a9d87b11a95ff1bcceea8f8ceb 14599 o=
+penbsd-inetd_0.20080125-1.diff.gz
+ 0dac8ce7ade776cc45b97e7a0a17dc855e6e8b2e6382b3275eadacc1d465294b 33250 o=
+penbsd-inetd_0.20080125-1_i386.deb
+Files:=20
+ a0936fa5c2a66ed62356c9aea5e96ec2 1042 net standard openbsd-inetd_0.20080=
+125-1.dsc
+ d3c4bb9bcbd0c29091791baa61ad0d0a 24627 net standard openbsd-inetd_0.2008=
+0125.orig.tar.gz
+ bec32a5b7ba330f2973f15c8dd6a81e6 14599 net standard openbsd-inetd_0.2008=
+0125-1.diff.gz
+ 877207072c28e09dd021c82096d7f3dc 33250 net standard openbsd-inetd_0.2008=
+0125-1_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIC0l/FGfw2OHuP7ERAp2CAJ9NJymGRFfCVKHjrRKpn2NoMZMidACfQhI1
+PHqpkI6CQLZjP+ZouSTD6D8=3D
+=3DySNN
+-----END PGP SIGNATURE-----
+
+
+
+------------=_1208701991-27294-0--
+
+
+-- 
+To UNSUBSCRIBE, email to debian-bugs-closed-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+
