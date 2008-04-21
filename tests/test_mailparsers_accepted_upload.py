@@ -11,6 +11,10 @@ from DebianChangesBot.mailparsers import AcceptedUploadParser as p
 class TestMailParserAcceptedUpload(unittest.TestCase):
 
     def setUp(self):
+        self.headers = {
+            'List-Id': '<debian-devel-changes.lists.debian.org>'
+        }
+
         self.body = [
             '-----BEGIN PGP SIGNED MESSAGE-----',
             'Hash: SHA1',
@@ -33,7 +37,7 @@ class TestMailParserAcceptedUpload(unittest.TestCase):
         ]
 
     def testSimple(self):
-        msg = p.parse({}, self.body)
+        msg = p.parse(self.headers, self.body)
 
         self.assert_(msg)
         self.assertEqual(msg.package, 'haskell-irc')
@@ -45,11 +49,31 @@ class TestMailParserAcceptedUpload(unittest.TestCase):
 
     def testCloses(self):
         self.body.append('Closes: 123456 456123')
-        msg = p.parse({}, self.body)
+        msg = p.parse(self.headers, self.body)
 
         self.assert_(msg)
         self.assertEqual(msg.closes, [123456, 456123])
 
+    def testQuotedPrintableChangedBy(self):
+        self.body[12] = u'Changed-By: Gon=C3=A9ri Le Bouder <goneri@rulezlan.org>'
+
+        msg = p.parse(self.headers, self.body)
+        self.assert_(msg)
+        self.assertEqual(msg.by, u'Gonéri Le Bouder <goneri@rulezlan.org>')
+
+    def testFixtures(self):
+        from glob import glob
+        from DebianChangesBot.utils import parse_mail
+
+        dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'fixtures', 'accepted_upload', '*')
+        for filename in glob(dir):
+            try:
+                mail = parse_mail(file(filename))
+                msg = p.parse(*mail)
+                self.assert_(msg)
+            except Exception:
+                print "Exception when parsing %s" % filename
+                raise
 
 if __name__ == "__main__":
     unittest.main()
