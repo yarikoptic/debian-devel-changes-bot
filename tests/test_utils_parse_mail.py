@@ -65,8 +65,38 @@ CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
 """[1:])
 
         headers, body = parse_mail(f)
-        self.assertNotEqual(body[0], ('A' * 73) + ('B' * 73) + ('C' * 73))
+        self.assertNotEqual(body, [('A' * 73) + ('B' * 73) + ('C' * 73)])
 
+    def testSpaceAtEndOfLine(self):
+        f = StringIO("""
+Subject: Subject
+
+Description:=20
+"""[1:])
+
+        headers, body = parse_mail(f)
+        self.assertEqual(body, ['Description: '])
+
+    def testUnicodeHeader(self):
+        f = StringIO("""
+From: Gon=C3=A9ri Le Bouder
+
+Message body
+"""[1:])
+
+        headers, body = parse_mail(f)
+        self.assertEqual(headers['From'], u"Gonéri Le Bouder")
+        self.assertEqual(body, ['Message body'])
+
+    def testUnicodeBody(self):
+        f = StringIO("""
+Subject: Subject line
+
+Gon=C3=A9ri Le Bouder
+"""[1:])
+        headers, body = parse_mail(f)
+        self.assertEqual(headers['Subject'], 'Subject line')
+        self.assertEqual(body, [u"Gon=C3=A9ri Le Bouder"])
 
     def testMultipart(self):
         f = StringIO("""
