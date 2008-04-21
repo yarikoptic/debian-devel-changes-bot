@@ -7,6 +7,9 @@ class AcceptedUploadParser(MailParser):
 
     @staticmethod
     def parse(headers, body):
+        if headers.get('List-Id', '') != '<debian-devel-changes.lists.debian.org>':
+            return
+
         msg = AcceptedUploadMessage()
 
         mapping = {
