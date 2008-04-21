@@ -44,5 +44,20 @@ class TestMailParserSecurityAnnounce(unittest.TestCase):
         self.headers['List-Id'] = '<debian-ponies-announce.lists.debian.org>'
         self.failIf(p.parse(self.headers, []))
 
+    def testFixtures(self):
+        from glob import glob
+        from DebianChangesBot.utils import parse_mail
+
+        dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), \
+            'fixtures', 'security_announce', '*')
+        for filename in glob(dir):
+            try:
+                mail = parse_mail(file(filename))
+                msg = p.parse(*mail)
+                self.assert_(msg)
+            except Exception:
+                print "Exception when parsing %s" % filename
+                raise
+
 if __name__ == "__main__":
     unittest.main()
