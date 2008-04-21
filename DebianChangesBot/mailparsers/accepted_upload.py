@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from DebianChangesBot import MailParser
+from DebianChangesBot.utils import quoted_printable
 from DebianChangesBot.messages import AcceptedUploadMessage
 
 class AcceptedUploadParser(MailParser):
@@ -32,6 +33,9 @@ class AcceptedUploadParser(MailParser):
             # If we have found all the field, stop looking
             if len(mapping) == 0:
                 break
+
+        if msg.by:
+            msg.by = quoted_printable(msg.by)
 
         try:
             if msg.closes:
