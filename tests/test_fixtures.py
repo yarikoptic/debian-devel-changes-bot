@@ -30,6 +30,10 @@ class TestFixtures(unittest.TestCase):
                 print
                 print filename, "did not match"
             self.assertEqual(type(msg), expected_type)
+
+            if not test(msg):
+                print
+                print filename, "did not pass test"
             self.assert_(test(msg))
 
     def testAcceptedUpload(self):
