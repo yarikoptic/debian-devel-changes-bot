@@ -1,0 +1,256 @@
+From Patrick.Mayrand@fadq.qc.ca Fri Apr 18 15:35:13 2008
+Received: (at submit) by bugs.debian.org; 18 Apr 2008 15:35:13 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-4.5 required=4.0 tests=BAYES_00,FOURLA,HAS_PACKAGE,
+	HTML_40_50,HTML_MESSAGE,IMPRONONCABLE_2,MONEY,STOCKLIKE autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <Patrick.Mayrand@fadq.qc.ca>
+Received: from courrier.fadq.qc.ca ([208.111.85.181])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <Patrick.Mayrand@fadq.qc.ca>)
+	id 1JmscL-0001YM-Ha
+	for submit@bugs.debian.org; Fri, 18 Apr 2008 15:35:13 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by courrier.fadq.qc.ca (Postfix) with ESMTP id 55B68704BB
+	for <submit@bugs.debian.org>; Fri, 18 Apr 2008 11:35:05 -0400 (EDT)
+X-Virus-Scanned: Debian amavisd-new at fadq.qc.ca
+Received: from courrier.fadq.qc.ca ([127.0.0.1])
+	by localhost (relais.fadq.qc.ca [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id 4AM-B0qDw7KE for <submit@bugs.debian.org>;
+	Fri, 18 Apr 2008 11:35:03 -0400 (EDT)
+Received: from GRP-WISE.FADQ (unknown [10.151.0.40])
+	by courrier.fadq.qc.ca (Postfix) with ESMTP id 5118D704D6
+	for <submit@bugs.debian.org>; Fri, 18 Apr 2008 11:35:03 -0400 (EDT)
+Received: from DOMSIEGS-MTA by GRP-WISE.FADQ
+	with Novell_GroupWise; Fri, 18 Apr 2008 11:35:05 -0400
+Message-Id: <4808873C.0C4F.0081.0@fadq.qc.ca>
+X-Mailer: Novell GroupWise Internet Agent 7.0.2 HP
+Date: Fri, 18 Apr 2008 11:34:48 -0400
+From: "Patrick Mayrand" <Patrick.Mayrand@fadq.qc.ca>
+To: <submit@bugs.debian.org>
+Subject: Order detect of Disk scsi and HBA Fiber Channel (qla2xxx)
+Mime-Version: 1.0
+Content-Type: multipart/alternative; boundary="=__Part1F365288.0__="
+Delivered-To: submit@bugs.debian.org
+
+This is a MIME message. If you are reading this text, you may want to 
+consider changing to a mail reader or gateway that understands how to 
+properly handle MIME multipart messages.
+
+--=__Part1F365288.0__=
+Content-Type: text/plain; charset=US-ASCII
+Content-Transfer-Encoding: quoted-printable
+
+Package: linux-image-2.6.18-6-686Version: 2.6.18.dfsg.1-18etch1  Ibm =
+server6 disk in raid51 HBA Fiber Channel (qla2xxx) On the boot of my linux =
+image, 1 times on 3 it works. When it works  My local disk is sda $ dmesg =
+...qla2xxx 0000:04:04.0: Found an ISP2312, irq 201, iobase 0xf8842000
+qla2xxx 0000:04:04.0: Configuring PCI space...
+qla2xxx 0000:04:04.0: Configure NVRAM parameters...
+qla2xxx 0000:04:04.0: Verifying loaded RISC code...
+scsi1 : IBM PCI ServeRAID 7.12.05  Build 761
+ICH5: IDE controller at PCI slot 0000:00:1f.1
+ACPI: Unable to derive IRQ for device 0000:00:1f.1
+ACPI: PCI Interrupt 0000:00:1f.1[A]: no GSI
+ICH5: chipset revision 2
+ICH5: not 100% native mode: will probe irqs later
+    ide0: BM-DMA at 0x0480-0x0487, BIOS settings: hda:DMA, hdb:DMA
+Probing IDE interface ide0...
+  Vendor: IBM       Model: SERVERAID         Rev: 1.00
+  Type:   Direct-Access                      ANSI SCSI revision: 02
+  Vendor: IBM       Model: SERVERAID         Rev: 1.00
+  Type:   Processor                          ANSI SCSI revision: 02
+SCSI device sda: 213288960 512-byte hdwr sectors (109204 MB)
+sda: assuming Write Enabled
+sda: assuming drive cache: write through
+SCSI device sda: 213288960 512-byte hdwr sectors (109204 MB)
+sda: assuming Write Enabled
+sda: assuming drive cache: write through
+ sda: sda1 sda2 sda3 sda4 < sda5 sda6<5>  Vendor: IBM       Model: 40K =
+sda76480a                                                                  =
+             S320  0  Rev: 1
+  Type:   Processor                          ANSI SCSI revision: 02
+ sda8 >
+sd 1:0:0:0: Attached scsi disk sda
+qla2xxx 0000:04:04.0: Allocated (412 KB) for firmware dump...
+qla2xxx 0000:04:04.0: LIP reset occured (f7f7).
+qla2xxx 0000:04:04.0: Waiting for LIP to complete...
+usb 3-2: new full speed USB device using uhci_hcd and address 2
+usb 3-2: configuration #1 chosen from 1 choice
+usbcore: registered new driver hiddev
+input: IBM PPC I/F as /class/input/input1
+input: USB HID v1.10 Keyboard [IBM PPC I/F] on usb-0000:00:1d.1-2
+input: IBM PPC I/F as /class/input/input2
+input: USB HID v1.10 Mouse [IBM PPC I/F] on usb-0000:00:1d.1-2
+usbcore: registered new driver usbhid
+drivers/usb/input/hid-core.c: v2.6:USB HID core driver
+hda: HL-DT-STCD-RW/DVD DRIVE GCC-4244N, ATAPI CD/DVD-ROM drive
+ide0 at 0x1f0-0x1f7,0x3f6 on irq 14
+qla2xxx 0000:04:04.0: LOOP UP detected (2 Gbps).
+qla2xxx 0000:04:04.0: Topology - (F_Port), Host Loop address 0xffff
+scsi0 : qla2xxx
+qla2xxx 0000:04:04.0:
+ QLogic Fibre Channel HBA Driver: 8.01.07-k1
+  QLogic QLA2340 - 133MHz PCI-X to 2Gb FC, Single Channel
+  ISP2312: PCI-X (133 MHz) @ 0000:04:04.0 hdma-, host#=3D0, fw=3D3.03.20 =
+IPX
+  Vendor: IBM       Model: 1722-600          Rev: 0520
+  Type:   Direct-Access                      ANSI SCSI revision: 03
+SCSI device sdb: 1428495360 512-byte hdwr sectors (731390 MB)
+sdb: Write Protect is off
+sdb: Mode Sense: 77 00 10 08
+SCSI device sdb: drive cache: write back w/ FUA
+SCSI device sdb: 1428495360 512-byte hdwr sectors (731390 MB)
+sdb: Write Protect is off
+sdb: Mode Sense: 77 00 10 08
+SCSI device sdb: drive cache: write back w/ FUA
+ sdb:<6>hda: ATAPI 24X DVD-ROM CD-R/RW drive, 2048kB Cache, UDMA(33)
+Uniform CD-ROM driver Revision: 3.20
+ sdb1
+sd 0:0:0:0: Attached scsi disk sdb
+  Vendor: IBM       Model: Universal Xport   Rev: 0520
+  Type:   Direct-Access                      ANSI SCSI revision: 03
+  Vendor: IBM       Model: 1722-600          Rev: 0520
+  Type:   Direct-Access                      ANSI SCSI revision: 03
+SCSI device sdc: 1428495360 512-byte hdwr sectors (731390 MB)
+sdc: Write Protect is off
+sdc: Mode Sense: 77 00 10 08
+SCSI device sdc: drive cache: write back w/ FUA
+SCSI device sdc: 1428495360 512-byte hdwr sectors (731390 MB)
+sdc: Write Protect is off
+sdc: Mode Sense: 77 00 10 08
+SCSI device sdc: drive cache: write back w/ FUA
+ sdc: sdc1
+sd 0:0:1:0: Attached scsi disk sdc
+  Vendor: IBM       Model: Universal Xport   Rev: 0520
+  Type:   Direct-Access                      ANSI SCSI revision: 03
+ $ lsscsi[0:0:0:1]    disk    IBM      1722-600         0520  /dev/sdb
+[0:0:1:1]    disk    IBM      1722-600         0520  /dev/sdc
+[1:0:0:0]    disk    IBM      SERVERAID        1.00  /dev/sda
+[1:0:15:0]   process IBM      SERVERAID        1.00  -
+[1:2:8:0]    process IBM      40K6480a S320  0 1     -
+  When it works not, it stop the following message: Begin: Waiting for =
+root file system...  and my local disk is sdb or sdc It detect the qla2xxx =
+before the local disk.  Thanks    
+
+--=__Part1F365288.0__=
+Content-Type: text/html; charset=US-ASCII
+Content-Transfer-Encoding: quoted-printable
+Content-Description: HTML
+
+<HTML><HEAD>
+<META http-equiv=3DContent-Type content=3D"text/html; charset=3Diso-8859-15=
+">
+<META content=3D"MSHTML 6.00.2900.3199" name=3DGENERATOR></HEAD>
+<BODY style=3D"MARGIN: 4px 4px 1px; FONT: 10pt Tahoma"><PRE>Package: =
+linux-image-2.6.18-6-686<PRE>Version: 2.6.18.dfsg.1-18etch1</PRE><PRE>&nbsp=
+;</PRE><PRE>&nbsp;</PRE><PRE>Ibm server</PRE><PRE>6 disk in raid5</PRE><PRE=
+>1 HBA Fiber Channel (qla2xxx)</PRE><PRE>&nbsp;</PRE><PRE>On the boot of =
+my linux image, 1 times on 3 it works.</PRE><PRE>&nbsp;</PRE><PRE>When it =
+works </PRE><PRE>&nbsp;</PRE><PRE>My local disk is sda</PRE><PRE>&nbsp;</PR=
+E><PRE><PRE>$ dmesg</PRE><PRE>&nbsp;</PRE><PRE>...</PRE><PRE>qla2xxx =
+0000:04:04.0: Found an ISP2312, irq 201, iobase 0xf8842000<BR>qla2xxx =
+0000:04:04.0: Configuring PCI space...<BR>qla2xxx 0000:04:04.0: Configure =
+NVRAM parameters...<BR>qla2xxx 0000:04:04.0: Verifying loaded RISC =
+code...<BR>scsi1 : IBM PCI ServeRAID 7.12.05&nbsp; Build 761<BR>ICH5: IDE =
+controller at PCI slot 0000:00:1f.1<BR>ACPI: Unable to derive IRQ for =
+device 0000:00:1f.1<BR>ACPI: PCI Interrupt 0000:00:1f.1[A]: no GSI<BR>ICH5:=
+ chipset revision 2<BR>ICH5: not 100% native mode: will probe irqs =
+later<BR>&nbsp;&nbsp;&nbsp; ide0: BM-DMA at 0x0480-0x0487, BIOS settings: =
+hda:DMA, hdb:DMA<BR>Probing IDE interface ide0...<BR>&nbsp; Vendor: =
+IBM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Model: SERVERAID&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rev: 1.00<BR>&nbsp; Type:&nbsp;&nbsp; =
+Direct-Access&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ANSI SCSI =
+revision: 02<BR>&nbsp; Vendor: IBM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+Model: SERVERAID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rev: =
+1.00<BR>&nbsp; Type:&nbsp;&nbsp; Processor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ANSI SCSI revision: 02<BR>SCSI =
+device sda: 213288960 512-byte hdwr sectors (109204 MB)<BR>sda: assuming =
+Write Enabled<BR>sda: assuming drive cache: write through<BR>SCSI device =
+sda: 213288960 512-byte hdwr sectors (109204 MB)<BR>sda: assuming Write =
+Enabled<BR>sda: assuming drive cache: write through<BR>&nbsp;sda: sda1 =
+sda2 sda3 sda4 &lt; sda5 sda6&lt;5&gt;&nbsp; Vendor: IBM&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp; Model: 40K sda76480a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; S320&nbsp; =
+0&nbsp; Rev: 1<BR>&nbsp; Type:&nbsp;&nbsp; Processor&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ANSI SCSI revision: =
+02<BR>&nbsp;sda8 &gt;<BR>sd 1:0:0:0: Attached scsi disk sda<BR>qla2xxx =
+0000:04:04.0: Allocated (412 KB) for firmware dump...<BR>qla2xxx 0000:04:04=
+.0: LIP reset occured (f7f7).<BR>qla2xxx 0000:04:04.0: Waiting for LIP to =
+complete...<BR>usb 3-2: new full speed USB device using uhci_hcd and =
+address 2<BR>usb 3-2: configuration #1 chosen from 1 choice<BR>usbcore: =
+registered new driver hiddev<BR>input: IBM PPC I/F as /class/input/input1<B=
+R>input: USB HID v1.10 Keyboard [IBM PPC I/F] on usb-0000:00:1d.1-2<BR>inpu=
+t: IBM PPC I/F as /class/input/input2<BR>input: USB HID v1.10 Mouse [IBM =
+PPC I/F] on usb-0000:00:1d.1-2<BR>usbcore: registered new driver usbhid<BR>=
+drivers/usb/input/hid-core.c: v2.6:USB HID core driver<BR>hda: HL-DT-STCD-R=
+W/DVD DRIVE GCC-4244N, ATAPI CD/DVD-ROM drive<BR>ide0 at 0x1f0-0x1f7,0x3f6 =
+on irq 14<BR>qla2xxx 0000:04:04.0: LOOP UP detected (2 Gbps).<BR>qla2xxx =
+0000:04:04.0: Topology - (F_Port), Host Loop address 0xffff<BR>scsi0 : =
+qla2xxx<BR>qla2xxx 0000:04:04.0:<BR>&nbsp;QLogic Fibre Channel HBA Driver: =
+8.01.07-k1<BR>&nbsp; QLogic QLA2340 - 133MHz PCI-X to 2Gb FC, Single =
+Channel<BR>&nbsp; ISP2312: PCI-X (133 MHz) @ 0000:04:04.0 hdma-, host#=3D0,=
+ fw=3D3.03.20 IPX<BR>&nbsp; Vendor: IBM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+ Model: 1722-600&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+Rev: 0520<BR>&nbsp; Type:&nbsp;&nbsp; Direct-Access&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp; ANSI SCSI revision: 03<BR>SCSI device sdb: =
+1428495360 512-byte hdwr sectors (731390 MB)<BR>sdb: Write Protect is =
+off<BR>sdb: Mode Sense: 77 00 10 08<BR>SCSI device sdb: drive cache: write =
+back w/ FUA<BR>SCSI device sdb: 1428495360 512-byte hdwr sectors (731390 =
+MB)<BR>sdb: Write Protect is off<BR>sdb: Mode Sense: 77 00 10 08<BR>SCSI =
+device sdb: drive cache: write back w/ FUA<BR>&nbsp;sdb:&lt;6&gt;hda: =
+ATAPI 24X DVD-ROM CD-R/RW drive, 2048kB Cache, UDMA(33)<BR>Uniform CD-ROM =
+driver Revision: 3.20<BR>&nbsp;sdb1<BR>sd 0:0:0:0: Attached scsi disk =
+sdb<BR>&nbsp; Vendor: IBM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Model: =
+Universal Xport&nbsp;&nbsp; Rev: 0520<BR>&nbsp; Type:&nbsp;&nbsp; =
+Direct-Access&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ANSI SCSI =
+revision: 03<BR>&nbsp; Vendor: IBM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+Model: 1722-600&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Rev: =
+0520<BR>&nbsp; Type:&nbsp;&nbsp; Direct-Access&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp; ANSI SCSI revision: 03<BR>SCSI device sdc: =
+1428495360 512-byte hdwr sectors (731390 MB)<BR>sdc: Write Protect is =
+off<BR>sdc: Mode Sense: 77 00 10 08<BR>SCSI device sdc: drive cache: write =
+back w/ FUA<BR>SCSI device sdc: 1428495360 512-byte hdwr sectors (731390 =
+MB)<BR>sdc: Write Protect is off<BR>sdc: Mode Sense: 77 00 10 08<BR>SCSI =
+device sdc: drive cache: write back w/ FUA<BR>&nbsp;sdc: sdc1<BR>sd =
+0:0:1:0: Attached scsi disk sdc<BR>&nbsp; Vendor: IBM&nbsp;&nbsp;&nbsp;&nbs=
+p;&nbsp;&nbsp; Model: Universal Xport&nbsp;&nbsp; Rev: 0520<BR>&nbsp; =
+Type:&nbsp;&nbsp; Direct-Access&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp=
+;&nbsp; ANSI SCSI revision: 03<BR></PRE><PRE>&nbsp;</PRE><PRE>$ lsscsi</PRE=
+><PRE>[0:0:0:1]&nbsp;&nbsp;&nbsp; disk&nbsp;&nbsp;&nbsp; IBM&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp; 1722-600&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+0520&nbsp; /dev/sdb<BR>[0:0:1:1]&nbsp;&nbsp;&nbsp; disk&nbsp;&nbsp;&nbsp; =
+IBM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1722-600&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp; 0520&nbsp; /dev/sdc<BR>[1:0:0:0]&nbsp;&nbsp;&nbsp; =
+disk&nbsp;&nbsp;&nbsp; IBM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SERVERAID&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1.00&nbsp; /dev/sda<BR>[1:0:15:0]&nbsp;&n=
+bsp; process IBM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SERVERAID&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp;&nbsp; 1.00&nbsp; -<BR>[1:2:8:0]&nbsp;&nbsp;&nbsp; =
+process IBM&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 40K6480a S320&nbsp; 0 1&nbsp;&nbs=
+p;&nbsp;&nbsp; -<BR></PRE><PRE>&nbsp;</PRE></PRE><PRE>&nbsp;</PRE><PRE>When=
+ it works not, it stop the following message:</PRE><PRE>&nbsp;</PRE><PRE>Be=
+gin: <B>Waiting for root file system...</B>  </PRE><PRE>&nbsp;</PRE><PRE>an=
+d my local disk is sdb or sdc</PRE><PRE>&nbsp;</PRE><PRE>It detect the =
+qla2xxx before the local disk.</PRE><PRE>&nbsp;</PRE><PRE>&nbsp;</PRE><PRE>=
+Thanks</PRE><PRE>&nbsp;</PRE><PRE>&nbsp;</PRE><PRE>&nbsp;</PRE><PRE>&nbsp;<=
+/PRE></PRE></BODY></HTML>
+
+--=__Part1F365288.0__=--
+
+
+
+

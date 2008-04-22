@@ -1,0 +1,58 @@
+From eagle@windlord.stanford.edu Mon Apr 21 22:04:05 2008
+Received: (at 472247) by bugs.debian.org; 21 Apr 2008 22:04:05 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-11.0 required=4.0 tests=BAYES_00,FROMDEVELOPER,
+	HAS_BUG_NUMBER,VALID_BTS_CONTROL autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <eagle@windlord.stanford.edu>
+Received: from smtp3.stanford.edu ([171.67.20.26])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <eagle@windlord.stanford.edu>)
+	id 1Jo47I-0000XO-TF; Mon, 21 Apr 2008 22:04:04 +0000
+Received: from smtp3.stanford.edu (localhost.localdomain [127.0.0.1])
+	by localhost (Postfix) with SMTP id A6B3660E801;
+	Mon, 21 Apr 2008 15:04:04 -0700 (PDT)
+Received: from windlord.stanford.edu (windlord.Stanford.EDU [171.64.19.147])
+	by smtp3.stanford.edu (Postfix) with ESMTP id 8CD6160E174;
+	Mon, 21 Apr 2008 15:04:04 -0700 (PDT)
+Received: by windlord.stanford.edu (Postfix, from userid 1000)
+	id 87CA5E7911; Mon, 21 Apr 2008 15:04:04 -0700 (PDT)
+To: Lior Kaplan <kaplan@debian.org>
+Cc: 472247@bugs.debian.org
+Subject: Re: Bug#472247: lintian: Please extend binnmu checks to include the Pre-Depends field
+In-Reply-To: <20080322204531.6512.58293.reportbug@localhost> (Lior Kaplan's message of "Sat\, 22 Mar 2008 22\:45\:31 +0200")
+User-Agent: Gnus/5.11 (Gnus v5.11) Emacs/22.2 (gnu/linux)
+References: <20080322204531.6512.58293.reportbug@localhost>
+From: Russ Allbery <rra@debian.org>
+Organization: The Eyrie
+Date: Mon, 21 Apr 2008 15:04:04 -0700
+Message-ID: <87d4oij25n.fsf@windlord.stanford.edu>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+
+package lintian
+tags 472247 moreinfo
+thanks
+
+Lior Kaplan <kaplan@debian.org> writes:
+
+> Package: lintian
+> Version: 1.23.46
+> Severity: normal
+>
+> Checking the bacula source package for binnmu competability, I noticed
+> more problems than lintain reports.
+>
+> Please include the Pre-Depends field in the binnmu checks.
+
+It already is, so there's some other problem.  Could you provide more
+details on what problem lintian didn't find?
+
+-- 
+Russ Allbery (rra@debian.org)               <http://www.eyrie.org/~eagle/>
+
+
+
+

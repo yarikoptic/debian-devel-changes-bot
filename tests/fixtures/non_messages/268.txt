@@ -1,0 +1,44 @@
+From joey@kodama.kitenet.net Mon Apr 21 16:38:39 2008
+Received: (at 477141) by bugs.debian.org; 21 Apr 2008 16:38:39 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-7.8 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FROMDEVELOPER,MDO_AUTORESP3,VALID_BTS_CONTROL autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <joey@kodama.kitenet.net>
+Received: from wren.kitenet.net
+	([80.68.85.49] helo=kitenet.net ident=postfix)
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <joey@kodama.kitenet.net>)
+	id 1Jnz2N-0005B3-3N; Mon, 21 Apr 2008 16:38:39 +0000
+Received: from kodama.kitenet.net (66-168-92-132.dhcp.kgpt.tn.charter.com [66.168.92.132])
+	(using TLSv1 with cipher DHE-RSA-AES256-SHA (256/256 bits))
+	(Client CN "Joey Hess", Issuer "Joey Hess" (verified OK))
+	by kitenet.net (Postfix) with ESMTPS id 06DA1314352;
+	Mon, 21 Apr 2008 12:38:33 -0400 (EDT)
+Received: by kodama.kitenet.net (Postfix, from userid 1000)
+	id AC222114081; Mon, 21 Apr 2008 12:38:31 -0400 (EDT)
+From: Joey Hess <joeyh@debian.org>
+To: control@bugs.debian.org
+Cc: 477141@bugs.debian.org
+Subject: setting package to bsdgames, tagging 477141
+Date: Mon, 21 Apr 2008 12:38:31 -0400
+X-BTS-Version: 2.10.25
+Message-ID: <1208795911-1879-bts-joeyh@debian.org>
+X-Virus-Scanned: ClamAV 0.92.1/6865/Mon Apr 21 11:43:29 2008 on wren.kitenet.net
+X-Virus-Status: Clean
+
+# Automatically generated email from bts, devscripts version 2.10.25
+#
+# bsdgames (2.17-15) UNRELEASED; urgency=low
+#
+#  * Include rot13 in package description. Closes: #477141 
+
+package bsdgames
+tags 477141 + pending
+
+
+
+
+
