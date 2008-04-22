@@ -98,6 +98,16 @@ Gon=C3=A9ri Le Bouder
         self.assertEqual(headers['Subject'], 'Subject line')
         self.assertEqual(body, [u"Gon=C3=A9ri Le Bouder"])
 
+    def testUtf8Header(self):
+        f = StringIO("""
+From: Sebastian =?UTF-8?Q?Dr=C3=B6ge?=
+
+Message body"""[1:])
+
+        headers, body = parse_mail(f)
+        self.assertEqual(headers['From'], u"Sebastian Dröge")
+        self.assertEqual(body, ['Message body'])
+
     def testMultipart(self):
         f = StringIO("""
 From: Mohammed Sameer <msameer@foolab.org>

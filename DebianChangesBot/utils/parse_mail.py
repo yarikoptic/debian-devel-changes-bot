@@ -8,15 +8,12 @@ def parse_mail(fileobj):
     headers, body = {}, []
     msg = email.message_from_file(fileobj)
 
-    def decode(val):
-        return unicode(val, 'utf-8', 'replace').replace('\n', '')
-
     for k, v in msg.items():
-        v = quoted_printable(v)
-        headers[k] = decode(v).strip()
+        headers[k] = quoted_printable(v).replace('\n', '').strip()
 
     for line in email.iterators.body_line_iterator(msg):
-        body.append(decode(line))
+        line = unicode(line, 'utf-8', 'replace').replace('\n', '')
+        body.append(line)
 
     # Merge lines joined with "=\n"
     i = len(body) - 1
