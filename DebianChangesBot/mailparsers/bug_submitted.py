@@ -18,7 +18,7 @@ class BugSubmittedParser(MailParser):
     def parse(headers, body):
         msg = BugSubmittedMessage()
 
-        m = SUBJECT.match(header['Subject'])
+        m = SUBJECT.match(headers['Subject'])
         if m:
             msg.bug_number = m.group(1)
             msg.title = m.group(2)
@@ -26,10 +26,6 @@ class BugSubmittedParser(MailParser):
             return
 
         msg.by = headers['From']
-
-        # Strip package name prefix from title
-        if msg.title.lower().startswith('%s: ' % msg.package.lower()):
-            msg.title = data.title[len(msg.package) + 2:]
 
         mapping = {
             PACKAGE: 'package',
@@ -52,7 +48,14 @@ class BugSubmittedParser(MailParser):
             if len(mapping.keys()) == 0:
                 break
 
-        if msg.version.find('GnuPG') != -1:
+        if not msg.package:
+            return
+
+        if type(msg.version) is str and msg.version.find('GnuPG') != -1:
             msg.version = None
+
+        # Strip package name prefix from title
+        if msg.title.lower().startswith('%s: ' % msg.package.lower()):
+            msg.title = msg.title[len(msg.package) + 2:]
 
         return msg

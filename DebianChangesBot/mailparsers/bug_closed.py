@@ -11,30 +11,26 @@ class BugClosedParser(MailParser):
 
     @staticmethod
     def parse(headers, body):
+        if headers.get('List-Id', '') != '<debian-bugs-closed.lists.debian.org>':
+            return
+
         msg = BugClosedMessage()
 
         m = SUBJECT.match(headers['Subject'])
         if m:
-            msg.bug_number = m.group(1)
+            msg.bug_number = int(m.group(1))
             msg.title = m.group(2)
         else:
             return
 
-        try:
-            msg.by = headers['To']
+        msg.by = headers['To']
 
-            # Let source package name override binary package
-            msg.package = headers['X-Debian-PR-Package']
-            msg.package = headers['X-Debian-PR-Source']
-        except KeyError:
-            return
+        # Let source package name override binary package
+        msg.package = headers.get('X-Debian-PR-Source', None)
+        msg.package = headers['X-Debian-PR-Package']
 
         # Strip package name prefix from title
         if msg.title.lower().startswith('%s: ' % msg.package.lower()):
-            msg.title = data.title[len(msg.package) + 2:]
-
-        # If bug was closed via 123456-done@bugs.debian.org, To: is wrong.
-        if '-done@bugs.debian.org' in data.by:
-            msg.by = headers['From']
+            msg.title = msg.title[len(msg.package) + 2:]
 
         return msg
