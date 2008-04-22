@@ -7,9 +7,10 @@ import re
 
 SUBJECT = re.compile(r'^Bug#(\d+): (.+)$')
 
+BTS = re.compile(r'^# Automatically generated email from bts')
 FOLLOWUP_FOR = re.compile(r'(?i)^Followup-For:? .+')
 PACKAGE = re.compile(r'(?i)^Package:? ([^\s]{1,40})$')
-VERSION = re.compile(r'(?i)^Version:? (.{1,50})$')
+VERSION = re.compile(r'(?i)^Version:? ([^\s]{1,20})$')
 SEVERITY = re.compile(r'(?i)^Severity:? (critical|grave|serious|important|normal|minor|wishlist)$')
 
 class BugSubmittedParser(MailParser):
@@ -20,7 +21,7 @@ class BugSubmittedParser(MailParser):
 
         m = SUBJECT.match(headers['Subject'])
         if m:
-            msg.bug_number = m.group(1)
+            msg.bug_number = int(m.group(1))
             msg.title = m.group(2)
         else:
             return
@@ -34,8 +35,16 @@ class BugSubmittedParser(MailParser):
         }
 
         for line in body[:10]:
-            if FOLLOWUP_FOR.match(line):
+            if BTS.match(line) or FOLLOWUP_FOR.match(line):
                 return
+
+            for command in ('thanks', 'kthxbye'):
+                if line.startswith(command):
+                    return
+
+            for command in ('retitle', 'reassign'):
+                if line.startswith('%s %d' % (command, msg.bug_number)):
+                    return
 
             for pattern, target in mapping.iteritems():
                 m = pattern.match(line)
