@@ -1,14 +1,5 @@
-
 Check parsing of:
 
  * #476706
-
-
-Datasources:
-
- * Adopt Borg pattern
- * Create accessor methods instead of revealing data
- * Make update callbacks:
-   + Actually download the URL
-   + Take no arguments
-   + Be thread safe wrt accessor methods
+ * #477141
+ * #472247
