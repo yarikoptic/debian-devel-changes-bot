@@ -55,7 +55,8 @@ class BugSubmittedParser(MailParser):
             msg.version = None
 
         # Strip package name prefix from title
-        if msg.title.lower().startswith('%s: ' % msg.package.lower()):
-            msg.title = msg.title[len(msg.package) + 2:]
+        for prefix in ('%s: ', '[%s]: '):
+            if msg.title.lower().startswith(prefix % msg.package.lower()):
+                msg.title = msg.title[len(msg.package) + len(prefix) - 2:]
 
         return msg
