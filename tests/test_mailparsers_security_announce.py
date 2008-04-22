@@ -7,6 +7,15 @@ import os, sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from DebianChangesBot.mailparsers import SecurityAnnounceParser as p
+from DebianChangesBot.utils import parse_mail
+
+def parse(number):
+    filename = os.path.join(os.path.dirname(os.path.abspath(__file__)), \
+        'fixtures', 'security_announce', '%d.txt' % number)
+    mail = parse_mail(file(filename))
+    msg = p.parse(*mail)
+    assert msg
+    return msg.__dict__
 
 class TestMailParserSecurityAnnounce(unittest.TestCase):
 
@@ -44,20 +53,14 @@ class TestMailParserSecurityAnnounce(unittest.TestCase):
         self.headers['List-Id'] = '<debian-ponies-announce.lists.debian.org>'
         self.failIf(p.parse(self.headers, []))
 
-    def testFixtures(self):
-        from glob import glob
-        from DebianChangesBot.utils import parse_mail
-
-        dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), \
-            'fixtures', 'security_announce', '*')
-        for filename in glob(dir):
-            try:
-                mail = parse_mail(file(filename))
-                msg = p.parse(*mail)
-                self.assert_(msg)
-            except Exception:
-                print "Exception when parsing %s" % filename
-                raise
+    def test1(self):
+        self.assertEqual(parse(1), {
+            'dsa_revision': 1,
+            'problem': 'cross-site request forgery',
+            'year': 2008,
+            'dsa_number': 1553,
+            'package': 'ikiwiki',
+        })
 
 if __name__ == "__main__":
     unittest.main()
