@@ -44,8 +44,9 @@ class TestFixtures(unittest.TestCase):
     def testSecurityAnnounce(self):
         self._test_dir('security_announce', SecurityAnnounceParser, SecurityAnnounceMessage)
 
-    def testSecurityAnnounce(self):
-        self._test_dir('security_announce', SecurityAnnounceParser, SecurityAnnounceMessage)
+    def testNoMatch(self):
+        for parser in AcceptedUploadParser, BugClosedParser, BugSubmittedParser, SecurityAnnounceParser:
+            self._test_dir('non_messages', parser, type(None), test=lambda x: not bool(x))
 
 if __name__ == "__main__":
     unittest.main()
