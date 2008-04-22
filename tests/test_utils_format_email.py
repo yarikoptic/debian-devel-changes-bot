@@ -39,3 +39,10 @@ class TestFormatEmail(unittest.TestCase):
 
         val = "John Smith < jsmith@host.tld>"
         ret = "John Smith <jsmith@host.tld >"
+
+    def testDontRepeatName(self):
+        val = "John Smith (jsmith) <jsmith@debian.org>"
+        ret = "John Smith (jsmith)"
+
+        val = "John Smith (JSMITH) <jsmith@debian.org>"
+        ret = "John Smith (jsmith)"
