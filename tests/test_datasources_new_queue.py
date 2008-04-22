@@ -17,9 +17,10 @@ class TestDatasourceTestingRCBugs(unittest.TestCase):
 
         self.datasource = NewQueue()
 
-    def parse(self):
+    def is_new(self, package):
         fileobj = open(self.fixture)
-        return self.datasource.parse(fileobj)
+        self.datasource.update(fileobj)
+        return self.datasource.is_new(package)
 
     def testURL(self):
         """
@@ -34,19 +35,27 @@ class TestDatasourceTestingRCBugs(unittest.TestCase):
         """
         self.assert_(self.datasource.INTERVAL > 60)
 
-    def testType(self):
-        val = self.parse()
-        iter(val)
+    def testParseEmpty(self):
+        fileobj = open('/dev/null')
+        self.assertRaises(Datasource.DataError, self.datasource.update, fileobj)
 
-    def testElemTypes(self):
-        val = self.parse()
-        for package in val:
-            self.assertEqual(type(package), str)
+    def testTop(self):
+        self.assert_(self.is_new('ganeti-instance-debian-etch'))
 
-    def testLength(self):
-        val = self.parse()
-        self.assertEqual(len(val), 110)
+    def testBottom(self):
+        self.assert_(self.is_new('sugar-chat-activity'))
 
+    def testMultipleVersions(self):
+        self.assert_(self.is_new('cpushare'))
+
+    def testNotInQueue(self):
+        self.failIf(self.is_new('package-not-in-new-queue'))
+
+    def testByhand(self):
+        self.assert_(self.is_new('loadlin'))
+
+    def testExperimental(self):
+        self.assert_(self.is_new('tagua'))
 
 if __name__ == "__main__":
     unittest.main()
