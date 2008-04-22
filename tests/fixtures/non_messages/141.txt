@@ -1,76 +1,72 @@
-From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 16:37:44 2008
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 18:35:32 2008
 Received: from liszt.debian.org ([82.195.75.100])
 	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
 	(Exim 4.63)
 	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
-	id 1Jnbbp-0007nl-En
-	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 16:37:44 +0100
+	id 1JndRi-00007i-0O
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 18:35:31 +0100
 Received: from localhost (localhost [127.0.0.1])
 	by liszt.debian.org (Postfix) with QMQP
-	id 7036213A4881; Sun, 20 Apr 2008 15:37:40 +0000 (UTC)
+	id EB44013A509B; Sun, 20 Apr 2008 17:35:20 +0000 (UTC)
 Old-Return-Path: <debbugs@rietz.debian.org>
 X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
 X-Spam-Level: 
-X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
-	MURPHY_DRUGS_REL8,RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
+X-Spam-Status: No, score=-7.9 required=4.0 tests=BAYES_00,FOURLA,
+	FVGT_m_MULTI_ODD,LDO_WHITELIST,RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
 X-Original-To: debian-bugs-dist@lists.debian.org
 Delivered-To: lists-debian-bugs-dist@liszt.debian.org
 Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
-	by liszt.debian.org (Postfix) with ESMTP id 2426013A4982;
-	Sun, 20 Apr 2008 15:37:30 +0000 (UTC)
+	by liszt.debian.org (Postfix) with ESMTP id 0D82813A4F9E;
+	Sun, 20 Apr 2008 17:35:08 +0000 (UTC)
 Received: from debbugs by rietz.debian.org with local (Exim 4.63)
 	(envelope-from <debbugs@rietz.debian.org>)
-	id 1JnbXO-0007Kb-PO; Sun, 20 Apr 2008 15:33:06 +0000
+	id 1JndPg-0000Jt-4N; Sun, 20 Apr 2008 17:33:16 +0000
 X-Loop: owner@bugs.debian.org
-Subject: Bug#476863: source-highlight: Patch which makes stdout the default as well as adds "-" to enable stdout
-Reply-To: Kresten Kjeldgaard <gathond@gathond.dk>, 476863@bugs.debian.org
-Resent-From: Kresten Kjeldgaard <gathond@gathond.dk>
+Subject: Bug#476987: exim4-daemon-light: incompatible command-line - more info
+Reply-To: Steve McCarthy <newsdebian@jetcity.org>, 476987@bugs.debian.org
+Resent-From: Steve McCarthy <newsdebian@jetcity.org>
 Resent-To: debian-bugs-dist@lists.debian.org
-Resent-CC: Ola Lundqvist <opal@debian.org>
-Resent-Date: Sun, 20 Apr 2008 15:33:05 +0000
-Resent-Message-ID: <handler.476863.B476863.120870552025868@bugs.debian.org>
-X-Debian-PR-Message: report 476863
-X-Debian-PR-Package: source-highlight
+Resent-CC: Exim4 Maintainers <pkg-exim4-maintainers@lists.alioth.debian.org>
+Resent-Date: Sun, 20 Apr 2008 17:33:14 +0000
+Resent-Message-ID: <handler.476987.B476987.120871265422217@bugs.debian.org>
+X-Debian-PR-Message: report 476987
+X-Debian-PR-Package: exim4-daemon-light
 X-Debian-PR-Keywords: 
-X-Debian-PR-Source: source-highlight
-Received: via spool by 476863-submit@bugs.debian.org id=B476863.120870552025868
-          (code B ref 476863); Sun, 20 Apr 2008 15:33:05 +0000
-Received: (at 476863) by bugs.debian.org; 20 Apr 2008 15:32:00 +0000
-X-Amavis-Spam-Status: No, score=-6.8 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
-	HAS_BUG_NUMBER,MURPHY_DRUGS_REL8 autolearn=no 
+X-Debian-PR-Source: exim4
+Received: via spool by 476987-submit@bugs.debian.org id=B476987.120871265422217
+          (code B ref 476987); Sun, 20 Apr 2008 17:33:14 +0000
+Received: (at 476987) by bugs.debian.org; 20 Apr 2008 17:30:54 +0000
+X-Amavis-Spam-Status: No, score=-9.9 required=4.0 tests=BAYES_00,FOURLA,
+	FVGT_m_MULTI_ODD,HAS_PACKAGE autolearn=no 
 	version=3.1.4-bugs.debian.org_2005_01_02
-Received: from 0x5551ad9e.adsl.cybercity.dk
-	([85.81.173.158] helo=gathond.dk ident=postfix)
+Received: from tuphos.jetcity.org ([206.124.139.139])
 	by rietz.debian.org with esmtp (Exim 4.63)
-	(envelope-from <gathond@gathond.dk>)
-	id 1JnbWK-0006gN-0u
-	for 476863@bugs.debian.org; Sun, 20 Apr 2008 15:32:00 +0000
-Received: from localhost (localhost [127.0.0.1])
-	by gathond.dk (Postfix) with ESMTP id 9DEDC40080BB0;
-	Sun, 20 Apr 2008 17:31:57 +0200 (CEST)
-X-Virus-Scanned: Debian amavisd-new at gathond.dk
-Received: from gathond.dk ([127.0.0.1])
-	by localhost (gateway.gathond.dk [127.0.0.1]) (amavisd-new, port 10024)
-	with ESMTP id vVHa-DjsChzi; Sun, 20 Apr 2008 17:31:57 +0200 (CEST)
-Received: by gathond.dk (Postfix, from userid 1000)
-	id 6A5E7400820FB; Sun, 20 Apr 2008 17:31:57 +0200 (CEST)
-Date: Sun, 20 Apr 2008 17:31:57 +0200
-From: Kresten Kjeldgaard <gathond@gathond.dk>
-To: Ola Lundqvist <opal@debian.org>
-Cc: 476863@bugs.debian.org
-Message-ID: <20080420153157.GC1489@gathond.dk>
-References: <20080419173843.31158.93249.reportbug@laptop.gathond.dk> <20080420145328.GA9763@inguza.net>
+	(envelope-from <newsdebian@jetcity.org>)
+	id 1JndNO-0005mC-Gm
+	for 476987@bugs.debian.org; Sun, 20 Apr 2008 17:30:54 +0000
+Received: from erebus.jetcity.org ([206.124.139.138] helo=lockheed.jetcity.org)
+	by tuphos.jetcity.org with esmtp (Exim 4.50)
+	id 1JndNJ-0005Tf-17; Sun, 20 Apr 2008 10:30:53 -0700
+Received: from jetadmin by lockheed.jetcity.org with local (Exim 4.69)
+	(envelope-from <newsdebian@jetcity.org>)
+	id 1JndNI-00043R-V1; Sun, 20 Apr 2008 10:30:48 -0700
+Content-Type: text/plain; charset="us-ascii"
 MIME-Version: 1.0
-Content-Type: multipart/signed; micalg=pgp-sha1;
-	protocol="application/pgp-signature"; boundary="O5XBE6gyVG5Rl6Rj"
-Content-Disposition: inline
-In-Reply-To: <20080420145328.GA9763@inguza.net>
-User-Agent: Mutt/1.5.17+20080114 (2008-01-14)
-Resent-Date: Sun, 20 Apr 2008 15:33:06 +0000
+Content-Transfer-Encoding: 7bit
+From: Steve McCarthy <newsdebian@jetcity.org>
+To: Debian Bug Tracking System <476987@bugs.debian.org>
+Message-ID: <20080420173048.15066.19365.reportbug@lockheed.jetcity.org>
+X-Mailer: reportbug 3.39-0.1
+Date: Sun, 20 Apr 2008 10:30:48 -0700
+X-SA-Exim-Connect-IP: 206.124.139.138
+X-SA-Exim-Mail-From: newsdebian@jetcity.org
+X-SA-Exim-Version: 4.2 (built Thu, 03 Mar 2005 10:44:12 +0100)
+X-SA-Exim-Scanned: Yes (on tuphos.jetcity.org)
+Resent-Date: Sun, 20 Apr 2008 17:33:16 +0000
 X-Debian-Message: from BTS
 X-Rc-Virus: 2007-09-13_01
 X-Rc-Spam: 2007-10-04_01
-X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343561
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343679
 X-Loop: debian-bugs-dist@lists.debian.org
 List-Id: <debian-bugs-dist.lists.debian.org>
 List-Post: <mailto:debian-bugs-dist@lists.debian.org>
@@ -81,78 +77,366 @@ Precedence: list
 Resent-Sender: debian-bugs-dist-request@lists.debian.org
 Received-SPF: none
 X-SPF-Guess: pass
-X-Spam-Score: -52.5
-X-Spam-Report: (-52.5 points, 5.0 required)
+X-Spam-Score: -52.6
+X-Spam-Report: (-52.6 points, 5.0 required)
 	pts rule name              description
 	---- ---------------------- --------------------------------------------------
 	-50 D_FOR_BOT              For debian-devel-changes bot
-	0.1 FORGED_RCVD_HELO       Received: contains a forged HELO
 	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
 	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
 	[score: 0.0000]
 
+Package: exim4-daemon-light
+Version: 4.69-2+b1
+Followup-For: Bug #476987
 
---O5XBE6gyVG5Rl6Rj
-Content-Type: text/plain; charset=us-ascii
-Content-Disposition: inline
-Content-Transfer-Encoding: quoted-printable
 
-On Sun, Apr 20, 2008 at 04:53:28PM +0200, Ola Lundqvist wrote:
-> Hi
->=20
-> Thanks a lot for the patch. I'm not sure I want to change the default com=
-pared to
-> "upstream". I would actually prefer to change the documentation in that c=
-ase.
->
-> Do you have an other opinion about this?
+Commenting out line 96 bypasses the error.  Clearly the
+empty arguments are causing the error.
 
-First of, I'm not personally using this software I just happened to be
-on the same IRC channel as the original submitter and had nothing better
-to do at the time so I started looking at it.
+my workaround diff of /etc/init.d/exim4f:
 
-Personally I agree with the original submitter that having a default
-which consists of writing $inputfilename.html overwriting anything
-happening to be there already in the process seems wrong on some level.=20
-So I went with the assumption that the built in help function described
-the intended way, and the code somehow went wrong along the way.=20
+96c96
+< ;#sjm        "${COMMONOPTIONS}" "${QUEUERUNNEROPTIONS}" "${SMTPLISTENEROPTIONS}"
+---
+>         "${COMMONOPTIONS}" "${QUEUERUNNEROPTIONS}" "${SMTPLISTENEROPTIONS}"
 
-I have since determined the upstream 2.9 has the same behaviour as the
-debian package, as well as the same broken --help description. Actually
-the whole -o/--output scheme seems to be broken upstream, I never
-managed to make it do anything but STDOUT and $filename.html, no matter
-what I specified.
+Rolled back dpkg to 1.14.16.6 to insure start-stop-daemon
+wasn't the culprit.  No difference.
 
-Perhaps the best thing is to simply report this issue to upstream and
-check what their oppinion is on what should be the correct behaviour and
-then take it from there?
+Since you asked for them here are my default & (undoctored) init.d files
 
-Then we can at some point send them a patch which at least makes the
-behaviour and the --help text consistent.
+===========================================================
+# /etc/default/exim4
+EX4DEF_VERSION=''
 
-Please let me know your thoughts about the above.
+# 'combined' -	 one daemon running queue and listening on SMTP port
+# 'no'       -	 no daemon running the queue
+# 'separate' -	 two separate daemons
+# 'ppp'      -   only run queue with /etc/ppp/ip-up.d/exim4.
+# 'nodaemon' - no daemon is started at all.
+# 'queueonly' - only a queue running daemon is started, no SMTP listener.
+# setting this to 'no' will also disable queueruns from /etc/ppp/ip-up.d/exim4
+QUEUERUNNER='combined'
+# how often should we run the queue
+QUEUEINTERVAL='30m'
+# options common to quez-runner and listening daemon
+COMMONOPTIONS=''
+# more options for the daemon/process running the queue (applies to the one
+# started in /etc/ppp/ip-up.d/exim4, too.
+QUEUERUNNEROPTIONS=''
+# special flags given to exim directly after the -q. See exim(8)
+QFLAGS=''
+# options for daemon listening on port 25
+SMTPLISTENEROPTIONS=''
 
---=20
-Med venlig hilsen / Kind regards
-Kresten Kjeldgaard aka Gathond
-For every complex problem, there is a solution that is simple, neat, and wr=
-ong.
--- H. L. Mencken
+===========================================================
+#! /bin/sh
+# /etc/init.d/exim4
+#
+# Written by Miquel van Smoorenburg <miquels@drinkel.ow.org>.
+# Modified for Debian GNU/Linux by Ian Murdock <imurdock@gnu.ai.mit.edu>.
+# Modified for exim by Tim Cutts <timc@chiark.greenend.org.uk>
+# Modified for exim4 by Andreas Metzler <ametzler@downhill.at.eu.org>
+#                   and Marc Haber <mh+debian-packages@zugschlus.de>
 
---O5XBE6gyVG5Rl6Rj
-Content-Type: application/pgp-signature; name="signature.asc"
-Content-Description: Digital signature
-Content-Disposition: inline
+### BEGIN INIT INFO
+# Provides:          exim4
+# Required-Start:    $remote_fs $syslog $named $network $time
+# Required-Stop:     $remote_fs $syslog $named $network
+# Should-Start:      postgresql mysql clamav-daemon greylist spamassassin
+# Should-Stop:       postgresql mysql clamav-daemon greylist spamassassin
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: exim Mail Transport Agent
+# Description:       exim is a Mail Transport agent
+### END INIT INFO
 
------BEGIN PGP SIGNATURE-----
-Version: GnuPG v1.4.6 (GNU/Linux)
+set -e
 
-iD8DBQFIC2Htt7+29glu5/oRAk4pAJ40sxXxuSrr9JwXeEVlaZ2wVF7yeQCfbC+l
-VCDJ7auEJhQG36X5oi8CgtA=
-=IGyj
------END PGP SIGNATURE-----
+if ! [ -x "/lib/lsb/init-functions" ]; then
+  . /lib/lsb/init-functions
+else
+  echo "E: /lib/lsb/init-functions not found, lsb-base (>= 3.0-6) needed"
+  exit 1
+fi
 
---O5XBE6gyVG5Rl6Rj--
+if [ -n "$EX4DEBUG" ]; then
+  echo "now debugging $0 $@"
+  set -x
+fi
+
+LANG=C
+export LANG
+
+#read default file
+QUEUERUNNER='combined'
+QUEUEINTERVAL='30m'
+UPEX4OPTS=''
+PIDFILE="/var/run/exim4/exim.pid"
+QRPIDFILE="/var/run/exim4/eximqr.pid"
+[ -f /etc/default/exim4 ] && . /etc/default/exim4
+
+upex4conf() {
+  UPEX4CONF="update-exim4.conf"
+  OLDIFS="$IFS"
+  IFS=:
+  for p in $PATH; do
+    if [ -x "$p/$UPEX4CONF" ]; then
+      IFS="$OLDIFS"
+      $p/$UPEX4CONF $UPEX4OPTS
+      return 0
+    fi
+  done
+  IFS="$OLDIFS"
+}
+
+# Exit if exim runs from /etc/inetd.conf
+if [ -f /etc/inetd.conf ] && grep -E -q '^[[:space:]]*((\*|[[:alnum:].-]+):)?smtp' /etc/inetd.conf
+then
+  upex4conf
+  exit 0
+fi
+
+
+DAEMON="/usr/sbin/exim4"
+NAME="exim4"
+
+##test -x $DAEMON || exit 0
+test -x /usr/lib/exim4/exim4 || exit 0
+
+# this is from madduck on IRC, 2006-07-06
+# There should be a better possibility to give daemon error messages
+# and/or to log things
+log()
+{
+  case "$1" in
+    [[:digit:]]*) success=$1; shift;;
+    *) :;;
+  esac
+  log_action_begin_msg "$1"; shift
+  log_action_end_msg ${success:-0} "$*"
+}
+
+start_exim()
+{
+  [ -e /var/run/exim4 ] || \
+    install -d -oDebian-exim -gDebian-exim -m750 /var/run/exim4
+  case ${QUEUERUNNER} in
+    combined)
+      start_daemon -p "$PIDFILE" \
+        "$DAEMON" -bd "-q${QFLAGS}${QUEUEINTERVAL}" \
+        "${COMMONOPTIONS}" "${QUEUERUNNEROPTIONS}" "${SMTPLISTENEROPTIONS}"
+      log_progress_msg "exim4"
+      ;;
+    separate)
+      start_daemon -p "$PIDFILE" \
+        "$DAEMON" -bd "${SMTPLISTENEROPTIONS}" "${COMMONOPTIONS}"
+      log_progress_msg "exim4_listener"
+      start_daemon -p "$QRPIDFILE" \
+        "$DAEMON" -oP "$QRPIDFILE" \
+        "-q${QFLAGS}${QUEUEINTERVAL}" "${QUEUERUNNEROPTIONS}" "${COMMONOPTIONS}"
+      log_progress_msg "exim4_queuerunner"
+      ;;
+    queueonly)
+      start_daemon -p "$QRPIDFILE" \
+        "$DAEMON" -oP "$QRPIDFILE" \
+        "-q${QFLAGS}${QUEUEINTERVAL}" "${QUEUERUNNEROPTIONS}" "${COMMONOPTIONS}"
+      log_progress_msg "exim4_queuerunner"
+      ;;
+    no|ppp)
+      start_daemon -p "$PIDFILE" \
+        "$DAEMON" -bd "${SMTPLISTENEROPTIONS}"
+      log_progress_msg "exim4_listener"
+      ;;
+    nodaemon)
+      ;;    
+  esac
+}
+
+stop_exim()
+{
+# we try to kill eximqr and exim SMTP listener, no matter what
+# ${QUEUERUNNER} is set to, we could have switched since starting.
+  if [ -f "$QRPIDFILE" ]; then
+    killproc -p "$QRPIDFILE" "$DAEMON"
+    log_progress_msg "exim4_queuerunner"
+  fi
+  if [ -f "$PIDFILE" ]; then
+    killproc -p "$PIDFILE" "$DAEMON"
+    log_progress_msg "exim4_listener"
+  fi
+}
+
+reload_exim()
+{
+  case ${QUEUERUNNER} in
+    combined|no|ppp)
+      killproc -p "$PIDFILE" "$DAEMON" -HUP
+      log_progress_msg "exim4"
+      ;;
+    separate)
+      killproc -p "$PIDFILE" "$DAEMON" -HUP
+      log_progress_msg "exim4_listener"
+      killproc -p "$QRPIDFILE" "$DAEMON" -HUP
+      log_progress_msg "exim4_queuerunner"
+      ;;
+  esac
+}
+
+kill_all_exims()
+{  SIG="${1:-TERM}"
+  for pid in $(pidof $NAME); do
+    if [ "$(readlink /proc/$pid/root)" = "/" ]; then
+      kill -$SIG $pid
+    fi
+  done
+}
+
+status()
+{
+  # the exit value of this function reflects the status of the SMTP
+  # service. Output shows the status of the queue runner as well.
+  SMTPNAME="SMTP listener daemon"
+  QRNAME="separate queue runner daemon"
+  if [ "${QUEUERUNNER}" = "combined" ]; then
+      SMTPNAME="combined SMTP listener and queue runner daemon"
+  fi
+  log_action_begin_msg "checking $QRNAME"
+  if pidofproc -p "$QRPIDFILE" >/dev/null; then
+    log_action_end_msg 0 "running"
+  else
+    if [ -e "$QRPIDFILE" ]; then
+      log_action_end_msg 1 "$QRNAME failed"
+    else
+      log_action_end_msg 0 "not running"
+    fi
+  fi
+  log_action_begin_msg "checking $SMTPNAME"
+  if pidofproc -p "$PIDFILE" >/dev/null; then
+    log_action_end_msg 0 "running"
+    exit 0
+  else
+    if [ -e "$PIDFILE" ]; then
+      log_action_end_msg 1 "$SMTPNAME failed"
+      exit 1
+    else
+      log_action_end_msg 0 "not running"
+      exit 3
+    fi
+  fi
+}
+
+# check for valid configuration file
+isconfigvalid()
+{
+if ! $DAEMON -bV > /dev/null ; then
+  log 1 "Warning! Invalid configuration file for $NAME. Exiting."
+  exit 1
+fi
+}
+
+# check for non-empty paniclog
+warn_paniclog()
+{
+  if [ -s "/var/log/exim4/paniclog" ]; then
+    if [ -z "$E4BCD_PANICLOG_NOISE" ] || grep -vq "$E4BCD_PANICLOG_NOISE" /var/log/exim4/paniclog; then
+      log_failure_msg "ALERT: exim paniclog /var/log/exim4/paniclog has non-zero size, mail system possibly broken"
+    fi
+  fi
+}
+
+case "$1" in
+  start)
+    log_daemon_msg "Starting MTA"
+    # regenerate exim4.conf
+    upex4conf
+    isconfigvalid
+    start_exim
+    log_end_msg 0
+    warn_paniclog
+    ;;
+  stop)
+    log_daemon_msg "Stopping MTA"
+    stop_exim
+    log_end_msg 0
+    warn_paniclog
+    ;;
+  restart)
+    log_daemon_msg "Stopping MTA for restart"
+    # regenerate exim4.conf
+    upex4conf
+    isconfigvalid
+    stop_exim
+    log_end_msg 0
+    sleep 2
+    log_daemon_msg "Restarting MTA"
+    start_exim
+    log_end_msg 0
+    warn_paniclog
+    ;;
+  reload|force-reload)
+    log_daemon_msg "Reloading $NAME configuration files"
+    # regenerate exim4.conf
+    upex4conf
+    isconfigvalid
+    reload_exim
+    log_end_msg 0
+    warn_paniclog
+    ;;
+  status)
+    status
+    ;;
+  what)
+    exiwhat
+    ;;
+  force-stop)
+    kill_all_exims $2
+    ;;
+  *)
+    echo "Usage: $0 {start|stop|restart|reload|status|what|force-stop}"
+    exit 1
+    ;;
+esac
+
+exit 0
+# vim:tabstop=2:expandtab:shiftwidth=2
+
+-- Package-specific info:
+Exim version 4.69 #1 built 12-Apr-2008 09:26:11
+Copyright (c) University of Cambridge 2006
+Berkeley DB: Berkeley DB 4.6.21: (September 27, 2007)
+Support for: crypteq iconv() IPv6 GnuTLS move_frozen_messages
+Lookups: lsearch wildlsearch nwildlsearch iplsearch cdb dbm dbmnz dnsdb dsearch nis nis0 passwd
+Authenticators: cram_md5 plaintext
+Routers: accept dnslookup ipliteral manualroute queryprogram redirect
+Transports: appendfile/maildir/mailstore autoreply lmtp pipe smtp
+Fixed never_users: 0
+Size of off_t: 8
+Configuration file is /var/lib/exim4/config.autogenerated
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (500, 'unstable'), (500, 'testing')
+Architecture: amd64 (x86_64)
+
+Kernel: Linux 2.6.24-5.080331-9 (SMP w/2 CPU cores)
+Locale: LANG=en_US.UTF-8, LC_CTYPE=en_US.UTF-8 (charmap=ANSI_X3.4-1968) (ignored: LC_ALL set to C)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages exim4-daemon-light depends on:
+ii  debconf [debconf-2.0]         1.5.21     Debian configuration management sy
+ii  exim4-base                    4.69-2+b1  support files for all Exim MTA (v4
+ii  libc6                         2.7-10     GNU C Library: Shared libraries
+ii  libdb4.6                      4.6.21-7   Berkeley v4.6 Database Libraries [
+ii  libgnutls26                   2.2.2-1    the GNU TLS library - runtime libr
+ii  libpcre3                      7.6-2      Perl 5 Compatible Regular Expressi
+
+exim4-daemon-light recommends no packages.
+
+-- debconf information:
+  exim4-daemon-light/drec:
 
 
 

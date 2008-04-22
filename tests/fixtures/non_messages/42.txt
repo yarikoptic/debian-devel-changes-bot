@@ -1,67 +1,74 @@
-From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 17:20:08 2008
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 19:54:51 2008
 Received: from liszt.debian.org ([82.195.75.100])
 	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
 	(Exim 4.63)
 	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
-	id 1JncGq-0008DZ-Ma
-	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 17:20:08 +0100
+	id 1JnegY-0000Wt-MA
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 19:54:51 +0100
 Received: from localhost (localhost [127.0.0.1])
 	by liszt.debian.org (Postfix) with QMQP
-	id 3DFD613A4F45; Sun, 20 Apr 2008 16:20:03 +0000 (UTC)
+	id ABDCF13A5158; Sun, 20 Apr 2008 18:54:45 +0000 (UTC)
 Old-Return-Path: <debbugs@rietz.debian.org>
 X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
 X-Spam-Level: 
-X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+X-Spam-Status: No, score=-6.6 required=4.0 tests=BAYES_00,FOURLA,
+	IMPRONONCABLE_1,LDO_WHITELIST,MURPHY_WRONG_WORD1,MURPHY_WRONG_WORD2,
 	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
 X-Original-To: debian-bugs-dist@lists.debian.org
 Delivered-To: lists-debian-bugs-dist@liszt.debian.org
 Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
-	by liszt.debian.org (Postfix) with ESMTP id 0D44113A4F13;
-	Sun, 20 Apr 2008 16:19:53 +0000 (UTC)
+	by liszt.debian.org (Postfix) with ESMTP id 09AFB13A50BD;
+	Sun, 20 Apr 2008 18:54:36 +0000 (UTC)
 Received: from debbugs by rietz.debian.org with local (Exim 4.63)
 	(envelope-from <debbugs@rietz.debian.org>)
-	id 1JncC4-0005PO-86; Sun, 20 Apr 2008 16:15:08 +0000
+	id 1Jnecy-0003me-6x; Sun, 20 Apr 2008 18:51:04 +0000
 X-Loop: owner@bugs.debian.org
-Subject: Bug#448390: please use libc-ares for aria2
-Reply-To: Andreas Henriksson <andreas@fatal.se>, 448390@bugs.debian.org
-Resent-From: Andreas Henriksson <andreas@fatal.se>
+Subject: Bug#447106: vim-latexsuite doc not available
+Reply-To: Norbert Preining <preining@logic.at>, 447106@bugs.debian.org
+Resent-From: Norbert Preining <preining@logic.at>
+Original-Sender: gandalf@logic.at
 Resent-To: debian-bugs-dist@lists.debian.org
-Resent-CC: Patrick Ruckstuhl <patrick@tario.org>
-Resent-Date: Sun, 20 Apr 2008 16:15:07 +0000
-Resent-Message-ID: <handler.448390.B448390.120870790914784@bugs.debian.org>
-X-Debian-PR-Message: report 448390
-X-Debian-PR-Package: aria2
+Resent-CC: Debian QA Group <packages@qa.debian.org>
+Resent-Date: Sun, 20 Apr 2008 18:51:02 +0000
+Resent-Message-ID: <handler.447106.B447106.12087172467787@bugs.debian.org>
+X-Debian-PR-Message: report 447106
+X-Debian-PR-Package: vim-latexsuite
 X-Debian-PR-Keywords: 
-X-Debian-PR-Source: aria2
-Received: via spool by 448390-submit@bugs.debian.org id=B448390.120870790914784
-          (code B ref 448390); Sun, 20 Apr 2008 16:15:07 +0000
-Received: (at 448390) by bugs.debian.org; 20 Apr 2008 16:11:49 +0000
-X-Amavis-Spam-Status: No, score=-3.9 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO 
-	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
-Received: from 1-1-1-9a.ghn.gbg.bostream.se ([82.182.69.4] helo=localhost.localdomain)
+X-Debian-PR-Source: vim-latexsuite
+Received: via spool by 447106-submit@bugs.debian.org id=B447106.12087172467787
+          (code B ref 447106); Sun, 20 Apr 2008 18:51:02 +0000
+Received: (at 447106) by bugs.debian.org; 20 Apr 2008 18:47:26 +0000
+X-Amavis-Spam-Status: No, score=-8.5 required=4.0 tests=BAYES_00,FORGED_RCVD_HELO,
+	FOURLA,HAS_PACKAGE,IMPRONONCABLE_1,MURPHY_WRONG_WORD1,
+	MURPHY_WRONG_WORD2 autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Received: from mx.logic.tuwien.ac.at ([128.130.175.19])
 	by rietz.debian.org with esmtp (Exim 4.63)
-	(envelope-from <andreas@fatal.se>)
-	id 1Jnc8r-0003pC-6O
-	for 448390@bugs.debian.org; Sun, 20 Apr 2008 16:11:49 +0000
-Received: from [10.99.99.100] (helo=[192.168.10.111])
-	by localhost.localdomain with esmtpsa (TLS1.0:DHE_RSA_AES_256_CBC_SHA1:32)
-	(Exim 4.69)
-	(envelope-from <andreas@fatal.se>)
-	id 1Jnc9K-0007od-T2
-	for 448390@bugs.debian.org; Sun, 20 Apr 2008 18:12:18 +0200
-From: Andreas Henriksson <andreas@fatal.se>
-To: 448390@bugs.debian.org
-Content-Type: text/plain
-Date: Sun, 20 Apr 2008 18:11:41 +0200
-Message-Id: <1208707901.18101.10.camel@lappi.fatal.se>
-Mime-Version: 1.0
-X-Mailer: Evolution 2.22.1 
+	(envelope-from <gandalf@logic.at>)
+	id 1JneZR-00021B-TP
+	for 447106@bugs.debian.org; Sun, 20 Apr 2008 18:47:26 +0000
+Received: from 62-47-145-130.adsl.highway.telekom.at ([62.47.145.130] helo=mithrandir.pool8175.interbusiness.it)
+	by mx.logic.tuwien.ac.at with esmtpsa (TLS-1.0:RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <gandalf@logic.at>)
+	id 1JneZQ-0005rb-Dp; Sun, 20 Apr 2008 20:47:24 +0200
+Received: from norbert by mithrandir.pool8175.interbusiness.it with local (Exim 4.69)
+	(envelope-from <preining@logic.at>)
+	id 1JneZI-0002VU-3J; Sun, 20 Apr 2008 20:47:16 +0200
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
-Resent-Date: Sun, 20 Apr 2008 16:15:08 +0000
+From: Norbert Preining <preining@logic.at>
+To: Debian Bug Tracking System <447106@bugs.debian.org>
+Message-ID: <20080420184715.4398.84461.reportbug@mithrandir.pool8175.interbusiness.it>
+X-Mailer: reportbug 3.39-0.1
+Date: Sun, 20 Apr 2008 20:47:15 +0200
+Sender: gandalf@logic.at
+Resent-Date: Sun, 20 Apr 2008 18:51:04 +0000
 X-Debian-Message: from BTS
 X-Rc-Virus: 2007-09-13_01
 X-Rc-Spam: 2007-10-04_01
-X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343632
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343729
 X-Loop: debian-bugs-dist@lists.debian.org
 List-Id: <debian-bugs-dist.lists.debian.org>
 List-Post: <mailto:debian-bugs-dist@lists.debian.org>
@@ -72,8 +79,8 @@ Precedence: list
 Resent-Sender: debian-bugs-dist-request@lists.debian.org
 Received-SPF: none
 X-SPF-Guess: pass
-X-Spam-Score: -46.0
-X-Spam-Report: (-46.0 points, 5.0 required)
+X-Spam-Score: -27.3
+X-Spam-Report: (-27.3 points, 5.0 required)
 	pts rule name              description
 	---- ---------------------- --------------------------------------------------
 	-50 D_FOR_BOT              For debian-devel-changes bot
@@ -81,23 +88,55 @@ X-Spam-Report: (-46.0 points, 5.0 required)
 	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
 	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
 	[score: 0.0000]
-	6.5 AWL                    AWL: From: address is in the auto white-list
+	25 AWL                    AWL: From: address is in the auto white-list
 
-Hello!
+Package: vim-latexsuite
+Version: 20060325-5
+Followup-For: Bug #447106
 
-While updating my Debian installation libc-ares was just pulled in.
-This was described as a fork of libares, with one of the main features
-described being IPv6 support.
-Your package seems to already contain support for building against
-c-ares, so I would recommend to change the build-dependency to
-libc-ares-dev. (This will leave only zephyr-clients left using libares.)
-I don't know if you might need additional changes to aria2 itself though
-to get full ipv6-support and be able to close this bug entirely.
+after running
+	helpztags /usr/share/vim/addons/doc
+as root the documentation is still not available.
+
+$ ls -l /usr/share/vim/addons/doc/
+total 128
+-rw-r--r-- 1 root root  1995 2008-04-19 16:10 imaps.txt.gz
+-rw-r--r-- 1 root root 27734 2008-04-19 16:10 latexhelp.txt.gz
+-rw-r--r-- 1 root root  6714 2008-04-19 16:10 latex-suite-quickstart.txt.gz
+-rw-r--r-- 1 root root 41712 2008-04-19 16:10 latex-suite.txt.gz
+lrwxrwxrwx 1 root root    30 2008-04-16 19:19 matchit.txt -> ../../vim71/macros/matchit.txt
+-rw-r--r-- 1 root root 42109 2008-04-20 20:41 tags
 
 
--- 
-Andreas Henriksson <andreas@fatal.se>
+Hope that this helps
 
+-- Package-specific info:
+Vim related packages installed on this system:
+ - vim-latexsuite
+ - vim-runtime
+
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (500, 'unstable')
+Architecture: i386 (i686)
+
+Kernel: Linux 2.6.25 (SMP w/2 CPU cores; PREEMPT)
+Locale: LANG=en_US.ISO-8859-15, LC_CTYPE=en_US.ISO-8859-15 (charmap=ISO-8859-15)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages vim-latexsuite depends on:
+ii  python                       2.5.2-1     An interactive high-level object-o
+ii  vim                          1:7.1.293-1 Vi IMproved - enhanced vi editor
+ii  vim-common                   1:7.1.293-1 Vi IMproved - Common files
+ii  vim-gnome [vim-python]       1:7.1.293-1 Vi IMproved - enhanced vi editor -
+
+Versions of packages vim-latexsuite recommends:
+ii  texlive-base-bin           2007.dfsg.1-2 TeX Live: Essential binaries
+ii  vim-addon-manager          0.4           manager of addons for the Vim edit
+
+-- no debconf information
 
 
 

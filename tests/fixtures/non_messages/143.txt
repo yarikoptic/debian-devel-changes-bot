@@ -1,76 +1,71 @@
-From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 19:25:51 2008
+From bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org Sun Apr 20 18:56:22 2008
 Received: from liszt.debian.org ([82.195.75.100])
 	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
 	(Exim 4.63)
 	(envelope-from <bounce-debian-bugs-dist==chris-lamb.co.uk@lists.debian.org>)
-	id 1JneEU-0000PJ-Rr
-	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 19:25:51 +0100
+	id 1Jndlv-0000FB-DN
+	for bot.address@chris-lamb.co.uk; Sun, 20 Apr 2008 18:56:21 +0100
 Received: from localhost (localhost [127.0.0.1])
 	by liszt.debian.org (Postfix) with QMQP
-	id DA0EA13A50B9; Sun, 20 Apr 2008 18:25:45 +0000 (UTC)
+	id 6640513A47D4; Sun, 20 Apr 2008 17:56:14 +0000 (UTC)
 Old-Return-Path: <debbugs@rietz.debian.org>
 X-Spam-Checker-Version: SpamAssassin 3.2.3 (2007-08-08) on liszt.debian.org
 X-Spam-Level: 
-X-Spam-Status: No, score=-8.0 required=4.0 tests=BAYES_00,LDO_WHITELIST,
+X-Spam-Status: No, score=-7.9 required=4.0 tests=BAYES_00,FOURLA,LDO_WHITELIST,
 	RCVD_IN_DNSWL_LOW autolearn=ham version=3.2.3
 X-Original-To: debian-bugs-dist@lists.debian.org
 Delivered-To: lists-debian-bugs-dist@liszt.debian.org
 Received: from rietz.debian.org (rietz.debian.org [140.211.166.43])
-	by liszt.debian.org (Postfix) with ESMTP id 41E7E13A50AE;
-	Sun, 20 Apr 2008 18:25:36 +0000 (UTC)
+	by liszt.debian.org (Postfix) with ESMTP id 7BD2013A4F23;
+	Sun, 20 Apr 2008 17:56:02 +0000 (UTC)
 Received: from debbugs by rietz.debian.org with local (Exim 4.63)
 	(envelope-from <debbugs@rietz.debian.org>)
-	id 1JneCo-0000Up-SV; Sun, 20 Apr 2008 18:24:02 +0000
+	id 1Jndh5-0005Ii-5L; Sun, 20 Apr 2008 17:51:15 +0000
 X-Loop: owner@bugs.debian.org
-Subject: Bug#476846: Bug does NOT happen for sid version (9:1.1.7.1-1) of genisoimage  on armel
-Reply-To: Tobias Frost <tobi@coldtobi.de>, 476846@bugs.debian.org
-Resent-From: Tobias Frost <tobi@coldtobi.de>
+Subject: Bug#476987: exim4-daemon-light: oops, lsb-base is the problem
+Reply-To: Steve McCarthy <newsdebian@jetcity.org>, 476987@bugs.debian.org
+Resent-From: Steve McCarthy <newsdebian@jetcity.org>
 Resent-To: debian-bugs-dist@lists.debian.org
-Resent-CC: Joerg Jaspert <joerg@debian.org>
-Resent-Date: Sun, 20 Apr 2008 18:24:02 +0000
-Resent-Message-ID: <handler.476846.B476846.12087157991186@bugs.debian.org>
-X-Debian-PR-Message: report 476846
-X-Debian-PR-Package: genisoimage
+Resent-CC: Exim4 Maintainers <pkg-exim4-maintainers@lists.alioth.debian.org>
+Resent-Date: Sun, 20 Apr 2008 17:51:11 +0000
+Resent-Message-ID: <handler.476987.B476987.120871357113994@bugs.debian.org>
+X-Debian-PR-Message: report 476987
+X-Debian-PR-Package: exim4-daemon-light
 X-Debian-PR-Keywords: 
-X-Debian-PR-Source: cdrkit
-Received: via spool by 476846-submit@bugs.debian.org id=B476846.12087157991186
-          (code B ref 476846); Sun, 20 Apr 2008 18:24:02 +0000
-Received: (at 476846) by bugs.debian.org; 20 Apr 2008 18:23:19 +0000
-X-Amavis-Spam-Status: No, score=-7.0 required=4.0 tests=BAYES_00,HAS_BUG_NUMBER 
+X-Debian-PR-Source: exim4
+Received: via spool by 476987-submit@bugs.debian.org id=B476987.120871357113994
+          (code B ref 476987); Sun, 20 Apr 2008 17:51:11 +0000
+Received: (at 476987) by bugs.debian.org; 20 Apr 2008 17:46:11 +0000
+X-Amavis-Spam-Status: No, score=-9.9 required=4.0 tests=BAYES_00,FOURLA,HAS_PACKAGE 
 	autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
-Received: from sv13.net-housting.de ([80.190.144.123])
+Received: from tuphos.jetcity.org ([206.124.139.139])
 	by rietz.debian.org with esmtp (Exim 4.63)
-	(envelope-from <tobi@coldtobi.de>)
-	id 1JneC7-0000IV-B1
-	for 476846@bugs.debian.org; Sun, 20 Apr 2008 18:23:19 +0000
-Received: from moria (p4FD15864.dip.t-dialin.net [79.209.88.100])
-	(using TLSv1 with cipher AES256-SHA (256/256 bits))
-	(No client certificate requested)
-	by sv13.net-housting.de (Postfix) with ESMTP id 580A12804E658;
-	Sun, 20 Apr 2008 20:23:13 +0200 (CEST)
-Received: from tobi by moria with local (Exim 4.69)
-	(envelope-from <tobi@coldtobi.de>)
-	id 1JneBr-0001tx-7Y; Sun, 20 Apr 2008 20:23:15 +0200
-From: Tobias Frost <tobi@coldtobi.de>
-To: Peter Samuelson <peter@p12n.org>
-Cc: Barry Tennison <barry@ukph.org>, 476846@bugs.debian.org,  martinwguy@gmail.com, Tim Small <tim@buttersideup.com>, Bill Gatliff <bgat@billgatliff.com>
-In-Reply-To: <20080420152441.GQ646@p12n.org>
-References: <480B0ED9.3060403@ukph.org>  <20080420152441.GQ646@p12n.org>
-Content-Type: text/plain
+	(envelope-from <newsdebian@jetcity.org>)
+	id 1JndcB-0003dZ-6O
+	for 476987@bugs.debian.org; Sun, 20 Apr 2008 17:46:11 +0000
+Received: from erebus.jetcity.org ([206.124.139.138] helo=lockheed.jetcity.org)
+	by tuphos.jetcity.org with esmtp (Exim 4.50)
+	id 1Jndc7-0005X3-Ta; Sun, 20 Apr 2008 10:46:10 -0700
+Received: from jetadmin by lockheed.jetcity.org with local (Exim 4.69)
+	(envelope-from <newsdebian@jetcity.org>)
+	id 1Jndc7-0004GN-RD; Sun, 20 Apr 2008 10:46:07 -0700
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
 Content-Transfer-Encoding: 7bit
-Date: Sun, 20 Apr 2008 20:23:02 +0200
-Message-Id: <1208715782.6035.5.camel@moria>
-Mime-Version: 1.0
-X-Mailer: Evolution 2.22.1 
-X-SA-Exim-Connect-IP: <locally generated>
-X-SA-Exim-Mail-From: tobi@coldtobi.de
-X-SA-Exim-Version: 4.2.1 (built Tue, 21 Aug 2007 23:39:36 +0000)
-X-SA-Exim-Scanned: Yes (on moria)
-Resent-Date: Sun, 20 Apr 2008 18:24:02 +0000
+From: Steve McCarthy <newsdebian@jetcity.org>
+To: Debian Bug Tracking System <476987@bugs.debian.org>
+Message-ID: <20080420174607.16272.49254.reportbug@lockheed.jetcity.org>
+X-Mailer: reportbug 3.39-0.1
+Date: Sun, 20 Apr 2008 10:46:07 -0700
+X-SA-Exim-Connect-IP: 206.124.139.138
+X-SA-Exim-Mail-From: newsdebian@jetcity.org
+X-SA-Exim-Version: 4.2 (built Thu, 03 Mar 2005 10:44:12 +0100)
+X-SA-Exim-Scanned: Yes (on tuphos.jetcity.org)
+Resent-Date: Sun, 20 Apr 2008 17:51:15 +0000
 X-Debian-Message: from BTS
 X-Rc-Virus: 2007-09-13_01
 X-Rc-Spam: 2007-10-04_01
-X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343716
+X-Mailing-List: <debian-bugs-dist@lists.debian.org> archive/latest/343698
 X-Loop: debian-bugs-dist@lists.debian.org
 List-Id: <debian-bugs-dist.lists.debian.org>
 List-Post: <mailto:debian-bugs-dist@lists.debian.org>
@@ -81,24 +76,58 @@ Precedence: list
 Resent-Sender: debian-bugs-dist-request@lists.debian.org
 Received-SPF: none
 X-SPF-Guess: pass
-X-Spam-Score: -41.8
-X-Spam-Report: (-41.8 points, 5.0 required)
+X-Spam-Score: -52.6
+X-Spam-Report: (-52.6 points, 5.0 required)
 	pts rule name              description
 	---- ---------------------- --------------------------------------------------
 	-50 D_FOR_BOT              For debian-devel-changes bot
 	0.0 UNPARSEABLE_RELAY      Informational: message has unparseable relay lines
 	-2.6 BAYES_00               BODY: Bayesian spam probability is 0 to 1%
 	[score: 0.0000]
-	11 AWL                    AWL: From: address is in the auto white-list
+
+Package: exim4-daemon-light
+Followup-For: Bug #476987
 
 
+Sorry, posted to quick.  The package lsb-base is the culprit.
+An eval has been removed from the start_daemon routine.
+This bug should be reassigned to lsb-base.
 
-On Sun, 2008-04-20 at 10:24 -0500, Peter Samuelson wrote:
 
-> No, it's not an endian problem.  i386, amd64, arm, and armel are _all_
-> little-endian.
+-- Package-specific info:
+Exim version 4.69 #1 built 12-Apr-2008 09:26:11
+Copyright (c) University of Cambridge 2006
+Berkeley DB: Berkeley DB 4.6.21: (September 27, 2007)
+Support for: crypteq iconv() IPv6 GnuTLS move_frozen_messages
+Lookups: lsearch wildlsearch nwildlsearch iplsearch cdb dbm dbmnz dnsdb dsearch nis nis0 passwd
+Authenticators: cram_md5 plaintext
+Routers: accept dnslookup ipliteral manualroute queryprogram redirect
+Transports: appendfile/maildir/mailstore autoreply lmtp pipe smtp
+Fixed never_users: 0
+Size of off_t: 8
+Configuration file is /var/lib/exim4/config.autogenerated
 
-MMmmh, I always thought arm and armel differs in endianess...
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (500, 'unstable'), (500, 'testing')
+Architecture: amd64 (x86_64)
+
+Kernel: Linux 2.6.24-5.080331-9 (SMP w/2 CPU cores)
+Locale: LANG=en_US.UTF-8, LC_CTYPE=en_US.UTF-8 (charmap=ANSI_X3.4-1968) (ignored: LC_ALL set to C)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages exim4-daemon-light depends on:
+ii  debconf [debconf-2.0]         1.5.21     Debian configuration management sy
+ii  exim4-base                    4.69-2+b1  support files for all Exim MTA (v4
+ii  libc6                         2.7-10     GNU C Library: Shared libraries
+ii  libdb4.6                      4.6.21-7   Berkeley v4.6 Database Libraries [
+ii  libgnutls26                   2.2.2-1    the GNU TLS library - runtime libr
+ii  libpcre3                      7.6-2      Perl 5 Compatible Regular Expressi
+
+exim4-daemon-light recommends no packages.
+
+-- debconf information excluded
 
 
 
