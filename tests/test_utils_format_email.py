@@ -30,6 +30,15 @@ class TestFormatEmail(unittest.TestCase):
         ret = "John Smith (jsmith)"
         self.assertEqual(self.message.format_email_address(val), ret)
 
+    def testNonNormalDebianEmail(self):
+        val = 'John Smith <jsmith@merkel.debian.org>'
+        ret = 'John Smith (jsmith)'
+        self.assertEqual(self.message.format_email_address(val), ret)
+
+        val = 'John Smith <jsmith@master.debian.org>'
+        ret = 'John Smith (jsmith)'
+        self.assertEqual(self.message.format_email_address(val), ret)
+
     def testUppercaseDebianEmail(self):
         val = 'John Smith <JSMITH@DEBIAN.ORG>'
         ret = "John Smith (jsmith)"
