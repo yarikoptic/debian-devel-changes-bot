@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import urllib2
+import re
 
 class Datasource(object):
     class DataError(Exception): pass
