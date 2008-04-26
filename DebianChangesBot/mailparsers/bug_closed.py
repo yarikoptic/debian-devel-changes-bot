@@ -26,12 +26,10 @@ class BugClosedParser(MailParser):
 
         msg.by = headers['To']
 
-        # Let source package name override binary package
+        # Let binary package name override binary package
         msg.package = headers.get('X-Debian-PR-Source', None)
         msg.package = headers['X-Debian-PR-Package']
 
-        # Strip package name prefix from title
-        if msg.title.lower().startswith('%s: ' % msg.package.lower()):
-            msg.title = msg.title[len(msg.package) + 2:]
+        msg.title = tidy_bug_title(msg.title, msg.package)
 
         return msg

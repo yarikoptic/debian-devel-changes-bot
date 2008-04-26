@@ -58,15 +58,12 @@ class BugSubmittedParser(MailParser):
             if len(mapping.keys()) == 0:
                 break
 
-        if not msg.package:
-            return
-
         if type(msg.version) is str and msg.version.find('GnuPG') != -1:
             msg.version = None
 
-        # Strip package name prefix from title
-        for prefix in ('%s: ', '[%s]: '):
-            if msg.title.lower().startswith(prefix % msg.package.lower()):
-                msg.title = msg.title[len(msg.package) + len(prefix) - 2:]
+        if not msg.package:
+            return
+
+        msg.title = tidy_bug_title(msg.title, msg.package)
 
         return msg
