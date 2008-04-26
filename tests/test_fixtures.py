@@ -12,13 +12,17 @@ from DebianChangesBot.utils import parse_mail
 
 from glob import glob
 
-class TestFixtures(unittest.TestCase):
+class TestFixtures(unittest.TestCase): pass
 
-    def _test_dir(self, dir, parser, expected_type, test=lambda x: bool(x)):
-        dir = os.path.join(os.path.dirname(os.path.abspath(__file__)),
-            'fixtures', dir, '*')
+count = 0
+def add_tests(testdir, parser, expected_type, test=lambda x: bool(x)):
+    global count
 
-        for filename in glob(dir):
+    testdir = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+        'fixtures', testdir, '*')
+
+    for filename in glob(testdir):
+        def testFunc(self):
             try:
                 headers, body = parse_mail(file(filename))
                 msg = parser.parse(headers, body)
@@ -36,21 +40,17 @@ class TestFixtures(unittest.TestCase):
                 print filename, "did not pass test"
             self.assert_(test(msg))
 
-    def testAcceptedUpload(self):
-        self._test_dir('accepted_upload', AcceptedUploadParser, AcceptedUploadMessage)
+        count += 1
+        setattr(TestFixtures, 'test%d' % count, testFunc)
 
-    def testBugClosed(self):
-        self._test_dir('bug_closed', BugClosedParser, BugClosedMessage)
+add_tests('accepted_upload', AcceptedUploadParser, AcceptedUploadMessage)
+add_tests('bug_closed', BugClosedParser, BugClosedMessage)
+add_tests('bug_submitted', BugSubmittedParser, BugSubmittedMessage)
+add_tests('bug_submitted', BugSubmittedParser, BugSubmittedMessage)
+add_tests('security_announce', SecurityAnnounceParser, SecurityAnnounceMessage)
 
-    def testBugSubmitted(self):
-        self._test_dir('bug_submitted', BugSubmittedParser, BugSubmittedMessage)
-
-    def testSecurityAnnounce(self):
-        self._test_dir('security_announce', SecurityAnnounceParser, SecurityAnnounceMessage)
-
-    def testNoMatch(self):
-        for parser in AcceptedUploadParser, BugClosedParser, BugSubmittedParser, SecurityAnnounceParser:
-            self._test_dir('non_messages', parser, type(None), test=lambda x: not bool(x))
+for parser in AcceptedUploadParser, BugClosedParser, BugSubmittedParser, SecurityAnnounceParser:
+    add_tests('non_messages', parser, type(None), test=lambda x: not bool(x))
 
 if __name__ == "__main__":
     unittest.main()
