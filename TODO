@@ -4,3 +4,4 @@ TODO
  - Bot plugin
  - Colours
  - Testing of output (need dummy DataSources)
+ - Locking in FIFO injection script
