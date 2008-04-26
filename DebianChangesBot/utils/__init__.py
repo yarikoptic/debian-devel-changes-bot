@@ -32,3 +32,4 @@ def quoted_printable(val):
     return val
 
 from parse_mail import parse_mail
+from format_email_address import format_email_address

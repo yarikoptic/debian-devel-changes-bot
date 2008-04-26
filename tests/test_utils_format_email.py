@@ -6,75 +6,99 @@ import unittest
 import os, sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from DebianChangesBot import Message
+from DebianChangesBot.utils import format_email_address
 
 class TestFormatEmail(unittest.TestCase):
-
-    def setUp(self):
-        self.message = Message()
-
-    def testSimple(self):
-        pass
+    def _test(self, val, ret):
+        self.assertEqual(format_email_address(val, max_user=100, max_domain=100), ret)
 
     def testDebian(self):
-        val = "John Smith <jsmith@debian.org>"
-        ret = "John Smith (jsmith)"
-        self.assertEqual(self.message.format_email_address(val), ret)
+        self._test("John Smith <jsmith@debian.org>", "John Smith (jsmith)")
 
-    def testDebianQuotes(self):
-        val = '"John Smith" <jsmith@debian.org>'
-        ret = "John Smith (jsmith)"
-        self.assertEqual(self.message.format_email_address(val), ret)
+    def testDebianDoubleQuotes(self):
+        self._test('"John Smith" <jsmith@debian.org>', "John Smith (jsmith)")
 
-        val = "'John Smith' <jsmith@debian.org>"
-        ret = "John Smith (jsmith)"
-        self.assertEqual(self.message.format_email_address(val), ret)
+    def testDebianSingleQuotes(self):
+        self._test("'John Smith' <jsmith@debian.org>", "John Smith (jsmith)")
 
-    def testNonNormalDebianEmail(self):
-        val = 'John Smith <jsmith@merkel.debian.org>'
-        ret = 'John Smith (jsmith)'
-        self.assertEqual(self.message.format_email_address(val), ret)
+    def testSingleQuotesInName(self):
+        self._test("John S'mith <jsmith@debian.org>", "John S'mith (jsmith)")
 
-        val = 'John Smith <jsmith@master.debian.org>'
-        ret = 'John Smith (jsmith)'
-        self.assertEqual(self.message.format_email_address(val), ret)
+    def testNonNormalDebianEmailOne(self):
+        self._test('John Smith <jsmith@merkel.debian.org>', 'John Smith (jsmith)')
+
+    def testNonNormalDebianEmailTwo(self):
+        self._test('John Smith <jsmith@master.debian.org>', 'John Smith (jsmith)')
 
     def testUppercaseDebianEmail(self):
-        val = 'John Smith <JSMITH@DEBIAN.ORG>'
-        ret = "John Smith (jsmith)"
-        self.assertEqual(self.message.format_email_address(val), ret)
+        self._test('John Smith <JSMITH@DEBIAN.ORG>', "John Smith (jsmith)")
 
     def testUppercaseEmail(self):
-        val = 'John Smith <JSMITH@HOST.TLD>'
-        ret = "John Smith <jsmith@host.tld>"
-        self.assertEqual(self.message.format_email_address(val), ret)
+        self._test('John Smith <JSMITH@HOST.TLD>', "John Smith <jsmith@host.tld>")
 
     def testExtraSpacesOne(self):
-        val = "John  Smith <jsmith@host.tld>"
-        ret = "John Smith <jsmith@host.tld>"
-        self.assertEqual(self.message.format_email_address(val), ret)
-
-        val = "John Smith  <jsmith@host.tld>"
-        ret = "John Smith <jsmith@host.tld>"
-        self.assertEqual(self.message.format_email_address(val), ret)
+        self._test("John  Smith <jsmith@host.tld>", "John Smith <jsmith@host.tld>")
 
     def testExtraSpacesTwo(self):
-        val = "John Smith < jsmith@host.tld>"
-        ret = "John Smith <jsmith@host.tld>"
-        self.assertEqual(self.message.format_email_address(val), ret)
+        self._test("John Smith  <jsmith@host.tld>", "John Smith <jsmith@host.tld>")
 
-        val = "John Smith < jsmith@host.tld>"
-        ret = "John Smith <jsmith@host.tld >"
-        self.assertEqual(self.message.format_email_address(val), ret)
+    def testExtraSpacesThree(self):
+        self._test("John Smith < jsmith@host.tld>", "John Smith <jsmith@host.tld>")
+
+    def testExtraSpacesFour(self):
+        self._test("John Smith < jsmith@host.tld>", "John Smith <jsmith@host.tld>")
 
     def testDontRepeatName(self):
-        val = "John Smith (jsmith) <jsmith@debian.org>"
-        ret = "John Smith (jsmith)"
-        self.assertEqual(self.message.format_email_address(val), ret)
+        self._test("John Smith (jsmith) <jsmith@debian.org>", "John Smith (jsmith)")
 
-        val = "John Smith (JSMITH) <jsmith@debian.org>"
-        ret = "John Smith (jsmith)"
-        self.assertEqual(self.message.format_email_address(val), ret)
+    def testDontRepeatNameUppercase(self):
+        self._test("John Smith (JSMITH) <jsmith@debian.org>", "John Smith (jsmith)")
+
+    def testNoName(self):
+        self._test("jsmith@debian.org", "jsmith@debian.org")
+
+    def testNoNameTwo(self):
+        self._test("<jsmith@debian.org>", "(jsmith)")
+
+class TestLongEmail(unittest.TestCase):
+    def _test(self, val, ret, max_user, max_domain):
+        self.assertEqual(format_email_address(val, max_user=max_user,
+            max_domain=max_domain), ret)
+
+    def testZeroZero(self):
+        self._test("E <1234567890@123456789>", "E <...@...>", 0, 0)
+
+    def testOneUser(self):
+        for i in range(1, 10):
+            self._test("E <1@123456789>", "E <1@...>", i, 0)
+
+    def testOneHost(self):
+        for i in range(1, 10):
+            self._test("E <123456789@1>", "E <...@1>", 0, i)
+
+    def testPartTruncatedUser(self):
+        self._test("E <123456789@123456789>", "E <12345...@...>", 5, 0)
+
+    def testPartTruncatedHost(self):
+        self._test("E <123456789@123456789>", "E <...@12345...>", 0, 5)
+
+    def testBorderlineNotTruncatedUser(self):
+        self._test("E <123456789@123456789>", "E <123456789@...>", 9, 0)
+
+    def testBorderlineNotTruncatedHost(self):
+        self._test("E <123456789@123456789>", "E <...@123456789>", 0, 9)
+
+    def testBorderlineTruncatedUser(self):
+        self._test("E <123456789@123456789>", "E <12345678...@...>", 8, 0)
+
+    def testBorderlineTruncatedHost(self):
+        self._test("E <123456789@123456789>", "E <...@12345678...>", 0, 8)
+
+    def testNoExtraDotsAtEndUser(self):
+        self._test("E <foo.bar@123456789>", "E <foo...@...>", 4, 0)
+
+    def testNoExtraDotsAtEndHost(self):
+        self._test("E <123456789@foo.com>", "E <...@foo...>", 0, 4)
 
 if __name__ == "__main__":
     unittest.main()

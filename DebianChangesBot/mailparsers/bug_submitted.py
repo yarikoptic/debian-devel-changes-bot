@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from DebianChangesBot import MailParser
+from DebianChangesBot.utils import tidy_bug_title
 from DebianChangesBot.messages import BugSubmittedMessage
 
 import re
