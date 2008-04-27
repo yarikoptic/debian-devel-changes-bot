@@ -14,6 +14,7 @@ class TestMailParserBugSubmitted(unittest.TestCase):
         self.headers = {
             'Subject': 'Bug#123456: Bug title',
             'From': 'Submitter Name <name@host.tld>',
+            'List-Id': '<debian-bugs-dist.lists.debian.org>',
         }
 
         self.body = [

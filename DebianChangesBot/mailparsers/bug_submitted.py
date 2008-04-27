@@ -18,6 +18,9 @@ class BugSubmittedParser(MailParser):
 
     @staticmethod
     def parse(headers, body):
+        if headers.get('List-Id', '') != '<debian-bugs-dist.lists.debian.org>':
+            return
+
         msg = BugSubmittedMessage()
 
         m = SUBJECT.match(headers['Subject'])
