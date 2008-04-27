@@ -1,7 +1,10 @@
 # -*- coding: utf-8 -*-
 
-import email
 import re
+
+# Import these directly due to funkiness in Python 2.4's email library
+import email.Header
+import email.quopriMIME
 
 def header_decode(s):
     def unquote_match(match):
@@ -22,7 +25,7 @@ def quoted_printable(val):
                 val = unicode(save, 'utf-8', 'replace')
 
         else:
-            return unicode(email.quoprimime.header_decode(str(val)), 'utf-8', 'replace')
+            return unicode(email.quopriMIME.header_decode(str(val)), 'utf-8', 'replace')
 
     except Exception, e:
         # We ignore errors here. Most of these originate from a spam
