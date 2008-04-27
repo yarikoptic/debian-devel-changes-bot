@@ -12,17 +12,15 @@ from DebianChangesBot.utils import parse_mail
 
 from glob import glob
 
-class TestFixtures(unittest.TestCase): pass
+class TestFixtures(unittest.TestCase):
+    count = 0
 
-count = 0
 def add_tests(testdir, parser, expected_type, test=lambda x: bool(x)):
-    global count
-
     testdir = os.path.join(os.path.dirname(os.path.abspath(__file__)),
         'fixtures', testdir, '*')
 
     for filename in glob(testdir):
-        def testFunc(self):
+        def testFunc(self, filename=filename):
             try:
                 headers, body = parse_mail(file(filename))
                 msg = parser.parse(headers, body)
@@ -40,8 +38,8 @@ def add_tests(testdir, parser, expected_type, test=lambda x: bool(x)):
                 print filename, "did not pass test"
             self.assert_(test(msg))
 
-        count += 1
-        setattr(TestFixtures, 'test%d' % count, testFunc)
+        TestFixtures.count += 1
+        setattr(TestFixtures, 'test%d' % TestFixtures.count, testFunc)
 
 add_tests('accepted_upload', AcceptedUploadParser, AcceptedUploadMessage)
 add_tests('bug_closed', BugClosedParser, BugClosedMessage)
