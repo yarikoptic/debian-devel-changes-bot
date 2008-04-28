@@ -1,0 +1,41 @@
+debian-devel-changes IRC bot
+============================
+
+Requirements:
+
+ * Python >= 2.4
+ * Beautiful Soup (python-beautifulsoup)
+ * Supybot
+ * Local MTA
+
+Installation
+------------
+
+ 1. Obtain a copy of the bot sources and place in an empty directory. We will
+    refer to this dir as $SOURCE_DIR.
+
+    You should ensure that $SOURCE_DIR/bin/ is writable by the supybot user so
+    that it can create a FIFO.
+
+ 2. Create an email address which outputs mail directed to it to the STDIN of
+    $SOURCE_DIR/bin/debian-devel-changes-bot.sh. Under Exim you can use the
+    "pipe" transport for this.
+
+    You should keep this email address secret so that 3rd-parties cannot inject
+    specially crafted messages pnto the channel.
+
+ 3. Configure a Supybot instance using the "supybot-wizard" command. You are
+    recommended to run this in the "bot-config" directory under $SOURCE_DIR (it
+    will be ignored by the revision control system).
+
+ 4. After ensuring the bot can connect to your IRC server, add $SOURCE_DIR to
+    the "supybot.directories.plugins" directive in your ".conf" file.
+
+ 5. Subscribe the bot to the following lists:
+
+   - http://lists.debian.org/debian-devel-changes/
+   - http://lists.debian.org/debian-bugs-dist/
+   - http://lists.debian.org/debian-bugs-closed/
+   - http://lists.backports.org/mailman/listinfo/backports-changes
+
+ 6. Run supybot $SOURCE_DIR/bot-config/<conffile>.conf to start the bot.
