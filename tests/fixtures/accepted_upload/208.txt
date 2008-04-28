@@ -1,0 +1,248 @@
+From dak@www.backports.org  Mon Apr 28 18:02:48 2008
+Return-Path: <dak@www.backports.org>
+X-Original-To: backports-changes@smithers.debconf.org
+Delivered-To: backports-changes@smithers.debconf.org
+Received: from localhost (localhost [127.0.0.1])
+	by smithers.debconf.org (Postfix) with ESMTP id 34C2E2374DC;
+	Mon, 28 Apr 2008 18:02:48 +0000 (UTC)
+X-Virus-Scanned: Debian amavisd-new at smithers.debconf.org
+Received: from smithers.debconf.org ([82.195.75.76])
+	by localhost (smithers.debconf.org [82.195.75.76]) (amavisd-new,
+	port 10024)
+	with ESMTP id 30tfbzBj+MwK; Mon, 28 Apr 2008 18:02:46 +0000 (UTC)
+X-policyd-weight: using cached result; rate: -7
+Received: from www.backports.org (www.backports.org [194.8.57.6])
+	by smithers.debconf.org (Postfix) with ESMTP id 67EF72366B8;
+	Mon, 28 Apr 2008 18:02:46 +0000 (UTC)
+Received: by www.backports.org (Postfix, from userid 102)
+	id B8C1B286BFA8C; Mon, 28 Apr 2008 18:02:45 +0000 (UTC)
+From: Christoph Berg <myon@debian.org>
+To: backports-changes@lists.backports.org
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+Subject: Accepted hobbit 4.2.0.dfsg-11~bpo40+1 (source i386)
+Message-Id: <20080428180245.B8C1B286BFA8C@www.backports.org>
+Date: Mon, 28 Apr 2008 18:02:45 +0000 (UTC)
+X-BeenThere: backports-changes@lists.backports.org
+X-Mailman-Version: 2.1.9
+Precedence: list
+Reply-To: backports-users@lists.backports.org
+List-Id: "backports.org changes" <backports-changes.lists.backports.org>
+List-Unsubscribe: <http://lists.backports.org/mailman/listinfo/backports-changes>,
+	<mailto:backports-changes-request@lists.backports.org?subject=unsubscribe>
+List-Archive: <http://lists.backports.org/lurker/list/backports-changes.html>
+List-Post: <mailto:backports-changes@lists.backports.org>
+List-Help: <mailto:backports-changes-request@lists.backports.org?subject=help>
+List-Subscribe: <http://lists.backports.org/mailman/listinfo/backports-changes>,
+	<mailto:backports-changes-request@lists.backports.org?subject=subscribe>
+X-List-Received-Date: Mon, 28 Apr 2008 18:02:48 -0000
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.7
+Date: Mon, 28 Apr 2008 19:47:14 +0200
+Source: hobbit
+Binary: hobbit hobbit-client
+Architecture: source i386
+Version: 4.2.0.dfsg-11~bpo40+1
+Distribution: etch-backports
+Urgency: low
+Maintainer: Christoph Berg <myon@debian.org>
+Changed-By: Christoph Berg <myon@debian.org>
+Description: 
+ hobbit     - monitoring system for systems, networks and applications - server
+ hobbit-client - client for the Hobbit network monitor
+Closes: 439693 440504 440949 441030 441030 441199 442953 443155 443161 443214 443617 443667 443861 444281 444610 444659 444751 445339 445828 446095 446347 446982 447484 448482 448489 448934 450830 450834 463424
+Changes: 
+ hobbit (4.2.0.dfsg-11~bpo40+1) etch-backports; urgency=low
+ .
+   * Rebuild for Etch backports.
+ .
+ hobbit (4.2.0.dfsg-11) unstable; urgency=low
+ .
+   * Make force-reload reload, not restart in init scripts.
+   * Move init scripts to S98 and Should-Start: $all so monitored services have
+     already started. (S98 only effective on new installs.)
+   * Set umask to 022 on for files in /var/run/hobbit/.
+   * Add patch to allow "/http" in URLs (require full "/http[s]://" for proxy
+     requests).
+   * Add /etc/hobbit/hobbitclient.d/.
+ .
+ hobbit (4.2.0.dfsg-10) unstable; urgency=low
+ .
+   * Add patch by dann frazier to define LDAP_DEPRECATED to continue using the
+     deprecated libldap interfaces, thanks. (Closes: #463424)
+ .
+ hobbit (4.2.0.dfsg-9) unstable; urgency=low
+ .
+   * Add splitncv patch by Charles Goyard.
+   * Updated lintian overrides.
+ .
+ hobbit (4.2.0.dfsg-8) unstable; urgency=low
+ .
+   * Set umask to 022 on startup.
+   * Fix mailq regexp in hobbitgraph.cfg, thanks to Roland Rosenfeld for the
+     patch. (Closes: #450830)
+   * Do not assume the first df output line to be a header. (Closes: #450834)
+   * Add librrd0-dev as alternative to build-depends.
+ .
+ hobbit (4.2.0.dfsg-7) unstable; urgency=low
+ .
+   * Add patch by Roland Rosenfeld to adjust description width in the netstat
+     graphs. (Closes: #447484)
+   * Return 0 in init-common.sh, thanks to Jason Cormie for spotting.
+     (Closes: #448482)
+   * Recreate /usr/lib/hobbit/*/tmp/ symlinks, pointing to /var/lib/hobbit/tmp,
+     and properly set permissions. (Closes: #448489)
+   * Make our HOBBITMENU work for the ghost clients report. (Closes: #446095)
+   * Grab patch from upstream to fix slightly broken NCV parsing.
+   * Add /etc/hobbit/hobbitgraph.d/ and /etc/hobbit/hobbitserver.d/.
+   * Improve TCP tests time granularity.
+   * Translations: Dutch, thanks Bart Cornelis. (Closes: #448934)
+ .
+ hobbit (4.2.0.dfsg-6) unstable; urgency=low
+ .
+   * Remove /usr/lib/hobbit/*/tmp/ symlinks, set BBTMP="/var/lib/hobbit/tmp".
+     (Closes: #446982)
+   * Drop "hobbit" binary again, instead bbcmd will set PATH to include
+     the hobbit binaries.
+   * Add /etc/hobbit/hobbitlaunch.d/ directory for server extensions.
+   * When upgrading from a pre-Debian version, move old directories in
+     /var/lib/hobbit/www/ away, we want them to be symlinks.
+   * Add missing "test" in postrm. Thanks to Yukio Shiiya for the patch.
+     (Closes: #446347)
+   * Add COLUMS=200 to the dpkg -l call for Sarge compatibility.
+   * Add some examples to the default bb-hosts file.
+   * Move the config file tweaking from debian/rules to quilt.
+ .
+ hobbit (4.2.0.dfsg-5) unstable; urgency=low
+ .
+   * The Smith inquisition reviewed our templates - thanks Christian Perrier.
+     (Closes: #442953)
+     + Basque, thanks Piarres Beobide (Closes: #443155).
+     + Vietnamese, thanks Clytie Siddall (Closes: #443161).
+     + Portuguese, thanks Américo Monteiro (Closes: #443214).
+     + Finnish, thanks Esko Arajärvi (Closes: #443617).
+     + Czech, thanks Miroslav Kure (Closes: #443667).
+     + Russian, thanks Yuri Kozlov (Closes: #443861).
+     + Tamil, thanks Tirumurti Vasudevan (Closes: #444281).
+     + Italian, thanks Luca Monducci (Closes: #444610).
+     + French, thanks Geoffroy Youri Berret (Closes: #444659).
+     + Galician, thanks Jacobo Tarrio (Closes: #444751).
+     + Brazilian Portuguese, thanks Felipe Augusto van de Wiel.
+       (Closes: #445339)
+   * Use $BBSERVERWWWURL and friends in menu.cfg.
+   * Fix reading of /etc/default/hobbit-client in config script.
+     (Closes: #445828)
+ .
+ hobbit (4.2.0.dfsg-4) unstable; urgency=low
+ .
+   * Instead of conflicting with bb, rename our 'bb' binary to 'hobbit'.
+     Move bb.1 to bb.8 (Closes: #441030 again).
+   * Send (reformatted) dpkg -l output with client message.
+ .
+ hobbit (4.2.0.dfsg-3) unstable; urgency=low
+ .
+   * Debconf translations:
+     Portuguese, thanks Américo Monteiro (Closes: #439693).
+     French, thanks Geoffroy Youri Berret (Closes: #440504).
+   * Actually install README.Debian and fix paths in html docs
+     (Closes: #440949).
+   * Quiltize source.
+   * hobbit-client:
+     + Conflict with bb (<= 1.3rc1-8), it ships bb.1 (Closes: #441030).
+     + Set missing environment variables (Closes: #441199, thanks Jason
+       Cormie).
+ .
+ hobbit (4.2.0.dfsg-2) unstable; urgency=low
+ .
+   * Install /usr/bin/bb and bbcmd.
+   * Use HOBBITSERVERS in /etc/default/hobbit-client (again).
+   * Consistently use start-stop-daemon for daemon handling.
+   * Priority: extra.
+ .
+ hobbit (4.2.0.dfsg-1) unstable; urgency=low
+ .
+   * Preparing for Debian upload.
+   * Repackaged the source:
+     + Removed non-free tigra menu files from hobbitd/wwwfiles/menu/.
+     + Removed upstream's debian/ dir.
+ .
+ hobbit (4.2.0-1) unstable; urgency=low
+ .
+   * Hobbit version 4.2: New upstream release.
+ .
+ hobbit (4.2-RC-20060712) unstable; urgency=low
+ .
+   * Release candidate of 4.2
+ .
+ hobbit (4.2-beta-20060605) unstable; urgency=low
+ .
+   * Beta release of 4.2
+ .
+ hobbit (4.2-alfa-20060404) unstable; urgency=low
+ .
+   * Alfa release of 4.2
+ .
+ hobbit (4.1.2p1-1) unstable; urgency=low
+ .
+   * New upstream release
+ .
+ hobbit (4.1.2-1) unstable; urgency=low
+ .
+   * New upstream release
+ .
+ hobbit (4.1.1-1) unstable; urgency=low
+ .
+   * New upstream release.
+ .
+ hobbit (4.1.0-1) unstable; urgency=low
+ .
+   * New upstream release.
+ .
+ hobbit (4.0.4-1) unstable; urgency=low
+ .
+   * New upstream release.
+ .
+ hobbit (4.0.3-1) unstable; urgency=low
+ .
+   * New upstream release.
+ .
+ hobbit (4.0.2-1) unstable; urgency=low
+ .
+   * New upstream release.
+ .
+ hobbit (4.0.1-1) unstable; urgency=low
+ .
+   * Build problems fixed on Solaris, HP-UX
+   * Zoomed graphs could lose the hostname in the title.
+ .
+ hobbit (4.0-1) unstable; urgency=low
+ .
+   * Upstream release of version 4.0
+Files: 
+ efeb541e54df49fd574e16e60976f865 766 net extra hobbit_4.2.0.dfsg-11~bpo40+1.dsc
+ 1429507b7bbba729e6b3c8825d0de69f 30860 net extra hobbit_4.2.0.dfsg-11~bpo40+1.diff.gz
+ c3234089fd1864fe3a8f3d1a7844177c 3309026 net extra hobbit_4.2.0.dfsg-11~bpo40+1_i386.deb
+ b34eddf2043355d052f566d24874a37a 423948 net extra hobbit-client_4.2.0.dfsg-11~bpo40+1_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIFg5yxa93SlhRC1oRAukJAKChg6f6phYXxwcLHpCR+Th7sAHYswCdFsh0
+jVx9qILL8io0xDyA4T1bDZ8=
+=JVzH
+-----END PGP SIGNATURE-----
+
+
+Accepted:
+hobbit-client_4.2.0.dfsg-11~bpo40+1_i386.deb
+  to pool/main/h/hobbit/hobbit-client_4.2.0.dfsg-11~bpo40+1_i386.deb
+hobbit_4.2.0.dfsg-11~bpo40+1.diff.gz
+  to pool/main/h/hobbit/hobbit_4.2.0.dfsg-11~bpo40+1.diff.gz
+hobbit_4.2.0.dfsg-11~bpo40+1.dsc
+  to pool/main/h/hobbit/hobbit_4.2.0.dfsg-11~bpo40+1.dsc
+hobbit_4.2.0.dfsg-11~bpo40+1_i386.deb
+  to pool/main/h/hobbit/hobbit_4.2.0.dfsg-11~bpo40+1_i386.deb
+
