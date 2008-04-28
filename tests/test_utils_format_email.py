@@ -22,7 +22,7 @@ import unittest
 import os, sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from DebianChangesBot.utils import format_email_address
+from DebianDevelChanges.utils import format_email_address
 
 class TestFormatEmail(unittest.TestCase):
     def _test(self, val, ret):

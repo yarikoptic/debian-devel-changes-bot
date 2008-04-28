@@ -22,8 +22,8 @@ import unittest
 import os, sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from DebianChangesBot import Datasource
-from DebianChangesBot.datasources import NewQueue
+from DebianDevelChanges import Datasource
+from DebianDevelChanges.datasources import NewQueue
 
 class TestDatasourceTestingRCBugs(unittest.TestCase):
 

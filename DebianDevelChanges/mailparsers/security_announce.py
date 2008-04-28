@@ -16,36 +16,39 @@
 #   You should have received a copy of the GNU Affero General Public License
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from DebianChangesBot import MailParser
-from DebianChangesBot.utils import tidy_bug_title
-from DebianChangesBot.messages import BugClosedMessage
+from DebianDevelChanges import MailParser
+from DebianDevelChanges.messages import SecurityAnnounceMessage
 
 import re
 
-SUBJECT = re.compile(r'^Bug#(\d+): marked as done \((.+)\)$')
+SUBJECT = re.compile(r'^\[SECURITY\] \[DSA ([\d]+)-([\d+])\] New ([^ ]+) packages fix (.*)$')
+DATE = re.compile(r'(20\d\d)')
 
-class BugClosedParser(MailParser):
+class SecurityAnnounceParser(MailParser):
 
     @staticmethod
     def parse(headers, body):
-        if headers.get('List-Id', '') != '<debian-bugs-closed.lists.debian.org>':
+        if headers.get('List-Id', '') != '<debian-security-announce.lists.debian.org>':
             return
 
-        msg = BugClosedMessage()
+        msg = SecurityAnnounceMessage()
 
-        m = SUBJECT.match(headers['Subject'])
+        m = SUBJECT.match(headers.get('Subject', ''))
         if m:
-            msg.bug_number = int(m.group(1))
-            msg.title = m.group(2)
-        else:
-            return
+            try:
+                msg.dsa_number = int(m.group(1))
+                msg.dsa_revision = int(m.group(2))
+            except ValueError:
+                return
 
-        msg.by = headers['To']
+            msg.package = m.group(3)
+            msg.problem = m.group(4)
 
-        # Let binary package name override binary package
-        msg.package = headers.get('X-Debian-PR-Source', None)
-        msg.package = headers['X-Debian-PR-Package']
-
-        msg.title = tidy_bug_title(msg.title, msg.package)
+        m = DATE.search(headers.get('Date', ''))
+        if m:
+            try:
+                msg.year = int(m.group(1))
+            except ValueError:
+                return
 
         return msg

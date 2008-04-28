@@ -20,7 +20,7 @@ import thread
 import urllib2
 from BeautifulSoup import BeautifulSoup
 
-from DebianChangesBot import Datasource
+from DebianDevelChanges import Datasource
 
 class NewQueue(Datasource):
     __shared_state = {}

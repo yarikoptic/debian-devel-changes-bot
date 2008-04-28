@@ -22,7 +22,8 @@ import unittest
 import os, sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from DebianChangesBot.mailparsers import AcceptedUploadParser as p
+from DebianDevelChanges.utils import parse_mail
+from DebianDevelChanges.mailparsers import AcceptedUploadParser as p
 
 class TestMailParserAcceptedUpload(unittest.TestCase):
 
@@ -79,7 +80,6 @@ class TestMailParserAcceptedUpload(unittest.TestCase):
 
     def testFixtures(self):
         from glob import glob
-        from DebianChangesBot.utils import parse_mail
 
         dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'fixtures', 'accepted_upload', '*')
         for filename in glob(dir):

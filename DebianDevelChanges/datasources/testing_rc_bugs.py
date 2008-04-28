@@ -19,7 +19,7 @@
 import re
 import thread
 
-from DebianChangesBot import Datasource
+from DebianDevelChanges import Datasource
 
 class TestingRCBugs(Datasource):
     __shared_state = {}

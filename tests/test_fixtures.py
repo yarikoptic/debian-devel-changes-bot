@@ -22,9 +22,9 @@ import unittest
 import os, sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from DebianChangesBot.messages import *
-from DebianChangesBot.mailparsers import *
-from DebianChangesBot.utils import parse_mail
+from DebianDevelChanges.messages import *
+from DebianDevelChanges.mailparsers import *
+from DebianDevelChanges.utils import parse_mail
 
 from glob import glob
 
