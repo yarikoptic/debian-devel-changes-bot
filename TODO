@@ -1,8 +1,7 @@
 TODO
 ====
 
- - Colours
  - Scheduling of Datasource updates
  - Topic handling and modification
 
- - Testing of output (need dummy DataSources and colour stripper?)
+ - Testing of output? (need dummy DataSources and colour stripper?)
