@@ -18,3 +18,9 @@
 
 from testing_rc_bugs import TestingRCBugs
 from new_queue import NewQueue
+
+import testing_rc_bugs
+import new_queue
+
+reload(testing_rc_bugs)
+reload(new_queue)

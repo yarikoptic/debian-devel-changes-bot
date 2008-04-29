@@ -43,3 +43,13 @@ class Message(object):
                 if getattr(self, field) is None:
                     return False
         return True
+
+import utils
+import messages
+import datasources
+import mailparsers
+
+reload(utils)
+reload(messages)
+reload(datasources)
+reload(mailparsers)

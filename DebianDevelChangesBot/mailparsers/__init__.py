@@ -20,3 +20,13 @@ from accepted_upload import AcceptedUploadParser
 from bug_closed import BugClosedParser
 from bug_submitted import BugSubmittedParser
 from security_announce import SecurityAnnounceParser
+
+import accepted_upload
+import bug_closed
+import bug_submitted
+import security_announce
+
+reload(accepted_upload)
+reload(bug_closed)
+reload(bug_submitted)
+reload(security_announce)

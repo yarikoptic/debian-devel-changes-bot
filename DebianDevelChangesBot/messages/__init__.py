@@ -20,3 +20,13 @@ from accepted_upload import AcceptedUploadMessage
 from bug_closed import BugClosedMessage
 from bug_submitted import BugSubmittedMessage
 from security_announce import SecurityAnnounceMessage
+
+import accepted_upload
+import bug_closed
+import bug_submitted
+import security_announce
+
+reload(accepted_upload)
+reload(bug_closed)
+reload(bug_submitted)
+reload(security_announce)
