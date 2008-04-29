@@ -24,10 +24,13 @@ class SecurityAnnounceMessage(Message):
     FIELDS = ('dsa_number', 'dsa_revision', 'package', 'problem', 'year')
 
     def format(self):
-        msg = "[red][Security][reset] ([yellow]DSA-%d-%d[reset]) - " % \
+        msg = "[security][Security][reset] [version]DSA-%d-%d[reset] - " % \
             (self.dsa_number, self.dsa_revision)
 
-        msg += "New [green]%s[reset] packages fix %s. http://www.debian.org/security/%s/dsa-%d" % \
-            (self.package, self.problem, self.year, self.dsa_number)
+        msg += "New [package]%s[reset] packages fix %s. " % \
+            (self.package, self.problem)
+
+        msg += "[url]http://www.debian.org/security/%s/dsa-%d[/url]" % \
+            (self.year, self.dsa_number)
 
         return msg

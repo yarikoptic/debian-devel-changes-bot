@@ -23,18 +23,17 @@ class BugSubmittedMessage(Message):
     OPTIONAL = ('severity', 'version')
 
     def format(self):
-        msg = "Opened [b]#%d[/b] " % self.bug_number
+        msg = "Opened [bug]#%d[/bug] " % self.bug_number
 
         if self.severity in ('critical', 'grave', 'serious'):
-            msg += "([red]%s[reset]) " % self.severity
+            msg += "([severity]%s[reset]) " % self.severity
 
-        msg += "in [green]%s[reset] " % self.package
+        msg += "in [package]%s[reset] " % self.package
 
         if self.version not in ('n/a'):
-            msg += "([yellow]%s[reset]) " % self.version
+            msg += "([version]%s[reset]) " % self.version
 
-        msg += "by [cyan]%s[reset] " % self.format_email_address(self.by)
-        msg += "«%s». http://bugs.debian.org/%d" % \
+        msg += u"by [by]%s[reset] «[title]%s[reset]». [url]http://bugs.debian.org/%d[/url]" % \
             (self.by, self.title, self.bug_number)
 
         return msg
