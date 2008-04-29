@@ -18,7 +18,7 @@
 
 import email
 
-from DebianDevelChanges.utils import quoted_printable
+from DebianDevelChangesBot.utils import quoted_printable
 
 def parse_mail(fileobj):
     headers, body = {}, []

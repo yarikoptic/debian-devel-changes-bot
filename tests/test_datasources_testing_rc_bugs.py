@@ -22,8 +22,8 @@ import unittest
 import os, sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from DebianDevelChanges import Datasource
-from DebianDevelChanges.datasources import TestingRCBugs
+from DebianDevelChangesBot import Datasource
+from DebianDevelChangesBot.datasources import TestingRCBugs
 
 class TestDatasourceTestingRCBugs(unittest.TestCase):
 

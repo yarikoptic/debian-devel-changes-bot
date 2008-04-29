@@ -16,9 +16,9 @@
 #   You should have received a copy of the GNU Affero General Public License
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from DebianDevelChanges import MailParser
-from DebianDevelChanges.utils import tidy_bug_title
-from DebianDevelChanges.messages import BugSubmittedMessage
+from DebianDevelChangesBot import MailParser
+from DebianDevelChangesBot.utils import tidy_bug_title
+from DebianDevelChangesBot.messages import BugSubmittedMessage
 
 import re
 

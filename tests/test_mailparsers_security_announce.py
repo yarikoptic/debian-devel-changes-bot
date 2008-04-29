@@ -22,8 +22,8 @@ import unittest
 import os, sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from DebianDevelChanges.mailparsers import SecurityAnnounceParser as p
-from DebianDevelChanges.utils import parse_mail
+from DebianDevelChangesBot.mailparsers import SecurityAnnounceParser as p
+from DebianDevelChangesBot.utils import parse_mail
 
 def parse(number):
     filename = os.path.join(os.path.dirname(os.path.abspath(__file__)), \

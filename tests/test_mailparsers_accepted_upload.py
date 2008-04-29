@@ -22,8 +22,8 @@ import unittest
 import os, sys
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from DebianDevelChanges.utils import parse_mail
-from DebianDevelChanges.mailparsers import AcceptedUploadParser as p
+from DebianDevelChangesBot.utils import parse_mail
+from DebianDevelChangesBot.mailparsers import AcceptedUploadParser as p
 
 class TestMailParserAcceptedUpload(unittest.TestCase):
 

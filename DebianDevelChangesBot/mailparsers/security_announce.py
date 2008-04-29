@@ -16,8 +16,8 @@
 #   You should have received a copy of the GNU Affero General Public License
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from DebianDevelChanges import MailParser
-from DebianDevelChanges.messages import SecurityAnnounceMessage
+from DebianDevelChangesBot import MailParser
+from DebianDevelChangesBot.messages import SecurityAnnounceMessage
 
 import re
 

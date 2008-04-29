@@ -16,18 +16,25 @@
 #   You should have received a copy of the GNU Affero General Public License
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from DebianDevelChanges import Message
+from DebianDevelChangesBot import Message
 
-import re
-
-class SecurityAnnounceMessage(Message):
-    FIELDS = ('dsa_number', 'dsa_revision', 'package', 'problem', 'year')
+class BugSubmittedMessage(Message):
+    FIELDS = ('bug_number', 'package', 'by', 'title')
+    OPTIONAL = ('severity', 'version')
 
     def format(self):
-        msg = "[red][Security][reset] ([yellow]DSA-%d-%d[reset]) - " % \
-            (self.dsa_number, self.dsa_revision)
+        msg = "Opened [b]#%d[/b] " % self.bug_number
 
-        msg += "New [green]%s[reset] packages fix %s. http://www.debian.org/security/%s/dsa-%d" % \
-            (self.package, self.problem, self.year, self.dsa_number)
+        if self.severity in ('critical', 'grave', 'serious'):
+            msg += "([red]%s[reset]) " % self.severity
+
+        msg += "in [green]%s[reset] " % self.package
+
+        if self.version not in ('n/a'):
+            msg += "([yellow]%s[reset]) " % self.version
+
+        msg += "by [cyan]%s[reset] " % self.format_email_address(self.by)
+        msg += "«%s». http://bugs.debian.org/%d" % \
+            (self.by, self.title, self.bug_number)
 
         return msg

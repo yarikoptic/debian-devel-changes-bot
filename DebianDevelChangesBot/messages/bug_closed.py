@@ -16,25 +16,12 @@
 #   You should have received a copy of the GNU Affero General Public License
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from DebianDevelChanges import Message
+from DebianDevelChangesBot import Message
 
-class BugSubmittedMessage(Message):
+class BugClosedMessage(Message):
     FIELDS = ('bug_number', 'package', 'by', 'title')
-    OPTIONAL = ('severity', 'version')
 
-    def format(self):
-        msg = "Opened [b]#%d[/b] " % self.bug_number
-
-        if self.severity in ('critical', 'grave', 'serious'):
-            msg += "([red]%s[reset]) " % self.severity
-
-        msg += "in [green]%s[reset] " % self.package
-
-        if self.version not in ('n/a'):
-            msg += "([yellow]%s[reset]) " % self.version
-
-        msg += "by [cyan]%s[reset] " % self.format_email_address(self.by)
-        msg += "«%s». http://bugs.debian.org/%d" % \
-            (self.by, self.title, self.bug_number)
-
-        return msg
+    def format(self, data):
+        return "Closed [b]#%d[/b] in [green]%s[reset] by [cyan]%s[reset] " \
+            "«%s». http://bugs.debian.org/%d" % \
+            (self.bug_number, self.package, self.by, self.bug_number)

@@ -16,44 +16,44 @@
 #   You should have received a copy of the GNU Affero General Public License
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+import re
 import thread
-import urllib2
-from BeautifulSoup import BeautifulSoup
 
-from DebianDevelChanges import Datasource
+from DebianDevelChangesBot import Datasource
 
-class NewQueue(Datasource):
+class TestingRCBugs(Datasource):
     __shared_state = {}
 
-    URL = 'http://ftp-master.debian.org/new.html'
+    URL = 'http://bts.turmzimmer.net/details.php?bydist=lenny'
+    BUG_COUNT = re.compile(r'.*Total shown: (?P<bug_count>\d+) bug.*')
     INTERVAL = 60 * 30
 
-    packages = []
     lock = thread.allocate_lock()
+    num_bugs = None
 
     def __init__(self):
         self.__dict__ = self.__shared_state
 
-    def update(self, fileobj=None):
+    def update(self, fileobj):
         if fileobj is None:
             fileobj = urllib2.urlopen(self.URL)
 
-        soup = BeautifulSoup(fileobj)
-        cells = [row.find('td') for row in soup('tr', {'class': ('odd', 'even')})]
-        packages = [str(c.string) for c in cells]
+        for line in fileobj:
+            ret = self.BUG_COUNT.match(line)
+            if ret:
+                self.lock.acquire()
+                try:
+                    self.num_bugs = int(ret.group('bug_count'))
+                    return
+                finally:
+                    self.lock.release()
 
-        if len(packages) == 0:
-            raise Datasource.DataError()
+        # No bug count line found
+        raise Datasource.DataError()
 
+    def get_num_bugs(self):
         self.lock.acquire()
         try:
-            self.packages = packages
-        finally:
-            self.lock.release()
-
-    def is_new(self, package):
-        self.lock.acquire()
-        try:
-            return package in self.packages
+            return self.num_bugs
         finally:
             self.lock.release()

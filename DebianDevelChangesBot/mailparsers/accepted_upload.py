@@ -16,9 +16,9 @@
 #   You should have received a copy of the GNU Affero General Public License
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from DebianDevelChanges import MailParser
-from DebianDevelChanges.utils import quoted_printable
-from DebianDevelChanges.messages import AcceptedUploadMessage
+from DebianDevelChangesBot import MailParser
+from DebianDevelChangesBot.utils import quoted_printable
+from DebianDevelChangesBot.messages import AcceptedUploadMessage
 
 class AcceptedUploadParser(MailParser):
 

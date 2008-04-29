@@ -16,12 +16,18 @@
 #   You should have received a copy of the GNU Affero General Public License
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from DebianDevelChanges import Message
+from DebianDevelChangesBot import Message
 
-class BugClosedMessage(Message):
-    FIELDS = ('bug_number', 'package', 'by', 'title')
+import re
 
-    def format(self, data):
-        return "Closed [b]#%d[/b] in [green]%s[reset] by [cyan]%s[reset] " \
-            "«%s». http://bugs.debian.org/%d" % \
-            (self.bug_number, self.package, self.by, self.bug_number)
+class SecurityAnnounceMessage(Message):
+    FIELDS = ('dsa_number', 'dsa_revision', 'package', 'problem', 'year')
+
+    def format(self):
+        msg = "[red][Security][reset] ([yellow]DSA-%d-%d[reset]) - " % \
+            (self.dsa_number, self.dsa_revision)
+
+        msg += "New [green]%s[reset] packages fix %s. http://www.debian.org/security/%s/dsa-%d" % \
+            (self.package, self.problem, self.year, self.dsa_number)
+
+        return msg
