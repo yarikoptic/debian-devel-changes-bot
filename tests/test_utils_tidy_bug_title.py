@@ -46,5 +46,8 @@ class TestFormatEmail(unittest.TestCase):
     def testNoColonNoMatch(self):
         self._test("[a] b", "c", "[a] b")
 
+    def testRemoveDoubleSpace(self):
+        self._test("a  b", "packagename", "a b")
+
 if __name__ == "__main__":
     unittest.main()
