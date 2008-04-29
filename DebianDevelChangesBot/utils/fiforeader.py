@@ -32,7 +32,6 @@ class FifoReader(object):
 
     def __init__(self):
         self.__dict__ = self.__shared_state
-        print "lol"
 
     def start(self, callback, fifo_loc):
         self.callback = callback
