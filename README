@@ -7,6 +7,7 @@ Requirements:
  * Beautiful Soup (python-beautifulsoup)
  * Supybot
  * Local MTA
+ * lockfile-progs
 
 Installation
 ------------
@@ -28,14 +29,14 @@ Installation
     recommended to run this in the "bot-config" directory under $SOURCE_DIR (it
     will be ignored by the revision control system).
 
- 4. After ensuring the bot can connect to your IRC server, add $SOURCE_DIR to
-    the "supybot.directories.plugins" directive in your ".conf" file.
+ 4. Add "$SOURCE_DIR/plugin" to the "supybot.directories.plugins" directive in
+    your ".conf" file.
 
- 5. Subscribe the bot to the following lists:
+ 5. Run supybot $SOURCE_DIR/bot-config/<conffile>.conf to start the bot.
+
+ 6. Subscribe the bot to the following lists:
 
    - http://lists.debian.org/debian-devel-changes/
    - http://lists.debian.org/debian-bugs-dist/
    - http://lists.debian.org/debian-bugs-closed/
    - http://lists.backports.org/mailman/listinfo/backports-changes
-
- 6. Run supybot $SOURCE_DIR/bot-config/<conffile>.conf to start the bot.
