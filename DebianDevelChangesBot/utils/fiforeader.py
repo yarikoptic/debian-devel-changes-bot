@@ -17,10 +17,11 @@
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import os
-import fcntl
+import errno
 import select
 import threading
 import traceback
+from cStringIO import StringIO
 
 class FifoReader(object):
     __shared_state = {}
@@ -58,9 +59,6 @@ class FifoReader(object):
 
         while self.running:
             fifo = os.open(self.fifo_loc, os.O_RDONLY | os.O_NONBLOCK)
-            flags = fcntl.fcntl(fifo, fcntl.F_GETFL)
-            fcntl.fcntl(fifo, fcntl.F_SETFD, flags & ~os.O_NONBLOCK)
-
             readfds, _, _ = select.select([fifo, self.quitfds[0]], [], [])
 
             # If our anonymous descriptor was written to, exit loop
@@ -73,7 +71,23 @@ class FifoReader(object):
             if fifo not in readfds:
                 continue
 
-            yield os.fdopen(fifo)
+            # Manually read into a StringIO. We cannot pass the fifo back
+            # because it has been opened with O_NONBLOCK
+            output = StringIO()
+            try:
+                while True:
+                    try:
+                        data = os.read(fifo, 8192)
+                        if not data:
+                            break
+                        output.write(data)
+                    except OSError, exc:
+                        if exc.errno != errno.EAGAIN:
+                            raise
+            finally:
+                os.close(fifo)
+
+            yield output
 
     def stop(self):
         self.stop_lock.acquire()
