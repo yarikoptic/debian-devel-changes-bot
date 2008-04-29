@@ -17,7 +17,7 @@
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 from DebianDevelChangesBot import MailParser
-from DebianDevelChangesBot.utils import quoted_printable
+from DebianDevelChangesBot.utils import quoted_printable, format_email_address
 from DebianDevelChangesBot.messages import AcceptedUploadMessage
 
 class AcceptedUploadParser(MailParser):
@@ -52,7 +52,7 @@ class AcceptedUploadParser(MailParser):
                 break
 
         if msg.by:
-            msg.by = quoted_printable(msg.by)
+            msg.by = format_email_address(quoted_printable(msg.by))
 
         try:
             if msg.closes:

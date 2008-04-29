@@ -17,8 +17,8 @@
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 from DebianDevelChangesBot import MailParser
-from DebianDevelChangesBot.utils import tidy_bug_title
 from DebianDevelChangesBot.messages import BugSubmittedMessage
+from DebianDevelChangesBot.utils import tidy_bug_title, format_email_address
 
 import re
 
@@ -46,7 +46,7 @@ class BugSubmittedParser(MailParser):
         else:
             return
 
-        msg.by = headers['From']
+        msg.by = format_email_address(headers['From'])
 
         mapping = {
             PACKAGE: 'package',

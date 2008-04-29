@@ -17,8 +17,8 @@
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 from DebianDevelChangesBot import MailParser
-from DebianDevelChangesBot.utils import tidy_bug_title
 from DebianDevelChangesBot.messages import BugClosedMessage
+from DebianDevelChangesBot.utils import tidy_bug_title, format_email_address
 
 import re
 
@@ -47,5 +47,6 @@ class BugClosedParser(MailParser):
         msg.package = headers['X-Debian-PR-Package']
 
         msg.title = tidy_bug_title(msg.title, msg.package)
+        msg.by = format_email_address(msg.by)
 
         return msg
