@@ -87,7 +87,7 @@ class FifoReader(object):
             finally:
                 os.close(fifo)
 
-            yield output
+            yield StringIO(output.getvalue())
 
     def stop(self):
         self.stop_lock.acquire()
