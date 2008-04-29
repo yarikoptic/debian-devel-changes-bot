@@ -20,22 +20,26 @@ from decoding import header_decode, quoted_printable
 from parse_mail import parse_mail
 from format_email_address import format_email_address
 from tidy_bug_title import tidy_bug_title
+from irc_colours import colourise
 from fiforeader import FifoReader
 
 import decoding
 import parse_mail
 import format_email_address
 import tidy_bug_title
+import irc_colours
 import fiforeader
 
 reload(decoding)
 reload(parse_mail)
 reload(format_email_address)
 reload(tidy_bug_title)
+reload(irc_colours)
 reload(fiforeader)
 
 from decoding import header_decode, quoted_printable
 from parse_mail import parse_mail
 from format_email_address import format_email_address
 from tidy_bug_title import tidy_bug_title
+from irc_colours import colourise
 from fiforeader import FifoReader
