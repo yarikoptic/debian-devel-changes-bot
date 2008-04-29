@@ -19,7 +19,8 @@
 import os
 import supybot
 
-from DebianDevelChangesBot.utils import parse_mail, FifoReader
+from DebianDevelChangesBot.mailparsers import get_message
+from DebianDevelChangesBot.utils import parse_mail, FifoReader, colourise
 
 class DebianDevelChanges(supybot.callbacks.Plugin):
     def __init__(self, irc):
@@ -30,14 +31,22 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
         fr = FifoReader()
         fifo_loc = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
             os.path.abspath(__file__)))), 'bin', 'debian-devel-changes.fifo')
-        fr.start(self.email_callback, fifo_loc)
-
-    def email_callback(self, fileobj):
-        text = repr(parse_mail(fileobj))[:300]
-        for channel in self.irc.state.channels:
-            self.irc.queueMsg(supybot.ircmsgs.privmsg(channel, text.encode('utf-8')))
+        fr.start(self.cb_email, fifo_loc)
 
     def die(self):
         FifoReader().stop()
+
+    def cb_email(self, fileobj):
+        try:
+            email = parse_mail(fileobj)
+            msg = get_message(email)
+
+            if msg:
+                txt = colourise(msg.format().encode('utf-8'))
+                for channel in self.irc.state.channels:
+                    ircmsg = supybot.ircmsgs.privmsg(channel, txt)
+                    self.irc.queueMsg(ircmsg)
+        except:
+           supybot.log.exception('Uncaught exception')
 
 Class = DebianDevelChanges
