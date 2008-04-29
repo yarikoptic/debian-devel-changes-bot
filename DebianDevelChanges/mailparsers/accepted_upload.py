@@ -24,7 +24,7 @@ class AcceptedUploadParser(MailParser):
 
     @staticmethod
     def parse(headers, body):
-        if headers.get('List-Id', '') not in ('<debian-devel-changes.lists.debian.org>',):
+        if headers.get('List-Id', '') not in ('<debian-devel-changes.lists.debian.org>',
             '"backports.org changes" <backports-changes.lists.backports.org>'):
             return
 
