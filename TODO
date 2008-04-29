@@ -1,7 +1,6 @@
 TODO
 ====
 
- - "get_message" util to try all parsers and return a Message or None
  - Colours
  - Scheduling of Datasource updates
  - Topic handling and modification

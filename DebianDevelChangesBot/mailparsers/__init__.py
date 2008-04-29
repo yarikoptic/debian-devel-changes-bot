@@ -30,3 +30,16 @@ reload(accepted_upload)
 reload(bug_closed)
 reload(bug_submitted)
 reload(security_announce)
+
+def get_message(email):
+    order = (
+        AcceptedUploadParser,
+        BugClosedParser,
+        BugSubmittedParser,
+        SecurityAnnounceParser,
+    )
+
+    for parser in order:
+        msg = parser.parse(*email)
+        if msg:
+            return msg
