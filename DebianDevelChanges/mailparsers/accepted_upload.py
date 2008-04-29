@@ -47,7 +47,7 @@ class AcceptedUploadParser(MailParser):
                     del mapping[field]
                     break
 
-            # If we have found all the field, stop looking
+            # If we have found all the fields, stop looking
             if len(mapping) == 0:
                 break
 
