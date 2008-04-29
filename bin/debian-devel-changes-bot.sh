@@ -1,33 +1,87 @@
 #!/bin/sh
+#
+#   Debian Changes Bot
+#   Copyright (C) 2008 Chris Lamb <chris@chris-lamb.co.uk>
+#
+#   This program is free software: you can redistribute it and/or modify
+#   it under the terms of the GNU Affero General Public License as
+#   published by the Free Software Foundation, either version 3 of the
+#   License, or (at your option) any later version.
+#
+#   This program is distributed in the hope that it will be useful,
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#   GNU Affero General Public License for more details.
+#
+#   You should have received a copy of the GNU Affero General Public License
+#   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-FIFO="/var/run/debian-devel-changes"
-TIMEOUT=5
+set -eu
 
-# Use a temporary file, so we have the option of saving messages
-TEMP=$(mktemp /tmp/ddc.XXXXXXXX)
-cat - > ${TEMP}
+FIFO="$(dirname $0)/debian-devel-changes.fifo"
 
-# Send contents of tempfile to FIFO
-( cat ${TEMP} > ${FIFO} ) &
-PID=$!
+Get_lock () {
+	trap "lockfile-remove ${FIFO}" EXIT
+	lockfile-create "${FIFO}"
+}
 
-# Wait until we have finished writing or timeout
-( sleep ${TIMEOUT}; kill ${PID} > /dev/null 2>&1; ) &
-wait ${PID}
+Check_fifo () {
+	if [ ! -p "${FIFO}" ]
+	then
+		mkfifo --mode=666 "${FIFO}"
+	fi
+}
 
-RET=$?
+Check_interactive () {
+	if test -t 0
+	then
+		echo "${0}: running on an interactive terminal, exiting.."
+		exit 1
+	fi
+}
 
-chmod 666 ${TEMP}
-rm -f ${TEMP}
+Save_to_temp () {
+	# Use a temporary file, so we have the option of saving messages
+	TEMP=$(mktemp /tmp/ddc.XXXXXXXX)
+	cat - > ${TEMP}
+}
 
-if [ ${RET} -ne 0 ];
-then
-	# We timed-out, or there was some other error; return
-	# "defer" status so we don't lose mail.
+Send_to_fifo () {
+	# Send contents of tempfile to FIFO
+	( cat ${TEMP} > ${FIFO} ) &
+	PID=${!}
 
-	# Postfix's "defer" error code is 75, but Exim's default
-	# "defer" codes are 73 and 75, but are configurable with
-	# `temp_errors`.
+	# Wait until we have finished writing or timeout
+	( sleep 5; kill ${PID} > /dev/null 2>&1; ) &
+	wait ${PID}
 
-	exit 75
-fi
+	RET=${?}
+}
+
+Cleanup () {
+	chmod 666 ${TEMP}
+	rm -f ${TEMP}
+	sleep 0.5
+}
+
+Exit () {
+	if [ ${RET} -ne 0 ]
+	then
+		# We timed-out, or there was some other error; return
+		# "defer" status so we don't lose mail.
+
+		# Postfix's "defer" error code is 75, but Exim's default
+		# "defer" codes are 73 and 75, but are configurable with
+		# `temp_errors`.
+
+		exit 75
+	fi
+}
+
+Get_lock
+Check_fifo
+Check_interactive
+Save_to_temp
+Send_to_fifo
+Cleanup
+Exit
