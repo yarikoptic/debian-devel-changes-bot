@@ -27,22 +27,22 @@ class AcceptedUploadMessage(Message):
         msg = "[package]%s[reset] " % self.package
 
         if NewQueue().is_new(self.package):
-            msg += "[red](NEW)[reset] "
+            msg += "[new](NEW)[reset] "
 
-        msg += "([yellow]%s[reset]) uploaded " % self.version
+        msg += "[version]%s[reset] uploaded " % self.version
 
         if self.distribution != 'unstable':
-            msg += "to [blue]%s[reset] "
+            msg += "to [distribution]%s[reset] " % self.distribution
 
         if self.urgency != 'low':
-            msg += "with urgency [red]%s[reset]" % self.urgency
+            msg += "with urgency [urgency]%s[reset] " % self.urgency
 
-        msg += "by [cyan]%s[reset]" % self.by
+        msg += "by [by]%s[reset] " % self.by
 
         if self.closes and '-backports' not in self.distribution:
-            bug_list = ', '.join(["[b]#%s[/b]" % x for x in self.closes])
-            msg += " (Closes: %s)" % bug_list
+            bug_list = ', '.join(["[bug]#%s[/bug]" % x for x in self.closes])
+            msg += "(Closes: %s) " % bug_list
 
-        msg += ". http://packages.qa.debian.org/%s" % self.package
+        msg += "[url]http://packages.qa.debian.org/%s[/url]" % self.package
 
         return msg

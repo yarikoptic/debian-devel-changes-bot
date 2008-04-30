@@ -25,7 +25,7 @@ class BugClosedMessage(Message):
         msg = "Closed [bug]#%d[/bug] in [package]%s[reset] " % \
             (self.bug_number, self.package)
 
-        msg += u"by [by]%s[reset] «%s». [url]http://bugs.debian.org/%d[/url]" % \
+        msg += u"by [by]%s[reset] «[title]%s[reset]». [url]http://bugs.debian.org/%d[/url]" % \
             (self.by, self.title, self.bug_number)
 
         return msg
