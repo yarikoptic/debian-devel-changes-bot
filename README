@@ -12,31 +12,32 @@ Requirements:
 Installation
 ------------
 
- 1. Obtain a copy of the bot sources and place in an empty directory. We will
+  * Obtain a copy of the bot sources and place in an empty directory. We will
     refer to this dir as $SOURCE_DIR.
 
-    You should ensure that $SOURCE_DIR/bin/ is writable by the supybot user so
-    that it can create a FIFO.
+  * Ensure that
+     - $SOURCE_DIR/bin/ is writable by the supybot user (so that it can create a FIFO)
+     - $SOURCE_DIR/bin/lockfile/ is writable by your MTA
 
- 2. Create an email address which outputs mail directed to it to the STDIN of
+  * Create an email address which outputs mail directed to it to the STDIN of
     $SOURCE_DIR/bin/debian-devel-changes-bot.sh. Under Exim you can use the
     "pipe" transport for this.
 
     You should keep this email address secret so that 3rd-parties cannot inject
     specially crafted messages pnto the channel.
 
- 3. Configure a Supybot instance using the "supybot-wizard" command. You are
+  * Configure a Supybot instance using the "supybot-wizard" command. You are
     recommended to run this in the "bot-config" directory under $SOURCE_DIR (it
     will be ignored by the revision control system).
 
- 4. Add "$SOURCE_DIR/plugin" to the "supybot.directories.plugins" directive in
+  * Add "$SOURCE_DIR/plugin" to the "supybot.directories.plugins" directive in
     your ".conf" file.
 
- 5. Run supybot $SOURCE_DIR/bot-config/<conffile>.conf to start the bot.
+  * Run supybot $SOURCE_DIR/bot-config/<conffile>.conf to start the bot.
 
- 6. Subscribe the bot to the following lists:
+  * Subscribe the bot to the following lists:
 
-   - http://lists.debian.org/debian-devel-changes/
-   - http://lists.debian.org/debian-bugs-dist/
-   - http://lists.debian.org/debian-bugs-closed/
-   - http://lists.backports.org/mailman/listinfo/backports-changes
+     - http://lists.debian.org/debian-devel-changes/
+     - http://lists.debian.org/debian-bugs-dist/
+     - http://lists.debian.org/debian-bugs-closed/
+     - http://lists.backports.org/mailman/listinfo/backports-changes
