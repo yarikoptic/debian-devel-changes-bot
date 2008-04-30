@@ -24,7 +24,7 @@ DEBIAN_EMAIL = re.compile(r'^<([-a-z0-9]+)@(?:merkel\.|master\.)?debian.org>$')
 WHITESPACE = re.compile(r'\s{2,}')
 CONTINUATION = re.compile(r'\.{3,}$')
 
-def format_email_address(input, max_user=10, max_domain=8):
+def format_email_address(input, max_user=10, max_domain=6):
     m = EMAIL.match(input)
     if not m:
         return input
