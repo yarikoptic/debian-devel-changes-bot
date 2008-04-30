@@ -16,11 +16,16 @@
 #   You should have received a copy of the GNU Affero General Public License
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from testing_rc_bugs import TestingRCBugs
-from new_queue import NewQueue
-
 import testing_rc_bugs
 import new_queue
 
 reload(testing_rc_bugs)
 reload(new_queue)
+
+from testing_rc_bugs import TestingRCBugs
+from new_queue import NewQueue
+
+def get_datasources():
+    for klass in TestingRCBugs, NewQueue:
+        callback = klass().update
+        yield callback, klass.INTERVAL, klass.__name__
