@@ -57,3 +57,13 @@ class NewQueue(Datasource):
             return package in self.packages
         finally:
             self.lock.release()
+
+    def get_size(self):
+        self.lock.acquire()
+        try:
+            size = len(self.packages)
+            if size > 0:
+                return size
+            return None
+        finally:
+            self.lock.release()
