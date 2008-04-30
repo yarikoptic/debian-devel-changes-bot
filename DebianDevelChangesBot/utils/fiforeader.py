@@ -44,10 +44,11 @@ class FifoReader(object):
         try:
             for fileobj in self.gen_messages():
                 try:
-                    self.callback(fileobj)
-                except Exception, exc:
-                    print "Uncaught exception caught inside fiforeader"
-                    traceback.print_exc()
+                    try:
+                        self.callback(fileobj)
+                    except Exception, exc:
+                        print "Uncaught exception caught inside fiforeader"
+                        traceback.print_exc()
                 finally:
                     fileobj.close()
         finally:
