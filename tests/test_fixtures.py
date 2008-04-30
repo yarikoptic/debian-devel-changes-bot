@@ -54,6 +54,9 @@ def add_tests(testdir, parser, expected_type, test=lambda x: bool(x)):
                 print filename, "did not pass test"
             self.assert_(test(msg))
 
+            if msg:
+                msg.format()
+
         TestFixtures.count += 1
         setattr(TestFixtures, 'test%d' % TestFixtures.count, testFunc)
 
