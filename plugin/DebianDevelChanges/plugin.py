@@ -17,12 +17,19 @@
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import os
+import time
 import supybot
 
+from supybot.commands import wrap
+from supybot import ircdb, log, schedule
+
 from DebianDevelChangesBot.mailparsers import get_message
+from DebianDevelChangesBot.datasources import get_datasources
 from DebianDevelChangesBot.utils import parse_mail, FifoReader, colourise
 
 class DebianDevelChanges(supybot.callbacks.Plugin):
+    threaded = True
+
     def __init__(self, irc):
         self.__parent = super(DebianDevelChanges, self)
         self.__parent.__init__(irc)
@@ -31,12 +38,22 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
         fr = FifoReader()
         fifo_loc = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
             os.path.abspath(__file__)))), 'bin', 'debian-devel-changes.fifo')
-        fr.start(self.cb_email, fifo_loc)
+        fr.start(self._email_callback, fifo_loc)
+
+        for callback, interval, name in get_datasources():
+            try:
+                schedule.removePeriodicEvent(name)
+            except KeyError:
+                pass
+            schedule.addPeriodicEvent(callback, interval, name, now=False)
+            schedule.addEvent(callback, interval, time.time() + 1)
 
     def die(self):
         FifoReader().stop()
+        for callback, interval, name in get_datasources():
+            schedule.removePeriodicEvent(name)
 
-    def cb_email(self, fileobj):
+    def _email_callback(self, fileobj):
         try:
             email = parse_mail(fileobj)
             msg = get_message(email)
