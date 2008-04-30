@@ -29,7 +29,7 @@ class TestMailParserBugSubmitted(unittest.TestCase):
     def setUp(self):
         self.headers = {
             'Subject': 'Bug#123456: Bug title',
-            'From': 'Submitter Name <name@host.tld>',
+            'From': 'Submitter Name <name@t.com>',
             'List-Id': '<debian-bugs-dist.lists.debian.org>',
         }
 
@@ -46,7 +46,7 @@ class TestMailParserBugSubmitted(unittest.TestCase):
         self.assert_(msg)
         self.assertEqual(msg.package, 'package-name')
         self.assertEqual(msg.version, 'version-here')
-        self.assertEqual(msg.by, 'Submitter Name <name@host.tld>')
+        self.assertEqual(msg.by, 'Submitter Name <name@t.com>')
 
     def testVersionWithSpaces(self):
         self.body[1] = "Version: version with spaces"
