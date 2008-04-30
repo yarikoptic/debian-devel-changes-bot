@@ -16,6 +16,10 @@
 #   You should have received a copy of the GNU Affero General Public License
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+import re
+
+WHITESPACE = re.compile(r'\s{2,}')
+
 def tidy_bug_title(title, package):
     """
     Strips various package name prefixes from a bug title.
@@ -27,8 +31,12 @@ def tidy_bug_title(title, package):
 
     """
 
+    title = title.strip()
+
     for prefix in ('%s: ', '[%s]: ', '[%s] '):
         if title.lower().startswith(prefix % package.lower()):
             title = title[len(package) + len(prefix) - 2:]
+
+    title = WHITESPACE.sub(' ', title)
 
     return title
