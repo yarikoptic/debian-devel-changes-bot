@@ -76,6 +76,9 @@ class TestFormatEmail(unittest.TestCase):
     def testNoNameTwo(self):
         self._test("<jsmith@debian.org>", "(jsmith)")
 
+    def testRepeatEmailAddress(self):
+        self._test('"leo@dicea.unifi.it" <leo@dicea.unifi.it>', '<leo@dicea.unifi.it>')
+
 class TestLongEmail(unittest.TestCase):
     def _test(self, val, ret, max_user, max_domain):
         self.assertEqual(format_email_address(val, max_user=max_user,

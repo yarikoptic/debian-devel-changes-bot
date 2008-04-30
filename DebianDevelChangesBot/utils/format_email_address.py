@@ -42,6 +42,10 @@ def format_email_address(input, max_user=10, max_domain=6):
     address = m.group(2).lower().replace(' ', '')
     address = WHITESPACE.sub(' ', address)
 
+    # Fix broken '"foo@bar.com" <foo@bar.com>' mail addresses
+    if input == '"%s" <%s>' % (name, name):
+        return address
+
     if DEBIAN_EMAIL.match(address):
         address = DEBIAN_EMAIL.sub(r'(\1)', address)
 
