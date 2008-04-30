@@ -24,7 +24,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from DebianDevelChangesBot.messages import *
 from DebianDevelChangesBot.mailparsers import *
-from DebianDevelChangesBot.utils import parse_mail
+from DebianDevelChangesBot.utils import parse_mail, colourise
 
 from glob import glob
 
@@ -44,18 +44,12 @@ def add_tests(testdir, parser, expected_type, test=lambda x: bool(x)):
                 print "Exception when parsing %s" % filename
                 raise
 
-            if type(msg) != expected_type:
-                print
-                print filename, "did not match"
-            self.assertEqual(type(msg), expected_type)
-
-            if not test(msg):
-                print
-                print filename, "did not pass test"
-            self.assert_(test(msg))
+            self.assertEqual(type(msg), expected_type, "%s did not match with its parser")
+            self.assert_(test(msg), "%s did not pass test" % filename)
 
             if msg:
-                msg.format()
+                txt = msg.format()
+                txt = colourise(txt)
 
         TestFixtures.count += 1
         setattr(TestFixtures, 'test%d' % TestFixtures.count, testFunc)
