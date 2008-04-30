@@ -18,6 +18,7 @@
 
 import re
 import thread
+import urllib2
 
 from DebianDevelChangesBot import Datasource
 
@@ -26,7 +27,7 @@ class TestingRCBugs(Datasource):
 
     URL = 'http://bts.turmzimmer.net/details.php?bydist=lenny'
     BUG_COUNT = re.compile(r'.*Total shown: (?P<bug_count>\d+) bug.*')
-    INTERVAL = 60 * 30
+    INTERVAL = 60 * 10
 
     lock = thread.allocate_lock()
     num_bugs = None
@@ -34,7 +35,7 @@ class TestingRCBugs(Datasource):
     def __init__(self):
         self.__dict__ = self.__shared_state
 
-    def update(self, fileobj):
+    def update(self, fileobj=None):
         if fileobj is None:
             fileobj = urllib2.urlopen(self.URL)
 
