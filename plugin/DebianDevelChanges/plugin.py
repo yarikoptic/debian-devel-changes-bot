@@ -19,13 +19,14 @@
 import os
 import time
 import supybot
+import threading
 
 from supybot.commands import wrap
 from supybot import ircdb, log, schedule
 
 from DebianDevelChangesBot.mailparsers import get_message
-from DebianDevelChangesBot.datasources import get_datasources
-from DebianDevelChangesBot.utils import parse_mail, FifoReader, colourise
+from DebianDevelChangesBot.datasources import get_datasources, TestingRCBugs, NewQueue
+from DebianDevelChangesBot.utils import parse_mail, FifoReader, colourise, rewrite_topic
 
 class DebianDevelChanges(supybot.callbacks.Plugin):
     threaded = True
@@ -34,19 +35,26 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
         self.__parent = super(DebianDevelChanges, self)
         self.__parent.__init__(irc)
         self.irc = irc
+        self.topic_lock = threading.Lock()
 
         fr = FifoReader()
         fifo_loc = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
             os.path.abspath(__file__)))), 'bin', 'debian-devel-changes.fifo')
         fr.start(self._email_callback, fifo_loc)
 
+        # Schedule datasource updates
         for callback, interval, name in get_datasources():
             try:
                 schedule.removePeriodicEvent(name)
             except KeyError:
                 pass
-            schedule.addPeriodicEvent(callback, interval, name, now=False)
-            schedule.addEvent(callback, interval, time.time() + 1)
+
+            def wrapper(callback=callback):
+                callback()
+                self._topic_callback()
+
+            schedule.addPeriodicEvent(wrapper, interval, name, now=False)
+            schedule.addEvent(wrapper, interval, time.time() + 1)
 
     def die(self):
         FifoReader().stop()
@@ -66,11 +74,34 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
         except:
            log.exception('Uncaught exception')
 
-    # Commands
+    def _topic_callback(self):
+        self.topic_lock.acquire()
+
+        sections = {
+            TestingRCBugs().get_num_bugs: 'RC bug count:',
+            NewQueue().get_size: 'NEW queue:',
+        }
+
+        try:
+            values = {}
+            for callback, prefix in sections.iteritems():
+                values[callback] = callback()
+
+            for channel in self.irc.state.channels:
+                new_topic = topic = self.irc.state.getTopic(channel)
+
+                for callback, prefix in sections.iteritems():
+                    if values[callback]:
+                        new_topic = rewrite_topic(new_topic, prefix, values[callback])
+
+                if topic != new_topic:
+                    log.info("Setting topic to '%s'" % new_topic)
+                    self.irc.queueMsg(supybot.ircmsgs.topic(channel, new_topic))
+
+        finally:
+            self.topic_lock.release()
 
     def rc(self, irc, msg, args):
-        from DebianDevelChangesBot.datasources import TestingRCBugs
-
         num_bugs = TestingRCBugs().get_num_bugs()
         if type(num_bugs) is int:
             irc.reply("There are %d release-critical bugs in the testing distribution. " \
@@ -87,6 +118,8 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
         for callback, interval, name in get_datasources():
             callback()
             irc.reply("Updated %s." % name)
+        self._topic_callback()
+
     update = wrap(update)
 
 Class = DebianDevelChanges
