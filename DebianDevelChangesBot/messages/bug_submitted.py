@@ -30,7 +30,7 @@ class BugSubmittedMessage(Message):
 
         msg += "in [package]%s[reset] " % self.package
 
-        if self.version not in ('n/a'):
+        if self.version not in ('n/a',):
             msg += "([version]%s[reset]) " % self.version
 
         msg += u"by [by]%s[reset] «[title]%s[reset]». [url]http://bugs.debian.org/%d[/url]" % \
