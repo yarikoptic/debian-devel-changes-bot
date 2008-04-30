@@ -21,8 +21,8 @@ set -eu
 FIFO="$(dirname $0)/debian-devel-changes.fifo"
 
 Get_lock () {
-	trap "lockfile-remove ${FIFO}" EXIT
-	lockfile-create "${FIFO}"
+	trap "lockfile-remove $(dirname $0)/lockfile/lockfile" EXIT
+	lockfile-create "$(dirname $0)/lockfile/lockfile"
 }
 
 Check_fifo () {
