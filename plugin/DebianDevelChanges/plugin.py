@@ -64,6 +64,29 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
                     ircmsg = supybot.ircmsgs.privmsg(channel, txt)
                     self.irc.queueMsg(ircmsg)
         except:
-           supybot.log.exception('Uncaught exception')
+           log.exception('Uncaught exception')
+
+    # Commands
+
+    def rc(self, irc, msg, args):
+        from DebianDevelChangesBot.datasources import TestingRCBugs
+
+        num_bugs = TestingRCBugs().get_num_bugs()
+        if type(num_bugs) is int:
+            irc.reply("There are %d release-critical bugs in the testing distribution. " \
+                "See http://bts.turmzimmer.net/details.php?bydist=lenny" % num_bugs)
+        else:
+            irc.reply("No data at this time.")
+    rc = wrap(rc)
+
+    def update(self, irc, msg, args):
+        if not ircdb.checkCapability(msg.prefix, 'owner'):
+            irc.reply("You are not authorised to run this command.")
+            return
+
+        for callback, interval, name in get_datasources():
+            callback()
+            irc.reply("Updated %s." % name)
+    update = wrap(update)
 
 Class = DebianDevelChanges
