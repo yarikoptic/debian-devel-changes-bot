@@ -44,8 +44,8 @@ class TestMailParserAcceptedUpload(unittest.TestCase):
             'Version: 0.4.2-1',
             'Distribution: unstable',
             'Urgency: low',
-            'Maintainer: Chris Lamb <chris@chris-lamb.co.uk>',
-            'Changed-By: Chris Lamb <chris@chris-lamb.co.uk>',
+            'Maintainer: Chris Lamb <maint@t.com>',
+            'Changed-By: Chris Lamb <change@t.com>',
             'Description: ',
             ' libghc6-irc-dev - GHC 6 libraries for the Haskell IRC library',
             ' libghc6-irc-doc - GHC 6 libraries for the Haskell IRC library (documentation)',
@@ -61,7 +61,7 @@ class TestMailParserAcceptedUpload(unittest.TestCase):
         self.assertEqual(msg.version, '0.4.2-1')
         self.assertEqual(msg.distribution, 'unstable')
         self.assertEqual(msg.urgency, 'low')
-        self.assertEqual(msg.by, 'Chris Lamb <chris@chris-lamb.co.uk>')
+        self.assertEqual(msg.by, 'Chris Lamb <change@t.com>')
         self.assertEqual(msg.closes, None)
 
     def testCloses(self):
@@ -72,11 +72,11 @@ class TestMailParserAcceptedUpload(unittest.TestCase):
         self.assertEqual(msg.closes, [123456, 456123])
 
     def testQuotedPrintableChangedBy(self):
-        self.body[12] = u'Changed-By: Gon=C3=A9ri Le Bouder <goneri@rulezlan.org>'
+        self.body[12] = u'Changed-By: Gon=C3=A9ri Le Bouder <a@b.com>'
 
         msg = p.parse(self.headers, self.body)
         self.assert_(msg)
-        self.assertEqual(msg.by, u'Gonéri Le Bouder <goneri@rulezlan.org>')
+        self.assertEqual(msg.by, u'Gonéri Le Bouder <a@b.com>')
 
     def testFixtures(self):
         from glob import glob
