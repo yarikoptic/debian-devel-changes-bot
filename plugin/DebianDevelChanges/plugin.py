@@ -42,6 +42,8 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
             os.path.abspath(__file__)))), 'bin', 'debian-devel-changes.fifo')
         fr.start(self._email_callback, fifo_loc)
 
+        self.queued_topics = {}
+
         # Schedule datasource updates
         for callback, interval, name in get_datasources():
             try:
@@ -95,9 +97,25 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
                         new_topic = rewrite_topic(new_topic, prefix, values[callback])
 
                 if topic != new_topic:
-                    log.info("Setting topic to '%s'" % new_topic)
-                    self.irc.queueMsg(supybot.ircmsgs.topic(channel, new_topic))
+                    log.info("Queueing change of topic to '%s'" % new_topic)
+                    self.queued_topics[channel] = new_topic
 
+                    event_name = '%s_topic'
+                    try:
+                        schedule.removeEvent(event_name)
+                    except KeyError:
+                        pass
+                    schedule.addEvent(lambda: self._update_topic(channel),
+                        time.time() + 60, event_name)
+        finally:
+            self.topic_lock.release()
+
+    def _update_topic(self, channel):
+        self.topic_lock.acquire()
+        try:
+            new_topic = self.queued_topics[channel]
+            log.info("Changing topic to '%s'" % new_topic)
+            self.irc.queueMsg(supybot.ircmsgs.topic(channel, new_topic))
         finally:
             self.topic_lock.release()
 
