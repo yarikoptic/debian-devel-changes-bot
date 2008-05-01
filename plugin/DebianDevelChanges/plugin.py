@@ -54,7 +54,7 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
                 self._topic_callback()
 
             schedule.addPeriodicEvent(wrapper, interval, name, now=False)
-            schedule.addEvent(wrapper, interval, time.time() + 1)
+            schedule.addEvent(wrapper, time.time() + 1)
 
     def die(self):
         FifoReader().stop()
