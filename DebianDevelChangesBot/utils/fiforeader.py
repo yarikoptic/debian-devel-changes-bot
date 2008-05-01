@@ -83,7 +83,9 @@ class FifoReader(object):
                             break
                         output.write(data)
                     except OSError, exc:
-                        if exc.errno != errno.EAGAIN:
+                        if exc.errno == errno.EAGAIN:
+                            select.select([fifo], [], [], 1)
+                        else:
                             raise
             finally:
                 os.close(fifo)
