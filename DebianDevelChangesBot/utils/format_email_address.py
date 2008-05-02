@@ -24,7 +24,7 @@ DEBIAN_EMAIL = re.compile(r'^<([-a-z0-9]+)@(?:merkel\.|master\.)?debian.org>$')
 WHITESPACE = re.compile(r'\s{2,}')
 CONTINUATION = re.compile(r'\.{3,}$')
 
-def format_email_address(input, max_user=10, max_domain=6):
+def format_email_address(input, max_user=13, max_domain=9):
     m = EMAIL.match(input)
     if not m:
         return input
@@ -57,9 +57,9 @@ def format_email_address(input, max_user=10, max_domain=6):
         # Shorten email address
         user, host = address[1:-1].split('@')
         if len(user) > max_user:
-            user = "%s..." % user[:max_user]
+            user = "%s..." % user[:max(max_user - 3, 0)]
         if len(host) > max_domain:
-            host = "%s..." % host[:max_domain]
+            host = "%s..." % host[:max(max_domain - 3, 0)]
 
         # Normalise triple-dots
         user = CONTINUATION.sub('...', user)

@@ -96,10 +96,10 @@ class TestLongEmail(unittest.TestCase):
             self._test("E <123456789@1>", "E <...@1>", 0, i)
 
     def testPartTruncatedUser(self):
-        self._test("E <123456789@123456789>", "E <12345...@...>", 5, 0)
+        self._test("E <123456789@123456789>", "E <12...@...>", 5, 0)
 
     def testPartTruncatedHost(self):
-        self._test("E <123456789@123456789>", "E <...@12345...>", 0, 5)
+        self._test("E <123456789@123456789>", "E <...@12...>", 0, 5)
 
     def testBorderlineNotTruncatedUser(self):
         self._test("E <123456789@123456789>", "E <123456789@...>", 9, 0)
@@ -108,16 +108,18 @@ class TestLongEmail(unittest.TestCase):
         self._test("E <123456789@123456789>", "E <...@123456789>", 0, 9)
 
     def testBorderlineTruncatedUser(self):
-        self._test("E <123456789@123456789>", "E <12345678...@...>", 8, 0)
+        self._test("E <123456789@123456789>", "E <12345...@...>", 8, 0)
 
     def testBorderlineTruncatedHost(self):
-        self._test("E <123456789@123456789>", "E <...@12345678...>", 0, 8)
+        self._test("E <123456789@123456789>", "E <...@12345...>", 0, 8)
 
     def testNoExtraDotsAtEndUser(self):
-        self._test("E <foo.bar@123456789>", "E <foo...@...>", 4, 0)
+        self._test("E <foo..bar@123456789>", "E <foo...@...>", 6, 0)
+        self._test("E <foo..bar@123456789>", "E <foo...@...>", 7, 0)
 
     def testNoExtraDotsAtEndHost(self):
-        self._test("E <123456789@foo.com>", "E <...@foo...>", 0, 4)
+        self._test("E <123456789@foo..com>", "E <...@foo...>", 0, 7)
+        self._test("E <123456789@foo..com>", "E <...@foo...>", 0, 6)
 
 if __name__ == "__main__":
     unittest.main()
