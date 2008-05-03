@@ -25,7 +25,28 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from DebianDevelChangesBot.mailparsers import BugClosedParser as p
 
 class TestMailParserBugClosed(unittest.TestCase):
-    pass
+    def setUp(self):
+        self.headers = {
+            'List-Id': '<debian-bugs-closed.lists.debian.org>',
+        }
+
+        self.body = []
+
+    def testDone(self):
+        self.headers.update({
+            'Subject': 'Bug#479099: marked as done (please add random mode)',
+            'From': u'Adeodato Simó <dato@net.com.org.es>',
+            'To': 'Felipe Sateler <fsateler@gmail.com>, 479099-done@bugs.debian.org',
+            'X-Debian-PR-Source': 'minirok-source-package',
+            'X-Debian-PR-Package': 'minirok',
+        })
+
+        msg = p.parse(self.headers, self.body)
+        self.assert_(msg)
+        self.assertEqual(msg.bug_number, 479099)
+        self.assertEqual(msg.package, 'minirok')
+        self.assertEqual(msg.by, u'Adeodato Simó <dato@net.co...>')
+        self.assertEqual(msg.title, 'please add random mode')
 
 if __name__ == "__main__":
     unittest.main()

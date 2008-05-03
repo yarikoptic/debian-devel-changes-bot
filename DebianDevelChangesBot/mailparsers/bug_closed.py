@@ -42,6 +42,10 @@ class BugClosedParser(MailParser):
 
         msg.by = headers['To']
 
+        # Bug was closed via 123456-done@bugs.debian.org, so To: is wrong.
+        if '-done@bugs.debian.org' in msg.by:
+            msg.by = headers['From']
+
         # Let binary package name override binary package
         msg.package = headers.get('X-Debian-PR-Source', None)
         msg.package = headers['X-Debian-PR-Package']
