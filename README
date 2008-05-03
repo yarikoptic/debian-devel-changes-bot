@@ -24,7 +24,7 @@ Installation
     "pipe" transport for this.
 
     You should keep this email address secret so that 3rd-parties cannot inject
-    specially crafted messages pnto the channel.
+    specially crafted messages onto the channel.
 
   * Configure a Supybot instance using the "supybot-wizard" command. You are
     recommended to run this in the "bot-config" directory under $SOURCE_DIR (it
