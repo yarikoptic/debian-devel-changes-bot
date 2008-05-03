@@ -45,7 +45,7 @@ class TestMailParserBugClosed(unittest.TestCase):
         self.assert_(msg)
         self.assertEqual(msg.bug_number, 479099)
         self.assertEqual(msg.package, 'minirok')
-        self.assertEqual(msg.by, u'Adeodato Simó <dato@net.co...>')
+        self.assertEqual(msg.by, u'Adeodato Simó <dato@net.com...>')
         self.assertEqual(msg.title, 'please add random mode')
 
 if __name__ == "__main__":
