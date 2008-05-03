@@ -39,4 +39,4 @@ def tidy_bug_title(title, package):
 
     title = WHITESPACE.sub(' ', title)
 
-    return title
+    return title.strip()

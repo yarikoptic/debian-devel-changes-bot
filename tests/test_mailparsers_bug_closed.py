@@ -34,7 +34,7 @@ class TestMailParserBugClosed(unittest.TestCase):
 
     def testDone(self):
         self.headers.update({
-            'Subject': 'Bug#479099: marked as done (please add random mode)',
+            'Subject': 'Bug#479099: marked as done (minirok:  please add random mode)',
             'From': u'Adeodato Simó <dato@net.com.org.es>',
             'To': 'Felipe Sateler <fsateler@gmail.com>, 479099-done@bugs.debian.org',
             'X-Debian-PR-Source': 'minirok-source-package',
