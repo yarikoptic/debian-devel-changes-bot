@@ -48,7 +48,10 @@ class BugClosedParser(MailParser):
 
         # Let binary package name override binary package
         msg.package = headers.get('X-Debian-PR-Source', None)
-        msg.package = headers['X-Debian-PR-Package']
+        msg.package = headers.get('X-Debian-PR-Package', msg.package)
+
+        if msg.package is None:
+            return
 
         msg.title = tidy_bug_title(msg.title, msg.package)
         msg.by = format_email_address(msg.by)
