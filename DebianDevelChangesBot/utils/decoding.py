@@ -34,8 +34,14 @@ def quoted_printable(val):
     try:
         if type(val) is str:
             save = header_decode(val)
+
+            # Hack around possible bug in email.Header.decode_header
+            val = val.replace('?=)', '?= )')
+
             val = ' '.join([chunk.decode(encoding or 'ascii', 'replace') for chunk, encoding in
                 email.Header.decode_header(val)])
+
+            val = val.replace(' )', ')')
 
             if len(val) > len(save):
                 val = unicode(save, 'utf-8', 'replace')
