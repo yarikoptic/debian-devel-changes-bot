@@ -54,5 +54,12 @@ class TestMailParserBugSubmitted(unittest.TestCase):
 
         self.failIf(msg.version)
 
+    def testAlternateEmailFormatting(self):
+        self.headers['From'] = u"name@t.com (Submitter Name)"
+
+        msg = p.parse(self.headers, self.body)
+        self.assert_(msg)
+        self.assertEqual(msg.by, 'Submitter Name <name@t.com>')
+
 if __name__ == "__main__":
     unittest.main()

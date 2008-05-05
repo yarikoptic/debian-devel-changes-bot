@@ -19,12 +19,17 @@
 import re
 
 EMAIL = re.compile(r'^(.*) ?(<.+@.+>)$')
+EMAIL_ALT = re.compile(r'^([^@]+@[^\s]+) \((.*)\)$')
 DEBIAN_EMAIL = re.compile(r'^<([-a-z0-9]+)@(?:merkel\.|master\.)?debian.org>$')
 
 WHITESPACE = re.compile(r'\s{2,}')
 CONTINUATION = re.compile(r'\.{3,}$')
 
 def format_email_address(input, max_user=13, max_domain=10):
+    m = EMAIL_ALT.match(input)
+    if m:
+        input = "%s <%s>" % (m.group(2), m.group(1))
+
     m = EMAIL.match(input)
     if not m:
         return input
