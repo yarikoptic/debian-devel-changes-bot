@@ -57,7 +57,6 @@ def add_tests(testdir, parser, expected_type, test=lambda x: bool(x)):
 add_tests('accepted_upload', AcceptedUploadParser, AcceptedUploadMessage)
 add_tests('bug_closed', BugClosedParser, BugClosedMessage)
 add_tests('bug_submitted', BugSubmittedParser, BugSubmittedMessage)
-add_tests('bug_submitted', BugSubmittedParser, BugSubmittedMessage)
 add_tests('security_announce', SecurityAnnounceParser, SecurityAnnounceMessage)
 
 for parser in AcceptedUploadParser, BugClosedParser, BugSubmittedParser, SecurityAnnounceParser:
