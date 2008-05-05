@@ -1,0 +1,142 @@
+From marc.poulhies@imag.fr Mon May 05 13:28:23 2008
+Received: (at submit) by bugs.debian.org; 5 May 2008 13:28:23 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-10.6 required=4.0 tests=BAYES_00,FOURLA,HAS_PACKAGE,
+	IMPRONONCABLE_1,IMPRONONCABLE_2,MURPHY_WRONG_WORD1,MURPHY_WRONG_WORD2,
+	X_DEBBUGS_CC autolearn=no version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <marc.poulhies@imag.fr>
+Received: from p-mail1.rd.francetelecom.com ([195.101.245.15])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <marc.poulhies@imag.fr>)
+	id 1Jt0jv-0000lN-7K
+	for submit@bugs.debian.org; Mon, 05 May 2008 13:28:23 +0000
+Received: from ftrdmel10.rd.francetelecom.fr ([10.193.117.156]) by ftrdsmtp1.rd.francetelecom.fr with Microsoft SMTPSVC(6.0.3790.1830);
+	 Mon, 5 May 2008 15:28:17 +0200
+Received: from g-64brouette.rd.francetelecom.fr ([10.194.3.161]) by ftrdmel10.rd.francetelecom.fr with Microsoft SMTPSVC(6.0.3790.1830);
+	 Mon, 5 May 2008 15:28:17 +0200
+From: marc.poulhies@imag.fr (Marc =?iso-8859-1?Q?Poulhi=E8s?=)
+List-Id: <debian-bugs-dist.lists.debian.org>
+To: Debian Bug Tracking System <submit@bugs.debian.org>
+Subject: Bug#123456: gdb: gdb exits with an error on free() in glibc, "Aborted"
+X-Debbugs-CC: Marc <marc@g-64brouette.rd.francetelecom.fr>
+Date: Mon, 05 May 2008 15:29:02 +0200
+Message-ID: <87fxsw98wx.fsf@ftrdmel1.rd.francetelecom.fr>
+User-Agent: Gnus/5.110008 (No Gnus v0.8) Emacs/22.2 (gnu/linux)
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+X-OriginalArrivalTime: 05 May 2008 13:28:17.0919 (UTC) FILETIME=[E11CA8F0:01C8AEB3]
+Delivered-To: submit@bugs.debian.org
+
+Package: gdb
+Version: 6.8-1
+Severity: normal
+
+When trying to debug an application, I get the following error:
+
+,----
+| $ gdb  ./two_timed_tasks.bip.x
+| GNU gdb 6.8-debian
+| Copyright (C) 2008 Free Software Foundation, Inc.
+| License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+| This is free software: you are free to change and redistribute it.
+| There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+| and "show warranty" for details.
+| This GDB was configured as "x86_64-linux-gnu"...
+| *** glibc detected *** gdb: free(): invalid pointer: 0x00002b322be759a0 ***
+| ======= Backtrace: =========
+| /lib/libc.so.6[0x2b322bba101d]
+| /lib/libc.so.6(cfree+0x76)[0x2b322bba2d26]
+| gdb(cp_class_name_from_physname+0x71)[0x5629e1]
+| gdb[0x515271]
+| gdb[0x515c0b]
+| gdb(dwarf2_build_psymtabs+0x6f8)[0x517258]
+| gdb[0x48ff29]
+| gdb(syms_from_objfile+0x21d)[0x4cfc1d]
+| gdb[0x4cffcc]
+| gdb(symbol_file_add_from_bfd+0x15)[0x4d08b5]
+| gdb[0x4d0c63]
+| gdb(catch_command_errors+0x56)[0x4e7626]
+| gdb[0x4464b8]
+| gdb(catch_errors+0x5b)[0x4e76ab]
+| gdb(gdb_main+0x24)[0x445bf4]
+| gdb(main+0x36)[0x445bc6]
+| /lib/libc.so.6(__libc_start_main+0xf4)[0x2b322bb501c4]
+| gdb[0x445af9]
+| ======= Memory map: ========
+| 00400000-00743000 r-xp 00000000 08:03 887313                             /usr/bin/gdb
+| 00943000-0094e000 rw-p 00343000 08:03 887313                             /usr/bin/gdb
+| 0094e000-00ac3000 rw-p 0094e000 00:00 0                                  [heap]
+| 2b322adf3000-2b322ae0e000 r-xp 00000000 08:03 496786                     /lib/ld-2.7.so
+| 2b322ae0e000-2b322ae12000 rw-p 2b322ae0e000 00:00 0   
+| 2b322ae12000-2b322af4c000 r--p 00000000 08:03 897157                     /usr/lib/locale/locale-archive
+| 2b322af4c000-2b322af82000 rw-p 2b322af4c000 00:00 0   
+| 2b322b00d000-2b322b00f000 rw-p 0001a000 08:03 496786                     /lib/ld-2.7.so
+| 2b322b00f000-2b322b045000 r-xp 00000000 08:03 496919                     /lib/libreadline.so.5.2
+| 2b322b045000-2b322b245000 ---p 00036000 08:03 496919                     /lib/libreadline.so.5.2
+| 2b322b245000-2b322b24d000 rw-p 00036000 08:03 496919                     /lib/libreadline.so.5.2
+| 2b322b24d000-2b322b24e000 rw-p 2b322b24d000 00:00 0   
+| 2b322b24e000-2b322b287000 r-xp 00000000 08:03 497237                     /lib/libncurses.so.5.6
+| 2b322b287000-2b322b486000 ---p 00039000 08:03 497237                     /lib/libncurses.so.5.6
+| 2b322b486000-2b322b48b000 rw-p 00038000 08:03 497237                     /lib/libncurses.so.5.6
+| 2b322b48b000-2b322b509000 r-xp 00000000 08:03 496793                     /lib/libm-2.7.so
+| 2b322b509000-2b322b708000 ---p 0007e000 08:03 496793                     /lib/libm-2.7.so
+| 2b322b708000-2b322b70a000 rw-p 0007d000 08:03 496793                     /lib/libm-2.7.so
+| 2b322b70a000-2b322b70b000 rw-p 2b322b70a000 00:00 0   
+| 2b322b70b000-2b322b72b000 r-xp 00000000 08:03 883349                     /usr/lib/libexpat.so.1.0.0
+| 2b322b72b000-2b322b92b000 ---p 00020000 08:03 883349                     /usr/lib/libexpat.so.1.0.0
+| 2b322b92b000-2b322b92e000 rw-p 00020000 08:03 883349                     /usr/lib/libexpat.so.1.0.0
+| 2b322b92e000-2b322b930000 r-xp 00000000 08:03 496792                     /lib/libdl-2.7.so
+| 2b322b930000-2b322bb30000 ---p 00002000 08:03 496792                     /lib/libdl-2.7.so
+| 2b322bb30000-2b322bb32000 rw-p 00002000 08:03 496792                     /lib/libdl-2.7.so
+| 2b322bb32000-2b322bc70000 r-xp 00000000 08:03 496789                     /lib/libc-2.7.so
+| 2b322bc70000-2b322be70000 ---p 0013e000 08:03 496789                     /lib/libc-2.7.so
+| 2b322be70000-2b322be73000 r--p 0013e000 08:03 496789                     /lib/libc-2.7.so
+| 2b322be73000-2b322be75000 rw-p 00141000 08:03 496789                     /lib/libc-2.7.so
+| 2b322be75000-2b322be7b000 rw-p 2b322be75000 00:00 0   
+| 2b322be7b000-2b322be91000 r-xp 00000000 08:03 496803                     /lib/libpthread-2.7.so
+| 2b322be91000-2b322c090000 ---p 00016000 08:03 496803                     /lib/libpthread-2.7.so
+| 2b322c090000-2b322c092000 rw-p 00015000 08:03 496803                     /lib/libpthread-2.7.so
+| 2b322c092000-2b322c098000 rw-p 2b322c092000 00:00 0   
+| 2b322c098000-2b322c09f000 r-xp 00000000 08:03 496807                     /lib/libthread_db-1.0.so
+| 2b322c09f000-2b322c29e000 ---p 00007000 08:03 496807                     /lib/libthread_db-1.0.so
+| 2b322c29e000-2b322c2a0000 rw-p 00006000 08:03 496807                     /lib/libthread_db-1.0.so
+| 2b322c2a0000-2b322c2b6000 r-xp 00000000 08:03 496861                     /lib/libgcc_s.so.1
+| 2b322c2b6000-2b322c4b6000 ---p 00016000 08:03 496861                     /lib/libgcc_s.so.1
+| 2b322c4b6000-2b322c4b7000 rw-p 00016000 08:03 496861                     /lib/libgcc_s.so.1
+| 2b3230000000-2b3230021000 rw-p 2b3230000000 00:00 0   
+| 2b3230021000-2b3234000000 ---p 2b3230021000 00:00 0   
+| 7fff7fca1000-7fff7fcb7000 rw-p 7ffffffe9000 00:00 0                      [stack]
+| 7fff7fdfe000-7fff7fe00000 r-xp 7fff7fdfe000 00:00 0                      [vdso]
+| ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+| Aborted
+`----
+
+I guess this is not an expected behavior...
+This is permanent (if I try to run the same command again, I get the
+same error)
+
+-- System Information:
+Debian Release: lenny/sid
+  APT prefers unstable
+  APT policy: (500, 'unstable')
+Architecture: amd64 (x86_64)
+
+Kernel: Linux 2.6.24-1-amd64 (SMP w/2 CPU cores)
+Locale: LANG=en_US.UTF-8, LC_CTYPE=en_US.UTF-8 (charmap=UTF-8)
+Shell: /bin/sh linked to /bin/bash
+
+Versions of packages gdb depends on:
+ii  libc6                     2.7-10         GNU C Library: Shared libraries
+ii  libexpat1                 1.95.8-4       XML parsing C library - runtime li
+ii  libncurses5               5.6+20080419-2 Shared libraries for terminal hand
+ii  libreadline5              5.2-3          GNU readline and history libraries
+
+gdb recommends no packages.
+
+-- no debconf information
+
+
+
+
