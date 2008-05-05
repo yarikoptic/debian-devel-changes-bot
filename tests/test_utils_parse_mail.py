@@ -124,6 +124,15 @@ Message body"""[1:])
         self.assertEqual(headers['From'], u"Sebastian Dröge")
         self.assertEqual(body, ['Message body'])
 
+    def testUtf8Header2(self):
+        f = StringIO("""
+From: marc.poulhies@imag.fr (Marc =?ISO-8859-1?Q?Poulhi=E8s?=)
+
+Message body"""[1:])
+        headers, body = parse_mail(f)
+        self.assertEqual(headers['From'], u"marc.poulhies@imag.fr (Marc Poulhiès)")
+        self.assertEqual(body, ['Message body'])
+
     def testMultipart(self):
         f = StringIO("""
 From: Mohammed Sameer <msameer@foolab.org>
