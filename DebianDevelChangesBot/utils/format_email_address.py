@@ -19,7 +19,7 @@
 import re
 
 EMAIL = re.compile(r'^(.*) ?(<.+@.+>)$')
-EMAIL_ALT = re.compile(r'^([^@]+@[^\s]+) \((.*)\)$')
+EMAIL_ALT = re.compile(r'^<?([^@]+@[^\s>]+)>? \((.*)\)$')
 DEBIAN_EMAIL = re.compile(r'^<([-a-z0-9]+)@(?:merkel\.|master\.)?debian.org>$')
 
 WHITESPACE = re.compile(r'\s{2,}')

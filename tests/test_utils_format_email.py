@@ -79,6 +79,18 @@ class TestFormatEmail(unittest.TestCase):
     def testRepeatEmailAddress(self):
         self._test('"leo@dicea.unifi.it" <leo@dicea.unifi.it>', '<leo@dicea.unifi.it>')
 
+    def testReversedBracketed(self):
+        self._test("<jsmith@host.tld> (John Smith)", "John Smith <jsmith@host.tld>")
+
+    def testReverseDebianBracketed(self):
+        self._test("<jsmith@debian.org> (John Smith)", "John Smith (jsmith)")
+
+    def testReversed(self):
+        self._test("jsmith@host.tld (John Smith)", "John Smith <jsmith@host.tld>")
+
+    def testReverseDebian(self):
+        self._test("jsmith@debian.org (John Smith)", "John Smith (jsmith)")
+
 class TestLongEmail(unittest.TestCase):
     def _test(self, val, ret, max_user, max_domain):
         self.assertEqual(format_email_address(val, max_user=max_user,
