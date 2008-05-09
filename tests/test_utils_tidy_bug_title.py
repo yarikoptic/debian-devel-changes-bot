@@ -49,5 +49,8 @@ class TestFormatEmail(unittest.TestCase):
     def testRemoveDoubleSpace(self):
         self._test("a  b", "packagename", "a b")
 
+    def testRepeatedSubject(self):
+        self._test("Subject: a", "packagename", "a")
+
 if __name__ == "__main__":
     unittest.main()

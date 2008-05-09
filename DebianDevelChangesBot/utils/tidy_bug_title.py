@@ -33,9 +33,14 @@ def tidy_bug_title(title, package):
 
     title = title.strip()
 
-    for prefix in ('%s: ', '[%s]: ', '[%s] '):
-        if title.lower().startswith(prefix % package.lower()):
-            title = title[len(package) + len(prefix) - 2:]
+    for prefix in ('Subject: ', '%s: ', '[%s]: ', '[%s] ', ):
+        try:
+            prefix = prefix % package
+        except:
+            pass
+
+        if title.lower().startswith(prefix.lower()):
+            title = title[len(prefix):]
 
     title = WHITESPACE.sub(' ', title)
 
