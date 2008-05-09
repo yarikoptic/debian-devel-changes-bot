@@ -31,6 +31,12 @@ class TestFormatEmail(unittest.TestCase):
     def testMatch(self):
         self._test("[a]: b", "a", "b")
 
+    def testCaseMatch(self):
+        self._test("[A]: b", "a", "b")
+
+    def testCaseMatch2(self):
+        self._test("[a]: b", "A", "b")
+
     def testNoMatch(self):
         self._test("[a]: b", "c", "[a]: b")
 
