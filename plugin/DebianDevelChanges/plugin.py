@@ -71,8 +71,10 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
             if msg:
                 txt = colourise(msg.for_irc())
                 for channel in self.irc.state.channels:
-                    ircmsg = supybot.ircmsgs.privmsg(channel, txt)
-                    self.irc.queueMsg(ircmsg)
+                    if self.registryValue('show_changes', channel):
+                        ircmsg = supybot.ircmsgs.privmsg(channel, txt)
+                        self.irc.queueMsg(ircmsg)
+
         except:
            log.exception('Uncaught exception')
 

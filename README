@@ -35,6 +35,9 @@ Installation
 
   * Run supybot $SOURCE_DIR/bot-config/<conffile>.conf to start the bot.
 
+  * Call "!channel supybot.plugins.DebianDevelChanges.show_changes" in every
+    channel you wish the bot to emit change notices.
+
   * Subscribe the bot to the following lists:
 
      - http://lists.debian.org/debian-devel-changes/

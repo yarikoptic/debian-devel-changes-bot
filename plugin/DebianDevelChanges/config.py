@@ -27,4 +27,7 @@ def configure(advanced):
     from supybot.questions import expect, anything, something, yn
     conf.registerPlugin('DebianDevelChanges', True)
 
-DebianChangesBot = conf.registerPlugin('DebianDevelChanges')
+DebianDevelChanges = conf.registerPlugin('DebianDevelChanges')
+
+conf.registerChannelValue(DebianDevelChanges, 'show_changes', registry.Boolean(
+    False, """Determines whether the bot will output changes for this channel"""))
