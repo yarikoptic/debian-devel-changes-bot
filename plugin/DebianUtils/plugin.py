@@ -79,7 +79,7 @@ class DebianUtils(callbacks.Plugin):
 
         msg.status = entry.status
         msg.package = entry.package
-        msg.title = tidy_bug_title(entry.summary)
+        msg.title = tidy_bug_title(entry.summary, entry.package)
         msg.severity = entry.severity
 
         irc.reply(colourise(msg.for_irc()))
