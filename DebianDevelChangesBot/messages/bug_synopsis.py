@@ -16,20 +16,26 @@
 #   You should have received a copy of the GNU Affero General Public License
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import accepted_upload
-import bug_closed
-import bug_submitted
-import security_announce
-import bug_synopsis
+from DebianDevelChangesBot import Message
 
-reload(accepted_upload)
-reload(bug_closed)
-reload(bug_submitted)
-reload(security_announce)
-reload(bug_synopsis)
+class BugSynopsis(Message):
+    FIELDS = ('bug_number', 'package', 'status', 'title', 'severity')
 
-from accepted_upload import AcceptedUploadMessage
-from bug_closed import BugClosedMessage
-from bug_submitted import BugSubmittedMessage
-from security_announce import SecurityAnnounceMessage
-from bug_synopsis import BugSynopsis
+    def format(self):
+        msg = "[bug]#%d[/bug]" % self.bug_number
+
+        if self.status == 'done':
+            msg += " (fixed)"
+
+        msg += u": [package]%s[reset]: «[title]%s[reset]» " % \
+            (self.package, self.title)
+
+        if self.severity != 'normal':
+            if self.severity in ('critical', 'grave', 'serious'):
+                msg += "([severity]%s[reset]) " % self.severity
+            else:
+                msg += "(%s) " % self.severity
+
+        msg += u"[url]http://bugs.debian.org/%d[/url]" % self.bug_number
+
+        return msg
