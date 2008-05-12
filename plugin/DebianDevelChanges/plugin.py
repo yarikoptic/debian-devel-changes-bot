@@ -24,9 +24,13 @@ import threading
 from supybot.commands import wrap
 from supybot import ircdb, log, schedule
 
+from btsutils.debbugs import BugExceptions
+
 from DebianDevelChangesBot.mailparsers import get_message
-from DebianDevelChangesBot.datasources import get_datasources, TestingRCBugs, NewQueue
-from DebianDevelChangesBot.utils import parse_mail, FifoReader, colourise, rewrite_topic
+from DebianDevelChangesBot.datasources import get_datasources, TestingRCBugs, \
+    NewQueue
+from DebianDevelChangesBot.utils import parse_mail, FifoReader, colourise, \
+    rewrite_topic, madison, bug_synopsis
 
 class DebianDevelChanges(supybot.callbacks.Plugin):
     threaded = True
@@ -139,7 +143,33 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
             callback()
             irc.reply("Updated %s." % name)
         self._topic_callback()
-
     update = wrap(update)
+
+    def madison(self, irc, msg, args, package):
+        lines = madison(package)
+        if not lines:
+            irc.reply('Did not get a response -- is "%s" a valid package?' % package)
+            return
+
+        field_styles = ('package', 'version', 'distribution', 'section')
+        for line in lines:
+            out = []
+            fields = line.strip().split('|', len(field_styles))
+            for style, data in zip(field_styles, fields):
+                out.append('[%s]%s' % (style, data))
+            irc.reply(colourise('[reset]|'.join(out)))
+    madison = wrap(madison, ['text'])
+
+    def bug(self, irc, msg, args, bug_string):
+        try:
+            msg = bug_synopsis(bug_string)
+            if msg:
+                irc.reply(colourise(msg.for_irc()))
+        except BugExceptions.InvalidBugIdError, e:
+            irc.reply(e)
+        except ValueError:
+            irc.reply('Could not parse bug number')
+
+    bug = wrap(bug, ['text'])
 
 Class = DebianDevelChanges

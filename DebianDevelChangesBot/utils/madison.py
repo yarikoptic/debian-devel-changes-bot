@@ -16,24 +16,22 @@
 #   You should have received a copy of the GNU Affero General Public License
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import os
-import sys
+import socket
+import urllib2
 
-__version__ = "1"
-__author__ = 'Chris Lamb <chris@chris-lamb.co.uk>'
-__contributors__ = {}
-__url__ = ''
+socket.setdefaulttimeout(10)
 
-basedir = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
-if basedir not in sys.path:
-    sys.path.append(basedir)
+def madison(package, suites=None):
+    if suites is None:
+        suites = ('stable', 'testing', 'unstable', 'experimental')
 
-import DebianDevelChangesBot
-reload(DebianDevelChangesBot)
+    args = {
+        'package': package,
+        's': ','.join(suites),
+        'text': 'on',
+    }
 
-import config
-import plugin
-reload(plugin)
+    querystr = '&'.join(['%s=%s' % (k, v) for k, v in args.iteritems()])
+    fileobj = urllib2.urlopen('http://qa.debian.org/madison.php?%s' % querystr)
 
-Class = plugin.Class
-configure = config.configure
+    return fileobj.readlines()

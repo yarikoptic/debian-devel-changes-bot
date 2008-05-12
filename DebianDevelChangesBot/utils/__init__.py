@@ -23,6 +23,8 @@ from tidy_bug_title import tidy_bug_title
 from irc_colours import colourise
 from fiforeader import FifoReader
 from rewrite_topic import rewrite_topic
+from madison import madison
+from bug_synopsis import bug_synopsis
 
 import decoding
 import parse_mail
@@ -31,6 +33,8 @@ import tidy_bug_title
 import irc_colours
 import fiforeader
 import rewrite_topic
+import madison
+import bug_synopsis
 
 reload(decoding)
 reload(parse_mail)
@@ -39,6 +43,8 @@ reload(tidy_bug_title)
 reload(irc_colours)
 reload(fiforeader)
 reload(rewrite_topic)
+reload(madison)
+reload(bug_synopsis)
 
 from decoding import header_decode, quoted_printable
 from parse_mail import parse_mail
@@ -47,3 +53,5 @@ from tidy_bug_title import tidy_bug_title
 from irc_colours import colourise
 from fiforeader import FifoReader
 from rewrite_topic import rewrite_topic
+from madison import madison
+from bug_synopsis import bug_synopsis
