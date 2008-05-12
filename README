@@ -17,7 +17,8 @@ Installation
     refer to this dir as $SOURCE_DIR.
 
   * Ensure that
-     - $SOURCE_DIR/bin/ is writable by the supybot user (so that it can create a FIFO)
+     - $SOURCE_DIR/bin/ is writable by the supybot user (so that it can create
+       a FIFO)
      - $SOURCE_DIR/bin/lockfile/ is writable by your MTA
 
   * Create an email address which outputs mail directed to it to the STDIN of
@@ -36,8 +37,10 @@ Installation
 
   * Run supybot $SOURCE_DIR/bot-config/<conffile>.conf to start the bot.
 
-  * Call "!channel supybot.plugins.DebianDevelChanges.show_changes" in every
-    channel you wish the bot to emit change notices.
+  * Call the following for every channel you wish the bot to emit change
+    notices:
+  
+      !channel <#channel> supybot.plugins.DebianDevelChanges.show_changes True
 
   * Subscribe the bot to the following lists:
 
@@ -46,3 +49,7 @@ Installation
      - http://lists.debian.org/debian-bugs-closed/
      - http://lists.debian.org/debian-security-announce/
      - http://lists.backports.org/mailman/listinfo/backports-changes
+
+  * Configure the bot to start on bootup:
+
+      @reboot supybot --daemon $SOURCE_DIR/bot-config/<conffile>.conf
