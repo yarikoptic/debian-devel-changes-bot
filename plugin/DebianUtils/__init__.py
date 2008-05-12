@@ -28,6 +28,9 @@ basedir = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))
 if basedir not in sys.path:
     sys.path.append(basedir)
 
+import DebianDevelChangesBot
+reload(DebianDevelChangesBot)
+
 import config
 import plugin
 reload(plugin)
