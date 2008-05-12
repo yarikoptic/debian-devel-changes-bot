@@ -20,6 +20,7 @@ from supybot.commands import wrap
 import supybot.callbacks as callbacks
 
 from DebianDevelChangesBot.utils import colourise
+from DebianDevelChangesBot.utils import tidy_bug_title
 from DebianDevelChangesBot.messages import BugSynopsis
 
 import re
@@ -78,7 +79,7 @@ class DebianUtils(callbacks.Plugin):
 
         msg.status = entry.status
         msg.package = entry.package
-        msg.title = entry.summary
+        msg.title = tidy_bug_title(entry.summary)
         msg.severity = entry.severity
 
         irc.reply(colourise(msg.for_irc()))
