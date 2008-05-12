@@ -69,7 +69,7 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
             msg = get_message(email)
 
             if msg:
-                txt = colourise(msg.format().encode('utf-8'))
+                txt = colourise(msg.for_irc())
                 for channel in self.irc.state.channels:
                     ircmsg = supybot.ircmsgs.privmsg(channel, txt)
                     self.irc.queueMsg(ircmsg)

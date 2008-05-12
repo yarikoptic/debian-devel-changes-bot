@@ -44,6 +44,9 @@ class Message(object):
                     return False
         return True
 
+    def for_irc(self):
+        return self.format().encode('utf-8')
+
 import utils
 import messages
 import datasources
