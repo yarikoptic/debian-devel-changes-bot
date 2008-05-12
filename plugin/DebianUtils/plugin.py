@@ -37,7 +37,7 @@ class DebianUtils(callbacks.Plugin):
 
         lines = fileobj.readlines()
         if not lines:
-            irc.reply('Did not get a response - is "%s" a valid package?' % package)
+            irc.reply('Did not get a response -- is "%s" a valid package?' % package)
             return
 
         field_styles = ('package', 'version', 'distribution', 'section')
