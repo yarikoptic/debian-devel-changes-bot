@@ -20,8 +20,13 @@ from supybot.commands import wrap
 import supybot.callbacks as callbacks
 
 from DebianDevelChangesBot.utils import colourise
+from DebianDevelChangesBot.messages import BugSynopsis
 
+import re
 import urllib2
+from btsutils.debbugs import debbugs
+
+BUG_NUMBER_PATTERN = re.compile(r'\d{2,7}')
 
 class DebianUtils(callbacks.Plugin):
     threaded = True
@@ -49,5 +54,32 @@ class DebianUtils(callbacks.Plugin):
             irc.reply(colourise('[reset]|'.join(out)))
 
     madison = wrap(madison, ['text'])
+
+    def bug(self, irc, msg, args, bug_string):
+        try:
+            m = BUG_NUMBER_PATTERN.search(bug_string)
+            bug_number = int(m.group(0))
+        except:
+            irc.reply('Could not parse bug number')
+            return
+
+        try:
+            bts = debbugs()
+            entry = bts.get(bug_number)
+        except:
+            irc.reply('Could not get bug info -- is #%d a valid bug number?' % bug_number)
+            return
+
+        msg = BugSynopsis()
+        msg.bug_number = bug_number
+
+        msg.status = entry.status
+        msg.package = entry.package
+        msg.title = entry.summary
+        msg.severity = entry.severity
+
+        irc.reply(colourise(msg.for_irc()))
+
+    bug = wrap(bug, ['text'])
 
 Class = DebianUtils
