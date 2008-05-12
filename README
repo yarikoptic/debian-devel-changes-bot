@@ -8,6 +8,7 @@ Requirements:
  * Supybot
  * Local MTA
  * lockfile-progs
+ * python-btsutils
 
 Installation
 ------------
