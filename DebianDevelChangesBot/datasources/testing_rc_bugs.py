@@ -20,6 +20,9 @@ import re
 import thread
 import urllib2
 
+import socket
+socket.setdefaulttimeout(10)
+
 from DebianDevelChangesBot import Datasource
 
 class TestingRCBugs(Datasource):

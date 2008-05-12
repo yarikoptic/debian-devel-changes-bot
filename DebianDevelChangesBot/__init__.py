@@ -18,6 +18,9 @@
 
 import urllib2
 
+import socket
+socket.setdefaulttimeout(10)
+
 class Datasource(object):
     class DataError(Exception): pass
 

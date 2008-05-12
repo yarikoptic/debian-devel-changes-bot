@@ -26,6 +26,9 @@ import re
 import urllib2
 from btsutils.debbugs import debbugs
 
+import socket
+socket.setdefaulttimeout(10)
+
 BUG_NUMBER_PATTERN = re.compile(r'\d{2,7}')
 
 class DebianUtils(callbacks.Plugin):

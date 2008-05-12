@@ -20,6 +20,9 @@ import thread
 import urllib2
 from BeautifulSoup import BeautifulSoup
 
+import socket
+socket.setdefaulttimeout(10)
+
 from DebianDevelChangesBot import Datasource
 
 class NewQueue(Datasource):
