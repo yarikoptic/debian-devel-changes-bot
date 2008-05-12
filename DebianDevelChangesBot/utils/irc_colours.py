@@ -53,6 +53,8 @@ def colourise(s):
         'urgency': tags['brightred'],
         'new': tags['brightred'],
 
+        'section': tags['grey'],
+
         'url': tags['nostyle'],
         '/url': tags['nostyle'],
         'bug': tags['b'],
