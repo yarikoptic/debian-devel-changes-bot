@@ -21,10 +21,7 @@ import urllib2
 
 socket.setdefaulttimeout(10)
 
-def madison(package, suites=None):
-    if suites is None:
-        suites = ('stable', 'testing', 'unstable', 'experimental')
-
+def madison(package, suites=()):
     args = {
         'package': package,
         's': ','.join(suites),
