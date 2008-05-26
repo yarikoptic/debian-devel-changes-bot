@@ -91,6 +91,9 @@ class TestFormatEmail(unittest.TestCase):
     def testReverseDebian(self):
         self._test("jsmith@debian.org (John Smith)", "John Smith (jsmith)")
 
+    def testReverseDebianUtf(self):
+        self._test(u"jredrejo@debian.org (José L. Redrejo Rodríguez)", u"José L. Redrejo Rodríguez (jredrejo)")
+
 class TestLongEmail(unittest.TestCase):
     def _test(self, val, ret, max_user, max_domain):
         self.assertEqual(format_email_address(val, max_user=max_user,
