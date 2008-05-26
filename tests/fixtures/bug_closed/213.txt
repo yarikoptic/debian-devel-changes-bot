@@ -1,0 +1,400 @@
+From dak@ftp-master.debian.org Mon May 26 10:17:52 2008
+Received: (at 482676-close) by bugs.debian.org; 26 May 2008 10:17:52 +0000
+X-Spam-Checker-Version: SpamAssassin 3.1.4-bugs.debian.org_2005_01_02 
+	(2006-07-26) on rietz.debian.org
+X-Spam-Level: 
+X-Spam-Status: No, score=-8.2 required=4.0 tests=BAYES_00,FOURLA,
+	FROMDEVELOPER,FVGT_m_MULTI_ODD,HAS_BUG_NUMBER,HEADER_X_KATIE,
+	IMPRONONCABLE_2,MURPHY_WRONG_WORD2,PHONENUMBER autolearn=no 
+	version=3.1.4-bugs.debian.org_2005_01_02
+Return-path: <dak@ftp-master.debian.org>
+Received: from ries.debian.org ([128.148.34.103])
+	by rietz.debian.org with esmtp (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1K0Zm3-0006Ne-Q6
+	for 482676-close@bugs.debian.org; Mon, 26 May 2008 10:17:52 +0000
+Received: from dak by ries.debian.org with local (Exim 4.63)
+	(envelope-from <dak@ftp-master.debian.org>)
+	id 1K0ZWz-0000Nu-Uu; Mon, 26 May 2008 10:02:18 +0000
+From: jredrejo@debian.org (=?utf-8?b?Sm9zw6kgTC4gUmVkcmVqbyBSb2Ryw61ndWV6?=)
+To: jredrejo@debian.org (=?utf-8?b?Sm9zw6kgTC4gUmVkcmVqbyBSb2Ryw61ndWV6?= )
+X-DAK: dak process-unchecked
+X-Katie: $Revision: 1.65 $
+X-Debian: DAK
+X-Debian-Package: gambas2
+X-Debian-PR-Source: gambas2
+X-Debian-PR-Package: gambas2
+MIME-Version: 1.0
+Content-Type: text/plain; charset="utf-8"
+List-Id: <debian-bugs-closed.lists.debian.org>
+Content-Transfer-Encoding: 8bit
+Subject: Bug#482676: marked as done (gambas2: FTBFS on arches that use sudo instead of fakeroot)
+Message-Id: <E1K0ZWz-0000Nu-Uu@ries.debian.org>
+Sender: Archive Administrator <dak@ftp-master.debian.org>
+Date: Mon, 26 May 2008 10:02:17 +0000
+
+Source: gambas2
+Source-Version: 2.6-2
+
+We believe that the bug you reported is fixed in the latest version of
+gambas2, which is due to be installed in the Debian FTP archive:
+
+gambas2-dev_2.6-2_amd64.deb
+  to pool/main/g/gambas2/gambas2-dev_2.6-2_amd64.deb
+gambas2-doc_2.6-2_all.deb
+  to pool/main/g/gambas2/gambas2-doc_2.6-2_all.deb
+gambas2-gb-chart_2.6-2_all.deb
+  to pool/main/g/gambas2/gambas2-gb-chart_2.6-2_all.deb
+gambas2-gb-compress-bzlib2_2.6-2_amd64.deb
+  to pool/main/g/gambas2/gambas2-gb-compress-bzlib2_2.6-2_amd64.deb
+gambas2-gb-compress-zlib_2.6-2_amd64.deb
+  to pool/main/g/gambas2/gambas2-gb-compress-zlib_2.6-2_amd64.deb
+gambas2-gb-compress_2.6-2_amd64.deb
+  to pool/main/g/gambas2/gambas2-gb-compress_2.6-2_amd64.deb
+gambas2-gb-crypt_2.6-2_amd64.deb
+  to pool/main/g/gambas2/gambas2-gb-crypt_2.6-2_amd64.deb
+gambas2-gb-db-firebird_2.6-2_amd64.deb
+  to pool/main/g/gambas2/gambas2-gb-db-firebird_2.6-2_amd64.deb
+gambas2-gb-db-form_2.6-2_all.deb
+  to pool/main/g/gambas2/gambas2-gb-db-form_2.6-2_all.deb
+gambas2-gb-db-mysql_2.6-2_amd64.deb
+  to pool/main/g/gambas2/gambas2-gb-db-mysql_2.6-2_amd64.deb
+gambas2-gb-db-odbc_2.6-2_amd64.deb
+  to pool/main/g/gambas2/gambas2-gb-db-odbc_2.6-2_amd64.deb
+gambas2-gb-db-postgresql_2.6-2_amd64.deb
+  to pool/main/g/gambas2/gambas2-gb-db-postgresql_2.6-2_amd64.deb
+gambas2-gb-db-sqlite2_2.6-2_amd64.deb
+  to pool/main/g/gambas2/gambas2-gb-db-sqlite2_2.6-2_amd64.deb
+gambas2-gb-db-sqlite_2.6-2_amd64.deb
+  to pool/main/g/gambas2/gambas2-gb-db-sqlite_2.6-2_amd64.deb
+gambas2-gb-db_2.6-2_amd64.deb
+  to pool/main/g/gambas2/gambas2-gb-db_2.6-2_amd64.deb
+gambas2-gb-desktop_2.6-2_amd64.deb
+  to pool/main/g/gambas2/gambas2-gb-desktop_2.6-2_amd64.deb
+gambas2-gb-form-dialog_2.6-2_all.deb
+  to pool/main/g/gambas2/gambas2-gb-form-dialog_2.6-2_all.deb
+gambas2-gb-form-mdi_2.6-2_all.deb
+  to pool/main/g/gambas2/gambas2-gb-form-mdi_2.6-2_all.deb
+gambas2-gb-form_2.6-2_all.deb
+  to pool/main/g/gambas2/gambas2-gb-form_2.6-2_all.deb
+gambas2-gb-gtk-ext_2.6-2_amd64.deb
+  to pool/main/g/gambas2/gambas2-gb-gtk-ext_2.6-2_amd64.deb
+gambas2-gb-gtk-svg_2.6-2_amd64.deb
+  to pool/main/g/gambas2/gambas2-gb-gtk-svg_2.6-2_amd64.deb
+gambas2-gb-gtk_2.6-2_amd64.deb
+  to pool/main/g/gambas2/gambas2-gb-gtk_2.6-2_amd64.deb
+gambas2-gb-gui_2.6-2_amd64.deb
+  to pool/main/g/gambas2/gambas2-gb-gui_2.6-2_amd64.deb
+gambas2-gb-image_2.6-2_amd64.deb
+  to pool/main/g/gambas2/gambas2-gb-image_2.6-2_amd64.deb
+gambas2-gb-info_2.6-2_all.deb
+  to pool/main/g/gambas2/gambas2-gb-info_2.6-2_all.deb
+gambas2-gb-net-curl_2.6-2_amd64.deb
+  to pool/main/g/gambas2/gambas2-gb-net-curl_2.6-2_amd64.deb
+gambas2-gb-net-smtp_2.6-2_amd64.deb
+  to pool/main/g/gambas2/gambas2-gb-net-smtp_2.6-2_amd64.deb
+gambas2-gb-net_2.6-2_amd64.deb
+  to pool/main/g/gambas2/gambas2-gb-net_2.6-2_amd64.deb
+gambas2-gb-opengl_2.6-2_amd64.deb
+  to pool/main/g/gambas2/gambas2-gb-opengl_2.6-2_amd64.deb
+gambas2-gb-pcre_2.6-2_amd64.deb
+  to pool/main/g/gambas2/gambas2-gb-pcre_2.6-2_amd64.deb
+gambas2-gb-pdf_2.6-2_amd64.deb
+  to pool/main/g/gambas2/gambas2-gb-pdf_2.6-2_amd64.deb
+gambas2-gb-qt-ext_2.6-2_amd64.deb
+  to pool/main/g/gambas2/gambas2-gb-qt-ext_2.6-2_amd64.deb
+gambas2-gb-qt-kde-html_2.6-2_amd64.deb
+  to pool/main/g/gambas2/gambas2-gb-qt-kde-html_2.6-2_amd64.deb
+gambas2-gb-qt-kde_2.6-2_amd64.deb
+  to pool/main/g/gambas2/gambas2-gb-qt-kde_2.6-2_amd64.deb
+gambas2-gb-qt-opengl_2.6-2_amd64.deb
+  to pool/main/g/gambas2/gambas2-gb-qt-opengl_2.6-2_amd64.deb
+gambas2-gb-qt_2.6-2_amd64.deb
+  to pool/main/g/gambas2/gambas2-gb-qt_2.6-2_amd64.deb
+gambas2-gb-report_2.6-2_all.deb
+  to pool/main/g/gambas2/gambas2-gb-report_2.6-2_all.deb
+gambas2-gb-sdl_2.6-2_amd64.deb
+  to pool/main/g/gambas2/gambas2-gb-sdl_2.6-2_amd64.deb
+gambas2-gb-settings_2.6-2_all.deb
+  to pool/main/g/gambas2/gambas2-gb-settings_2.6-2_all.deb
+gambas2-gb-v4l_2.6-2_amd64.deb
+  to pool/main/g/gambas2/gambas2-gb-v4l_2.6-2_amd64.deb
+gambas2-gb-vb_2.6-2_amd64.deb
+  to pool/main/g/gambas2/gambas2-gb-vb_2.6-2_amd64.deb
+gambas2-gb-web_2.6-2_all.deb
+  to pool/main/g/gambas2/gambas2-gb-web_2.6-2_all.deb
+gambas2-gb-xml-rpc_2.6-2_amd64.deb
+  to pool/main/g/gambas2/gambas2-gb-xml-rpc_2.6-2_amd64.deb
+gambas2-gb-xml-xslt_2.6-2_amd64.deb
+  to pool/main/g/gambas2/gambas2-gb-xml-xslt_2.6-2_amd64.deb
+gambas2-gb-xml_2.6-2_amd64.deb
+  to pool/main/g/gambas2/gambas2-gb-xml_2.6-2_amd64.deb
+gambas2-ide_2.6-2_amd64.deb
+  to pool/main/g/gambas2/gambas2-ide_2.6-2_amd64.deb
+gambas2-runtime_2.6-2_amd64.deb
+  to pool/main/g/gambas2/gambas2-runtime_2.6-2_amd64.deb
+gambas2-script_2.6-2_amd64.deb
+  to pool/main/g/gambas2/gambas2-script_2.6-2_amd64.deb
+gambas2_2.6-2.diff.gz
+  to pool/main/g/gambas2/gambas2_2.6-2.diff.gz
+gambas2_2.6-2.dsc
+  to pool/main/g/gambas2/gambas2_2.6-2.dsc
+gambas2_2.6-2_all.deb
+  to pool/main/g/gambas2/gambas2_2.6-2_all.deb
+
+
+
+A summary of the changes between this version and the previous one is
+attached.
+
+Thank you for reporting the bug, which will now be closed.  If you
+have further comments please address them to 482676@bugs.debian.org,
+and the maintainer will reopen the bug report if appropriate.
+
+Debian distribution maintenance software
+pp.
+José L. Redrejo Rodríguez <jredrejo@debian.org> (supplier of updated gambas2 package)
+
+(This message was generated automatically at their request; if you
+believe that there is a problem with it please contact the archive
+administrators by mailing ftpmaster@debian.org)
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Mon, 26 May 2008 10:58:25 +0200
+Source: gambas2
+Binary: gambas2 gambas2-dev gambas2-doc gambas2-gb-chart gambas2-gb-compress gambas2-gb-compress-bzlib2 gambas2-gb-compress-zlib gambas2-gb-crypt gambas2-gb-db gambas2-gb-db-firebird gambas2-gb-db-form gambas2-gb-db-mysql gambas2-gb-db-odbc gambas2-gb-db-postgresql gambas2-gb-db-sqlite2 gambas2-gb-db-sqlite gambas2-gb-desktop gambas2-gb-form gambas2-gb-form-dialog gambas2-gb-form-mdi gambas2-gb-gtk gambas2-gb-gtk-ext gambas2-gb-gtk-svg gambas2-gb-gui gambas2-gb-pdf gambas2-gb-image gambas2-gb-info gambas2-gb-net gambas2-gb-net-curl gambas2-gb-net-smtp gambas2-gb-opengl gambas2-gb-pcre gambas2-gb-qt gambas2-gb-qt-ext gambas2-gb-qt-kde gambas2-gb-qt-kde-html gambas2-gb-qt-opengl gambas2-gb-report gambas2-gb-sdl gambas2-gb-settings gambas2-gb-v4l gambas2-gb-vb gambas2-gb-web gambas2-gb-xml gambas2-gb-xml-rpc gambas2-gb-xml-xslt gambas2-ide gambas2-runtime gambas2-script
+Architecture: source all amd64
+Version: 2.6-2
+Distribution: unstable
+Urgency: low
+Maintainer: José L. Redrejo Rodríguez <jredrejo@debian.org>
+Changed-By: José L. Redrejo Rodríguez <jredrejo@debian.org>
+Description: 
+ gambas2    - Complete visual development environment for Gambas
+ gambas2-dev - Gambas compilation tools
+ gambas2-doc - Gambas documentation
+ gambas2-gb-chart - The Gambas charting component
+ gambas2-gb-compress - The Gambas compression component
+ gambas2-gb-compress-bzlib2 - The Gambas bzlib2 component
+ gambas2-gb-compress-zlib - The Gambas zlib compression component
+ gambas2-gb-crypt - The Gambas crypt encription component
+ gambas2-gb-db - Gambas database access common libraries
+ gambas2-gb-db-firebird - The Firebird driver for the Gambas database component
+ gambas2-gb-db-form - Gambas database bound controls
+ gambas2-gb-db-mysql - The MySQL driver for the Gambas database component
+ gambas2-gb-db-odbc - The Gambas ODBC driver database component
+ gambas2-gb-db-postgresql - The PostgreSQL driver for the Gambas database component
+ gambas2-gb-db-sqlite - The Gambas sqlite3 driver database component
+ gambas2-gb-db-sqlite2 - The Gambas sqlite2 driver database component
+ gambas2-gb-desktop - Gambas Portland project compatibility component
+ gambas2-gb-form - A gambas native form component
+ gambas2-gb-form-dialog - A gambas native mdi form component
+ gambas2-gb-form-mdi - A gambas native mdi form component
+ gambas2-gb-gtk - The Gambas gtk component
+ gambas2-gb-gtk-ext - The Gambas extended gtk GUI component
+ gambas2-gb-gtk-svg - The Gambas SVG importing component
+ gambas2-gb-gui - The graphical toolkit selector component
+ gambas2-gb-image - A Gambas image effects component
+ gambas2-gb-info - A Gambas information component
+ gambas2-gb-net - The Gambas networking component
+ gambas2-gb-net-curl - The Gambas advanced networking component
+ gambas2-gb-net-smtp - Gambas component to use smtp protocol
+ gambas2-gb-opengl - The OpenGL component for Gambas
+ gambas2-gb-pcre - The Gambas regexp component
+ gambas2-gb-pdf - The Gambas pdf component
+ gambas2-gb-qt - The Gambas Qt GUI component
+ gambas2-gb-qt-ext - The Gambas extended Qt GUI component
+ gambas2-gb-qt-kde - The Gambas KDE component
+ gambas2-gb-qt-kde-html - The Gambas KHTML component
+ gambas2-gb-qt-opengl - OpenGL with QT toolkit Gambas component
+ gambas2-gb-report - Gambas report component
+ gambas2-gb-sdl - The Gambas SDL component
+ gambas2-gb-settings - Gambas utilities class
+ gambas2-gb-v4l - The Gambas video for Linux component
+ gambas2-gb-vb - The Gambas to Visual Basic(tm) compatibility component
+ gambas2-gb-web - Gambas CGI for web applications component
+ gambas2-gb-xml - Gambas XML component
+ gambas2-gb-xml-rpc - Gambas RPC component
+ gambas2-gb-xml-xslt - Gambas XSLT component
+ gambas2-ide - Visual development environment for the Gambas programming languag
+ gambas2-runtime - The Gambas runtime
+ gambas2-script - The Gambas scripter
+Closes: 482676 482766
+Changes: 
+ gambas2 (2.6-2) unstable; urgency=low
+ .
+   * debian/rules: fixed PHONY declarations (Closes: #482676)
+   * debian/control: fixed architecture dependencies (Closes: #482766)
+Checksums-Sha1: 
+ 1358bea0329b5d24602a46d0dedc9e87057d2c9a 2401 gambas2_2.6-2.dsc
+ 750a484f246fbf8e527cbd72bf5fe2ac2130771a 15391 gambas2_2.6-2.diff.gz
+ 1d026fbf90647513b2654c2cb09bf03fb2d9fdb7 5442 gambas2_2.6-2_all.deb
+ 63250ed4f6ebbba5ee667bf4abf11a4941a608c4 9233402 gambas2-doc_2.6-2_all.deb
+ ffe6734a9ffb765412423b464e0b3ce990a267f4 33802 gambas2-gb-chart_2.6-2_all.deb
+ 5a72b67841fec53f5626dbd145aa54cdbf95474c 36610 gambas2-gb-db-form_2.6-2_all.deb
+ 2f983f815882916939cc06ea881d2f3884562c7a 812766 gambas2-gb-form_2.6-2_all.deb
+ 3c2675845c6da20cea5d6d8f66c9a8eb0905ed87 9164 gambas2-gb-form-dialog_2.6-2_all.deb
+ edcc74a0828dfaf508b55dd4384fef4b251b9c70 19558 gambas2-gb-form-mdi_2.6-2_all.deb
+ b1153ca68f5e8fc68c1e941e8421a9c2446dd9f7 20842 gambas2-gb-info_2.6-2_all.deb
+ 04c10f034dc71522f80fa6710e704003b4f9cf0d 53216 gambas2-gb-report_2.6-2_all.deb
+ d2da9a461e4786a6e8ca0c68aacbd8cd710ef328 9776 gambas2-gb-settings_2.6-2_all.deb
+ 7b1ecee515053878e8dafd6d896e701a6817f7ef 15238 gambas2-gb-web_2.6-2_all.deb
+ 1858683105794e220429de9785294815334032f1 77528 gambas2-dev_2.6-2_amd64.deb
+ 6538e642f57e78ba8163f9fe65c208364af000da 9506 gambas2-gb-compress_2.6-2_amd64.deb
+ 68dbbff79bdfa5e0f6485e5151127dec3b2ad3a3 9612 gambas2-gb-compress-bzlib2_2.6-2_amd64.deb
+ 71f32837660020af2d5afc32bc7fc098999ea4e5 9188 gambas2-gb-compress-zlib_2.6-2_amd64.deb
+ 3fa156cb1df7438df926d7c601e53fececdd3abc 8558 gambas2-gb-crypt_2.6-2_amd64.deb
+ a11331dca47e1470d56b8fac3615dd03ef26a614 25950 gambas2-gb-db_2.6-2_amd64.deb
+ 77993c9e4c06eb188f27569c5c114fc2323bb90e 142916 gambas2-gb-db-firebird_2.6-2_amd64.deb
+ db6c33cf05dcaabac01de1510cc869bc6343c926 17174 gambas2-gb-db-mysql_2.6-2_amd64.deb
+ dec4b602a420b2cd9263b0489dac699a3df718d1 15700 gambas2-gb-db-odbc_2.6-2_amd64.deb
+ 031fd15eb7ee65cda4d8e8bd2bd444d4c4548a9b 15706 gambas2-gb-db-postgresql_2.6-2_amd64.deb
+ 7681254b3c8343f74267ec582faac96dab126f54 44408 gambas2-gb-db-sqlite2_2.6-2_amd64.deb
+ 08592e5133470b1088644c9a2b70afa9597a2345 45984 gambas2-gb-db-sqlite_2.6-2_amd64.deb
+ 48a5e9292e8a0ef8c93ff26476d01652c5511d74 43484 gambas2-gb-desktop_2.6-2_amd64.deb
+ 4f7a01d1d3ac6768aaeb3ac31faa7845c35ae761 228064 gambas2-gb-gtk_2.6-2_amd64.deb
+ 744ff0e0596aafb5a56fcc704a791221573b8298 13108 gambas2-gb-gtk-ext_2.6-2_amd64.deb
+ 6b19b23ad46b58492ff02150782ed5333a8fa164 9018 gambas2-gb-gtk-svg_2.6-2_amd64.deb
+ ab66c3d1d4eda1e2e13d5577efbe7257f5783236 14616 gambas2-gb-gui_2.6-2_amd64.deb
+ 96a1e4c87193f7755bae84545d91af0d89586346 18442 gambas2-gb-pdf_2.6-2_amd64.deb
+ d70ca6b35864eeae4333adf0d8eee228def5716f 33302 gambas2-gb-image_2.6-2_amd64.deb
+ e3d1cd99e9f402af39bb38d88304c6c3718e8331 26470 gambas2-gb-net_2.6-2_amd64.deb
+ ecb8dbf65121334f8cc384c4541a395279bdd5f2 18832 gambas2-gb-net-curl_2.6-2_amd64.deb
+ 78adf29889fec6d923fd1eee4fdf8c5e61af327f 18692 gambas2-gb-net-smtp_2.6-2_amd64.deb
+ dc040ce83f9da251159fc92887d6961ad6727593 33330 gambas2-gb-opengl_2.6-2_amd64.deb
+ e6902e308b36b9f1621d0710e15e8eb9b6325c95 9882 gambas2-gb-pcre_2.6-2_amd64.deb
+ 4c4f06d4ae1b06c12e1cc021be38d6c04df437a3 256444 gambas2-gb-qt_2.6-2_amd64.deb
+ 3d6c216efb54e7ff5577841155fea972c921441e 63498 gambas2-gb-qt-ext_2.6-2_amd64.deb
+ 9085b59c842f704742eed997e9f0c4eb4375d6a5 36700 gambas2-gb-qt-kde_2.6-2_amd64.deb
+ 2f272b795d0adc617cda6ce1bda0d5409657ba9b 14824 gambas2-gb-qt-kde-html_2.6-2_amd64.deb
+ 51793577349af175f472d389560632a4c7fbb39a 14664 gambas2-gb-qt-opengl_2.6-2_amd64.deb
+ 61a2f7dbf61e08ca806d07384ed6155aa171bad0 44914 gambas2-gb-sdl_2.6-2_amd64.deb
+ baaa72ec47a9ee54d6113f09ff75405f867a2859 14296 gambas2-gb-v4l_2.6-2_amd64.deb
+ 2941565ff970cd323ffabbdc486d18b3fe691ba6 10032 gambas2-gb-vb_2.6-2_amd64.deb
+ 7a3db1d6c84ebe7d632af2fd89e042e728a14aaa 18026 gambas2-gb-xml_2.6-2_amd64.deb
+ d40d156832517256fcba2b83430cc74fa46901b1 21874 gambas2-gb-xml-rpc_2.6-2_amd64.deb
+ f0c485ca9b5e90920f1e8948af7f2fa2a8a8cc00 7928 gambas2-gb-xml-xslt_2.6-2_amd64.deb
+ e3ae85d10d96067a3643ccc542b1f15d696d71bc 1096352 gambas2-ide_2.6-2_amd64.deb
+ d270b2e041742c56fb78cbdd7031cf717eee38e6 188430 gambas2-runtime_2.6-2_amd64.deb
+ bb65780db9ef4a67f17211f3e86494bda4652a93 18354 gambas2-script_2.6-2_amd64.deb
+Checksums-Sha256: 
+ 529f91cd2dcc8075bb16a676513c5dbdfd9c6c638667fb5096b386d135543736 2401 gambas2_2.6-2.dsc
+ 9ff355d75d9cdfaa08a3c20a8f191b509c689b1cefc5ea4dc84f7ade39c9700a 15391 gambas2_2.6-2.diff.gz
+ 554c9ea00c368a4c33b0d3c39a694a39efd6fd2b715e053d9ff308efe5ca39e7 5442 gambas2_2.6-2_all.deb
+ baa65837898b7ab801424efe942f764eb5631ae91e67c5802f77bfa5c1edfe56 9233402 gambas2-doc_2.6-2_all.deb
+ 6841257c1de658a9f8c6da17900cba36702e7c16ebceb4b12715b105ae28dffc 33802 gambas2-gb-chart_2.6-2_all.deb
+ 709f4a5e851f6188664f7b638ee99c9b376e6f1303b0440cbb550be0ca744166 36610 gambas2-gb-db-form_2.6-2_all.deb
+ 846d85cdb52abb1395eabc7172d0cafa112b24fb56223ac1a6af89b41194effa 812766 gambas2-gb-form_2.6-2_all.deb
+ 31c7fafa6e96577ebc63b9223c394d6076402721882cd459aa601cc4d6c52351 9164 gambas2-gb-form-dialog_2.6-2_all.deb
+ 8ba28fc597320f78b6c28c87290a44479c2ab294678a2f4a823e8dfbb4d6309d 19558 gambas2-gb-form-mdi_2.6-2_all.deb
+ 037108bd903098fa9f1de160fd63e7e7caa4b418bfd2c75e0aada25af4b8595b 20842 gambas2-gb-info_2.6-2_all.deb
+ 6581a8a8b30a6be8f34b5c14255adb2123f11ad1b5e468315763c8c6d552a665 53216 gambas2-gb-report_2.6-2_all.deb
+ 7e74c3f5c2051232691a07ce94da37ebb90d6557192c4691b695f2529d199b55 9776 gambas2-gb-settings_2.6-2_all.deb
+ 5c3ad2804dee31d8912456137eee44b9bcdbd83f4aa05be09583cd53f88536da 15238 gambas2-gb-web_2.6-2_all.deb
+ c6173b1746497fab212d34c766f9e46f6dcb90906a3087e4265404dfe2a4b88f 77528 gambas2-dev_2.6-2_amd64.deb
+ 463735bb6afaae7804beb0ecb38f8b9881cde18338718abb6aa0b97b18ac4199 9506 gambas2-gb-compress_2.6-2_amd64.deb
+ 16f98887474bd94877f56b5c497232653be67295db6c843d4e6b881d5cacc625 9612 gambas2-gb-compress-bzlib2_2.6-2_amd64.deb
+ c6b1025fd53863691b8d9608c501f38eb92f40eb3e272210fa86453b163f42f8 9188 gambas2-gb-compress-zlib_2.6-2_amd64.deb
+ d66d53219246ead3c1ba7938bbc293e2949769d248367b1849bad52539369efa 8558 gambas2-gb-crypt_2.6-2_amd64.deb
+ 14c3db91b288fd661cdb72b4901d3339514a4517a96d413c983f4037284d8c4f 25950 gambas2-gb-db_2.6-2_amd64.deb
+ de8a3e970ab46aafff7151ed3279dbaa8936161bba269523b832dbf224da09a6 142916 gambas2-gb-db-firebird_2.6-2_amd64.deb
+ 1b7f84f6cd977af6e40cd8c534623532dd5f843c62cdcca6a971be2196436205 17174 gambas2-gb-db-mysql_2.6-2_amd64.deb
+ 4093a8950416644c5ebccf422fe300e0613ff71d43ae4a6a1b0a277eb81e62e8 15700 gambas2-gb-db-odbc_2.6-2_amd64.deb
+ 7d1a3e937923bba3072321fe1459b80f0671bc33a466accecd57fe42352efa22 15706 gambas2-gb-db-postgresql_2.6-2_amd64.deb
+ 6d63d33763415c1f8d614cf6bf9b7f101c549212810fd097670e778f0dc27567 44408 gambas2-gb-db-sqlite2_2.6-2_amd64.deb
+ a56b214d703acfc4c50e53878f6a17163c6f79883d7ea5a7c4cef23ccaa13ecd 45984 gambas2-gb-db-sqlite_2.6-2_amd64.deb
+ c3669953d79d6a73dfed8790ef6f5d9c7e2dc64e37e1a07cc072f1f61f03b52c 43484 gambas2-gb-desktop_2.6-2_amd64.deb
+ 0e61d2f0d6d910455ba513badff8f5d025b6cfe303d121109691ca9d6374d46b 228064 gambas2-gb-gtk_2.6-2_amd64.deb
+ 5787e92820cd58aec375d2e885e2f193c3b04cd3f4d359c1852dd39f799cc04a 13108 gambas2-gb-gtk-ext_2.6-2_amd64.deb
+ d778bf6cd361101ce1a1995f5bc9e2a9adc850ceca6fa255506fa93b35784ee5 9018 gambas2-gb-gtk-svg_2.6-2_amd64.deb
+ d1d1c9a943dc8cbde15ac06a11ce9ea2d1998b24ee6f8ef8ba6e6cb60d609e74 14616 gambas2-gb-gui_2.6-2_amd64.deb
+ c367c4fbd03da37849a908c7f8880d9328c90daaf190a9ff1e0fd29dac386f73 18442 gambas2-gb-pdf_2.6-2_amd64.deb
+ 4b874c8b88165473a7e249903848712dbaa275e73f6fd46d383d3056469a277d 33302 gambas2-gb-image_2.6-2_amd64.deb
+ 6a55e0a7a5d6e49b5786424a9fec8462cb763b053767a41dd3153b16ea432a4c 26470 gambas2-gb-net_2.6-2_amd64.deb
+ cf31fa64069761b51558cfbe467f63de216f7d2d4da68b353cc43579d1993573 18832 gambas2-gb-net-curl_2.6-2_amd64.deb
+ 2ef03488c2d263fbb4864003ed578fed9924fb824f29e09719787112d6f774da 18692 gambas2-gb-net-smtp_2.6-2_amd64.deb
+ 33770392384f52e16894b71aaee03a4d62bc36a9001c9c0e21ad86849b09d8e2 33330 gambas2-gb-opengl_2.6-2_amd64.deb
+ 005701a96b6c8939170a03ed6cb129e7f505974fa8818166c0b53e2ea3b23021 9882 gambas2-gb-pcre_2.6-2_amd64.deb
+ 1e3931ca81da86e301c36a5893a22a163633488da3c86568562a1969f31eea0e 256444 gambas2-gb-qt_2.6-2_amd64.deb
+ b6f6d06d53219a4fcd87eedbacb26e9d3ea88062ea77349ae42e0695223bf90f 63498 gambas2-gb-qt-ext_2.6-2_amd64.deb
+ c8f2e42c3440b0b520541031b19fe0d3b58c32cd7d17889a3ed497f9ee354046 36700 gambas2-gb-qt-kde_2.6-2_amd64.deb
+ b991558aede0de658e47ca0609a1a943213888771e3b851b4c1b87786b59aebc 14824 gambas2-gb-qt-kde-html_2.6-2_amd64.deb
+ 8e8566bcc1638fc21fb894a3618ecc0e5629522b70e09d6e89d852253394d631 14664 gambas2-gb-qt-opengl_2.6-2_amd64.deb
+ eecfe1d97f71f36383ed6ef950a9781767924ee7ca472d4768edd5038806f7d3 44914 gambas2-gb-sdl_2.6-2_amd64.deb
+ 12a448e537a3cd155109a993ec0282f28cc63c070070fdd58f7f9ca64d9817dc 14296 gambas2-gb-v4l_2.6-2_amd64.deb
+ c6abac550a64dd71f88b4b07b628c8b1cdfa7a8e20cf06936e30675f3b345d40 10032 gambas2-gb-vb_2.6-2_amd64.deb
+ af1b01448a3786f5cdb7174ca2e5a5eeeb7a16cf83706379e3bd8e85a568e58d 18026 gambas2-gb-xml_2.6-2_amd64.deb
+ a59279d61b72162448278bfa0dfbc7b0a530d413e3d4adef09c3ae3079e4ee15 21874 gambas2-gb-xml-rpc_2.6-2_amd64.deb
+ 035e34960bb61b5ea1f000d09482df304475d577cc238aaa49e52bd73ad81152 7928 gambas2-gb-xml-xslt_2.6-2_amd64.deb
+ 1076d904cdb005b8f8e8eeb6b4470f7aa222ae7f24e93bbef8a7b837ca2e3694 1096352 gambas2-ide_2.6-2_amd64.deb
+ 76fd60de28ebc2f48535b91a1dbb0d5b8cc55526965c08c58c87578986bc54b0 188430 gambas2-runtime_2.6-2_amd64.deb
+ b1d9e5c647e026d63eb6477e34168282d725dec5f35fd6198adbc406cff35073 18354 gambas2-script_2.6-2_amd64.deb
+Files: 
+ 4aeb96d70d570c2f44f43b6671f97318 2401 devel optional gambas2_2.6-2.dsc
+ c8da9cfbb245712b704e82311e321cfc 15391 devel optional gambas2_2.6-2.diff.gz
+ 4960d5444bc08e3c7f7d6254e22565da 5442 devel optional gambas2_2.6-2_all.deb
+ 5a7edda7db612f09db2e936442713df9 9233402 doc optional gambas2-doc_2.6-2_all.deb
+ b7fda181c2e58c297d3c61f4aa1b663e 33802 libdevel optional gambas2-gb-chart_2.6-2_all.deb
+ 11b25fe5af3de2dfaccc16e22bf34d51 36610 libdevel optional gambas2-gb-db-form_2.6-2_all.deb
+ a6ea0f9e102e0c225a4dadff429aff58 812766 libdevel optional gambas2-gb-form_2.6-2_all.deb
+ 0019911272510f3915c9f534e3bd034b 9164 libdevel optional gambas2-gb-form-dialog_2.6-2_all.deb
+ b752ae8e3417ba5b83c20e10aec1ae00 19558 libdevel optional gambas2-gb-form-mdi_2.6-2_all.deb
+ 2551951c56473fa5dcd6b97a1007d978 20842 libdevel optional gambas2-gb-info_2.6-2_all.deb
+ 94f9eb5fe6b0707e84c3188d49bd67cc 53216 libdevel optional gambas2-gb-report_2.6-2_all.deb
+ 802965f2a76bd5a51812d52be51582b3 9776 libdevel optional gambas2-gb-settings_2.6-2_all.deb
+ 9686dfa420c218826f35829c00764afb 15238 libdevel optional gambas2-gb-web_2.6-2_all.deb
+ d6e60de4950323296664cba7ab4455a4 77528 devel optional gambas2-dev_2.6-2_amd64.deb
+ 0a800e04bcf096faf2d0e0074570532f 9506 libdevel optional gambas2-gb-compress_2.6-2_amd64.deb
+ b1537a99cf9217098be81c175564e19b 9612 libdevel optional gambas2-gb-compress-bzlib2_2.6-2_amd64.deb
+ 6c5fcb4b2357179c9d0e44be06f02bc7 9188 libdevel optional gambas2-gb-compress-zlib_2.6-2_amd64.deb
+ 47d32d8e7fce329c9ba7d41fc4372109 8558 libdevel optional gambas2-gb-crypt_2.6-2_amd64.deb
+ ff0d4562b16ece1b8f83713fa782bcaa 25950 libdevel optional gambas2-gb-db_2.6-2_amd64.deb
+ 46c1aabb5d52fab19d7db80167f93db2 142916 libdevel optional gambas2-gb-db-firebird_2.6-2_amd64.deb
+ 79633cd49f8ddf48540a3948c0bf52ce 17174 libdevel optional gambas2-gb-db-mysql_2.6-2_amd64.deb
+ 4e0d1d97c2865dfa3ff50ba61b384c5a 15700 libdevel optional gambas2-gb-db-odbc_2.6-2_amd64.deb
+ d04bfd04d07f056ec3d9c1a8d96b05e2 15706 libdevel optional gambas2-gb-db-postgresql_2.6-2_amd64.deb
+ aa530aaa57c7f353e32fb92280dbf37d 44408 libdevel optional gambas2-gb-db-sqlite2_2.6-2_amd64.deb
+ 959b16a67de71c7c7a48d642f889fbdb 45984 libdevel optional gambas2-gb-db-sqlite_2.6-2_amd64.deb
+ ef5254dd5ddbc0d0c784bc3689c26a8f 43484 libdevel optional gambas2-gb-desktop_2.6-2_amd64.deb
+ 1117c44e0d215f136321f44d05703455 228064 libdevel optional gambas2-gb-gtk_2.6-2_amd64.deb
+ 3af9c868f967bb08d7630c60aab89fbd 13108 libdevel optional gambas2-gb-gtk-ext_2.6-2_amd64.deb
+ 26d5f8963469f011be922ed320e94608 9018 libdevel optional gambas2-gb-gtk-svg_2.6-2_amd64.deb
+ e80630abc98c97e12d8237b7239cc4c1 14616 libdevel optional gambas2-gb-gui_2.6-2_amd64.deb
+ ccfa2eafdb9b51c97bad17473538bfc3 18442 libdevel optional gambas2-gb-pdf_2.6-2_amd64.deb
+ 88e8afa2485b897959876a3bebc01357 33302 libdevel optional gambas2-gb-image_2.6-2_amd64.deb
+ c6a98cd262ba52d9076d1edf581ad9d2 26470 libdevel optional gambas2-gb-net_2.6-2_amd64.deb
+ 4e35eae7af6b27f42a8071aeb3ab2cf1 18832 libdevel optional gambas2-gb-net-curl_2.6-2_amd64.deb
+ 8b779f40ba7ed1065511d3875161d227 18692 libdevel optional gambas2-gb-net-smtp_2.6-2_amd64.deb
+ fb78dbf491e8b2a448628d84f996f347 33330 libdevel optional gambas2-gb-opengl_2.6-2_amd64.deb
+ 630d8a6bd2922505d28becb86c9ff804 9882 libdevel optional gambas2-gb-pcre_2.6-2_amd64.deb
+ ac53650fe082977f37d25cbe4d34af47 256444 libdevel optional gambas2-gb-qt_2.6-2_amd64.deb
+ 6b8be05aad6af94aae2cd5bfe1c168f8 63498 libdevel optional gambas2-gb-qt-ext_2.6-2_amd64.deb
+ 20e8a57e23597b03b8727105ea8f5d03 36700 kde optional gambas2-gb-qt-kde_2.6-2_amd64.deb
+ 8dac2d08018999bb8e127e033aa390e9 14824 kde optional gambas2-gb-qt-kde-html_2.6-2_amd64.deb
+ b50d6b5249499712a78f65b6d09cc80b 14664 libdevel optional gambas2-gb-qt-opengl_2.6-2_amd64.deb
+ d0888b6102b3fab58160a55bc1efffb1 44914 libdevel optional gambas2-gb-sdl_2.6-2_amd64.deb
+ af262fc362ae306c443c77125f2342dc 14296 libdevel optional gambas2-gb-v4l_2.6-2_amd64.deb
+ 53be301cc012c74a26938f1370e4a61a 10032 libdevel optional gambas2-gb-vb_2.6-2_amd64.deb
+ 71cee0304b3ea6cf35cd107556e0f0d0 18026 libdevel optional gambas2-gb-xml_2.6-2_amd64.deb
+ 27866cbdd8e1e88d121db9bb105c8cde 21874 libdevel optional gambas2-gb-xml-rpc_2.6-2_amd64.deb
+ 96342267b1c97fba2f808a9aba7e1afd 7928 libdevel optional gambas2-gb-xml-xslt_2.6-2_amd64.deb
+ b22941c03f53f75d2294632deef526cf 1096352 devel optional gambas2-ide_2.6-2_amd64.deb
+ daa8623d091ca151e9c4a76aa4822c0e 188430 libdevel optional gambas2-runtime_2.6-2_amd64.deb
+ b74c89ce64a7fd9467daa16c724e6d41 18354 libdevel optional gambas2-script_2.6-2_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.6 (GNU/Linux)
+
+iD8DBQFIOoIhmqVR2WapDeIRAknPAKCGijebQkUkYXwunTdVTJOPT4f8VgCdH/K1
+1/tQcCYpEdwsZUU8ymZxVM8=
+=0Y72
+-----END PGP SIGNATURE-----
+
+
+
+
+
