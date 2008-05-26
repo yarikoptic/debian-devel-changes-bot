@@ -44,7 +44,8 @@ def add_tests(testdir, parser, expected_type, test=lambda x: bool(x)):
                 print "Exception when parsing %s" % filename
                 raise
 
-            self.assertEqual(type(msg), expected_type, "%s did not match with its parser")
+            self.assertEqual(type(msg), expected_type,
+                "%s did not match with its parser" % filename)
             self.assert_(test(msg), "%s did not pass test" % filename)
 
             if msg:
