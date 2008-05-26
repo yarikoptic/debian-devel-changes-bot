@@ -53,3 +53,5 @@ Installation
   * Configure the bot to start on bootup:
 
       @reboot supybot --daemon $SOURCE_DIR/bot-config/<conffile>.conf
+
+  * (Optional) Disable spam checking for messages sent to the bot
