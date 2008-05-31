@@ -78,6 +78,13 @@ class TestMailParserAcceptedUpload(unittest.TestCase):
         self.assert_(msg)
         self.assertEqual(msg.by, u'Gonéri Le Bouder <a@b.com>')
 
+    def testUrgencyCase(self):
+        self.body[10] = u'Urgency: HIGH'
+
+        msg = p.parse(self.headers, self.body)
+        self.assert_(msg)
+        self.assertEqual(msg.urgency, 'high')
+
     def testFixtures(self):
         from glob import glob
 

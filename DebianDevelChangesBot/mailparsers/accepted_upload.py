@@ -60,4 +60,6 @@ class AcceptedUploadParser(MailParser):
         except ValueError:
             return
 
+        msg.urgency = msg.urgency.lower()
+
         return msg
