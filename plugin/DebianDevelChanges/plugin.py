@@ -111,7 +111,7 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
                         schedule.removeEvent(event_name)
                     except KeyError:
                         pass
-                    schedule.addEvent(lambda: self._update_topic(channel),
+                    schedule.addEvent(lambda channel=channel: self._update_topic(channel),
                         time.time() + 60, event_name)
         finally:
             self.topic_lock.release()
