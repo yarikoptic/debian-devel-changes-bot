@@ -103,7 +103,7 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
                         new_topic = rewrite_topic(new_topic, prefix, values[callback])
 
                 if topic != new_topic:
-                    log.info("Queueing change of topic to '%s'" % new_topic)
+                    log.info("Queueing change of topic in #%s to '%s'" % (channel, new_topic))
                     self.queued_topics[channel] = new_topic
 
                     event_name = '%s_topic'
@@ -121,7 +121,7 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
         try:
             try:
                 new_topic = self.queued_topics[channel]
-                log.info("Changing topic to '%s'" % new_topic)
+                log.info("Changing topic in #%s to '%s'" % (channel, new_topic))
                 self.irc.queueMsg(supybot.ircmsgs.topic(channel, new_topic))
             except KeyError:
                 pass
