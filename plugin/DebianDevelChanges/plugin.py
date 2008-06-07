@@ -119,9 +119,12 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
     def _update_topic(self, channel):
         self.topic_lock.acquire()
         try:
-            new_topic = self.queued_topics[channel]
-            log.info("Changing topic to '%s'" % new_topic)
-            self.irc.queueMsg(supybot.ircmsgs.topic(channel, new_topic))
+            try:
+                new_topic = self.queued_topics[channel]
+                log.info("Changing topic to '%s'" % new_topic)
+                self.irc.queueMsg(supybot.ircmsgs.topic(channel, new_topic))
+            except KeyError:
+                pass
         finally:
             self.topic_lock.release()
 
