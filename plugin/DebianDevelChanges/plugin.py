@@ -149,18 +149,21 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
     update = wrap(update)
 
     def madison(self, irc, msg, args, package):
-        lines = madison(package)
-        if not lines:
-            irc.reply('Did not get a response -- is "%s" a valid package?' % package)
-            return
+        try:
+            lines = madison(package)
+            if not lines:
+                irc.reply('Did not get a response -- is "%s" a valid package?' % package)
+                return
 
-        field_styles = ('package', 'version', 'distribution', 'section')
-        for line in lines:
-            out = []
-            fields = line.strip().split('|', len(field_styles))
-            for style, data in zip(field_styles, fields):
-                out.append('[%s]%s' % (style, data))
-            irc.reply(colourise('[reset]|'.join(out)))
+            field_styles = ('package', 'version', 'distribution', 'section')
+            for line in lines:
+                out = []
+                fields = line.strip().split('|', len(field_styles))
+                for style, data in zip(field_styles, fields):
+                    out.append('[%s]%s' % (style, data))
+                irc.reply(colourise('[reset]|'.join(out)))
+        except Exception:
+            irc.reply("Error: %s" % e.message)
     madison = wrap(madison, ['text'])
 
     def bug(self, irc, msg, args, bug_string):
@@ -168,10 +171,10 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
             msg = bug_synopsis(bug_string)
             if msg:
                 irc.reply(colourise(msg.for_irc()))
-        except BugExceptions.InvalidBugIdError, e:
-            irc.reply(e)
         except ValueError:
             irc.reply('Could not parse bug number')
+        except Exception:
+            irc.reply("Error: %s" % e.message)
 
     bug = wrap(bug, ['text'])
 
