@@ -29,7 +29,7 @@ Resent-From: OHURA Makoto <ohura@debian.org>
 Resent-To: debian-bugs-dist@lists.debian.org
 Resent-Date: Sun, 20 Apr 2008 11:39:03 +0000
 Resent-Message-ID: <handler.471369.B471369.12086913704124@bugs.debian.org>
-X-Debian-PR-Message: report 471369
+X-Debian-PR-Message: followup 471369
 X-Debian-PR-Package: pgf
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: pgf

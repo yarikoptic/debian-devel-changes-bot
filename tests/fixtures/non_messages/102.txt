@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Ludovic Rousseau <rousseau@debian.org>
 Resent-Date: Sun, 20 Apr 2008 12:57:03 +0000
 Resent-Message-ID: <handler.476483.B476483.120869601211490@bugs.debian.org>
-X-Debian-PR-Message: report 476483
+X-Debian-PR-Message: followup 476483
 X-Debian-PR-Package: libpcsclite1
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: pcsc-lite

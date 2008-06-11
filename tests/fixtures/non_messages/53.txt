@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: gregor herrmann <gregor+debian@comodo.priv.at>
 Resent-Date: Sun, 20 Apr 2008 17:21:02 +0000
 Resent-Message-ID: <handler.389068.B389068.120871191026301@bugs.debian.org>
-X-Debian-PR-Message: report 389068
+X-Debian-PR-Message: followup 389068
 X-Debian-PR-Package: jabref
 X-Debian-PR-Keywords: patch
 X-Debian-PR-Source: jabref

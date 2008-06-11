@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Shaun Jackman <sjackman@debian.org>
 Resent-Date: Sun, 20 Apr 2008 19:48:01 +0000
 Resent-Message-ID: <handler.474738.B474738.12087207276645@bugs.debian.org>
-X-Debian-PR-Message: report 474738
+X-Debian-PR-Message: followup 474738
 X-Debian-PR-Package: azureus
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: azureus

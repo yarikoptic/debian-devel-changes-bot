@@ -28,7 +28,7 @@ Resent-From: Michael Stone <mstone@debian.org>
 Resent-To: debian-bugs-dist@lists.debian.org
 Resent-Date: Sun, 20 Apr 2008 14:09:05 +0000
 Resent-Message-ID: <handler.476838.B476838.120870037520971@bugs.debian.org>
-X-Debian-PR-Message: report 476838
+X-Debian-PR-Message: followup 476838
 X-Debian-PR-Package: coreutils
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: coreutils

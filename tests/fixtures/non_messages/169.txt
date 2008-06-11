@@ -28,7 +28,7 @@ Resent-From: David Bremner <bremner@unb.ca>
 Resent-To: debian-bugs-dist@lists.debian.org
 Resent-Date: Sun, 20 Apr 2008 07:06:02 +0000
 Resent-Message-ID: <handler.476021.B476021.12086750008527@bugs.debian.org>
-X-Debian-PR-Message: report 476021
+X-Debian-PR-Message: followup 476021
 X-Debian-PR-Package: sketch
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: sketch

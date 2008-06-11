@@ -28,7 +28,7 @@ Resent-From: Joey Hess <joeyh@debian.org>
 Resent-To: debian-bugs-dist@lists.debian.org
 Resent-Date: Sun, 20 Apr 2008 19:03:07 +0000
 Resent-Message-ID: <handler.476806.B476806.120871801721141@bugs.debian.org>
-X-Debian-PR-Message: report 476806
+X-Debian-PR-Message: followup 476806
 X-Debian-PR-Package: archivemail
 X-Debian-PR-Keywords: patch
 X-Debian-PR-Source: archivemail

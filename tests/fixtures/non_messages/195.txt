@@ -28,7 +28,7 @@ Resent-From: Bart Samwel <bart@samwel.tk>
 Resent-To: debian-bugs-dist@lists.debian.org
 Resent-Date: Sun, 20 Apr 2008 19:06:04 +0000
 Resent-Message-ID: <handler.476984.B476984.12087183003351@bugs.debian.org>
-X-Debian-PR-Message: report 476984
+X-Debian-PR-Message: followup 476984
 X-Debian-PR-Package: acpi-support
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: acpi-support

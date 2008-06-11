@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Emmanuel Lacour <elacour@home-dn.net>
 Resent-Date: Sun, 20 Apr 2008 13:48:03 +0000
 Resent-Message-ID: <handler.475431.B475431.120869908714281@bugs.debian.org>
-X-Debian-PR-Message: report 475431
+X-Debian-PR-Message: followup 475431
 X-Debian-PR-Package: suphp
 X-Debian-PR-Keywords: security
 Received: via spool by 475431-submit@bugs.debian.org id=B475431.120869908714281

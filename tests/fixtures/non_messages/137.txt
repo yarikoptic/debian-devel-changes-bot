@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Guido Guenther <agx@sigxcpu.org>
 Resent-Date: Sun, 20 Apr 2008 10:48:02 +0000
 Resent-Message-ID: <handler.476940.B476940.120868841427399@bugs.debian.org>
-X-Debian-PR-Message: report 476940
+X-Debian-PR-Message: followup 476940
 X-Debian-PR-Package: python-kerberos
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: pykerberos

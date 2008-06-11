@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Debian OpenOffice Team <debian-openoffice@lists.debian.org>
 Resent-Date: Sun, 20 Apr 2008 15:45:10 +0000
 Resent-Message-ID: <handler.471861.B471861.12087059753454@bugs.debian.org>
-X-Debian-PR-Message: report 471861
+X-Debian-PR-Message: followup 471861
 X-Debian-PR-Package: openoffice.org-impress
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: openoffice.org

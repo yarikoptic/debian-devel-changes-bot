@@ -28,7 +28,7 @@ Resent-From: Daniel Burrows <dburrows@debian.org>
 Resent-To: debian-bugs-dist@lists.debian.org
 Resent-Date: Sun, 20 Apr 2008 15:33:04 +0000
 Resent-Message-ID: <handler.476835.B476835.120870536618897@bugs.debian.org>
-X-Debian-PR-Message: report 476835
+X-Debian-PR-Message: followup 476835
 X-Debian-PR-Package: aptitude
 X-Debian-PR-Keywords: patch
 X-Debian-PR-Source: aptitude

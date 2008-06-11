@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Rob Browning <rlb@defaultvalue.org>
 Resent-Date: Sun, 20 Apr 2008 13:42:03 +0000
 Resent-Message-ID: <handler.476931.B476931.1208698792860@bugs.debian.org>
-X-Debian-PR-Message: report 476931
+X-Debian-PR-Message: followup 476931
 X-Debian-PR-Package: emacs22
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: emacs22

@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Debian VIM Maintainers <pkg-vim-maintainers@lists.alioth.debian.org>
 Resent-Date: Sun, 20 Apr 2008 14:57:03 +0000
 Resent-Message-ID: <handler.473744.B473744.1208703263827@bugs.debian.org>
-X-Debian-PR-Message: report 473744
+X-Debian-PR-Message: followup 473744
 X-Debian-PR-Package: vim-scripts
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: vim-scripts

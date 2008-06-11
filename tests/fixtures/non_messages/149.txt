@@ -28,7 +28,7 @@ Resent-From: Julien BLACHE <jblache@debian.org>
 Resent-To: debian-bugs-dist@lists.debian.org
 Resent-Date: Sun, 20 Apr 2008 18:57:02 +0000
 Resent-Message-ID: <handler.476468.B476468.120871764723352@bugs.debian.org>
-X-Debian-PR-Message: report 476468
+X-Debian-PR-Message: followup 476468
 X-Debian-PR-Package: libsane
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: sane-backends

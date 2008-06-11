@@ -28,7 +28,7 @@ Resent-From: Daniel Burrows <dburrows@debian.org>
 Resent-To: debian-bugs-dist@lists.debian.org
 Resent-Date: Sun, 20 Apr 2008 15:33:02 +0000
 Resent-Message-ID: <handler.476721.B476721.120870536518861@bugs.debian.org>
-X-Debian-PR-Message: report 476721
+X-Debian-PR-Message: followup 476721
 X-Debian-PR-Package: aptitude
 X-Debian-PR-Keywords: unreproducible
 X-Debian-PR-Source: aptitude

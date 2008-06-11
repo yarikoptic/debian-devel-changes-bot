@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Debian CLI Applications Team <pkg-cli-apps-team@lists.alioth.debian.org>
 Resent-Date: Sun, 20 Apr 2008 16:18:01 +0000
 Resent-Message-ID: <handler.476610.B476610.120870819723071@bugs.debian.org>
-X-Debian-PR-Message: report 476610
+X-Debian-PR-Message: followup 476610
 X-Debian-PR-Package: beagle
 X-Debian-PR-Keywords: confirmed
 X-Debian-PR-Source: beagle

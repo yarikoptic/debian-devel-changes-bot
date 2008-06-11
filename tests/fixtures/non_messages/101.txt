@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Debian Mirrors Team <mirrors@debian.org>
 Resent-Date: Sun, 20 Apr 2008 09:27:08 +0000
 Resent-Message-ID: <handler.476906.B476906.120868345913179@bugs.debian.org>
-X-Debian-PR-Message: report 476906
+X-Debian-PR-Message: followup 476906
 X-Debian-PR-Package: mirrors
 X-Debian-PR-Keywords: moreinfo
 Received: via spool by 476906-submit@bugs.debian.org id=B476906.120868345913179

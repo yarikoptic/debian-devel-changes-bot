@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Debian vrms Maintainers <debian-vrms@lists.gag.com>
 Resent-Date: Sun, 20 Apr 2008 15:50:03 +0000
 Resent-Message-ID: <handler.160478.B160478.120870615118480@bugs.debian.org>
-X-Debian-PR-Message: report 160478
+X-Debian-PR-Message: followup 160478
 X-Debian-PR-Package: vrms
 X-Debian-PR-Keywords: patch
 X-Debian-PR-Source: vrms

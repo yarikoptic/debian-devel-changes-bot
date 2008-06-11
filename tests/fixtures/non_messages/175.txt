@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Sandro Tosi <matrixhasu@gmail.com>, matrixhasu@gmail.com
 Resent-Date: Sun, 20 Apr 2008 17:09:25 +0000
 Resent-Message-ID: <handler.273477.B273477.120871127627888@bugs.debian.org>
-X-Debian-PR-Message: report 273477
+X-Debian-PR-Message: followup 273477
 X-Debian-PR-Package: sloccount
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: sloccount

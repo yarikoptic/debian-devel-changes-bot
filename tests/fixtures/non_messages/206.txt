@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: APT Development Team <deity@lists.debian.org>, Debian Release Team <packages@release.debian.org>
 Resent-Date: Sun, 20 Apr 2008 13:00:31 +0000
 Resent-Message-ID: <handler.476689.B476689.120869636226223@bugs.debian.org>
-X-Debian-PR-Message: report 476689
+X-Debian-PR-Message: followup 476689
 X-Debian-PR-Package: apt,debian-archive-keyring
 X-Debian-PR-Keywords: wontfix
 Received: via spool by 476689-submit@bugs.debian.org id=B476689.120869636226223

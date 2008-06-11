@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: dimka@avanto.org (Dmitry E. Oboukhov)
 Resent-Date: Sun, 20 Apr 2008 16:36:04 +0000
 Resent-Message-ID: <handler.477012.B477012.120870922818057@bugs.debian.org>
-X-Debian-PR-Message: report 477012
+X-Debian-PR-Message: followup 477012
 X-Debian-PR-Package: hedgewars
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: hedgewars

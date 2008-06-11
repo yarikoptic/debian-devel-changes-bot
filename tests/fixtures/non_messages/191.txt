@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Eric Dorland <eric@debian.org>
 Resent-Date: Sun, 20 Apr 2008 06:42:01 +0000
 Resent-Message-ID: <handler.476503.B476503.120867366618566@bugs.debian.org>
-X-Debian-PR-Message: report 476503
+X-Debian-PR-Message: followup 476503
 X-Debian-PR-Package: iceweasel
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: iceweasel

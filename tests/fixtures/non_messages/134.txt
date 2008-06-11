@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Andres Mejia <mcitadel@gmail.com>
 Resent-Date: Sun, 20 Apr 2008 16:27:05 +0000
 Resent-Message-ID: <handler.477036.B477036.12087086262013@bugs.debian.org>
-X-Debian-PR-Message: report 477036
+X-Debian-PR-Message: followup 477036
 X-Debian-PR-Package: mediatomb
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: mediatomb

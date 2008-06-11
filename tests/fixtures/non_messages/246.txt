@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: <wnpp@debian.org>, Bertrand Marc <beberking@gmail.com>
 Resent-Date: Sun, 20 Apr 2008 16:06:01 +0000
 Resent-Message-ID: <handler.476900.B476900.120870746312890@bugs.debian.org>
-X-Debian-PR-Message: report 476900
+X-Debian-PR-Message: followup 476900
 X-Debian-PR-Package: wnpp
 X-Debian-PR-Keywords: 
 Received: via spool by 476900-submit@bugs.debian.org id=B476900.120870746312890

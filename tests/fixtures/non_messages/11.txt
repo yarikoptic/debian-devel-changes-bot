@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Andrew Lee <andrew@linux.org.tw>
 Resent-Date: Sun, 20 Apr 2008 19:54:04 +0000
 Resent-Message-ID: <handler.476909.B476909.120872093721289@bugs.debian.org>
-X-Debian-PR-Message: report 476909
+X-Debian-PR-Message: followup 476909
 X-Debian-PR-Package: stardict
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: stardict

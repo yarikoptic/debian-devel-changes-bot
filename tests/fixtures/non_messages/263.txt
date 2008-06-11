@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>
 Resent-Date: Sun, 20 Apr 2008 17:33:17 +0000
 Resent-Message-ID: <handler.476996.B476996.120871260919901@bugs.debian.org>
-X-Debian-PR-Message: report 476996
+X-Debian-PR-Message: followup 476996
 X-Debian-PR-Package: openssl
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: openssl

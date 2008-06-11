@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Debian TeX Maintainers <debian-tex-maint@lists.debian.org>
 Resent-Date: Sun, 20 Apr 2008 11:54:02 +0000
 Resent-Message-ID: <handler.476954.B.120869225115911@bugs.debian.org>
-X-Debian-PR-Message: report 476954
+X-Debian-PR-Message: followup 476954
 X-Debian-PR-Package: texlive-extra-utils
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: texlive-bin

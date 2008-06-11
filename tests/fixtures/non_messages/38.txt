@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: <wnpp@debian.org>, AGOSTINI Yves <agostini@univ-metz.fr>
 Resent-Date: Sun, 20 Apr 2008 13:03:04 +0000
 Resent-Message-ID: <handler.476966.B.120869649530645@bugs.debian.org>
-X-Debian-PR-Message: report 476966
+X-Debian-PR-Message: followup 476966
 X-Debian-PR-Package: wnpp
 X-Debian-PR-Keywords: 
 Received: via spool by submit@bugs.debian.org id=B.120869649530645

@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Bdale Garbee <bdale@gag.com>
 Resent-Date: Sun, 20 Apr 2008 09:01:08 +0000
 Resent-Message-ID: <handler.475524.B475524.120868180729905@bugs.debian.org>
-X-Debian-PR-Message: report 475524
+X-Debian-PR-Message: followup 475524
 X-Debian-PR-Package: amanda-common
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: amanda

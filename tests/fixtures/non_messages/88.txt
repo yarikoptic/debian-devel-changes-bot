@@ -28,7 +28,7 @@ Resent-From: Josselin Mouette <joss@debian.org>
 Resent-To: debian-bugs-dist@lists.debian.org
 Resent-Date: Sun, 20 Apr 2008 09:45:07 +0000
 Resent-Message-ID: <handler.474630.B474630.12086845787393@bugs.debian.org>
-X-Debian-PR-Message: report 474630
+X-Debian-PR-Message: followup 474630
 X-Debian-PR-Package: python-support
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: python-support

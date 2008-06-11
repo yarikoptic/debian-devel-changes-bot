@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Pontus Ullgren <pontus@ullgren.com>
 Resent-Date: Sun, 20 Apr 2008 10:21:04 +0000
 Resent-Message-ID: <handler.342632.B342632.120868681031622@bugs.debian.org>
-X-Debian-PR-Message: report 342632
+X-Debian-PR-Message: followup 342632
 X-Debian-PR-Package: php-elisp
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: php-elisp

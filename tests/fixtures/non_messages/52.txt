@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Debian GCC Maintainers <debian-gcc@lists.debian.org>
 Resent-Date: Sun, 20 Apr 2008 17:06:02 +0000
 Resent-Message-ID: <handler.464072.B464072.120871108513017@bugs.debian.org>
-X-Debian-PR-Message: report 464072
+X-Debian-PR-Message: followup 464072
 X-Debian-PR-Package: libgomp1
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: gcc-4.3

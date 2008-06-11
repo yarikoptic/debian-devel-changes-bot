@@ -30,7 +30,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Matthias Klose <doko@ubuntu.com>
 Resent-Date: Sun, 20 Apr 2008 02:06:02 +0000
 Resent-Message-ID: <handler.475332.B475332.120865710517935@bugs.debian.org>
-X-Debian-PR-Message: report 475332
+X-Debian-PR-Message: followup 475332
 X-Debian-PR-Package: sun-java6-plugin
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: sun-java6

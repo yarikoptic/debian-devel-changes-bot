@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Junichi Uekawa <dancer@debian.org>
 Resent-Date: Sun, 20 Apr 2008 07:45:13 +0000
 Resent-Message-ID: <handler.452664.B452664.120867656923098@bugs.debian.org>
-X-Debian-PR-Message: report 452664
+X-Debian-PR-Message: followup 452664
 X-Debian-PR-Package: cowdancer
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: cowdancer

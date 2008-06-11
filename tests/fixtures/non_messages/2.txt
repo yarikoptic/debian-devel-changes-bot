@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Debian Kernel Team <debian-kernel@lists.debian.org>
 Resent-Date: Sun, 20 Apr 2008 17:03:29 +0000
 Resent-Message-ID: <handler.436267.B436267.12087109589026@bugs.debian.org>
-X-Debian-PR-Message: report 436267
+X-Debian-PR-Message: followup 436267
 X-Debian-PR-Package: linux-2.6
 X-Debian-PR-Keywords: 
 Received: via spool by 436267-submit@bugs.debian.org id=B436267.12087109589026

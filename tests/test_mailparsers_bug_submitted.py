@@ -31,6 +31,8 @@ class TestMailParserBugSubmitted(unittest.TestCase):
             'Subject': 'Bug#123456: Bug title',
             'From': 'Submitter Name <name@t.com>',
             'List-Id': '<debian-bugs-dist.lists.debian.org>',
+            'X-Debian-PR-Message': 'report 654321',
+            'X-Debian-PR-Package': 'package-name',
         }
 
         self.body = [

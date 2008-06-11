@@ -30,7 +30,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Debian Install System Team <debian-boot@lists.debian.org>
 Resent-Date: Sun, 20 Apr 2008 18:09:02 +0000
 Resent-Message-ID: <handler.473364.B473364.120871479822020@bugs.debian.org>
-X-Debian-PR-Message: report 473364
+X-Debian-PR-Message: followup 473364
 X-Debian-PR-Package: win32-loader
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: win32-loader

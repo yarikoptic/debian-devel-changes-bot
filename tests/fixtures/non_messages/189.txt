@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Debian GCC Maintainers <debian-gcc@lists.debian.org>
 Resent-Date: Sun, 20 Apr 2008 16:21:01 +0000
 Resent-Message-ID: <handler.474644.B474644.120870826924302@bugs.debian.org>
-X-Debian-PR-Message: report 474644
+X-Debian-PR-Message: followup 474644
 X-Debian-PR-Package: libffi4-dev
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: gcc-4.3

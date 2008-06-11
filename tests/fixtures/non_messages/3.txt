@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Debian Roundcube Maintainers <pkg-roundcube-maintainers@lists.alioth.debian.org>
 Resent-Date: Sun, 20 Apr 2008 11:36:01 +0000
 Resent-Message-ID: <handler.476803.B476803.120869110321999@bugs.debian.org>
-X-Debian-PR-Message: report 476803
+X-Debian-PR-Message: followup 476803
 X-Debian-PR-Package: roundcube
 X-Debian-PR-Keywords: pending
 X-Debian-PR-Source: roundcube

@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Debian Kernel Team <debian-kernel@lists.debian.org>
 Resent-Date: Sun, 20 Apr 2008 07:48:02 +0000
 Resent-Message-ID: <handler.476890.B476890.12086774137964@bugs.debian.org>
-X-Debian-PR-Message: report 476890
+X-Debian-PR-Message: followup 476890
 X-Debian-PR-Package: linux-image-2.6.24-1-686
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: linux-2.6

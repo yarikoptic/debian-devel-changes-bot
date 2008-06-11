@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Debian X Strike Force <debian-x@lists.debian.org>
 Resent-Date: Sun, 20 Apr 2008 10:42:05 +0000
 Resent-Message-ID: <handler.476876.B476876.120868804614969@bugs.debian.org>
-X-Debian-PR-Message: report 476876
+X-Debian-PR-Message: followup 476876
 X-Debian-PR-Package: xserver-xorg-video-s3
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: xserver-xorg-video-s3

@@ -30,7 +30,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: pronovic@debian.org (Kenneth J. Pronovici)
 Resent-Date: Sun, 20 Apr 2008 16:18:03 +0000
 Resent-Message-ID: <handler.477032.B477032.120870813521772@bugs.debian.org>
-X-Debian-PR-Message: report 477032
+X-Debian-PR-Message: followup 477032
 X-Debian-PR-Package: pychecker
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: pychecker

@@ -30,7 +30,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Paul Brossier <piem@debian.org>
 Resent-Date: Sun, 20 Apr 2008 11:39:02 +0000
 Resent-Message-ID: <handler.469735.B469735.120869121528755@bugs.debian.org>
-X-Debian-PR-Message: report 469735
+X-Debian-PR-Message: followup 469735
 X-Debian-PR-Package: python-pyrex
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: pyrex

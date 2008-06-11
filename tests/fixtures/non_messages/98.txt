@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Cedric Gehin <cedric.gehin@epita.fr>
 Resent-Date: Sun, 20 Apr 2008 10:00:35 +0000
 Resent-Message-ID: <handler.476176.B476176.120868541427387@bugs.debian.org>
-X-Debian-PR-Message: report 476176
+X-Debian-PR-Message: followup 476176
 X-Debian-PR-Package: autodia
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: autodia

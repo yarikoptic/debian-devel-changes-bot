@@ -20,6 +20,10 @@ From: marc.poulhies@imag.fr (Marc =?iso-8859-1?Q?Poulhi=E8s?=)
 List-Id: <debian-bugs-dist.lists.debian.org>
 To: Debian Bug Tracking System <submit@bugs.debian.org>
 Subject: Bug#123456: gdb: gdb exits with an error on free() in glibc, "Aborted"
+X-Debian-PR-Message: report 477021
+X-Debian-PR-Package: qstardict
+X-Debian-PR-Keywords: 
+X-Debian-PR-Source: qstardict
 X-Debbugs-CC: Marc <marc@g-64brouette.rd.francetelecom.fr>
 Date: Mon, 05 May 2008 15:29:02 +0200
 Message-ID: <87fxsw98wx.fsf@ftrdmel1.rd.francetelecom.fr>

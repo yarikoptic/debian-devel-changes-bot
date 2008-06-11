@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Debian buildd-tools Developers <buildd-tools-devel@lists.alioth.debian.org>
 Resent-Date: Sun, 20 Apr 2008 10:54:05 +0000
 Resent-Message-ID: <handler.474030.B474030.12086887166236@bugs.debian.org>
-X-Debian-PR-Message: report 474030
+X-Debian-PR-Message: followup 474030
 X-Debian-PR-Package: sbuild
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: sbuild

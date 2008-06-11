@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Debian Install System Team <debian-boot@lists.debian.org>
 Resent-Date: Sun, 20 Apr 2008 01:06:01 +0000
 Resent-Message-ID: <handler.476894.B476894.12086534838311@bugs.debian.org>
-X-Debian-PR-Message: report 476894
+X-Debian-PR-Message: followup 476894
 X-Debian-PR-Package: partman-base
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: partman-base

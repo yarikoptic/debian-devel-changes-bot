@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Debian GCC Maintainers <debian-gcc@lists.debian.org>
 Resent-Date: Sun, 20 Apr 2008 12:09:08 +0000
 Resent-Message-ID: <handler.476812.B476812.120869314831055@bugs.debian.org>
-X-Debian-PR-Message: report 476812
+X-Debian-PR-Message: followup 476812
 X-Debian-PR-Package: gcc-defaults
 X-Debian-PR-Keywords: patch
 Received: via spool by 476812-submit@bugs.debian.org id=B476812.120869314831055

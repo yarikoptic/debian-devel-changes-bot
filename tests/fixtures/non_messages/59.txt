@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
 Resent-Date: Sun, 20 Apr 2008 12:54:01 +0000
 Resent-Message-ID: <handler.476943.B476943.120869598310315@bugs.debian.org>
-X-Debian-PR-Message: report 476943
+X-Debian-PR-Message: followup 476943
 X-Debian-PR-Package: glest
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: glest

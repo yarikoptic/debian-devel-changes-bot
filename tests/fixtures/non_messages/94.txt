@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Resent-Date: Sun, 20 Apr 2008 10:03:18 +0000
 Resent-Message-ID: <handler.337390.B337390.120868577715378@bugs.debian.org>
-X-Debian-PR-Message: report 337390
+X-Debian-PR-Message: followup 337390
 X-Debian-PR-Package: konqueror
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: kdebase

@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Exim4 Maintainers <pkg-exim4-maintainers@lists.alioth.debian.org>
 Resent-Date: Sun, 20 Apr 2008 18:30:06 +0000
 Resent-Message-ID: <handler.476249.B476249.120871610410041@bugs.debian.org>
-X-Debian-PR-Message: report 476249
+X-Debian-PR-Message: followup 476249
 X-Debian-PR-Package: exim4-config
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: exim4

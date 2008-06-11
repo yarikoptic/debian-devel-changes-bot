@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Sjoerd Simons <sjoerd@debian.org>, Michael Biebl <biebl@debian.org>
 Resent-Date: Sun, 20 Apr 2008 00:39:01 +0000
 Resent-Message-ID: <handler.467200.B467200.120865183723323@bugs.debian.org>
-X-Debian-PR-Message: report 467200
+X-Debian-PR-Message: followup 467200
 X-Debian-PR-Package: gnome-volume-manager,gnome-mount
 X-Debian-PR-Keywords: 
 Received: via spool by 467200-submit@bugs.debian.org id=B467200.120865183723323

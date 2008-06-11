@@ -30,7 +30,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Chess Griffin <chess@chessgriffin.com>
 Resent-Date: Sun, 20 Apr 2008 14:36:03 +0000
 Resent-Message-ID: <handler.476964.B476964.120870198727262@bugs.debian.org>
-X-Debian-PR-Message: report 476964
+X-Debian-PR-Message: followup 476964
 X-Debian-PR-Package: openbox-themes
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: openbox-themes

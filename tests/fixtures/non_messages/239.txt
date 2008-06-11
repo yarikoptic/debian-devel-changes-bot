@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: APT Development Team <deity@lists.debian.org>
 Resent-Date: Sun, 20 Apr 2008 16:51:05 +0000
 Resent-Message-ID: <handler.476817.B476817.120870988324298@bugs.debian.org>
-X-Debian-PR-Message: report 476817
+X-Debian-PR-Message: followup 476817
 X-Debian-PR-Package: apt
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: apt

@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Reinhard Tartler <siretart@tauware.de>
 Resent-Date: Sun, 20 Apr 2008 08:51:01 +0000
 Resent-Message-ID: <handler.385924.B385924.120868075426241@bugs.debian.org>
-X-Debian-PR-Message: report 385924
+X-Debian-PR-Message: followup 385924
 X-Debian-PR-Package: libxine1
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: xine-lib

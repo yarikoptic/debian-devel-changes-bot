@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
 Resent-Date: Sun, 20 Apr 2008 14:57:02 +0000
 Resent-Message-ID: <handler.472390.B472390.12087033333518@bugs.debian.org>
-X-Debian-PR-Message: report 472390
+X-Debian-PR-Message: followup 472390
 X-Debian-PR-Package: yelp
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: yelp

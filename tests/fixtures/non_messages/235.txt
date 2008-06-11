@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Marco d'Itri <md@linux.it>
 Resent-Date: Sun, 20 Apr 2008 17:09:06 +0000
 Resent-Message-ID: <handler.101607.B101607.120871130330133@bugs.debian.org>
-X-Debian-PR-Message: report 101607
+X-Debian-PR-Message: followup 101607
 X-Debian-PR-Package: rblcheck
 X-Debian-PR-Keywords: upstream wontfix
 X-Debian-PR-Source: rblcheck

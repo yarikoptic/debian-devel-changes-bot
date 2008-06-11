@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Debian Install Team <debian-boot@lists.debian.org>
 Resent-Date: Sun, 20 Apr 2008 13:45:10 +0000
 Resent-Message-ID: <handler.476897.B476897.12086989126457@bugs.debian.org>
-X-Debian-PR-Message: report 476897
+X-Debian-PR-Message: followup 476897
 X-Debian-PR-Package: installation-reports
 X-Debian-PR-Keywords: 
 Received: via spool by 476897-submit@bugs.debian.org id=B476897.12086989126457

@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Junichi Uekawa <dancer@debian.org>
 Resent-Date: Sun, 20 Apr 2008 16:57:08 +0000
 Resent-Message-ID: <handler.473175.B473175.120871047920483@bugs.debian.org>
-X-Debian-PR-Message: report 473175
+X-Debian-PR-Message: followup 473175
 X-Debian-PR-Package: apt-listbugs
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: apt-listbugs

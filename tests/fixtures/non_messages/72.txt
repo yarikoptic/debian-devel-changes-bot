@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Laszlo Boszormenyi (GCS) <gcs@debian.hu>
 Resent-Date: Sun, 20 Apr 2008 09:51:18 +0000
 Resent-Message-ID: <handler.476571.B476571.120868495022796@bugs.debian.org>
-X-Debian-PR-Message: report 476571
+X-Debian-PR-Message: followup 476571
 X-Debian-PR-Package: libneon27
 X-Debian-PR-Keywords: patch
 X-Debian-PR-Source: neon27

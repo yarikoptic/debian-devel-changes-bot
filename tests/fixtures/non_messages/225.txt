@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Ola Lundqvist <opal@debian.org>
 Resent-Date: Sun, 20 Apr 2008 18:24:03 +0000
 Resent-Message-ID: <handler.476863.B476863.120871571932259@bugs.debian.org>
-X-Debian-PR-Message: report 476863
+X-Debian-PR-Message: followup 476863
 X-Debian-PR-Package: source-highlight
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: source-highlight

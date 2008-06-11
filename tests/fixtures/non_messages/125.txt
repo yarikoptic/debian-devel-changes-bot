@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Joe Drew <drew@debian.org>
 Resent-Date: Sun, 20 Apr 2008 13:18:07 +0000
 Resent-Message-ID: <handler.466233.B466233.120869718728711@bugs.debian.org>
-X-Debian-PR-Message: report 466233
+X-Debian-PR-Message: followup 466233
 X-Debian-PR-Package: lxdoom-x11
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: lxdoom

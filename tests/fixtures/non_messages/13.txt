@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Alexander Rodin <rodin.alexander@gmail.com>
 Resent-Date: Sun, 20 Apr 2008 16:00:01 +0000
 Resent-Message-ID: <handler.477021.B477021.120870708424861@bugs.debian.org>
-X-Debian-PR-Message: report 477021
+X-Debian-PR-Message: followup 477021
 X-Debian-PR-Package: qstardict
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: qstardict

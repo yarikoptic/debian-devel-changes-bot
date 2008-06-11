@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Timo Jyrinki <timo.jyrinki@iki.fi>
 Resent-Date: Sun, 20 Apr 2008 14:36:02 +0000
 Resent-Message-ID: <handler.476821.B476821.120870198527221@bugs.debian.org>
-X-Debian-PR-Message: report 476821
+X-Debian-PR-Message: followup 476821
 X-Debian-PR-Package: openoffice.org-voikko
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: openoffice.org-voikko

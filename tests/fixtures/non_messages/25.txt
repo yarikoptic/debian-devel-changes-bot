@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Resent-Date: Sun, 20 Apr 2008 03:00:01 +0000
 Resent-Message-ID: <handler.476896.B476896.120866016311521@bugs.debian.org>
-X-Debian-PR-Message: report 476896
+X-Debian-PR-Message: followup 476896
 X-Debian-PR-Package: kdelibs4c2a
 X-Debian-PR-Keywords: fixed-upstream patch upstream
 X-Debian-PR-Source: kdelibs

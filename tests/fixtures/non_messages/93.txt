@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Sean Finney <seanius@debian.org>
 Resent-Date: Sun, 20 Apr 2008 10:30:04 +0000
 Resent-Message-ID: <handler.476946.B476946.12086873553030@bugs.debian.org>
-X-Debian-PR-Message: report 476946
+X-Debian-PR-Message: followup 476946
 X-Debian-PR-Package: dbconfig-common
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: dbconfig-common

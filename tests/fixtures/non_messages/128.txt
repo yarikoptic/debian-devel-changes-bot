@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Debian GCC Maintainers <debian-gcc@lists.debian.org>
 Resent-Date: Sun, 20 Apr 2008 16:48:02 +0000
 Resent-Message-ID: <handler.473426.B473426.120870957719035@bugs.debian.org>
-X-Debian-PR-Message: report 473426
+X-Debian-PR-Message: followup 473426
 X-Debian-PR-Package: g++-4.3
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: gcc-4.3

@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Debian Java maintainers <pkg-java-maintainers@lists.alioth.debian.org>
 Resent-Date: Sun, 20 Apr 2008 17:30:02 +0000
 Resent-Message-ID: <handler.477015.B477015.120871244011618@bugs.debian.org>
-X-Debian-PR-Message: report 477015
+X-Debian-PR-Message: followup 477015
 X-Debian-PR-Package: jmagick
 X-Debian-PR-Keywords: confirmed
 Received: via spool by 477015-submit@bugs.debian.org id=B477015.120871244011618

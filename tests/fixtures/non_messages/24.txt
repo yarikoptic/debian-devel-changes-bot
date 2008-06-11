@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Daniel Baumann <daniel@debian.org>
 Resent-Date: Sun, 20 Apr 2008 07:03:01 +0000
 Resent-Message-ID: <handler.460191.B460191.12086748314798@bugs.debian.org>
-X-Debian-PR-Message: report 460191
+X-Debian-PR-Message: followup 460191
 X-Debian-PR-Package: cdrdao
 X-Debian-PR-Keywords: patch
 X-Debian-PR-Source: cdrdao

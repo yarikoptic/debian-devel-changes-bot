@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Michael Janssen <jamuraa@debian.org>
 Resent-Date: Sun, 20 Apr 2008 20:06:05 +0000
 Resent-Message-ID: <handler.475971.B475971.120872183917979@bugs.debian.org>
-X-Debian-PR-Message: report 475971
+X-Debian-PR-Message: followup 475971
 X-Debian-PR-Package: player
 X-Debian-PR-Keywords: 
 Received: via spool by 475971-submit@bugs.debian.org id=B475971.120872183917979

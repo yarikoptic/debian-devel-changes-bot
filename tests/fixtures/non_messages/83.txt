@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Debian BOINC Maintainers <pkg-boinc-devel@lists.alioth.debian.org>
 Resent-Date: Sun, 20 Apr 2008 16:54:19 +0000
 Resent-Message-ID: <handler.476784.B476784.120871003019333@bugs.debian.org>
-X-Debian-PR-Message: report 476784
+X-Debian-PR-Message: followup 476784
 X-Debian-PR-Package: boinc-manager
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: boinc

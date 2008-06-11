@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Josselin Mouette <joss@debian.org>
 Resent-Date: Sun, 20 Apr 2008 09:33:07 +0000
 Resent-Message-ID: <handler.305471.B305471.120868357624355@bugs.debian.org>
-X-Debian-PR-Message: report 305471
+X-Debian-PR-Message: followup 305471
 X-Debian-PR-Package: gnome-session
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: gnome-session

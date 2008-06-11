@@ -28,7 +28,7 @@ Resent-From: Jan Christoph Nordholz <hesso@pool.math.tu-berlin.de>
 Resent-To: debian-bugs-dist@lists.debian.org
 Resent-Date: Sun, 20 Apr 2008 10:00:30 +0000
 Resent-Message-ID: <handler.206572.B206572.12086854564318@bugs.debian.org>
-X-Debian-PR-Message: report 206572
+X-Debian-PR-Message: followup 206572
 X-Debian-PR-Package: screen
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: screen

@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Shadow package maintainers <pkg-shadow-devel@lists.alioth.debian.org>
 Resent-Date: Sun, 20 Apr 2008 13:42:01 +0000
 Resent-Message-ID: <handler.474933.B474933.120869871230288@bugs.debian.org>
-X-Debian-PR-Message: report 474933
+X-Debian-PR-Message: followup 474933
 X-Debian-PR-Package: login
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: shadow

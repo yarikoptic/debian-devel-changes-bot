@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Python Applications Packaging Team <python-apps-team@lists.alioth.debian.org>
 Resent-Date: Sun, 20 Apr 2008 19:33:01 +0000
 Resent-Message-ID: <handler.474183.B474183.120871982820078@bugs.debian.org>
-X-Debian-PR-Message: report 474183
+X-Debian-PR-Message: followup 474183
 X-Debian-PR-Package: spe
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: spe

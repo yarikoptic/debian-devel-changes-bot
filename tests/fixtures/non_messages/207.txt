@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Matthias Klose <doko@debian.org>
 Resent-Date: Sun, 20 Apr 2008 13:36:10 +0000
 Resent-Message-ID: <handler.374452.B374452.120869854324227@bugs.debian.org>
-X-Debian-PR-Message: report 374452
+X-Debian-PR-Message: followup 374452
 X-Debian-PR-Package: bash
 X-Debian-PR-Keywords: patch
 X-Debian-PR-Source: bash

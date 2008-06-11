@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Debian Roundcube Maintainers <pkg-roundcube-maintainers@lists.alioth.debian.org>
 Resent-Date: Sun, 20 Apr 2008 10:18:02 +0000
 Resent-Message-ID: <handler.476803.B476803.120868654124716@bugs.debian.org>
-X-Debian-PR-Message: report 476803
+X-Debian-PR-Message: followup 476803
 X-Debian-PR-Package: roundcube
 X-Debian-PR-Keywords: unreproducible moreinfo
 X-Debian-PR-Source: roundcube

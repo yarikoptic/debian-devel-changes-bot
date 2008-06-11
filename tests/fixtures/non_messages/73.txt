@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Jordi Mallach <jordi@debian.org>
 Resent-Date: Sun, 20 Apr 2008 15:50:06 +0000
 Resent-Message-ID: <handler.471759.B471759.12087064012451@bugs.debian.org>
-X-Debian-PR-Message: report 471759
+X-Debian-PR-Message: followup 471759
 X-Debian-PR-Package: mailutils
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: mailutils

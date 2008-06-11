@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Brendan O'Dea <bod@debian.org>
 Resent-Date: Sun, 20 Apr 2008 19:54:01 +0000
 Resent-Message-ID: <handler.454792.B454792.120872079617993@bugs.debian.org>
-X-Debian-PR-Message: report 454792
+X-Debian-PR-Message: followup 454792
 X-Debian-PR-Package: perl
 X-Debian-PR-Keywords: etch patch
 X-Debian-PR-Source: perl

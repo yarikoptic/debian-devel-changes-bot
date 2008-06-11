@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Gerrit Pape <pape@smarden.org>
 Resent-Date: Sun, 20 Apr 2008 14:48:04 +0000
 Resent-Message-ID: <handler.476076.B476076.120870282922375@bugs.debian.org>
-X-Debian-PR-Message: report 476076
+X-Debian-PR-Message: followup 476076
 X-Debian-PR-Package: gitweb
 X-Debian-PR-Keywords: upstream
 X-Debian-PR-Source: git-core

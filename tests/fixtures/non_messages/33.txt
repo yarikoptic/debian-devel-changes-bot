@@ -28,7 +28,7 @@ Resent-From: Thomas Girard <thomas.g.girard@free.fr>
 Resent-To: debian-bugs-dist@lists.debian.org
 Resent-Date: Sun, 20 Apr 2008 08:06:08 +0000
 Resent-Message-ID: <handler.451483.B451483.120867863712405@bugs.debian.org>
-X-Debian-PR-Message: report 451483
+X-Debian-PR-Message: followup 451483
 X-Debian-PR-Package: frysk
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: frysk

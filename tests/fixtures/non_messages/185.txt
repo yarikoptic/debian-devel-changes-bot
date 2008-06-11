@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: KURASHIKI Satoru <lurdan@gmail.com>
 Resent-Date: Sun, 20 Apr 2008 10:15:02 +0000
 Resent-Message-ID: <handler.474880.B474880.120868642318404@bugs.debian.org>
-X-Debian-PR-Message: report 474880
+X-Debian-PR-Message: followup 474880
 X-Debian-PR-Package: yaskkserv
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: yaskkserv

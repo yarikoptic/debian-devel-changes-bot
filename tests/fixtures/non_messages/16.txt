@@ -30,7 +30,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Debian GCC Maintainers <debian-gcc@lists.debian.org>
 Resent-Date: Sun, 20 Apr 2008 10:03:06 +0000
 Resent-Message-ID: <handler.476645.B476645.120868571413357@bugs.debian.org>
-X-Debian-PR-Message: report 476645
+X-Debian-PR-Message: followup 476645
 X-Debian-PR-Package: gcc-4.2
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: gcc-4.2

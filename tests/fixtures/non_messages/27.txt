@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Jordi Mallach <jordi@debian.org>
 Resent-Date: Sun, 20 Apr 2008 10:24:03 +0000
 Resent-Message-ID: <handler.467292.B467292.12086868921321@bugs.debian.org>
-X-Debian-PR-Message: report 467292
+X-Debian-PR-Message: followup 467292
 X-Debian-PR-Package: ispellcat
 X-Debian-PR-Keywords: 
 Received: via spool by 467292-submit@bugs.debian.org id=B467292.12086868921321

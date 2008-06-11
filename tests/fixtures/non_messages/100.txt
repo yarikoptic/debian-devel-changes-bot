@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Michael Biebl <biebl@debian.org>
 Resent-Date: Sun, 20 Apr 2008 14:45:05 +0000
 Resent-Message-ID: <handler.475097.B475097.120870246812201@bugs.debian.org>
-X-Debian-PR-Message: report 475097
+X-Debian-PR-Message: followup 475097
 X-Debian-PR-Package: powersaved
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: powersave

@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Oleksandr Moskalenko <malex@debian.org>
 Resent-Date: Sun, 20 Apr 2008 19:54:06 +0000
 Resent-Message-ID: <handler.477035.B477035.120872077915064@bugs.debian.org>
-X-Debian-PR-Message: report 477035
+X-Debian-PR-Message: followup 477035
 X-Debian-PR-Package: lcms
 X-Debian-PR-Keywords: patch
 Received: via spool by 477035-submit@bugs.debian.org id=B477035.120872077915064

@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Arthur de Jong <adejong@debian.org>
 Resent-Date: Sun, 20 Apr 2008 08:12:02 +0000
 Resent-Message-ID: <handler.475626.B475626.120867895219726@bugs.debian.org>
-X-Debian-PR-Message: report 475626
+X-Debian-PR-Message: followup 475626
 X-Debian-PR-Package: libnss-ldapd
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: nss-ldapd

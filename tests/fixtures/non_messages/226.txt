@@ -28,7 +28,7 @@ Resent-From: Santiago Garcia Mantinan <manty@debian.org>
 Resent-To: debian-bugs-dist@lists.debian.org
 Resent-Date: Sun, 20 Apr 2008 15:50:06 +0000
 Resent-Message-ID: <handler.476867.B476867.120870620921192@bugs.debian.org>
-X-Debian-PR-Message: report 476867
+X-Debian-PR-Message: followup 476867
 X-Debian-PR-Package: swfdec-mozilla
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: swfdec-mozilla

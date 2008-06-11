@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Stefan Fritsch <sf@debian.org>
 Resent-Date: Sun, 20 Apr 2008 13:00:32 +0000
 Resent-Message-ID: <handler.476961.B476961.120869635325876@bugs.debian.org>
-X-Debian-PR-Message: report 476961
+X-Debian-PR-Message: followup 476961
 X-Debian-PR-Package: apt-file
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: apt-file

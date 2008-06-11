@@ -30,7 +30,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: roberto@connexer.com (Roberto C. Sanchez)
 Resent-Date: Sun, 20 Apr 2008 16:09:02 +0000
 Resent-Message-ID: <handler.468699.B468699.120870759725585@bugs.debian.org>
-X-Debian-PR-Message: report 468699
+X-Debian-PR-Message: followup 468699
 X-Debian-PR-Package: shorewall-common
 X-Debian-PR-Keywords: upstream
 X-Debian-PR-Source: shorewall-common

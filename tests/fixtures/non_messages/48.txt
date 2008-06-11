@@ -30,7 +30,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Debian TeX Maintainers <debian-tex-maint@lists.debian.org>
 Resent-Date: Sun, 20 Apr 2008 17:48:23 +0000
 Resent-Message-ID: <handler.476957.B476957.120871314131494@bugs.debian.org>
-X-Debian-PR-Message: report 476957
+X-Debian-PR-Message: followup 476957
 X-Debian-PR-Package: texlive-xetex
 X-Debian-PR-Keywords: l10n patch
 X-Debian-PR-Source: texlive-bin
@@ -167,7 +167,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Debian TeX Maintainers <debian-tex-maint@lists.debian.org>
 Resent-Date: Sun, 20 Apr 2008 11:15:06 +0000
 Resent-Message-ID: <handler.476957.B.120868997225795@bugs.debian.org>
-X-Debian-PR-Message: report 476957
+X-Debian-PR-Message: followup 476957
 X-Debian-PR-Package: texlive-xetex
 X-Debian-PR-Keywords: l10n patch
 X-Debian-PR-Source: texlive-bin

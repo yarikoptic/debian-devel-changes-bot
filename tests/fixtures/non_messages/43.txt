@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Dpkg Developers <debian-dpkg@lists.debian.org>
 Resent-Date: Sun, 20 Apr 2008 12:27:10 +0000
 Resent-Message-ID: <handler.149961.B149961.120869430912838@bugs.debian.org>
-X-Debian-PR-Message: report 149961
+X-Debian-PR-Message: followup 149961
 X-Debian-PR-Package: dpkg
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: dpkg

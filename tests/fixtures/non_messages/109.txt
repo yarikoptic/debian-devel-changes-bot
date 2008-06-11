@@ -30,7 +30,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Joey Hess <joeyh@debian.org>
 Resent-Date: Sun, 20 Apr 2008 14:27:03 +0000
 Resent-Message-ID: <handler.476806.B476806.12087014619441@bugs.debian.org>
-X-Debian-PR-Message: report 476806
+X-Debian-PR-Message: followup 476806
 X-Debian-PR-Package: archivemail
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: archivemail

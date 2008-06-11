@@ -30,7 +30,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Debian HPIJS and HPLIP maintainers <pkg-hpijs-devel@lists.alioth.debian.org>
 Resent-Date: Sun, 20 Apr 2008 12:09:09 +0000
 Resent-Message-ID: <handler.476939.B476939.12086932246458@bugs.debian.org>
-X-Debian-PR-Message: report 476939
+X-Debian-PR-Message: followup 476939
 X-Debian-PR-Package: cupsddk
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: cupsddk

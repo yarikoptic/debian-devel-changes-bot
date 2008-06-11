@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Resent-Date: Sun, 20 Apr 2008 10:00:33 +0000
 Resent-Message-ID: <handler.343864.B343864.120868551413056@bugs.debian.org>
-X-Debian-PR-Message: report 343864
+X-Debian-PR-Message: followup 343864
 X-Debian-PR-Package: karm
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: kdepim

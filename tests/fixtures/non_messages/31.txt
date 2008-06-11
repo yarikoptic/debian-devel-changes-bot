@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Davide Puricelli (evo) <evo@debian.org>
 Resent-Date: Sun, 20 Apr 2008 10:24:02 +0000
 Resent-Message-ID: <handler.430968.B430968.1208686864626@bugs.debian.org>
-X-Debian-PR-Message: report 430968
+X-Debian-PR-Message: followup 430968
 X-Debian-PR-Package: xchat
 X-Debian-PR-Keywords: help unreproducible
 X-Debian-PR-Source: xchat

@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Debian spca5xx Maintainers <pkg-spca5xx-devel@lists.alioth.debian.org>
 Resent-Date: Sun, 20 Apr 2008 01:24:01 +0000
 Resent-Message-ID: <handler.444314.B444314.12086545388882@bugs.debian.org>
-X-Debian-PR-Message: report 444314
+X-Debian-PR-Message: followup 444314
 X-Debian-PR-Package: gspca-source
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: gspca

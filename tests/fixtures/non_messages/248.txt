@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Sjoerd Simons <sjoerd@debian.org>
 Resent-Date: Sun, 20 Apr 2008 02:03:02 +0000
 Resent-Message-ID: <handler.473808.B473808.120865690314863@bugs.debian.org>
-X-Debian-PR-Message: report 473808
+X-Debian-PR-Message: followup 473808
 X-Debian-PR-Package: gnome-volume-manager
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: gnome-volume-manager

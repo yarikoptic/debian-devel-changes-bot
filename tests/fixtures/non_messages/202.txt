@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Marco Cabizza <marco87@gmail.com>
 Resent-Date: Sun, 20 Apr 2008 13:18:06 +0000
 Resent-Message-ID: <handler.461578.B461578.120869738915528@bugs.debian.org>
-X-Debian-PR-Message: report 461578
+X-Debian-PR-Message: followup 461578
 X-Debian-PR-Package: gnome-control-center
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: control-center

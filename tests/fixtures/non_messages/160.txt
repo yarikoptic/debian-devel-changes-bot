@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Debian Xfce Maintainers <pkg-xfce-devel@lists.alioth.debian.org>
 Resent-Date: Sun, 20 Apr 2008 14:39:05 +0000
 Resent-Message-ID: <handler.379192.B379192.12087022923448@bugs.debian.org>
-X-Debian-PR-Message: report 379192
+X-Debian-PR-Message: followup 379192
 X-Debian-PR-Package: xfce4-session
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: xfce4-session

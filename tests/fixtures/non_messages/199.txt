@@ -30,7 +30,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Santiago Garcia Mantinan <manty@debian.org>
 Resent-Date: Sun, 20 Apr 2008 15:51:03 +0000
 Resent-Message-ID: <handler.477037.B.120870657412857@bugs.debian.org>
-X-Debian-PR-Message: report 477037
+X-Debian-PR-Message: followup 477037
 X-Debian-PR-Package: swfdec0.5
 X-Debian-PR-Keywords: patch security
 X-Debian-PR-Source: swfdec0.5

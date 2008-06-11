@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Debian Edu Developers <debian-edu@lists.debian.org>
 Resent-Date: Sun, 20 Apr 2008 13:12:04 +0000
 Resent-Message-ID: <handler.311188.B311188.120869699815552@bugs.debian.org>
-X-Debian-PR-Message: report 311188
+X-Debian-PR-Message: followup 311188
 X-Debian-PR-Package: debian-edu-config
 X-Debian-PR-Keywords: sarge-ignore
 X-Debian-PR-Source: debian-edu-config

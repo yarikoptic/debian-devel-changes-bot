@@ -30,7 +30,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: =?UTF-8?Q?Ond=C5=99ej_?= =?UTF-8?Q?Sur=C3=BD?= <ondrej@debian.org>
 Resent-Date: Sun, 20 Apr 2008 18:03:08 +0000
 Resent-Message-ID: <handler.473864.B473864.120871445612470@bugs.debian.org>
-X-Debian-PR-Message: report 473864
+X-Debian-PR-Message: followup 473864
 X-Debian-PR-Package: gnome-keyring
 X-Debian-PR-Keywords: fixed-upstream
 X-Debian-PR-Source: gnome-keyring

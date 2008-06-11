@@ -29,7 +29,7 @@ Resent-To: debian-bugs-dist@lists.debian.org
 Resent-CC: Steffen Joeris <white@debian.org>
 Resent-Date: Sun, 20 Apr 2008 15:57:06 +0000
 Resent-Message-ID: <handler.477028.B477028.120870698915280@bugs.debian.org>
-X-Debian-PR-Message: report 477028
+X-Debian-PR-Message: followup 477028
 X-Debian-PR-Package: dc-qt
 X-Debian-PR-Keywords: 
 X-Debian-PR-Source: dc-qt
