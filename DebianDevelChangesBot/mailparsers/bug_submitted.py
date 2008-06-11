@@ -23,10 +23,6 @@ from DebianDevelChangesBot.utils import tidy_bug_title, format_email_address
 import re
 
 SUBJECT = re.compile(r'^Bug#(\d+): (.+)$')
-
-BTS = re.compile(r'^# Automatically generated email from bts')
-FOLLOWUP_FOR = re.compile(r'(?i)^Followup-For:? .+')
-PACKAGE = re.compile(r'(?i)^Package:? ([^\s]{1,40})$')
 VERSION = re.compile(r'(?i)^Version:? ([^\s]{1,20})$')
 SEVERITY = re.compile(r'(?i)^Severity:? (critical|grave|serious|important|normal|minor|wishlist)$')
 
@@ -46,26 +42,18 @@ class BugSubmittedParser(MailParser):
         else:
             return
 
+        if not headers.get('X-Debian-PR-Message', '').startswith('report '):
+            return
+
+        msg.package = headers.get('X-Debian-PR-Package', None)
         msg.by = format_email_address(headers['From'])
 
         mapping = {
-            PACKAGE: 'package',
             VERSION: 'version',
             SEVERITY: 'severity',
         }
 
         for line in body[:10]:
-            if BTS.match(line) or FOLLOWUP_FOR.match(line):
-                return
-
-            for command in ('thanks', 'kthxbye'):
-                if line.startswith(command):
-                    return
-
-            for command in ('retitle', 'reassign'):
-                if line.startswith('%s %d' % (command, msg.bug_number)):
-                    return
-
             for pattern, target in mapping.iteritems():
                 m = pattern.match(line)
                 if m:
