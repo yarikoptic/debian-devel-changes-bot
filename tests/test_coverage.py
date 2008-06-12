@@ -21,7 +21,7 @@ import os
 import sys
 import commands
 
-MODULE = 'DebianChangesBot'
+MODULE = 'DebianDevelChangesBot'
 
 def coverage(cmd, show=False):
     status, output = commands.getstatusoutput('python-coverage %s ' % cmd)
