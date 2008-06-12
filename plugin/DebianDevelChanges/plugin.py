@@ -47,6 +47,7 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
         fr.start(self._email_callback, fifo_loc)
 
         self.queued_topics = {}
+        self.last_n_messages = []
 
         # Schedule datasource updates
         for callback, interval, name in get_datasources():
@@ -75,6 +76,12 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
             if msg:
                 txt = colourise(msg.for_irc())
                 for channel in self.irc.state.channels:
+                    if txt in self.last_n_messages:
+                        continue
+
+                    self.last_n_messages.insert(0, txt)
+                    self.last_n_messages = self.last_n_messages[:20]
+
                     if self.registryValue('show_changes', channel):
                         ircmsg = supybot.ircmsgs.privmsg(channel, txt)
                         self.irc.queueMsg(ircmsg)
