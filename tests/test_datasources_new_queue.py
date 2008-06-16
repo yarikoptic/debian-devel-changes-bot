@@ -25,7 +25,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from DebianDevelChangesBot import Datasource
 from DebianDevelChangesBot.datasources import NewQueue
 
-class TestDatasourceTestingRCBugs(unittest.TestCase):
+class TestDatasourceTestingNewQueue(unittest.TestCase):
 
     def setUp(self):
         self.fixture = os.path.join(os.path.dirname(os.path.abspath(__file__)), \
