@@ -31,7 +31,7 @@ class NewQueue(Datasource):
     URL = 'http://ftp-master.debian.org/new.html'
     INTERVAL = 60 * 30
 
-    packages = []
+    packages = {}
     lock = thread.allocate_lock()
 
     def __init__(self):
@@ -42,8 +42,12 @@ class NewQueue(Datasource):
             fileobj = urllib2.urlopen(self.URL)
 
         soup = BeautifulSoup(fileobj)
-        cells = [row.find('td') for row in soup('tr', {'class': ('odd', 'even')})]
-        packages = [str(c.string) for c in cells]
+
+        packages = {}
+        for row in soup('tr', {'class': ('odd', 'even')}):
+            package = row.td.string
+            versions = [v.string for v in row.contents[3].findAll('a')]
+            packages[package] = versions
 
         if len(packages) == 0:
             raise Datasource.DataError()
@@ -54,10 +58,11 @@ class NewQueue(Datasource):
         finally:
             self.lock.release()
 
-    def is_new(self, package):
+    def is_new(self, package, version):
         self.lock.acquire()
         try:
-            return package in self.packages
+            versions = self.packages.get(package, [])
+            return version in versions
         finally:
             self.lock.release()
 
