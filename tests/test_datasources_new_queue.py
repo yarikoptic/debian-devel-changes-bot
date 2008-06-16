@@ -33,10 +33,10 @@ class TestDatasourceTestingRCBugs(unittest.TestCase):
 
         self.datasource = NewQueue()
 
-    def is_new(self, package):
+    def is_new(self, package, version):
         fileobj = open(self.fixture)
         self.datasource.update(fileobj)
-        return self.datasource.is_new(package)
+        return self.datasource.is_new(package, version)
 
     def testURL(self):
         """
@@ -56,22 +56,26 @@ class TestDatasourceTestingRCBugs(unittest.TestCase):
         self.assertRaises(Datasource.DataError, self.datasource.update, fileobj)
 
     def testTop(self):
-        self.assert_(self.is_new('ganeti-instance-debian-etch'))
+        self.assert_(self.is_new('ganeti-instance-debian-etch', '0.4-1'))
 
     def testBottom(self):
-        self.assert_(self.is_new('sugar-chat-activity'))
+        self.assert_(self.is_new('sugar-chat-activity', '37~git-2'))
 
     def testMultipleVersions(self):
-        self.assert_(self.is_new('cpushare'))
+        self.assert_(self.is_new('cpushare', '0.47-1'))
+        self.assert_(self.is_new('cpushare', '0.47-2'))
+
+    def testInvalidVersion(self):
+        self.failIf(self.is_new('cpushare', '0.47-3'))
 
     def testNotInQueue(self):
-        self.failIf(self.is_new('package-not-in-new-queue'))
+        self.failIf(self.is_new('package-not-in-new-queue', 'version-foo'))
 
     def testByhand(self):
-        self.assert_(self.is_new('loadlin'))
+        self.assert_(self.is_new('loadlin', '1.6c.really1.6c-1.2'))
 
     def testExperimental(self):
-        self.assert_(self.is_new('tagua'))
+        self.assert_(self.is_new('tagua', '1.0~alpha2-2'))
 
 if __name__ == "__main__":
     unittest.main()
