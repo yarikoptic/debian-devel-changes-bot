@@ -28,25 +28,47 @@ class TestMailParserBugClosed(unittest.TestCase):
     def setUp(self):
         self.headers = {
             'List-Id': '<debian-bugs-closed.lists.debian.org>',
+            'Subject': 'Bug#123456: marked as done (binary-package: description here)',
+            'X-Debian-PR-Source': 'source-package',
+            'X-Debian-PR-Package': 'binary-package',
         }
 
         self.body = []
 
-    def testDone(self):
+    def testSimple(self):
         self.headers.update({
-            'Subject': 'Bug#479099: marked as done (minirok:  please add random mode)',
-            'From': u'Adeodato Simó <dato@net.com.org.es>',
-            'To': 'Felipe Sateler <fsateler@gmail.com>, 479099-done@bugs.debian.org',
-            'X-Debian-PR-Source': 'minirok-source-package',
-            'X-Debian-PR-Package': 'minirok',
+            'From': 'From <from@email.com>',
+            'To': 'somewhere@email.com',
         })
 
         msg = p.parse(self.headers, self.body)
         self.assert_(msg)
-        self.assertEqual(msg.bug_number, 479099)
-        self.assertEqual(msg.package, 'minirok')
-        self.assertEqual(msg.by, u'Adeodato Simó <dato@net.com...>')
-        self.assertEqual(msg.title, 'please add random mode')
+        self.assertEqual(msg.bug_number, 123456)
+        self.assertEqual(msg.package, 'binary-package')
+        self.assertEqual(msg.by, u'somewhere@email.com')
+        self.assertEqual(msg.title, 'description here')
+
+    def testTwoEntriesInTo(self):
+        self.headers.update({
+            'From': 'From <from@email.com>',
+            'To': 'To <to@email.com>, 123456-done@bugs.debian.org',
+        })
+
+        msg = p.parse(self.headers, self.body)
+        self.assert_(msg)
+        self.assertEqual(msg.bug_number, 123456)
+        self.assertEqual(msg.package, 'binary-package')
+        self.assertEqual(msg.by, u'From <from@email.com>')
+        self.assertEqual(msg.title, 'description here')
+
+    def testDone(self):
+        self.headers.update({
+            'From': u'From <from@email.com>',
+            'To': u'123456-done@bugs.debian.org',
+        })
+        msg = p.parse(self.headers, self.body)
+        self.assert_(msg)
+        self.assertEqual(msg.by, u'From <from@email.com>')
 
 if __name__ == "__main__":
     unittest.main()
