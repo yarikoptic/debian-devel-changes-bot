@@ -168,7 +168,7 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
                 fields = line.strip().split('|', len(field_styles))
                 for style, data in zip(field_styles, fields):
                     out.append('[%s]%s' % (style, data))
-                irc.reply(colourise('[reset]|'.join(out)))
+                irc.reply(colourise('[reset]|'.join(out)), prefixNick=False)
         except Exception:
             irc.reply("Error: %s" % e.message)
     madison = wrap(madison, ['text'])
@@ -177,7 +177,7 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
         try:
             msg = bug_synopsis(bug_string)
             if msg:
-                irc.reply(colourise(msg.for_irc()))
+                irc.reply(colourise(msg.for_irc()), prefixNick=False)
         except ValueError:
             irc.reply('Could not parse bug number')
         except Exception:
