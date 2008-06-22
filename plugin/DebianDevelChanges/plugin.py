@@ -21,7 +21,7 @@ import time
 import supybot
 import threading
 
-from supybot.commands import wrap
+from supybot.commands import wrap, many
 from supybot import ircdb, log, schedule
 
 from btsutils.debbugs import BugExceptions
@@ -184,5 +184,71 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
             irc.reply("Error: %s" % e.message)
 
     bug = wrap(bug, ['text'])
+
+    def get_pool_url(self, package):
+        if package.startswith('lib'):
+            return (package[:4], package)
+        else:
+            return (package[:1], package)
+
+    def _qa(self, irc, msg, args, items):
+        for package in items:
+            url = "http://packages.qa.debian.org/%s/%s.html" % self.get_pool_url(package)
+            msg = "[package]%s[reset]: [desc]QA page[reset]: [url]%s[/url]" % (package, url)
+            irc.reply(colourise(msg), prefixNick=False)
+    qa = wrap(_qa, [many('anything')])
+    overview = wrap(_qa, [many('anything')])
+
+    def _changelog(self, irc, msg, args, items):
+        for package in items:
+            url = "http://packages.debian.org/changelogs/pool/main/%s/%s/current/changelog" % self.get_pool_url(package)
+            msg = "[package]%s[reset]: [desc]debian/changelog[reset]: [url]%s[/url]" % (package, url)
+            irc.reply(colourise(msg), prefixNick=False)
+    changelog = wrap(_changelog, [many('anything')])
+
+    def _copyright(self, irc, msg, args, items):
+        for package in items:
+            url = "http://packages.debian.org/changelogs/pool/main/%s/%s/current/copyright" % self.get_pool_url(package)
+            msg = "[package]%s[reset]: [desc]debian/copyright[reset]: [url]%s[/url]" % (package, url)
+            irc.reply(colourise(msg), prefixNick=False)
+    copyright = wrap(_copyright, [many('anything')])
+
+    def _buggraph(self, irc, msg, args, items):
+        for package in items:
+            msg = "[package]%s[reset]: [desc]bug graph[reset]: [url]http://people.debian.org/~glandium/bts/%s/%s.png[/url]" % \
+                (package, package[0], package)
+            irc.reply(colourise(msg), prefixNick=False)
+    buggraph = wrap(_buggraph, [many('anything')])
+    bug_graph = wrap(_buggraph, [many('anything')])
+
+    def _buildd(self, irc, msg, args, items):
+        for package in items:
+            msg = "[package]%s[reset]: [desc]buildd status[reset]: [url]http://buildd.debian.org/pkg.cgi?pkg=%s[/url]" % \
+                (package, package)
+            irc.reply(colourise(msg), prefixNick=False)
+    buildd = wrap(_buildd, [many('anything')])
+
+    def _popcon(self, irc, msg, args, items):
+        for package in items:
+            msg = "[package]%s[reset]: [desc]popcon statistics[reset]: [url]http://qa.debian.org/developer.php?popcon=%s[/url]" % \
+                (package, package)
+            irc.reply(colourise(msg), prefixNick=False)
+    popcon = wrap(_popcon, [many('anything')])
+
+    def _testing(self, irc, msg, args, items):
+        for package in items:
+            msg = "[package]%s[reset]: [desc]testing migration status[reset]: [url]http://bjorn.haxx.se/debian/testing.pl?package=%s[/url]" % \
+                (package, package)
+            irc.reply(colourise(msg), prefixNick=False)
+    testing = wrap(_testing, [many('anything')])
+    migration = wrap(_testing, [many('anything')])
+
+    def _dehs(self, irc, msg, args, items):
+        for package in items:
+            msg = "[package]%s[reset]: [desc]Debian External Health Status[reset]: [url]http://dehs.alioth.debian.org/maintainer.php?name=%s[/url]" % \
+                (package, package)
+            irc.reply(colourise(msg), prefixNick=False)
+    dehs = wrap(_dehs, [many('anything')])
+    health = wrap(_dehs, [many('anything')])
 
 Class = DebianDevelChanges
