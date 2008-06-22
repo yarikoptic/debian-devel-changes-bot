@@ -55,7 +55,7 @@ def colourise(s):
         'new': tags['brightred'],
 
         'section': tags['grey'],
-        'desc': tags['grey'],
+        'desc': tags['nostyle'],
 
         'url': tags['nostyle'],
         '/url': tags['nostyle'],
