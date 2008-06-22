@@ -215,7 +215,7 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
 
     def _buggraph(self, irc, msg, args, items):
         for package in items:
-            msg = "[package]%s[reset]: [desc]bug graph[reset]: [url]http://people.debian.org/~glandium/bts/%s/%s.png[/url]" % \
+            msg = "[package]%s[reset]: [desc]Bug graph[reset]: [url]http://people.debian.org/~glandium/bts/%s/%s.png[/url]" % \
                 (package, package[0], package)
             irc.reply(colourise(msg), prefixNick=False)
     buggraph = wrap(_buggraph, [many('anything')])
@@ -237,7 +237,7 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
 
     def _testing(self, irc, msg, args, items):
         for package in items:
-            msg = "[package]%s[reset]: [desc]testing migration status[reset]: [url]http://bjorn.haxx.se/debian/testing.pl?package=%s[/url]" % \
+            msg = "[package]%s[reset]: [desc]Testing migration status[reset]: [url]http://bjorn.haxx.se/debian/testing.pl?package=%s[/url]" % \
                 (package, package)
             irc.reply(colourise(msg), prefixNick=False)
     testing = wrap(_testing, [many('anything')])
