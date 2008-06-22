@@ -2,5 +2,3 @@ TODO
 ====
 
  - A bug title containing [new] (for example) shouldn't be colour in the output
- - http://ftp-master.debian.org/bzr/ftpmaster-dak/config/debian/pseudo-packages.description
- - Patch debbugs so we have infallible "New bug" notices
