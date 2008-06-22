@@ -28,7 +28,7 @@ class SecurityAnnounceMessage(Message):
             (self.dsa_number, self.dsa_revision)
 
         msg += "New [package]%s[reset] packages fix %s. " % \
-            (self.package, self.problem)
+            (self.package_name(), self.problem)
 
         msg += "[url]http://www.debian.org/security/%s/dsa-%d[/url]" % \
             (self.year, self.dsa_number)

@@ -28,7 +28,7 @@ class BugSubmittedMessage(Message):
         if self.severity in ('critical', 'grave', 'serious'):
             msg += "([severity]%s[reset]) " % self.severity
 
-        msg += "in [package]%s[reset] " % self.package
+        msg += "in %s " % self.package_name()
 
         if self.version not in (None, 'n/a', 'any'):
             msg += "[version]%s[reset] " % self.version

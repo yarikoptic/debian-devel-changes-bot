@@ -45,6 +45,7 @@ def colourise(s):
     tags.update({
         'by': tags['lightcyan'],
         'package': tags['darkgreen'],
+        'psuedo-package': tags['lightblue'],
         'version': tags['brightyellow'],
         'distribution': tags['lightblue'],
 

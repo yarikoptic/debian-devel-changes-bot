@@ -24,7 +24,7 @@ class AcceptedUploadMessage(Message):
     OPTIONAL = ('closes',)
 
     def format(self):
-        msg = "[package]%s[reset] " % self.package
+        msg = self.package_name()
 
         if NewQueue().is_new(self.package, self.version):
             msg += "[new](NEW)[reset] "
