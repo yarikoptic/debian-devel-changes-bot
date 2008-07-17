@@ -66,7 +66,11 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
     def die(self):
         FifoReader().stop()
         for callback, interval, name in get_datasources():
-            schedule.removePeriodicEvent(name)
+            try:
+                schedule.removePeriodicEvent(name)
+            except KeyError:
+                # A newly added event may not exist, ignore exception.
+                pass
 
     def _email_callback(self, fileobj):
         try:
