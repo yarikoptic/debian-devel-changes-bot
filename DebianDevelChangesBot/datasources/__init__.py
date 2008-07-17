@@ -18,14 +18,17 @@
 
 import testing_rc_bugs
 import new_queue
+import rm_queue
 
 reload(testing_rc_bugs)
 reload(new_queue)
+reload(rm_queue)
 
 from testing_rc_bugs import TestingRCBugs
 from new_queue import NewQueue
+from rm_queue import RmQueue
 
 def get_datasources():
-    for klass in TestingRCBugs, NewQueue:
+    for klass in TestingRCBugs, NewQueue, RmQueue:
         callback = klass().update
         yield callback, klass.INTERVAL, klass.__name__

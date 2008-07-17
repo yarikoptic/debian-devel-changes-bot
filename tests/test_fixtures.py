@@ -46,6 +46,8 @@ def add_tests(testdir, parser, expected_type, test=lambda x: bool(x)):
 
             self.assertEqual(type(msg), expected_type,
                 "%s did not match with its parser" % filename)
+            if not test(msg):
+                print msg.__dict__
             self.assert_(test(msg), "%s did not pass test" % filename)
 
             if msg:

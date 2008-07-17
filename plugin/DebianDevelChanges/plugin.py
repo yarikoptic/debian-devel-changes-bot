@@ -95,6 +95,7 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
         sections = {
             TestingRCBugs().get_num_bugs: 'RC bug count:',
             NewQueue().get_size: 'NEW queue:',
+            RmQueue().get_size: 'RM queue:',
         }
 
         try:
