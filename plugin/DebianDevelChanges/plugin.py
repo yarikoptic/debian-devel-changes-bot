@@ -28,7 +28,7 @@ from btsutils.debbugs import BugExceptions
 
 from DebianDevelChangesBot.mailparsers import get_message
 from DebianDevelChangesBot.datasources import get_datasources, TestingRCBugs, \
-    NewQueue
+    NewQueue, RmQueue
 from DebianDevelChangesBot.utils import parse_mail, FifoReader, colourise, \
     rewrite_topic, madison, bug_synopsis
 
