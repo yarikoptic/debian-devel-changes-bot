@@ -51,10 +51,6 @@ class TestDatasourceTestingNewQueue(unittest.TestCase):
         """
         self.assert_(self.datasource.INTERVAL > 60)
 
-    def testParseEmpty(self):
-        fileobj = open('/dev/null')
-        self.assertRaises(Datasource.DataError, self.datasource.update, fileobj)
-
     def testTop(self):
         self.assert_(self.is_new('ganeti-instance-debian-etch', '0.4-1'))
 

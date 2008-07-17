@@ -49,9 +49,6 @@ class NewQueue(Datasource):
             versions = [v.string for v in row.contents[3].findAll('a')]
             packages[package] = versions
 
-        if len(packages) == 0:
-            raise Datasource.DataError()
-
         self.lock.acquire()
         try:
             self.packages = packages
