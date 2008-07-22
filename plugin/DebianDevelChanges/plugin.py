@@ -203,6 +203,7 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
             irc.reply(colourise(msg), prefixNick=False)
     qa = wrap(_qa, [many('anything')])
     overview = wrap(_qa, [many('anything')])
+    package = wrap(_qa, [many('anything')])
 
     def _changelog(self, irc, msg, args, items):
         for package in items:
