@@ -254,6 +254,15 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
             irc.reply(colourise(msg), prefixNick=False)
     buildd = wrap(_buildd, [many('anything')])
 
+    def _buildde(self, irc, msg, args, items):
+        for package in items:
+            msg = "[desc]experimental/backports.org buildd status for[reset] [package]%s[reset]: [url]http://experimental.ftbfs.de/build.php?pkg==%s[/url]" % \
+                (package, package)
+            irc.reply(colourise(msg), prefixNick=False)
+    buildde = wrap(_buildde, [many('anything')])
+    experimental = wrap(_buildde, [many('anything')])
+    backports = wrap(_buildde, [many('anything')])
+
     def _popcon(self, irc, msg, args, items):
         for package in items:
             msg = "[desc]Popcon statistics for[reset] [package]%s[reset]: [url]http://qa.debian.org/developer.php?popcon=%s[/url]" % \
