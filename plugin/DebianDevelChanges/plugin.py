@@ -120,7 +120,7 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
                     log.info("Queueing change of topic in #%s to '%s'" % (channel, new_topic))
                     self.queued_topics[channel] = new_topic
 
-                    event_name = '%s_topic' % event_name
+                    event_name = '%s_topic' % channel
                     try:
                         schedule.removeEvent(event_name)
                     except KeyError:
