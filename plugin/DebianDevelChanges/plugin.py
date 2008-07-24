@@ -77,18 +77,20 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
             email = parse_mail(fileobj)
             msg = get_message(email)
 
-            if msg:
-                txt = colourise(msg.for_irc())
-                for channel in self.irc.state.channels:
-                    if txt in self.last_n_messages:
-                        continue
+            if not msg:
+                return
 
-                    self.last_n_messages.insert(0, txt)
-                    self.last_n_messages = self.last_n_messages[:20]
+            txt = colourise(msg.for_irc())
+            for channel in self.irc.state.channels:
+                if txt in self.last_n_messages:
+                    continue
 
-                    if self.registryValue('show_changes', channel):
-                        ircmsg = supybot.ircmsgs.privmsg(channel, txt)
-                        self.irc.queueMsg(ircmsg)
+                self.last_n_messages.insert(0, txt)
+                self.last_n_messages = self.last_n_messages[:20]
+
+                if self.registryValue('show_changes', channel):
+                    ircmsg = supybot.ircmsgs.privmsg(channel, txt)
+                    self.irc.queueMsg(ircmsg)
 
         except:
            log.exception('Uncaught exception')
