@@ -294,10 +294,10 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
 
     def _swirl(self, irc, msg, args):
         swirl = [
-            "[brightred]   ,''`.  [reset]",
-            "[brightred]  : :' :  [reset]         [b]Debian GNU/Linux[/b]",
-            "[brightred]  `. `'   [reset]         http://www.debian.org/",
-            "[brightred]    `-    [reset]",
+            "  [brightred] ,''`.[reset]",
+            "  [brightred]: :' :[reset]           [b]Debian GNU/Linux[/b]",
+            "  [brightred]`. `' [reset]           [url]http://www.debian.org/[/url]",
+            "  [brightred]  `-  [reset]",
         ]
         for line in swirl:
             irc.reply(colourise(line), prefixNick=False)
