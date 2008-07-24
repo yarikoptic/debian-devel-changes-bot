@@ -200,17 +200,13 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
 
     def _maintainer(self, irc, msg, args, items):
         for package in items:
-            try:
-                info = Maintainer().get_maintainer(package)
-
-                if info:
-                    display_name = format_email_address("%s <%s>" % (info['name'], info['email']))
-                    msg = "[package]%s[reset]: [desc]Maintainer is[reset]: [by]%s[reset]" % (package, display_name)
-                    msg += " [url]http://qa.debian.org/developer.php?login=%s[/url]" % info['email']
-                else:
-                    msg = 'Unknown source package "[package]%s[reset]"' % package
-            except Exception, e:
-                irc.reply("Error: %s" % e.message)
+            info = Maintainer().get_maintainer(package)
+            if info:
+                display_name = format_email_address("%s <%s>" % (info['name'], info['email']))
+                msg = "[package]%s[reset]: [desc]Maintainer is[reset]: [by]%s[reset]" % (package, display_name)
+                msg += " [url]http://qa.debian.org/developer.php?login=%s[/url]" % info['email']
+            else:
+                msg = 'Unknown source package "[package]%s[reset]"' % package
 
             irc.reply(colourise(msg), prefixNick=False)
     maintainer = wrap(_maintainer, [many('anything')])
