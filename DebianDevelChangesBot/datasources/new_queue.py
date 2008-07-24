@@ -38,19 +38,19 @@ class NewQueue(Datasource):
         self.__dict__ = self.__shared_state
 
     def update(self, fileobj=None):
-        if fileobj is None:
-            fileobj = urllib2.urlopen(self.URL)
-
-        soup = BeautifulSoup(fileobj)
-
-        packages = {}
-        for row in soup('tr', {'class': ('odd', 'even')}):
-            package = row.td.string
-            versions = [v.string for v in row.contents[3].findAll('a')]
-            packages[package] = versions
-
         self.lock.acquire()
         try:
+            if fileobj is None:
+                fileobj = urllib2.urlopen(self.URL)
+
+            soup = BeautifulSoup(fileobj)
+
+            packages = {}
+            for row in soup('tr', {'class': ('odd', 'even')}):
+                package = row.td.string
+                versions = [v.string for v in row.contents[3].findAll('a')]
+                packages[package] = versions
+
             self.packages = packages
         finally:
             self.lock.release()
