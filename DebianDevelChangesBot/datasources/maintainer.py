@@ -45,8 +45,14 @@ class Maintainer(Datasource):
                         return (package[:4], package)
                     else:
                         return (package[:1], package)
-
-                fileobj = urllib2.urlopen("http://packages.qa.debian.org/%s/%s.html" % get_pool_url(package))
+                try:
+                    fileobj = urllib2.urlopen("http://packages.qa.debian.org/%s/%s.html" % get_pool_url(package))
+                except urllib2.HTTPError, e:
+                    if e.code == 404:
+                        # Package does not exist
+                        return None
+                    else:
+                        raise
 
             soup = BeautifulSoup(fileobj)
 
