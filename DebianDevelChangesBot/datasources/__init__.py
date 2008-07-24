@@ -44,5 +44,4 @@ from maintainer import Maintainer
 
 def get_datasources():
     for klass in TestingRCBugs, NewQueue, RmQueue:
-        callback = klass().update
-        yield callback, klass.INTERVAL, klass.__name__
+        yield klass, klass.INTERVAL, klass.__name__

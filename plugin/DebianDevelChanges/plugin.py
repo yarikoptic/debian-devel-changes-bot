@@ -50,14 +50,14 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
         self.last_n_messages = []
 
         # Schedule datasource updates
-        for callback, interval, name in get_datasources():
+        for klass, interval, name in get_datasources():
             try:
                 schedule.removePeriodicEvent(name)
             except KeyError:
                 pass
 
-            def wrapper(callback=callback):
-                callback()
+            def wrapper(klass=klass):
+                klass().update()
                 self._topic_callback()
 
             schedule.addPeriodicEvent(wrapper, interval, name, now=False)
@@ -65,7 +65,7 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
 
     def die(self):
         FifoReader().stop()
-        for callback, interval, name in get_datasources():
+        for _, _, name in get_datasources():
             try:
                 schedule.removePeriodicEvent(name)
             except KeyError:
@@ -156,8 +156,8 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
             irc.reply("You are not authorised to run this command.")
             return
 
-        for callback, interval, name in get_datasources():
-            callback()
+        for klass, interval, name in get_datasources():
+            klass().update()
             irc.reply("Updated %s." % name)
         self._topic_callback()
     update = wrap(update)
