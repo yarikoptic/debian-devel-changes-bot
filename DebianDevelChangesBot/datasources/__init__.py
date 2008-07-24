@@ -21,10 +21,21 @@ import new_queue
 import rm_queue
 import maintainer
 
+state = testing_rc_bugs.TestingRCBugs._shared_state
 reload(testing_rc_bugs)
+testing_rc_bugs.TestingRCBugs._shared_state = state
+
+state = new_queue.NewQueue._shared_state
 reload(new_queue)
+new_queue.NewQueue._shared_state = state
+
+state = rm_queue.RmQueue._shared_state
 reload(rm_queue)
+rm_queue.RmQueue._shared_state = state
+
+state = maintainer.Maintainer._shared_state
 reload(maintainer)
+maintainer.Maintainer._shared_state = state
 
 from testing_rc_bugs import TestingRCBugs
 from new_queue import NewQueue
