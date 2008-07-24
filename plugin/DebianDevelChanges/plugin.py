@@ -292,4 +292,16 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
     dehs = wrap(_dehs, [many('anything')])
     health = wrap(_dehs, [many('anything')])
 
+    def _swirl(self, irc, msg, args):
+        swirl = [
+            "[brightred]   ,''`.  [reset]",
+            "[brightred]  : :' :  [reset]         [b]Debian GNU/Linux[/b]",
+            "[brightred]  `. `'   [reset]         http://www.debian.org/",
+            "[brightred]    `-    [reset]",
+        ]
+        for line in swirl:
+            irc.reply(colourise(line), prefixNick=False)
+    swirl = wrap(_swirl)
+    debian = wrap(_swirl)
+
 Class = DebianDevelChanges
