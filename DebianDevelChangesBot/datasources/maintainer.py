@@ -26,13 +26,13 @@ socket.setdefaulttimeout(10)
 from DebianDevelChangesBot import Datasource
 
 class Maintainer(Datasource):
-    __shared_state = {}
+    _shared_state = {}
 
     packages = {}
     lock = thread.allocate_lock()
 
     def __init__(self):
-        self.__dict__ = self.__shared_state
+        self.__dict__ = self._shared_state
 
     def get_maintainer(self, package, fileobj=None):
         info = {}

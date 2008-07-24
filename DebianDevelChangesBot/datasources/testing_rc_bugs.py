@@ -26,7 +26,7 @@ socket.setdefaulttimeout(10)
 from DebianDevelChangesBot import Datasource
 
 class TestingRCBugs(Datasource):
-    __shared_state = {}
+    _shared_state = {}
 
     URL = 'http://bts.turmzimmer.net/details.php?bydist=lenny'
     BUG_COUNT = re.compile(r'.*Total shown: (?P<bug_count>\d+) bug.*')
@@ -36,7 +36,7 @@ class TestingRCBugs(Datasource):
     num_bugs = None
 
     def __init__(self):
-        self.__dict__ = self.__shared_state
+        self.__dict__ = self._shared_state
 
     def update(self, fileobj=None):
         if fileobj is None:

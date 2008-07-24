@@ -26,7 +26,7 @@ socket.setdefaulttimeout(10)
 from DebianDevelChangesBot import Datasource
 
 class RmQueue(Datasource):
-    __shared_state = {}
+    _shared_state = {}
 
     URL = 'http://ftp-master.debian.org/removals.html'
     INTERVAL = 60 * 30
@@ -35,7 +35,7 @@ class RmQueue(Datasource):
     lock = thread.allocate_lock()
 
     def __init__(self):
-        self.__dict__ = self.__shared_state
+        self.__dict__ = self._shared_state
 
     def update(self, fileobj=None):
         if fileobj is None:
