@@ -176,7 +176,7 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
                 for style, data in zip(field_styles, fields):
                     out.append('[%s]%s' % (style, data))
                 irc.reply(colourise('[reset]|'.join(out)), prefixNick=False)
-        except Exception:
+        except Exception, e:
             irc.reply("Error: %s" % e.message)
     madison = wrap(madison, ['text'])
 
@@ -187,7 +187,7 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
                 irc.reply(colourise(msg.for_irc()), prefixNick=False)
         except ValueError:
             irc.reply('Could not parse bug number')
-        except Exception:
+        except Exception, e:
             irc.reply("Error: %s" % e.message)
 
     bug = wrap(bug, ['text'])
