@@ -203,13 +203,15 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
             info = Maintainer().get_maintainer(package)
             if info:
                 display_name = format_email_address("%s <%s>" % (info['name'], info['email']), max_domain=18)
-                msg = "[desc]Maintainer for[reset] [package]%s[reset] [desc]is[reset] [by]%s[reset]" % (package, display_name)
-                msg += " - [url]http://qa.debian.org/developer.php?login=%s[/url]" % info['email']
+                msg = "[desc]Maintainer for[reset] [package]%s[reset] [desc]is[reset] [by]%s[reset]: " % (package, display_name)
+                msg += "[url]http://qa.debian.org/developer.php?login=%s[/url]" % info['email']
             else:
                 msg = 'Unknown source package "%s"' % package
 
             irc.reply(colourise(msg), prefixNick=False)
     maintainer = wrap(_maintainer, [many('anything')])
+    maint = wrap(_maintainer, [many('anything')])
+    who_maintains = wrap(_maintainer, [many('anything')])
 
     def _qa(self, irc, msg, args, items):
         for package in items:
@@ -219,6 +221,8 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
     qa = wrap(_qa, [many('anything')])
     overview = wrap(_qa, [many('anything')])
     package = wrap(_qa, [many('anything')])
+    pkg = wrap(_qa, [many('anything')])
+    srcpkg = wrap(_qa, [many('anything')])
 
     def _changelog(self, irc, msg, args, items):
         for package in items:
@@ -226,6 +230,7 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
             msg = "[desc]debian/changelog for[reset] [package]%s[reset]: [url]%s[/url]" % (package, url)
             irc.reply(colourise(msg), prefixNick=False)
     changelog = wrap(_changelog, [many('anything')])
+    changes = wrap(_changelog, [many('anything')])
 
     def _copyright(self, irc, msg, args, items):
         for package in items:
