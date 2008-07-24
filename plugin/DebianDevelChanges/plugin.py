@@ -203,8 +203,13 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
             info = Maintainer().get_maintainer(package)
             if info:
                 display_name = format_email_address("%s <%s>" % (info['name'], info['email']), max_domain=18)
+
+                login = info['email']
+                if login.endswith('@debian.org'):
+                    login = login.replace('@debian.org', '')
+
                 msg = "[desc]Maintainer for[reset] [package]%s[reset] [desc]is[reset] [by]%s[reset]: " % (package, display_name)
-                msg += "[url]http://qa.debian.org/developer.php?login=%s[/url]" % info['email']
+                msg += "[url]http://qa.debian.org/developer.php?login=%s[/url]" % login
             else:
                 msg = 'Unknown source package "%s"' % package
 
