@@ -1,0 +1,60 @@
+# -*- coding: utf-8 -*-
+#
+#   Debian Changes Bot
+#   Copyright (C) 2008 Chris Lamb <chris@chris-lamb.co.uk>
+#
+#   This program is free software: you can redistribute it and/or modify
+#   it under the terms of the GNU Affero General Public License as
+#   published by the Free Software Foundation, either version 3 of the
+#   License, or (at your option) any later version.
+#
+#   This program is distributed in the hope that it will be useful,
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#   GNU Affero General Public License for more details.
+#
+#   You should have received a copy of the GNU Affero General Public License
+#   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+import thread
+import urllib2
+from BeautifulSoup import BeautifulSoup
+
+import socket
+socket.setdefaulttimeout(10)
+
+from DebianDevelChangesBot import Datasource
+
+class Maintainer(Datasource):
+    __shared_state = {}
+
+    packages = {}
+    lock = thread.allocate_lock()
+
+    def __init__(self):
+        self.__dict__ = self.__shared_state
+
+    def get_maintainer(self, package, fileobj=None):
+        info = {}
+
+        self.lock.acquire()
+        try:
+            if fileobj is None:
+                def get_pool_url(self, package):
+                    if package.startswith('lib'):
+                        return (package[:4], package)
+                    else:
+                        return (package[:1], package)
+
+                fileobj = urllib2.urlopen("http://packages.qa.debian.org/%s/%s.html" % self.get_pool_url(package))
+
+            soup = BeautifulSoup(fileobj)
+
+            base = soup.find('a', {'class': 'email'})
+            info['name'] = base.findPreviousSibling().string
+            info['email'] = base['href'].replace('mailto:', '')
+
+        finally:
+            self.lock.release()
+
+        return info

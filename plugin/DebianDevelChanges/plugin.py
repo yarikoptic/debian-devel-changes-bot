@@ -28,7 +28,7 @@ from btsutils.debbugs import BugExceptions
 
 from DebianDevelChangesBot.mailparsers import get_message
 from DebianDevelChangesBot.datasources import get_datasources, TestingRCBugs, \
-    NewQueue, RmQueue
+    NewQueue, RmQueue, Maintainer
 from DebianDevelChangesBot.utils import parse_mail, FifoReader, colourise, \
     rewrite_topic, madison, bug_synopsis
 
@@ -197,6 +197,23 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
             return (package[:4], package)
         else:
             return (package[:1], package)
+
+    def _maintainer(self, irc, msg, args, items):
+        for package in items:
+            try:
+                info = Maintainer().get_maintainer(package)
+
+                if info:
+                    display_name = format_email_address("%s <%s>" % (info['name'], info['email']))
+                    msg = "[package]%s[reset]: [desc]Maintainer is[reset]: [by]%s[reset]" % (package, display_name)
+                    msg += " [url]http://qa.debian.org/developer.php?login=%s[/url]" % info['email']
+                else:
+                    msg = 'Unknown source package "[package]%s[reset]"' % package
+            except Exception, e:
+                irc.reply("Error: %s" % e.message)
+
+            irc.reply(colourise(msg), prefixNick=False)
+    maintainer = wrap(_qa, [many('anything')])
 
     def _qa(self, irc, msg, args, items):
         for package in items:
