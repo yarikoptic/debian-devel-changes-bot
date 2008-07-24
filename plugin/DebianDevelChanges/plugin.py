@@ -202,7 +202,7 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
         for package in items:
             info = Maintainer().get_maintainer(package)
             if info:
-                display_name = format_email_address("%s <%s>" % (info['name'], info['email']))
+                display_name = format_email_address("%s <%s>" % (info['name'], info['email']), max_domain=18)
                 msg = "[package]%s[reset]: [desc]Maintainer is[reset]: [by]%s[reset]" % (package, display_name)
                 msg += " [url]http://qa.debian.org/developer.php?login=%s[/url]" % info['email']
             else:
