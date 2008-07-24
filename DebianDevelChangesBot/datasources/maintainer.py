@@ -40,13 +40,13 @@ class Maintainer(Datasource):
         self.lock.acquire()
         try:
             if fileobj is None:
-                def get_pool_url(self, package):
+                def get_pool_url(package):
                     if package.startswith('lib'):
                         return (package[:4], package)
                     else:
                         return (package[:1], package)
 
-                fileobj = urllib2.urlopen("http://packages.qa.debian.org/%s/%s.html" % self.get_pool_url(package))
+                fileobj = urllib2.urlopen("http://packages.qa.debian.org/%s/%s.html" % get_pool_url(package))
 
             soup = BeautifulSoup(fileobj)
 
