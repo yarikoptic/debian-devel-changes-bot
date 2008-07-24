@@ -30,7 +30,7 @@ from DebianDevelChangesBot.mailparsers import get_message
 from DebianDevelChangesBot.datasources import get_datasources, TestingRCBugs, \
     NewQueue, RmQueue, Maintainer
 from DebianDevelChangesBot.utils import parse_mail, FifoReader, colourise, \
-    rewrite_topic, madison, bug_synopsis
+    rewrite_topic, madison, bug_synopsis, format_email_address
 
 class DebianDevelChanges(supybot.callbacks.Plugin):
     threaded = True
