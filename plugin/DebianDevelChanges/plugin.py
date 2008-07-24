@@ -213,7 +213,7 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
                 irc.reply("Error: %s" % e.message)
 
             irc.reply(colourise(msg), prefixNick=False)
-    maintainer = wrap(_qa, [many('anything')])
+    maintainer = wrap(_maintainer, [many('anything')])
 
     def _qa(self, irc, msg, args, items):
         for package in items:
