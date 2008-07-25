@@ -78,5 +78,20 @@ class TestMailParserSecurityAnnounce(unittest.TestCase):
             'package': 'ikiwiki',
         })
 
+    def subject_variation(self, subject):
+        self.headers['Subject'] = "[SECURITY] [DSA 1234-5] %s" % subject
+        data = p.parse(self.headers, [])
+        self.assertEqual(data.package, 'foo')
+        self.assertEqual(data.problem, 'bar problem')
+
+    def testSubjectVariationNoNew(self):
+        self.subject_variation("foo packages fix bar problem")
+
+    def testSubjectVariationCapitalNew(self):
+        self.subject_variation("New foo packages fix bar problem")
+
+    def testSubjectVariationLowerNew(self):
+        self.subject_variation("new foo packages fix bar problem")
+
 if __name__ == "__main__":
     unittest.main()
