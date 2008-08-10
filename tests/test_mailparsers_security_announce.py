@@ -50,7 +50,7 @@ class TestMailParserSecurityAnnounce(unittest.TestCase):
         self.assertEqual(msg.dsa_number, 1234)
         self.assertEqual(msg.dsa_revision, 5)
         self.assertEqual(msg.package, 'pinafore')
-        self.assertEqual(msg.problem, 'inertial dampener problem')
+        self.assertEqual(msg.problem, 'fix inertial dampener problem')
         self.assertEqual(msg.year, 2008)
 
     def testNoDate(self):
@@ -72,7 +72,7 @@ class TestMailParserSecurityAnnounce(unittest.TestCase):
     def test1(self):
         self.assertEqual(parse(1), {
             'dsa_revision': 1,
-            'problem': 'cross-site request forgery',
+            'problem': 'fix cross-site request forgery',
             'year': 2008,
             'dsa_number': 1553,
             'package': 'ikiwiki',
@@ -82,7 +82,7 @@ class TestMailParserSecurityAnnounce(unittest.TestCase):
         self.headers['Subject'] = "[SECURITY] [DSA 1234-5] %s" % subject
         data = p.parse(self.headers, [])
         self.assertEqual(data.package, 'foo')
-        self.assertEqual(data.problem, 'bar problem')
+        self.assertEqual(data.problem, 'fix bar problem')
 
     def testSubjectVariationNoNew(self):
         self.subject_variation("foo packages fix bar problem")
