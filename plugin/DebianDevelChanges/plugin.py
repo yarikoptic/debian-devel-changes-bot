@@ -146,7 +146,7 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
         num_bugs = TestingRCBugs().get_num_bugs()
         if type(num_bugs) is int:
             irc.reply("There are %d release-critical bugs in the testing distribution. " \
-                "See http://bts.turmzimmer.net/details.php?bydist=lenny" % num_bugs)
+                "See http://bts.turmzimmer.net/details.php?bydist=lenny&igncontrib=on&ignnonfree=on" % num_bugs)
         else:
             irc.reply("No data at this time.")
     rc = wrap(rc)

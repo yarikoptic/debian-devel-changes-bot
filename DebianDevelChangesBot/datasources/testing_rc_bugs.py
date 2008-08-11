@@ -28,7 +28,7 @@ from DebianDevelChangesBot import Datasource
 class TestingRCBugs(Datasource):
     _shared_state = {}
 
-    URL = 'http://bts.turmzimmer.net/details.php?bydist=lenny'
+    URL = 'http://bts.turmzimmer.net/details.php?bydist=lenny&igncontrib=on&ignnonfree=on'
     BUG_COUNT = re.compile(r'.*Total shown: (?P<bug_count>\d+) bug.*')
     INTERVAL = 60 * 10
 
