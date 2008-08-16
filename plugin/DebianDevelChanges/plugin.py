@@ -305,7 +305,7 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
     debian = wrap(_swirl)
 
     def _pas(self, irc, msg, args):
-        url = "[desc]Packages-arch-specific[reset]: [url]http://cvs.debian.org/srcdep/Packages-arch-specific?rev=1.769&root=dak&view=auto[/url]"
+        line = "[desc]Packages-arch-specific[reset]: [url]http://cvs.debian.org/srcdep/Packages-arch-specific?rev=1.769&root=dak&view=auto[/url]"
         irc.reply(colourise(line))
     pas = wrap(_pas)
     packages_arch_specific = wrap(_pas)
