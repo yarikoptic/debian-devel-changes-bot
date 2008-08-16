@@ -313,7 +313,7 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
     nfu = wrap(_pas)
 
     def _new(self, irc, msg, args):
-        line = "[desc]NEW queue is[reset]: [url]%s[/url] [desc]Current size is[reset] %d" % \
+        line = "[desc]NEW queue is[reset]: [url]%s[/url]. [desc]Current size is:[reset] %d" % \
             (NewQueue().URL, NewQueue().get_size())
         irc.reply(colourise(line))
     new = wrap(_new)
