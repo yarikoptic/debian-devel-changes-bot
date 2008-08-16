@@ -317,7 +317,6 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
             (NewQueue().URL, NewQueue().get_size())
         irc.reply(colourise(line))
     new = wrap(_new)
-    NEW = wrap(_new)
     new_queue = wrap(_new)
     newqueue = wrap(_new)
 
