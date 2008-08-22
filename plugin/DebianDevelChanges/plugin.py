@@ -286,7 +286,7 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
 
     def _dehs(self, irc, msg, args, items):
         for package in items:
-            msg = "[desc]Debian External Health Status for[reset] [package]%s[reset]: [url]http://dehs.alioth.debian.org/maintainer.php?name=%s[/url]" % \
+            msg = "[desc]Debian External Health Status for[reset] [package]%s[reset]: [url]http://dehs.alioth.debian.org/report.php?package=%s[/url]" % \
                 (package, package)
             irc.reply(colourise(msg), prefixNick=False)
     dehs = wrap(_dehs, [many('anything')])
