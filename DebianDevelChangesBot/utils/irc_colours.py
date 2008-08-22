@@ -54,7 +54,7 @@ def colourise(s):
         'urgency': tags['brightred'],
         'new': tags['brightred'],
 
-        'section': tags['magenta'],
+        'section': tags['grey'],
         'desc': tags['nostyle'],
 
         'url': tags['nostyle'],
