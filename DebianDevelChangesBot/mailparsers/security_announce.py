@@ -21,7 +21,7 @@ from DebianDevelChangesBot.messages import SecurityAnnounceMessage
 
 import re
 
-SUBJECT = re.compile(r'^\[SECURITY\] \[DSA ([\d]+)-([\d+])\] (?:[Nn]ew )?(.+) packages (.*)$')
+SUBJECT = re.compile(r'^\[SECURITY\] \[DSA ([\d]+)-([\d+])\] (?:[Nn]ew )?(.+) packages? (.*)$')
 DATE = re.compile(r'(20\d\d)')
 
 class SecurityAnnounceParser(MailParser):
