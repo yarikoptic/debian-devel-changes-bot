@@ -47,6 +47,7 @@ pseudo_packages = {
     'wiki.debian.org': 'Problems with the Debian wiki',
     'security-tracker': 'The Debian Security Bug Tracker',
     'release.debian.org': 'Requests regarding Debian releases and release team tools',
+    'listarchives': 'Problems with the WWW mailing list archives',
 }
 
 class Datasource(object):
