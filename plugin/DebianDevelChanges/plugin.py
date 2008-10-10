@@ -159,7 +159,7 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
         ))
         txt = "Good morning, %s! There are currently %d RC bugs in Lenny. %s" % \
             (msg.nick, num_bugs, advice)
-        irc.reply(txt, prefixNick=false)
+        irc.reply(txt, prefixNick=False)
     morning = wrap(morning)
 
     def rc(self, irc, msg, args):
