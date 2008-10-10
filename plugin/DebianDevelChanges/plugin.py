@@ -18,6 +18,7 @@
 
 import os
 import time
+import random
 import supybot
 import threading
 
@@ -145,7 +146,17 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
     def morning(self, irc, msg, args):
         num_bugs = TestingRCBugs().get_num_bugs()
         if type(num_bugs) is int:
-            irc.reply("Good morning %s! There are currently %d RC bugs in Lenny." % (msg.nick, num_bugs))
+            advice = random.choice((
+                'Why not go and fix one?',
+                'Why not peek at the list and find one?',
+                'Stop blogging about fixing RC bugs and fix one.',
+                'Stop IRCing and fix one.',
+                'You realise they don\'t fix themselves, right?',
+                'How about fixing yourself some caffeine and then poking at the bug list?',
+            ))
+            txt = "Good morning, %s! There are currently %d RC bugs in Lenny. %s" % \
+                (msg.nick, num_bugs, advice)
+            irc.reply(txt)
         else:
             irc.reply("Good morning, %s!" % msg.name)
     morning = wrap(morning)
