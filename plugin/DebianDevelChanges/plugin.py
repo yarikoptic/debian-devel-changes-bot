@@ -142,6 +142,14 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
         finally:
             self.topic_lock.release()
 
+    def morning(self, irc, msg, args):
+        num_bugs = TestingRCBugs().get_num_bugs()
+        if type(num_bugs) is int:
+            irc.reply("Good morning %s! There are currently %d RC bugs in Lenny." % (msg.prefix, num_bugs))
+        else:
+            irc.reply("Good morning, %s!" % msg.prefix)
+    morning = wrap(morning)
+
     def rc(self, irc, msg, args):
         num_bugs = TestingRCBugs().get_num_bugs()
         if type(num_bugs) is int:
