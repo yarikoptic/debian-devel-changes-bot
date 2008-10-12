@@ -1,3 +1,5 @@
 *.pyc
 bot-config/
 .coverage
+conf/*.conf
+logs/*.log
