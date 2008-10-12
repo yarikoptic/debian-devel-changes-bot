@@ -160,6 +160,16 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
             txt = "%s %s!" % (prefix, msg.name)
         irc.reply(txt, prefixNick=False)
 
+    for greeting, aliases in {
+        'Good morning, ': ('morning', 'good_morning', 'wakeywakey', 'yawn'),
+        'Good night, ': ('nn', 'good_night', 'night'),
+            }.iteritems():
+
+        def fn(self, *args):
+            self.greeting(greeting, *args)
+
+        for alias in aliases:
+            setattr(self, alias, wrap(fn))
 
     def morning(self, *args):
         self.greeting(msg, 'Good morning', *args)
