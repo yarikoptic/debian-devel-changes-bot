@@ -161,19 +161,19 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
         irc.reply(txt, prefixNick=False)
 
     def morning(self, *args):
-        self.greeting(msg, 'Good morning,', *args)
+        self.greeting('Good morning,', *args)
     morning = wrap(morning)
     yawn = wrap(morning)
     wakeywakey = wrap(morning)
 
     def night(self, *args):
-        self.greeting(msg, 'Good night,', *args)
+        self.greeting( 'Good night,', *args)
     night = wrap(night)
     nn = wrap(night)
     goodnight = wrap(night)
 
     def sup(self, *args):
-        self.greeting(msg, "'sup", *args)
+        self.greeting("'sup", *args)
     sup = wrap(sup)
     lo = wrap(sup)
 
