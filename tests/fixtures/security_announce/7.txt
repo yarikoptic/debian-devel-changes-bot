@@ -1,0 +1,256 @@
+Received: from liszt.debian.org ([82.195.75.100])
+	by chris-lamb.co.uk with esmtps (TLS-1.0:DHE_RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <bounce-debian-security-announce=chris=chris-lamb.co.uk@lists.debian.org>)
+	id 1KoxV9-0002Aa-W2
+	for chris@chris-lamb.co.uk; Sun, 12 Oct 2008 10:44:40 +0100
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with QMQP
+	id 742FF13A50FF; Sun, 12 Oct 2008 09:36:06 +0000 (UTC)
+Old-Return-Path: <jmm@inutil.org>
+X-Original-To: lists-debian-security-announce@liszt.debian.org
+Delivered-To: lists-debian-security-announce@liszt.debian.org
+Received: from localhost (localhost [127.0.0.1])
+	by liszt.debian.org (Postfix) with ESMTP id 2A85113A5098
+	for <lists-debian-security-announce@liszt.debian.org>; Sun, 12 Oct 2008 09:36:05 +0000 (UTC)
+Received: from liszt.debian.org ([127.0.0.1])
+	by localhost (lists.debian.org [127.0.0.1]) (amavisd-new, port 2525)
+	with ESMTP id 14304-06
+	for <lists-debian-security-announce@liszt.debian.org>;
+	Sun, 12 Oct 2008 09:36:02 +0000 (UTC)
+X-policyd-weight:  DYN_NJABL=ERR NOT_IN_SBL_XBL_SPAMHAUS=-1.5 NOT_IN_BL_NJABL=-1.5 CL_IP_EQ_FROM_MX=-3.1 IN_BLACKHOLE=1.5 <client=83.151.30.8> <helo=inutil.org> <from=jmm@inutil.org> <to=debian-security-announce@lists.debian.org>, rate: -4.6
+Received: from inutil.org (inutil.org [83.151.30.8])
+	(using TLSv1 with cipher AES256-SHA (256/256 bits))
+	(Client did not present a certificate)
+	by liszt.debian.org (Postfix) with ESMTP id 070F913A50CB
+	for <debian-security-announce@lists.debian.org>; Sun, 12 Oct 2008 09:35:55 +0000 (UTC)
+Received: from dslb-082-083-193-005.pools.arcor-ip.net ([82.83.193.5] helo=localhost.localdomain)
+	by inutil.org with esmtpsa (TLS-1.0:RSA_AES_256_CBC_SHA1:32)
+	(Exim 4.63)
+	(envelope-from <jmm@inutil.org>)
+	id 1KoxAv-0006B0-GH
+	for debian-security-announce@lists.debian.org; Sun, 12 Oct 2008 11:23:45 +0200
+Received: from jmm by localhost.localdomain with local (Exim 4.69)
+	(envelope-from <jmm@inutil.org>)
+	id 1KoxMW-00017H-Br
+	for debian-security-announce@lists.debian.org; Sun, 12 Oct 2008 11:35:44 +0200
+Date: Sun, 12 Oct 2008 11:35:44 +0200
+From: Moritz Muehlenhoff <jmm@debian.org>
+To: debian-security-announce@lists.debian.org
+Message-ID: <20081012093544.GA4283@galadriel.inutil.org>
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+User-Agent: Mutt/1.5.18 (2008-05-17)
+X-SA-Exim-Connect-IP: 82.83.193.5
+X-SA-Exim-Mail-From: jmm@inutil.org
+X-SA-Exim-Scanned: No (on inutil.org); SAEximRunCond expanded to false
+X-Virus-Scanned: at lists.debian.org with policy bank moderated
+X-Spam-Status: No, score=-7.18 tagged_above=3.6 required=5.3
+	tests=[FOURLA=0.1, FVGT_m_MULTI_ODD=0.02, IMPRONONCABLE_2=1,
+	LDO_WHITELIST=-5, MURPHY_WRONG_WORD2=0.2, PGPSIGNATURE=-5,
+	PHONENUMBER=1.5]
+X-Spam-Level: 
+X-Debian: PGP check passed for security officers
+Subject: [SECURITY] [DSA 1650-1] New openldap2.3 packags fix denial of service
+Priority: urgent
+Reply-To: debian-security@lists.debian.org
+Resent-Message-ID: <L2m0spIbI5O.A.UEF.GUc8IB@liszt>
+Resent-From: debian-security-announce@lists.debian.org
+X-Mailing-List: <debian-security-announce@lists.debian.org> archive/latest/335
+X-Loop: debian-security-announce@lists.debian.org
+List-Id: <debian-security-announce.lists.debian.org>
+List-Post: <mailto:debian-security-announce@lists.debian.org>
+List-Help: <mailto:debian-security-announce-request@lists.debian.org?subject=help>
+List-Subscribe: <mailto:debian-security-announce-request@lists.debian.org?subject=subscribe>
+List-Unsubscribe: <mailto:debian-security-announce-request@lists.debian.org?subject=unsubscribe>
+Precedence: list
+Resent-Sender: debian-security-announce-request@lists.debian.org
+Resent-Date: Sun, 12 Oct 2008 09:36:06 +0000 (UTC)
+Received-SPF: none
+X-SPF-Guess: pass
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+- ------------------------------------------------------------------------
+Debian Security Advisory DSA-1650-1                  security@debian.org
+http://www.debian.org/security/                       Moritz Muehlenhoff
+October 12, 2008                      http://www.debian.org/security/faq
+- ------------------------------------------------------------------------
+
+Package        : openldap2.3
+Vulnerability  : denial of service
+Problem type   : remote
+Debian-specific: no
+CVE Id(s)      : CVE-2008-2952
+Debian Bug     : 488710
+
+Cameron Hotchkies discovered that the OpenLDAP server slapd, a free
+implementation of the Lightweight Directory Access Protocol, could be
+crashed by sending malformed ASN1 requests.
+
+For the stable distribution (etch), this problem has been fixed in
+version 2.3.30-5+etch2.
+
+For the unstable distribution (sid), this problem has been fixed in
+version 2.4.10-3 of the openldap package.
+
+We recommend that you upgrade your openldap2.3 packages.
+
+Upgrade instructions
+- --------------------
+
+wget url
+        will fetch the file for you
+dpkg -i file.deb
+        will install the referenced file.
+
+If you are using the apt-get package manager, use the line for
+sources.list as given below:
+
+apt-get update
+        will update the internal database
+apt-get upgrade
+        will install corrected packages
+
+You may use an automated update by adding the resources from the
+footer to the proper configuration.
+
+
+Debian GNU/Linux 4.0 alias etch
+- -------------------------------
+
+Stable updates are available for alpha, amd64, arm, hppa, i386, ia64, mips, mipsel, powerpc, s390 and sparc.
+
+Source archives:
+
+  http://security.debian.org/pool/updates/main/o/openldap2.3/openldap2.3_2.3.30.orig.tar.gz
+    Size/MD5 checksum:  2971126 c40bcc23fa65908b8d7a86a4a6061251
+  http://security.debian.org/pool/updates/main/o/openldap2.3/openldap2.3_2.3.30-5+etch2.diff.gz
+    Size/MD5 checksum:   311809 22b5eafd6a8e6375ffe3fec5533a1d5d
+  http://security.debian.org/pool/updates/main/o/openldap2.3/openldap2.3_2.3.30-5+etch2.dsc
+    Size/MD5 checksum:     1205 d266aa1b763c9f0d91f7b062bfb65c86
+
+alpha architecture (DEC Alpha)
+
+  http://security.debian.org/pool/updates/main/o/openldap2.3/slapd_2.3.30-5+etch2_alpha.deb
+    Size/MD5 checksum:  1280050 180958ccc394210e2b04ac1c532118cd
+  http://security.debian.org/pool/updates/main/o/openldap2.3/libldap-2.3-0_2.3.30-5+etch2_alpha.deb
+    Size/MD5 checksum:   292722 cb1433274dce06173ea7e97051863c2b
+  http://security.debian.org/pool/updates/main/o/openldap2.3/ldap-utils_2.3.30-5+etch2_alpha.deb
+    Size/MD5 checksum:   193424 61f779bea372ee467a4691e219547c21
+
+amd64 architecture (AMD x86_64 (AMD64))
+
+  http://security.debian.org/pool/updates/main/o/openldap2.3/slapd_2.3.30-5+etch2_amd64.deb
+    Size/MD5 checksum:  1244538 37c9d1aba2a53ff6562678a25b6147ef
+  http://security.debian.org/pool/updates/main/o/openldap2.3/libldap-2.3-0_2.3.30-5+etch2_amd64.deb
+    Size/MD5 checksum:   285314 a81dd9a9a2d661d95897ca71d5a68527
+  http://security.debian.org/pool/updates/main/o/openldap2.3/ldap-utils_2.3.30-5+etch2_amd64.deb
+    Size/MD5 checksum:   184558 e22fd11d64bad96ad7a5c6a76f69c872
+
+arm architecture (ARM)
+
+  http://security.debian.org/pool/updates/main/o/openldap2.3/libldap-2.3-0_2.3.30-5+etch2_arm.deb
+    Size/MD5 checksum:   254636 1537a42a4c76d3c40feb4e35adf10abc
+  http://security.debian.org/pool/updates/main/o/openldap2.3/ldap-utils_2.3.30-5+etch2_arm.deb
+    Size/MD5 checksum:   141986 fbda3408d6b35a34cd43875ee39c038a
+  http://security.debian.org/pool/updates/main/o/openldap2.3/slapd_2.3.30-5+etch2_arm.deb
+    Size/MD5 checksum:  1188920 b556015d8462a5eff9e5c00cf65658ff
+
+hppa architecture (HP PA RISC)
+
+  http://security.debian.org/pool/updates/main/o/openldap2.3/libldap-2.3-0_2.3.30-5+etch2_hppa.deb
+    Size/MD5 checksum:   292550 a99048fa9bbf6e524a9854c7874481b3
+  http://security.debian.org/pool/updates/main/o/openldap2.3/slapd_2.3.30-5+etch2_hppa.deb
+    Size/MD5 checksum:  1304974 8a352883c7359d68ac65bef523c8c37d
+  http://security.debian.org/pool/updates/main/o/openldap2.3/ldap-utils_2.3.30-5+etch2_hppa.deb
+    Size/MD5 checksum:   176956 dc8668a17000f0b6c6993dca2aed517a
+
+i386 architecture (Intel ia32)
+
+  http://security.debian.org/pool/updates/main/o/openldap2.3/libldap-2.3-0_2.3.30-5+etch2_i386.deb
+    Size/MD5 checksum:   266054 84bb5bde130cbc49cce8654fbbf145ed
+  http://security.debian.org/pool/updates/main/o/openldap2.3/ldap-utils_2.3.30-5+etch2_i386.deb
+    Size/MD5 checksum:   154168 a73aa2fe4c60f7c74dfb7586ad7e9274
+  http://security.debian.org/pool/updates/main/o/openldap2.3/slapd_2.3.30-5+etch2_i386.deb
+    Size/MD5 checksum:  1174324 e23a1aa2d33eccb2af662fbe4e5b9f6d
+
+ia64 architecture (Intel ia64)
+
+  http://security.debian.org/pool/updates/main/o/openldap2.3/slapd_2.3.30-5+etch2_ia64.deb
+    Size/MD5 checksum:  1660820 2cd17aac1591b7f6dbc8ad9806ad7821
+  http://security.debian.org/pool/updates/main/o/openldap2.3/libldap-2.3-0_2.3.30-5+etch2_ia64.deb
+    Size/MD5 checksum:   379572 112ff502ca043d71907f05ad316aaa0b
+  http://security.debian.org/pool/updates/main/o/openldap2.3/ldap-utils_2.3.30-5+etch2_ia64.deb
+    Size/MD5 checksum:   239140 db04191db37a5bf2dec66f115803ed70
+
+mips architecture (MIPS (Big Endian))
+
+  http://security.debian.org/pool/updates/main/o/openldap2.3/slapd_2.3.30-5+etch2_mips.deb
+    Size/MD5 checksum:  1205670 2eae08b5aa3717fa050f24831870a835
+  http://security.debian.org/pool/updates/main/o/openldap2.3/ldap-utils_2.3.30-5+etch2_mips.deb
+    Size/MD5 checksum:   185522 9cb2d778a25d6c904bd84abbbc89fddd
+  http://security.debian.org/pool/updates/main/o/openldap2.3/libldap-2.3-0_2.3.30-5+etch2_mips.deb
+    Size/MD5 checksum:   258028 4cd6d9a297dc6447e4f8ffb91d1ddddc
+
+mipsel architecture (MIPS (Little Endian))
+
+  http://security.debian.org/pool/updates/main/o/openldap2.3/slapd_2.3.30-5+etch2_mipsel.deb
+    Size/MD5 checksum:  1188250 7fa6e8454be9cc2b5619fd05c088e666
+  http://security.debian.org/pool/updates/main/o/openldap2.3/libldap-2.3-0_2.3.30-5+etch2_mipsel.deb
+    Size/MD5 checksum:   258632 369f2d0a5adc823edf8c8dcc7de8a34a
+  http://security.debian.org/pool/updates/main/o/openldap2.3/ldap-utils_2.3.30-5+etch2_mipsel.deb
+    Size/MD5 checksum:   186796 9c611e11a90f62302cab63f0561d0d1d
+
+powerpc architecture (PowerPC)
+
+  http://security.debian.org/pool/updates/main/o/openldap2.3/slapd_2.3.30-5+etch2_powerpc.deb
+    Size/MD5 checksum:  1243660 2a68e3d27c0238061fdf2aa841befa23
+  http://security.debian.org/pool/updates/main/o/openldap2.3/ldap-utils_2.3.30-5+etch2_powerpc.deb
+    Size/MD5 checksum:   188790 d274c287d39d1a75bb4b6474ac1c6f34
+  http://security.debian.org/pool/updates/main/o/openldap2.3/libldap-2.3-0_2.3.30-5+etch2_powerpc.deb
+    Size/MD5 checksum:   272242 896e4fe8de21568e3251f8060c58b145
+
+s390 architecture (IBM S/390)
+
+  http://security.debian.org/pool/updates/main/o/openldap2.3/ldap-utils_2.3.30-5+etch2_s390.deb
+    Size/MD5 checksum:   168388 66e6090f492708f524b83e990857cf83
+  http://security.debian.org/pool/updates/main/o/openldap2.3/slapd_2.3.30-5+etch2_s390.deb
+    Size/MD5 checksum:  1240878 8b841b579a2ed5f7c990e5ffbcf76847
+  http://security.debian.org/pool/updates/main/o/openldap2.3/libldap-2.3-0_2.3.30-5+etch2_s390.deb
+    Size/MD5 checksum:   291518 c49e29b487788b2d5a2025cedacf5ee6
+
+sparc architecture (Sun SPARC/UltraSPARC)
+
+  http://security.debian.org/pool/updates/main/o/openldap2.3/ldap-utils_2.3.30-5+etch2_sparc.deb
+    Size/MD5 checksum:   155004 ec1fc16d622ec4b1ecf2e2ca8b12d398
+  http://security.debian.org/pool/updates/main/o/openldap2.3/libldap-2.3-0_2.3.30-5+etch2_sparc.deb
+    Size/MD5 checksum:   256832 0fd6fcf2e1a0a54917c21009df1172f7
+  http://security.debian.org/pool/updates/main/o/openldap2.3/slapd_2.3.30-5+etch2_sparc.deb
+    Size/MD5 checksum:  1167556 0e95399858cd08f38c143e57c25c3db0
+
+
+  These files will probably be moved into the stable distribution on
+  its next update.
+
+- ---------------------------------------------------------------------------------
+For apt-get: deb http://security.debian.org/ stable/updates main
+For dpkg-ftp: ftp://security.debian.org/debian-security dists/stable/updates/main
+Mailing list: debian-security-announce@lists.debian.org
+Package info: `apt-cache show <pkg>' and http://packages.debian.org/<pkg>
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.9 (GNU/Linux)
+
+iEYEARECAAYFAkjxwxQACgkQXm3vHE4uylpinwCeIEAoQSeVRq03HmO/Tn6juy69
++PIAn1TIXT7a3e4iw3+nFNRdAt9qXuG8
+=Mz3b
+-----END PGP SIGNATURE-----
+
+
+-- 
+To UNSUBSCRIBE, email to debian-security-announce-REQUEST@lists.debian.org
+with a subject of "unsubscribe". Trouble? Contact listmaster@lists.debian.org
+
+
