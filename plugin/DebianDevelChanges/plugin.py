@@ -171,10 +171,6 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
         for alias in aliases:
             setattr(self, alias, wrap(fn))
 
-    def morning(self, *args):
-        self.greeting(msg, 'Good morning', *args)
-    morning = wrap(morning)
-
     def rc(self, irc, msg, args):
         num_bugs = TestingRCBugs().get_num_bugs()
         if type(num_bugs) is int:
