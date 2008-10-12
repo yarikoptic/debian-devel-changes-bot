@@ -185,6 +185,7 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
         else:
             irc.reply("No data at this time.")
     rc = wrap(rc)
+    bugs = wrap(rc)
 
     def update(self, irc, msg, args):
         if not ircdb.checkCapability(msg.prefix, 'owner'):
