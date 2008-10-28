@@ -149,7 +149,6 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
             advice = random.choice((
                 'Why not go and fix one?',
                 'Why not peek at the list and find one?',
-                'Stop blogging about fixing RC bugs and fix one.',
                 'Stop IRCing and fix one.',
                 'You realise they don\'t fix themselves, right?',
                 'How about fixing yourself some caffeine and then poking at the bug list?',
