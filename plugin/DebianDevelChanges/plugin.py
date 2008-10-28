@@ -153,7 +153,7 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
                 'You realise they don\'t fix themselves, right?',
                 'How about fixing yourself some caffeine and then poking at the bug list?',
             ))
-            txt = "%s %s! There are currently %d RC bugs in Lenny. %s. Try !random." % \
+            txt = "%s %s! There are currently %d RC bugs in Lenny. %s Try !random." % \
                 (prefix, msg.nick, num_bugs, advice)
         else:
             txt = "%s %s!" % (prefix, msg.name)
