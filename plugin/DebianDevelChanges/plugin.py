@@ -187,6 +187,12 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
     rc = wrap(rc)
     bugs = wrap(rc)
 
+    def randombug(self, *args):
+        bug = random.choice(list(TestingRCBugs().get_bugs()))
+        irc.reply("Your randomly chosen lenny RC bug is http://bugs.debian.org/%d. Happy hunting!")
+    randombug = wrap(randombug)
+    random = wrap(randombug)
+
     def update(self, irc, msg, args):
         if not ircdb.checkCapability(msg.prefix, 'owner'):
             irc.reply("You are not authorised to run this command.")
