@@ -189,7 +189,7 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
 
     def randombug(self, irc, msg, args):
         bug = random.choice(list(TestingRCBugs().get_bugs()))
-        irc.reply("Your randomly chosen lenny RC bug is http://bugs.debian.org/%d. Happy hunting!")
+        irc.reply("Your randomly chosen lenny RC bug is http://bugs.debian.org/%d. Happy hunting!" % bug)
     randombug = wrap(randombug)
     random = wrap(randombug)
 
