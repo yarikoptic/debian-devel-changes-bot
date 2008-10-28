@@ -20,6 +20,8 @@ import re
 import thread
 import urllib2
 
+from BeautifulSoup import BeautifulSoup
+
 import socket
 socket.setdefaulttimeout(10)
 
@@ -33,7 +35,7 @@ class TestingRCBugs(Datasource):
     INTERVAL = 60 * 10
 
     lock = thread.allocate_lock()
-    num_bugs = None
+    bugs = None
 
     def __init__(self):
         self.__dict__ = self._shared_state
@@ -42,22 +44,30 @@ class TestingRCBugs(Datasource):
         if fileobj is None:
             fileobj = urllib2.urlopen(self.URL)
 
-        for line in fileobj:
-            ret = self.BUG_COUNT.match(line)
-            if ret:
-                self.lock.acquire()
-                try:
-                    self.num_bugs = int(ret.group('bug_count'))
-                    return
-                finally:
-                    self.lock.release()
+        soup = BeautifulSoup(fileobj)
 
-        # No bug count line found
-        raise Datasource.DataError()
+        bugs = set()
 
-    def get_num_bugs(self):
+        for link in soup('a'):
+            bug = link.get('name', '')
+            try:
+                bugs.add(int(bug))
+            except ValueError:
+                pass
+
+        if bugs:
+            self.lock.acquire()
+            try:
+                self.bugs = bugs
+            finally:
+                self.lock.release()
+        else:
+            # Zarro bugs found; probably an error.
+            raise Datasource.DataError()
+
+    def get_bugs(self):
         self.lock.acquire()
         try:
-            return self.num_bugs
+            return self.bugs
         finally:
             self.lock.release()

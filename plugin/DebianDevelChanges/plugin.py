@@ -100,9 +100,9 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
         self.topic_lock.acquire()
 
         sections = {
-            TestingRCBugs().get_num_bugs: 'RC bug count:',
-            NewQueue().get_size: 'NEW queue:',
-            RmQueue().get_size: 'RM queue:',
+            lambda: len(TestingRCBugs().get_bugs()): 'RC bug count:',
+            lambda: NewQueue().get_size(): 'NEW queue:',
+            lambda: RmQueue().get_size(): 'RM queue:',
         }
 
         try:
@@ -144,7 +144,7 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
             self.topic_lock.release()
 
     def greeting(self, prefix, irc, msg, args):
-        num_bugs = TestingRCBugs().get_num_bugs()
+        num_bugs = len(TestingRCBugs().get_bugs())
         if type(num_bugs) is int:
             advice = random.choice((
                 'Why not go and fix one?',
@@ -178,7 +178,7 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
     lo = wrap(sup)
 
     def rc(self, irc, msg, args):
-        num_bugs = TestingRCBugs().get_num_bugs()
+        num_bugs = len(TestingRCBugs().get_bugs())
         if type(num_bugs) is int:
             irc.reply("There are %d release-critical bugs in the testing distribution. " \
                 "See http://bts.turmzimmer.net/details.php?bydist=lenny&igncontrib=on&ignnonfree=on" % num_bugs)

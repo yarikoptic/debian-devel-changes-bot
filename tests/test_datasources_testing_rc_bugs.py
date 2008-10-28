@@ -50,10 +50,10 @@ class TestDatasourceTestingRCBugs(unittest.TestCase):
     def testParse(self):
         fileobj = open(self.fixture)
         self.datasource.update(fileobj)
-        val = self.datasource.get_num_bugs()
+        val = self.datasource.get_bugs()
 
-        self.assert_(type(val) is int)
-        self.assertEqual(val, 538)
+        self.assert_(type(val) is set)
+        self.assertEqual(len(val), 538)
 
     def testParseEmpty(self):
         fileobj = open('/dev/null')
