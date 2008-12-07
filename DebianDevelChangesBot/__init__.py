@@ -30,6 +30,7 @@ pseudo_packages = {
     'kernel': 'Problems with the Linux kernel, or that shipped with Debian',
     'project': 'Problems related to project administration',
     'general': 'General problems (e.g. "many manpages are mode 755")',
+    'buildd.debian.org': 'Buildd maintainers',
     'nm.debian.org': 'New Maintainer process and nm.debian.org webpages',
     'qa.debian.org': 'The Quality Assurance group',
     'ftp.debian.org': 'Problems with the FTP site',
