@@ -1,0 +1,1456 @@
+Source: loadlin
+Version: 1.6c.really1.6c.nobin-2
+Architectures: source, amd64
+Age: 1 week
+Queue: byhand
+Maintainer: Samuel Thibault <samuel.thibault@ens-lyon.org>
+Changed-By: Samuel Thibault <samuel.thibault@ens-lyon.org>
+Sponsored-By: bgoglin@debian.org
+Distribution: unstable
+Fingerprint: 23F194455C8CB97C983FE504461F3C17C3DC59FA
+
+Source: ezmlm-idx
+Version: 6.0.1-1
+Architectures: source, powerpc
+Age: 6 months
+Queue: new
+Maintainer: Gerrit Pape <pape@smarden.org>
+Changed-By: Gerrit Pape <pape@smarden.org>
+Distribution: unstable
+Fingerprint: 23F41D24FF2C083DB0932EC2189A3241BC70A6FF
+Closes: #469193
+
+Source: sunpinyin
+Version: 1.0~hg20080607-1
+Architectures: source, all, i386
+Age: 6 months
+Queue: new
+Maintainer: Kov Chai <tchaikov@gmail.com>
+Changed-By: Kov Chai <tchaikov@gmail.com>
+Sponsored-By: foka@debian.org
+Distribution: unstable
+Fingerprint: E5A68A91A15FE9A1241473DE2DAF2A666D67F790
+Closes: #478811
+
+Source: fbreader
+Version: 0.8.17-12
+Architectures: source, all, amd64
+Age: 5 months
+Queue: new
+Maintainer: Eugene V. Lyubimkin <jackyf.devel@gmail.com>
+Changed-By: Eugene V. Lyubimkin <jackyf.devel@gmail.com>
+Sponsored-By: bernat@debian.org
+Distribution: unstable
+Fingerprint: 5854AF2B65B20E962161E32B285BD7A1F22A794E
+
+Source: oaklisp
+Version: 1.3.3-2
+Architectures: source, all, i386
+Age: 5 months
+Queue: new
+Maintainer: Barak A. Pearlmutter <bap@debian.org>
+Changed-By: Barak A. Pearlmutter <bap@debian.org>
+Distribution: unstable
+Fingerprint: 3755EE8A783F3493A8FF2C8F2F3E069EFEC23FB2
+
+Source: scalemail
+Version: 0.19
+Architectures: source, all
+Age: 4 months
+Queue: new
+Maintainer: Tommi Virtanen <tv@debian.org>
+Changed-By: Tommi Virtanen <tv@debian.org>
+Distribution: unstable
+Fingerprint: CD7718EB972FA2656969A68DF270442B
+Closes: #377089, #380941, #378905
+
+Source: dot-forward
+Version: 1:0.71-1
+Architectures: source, powerpc
+Age: 4 months
+Queue: new
+Maintainer: Gerrit Pape <pape@smarden.org>
+Changed-By: Gerrit Pape <pape@smarden.org>
+Distribution: unstable
+Fingerprint: 23F41D24FF2C083DB0932EC2189A3241BC70A6FF
+Closes: #484763
+
+Source: fastforward
+Version: 1:0.51-2
+Architectures: source, powerpc
+Age: 4 months
+Queue: new
+Maintainer: Gerrit Pape <pape@smarden.org>
+Changed-By: Gerrit Pape <pape@smarden.org>
+Distribution: unstable
+Fingerprint: 23F41D24FF2C083DB0932EC2189A3241BC70A6FF
+
+Source: netqmail
+Version: 1.06-2
+Architectures: source, all, powerpc
+Age: 4 months
+Queue: new
+Maintainer: Gerrit Pape <pape@smarden.org>
+Changed-By: Gerrit Pape <pape@smarden.org>
+Distribution: unstable
+Fingerprint: 23F41D24FF2C083DB0932EC2189A3241BC70A6FF
+
+Source: qmail-run
+Version: 2.0.1
+Architectures: source, all
+Age: 4 months
+Queue: new
+Maintainer: Gerrit Pape <pape@smarden.org>
+Changed-By: Gerrit Pape <pape@smarden.org>
+Distribution: unstable
+Fingerprint: 23F41D24FF2C083DB0932EC2189A3241BC70A6FF
+
+Source: qmail-tools
+Version: 0.1.0
+Architectures: source, all
+Age: 4 months
+Queue: new
+Maintainer: Gerrit Pape <pape@smarden.org>
+Changed-By: Gerrit Pape <pape@smarden.org>
+Distribution: unstable
+Fingerprint: 23F41D24FF2C083DB0932EC2189A3241BC70A6FF
+
+Source: passenger
+Version: 2.0.3-1
+Architectures: source, all, i386
+Age: 2 months
+Queue: new
+Maintainer: Leandro Nunes dos Santos <leandronunes@safernet.org.br>
+Changed-By: Filipe Lautert <filipe@debian.org>
+Distribution: unstable
+Fingerprint: BDC59E6BC8E3B139DAF07E6998A15B3EA6BA423E
+Closes: #488753
+
+Source: opencascade
+Version: 6.3.0.dfsg.1-1
+Architectures: source, all, amd64
+Age: 2 months
+Queue: new
+Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+Changed-By: Adam C. Powell, IV <hazelsct@debian.org>
+Distribution: unstable
+Fingerprint: D54D1AEEB11CCE9BA02BC5DD526F01E8564EE4B6
+Closes: #487116, #501128, #501352, #494715, #491912, #496668
+
+Source: libapache-mod-security
+Version: 2.5.6-1
+Architectures: source, all, i386
+Age: 1 month
+Queue: new
+Maintainer: Alberto Gonzalez Iniesta <agi@inittab.org>
+Changed-By: Alberto Gonzalez Iniesta <agi@inittab.org>
+Distribution: unstable
+Fingerprint: 978204E72B75405CF5E90C81C514AF8E4BA401C3
+Closes: #487431
+
+Source: ooo-build
+Version: 3.0.0.9+r14588-1
+Architectures: source, all
+Age: 1 month
+Queue: new
+Maintainer: Debian OpenOffice Team <debian-openoffice@lists.debian.org>
+Changed-By: Rene Engelhard <rene@debian.org>
+Distribution: experimental
+Fingerprint: 41FAF20828D47CA519BB7AD9F85990B0248AEB73
+
+Source: libpqxx3
+Version: 3.0.0-1
+Architectures: source, all, amd64
+Age: 3 weeks
+Queue: new
+Maintainer: Roger Leigh <rleigh@debian.org>
+Changed-By: Eugene V. Lyubimkin <jackyf.devel@gmail.com>
+Distribution: unstable
+Fingerprint: 2BF1D40D92B50C9772C3E2CC55C15C6925BFB848
+
+Source: rpy2
+Version: 2.0.1-1
+Architectures: source, i386
+Age: 2 weeks
+Queue: new
+Maintainer: Dirk Eddelbuettel <edd@debian.org>
+Changed-By: Dirk Eddelbuettel <edd@debian.org>
+Distribution: unstable
+Fingerprint: 344C9EC6707AFA176FE260B1099491F791B0D3B7
+Closes: #507622
+
+Source: dv4l
+Version: 1.0-1
+Architectures: source, amd64
+Age: 2 weeks
+Queue: new
+Maintainer: Nobuhiro Iwamatsu <iwamatsu@nigauri.org>
+Changed-By: Nobuhiro Iwamatsu <iwamatsu@nigauri.org>
+Sponsored-By: dancer@debian.org
+Distribution: unstable
+Fingerprint: 183A70FC47321B8757A5CE82D8377D4EE81E55C1
+Closes: #503748
+
+Source: libsvn-hooks-perl
+Version: 0.13.9-1
+Architectures: source, all
+Age: 2 weeks
+Queue: new
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Changed-By: Angel Abad (Ikusnet SLL) <angel@grupoikusnet.com>
+Sponsored-By: gregoa@debian.org
+Distribution: unstable
+Fingerprint: 741460055C35D4A18DC9C2103B32989D00F3CFE4
+Closes: #507268
+
+Source: plexus-containers
+Version: 1.0~beta2-1
+Architectures: source, all
+Age: 2 weeks
+Queue: new
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Changed-By: Torsten Werner <twerner@debian.org>
+Distribution: unstable
+Fingerprint: A698CD7FC5ED63FE985273C27D8DDD89C4CF8EC3
+Closes: #507272
+
+Source: mpi-defaults
+Version: 0.2
+Architectures: source, amd64
+Age: 2 weeks
+Queue: new
+Maintainer: Debian Science Team <debian-science-maintainers@lists.alioth.debian.org>
+Changed-By: Adam C. Powell, IV <hazelsct@debian.org>
+Distribution: unstable
+Fingerprint: D54D1AEEB11CCE9BA02BC5DD526F01E8564EE4B6
+
+Source: gksu-polkit
+Version: 0.0.1-1
+Architectures: source, i386
+Age: 2 weeks
+Queue: new
+Maintainer: Gustavo Noronha Silva <kov@debian.org>
+Changed-By: Gustavo Noronha Silva <kov@debian.org>
+Distribution: unstable
+Fingerprint: 9AE55601A23412FF423FA999D200EB30A0FB5DA6
+Closes: #507575
+
+Source: libgcal
+Version: 0.8.1-1 0.8.1-2
+Architectures: source, i386
+Age: 2 weeks
+Queue: new
+Maintainer: Michael Banck <mbanck@debian.org>
+Changed-By: Michael Banck <mbanck@debian.org>
+Distribution: unstable
+Fingerprint: 67D60A5932836E53F72E9DEE987689619ED101BF
+
+Source: rcpp
+Version: 0.6.2-1
+Architectures: source, i386
+Age: 2 weeks
+Queue: new
+Maintainer: Dirk Eddelbuettel <edd@debian.org>
+Changed-By: Dirk Eddelbuettel <edd@debian.org>
+Distribution: unstable
+Fingerprint: 344C9EC6707AFA176FE260B1099491F791B0D3B7
+Closes: #507941
+
+Source: libobject-destroyer-perl
+Version: 2.00-1
+Architectures: source, all
+Age: 2 weeks
+Queue: new
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Changed-By: Ansgar Burchardt <ansgar@43-1.org>
+Sponsored-By: gregoa@debian.org
+Distribution: unstable
+Fingerprint: 741460055C35D4A18DC9C2103B32989D00F3CFE4
+Closes: #506248
+
+Source: maven-reporting-impl
+Version: 2.0.4.1-1
+Architectures: source, all
+Age: 2 weeks
+Queue: new
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Changed-By: Torsten Werner <twerner@debian.org>
+Distribution: unstable
+Fingerprint: A698CD7FC5ED63FE985273C27D8DDD89C4CF8EC3
+Closes: #507910
+
+Source: maven-plugin-tools
+Version: 2.4.3-1
+Architectures: source, all
+Age: 2 weeks
+Queue: new
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Changed-By: Torsten Werner <twerner@debian.org>
+Distribution: unstable
+Fingerprint: A698CD7FC5ED63FE985273C27D8DDD89C4CF8EC3
+Closes: #507922
+
+Source: maven-shared-io
+Version: 1.1-1
+Architectures: source, all
+Age: 2 weeks
+Queue: new
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Changed-By: Torsten Werner <twerner@debian.org>
+Distribution: unstable
+Fingerprint: A698CD7FC5ED63FE985273C27D8DDD89C4CF8EC3
+Closes: #508014
+
+Source: maven-file-management
+Version: 1.2-1
+Architectures: source, all
+Age: 2 weeks
+Queue: new
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Changed-By: Torsten Werner <twerner@debian.org>
+Distribution: unstable
+Fingerprint: A698CD7FC5ED63FE985273C27D8DDD89C4CF8EC3
+Closes: #508012
+
+Source: maven-clean-plugin
+Version: 2.2-1
+Architectures: source, all
+Age: 2 weeks
+Queue: new
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Changed-By: Torsten Werner <twerner@debian.org>
+Distribution: unstable
+Fingerprint: A698CD7FC5ED63FE985273C27D8DDD89C4CF8EC3
+Closes: #508020
+
+Source: trilinos
+Version: 9.0.1.dfsg-1
+Architectures: source, all, i386
+Age: 2 weeks
+Queue: new
+Maintainer: Debian Scientific Computing Team <pkg-scicomp-devel@lists.alioth.debian.org>
+Changed-By: Christophe Prud'homme <prudhomm@debian.org>
+Distribution: unstable
+Fingerprint: 370350DE7A9F024E0F260D07A18FB40BD4BE1450
+Closes: #362293
+
+Source: urjtag
+Version: 0.9-1
+Architectures: source, i386
+Age: 2 weeks
+Queue: new
+Maintainer: Uwe Hermann <uwe@debian.org>
+Changed-By: Uwe Hermann <uwe@debian.org>
+Distribution: unstable
+Fingerprint: 0F3C34D1E4A38FC6435C01BA5DD5685778D621B4
+Closes: #468328
+
+Source: cuneiform
+Version: 0.5+dfsg-1
+Architectures: source, all, i386
+Age: 2 weeks
+Queue: new
+Maintainer: Daniel Baumann <daniel@debian.org>
+Changed-By: Daniel Baumann <daniel@debian.org>
+Distribution: unstable
+Fingerprint: 709F54E4ECF3195623326AE3F82E5CC04B2B2B9E
+Closes: #496264
+
+Source: tfdocgen
+Version: 1.0-1
+Architectures: source, amd64
+Age: 2 weeks
+Queue: new
+Maintainer: Krzysztof Burghardt <krzysztof@burghardt.pl>
+Changed-By: Krzysztof Burghardt <krzysztof@burghardt.pl>
+Sponsored-By: jblache@debian.org
+Distribution: unstable
+Fingerprint: 935A79F1C8B33521FD627CC7CD614FD7F5D65169
+Closes: #505295
+
+Source: subdownloader
+Version: 2.0.8.1-1
+Architectures: source, all
+Age: 2 weeks
+Queue: new
+Maintainer: Python Applications Packaging Team <python-apps-team@lists.alioth.debian.org>
+Changed-By: Marco Rodrigues <gothicx@sapo.pt>
+Sponsored-By: piotr@debian.org
+Distribution: unstable
+Fingerprint: CB085E3F5BC1C2B1B7A0B663074D737EED75F599
+Closes: #490364
+
+Source: python-gasp
+Version: 0.2.1~bzr65-1
+Architectures: source, all
+Age: 2 weeks
+Queue: new
+Maintainer: Luke Faraone <lfaraone@ubuntu.com>
+Changed-By: Luke Faraone <lfaraone@ubuntu.com>
+Sponsored-By: morph@debian.org
+Distribution: unstable
+Fingerprint: CE3353BB501F115039D0DC2402E93057444DD950
+Closes: #506501
+
+Source: pdk
+Version: 0.9.9
+Architectures: source, all
+Age: 2 weeks
+Queue: new
+Maintainer: Free Ekanayaka <freee@debian.org>
+Changed-By: Free Ekanayaka <freee@debian.org>
+Distribution: unstable
+Fingerprint: 0AA4EABAF45D81DF35E90F9771A9C91A57159E59
+Closes: #508112
+
+Source: unicap
+Version: 0.9.3-2 0.9.3-1
+Architectures: source, all, amd64
+Age: 2 weeks
+Queue: new
+Maintainer: Jonas Smedegaard <dr@jones.dk>
+Changed-By: Jonas Smedegaard <dr@jones.dk>
+Distribution: unstable
+Fingerprint: 9A98C6EBC0989ED03085ECA99FB0DB32C02440B8
+Closes: #491220
+
+Source: ocropus
+Version: 0.2-1
+Architectures: source, all, i386
+Age: 2 weeks
+Queue: new
+Maintainer: Jeffrey Ratcliffe <jeffrey.ratcliffe@gmail.com>
+Changed-By: Jeffrey Ratcliffe <jeffrey.ratcliffe@gmail.com>
+Sponsored-By: morph@debian.org
+Distribution: unstable
+Fingerprint: CE3353BB501F115039D0DC2402E93057444DD950
+Closes: #461097
+
+Source: bmakiosk
+Version: 2.13-1
+Architectures: source, all
+Age: 2 weeks
+Queue: new
+Maintainer: Free Ekanayaka <freee@debian.org>
+Changed-By: Free Ekanayaka <freee@debian.org>
+Distribution: unstable
+Fingerprint: 0AA4EABAF45D81DF35E90F9771A9C91A57159E59
+Closes: #508169
+
+Source: jslib
+Version: 0.1.359-1
+Architectures: source, all
+Age: 2 weeks
+Queue: new
+Maintainer: Free Ekanayaka <freee@debian.org>
+Changed-By: Free Ekanayaka <freee@debian.org>
+Distribution: unstable
+Fingerprint: 0AA4EABAF45D81DF35E90F9771A9C91A57159E59
+Closes: #508185
+
+Source: plexus-interpolation
+Version: 1.7-1
+Architectures: source, all
+Age: 2 weeks
+Queue: new
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Changed-By: Torsten Werner <twerner@debian.org>
+Distribution: unstable
+Fingerprint: A698CD7FC5ED63FE985273C27D8DDD89C4CF8EC3
+Closes: #508095
+
+Source: maven-filtering
+Version: 1.0~beta-2-1
+Architectures: source, all
+Age: 2 weeks
+Queue: new
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Changed-By: Torsten Werner <twerner@debian.org>
+Distribution: unstable
+Fingerprint: A698CD7FC5ED63FE985273C27D8DDD89C4CF8EC3
+Closes: #508102
+
+Source: maven-resources-plugin
+Version: 2.3-1
+Architectures: source, all
+Age: 2 weeks
+Queue: new
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Changed-By: Torsten Werner <twerner@debian.org>
+Distribution: unstable
+Fingerprint: A698CD7FC5ED63FE985273C27D8DDD89C4CF8EC3
+Closes: #508188
+
+Source: libio-pager-perl
+Version: 0.06-1
+Architectures: source, all
+Age: 2 weeks
+Queue: new
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Changed-By: Damyan Ivanov <dmn@debian.org>
+Distribution: unstable
+Fingerprint: 616696FDD049CB91E8B2736A1EA8E5AA9725F63B
+Closes: #508249
+
+Source: whohas
+Version: 0.21-2
+Architectures: source, all
+Age: 2 weeks
+Queue: new
+Maintainer: Jonathan Wiltshire <debian@jwiltshire.org.uk>
+Changed-By: Jonathan Wiltshire <debian@jwiltshire.org.uk>
+Sponsored-By: pabs@debian.org
+Distribution: unstable
+Fingerprint: 248D6AB6867130C0D3BD3749E5273D986BE3C423
+Closes: #507938
+
+Source: hunspell-gl-es
+Version: 2.2-1 2.2-2
+Architectures: source, all
+Age: 2 weeks
+Queue: new
+Maintainer: Agustin Martin Domingo <agmartin@debian.org>
+Changed-By: Agustin Martin Domingo <agmartin@debian.org>
+Distribution: unstable
+Fingerprint: 99C2A0AE0BA54C57D17C505C4D2847AA3EF60E9C
+Closes: #507472
+
+Source: libcatalyst-component-instancepercontext-perl
+Version: 0.001001-1
+Architectures: source, all
+Age: 2 weeks
+Queue: new
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Changed-By: Brian Cassidy <brian.cassidy@gmail.com>
+Sponsored-By: dmn@debian.org
+Distribution: unstable
+Fingerprint: 616696FDD049CB91E8B2736A1EA8E5AA9725F63B
+Closes: #508262
+
+Source: libcatalyst-controller-html-formfu-perl
+Version: 0.03007-1
+Architectures: source, all
+Age: 2 weeks
+Queue: new
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Changed-By: Brian Cassidy <brian.cassidy@gmail.com>
+Sponsored-By: dmn@debian.org
+Distribution: unstable
+Fingerprint: 616696FDD049CB91E8B2736A1EA8E5AA9725F63B
+Closes: #508273
+
+Source: lua-json
+Version: 0.10-1
+Architectures: source, all
+Age: 2 weeks
+Queue: new
+Maintainer: Bernd Zeimetz <bzed@debian.org>
+Changed-By: Bernd Zeimetz <bzed@debian.org>
+Distribution: unstable
+Fingerprint: 06C8C9A2EAADE37E5B2CBE93067AAD04C93BFF79
+
+Source: gtk-smooth-engine
+Version: 1:2.14.3+deb1
+Architectures: source, amd64
+Age: 1 week
+Queue: new
+Maintainer: Josselin Mouette <joss@debian.org>
+Changed-By: Josselin Mouette <joss@debian.org>
+Distribution: experimental
+Fingerprint: 8C62F78F73041328C670C347AD295AE1D75F8533
+
+Source: seahorse-plugins
+Version: 2.24.1-1
+Architectures: source, amd64
+Age: 1 week
+Queue: new
+Maintainer: Emilio Pozuelo Monfort <pochu@ubuntu.com>
+Changed-By: Josselin Mouette <joss@debian.org>
+Distribution: experimental
+Fingerprint: 8C62F78F73041328C670C347AD295AE1D75F8533
+Closes: #506895
+
+Source: plexus-io
+Version: 1.0~alpha2-1
+Architectures: source, all
+Age: 1 week
+Queue: new
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Changed-By: Torsten Werner <twerner@debian.org>
+Distribution: unstable
+Fingerprint: A698CD7FC5ED63FE985273C27D8DDD89C4CF8EC3
+Closes: #475726
+
+Source: maven-archiver
+Version: 2.3-1
+Architectures: source, all
+Age: 1 week
+Queue: new
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Changed-By: Torsten Werner <twerner@debian.org>
+Distribution: unstable
+Fingerprint: A698CD7FC5ED63FE985273C27D8DDD89C4CF8EC3
+Closes: #508311
+
+Source: plexus-archiver
+Version: 1.0~alpha10-1
+Architectures: source, all
+Age: 1 week
+Queue: new
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Changed-By: Torsten Werner <twerner@debian.org>
+Distribution: unstable
+Fingerprint: A698CD7FC5ED63FE985273C27D8DDD89C4CF8EC3
+Closes: #475780
+
+Source: maven-jar-plugin
+Version: 2.2-1
+Architectures: source, all
+Age: 1 week
+Queue: new
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Changed-By: Torsten Werner <twerner@debian.org>
+Distribution: unstable
+Fingerprint: A698CD7FC5ED63FE985273C27D8DDD89C4CF8EC3
+Closes: #508316
+
+Source: iceweasel-downthemall
+Version: 1.0.4-1
+Architectures: source, all
+Age: 1 week
+Queue: new
+Maintainer: Michael Meskes <meskes@debian.org>
+Changed-By: Michael Meskes <meskes@debian.org>
+Distribution: unstable
+Fingerprint: 5818BF0C98A32B8382BFD3B4564126F229F19BD1
+
+Source: libsane-perl
+Version: 0.02-1
+Architectures: source, i386
+Age: 1 week
+Queue: new
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Changed-By: Jeffrey Ratcliffe <Jeffrey.Ratcliffe@gmail.com>
+Sponsored-By: gregoa@debian.org
+Distribution: unstable
+Fingerprint: 741460055C35D4A18DC9C2103B32989D00F3CFE4
+Closes: #506405
+
+Source: foolscap
+Version: 0.3.2.dfsg-1
+Architectures: source, all
+Age: 1 week
+Queue: new
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Changed-By: Stephan Peijnik <debian@sp.or.at>
+Sponsored-By: piotr@debian.org
+Distribution: unstable
+Fingerprint: CB085E3F5BC1C2B1B7A0B663074D737EED75F599
+Closes: #499699
+
+Source: maven-compiler-plugin
+Version: 2.0.2-1
+Architectures: source, all
+Age: 1 week
+Queue: new
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Changed-By: Torsten Werner <twerner@debian.org>
+Distribution: unstable
+Fingerprint: A698CD7FC5ED63FE985273C27D8DDD89C4CF8EC3
+Closes: #508088
+
+Source: emelfm2
+Version: 0.5-1
+Architectures: source, amd64
+Age: 1 week
+Queue: new
+Maintainer: Jari Aalto <jari.aalto@cante.net>
+Changed-By: Jari Aalto <jari.aalto@cante.net>
+Sponsored-By: mones@debian.org
+Distribution: unstable
+Fingerprint: CFB7C7796BAEE81C3E0571722C045542C9B55DAC
+Closes: #433530
+
+Source: fx2pipe
+Version: 0.6-1
+Architectures: source, i386
+Age: 1 week
+Queue: new
+Maintainer: Uwe Hermann <uwe@debian.org>
+Changed-By: Uwe Hermann <uwe@debian.org>
+Distribution: unstable
+Fingerprint: 0F3C34D1E4A38FC6435C01BA5DD5685778D621B4
+Closes: #508553
+
+Source: libdbm-deep-perl
+Version: 1.0014-1
+Architectures: source, all
+Age: 1 week
+Queue: new
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Changed-By: AGOSTINI Yves <agostini@univ-metz.fr>
+Sponsored-By: gregoa@debian.org
+Distribution: unstable
+Fingerprint: 741460055C35D4A18DC9C2103B32989D00F3CFE4
+Closes: #499241
+
+Source: libautodie-perl
+Version: 1.997-1
+Architectures: source, all
+Age: 1 week
+Queue: new
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Changed-By: Jeremiah C. Foster <jeremiah@jeremiahfoster.com>
+Sponsored-By: gregoa@debian.org
+Distribution: unstable
+Fingerprint: 741460055C35D4A18DC9C2103B32989D00F3CFE4
+Closes: #508242
+
+Source: python-setupdocs
+Version: 1.0.1-1
+Architectures: source, all
+Age: 1 week
+Queue: new
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Changed-By: Varun Hiremath <varun@debian.org>
+Distribution: unstable
+Fingerprint: 2B98FD5F51A353E7A92198553C415250CC453197
+Closes: #508612
+
+Source: python-django-treebeard
+Version: 1.1-1
+Architectures: source, all
+Age: 1 week
+Queue: new
+Maintainer: Chris Lamb <lamby@debian.org>
+Changed-By: Chris Lamb <lamby@debian.org>
+Distribution: unstable
+Fingerprint: 0F1E5C1F1D3DF7DBAEE04288E7FF2E5B634F9A20
+Closes: #508035
+
+Source: mumudvb
+Version: 1.5.3-1
+Architectures: source, amd64
+Age: 1 week
+Queue: new
+Maintainer: Stephane Glondu <steph@glondu.net>
+Changed-By: Stephane Glondu <steph@glondu.net>
+Sponsored-By: bernat@debian.org
+Distribution: experimental
+Fingerprint: 5854AF2B65B20E962161E32B285BD7A1F22A794E
+Closes: #481616
+
+Source: galib
+Version: 2.4.7-1
+Architectures: source, i386
+Age: 1 week
+Queue: new
+Maintainer: Bradley Smith <bradsmith@debian.org>
+Changed-By: Bradley Smith <bradsmith@debian.org>
+Distribution: unstable
+Fingerprint: D20172742FE1A92AC45CEFAB8F70629AC718D347
+Closes: #508719
+
+Source: sysinfo
+Version: 0.7-1
+Architectures: source, all
+Age: 1 week
+Queue: new
+Maintainer: Debian CLI Applications Team <pkg-cli-apps-team@lists.alioth.debian.org>
+Changed-By: David Paleino <d.paleino@gmail.com>
+Sponsored-By: meebey@debian.org
+Distribution: experimental
+Fingerprint: 7B7D0C108EB5A9220CC0F28470959FE73B244761
+Closes: #507187
+
+Source: giplet
+Version: 0.1.8-1 0.1.7-2 0.1.7-1
+Architectures: source, all
+Age: 1 week
+Queue: new
+Maintainer: Salvatore Bonaccorso <salvatore.bonaccorso@gmail.com>
+Changed-By: Salvatore Bonaccorso <salvatore.bonaccorso@gmail.com>
+Sponsored-By: nijel@debian.org
+Distribution: unstable
+Fingerprint: C7DB6D75EEA1FE1BA255EF80DC3552E836E75604
+Closes: #426837
+
+Source: tuxcmd
+Version: 0.6.50-2 0.6.50-1
+Architectures: source, amd64
+Age: 1 week
+Queue: new
+Maintainer: Salvatore Bonaccorso <salvatore.bonaccorso@gmail.com>
+Changed-By: Salvatore Bonaccorso <salvatore.bonaccorso@gmail.com>
+Sponsored-By: nijel@debian.org
+Distribution: unstable
+Fingerprint: C7DB6D75EEA1FE1BA255EF80DC3552E836E75604
+
+Source: icu4j
+Version: 3.8.1-1
+Architectures: source, all
+Age: 1 week
+Queue: new
+Maintainer: Debian Java maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Changed-By: Andreas Tille <tille@debian.org>
+Distribution: unstable
+Fingerprint: 6D2EB3CAF6BCD06EEF42247F60305B31C09FD35A
+Closes: #508777
+
+Source: kdm-gdmcompat
+Version: 0.12-1
+Architectures: source, all
+Age: 1 week
+Queue: new
+Maintainer: Fabian Knittel <fabian.knittel@avona.com>
+Changed-By: Fabian Knittel <fabian.knittel@avona.com>
+Sponsored-By: pkern@debian.org
+Distribution: unstable
+Fingerprint: 17107DB19A2842FFB6997654ED1A3933B2CFCDD8
+
+Source: cipux-rbac
+Version: 3.4.0~svn2868-1
+Architectures: source, all
+Age: 1 week
+Queue: new
+Maintainer: CipUX team <cipux-devel@lists.alioth.debian.org>
+Changed-By: Jonas Smedegaard <dr@jones.dk>
+Distribution: experimental
+Fingerprint: 9A98C6EBC0989ED03085ECA99FB0DB32C02440B8
+
+Source: libsuper-perl
+Version: 1.16-1
+Architectures: source, all
+Age: 1 week
+Queue: new
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Changed-By: AGOSTINI Yves <agostini@univ-metz.fr>
+Sponsored-By: gregoa@debian.org
+Distribution: unstable
+Fingerprint: 741460055C35D4A18DC9C2103B32989D00F3CFE4
+Closes: #508783
+
+Source: sublib
+Version: 0.9-1
+Architectures: source, all
+Age: 1 week
+Queue: new
+Maintainer: Debian CLI Libraries Team <pkg-cli-libs-team@lists.alioth.debian.org>
+Changed-By: Mirco Bauer <meebey@debian.org>
+Distribution: experimental
+Fingerprint: 7B7D0C108EB5A9220CC0F28470959FE73B244761
+Closes: #507988
+
+Source: php-svn
+Version: 0.5.0-1
+Architectures: source, amd64
+Age: 1 week
+Queue: new
+Maintainer: Martin Meredith <mez@ubuntu.com>
+Changed-By: Martin Meredith <mez@ubuntu.com>
+Sponsored-By: francois@debian.org
+Distribution: unstable
+Fingerprint: 5A039C126D136E7329D8480149C5192819D03486
+Closes: #484732
+
+Source: urlwatch
+Version: 1.5-1
+Architectures: source, all
+Age: 1 week
+Queue: new
+Maintainer: Franck Joncourt <franck.mail@dthconnex.com>
+Changed-By: Franck Joncourt <franck.mail@dthconnex.com>
+Sponsored-By: francois@debian.org
+Distribution: unstable
+Fingerprint: 5A039C126D136E7329D8480149C5192819D03486
+Closes: #505968
+
+Source: libtpclient-py
+Version: 0.3.1.1-1
+Architectures: source, all
+Age: 1 week
+Queue: new
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Changed-By: Barry deFreese <bdefreese@debian.org>
+Distribution: unstable
+Fingerprint: 6F1F40039E09BD7A8099C5F3E48B65B54B394F7E
+Closes: #463272
+
+Source: r-cran-snow
+Version: 0.3.3-2
+Architectures: source, all
+Age: 1 week
+Queue: new
+Maintainer: Dirk Eddelbuettel <edd@debian.org>
+Changed-By: Dirk Eddelbuettel <edd@debian.org>
+Distribution: unstable
+Fingerprint: 344C9EC6707AFA176FE260B1099491F791B0D3B7
+
+Source: otf-stix
+Version: 0.9~2007.10.31-1
+Architectures: source, all
+Age: 1 week
+Queue: new
+Maintainer: Atsuhito KOHDA <kohda@debian.org>
+Changed-By: Atsuhito KOHDA <kohda@debian.org>
+Distribution: experimental
+Fingerprint: 3AAAE18DDBB4C8D056173880D485DD2F5BFA90EC
+Closes: #449205
+
+Source: tpclient-pywx
+Version: 0.3.1.1-1
+Architectures: source, all
+Age: 1 week
+Queue: new
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Changed-By: Barry deFreese <bdefreese@debian.org>
+Distribution: unstable
+Fingerprint: 6F1F40039E09BD7A8099C5F3E48B65B54B394F7E
+Closes: #377462
+
+Source: teem
+Version: 1.10.0-1
+Architectures: source, all, i386
+Age: 1 week
+Queue: new
+Maintainer: Debian Science Team <debian-science-maintainers@lists.alioth.debian.org>
+Changed-By: Dominique Belhachemi <domibel@cs.tu-berlin.de>
+Sponsored-By: naoliv@debian.org
+Distribution: unstable
+Fingerprint: 8C215F25828DA7C07F462399010C2EA6D9309644
+Closes: #473044
+
+Source: deluge
+Version: 1.0.7.dfsg-1
+Architectures: source, all
+Age: 6 days
+Queue: new
+Maintainer: Cristian Greco <cristian.debian@gmail.com>
+Changed-By: Cristian Greco <cristian.debian@gmail.com>
+Sponsored-By: nijel@debian.org
+Distribution: experimental
+Fingerprint: C7DB6D75EEA1FE1BA255EF80DC3552E836E75604
+Closes: #499850, #488155, #501078
+
+Source: qutecom
+Version: 2.2~rc2.dfsg0-1
+Architectures: source, i386
+Age: 6 days
+Queue: new
+Maintainer: Debian VoIP Team <pkg-voip-maintainers@lists.alioth.debian.org>
+Changed-By: Marco Nenciarini <mnencia@debian.org>
+Distribution: experimental
+Fingerprint: FED969C79E6721F57D9552706864730DF095E5E4
+Closes: #502151
+
+Source: xdemorse
+Version: 1.3-1
+Architectures: source, i386
+Age: 6 days
+Queue: new
+Maintainer: Joop Stakenborg <pa3aba@debian.org>
+Changed-By: Joop Stakenborg <pa3aba@debian.org>
+Distribution: unstable
+Fingerprint: DA71724D1264137D568F5E65FC2AAD8C62F1A57F
+Closes: #508882
+
+Source: plexus-maven-plugin
+Version: 1.3.8-1
+Architectures: source, all
+Age: 6 days
+Queue: new
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Changed-By: Torsten Werner <twerner@debian.org>
+Distribution: unstable
+Fingerprint: A698CD7FC5ED63FE985273C27D8DDD89C4CF8EC3
+Closes: #508741
+
+Source: maven-debian-helper
+Version: 0.1
+Architectures: source, all
+Age: 6 days
+Queue: new
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Changed-By: Torsten Werner <twerner@debian.org>
+Distribution: unstable
+Fingerprint: A698CD7FC5ED63FE985273C27D8DDD89C4CF8EC3
+Closes: #508511
+
+Source: maven-doxia-tools
+Version: 1.0.1-1
+Architectures: source, all
+Age: 6 days
+Queue: new
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Changed-By: Torsten Werner <twerner@debian.org>
+Distribution: unstable
+Fingerprint: A698CD7FC5ED63FE985273C27D8DDD89C4CF8EC3
+Closes: #508837
+
+Source: maven-site-plugin
+Version: 2.0~beta7-1
+Architectures: source, all
+Age: 6 days
+Queue: new
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Changed-By: Torsten Werner <twerner@debian.org>
+Distribution: unstable
+Fingerprint: A698CD7FC5ED63FE985273C27D8DDD89C4CF8EC3
+Closes: #508848
+
+Source: surefire
+Version: 2.4.3-1
+Architectures: source, all
+Age: 6 days
+Queue: new
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Changed-By: Torsten Werner <twerner@debian.org>
+Distribution: unstable
+Fingerprint: A698CD7FC5ED63FE985273C27D8DDD89C4CF8EC3
+Closes: #508829
+
+Source: iaxclient-tcl
+Version: 2.0.2-1
+Architectures: source, amd64
+Age: 5 days
+Queue: new
+Maintainer: Tcl/Tk Debian Packagers <pkg-tcltk-devel@lists.alioth.debian.org>
+Changed-By: Miriam Ruiz <little_miry@yahoo.es>
+Distribution: unstable
+Fingerprint: AA46F4F2BD5975A4EE4282237DB96D2E36EE0861
+Closes: #505532
+
+Source: tkpng
+Version: 0.9-1
+Architectures: source, amd64
+Age: 5 days
+Queue: new
+Maintainer: Tcl/Tk Debian Packagers <pkg-tcltk-devel@lists.alioth.debian.org>
+Changed-By: Miriam Ruiz <little_miry@yahoo.es>
+Distribution: unstable
+Fingerprint: AA46F4F2BD5975A4EE4282237DB96D2E36EE0861
+
+Source: tktreectrl
+Version: 2.2.8-1
+Architectures: source, amd64
+Age: 5 days
+Queue: new
+Maintainer: Tcl/Tk Debian Packagers <pkg-tcltk-devel@lists.alioth.debian.org>
+Changed-By: Miriam Ruiz <little_miry@yahoo.es>
+Distribution: unstable
+Fingerprint: AA46F4F2BD5975A4EE4282237DB96D2E36EE0861
+
+Source: tuxcmd-modules
+Version: 0.6.50+dfsg-1
+Architectures: source, amd64
+Age: 5 days
+Queue: new
+Maintainer: Salvatore Bonaccorso <salvatore.bonaccorso@gmail.com>
+Changed-By: Salvatore Bonaccorso <salvatore.bonaccorso@gmail.com>
+Sponsored-By: nijel@debian.org
+Distribution: unstable
+Fingerprint: C7DB6D75EEA1FE1BA255EF80DC3552E836E75604
+Closes: #508082
+
+Source: php-mdb2
+Version: 2.4.1-1
+Architectures: source, all
+Age: 5 days
+Queue: new
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Changed-By: Mark A. Hershberger <mhershberger@intrahealth.org>
+Sponsored-By: bernat@debian.org
+Distribution: unstable
+Fingerprint: 5854AF2B65B20E962161E32B285BD7A1F22A794E
+Closes: #441637
+
+Source: php-mdb2-driver-mysql
+Version: 1.4.1-1
+Architectures: source, all
+Age: 5 days
+Queue: new
+Maintainer: Debian PHP Maintainers <pkg-php-maint@lists.alioth.debian.org>
+Changed-By: Mark A. Hershberger <mhershberger@intrahealth.org>
+Sponsored-By: bernat@debian.org
+Distribution: unstable
+Fingerprint: 5854AF2B65B20E962161E32B285BD7A1F22A794E
+Closes: #441642
+
+Source: librcd
+Version: 0.1.12-1 0.1.11-2
+Architectures: source, i386
+Age: 5 days
+Queue: new
+Maintainer: Ivan Borzenkov <ivan1986@list.ru>
+Changed-By: Ivan Borzenkov <ivan1986@list.ru>
+Sponsored-By: unera@debian.org
+Distribution: unstable
+Fingerprint: 1B23D4F88EC0D9020555E438AB8C00CFF8E26537
+
+Source: librcc
+Version: 0.2.7-1
+Architectures: source, i386
+Age: 5 days
+Queue: new
+Maintainer: Ivan Borzenkov <ivan1986@list.ru>
+Changed-By: Ivan Borzenkov <ivan1986@list.ru>
+Sponsored-By: unera@debian.org
+Distribution: unstable
+Fingerprint: 1B23D4F88EC0D9020555E438AB8C00CFF8E26537
+
+Source: pcscada
+Version: 0.5-1
+Architectures: source, i386
+Age: 4 days
+Queue: new
+Maintainer: Reto Buerki <reet@codelabs.ch>
+Changed-By: Reto Buerki <reet@codelabs.ch>
+Sponsored-By: daniel@debian.org
+Distribution: unstable
+Fingerprint: 709F54E4ECF3195623326AE3F82E5CC04B2B2B9E
+Closes: #508846
+
+Source: jeuclid
+Version: 3.1.3-1
+Architectures: source, all
+Age: 4 days
+Queue: new
+Maintainer: Debian Science Team <debian-science-maintainers@lists.alioth.debian.org>
+Changed-By: Sylvestre Ledru <sylvestre.ledru@inria.fr>
+Sponsored-By: twerner@debian.org
+Distribution: experimental
+Fingerprint: A698CD7FC5ED63FE985273C27D8DDD89C4CF8EC3
+Closes: #490749
+
+Source: libipc-system-simple-perl
+Version: 1.17-1 0.16-1
+Architectures: source, all
+Age: 4 days
+Queue: new
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Changed-By: gregor herrmann <gregoa@debian.org>
+Sponsored-By: gregoa@debian.org
+Distribution: unstable
+Fingerprint: 741460055C35D4A18DC9C2103B32989D00F3CFE4
+Closes: #508507
+
+Source: webgui
+Version: 7.5.36-1
+Architectures: source, all
+Age: 4 days
+Queue: new
+Maintainer: Ernesto Hernández-Novich (USB) <emhn@usb.ve>
+Changed-By: Ernesto Hernández-Novich (USB) <emhn@usb.ve>
+Sponsored-By: gregoa@debian.org
+Distribution: unstable
+Fingerprint: 741460055C35D4A18DC9C2103B32989D00F3CFE4
+Closes: #471697
+
+Source: gtask
+Version: 0.1.2-1
+Architectures: source, all, amd64
+Age: 3 days
+Queue: new
+Maintainer: Sebastian Dröge <slomo@debian.org>
+Changed-By: Sebastian Dröge <slomo@debian.org>
+Distribution: unstable
+Fingerprint: 08A90EF89D192196F445097006C05D875BE41F21
+Closes: #505653
+
+Source: jabsorb
+Version: 1.3-1
+Architectures: source, all
+Age: 3 days
+Queue: new
+Maintainer: Kalle Kivimaa <killer@debian.org>
+Changed-By: Kalle Kivimaa <killer@debian.org>
+Distribution: unstable
+Fingerprint: D7F53417338270A8870EC9D792E60A8B5F6D8015
+Closes: #503305
+
+Source: jakarta-ecs
+Version: 1.4.2-1
+Architectures: source, all
+Age: 3 days
+Queue: new
+Maintainer: Kalle Kivimaa <killer@debian.org>
+Changed-By: Kalle Kivimaa <killer@debian.org>
+Distribution: unstable
+Fingerprint: D7F53417338270A8870EC9D792E60A8B5F6D8015
+Closes: #503279
+
+Source: kio-ftps
+Version: 0.2-1
+Architectures: source, amd64, i386
+Age: 3 days
+Queue: new
+Maintainer: Laurent Léonard <laurent@open-minds.org>
+Changed-By: Laurent Léonard <laurent@open-minds.org>
+Sponsored-By: sune@debian.org
+Distribution: unstable
+Fingerprint: 5CE8ADFA1FDD9DEA6E21DCE19CCBDA1601FA8B4A
+Closes: #501342
+
+Source: libnet-ssh2-perl
+Version: 0.18-1
+Architectures: source, i386
+Age: 3 days
+Queue: new
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Changed-By: Ryan Niebur <ryanryan52@gmail.com>
+Sponsored-By: gregoa@debian.org
+Distribution: unstable
+Fingerprint: 741460055C35D4A18DC9C2103B32989D00F3CFE4
+Closes: #412199
+
+Source: insighttoolkit
+Version: 3.10.1-1
+Architectures: source, all, amd64
+Age: 3 days
+Queue: new
+Maintainer: Debian-Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
+Changed-By: Steve M. Robbins <smr@debian.org>
+Distribution: unstable
+Fingerprint: 5ED7B15389C4ED210E8B7F3DD22D9B3D21DB31C5
+
+Source: qedje
+Version: 0.3.0-1
+Architectures: source, amd64, i386
+Age: 2 days
+Queue: new
+Maintainer: Debian Krap Maintainers <debian-qt-kde@lists.debian.org>
+Changed-By: Debian Krap Maintainers <debian-qt-kde@lists.debian.org>
+Sponsored-By: sune@debian.org
+Distribution: experimental
+Fingerprint: 5CE8ADFA1FDD9DEA6E21DCE19CCBDA1601FA8B4A
+
+Source: qzion
+Version: 0.3.0-1
+Architectures: source, amd64, i386
+Age: 2 days
+Queue: new
+Maintainer: Debian Krap Maintainers <debian-qt-kde@lists.debian.org>
+Changed-By: Debian Krap Maintainers <debian-qt-kde@lists.debian.org>
+Sponsored-By: sune@debian.org
+Distribution: experimental
+Fingerprint: 5CE8ADFA1FDD9DEA6E21DCE19CCBDA1601FA8B4A
+
+Source: libtirpc
+Version: 0.1.10-1
+Architectures: source, i386
+Age: 2 days
+Queue: new
+Maintainer: Steinar H. Gunderson <sesse@debian.org>
+Changed-By: Steinar H. Gunderson <sesse@debian.org>
+Distribution: unstable
+Fingerprint: AD8254B339CE673A1406FD075CA450DE52B7487E
+
+Source: libnice
+Version: 0.0.4-1
+Architectures: source, all, amd64
+Age: 2 days
+Queue: new
+Maintainer: Debian Telepathy maintainers <pkg-telepathy-maintainers@lists.alioth.debian.org>
+Changed-By: Sjoerd Simons <sjoerd@debian.org>
+Distribution: unstable
+Fingerprint: 36CB6E311236B81B3A38054B81377E4A8768B1D2
+Closes: #506962
+
+Source: sagemath
+Version: 3.0.5dfsg-1
+Architectures: source, i386
+Age: 2 days
+Queue: new
+Maintainer: Tim Abbott <tabbott@mit.edu>
+Changed-By: Tim Abbott <tabbott@mit.edu>
+Sponsored-By: christine@debian.org
+Distribution: unstable
+Fingerprint: FAFB4E42053A8EDB918E765F77BDD7B9521381BA
+Closes: #455292
+
+Source: lua-bitop
+Version: 1.0.0-1
+Architectures: source, amd64
+Age: 2 days
+Queue: new
+Maintainer: Enrico Tassi <gareuselesinge@debian.org>
+Changed-By: Enrico Tassi <gareuselesinge@debian.org>
+Distribution: unstable
+Fingerprint: 60D04388E3853643807B9507EE491C3E0123F2F2
+Closes: #509227
+
+Source: libhaml-ruby
+Version: 2.0.6-1
+Architectures: source, all
+Age: 1 day
+Queue: new
+Maintainer: Gunnar Wolf <gwolf@debian.org>
+Changed-By: Gunnar Wolf <gwolf@debian.org>
+Distribution: unstable
+Fingerprint: 0C79D2D12C4E9CE45973F800D80EF35A8BB527AF
+Closes: #509159
+
+Source: jaula
+Version: 1.3.0-2 1.3.0-3
+Architectures: source, i386
+Age: 1 day
+Queue: new
+Maintainer: Loic Dachary (OuoU) <loic@debian.org>
+Changed-By: Ola Lundqvist <opal@debian.org>
+Distribution: unstable
+Fingerprint: 7090A92B18FE79940C364FE418A1B1CF0FE53DD9
+
+Source: python-event
+Version: 0.3+svn54-1
+Architectures: source, i386
+Age: 1 day
+Queue: new
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Changed-By: Luciano Bello <luciano@debian.org>
+Distribution: experimental
+Fingerprint: 53D732109C90AAB211D805034164D1B3894BB479
+Closes: #504729
+
+Source: libdirectory-scratch-perl
+Version: 0.14-1
+Architectures: source, all
+Age: 1 day
+Queue: new
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Changed-By: Jeremiah C. Foster <jeremiah@jeremiahfoster.com>
+Sponsored-By: gregoa@debian.org
+Distribution: unstable
+Fingerprint: 741460055C35D4A18DC9C2103B32989D00F3CFE4
+Closes: #508588
+
+Source: libshoulda-ruby
+Version: 2.0.0-1
+Architectures: source, all
+Age: 23 hours
+Queue: new
+Maintainer: Antonio Terceiro <terceiro@softwarelivre.org>
+Changed-By: Antonio Terceiro <terceiro@softwarelivre.org>
+Sponsored-By: gwolf@debian.org
+Distribution: unstable
+Fingerprint: 0C79D2D12C4E9CE45973F800D80EF35A8BB527AF
+Closes: #500341
+
+Source: libi18n-ruby
+Version: 0.1.1~git20081120-2
+Architectures: source, all
+Age: 20 hours
+Queue: new
+Maintainer: Athena Capital Research <acr-debian@athenacr.com>
+Changed-By: Roberto C. Sanchez <roberto@connexer.com>
+Distribution: unstable
+Fingerprint: BE6AAC14DAC98EA792D1BD39E525D620A7C89464
+
+Source: libewf
+Version: 20080501+debian-1
+Architectures: source, i386
+Age: 15 hours
+Queue: new
+Maintainer: Debian Forensics <forensics-devel@lists.alioth.debian.org>
+Changed-By: Daniel Baumann <daniel@debian.org>
+Distribution: unstable
+Fingerprint: 709F54E4ECF3195623326AE3F82E5CC04B2B2B9E
+Closes: #467428
+
+Source: libclass-c3-adopt-next-perl
+Version: 0.05-1 0.04-1
+Architectures: source, all
+Age: 12 hours
+Queue: new
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Changed-By: Krzysztof Krzyzaniak (eloy) <eloy@debian.org>
+Distribution: unstable
+Fingerprint: E57F92B2CDB053CC31688F9ECBE1CFE1FEE20BCB
+Closes: #509017
+
+Source: ming
+Version: 1:0.4.2-1
+Architectures: source, all, i386
+Age: 9 hours
+Queue: new
+Maintainer: Stuart R. Anderson <anderson@netsweng.com>
+Changed-By: Stuart R. Anderson <anderson@netsweng.com>
+Distribution: experimental
+Fingerprint: 0791D3B89A4C2CDCA31FBD030A62E53437A79149
+Closes: #509401
+
+Source: netrek-client-cow
+Version: 3.2.8.dak-1
+Architectures: source, i386
+Age: 8 hours
+Queue: new
+Maintainer: Barry deFreese <bdefreese@debian.org>
+Changed-By: Barry deFreese <bdefreese@debian.org>
+Distribution: unstable
+Fingerprint: 6F1F40039E09BD7A8099C5F3E48B65B54B394F7E
+
+Source: ggz-base-libs
+Version: 0.99.5~pre1-1
+Architectures: source, i386
+Age: 6 hours
+Queue: new
+Maintainer: Debian GGZ Maintainers <pkg-ggz-maintainers@lists.alioth.debian.org>
+Changed-By: Clint Adams <schizo@debian.org>
+Distribution: experimental
+Fingerprint: 995314085A0EC967941DCE9DE66D2EEBAB963370
+
+Source: libdbd-sqlite3-ruby
+Version: 1.2.3-1
+Architectures: source, all
+Age: 4 hours
+Queue: new
+Maintainer: Dmitry Borodaenko <angdraug@debian.org>
+Changed-By: Dmitry Borodaenko <angdraug@debian.org>
+Distribution: experimental
+Fingerprint: 902B5C62E28D59F0F860C39AC61A895E85EE3E0E
+
+Source: systemtap
+Version: 0.0.20081220-1
+Architectures: source, all, amd64
+Age: 3 hours
+Queue: new
+Maintainer: Євгеній Мещеряков <eugen@debian.org>
+Changed-By: Євгеній Мещеряков <eugen@debian.org>
+Distribution: experimental
+Fingerprint: DCB911B6BEDF8F3C089B9E6429A0BAFB39A8CCE2
+
+Source: libconfig-model-perl
+Version: 0.633-1
+Architectures: source, all
+Age: 3 hours
+Queue: new
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Changed-By: Dominique Dumont <dominique.dumont@hp.com>
+Sponsored-By: gregoa@debian.org
+Distribution: unstable
+Fingerprint: 741460055C35D4A18DC9C2103B32989D00F3CFE4
+Closes: #493308
+
+Source: libxml-validator-schema-perl
+Version: 1.10-1
+Architectures: source, all
+Age: 46 minutes
+Queue: new
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Changed-By: Ryan Niebur <ryanryan52@gmail.com>
+Sponsored-By: gregoa@debian.org
+Distribution: unstable
+Fingerprint: 741460055C35D4A18DC9C2103B32989D00F3CFE4
+Closes: #509568
+
+Source: libxml-sax-expatxs-perl
+Version: 1.31-1
+Architectures: source, i386
+Age: 16 minutes
+Queue: new
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Changed-By: Ryan Niebur <ryanryan52@gmail.com>
+Sponsored-By: gregoa@debian.org
+Distribution: unstable
+Fingerprint: 741460055C35D4A18DC9C2103B32989D00F3CFE4
+Closes: #509567
+
