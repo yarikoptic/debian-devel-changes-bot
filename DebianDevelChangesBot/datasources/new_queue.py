@@ -46,7 +46,8 @@ class NewQueue(Datasource):
             packages = {}
             for para in Deb822.iter_paragraphs(fileobj):
                 pkg = para['Source']
-                packages[pkg] = para['Version'].split(' ')
+                if para['Queue'] == 'new':
+                    packages[pkg] = para['Version'].split(' ')
 
             self.packages = packages
         finally:
