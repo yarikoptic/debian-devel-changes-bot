@@ -18,7 +18,7 @@
 
 import thread
 import urllib2
-from BeautifulSoup import BeautifulSoup
+from debian_bundle.deb822 import Deb822
 
 import socket
 socket.setdefaulttimeout(10)
@@ -28,7 +28,7 @@ from DebianDevelChangesBot import Datasource
 class NewQueue(Datasource):
     _shared_state = {}
 
-    URL = 'http://ftp-master.debian.org/new.html'
+    URL = 'http://ftp-master.debian.org/new.822'
     INTERVAL = 60 * 30
 
     packages = {}
@@ -43,13 +43,10 @@ class NewQueue(Datasource):
             if fileobj is None:
                 fileobj = urllib2.urlopen(self.URL)
 
-            soup = BeautifulSoup(fileobj)
-
             packages = {}
-            for row in soup('tr', {'class': ('odd', 'even')}):
-                package = row.td.string
-                versions = [v.string for v in row.contents[3].findAll('a')]
-                packages[package] = versions
+            for para in Deb822.iter_paragraphs(fileobj):
+                pkg = para['Source']
+                packages[pkg] = para['Version'].split(' ')
 
             self.packages = packages
         finally:
