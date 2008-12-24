@@ -356,7 +356,7 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
 
     def _new(self, irc, msg, args):
         line = "[desc]NEW queue is[reset]: [url]%s[/url]. [desc]Current size is:[reset] %d" % \
-            (NewQueue().URL, NewQueue().get_size())
+            ("http://ftp-master.debian.org/new.html", NewQueue().get_size())
         irc.reply(colourise(line))
     new = wrap(_new)
     new_queue = wrap(_new)
