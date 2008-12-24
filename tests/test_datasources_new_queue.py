@@ -29,7 +29,7 @@ class TestDatasourceTestingNewQueue(unittest.TestCase):
 
     def setUp(self):
         self.fixture = os.path.join(os.path.dirname(os.path.abspath(__file__)), \
-            'fixtures', 'new_queue.html')
+            'fixtures', 'new_queue.txt')
 
         self.datasource = NewQueue()
 
@@ -52,26 +52,26 @@ class TestDatasourceTestingNewQueue(unittest.TestCase):
         self.assert_(self.datasource.INTERVAL > 60)
 
     def testTop(self):
-        self.assert_(self.is_new('ganeti-instance-debian-etch', '0.4-1'))
+        self.assert_(self.is_new('ezmlm-idx', '6.0.1-1'))
 
     def testBottom(self):
-        self.assert_(self.is_new('sugar-chat-activity', '37~git-2'))
+        self.assert_(self.is_new('libxml-sax-expatxs-perl', '1.31-1'))
 
     def testMultipleVersions(self):
-        self.assert_(self.is_new('cpushare', '0.47-1'))
-        self.assert_(self.is_new('cpushare', '0.47-2'))
+        self.assert_(self.is_new('libgcal', '0.8.1-1'))
+        self.assert_(self.is_new('libgcal', '0.8.1-2'))
 
     def testInvalidVersion(self):
-        self.failIf(self.is_new('cpushare', '0.47-3'))
+        self.failIf(self.is_new('rcpp', '0.5.2.invalid'))
 
     def testNotInQueue(self):
         self.failIf(self.is_new('package-not-in-new-queue', 'version-foo'))
 
     def testByhand(self):
-        self.assert_(self.is_new('loadlin', '1.6c.really1.6c-1.2'))
+        self.assert_(self.is_new('loadlin', '1.6c.really1.6c.nobin-2'))
 
     def testExperimental(self):
-        self.assert_(self.is_new('tagua', '1.0~alpha2-2'))
+        self.assert_(self.is_new('ooo-build', '3.0.0.9+r14588-1'))
 
 if __name__ == "__main__":
     unittest.main()
