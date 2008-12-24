@@ -68,7 +68,7 @@ class TestDatasourceTestingNewQueue(unittest.TestCase):
         self.failIf(self.is_new('package-not-in-new-queue', 'version-foo'))
 
     def testByhand(self):
-        self.assert_(self.is_new('loadlin', '1.6c.really1.6c.nobin-2'))
+        self.failIf(self.is_new('loadlin', '1.6c.really1.6c.nobin-2'))
 
     def testExperimental(self):
         self.assert_(self.is_new('ooo-build', '3.0.0.9+r14588-1'))
