@@ -46,6 +46,9 @@ class BugSubmittedParser(MailParser):
             return
 
         msg.package = headers.get('X-Debian-PR-Package', None)
+        if len(msg.package) >= 75:
+            return
+
         msg.by = format_email_address(headers['From'])
 
         mapping = {
