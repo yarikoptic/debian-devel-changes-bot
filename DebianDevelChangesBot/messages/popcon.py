@@ -22,7 +22,7 @@ class Popcon(Message):
     FIELDS = ('package', 'inst', 'vote', 'old', 'recent', 'nofiles')
 
     def format(self):
-        msg = "Popcon for [package]%d[/package] - " % self.package
+        msg = "Popcon for [package]%d[reset] - " % self.package
 
         for field in ('inst', 'vote', 'old', 'recent', 'nofiles'):
             msg += "[category]%s[/category]: %s " % (field, getattr(self, field))
