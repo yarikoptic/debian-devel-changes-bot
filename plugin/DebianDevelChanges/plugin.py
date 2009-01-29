@@ -31,7 +31,7 @@ from DebianDevelChangesBot.mailparsers import get_message
 from DebianDevelChangesBot.datasources import get_datasources, TestingRCBugs, \
     NewQueue, RmQueue, Maintainer
 from DebianDevelChangesBot.utils import parse_mail, FifoReader, colourise, \
-    rewrite_topic, madison, bug_synopsis, format_email_address
+    rewrite_topic, madison, bug_synopsis, format_email_address, popcon
 
 class DebianDevelChanges(supybot.callbacks.Plugin):
     threaded = True
@@ -311,12 +311,14 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
     experimental = wrap(_buildde, [many('anything')])
     backports = wrap(_buildde, [many('anything')])
 
-    def _popcon(self, irc, msg, args, items):
-        for package in items:
-            msg = "[desc]Popcon statistics for[reset] [package]%s[reset]: [url]http://qa.debian.org/developer.php?popcon=%s[/url]" % \
-                (package, package)
-            irc.reply(colourise(msg), prefixNick=False)
-    popcon = wrap(_popcon, [many('anything')])
+    def _popcon(self, irc, msg, args, package):
+        try:
+            msg = popcon(package)
+            if msg:
+                irc.reply(colourise(msg.for_irc()), prefixNick=False)
+        except Exception, e:
+            irc.reply("Error: %s" % e.message)
+    popcon = wrap(bug, ['text'])
 
     def _testing(self, irc, msg, args, items):
         for package in items:
