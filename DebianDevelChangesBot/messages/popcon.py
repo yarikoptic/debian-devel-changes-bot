@@ -22,10 +22,10 @@ class Popcon(Message):
     FIELDS = ('package', 'inst', 'vote', 'old', 'recent', 'nofiles')
 
     def format(self):
-        msg = "Popcon for [package]%d[reset] - " % self.package
+        msg = "Popcon for [package]%s[reset] - " % self.package
 
         for field in ('inst', 'vote', 'old', 'recent', 'nofiles'):
-            msg += "[category]%s[/category]: %s " % (field, getattr(self, field))
+            msg += "[category]%s[/category]: %d " % (field, getattr(self, field))
 
         msg += u"- [url]http://qa.debian.org/developer.php?popcon=%s[/url]" % self.package
 
