@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Debian Quality Assurance
+-- Popularity Contest Statistics
+  </title>
+  <link rev="made" href="mailto:debian-qa@lists.debian.org">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link type="text/css" rel="stylesheet" href="revamp.css">
+  <link rel="stylesheet" type="text/css" href="developer.css">
+<script type="text/javascript" language="JavaScript">
+function objectOver(x) {
+  x.style.color="blue";
+}
+function objectOut(x) {
+  x.style.color="black";
+}
+function collapse(x, txt){
+  var oTemp=document.getElementById("text_"+x) ;
+  var oClick=document.getElementById("click_"+x);
+  if (oTemp.style.display=="block") {
+    oTemp.style.display="none";
+    oClick.innerHTML=txt+"&nbsp<small>(click to expand)<\/small><br>";
+  } else {
+    oTemp.style.display="block";
+    oClick.innerHTML=txt+"&nbsp<small>(click to collapse)<\/small><br>";
+  }
+}
+</script>
+</head>
+<body>
+<h1 id="title"><img src="debian.png" alt="Debian logo" width="258" height="82" style="vertical-align: middle"> Quality Assurance</h1>
+<div id="body">
+<p>
+<h2>Popularity contest statistics for haskell-devscripts</h2>
+<span id="click_0" class="span_general" onmouseover='javascript:objectOver(this)' onmouseout='javascript:objectOut(this)' onclick='javascript:collapse(0,"<b>Help</b>")'><b>Help</b><small>&nbsp;(click to expand)</small><br>
+</span><div id="text_0" class="general" style='margin-left:0;display:none'><ul class="small"><li><b>Name</b> is the package name</li><li><b>Inst.</b> is the number of people who installed this package</li><li><b>Vote</b> is the number of people who use this package regularly</li><li><b>Old</b> is the number of people who installed, but do not use this package regularly</li><li><b>Recent</b> is the number of people who upgraded this package recently</li><li><b>No Files</b> is the number of people whose entry did not contain enough information (atime and ctime were 0)</li><li>Within parenthesis the number represents the number of registered popcon users that sent information about this topic</li></ul></div>
+<table class="small" border="1" cellpadding="3" cellspacing="1" summary=""><tr align="center"><th rowspan="2" colspan="1"><font color="green">Name</font></th>
+<th rowspan="1" colspan="3"><font color="green">Inst (80398) </font><br>
+<font color="black">(1st: dpkg)</font></th>
+<th rowspan="1" colspan="3"><font color="green">Vote (71826) </font><br>
+<font color="black">(1st: libgcc1)</font></th>
+<th rowspan="1" colspan="3"><font color="green">Old (59684) </font><br>
+<font color="black">(1st: console-data)</font></th>
+<th rowspan="1" colspan="3"><font color="green">Recent (29716) </font><br>
+<font color="black">(1st: dnsutils)</font></th>
+<th rowspan="1" colspan="3"><font color="green">No Files (80082) </font><br>
+<font color="black">(1st: manpages)</font></th>
+<th rowspan="2" colspan="1"><font color="green">Graph</font></th>
+</tr>
+<tr align="center"><th rowspan="1" colspan="1"><font color="green">Number</font></th>
+<th rowspan="1" colspan="1"><font color="green">%</font></th>
+<th rowspan="1" colspan="1"><font color="green">Rank</font></th>
+<th rowspan="1" colspan="1"><font color="green">Number</font></th>
+<th rowspan="1" colspan="1"><font color="green">%</font></th>
+<th rowspan="1" colspan="1"><font color="green">Rank</font></th>
+<th rowspan="1" colspan="1"><font color="green">Number</font></th>
+<th rowspan="1" colspan="1"><font color="green">%</font></th>
+<th rowspan="1" colspan="1"><font color="green">Rank</font></th>
+<th rowspan="1" colspan="1"><font color="green">Number</font></th>
+<th rowspan="1" colspan="1"><font color="green">%</font></th>
+<th rowspan="1" colspan="1"><font color="green">Rank</font></th>
+<th rowspan="1" colspan="1"><font color="green">Number</font></th>
+<th rowspan="1" colspan="1"><font color="green">%</font></th>
+<th rowspan="1" colspan="1"><font color="green">Rank</font></th>
+</tr>
+<tr align="center"><td><b>haskell-devscripts</b></td>
+<td>96</td>
+<td>0.12%</td>
+<td>16522</td>
+<td>8</td>
+<td>0.01%</td>
+<td>16323</td>
+<td>49</td>
+<td>0.08%</td>
+<td>13679</td>
+<td>39</td>
+<td>0.13%</td>
+<td>6312</td>
+<td>0</td>
+<td>0.00%</td>
+<td>57310</td>
+<td><a href="popcon-graph.php?packages=haskell-devscripts">Graph</a> (<a href="popcon-graph.php?packages=haskell-devscripts&show_installed=on&want_legend=on&want_ticks=on&date_fmt=%25Y-%25m&beenhere=1">inst only</a>)</td>
+</tr>
+
+</table>
+<p><img alt="popcon graph for haskell-devscripts" src="popcon-png.php?packages=haskell-devscripts&show_installed=on&want_legend=on&want_ticks=on&date_fmt=%25Y-%25m&beenhere=1"></p><p><a href="developer.php?package=haskell-devscripts">Maintainer page</a></p></div>
+<div class="footer"><p>
+Made by Igor Genibel, Christoph Berg, and others. Graphs by Ian Lynagh.<br>
+Last generated on Mon Nov 3 09:45:21 2008 UTC<br>
+Copyright (C) 1999-2008 <a
+href="http://www.spi-inc.org/">Software in the Public Interest</a> and others;
+See <a href="http://www.debian.org/license">license terms</a>.
+</p></div>
+</body>
+</html>
