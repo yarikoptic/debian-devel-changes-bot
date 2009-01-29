@@ -25,6 +25,7 @@ from fiforeader import FifoReader
 from rewrite_topic import rewrite_topic
 from madison import madison
 from bug_synopsis import bug_synopsis
+from popcon import popcon
 
 import decoding
 import parse_mail
@@ -35,6 +36,7 @@ import fiforeader
 import rewrite_topic
 import madison
 import bug_synopsis
+import popcon
 
 reload(decoding)
 reload(parse_mail)
@@ -45,6 +47,7 @@ reload(fiforeader)
 reload(rewrite_topic)
 reload(madison)
 reload(bug_synopsis)
+reload(popcon)
 
 from decoding import header_decode, quoted_printable
 from parse_mail import parse_mail
@@ -55,3 +58,4 @@ from fiforeader import FifoReader
 from rewrite_topic import rewrite_topic
 from madison import madison
 from bug_synopsis import bug_synopsis
+from popcon import popcon
