@@ -62,6 +62,8 @@ def colourise(s):
         'bug': tags['b'],
         '/bug': tags['/b'],
         'title': tags['nostyle'],
+        'category': tags['b'],
+        '/category': tags['/b'],
     })
 
     s = s + '[reset]'
