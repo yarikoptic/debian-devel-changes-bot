@@ -318,7 +318,7 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
                 irc.reply(colourise(msg.for_irc()), prefixNick=False)
         except Exception, e:
             irc.reply("Error: %s" % e.message)
-    popcon = wrap(bug, ['text'])
+    popcon = wrap(_popcon, ['text'])
 
     def _testing(self, irc, msg, args, items):
         for package in items:
