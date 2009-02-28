@@ -23,12 +23,12 @@ import urllib2
 socket.setdefaulttimeout(10)
 
 def madison(package, suites=()):
-    args = urllib.urlencode({
+    data = urllib.urlencode({
         'package': package,
         's': ','.join(suites),
         'text': 'on',
     })
 
-    fileobj = urllib2.urlopen('http://qa.debian.org/madison.php?%s' % args)
+    fileobj = urllib2.urlopen('http://qa.debian.org/madison.php', data)
 
     return fileobj.readlines()
