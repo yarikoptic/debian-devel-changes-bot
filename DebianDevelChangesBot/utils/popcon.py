@@ -18,6 +18,7 @@
 
 import re
 import socket
+import urllib
 import urllib2
 
 from BeautifulSoup import BeautifulSoup
@@ -29,7 +30,7 @@ socket.setdefaulttimeout(10)
 def popcon(package, fileobj=None):
     if fileobj is None:
         fileobj = urllib2.urlopen(
-            "http://qa.debian.org/developer.php?popcon=%s" % package
+            "http://qa.debian.org/developer.php?popcon=%s" % urllib.quote(package)
         )
 
     soup = BeautifulSoup(fileobj)

@@ -17,18 +17,18 @@
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import socket
+import urllib
 import urllib2
 
 socket.setdefaulttimeout(10)
 
 def madison(package, suites=()):
-    args = {
+    args = urllib.urlencode({
         'package': package,
         's': ','.join(suites),
         'text': 'on',
-    }
+    })
 
-    querystr = '&'.join(['%s=%s' % (k, v) for k, v in args.iteritems()])
-    fileobj = urllib2.urlopen('http://qa.debian.org/madison.php?%s' % querystr)
+    fileobj = urllib2.urlopen('http://qa.debian.org/madison.php?%s' % args)
 
     return fileobj.readlines()

@@ -19,6 +19,7 @@
 import os
 import time
 import random
+import urllib
 import supybot
 import threading
 
@@ -331,7 +332,7 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
     def _dehs(self, irc, msg, args, items):
         for package in items:
             msg = "[desc]Debian External Health Status for[reset] [package]%s[reset]: [url]http://dehs.alioth.debian.org/report.php?package=%s[/url]" % \
-                (package, package)
+                (package, urllib.quote(package))
             irc.reply(colourise(msg), prefixNick=False)
     dehs = wrap(_dehs, [many('anything')])
     health = wrap(_dehs, [many('anything')])
