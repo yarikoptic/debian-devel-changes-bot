@@ -16,14 +16,16 @@
 #   You should have received a copy of the GNU Affero General Public License
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+import re
 import thread
 import urllib2
-from BeautifulSoup import BeautifulSoup
 
 import socket
 socket.setdefaulttimeout(10)
 
 from DebianDevelChangesBot import Datasource
+
+MATCHER = re.compile(r'<div class="subject">([^:]+): ')
 
 class RmQueue(Datasource):
     _shared_state = {}
@@ -41,11 +43,7 @@ class RmQueue(Datasource):
         if fileobj is None:
             fileobj = urllib2.urlopen(self.URL)
 
-        soup = BeautifulSoup(fileobj)
-
-        packages = set()
-        for row in soup('div', {'class': 'subject'}):
-            packages.add(row.string.split(':')[0])
+        packages = MATCHER.findall(fileobj.read())
 
         self.lock.acquire()
         try:
