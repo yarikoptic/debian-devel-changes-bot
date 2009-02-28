@@ -318,7 +318,7 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
             if msg:
                 irc.reply(colourise(msg.for_irc()), prefixNick=False)
         except Exception, e:
-            irc.reply("Error: %s" % e.message)
+            irc.reply("Error: unable to obtain popcon data for %s" % package)
     popcon = wrap(_popcon, ['text'])
 
     def _testing(self, irc, msg, args, items):
