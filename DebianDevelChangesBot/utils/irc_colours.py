@@ -46,7 +46,7 @@ def colourise(s):
         'by': tags['lightcyan'],
         'package': tags['darkgreen'],
         'psuedo-package': tags['lightblue'],
-        'version': tags['brightyellow'],
+        'version': tags['darkcyan'],
         'distribution': tags['lightblue'],
 
         'security': tags['brightred'],
