@@ -17,6 +17,7 @@
 #   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import os
+import re
 import time
 import random
 import urllib
@@ -88,7 +89,8 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
                 self.last_n_messages.insert(0, txt)
                 self.last_n_messages = self.last_n_messages[:20]
 
-                if self.registryValue('show_changes', channel):
+                regex = self.registryValue('package_regex', channel) or 'a^'
+                if re.search(regex, msg.package):
                     ircmsg = supybot.ircmsgs.privmsg(channel, txt)
                     self.irc.queueMsg(ircmsg)
 

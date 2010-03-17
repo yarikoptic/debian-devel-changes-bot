@@ -29,5 +29,6 @@ def configure(advanced):
 
 DebianDevelChanges = conf.registerPlugin('DebianDevelChanges')
 
-conf.registerChannelValue(DebianDevelChanges, 'show_changes', registry.Boolean(
-    False, """Determines whether the bot will output changes for this channel"""))
+conf.registerChannelValue(DebianDevelChanges, 'package_regex', registry.Regexp(
+    '', "Determines which package announcements should be printed to the channel",
+))
