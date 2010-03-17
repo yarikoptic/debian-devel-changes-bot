@@ -26,8 +26,6 @@ import threading
 from supybot.commands import wrap, many
 from supybot import ircdb, log, schedule
 
-from btsutils.debbugs import BugExceptions
-
 from DebianDevelChangesBot.mailparsers import get_message
 from DebianDevelChangesBot.datasources import get_datasources, TestingRCBugs, \
     NewQueue, RmQueue, Maintainer
