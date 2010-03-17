@@ -52,7 +52,8 @@ pseudo_packages = {
 }
 
 class Datasource(object):
-    class DataError(Exception): pass
+    class DataError(Exception):
+        pass
 
     def update(self):
         fileobj = urllib2.urlopen(self.URL)
