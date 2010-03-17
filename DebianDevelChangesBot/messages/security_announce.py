@@ -18,8 +18,6 @@
 
 from DebianDevelChangesBot import Message
 
-import re
-
 class SecurityAnnounceMessage(Message):
     FIELDS = ('dsa_number', 'dsa_revision', 'package', 'problem', 'year')
 
