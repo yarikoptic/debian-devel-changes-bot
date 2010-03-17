@@ -93,7 +93,7 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
                     self.irc.queueMsg(ircmsg)
 
         except:
-           log.exception('Uncaught exception')
+            log.exception('Uncaught exception')
 
     def _topic_callback(self):
         self.topic_lock.acquire()
