@@ -82,13 +82,14 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
                 return
 
             txt = colourise(msg.for_irc())
+
+            # Simple flood/duplicate detection
+            if txt in self.last_n_messages:
+                return
+            self.last_n_messages.insert(0, txt)
+            self.last_n_messages = self.last_n_messages[:20]
+
             for channel in self.irc.state.channels:
-                if txt in self.last_n_messages:
-                    continue
-
-                self.last_n_messages.insert(0, txt)
-                self.last_n_messages = self.last_n_messages[:20]
-
                 regex = self.registryValue('package_regex', channel) or 'a^'
                 if re.search(regex, msg.package):
                     ircmsg = supybot.ircmsgs.privmsg(channel, txt)
