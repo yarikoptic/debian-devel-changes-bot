@@ -21,16 +21,14 @@ import urllib2
 import socket
 socket.setdefaulttimeout(10)
 
-# Synced from dak:config/debian/pseudo-packages.description
+# Synced from http://bugs.debian.org/pseudopackages/pseudo-packages.description
 pseudo_packages = {
     'base': 'Base system general bugs',
     'cdrom': 'Installation system',
     'spam': 'Spam (reassign spam to here so we can complain about it)',
     'press': 'Press release issues',
-    'kernel': 'Problems with the Linux kernel, or that shipped with Debian',
     'project': 'Problems related to project administration',
     'general': 'General problems (e.g. "many manpages are mode 755")',
-    'buildd.debian.org': 'Buildd maintainers',
     'nm.debian.org': 'New Maintainer process and nm.debian.org webpages',
     'qa.debian.org': 'The Quality Assurance group',
     'ftp.debian.org': 'Problems with the FTP site',
@@ -48,7 +46,11 @@ pseudo_packages = {
     'wiki.debian.org': 'Problems with the Debian wiki',
     'security-tracker': 'The Debian Security Bug Tracker',
     'release.debian.org': 'Requests regarding Debian releases and release team tools',
-    'listarchives': 'Problems with the WWW mailing list archives',
+    'debian-i18n': 'Requests regarding Internationalization (i18n) of the distribution',
+    'buildd.emdebian.org': 'Problems related to building packages for Emdebian',
+    'buildd.debian.org': 'Problems and requests related to the Debian Buildds',
+    'debian-maintainers': 'Problems and requests related to Debian Maintainers',
+    'snapshot.debian.org': 'Issues with the snapshot.debian.org service',
 }
 
 class Datasource(object):
