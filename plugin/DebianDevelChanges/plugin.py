@@ -43,8 +43,7 @@ class DebianDevelChanges(supybot.callbacks.Plugin):
         self.topic_lock = threading.Lock()
 
         fr = FifoReader()
-        fifo_loc = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
-            os.path.abspath(__file__)))), 'bin', 'debian-devel-changes.fifo')
+        fifo_loc = '/var/run/debian-devel-changes/fifo'
         fr.start(self._email_callback, fifo_loc)
 
         self.queued_topics = {}

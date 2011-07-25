@@ -19,7 +19,7 @@
 set -eu
 
 RUN_DIR="/var/run/debian-devel-changes"
-FIFO="${RUN_DIR}/debian-devel-changes.fifo"
+FIFO="${RUN_DIR}/fifo"
 
 mkdir -p "${RUN_DIR}"
 
