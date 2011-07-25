@@ -1,0 +1,5 @@
+debian-devel-changes-bot (1) UNRELEASED; urgency=low
+
+  * Initial release.
+
+ -- Chris Lamb <lamby@debian.org>  Mon, 25 Jul 2011 17:12:54 +0200
