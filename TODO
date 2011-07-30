@@ -2,3 +2,47 @@ TODO
 ====
 
  - A bug title containing [new] (for example) shouldn't be colour in the output
+
+Hooks
+-----
+
+JSON POST to interface
+
+Accepted upload
+---------------
+
+	{'accepted_upload: {
+		'package': 'libfiu',
+		'version': '0.23',
+		'distribution': 'unstable',
+		'urgency': 'high',
+		'uploader': 'Chris Lamb <lamby@debian.org>',
+		'closes': [12345, 12456, 146645],
+	}}
+
+Bug closed
+----------
+
+	{'bug_closed': {
+		'number': 12637,
+		'package': 'libfiu',
+		'by': 'Chris Lamb <lamby@debian.org>',
+		'title': 'hello',
+	}}
+
+Bug submitted
+-------------
+
+	{'bug_submitted': {
+		'number': 12637,
+		'package': 'libfiu',
+		'by': 'Chris Lamb <lamby@debian.org>',
+		'title': 'hello',
+		'severity': 'severity', # optional
+		'version': 'version', # optional
+	}}
+
+Security
+--------
+
+	Probably drop
